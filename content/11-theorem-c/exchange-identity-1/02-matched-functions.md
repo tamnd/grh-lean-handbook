@@ -56,7 +56,7 @@ where $k_a$ is the matrix of the columns $a$ of $k$. The determinant of a block 
 
 If $s$ is the matrix $(1\ 0)$ of the rows $b$ of the identity, then $(s; x_k)$ is block triangular too, and the identity reads $\det x_{k,2} \cdot \det k = \det y_{k,1}$. Here $x_{k,2}$ is the square block of $x_k$ in the columns $a$, and $y_{k,1}$ is the square block of $y_k$ in the rows $b$. This is the classical statement: a minor of $k^{-1}$ is $(\det k)^{-1}$ times the complementary minor of $k$.
 
-### Matched functions
+### The matching condition
 
 Let $O$ be a subring of $R$, and let $GL_n(O)$ be the invertible matrices $k$ such that $k$ and $k^{-1}$ have entries in $O$. Let $\chi$ be a multiplicative character of $R$, with values in $\mathbb{C}$. As usual for a multiplicative character, $\chi(r) = 0$ if $r$ is not a unit.
 
