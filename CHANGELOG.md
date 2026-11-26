@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.3.5
+
+Four new chapters of the argument volumes, and one correction.
+
+- Volume 9, chapter 8: theta kernels and gauges (#138).
+- Volume 10, chapter 7: the anatomy of a term (#141).
+- Volume 11, chapter 5: the exchange identity, part 1 (#142).
+- Volume 12, chapter 6: tied Selmer groups and the Greenberg-Wiles count (#140).
+- Fixes: the seesaw constant in Volume 9, chapter 1 is c = c₀C/d (#139); Volume 10, chapter 6 is cut to the word limit (#137).
+
 ## v0.3.4
 
 Four new chapters of the argument volumes.

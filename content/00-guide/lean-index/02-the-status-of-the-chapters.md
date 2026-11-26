@@ -75,14 +75,14 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 8 | 3 | The congruence relation | drafted | 14,017 |
 | 8 | 4 | What attached means | drafted | 14,374 |
 | 8 | 5 | Building the representations | drafted | 12,699 |
-| 9 | 1 | Theorem A and its plan | drafted | 9,018 |
+| 9 | 1 | Theorem A and its plan | drafted | 9,043 |
 | 9 | 2 | The objects of the upper bound | drafted | 14,583 |
 | 9 | 3 | The seesaw identity, part 1: unfolding | drafted | 14,668 |
 | 9 | 4 | The field E at the primes | drafted | 12,475 |
 | 9 | 5 | The integral vacuum and tight frames | drafted | 13,453 |
 | 9 | 6 | The CM curve, its formal group and the normal form | drafted | 12,735 |
 | 9 | 7 | The count and the divisibility of standard data | drafted | 13,326 |
-| 9 | 8 | Theta kernels and gauges | planned | 0 |
+| 9 | 8 | Theta kernels and gauges | drafted | 13,819 |
 | 9 | 9 | Short columns and the gain | planned | 0 |
 | 9 | 10 | Marked primes and the valuation of a chain | planned | 0 |
 | 9 | 11 | The seesaw identity, part 2: assembly | planned | 0 |
@@ -95,9 +95,9 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 3 | Equal multiplicities by the trace formula | drafted | 11,885 |
 | 10 | 4 | Bessel functions at a real place | drafted | 14,536 |
 | 10 | 5 | Frames, depth and gains | drafted | 14,347 |
-| 10 | 6 | Local densities at the real places | drafted | 14,827 |
-| 10 | 7 | The anatomy of a term | planned | 0 |
-| 10 | 8 | Local densities at the finite places | planned | 0 |
+| 10 | 6 | Local densities at the real places | drafted | 14,567 |
+| 10 | 7 | The anatomy of a term | drafted | 14,539 |
+| 10 | 8 | Local densities at the finite places | drafted | 14,633 |
 | 10 | 9 | Reduced points and frame counts | planned | 0 |
 | 10 | 10 | Poincaré series and unfolding | planned | 0 |
 | 10 | 11 | The remaining terms | planned | 0 |
@@ -108,7 +108,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 2 | Twists, critical pairs and regular families | drafted | 11,278 |
 | 11 | 3 | Single theta lifts and their norms | drafted | 12,521 |
 | 11 | 4 | Character lifts and tested forms | drafted | 13,708 |
-| 11 | 5 | The exchange identity, part 1 | planned | 0 |
+| 11 | 5 | The exchange identity, part 1 | drafted | 14,598 |
 | 11 | 6 | The exchange identity, part 2 | planned | 0 |
 | 11 | 7 | Seesaw squares and grid paths | planned | 0 |
 | 11 | 8 | The chain determinant and its factorization | planned | 0 |
@@ -126,7 +126,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 12 | 3 | Auxiliary primes and first-order deformations | drafted | 14,485 |
 | 12 | 4 | Tied traces and even classes | drafted | 11,921 |
 | 12 | 5 | The main summands of the attached Galois representations | drafted | 14,570 |
-| 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | planned | 0 |
+| 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | drafted | 14,549 |
 | 12 | 7 | Exponent lattices and Kummer charts | planned | 0 |
 | 12 | 8 | Cup products on Kisin modules | planned | 0 |
 | 12 | 9 | The local loss at ℓ | planned | 0 |
