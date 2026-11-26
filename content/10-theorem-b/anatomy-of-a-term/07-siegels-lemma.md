@@ -148,7 +148,9 @@ $$\mathsf{g}^\sharp = \frac{|N_{E/\mathbb{Q}}(\delta_*(\gamma))|}{i_\gamma i'_\g
 
 Lean: `New.Filling.minorGauge`, `New.Filling.maxGauge`, `New.Filling.levelGauge` (New/Spanning/RemainingTerms/BorderedDeterminant.lean, New/Spanning/RemainingTerms/Data.lean).
 
-**Lemma (The gauge through the leading minor).** $\mathsf{g}^{\max} = \max\left(\prod_v|\mathsf{g}(\gamma)|_v,\, N^f\nu_j(\gamma)\right) / (i_\gamma i'_\gamma)$.
+**Lemma (The gauge through the leading minor).** The gauge is
+
+$$\mathsf{g}^{\max} = \frac{\max\left(\prod_v|\mathsf{g}(\gamma)|_v,\ N^f\nu_j(\gamma)\right)}{i_\gamma i'_\gamma}.$$
 
 Lean: `New.Filling.HasCellRank.maxGauge_eq` (New/Spanning/RemainingTerms/BorderedDeterminant.lean).
 

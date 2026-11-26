@@ -64,7 +64,7 @@ Lean: `New.Filling.link_inv_mul_mul_of_mem_besselU` (New/Spanning/Unfolding/Link
 
 *Proof.* We show that the link of $g$ lies in the link of $vgw^{-1}$ for all isometries $g$ and all $v, w \in \mathsf{U}$. With $g = u^{-1}\gamma u'$, $v = u$, $w = u'$ this gives one inclusion. With $g = \gamma$, $v = u^{-1}$, $w = u'^{-1}$ it gives the other. Let $t$ be orthogonal to $A$ and $gA$. Then $(vgw^{-1})^{-1}vt = wg^{-1}t$. The last blocks of $t$ and $g^{-1}t$ vanish. By the previous lemma $vt$ and $wg^{-1}t$ have the same middle and last blocks as $t$ and $g^{-1}t$. So $vt$ is orthogonal to $A$ and to $vgw^{-1}A$, and it gives the same pair $([t], [g^{-1}t])$. $\square$
 
-### The big cell
+### The link on the big cell
 
 Let $w_r$ be the Weyl element with the units $r$ and let $\rho$ lie in the floor group of level $\varrho$, as in [the previous section](/chapter/anatomy-of-a-term/#cells-and-the-discriminant). Then $\rho$ fixes every $e_a$ and $e^*_a$, so it acts on the middle space by a block $\rho_{\mathrm{mid}}$.
 
