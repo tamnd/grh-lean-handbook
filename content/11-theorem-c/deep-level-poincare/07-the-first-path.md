@@ -25,7 +25,7 @@ drafted_by: writer@claude-opus-5-5
 
 The first path of the grids has the nodes $\tilde Y^m_0, \dots, \tilde Y^0_0$ and $Y_0, \dots, Y_m$. These are the first columns $(z, 0, i)$ of the two grids: $z = $ false gives $Y_i$ and $z = $ true gives $\tilde Y^i_0$. This section builds a map $\mathrm{res}^\flat$ from the forms of level $\mathfrak b$ on the definite space $\tilde Y^m_0$ onto the principal forms on $Y_0$. It then writes the pairing of the chain of lifts of $\mathrm{res}^\flat\varphi$ as a period on the first path.
 
-### Background in one line each
+### Background for the first path
 
 - Grid forms, triangle forms, the moduli $\mathfrak m_0 = \varpi Q$ (for $Y$) and $\mathfrak b = \varpi^b$ (for $\tilde Y$) of a first column, the indices $n_{\mathfrak n}$ that weight each lift, the edge characters $\chi$ and the data $\mathrm{modDatum}$ ([seesaw squares and grid paths](/chapter/seesaw-squares/)).
 - The transposed chain $T_i = $ [transposedChain](/decl/New.Data.transposedChain/) $\vartheta\,z\,i$ composes the weighted transposed lifts from node $m$ down to node $i$. The chain $W_i$ = [weightedChain](/decl/New.Exchange.weightedChain/) composes the weighted lifts from node $0$ up to node $i$.

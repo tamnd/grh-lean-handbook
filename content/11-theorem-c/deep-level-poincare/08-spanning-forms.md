@@ -39,7 +39,7 @@ drafted_by: writer@claude-opus-5-5
 
 Let $\Xi = \mathrm{lastPathPeriod}(\Psi, y)$ be the sum attached to the last path: the sum over tuples $S$ of matrices on its edges of $\Psi(S)$ times the integrated pairing of the lifts of the two forms $y_{\text{false}}$, $y_{\text{true}}$ along the two halves. This section bounds the denominators and the conjugates of $\Xi$, moves back to the first path, and reads the values of the chain of lifts with delta forms. Write $G_k = \exp(x^k b^2)$.
 
-### Background in one line each
+### Background for the last path
 
 - From [grids, columns and turns](/chapter/grids-paths-turns/), linked by chapter only: the last path, its kernels, edge data, levels and branching matrix; $\Xi$ is a sum of $L$ copies of branching pairings of vectors got by $m$ lifts from each end (`exists_lastPathPeriod_mem_smul_norm_le`); the branching pairing is equivariant with a character $\prod_\tau\det^{L_\tau}$, $|L_\tau| \le b r^4 + \lceil 20b\rceil$; the turns carry the first path to the last path at the cost of constants $c(\vartheta)$ with $|c(\vartheta)|$ = turn ratios up to $C\,\mathrm{Nm}\,Q^k$ (`exists_transfersPeriods_first_last`).
 - Gauges, integral forms, delta forms $\delta_x(v)$ and their gauge and size bounds, and the isomorphism of algebraic forms with forms of a level ([automorphic forms](/chapter/automorphic-forms/), [deltaForm](/decl/New.deltaForm/), [algFormEquiv](/decl/New.Space.algFormEquiv/)).

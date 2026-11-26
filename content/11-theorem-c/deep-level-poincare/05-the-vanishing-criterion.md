@@ -28,7 +28,7 @@ drafted_by: writer@claude-opus-5-5
 
 Let $V$ be a hermitian space of rank $n$ over the field $E$ of the data $D$, and $Z = V \oplus \langle 1 \rangle$. Let $l$ be the parameters of the forms on $V$ and $l'$ those of the forms on $Z$. This section proves: a form $y$ on $V$ that is orthogonal to the restrictions of all forms of deep level on $Z$, translated by a real point $\omega$, is zero.
 
-### Background in one line each
+### Background for the criterion
 
 - The kernel of type $l$ is $e_l(g) = \prod_w d(l_w)\,\overline{c_{l_w}(g_w)}$, with $d$ the formal degree. It is a cusp kernel ([typeKernel](/decl/New.typeKernel/), [isCuspKernel_typeKernel](/decl/New.isCuspKernel_typeKernel/)). A *form of type $l$* is a bounded automorphic function fixed by right convolution with $e_l$.
 - Rank one formula: for a form $F$ of type $l$ and $u \in G_\infty$, $\int e_l(z) F(g(z,1)(u,1))\,dz = (\overline{e_l(u)}/e_l(1))\,F(g)$ (`New.Space.IsForm.realConv_translate`, [forms of a type](/chapter/automorphic-forms/)).
@@ -174,7 +174,7 @@ $$(v/\beta^N)^f|y(x)| \le \frac{m}{16\beta}\Big/(\beta^N(2\beta)^{3A})^f\cdot((2
 
 The constants cancel, and $16\beta|y(x)| \le 10S$. As $\beta \ge 16$, $|y(x)| \le 10S/256 \le S/2$. $\square$
 
-### The criterion
+### The criterion and its corollary
 
 **Theorem (Vanishing criterion).** Assume the sizes, large gaps for $4A$ of $l$ and for $2A$ of $l'$, $|l_{w,i}| \le L$, $\|\omega_w\|^2 \le \beta$, and the pairing bound at every $w$. Let $y$ be a form of type $l$ on $V$ of level $J_M$, the chosen level of the data. If $\langle y, \varphi((\cdot\oplus 1)\omega)\rangle = 0$ for every form $\varphi$ of type $l'$ on $Z$ of level $J(\mathfrak b)$, then $y = 0$.
 

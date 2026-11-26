@@ -70,7 +70,7 @@ $$\sum_{i \neq i_0} \Big(\frac{d}{\|c_i\|}\Big)^A \leq \Big(\frac{5d}{d^2/2}\Big
 
 as $10/d \leq 1$ and $A \geq 1$. $\square$
 
-### The theorem
+### The period theorem
 
 **Theorem (Period at deep level).** Let $E$ have a primitive root of unity of order $5040$. Let $F$ be automorphic on $V$ of level $J(a)$, $a \neq 0$, with $|F| \leq S$. Let $0 \leq R \leq |\Phi_w(a)|$ for every $w$. Let
 
@@ -106,6 +106,6 @@ By Steps 2 and 3, the integrals $\int_G|T_\sigma|$ have a finite sum over $W$. T
 
 **Remark (Formalization).** The representatives $C$, the elements $k_\gamma$ and the last columns $y_\gamma$ are chosen with the axiom of choice (`Classical.skolem`). The bound does not depend on the choice. The sum over $\Gamma_Z$ is a `tsum`. The proof shows that the period integral is the sum of a summable family, so the `tsum` has its true value and is not the junk value $0$. The hypothesis $d \geq f$ is used only for $\|c_{\gamma_0}\| \le d$ and the bound $\|c_\gamma\|/d \le \prod_w \|\cdot\|$.
 
-### An example
+### An example of the sizes
 
 Let $f = 1$, $V$ of rank $1$, and $a$ with $|a| = R$. Then $c_\gamma$ lies in $\mathbb{C}^2 \cong \mathbb{R}^4$, and the packing bound needs only $A \geq 6$. The slice lemma needs $A > 32$. If $\lambda(V, x) = 1$, then $d = \sqrt R$ is allowed for $R \geq 100$. The error is then $10/\sqrt R$ of the main constant: the deeper the level, the better the identity term approximates the period.

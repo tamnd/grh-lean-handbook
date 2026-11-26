@@ -64,7 +64,7 @@ The sum of the near terms over $i < \min(M, k - 1)$ is the number of $i$ with $a
 
 The near formula with $N \geq k$ reads $L = k - 1 - 2a - ((N - k) \bmod 2)$.
 
-### The theorem
+### The steepness theorem
 
 **Theorem (Steep parameters).** For $z \in \{\text{false}, \text{true}\}$ there is a bijection
 
@@ -92,6 +92,6 @@ The count lemma gives $|L| \leq N \leq r + 1$, and $r + 2 \leq \Delta$. So $2\La
 
 **Remark (Formalization).** The theorem fixes one bijection $e$ for all infinite places. This works because the numbering $\nu$ does not depend on $\tau$. The source proves the bounds and the signs by the tactic `grind` from the formula `New.Data.targetParameter_eq` and the parities above. It does not write out the case analysis. The three-way sign in the count is written with `if` in the source. The bound $|L| \leq N$ is what is used. The sharper bound $|L| \leq N - 1$ also holds, since the term $i = a$ is $0$.
 
-### An example
+### An example of steep parameters
 
 Let $r = 3$ and $m = 2$. Then $k = 2$, $\varrho = 0$ and $\mathrm{InitIndex}_0$ has one element. Take $z = \text{false}$. The row parameter is $t_0 = 0$, $t_1 = \Delta/2 - \kappa_1$, $t_2 = \Delta/2 - \kappa_2$. The signs are $+, +, -$. For the far entry numbered $1$, the index $0$ lies above it with the same sign and the index $2$ lies below it with the other sign. So $2\rho_c = -1$ and $2\rho_n = 1$, and $2\Lambda = 2t_1 + 2 = \Delta - 2\kappa_1 + 2$. For the near entry, both other indices lie below it, one of each sign. So $2\rho_c = 2\rho_n = 1$ and $2\Lambda = 0$. The far weights $2\Lambda = \Delta - 2\kappa_1 + 2$ and $\Delta - 2\kappa_2 - 2$ decrease and lie in $[-6B, -2B]$.

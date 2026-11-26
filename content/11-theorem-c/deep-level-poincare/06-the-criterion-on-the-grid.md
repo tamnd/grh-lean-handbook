@@ -12,7 +12,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section applies the vanishing criterion of Section 5 to $V = Y_0$ and $Z = \tilde Y^0_0 = Y_0 \oplus \langle 1\rangle$. All sizes come from the data $D$. The result is the first statement of Step 3 of the sketch.
 
-### Background in one line each
+### Background for the grid
 
 - The deep level is the principal level of $\mathfrak b = \varpi^{b}$, with $\varpi$ = `D.piM` the generator of the product of the chosen places, $\varpi\bar\varpi = M$, and $b$ = `D.natB` ([seesaw squares and grid paths](/chapter/seesaw-squares/)).
 - The forms $\mathcal F_{\mathfrak b}$ = `D.gridLevelForms 0` are the forms on $\tilde Y^0_0$ of the kernel `D.gridKernel true 0 0 true`, that is of the parameter $-\tilde l$ with $\tilde l$ = `D.gridParam true 0 0 0`, and of level $J(\mathfrak b)$ ([seesaw squares and grid paths](/chapter/seesaw-squares/)).
@@ -29,7 +29,7 @@ Lean: `New.Data.norm_gridLevelGen` (New/Determinant/AuxiliaryForms/DeepLevelVani
 
 *Proof.* As $\varpi\bar\varpi = M$ and $\Phi_w$ commutes with complex conjugation on a CM field, $|\Phi_w(\varpi)|^2 = \Phi_w(M) = M$. So $|\Phi_w(\varpi)| = \sqrt M$, and $|\Phi_w(\varpi^b)| = \sqrt M^{\,b}$. $\square$
 
-### The criterion
+### The criterion on $Y_0$
 
 **Theorem (Forms of level $J_M$ on $Y_0$).** There is a real point $g$ of the unitary group of $\tilde Y^0_0$ with this property. Let $y$ be a principal form on $Y_0$. If
 
