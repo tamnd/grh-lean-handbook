@@ -77,7 +77,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 8 | 5 | Building the representations | drafted | 12,699 |
 | 9 | 1 | Theorem A and its plan | drafted | 9,018 |
 | 9 | 2 | The objects of the upper bound | drafted | 14,583 |
-| 9 | 3 | The seesaw identity, part 1: unfolding | planned | 0 |
+| 9 | 3 | The seesaw identity, part 1: unfolding | drafted | 14,668 |
 | 9 | 4 | The field E at the primes | drafted | 12,475 |
 | 9 | 5 | The integral vacuum and tight frames | drafted | 13,453 |
 | 9 | 6 | The CM curve, its formal group and the normal form | planned | 0 |
@@ -93,7 +93,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 1 | Theorem B and its plan | drafted | 9,013 |
 | 10 | 2 | Few translates suffice | drafted | 9,650 |
 | 10 | 3 | Equal multiplicities by the trace formula | drafted | 11,885 |
-| 10 | 4 | Bessel functions at a real place | planned | 0 |
+| 10 | 4 | Bessel functions at a real place | drafted | 14,536 |
 | 10 | 5 | Frames, depth and gains | drafted | 14,347 |
 | 10 | 6 | Local densities at the real places | planned | 0 |
 | 10 | 7 | The anatomy of a term | planned | 0 |
@@ -107,7 +107,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 1 | Theorem C and the height argument | drafted | 8,914 |
 | 11 | 2 | Twists, critical pairs and regular families | drafted | 11,278 |
 | 11 | 3 | Single theta lifts and their norms | drafted | 12,521 |
-| 11 | 4 | Character lifts and tested forms | planned | 0 |
+| 11 | 4 | Character lifts and tested forms | drafted | 13,708 |
 | 11 | 5 | The exchange identity, part 1 | planned | 0 |
 | 11 | 6 | The exchange identity, part 2 | planned | 0 |
 | 11 | 7 | Seesaw squares and grid paths | planned | 0 |
@@ -124,7 +124,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 12 | 1 | Regular families: the plan | drafted | 14,812 |
 | 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,594 |
 | 12 | 3 | Auxiliary primes and first-order deformations | drafted | 14,485 |
-| 12 | 4 | Tied traces and even classes | planned | 0 |
+| 12 | 4 | Tied traces and even classes | drafted | 11,921 |
 | 12 | 5 | The main summands of the attached Galois representations | planned | 0 |
 | 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | planned | 0 |
 | 12 | 7 | Exponent lattices and Kummer charts | planned | 0 |

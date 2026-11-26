@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 4188 cited names outside the namespace `New.Data`. This section has 2076 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 4589 cited names outside the namespace `New.Data`. This section has 2268 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -66,6 +66,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.analyticOrderNatAt_entireL_eq_zero_iff`: `Lib/Analytic/EntireLFunction.lean`, [line 172](lean:Lib/Analytic/EntireLFunction.lean#L172). Cited in [Chapter](/chapter/polar-functions/).
 - `New.apply_eq_sum_moebius_smul_of_changeLevel_eq`: `Lib/Analytic/PolyaVinogradov.lean`, [line 137](lean:Lib/Analytic/PolyaVinogradov.lean#L137). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.apply_mul_scalarFin_divStar_principalIdele`: `Lib/GaloisRep/Main/AttachedRepresentations.lean`, [line 320](lean:Lib/GaloisRep/Main/AttachedRepresentations.lean#L320). Cited in [Chapter](/chapter/attached-representations/).
+- `New.arbitraryIndexEmbedding`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 110](lean:New/OneLift/HeckeValues/CharacterLift.lean#L110). Cited in [Chapter](/chapter/character-lifts/).
 - `New.artin_reciprocity`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 453](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L453). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.artin_reciprocity_cyclotomic`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 179](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L179). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.artinAt`: `Lib/ClassField/Local/ArtinMap.lean`, [line 114](lean:Lib/ClassField/Local/ArtinMap.lean#L114). Cited in [Chapter](/chapter/class-field-theory/).
@@ -87,8 +88,28 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.basicCosetRep`: `Lib/Weil/Unramified/HeckeGL.lean`, [line 380](lean:Lib/Weil/Unramified/HeckeGL.lean#L380). Cited in [Chapter](/chapter/iwahori-satake/), [Chapter](/chapter/siegel-weil/).
 - `New.basicDoubleCoset`: `Lib/Adelic/Unitary/Defs.lean`, [line 177](lean:Lib/Adelic/Unitary/Defs.lean#L177). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.BasisTableau`: `Lib/GLn/SchurModule/Basic.lean`, [line 177](lean:Lib/GLn/SchurModule/Basic.lean#L177). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.besselCut`: `New/Spanning/Bessel/CutTailBound.lean`, [line 229](lean:New/Spanning/Bessel/CutTailBound.lean#L229). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselCutoff`: `New/Spanning/Bessel/CutTailBound.lean`, [line 214](lean:New/Spanning/Bessel/CutTailBound.lean#L214). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselLength`: `New/Spanning/Bessel/Basic.lean`, [line 66](lean:New/Spanning/Bessel/Basic.lean#L66). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselLength_besselS_mul`: `New/Spanning/Bessel/Basic.lean`, [line 141](lean:New/Spanning/Bessel/Basic.lean#L141). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselLength_div_le_half_norm`: `New/Spanning/Bessel/CutTailBound.lean`, [line 140](lean:New/Spanning/Bessel/CutTailBound.lean#L140). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselLength_le_norm_inv_mul_mul_besselLength`: `New/Spanning/Bessel/Basic.lean`, [line 145](lean:New/Spanning/Bessel/Basic.lean#L145). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselLength_le_of_dual`: `New/Spanning/Bessel/Basic.lean`, [line 550](lean:New/Spanning/Bessel/Basic.lean#L550). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselLength_le_of_norm_orthoFrame`: `New/Spanning/Bessel/Basic.lean`, [line 481](lean:New/Spanning/Bessel/Basic.lean#L481). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.besselOrbitalIntegral`: `New/Spanning/Bessel/Basic.lean`, [line 887](lean:New/Spanning/Bessel/Basic.lean#L887). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.besselQuotMeasure`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 630](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L630). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.besselS_le_normalizer_besselU`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 886](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L886). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.BesselSystem`: `New/Spanning/Bessel/Basic.lean`, [line 1018](lean:New/Spanning/Bessel/Basic.lean#L1018). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.adjointIsometry`: `New/Spanning/Bessel/OpenCellPairing.lean`, [line 221](lean:New/Spanning/Bessel/OpenCellPairing.lean#L221). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.enorm_integral_pairKernel_cut_le`: `New/Spanning/Bessel/OpenCellPairing.lean`, [line 240](lean:New/Spanning/Bessel/OpenCellPairing.lean#L240). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.exists_isKernelBound_gramSection`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 610](lean:New/Spanning/Bessel/OpenCellBound.lean#L610). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.exists_isOpenCellBound`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 695](lean:New/Spanning/Bessel/OpenCellBound.lean#L695). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.IsKernelBound`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 576](lean:New/Spanning/Bessel/OpenCellBound.lean#L576). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.isL2Contraction_gramSection`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 441](lean:New/Spanning/Bessel/OpenCellBound.lean#L441). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.IsOpenCellBound`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 547](lean:New/Spanning/Bessel/OpenCellBound.lean#L547). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.orthonormal`: `New/Spanning/Bessel/Orthonormality.lean`, [line 119](lean:New/Spanning/Bessel/Orthonormality.lean#L119). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.pairKernel`: `New/Spanning/Bessel/OpenCellPairing.lean`, [line 214](lean:New/Spanning/Bessel/OpenCellPairing.lean#L214). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.BesselSystem.piKernel`: `New/Spanning/Bessel/OpenCellPairing.lean`, [line 50](lean:New/Spanning/Bessel/OpenCellPairing.lean#L50). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.bijective_restrict_genericPt`: `Lib/Shimura/Uniformisation/HolomorphicFamilies.lean`, [line 109](lean:Lib/Shimura/Uniformisation/HolomorphicFamilies.lean#L109). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.blockFlattenAlgEquiv`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 39](lean:New/Congruences/FirstOrder/RibetMethod.lean#L39). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.blockHom`: `Lib/General/Groups/BesselGroups.lean`, [line 161](lean:Lib/General/Groups/BesselGroups.lean#L161). Cited in [Chapter](/chapter/finite-gln/).
@@ -261,10 +282,13 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.conjWeylMatrix`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 63](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L63). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.conjWeylRep`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 72](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L72). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/weyl-modules/).
 - `New.continuous_artinMap`: `Lib/ClassField/Global/ArtinMap.lean`, [line 247](lean:Lib/ClassField/Global/ArtinMap.lean#L247). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.continuous_besselLength`: `New/Spanning/Bessel/Basic.lean`, [line 158](lean:New/Spanning/Bessel/Basic.lean#L158). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.continuous_coeff_charpoly`: `Lib/GaloisRep/Main/AttachedRepresentations.lean`, [line 217](lean:Lib/GaloisRep/Main/AttachedRepresentations.lean#L217). Cited in [Chapter](/chapter/attached-representations/).
 - `New.continuous_scalarFin_divStar`: `Lib/GaloisRep/Main/AttachedRepresentations.lean`, [line 304](lean:Lib/GaloisRep/Main/AttachedRepresentations.lean#L304). Cited in [Chapter](/chapter/attached-representations/).
 - `New.convIndicator`: `Lib/Adelic/TraceFormula/TestFunction.lean`, [line 69](lean:Lib/Adelic/TraceFormula/TestFunction.lean#L69). Cited in [Chapter](/chapter/trace-formula/).
 - `New.convolve`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 648](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L648). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.convolve_formalDegree_mul_dsCoeffInFrame_comp_frameEquiv`: `New/Spanning/Bessel/SchurBound.lean`, [line 120](lean:New/Spanning/Bessel/SchurBound.lean#L120). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.convolve_formalDegree_mul_dsCoeffInFrame_self`: `New/Spanning/Bessel/SchurBound.lean`, [line 104](lean:New/Spanning/Bessel/SchurBound.lean#L104). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Core.dyadicDiag`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 186](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L186). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Core.encard_le_of_dyadic_box`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 669](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L669). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.exists_eq_zero_of_zpow_mul_mem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 711](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L711). Cited in [Chapter](/chapter/reduction-theory/).
@@ -319,7 +343,10 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DescentPair.coe_thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 184](lean:New/Determinant/Norms/AdjointThetaLift.lean#L184). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.conjKernel`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 362](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L362). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.conjKernel_apply`: `New/Determinant/Norms/VectorKernel.lean`, [line 47](lean:New/Determinant/Norms/VectorKernel.lean#L47). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.exists_adjoint_heckePolyOnForms_comm`: `New/OneLift/TestedForms.lean`, [line 505](lean:New/OneLift/TestedForms.lean#L505). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.exists_invariant_pairing_eq_innerAt`: `New/OneLift/TestedForms.lean`, [line 306](lean:New/OneLift/TestedForms.lean#L306). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.exists_reductionGL_eq_submatrix_of_blockFn_ne_zero`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 532](lean:New/Determinant/Norms/AdjointThetaLift.lean#L532). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.falseLiftsAt`: `New/OneLift/TestedForms.lean`, [line 373](lean:New/OneLift/TestedForms.lean#L373). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.FitsParams`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 704](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L704). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.FitsParams.isArrow_fockDatum`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 141](lean:New/Determinant/Norms/AdjointThetaLift.lean#L141). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.FitsParams.isArrow_swap_fockDatum`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 149](lean:New/Determinant/Norms/AdjointThetaLift.lean#L149). Cited in [Chapter](/chapter/single-theta-lifts/).
@@ -330,26 +357,40 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DescentPair.gramFactor_div_card`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 665](lean:New/Determinant/Norms/AdjointThetaLift.lean#L665). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.gramForm_vectorKernel`: `New/Determinant/Norms/VectorKernel.lean`, [line 69](lean:New/Determinant/Norms/VectorKernel.lean#L69). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.gramForm_vectorKernel_left`: `New/Determinant/Norms/VectorKernel.lean`, [line 87](lean:New/Determinant/Norms/VectorKernel.lean#L87). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.groupAlgAction`: `New/OneLift/TestedForms.lean`, [line 366](lean:New/OneLift/TestedForms.lean#L366). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.hasHeckePolynomial_thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 221](lean:New/Determinant/Norms/AdjointThetaLift.lean#L221). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.HasLiftHeckePolynomial`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 419](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L419). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.heckePolyOnForms`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 383](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L383). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.heckePolyOnForms_comm`: `New/OneLift/TestedForms.lean`, [line 477](lean:New/OneLift/TestedForms.lean#L477). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.heckePolyOnForms_eq_smul`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 396](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L396). Cited in [Chapter](/chapter/single-theta-lifts/).
-- `New.DescentPair.heckePolyOnForms_liftHeckeRoot_eq_zero`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 536](lean:New/OneLift/HeckeValues/CharacterLift.lean#L536). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.heckePolyOnForms_liftHeckeRoot_eq_zero`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 536](lean:New/OneLift/HeckeValues/CharacterLift.lean#L536). Cited in [Chapter](/chapter/single-theta-lifts/), [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.inner_thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 297](lean:New/Determinant/Norms/AdjointThetaLift.lean#L297). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.innerAt_formAction`: `New/OneLift/TestedForms.lean`, [line 438](lean:New/OneLift/TestedForms.lean#L438). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.innerAt_groupAlgAction`: `New/OneLift/TestedForms.lean`, [line 497](lean:New/OneLift/TestedForms.lean#L497). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.innerAt_heckePolyOnForms_eq_zero`: `New/OneLift/TestedForms.lean`, [line 519](lean:New/OneLift/TestedForms.lean#L519). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.integrable_smul_vectorKernelForm`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 344](lean:New/Determinant/Norms/AdjointThetaLift.lean#L344). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.isForm_normalizedDescent`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 329](lean:New/Determinant/Norms/AdjointThetaLift.lean#L329). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.isOfFinOrder_prod_tamePart_det`: `New/OneLift/TestedForms.lean`, [line 427](lean:New/OneLift/TestedForms.lean#L427). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.IsOrthogonalToFalseLifts`: `New/OneLift/TestedForms.lean`, [line 380](lean:New/OneLift/TestedForms.lean#L380). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.isSharp_blockDatum`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 599](lean:New/Determinant/Norms/AdjointThetaLift.lean#L599). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.isSharpFn_blockFn`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 567](lean:New/Determinant/Norms/AdjointThetaLift.lean#L567). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.IsTestForm`: `New/OneLift/TestedForms.lean`, [line 392](lean:New/OneLift/TestedForms.lean#L392). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.levelChar`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 266](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L266). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.levelGroup`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 210](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L210). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.liftHeckeRoot`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 413](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L413). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.mem_sup_ker_sup_range_of_isOrthogonalToFalseLifts`: `New/OneLift/TestedForms.lean`, [line 566](lean:New/OneLift/TestedForms.lean#L566). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.normalizedDescent`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 371](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L371). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.normalizedDescent_apply`: `New/Determinant/Norms/VectorKernel.lean`, [line 55](lean:New/Determinant/Norms/VectorKernel.lean#L55). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.normalizedDescent_eq_inner_vectorKernelForm`: `New/Determinant/Norms/VectorKernel.lean`, [line 164](lean:New/Determinant/Norms/VectorKernel.lean#L164). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.normalizedDescent_mul_eq_normalizedDescent_formAction`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 116](lean:New/Determinant/Norms/AdjointThetaLift.lean#L116). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.normSqAt_eq_re_innerAt`: `New/OneLift/TestedForms.lean`, [line 541](lean:New/OneLift/TestedForms.lean#L541). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.normSqAt_le_add_of_innerAt_eq_zero`: `New/OneLift/TestedForms.lean`, [line 552](lean:New/OneLift/TestedForms.lean#L552). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.normSqAt_starProjection_le`: `New/OneLift/TestedForms.lean`, [line 591](lean:New/OneLift/TestedForms.lean#L591). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.ofAlgForm_thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 175](lean:New/Determinant/Norms/AdjointThetaLift.lean#L175). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.ofAlgForm_vectorKernelForm`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 367](lean:New/Determinant/Norms/AdjointThetaLift.lean#L367). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.omega_fockDatum_eq_inv_prod_smul`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 83](lean:New/Determinant/Norms/AdjointThetaLift.lean#L83). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.orthogonal_range_heckePolyOnForms_le_ker`: `New/OneLift/TestedForms.lean`, [line 529](lean:New/OneLift/TestedForms.lean#L529). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.range_groupAlgAction_mem_invtSubmodule`: `New/OneLift/TestedForms.lean`, [line 461](lean:New/OneLift/TestedForms.lean#L461). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.rankDiff`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 409](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L409). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.residueBlockDatum`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 217](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L217). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.stdLevelIndex_levelGroup_mul_card`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 649](lean:New/Determinant/Norms/AdjointThetaLift.lean#L649). Cited in [Chapter](/chapter/single-theta-lifts/).
@@ -391,19 +432,35 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DiscreteSeries.AreOppositeNodes.alternatingSignForm_polyVec`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 123](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L123). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.AreOppositeNodes.alternatingSignForm_polyVec_nodal_erase`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 212](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L212). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.AreOppositeNodes.isometryScale_mul_alternatingSignForm`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 239](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L239). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.besselAverage`: `New/Spanning/Bessel/Average.lean`, [line 154](lean:New/Spanning/Bessel/Average.lean#L154). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselAverage_mul`: `New/Spanning/Bessel/LargeFunction.lean`, [line 567](lean:New/Spanning/Bessel/LargeFunction.lean#L567). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselBallVolume`: `New/Spanning/Bessel/LargeFunction.lean`, [line 478](lean:New/Spanning/Bessel/LargeFunction.lean#L478). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselBallVolume_le_of_period`: `New/Spanning/Bessel/LargeFunction.lean`, [line 736](lean:New/Spanning/Bessel/LargeFunction.lean#L736). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselBallVolume_ne_top`: `New/Spanning/Bessel/LargeFunction.lean`, [line 484](lean:New/Spanning/Bessel/LargeFunction.lean#L484). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselBallVolume_ne_zero`: `New/Spanning/Bessel/LargeFunction.lean`, [line 490](lean:New/Spanning/Bessel/LargeFunction.lean#L490). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselIntegrand`: `New/Spanning/Bessel/Average.lean`, [line 148](lean:New/Spanning/Bessel/Average.lean#L148). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.besselPairHom`: `New/Spanning/Bessel/LargeFunction.lean`, [line 178](lean:New/Spanning/Bessel/LargeFunction.lean#L178). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.conjTranspose_blockDiagPart_mul_blockDiagPart`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 504](lean:New/Appendix/DiscreteSeries/Localization.lean#L504). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.continuous_besselIntegrand`: `New/Spanning/Bessel/LargeFunction.lean`, [line 527](lean:New/Spanning/Bessel/LargeFunction.lean#L527). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.convolve_besselAverage`: `New/Spanning/Bessel/LargeFunction.lean`, [line 609](lean:New/Spanning/Bessel/LargeFunction.lean#L609). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.crossTrace`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 216](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L216). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.crossTraceSum`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 225](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L225). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.crossTraceSum_coordProj_eq`: `New/Appendix/DiscreteSeries/OneMinor.lean`, [line 497](lean:New/Appendix/DiscreteSeries/OneMinor.lean#L497). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.det_reducedExp`: `New/Appendix/DiscreteSeries/OneMinor.lean`, [line 198](lean:New/Appendix/DiscreteSeries/OneMinor.lean#L198). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.dsCoeff_mul_eq_of_sub_one_eq_inclMatrix`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 438](lean:New/Appendix/DiscreteSeries/Localization.lean#L438). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.enorm_besselAverage_le`: `New/Spanning/Bessel/LargeFunction.lean`, [line 654](lean:New/Spanning/Bessel/LargeFunction.lean#L654). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.enorm_besselIntegrand`: `New/Spanning/Bessel/LargeFunction.lean`, [line 536](lean:New/Spanning/Bessel/LargeFunction.lean#L536). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.eval_derivative_nodal`: `Lib/General/Algebra/ResidueSums.lean`, [line 37](lean:Lib/General/Algebra/ResidueSums.lean#L37). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.DiscreteSeries.exists_besselGraph_fst_eq`: `New/Spanning/Bessel/LargeFunction.lean`, [line 160](lean:New/Spanning/Bessel/LargeFunction.lean#L160). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.exists_besselPairHom_fst_eq`: `New/Spanning/Bessel/LargeFunction.lean`, [line 339](lean:New/Spanning/Bessel/LargeFunction.lean#L339). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.exists_det_one_add_proj_mul_eq_exp`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 556](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L556). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_expMinor_eq_cexp`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 248](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L248). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_intDiagonal_mul_positionIsometry`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 647](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L647). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_norm_dsCoeff_div_cexp_sub_le`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 332](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L332). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_not_isEigenDirection`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 460](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L460). Cited in [Chapter](/chapter/local-theta/).
 - `New.DiscreteSeries.exists_principalMinor_conj_reducedExp_eq_cexp`: `New/Appendix/DiscreteSeries/OneMinor.lean`, [line 573](lean:New/Appendix/DiscreteSeries/OneMinor.lean#L573). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.exists_sub_one_mul_definiteCols_eq`: `New/Spanning/Bessel/LargeFunction.lean`, [line 147](lean:New/Spanning/Bessel/LargeFunction.lean#L147). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.exists_sub_one_mul_frameCols_eq`: `New/Spanning/Bessel/LargeFunction.lean`, [line 128](lean:New/Spanning/Bessel/LargeFunction.lean#L128). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.exists_unitary_mul_posSemidef`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 43](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L43). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_weightMinors_conj_reducedExp_eq_cexp`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 151](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L151). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_weightMinors_neg_paramAddRho_eq_cexp`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 232](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L232). Cited in [Chapter](/chapter/laplace-method/).
@@ -411,13 +468,19 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DiscreteSeries.flenstedJensen_div_exp_sub`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 268](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L268). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.flenstedJensen_reducedExp`: `New/Appendix/DiscreteSeries/OneMinor.lean`, [line 222](lean:New/Appendix/DiscreteSeries/OneMinor.lean#L222). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.formAdjoint`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 31](lean:New/Appendix/DiscreteSeries/Positions.lean#L31). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.formalDegree_mul_integral_norm_sq_besselAverage`: `New/Spanning/Bessel/LargeFunction.lean`, [line 685](lean:New/Spanning/Bessel/LargeFunction.lean#L685). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.gapWeightedNormSq`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 88](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L88). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.InducesOn`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 69](lean:New/Appendix/DiscreteSeries/Positions.lean#L69). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.inducesOn_besselPairHom`: `New/Spanning/Bessel/LargeFunction.lean`, [line 320](lean:New/Spanning/Bessel/LargeFunction.lean#L320). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.inducesOn_conj_inl_sub_one`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 568](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L568). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.initCols_eq_of_frame`: `New/Spanning/Bessel/LargeFunction.lean`, [line 294](lean:New/Spanning/Bessel/LargeFunction.lean#L294). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.inner_polarisation_eq_zero`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 237](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L237). Cited in [Chapter](/chapter/local-theta/).
+- `New.DiscreteSeries.integrable_besselAverage`: `New/Spanning/Bessel/LargeFunction.lean`, [line 666](lean:New/Spanning/Bessel/LargeFunction.lean#L666). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.integrable_besselIntegrand`: `New/Spanning/Bessel/LargeFunction.lean`, [line 554](lean:New/Spanning/Bessel/LargeFunction.lean#L554). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.integral_decay_le`: `Lib/DiscreteSeries/Haar/TotalMass.lean`, [line 427](lean:Lib/DiscreteSeries/Haar/TotalMass.lean#L427). Cited in [Chapter](/chapter/discrete-series/).
 - `New.DiscreteSeries.integral_idempotentKernel_mul_eq_zero`: `Lib/DiscreteSeries/CuspKernel.lean`, [line 267](lean:Lib/DiscreteSeries/CuspKernel.lean#L267). Cited in [Chapter](/chapter/discrete-series/).
 - `New.DiscreteSeries.inv_one_add_sq_pow_le_exp_pow_four`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 87](lean:New/Appendix/DiscreteSeries/Periods.lean#L87). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.isBesselFunction_besselAverage`: `New/Spanning/Bessel/LargeFunction.lean`, [line 589](lean:New/Spanning/Bessel/LargeFunction.lean#L589). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.IsEigenDirection`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 430](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L430). Cited in [Chapter](/chapter/local-theta/).
 - `New.DiscreteSeries.IsLaplaceDatum`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 101](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L101). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsLaplaceDatum.exists_laplaceIntegrand_eq_and_norm_subOnePair_le`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 664](lean:New/Appendix/DiscreteSeries/Localization.lean#L664). Cited in [Chapter](/chapter/laplace-method/).
@@ -438,6 +501,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DiscreteSeries.IsPosition`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 42](lean:New/Appendix/DiscreteSeries/Positions.lean#L42). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsPosition.exists_conj_inl_eq`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 588](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L588). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsPosition.exists_inducedHom_eq`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 269](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L269). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.IsPosition.exists_mul_eq_frameCols_and_besselLength_le`: `New/Spanning/Bessel/LargeFunction.lean`, [line 228](lean:New/Spanning/Bessel/LargeFunction.lean#L228). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.IsPosition.exists_mul_eq_zero_and_mul_eq_one`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 177](lean:New/Appendix/DiscreteSeries/Positions.lean#L177). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsPosition.formAdjoint_conj_mul`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 199](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L199). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsPosition.formAdjoint_mul_mul_eq`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 680](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L680). Cited in [Chapter](/chapter/laplace-method/).
@@ -451,6 +515,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DiscreteSeries.IsPosition.positionSum_mul`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 120](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L120). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsPosition.trace_mul_eq_of_mul_initCols_eq_zero`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 252](lean:New/Appendix/DiscreteSeries/Positions.lean#L252). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsPosition.trace_mul_eq_trace_add_sum_of_inducesOn`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 289](lean:New/Appendix/DiscreteSeries/Positions.lean#L289). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.isProperMap_besselPairHom_fst`: `New/Spanning/Bessel/LargeFunction.lean`, [line 184](lean:New/Spanning/Bessel/LargeFunction.lean#L184). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.isProperMap_sum`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 211](lean:New/Appendix/DiscreteSeries/Periods.lean#L211). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsStationary`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 76](lean:New/Appendix/DiscreteSeries/Positions.lean#L76). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsStationary.gram_pow_mulVec`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 401](lean:New/Appendix/DiscreteSeries/Positions.lean#L401). Cited in [Chapter](/chapter/laplace-method/).
@@ -461,23 +526,32 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DiscreteSeries.IsSteep`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 74](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L74). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsSteep.exists_isStationary`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 699](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L699). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsSteep.exists_isStationary_conjTranspose_mul_mul_eq_one`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 644](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L644). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.IsSteep.exists_stationary_point`: `New/Spanning/Bessel/LargeFunction.lean`, [line 388](lean:New/Spanning/Bessel/LargeFunction.lean#L388). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.IsSteep.exists_volume_le_mul_norm_integral_dsCoeff`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 678](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L678). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsSteep.lowestKType_neg_mem`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 613](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L613). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.le_pow_mul_of_le`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 107](lean:New/Appendix/DiscreteSeries/Periods.lean#L107). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.lintegral_decay_le_besselBallVolume`: `New/Spanning/Bessel/LargeFunction.lean`, [line 498](lean:New/Spanning/Bessel/LargeFunction.lean#L498). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.lintegral_enorm_besselIntegrand_le`: `New/Spanning/Bessel/LargeFunction.lean`, [line 543](lean:New/Spanning/Bessel/LargeFunction.lean#L543). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.lintegral_unfold_besselGraphMeasure`: `New/Spanning/Bessel/LargeFunction.lean`, [line 108](lean:New/Spanning/Bessel/LargeFunction.lean#L108). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.logMinorRemainder_scaleCross_neg`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 510](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L510). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.LowersFlag`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 62](lean:New/Appendix/DiscreteSeries/Positions.lean#L62). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.LowersFlag.inv`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 60](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L60). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.LowersFlag.mul`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 361](lean:New/Appendix/DiscreteSeries/Positions.lean#L361). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.lowersFlag_besselPairHom`: `New/Spanning/Bessel/LargeFunction.lean`, [line 308](lean:New/Spanning/Bessel/LargeFunction.lean#L308). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.lowersFlag_conj_inl_sub_one`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 545](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L545). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.measure_large_ball_le_pow_mul_small_ball`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 470](lean:New/Appendix/DiscreteSeries/Periods.lean#L470). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.measurePreserving_unfold_besselGraphMeasure`: `New/Spanning/Bessel/LargeFunction.lean`, [line 466](lean:New/Spanning/Bessel/LargeFunction.lean#L466). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.measureReal_div_four_le`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 442](lean:New/Appendix/DiscreteSeries/Periods.lean#L442). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.mul_norm_exp_sub_one_le`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 304](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L304). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.mul_sqrt_mul_pow_le_pow`: `New/Spanning/Bessel/LargeFunction.lean`, [line 362](lean:New/Spanning/Bessel/LargeFunction.lean#L362). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.noncompactPart`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 59](lean:New/Appendix/DiscreteSeries/Localization.lean#L59). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.norm_coe_sum_eq_max`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 192](lean:New/Appendix/DiscreteSeries/Periods.lean#L192). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.norm_conj_inl_le`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 519](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L519). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.norm_dsCoeff_le_one`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 390](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L390). Cited in [Chapter](/chapter/discrete-series/).
 - `New.DiscreteSeries.norm_dsCoeff_le_pow`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 297](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L297). Cited in [Chapter](/chapter/discrete-series/).
 - `New.DiscreteSeries.norm_dsCoeff_pow_four_le`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 522](lean:New/Appendix/DiscreteSeries/Localization.lean#L522). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.norm_dsCoeffInFrame_le`: `New/Spanning/Bessel/LargeFunction.lean`, [line 517](lean:New/Spanning/Bessel/LargeFunction.lean#L517). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.DiscreteSeries.norm_frame_mulVec_le`: `New/Spanning/Bessel/LargeFunction.lean`, [line 211](lean:New/Spanning/Bessel/LargeFunction.lean#L211). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.norm_le_add_one_of_norm_sub_one_le`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 461](lean:New/Appendix/DiscreteSeries/Periods.lean#L461). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.norm_le_mul_sq_of_even`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 493](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L493). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.norm_le_two_mul_re_add`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 79](lean:New/Appendix/DiscreteSeries/Periods.lean#L79). Cited in [Chapter](/chapter/laplace-method/).
@@ -502,9 +576,11 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.DiscreteSeries.reducedExp`: `New/Appendix/DiscreteSeries/OneMinor.lean`, [line 191](lean:New/Appendix/DiscreteSeries/OneMinor.lean#L191). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.sq_norm_fromCols_le`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 624](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L624). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.subOnePair`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 87](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L87). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.subOnePair_besselPairHom_fst`: `New/Spanning/Bessel/LargeFunction.lean`, [line 191](lean:New/Spanning/Bessel/LargeFunction.lean#L191). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.DiscreteSeries.sum_norm_lie_coordProj_sq`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 99](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L99). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.sum_trace_coordProj_mul`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 113](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L113). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.two_mul_re_sub_one_apply`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 65](lean:New/Appendix/DiscreteSeries/Localization.lean#L65). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.UnitarySignFrame`: `New/Spanning/Bessel/LargeFunction.lean`, [line 53](lean:New/Spanning/Bessel/LargeFunction.lean#L53). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.distribHaarChar_diagGL`: `Lib/General/Measure/HaarModulus.lean`, [line 338](lean:Lib/General/Measure/HaarModulus.lean#L338). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.distribHaarChar_eq_one_of_mem_intGL`: `Lib/General/Measure/HaarModulus.lean`, [line 323](lean:Lib/General/Measure/HaarModulus.lean#L323). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.div_add_card_le_prod_one_sub_inv`: `Lib/Analytic/Primes.lean`, [line 36](lean:Lib/Analytic/Primes.lean#L36). Cited in [Chapter](/chapter/primes-in-windows/).
@@ -528,6 +604,8 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.ellVal_mul_le`: `Lib/General/NumberTheory/PadicLimitsValuation.lean`, [line 260](lean:Lib/General/NumberTheory/PadicLimitsValuation.lean#L260). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.ellVal_pow`: `Lib/General/NumberTheory/PadicLimitsValuation.lean`, [line 272](lean:Lib/General/NumberTheory/PadicLimitsValuation.lean#L272). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.embValRing`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 172](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L172). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.enorm_besselCut_le`: `New/Spanning/Bessel/CutTailBound.lean`, [line 247](lean:New/Spanning/Bessel/CutTailBound.lean#L247). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.enorm_besselCut_sub_le`: `New/Spanning/Bessel/CutTailBound.lean`, [line 254](lean:New/Spanning/Bessel/CutTailBound.lean#L254). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.entireL`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 69](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L69). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/dirichlet-l-functions/), [Chapter](/chapter/primes-in-windows/).
 - `New.entireL_ne_zero`: `Lib/Analytic/EntireLFunction.lean`, [line 131](lean:Lib/Analytic/EntireLFunction.lean#L131). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.eq_of_add_mul_eq_of_sum_sq_eq`: `New/Reduction/Data/Existence.lean`, [line 59](lean:New/Reduction/Data/Existence.lean#L59). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
@@ -535,6 +613,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.eq_zero_of_coprime_factors`: `Lib/Adelic/TraceFormula/CoprimeFactors.lean`, [line 761](lean:Lib/Adelic/TraceFormula/CoprimeFactors.lean#L761). Cited in [Chapter](/chapter/trace-formula/).
 - `New.eq_zero_of_evalCup_eq_zero_of_trivialOn`: `Lib/ClassField/LocalDuality/DualityInequality.lean`, [line 183](lean:Lib/ClassField/LocalDuality/DualityInequality.lean#L183). Cited in [Chapter](/chapter/local-duality/).
 - `New.eulerProd`: `Lib/ClassField/HeckeL/EulerProduct.lean`, [line 73](lean:Lib/ClassField/HeckeL/EulerProduct.lean#L73). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.eulerProd_placeSign_ne_zero`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 520](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L520). Cited in [Chapter](/chapter/character-lifts/).
 - `New.eval_newtonPoly`: `Lib/GaloisRep/Pseudocharacter/Pseudorepresentations.lean`, [line 445](lean:Lib/GaloisRep/Pseudocharacter/Pseudorepresentations.lean#L445). Cited in [Chapter](/chapter/attached-representations/).
 - `New.evalClassReps`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 89](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L89). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.evalClassReps_injective`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 100](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L100). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -638,9 +717,11 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.exists_comp_artinMap_of_ker_le`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 714](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L714). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_compactMean_and_swap_eq_sum`: `Lib/LocalGL/Iwahori/SphericalExponents.lean`, [line 274](lean:Lib/LocalGL/Iwahori/SphericalExponents.lean#L274). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_conj_mulLeft_eq`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 633](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L633). Cited in [Chapter](/chapter/finite-gln/).
+- `New.exists_derivative_kernels`: `New/Spanning/Bessel/SchurBound.lean`, [line 160](lean:New/Spanning/Bessel/SchurBound.lean#L160). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_dirichletCharacter_eq_jacobiSym`: `Lib/Analytic/QuadraticTwist.lean`, [line 309](lean:Lib/Analytic/QuadraticTwist.lean#L309). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_dual_isometry`: `Lib/GLn/Dual.lean`, [line 467](lean:Lib/GLn/Dual.lean#L467). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_eigenvector_of_functional`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 193](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L193). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.exists_enorm_sq_mul_eq`: `New/Spanning/Bessel/CutTailBound.lean`, [line 204](lean:New/Spanning/Bessel/CutTailBound.lean#L204). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_entireL_quadTwist_ne_zero`: `Lib/Analytic/QuadraticTwist.lean`, [line 796](lean:Lib/Analytic/QuadraticTwist.lean#L796). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_eq_evalGL`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 1025](lean:Lib/LocalGL/Green/HallAlgebra.lean#L1025). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_eq_toBesselH`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 89](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L89). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -669,6 +750,8 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.exists_isBoundedDualBasis`: `Lib/Adelic/Reduction/FiniteVolume.lean`, [line 277](lean:Lib/Adelic/Reduction/FiniteVolume.lean#L277). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.exists_isChar_descendsTo_labelChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 326](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L326). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_isCoprime_mul_of_not_irreducible`: `Lib/Adelic/TraceFormula/ReduciblePolynomials.lean`, [line 38](lean:Lib/Adelic/TraceFormula/ReduciblePolynomials.lean#L38). Cited in [Chapter](/chapter/trace-formula/).
+- `New.exists_isCutPair_besselAverage`: `New/Spanning/Bessel/CutTailBound.lean`, [line 411](lean:New/Spanning/Bessel/CutTailBound.lean#L411). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.exists_isDecayMajorant_besselAverage`: `New/Spanning/Bessel/CutTailBound.lean`, [line 348](lean:New/Spanning/Bessel/CutTailBound.lean#L348). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_isDualIsometry`: `Lib/GLn/Dual.lean`, [line 414](lean:Lib/GLn/Dual.lean#L414). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_isDualPairing_of_isHCParam`: `Lib/GLn/Dual.lean`, [line 1079](lean:Lib/GLn/Dual.lean#L1079). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_isExpansionFamily`: `Lib/General/Groups/CharacterTheory.lean`, [line 589](lean:Lib/General/Groups/CharacterTheory.lean#L589). Cited in [Chapter](/chapter/congruence-subgroups/).
@@ -698,8 +781,10 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.exists_map_norm_eq_of_abelianLift_artinAt_eq_one`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 602](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L602). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_matrix_addVal_det_le_length`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 303](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L303). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.exists_measure_laplace_eq`: `Lib/Analytic/Landau.lean`, [line 104](lean:Lib/Analytic/Landau.lean#L104). Cited in [Chapter](/chapter/landau-criterion/).
+- `New.exists_mem_filtration_smear_word`: `New/Spanning/Bessel/SchurBound.lean`, [line 74](lean:New/Spanning/Bessel/SchurBound.lean#L74). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_monoidHom_extend`: `Lib/General/Groups/ProfiniteCharacters.lean`, [line 398](lean:Lib/General/Groups/ProfiniteCharacters.lean#L398). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.exists_mul_abs_gaussianMonomial_mul_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 404](lean:Lib/Analytic/QuadraticTwist.lean#L404). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.exists_mul_eq_mul_gramSection_mul`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 524](lean:New/Spanning/Bessel/OpenCellBound.lean#L524). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_mul_exp_le`: `Lib/Analytic/Landau.lean`, [line 84](lean:Lib/Analytic/Landau.lean#L84). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
 - `New.exists_mul_mem_integralAbove`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 88](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L88). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.exists_ne_zero_inv_mulVec_mem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 137](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L137). Cited in [Chapter](/chapter/reduction-theory/).
@@ -754,18 +839,22 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Filling.exists_integral_big_cell_decomp`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 243](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L243). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.exists_pivot_mul_eq_one`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 166](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L166). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.Fits.petersson_poincare`: `New/Spanning/Unfolding/PoincareSeries.lean`, [line 734](lean:New/Spanning/Unfolding/PoincareSeries.lean#L734). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Filling.frameDisc_frameGram_inv_mul_mul_of_mem_besselU`: `New/Spanning/Unfolding/Link.lean`, [line 239](lean:New/Spanning/Unfolding/Link.lean#L239). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Filling.frameGram_weylElem_mul`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 64](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L64). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.HasAmplitudeBlocks`: `New/Spanning/Unfolding/Moments.lean`, [line 92](lean:New/Spanning/Unfolding/Moments.lean#L92). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.HasAmplitudeBlocks.hilbertSchmidtNorm_sub_one_sq_le`: `New/Spanning/Unfolding/Moments.lean`, [line 480](lean:New/Spanning/Unfolding/Moments.lean#L480). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.HasAmplitudeBlocks.isNearIsometry_piTensorElem_comp`: `New/Spanning/Unfolding/Moments.lean`, [line 1230](lean:New/Spanning/Unfolding/Moments.lean#L1230). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.HasAmplitudeBlocks.sum_hilbertSchmidtNorm_sq_le`: `New/Spanning/Unfolding/Moments.lean`, [line 567](lean:New/Spanning/Unfolding/Moments.lean#L567). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.HasAmplitudeBlocks.sum_hilbertSchmidtNorm_sub_besselTranslate_sq_le`: `New/Spanning/Unfolding/Moments.lean`, [line 446](lean:New/Spanning/Unfolding/Moments.lean#L446). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Filling.inclHFin_mem_latticeStabilizer_iff`: `New/Spanning/Unfolding/Climbing.lean`, [line 453](lean:New/Spanning/Unfolding/Climbing.lean#L453). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Filling.IsAdmissible`: `New/Spanning/Unfolding/Setup.lean`, [line 501](lean:New/Spanning/Unfolding/Setup.lean#L501). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
+- `New.Filling.IsDiscreteSeriesBessel`: `New/Spanning/Bessel/LargeFunction.lean`, [line 60](lean:New/Spanning/Bessel/LargeFunction.lean#L60). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Filling.leadingMinor_frameGram_besselU_mul`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 702](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L702). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.leadingMinor_weylElem_mul`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 77](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L77). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.linkSecondMoment_isOpenElement_le`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 631](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L631). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.lintegral_classCutoff_eq_unipotentCovolume`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 728](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L728). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.mem_besselS_iff_frameImage`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 862](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L862). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Filling.reduction_inclHFin_eq_one_iff`: `New/Spanning/Unfolding/Climbing.lean`, [line 478](lean:New/Spanning/Unfolding/Climbing.lean#L478). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Filling.secondMoment_remainingTerms_le`: `New/Spanning/RemainingTerms/Sum.lean`, [line 682](lean:New/Spanning/RemainingTerms/Sum.lean#L682). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.simpleRootSum_inv`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 86](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L86). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.sqrt_secondMoment_compl_besselS_le`: `New/Spanning/Unfolding/SquareExpansion.lean`, [line 559](lean:New/Spanning/Unfolding/SquareExpansion.lean#L559). Cited in [Chapter](/chapter/theorem-b-plan/).
@@ -826,6 +915,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Floors.cartan_decomposition`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 251](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L251). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.cellDensity`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 184](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L184). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.coe_weylRatio`: `New/Spanning/Frames/Lengths.lean`, [line 141](lean:New/Spanning/Frames/Lengths.lean#L141). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.exists_hasLocalBounds_of_isCutBessel`: `New/Spanning/Frames/RealBandLimits.lean`, [line 696](lean:New/Spanning/Frames/RealBandLimits.lean#L696). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Floors.exists_isDisintegration_le_sphereDensity`: `Lib/DiscreteSeries/Bruhat/SphereFibres.lean`, [line 52](lean:Lib/DiscreteSeries/Bruhat/SphereFibres.lean#L52). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.bijOn_mulVec_eStar`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 353](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L353). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.exists_eq_heisenbergElem_of_mem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 339](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L339). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -971,6 +1061,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Floors.PlaceData.weightedSquare`: `New/Spanning/Frames/Correlations.lean`, [line 99](lean:New/Spanning/Frames/Correlations.lean#L99). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.PlaceData.weightedSquareIntegral`: `New/Spanning/Frames/Correlations.lean`, [line 113](lean:New/Spanning/Frames/Correlations.lean#L113). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.PlaceData.weightedSquareSum`: `New/Spanning/Frames/Correlations.lean`, [line 104](lean:New/Spanning/Frames/Correlations.lean#L104). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.quotientPairing`: `New/Spanning/Frames/RealBandLimits.lean`, [line 268](lean:New/Spanning/Frames/RealBandLimits.lean#L268). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Floors.RealPlaceSizes`: `New/Spanning/Frames/RealPlaceGauge.lean`, [line 290](lean:New/Spanning/Frames/RealPlaceGauge.lean#L290). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
 - `New.Floors.RealPlaceSizes.ten_pow_le_varrho`: `New/Spanning/Frames/RealPlaceGauge.lean`, [line 302](lean:New/Spanning/Frames/RealPlaceGauge.lean#L302). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Floors.sectionMeasure`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 346](lean:New/Spanning/Frames/QuadricVolumes.lean#L346). Cited in [Chapter](/chapter/local-frames/).
@@ -1085,18 +1176,25 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.FockDualPair.varSign`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 152](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L152). Cited in [Chapter](/chapter/local-theta/).
 - `New.fockPairing`: `Lib/GLn/SchurModule/Basic.lean`, [line 94](lean:Lib/GLn/SchurModule/Basic.lean#L94). Cited in [Chapter](/chapter/weyl-modules/), [Chapter](/chapter/weil-representation/).
 - `New.fockPairing_comm`: `Lib/GLn/SchurModule/Basic.lean`, [line 665](lean:Lib/GLn/SchurModule/Basic.lean#L665). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.fockPairing_rename_rename`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 267](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L267). Cited in [Chapter](/chapter/character-lifts/).
 - `New.fockPairing_rowSubst`: `Lib/GLn/SchurModule/Basic.lean`, [line 687](lean:Lib/GLn/SchurModule/Basic.lean#L687). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fockPairing_star_self_pos`: `Lib/GLn/SchurModule/Basic.lean`, [line 726](lean:Lib/GLn/SchurModule/Basic.lean#L726). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fockPairing_toPoly_nablaBasis`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 153](lean:Lib/GLn/SchurModule/GramMatrix.lean#L153). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fockPairing_toPoly_toPoly`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 167](lean:Lib/GLn/SchurModule/GramMatrix.lean#L167). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.formalDegree_mul_lintegral_decay_le`: `New/Spanning/Bessel/CutTailBound.lean`, [line 87](lean:New/Spanning/Bessel/CutTailBound.lean#L87). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.formalDegree_mul_volume_ball_le`: `New/Spanning/Bessel/CutTailBound.lean`, [line 108](lean:New/Spanning/Bessel/CutTailBound.lean#L108). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.formalDegree_pos`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 545](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L545). Cited in [Chapter](/chapter/discrete-series/).
 - `New.formGram`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 100](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L100). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.formLift`: `Lib/Weil/Lift.lean`, [line 767](lean:Lib/Weil/Lift.lean#L767). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.four_mul_le_norm_stdAddChar_sub_one`: `Lib/Analytic/PolyaVinogradov.lean`, [line 43](lean:Lib/Analytic/PolyaVinogradov.lean#L43). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.frameBox`: `New/Spanning/Bessel/Basic.lean`, [line 73](lean:New/Spanning/Bessel/Basic.lean#L73). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.FrameClass`: `Lib/Adelic/TraceFormula/OrbitalUnfolding.lean`, [line 111](lean:Lib/Adelic/TraceFormula/OrbitalUnfolding.lean#L111). Cited in [Chapter](/chapter/trace-formula/).
+- `New.frameDisc`: `New/Spanning/Bessel/Basic.lean`, [line 664](lean:New/Spanning/Bessel/Basic.lean#L664). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.free_finite_of_rank_le`: `Lib/General/Algebra/AdicCompletion.lean`, [line 583](lean:Lib/General/Algebra/AdicCompletion.lean#L583). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.freeLevelEquiv`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 244](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L244). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.FrobeniusDatum`: `Lib/GaloisRep/Main/Defs.lean`, [line 192](lean:Lib/GaloisRep/Main/Defs.lean#L192). Cited in [Chapter](/chapter/attached-representations/).
+- `New.FullOrCut`: `New/Spanning/Bessel/Basic.lean`, [line 952](lean:New/Spanning/Bessel/Basic.lean#L952). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.FullOrCut.select`: `New/Spanning/Bessel/Basic.lean`, [line 959](lean:New/Spanning/Bessel/Basic.lean#L959). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.G`: `Lib/Adelic/Unitary/Defs.lean`, [line 238](lean:Lib/Adelic/Unitary/Defs.lean#L238). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.G.toUnitary`: `Lib/Adelic/Unitary/Defs.lean`, [line 419](lean:Lib/Adelic/Unitary/Defs.lean#L419). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.galActionGL`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 71](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L71). Cited in [Chapter](/chapter/finite-gln/).
@@ -1220,6 +1318,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.glMultiplier_mul_of_mem`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 700](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L700). Cited in [Chapter](/chapter/weil-representation/).
 - `New.goodTuples`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 143](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L143). Cited in [Chapter](/chapter/upper-bound-objects/), [Chapter](/chapter/equal-multiplicities/).
 - `New.gradedGram`: `Lib/Weil/Periods/Grading.lean`, [line 85](lean:Lib/Weil/Periods/Grading.lean#L85). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.gradedLatticeBasis`: `New/UpperBound/Seesaw/AdmissibleCombinations.lean`, [line 78](lean:New/UpperBound/Seesaw/AdmissibleCombinations.lean#L78). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading`: `Lib/Weil/Periods/Grading.lean`, [line 100](lean:Lib/Weil/Periods/Grading.lean#L100). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.AgreesWithStringMap`: `Lib/Weil/Periods/Grading.lean`, [line 354](lean:Lib/Weil/Periods/Grading.lean#L354). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.agreesWithStringMap_mul_iff`: `Lib/Weil/Periods/BesselIntegral.lean`, [line 645](lean:Lib/Weil/Periods/BesselIntegral.lean#L645). Cited in [Chapter](/chapter/bessel-periods/).
@@ -1238,8 +1337,11 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Grading.exists_equiv_agreeingTranslates`: `Lib/Weil/Periods/Unfolding.lean`, [line 404](lean:Lib/Weil/Periods/Unfolding.lean#L404). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.exists_finite_representatives`: `Lib/Weil/Periods/LatticeBounds.lean`, [line 195](lean:Lib/Weil/Periods/LatticeBounds.lean#L195). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.exists_gram_mul_eq_gram_degreeZeroPart`: `Lib/Weil/Periods/GradedLattice.lean`, [line 235](lean:Lib/Weil/Periods/GradedLattice.lean#L235). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.exists_inclXFin_sub_one_eq`: `New/UpperBound/Seesaw/GluedLevel.lean`, [line 53](lean:New/UpperBound/Seesaw/GluedLevel.lean#L53). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.exists_integral_eq_sum_over_cut`: `New/UpperBound/Seesaw/IntegralAsCosetSum.lean`, [line 367](lean:New/UpperBound/Seesaw/IntegralAsCosetSum.lean#L367). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.exists_isGraded`: `Lib/Weil/Periods/GradedLattice.lean`, [line 282](lean:Lib/Weil/Periods/GradedLattice.lean#L282). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.exists_lattice_inclXFin_mul_eq`: `Lib/Weil/Periods/PointLattice.lean`, [line 429](lean:Lib/Weil/Periods/PointLattice.lean#L429). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.exists_mapsTo_lattice_hasDegreeGe_sub_smul_stringMap`: `New/UpperBound/Seesaw/Frequency.lean`, [line 229](lean:New/UpperBound/Seesaw/Frequency.lean#L229). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.exists_tsum_enorm_constTerm_le`: `Lib/Weil/Periods/ConstantTerm.lean`, [line 549](lean:Lib/Weil/Periods/ConstantTerm.lean#L549). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.exists_unipotent_mul_inclX`: `Lib/Weil/Periods/Grading.lean`, [line 621](lean:Lib/Weil/Periods/Grading.lean#L621). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.finite_image_latticeMinus`: `Lib/Weil/Periods/LatticeBounds.lean`, [line 115](lean:Lib/Weil/Periods/LatticeBounds.lean#L115). Cited in [Chapter](/chapter/bessel-periods/).
@@ -1260,6 +1362,8 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Grading.hasSum_integral_classTerm`: `Lib/Weil/Periods/Unfolding.lean`, [line 215](lean:Lib/Weil/Periods/Unfolding.lean#L215). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.hasSum_unfoldStep`: `Lib/Weil/Periods/Unfolding.lean`, [line 435](lean:Lib/Weil/Periods/Unfolding.lean#L435). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.inclX`: `Lib/Weil/Periods/Grading.lean`, [line 139](lean:Lib/Weil/Periods/Grading.lean#L139). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.inclXFin_mem_levelOf`: `New/UpperBound/Seesaw/GluedLevel.lean`, [line 138](lean:New/UpperBound/Seesaw/GluedLevel.lean#L138). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.inclXFin_mem_stdLevel`: `New/UpperBound/Seesaw/GluedLevel.lean`, [line 99](lean:New/UpperBound/Seesaw/GluedLevel.lean#L99). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.integral_besselGroup_unfold`: `Lib/Weil/Periods/Unfolding.lean`, [line 518](lean:Lib/Weil/Periods/Unfolding.lean#L518). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.integral_besselMeasure_eq_of_mean`: `Lib/Weil/Periods/BesselIntegral.lean`, [line 408](lean:Lib/Weil/Periods/BesselIntegral.lean#L408). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.integral_tsum_classTerm_eq_zero`: `Lib/Weil/Periods/Unfolding.lean`, [line 250](lean:Lib/Weil/Periods/Unfolding.lean#L250). Cited in [Chapter](/chapter/bessel-periods/).
@@ -1270,9 +1374,12 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Grading.isEquivariant_unfoldStep`: `Lib/Weil/Periods/ConstantTerm.lean`, [line 887](lean:Lib/Weil/Periods/ConstantTerm.lean#L887). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.isFiniteMeasure_besselMeasure`: `Lib/Weil/Periods/BesselIntegral.lean`, [line 262](lean:Lib/Weil/Periods/BesselIntegral.lean#L262). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.IsGraded`: `Lib/Weil/Periods/PointLattice.lean`, [line 197](lean:Lib/Weil/Periods/PointLattice.lean#L197). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.IsGraded.mulVec_mem_of_homogeneous`: `New/UpperBound/Seesaw/Frequency.lean`, [line 74](lean:New/UpperBound/Seesaw/Frequency.lean#L74). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.isMulRightInvariant_haar_besselGroup`: `Lib/Weil/Periods/BesselIntegral.lean`, [line 267](lean:Lib/Weil/Periods/BesselIntegral.lean#L267). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.latticeMinus`: `Lib/Weil/Periods/PointLattice.lean`, [line 200](lean:Lib/Weil/Periods/PointLattice.lean#L200). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.latticePlus`: `Lib/Weil/Periods/PointLattice.lean`, [line 204](lean:Lib/Weil/Periods/PointLattice.lean#L204). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.LatticeSplitsAt`: `New/UpperBound/Seesaw/Sandwich.lean`, [line 58](lean:New/UpperBound/Seesaw/Sandwich.lean#L58). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.LatticeSplitsAt.conj_scalarFin_mem`: `New/UpperBound/Seesaw/Sandwich.lean`, [line 112](lean:New/UpperBound/Seesaw/Sandwich.lean#L112). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.lintegral_tsum_enorm_classTerm_lt_top`: `Lib/Weil/Periods/Unfolding.lean`, [line 206](lean:Lib/Weil/Periods/Unfolding.lean#L206). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.mapDegree`: `Lib/Weil/Periods/Grading.lean`, [line 359](lean:Lib/Weil/Periods/Grading.lean#L359). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.mem_besselGroup`: `Lib/Weil/Periods/Grading.lean`, [line 175](lean:Lib/Weil/Periods/Grading.lean#L175). Cited in [Chapter](/chapter/bessel-periods/).
@@ -1284,7 +1391,22 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.Grading.ratBessel`: `Lib/Weil/Periods/Grading.lean`, [line 184](lean:Lib/Weil/Periods/Grading.lean#L184). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.shift`: `Lib/Weil/Periods/Grading.lean`, [line 374](lean:Lib/Weil/Periods/Grading.lean#L374). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.shift_mulVec_stringPower`: `Lib/Weil/Periods/StringPowers.lean`, [line 121](lean:Lib/Weil/Periods/StringPowers.lean#L121). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.smul_latticeMinus_le_of_map_latticePlus`: `New/UpperBound/Seesaw/Sandwich.lean`, [line 144](lean:New/UpperBound/Seesaw/Sandwich.lean#L144). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.smul_map_stringMapFin_latticePlus_le`: `New/UpperBound/Seesaw/Frequency.lean`, [line 307](lean:New/UpperBound/Seesaw/Frequency.lean#L307). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.sourceFn`: `Lib/Weil/Periods/Equivariant.lean`, [line 293](lean:Lib/Weil/Periods/Equivariant.lean#L293). Cited in [Chapter](/chapter/bessel-periods/).
+- `New.Grading.SpansLattice`: `New/UpperBound/Seesaw/AdmissibleCombinations.lean`, [line 89](lean:New/UpperBound/Seesaw/AdmissibleCombinations.lean#L89). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.exists_place_generates_of_notMem_latticeMinus`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 514](lean:New/UpperBound/Seesaw/StandardLines.lean#L514). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.exists_pole_of_notMem_latticeMinus`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 478](lean:New/UpperBound/Seesaw/StandardLines.lean#L478). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.hasLatticeBounds_or_latticeSplitsAt`: `New/UpperBound/Seesaw/Sandwich.lean`, [line 208](lean:New/UpperBound/Seesaw/Sandwich.lean#L208). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.isGraded`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 264](lean:New/UpperBound/Seesaw/StandardLines.lean#L264). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.map_stringMapFin_latticePlus`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 431](lean:New/UpperBound/Seesaw/StandardLines.lean#L431). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.mem_lattice_and_stringProj_eq_zero_iff`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 356](lean:New/UpperBound/Seesaw/StandardLines.lean#L356). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.mem_lattice_iff`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 224](lean:New/UpperBound/Seesaw/StandardLines.lean#L224). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.mem_latticeMinus_iff`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 288](lean:New/UpperBound/Seesaw/StandardLines.lean#L288). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.mem_latticePlus_iff`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 301](lean:New/UpperBound/Seesaw/StandardLines.lean#L301). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.odd_and_exists_place_of_notMem_latticeMinus`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 557](lean:New/UpperBound/Seesaw/StandardLines.lean#L557). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.stringSum_mem_latticeMinus_iff`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 386](lean:New/UpperBound/Seesaw/StandardLines.lean#L386). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Grading.SpansLattice.stringSum_mem_latticePlus_iff`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 406](lean:New/UpperBound/Seesaw/StandardLines.lean#L406). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Grading.stringMap`: `Lib/Weil/Periods/Grading.lean`, [line 345](lean:Lib/Weil/Periods/Grading.lean#L345). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.stringMap_mul_formAdjoint_stringMap_eq_shift`: `Lib/Weil/Periods/Grading.lean`, [line 902](lean:Lib/Weil/Periods/Grading.lean#L902). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.Grading.stringMap_mulVec_stringPower`: `Lib/Weil/Periods/StringPowers.lean`, [line 235](lean:Lib/Weil/Periods/StringPowers.lean#L235). Cited in [Chapter](/chapter/bessel-periods/).
@@ -1370,6 +1492,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.HasHolGap`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 398](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L398). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HasLabel`: `Lib/GaloisRep/Main/Defs.lean`, [line 99](lean:Lib/GaloisRep/Main/Defs.lean#L99). Cited in [Chapter](/chapter/attached-representations/).
 - `New.HasLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 257](lean:Lib/Adelic/Unitary/Defs.lean#L257). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.HasLocalBounds`: `New/Spanning/Bessel/Basic.lean`, [line 938](lean:New/Spanning/Bessel/Basic.lean#L938). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.hasMellin_thetaSeries_char`: `Lib/Analytic/DirichletTheta.lean`, [line 466](lean:Lib/Analytic/DirichletTheta.lean#L466). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.HasNoSmallRelations`: `Lib/General/LinearAlgebra/MatrixPolynomials.lean`, [line 75](lean:Lib/General/LinearAlgebra/MatrixPolynomials.lean#L75). Cited in [Chapter](/chapter/building-representations/).
 - `New.HasPrimeDensity`: `Lib/ClassField/HeckeL/EulerProduct.lean`, [line 80](lean:Lib/ClassField/HeckeL/EulerProduct.lean#L80). Cited in [Chapter](/chapter/class-field-theory/).
@@ -1405,6 +1528,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.HCParam.HasLargeGap.exists_bump_conv_dsKernel`: `Lib/DiscreteSeries/Rigidity/KernelFixes.lean`, [line 167](lean:Lib/DiscreteSeries/Rigidity/KernelFixes.lean#L167). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.HasLargeGap.isIdempotentKernel_dsKernel`: `Lib/DiscreteSeries/Rigidity/KernelFixes.lean`, [line 143](lean:Lib/DiscreteSeries/Rigidity/KernelFixes.lean#L143). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.HasLargeGap.isUnitaryCasimirGe_dsAction`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 738](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L738). Cited in [Chapter](/chapter/discrete-series/).
+- `New.HCParam.HasLargeGap.norm_sq_eq_formalDegree_mul_integral`: `New/Spanning/Bessel/SchurBound.lean`, [line 140](lean:New/Spanning/Bessel/SchurBound.lean#L140). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.HCParam.HasLargeGap.toL2`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 584](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L584). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.IsKHighest`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 112](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L112). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.kTypeChar`: `Lib/DiscreteSeries/Character/WeylCharacterFormula.lean`, [line 452](lean:Lib/DiscreteSeries/Character/WeylCharacterFormula.lean#L452). Cited in [Chapter](/chapter/discrete-series/).
@@ -1529,6 +1653,8 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.idelesUnitOff`: `Lib/ClassField/Places/Ideles.lean`, [line 83](lean:Lib/ClassField/Places/Ideles.lean#L83). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.identDistrib_orbitMeasure`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 220](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L220). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.image_normOneLatticeVectors_eq_orbit_inter`: `Lib/SiegelWeil/Mass.lean`, [line 141](lean:Lib/SiegelWeil/Mass.lean#L141). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.InCut`: `New/Spanning/Bessel/Basic.lean`, [line 870](lean:New/Spanning/Bessel/Basic.lean#L870). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.inCut_of_besselCut_ne_zero`: `New/Spanning/Bessel/CutTailBound.lean`, [line 261](lean:New/Spanning/Bessel/CutTailBound.lean#L261). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.index_ker_abelianLift_comp_artinMap`: `Lib/ClassField/Global/NormTheorems.lean`, [line 162](lean:Lib/ClassField/Global/NormTheorems.lean#L162). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.induceClassFn`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 67](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L67). Cited in [Chapter](/chapter/finite-gln/).
 - `New.inertiaGroup`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 228](lean:Lib/ClassField/Places/GaloisDefs.lean#L228). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
@@ -1596,10 +1722,20 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.IsArrow.coe_formLift`: `Lib/Weil/Lift.lean`, [line 927](lean:Lib/Weil/Lift.lean#L927). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsArrow.formRep_formLift`: `Lib/Weil/Lift.lean`, [line 933](lean:Lib/Weil/Lift.lean#L933). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsArrow.inner_formLift_adjoint`: `Lib/Weil/Lift.lean`, [line 960](lean:Lib/Weil/Lift.lean#L960). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsAuxiliary`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 96](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L96). Cited in [Chapter](/chapter/tied-traces/).
+- `New.IsAuxPrimeDataAt`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 71](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L71). Cited in [Chapter](/chapter/tied-traces/).
 - `New.IsBadPrime`: `Lib/Analytic/QuadraticTwist.lean`, [line 724](lean:Lib/Analytic/QuadraticTwist.lean#L724). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/polya-vinogradov/).
 - `New.IsBesselFunction`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 662](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L662). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.IsBesselFunction.besselCut`: `New/Spanning/Bessel/CutTailBound.lean`, [line 276](lean:New/Spanning/Bessel/CutTailBound.lean#L276). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsBesselFunction.convolve_of_integrable`: `New/Spanning/Bessel/SchurBound.lean`, [line 270](lean:New/Spanning/Bessel/SchurBound.lean#L270). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.IsBesselFunction.enorm_besselS_mul`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 667](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L667). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBesselFunction.enorm_integral_besselS_mul`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 646](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L646). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.IsBesselFunction.hasSchurBound_of_convolve_eq`: `New/Spanning/Bessel/SchurBound.lean`, [line 290](lean:New/Spanning/Bessel/SchurBound.lean#L290). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsBesselFunction.integral_dsKernel_mul_eq_of_convolve_eq`: `New/Spanning/Bessel/FillingData.lean`, [line 308](lean:New/Spanning/Bessel/FillingData.lean#L308). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsBesselFunction.integral_mul_conj_embedH_mul`: `New/Spanning/Bessel/Orthonormality.lean`, [line 44](lean:New/Spanning/Bessel/Orthonormality.lean#L44). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsBesselFunction.integral_mul_conj_eq`: `New/Spanning/Bessel/Orthonormality.lean`, [line 74](lean:New/Spanning/Bessel/Orthonormality.lean#L74). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsBesselFunction.lintegral_enorm_sq_integral_inner_translate`: `New/Spanning/Bessel/SchurBound.lean`, [line 237](lean:New/Spanning/Bessel/SchurBound.lean#L237). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsBesselFunction.smul_of_invariant`: `New/Spanning/Bessel/CutTailBound.lean`, [line 187](lean:New/Spanning/Bessel/CutTailBound.lean#L187). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.IsBlockRule`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 55](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L55). Cited in [Chapter](/chapter/local-theta/), [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsBlockRule.neg`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 317](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L317). Cited in [Chapter](/chapter/local-theta/).
 - `New.IsBlockRule.shift`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 351](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L351). Cited in [Chapter](/chapter/local-theta/).
@@ -1608,6 +1744,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.IsBoundedMeasurable`: `Lib/General/Measure/IdempotentKernel.lean`, [line 38](lean:Lib/General/Measure/IdempotentKernel.lean#L38). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBoundedMeasurable.integral_inner_translate`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 262](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L262). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBoundedMeasurable.lintegral_sq_convolve_convolve_le`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 570](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L570). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.isBoundedMeasurable_formalDegree_mul_dsCoeffInFrame`: `New/Spanning/Bessel/SchurBound.lean`, [line 52](lean:New/Spanning/Bessel/SchurBound.lean#L52). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.IsCentralProj`: `Lib/General/Groups/CharacterTheory.lean`, [line 373](lean:Lib/General/Groups/CharacterTheory.lean#L373). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/finite-gln/).
 - `New.IsCentralProj.isChar_card_mul_coeff`: `Lib/General/Groups/CharacterTheory.lean`, [line 737](lean:Lib/General/Groups/CharacterTheory.lean#L737). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.IsCentralProj.norm_coeff_le_one`: `Lib/General/Groups/CharacterTheory.lean`, [line 776](lean:Lib/General/Groups/CharacterTheory.lean#L776). Cited in [Chapter](/chapter/congruence-subgroups/).
@@ -1646,6 +1783,12 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.IsCutoff.integral_orbitMeasure`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 244](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L244). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.IsCutoff.measurePreserving`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 208](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L208). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.isCutoff_chosenCutoff`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 91](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L91). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.IsCutPair`: `New/Spanning/Bessel/Basic.lean`, [line 987](lean:New/Spanning/Bessel/Basic.lean#L987). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsCutPair.exists_integral_cut_mul_conj_eq`: `New/Spanning/Bessel/Orthonormality.lean`, [line 159](lean:New/Spanning/Bessel/Orthonormality.lean#L159). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsCutPair.integrable_cut`: `New/Spanning/Bessel/Orthonormality.lean`, [line 135](lean:New/Spanning/Bessel/Orthonormality.lean#L135). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsCutPair.lintegral_sq_inner_cut_le`: `New/Spanning/Bessel/Orthonormality.lean`, [line 183](lean:New/Spanning/Bessel/Orthonormality.lean#L183). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsDecayMajorant`: `New/Spanning/Bessel/Basic.lean`, [line 966](lean:New/Spanning/Bessel/Basic.lean#L966). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.IsDecayMajorant.lintegral_sq_besselCut_sub_le`: `New/Spanning/Bessel/CutTailBound.lean`, [line 289](lean:New/Spanning/Bessel/CutTailBound.lean#L289). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.IsDenseFamily`: `Lib/General/Geometry/DenseComplexPoints.lean`, [line 56](lean:Lib/General/Geometry/DenseComplexPoints.lean#L56). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.IsDenseFamily.surjective`: `Lib/General/Geometry/DenseComplexPoints.lean`, [line 101](lean:Lib/General/Geometry/DenseComplexPoints.lean#L101). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.IsDerivedAction`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 100](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L100). Cited in [Chapter](/chapter/discrete-series/).
@@ -1897,6 +2040,7 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.latticeMeasure_inter_eq_glMultiplier`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 914](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L914). Cited in [Chapter](/chapter/weil-representation/).
 - `New.latticeMeasure_stdLattice`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 322](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L322). Cited in [Chapter](/chapter/weil-representation/).
 - `New.le_of_setLIntegral_le`: `Lib/General/Measure/FibreMeasure.lean`, [line 50](lean:Lib/General/Measure/FibreMeasure.lean#L50). Cited in [Chapter](/chapter/congruence-subgroups/).
+- `New.le_scaledBesselLength`: `New/Spanning/Bessel/Basic.lean`, [line 862](lean:New/Spanning/Bessel/Basic.lean#L862). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.le_span_isSphericalOff`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 477](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L477). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.le_totient_mul_log`: `Lib/Analytic/Primes.lean`, [line 56](lean:Lib/Analytic/Primes.lean#L56). Cited in [Chapter](/chapter/primes-in-windows/), [Chapter](/chapter/equal-multiplicities/).
 - `New.le_two_of_pow_le_ofReal`: `Lib/SiegelWeil/Mass.lean`, [line 235](lean:Lib/SiegelWeil/Mass.lean#L235). Cited in [Chapter](/chapter/siegel-weil/).
@@ -1920,11 +2064,12 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.levelOf`: `Lib/Adelic/Unitary/CongruenceLevels.lean`, [line 259](lean:Lib/Adelic/Unitary/CongruenceLevels.lean#L259). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 346](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L346). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces.LevelForm`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 467](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L467). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
-- `New.LevelPlaces.LevelForm.inner_eq_petersson`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 85](lean:New/OneLift/HeckeValues/CharacterLift.lean#L85). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.LevelPlaces.LevelForm.inner_eq_petersson`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 85](lean:New/OneLift/HeckeValues/CharacterLift.lean#L85). Cited in [Chapter](/chapter/single-theta-lifts/), [Chapter](/chapter/character-lifts/).
 - `New.LevelPlaces.LevelForm.inner_eq_stdClassSum`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 604](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L604). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces.LevelForm.inner_eq_valueCoord`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 810](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L810). Cited in [Chapter](/chapter/integral-target-forms/).
 - `New.LevelPlaces.LevelForm.innerAt`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 513](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L513). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.LevelPlaces.LevelForm.innerAt_eq_stdClassSum`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 537](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L537). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.LevelPlaces.LevelForm.innerAt_eq_stdClassSum`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 537](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L537). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/character-lifts/).
+- `New.LevelPlaces.LevelForm.innerAt_heckePolyOnForms`: `New/OneLift/TestedForms.lean`, [line 340](lean:New/OneLift/TestedForms.lean#L340). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LevelPlaces.LevelForm.integralForms`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 738](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L738). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces.LevelForm.norm_nsmul_inner_le_one`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 750](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L750). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces.LevelForm.normSqAt_eq_re_valueCoord`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 818](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L818). Cited in [Chapter](/chapter/integral-target-forms/).
@@ -2053,7 +2198,9 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.LineRelation.trace_mul_mean_eq`: `Lib/Adelic/TraceFormula/LineDeterminant.lean`, [line 346](lean:Lib/Adelic/TraceFormula/LineDeterminant.lean#L346). Cited in [Chapter](/chapter/trace-formula/).
 - `New.lineStabilizer`: `Lib/Adelic/TraceFormula/LineStabiliser.lean`, [line 150](lean:Lib/Adelic/TraceFormula/LineStabiliser.lean#L150). Cited in [Chapter](/chapter/trace-formula/).
 - `New.lineTheta`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 808](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L808). Cited in [Chapter](/chapter/weil-representation/).
+- `New.lintegral_besselGraph_mul_eq`: `New/Spanning/Bessel/CutTailBound.lean`, [line 328](lean:New/Spanning/Bessel/CutTailBound.lean#L328). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.lintegral_encard_rat_points`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 60](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L60). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.lintegral_formalDegree_mul_decay_le`: `New/Spanning/Bessel/CutTailBound.lean`, [line 61](lean:New/Spanning/Bessel/CutTailBound.lean#L61). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.lintegral_gauss_sum_le_idealZeta`: `Lib/SiegelWeil/Mass.lean`, [line 367](lean:Lib/SiegelWeil/Mass.lean#L367). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.lintegral_inv_add_rpow`: `Lib/General/Measure/HaarNormalisation.lean`, [line 163](lean:Lib/General/Measure/HaarNormalisation.lean#L163). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.lintegral_iwasawa`: `Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean`, [line 505](lean:Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean#L505). Cited in [Chapter](/chapter/reduction-theory/).
@@ -2070,8 +2217,53 @@ This section and the next have the 4188 cited names outside the namespace `New.D
 - `New.LSeries_lambdaKResidueClass`: `New/Reduction/Zeros/PrimeError.lean`, [line 230](lean:New/Reduction/Zeros/PrimeError.lean#L230). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.LSeries_lambdaKResidueClass_eq_add_logDerivMean`: `New/Reduction/Zeros/PrimeError.lean`, [line 263](lean:New/Reduction/Zeros/PrimeError.lean#L263). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.LSeriesHasSum_mul_vonMangoldt`: `Lib/Analytic/EntireLFunction.lean`, [line 143](lean:Lib/Analytic/EntireLFunction.lean#L143). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/polar-functions/).
+- `New.lt_besselLength_of_besselCut_ne`: `New/Spanning/Bessel/CutTailBound.lean`, [line 267](lean:New/Spanning/Bessel/CutTailBound.lean#L267). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.LValueData`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 119](lean:New/OneLift/HeckeValues/CharacterLift.lean#L119). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.blockMass_eq_blockMeanSquare_div`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 350](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L350). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.blockMeanSquare`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 338](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L338). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.blockMeanSquare_mul_relIndex_mul_prod_eq_pow`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 393](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L393). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.charV_hasWeight`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 189](lean:New/OneLift/HeckeValues/CharacterLift.lean#L189). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.charW_hasWeight`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 183](lean:New/OneLift/HeckeValues/CharacterLift.lean#L183). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.chosenLevel`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 243](lean:New/OneLift/HeckeValues/CharacterLift.lean#L243). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.conjWeylRep_eq_one`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 207](lean:New/OneLift/HeckeValues/CharacterLift.lean#L207). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.constForm`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 155](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L155). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.descentPair`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 142](lean:New/OneLift/HeckeValues/CharacterLift.lean#L142). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.descentPair_colsPlus_apply`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 157](lean:New/OneLift/HeckeValues/CharacterLift.lean#L157). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.eulerProd_indicator_placeSign`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 532](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L532). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.fitsParams_descentPair`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 511](lean:New/OneLift/HeckeValues/CharacterLift.lean#L511). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.fockPairing_fockPoly_highestVector`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 278](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L278). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.fockPoly_eq_schurCoeffPoly`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 331](lean:New/OneLift/HeckeValues/CharacterLift.lean#L331). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.formAction_trivialLift`: `New/OneLift/HeckeValues/TwistedRatio.lean`, [line 298](lean:New/OneLift/HeckeValues/TwistedRatio.lean#L298). Cited in [Chapter](/chapter/twists-critical-pairs/).
-- `New.LValueData.inner_trivialLift_self_eq_L`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 569](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L569). Cited in [Chapter](/chapter/twists-critical-pairs/).
+- `New.LValueData.hasLiftHeckePolynomial_trivialLift`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 215](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L215). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.hookNumber_eq_prod_factorial`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 454](lean:New/OneLift/HeckeValues/CharacterLift.lean#L454). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.index_rangeParabolic_incl`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 241](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L241). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.index_stabilizer_inclMatrix_col`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 257](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L257). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.inner_thetaLift_constForm_self`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 469](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L469). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.inner_trivialLift`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 441](lean:New/OneLift/HeckeValues/CharacterLift.lean#L441). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.inner_trivialLift_self_eq_L`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 569](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L569). Cited in [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/character-lifts/).
+- `New.LValueData.integral_fockInner_realPairWeil`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 433](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L433). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.isForm_const_one`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 142](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L142). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.isHCParam_zero`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 497](lean:New/OneLift/HeckeValues/CharacterLift.lean#L497). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.isLiftWeight`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 173](lean:New/OneLift/HeckeValues/CharacterLift.lean#L173). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.isSharp_blockDatum`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 376](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L376). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.kernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 218](lean:New/OneLift/HeckeValues/CharacterLift.lean#L218). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.kernelForm_eq_vectorKernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 423](lean:New/OneLift/HeckeValues/CharacterLift.lean#L423). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.kernelForm_invariant`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 257](lean:New/OneLift/HeckeValues/CharacterLift.lean#L257). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.kernelForm_of_rowLength_eq_zero`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 401](lean:New/OneLift/HeckeValues/CharacterLift.lean#L401). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.kernelValue`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 163](lean:New/OneLift/HeckeValues/CharacterLift.lean#L163). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.lift_fockDatum_const_one`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 197](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L197). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.liftKernel`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 197](lean:New/OneLift/HeckeValues/CharacterLift.lean#L197). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.map_pairWeilFinite_blockDatum`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 613](lean:New/OneLift/HeckeValues/CharacterLift.lean#L613). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.map_trivialLift`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 733](lean:New/OneLift/HeckeValues/CharacterLift.lean#L733). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.normalizedDescent_eq_inner_kernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 433](lean:New/OneLift/HeckeValues/CharacterLift.lean#L433). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.relIndex_descentResidueLevel`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 324](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L324). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.schurJet_jetSeries_eq_kernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 471](lean:New/OneLift/HeckeValues/CharacterLift.lean#L471). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.stdLevelIndex_chosenLevel`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 311](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L311). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.theta_pairThetaKernel_omega_fockDatum`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 368](lean:New/OneLift/HeckeValues/CharacterLift.lean#L368). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.toPoly_eq_rename_fockPoly`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 310](lean:New/OneLift/HeckeValues/CharacterLift.lean#L310). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.trivialLift`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 248](lean:New/OneLift/HeckeValues/CharacterLift.lean#L248). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.trivialLift_eq_smul_thetaLift`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 160](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L160). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.trivialLift_eq_stdClassSum_translate`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 280](lean:New/OneLift/HeckeValues/CharacterLift.lean#L280). Cited in [Chapter](/chapter/character-lifts/).
 - `New.l₀`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 90](lean:New/Reduction/Data/FieldsAndPlaces.lean#L90). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.l₀_le_mul`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 97](lean:New/Reduction/Data/FieldsAndPlaces.lean#L97). Cited in [Chapter](/chapter/notation/).
 - `PeriodPair.IsOrderTwo.scaledDisc_eq`: `Lib/CM/GoodReduction.lean`, [line 376](lean:Lib/CM/GoodReduction.lean#L376). Cited in [Chapter](/chapter/cm-elliptic-curves/).
