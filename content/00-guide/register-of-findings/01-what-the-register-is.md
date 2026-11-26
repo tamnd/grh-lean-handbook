@@ -31,8 +31,6 @@ The findings are grouped by kind. Each group has its own section and one table o
 
 A path in the second column is relative to `grh/src` when it is a link. A path that starts with `grh/` is a document or a file of the edition outside `src`, such as `grh/README.md` or `grh/Challenge.lean`. A path that starts with `grh-compact/` is a file of the compact edition. A path written as root `README.md` is the file at the top of the repository. When a finding has more than one place, the link goes to the first, and the other lines follow in plain text.
 
-The fifth column names chapters by their identifiers in the plans of the volumes. A link to a chapter that is not written yet prints its title only. Some findings belong to two chapters, for example a junk value of a definition in Volume 4 that a theorem of Volume 10 must avoid. Then the column names both.
-
 ### The two statuses
 
 A row has one of two statuses.
@@ -51,20 +49,6 @@ Four of the open questions are checks that need a person with a machine, or a pe
 
 The other open rows have no issue of their own yet. A person who takes one of them opens an issue and writes its number into the row. Section 9 lists the open questions of the notes, each with the findings it concerns.
 
-### The groups
-
-The sections of this chapter follow the kinds of finding.
-
-1. Checks, trust and the two editions (Section 2): what the repository claims about its checks, what the trusted statements say, and how the two editions differ.
-2. Settings and instances (Section 3): the global options, the changes to instances and to `simp`, sealed and irreducible definitions.
-3. Junk values and chosen objects (Section 4): definitions that take a conventional value, and objects that `choose` or `Classical.epsilon` picks.
-4. Definitions weaker than the textbook (Section 5): names of standard objects whose definitions in the source ask less.
-5. Constants that may vanish (Section 6): identities $X = cY$ that can hold with both sides $0$, and the places where nonvanishing comes back.
-6. Hypotheses and sizes (Section 7): standing, bundled and unused hypotheses, and thresholds that differ between files.
-7. Citations and docstrings (Section 8): unchecked or doubtful citations, and documents that disagree with the code.
-
-Section 9 gives the open questions. Section 10 has exercises and the notes.
-
 ### How the register grows
 
 The book is rebuilt at each release, and this chapter with it. When a writer of a later chapter finds a new point, or when a person closes an open row, the register changes. The rules for a change are these.
@@ -76,9 +60,3 @@ The book is rebuilt at each release, and this chapter with it. When a writer of 
 - A row cites one chapter or more by identifier. If no chapter treats the point yet, the row names the planned chapter that will treat it.
 
 A row has one line of the Markdown source, with the five cells between bars. A new row is a copy of an old row with new contents. So a writer can add a finding without changing anything else in the chapter.
-
-### What a reader should take from this chapter
-
-A reader does not need to read the register from top to bottom. The chapters of the book cite a finding by its number where it matters, and a reader can follow the number back to its row. A referee who wants the weakest points can read the open rows first, then the rows on constants that may vanish and on unused hypotheses. A reader who wants to check a statement of the source by themselves can use the second column as a list of places to read.
-
-The register says nothing about the five theorems beyond what the source and its documents say. It records what a reader must know to read them with care.

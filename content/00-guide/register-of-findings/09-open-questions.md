@@ -94,18 +94,6 @@ The notes asked some questions that the source answers directly. They are not in
 - Note b asked whether Theorem C is free of `sorry`. It is: no file of `grh/src` contains `sorry` (F-007).
 - Note c asked whether the division in the ratio of a comparison operator is safe. F-072 answers this in part: the field `ratio_ne_zero` holds for the operator of the proof. The notes also ask about $e_0$ and `goodForms`, and F-072 does not settle these.
 
-### Kinds of question
-
-The questions are of four kinds, and each kind needs another kind of answer.
-
-Some questions need a machine. Q-02, Q-04, Q-05 and Q-67 ask for a run of a program at the pin: the axiom check, a build with `Lib/Speed` emptied, a dependency closure of the five theorems, and a build with the linter for unused variables. A person with the pinned toolchain can answer each of them. The first two are issues 15 to 17.
-
-Some questions need the authors of the source. Q-01 asks for the original proof, and Q-02 also asks what the stand-in sandbox was. Only the authors can say. These are issues 16 and 18.
-
-Some questions need a mathematician. Q-12, Q-16, Q-39, Q-41, Q-53 and Q-55 ask whether a statement of the source is faithful to the literature, or whether a sign or a range is right. The kernel has checked the proofs, if the reported checks hold, so these are not questions of validity. They are questions of meaning: whether the formal statement says what a mathematician means by its name.
-
-Most questions need a careful reader of the source. They ask where a hypothesis is discharged, which lemma pins down a chosen object, or whether a bound leaves room. A writer of the chapter in the last column of the finding answers them, from the source, with lines. When the chapter is written, the question either closes or stays open with a better statement.
-
 ### How to close a question
 
 A person who answers a question writes the answer in an issue, with the lines of the source that support it. Then a writer of the book changes the status of the question in this table to "answered", with a link to the issue, and changes the status of each of its findings in the earlier sections. If the answer shows a new point, the writer adds a new finding with the next free number. The number of the question does not change, and an answered question stays in the table, so that a reader can see what was asked and what the answer was.

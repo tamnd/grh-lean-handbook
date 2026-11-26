@@ -76,11 +76,3 @@ For F-037 the content comes back through the injectivity of the maps of the chai
 For F-035 and F-036 the content comes back through finite dimension and finite support. A chapter that uses these definitions must cite the lemma that proves the finiteness, or say that the result is used only in a form that does not need it.
 
 For F-038, F-039 and F-040 the junk value is harmless. In F-038 the bound $z \geq 10$ is weaker than the size of the main pairs. In F-039 the function has no pole at $s = 1$, and the formula gives there the value of the convention. In F-040 the extra term $l = 0$ is $0$.
-
-### How to read a chosen object
-
-A row of the second table asks another question: which lemma describes the object? A chosen object has no formula. A reader can know of it only what its existence lemma states. So a chapter that uses a chosen object must state that lemma.
-
-Three rows are open. For F-043 and F-044 the question is whether a statement depends on the choice. If a statement uses `instWeilDataE` and another statement uses another splitting character, the two can disagree. The register has found no such case, but no one has checked every use. For F-048 the question is whether the existence of the Artin map is proved anywhere in the source. If it is not, the Artin map of the source is an arbitrary function wherever the source does not prove existence, and every statement about it holds only for the case where one exists.
-
-The other rows are explained, except F-042 and F-046, which wait for the chapters that state the lemmas. For F-042 the book states the theorems `exists_err_gaugeLe_compositeLift` and `seesaw_identity` in full in the volumes on Theorem A, and for `seesawConst` Section 6 gives the caveat of F-068. For F-049 the property is the weak notion of attachment of F-053, so the chosen representation is attached only in that weak sense.

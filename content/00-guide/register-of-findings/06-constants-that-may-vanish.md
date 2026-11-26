@@ -60,7 +60,3 @@ The case F-068 is the most visible, because the docstring of `seesawConst` calls
 The case F-069 is of the same kind. The factor $\kappa$ of the one square identity is not computed. If it were $0$, the square law would say nothing. The research notes trace the nonvanishing to the injectivity argument of F-037, but F-121 shows that the lemma for squares is not applied. So the path from the one square identity to a nonzero determinant must go through the form with chains. A chapter of Volume 11 must trace it.
 
 The cases F-073 and F-074 are in `Lib`. The branching matrix and the factor $\beta$ of a definite theta lift are not shown to be nonzero where they are defined. The file of F-073 says so in words. A chapter of Volume 5 or Volume 6 must find the use, and the register records the answer here.
-
-### How to add a row of this kind
-
-A new row of this section has the same shape. The second column gives the theorem with the constant. The third column says what the statement gives about the constant: a unit, a positive number, a nonzero number, or nothing. The fourth column says where the nonvanishing comes back, or that it is not known. A row whose fourth column names no lemma is open.

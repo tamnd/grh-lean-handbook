@@ -84,11 +84,3 @@ The first kind is a universal hypothesis of the main criterion. In F-076 the cri
 The second kind is a hypothesis that a structure, a class or an instance supplies. F-078, F-079, F-083 and F-085 are of this kind. Lean checks that the instance exists at each use. So the only question for a reader is which instance it is. In F-078 and F-083 the register has found the instance. In F-079 it has not traced the instance to the field of the main theorem on enough forms, and the row is open.
 
 The third kind is an explicit hypothesis of a lemma whose discharge the register has not traced. F-080, F-084, F-087 and F-088 are of this kind. Each is a gap in the reading, not in the proof. Lean must have checked a proof of the hypothesis at every call site, if the reported checks hold. But the book cannot explain the argument until it knows where that proof is. For F-080 the five lemmas with the hypothesis are not used outside their file, as far as the register has found. So it is possible that they are not on the path of the main theorem. A dependency closure, as in F-008, would answer this.
-
-The row F-087 corrects the plan of the book. The plan said that the bound $2r + 2N + 3 < n$ comes through `FitsParams`. It does not. It is the explicit hypothesis `h_rank` of the theorem, on the cardinalities of three index types. The structure `FitsParams`, defined in `New/UpperBound/Objects/AuxiliaryPair.lean`, does not contain it.
-
-### Reading the sizes
-
-The rows of the second table fall into two groups. The explained rows say that two files state a threshold in two forms, and that the data satisfy the stronger one. F-090 is the typical case: one file asks $10^5 \leq \varrho$, another asks $10^8 \leq \varrho$, and the data satisfy the second. The table of sizes in [the table of sizes](/chapter/sizes/) gives the threshold that the data satisfy.
-
-The open rows say that a bound has not been compared with the budget of the main inequality. For each of them, the source proves that the main inequality holds with the bound, if the reported checks hold. So the open question is not whether the bound fits. It is how much room it leaves, and whether a reader can see the fit by hand. The book needs this for its table of errors, not for the validity of the argument.

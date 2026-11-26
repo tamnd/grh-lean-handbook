@@ -60,13 +60,3 @@ The source is a formal proof. A citation is not needed for its validity: the ker
 The reason is the reader. A reader who wants to understand a step of the source looks for the paper that the step follows. If the file cites a theorem that it does not prove, as in F-102, the reader looks in the wrong place. If the file cites a work with no place, as in most citations of F-100, the reader must search the work. If the cited work is a recent preprint, as in F-104, the reader cannot rely on a referee. And if a folder cites nothing, as in F-105 and F-106, the reader cannot tell whether its method is new, and so cannot tell how much of the method the book must explain from first principles.
 
 The source itself is honest about this. Its file `REFERENCES.md` reports the state of its own citations, with the counts of F-100 and the list of F-101. The register repeats these counts so that a chapter of the book does not present a citation as checked when the source says it is not.
-
-### Why docstrings matter here
-
-A docstring is the first thing a reader of a declaration sees. In most of the source the docstrings are accurate and careful. The rows above are the exceptions that the writers of this book found.
-
-The rows are of two kinds. In F-108 and F-109 an index describes a file in words that are stronger than, or different from, what the file proves. The book follows the file. In F-110, F-111 and F-122 a docstring is true but can mislead: a constant that is a unit is called "non-zero", which is correct, but the identity around it can be trivial; a docstring says `2 ≤ z` where the field forces more. In F-112 a name suggests a wider content. In each case the Lean text is the authority.
-
-The row F-119 is not a disagreement. It is in this table because a reader of the source could take it for one: a field gives a strong range, and a lemma with a similar name gives a weak one. The register records that the two agree, and says which one to cite.
-
-A writer who finds a new disagreement adds a row to this table. The row gives the document and its line, the declaration and its line, the two claims side by side, and the claim that the book follows.
