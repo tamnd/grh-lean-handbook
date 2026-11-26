@@ -70,7 +70,13 @@ Lean: `New.Data.exists_mem_eigenPart_of_heckeSplit_eq_smul` (New/Spanning/Multip
 
 *Proof.* Let $q(w, i)$ be the eigenvalue of $T_{w,i}$ on $y$ if $w$ is split away from the level, and $q(w, i) = 0$ otherwise. At the other places $T_x = 0$ and $T_x y = 0 = q(x)\,y$. Lean picks the eigenvalues by choice. $\square$
 
-The next result is the spectral theorem for the operators $T_{w,i}$, from [Iwahori and Satake](/chapter/iwahori-satake/#split-places-and-the-transfer-of-hecke-polynomials). Let $\pi$ be a representation of $G_f$, unitary for a positive definite hermitian form, let $P$ be a set of split places closed under conjugation, and let $U$ be a finite-dimensional subspace that is spherical at every $w \in P$ and stable under every $T_{w,i}$, $w \in P$. Then $U$ is spanned by the vectors of $U$ that are eigenvectors of all $T_{w,i}$, $w \in P$. Lean: `New.IsUnitary.le_span_hecke_eigenvectors` (Lib/Weil/Unramified/SplitHecke.lean). The proof there uses that $T_{w,i}$ and $T_{\bar w,i}$ commute and are adjoint, so each $T_{w,i}$ is normal on $U$, and a commuting family of normal operators on a finite-dimensional space has a basis of joint eigenvectors.
+The next result is the spectral theorem for the operators $T_{w,i}$, from [Iwahori and Satake](/chapter/iwahori-satake/#split-places-and-the-transfer-of-hecke-polynomials). It is background, and we state it without proof.
+
+**Theorem (Joint eigenvectors of Hecke operators).** Let $\pi$ be a representation of $G_f$, unitary for a positive definite hermitian form, let $P$ be a set of split places closed under conjugation, and let $U$ be a finite-dimensional subspace that is spherical at every $w \in P$ and stable under every $T_{w,i}$, $w \in P$. Then $U$ is spanned by the vectors of $U$ that are eigenvectors of all $T_{w,i}$, $w \in P$.
+
+Lean: `New.IsUnitary.le_span_hecke_eigenvectors` (Lib/Weil/Unramified/SplitHecke.lean).
+
+The proof there uses that $T_{w,i}$ and $T_{\bar w,i}$ commute and are adjoint, so each $T_{w,i}$ is normal on $U$, and a commuting family of normal operators on a finite-dimensional space has a basis of joint eigenvectors.
 
 **Theorem (The eigenparts span).** $\sum_q \mathcal{A}_M(V)_q = \mathcal{A}_M(V)$. With the independence lemma, $\mathcal{A}_M(V) = \bigoplus_q \mathcal{A}_M(V)_q$, with finitely many nonzero summands.
 
