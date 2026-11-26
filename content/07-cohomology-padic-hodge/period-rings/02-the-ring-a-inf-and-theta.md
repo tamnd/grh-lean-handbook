@@ -112,6 +112,6 @@ Lean: `New.Period.Ainf.exists_frobEnd_sub_xi_pow_mul_eq` (Lib/PadicHodge/PeriodR
 
 *Proof.* Modulo $p$ the equation is $c_0^p - \xi_0^n c_0 = x_0$ in $O^\flat$. It has a solution because $O^\flat$ is absolutely integrally closed. Lift the solution by Teichmüller and correct by successive approximation modulo powers of $p$, as in the lemma on lifting divisibility. $\square$
 
-This equation will give the surjectivity of $\varphi - 1$ in the fundamental exact sequence of Section 4, and the solution of Lang's equation for unramified characters in Section 7.
+This equation will give the surjectivity of $\varphi - 1$ in the fundamental exact sequence of Section 4, and the solution of Lang's equation for unramified characters in Section 8.
 
 **Remark (Formalization).** The ring $O^\flat$ is Mathlib's `PreTilt` of $O_C$, and $\theta$ is Mathlib's `fontaineTheta`. The source registers a global instance, of low priority, that makes $W(S)$ an algebra over $W(A)$ for each $A$-algebra $S$ ([Ainf.lean, line 288](lean:Lib/PadicHodge/PeriodRings/Ainf.lean#L288)). No statement of this section depends on it. The register of findings records a related point on global algebra instances on $A_{\inf}$ as F-024, in the comparison files.
