@@ -54,7 +54,7 @@ This is the function `thetaProduct`. The conditions on $p$ make $z \mapsto P_p(\
 
 **Example (The padding tuple).** Let $c \in \mathcal{O}_E$ and let $a_1, \ldots, a_{r-3}$ be a padding of $c$ to $r$ (Section 2). The padding tuple is the family of pairs
 $$(1, 0),\ (1, 0),\ (c, 1),\ (1, -\bar c),\ (a_1, 0), \ldots, (a_{r-3}, 0).$$
-Then $\sum \bar a_k a_k = 1 + 1 + \bar c c + 1 + \sum_l \bar a_l a_l = r$ by the padding, and $\sum \bar a_k b_k = \bar c \cdot 1 + 1 \cdot (-\bar c) = 0$. So it is a Riemann tuple. This explains the shape of the padding condition: the summand $3$ comes from the three pairs with first entry $1$. The source uses the tuples for $c = 1$ and $c = \beta$. With $c = 1$ the variable $w$ enters through $\theta(z + w)\theta(z - w)$, which gives the addition law. With $c = \beta$ it enters through $\theta(\beta z + w)\theta(z - \bar\beta w)$, which gives the action of $\beta$.
+Then $\sum \bar a_k a_k = 1 + 1 + \bar c c + 1 + \sum_l \bar a_l a_l = r$ by the padding, and $\sum \bar a_k b_k = \bar c \cdot 1 + 1 \cdot (-\bar c) = 0$. So it is a Riemann tuple. This explains the shape of the padding condition: the summand $3$ comes from the three pairs with first entry $1$. The source uses two of these tuples in Section 5: the tuple for $c = -1$ with a padding $a$ of $1$ whose entries span $\mathcal{O}_E$, and the tuple for $c = 0$ with all $a_l = 1$. For $c = -1$ the pairs $(-1, 1)$ and $(1, 1)$ make the parameter $w$ enter through $\theta(w - z)\theta(z + w)$, which gives the addition and the subtraction. The pairs $(a_l, 0)$ give the action of the $a_l$.
 
 Lean: `New.paddingTuple` (Lib/Shimura/ThetaNormality/RiemannRelation.lean).
 
