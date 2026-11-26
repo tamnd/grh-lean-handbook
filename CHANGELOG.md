@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.3.6
+
+Four new chapters of the argument volumes, and one correction.
+
+- Volume 9, chapter 10: marked primes and the valuation of a chain (#146).
+- Volume 10, chapter 8: local densities at the finite places (#143).
+- Volume 10, chapter 9: frame counts (#148).
+- Volume 12, chapter 7: exponent lattices and Kummer charts (#145).
+- Fix: Volume 9, chapter 2 now says where the chain results are used (#147).
+
 ## v0.3.5
 
 Four new chapters of the argument volumes, and one correction.
