@@ -93,6 +93,7 @@ chapters:
     research: b §6, e §0
     source:
       - New/Reduction/ShortAndEnough
+      - New/Determinant/Twist/LongForms
   - id: main-inequality
     title: The main inequality and the end of the proof
     plan: >-
