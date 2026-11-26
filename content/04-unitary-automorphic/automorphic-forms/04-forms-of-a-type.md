@@ -161,4 +161,4 @@ Lean: `New.Space.exists_form_eq_tsum` (Lib/Adelic/AutomorphicForms/RealConvoluti
 
 ### Where the argument uses forms of a type
 
-Forms of type $e$: [Hecke values](/chapter/hecke-values/), [single theta lifts](/chapter/single-theta-lifts/), [the exchange identity](/chapter/exchange-identity-2/), [grids, paths and turns](/chapter/grids-paths-turns/), [Poincaré series](/chapter/poincare-series/). Cusp kernels: [upper bound objects](/chapter/upper-bound-objects/), [grids, paths and turns](/chapter/grids-paths-turns/).
+Forms of type $e$: [Hecke values](/chapter/hecke-values/), [single theta lifts](/chapter/single-theta-lifts/), [the exchange identity](/chapter/exchange-identity-2/), [grids, columns and turns](/chapter/grids-paths-turns/), [Poincaré series](/chapter/poincare-series/). Cusp kernels: [upper bound objects](/chapter/upper-bound-objects/), [grids, columns and turns](/chapter/grids-paths-turns/).

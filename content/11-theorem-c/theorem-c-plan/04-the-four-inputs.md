@@ -43,7 +43,7 @@ for every $\vartheta$, and the forms auxiliary for $\gamma$ span the target form
 
 Lean: `New.Data.exists_span_isAuxiliaryForm_eq_top` (New/Determinant/Twist/LongForms.lean).
 
-The turn ratio $\mathrm{turnRatio}_{ij}(\vartheta)$ is the product over $1 \leq s \leq t$ of ratios of Hecke values of the character $\chi_{i+1}\chi_{j+1}$ at the twist $\vartheta^{j+1}$, where $\chi_i$ is the character of the $i$-th lift at the trivial twist. The proof projects spanning forms of deep level with short lifts to the target. The chapters [grids, paths and turns](/chapter/grids-paths-turns/) and [deep level Poincaré series and spanning forms](/chapter/deep-level-poincare/) give the proof.
+The turn ratio $\mathrm{turnRatio}_{ij}(\vartheta)$ is the product over $1 \leq s \leq t$ of ratios of Hecke values of the character $\chi_{i+1}\chi_{j+1}$ at the twist $\vartheta^{j+1}$, where $\chi_i$ is the character of the $i$-th lift at the trivial twist. The proof projects spanning forms of deep level with short lifts to the target. The chapters [grids, columns and turns](/chapter/grids-paths-turns/) and [deep level Poincaré series and spanning forms](/chapter/deep-level-poincare/) give the proof.
 
 ### Input 2: regular twists
 

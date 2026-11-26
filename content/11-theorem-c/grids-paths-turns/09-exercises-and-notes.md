@@ -43,7 +43,7 @@ drafted_by: writer@claude-opus-5-5
 
 The grids, the paths through them and the $m^2$ turns are a device of the source. The guide register lists this as finding F-106 (open): the guide cites no source for the combinatorics, and it is not known whether it is new. This chapter follows the source and does not settle the question.
 
-The volume file and [the chapters of the volume](/chapter/theorem-c-plan/#the-chapters-of-the-volume) name the chapter "Grids, columns and turns", and this is its title. The plan in the notes and some link texts in other chapters, for example in [the four inputs](/chapter/theorem-c-plan/#the-four-inputs), say "grids, paths and turns". The two names refer to the same chapter.
+The volume file and [the chapters of the volume](/chapter/theorem-c-plan/#the-chapters-of-the-volume) name the chapter "Grids, columns and turns", and this is its title. The slug `grids-paths-turns` keeps the older name "grids, paths and turns" of the plan.
 
 [Seesaw squares and grid paths](/chapter/seesaw-squares/) names the two paths of a turn in the opposite order from the source of this chapter. Section 7 notes this at the composite of the turns.
 
