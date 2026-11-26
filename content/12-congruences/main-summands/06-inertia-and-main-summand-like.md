@@ -26,7 +26,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Inertia above the level and main summand like
 
-This section defines the condition "like a main summand" and proves that a representation of the type of a lift setting, of rank $\#r$ and empty level, satisfies it when its weights are those of a main summand. All the work is at the places above $M = p_0 p_1$. There the inertia acts through roots of unity of controlled order. These roots give three things: a bound on $v_\ell \det(R\gamma - 1)$, a tame pair that generates all matrices, and a scalar of large order.
+This section defines "like a main summand" and proves it for a representation of a type of rank $\#r$ and empty level with main summand weights. The work is above $M = p_0 p_1$, where inertia acts through roots of unity of controlled order.
 
 ### The condition
 
@@ -45,7 +45,7 @@ Lean: `New.Selmer.IsMainSummandLike`, `New.Selmer.IsMainSummandLike.eventually_s
 
 The second name packs 4 and 5 into one eventual statement. Its proof is the conjunction of the two filters.
 
-**Remark (Formalization).** A coefficient ring is a finite extension of $\mathbb{Z}_\ell$ in $\bar{\mathbb{Q}}_\ell$, and "for all large" is the filter of the order by inclusion. So 4 and 5 hold for every ring that contains some fixed ring.
+**Remark (Formalization).** A coefficient ring is a finite extension of $\mathbb{Z}_\ell$ in $\bar{\mathbb{Q}}_\ell$. "For all large" means for every ring that contains some fixed ring.
 
 ### Three lemmas on roots of unity
 

@@ -114,4 +114,4 @@ Lean: `New.Selmer.isRepOfType_of_hasProductLabel` (New/Congruences/GaloisReprese
 
 ### The auxiliary twist
 
-Ribet's element for Galois representations also uses an *auxiliary twist* $\psi$ with modulus $Q$: $Q$ is a set of auxiliary places for the bad places (each $v \in Q$ is off the bad places, has prime norm, and $\bar v \notin Q$), $\psi$ comes from the norm-one torus with modulus $Q$, and the sum of the valuations $v_\ell(\psi(\sigma_P) - 1)$ over the tame generators $\sigma_P$ is at most the ramification bound. This object is defined in [tied traces and even classes](/chapter/tied-traces/).
+Ribet's element also uses an *auxiliary twist* $\psi$ with an auxiliary modulus $Q$ and a bound on the $\ell$-adic size of $\psi - 1$ on the tame generators. It is defined in [tied traces and even classes](/chapter/tied-traces/).

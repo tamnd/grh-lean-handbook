@@ -26,7 +26,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Weights, signs and b-places
 
-A main summand has Hodge-Tate weights, or *jumps*, at each complex embedding of $E$. The local loss at $\ell$ in [the local loss](/chapter/local-loss/) depends on where these jumps lie. This section fixes the shape of the jumps, the constants of the defect bound, and the facts on the signs of embeddings and the b-places that the local loss uses. The results are elementary. They are stated here because the definition of a main summand uses them.
+A main summand has Hodge-Tate weights, or *jumps*, at each complex embedding of $E$. The local loss at $\ell$ in [the local loss](/chapter/local-loss/) depends on where these jumps lie. This section fixes the shape of the jumps, the constants of the defect bound, and the facts on the signs of embeddings and the b-places that the local loss uses.
 
 ### Background
 

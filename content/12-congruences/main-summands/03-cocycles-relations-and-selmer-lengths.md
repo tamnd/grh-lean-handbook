@@ -35,7 +35,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Cocycles, relations and Selmer lengths
 
-Ribet's method in [Ribet elements](/chapter/ribet-elements/) builds an extension from a congruence, and the cost of the extension is a length of a module of cocycles. This section defines the modules that the later chapters measure. There are three. The first is the module $\mathrm{Coc}(\rho, B)$ of cocycles that obey every linear relation of a family of representations. The second is the crystalline colength, which measures how far such cocycles are from crystalline at $\ell$. The third is the crystalline Selmer length, the length of a Selmer group with divisible coefficients. The section ends with the error term $e'_\ell$ of the twisting theorem.
+In Ribet's method ([Ribet elements](/chapter/ribet-elements/)) the cost of an extension is a length of a module of cocycles. This section defines three such measures: the module $\mathrm{Coc}(\rho, B)$ of cocycles that obey every relation of a family, the crystalline colength at $\ell$, and the crystalline Selmer length. The section ends with the error term $e'_\ell$ of the twisting theorem.
 
 ### Background
 
@@ -180,7 +180,7 @@ Lean: `New.Selmer.HasDivisibleSelmerLengthLe.hasTwistedLattice`, `New.Selmer.Has
 
 *Proof.* Forget the length bound, or compose it with $\mathrm{sel} \leq \mathrm{sel}'$, for each large $O$. $\square$
 
-**Remark (Formalization).** The textbook Bloch-Kato Selmer group is a subgroup of $H^1(G_E, V/T)$ cut out by local conditions, with $H^1_f$ at $\ell$ (S. Bloch and K. Kato, *L-functions and Tamagawa numbers of motives*, The Grothendieck Festschrift I (1990), Section 3). The source uses cocycles, not classes. It fixes a representative of each class by $c(\gamma) = 0$, which is valid when $\rho(\gamma) - 1$ is invertible, as condition 4 gives. The crystalline condition at $\ell$ is the set of linear relations of the crystalline cocycles, not the kernel of a map to $H^1(G_v, B_{\mathrm{crys}} \otimes V)$. The source does not prove that the two agree, and the argument needs only the relational form. The hypothesis holds "for all large $O$", so a bound proved over one ring must hold over all larger rings. The normalization $\lambda_O$ makes the bound independent of the ramification of $O$.
+**Remark (Formalization).** The textbook Bloch-Kato Selmer group is a subgroup of $H^1(G_E, V/T)$ cut out by local conditions, with $H^1_f$ at $\ell$ (S. Bloch and K. Kato, *L-functions and Tamagawa numbers of motives*, The Grothendieck Festschrift I (1990), Section 3). The source uses cocycles, not classes. It fixes a representative of each class by $c(\gamma) = 0$, which is valid when $\rho(\gamma) - 1$ is invertible, as condition 4 gives. The crystalline condition at $\ell$ is the set of linear relations of the crystalline cocycles, not the kernel of a map to $H^1(G_v, B_{\mathrm{crys}} \otimes V)$. The source does not prove that the two agree, and the argument needs only the relational form. The hypothesis holds "for all large $O$", so a bound proved over one ring must hold over all larger rings.
 
 ### The twist error
 
