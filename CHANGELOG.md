@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.4
+
+Four new chapters of the argument volumes.
+
+- Volume 9, chapter 6: the CM curve, its formal group and the normal form (#132).
+- Volume 9, chapter 7: normal forms (#135).
+- Volume 10, chapter 6: local densities at the real places (#134).
+- Volume 12, chapter 5: the main summands of the attached Galois representations (#133).
+
 ## v0.3.3
 
 Four new chapters of the argument volumes.

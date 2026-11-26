@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Names of the data
 
-The index lists 5140 Lean names that the 76 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 551 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
+The index lists 5512 Lean names that the 80 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 553 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
 
 - `New.Data.a`: `New/Reduction/Data/AdmissibleData.lean`, [line 215](lean:New/Reduction/Data/AdmissibleData.lean#L215). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.a_div_x₁_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 182](lean:New/Reduction/Data/Sizes.lean#L182). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
@@ -257,6 +257,7 @@ The index lists 5140 Lean names that the 76 written chapters cite, on a `Lean:` 
 - `New.Data.isComparisonOperator_comparisonOp`: `New/OneLift/LiftVolumeHeight.lean`, [line 554](lean:New/OneLift/LiftVolumeHeight.lean#L554). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.Data.IsDenominatorBound`: `New/Determinant/Twist/FitTwists.lean`, [line 197](lean:New/Determinant/Twist/FitTwists.lean#L197). Cited in [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.isDiscreteSeriesBessel_filling_besselSystem`: `New/Spanning/Bessel/FillingData.lean`, [line 529](lean:New/Spanning/Bessel/FillingData.lean#L529). Cited in [Chapter](/chapter/theorem-b-plan/), [Chapter](/chapter/bessel-real-place/).
+- `New.Data.isEigenform_of_hasHeckePolyAt`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 462](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L462). Cited in [Chapter](/chapter/main-summands/).
 - `New.Data.isEquivariant_sourceFn`: `New/UpperBound/Objects/PoincareMap.lean`, [line 148](lean:New/UpperBound/Objects/PoincareMap.lean#L148). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.isNearIsometry_e₀_comp_scaledPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 257](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L257). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.IsNearPair`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 113](lean:New/Derivatives/Sharpness/NearPairs.lean#L113). Cited in [Chapter](/chapter/progression-free-sets/).
@@ -496,6 +497,7 @@ The index lists 5140 Lean names that the 76 written chapters cite, on a `Lean:` 
 - `New.Data.t_odd`: `New/Reduction/Data/Magnitudes.lean`, [line 593](lean:New/Reduction/Data/Magnitudes.lean#L593). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.TameChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 260](lean:New/Reduction/Data/LevelAndTwists.lean#L260). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.TameChar.disjoint_isChosen_Q`: `New/OneLift/HeckeValues/TwistedRatio.lean`, [line 399](lean:New/OneLift/HeckeValues/TwistedRatio.lean#L399). Cited in [Chapter](/chapter/twists-critical-pairs/).
+- `New.Data.TameChar.invAvatar`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 136](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L136). Cited in [Chapter](/chapter/main-summands/).
 - `New.Data.TameChar.normQ`: `New/Reduction/Data/LevelAndTwists.lean`, [line 277](lean:New/Reduction/Data/LevelAndTwists.lean#L277). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.TameChar.one`: `New/Reduction/Data/LevelAndTwists.lean`, [line 301](lean:New/Reduction/Data/LevelAndTwists.lean#L301). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/twists-critical-pairs/).
 - `New.Data.TameChar.pow`: `New/Reduction/Data/LevelAndTwists.lean`, [line 361](lean:New/Reduction/Data/LevelAndTwists.lean#L361). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/twists-critical-pairs/).

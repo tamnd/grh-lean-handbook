@@ -80,8 +80,8 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 9 | 3 | The seesaw identity, part 1: unfolding | drafted | 14,668 |
 | 9 | 4 | The field E at the primes | drafted | 12,475 |
 | 9 | 5 | The integral vacuum and tight frames | drafted | 13,453 |
-| 9 | 6 | The CM curve, its formal group and the normal form | planned | 0 |
-| 9 | 7 | The count and the divisibility of standard data | planned | 0 |
+| 9 | 6 | The CM curve, its formal group and the normal form | drafted | 12,735 |
+| 9 | 7 | The count and the divisibility of standard data | drafted | 13,326 |
 | 9 | 8 | Theta kernels and gauges | planned | 0 |
 | 9 | 9 | Short columns and the gain | planned | 0 |
 | 9 | 10 | Marked primes and the valuation of a chain | planned | 0 |
@@ -95,7 +95,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 3 | Equal multiplicities by the trace formula | drafted | 11,885 |
 | 10 | 4 | Bessel functions at a real place | drafted | 14,536 |
 | 10 | 5 | Frames, depth and gains | drafted | 14,347 |
-| 10 | 6 | Local densities at the real places | planned | 0 |
+| 10 | 6 | Local densities at the real places | drafted | 14,827 |
 | 10 | 7 | The anatomy of a term | planned | 0 |
 | 10 | 8 | Local densities at the finite places | planned | 0 |
 | 10 | 9 | Reduced points and frame counts | planned | 0 |
@@ -125,7 +125,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,594 |
 | 12 | 3 | Auxiliary primes and first-order deformations | drafted | 14,485 |
 | 12 | 4 | Tied traces and even classes | drafted | 11,921 |
-| 12 | 5 | The main summands of the attached Galois representations | planned | 0 |
+| 12 | 5 | The main summands of the attached Galois representations | drafted | 14,570 |
 | 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | planned | 0 |
 | 12 | 7 | Exponent lattices and Kummer charts | planned | 0 |
 | 12 | 8 | Cup products on Kisin modules | planned | 0 |
