@@ -29,7 +29,7 @@ This section gives explicit elements of $\mathsf U_c(M)$, two colouring bounds f
 
 Lean: `New.Filling.conjTranspose_eichler_mul_mul` (New/Spanning/Unfolding/ReducedPoints.lean).
 
-*Proof.* Put $w = u + x(\tau u^*Ju - s)$ and $T = xu^*J - wx^*J$. The hypotheses give $x^*Jx = 0$ and $x^*Ju = 0$, so $x^*Jw = 0$ and $w^*Jw = u^*Ju$. Expand $(1 + gT)^*J(1 + gT) = J + g(JT + T^*J) + g^2T^*JT$. In $JT + T^*J$ the terms $Jxu^*J$ and $Jux^*J$ cancel, and what remains is $-Jxigl((\tau + \bar\tau)u^*Ju - (s + s^*)\bigr)x^*J = -g\,Jxu^*Ju\,x^*J$. In $T^*JT$ only $Jxw^*Jwx^*J = Jxu^*Ju\,x^*J$ survives. So the two corrections cancel. $\square$
+*Proof.* Put $w = u + x(\tau u^*Ju - s)$ and $T = xu^*J - wx^*J$. The hypotheses give $x^*Jx = 0$ and $x^*Ju = 0$, so $x^*Jw = 0$ and $w^*Jw = u^*Ju$. Expand $(1 + gT)^*J(1 + gT) = J + g(JT + T^*J) + g^2T^*JT$. In $JT + T^*J$ the terms $Jxu^*J$ and $Jux^*J$ cancel, and what remains is $-Jx\bigl((\tau + \bar\tau)u^*Ju - (s + s^*)\bigr)x^*J = -g\,Jxu^*Ju\,x^*J$. In $T^*JT$ only $Jxw^*Jwx^*J = Jxu^*Ju\,x^*J$ survives. So the two corrections cancel. $\square$
 
 **Lemma (A general element).** Let $J$ be the rational Gram matrix. Let $x$ have the columns $e_{p(b)}$. Let the columns of $u$ be integral in the basis of the class $c$, and let $u$ have coordinate $0$ at $e^*_a$ for every $a \leq p(b')$. Let $s$ be integral and skew-hermitian. Then there is $\gamma \in \mathsf U_c(M)$ and $\tau \in E$ with
 

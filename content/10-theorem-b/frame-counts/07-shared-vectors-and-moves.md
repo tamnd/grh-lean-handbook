@@ -32,7 +32,7 @@ This section gives three tools for the count of the next section. Near terms are
 
 Let $Z = $ `S.frameProducts γ`, and let $Y$ (`paddedLeading j Z`) be the first $j$ rows of $Z$ completed by rows of the identity. So $\det Y = D_j$. The admissible data $S$ satisfy the size bounds of [the data and their sizes](/chapter/data-and-sizes/), and $5 \leq N$.
 
-### Rigidity
+### Rigidity of lattice columns
 
 **Lemma.** Let $\gamma$ have cell rank $j$, and let $k$ be the last index or $j \leq k$. Let $y = \gamma f\cdot Y^{-1}e_k$. Then $y$ has no coordinate along any $e^*_a$, and at every infinite place $v$ the $X_0$-part of $y$ has $5\sum_i|\Phi_v(y_{x_i})|^2 \leq 1$.
 
