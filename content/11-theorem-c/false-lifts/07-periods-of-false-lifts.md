@@ -16,11 +16,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Periods of false lifts
 
-This section assembles the tower. We start from the three conditions of [Section 1](/chapter/false-lifts/#what-the-chapter-proves). The bottom of the tower (Sections 2 to 4) and the plane step (Section 6) give the vanishing of all descents to $W \oplus \mathbb{H}^N$. A theta kernel of $W$ then absorbs the summand $W$, and the theorem of [descents and block periods](/chapter/bessel-periods/#descents-and-block-periods) turns the result into vanishing periods. The last step replaces the integral over $[U(I_l)]$ by a class sum.
+This section assembles the tower. From the three conditions of [Section 1](/chapter/false-lifts/#what-the-chapter-proves), Sections 2 to 6 give the vanishing of all descents to $W \oplus \mathbb{H}^N$. A theta kernel of $W$ then absorbs the summand $W$, and the theorem of [descents and block periods](/chapter/bessel-periods/#descents-and-block-periods) turns the result into vanishing periods. The last step replaces the integral over $[U(I_l)]$ by a class sum.
 
 ### Notation
 
-All results of this section are in the namespace `New.Rows` of the file `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`. Fix a descent pair $O$ with $W$ of rank $r \geq 1$, and a form $\Xi$ in `O.FormV`. For a vector $\zeta$ of the Weyl module of $\Xi$ we write
+Fix a descent pair $O$ with $W$ of rank $r \geq 1$, and a form $\Xi$ in `O.FormV`. For a vector $\zeta$ of the Weyl module of $\Xi$ we write
 
 $$c_\zeta(h) = \langle \zeta, \Xi\rangle(h) = \text{`algFormCoeff 1 (gramForm ζ) Ξ'}(h), \qquad y_\zeta = \overline{c_\zeta},$$
 
@@ -41,15 +41,13 @@ Lean: `New.Rows.lift_polyVector_blockDatum_eq_zero` (New/OneLift/FalseLifts/Peri
 
 *Proof.* The normalized descent $\theta^*\Xi$ is a nonzero scalar times the conjugate of the descent $F$ of $y = \overline{\Xi^\flat}$ by the harmonic datum $\zeta_0 \otimes \Psi_{\mathrm{bl}}$ (`normalizedDescent_eq_smul_star_lift_swap`). So $F = 0$. The pair fits $l_0$, so it is an edge in the sense of Volume 6. By the edge lemma there is a test function $\alpha$ on the real points of $U(W)$ with descent by $v_P \otimes \Psi_{\mathrm{bl}}$ equal to $\alpha * F = 0$. This is for the kernel twisted by the pair $(\nu_W, \nu_V)$, with $\nu_V = $ `O.charV`. The twist $\nu_V(\det h)$ on $I_n$ and the twist $1$ differ by a character of $\det g$ on the side of $W$, which comes out of the integral as a factor. So the descent with the trivial character on $I_n$ is also $0$. Finally $y$ is the conjugate matrix coefficient $y_{\zeta_0}$. $\square$
 
-This lemma is the hypothesis of the theorem of the bottom of the tower in [Section 4](/chapter/false-lifts/#the-bottom-of-the-tower).
-
 ### All descents to the hyperbolic sum
 
 **Theorem (Descents to $W \oplus \mathbb{H}^N$).** Let $O$ fit $l_0$, let $\psi_w \neq 1$ for $w \in Q$, and let $\Xi$ satisfy the three conditions at a split place $w$ off $\Sigma$. If $2r + 2\#N + 3 < n$, then for every $\zeta$ the descents of $y_\zeta$ to $W \oplus \mathbb{H}^N$, twisted by $\nu_W\,\upsilon_1^{\#N}$, vanish above $T$.
 
 Lean: `New.Rows.descentsVanish_hyperbolicSum` (New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean).
 
-*Proof.* *Step 1: the bottom.* By the lemma on the block datum and the theorem of the bottom of the tower (Section 4), the descents of $y_{\zeta_0}$ to $W$, twisted by $\nu_W$, vanish above $T$. The places of $O$ are split and distinct from their conjugates, so $O.\mathrm{places}$ is disjoint from its conjugate.
+*Proof.* *Step 1: the bottom.* By the lemma on the block datum and the theorem of the bottom of the tower (Section 4), the descents of $y_{\zeta_0}$ to $W$, twisted by $\nu_W$, vanish above $T$.
 
 *Step 2: sphericity.* Let $k$ be in the maximal level and supported at $w$. Since $w \notin \Sigma$, $k$ lies in the level of $O$, so it fixes $\Xi$. Hence $y_{\zeta_0}$ is spherical at $w$.
 
@@ -61,7 +59,7 @@ $$|\overline{x_w}| = \big(\sqrt q^{\,r}\, q^{\,n - r - 1}\big)^{-1}.$$
 
 *Step 5: the tower.* The space $W \oplus \mathbb{H}^N$ has the adapted splitting `removePlanes N O.W` into $W$ and $\#N$ planes. The character $\nu_W$ has a weight, so its base change is unramified at $\bar w$ (`HasWeight.charUnramifiedAt`). Steps 1 to 4 and the rank condition are the hypotheses of the theorem of the tower of [Section 6](/chapter/false-lifts/#the-hyperbolic-plane-step). So the descents of $y_{\zeta_0}$ to $W \oplus \mathbb{H}^N$, twisted by $\nu_W\upsilon_1^{\#N}$, vanish above $T$.
 
-*Step 6: all $\zeta$.* Fix a datum $\phi$ that is the vacuum above $T$ and a point $g$. The map $\zeta \mapsto (\text{descent of } y_\zeta \text{ by } \phi)(g)$ is linear, since $\zeta \mapsto y_\zeta$ is linear into the rapid functions and the lift is linear. For a real point $x$ of $U(I_n)$, the invariance of the inner product gives $y_{x\zeta_0}(h) = y_{\zeta_0}(h\,(x, 1))$. Right translation by $(x, 1)$ is $1$ at every finite place, so by Step 5 and the right translation fact, the functional vanishes at $x\zeta_0$. The highest weight vector generates the Weyl module, since its weight is regular for the parameter (`eq_zero_of_forall_map_translate_highestVector_eq_zero`, with `O.isHCParam_paramV.injective`). So the functional is $0$. $\square$
+*Step 6: all $\zeta$.* Fix a datum $\phi$ that is the vacuum above $T$ and a point $g$. The map $\zeta \mapsto (\text{descent of } y_\zeta \text{ by } \phi)(g)$ is linear. For a real point $x$ of $U(I_n)$, the invariance of the inner product gives $y_{x\zeta_0}(h) = y_{\zeta_0}(h\,(x, 1))$. Right translation by $(x, 1)$ is $1$ at every finite place, so by Step 5 and the right translation fact, the functional vanishes at $x\zeta_0$. The highest weight vector generates the Weyl module, since its weight is regular for the parameter (`eq_zero_of_forall_map_translate_highestVector_eq_zero`, with `O.isHCParam_paramV.injective`). So the functional is $0$. $\square$
 
 ### A nonzero theta kernel
 
@@ -127,9 +125,9 @@ for all real points $u$ and finite points $h$ of $U(I_l)$. Let $e_j$ be the basi
 
 $$F_j(h_2) = \overline{\theta_{\phi_j}(g_j, h_2)}\; y_j\big(\mathrm{diag}((1, h_1), h_2)\,(1, x)\big).$$
 
-*Step 1: properties of $F_j$.* It is continuous. It is left invariant under the rational points $\delta$ of $U(I_l)$: the kernel is invariant, and $\mathrm{diag}((1,h_1), \delta h_2) = \mathrm{diag}(1, \delta)\,\mathrm{diag}((1, h_1), h_2)$ with $\mathrm{diag}(1, \delta)$ rational. The group $U(I_l)$ is definite, so the quotient is compact, $F_j$ is rapid and integrable.
+*Step 1: properties of $F_j$.* It is continuous and left invariant under the rational points $\delta$ of $U(I_l)$: the kernel is invariant, and $\mathrm{diag}((1,h_1), \delta h_2) = \mathrm{diag}(1, \delta)\,\mathrm{diag}((1, h_1), h_2)$ with $\mathrm{diag}(1, \delta)$ rational. The quotient is compact, so $F_j$ is integrable.
 
-*Step 2: the sum is $f$.* Let $u$ be real and $h$ finite. Let $k$ be the real part of $\mathrm{diag}((1, h_1), (u, h))^{-1}$. The form $\Xi$ is an algebraic form, so moving the real point $k$ into the value multiplies the value by the Weyl representation. The map $C$ is equivariant for the real points of the block $I_l$, and the inner product is invariant. So
+*Step 2: the sum is $f$.* Let $u$ be real and $h$ finite. Let $k$ be the real part of $\mathrm{diag}((1, h_1), (u, h))^{-1}$. Moving the real point $k$ into the value of the algebraic form $\Xi$ applies the Weyl representation. The map $C$ is equivariant for the real points of the block $I_l$, and the inner product is invariant. So
 
 $$f(h) = \big\langle C\big(\rho(u)^{-1}\vartheta(h)\big),\ \rho(k)\,\Xi(\mathrm{diag}(h_1, h)\,x)\big\rangle.$$
 
@@ -143,11 +141,9 @@ $$\int_{[U(I_l)]} \sum_j c_j F_j = [K_0 : K]^{-1}\, \mathrm{classSum}_K f.$$
 
 *Step 5.* Each $\int F_j = 0$ by the theorem on theta periods, with $\zeta = C(e_j)$, $b = b_j$, $g = g_j$, the point $(1, h_1)$ and $\gamma = x$. So the class sum is $0$. $\square$
 
-**Remark (Formalization).** The data $c_j, g_j, b_j, \phi_j$ are extracted from the existential hypothesis `h_kernels` by `choose`, so they have no explicit form. Only their stated property is used. The point $h_1$ is a finite point in the statement, and $(1, h_1)$ is its adelic point with real part $1$. The level is any $K$ with `K ≤ rightStabilizer f`, so the class sum is the sum over the double cosets weighted by the inverse orders of the stabilizers.
+**Remark (Formalization).** The data $c_j, g_j, b_j, \phi_j$ are extracted from the existential hypothesis `h_kernels` by `choose`, so they have no explicit form. Only their stated property is used. The level is any $K$ with `K ≤ rightStabilizer f`, so the class sum is the sum over the double cosets weighted by the inverse orders of the stabilizers.
 
 ### The kernel vector
-
-The later chapters use one choice of $\vartheta$.
 
 **Definition (Kernel vector).** Let $\mathfrak m$ be a modulus, $\Psi$ a function on the $l \times r$ matrices over $\mathcal O/\mathfrak m$, $\kappa$ a weight and $g \in U(W)(\mathbb{A})$. The kernel vector at $h \in U(I_l)(\mathbb{A}_f)$ has coordinate $j$ equal to the conjugate theta kernel of $(W, I_l)$ at $(g, h)$, twisted by $\nu_W$ and $b$, with the datum $\Psi$ modulo $\mathfrak m$ at the finite places and the Fock vector of the basis polynomial $j$ of weight $\kappa$ at infinity.
 
