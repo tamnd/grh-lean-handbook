@@ -90,9 +90,9 @@ Lean: `New.IsTraceNondeg.twist` (Lib/GaloisRep/Pseudocharacter/SemisimpleReprese
 
 *Proof.* Each $\mu(g) R(g)$ is in the span of $R(G)$, so the span of the twist is in the span of $R(G)$. If $\mathrm{tr}(x \mu(g) R(g)) = 0$ for all $g$, then $\mathrm{tr}(x R(g)) = 0$, since $\mu(g) \neq 0$. So $x = 0$. $\square$
 
-**Theorem (Cancellation of characters).** Let $k$ be algebraically closed of characteristic $0$, and let $m$, $n$, $t$ be finite sets with $|m| = |n| + |t|$. Let $r_0, r_1 : G \to \mathrm{GL}_m(k)$ have non-degenerate trace forms, and let $\psi_{i,j}$ for $i \in \{0, 1\}$ and $j \in t$ be characters of $G$ with $\psi_{0,j} \neq \psi_{1,j'}$ for all $j, j'$. Let $T : G \to k$ satisfy
+**Theorem (Cancellation of characters).** Let $k$ be algebraically closed of characteristic $0$, and let $m$, $n$, $t$ be finite sets with $|m| = |n| + |t|$. Let $r_0, r_1 : G \to \mathrm{GL}_m(k)$ have non-degenerate trace forms, and let $\psi_{i,j}$ for $i \in \{0, 1\}$ and $j \in t$ be characters of $G$ with $\psi_{0,j} \neq \psi_{1,j'}$ for all $j, j'$. Let $T : G \to k$ satisfy, for $i = 0, 1$ and all $g$,
 $$\mathrm{tr}\, r_i(g) = T(g) + \sum_{j \in t} \psi_{i,j}(g)$$
-for $i = 0, 1$ and all $g$. Then there is $s : G \to \mathrm{GL}_n(k)$ with a non-degenerate trace form and $T = \mathrm{tr}\, s$.
+Then there is $s : G \to \mathrm{GL}_n(k)$ with a non-degenerate trace form and $T = \mathrm{tr}\, s$.
 
 Lean: `New.IsTraceNondeg.exists_cancel_chars` (Lib/GaloisRep/Pseudocharacter/SemisimpleRepresentations.lean).
 
