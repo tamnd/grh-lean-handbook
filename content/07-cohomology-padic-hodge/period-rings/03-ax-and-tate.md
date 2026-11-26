@@ -24,6 +24,8 @@ The period rings of this chapter are rings of functions of a sort on $\mathbb{C}
 
 **Theorem (Ax-Sen-Tate).** Let $J$ be a closed subgroup of $G_p$, and let $L \subseteq \overline{\mathbb{Q}}_p$ be its fixed field. The elements of $\mathbb{C}_p$ fixed by $J$ are the elements of the closure of $L$ in $\mathbb{C}_p$. In particular, if $J$ is open, then $L$ is a finite extension of $\mathbb{Q}_p$ and $\mathbb{C}_p^J = L$.
 
+Lean: `New.Period.ax_mem_closure_fixedField` (Lib/PadicHodge/PeriodRings/AxTheorem.lean), for the main inclusion; `New.Period.forall_smul_eq_iff_mem_localFieldOf` (Lib/PadicHodge/TateSen.lean), for open $J$.
+
 The main inclusion is the theorem of J. Ax, *Zeros of polynomials over local fields: the Galois action*, J. Algebra 15 (1970). The source also cites the proofs in the notes of Fontaine and Ouyang, Sections 3.3 to 3.5.
 
 The source proves the main inclusion for every subgroup $J$, closed or not.
@@ -77,6 +79,8 @@ The normalized trace of $z$ is $[E:\mathbb{Q}_p]^{-1}\mathrm{Tr}_{E/\mathbb{Q}_p
 ### The theorem of Tate
 
 **Theorem (Tate).** For every open subgroup $U$ of $G_p$ and every integer $n \neq 0$, $H^0(U, \mathbb{C}_p(n)) = 0$.
+
+Lean: `New.Period.tate_eq_zero_of_cyclotomicGp_twist` (Lib/PadicHodge/TateSen.lean).
 
 This is in Tate, *p-divisible groups*, Section 3.
 
