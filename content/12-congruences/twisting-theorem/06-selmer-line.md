@@ -33,16 +33,13 @@ drafted_by: writer@claude-opus-5-5
 
 ## Selmer data on a line
 
-The last section gave each Stickelberger system a polynomial and a point near $0$ at which the polynomial is small. This section does the same for Selmer data. It then puts the data and the systems together on one set of auxiliary primes. The result, `exists_twistPolynomials`, is the input of the general twisting theorem in the section after next. All results are in [Line.lean](lean:New/Congruences/Selmer/Line.lean#L1).
-
-The background comes from two chapters.
+This section gives each Selmer datum a polynomial and a point near $0$ at which the polynomial is small. It then puts the data and the systems on one set of auxiliary primes. The result, `exists_twistPolynomials`, is the input of the general twisting theorem. All results are in [Line.lean](lean:New/Congruences/Selmer/Line.lean#L1).
 
 - Selmer data $T$ with the number $\beta_T = \mathrm{glob}(T) + \mathrm{places}(T) + \mathrm{first}(T)$ and the tied Selmer groups: [Selmer data, tied Selmer groups and Sah's lemma](/chapter/tied-selmer-groups/#selmer-data-tied-selmer-groups-and-sahs-lemma).
 - The point modules $\mathrm{Sel}(x)$ of the twists $\psi_x(g) = \prod_j (1 + x_j)^{h_j(g)}$ and a polynomial $P$ with $v(P(x_0)) = \mathrm{len}\, \mathrm{Sel}(x_0)$ and $v(P(x)) \geq \mathrm{len}\, \mathrm{Sel}(x)$ everywhere (`New.Selmer.exists_sharp_polynomial`): [one system for all twists](/chapter/tied-selmer-groups/#one-system-for-all-twists).
 - The line $X_{P_0} = Y$, $X_v = s_v Y$ (`New.Selmer.lineDirection`), the tie polynomial $P^1$, the cost of the ties and the release of the first prime: [untied classes](/chapter/tied-selmer-groups/#untied-classes).
 - The descent to tied primes with a first prime near $g_0$ (`New.Selmer.exists_isTiedPrimes_card_le_and_length_le`): [the descent](/chapter/tied-selmer-groups/#the-descent).
-- Coefficient rings, $\mathrm{normLength}$ (a length scaled so that $O/\ell$ has length $1$) and the geometric sum bound `New.Selmer.pow_dvd_geom_sum`: [coefficient rings](/chapter/fitting-ideals/#coefficient-rings).
-- Relative lengths and $\mathrm{relLength}(A, B) + \mathrm{len}(A \cap B) = \mathrm{len}\, A$: [discrete valuation rings and relative lengths](/chapter/fitting-ideals/#discrete-valuation-rings-and-relative-lengths).
+- Coefficient rings, $\mathrm{normLength}$ ($O/\ell$ has length $1$) and `New.Selmer.pow_dvd_geom_sum`: [coefficient rings](/chapter/fitting-ideals/#coefficient-rings). Relative lengths, with $\mathrm{relLength}(A, B) + \mathrm{len}(A \cap B) = \mathrm{len}\, A$: [relative lengths](/chapter/fitting-ideals/#discrete-valuation-rings-and-relative-lengths).
 
 Valuations are $v = \mathrm{ellVal}$ with $v(\ell) = 1$, unless a ring is named.
 
@@ -55,7 +52,7 @@ Valuations are $v = \mathrm{ellVal}$ with $v(\ell) = 1$, unless a ring is named.
 
 Lean: `New.Selmer.exists_smul_eq_zero_of_mem_selmerModule`, `New.Selmer.length_selmerModule_divisibleQuot_le` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* (1) A member $z$ is locally constant on the compact group $G_E$, so it takes finitely many values. Each coordinate $u$ of a value has a denominator $d(u) \neq 0$ with $d(u) u = 0$. The product $a$ of all these denominators is not $0$ and kills $z$.
+*Proof.* (1) A member $z$ is locally constant on the compact group $G_E$, so it takes finitely many values. The product $a$ of the denominators of their coordinates is not $0$ and kills $z$.
 
 (2) The $a$-torsion of $\mathrm{Sel}(\mathrm{Frac}(O)/O)$ is isomorphic to $\mathrm{Sel}(O/a)$ (`New.Selmer.length_torsionBy_selmerModule_divisibleQuot`, Lib/GaloisRep/Main/DivisibleSelmerModules.lean). Suppose that this torsion is not the whole module. The module is torsion by (1), so its $a$-torsion has length at least $v_O(a)$ (`New.Selmer.addVal_le_length_torsionBy`, [block determinants](/chapter/fitting-ideals/#block-determinants)). This contradicts the hypothesis. So the torsion is the whole module, and the two lengths are equal. $\square$
 
@@ -65,7 +62,7 @@ Lean: `New.Selmer.exists_smul_eq_zero_of_mem_selmerModule`, `New.Selmer.length_s
 
 Lean: `New.Selmer.SelmerDatum.twistedSelmer`, `New.Selmer.SelmerDatum.divisibleSelmer`, `New.Selmer.SelmerDatum.divisibleLength`, `New.Selmer.SelmerDatum.TwistedLengthLe` (New/Congruences/Selmer/Line.lean).
 
-**Remark (Formalization).** The relations of $T$ include vanishing at the element $\gamma_*$ of $T$. So the members are cocycles, not classes. If $\psi(\gamma_*) = 1$, each class has exactly one cocycle that vanishes at $\gamma_*$, so the two counts agree. `TwistedLengthLe` asks the bound for all large $O'$ and not for one ring. So the definition does not fix one ring $O'$ in advance.
+**Remark (Formalization).** The relations of $T$ include vanishing at the element $\gamma_*$ of $T$. So the members are cocycles, not classes. If $\psi(\gamma_*) = 1$, each class has exactly one cocycle that vanishes at $\gamma_*$, so the two counts agree. `TwistedLengthLe` asks the bound for all large $O'$, not for one fixed ring.
 
 **Lemma.** If $T$ satisfies `TwistedLengthLe Q ψ b` and $b \leq b'$, then it satisfies `TwistedLengthLe Q ψ b'`.
 
@@ -79,8 +76,6 @@ Lean: `New.Selmer.SelmerDatum.TwistedLengthLe.mono` (New/Congruences/Selmer/Line
 
 Lean: `New.Selmer.BoundsSelmer`, `New.Selmer.restrictToLine` (New/Congruences/Selmer/Line.lean).
 
-The bound holds at all points, not only at points where $\psi_x$ is a character.
-
 **Lemma.** Let $d$ give each prime $w$ a Frobenius element $\varphi_w$, a tame generator $\gamma_w$, a character to $\mathbb{Z}/q$ and slopes.
 
 1. $(\mathrm{restrictToLine}\ a\ P)(y) = P((e(a_j) y)_j)$, with coefficients mapped by $e$.
@@ -90,13 +85,13 @@ The bound holds at all points, not only at points where $\psi_x$ is a character.
 
 Lean: `New.Selmer.eval₂_restrictToLine`, `New.Selmer.tieRelations_union`, `New.Selmer.coe_twistRep_pointChar`, `New.Selmer.SelmerDatum.reduceModPow_eq_one` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* (1) Induction on $P$: both sides are ring maps in $P$ and agree on constants and variables. (2) Unfold the set of ties; a union of ranges over $I \cup I'$ is the union of the ranges. (3) $\zeta_j = 1 + (\zeta_j - 1)$, so both twists have the same value at each $g$. (4) $T$ is unramified outside its places, and these lie in $S_0$. $\square$
+*Proof.* (1) Both sides are ring maps in $P$ that agree on constants and variables. (2) Unfold the ties. (3) $\zeta_j = 1 + (\zeta_j - 1)$. (4) $T$ is unramified outside its places, which lie in $S_0$. $\square$
 
 **Lemma (Gauss valuation of the tie polynomial).** Let $P^1 = \prod_{v \in I} \prod_b \det((1 + Y)\rho(\iota_b(\varphi_v)) - 1)$, where $\iota_{\mathrm{true}}(g) = g$ and $\iota_{\mathrm{false}}(g) = g^{-c}$. Let $f : O \to \bar{\mathbb{Z}}_\ell$ and let $2 n \# I \leq s_0$ for the rank $n$ of $\rho$. Then $v_r(f(P^1)) \leq s_0 r$.
 
 Lean: `New.Selmer.gaussVal_tiePolynomial_le` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* The coefficient of $Y^n$ in $\det((1 + Y)A - 1)$ is $\det A$. For $A = \rho(g)$ this is a unit, since $g$ is invertible. A polynomial with a unit coefficient in degree $n$ has $v_r \leq nr$. The Gauss valuation is additive on products, and there are $2\# I$ factors. So $v_r(f(P^1)) \leq 2 \# I \cdot nr \leq s_0 r$. $\square$
+*Proof.* The coefficient of $Y^n$ in $\det((1 + Y)\rho(g) - 1)$ is the unit $\det \rho(g)$, so $v_r \leq nr$ for each factor. The Gauss valuation is additive on products, and there are $2\# I$ factors. So $v_r(f(P^1)) \leq 2 \# I \cdot nr \leq s_0 r$. $\square$
 
 ### The polynomial of one datum
 
@@ -106,7 +101,7 @@ Fix tied primes $(P_0, J, d)$ for the condition $V$ and the set $W$ (`IsTiedPrim
 
 Lean: `New.Selmer.SelmerDatum.length_tiedSelmer_erase_le` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* Let $Z$ be the group tied at $J$ and $Z_0$ the group tied at $J \setminus \{P_0\}$. By part 2 of the lemma above, the ties at $J$ are those at $J \setminus \{P_0\}$ and at $\{P_0\}$. So $Z = Z_0 \cap \mathrm{tie}(\{P_0\})$. The release of the first prime gives $\mathrm{relLength}(Z_0, Z) \leq \sum_b v(\det(\rho(\iota_b(g_0)) - 1)) = \mathrm{first}(T)$. Then $\mathrm{len}\, Z_0 = \mathrm{relLength}(Z_0, Z) + \mathrm{len}\, Z \leq \mathrm{first}(T) + \mathrm{glob}(T) + \mathrm{places}(T) = \beta_T$. $\square$
+*Proof.* Let $Z$ and $Z_0$ be the groups tied at $J$ and at $J \setminus \{P_0\}$. By part 2 of the lemma above, $Z = Z_0 \cap \mathrm{tie}(\{P_0\})$. The release of the first prime gives $\mathrm{relLength}(Z_0, Z) \leq \sum_b v(\det(\rho(\iota_b(g_0)) - 1)) = \mathrm{first}(T)$. Then $\mathrm{len}\, Z_0 = \mathrm{relLength}(Z_0, Z) + \mathrm{len}\, Z \leq \mathrm{first}(T) + \mathrm{glob}(T) + \mathrm{places}(T) = \beta_T$. $\square$
 
 **Theorem (Division on the line).** Let $N \neq 0$, $r \leq 1$ and $M \leq Nr$. Let the elements with $V_i$ act trivially on $T$ modulo $\ell^M$, and let the group tied at $J \setminus \{P_0\}$ have length at most $\beta_T$. There is $P^0 \in O[Y]$ with $v_O(P^0(0)) \leq \beta_T$ such that the following holds. Let $O'$ be a discrete valuation ring of characteristic $0$, $e : O \to O'$, and $f : O' \to \bar{\mathbb{Z}}_\ell$ with $f(z) \mid f(z') \Rightarrow z \mid z'$. Let $y \in O'$ with $v(f(y)) \geq r$ and $a = \mathrm{lineDirection}$. Then some $P$ bounds the Selmer module of $T$ without ties for the characters of $d$, and $P((f e(a_v) f(y))_v)$ divides $f(P^0(y)) \cdot f(P^1(y))$ in $\bar{\mathbb{Z}}_\ell$. Here $P^1$ is the tie polynomial of $J \setminus \{P_0\}$.
 
@@ -114,9 +109,9 @@ Lean: `New.Selmer.SelmerDatum.exists_boundsSelmer_and_eval_dvd` (New/Congruences
 
 *Proof.* Let $L_0$ be the relations of $T$ together with the ties at $J \setminus \{P_0\}$. The sharp polynomial theorem gives $G$ that bounds the module with $L_0$ and is sharp at the point $0$. Put $P^0 = \mathrm{restrictToLine}\ a\ G$. Its constant term is $G(0)$, and at $0$ the point module is the tied group. So $v_O(P^0(0)) = \mathrm{len}$ of the tied group $\leq \beta_T$.
 
-Now fix $O'$, $e$, $f$ and $y$, and put $x = (e(a_v) y)_v$. Write $\mathrm{Sel}(L)$ for the point module at $x$ with relations $L$. The sharp polynomial theorem gives $P$ that bounds the module without ties and is sharp at $x$: $v(P(x)) = \mathrm{len}\, \mathrm{Sel}(L_T)$.
+Fix $O'$, $e$, $f$, $y$, put $x = (e(a_v) y)_v$, and let $\mathrm{Sel}(L)$ be the point module at $x$ with relations $L$. The sharp polynomial theorem gives $P$ that bounds the module without ties and is sharp at $x$: $v(P(x)) = \mathrm{len}\, \mathrm{Sel}(L_T)$.
 
-The cost of the ties needs hypothesis (G): if $y \mid \alpha - 1$ then $\ell^M \mid \sum_{j < \ell^N} \alpha^j$. This holds: $v(f(\alpha - 1)) \geq v(f(y)) \geq r$, and the geometric sum bound applies because $r \leq 1$ and $M \leq Nr$. The cost of the ties then gives $\mathrm{relLength}(\mathrm{Sel}(L_T), \mathrm{Sel}(L_0)) \leq v(P^1(y))$. So
+The cost of the ties needs: if $y \mid \alpha - 1$ then $\ell^M \mid \sum_{j < \ell^N} \alpha^j$. This is the geometric sum bound, since $v(f(\alpha - 1)) \geq r$, $r \leq 1$ and $M \leq Nr$. It gives $\mathrm{relLength}(\mathrm{Sel}(L_T), \mathrm{Sel}(L_0)) \leq v(P^1(y))$. So
 
 $$v(P(x)) = \mathrm{relLength}(\mathrm{Sel}(L_T), \mathrm{Sel}(L_0)) + \mathrm{len}(\mathrm{Sel}(L_T) \cap \mathrm{Sel}(L_0)) \leq v(P^1(y)) + v(G(x)).$$
 
@@ -132,7 +127,7 @@ Lean: `New.Selmer.SelmerDatum.divisibleLength_pointChar_le` (New/Congruences/Sel
 
 Lean: `New.Selmer.SelmerDatum.exists_boundsSelmer_ellVal_eval_le` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* Take $P^0$ from the last theorem, and put $p_0 = P^0$ and $p_1 = P^1$ with coefficients in $\bar{\mathbb{Z}}_\ell$. Then $v(p_0(0)) = \mathrm{normLength}(v_O(P^0(0))) \leq \mathrm{normLength}(\beta_T)$, so $v_r(p_0) \leq \mathrm{normLength}(\beta_T)$. The Gauss valuation lemma gives $v_r(p_1) \leq s_0 r$. Choose $y$ with $v(y) \geq r$ at which both $p_0$ and $p_1$ take their Gauss valuations (`New.Selmer.exists_forall_ellVal_eval_eq_gaussVal`, Lib/General/NumberTheory/GaussValuation.lean). Take a coefficient ring $O' \supseteq O$ that contains $y$, and apply the last theorem with $O'$, the inclusion $e$ and $f = $ the inclusion into $\bar{\mathbb{Z}}_\ell$. Put $x_0 = (a_v y)_v$. Each coordinate has $v(x_{0,v}) \geq v(y) \geq r$. Then
+*Proof.* Take $P^0$ from the last theorem, and put $p_0 = P^0$ and $p_1 = P^1$ with coefficients in $\bar{\mathbb{Z}}_\ell$. Then $v(p_0(0)) = \mathrm{normLength}(v_O(P^0(0))) \leq \mathrm{normLength}(\beta_T)$, so $v_r(p_0) \leq \mathrm{normLength}(\beta_T)$. The Gauss valuation lemma gives $v_r(p_1) \leq s_0 r$. Choose $y$ with $v(y) \geq r$ at which both $p_0$ and $p_1$ take their Gauss valuations (`New.Selmer.exists_forall_ellVal_eval_eq_gaussVal`, Lib/General/NumberTheory/GaussValuation.lean). Apply the last theorem with a coefficient ring $O' \supseteq O$ that contains $y$, with $e$ and $f$ the inclusions. Put $x_0 = (a_v y)_v$. Each coordinate has $v(x_{0,v}) \geq v(y) \geq r$. Then
 
 $$v(P(x_0)) \leq v(p_0(y)) + v(p_1(y)) = v_r(p_0) + v_r(p_1) \leq \mathrm{normLength}(\beta_T) + s_0 r. \ \square$$
 
@@ -140,7 +135,7 @@ $$v(P(x_0)) \leq v(p_0(y)) + v(p_1(y)) = v_r(p_0) + v_r(p_1) \leq \mathrm{normLe
 
 Lean: `New.Selmer.SelmerDatum.twistedLengthLe_pointChar` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* For all large $O'$ the ring contains $O$ and all $\zeta_v$ (`New.CoeffRing.eventually_exists_toIntQpBar_eq`). In $O'$ the normalised valuation of $P(x)$ is $v(P(x))$ and that of $\ell^M$ is $M$. So $v_{O'}(P(x)) < v_{O'}(\ell^M)$, and the last lemma bounds the length. Normalise. $\square$
+*Proof.* All large $O'$ contain $O$ and the $\zeta_v$ (`New.CoeffRing.eventually_exists_toIntQpBar_eq`). Normalised, $v_{O'}(P(x)) = v(P(x)) < M$, and $\ell^M$ has value $M$. Apply the last lemma. $\square$
 
 ### All data and all systems at once
 
@@ -165,12 +160,12 @@ Lean: `New.Selmer.IsTorsionLevel`, `New.Selmer.TwistPolynomials` (New/Congruence
 
 Lean: `New.Selmer.nonempty_twistPolynomials_of_isTiedPrimes` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* Take $Q = J$ and $\lambda_v$ the character of $d(v)$. Then $r \leq 1$, since $s_0 \geq 1$ and $s_0 r < 1$. For each $T_i$, the release of the first prime for a datum bounds the group tied at $J \setminus \{P_0\}$ by $\beta_{T_i}$. The polynomial of a datum then gives $P_i$, $x_i$ and the bound in item 4, with $2\,\mathrm{rank}(T_i)\, \# J \leq 2c\# J \leq s_0$. For each $Y_k$, the point theorem of [the last section](/chapter/twisting-theorem/#stickelberger-systems-on-a-line) gives $x_k$ for $P_k = \mathrm{groupRingEval}(\mathrm{universalChar}, \Theta_{Y_k, J})$. Item 5 is the evaluation lemma for the universal character. For item 2, the tame generator $\gamma_v$ lies in inertia at $v$ and has $\lambda_v(\gamma_v) = 1$, and $\lambda_v$ comes from $\mathrm{Cl}_\mathbb{Q}$ by the auxiliary prime data. For item 6, $v(P_i(x)) < \mathrm{normLength}(\beta_{T_i}) + 1 < M$, and the last lemma of the previous part applies. $\square$
+*Proof.* Take $Q = J$ and $\lambda_v$ the character of $d(v)$. Then $r < 1$. For each $T_i$, the release of the first prime for a datum bounds the group tied at $J \setminus \{P_0\}$ by $\beta_{T_i}$. The polynomial of a datum then gives $P_i$, $x_i$ and the bound in item 4, with $2\,\mathrm{rank}(T_i)\, \# J \leq 2c\# J \leq s_0$. For each $Y_k$, the point theorem of [the last section](/chapter/twisting-theorem/#stickelberger-systems-on-a-line) gives $x_k$ for $P_k = \mathrm{groupRingEval}(\mathrm{universalChar}, \Theta_{Y_k, J})$. Item 5 is the evaluation lemma for the universal character. For item 2, the tame generator $\gamma_v$ lies in inertia at $v$ and has $\lambda_v(\gamma_v) = 1$, and $\lambda_v$ comes from $\mathrm{Cl}_\mathbb{Q}$ by the auxiliary prime data. For item 6, $v(P_i(x)) < \mathrm{normLength}(\beta_{T_i}) + 1 < M$, and the last lemma of the previous part applies. $\square$
 
 **Theorem (Twist polynomials).** Let $T_i$ and $Y_k$ be finitely many, let $g_0$ lie in inertia above a place of $S_0$ prime to $\ell$, and let $M$ be a torsion level. There is $s_0 \geq 1$ such that for every $r > 0$ with $s_0 r < 1$, twist polynomials exist for $s_0$, $r$ and all large $N$.
 
 Lean: `New.Selmer.exists_twistPolynomials` (New/Congruences/Selmer/Line.lean).
 
-*Proof.* Choose $c \geq 1$ that bounds all ranks and all numbers of exponents, and $M'$ with $\beta_{Y_k} + 1 < M'$ for all $k$. This is possible because $\beta_{Y_k} \neq \infty$. By the last lemma and the continuity of each $\vartheta_k$, there is a neighbourhood $W$ of $g_0$ such that for $g \in W$ and all $i$, $k$, $b$: $\rho_{T_i}(\iota_b(g)) \equiv \rho_{T_i}(\iota_b(g_0))$ modulo $\ell^M$ and $v(\vartheta_k(g) - \vartheta_k(g_0)) \geq M'$. The descent gives $s$ such that for every $N > M$ there are tied primes $(P_0, J, d)$ with $\# J \leq s$, $\varphi_{P_0} \in W$ and the tied groups bounded by $\mathrm{glob} + \mathrm{places}$. Its hypothesis on the residue field is the second part of the torsion level. Put $s_0 = 2c(1 + s)$. Then $s_0 \geq 1$ and $2c\# J \leq s_0$. Fix $r$. For $N$ large, $N > M$, $M \leq Nr$ and $M' \leq Nr$. The last theorem applies. $\square$
+*Proof.* Choose $c \geq 1$ that bounds all ranks and numbers of exponents, and $M'$ with $\beta_{Y_k} + 1 < M'$ (each $\beta_{Y_k}$ is finite). By the last lemma and the continuity of each $\vartheta_k$, there is a neighbourhood $W$ of $g_0$ such that for $g \in W$ and all $i$, $k$, $b$: $\rho_{T_i}(\iota_b(g)) \equiv \rho_{T_i}(\iota_b(g_0))$ modulo $\ell^M$ and $v(\vartheta_k(g) - \vartheta_k(g_0)) \geq M'$. The descent gives $s$ such that for every $N > M$ there are tied primes $(P_0, J, d)$ with $\# J \leq s$, $\varphi_{P_0} \in W$ and the tied groups bounded by $\mathrm{glob} + \mathrm{places}$. Its hypothesis on the residue field is the second part of the torsion level. Put $s_0 = 2c(1 + s)$. Then $s_0 \geq 1$ and $2c\# J \leq s_0$. Fix $r$. For $N$ large, $N > M$, $M \leq Nr$ and $M' \leq Nr$. The last theorem applies. $\square$
 
-**Remark (Formalization).** The summand $1$ in $s_0 = 2c(1 + s)$ only makes $s_0$ positive. The polynomials $P_k$ of the systems are the values of the universal character, so item 5 holds at every root of unity. The polynomials $P_i$ of the data are chosen by `choose`, and only items 4 and 6 are used.
+**Remark (Formalization).** The summand $1$ in $s_0 = 2c(1 + s)$ only makes $s_0$ positive. The $P_i$ are chosen by `choose`, and only items 4 and 6 are used.

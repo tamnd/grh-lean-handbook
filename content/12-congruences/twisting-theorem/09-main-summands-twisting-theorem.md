@@ -24,7 +24,7 @@ drafted_by: writer@claude-opus-5-5
 
 ## Main summands and the twisting theorem
 
-This section applies the general theorem of [the general twisting theorem](/chapter/twisting-theorem/#the-general-twisting-theorem) to the main summands and to the Stickelberger systems of the ramified pairs. The results are in [MainSummands.lean](lean:New/Congruences/Selmer/MainSummands.lean#L1) and [TwistingTheorem.lean](lean:New/Congruences/Selmer/TwistingTheorem.lean#L1).
+This section applies [the general theorem](/chapter/twisting-theorem/#the-general-twisting-theorem) to the main summands and the ramified pairs. The results are in [MainSummands.lean](lean:New/Congruences/Selmer/MainSummands.lean#L1) and [TwistingTheorem.lean](lean:New/Congruences/Selmer/TwistingTheorem.lean#L1).
 
 Background. A row $R$ is a representation that satisfies `IsMainSummandLike` ([inertia above the level](/chapter/main-summands/#inertia-above-the-level-and-main-summand-like)). A lattice $u$ in $R$ over $O$ (`IsLatticeIn`) is a conjugate of $R$ with entries in $O$ ([avatars](/chapter/main-summands/#avatars-and-conjugate-self-duality)). The terms of $\beta_T$ are defined in [Selmer data](/chapter/tied-selmer-groups/#selmer-data-tied-selmer-groups-and-sahs-lemma). Let $v$ be the $\ell$-adic valuation, $V = v(\mathrm{chosenGroupOrder})$, $f$ the number of infinite places and $d = \mathrm{card}\, n$.
 
@@ -62,7 +62,7 @@ Lean: `New.Selmer.IsMainSummandLike.eventually_exists_selmerDatum` (New/Congruen
 
 Lean: `New.Selmer.exists_selmerData_isTorsionLevel` (New/Congruences/Selmer/TwistingTheorem.lean).
 
-*Proof.* The theorem holds for all $i$ on a common tail of rings. On that tail some $O$ has residue field with more than $2r(c + 2)\, \mathrm{addVal}(\ell) + 1$ elements. Since $d_i \leq r$, $\beta_{T_i} \leq c$, so $\beta_{T_i} + 1 < c + 2$, and $2 d_i\, \mathrm{addVal}(\ell^{c+2}) + 1$ is below the size of the residue field. $\square$
+*Proof.* On a common tail of rings the theorem holds for all $i$, and some $O$ there has residue field with more than $2r(c + 2)\, \mathrm{addVal}(\ell) + 1$ elements. Since $d_i \leq r$, $\beta_{T_i} \leq c$, so $\beta_{T_i} + 1 < c + 2$, and $2 d_i\, \mathrm{addVal}(\ell^{c+2}) + 1$ is below the size of the residue field. $\square$
 
 ### From twisted lengths to Selmer lengths
 
@@ -70,7 +70,7 @@ Lean: `New.Selmer.exists_selmerData_isTorsionLevel` (New/Congruences/Selmer/Twis
 
 Lean: `New.Selmer.divisibleSelmerLength_le_divisibleLength` (New/Congruences/Selmer/TwistingTheorem.lean).
 
-*Proof.* Both modules have the same places, and a cocycle that obeys $L$ obeys the smaller set. So the first module lies in the second. $\square$
+*Proof.* Both modules have the same places, and a cocycle that obeys $L$ obeys the smaller set. $\square$
 
 **Lemma.** Let $T$ be a datum from the theorem for a row $R$, let $Q$ be auxiliary, and let $\psi$ be from $U(1)$ with level $Q$. If $T$ satisfies `TwistedLengthLe Q ψ b`, then `HasDivisibleSelmerLengthLe ψ R Q T.γ ζ b` holds, with $\zeta$ the image of $T.\zeta$ ([Selmer lengths](/chapter/main-summands/#cocycles-relations-and-selmer-lengths)).
 
@@ -108,8 +108,8 @@ Lean: `New.Selmer.invAvatar_pow`, `New.Selmer.tamePart_ne_one_of_invAvatar_ne_on
 
 Lean: `New.Selmer.exists_mFoldTwist_hasDivisibleSelmerLengthLe` (New/Congruences/Selmer/TwistingTheorem.lean).
 
-*Proof.* Take a chosen place $w_0$ above $p_{i_0}$, prime to $\ell$, with $q_{w_0} = p_{i_0}$ (`New.Selmer.exists_chosen_notMem_placesDividing`). Let $g_0$ be its tame generator, $\varepsilon = 2^{-\ell}$ and $c$ as above, so $e'_\ell = c + \varepsilon$. The lemma above gives $O$ and data $T_i$ with torsion level $c + 2$. For each ramified pair and sign, [L-value systems](/chapter/twisting-theorem/#the-stickelberger-systems-of-the-l-values) gives $Y_k$ with this property: if $v(\psi(\Theta_{Y_k, Q})) \leq \beta_{Y_k} + b$, then the ratio has valuation at most $4v(q_{w_0} - 1) + b$. The general theorem with $m = D.m$ gives $Q$ and $\psi$ with $\psi^j$ a small twist for $\varepsilon$. Item 1 of the definition and [twist measures](/chapter/twisting-theorem/#twist-measures-of-critical-pairs) give $\tau$ with $\tau.Q = Q$ and $\tau^{\mathrm{inv}} = \psi$. By the power lemma, $(\tau^j)^{\mathrm{inv}} = \psi^j$ is a small twist. Item 3 and the tame part lemma show that each $\tau^j$ ramifies at every $w \in Q$. So $\tau$ is an $m$-fold twist.
+*Proof.* Take a chosen place $w_0$ above $p_{i_0}$, prime to $\ell$, with $q_{w_0} = p_{i_0}$ (`New.Selmer.exists_chosen_notMem_placesDividing`). Let $g_0$ be its tame generator, $\varepsilon = 2^{-\ell}$ and $c$ as above, so $e'_\ell = c + \varepsilon$. The lemma above gives $O$ and data $T_i$ with torsion level $c + 2$. For each ramified pair and sign, [L-value systems](/chapter/twisting-theorem/#the-stickelberger-systems-of-the-l-values) gives $Y_k$ with this property: if $v(\psi(\Theta_{Y_k, Q})) \leq \beta_{Y_k} + b$, then the ratio has valuation at most $4v(q_{w_0} - 1) + b$. The general theorem with $m = D.m$ gives $Q$ and $\psi$ with $\psi^j$ a small twist for $\varepsilon$. Item 1 and [twist measures](/chapter/twisting-theorem/#twist-measures-of-critical-pairs) give $\tau$ with $\tau.Q = Q$ and $\tau^{\mathrm{inv}} = \psi$. By the power lemma, $(\tau^j)^{\mathrm{inv}} = \psi^j$ is a small twist. Item 3 and the tame part lemma show that each $\tau^j$ ramifies at every $w \in Q$. So $\tau$ is an $m$-fold twist.
 
 Fix $j$. Conclusion 1 follows from the monotonicity lemma for $\varepsilon \leq e'_\ell$ and the lemma on auxiliary twists. For 2, item 4 and $\beta_{T_i} \leq c$ give `TwistedLengthLe` for $c + \varepsilon$. The lemma above then gives the Selmer bound with $\gamma = T_i.\gamma$. For 3, item 5 gives the hypothesis of $Y_k$ with $b = \varepsilon$, and the bound $4v(p_{i_0} - 1) + \varepsilon \leq e'_\ell$ ends the proof. $\square$
 
-**Remark (Formalization).** The data $T_i$, the systems $Y_k$ and the twist $\tau$ are obtained by `choose`, so they are not canonical. The scalar $\zeta$ of conclusion 2 is $T_i.\zeta$ mapped into $\bar{\mathbb{Z}}_\ell$.
+**Remark (Formalization).** The $T_i$, $Y_k$ and $\tau$ come from `choose` and are not canonical. The $\zeta$ of conclusion 2 is $T_i.\zeta$ in $\bar{\mathbb{Z}}_\ell$.
