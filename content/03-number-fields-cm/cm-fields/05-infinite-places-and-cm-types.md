@@ -20,7 +20,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section gives the classical infinite places of a number field and the classical CM types of a CM field. It then gives the form of the source, in which a "CM type" is a choice of one complex embedding at each infinite place, and the set $\Phi$ of the argument is the set of infinite places.
 
-### The classical theory
+### The classical theory of infinite places
 
 Let $F$ be a number field of degree $n$. A complex embedding of $F$ is a ring homomorphism $\sigma : F \to \mathbb{C}$, and there are $n$ of them. Complex conjugation acts on them by $\sigma \mapsto \bar\sigma$. An embedding is real if $\sigma = \bar\sigma$. If $r_1$ is the number of real embeddings and $r_2$ is the number of pairs $\{\sigma, \bar\sigma\}$ with $\sigma \ne \bar\sigma$, then $r_1 + 2 r_2 = n$ (Neukirch, Ch. I, §5).
 
@@ -83,6 +83,6 @@ Lean: `New.abs_norm_eq_prod_norm_sq`, `New.one_le_prod_norm_Φ`, `New.trace_eq_s
 
 **Remark (Formalization).** Statements 1 to 3 do not depend on the place embedding, since $\|\bar z\| = \|z\|$ and $\mathrm{Re}\,\bar z = \mathrm{Re}\,z$. Statement 4 is true for every choice. The proof of 4 in the source goes through strong approximation for $\mathrm{GL}_n$ over the adeles, a deeper result than the statement. The argument uses 2 to bound from below the norms of algebraic integers, and 3 to show that the standard additive character of $\mathbb{A}_E$ is trivial on $E$ (`New.stdAddChar_toAdele`).
 
-### What the argument uses
+### What the argument uses of the infinite places
 
 The argument uses the infinite places of $E$ in three ways. They index the twists $\chi_\phi$ and the products $\prod_{\phi \in \Phi}$ of the main theorem, as in [the field E](/chapter/fields-places-twists/). They give the components at infinity of the adeles, through `New.toAdele`. They give the bound $\prod_w \|\Phi_w(x)\| \ge 1$ for nonzero integers. This book has not found the reflex field or the type norm of a classical CM type in the source. The source uses only one embedding at each place and the group law that `New.Parameters.galOfPlace` puts on the places of $E$.

@@ -24,14 +24,14 @@ The next chapter, [class field theory](/chapter/class-field-theory/), builds on 
 Every number field in the argument is a CM field. There are three reasons, and each one is visible in the source.
 
 1. The automorphic objects of the proof live on unitary groups $U(n)$ over $E$, relative to the quadratic extension $E / E^+$. This needs an involution of $E$ with a totally real fixed field, and that is complex conjugation on a CM field.
-2. A CM field is totally complex. So every infinite place of $E$ is complex, and the product $\prod_{v \mid \infty} E_v$ is a product of copies of $\mathbb{C}$. The source defines the adeles of $E$ with this product (Section 4). The definition is correct only because $E$ is totally complex.
+2. A CM field is totally complex. So every infinite place of $E$ is complex, and the product $\prod_{v \mid \infty} E_v$ is a product of copies of $\mathbb{C}$. The source defines the adeles of $E$ with this product (Section 5). The definition is correct only because $E$ is totally complex.
 3. On a CM field, complex conjugation commutes with every embedding into $\mathbb{C}$. So one element $\bar x \in E$ is the complex conjugate of $x$ under all embeddings at once. The source uses this to define conjugation on $\mathcal{O}_E$, on the finite places and on the finite adeles.
 
-The base change steps of the argument make new fields from $E$: fixed fields of automorphisms, and fields $E[X]/(P)$ for polynomials $P$ whose complex roots all have the same absolute value. The source must show that these fields are CM again. Section 2 gives its two criteria.
+The base change steps of the argument make new fields from $E$: fixed fields of automorphisms, and fields $E[X]/(P)$ for polynomials $P$ whose complex roots all have the same absolute value. The source must show that these fields are CM again. Section 3 gives its two criteria.
 
 ### What the chapter contains
 
-Section 2 treats imaginary quadratic fields and CM fields. It states the definition of Mathlib and the two CM criteria of the source. Section 3 treats the cyclotomic extensions of $K$ and the towers. Section 4 treats the infinite places, the choice of embeddings and the adeles. Section 5 treats the finite places: the primes of $\mathcal{O}_E$, their conjugates, and the places of $\bar{\mathbb{Q}}$ as valuation subrings, with decomposition groups, inertia groups and Frobenius elements. Section 6 treats root discriminants and the finite ideles. Section 7 has exercises and notes.
+Section 2 treats the imaginary quadratic field $K$. Section 3 treats CM fields: it states the definition of Mathlib and the two CM criteria of the source. Section 4 treats the cyclotomic extensions of $K$ and the towers. Section 5 treats the infinite places, the choice of embeddings and the adeles. Section 6 treats the finite places: the primes of $\mathcal{O}_E$, their conjugates, and the places of $\bar{\mathbb{Q}}$ as valuation subrings, with decomposition groups, inertia groups and Frobenius elements. Section 7 treats root discriminants and the finite ideles. Section 8 has exercises and notes.
 
 ### The sketch
 
@@ -50,4 +50,4 @@ Number fields are of characteristic $0$ and finite over $\mathbb{Q}$. For a numb
 
 The parameters are as in [the parameters](/chapter/fields-places-twists/): $18480 \mid q_0$, $d$ is a prime with $q_0 \mid 2(d+1)$ and $q_0 \nmid d + 1$, so $d \equiv 7 \pmod 8$. For $s \ge 0$, $\mathrm{towerDeg}(s) = 3^{c(s)} 2^s$ with $c(s) = \lfloor \log_3 s \rfloor + 5$, and $q_1 = q_0 \cdot \mathrm{towerDeg}(s)$. The field $E = K(\zeta)$ has $\zeta$ of order $q_1$, and $f = \# \Phi = \mathrm{towerDeg}(s) \varphi(q_0)$ is the number of its infinite places.
 
-The source states its results for a general number field where it can, and for the field $E$ of the parameters only where it must. This chapter follows it. A result stated for a CM field $E$ applies to the field $E$ of the parameters, since that field is CM (Section 3).
+The source states its results for a general number field where it can, and for the field $E$ of the parameters only where it must. This chapter follows it. A result stated for a CM field $E$ applies to the field $E$ of the parameters, since that field is CM (Section 4).

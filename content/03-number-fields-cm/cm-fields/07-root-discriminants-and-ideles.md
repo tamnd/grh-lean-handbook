@@ -31,7 +31,7 @@ drafted_by: writer@claude-opus-5-5
 
 The main theorem of the argument contains the number $\Omega = e^{C S} \cdot 2\pi / \mathrm{rd}_E$, with $\mathrm{rd}_E$ the root discriminant of $E$, as [the field E](/chapter/fields-places-twists/) states. This section gives the bound on $\mathrm{rd}_E$ that the argument uses and the computation of the different of $E$ behind it. It then gives the finite ideles of a number field, which carry the Hecke characters and the class field theory of [class field theory](/chapter/class-field-theory/).
 
-### The classical theory
+### The classical theory of discriminants
 
 Let $F$ be a number field of degree $n$ with discriminant $d_F$. The root discriminant of $F$ is $\mathrm{rd}_F = |d_F|^{1/n}$. Since $d_F$ is a nonzero integer, $\mathrm{rd}_F \ge 1$.
 
@@ -107,6 +107,6 @@ Lean: `New.isCompact_idelesUnitOff_empty`, `New.exists_idele_classGroup_hom`, `N
 
 **Remark (Formalization).** Statement 5 is the finiteness of ray class groups in the form the argument uses. For a CM field, the hypothesis on totally positive elements becomes "$H$ contains all principal ideles". In 2, the source gives $c$ by an existence statement, so the homomorphism is chosen. The source states the class group bound through `classNumber` (Mathlib), the cardinality of a finite type, which is positive. In the source, statement 5 gives the finite index of the kernels of characters in the Hecke character files (Lib/ClassField/HeckeCharacter/Basic.lean) and in the existence theorem of class field theory (Lib/ClassField/Global/ExistenceTheorem.lean), and statement 6 gives that such a character is unramified at almost all places.
 
-### What the argument uses
+### What the argument uses of discriminants and ideles
 
 From this section, the argument uses three facts: the bound $1 \le \mathrm{rd}_E \le q_1 d$ in the constants of the main theorem, the finiteness statements 5 and 6 for the finite ideles of $E$ and of the fields in the base change steps, and the class group map 2 for the construction of characters with given local components.

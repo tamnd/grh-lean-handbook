@@ -35,7 +35,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section gives the classical theory of the finite places of a number field: prime ideals, the formula $\sum e_i f_i = n$, decomposition and inertia groups, and Frobenius elements. It then gives the two forms of the source. A finite place of a number field is a nonzero prime ideal of its ring of integers, as in Mathlib. A place of the algebraic closure $\Omega$ is a valuation subring of $\Omega$, and decomposition groups, inertia groups and Frobenius elements are defined from it.
 
-### The classical theory
+### The classical theory of finite places
 
 Let $F$ be a number field with ring of integers $\mathcal{O}_F$. A finite place of $F$ is a nonzero prime ideal $\mathfrak{p}$ of $\mathcal{O}_F$. Its norm $N\mathfrak{p} = |\mathcal{O}_F/\mathfrak{p}|$ is a power of the prime $p$ below it, so $N\mathfrak{p} \ge 2$.
 

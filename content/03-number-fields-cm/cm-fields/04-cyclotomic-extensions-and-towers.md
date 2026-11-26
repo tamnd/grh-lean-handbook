@@ -22,7 +22,7 @@ drafted_by: writer@claude-opus-5-5
 
 The field $E$ of the argument is a cyclotomic extension of $K$. This section recalls the classical theory of cyclotomic extensions, shows why $\Phi_{q_1}$ stays irreducible over $K$, and lists the towers of fields that the proof uses. It then gives the form of the source: a fixed algebraic closure $\Omega$ of $\mathbb{Q}$, its Galois group with the Krull topology, the cyclotomic character, and the cyclotomic fields as fixed fields.
 
-### The classical theory
+### The classical theory of cyclotomic fields
 
 Let $n \ge 1$ and let $\zeta_n$ be a primitive $n$-th root of unity. The cyclotomic polynomial $\Phi_n$ is irreducible over $\mathbb{Q}$, so $[\mathbb{Q}(\zeta_n) : \mathbb{Q}] = \varphi(n)$, and $a \mapsto (\zeta_n \mapsto \zeta_n^a)$ is an isomorphism $(\mathbb{Z}/n)^\times \cong \mathrm{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ (Neukirch, Ch. I, §10; Washington, Ch. 2). A prime $p \nmid n$ is unramified in $\mathbb{Q}(\zeta_n)$, its Frobenius is $\zeta_n \mapsto \zeta_n^p$, and its residue degree is the order of $p$ modulo $n$ (Neukirch, Ch. I, Prop. 10.3). The discriminant of $\mathbb{Q}(\zeta_n)$ is given in Washington, Prop. 2.7.
 
@@ -37,7 +37,7 @@ The proof uses five towers of fields. The first two are classical, and the last 
 1. $\mathbb{Q} \subset K \subset E \subset \mathbb{Q}(\zeta_{q_1 d})$. The field $E = K(\zeta_{q_1})$ embeds in $\mathbb{Q}(\zeta_{q_1 d})$, since $K \subset \mathbb{Q}(\zeta_d)$. So $E$ is abelian over $\mathbb{Q}$, and $\mathrm{Gal}(E/\mathbb{Q}) \cong \{\pm 1\} \times (\mathbb{Z}/q_1)^\times$. The embedding is `New.Parameters.toCycloField`, in [the field E](/chapter/fields-places-twists/).
 2. $E^+ \subset E$. Since $E$ is abelian over $\mathbb{Q}$ and totally complex, it is CM by `NumberField.IsCMField.of_isAbelianGalois` (Mathlib), an instance. So $E^+$ is the fixed field of complex conjugation, of degree $\varphi(q_1)$ over $\mathbb{Q}$.
 3. The family $(E_s)_{s \ge 0}$, one field for each level $s$. Here $q_1(s) = q_0 \cdot 3^{c(s)} 2^s$.
-4. Fields $K \subset L \subset \bar{\mathbb{Q}}$ with $\mathrm{Gal}(\bar{\mathbb{Q}}/L)$ an open subgroup of $\mathrm{Gal}(\bar{\mathbb{Q}}/K)$. The ramification of places in such towers is in Section 5.
+4. Fields $K \subset L \subset \bar{\mathbb{Q}}$ with $\mathrm{Gal}(\bar{\mathbb{Q}}/L)$ an open subgroup of $\mathrm{Gal}(\bar{\mathbb{Q}}/K)$. The ramification of places in such towers is in Section 6.
 5. Fields $E \subset E[X]/(P)$ and fixed fields of automorphisms, in the base change steps. They are CM by Section 3.
 
 **Remark (Formalization).** In the third tower, $c(s)$ is nondecreasing in $s$ and $2^s \mid 2^{s+1}$, so $\mathrm{towerDeg}(s) \mid \mathrm{towerDeg}(s+1)$ and $q_1(s) \mid q_1(s+1)$. So classically $E_s \subset E_{s+1}$. The source does not use this. It defines each $E_s$ as a separate type, `CyclotomicField (q₁ s) K`, and this book has found no map from $E_s$ to $E_{s+1}$ in it. Every statement about $E$ is made for one fixed $s$. The level $s$ enters the argument only through the size of $q_1$ and the number $f = \mathrm{towerDeg}(s) \varphi(q_0)$ of infinite places.
@@ -86,4 +86,4 @@ Lean: `New.cyclotomicCharMod_surjective` (Lib/ClassField/Places/DecompositionCyc
 
 **Remark (Formalization).** The first claim of the theorem is an instance of the source, `IsCyclotomicExtension {N} ℚ (cycloField N)`, with no name. With it, every result of Mathlib on cyclotomic extensions of $\mathbb{Q}$ applies to the subfield `New.cycloField N` of $\Omega$, and the source uses this for $N = d$ in the proof that $\Phi_{q_1}$ is irreducible over $K$. The field $\mathbb{Q}(\zeta_{q_1 d})$ that receives $E$ in the first tower is also `New.cycloField (q₁ * d)`. So $E$ maps to a subfield of $\Omega$, but only through the chosen map `New.Parameters.toCycloField`.
 
-The value of $\chi_N$ at a Frobenius element is the norm of the prime, as in the classical theory. The source states this in Section 5, after it has defined Frobenius elements at places of $\Omega$.
+The value of $\chi_N$ at a Frobenius element is the norm of the prime, as in the classical theory. The source states this in Section 6, after it has defined Frobenius elements at places of $\Omega$.
