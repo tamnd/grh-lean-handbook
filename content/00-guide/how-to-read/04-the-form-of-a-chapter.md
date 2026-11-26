@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The form of a chapter
 
-Every chapter of the book has the same form. A reader who knows the form can find the statement, the proof, the example or the remark that the reader needs, and can tell which part of a page is mathematics and which part is a note on the Lean text. This section describes the parts of a chapter in the order in which they come, then the parts of a statement, then the numbers and the links. Its example is [the zero reflection theorem](/decl/New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero/) of [from the half-plane to the line](/chapter/half-plane-to-line/), the second chapter of Volume 1.
+Every chapter of the book has the same form. A reader who knows the form can find the statement, the proof, the example or the remark that the reader needs, and can tell which part of a page is mathematics and which part is a note on the Lean text. This section describes the parts of a chapter in the order in which they come, then the parts of a statement, then the numbers and the links. Its example is the zero reflection theorem, Theorem 2.5.5 of Volume 1, in Section 5 of [from the half-plane to the line](/chapter/half-plane-to-line/).
 
 ### The parts of a chapter
 
