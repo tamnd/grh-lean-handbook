@@ -1,0 +1,128 @@
+---
+title: The status of the chapters
+lean: []
+decls: []
+status: drafted
+drafted_by: writer@claude-opus-5-5
+generated_by: scripts/lean_index.py
+---
+
+## The status of the chapters
+
+This table gives each chapter of the plan with its status and its words, as `wc -w` counts the text of its sections. A chapter with the status planned has no text yet. The status drafted means that a model wrote the chapter and that the check of the build passes. The status checked needs a named person who compared each statement with its Lean type, and the status reviewed needs a named person who works in the field. This chapter is not in the table, because the script that writes the table also writes this chapter.
+
+| Vol. | Ch. | Title | Status | Words |
+|---|---|---|---|---|
+| 0 | 1 | Preface | planned | 0 |
+| 0 | 2 | The claim and its status | drafted | 9,434 |
+| 0 | 3 | The statements | drafted | 11,079 |
+| 0 | 4 | How to read this book | planned | 0 |
+| 0 | 5 | Notation and conventions | drafted | 10,046 |
+| 0 | 6 | The table of sizes | drafted | 12,911 |
+| 0 | 7 | Reading the Lean | drafted | 14,522 |
+| 0 | 8 | The register of findings | planned | 0 |
+| 0 | 9 | The two editions | drafted | 7,411 |
+| 1 | 1 | The theorem and the plan | drafted | 6,913 |
+| 1 | 2 | From the half-plane to the line | drafted | 7,838 |
+| 1 | 3 | The weighted prime remainder | drafted | 8,837 |
+| 1 | 4 | Landau's criterion | drafted | 8,962 |
+| 1 | 5 | Why a lattice can bound a prime sum | drafted | 7,911 |
+| 1 | 6 | Fields, places and twists | drafted | 8,765 |
+| 1 | 7 | The data and its sizes | drafted | 9,847 |
+| 1 | 8 | The data exist | drafted | 13,067 |
+| 1 | 9 | Prime sums and the total remainder | drafted | 8,874 |
+| 1 | 10 | Twisted lattices | drafted | 9,751 |
+| 1 | 11 | The lattice of integral target forms | drafted | 8,886 |
+| 1 | 12 | Theorems A, B and C | drafted | 9,793 |
+| 1 | 13 | The main inequality and the end of the proof | drafted | 10,056 |
+| 2 | 1 | Dirichlet L-functions and zero symmetry | drafted | 9,245 |
+| 2 | 2 | Polar functions and the explicit formula | drafted | 8,378 |
+| 2 | 3 | Landau's theorem | drafted | 8,820 |
+| 2 | 4 | The prime number theorem in progressions | planned | 0 |
+| 2 | 5 | Primes in windows | planned | 0 |
+| 2 | 6 | Pólya-Vinogradov and quadratic twists | planned | 0 |
+| 2 | 7 | Sets with no three-term progressions | planned | 0 |
+| 3 | 1 | CM fields, towers and places | drafted | 11,679 |
+| 3 | 2 | Class field theory on finite ideles | planned | 0 |
+| 3 | 3 | Local duality and the Greenberg-Wiles count | planned | 0 |
+| 3 | 4 | Odd classes over cyclotomic fields | planned | 0 |
+| 3 | 5 | CM elliptic curves | planned | 0 |
+| 4 | 1 | Adeles and hermitian spaces | planned | 0 |
+| 4 | 2 | Quotients and reduction theory | planned | 0 |
+| 4 | 3 | Automorphic forms on unitary groups | planned | 0 |
+| 4 | 4 | A simple trace formula | planned | 0 |
+| 4 | 5 | Congruence subgroups and Haar moduli | planned | 0 |
+| 5 | 1 | Discrete series through one matrix coefficient | planned | 0 |
+| 5 | 2 | Laplace's method for discrete series coefficients | planned | 0 |
+| 5 | 3 | Bessel subgroups and Bruhat measures | planned | 0 |
+| 5 | 4 | Integral Weyl modules and branching | planned | 0 |
+| 5 | 5 | Characters of GL_n over a finite field | planned | 0 |
+| 5 | 6 | Iwahori exponents, Satake and the chain lemma | planned | 0 |
+| 6 | 1 | The Weil representation from a vacuum | planned | 0 |
+| 6 | 2 | Local theta in the Fock model | planned | 0 |
+| 6 | 3 | Theta kernels, theta lifts and the seesaw | planned | 0 |
+| 6 | 4 | Bessel periods and one step of unfolding | planned | 0 |
+| 6 | 5 | The Siegel-Weil formula | planned | 0 |
+| 6 | 6 | Doubling and the Rallis inner product formula | planned | 0 |
+| 7 | 1 | Schemes through their points | planned | 0 |
+| 7 | 2 | Cohomology as Ext on test rings | planned | 0 |
+| 7 | 3 | Period rings and crystalline representations | planned | 0 |
+| 7 | 4 | Kisin frames and limits | planned | 0 |
+| 7 | 5 | The comparison theorems on test objects | planned | 0 |
+| 7 | 6 | Fitting ideals, lengths and coefficient rings | planned | 0 |
+| 8 | 1 | Complex abelian varieties through theta functions | planned | 0 |
+| 8 | 2 | An integral model without a moduli problem | planned | 0 |
+| 8 | 3 | The congruence relation | planned | 0 |
+| 8 | 4 | What attached means | planned | 0 |
+| 8 | 5 | Building the representations | planned | 0 |
+| 9 | 1 | Theorem A and its plan | drafted | 8,818 |
+| 9 | 2 | The objects of the upper bound | planned | 0 |
+| 9 | 3 | Theta kernels and gauges | planned | 0 |
+| 9 | 4 | The seesaw identity, part 1 | planned | 0 |
+| 9 | 5 | The seesaw identity, part 2 | planned | 0 |
+| 9 | 6 | The archimedean size of the composite lift | planned | 0 |
+| 9 | 7 | The field E at the primes | planned | 0 |
+| 9 | 8 | The CM curve and its formal group | planned | 0 |
+| 9 | 9 | Normal forms and the count | planned | 0 |
+| 9 | 10 | The integral vacuum and tight frames | planned | 0 |
+| 9 | 11 | Elementary divisors of a Hecke operator | planned | 0 |
+| 9 | 12 | Divisibility prime by prime | planned | 0 |
+| 9 | 13 | The proof of Theorem A | planned | 0 |
+| 10 | 1 | Theorem B and its plan | drafted | 8,769 |
+| 10 | 2 | Few translates suffice | planned | 0 |
+| 10 | 3 | Equal multiplicities by the trace formula | planned | 0 |
+| 10 | 4 | Bessel functions at a real place | planned | 0 |
+| 10 | 5 | Poincaré series and unfolding | planned | 0 |
+| 10 | 6 | Moments of the Poincaré map | planned | 0 |
+| 10 | 7 | The anatomy of a term | planned | 0 |
+| 10 | 8 | The remaining terms | planned | 0 |
+| 10 | 9 | The main term | planned | 0 |
+| 10 | 10 | Local densities at the real places | planned | 0 |
+| 10 | 11 | Local densities at the finite places | planned | 0 |
+| 10 | 12 | The proof of Theorem B | planned | 0 |
+| 11 | 1 | Theorem C and the height argument | drafted | 8,729 |
+| 11 | 2 | Twists, critical pairs and regular families | planned | 0 |
+| 11 | 3 | Single theta lifts and their norms | planned | 0 |
+| 11 | 4 | The exchange identity, part 1 | planned | 0 |
+| 11 | 5 | The exchange identity, part 2 | planned | 0 |
+| 11 | 6 | Seesaw squares | planned | 0 |
+| 11 | 7 | The chain determinant and its factorization | planned | 0 |
+| 11 | 8 | Grids, paths and turns | planned | 0 |
+| 11 | 9 | Deep level Poincaré series and spanning forms | planned | 0 |
+| 11 | 10 | Hecke values of character lifts | planned | 0 |
+| 11 | 11 | The divisibility is sharp | planned | 0 |
+| 11 | 12 | False lifts | planned | 0 |
+| 11 | 13 | The comparison operator, part 1 | planned | 0 |
+| 11 | 14 | The comparison operator, part 2 | planned | 0 |
+| 11 | 15 | The height of one lift determinant | planned | 0 |
+| 11 | 16 | The proof of Theorem C | planned | 0 |
+| 12 | 1 | Regular families: the plan | drafted | 14,557 |
+| 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | planned | 0 |
+| 12 | 3 | Auxiliary primes and first-order deformations | planned | 0 |
+| 12 | 4 | From a congruence to a Selmer class | planned | 0 |
+| 12 | 5 | The main summands of the attached Galois representations | planned | 0 |
+| 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | planned | 0 |
+| 12 | 7 | Stickelberger systems and the twisting theorem | planned | 0 |
+| 12 | 8 | The local loss at ℓ | planned | 0 |
+| 12 | 9 | Cup products on Kisin modules | planned | 0 |
+| 12 | 10 | The proof of the existence of regular families | planned | 0 |

@@ -1,0 +1,210 @@
+---
+title: Other names, M to Z
+lean: []
+decls: []
+status: drafted
+drafted_by: writer@claude-opus-5-5
+generated_by: scripts/lean_index.py
+---
+
+## Other names, M to Z
+
+This section has the 197 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+
+- `New.map_star_CM`: `Lib/Adelic/Adeles/Basic.lean`, [line 387](lean:Lib/Adelic/Adeles/Basic.lean#L387). Cited in [Chapter](/chapter/cm-fields/).
+- `New.map_star_complex`: `Lib/Adelic/Adeles/Basic.lean`, [line 383](lean:Lib/Adelic/Adeles/Basic.lean#L383). Cited in [Chapter](/chapter/cm-fields/).
+- `New.mellin_thetaSeries`: `Lib/Analytic/DirichletTheta.lean`, [line 231](lean:Lib/Analytic/DirichletTheta.lean#L231). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.mellin_thetaSeries_moebius`: `Lib/Analytic/DirichletTheta.lean`, [line 243](lean:Lib/Analytic/DirichletTheta.lean#L243). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.mem_integrableExpSet_of_summable_taylor`: `Lib/Analytic/Landau.lean`, [line 47](lean:Lib/Analytic/Landau.lean#L47). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
+- `New.mem_placeOfEmb`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 424](lean:Lib/ClassField/Places/ValuationSubrings.lean#L424). Cited in [Chapter](/chapter/cm-fields/).
+- `New.mem_star_place`: `Lib/Adelic/Adeles/Basic.lean`, [line 401](lean:Lib/Adelic/Adeles/Basic.lean#L401). Cited in [Chapter](/chapter/cm-fields/).
+- `New.modEq_orderOf_of_div_pow_eq`: `New/Reduction/Data/Existence.lean`, [line 154](lean:New/Reduction/Data/Existence.lean#L154). Cited in [Chapter](/chapter/data-exist/).
+- `New.mul_lt_l₀`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 92](lean:New/Reduction/Data/FieldsAndPlaces.lean#L92). Cited in [Chapter](/chapter/notation/).
+- `New.mul_rank_lt_two_pow`: `New/Reduction/Data/Existence.lean`, [line 405](lean:New/Reduction/Data/Existence.lean#L405). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
+- `New.natFloor_rpow_le_two_mul_rpow`: `New/Reduction/OneSidedBound.lean`, [line 170](lean:New/Reduction/OneSidedBound.lean#L170). Cited in [Chapter](/chapter/main-inequality/).
+- `New.norm_det_formGram_le`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 116](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L116). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.norm_det_mul_det_gram_mul_det_le_one`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 77](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L77). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.norm_det_pairing_sq_le`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 129](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L129). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.norm_gaussianTheta_char_le`: `Lib/Analytic/DirichletTheta.lean`, [line 420](lean:Lib/Analytic/DirichletTheta.lean#L420). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.norm_gaussSum_of_isPrimitive`: `Lib/Analytic/PolyaVinogradov.lean`, [line 29](lean:Lib/Analytic/PolyaVinogradov.lean#L29). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.norm_thetaSeries_inv`: `Lib/Analytic/DirichletTheta.lean`, [line 399](lean:Lib/Analytic/DirichletTheta.lean#L399). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.norm_thetaSeries_le`: `Lib/Analytic/DirichletTheta.lean`, [line 141](lean:Lib/Analytic/DirichletTheta.lean#L141). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.OddPart.LFunction_neg_nat_eq_zero_iff`: `Lib/Cyclotomic/Voronoi.lean`, [line 153](lean:Lib/Cyclotomic/Voronoi.lean#L153). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.ofReal_re_logDerivMean_one`: `New/Reduction/Zeros/PrimeError.lean`, [line 335](lean:New/Reduction/Zeros/PrimeError.lean#L335). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.one_le_prod_norm_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 254](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L254). Cited in [Chapter](/chapter/cm-fields/).
+- `New.one_le_rootDiscr`: `New/Reduction/Data/AdmissibleData.lean`, [line 277](lean:New/Reduction/Data/AdmissibleData.lean#L277). Cited in [Chapter](/chapter/cm-fields/).
+- `New.one_sub_chiK_mem_Icc`: `New/Reduction/Zeros/PrimeError.lean`, [line 70](lean:New/Reduction/Zeros/PrimeError.lean#L70). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.Parameters`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 64](lean:New/Reduction/Data/FieldsAndPlaces.lean#L64). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.bigOmega`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 204](lean:New/Reduction/Data/FieldsAndPlaces.lean#L204). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.card_placeClass_eq_one_eq_towerDeg`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 362](lean:New/Reduction/Data/FieldsAndPlaces.lean#L362). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.chiK_eq_one_of_dvd`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 144](lean:New/Reduction/Data/FieldsAndPlaces.lean#L144). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.conductor_mem_differentIdeal`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 278](lean:New/Derivatives/Field/PrimeDecomposition.lean#L278). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.constantBound`: `New/Reduction/Data/AdmissibleData.lean`, [line 50](lean:New/Reduction/Data/AdmissibleData.lean#L50). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Parameters.coprime_q₁_d`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 188](lean:New/Reduction/Data/FieldsAndPlaces.lean#L188). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.d_pow_ne_neg_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 436](lean:New/Reduction/Data/FieldsAndPlaces.lean#L436). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.differentIdeal_eq_span_relDifferentGen`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 261](lean:New/Derivatives/Field/PrimeDecomposition.lean#L261). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.differentIdeal_eq_span_relDifferentGen_mul`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 271](lean:New/Derivatives/Field/PrimeDecomposition.lean#L271). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.dvd_d_add_one_div_four_of_dvd_q₁`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 119](lean:New/Reduction/Data/FieldsAndPlaces.lean#L119). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.E`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 195](lean:New/Reduction/Data/FieldsAndPlaces.lean#L195). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.exists_eventually_isLargeScale`: `New/Reduction/Data/Existence.lean`, [line 647](lean:New/Reduction/Data/Existence.lean#L647). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_isSparse`: `New/Reduction/Data/Existence.lean`, [line 244](lean:New/Reduction/Data/Existence.lean#L244). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_isSparse_of_ranks`: `New/Reduction/Data/Existence.lean`, [line 488](lean:New/Reduction/Data/Existence.lean#L488). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_large_isSparse`: `New/Reduction/Data/Existence.lean`, [line 167](lean:New/Reduction/Data/Existence.lean#L167). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_orderOf_placeClass_eq`: `New/Reduction/Data/Existence.lean`, [line 119](lean:New/Reduction/Data/Existence.lean#L119). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_prime_log_mem_Icc_mul_star_eq`: `New/Reduction/Data/Existence.lean`, [line 513](lean:New/Reduction/Data/Existence.lean#L513). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_prime_pair_norm`: `New/Reduction/Data/Existence.lean`, [line 310](lean:New/Reduction/Data/Existence.lean#L310). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_zeta_pow_eq`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 482](lean:New/Reduction/Data/FieldsAndPlaces.lean#L482). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.galOfPlace`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 278](lean:New/Reduction/Data/FieldsAndPlaces.lean#L278). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.galOfPlace_zeta`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 389](lean:New/Reduction/Data/FieldsAndPlaces.lean#L389). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.instPrimeSevenModEight`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 85](lean:New/Reduction/Data/FieldsAndPlaces.lean#L85). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.irreducible_cyclotomic`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 211](lean:New/Reduction/Data/FieldsAndPlaces.lean#L211). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.IsAdmissibleData`: `New/Reduction/Data/Existence.lean`, [line 552](lean:New/Reduction/Data/Existence.lean#L552). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.IsAdmissibleData.exists_hasFields`: `New/Reduction/Data/Existence.lean`, [line 734](lean:New/Reduction/Data/Existence.lean#L734). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
+- `New.Parameters.IsLargeScale`: `New/Reduction/Data/Existence.lean`, [line 621](lean:New/Reduction/Data/Existence.lean#L621). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
+- `New.Parameters.IsLargeScale.exists_isAdmissibleData`: `New/Reduction/Data/Existence.lean`, [line 820](lean:New/Reduction/Data/Existence.lean#L820). Cited in [Chapter](/chapter/data-exist/).
+- `New.Parameters.IsLargeScale.exists_isLeast_dvd_log_log_mem_Icc`: `New/Reduction/Data/Existence.lean`, [line 715](lean:New/Reduction/Data/Existence.lean#L715). Cited in [Chapter](/chapter/sizes/).
+- `New.Parameters.IsSparse`: `New/Reduction/Data/AdmissibleData.lean`, [line 58](lean:New/Reduction/Data/AdmissibleData.lean#L58). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/data-exist/).
+- `New.Parameters.K`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 171](lean:New/Reduction/Data/FieldsAndPlaces.lean#L171). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.logLevelMin`: `New/Reduction/Data/AdmissibleData.lean`, [line 67](lean:New/Reduction/Data/AdmissibleData.lean#L67). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Parameters.logLevelMin_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 338](lean:New/Reduction/Data/AdmissibleData.lean#L338). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Parameters.map_differentIdeal_eq_span_sqrtNegDInE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 122](lean:New/Derivatives/Field/PrimeDecomposition.lean#L122). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.norm_zeta_eq_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 507](lean:New/Reduction/Data/FieldsAndPlaces.lean#L507). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.numInfPlaces_E`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 353](lean:New/Reduction/Data/FieldsAndPlaces.lean#L353). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.placeClass`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 292](lean:New/Reduction/Data/FieldsAndPlaces.lean#L292). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.placeClass_placeOfInt_eq_neg_one_iff`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 458](lean:New/Reduction/Data/FieldsAndPlaces.lean#L458). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/prime-sums/).
+- `New.Parameters.placeMulEquiv`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 282](lean:New/Reduction/Data/FieldsAndPlaces.lean#L282). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.placeOfInt`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 287](lean:New/Reduction/Data/FieldsAndPlaces.lean#L287). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.prod_phi_eq_norm`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 514](lean:New/Reduction/Data/FieldsAndPlaces.lean#L514). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.q₁`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 110](lean:New/Reduction/Data/FieldsAndPlaces.lean#L110). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.q₁_mul_d_dvd_q₂`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 181](lean:New/Reduction/Data/FieldsAndPlaces.lean#L181). Cited in [Chapter](/chapter/notation/).
+- `New.Parameters.q₂`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 175](lean:New/Reduction/Data/FieldsAndPlaces.lean#L175). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.relDifferentGen`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 255](lean:New/Derivatives/Field/PrimeDecomposition.lean#L255). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.relDifferentGen_dvd_q₁`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 258](lean:New/Derivatives/Field/PrimeDecomposition.lean#L258). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.sixty_four_lt_d`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 136](lean:New/Reduction/Data/FieldsAndPlaces.lean#L136). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.sqrtNegDInE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 96](lean:New/Derivatives/Field/PrimeDecomposition.lean#L96). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.sqrtNegDInE_dvd_d`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 118](lean:New/Derivatives/Field/PrimeDecomposition.lean#L118). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.thirteen_le_of_chiK_ne_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 162](lean:New/Reduction/Data/FieldsAndPlaces.lean#L162). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.toCycloField`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 236](lean:New/Reduction/Data/FieldsAndPlaces.lean#L236). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.vacuumBoundConst`: `New/Derivatives/Vacuum/IntegralVacuum.lean`, [line 280](lean:New/Derivatives/Vacuum/IntegralVacuum.lean#L280). Cited in [Chapter](/chapter/notation/).
+- `New.Parameters.ζ`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 296](lean:New/Reduction/Data/FieldsAndPlaces.lean#L296). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.Φ`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 200](lean:New/Reduction/Data/FieldsAndPlaces.lean#L200). Cited in [Chapter](/chapter/notation/).
+- `New.PlaceEmbedding`: `Lib/Adelic/Adeles/Basic.lean`, [line 65](lean:Lib/Adelic/Adeles/Basic.lean#L65). Cited in [Chapter](/chapter/cm-fields/).
+- `New.placeOfEmb`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 405](lean:Lib/ClassField/Places/ValuationSubrings.lean#L405). Cited in [Chapter](/chapter/cm-fields/).
+- `New.placeOfEmb_comp_star`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 563](lean:Lib/ClassField/Places/ValuationSubrings.lean#L563). Cited in [Chapter](/chapter/cm-fields/).
+- `New.placeOver`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 453](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L453). Cited in [Chapter](/chapter/cm-fields/).
+- `New.poisson_summation_gaussianMonomial`: `Lib/Analytic/DirichletTheta.lean`, [line 267](lean:Lib/Analytic/DirichletTheta.lean#L267). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.pow_classNumber_mem_principal_sup`: `Lib/ClassField/Places/Ideles.lean`, [line 319](lean:Lib/ClassField/Places/Ideles.lean#L319). Cited in [Chapter](/chapter/cm-fields/).
+- `New.PrimePadicIso`: `New/Reduction/Lattices/Heights.lean`, [line 30](lean:New/Reduction/Lattices/Heights.lean#L30). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/regular-families-plan/).
+- `New.PrimePadicIso.Carries`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 75](lean:New/Reduction/Lattices/TwistedLattice.lean#L75). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.PrimePadicIso.Carries.fromBlocks`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 86](lean:New/Reduction/Lattices/TwistedLattice.lean#L86). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.PrimePadicIso.conj`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 52](lean:New/Reduction/Lattices/TwistedLattice.lean#L52). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.PrimePadicIso.integers`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 58](lean:New/Reduction/Lattices/TwistedLattice.lean#L58). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.PrimePadicIso.inv_pow_le_norm_of_dvd`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 67](lean:New/Reduction/Lattices/TwistedLattice.lean#L67). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.PrimePadicIso.norm_place`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 63](lean:New/Reduction/Lattices/TwistedLattice.lean#L63). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.primeRemainder`: `New/Reduction/Zeros/PrimeError.lean`, [line 65](lean:New/Reduction/Zeros/PrimeError.lean#L65). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/).
+- `New.primeRemainder_eq_integral_countError_sub`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 80](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L80). Cited in [Chapter](/chapter/main-inequality/).
+- `New.primeRemainder_eq_sum`: `New/Reduction/Zeros/PrimeError.lean`, [line 215](lean:New/Reduction/Zeros/PrimeError.lean#L215). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/prime-sums/).
+- `New.primeRemainder_eq_sum_posPart`: `New/Reduction/Zeros/PrimeError.lean`, [line 198](lean:New/Reduction/Zeros/PrimeError.lean#L198). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/).
+- `New.primeRemainder_sub_primeRemainder_floor_le`: `New/Reduction/OneSidedBound.lean`, [line 159](lean:New/Reduction/OneSidedBound.lean#L159). Cited in [Chapter](/chapter/main-inequality/).
+- `New.principalIdele`: `Lib/ClassField/Places/Ideles.lean`, [line 62](lean:Lib/ClassField/Places/Ideles.lean#L62). Cited in [Chapter](/chapter/cm-fields/).
+- `New.prod_euler_factor_ne_zero`: `Lib/Analytic/ZeroSymmetry.lean`, [line 24](lean:Lib/Analytic/ZeroSymmetry.lean#L24). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.QuadField`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 97](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L97). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/cm-fields/).
+- `New.QuadField.different_eq_span_and_adjoin_betaK`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 240](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L240). Cited in [Chapter](/chapter/cm-fields/).
+- `New.QuadField.embOfPrimitiveRoot`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 157](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L157). Cited in [Chapter](/chapter/cm-fields/).
+- `New.QuadField.finrank_eq_two`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 131](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L131). Cited in [Chapter](/chapter/cm-fields/).
+- `New.QuadField.prime_inert_or_eq_mul`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 574](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L574). Cited in [Chapter](/chapter/cm-fields/).
+- `New.QuadField.q_eq_iff_chiK_ne_neg_one`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 499](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L499). Cited in [Chapter](/chapter/cm-fields/).
+- `New.QuadField.span_eq_or_exists_span_eq_mul`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 550](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L550). Cited in [Chapter](/chapter/cm-fields/).
+- `New.QuadField.sqrtNegD`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 103](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L103). Cited in [Chapter](/chapter/notation/).
+- `New.quadTwist`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 64](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L64). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.quadTwist_apply`: `Lib/Analytic/EntireLFunction.lean`, [line 44](lean:Lib/Analytic/EntireLFunction.lean#L44). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.quadTwist_ne_one`: `Lib/Analytic/EntireLFunction.lean`, [line 56](lean:Lib/Analytic/EntireLFunction.lean#L56). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.quotMean`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 703](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L703). Cited in [Chapter](/chapter/notation/).
+- `New.re_coeff_one_sub_sum_tupleIdem_le`: `New/Spanning/MainTerm/BadTypes.lean`, [line 228](lean:New/Spanning/MainTerm/BadTypes.lean#L228). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.re_logDerivMean_one`: `New/Reduction/Zeros/PrimeError.lean`, [line 166](lean:New/Reduction/Zeros/PrimeError.lean#L166). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/prime-sums/).
+- `New.re_logDerivMean_one_eq_add_re_logDeriv`: `New/Reduction/Zeros/PrimeError.lean`, [line 151](lean:New/Reduction/Zeros/PrimeError.lean#L151). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.rootDiscr_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 284](lean:New/Reduction/Data/AdmissibleData.lean#L284). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/cm-fields/).
+- `New.Selmer.add_denominatorError_le_mul_clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 140](lean:New/Congruences/FirstOrder/TraceRelations.lean#L140). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 128](lean:New/Congruences/FirstOrder/TraceRelations.lean#L128). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.crystallineLoss`: `New/Congruences/LocalLoss/Basic.lean`, [line 118](lean:New/Congruences/LocalLoss/Basic.lean#L118). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.defectBound`: `New/Congruences/LocalLoss/Basic.lean`, [line 125](lean:New/Congruences/LocalLoss/Basic.lean#L125). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.denominatorError`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 106](lean:New/Congruences/FirstOrder/TraceRelations.lean#L106). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.DenominatorLe`: `New/OneLift/TestedForms.lean`, [line 413](lean:New/OneLift/TestedForms.lean#L413). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.DenominatorLe.clearsProjection`: `New/Congruences/FitTwistsExist.lean`, [line 51](lean:New/Congruences/FitTwistsExist.lean#L51). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.DenominatorLe.norm_inner_starProjection_le`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 324](lean:New/OneLift/HeckeValues/CentralAction.lean#L324). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.denominatorLe_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1321](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1321). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.denominatorLe_range_goodLift`: `New/Congruences/FitTwistsExist.lean`, [line 415](lean:New/Congruences/FitTwistsExist.lean#L415). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.denominatorLe_span_trivialLift`: `New/Congruences/FitTwistsExist.lean`, [line 444](lean:New/Congruences/FitTwistsExist.lean#L444). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_isMainSummand_descentPair`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 480](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L480). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_isMainSummand_mainPair`: `New/Congruences/FitTwistsExist.lean`, [line 297](lean:New/Congruences/FitTwistsExist.lean#L297). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_mFoldTwist_hasDenominatorsLe`: `New/Congruences/FitTwistsExist.lean`, [line 475](lean:New/Congruences/FitTwistsExist.lean#L475). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_mFoldTwist_hasDivisibleSelmerLengthLe`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 370](lean:New/Congruences/Selmer/TwistingTheorem.lean#L370). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_mFoldTwist_selmerLengthLe_inv_ratio_le`: `New/Congruences/FitTwistsExist.lean`, [line 377](lean:New/Congruences/FitTwistsExist.lean#L377). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_operator_det_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1246](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1246). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_operator_ellVal_le_liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1156](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1156). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.HasDivisibleSelmerLengthLe`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 369](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L369). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.HasLiftTrace`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 611](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L611). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.IsAuxTwist`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 130](lean:New/Congruences/FirstOrder/EvenClasses.lean#L130). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.IsLiftGenerator`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 742](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L742). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.IsMainSummand`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 621](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L621). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.IsMainSummandLike`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 434](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L434). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.isNegligible_denominatorError`: `New/Congruences/FitTwistsExist.lean`, [line 192](lean:New/Congruences/FitTwistsExist.lean#L192). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.isNegligible_padicValNat_card_stdClasses`: `New/Congruences/FitTwistsExist.lean`, [line 213](lean:New/Congruences/FitTwistsExist.lean#L213). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.isNegligible_padicValNat_oddClassBound`: `New/Congruences/FitTwistsExist.lean`, [line 158](lean:New/Congruences/FitTwistsExist.lean#L158). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.isNegligible_twistError`: `New/Congruences/FitTwistsExist.lean`, [line 176](lean:New/Congruences/FitTwistsExist.lean#L176). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 179](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L179). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.localDefectBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 99](lean:New/Congruences/FirstOrder/TraceRelations.lean#L99). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.oddClassBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 74](lean:New/Congruences/FirstOrder/TraceRelations.lean#L74). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.oddClassBound_le`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 82](lean:New/Congruences/FirstOrder/TraceRelations.lean#L82). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.prod_Ioc_natB_le_pow`: `New/Congruences/FitTwistsExist.lean`, [line 90](lean:New/Congruences/FitTwistsExist.lean#L90). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.range_goodLift_le_span_hasLiftHeckePolynomial`: `New/Congruences/FitTwistsExist.lean`, [line 326](lean:New/Congruences/FitTwistsExist.lean#L326). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.sum_clearingBound_add_padicValNat_le`: `New/Congruences/FitTwistsExist.lean`, [line 232](lean:New/Congruences/FitTwistsExist.lean#L232). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.sum_defectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 109](lean:New/Congruences/FitTwistsExist.lean#L109). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.sum_half_pow_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 78](lean:New/Congruences/FitTwistsExist.lean#L78). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.sum_localDefectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 137](lean:New/Congruences/FitTwistsExist.lean#L137). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.sum_padicValNat_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 65](lean:New/Congruences/FitTwistsExist.lean#L65). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.twistError`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 307](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L307). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.star_inequality`: `New/Reduction/MainInequality.lean`, [line 87](lean:New/Reduction/MainInequality.lean#L87). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/lattice-and-prime-sum/), [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
+- `New.sum_lambdaKResidueClass_mul_posPart`: `New/Reduction/PrimeSums.lean`, [line 45](lean:New/Reduction/PrimeSums.lean#L45). Cited in [Chapter](/chapter/prime-sums/).
+- `New.tendsto_logDerivMean_residue`: `New/Reduction/Zeros/PrimeError.lean`, [line 387](lean:New/Reduction/Zeros/PrimeError.lean#L387). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.tendsto_primeRemainder`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 233](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L233). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/main-inequality/).
+- `New.tendsto_sub_mul_logDeriv_entireL_analyticOrderNatAt`: `Lib/Analytic/EntireLFunction.lean`, [line 180](lean:Lib/Analytic/EntireLFunction.lean#L180). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/polar-functions/).
+- `New.tendsto_sub_mul_logDerivMean`: `New/Reduction/Zeros/PrimeError.lean`, [line 363](lean:New/Reduction/Zeros/PrimeError.lean#L363). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/weighted-prime-remainder/).
+- `New.tendsto_sub_mul_of_continuousAt`: `Lib/Analytic/EntireLFunction.lean`, [line 163](lean:Lib/Analytic/EntireLFunction.lean#L163). Cited in [Chapter](/chapter/polar-functions/).
+- `New.thetaSeries`: `Lib/Analytic/DirichletTheta.lean`, [line 35](lean:Lib/Analytic/DirichletTheta.lean#L35). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.toAdele`: `Lib/Adelic/Adeles/Basic.lean`, [line 107](lean:Lib/Adelic/Adeles/Basic.lean#L107). Cited in [Chapter](/chapter/cm-fields/).
+- `New.towerDeg`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 103](lean:New/Reduction/Data/FieldsAndPlaces.lean#L103). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.towerDeg_eq`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 106](lean:New/Reduction/Data/FieldsAndPlaces.lean#L106). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.trace_eq_sum_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 265](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L265). Cited in [Chapter](/chapter/cm-fields/).
+- `New.TwistedLattice`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 109](lean:New/Reduction/Lattices/TwistedLattice.lean#L109). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.conjCoord`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 265](lean:New/Reduction/Lattices/TwistedLattice.lean#L265). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.covolume_add_index_nonneg`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 477](lean:New/Reduction/Lattices/TwistedLattice.lean#L477). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/).
+- `New.TwistedLattice.CovolumeLe`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 275](lean:New/Reduction/Lattices/TwistedLattice.lean#L275). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-c-plan/).
+- `New.TwistedLattice.CovolumeLe.norm_map_det_gram_le`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 294](lean:New/Reduction/Lattices/TwistedLattice.lean#L294). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.CovolumeLe.sumElim`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 330](lean:New/Reduction/Lattices/TwistedLattice.lean#L330). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.covolumeLe_of_normSqAt_le`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 317](lean:New/Reduction/Lattices/TwistedLattice.lean#L317). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/).
+- `New.TwistedLattice.exists_matrix_elim_mem_lattice`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 388](lean:New/Reduction/Lattices/TwistedLattice.lean#L388). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.heightLe_pow_mul_det_gram`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 450](lean:New/Reduction/Lattices/TwistedLattice.lean#L450). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.IndexLe`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 159](lean:New/Reduction/Lattices/TwistedLattice.lean#L159). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-c-plan/).
+- `New.TwistedLattice.IndexLe.mono`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 168](lean:New/Reduction/Lattices/TwistedLattice.lean#L168). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.IndexLe.of_comp_equiv`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 174](lean:New/Reduction/Lattices/TwistedLattice.lean#L174). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.IndexLe.sumElim`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 207](lean:New/Reduction/Lattices/TwistedLattice.lean#L207). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.indexLe_card_mul`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 220](lean:New/Reduction/Lattices/TwistedLattice.lean#L220). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.indexLe_of_colengthDvd`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 188](lean:New/Reduction/Lattices/TwistedLattice.lean#L188). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.integralVectors`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 146](lean:New/Reduction/Lattices/TwistedLattice.lean#L146). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.map_inner_lift_one`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 283](lean:New/Reduction/Lattices/TwistedLattice.lean#L283). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.mem_integralVectors`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 150](lean:New/Reduction/Lattices/TwistedLattice.lean#L150). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.norm_det_mul_det_gram_le_one`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 375](lean:New/Reduction/Lattices/TwistedLattice.lean#L375). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.norm_pow_mul_det_gram_le`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 412](lean:New/Reduction/Lattices/TwistedLattice.lean#L412). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.normSqAt`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 269](lean:New/Reduction/Lattices/TwistedLattice.lean#L269). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.volume`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 353](lean:New/Reduction/Lattices/TwistedLattice.lean#L353). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/).
+- `New.TwistedLattice.volume_eq_det_adjoint_comp`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 359](lean:New/Reduction/Lattices/TwistedLattice.lean#L359). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.volume_ne_zero`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 363](lean:New/Reduction/Lattices/TwistedLattice.lean#L363). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/).
+- `New.two_pow_le_of_pow_eq_one`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 468](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L468). Cited in [Chapter](/chapter/data-exist/).
+- `New.Variety.classAut_eq_bot`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 986](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L986). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.WeilData.hasWeight_upsilonU1_zpow`: `Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean`, [line 148](lean:Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean#L148). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.zero_density_quadTwist`: `Lib/Analytic/QuadraticTwist.lean`, [line 732](lean:Lib/Analytic/QuadraticTwist.lean#L732). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/landau-criterion/).
+- `New.zeros_on_line`: `New/Main.lean`, [line 28](lean:New/Main.lean#L28). Cited in [Chapter](/chapter/half-plane-to-line/).
+- `New.zeta_zeros_on_line`: `New/Main.lean`, [line 47](lean:New/Main.lean#L47). Cited in [Chapter](/chapter/half-plane-to-line/).
+- `New.Ω`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 40](lean:Lib/ClassField/Places/GaloisDefs.lean#L40). Cited in [Chapter](/chapter/cm-fields/).
+- `New.𝔸`: `Lib/Adelic/Adeles/Basic.lean`, [line 100](lean:Lib/Adelic/Adeles/Basic.lean#L100). Cited in [Chapter](/chapter/cm-fields/).
