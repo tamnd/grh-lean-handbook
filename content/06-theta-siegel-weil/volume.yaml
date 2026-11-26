@@ -36,6 +36,8 @@ chapters:
       - Lib/Weil/TameGaussSum
   - id: bessel-periods
     title: Bessel periods and one step of unfolding
+    plan: >-
+      Graded strings and the Bessel group, constant terms and surviving orbits, one step of unfolding, lattices of finite points, descents and block periods.
     research: h §2
     source:
       - Lib/Weil/Periods
@@ -49,7 +51,7 @@ chapters:
       - Lib/SiegelWeil/OneVector
       - Lib/SiegelWeil/Mass
       - Lib/SiegelWeil/NeighbourLattices
-      - Lib/SiegelWeil
+      - Lib/SiegelWeil/Reproduction
   - id: rallis-inner-product
     title: Doubling and the Rallis inner product formula
     plan: >-
@@ -58,5 +60,14 @@ chapters:
     source:
       - Lib/SiegelWeil/RallisInner
       - Lib/SiegelWeil/UnramifiedSeries
-      - Lib/SiegelWeil/Tower
-      - Lib/SiegelWeil/SingularForms
+      - Lib/SiegelWeil/Tower/ConstantTerm
+      - Lib/SiegelWeil/Tower/LineTerms
+      - Lib/SiegelWeil/Tower/LineGaussSums
+      - Lib/SiegelWeil/Tower/RealConeIntegral
+      - Lib/SiegelWeil/Tower/FiniteTateIntegral
+      - Lib/SiegelWeil/Tower/FunctionalEquation
+      - Lib/SiegelWeil/Tower/LargeSideConstantTerm
+      - Lib/SiegelWeil/Tower/PrincipalIdeles
+      - Lib/SiegelWeil/Tower/TestVector
+      - Lib/SiegelWeil/SingularForms/CentreCoefficients
+      - Lib/SiegelWeil/SingularForms/UnimodularCoefficients
