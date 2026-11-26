@@ -26,7 +26,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section proves the normal form for products of theta functions. The variables are now the coordinates $z_{(\tau, c)}$ of a vector over the infinite places $\tau$ of the field $E$. The theta functions are evaluated at linear forms $u_j^\dagger z$, for vectors $u_j$ that form a resolution of the identity. The partner rule of Section 5 is $\tau \mapsto u(-p^e)\tau$. The main theorem says that $\prod_j\theta(u_j^\dagger z)^{m_j}$, times any integral series in the $y(u_j^\dagger z)$, has the normal form, with one scale $\varpi$ and one family $\lambda_{ej}$ for all resolutions.
 
-### The setting
+### The field, the places and the curve
 
 Let $P$ be the parameters of the argument, with the prime $d = $ `P.d`. Fix a level $s$. The field $E = $ `P.E s` is $K$ with a root of unity $\zeta$ of order $q_1 = $ `P.q₁ s` adjoined. Its infinite places form the group $\Phi = $ `P.Φ s` $\cong \mathrm{Gal}(E/K) \cong (\mathbb{Z}/q_1)^\times$. For an integer $\nu$, the place $u(\nu)$ is the class of $\nu$ in this group; see [fields, places and twists](/decl/New.Parameters.placeOfInt/). Each place $\tau$ comes with a complex embedding $\Phi_\tau$ of $E$, from the CM type. We write $\tau(\alpha)$ for $\Phi_\tau(\alpha)$. The curve is the CM curve `P.cmCurve` of [the integral vacuum and tight frames](/chapter/integral-vacuum/), with its theta function $\theta$ and its parameter $y$.
 

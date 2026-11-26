@@ -51,8 +51,8 @@ Lean: `New.CMLattice.norm_coeff_taylorVia_translatedX_eq_one` (New/Derivatives/F
 
 *Proof.* The prime $p$ is odd. Write $p = 2m + 1$. Since $p - 1 < q_p$, the coefficient $h_1$ is integral, so $|h_1| \le 1$. Assume $|h_1| < 1$. We show by induction that $|h_n| < 1$ for all $n \le m$.
 
-For $n = 0$, $h_0$ is the coefficient of $z^{p-1}$ in $1$, which is $0$ since $p > 1$. For $n = 1$ this is the assumption. Let $n + 2 \le m$, and assume $|h_n| < 1$ and $|h_{n+1}| < 1$. The factor $4n + 6 = 2(2n + 3)$ is a unit, since $p$ is odd and $0 < 2n + 3 \le 2m - 1 < p$. The factors $n + 1$, $4n + 2$ and $a_1^2$ are integral; for $a_1$ this is the [bound on $a_1$](/decl/New.CMLattice.norm_a₁_le_one/) of Volume 3. By the recursion and the ultrametric inequality,
-$$|h_{n+2}| = |(4n+6)h_{n+2}| \le \max\Bigl(\bigl|(4n+6)h_{n+2} + (n+1)a_1^2h_{n+1} + (4n+2)h_n\bigr|,\ \bigl|(n+1)a_1^2h_{n+1} + (4n+2)h_n\bigr|\Bigr) < 1.$$
+For $n = 0$, $h_0$ is the coefficient of $z^{p-1}$ in $1$, which is $0$ since $p > 1$. For $n = 1$ this is the assumption. Let $n + 2 \le m$, and assume $|h_n| < 1$ and $|h_{n+1}| < 1$. The factor $4n + 6 = 2(2n + 3)$ is a unit, since $p$ is odd and $0 < 2n + 3 \le 2m - 1 < p$. The factors $n + 1$, $4n + 2$ and $a_1^2$ are integral; for $a_1$ this is the [bound on $a_1$](/decl/New.CMLattice.norm_a₁_le_one/) of Volume 3. Write $R_n$ for the number in the bars of the recursion, and $T_n = (n+1)a_1^2h_{n+1} + (4n+2)h_n$. Then $(4n+6)h_{n+2} = R_n - T_n$. By the recursion, $|R_n| < 1$, and by the hypothesis, $|T_n| < 1$. By the ultrametric inequality,
+$$|h_{n+2}| = |(4n+6)h_{n+2}| \le \max\bigl(|R_n|, |T_n|\bigr) < 1.$$
 This proves $|h_m| < 1$.
 
 But $x = z^2u$ with $u(0) = 1$, since $x = z^2 + \cdots$. So $x^m = z^{2m}u^m$, and the coefficient of $z^{2m} = z^{p-1}$ in $x^m$ is $u(0)^m = 1$. Thus $h_m = 1$, a contradiction. $\square$
