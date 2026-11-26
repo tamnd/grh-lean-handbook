@@ -53,7 +53,7 @@ Here $X$ is the $N \times h$ matrix of variables at $\tau$.
 
 Lean: `New.exists_toPoly_eq_det_and_weylNormSq_le` (New/OneLift/ComparisonOperator/LineCoordinates.lean).
 
-*Proof.* Expand the determinant along the first $h$ columns (Laplace). The result is a sum over $h$-subsets $S$ of $N$ of the minor of $X$ on $S$ times a complementary minor of $Z$, up to sign. The minors of $X$ are the basis products of the Weyl module for one column of height $h$. So the determinant is $\mathrm{toPoly}(\xi)$ with coordinates given by the complementary minors. Their squared moduli sum, by the Cauchy–Binet formula, to the Gram determinant of the columns of $Z$, and Hadamard's inequality bounds this by the product of the squared column lengths. $\square$
+*Proof.* Expand the determinant along the first $h$ columns (Laplace). The result is a sum over $h$-subsets $S$ of $N$ of the minor of $X$ on $S$ times a complementary minor of $Z$, up to sign. The minors of $X$ are the basis products of the Weyl module for one column of height $h$. So the determinant is $\mathrm{toPoly}(\xi)$ with coordinates given by the complementary minors. Their squared moduli sum, by the Cauchy-Binet formula, to the Gram determinant of the columns of $Z$, and Hadamard's inequality bounds this by the product of the squared column lengths. $\square$
 
 **Example.** Take $h = 0$. The weight is trivial, $\xi$ is a number, and the lemma reads $|\det Z|^2 \leq \prod_b \sum_x|Z_{xb}|^2$. This is Hadamard's inequality.
 
