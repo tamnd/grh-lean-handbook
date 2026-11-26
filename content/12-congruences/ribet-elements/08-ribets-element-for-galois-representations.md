@@ -19,7 +19,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section applies the main lemma to Galois representations. The group is the absolute Galois group of the CM field $E$, and $O$ is a large coefficient ring inside the integers of $\overline{\mathbb{Q}}_\ell$. The output is the bound on the Ribet element that [The denominator bound](/chapter/regular-families-plan/#the-denominator-budget) of the plan needs.
 
-### Background
+### Background for the Galois case
 
 The hypotheses come from other chapters. Each is stated here in one line.
 

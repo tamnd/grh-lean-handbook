@@ -33,7 +33,7 @@ drafted_by: writer@claude-opus-5-5
 
 The Ribet element of a matrix $B$ of tied rows has the value $\mu_0 \det(\tilde\psi_x B) \prod_e \det(\tilde\eta_e B)$ on $\mathcal{X}$. This section makes the two kinds of factor small. For the main summand $\rho$, it finds tied rows whose determinant at $X = 0$ has valuation at most the length $b_0$ of a module of cocycles. For each character $\xi_e$, it finds tied rows whose determinants combine to $\Gamma_e \prod_{\mathrm{ty}(j) = e} X_j$, with $v(\Gamma_e(0))$ at most the triangle cost. The notation is that of [Tied rows](/chapter/ribet-elements/#tied-rows).
 
-### Background
+### Background for the matrices
 
 - For an $O$-module $B$, $\mathrm{Coc}(\rho, B)$ is the $O$-module of the $c : G \to B^r$ with $c(gh) = c(g) + \rho(g)c(h)$ for all $g, h$, and with $\sum_g \theta_g c(g) = 0$ for every finitely supported $\theta : G \to O$ with $\sum_g \theta_g(u_x(g) - 1) = 0$ for all $x$. For $B = O/p$ it is written $\mathrm{Coc}(\rho, p)$. The definition lives in [The main summands of the attached Galois representations](/chapter/main-summands/), a later chapter, because that chapter uses the same modules for the local loss.
 - Let $O$ be a discrete valuation ring with fraction field $K$, and $\psi : A \to M_d(O)$ a surjective map of $O$-algebras. If an $O$-module of vectors over $(K/O)^d$ of length at most $b$ contains every vector that $\psi(N)$ kills, then some square matrix $B$ with rows in $N$ has $v(\det \psi(B)) \leq b$ ([Block determinants](/chapter/fitting-ideals/#block-determinants)).

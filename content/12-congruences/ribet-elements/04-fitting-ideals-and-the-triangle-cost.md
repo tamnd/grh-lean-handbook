@@ -19,7 +19,7 @@ drafted_by: writer@claude-opus-5-5
 
 The Ribet element of the last section has the value $\mu_0 \det(\psi_x B) \prod_e \det(\eta_e B)$ on $\mathcal{X}$. To make this value small, the chapter needs square matrices of relations whose determinants have small valuation. For the characters, the determinants are polynomials in the tie variables $X_j$, and only one coefficient counts: the coefficient of $\prod_j X_j$. This section proves the bound for that coefficient. It is a statement about Fitting ideals over $R = O[X_j : j \in J]$.
 
-### Background
+### Background on Fitting ideals
 
 The section uses these results of [Fitting ideals](/chapter/fitting-ideals/) in Volume 7. $O$ is a discrete valuation ring with valuation $v$.
 

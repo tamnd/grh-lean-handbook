@@ -141,7 +141,7 @@ The four lemmas on this Lean line say that each of the four sets lies in $\mathf
 
 Lean: `New.Selmer.tiedRows`, `New.Selmer.mem_tiedRows` (New/Congruences/FirstOrder/RibetMatrices.lean).
 
-### The trace ideal
+### The trace ideal hypothesis
 
 **Definition (Trace ideal hypothesis).** Let $S$ be an $O$-algebra of functions from $Y$ to $L[X_j]$, and let $\mathcal{J}$ be an $S$-module of such functions. Then $\mathcal{J}$ is a trace ideal for the $u_x$, $p$, the ties and $\varepsilon$ if:
 
