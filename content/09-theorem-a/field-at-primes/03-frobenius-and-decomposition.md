@@ -57,7 +57,13 @@ where $\Phi \times \mathbb{Z}$ is a monoid with the group law of $\Phi$ and the 
 
 Lean: `New.Parameters.frobElem` (New/Derivatives/Field/PrimeDecomposition.lean).
 
-For $p \nmid q_1 d$ the sign $\chi_K(p)$ is $\pm 1$, and every power $\chi_K(p)^n$ is $\pm 1$ (Lean: `New.Parameters.chiK_pow_eq_one_or_neg_one`). Then $\mathrm{Frob}_p$ is the Frobenius element of $p$ in $\mathrm{Gal}(E/\mathbb{Q}) \cong \Phi \times \{\pm 1\}$. If $p$ splits in $K$, it is $(v_p, 1)$: the automorphism $\zeta \mapsto \zeta^p$ that fixes $\sqrt{-d}$. If $p$ is inert in $K$, it is $(v_{-p}, -1)$: the automorphism $\sigma_{v_{-p}} c$, which sends $\zeta$ to $\sigma_{v_{-p}}(\zeta^{-1}) = \zeta^{p}$ and $\sqrt{-d}$ to $-\sqrt{-d}$.
+**Lemma.** Let $p$ be prime with $p \nmid d$. For every $n \in \mathbb{N}$, $\chi_K(p)^n$ is $1$ or $-1$.
+
+Lean: `New.Parameters.chiK_pow_eq_one_or_neg_one` (New/Derivatives/Field/PrimeDecomposition.lean).
+
+*Proof.* The Legendre symbol of a number prime to $d$ is $\pm 1$, and so are its powers. $\square$
+
+For $p \nmid q_1 d$, $\mathrm{Frob}_p$ is the Frobenius element of $p$ in $\mathrm{Gal}(E/\mathbb{Q}) \cong \Phi \times \{\pm 1\}$. If $p$ splits in $K$, it is $(v_p, 1)$: the automorphism $\zeta \mapsto \zeta^p$ that fixes $\sqrt{-d}$. If $p$ is inert in $K$, it is $(v_{-p}, -1)$: the automorphism $\sigma_{v_{-p}} c$, which sends $\zeta$ to $\sigma_{v_{-p}}(\zeta^{-1}) = \zeta^{p}$ and $\sqrt{-d}$ to $-\sqrt{-d}$.
 
 **Remark (Formalization).** For $p \mid q_1 d$ the pair has junk values. If $p = d$, then $\chi_K(d) = 0$, the place $v_0$ is the junk value $1$ of [fields, places and twists](/chapter/fields-places-twists/), and $\mathrm{Frob}_d = (1, 0)$. If $p \mid q_1$, then $\chi_K(p) = 1$ and $v_p = 1$ is again a junk value. Every theorem below that uses $\mathrm{Frob}_p$ assumes $p \nmid q_1 d$.
 
@@ -71,7 +77,15 @@ Lean: `New.Parameters.ne_two_of_not_dvd_q₁`, `New.Parameters.isCoprime_q₀_of
 
 ### The Frobenius modulo a prime
 
-Let $p$ be prime and let $\varphi : \mathcal{O}_E \to R$ be a ring homomorphism to a commutative ring of characteristic $p$. A ring homomorphism from $\mathcal{O}_E$ is fixed by its values at $\zeta$ and $\beta_K$ (Lean: `New.Parameters.ringHom_ext_zetaInt_betaKInE`, from $\mathcal{O}_E = \mathbb{Z}[\beta_K, \zeta]$ in Section 1). The next lemma uses $\sqrt{-d} = 2\beta_K - 1$ in place of $\beta_K$, which is allowed since $2$ is invertible in $R$ when $p \ne 2$.
+Let $p$ be prime and let $\varphi : \mathcal{O}_E \to R$ be a ring homomorphism to a commutative ring of characteristic $p$.
+
+**Lemma.** Two ring homomorphisms $f, g : \mathcal{O}_E \to R$ to a commutative ring are equal if $f(\zeta) = g(\zeta)$ and $f(\beta_K) = g(\beta_K)$.
+
+Lean: `New.Parameters.ringHom_ext_zetaInt_betaKInE` (New/Derivatives/Field/PrimeDecomposition.lean).
+
+*Proof.* By Section 1, $\mathcal{O}_E = \mathbb{Z}[\beta_K, \zeta]$, and a ring homomorphism is fixed by its values on generators. $\square$
+
+The next lemma uses $\sqrt{-d} = 2\beta_K - 1$ in place of $\beta_K$, which is allowed since $2$ is invertible in $R$ when $p \ne 2$.
 
 **Lemma.** Let $p \nmid q_1$ be prime, $\varphi : \mathcal{O}_E \to R$ as above, $n \in \mathbb{N}$, $v \in \Phi$, and let $(c, e)$ be the identity or the conjugation with its sign. Then $\varphi(\sigma_v x) = \varphi(c x)^{p^n}$ for all $x \in \mathcal{O}_E$ if and only if both:
 
