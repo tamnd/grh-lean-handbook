@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.3
+
+Four new chapters of the argument volumes.
+
+- Volume 9, chapter 3: the seesaw identity, part 1: unfolding (#128).
+- Volume 10, chapter 4: Bessel functions at a real place (#127).
+- Volume 11, chapter 4: lifts of characters (#130).
+- Volume 12, chapter 4: tied traces and even classes (#129).
+
 ## v0.3.2
 
 Four new chapters of the argument volumes.
