@@ -45,7 +45,7 @@ The source has several theorems of this form. For each one, the register asks tw
 
 The explained rows show three ways in which the source recovers nonvanishing.
 
-The first way is a positive constant in the statement. In F-070 the statement of `exchange_identity` gives $0 < C$, and the norm of the constant is $C$ times L-values that the statement also gives as nonzero. In F-071 the predicate `HasAbsUpToNormPower` allows $C = 0$, but the theorem on the chain, which is the one the proof uses, gives $0 < C$. A reader who meets the predicate alone must not assume that $C$ is positive, and a reader who meets the theorem can.
+The first way is a positive constant in the statement. In F-070 the statement of `exchange_identity` gives $0 < C$, and the norm of the constant is $C$ times L-values that the statement also gives as nonzero. In F-071 the predicate `HasAbsUpToNormPower` allows $C = 0$, but the theorem on the chain, which is the one the proof uses, gives $0 < C$.
 
 The second way is a field of a structure. In F-072 the field `ratio_ne_zero` of `IsComparisonOperator` asks the nonvanishing, and a lemma proves the field for the operator of the proof. In F-120 the ratio of a critical pair is nonzero because the L-values are nonzero, which is a field of `HasWeight`.
 
@@ -57,6 +57,4 @@ Four rows are open: F-068, F-069, F-073 and F-074. Each is a constant or a facto
 
 The case F-068 is the most visible, because the docstring of `seesawConst` calls it "a non-zero constant" (F-110 in Section 8). The constant is a unit, so the docstring is true. But the proof of `seesaw_identity` replaces the natural constant by $1$ when the natural constant is $0$, and then both sides of the identity are $0$. So the identity, with its unit, does not show that the lower chain of a Poincaré series is nonzero. The plan of the book says that the nonvanishing comes back on the side of the determinant. A chapter of Volume 9 must show where, or leave the row open.
 
-The case F-069 is of the same kind. The factor $\kappa$ of the one square identity is not computed. If it were $0$, the square law would say nothing. The research notes trace the nonvanishing to the injectivity argument of F-037, but F-121 shows that the lemma for squares is not applied. So the path from the one square identity to a nonzero determinant must go through the form with chains. A chapter of Volume 11 must trace it.
-
-The cases F-073 and F-074 are in `Lib`. The branching matrix and the factor $\beta$ of a definite theta lift are not shown to be nonzero where they are defined. The file of F-073 says so in words. A chapter of Volume 5 or Volume 6 must find the use, and the register records the answer here.
+The case F-069 is of the same kind. The factor $\kappa$ of the one square identity is not computed. If it were $0$, the square law would say nothing. By F-121, the path from the one square identity to a nonzero determinant must go through the form with chains. A chapter of Volume 11 must trace it.
