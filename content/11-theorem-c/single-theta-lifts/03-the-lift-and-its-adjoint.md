@@ -132,7 +132,7 @@ Lean: `New.Data.normalizedDescent_eq_zero_iff` (New/Determinant/Norms/AdjointThe
 
 *Proof.* $\theta\Xi = 0$ if and only if $\Theta_{j,\vartheta}^*\Xi = 0$. An adjoint vanishes at $\Xi$ if and only if $\langle y, \Theta^*\Xi\rangle = \langle\Theta y, \Xi\rangle$ is $0$ for all $y$. $\square$
 
-So the kernel of the descent is the orthogonal complement of the range of the lift. The chapter [the comparison operator, part 1](/chapter/comparison-operator-1/) uses this: a good form on $V_j$ that is orthogonal to all good lifts has descent $0$.
+So the kernel of the descent is the orthogonal complement of the range of the lift. The chapter [the comparison operator, part 2](/chapter/comparison-operator-2/) uses this: a good form on $V_j$ that is orthogonal to all good lifts has descent $0$.
 
 ### The lift as an integral of the kernel
 
