@@ -21,11 +21,11 @@ drafted_by: writer@claude-opus-5-5
 
 The composite lift of Section 7 is a chain of $m$ theta lifts. The valuation argument of [the chain valuation](/chapter/chain-valuation/) needs two facts about such chains. The first is equivariance. The second is integrality: a combination of chains that is invariant under the levels is a plain sum over double cosets, with no denominators. The second fact needs free levels, that is, levels whose stabilisers in the rational group are trivial. This section states both facts for a general tower, and then proves that the levels at the chosen places are free.
 
-### A model case
+### A model case: one lift
 
 Take one lift, $m = 1$. A theta kernel $k_0$ with datum $\Phi_0$ sends a form $\varphi$ on $G_0 = \mathrm{U}(X_0)(\mathbb{A}_f)$ to the form on $G_1$ whose value at $g'$ is a sum over the class set $\mathrm{U}(X_0)(\mathbb{Q}) \backslash G_0 / K_0$. The class of $g$ enters with the weight $1/|\Gamma_g|$, where $\Gamma_g = \mathrm{U}(X_0)(\mathbb{Q}) \cap g K_0 g^{-1}$ is the stabiliser of $gK_0$. If every $\Gamma_g$ is trivial, every weight is $1$. Then the lift is a sum of $h$ terms, one for each class, with $h$ the class number. If each term lies in a set $A$, the sum lies in the $h$-fold sum set $h \cdot A$. For a chain of $m$ lifts the same holds with one class for each stage.
 
-### Chains
+### Chains of theta lifts
 
 Fix a tower of index sets $n_j$, of levels $K_j \subseteq G_j = \mathrm{U}(n_j)(\mathbb{A}_f)$, and of theta kernels $k_j$ from stage $j$ to stage $j + 1$. The kernel $k_j$ has a space of data $S_j$, an action $\omega$ of $G_j \times G_{j+1}$ on $S_j$, a lift $(k_j).\mathrm{lift}$ and a jet map. These are the kernels of [theta kernels, theta lifts and the seesaw](/chapter/theta-lifts-seesaw/). The forms of stage $j$ are algebraic forms with values in the Weyl module of weight $(\kappa, e_j)$, as in [integral Weyl modules and branching](/chapter/weyl-modules/).
 

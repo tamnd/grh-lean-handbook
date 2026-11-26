@@ -18,7 +18,7 @@ drafted_by: writer@claude-opus-5-5
 
 The second map of the proof starts with the Poincaré map $\mathcal{P}$. It sends a source form $\varphi$ on $X_0$ to a principal form on $Y_0$. The form $\mathcal{P}\varphi$ is the vector that represents a Bessel period of $\varphi$ in the Petersson product. The seesaw identity then compares $\iota_\vartheta(\mathcal{P}\varphi)$ with the composite lift of $\varphi$.
 
-### A model case
+### A model case: the Riesz vector
 
 Let $F$ be a finite dimensional complex inner product space, and let $\ell$ be a conjugate linear form on $F$. Then there is a unique $z \in F$ with $\ell(y) = \langle y, z \rangle$ for all $y$. If $\ell$ depends linearly on a parameter $\varphi$, then so does $z$. The Poincaré map is this construction with $F$ the principal forms on $Y_0$ and $\ell_\varphi(y)$ the Bessel period of $\varphi$ against $y$. The space $F$ is finite dimensional, since its forms have a fixed discrete series type and a fixed level.
 

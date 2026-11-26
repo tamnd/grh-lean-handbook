@@ -25,7 +25,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section builds the first of the two maps of the proof. A source form on $X_0$ is lifted $m$ times up the upper chain, with data that are translates of the integral vacuum, glued in pairs. The result is a form on $X_m$, and it is restricted to $Y_m$ by a branching matrix.
 
-### A model case
+### A model case: one tuple
 
 Take a single tuple $x = (x_j)$ of finite adelic translations, with coefficient $1$. Each $x_j$ is a matrix with rows $X_{j+1}$ and columns $X_j$. The datum of lift $j + 1$ is the integral vacuum of $\mathrm{Hom}(X_j, X_{j+1})$ moved by the Heisenberg operator of $x_j$. Group the $m$ data in $\varrho + 1$ pairs. Replace each pair $v_{2i} \otimes v_{2i+1}$ by its glued form, a sum of translates with simple poles above $N$. Lift $\varphi$ through the $\varrho + 1$ double lifts with these glued data, and restrict the result to $Y_m$. A general chain datum $\Psi$ is a finite combination of such tuples, with conditions on the coefficients.
 
