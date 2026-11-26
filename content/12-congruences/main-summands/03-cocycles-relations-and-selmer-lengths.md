@@ -37,7 +37,7 @@ drafted_by: writer@claude-opus-5-5
 
 In Ribet's method ([Ribet elements](/chapter/ribet-elements/)) the cost of an extension is a length of a module of cocycles. This section defines three such measures: the module $\mathrm{Coc}(\rho, B)$ of cocycles that obey every relation of a family, the crystalline colength at $\ell$, and the crystalline Selmer length. The section ends with the error term $e'_\ell$ of the twisting theorem.
 
-### Background
+### Background on cocycles
 
 - A *relation* on functions $c : G \to B^d$ is a finitely supported $f : G \to M_d(O)$, and $c$ *obeys* $f$ if $\sum_g f(g)\, c(g) = 0$. For a set $L$ of relations, $\mathrm{Ob}(L, B)$ is the module of functions that obey all of them. For a module $Z$, $\mathrm{Rel}(Z)$ is the set of relations that hold on $Z$. For submodules $S, T$, $\mathrm{relLen}(S, T)$ is the length of $S/(S \cap T)$, in $\mathbb{N} \cup \{\infty\}$ ([relations and cocycles](/chapter/fitting-ideals/#relations-and-cocycles), [lengths](/chapter/fitting-ideals/#discrete-valuation-rings-and-relative-lengths)).
 - The cocycle rule $c(gh) = c(g) + \rho(g)c(h)$ is a set of relations, the *cocycle relations* of $\rho$ ([relations and cocycles](/chapter/fitting-ideals/#relations-and-cocycles)).

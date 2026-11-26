@@ -76,7 +76,7 @@ Lean: `New.Selmer.exists_isMainSummand_of_isRepOfType` (New/Congruences/GaloisRe
 
 *Proof.* Both $\#r$ and $O.\mathrm{rankDiff}$ are odd, so $\#r - O.\mathrm{rankDiff} = 2a$. Let $T = \theta \otimes R$. Clause 1 is the lemma on the twist. For clause 2, let $S$ be attached to $H$ and fix $g$. Along most Frobenius elements tending to $g$, three limits hold: $-\chi_V\,\iota(H_w)_{\#n - 1} \to -\chi_V(g)\,\mathrm{charpoly}(S g)_{\#n - 1}$, by the definition of attached and continuity of $\chi_V$; $\theta_0\theta\,\iota(b(w, 1)) \to \theta_0(g)\theta(g)\,\mathrm{tr}\,R(g)$; and the string tends to its value at $g$. The lemma on traces at Frobenius says the two sides agree eventually, so the limits agree. Since $\#r < \#n$, minus the coefficient of $X^{\#n - 1}$ of the characteristic polynomial is the trace. With $\theta_0$ the inverse avatar of $\vartheta$, this is the lift trace. $\square$
 
-### The main theorem
+### The proof of the main theorem
 
 **Lemma.** A nonzero function with Hecke polynomial $Q_w$ at every split place off the chosen places and their conjugates is an eigenform for $Q$.
 

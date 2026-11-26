@@ -28,7 +28,7 @@ drafted_by: writer@claude-opus-5-5
 
 The inertia of a main summand at the chosen places above $p_0$ and $p_1$ is controlled by *labels*: polynomials over the residue fields whose roots are the tame eigenvalues. A *lift setting* is a descent pair together with labels that satisfy the conditions the later proofs need. A *representation of the type* of a lift setting is a conjugate self-dual representation whose inertia at the chosen places acts through the roots of the labels. This section defines both and proves the three ways in which they arise.
 
-### Background
+### Background on labels
 
 - A *label* of degree $r$ over a finite field $k$ is a monic squarefree polynomial of degree $r$ with nonzero constant term. It is *primitive* if its roots generate $\mathbb{F}_{q^r}$ and are of maximal type. A tuple $c$ of labels at the chosen places has a central idempotent $e_c$ in the group algebra of $\prod_i \mathrm{GL}(k_i)$ ([the finite general linear group](/chapter/finite-gln/)).
 - The faithful character $T$ of a residue field and the name $\lambda \in k^\times$ of a character $\psi$ of $k^\times$, with $\psi = T \circ \lambda$ in the sense of [the finite general linear group](/chapter/finite-gln/).

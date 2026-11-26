@@ -28,7 +28,7 @@ drafted_by: writer@claude-opus-5-5
 
 A main summand has Hodge-Tate weights, or *jumps*, at each complex embedding of $E$. The local loss at $\ell$ in [the local loss](/chapter/local-loss/) depends on where these jumps lie. This section fixes the shape of the jumps, the constants of the defect bound, and the facts on the signs of embeddings and the b-places that the local loss uses.
 
-### Background
+### Background on weights
 
 - The field $E = K(\zeta)$ is a CM field with $K = \mathbb{Q}(\sqrt{-d})$ and $\zeta$ a root of unity of order $q_1$. Its CM type $\Phi$ picks one embedding at each infinite place. The infinite places form a group isomorphic to $(\mathbb{Z}/q_1)^\times$ through the action on $\zeta$. The cyclotomic conductor of $E$ is $q_1 d$ ([fields, places and twists](/chapter/fields-places-twists/)).
 - The data fix $k = r + 1 - m$, $\mathrm{halfGap} = r^8$, $\Delta = \mathrm{gap} = 2\,\mathrm{halfGap}$, $t = 5r$, the weight $b$ and the lift weights $w_j$. The b-places are a set of infinite places of class $-1$ modulo $q_0$. They are *sparse for the primes up to $L = k t$*: for no prime $\ell \leq L$ and no $0 < i < n < l_0$ are there b-places $\sigma, \tau, \rho$ with $\tau/\sigma \equiv \pm\ell^i$ and $\rho/\sigma \equiv \pm\ell^n$ modulo the part of $q_1$ prime to $\ell$ ([the data and its sizes](/chapter/data-and-sizes/)).

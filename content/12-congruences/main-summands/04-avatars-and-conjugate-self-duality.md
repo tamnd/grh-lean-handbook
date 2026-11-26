@@ -30,7 +30,7 @@ drafted_by: writer@claude-opus-5-5
 
 The representations of this chapter are conjugate self-dual: $R^c \cong R^\vee(1 - t)$, where $R^c(g) = R(cgc)$ for a complex conjugation $c$. This section proves that every representation attached to an eigenform on a unitary group of rank $n$ is conjugate self-dual with $t = n$, on traces. It also defines the characters by which the representations are twisted: the inverse avatar of a tame character, and the normalizing character of a descent pair.
 
-### Background
+### Background on avatars
 
 - An algebraic Hecke character $\theta$ of $E$ has an $\ell$-adic *avatar* $\theta_\ell : G_E \to \bar{\mathbb{Q}}_\ell^\times$. At a geometric Frobenius element at a place $w \nmid \ell$ where $\theta$ is unramified, $\theta_\ell$ is $\iota$ of the value of $\theta$ at a uniformizer ([class field theory](/chapter/class-field-theory/)).
 - A character $a$ of the norm-one torus of weight $e$ and tame part $\psi$, with integers $k, j$, gives the algebraic Hecke character $y \mapsto a(y/\bar y)\, \upsilon(y)^{-k} |y|^{j - k/2}$, with $\upsilon$ the fixed splitting character ([twists and critical pairs](/chapter/twists-critical-pairs/)).
