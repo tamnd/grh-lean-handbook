@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The place at T and filling data
 
-The class sums are sums over rational points of $G(E)$. The local bounds of [the finite places](/chapter/finite-densities/) are statements at one finite place, or at a finite product of finite places. This section chooses a finite set $T$ of finite places that holds all the data that is not integral. Outside $T$ every relevant element is integral, so the places outside $T$ contribute only the condition "integral". At $T$ the product of the completions is one finite place in the sense of [the lattice datum](/chapter/finite-densities/#the-lattice-datum), and this section builds a lattice datum on it.
+The class sums are sums over rational points of $G(E)$. The local bounds of [the finite places](/chapter/finite-densities/) are statements at one finite place, or at a finite product of finite places. This section chooses a finite set $T$ of finite places that holds all the data that is not integral. At $T$ the product of the completions is one finite place in the sense of [the lattice datum](/chapter/finite-densities/#the-lattice-datum), and this section builds a lattice datum on it.
 
 In this section $T$ is a finite set of finite places of $E$ that is stable under conjugation. $\operatorname{LocProd}(T) = \prod_{w \in T} E_w$ is the product of the completions, $\mathcal O$ is its ring of integers, and $\mathbb A_f$ is the ring of finite adeles. An adele $a$ is *integral off $T$* if $a_w$ is integral for every $w \notin T$. The ring of $T$-integers of $E$ is the set of $t \in E$ that are integral off $T$.
 
@@ -33,7 +33,7 @@ In this section $T$ is a finite set of finite places of $E$ that is stable under
 
 Lean: `New.Filling.IsIntegralOff` (New/Spanning/MainTerm/FillingLevel.lean).
 
-The amplitude sums of [Poincaré series and unfolding](/chapter/poincare-series/) add the amplitudes of the terms $\gamma$ over a block $(c, s, c')$. The terms are taken up to the left and right action of the rational unipotent group $\mathsf U(E)$. The coset amplitude collects one double coset.
+The amplitude sums of [Poincaré series and unfolding](/chapter/poincare-series/) add the amplitudes of the terms $\gamma$ over a block $(c, s, c')$. The coset amplitude collects one double coset $\mathsf U(E)\gamma\mathsf U(E)$.
 
 **Definition (Coset amplitude).** For a side (full or cut), classes $c, c'$, a reduction $s$ and $\gamma \in G(E)$,
 $$\operatorname{cosetAmplitude}(c, s, c')(\gamma) = \sum_{(u, u') \in \mathsf U(E)^2} \mathbf 1\bigl[u\gamma u'^{-1} \text{ lies over } (c, s, c')\bigr]\, A(c, c')(u \gamma u'^{-1}),$$
@@ -64,8 +64,6 @@ Lean: `New.Filling.toPlaces` (New/Spanning/MainTerm/FillingLevel.lean).
 Lean: `New.Filling.exists_places_integralOff` (New/Spanning/MainTerm/FillingLevel.lean).
 
 *Proof.* A finite adele $a$ is integral at all places outside a finite set, by the definition of the restricted product. So $a$ is integral off $T$ for all $T$ that contain this set; this holds eventually along the finite sets ordered by inclusion. The conditions ask finitely many adeles to be integral off $T$: the elements of $T_0$ and their inverses, $M^{-1}$, the entries of the lattice basis and of its inverse, and $N^{-1}$. A finite intersection of eventual conditions is eventual. Every $T$ lies in $T \cup \bar T$, which is stable under conjugation, so stable sets occur arbitrarily far out. Take a stable $T$ far enough out. $\square$
-
-The next two results compare the adelic group with the group at $T$.
 
 **Theorem (Lifts).** Every $y$ in the unitary group over $\operatorname{LocProd}(T)$ is $\operatorname{toPlaces}(x)$ for some $x$ that is integral off $T$. If $y$ lies in the unipotent group $\mathsf U$, then $x$ can be taken in $\mathsf U$; if $y$ lies in the floor group $H$, then $x$ can be taken in $H$. One $x$ does all three.
 
@@ -103,7 +101,7 @@ Lean: `New.Filling.charOnPlaces_add_star` (New/Spanning/MainTerm/FillingLevel.le
 
 Lean: `New.Filling.exists_integralPlace` (New/Spanning/MainTerm/FillingLevel.lean).
 
-*Proof.* The integers are $\mathcal O$ and the measure is the Haar measure of mass $1$ on $\mathcal O$. The modulus of a unit $x$ is $\prod_{w \in T}|x_w|$, the inverse of its index. The ring has a skew unit $i$ with $i^2 = -1$ and an integral $\tau$ with $\tau + \bar\tau = 1$. The map $(a, b) \mapsto \tau i a + b$ on pairs of skew elements is onto, and the preimage of $\mathcal O$ is a product of two copies of the integral skew elements. This gives a Haar measure on the skew elements of mass $1$ on the integral ones. The integers are self-dual: $a \in \mathcal O$ if and only if the character is trivial on $\mathcal O a$. By extension by zero this is the self-duality of $\hat{\mathcal O}$ for $x \mapsto \psi_f(-\varpi^{-1}x)$. A Plancherel kernel is the indicator of $\mathcal O$, which is its own transform by self-duality. $\square$
+*Proof.* The integers are $\mathcal O$ and the measure is the Haar measure of mass $1$ on $\mathcal O$. The modulus of a unit $x$ is $\prod_{w \in T}|x_w|$, the inverse of its index. The ring has a skew unit $i$ with $i^2 = -1$ and an integral $\tau$ with $\tau + \bar\tau = 1$. The map $(a, b) \mapsto \tau i a + b$ on pairs of skew elements is onto, and the preimage of $\mathcal O$ is a product of two copies of the integral skew elements. This gives a Haar measure on the skew elements of mass $1$ on the integral ones. The integers are self-dual: $a \in \mathcal O$ if and only if the character is trivial on $\mathcal O a$. By extension by zero this is the self-duality of $\hat{\mathcal O}$ for $x \mapsto \psi_f(-\varpi^{-1}x)$. $\square$
 
 **Theorem (Unimodularity).** For any structure of a finite place on $\operatorname{LocProd}(T)$, the inverse of a left Haar measure on the unitary group of the lattice basis is left invariant.
 
