@@ -48,11 +48,11 @@ The comment of the definition says that, for $e = 0$, the bound covers the lengt
 
 ### The local loss and the error term
 
-**Definition (The local loss).** $\mathrm{loc}_\ell = \mathrm{localDefectBound}(D, \ell) = 4 f \cdot \mathrm{defect}_\ell$, where $\mathrm{defect}_\ell = \mathrm{defectBound}(D, \ell)$ is the number of [the constants of the defect bound](/chapter/main-summands/#the-constants-of-the-defect-bound).
+**Definition (The local loss).** $\mathrm{loc}_\ell = \mathrm{localDefectBound}(D, \ell) = 4 f \cdot \mathrm{defect}_\ell$, where $\mathrm{defect}_\ell = \mathrm{defectBound}(D, \ell)$ is the number of [the constants of the defect bound](/chapter/main-summands/#weights-signs-and-b-places).
 
 Lean: `New.Selmer.localDefectBound` (New/Congruences/FirstOrder/TraceRelations.lean).
 
-The number $\mathrm{defect}_\ell$ is $10^6\, (m/k)\, (b\, v_\ell(M) + \mathrm{crystallineLoss}(h_{\mathrm{gap}}, b, \ell))$ in `NNReal`, with $b$ = `D.natB` and $M$ the principal level. It bounds the defect at one place above $\ell$ per unit of rank. The factor $4f$ is the cost of all places above $\ell$ and of the two blocks of a lattice; [the local defect bound](/chapter/denominator-bound/#local-defects) explains it. The number may be $0$. The crystalline loss is the valuation $v_\ell$ of $(2b)!$ times a power of a product of integers at most $b + 30 h_{\mathrm{gap}}^3$. So $\mathrm{defect}_\ell = 0$ for every $\ell > 2b + 30 h_{\mathrm{gap}}^3$ that does not divide $M$. Then the local loss is free, and the bounds below still hold.
+The number $\mathrm{defect}_\ell$ is $10^6\, (m/k)\, (b\, v_\ell(M) + \mathrm{crystallineLoss}(h_{\mathrm{gap}}, b, \ell))$ in `NNReal`, with $b$ = `D.natB` and $M$ the principal level. It bounds the defect at one place above $\ell$ per unit of rank. The factor $4f$ is the cost of all places above $\ell$ and of the two blocks of a lattice; [the local defect bound](/chapter/denominator-bound/#cocycle-bounds-and-local-defects) explains it. The number may be $0$. The crystalline loss is the valuation $v_\ell$ of $(2b)!$ times a power of a product of integers at most $b + 30 h_{\mathrm{gap}}^3$. So $\mathrm{defect}_\ell = 0$ for every $\ell > 2b + 30 h_{\mathrm{gap}}^3$ that does not divide $M$. Then the local loss is free, and the bounds below still hold.
 
 **Definition (The error term).** In $[0, \infty]$,
 $$e_\ell = \mathrm{denominatorError}(D, \ell) = t\, v_\ell(\mathrm{odd}) + 8 f t\, v + 2v + \big((4t+1)\, h_{\mathrm{gap}}^{22} + h_{\mathrm{gap}}\big)\, v.$$
