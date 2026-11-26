@@ -119,7 +119,7 @@ The theorems of chapter 13 take the class `WeilData E`, and many lemmas below th
 
 **Remark (Formalization).** The field of the data is `D.E`, defined as `P.E D.towerExp` with the attribute `@[reducible]` (lean:New/Reduction/Data/AdmissibleData.lean#L181). So instance search sees `D.E` as `P.E s` with $s = D.\mathtt{towerExp}$. The class `WeilData E` extends `HasPrimitiveRoot5040 E` and `SplittingChar E`. The source has one global instance of `WeilData (P.E s)`, namely `New.Parameters.instWeilDataE` (lean:New/Derivatives/Field/WeilData.lean#L420). Its parent `HasPrimitiveRoot5040 (P.E s)` is filled by the instance at lean:New/Derivatives/Field/PrimeDecomposition.lean#L138, which takes the power $q_1/5040$ of a primitive root of order $q_1$. A search of the source found no local `letI` or `haveI` of `WeilData`. So the instance that the moment theorems use for $D.E$ is `instWeilDataE` at $s = D.\mathtt{towerExp}$, and its root of unity comes from PrimeDecomposition.lean. The class `HasPrimitiveRoot5040` is a proposition, so any two of its instances are equal. The splitting character inside `instWeilDataE` is chosen with `.some`. Whether a statement depends on that choice is row F-043, which stays open. The scalar $c_{ss}$ of Theorem A comes from the seesaw identity and may depend on it. By [the range lemma](/decl/New.Data.range_normalizedPoincare/) a nonzero scalar does not change the spaces in Theorem B.
 
-### The constants of this section
+### The constants of the two inputs
 
 | Quantity | Bound | Where |
 |---|---|---|

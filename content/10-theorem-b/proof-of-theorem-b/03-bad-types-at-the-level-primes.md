@@ -117,7 +117,7 @@ Lean: `New.Data.bad_types_rare` (New/Spanning/SecondMoment/SpanningTheorem.lean)
 
 **Remark (Formalization).** The constant $b^{-8}/2$ is not the constant of the plan in one step. [The section on the four layers](/chapter/theorem-b-plan/#the-four-layers-of-the-proof) speaks of a share $b^{-8}$ of bad types. The source asks $b^{-8}/2$ at each of the two primes. The proof of [the good forms theorem](/chapter/moments/#good-forms) turns each share into the bound $\|(1 - e_{p_i})P\|^2 \leq 2b^{-4}D_X$, and the two primes give $4b^{-4}D_X$.
 
-### The constants of this section
+### The constants at the level primes
 
 | Quantity | Bound | Source of the bound |
 |---|---|---|
