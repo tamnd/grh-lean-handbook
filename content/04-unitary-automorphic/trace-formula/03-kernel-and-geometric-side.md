@@ -90,7 +90,7 @@ Lean: `New.Space.geometricSide_translate` (Lib/Adelic/TraceFormula/ReduciblePoly
 
 Section 4 uses this lemma to replace $\varphi$ by its mean over the conjugates by a compact group.
 
-### A model case
+### The case of rank one
 
 Take $N = 1$. Then $U(V)$ is the norm one torus $E^1$, and every $\gamma$ is a scalar with $\chi_\gamma = X - \gamma$. The group $G$ is commutative, so $x^{-1} \gamma x = \gamma$ and the integrand does not depend on $x$. So
 $$ I_{\{X - \gamma\}}(\varphi) = \operatorname{vol}([G])\, e(\gamma_\infty)\, \varphi(\gamma_f). $$

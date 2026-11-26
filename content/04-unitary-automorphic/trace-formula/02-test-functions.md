@@ -84,7 +84,7 @@ Lean: `New.HasSimpleZero.charpoly_ne_pow` (Lib/Adelic/TraceFormula/TestFunction.
 
 **Example.** Let $\varpi$ be a uniformiser of $E_{w'}$ and put $t = \operatorname{diag}(\varpi, 1, \dots, 1)$. Its reduction is $\operatorname{diag}(0, 1, \dots, 1)$, with characteristic polynomial $X (X - 1)^{N-1}$. So $t$ has a simple zero. In contrast the scalar matrix $\varpi \cdot 1$ is integral, but its reduction is $0$, with characteristic polynomial $X^N$. Its own characteristic polynomial $(X - \varpi)^N$ is a proper power for $N \geq 2$. Section 7 uses elements of the first kind to force the simple zero.
 
-### A model case
+### A model case for GL(2)
 
 Take $N = 2$. The proper coordinate parabolics of $\mathrm{GL}_2$ are the upper and the lower triangular groups, for $T = \{1\}$ and $T = \{2\}$. For $T = \{1\}$ the matrix $r_T(Z)$ is $\begin{pmatrix} 1 & z_{12} \\ 0 & 1 \end{pmatrix}$, so each element of the radical is met $q^3$ times. Let $\varphi$ be right invariant under the kernel of reduction at $w$. Then cuspidality at $w$ says that for all $g \in G_f$ and $t \in \mathrm{GL}_2(k_w)$,
 $$ \sum_{z \in k_w} \varphi\Big(g\, \iota_w\Big(\widetilde{\begin{pmatrix} 1 & z \\ 0 & 1 \end{pmatrix} t}\Big)\Big) = 0, $$

@@ -102,7 +102,7 @@ Now [the descent theorem](/decl/New.IsInvariantDistribution.eq_zero_of_isImage/)
 
 The fact used in Step 3 is the classical statement that a semisimple element of a Levi subgroup with no common eigenvalue between the blocks has a conjugation orbit under $\mathcal{N}$ that fills $y \mathcal{N}$. Here it is linear algebra: the equation $m\, y\, m^{-1} = y\, r(\kappa)$ for $m = r(Z)$ is the Sylvester equation $Z y_2 - y_1 Z = y_1 \kappa_{12}$ in the upper right block. It has a solution since $y_1$ and $y_2$ have coprime characteristic polynomials.
 
-### The terms of reducible polynomials
+### The vanishing theorem
 
 **Theorem.** Let $B \geq 13 N^3$ and let $e$ be a cusp kernel of order $B$. Let $w$ be a split finite place and $w'$ a finite place. Let $\varphi$ be a test function that is cuspidal at $w$, such that $\varphi(g) \neq 0$ implies that $g_{w'}$ has a simple zero. Then $I_R(\varphi) = 0$ for every $R \in E[X]$ that is not irreducible.
 Lean: `New.Space.geometricSide_singleton_eq_zero` (Lib/Adelic/TraceFormula/ReduciblePolynomials.lean).
@@ -111,6 +111,6 @@ Lean: `New.Space.geometricSide_singleton_eq_zero` (Lib/Adelic/TraceFormula/Reduc
 
 **Remark (Formalization).** The places $w$ and $w'$ are not asked to be distinct, and $w'$ need not be split. The factorisation $R = A C$ is found over $E$ and then mapped to $E_w$. The simple zero at $w'$ is used only to exclude proper powers over $E$. At $w$ only the coprime factorisation is used.
 
-### A model case
+### The case of rank two
 
 Take $N = 2$. A monic $R$ of degree $2$ that is not irreducible over $E$ is $(X - \alpha)(X - \beta)$ with $\alpha, \beta \in E$. If $\alpha \neq \beta$, the rational points with this polynomial are diagonalisable over $E$, and at $w$ they are conjugate to $\operatorname{diag}(\alpha, \beta)$. The theorem kills these terms by the coprime factors argument with $A = X - \alpha$, $C = X - \beta$, $T = \{1\}$: the slice is the set of diagonal matrices $\operatorname{diag}(\alpha, \beta)$ at $w$, the group $\mathcal{N}$ is the upper unipotent group, and Step 3 solves $z \beta - \alpha z = \alpha \kappa$, that is $z = \alpha \kappa / (\beta - \alpha)$. If $\alpha = \beta$, then $R = (X - \alpha)^2$ is a proper power. The rational points are $\alpha \cdot 1$ and the unipotent elements times $\alpha$. These are the terms that the simple zero at $w'$ removes. Suppose a support point $y$ had $\chi_{y_{w'}} = (X - \alpha)^2$. Then $\alpha$ is integral at $w'$, and modulo $w'$ the polynomial is $(X - \bar\alpha)^2$. Its root $0$ has multiplicity $0$ or $2$, never $1$.
