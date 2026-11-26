@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 6957 cited names outside the namespace `New.Data`. This section has 3840 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 7085 cited names outside the namespace `New.Data`. This section has 3918 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -65,6 +65,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.analyticOnNhd_sub_mul_sum_term`: `Lib/Analytic/Primes.lean`, [line 373](lean:Lib/Analytic/Primes.lean#L373). Cited in [Chapter](/chapter/primes-in-windows/).
 - `New.analyticOrderAt_entireL_ne_top`: `Lib/Analytic/EntireLFunction.lean`, [line 167](lean:Lib/Analytic/EntireLFunction.lean#L167). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/polar-functions/).
 - `New.analyticOrderNatAt_entireL_eq_zero_iff`: `Lib/Analytic/EntireLFunction.lean`, [line 172](lean:Lib/Analytic/EntireLFunction.lean#L172). Cited in [Chapter](/chapter/polar-functions/).
+- `New.antitone_factorialBox`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 495](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L495). Cited in [Chapter](/chapter/false-lifts/).
 - `New.apply_eq_sum_moebius_smul_of_changeLevel_eq`: `Lib/Analytic/PolyaVinogradov.lean`, [line 137](lean:Lib/Analytic/PolyaVinogradov.lean#L137). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.apply_kernelProduct_le_prod_mul`: `New/UpperBound/Objects/LiftChains.lean`, [line 300](lean:New/UpperBound/Objects/LiftChains.lean#L300). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.apply_mul_scalarFin_divStar_principalIdele`: `Lib/GaloisRep/Main/AttachedRepresentations.lean`, [line 320](lean:Lib/GaloisRep/Main/AttachedRepresentations.lean#L320). Cited in [Chapter](/chapter/attached-representations/).
@@ -84,6 +85,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.artinMap_locIdele`: `Lib/ClassField/Global/ArtinMap.lean`, [line 258](lean:Lib/ClassField/Global/ArtinMap.lean#L258). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.artinMap_principalIdele_eq_one_of_isTotallyPositive`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 532](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L532). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.artinMap_surjective`: `Lib/ClassField/Global/NormTheorems.lean`, [line 64](lean:Lib/ClassField/Global/NormTheorems.lean#L64). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.asAlgebraHom_hyperplaneSum`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 244](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L244). Cited in [Chapter](/chapter/false-lifts/).
 - `New.atPlace_ofSplitPlace`: `Lib/Adelic/Unitary/Defs.lean`, [line 326](lean:Lib/Adelic/Unitary/Defs.lean#L326). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.AutChar`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 74](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L74). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.AutChar.exists_hasWeight_of_prod_eq_one`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 594](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L594). Cited in [Chapter](/chapter/fields-places-twists/).
@@ -293,6 +295,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.cocycleRelations`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 161](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L161). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.coeff_eq_dsCoeff_of_isKHighest`: `Lib/DiscreteSeries/Rigidity/KernelFixes.lean`, [line 517](lean:Lib/DiscreteSeries/Rigidity/KernelFixes.lean#L517). Cited in [Chapter](/chapter/discrete-series/).
 - `New.coeff_heckePoly`: `Lib/GaloisRep/Main/Defs.lean`, [line 137](lean:Lib/GaloisRep/Main/Defs.lean#L137). Cited in [Chapter](/chapter/attached-representations/).
+- `New.coeff_hyperplaneSum_eq_ite`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 229](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L229). Cited in [Chapter](/chapter/false-lifts/).
 - `New.CoeffRing`: `Lib/General/NumberTheory/CoefficientRings.lean`, [line 113](lean:Lib/General/NumberTheory/CoefficientRings.lean#L113). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.CoeffRing.dvd_iff_norm_le`: `Lib/General/NumberTheory/CoefficientRings.lean`, [line 165](lean:Lib/General/NumberTheory/CoefficientRings.lean#L165). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.CoeffRing.dvd_of_toIntQpBar_dvd`: `Lib/General/NumberTheory/CoefficientInclusion.lean`, [line 54](lean:Lib/General/NumberTheory/CoefficientInclusion.lean#L54). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -375,6 +378,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.compactMean_diagGL_compactMean_diagGL`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 494](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L494). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.compactMean_eq_self`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 728](lean:Lib/Adelic/Hecke/ClassSums.lean#L728). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.compactMean_mem_levelSpace`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 726](lean:Lib/Adelic/Hecke/ClassSums.lean#L726). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.completeColumns`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 88](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L88). Cited in [Chapter](/chapter/false-lifts/).
 - `New.conductorIdeal`: `Lib/SiegelWeil/Mass.lean`, [line 291](lean:Lib/SiegelWeil/Mass.lean#L291). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.CongruenceChoice`: `New/Derivatives/Divisibility/NullFrames.lean`, [line 130](lean:New/Derivatives/Divisibility/NullFrames.lean#L130). Cited in [Chapter](/chapter/normal-forms/).
 - `New.congruenceGL`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 261](lean:Lib/General/Groups/CongruenceSubgroups.lean#L261). Cited in [Chapter](/chapter/congruence-subgroups/).
@@ -403,6 +407,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Core.frameLength`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 295](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L295). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.minkowski_second_theorem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 525](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L525). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.numInfPlaces`: `Lib/General/NumberTheory/EmbeddingsAndDifferent.lean`, [line 77](lean:Lib/General/NumberTheory/EmbeddingsAndDifferent.lean#L77). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/siegel-weil/).
+- `New.cosetIndicator_factorialIdele`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 476](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L476). Cited in [Chapter](/chapter/false-lifts/).
 - `New.countError`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 48](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L48). Cited in [Chapter](/chapter/main-inequality/).
 - `New.coupling`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 38](lean:New/Derivatives/Divisibility/NormalForm.lean#L38). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.couplingSum`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 43](lean:New/Derivatives/Divisibility/NormalForm.lean#L43). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -442,8 +447,10 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.DescendsTo.induceClassFn_parabolic`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 324](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L324). Cited in [Chapter](/chapter/finite-gln/).
 - `New.DescentPair`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 172](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L172). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.bijective_map_levelResidueAt`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 466](lean:New/Determinant/Norms/AdjointThetaLift.lean#L466). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.blockAction`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1267](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1267). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.blockDatum`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 348](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L348). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.blockDatum_eq_vacuumDatum`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 446](lean:New/Determinant/Norms/AdjointThetaLift.lean#L446). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.BlockDescentVanishes`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1085](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1085). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.blockFn`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 441](lean:New/Determinant/Norms/AdjointThetaLift.lean#L441). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.blockFn_normSq`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 485](lean:New/Determinant/Norms/AdjointThetaLift.lean#L485). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.blockMass`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 592](lean:New/Determinant/Norms/AdjointThetaLift.lean#L592). Cited in [Chapter](/chapter/single-theta-lifts/).
@@ -455,10 +462,23 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.DescentPair.coe_thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 184](lean:New/Determinant/Norms/AdjointThetaLift.lean#L184). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.conjKernel`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 362](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L362). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.conjKernel_apply`: `New/Determinant/Norms/VectorKernel.lean`, [line 47](lean:New/Determinant/Norms/VectorKernel.lean#L47). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.descentPairing`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1063](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1063). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.descentPairing_eq_zero_of_not_hasIntegralBlockRatio`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1437](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1437). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.descentPairing_levelTranslate`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1133](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1133). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.descentPairing_translate`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1103](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1103). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.descentPairing_translatedBlockFn_eq_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1185](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1185). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.descentsVanish_of_hyperplaneSumsAnnihilate`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1466](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1466). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.eq_smul_translatedBlockFn`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 923](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L923). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.eventually_descentPairing_eq_zero_of_hasIntegralBlockRatio`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1226](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1226). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.exists_adjoint_heckePolyOnForms_comm`: `New/OneLift/TestedForms.lean`, [line 505](lean:New/OneLift/TestedForms.lean#L505). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.exists_invariant_pairing_eq_innerAt`: `New/OneLift/TestedForms.lean`, [line 306](lean:New/OneLift/TestedForms.lean#L306). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.exists_leftMul_eq_and_blockAction_eq`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1376](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1376). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.exists_leftMul_eq_of_translatedBlockFn_ne_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 833](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L833). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.exists_pairWeil_blockDatum_eq_smul`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1161](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1161). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.exists_reductionGL_eq_submatrix_of_blockFn_ne_zero`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 532](lean:New/Determinant/Norms/AdjointThetaLift.lean#L532). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.exists_smul_mem_integralForms_maximal`: `New/OneLift/LiftVolumeHeight.lean`, [line 124](lean:New/OneLift/LiftVolumeHeight.lean#L124). Cited in [Chapter](/chapter/lift-volume-height/).
 - `New.DescentPair.falseLiftsAt`: `New/OneLift/TestedForms.lean`, [line 373](lean:New/OneLift/TestedForms.lean#L373). Cited in [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.finite_range_levelTranslate`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 897](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L897). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.FitsParams`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 704](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L704). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.FitsParams.isArrow_fockDatum`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 141](lean:New/Determinant/Norms/AdjointThetaLift.lean#L141). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.FitsParams.isArrow_swap_fockDatum`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 149](lean:New/Determinant/Norms/AdjointThetaLift.lean#L149). Cited in [Chapter](/chapter/single-theta-lifts/).
@@ -477,6 +497,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.DescentPair.heckePolyOnForms_comm`: `New/OneLift/TestedForms.lean`, [line 477](lean:New/OneLift/TestedForms.lean#L477). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.heckePolyOnForms_eq_smul`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 396](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L396). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.heckePolyOnForms_liftHeckeRoot_eq_zero`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 536](lean:New/OneLift/HeckeValues/CharacterLift.lean#L536). Cited in [Chapter](/chapter/single-theta-lifts/), [Chapter](/chapter/character-lifts/).
+- `New.DescentPair.HyperplaneSumsAnnihilate`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1275](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1275). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.inner_thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 297](lean:New/Determinant/Norms/AdjointThetaLift.lean#L297). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.innerAt_formAction`: `New/OneLift/TestedForms.lean`, [line 438](lean:New/OneLift/TestedForms.lean#L438). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.innerAt_groupAlgAction`: `New/OneLift/TestedForms.lean`, [line 497](lean:New/OneLift/TestedForms.lean#L497). Cited in [Chapter](/chapter/character-lifts/).
@@ -490,6 +511,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.DescentPair.IsTestForm`: `New/OneLift/TestedForms.lean`, [line 392](lean:New/OneLift/TestedForms.lean#L392). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.levelChar`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 266](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L266). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.levelGroup`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 210](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L210). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.levelTranslate`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 886](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L886). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.liftHeckeRoot`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 413](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L413). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.mem_sup_ker_sup_range_of_isOrthogonalToFalseLifts`: `New/OneLift/TestedForms.lean`, [line 566](lean:New/OneLift/TestedForms.lean#L566). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.normalizedDescent`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 371](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L371). Cited in [Chapter](/chapter/single-theta-lifts/).
@@ -506,11 +528,18 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.DescentPair.range_groupAlgAction_mem_invtSubmodule`: `New/OneLift/TestedForms.lean`, [line 461](lean:New/OneLift/TestedForms.lean#L461). Cited in [Chapter](/chapter/character-lifts/).
 - `New.DescentPair.rankDiff`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 409](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L409). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.residueBlockDatum`: `New/UpperBound/Objects/AuxiliaryPair.lean`, [line 217](lean:New/UpperBound/Objects/AuxiliaryPair.lean#L217). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.residueBlockDatum_mul`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 721](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L721). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.smul_chosenGLRep_eq_apply_of_triangular`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 998](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L998). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.stdLevelIndex_levelGroup_mul_card`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 649](lean:New/Determinant/Norms/AdjointThetaLift.lean#L649). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.stdLevelIndex_mul_blockMass`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 617](lean:New/Determinant/Norms/AdjointThetaLift.lean#L617). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.sum_blockAction_eq_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1356](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1356). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.sum_formAction_mulSingle_eq_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 1296](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L1296). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.thetaLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 160](lean:New/Determinant/Norms/AdjointThetaLift.lean#L160). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.thetaLift_eq_integral`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 391](lean:New/Determinant/Norms/AdjointThetaLift.lean#L391). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.thetaLift_formRep`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 195](lean:New/Determinant/Norms/AdjointThetaLift.lean#L195). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.DescentPair.translatedBlockFn`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 697](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L697). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.translatedBlockFn_eq_one_of_hasIntegralBlockRatio`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 955](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L955). Cited in [Chapter](/chapter/false-lifts/).
+- `New.DescentPair.translatedBlockFn_leftMul`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 797](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L797). Cited in [Chapter](/chapter/false-lifts/).
 - `New.DescentPair.twistFactor`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 625](lean:New/Determinant/Norms/AdjointThetaLift.lean#L625). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.vectorKernel`: `New/Determinant/Norms/VectorKernel.lean`, [line 63](lean:New/Determinant/Norms/VectorKernel.lean#L63). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.vectorKernel_equivariant`: `New/Determinant/Norms/VectorKernel.lean`, [line 104](lean:New/Determinant/Norms/VectorKernel.lean#L104). Cited in [Chapter](/chapter/single-theta-lifts/).
@@ -518,8 +547,10 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.DescentPair.vectorKernel_rational_mul`: `New/Determinant/Norms/VectorKernel.lean`, [line 134](lean:New/Determinant/Norms/VectorKernel.lean#L134). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.vectorKernelForm`: `New/Determinant/Norms/VectorKernel.lean`, [line 149](lean:New/Determinant/Norms/VectorKernel.lean#L149). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.DescentPair.vectorKernelForm_apply`: `New/Determinant/Norms/VectorKernel.lean`, [line 158](lean:New/Determinant/Norms/VectorKernel.lean#L158). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.det_completeColumns`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 98](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L98). Cited in [Chapter](/chapter/false-lifts/).
 - `New.det_fromRows_invLastRows`: `Lib/General/LinearAlgebra/PartnerAlgebra.lean`, [line 157](lean:Lib/General/LinearAlgebra/PartnerAlgebra.lean#L157). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.det_gram_comp`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 60](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L60). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.det_rowShear`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 157](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L157). Cited in [Chapter](/chapter/false-lifts/).
 - `New.detChar`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 157](lean:Lib/LocalGL/Green/TauFunctions.lean#L157). Cited in [Chapter](/chapter/finite-gln/).
 - `New.detPow`: `Lib/GLn/SchurModule/Basic.lean`, [line 217](lean:Lib/GLn/SchurModule/Basic.lean#L217). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.diagGL`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 180](lean:Lib/General/Groups/CongruenceSubgroups.lean#L180). Cited in [Chapter](/chapter/congruence-subgroups/).
@@ -769,10 +800,14 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.eventually_rpow_lt_thetaTailIntegral`: `Lib/Analytic/QuadraticTwist.lean`, [line 275](lean:Lib/Analytic/QuadraticTwist.lean#L275). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.eventually_unramified`: `Lib/ClassField/Places/Ideles.lean`, [line 192](lean:Lib/ClassField/Places/Ideles.lean#L192). Cited in [Chapter](/chapter/cm-fields/).
 - `New.eventuallyEq_of_eq_far_right`: `Lib/Analytic/Landau.lean`, [line 143](lean:Lib/Analytic/Landau.lean#L143). Cited in [Chapter](/chapter/landau-theorem/).
+- `New.Exchange.abs_hcParameter_le_of_isHCParam`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 37](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L37). Cited in [Chapter](/chapter/grids-paths-turns/).
+- `New.Exchange.add_diagramWeight_mem_Icc_of_interlace`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 81](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L81). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.adjointDatum`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 98](lean:New/Determinant/Exchange/TheoremForPartners.lean#L98). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.apply_eq_zero_of_forall_fixed_eq_zero`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 231](lean:New/Determinant/Exchange/NegativeIndices.lean#L231). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.areMatched_matchOf`: `New/Determinant/Chain/SquareLaw.lean`, [line 262](lean:New/Determinant/Chain/SquareLaw.lean#L262). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.blockInlGL`: `New/Determinant/Chain/SquareLaw.lean`, [line 220](lean:New/Determinant/Chain/SquareLaw.lean#L220). Cited in [Chapter](/chapter/seesaw-squares/).
+- `New.Exchange.boxes_le_boxes_of_interlace`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 114](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L114). Cited in [Chapter](/chapter/grids-paths-turns/).
+- `New.Exchange.boxes_le_card_mul_of_isHCParam`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 56](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L56). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.centreCoeff_eq_zero_of_not_representedBy`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 451](lean:New/Determinant/Exchange/NegativeIndices.lean#L451). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.centreCoeff_eq_zero_of_unimodular`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 812](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L812). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.ChainAdjoint`: `New/Determinant/Chain/TriangleNorms.lean`, [line 205](lean:New/Determinant/Chain/TriangleNorms.lean#L205). Cited in [Chapter](/chapter/chain-determinant/).
@@ -785,6 +820,8 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.cone`: `Lib/SiegelWeil/Tower/RealConeIntegral.lean`, [line 68](lean:Lib/SiegelWeil/Tower/RealConeIntegral.lean#L68). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.coneIntegrand`: `Lib/SiegelWeil/Tower/RealConeIntegral.lean`, [line 59](lean:Lib/SiegelWeil/Tower/RealConeIntegral.lean#L59). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.constTermAt`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 72](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L72). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.diagramWeight_eq_add_succ`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 64](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L64). Cited in [Chapter](/chapter/grids-paths-turns/).
+- `New.Exchange.diagramWeight_eq_zero_of_le_succ`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 72](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L72). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.downIntegrand`: `New/Determinant/Exchange/OneSquare.lean`, [line 279](lean:New/Determinant/Exchange/OneSquare.lean#L279). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.dualCone`: `Lib/SiegelWeil/Tower/RealConeIntegral.lean`, [line 72](lean:Lib/SiegelWeil/Tower/RealConeIntegral.lean#L72). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.dualIndex`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 286](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L286). Cited in [Chapter](/chapter/rallis-inner-product/).
@@ -799,6 +836,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.exchange_of_matches`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 321](lean:New/Determinant/Exchange/TheoremForPartners.lean#L321). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exchange_theorem`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 975](lean:New/Determinant/Exchange/TheoremForPartners.lean#L975). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exchangeSection`: `New/Determinant/Exchange/RealVectors.lean`, [line 356](lean:New/Determinant/Exchange/RealVectors.lean#L356). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_add_eq_of_interlace`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 138](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L138). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.exists_analytic_extension_functional_equation`: `Lib/SiegelWeil/Tower/FunctionalEquation.lean`, [line 368](lean:Lib/SiegelWeil/Tower/FunctionalEquation.lean#L368). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_analytic_extension_ne_zero`: `Lib/SiegelWeil/Tower/FunctionalEquation.lean`, [line 424](lean:Lib/SiegelWeil/Tower/FunctionalEquation.lean#L424). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_areMatched_modDatum_eq`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 884](lean:New/Determinant/Exchange/TheoremForPartners.lean#L884). Cited in [Chapter](/chapter/exchange-identity-2/).
@@ -807,6 +845,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.exists_contDiff_eventuallyEq_inv`: `New/Determinant/Exchange/RealVectors.lean`, [line 210](lean:New/Determinant/Exchange/RealVectors.lean#L210). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_contDiff_witt`: `New/Determinant/Exchange/RealVectors.lean`, [line 137](lean:New/Determinant/Exchange/RealVectors.lean#L137). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_contDiff_witt_and_bump`: `New/Determinant/Exchange/RealVectors.lean`, [line 271](lean:New/Determinant/Exchange/RealVectors.lean#L271). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_eq_add_card_add_sum_Ioc`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 93](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L93). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.exists_eq_firstCols`: `New/Determinant/Chain/SquareLaw.lean`, [line 357](lean:New/Determinant/Chain/SquareLaw.lean#L357). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.exists_eq_mul_of_forall_polyVector`: `New/Determinant/Exchange/OneSquare.lean`, [line 193](lean:New/Determinant/Exchange/OneSquare.lean#L193). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.exists_equalRankThetaRatio_add_plane`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 745](lean:New/Determinant/Exchange/TheoremForPartners.lean#L745). Cited in [Chapter](/chapter/exchange-identity-2/).
@@ -820,7 +859,10 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.exists_integrable_kernel_bound`: `New/Determinant/Exchange/OneSquare.lean`, [line 152](lean:New/Determinant/Exchange/OneSquare.lean#L152). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.exists_integral_upIntegrand_eq_mul_integral_lift`: `New/Determinant/Exchange/OneSquare.lean`, [line 482](lean:New/Determinant/Exchange/OneSquare.lean#L482). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.exists_isBaseAdapted`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 245](lean:New/Determinant/Exchange/RemovingPlanes.lean#L245). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_isBranchingPairing`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 238](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L238). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.exists_isEquivariantLift_eq_thetaLarge_sub_smul`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 281](lean:New/Determinant/Exchange/EquivariantDifference.lean#L281). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_isHCParam_of_hasGap`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 153](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L153). Cited in [Chapter](/chapter/grids-paths-turns/).
+- `New.Exchange.exists_isHCParam_of_le`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 123](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L123). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.exists_isometry_fock_functional_eq_zero`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 297](lean:New/Determinant/Exchange/NegativeIndices.lean#L297). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_isSchwartzVector_exchangeSection`: `New/Determinant/Exchange/RealVectors.lean`, [line 407](lean:New/Determinant/Exchange/RealVectors.lean#L407). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_isSchwartzVector_realSlice_bump`: `New/Determinant/Exchange/RealVectors.lean`, [line 372](lean:New/Determinant/Exchange/RealVectors.lean#L372). Cited in [Chapter](/chapter/exchange-identity-2/).
@@ -876,6 +918,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.HasSquareModuli`: `New/Determinant/Chain/TriangleNorms.lean`, [line 170](lean:New/Determinant/Chain/TriangleNorms.lean#L170). Cited in [Chapter](/chapter/chain-determinant/).
 - `New.Exchange.HasSquareModuli.exists_chainCommutes`: `New/Determinant/Chain/TriangleNorms.lean`, [line 310](lean:New/Determinant/Chain/TriangleNorms.lean#L310). Cited in [Chapter](/chapter/chain-determinant/).
 - `New.Exchange.hasSum_constTermAt`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 114](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L114). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.hcParameter_sub_one`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 47](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L47). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.homSlice_localDatum_stdColDatum`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 321](lean:New/Determinant/Exchange/RemovingPlanes.lean#L321). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.homSlice_pairWeil_stabilizer_mul`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 428](lean:New/Determinant/Exchange/NegativeIndices.lean#L428). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.idemAdele`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 437](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L437). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -906,6 +949,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.invDifferentIdele`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 184](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L184). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.IsAutFunction`: `Lib/SiegelWeil/SingularForms/CentreCoefficients.lean`, [line 65](lean:Lib/SiegelWeil/SingularForms/CentreCoefficients.lean#L65). Cited in [Chapter](/chapter/siegel-weil/), [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.IsAutFunction.apply_eq_apply_one`: `Lib/SiegelWeil/Formula/StrongApproximation.lean`, [line 158](lean:Lib/SiegelWeil/Formula/StrongApproximation.lean#L158). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Exchange.IsBranchingPairing`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 198](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L198). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.IsConjKernelPair`: `Lib/Weil/Seesaw.lean`, [line 128](lean:Lib/Weil/Seesaw.lean#L128). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.isConjKernelPair_kernelPair`: `Lib/Weil/Seesaw.lean`, [line 146](lean:Lib/Weil/Seesaw.lean#L146). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.IsEdgeFamily`: `Lib/Weil/Seesaw.lean`, [line 135](lean:Lib/Weil/Seesaw.lean#L135). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
@@ -944,6 +988,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.IsWittBump.exists_mul_fromRows_mul_eq_of_ne_zero`: `New/Determinant/Exchange/RealVectors.lean`, [line 608](lean:New/Determinant/Exchange/RealVectors.lean#L608). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.IsWittBump.isPeriodIdentity`: `New/Determinant/Exchange/RealVectors.lean`, [line 668](lean:New/Determinant/Exchange/RealVectors.lean#L668). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.kernelPair`: `Lib/Weil/Seesaw.lean`, [line 78](lean:Lib/Weil/Seesaw.lean#L78). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.le_div_two_add_of_paramsCorrespond`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 310](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L310). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.lineTerm`: `Lib/SiegelWeil/Tower/LineTerms.lean`, [line 92](lean:Lib/SiegelWeil/Tower/LineTerms.lean#L92). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.localChar`: `Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean`, [line 254](lean:Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean#L254). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.lSharp`: `Lib/SiegelWeil/Tower/FiniteTateIntegral.lean`, [line 63](lean:Lib/SiegelWeil/Tower/FiniteTateIntegral.lean#L63). Cited in [Chapter](/chapter/rallis-inner-product/).
@@ -965,11 +1010,13 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.Exchange.modLift`: `Lib/Weil/Seesaw.lean`, [line 88](lean:Lib/Weil/Seesaw.lean#L88). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.modTransposedLift`: `Lib/Weil/Seesaw.lean`, [line 94](lean:Lib/Weil/Seesaw.lean#L94). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.mul_gram_inv_mul_of_isUnit_det`: `New/Determinant/Exchange/RealVectors.lean`, [line 296](lean:New/Determinant/Exchange/RealVectors.lean#L296). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.natAbs_le_of_isHCParam`: `New/Determinant/AuxiliaryForms/RegularParameters.lean`, [line 78](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean#L78). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.ne_zero_of_norm_sq_eq`: `New/Determinant/Exchange/OneSquare.lean`, [line 672](lean:New/Determinant/Exchange/OneSquare.lean#L672). Cited in [Chapter](/chapter/seesaw-squares/).
 - `New.Exchange.neg_mem_flipSpace_Gamma_iff`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 127](lean:New/Determinant/Exchange/TheoremForPartners.lean#L127). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.neg_mem_neg_Gamma_iff`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 61](lean:New/Determinant/Exchange/RemovingPlanes.lean#L61). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.negCount_sumElim_hyperbolicSigns_unit`: `New/Determinant/Exchange/VanishingDescends.lean`, [line 67](lean:New/Determinant/Exchange/VanishingDescends.lean#L67). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.nextDatum`: `New/Determinant/Chain/SquareLaw.lean`, [line 78](lean:New/Determinant/Chain/SquareLaw.lean#L78). Cited in [Chapter](/chapter/seesaw-squares/).
+- `New.Exchange.norm_dotProduct_mulVec_le_of_isDualPairing`: `New/Determinant/AuxiliaryForms/LastPath.lean`, [line 181](lean:New/Determinant/AuxiliaryForms/LastPath.lean#L181). Cited in [Chapter](/chapter/grids-paths-turns/).
 - `New.Exchange.norm_dsCoeff_translate_le`: `New/Determinant/AuxiliaryForms/DeepLevelPoincarePeriod.lean`, [line 206](lean:New/Determinant/AuxiliaryForms/DeepLevelPoincarePeriod.lean#L206). Cited in [Chapter](/chapter/deep-level-poincare/).
 - `New.Exchange.norm_dsKernel_mul_pow_le`: `New/Determinant/AuxiliaryForms/DeepLevelVanishing.lean`, [line 445](lean:New/Determinant/AuxiliaryForms/DeepLevelVanishing.lean#L445). Cited in [Chapter](/chapter/deep-level-poincare/).
 - `New.Exchange.norm_le_half_of_firstMinimum_lt`: `New/Determinant/AuxiliaryForms/DeepLevelVanishing.lean`, [line 305](lean:New/Determinant/AuxiliaryForms/DeepLevelVanishing.lean#L305). Cited in [Chapter](/chapter/deep-level-poincare/).
@@ -1087,6 +1134,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.exists_family_algHom_charpoly_mem`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 281](lean:New/Congruences/FirstOrder/RibetMethod.lean#L281). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.exists_fillingMatrix_leftInverse`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 278](lean:Lib/GLn/SchurModule/TensorModel.lean#L278). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_fillingMatrix_mulVec_eq_iff_mem_span`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 323](lean:Lib/GLn/SchurModule/TensorModel.lean#L323). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.exists_fixed_forall_linearMap_eq_of_finite`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 418](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L418). Cited in [Chapter](/chapter/false-lifts/).
 - `New.exists_fundamentalDomain_real`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 214](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L214). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.exists_hasPrimeDensity_addChar_uniformizer`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 216](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L216). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_heckeSplit_eq_smul`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 506](lean:Lib/Weil/Unramified/SplitHecke.lean#L506). Cited in [Chapter](/chapter/iwahori-satake/).
@@ -1100,6 +1148,10 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.exists_Ioi_subset_integrableExpSet`: `Lib/Analytic/Landau.lean`, [line 182](lean:Lib/Analytic/Landau.lean#L182). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_Ioi_subset_integrableExpSet_of_analyticAt`: `Lib/Analytic/Landau.lean`, [line 160](lean:Lib/Analytic/Landau.lean#L160). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_isAddFundamentalDomain_realAdele`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 274](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L274). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.exists_isAnnihilatingRow_of_det_eq_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 310](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L310). Cited in [Chapter](/chapter/false-lifts/).
+- `New.exists_isAnnihilatingRow_of_max`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 293](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L293). Cited in [Chapter](/chapter/false-lifts/).
+- `New.exists_isAnnihilatingRow_of_not_hasIntegralBlockRatio`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 365](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L365). Cited in [Chapter](/chapter/false-lifts/).
+- `New.exists_isAnnihilatingRow_of_one_le`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 334](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L334). Cited in [Chapter](/chapter/false-lifts/).
 - `New.exists_isApproximatingMonoid_of_mem_uniformClosure`: `Lib/GaloisRep/Pseudocharacter/Pseudorepresentations.lean`, [line 360](lean:Lib/GaloisRep/Pseudocharacter/Pseudorepresentations.lean#L360). Cited in [Chapter](/chapter/attached-representations/).
 - `New.exists_isBoundedDualBasis`: `Lib/Adelic/Reduction/FiniteVolume.lean`, [line 277](lean:Lib/Adelic/Reduction/FiniteVolume.lean#L277). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.exists_isChar_descendsTo_labelChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 326](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L326). Cited in [Chapter](/chapter/finite-gln/).
@@ -1151,6 +1203,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.exists_norm_eq_of_forall_mem_closure`: `Lib/Adelic/Landherr.lean`, [line 62](lean:Lib/Adelic/Landherr.lean#L62). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_norm_eq_sq_add_sq`: `Lib/Adelic/Landherr.lean`, [line 85](lean:Lib/Adelic/Landherr.lean#L85). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_norm_le_norm_sum_mul_eval`: `New/Derivatives/Divisibility/Count.lean`, [line 730](lean:New/Derivatives/Divisibility/Count.lean#L730). Cited in [Chapter](/chapter/normal-forms/).
+- `New.exists_norm_le_norm_twisted_classSum`: `New/OneLift/HeckeValues/TwistedValueHeights.lean`, [line 101](lean:New/OneLift/HeckeValues/TwistedValueHeights.lean#L101). Cited in [Chapter](/chapter/hecke-values/).
 - `New.exists_norm_schurJet_le_norm_jet_minorProd`: `New/Derivatives/Divisibility/Count.lean`, [line 800](lean:New/Derivatives/Divisibility/Count.lean#L800). Cited in [Chapter](/chapter/normal-forms/).
 - `New.exists_odd_mem_thetaSpace_deriv_eq_one`: `Lib/CM/Sigma/Basic.lean`, [line 455](lean:Lib/CM/Sigma/Basic.lean#L455). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.exists_orthonormal_Ô`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 352](lean:Lib/Adelic/Witt/WittTheorem.lean#L352). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -1187,6 +1240,8 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.expect_addChar_dotProduct`: `New/Spanning/SecondMoment/PositiveType.lean`, [line 65](lean:New/Spanning/SecondMoment/PositiveType.lean#L65). Cited in [Chapter](/chapter/few-translates/).
 - `New.expSubst`: `Lib/General/Algebra/IntegralPowerSeries.lean`, [line 179](lean:Lib/General/Algebra/IntegralPowerSeries.lean#L179). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.expSubst_nsmul`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 349](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L349). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.factorialBox`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 450](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L450). Cited in [Chapter](/chapter/false-lifts/).
+- `New.factorialIdele`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 442](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L442). Cited in [Chapter](/chapter/false-lifts/).
 - `New.factorsThrough_sq_of_sq_eq_one`: `Lib/Analytic/Primes.lean`, [line 87](lean:Lib/Analytic/Primes.lean#L87). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
 - `New.faithfulChar`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 83](lean:Lib/LocalGL/Green/TauFunctions.lean#L83). Cited in [Chapter](/chapter/finite-gln/).
 - `New.faithfulChar_injective`: `Lib/General/Geometry/GaloisCovers.lean`, [line 182](lean:Lib/General/Geometry/GaloisCovers.lean#L182). Cited in [Chapter](/chapter/finite-gln/).
@@ -2694,6 +2749,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.hasHeckePolynomial_toAlgForm_iff`: `Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean`, [line 275](lean:Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean#L275). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.HasHodgeTateWeight`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 170](lean:Lib/PadicHodge/Crystalline/Basic.lean#L170). Cited in [Chapter](/chapter/period-rings/).
 - `New.HasHolGap`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 398](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L398). Cited in [Chapter](/chapter/discrete-series/).
+- `New.HasIntegralBlockRatio`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 266](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L266). Cited in [Chapter](/chapter/false-lifts/).
 - `New.HasLabel`: `Lib/GaloisRep/Main/Defs.lean`, [line 99](lean:Lib/GaloisRep/Main/Defs.lean#L99). Cited in [Chapter](/chapter/attached-representations/).
 - `New.HasLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 257](lean:Lib/Adelic/Unitary/Defs.lean#L257). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.HasLocalBounds`: `New/Spanning/Bessel/Basic.lean`, [line 938](lean:New/Spanning/Bessel/Basic.lean#L938). Cited in [Chapter](/chapter/bessel-real-place/), [Chapter](/chapter/real-densities/).
@@ -2860,8 +2916,10 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.hookNumber_pos`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 57](lean:Lib/GLn/SchurModule/WeylKernel.lean#L57). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.hua_integral_le`: `Lib/General/Analysis/HolomorphicIntegrals.lean`, [line 572](lean:Lib/General/Analysis/HolomorphicIntegrals.lean#L572). Cited in [Chapter](/chapter/discrete-series/).
 - `New.hyperbolicSpace`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 70](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L70). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.hyperplaneGroup`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 190](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L190). Cited in [Chapter](/chapter/false-lifts/).
 - `New.hyperplaneSum`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 162](lean:Lib/LocalGL/Green/TauFunctions.lean#L162). Cited in [Chapter](/chapter/finite-gln/).
 - `New.hyperplaneSum_mul_labelIdem`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 399](lean:Lib/LocalGL/Green/LabelCharacters.lean#L399). Cited in [Chapter](/chapter/finite-gln/).
+- `New.hyperplaneSum_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 236](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L236). Cited in [Chapter](/chapter/false-lifts/).
 - `New.idealZeta`: `Lib/SiegelWeil/Mass.lean`, [line 231](lean:Lib/SiegelWeil/Mass.lean#L231). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.idealZeta_intAdeles_pow_le`: `Lib/SiegelWeil/Mass.lean`, [line 424](lean:Lib/SiegelWeil/Mass.lean#L424). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.ideleAbs`: `Lib/Adelic/Adeles/IdeleModulus.lean`, [line 66](lean:Lib/Adelic/Adeles/IdeleModulus.lean#L66). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -2925,6 +2983,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.IsAbelianScheme`: `Lib/Shimura/AbelianScheme/Basic.lean`, [line 70](lean:Lib/Shimura/AbelianScheme/Basic.lean#L70). Cited in [Chapter](/chapter/complex-abelian-varieties/), [Chapter](/chapter/integral-model/).
 - `New.isAlgebraic_of_norm_complexToCp_le`: `Lib/General/NumberTheory/PadicLimitsValuation.lean`, [line 50](lean:Lib/General/NumberTheory/PadicLimitsValuation.lean#L50). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/fitting-ideals/).
 - `New.IsAllowedPolynomial`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 122](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L122). Cited in [Chapter](/chapter/upper-bound-objects/), [Chapter](/chapter/equal-multiplicities/).
+- `New.IsAnnihilatingRow`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 279](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L279). Cited in [Chapter](/chapter/false-lifts/).
 - `New.IsAppellHumbert`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 124](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L124). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.IsAppellHumbert.eq_exp_of_ne_zero`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 701](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L701). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.IsAppellHumbert.exists_mem_thetaSpace_ne_zero`: `Lib/Shimura/ComplexTheta/DimensionFormula.lean`, [line 216](lean:Lib/Shimura/ComplexTheta/DimensionFormula.lean#L216). Cited in [Chapter](/chapter/complex-abelian-varieties/).
@@ -3186,6 +3245,8 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.IsRootChoice.exists_conj_eq_of_map_eq`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 391](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L391). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsRootChoice.index_mul_finMean_eq_classInner`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 400](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L400). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsSaturating`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 483](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L483). Cited in [Chapter](/chapter/weil-representation/).
+- `New.IsSchwartzBruhat.eventually_const`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 511](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L511). Cited in [Chapter](/chapter/false-lifts/).
+- `New.IsSchwartzBruhat.mem_of_eventually_coset`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 534](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L534). Cited in [Chapter](/chapter/false-lifts/).
 - `New.IsSeparatingFamily`: `Lib/General/Geometry/DenseComplexPoints.lean`, [line 61](lean:Lib/General/Geometry/DenseComplexPoints.lean#L61). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.IsSeparatingFamily.exists_map_of_coords`: `Lib/General/Geometry/DenseComplexPoints.lean`, [line 157](lean:Lib/General/Geometry/DenseComplexPoints.lean#L157). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.IsSeparatingFamily.hom_ext`: `Lib/General/Geometry/DenseComplexPoints.lean`, [line 139](lean:Lib/General/Geometry/DenseComplexPoints.lean#L139). Cited in [Chapter](/chapter/schemes-through-points/).
@@ -3336,6 +3397,9 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.LevelPlaces.LevelForm.integralForms`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 738](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L738). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces.LevelForm.norm_nsmul_inner_le_one`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 750](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L750). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
 - `New.LevelPlaces.LevelForm.normSqAt_eq_re_valueCoord`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 818](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L818). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.LevelPlaces.LevelForm.normSqAt_nonneg`: `New/OneLift/LiftVolumeHeight.lean`, [line 97](lean:New/OneLift/LiftVolumeHeight.lean#L97). Cited in [Chapter](/chapter/lift-volume-height/).
+- `New.LevelPlaces.LevelForm.normSqAt_pos`: `New/OneLift/LiftVolumeHeight.lean`, [line 108](lean:New/OneLift/LiftVolumeHeight.lean#L108). Cited in [Chapter](/chapter/lift-volume-height/).
+- `New.LevelPlaces.LevelForm.normSqAt_smul`: `New/OneLift/LiftVolumeHeight.lean`, [line 88](lean:New/OneLift/LiftVolumeHeight.lean#L88). Cited in [Chapter](/chapter/lift-volume-height/).
 - `New.levelSpace`: `Lib/Adelic/Hecke/Basic.lean`, [line 63](lean:Lib/Adelic/Hecke/Basic.lean#L63). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.levelSpace_ext_doubleCosets`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 76](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L76). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.levelSpace_smoothFormRep_apply`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 66](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -3791,12 +3855,18 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.lt_besselLength_of_besselCut_ne`: `New/Spanning/Bessel/CutTailBound.lean`, [line 267](lean:New/Spanning/Bessel/CutTailBound.lean#L267). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.lt_primeNorm_of_chiK_eq_neg_one`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 66](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L66). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.LValueData`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 119](lean:New/OneLift/HeckeValues/CharacterLift.lean#L119). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.algFormRep_scalarFin_apply_comm`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 121](lean:New/OneLift/HeckeValues/CentralAction.lean#L121). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.blockMass_eq_blockMeanSquare_div`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 350](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L350). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.blockMeanSquare`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 338](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L338). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.blockMeanSquare_mul_relIndex_mul_prod_eq_pow`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 393](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L393). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.centralRep`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 40](lean:New/OneLift/HeckeValues/CentralAction.lean#L40). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.centralRep_heckePolyOnForms`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 149](lean:New/OneLift/HeckeValues/CentralAction.lean#L149). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.centralRep_mem_range_groupAlgAction`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 131](lean:New/OneLift/HeckeValues/CentralAction.lean#L131). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.charV_hasWeight`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 189](lean:New/OneLift/HeckeValues/CharacterLift.lean#L189). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.charW_hasWeight`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 183](lean:New/OneLift/HeckeValues/CharacterLift.lean#L183). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.chosenLevel`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 243](lean:New/OneLift/HeckeValues/CharacterLift.lean#L243). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.coe_centralRep_apply`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 50](lean:New/OneLift/HeckeValues/CentralAction.lean#L50). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.commute_algFormRep_scalarFin`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 113](lean:New/OneLift/HeckeValues/CentralAction.lean#L113). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.conjWeylRep_eq_one`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 207](lean:New/OneLift/HeckeValues/CharacterLift.lean#L207). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.constForm`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 155](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L155). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.descentPair`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 142](lean:New/OneLift/HeckeValues/CharacterLift.lean#L142). Cited in [Chapter](/chapter/character-lifts/).
@@ -3810,6 +3880,8 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.LValueData.hookNumber_eq_prod_factorial`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 454](lean:New/OneLift/HeckeValues/CharacterLift.lean#L454). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.index_rangeParabolic_incl`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 241](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L241). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.index_stabilizer_inclMatrix_col`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 257](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L257). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.inner_centralRep_centralRep`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 57](lean:New/OneLift/HeckeValues/CentralAction.lean#L57). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.inner_normalizedCentralOp`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 66](lean:New/OneLift/HeckeValues/CentralAction.lean#L66). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.inner_thetaLift_constForm_self`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 469](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L469). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.inner_trivialLift`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 441](lean:New/OneLift/HeckeValues/CharacterLift.lean#L441). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.inner_trivialLift_self_eq_L`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 569](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L569). Cited in [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/character-lifts/).
@@ -3817,6 +3889,7 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.LValueData.isForm_const_one`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 142](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L142). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.isHCParam_zero`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 497](lean:New/OneLift/HeckeValues/CharacterLift.lean#L497). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.isLiftWeight`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 173](lean:New/OneLift/HeckeValues/CharacterLift.lean#L173). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.isOrthogonalToFalseLifts_sum_normalizedCentralOp_inv`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 239](lean:New/OneLift/HeckeValues/CentralAction.lean#L239). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.isSharp_blockDatum`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 376](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L376). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.kernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 218](lean:New/OneLift/HeckeValues/CharacterLift.lean#L218). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.kernelForm_eq_vectorKernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 423](lean:New/OneLift/HeckeValues/CharacterLift.lean#L423). Cited in [Chapter](/chapter/character-lifts/).
@@ -3827,10 +3900,15 @@ This section and the next have the 6957 cited names outside the namespace `New.D
 - `New.LValueData.liftKernel`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 197](lean:New/OneLift/HeckeValues/CharacterLift.lean#L197). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.map_pairWeilFinite_blockDatum`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 613](lean:New/OneLift/HeckeValues/CharacterLift.lean#L613). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.map_trivialLift`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 733](lean:New/OneLift/HeckeValues/CharacterLift.lean#L733). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.normalizedCentralOp`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 45](lean:New/OneLift/HeckeValues/CentralAction.lean#L45). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.normalizedCentralOp_inv_mem_integralForms`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 168](lean:New/OneLift/HeckeValues/CentralAction.lean#L168). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.normalizedCentralOp_kernelForm`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 82](lean:New/OneLift/HeckeValues/CentralAction.lean#L82). Cited in [Chapter](/chapter/hecke-values/).
+- `New.LValueData.normalizedCentralOp_trivialLift`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 102](lean:New/OneLift/HeckeValues/CentralAction.lean#L102). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.normalizedDescent_eq_inner_kernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 433](lean:New/OneLift/HeckeValues/CharacterLift.lean#L433). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.relIndex_descentResidueLevel`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 324](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L324). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.schurJet_jetSeries_eq_kernelForm`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 471](lean:New/OneLift/HeckeValues/CharacterLift.lean#L471). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.stdLevelIndex_chosenLevel`: `New/OneLift/HeckeValues/CharacterLiftNorm.lean`, [line 311](lean:New/OneLift/HeckeValues/CharacterLiftNorm.lean#L311). Cited in [Chapter](/chapter/character-lifts/).
+- `New.LValueData.sum_normalizedCentralOp_mem_ker_normalizedDescent`: `New/OneLift/HeckeValues/CentralAction.lean`, [line 197](lean:New/OneLift/HeckeValues/CentralAction.lean#L197). Cited in [Chapter](/chapter/hecke-values/).
 - `New.LValueData.theta_pairThetaKernel_omega_fockDatum`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 368](lean:New/OneLift/HeckeValues/CharacterLift.lean#L368). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.toPoly_eq_rename_fockPoly`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 310](lean:New/OneLift/HeckeValues/CharacterLift.lean#L310). Cited in [Chapter](/chapter/character-lifts/).
 - `New.LValueData.trivialLift`: `New/OneLift/HeckeValues/CharacterLift.lean`, [line 248](lean:New/OneLift/HeckeValues/CharacterLift.lean#L248). Cited in [Chapter](/chapter/character-lifts/).

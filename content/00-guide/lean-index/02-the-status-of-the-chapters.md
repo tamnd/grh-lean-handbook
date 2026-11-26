@@ -113,13 +113,13 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 7 | Seesaw squares and grid paths | drafted | 14,626 |
 | 11 | 8 | The chain determinant and its factorization | drafted | 14,576 |
 | 11 | 9 | The comparison operator, part 1 | drafted | 13,665 |
-| 11 | 10 | Grids, columns and turns | planned | 0 |
+| 11 | 10 | Grids, columns and turns | drafted | 14,489 |
 | 11 | 11 | Deep level Poincaré series and spanning forms | drafted | 13,433 |
-| 11 | 12 | False lifts | planned | 0 |
+| 11 | 12 | False lifts | drafted | 14,625 |
 | 11 | 13 | The divisibility is sharp | planned | 0 |
 | 11 | 14 | The comparison operator, part 2 | planned | 0 |
-| 11 | 15 | Hecke values of character lifts | planned | 0 |
-| 11 | 16 | The height of one lift determinant | planned | 0 |
+| 11 | 15 | Hecke values of character lifts | drafted | 12,609 |
+| 11 | 16 | The height of one lift determinant | drafted | 10,947 |
 | 11 | 17 | The proof of Theorem C | planned | 0 |
 | 12 | 1 | Regular families: the plan | drafted | 14,812 |
 | 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,594 |
