@@ -50,8 +50,8 @@ The set $\Gamma^*$ (`remainingTerms`) is defined in [the chapter on Poincaré se
 ### What the chapter uses
 
 - The data of a term, its cell rank $j$, its gauges, its lattices and the size $\operatorname{orbitBound}$, from [the chapter on the anatomy of a term](/chapter/anatomy-of-a-term/). The notation of its [first section](/chapter/anatomy-of-a-term/#what-the-chapter-proves) is used here without change.
-- The integral of the weight at one real place, the lattice of a link and the count of the frames over a lattice, from [the chapter on frame counts](/chapter/frame-counts/), which is being written now.
-- The blocks, the stable sets, the cutoffs of the classes and the set $\Gamma^*$, from [the chapter on Poincaré series](/chapter/poincare-series/), which is being written now.
+- The integral of the weight at one real place, the lattice of a link and the count of the frames over a lattice, from [the chapter on frame counts](/chapter/frame-counts/).
+- The blocks, the stable sets, the cutoffs of the classes and the set $\Gamma^*$, from [the chapter on Poincaré series](/chapter/poincare-series/).
 - The bound of the tail $W - W^\flat$ and the open cell bound for one pairing, from [the chapter on Bessel functions at a real place](/chapter/bessel-real-place/).
 - Minkowski's second theorem over a number field, in [the chapter on reduction theory](/chapter/reduction-theory/) of Volume 4. It enters through Siegel's lemma and the sums over sublattices of [the chapter on the anatomy of a term](/chapter/anatomy-of-a-term/#siegels-lemma-and-the-gauges-of-a-term).
 
