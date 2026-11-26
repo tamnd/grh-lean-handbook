@@ -35,7 +35,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The rings B_max and B_dR
 
-This section builds the rest of the tower of Section 1. The ring $A_{\max}$ is obtained from $A_{\inf}$ by adjoining $\xi/p$ and completing $p$-adically. Then $B^+ = A_{\max}[1/p]$ and $B_{\max} = B^+[1/\mu]$. The ring $B_{\mathrm{dR}}^+$ is the $\xi$-adic completion of $B^+$, and $B_{\mathrm{dR}}$ is its fraction field. The section constructs the period $t$ without logarithms, proves that $B_{\mathrm{dR}}^+$ is a discrete valuation ring with uniformizer $t$, and proves the fundamental exact sequence for $B_{\max}$. The source cites P. Colmez, *Théorie d'Iwasawa des représentations de de Rham d'un corps local*, Ann. of Math. 148 (1998), Sections III.2 and III.3, and J.-M. Fontaine, *Le corps des périodes p-adiques*, Astérisque 223 (1994).
+This section builds the rest of the tower of Section 1: $A_{\max}$, $B^+$, $B_{\max}$, $B_{\mathrm{dR}}^+$ and its fraction field $B_{\mathrm{dR}}$. It constructs the period $t$ without logarithms, proves that $B_{\mathrm{dR}}^+$ is a discrete valuation ring with uniformizer $t$, and proves the fundamental exact sequence for $B_{\max}$. The source cites P. Colmez, *Théorie d'Iwasawa des représentations de de Rham d'un corps local*, Ann. of Math. 148 (1998), Sections III.2 and III.3, and J.-M. Fontaine, *Le corps des périodes p-adiques*, Astérisque 223 (1994).
 
 ### The rings
 
@@ -70,7 +70,7 @@ The actions of $\mathrm{FrobGal} = \mathbb{N} \times G_p$ extend from $A_{\inf}$
 
 Lean: `New.Period.associated_p_frobEnd_xi` (Lib/PadicHodge/PeriodRings/CrystallineRings.lean).
 
-*Proof.* By Section 2, $\xi = [\xi_0] + pu$ with $u$ a unit of $A_{\inf}$. Then $\varphi(\xi) = [\xi_0]^p + p\varphi(u)$. The element $[\xi_0]$ lies in $(p, \xi)$, so $[\xi_0]^p$ lies in $(p,\xi)^p$, and its image in $A_{\max}$ is divisible by $p^p$, hence by $p^2$. Write $[\xi_0]^p = p^2c$. Then $\varphi(\xi) = p(pc + \varphi(u))$, and $pc + \varphi(u)$ is a unit modulo $p$, hence a unit of the $p$-adically complete ring $A_{\max}$. $\square$
+*Proof.* By Section 2, $\xi = [\xi_0] + pu$ with $u$ a unit, so $\varphi(\xi) = [\xi_0]^p + p\varphi(u)$. In $A_{\max}$, $[\xi_0]^p \in (p,\xi)^p$ is divisible by $p^2$, so $\varphi(\xi) = p(pc + \varphi(u))$, and the second factor is a unit. $\square$
 
 **Lemma.** If $a \in A_{\inf}$ divides $\mu$, then $\varphi^n g(a)$ is a unit of $B_{\max}$ for every $n$ and $g$.
 
@@ -97,9 +97,9 @@ As consequences, $B^+$, $A_{\max}$ and $B_{\max}$ are domains, and $B^+ \to B_{\
 
 Lean: `New.Period.thetaBdR_eq_zero_iff` (Lib/PadicHodge/PeriodRings/CrystallineRings.lean), `New.Period.BdRPlus.isUnit_iff`, `New.Period.BdRPlus.exists_associated_xi_pow`, `New.Period.BdRPlus.prime_xi`, `New.Period.injective_BPlus_Bmax`.
 
-*Proof.* Part 1 follows from the theorem on $B^+$, because each element of $B_{\mathrm{dR}}^+$ is congruent modulo $\xi^n$ to an element of $B^+$ (`New.Period.BdRPlus.exists_xi_pow_dvd_sub`). For part 2, if $\theta_{\mathrm{dR}}(x) \neq 0$, choose $b \in B^+$ with $\theta(b) = \theta_{\mathrm{dR}}(x)^{-1}$. Then $\xi \mid xb - 1$, and $xb$ is a unit of the $\xi$-adically complete ring. For part 3, a nonzero element of the $\xi$-adic completion is not divisible by every power of $\xi$. So $x = \xi^n u$ with $\xi \nmid u$, that is $\theta_{\mathrm{dR}}(u) \neq 0$, and $u$ is a unit by part 2. Part 4 follows from parts 1 to 3. $\square$
+*Proof.* Part 1 follows from the theorem on $B^+$, since each element of $B_{\mathrm{dR}}^+$ is congruent modulo $\xi^n$ to an element of $B^+$ (`New.Period.BdRPlus.exists_xi_pow_dvd_sub`). For part 2, if $\theta_{\mathrm{dR}}(x) \neq 0$, choose $b \in B^+$ with $\theta(xb) = 1$; then $xb$ is a unit of the $\xi$-adically complete ring. For part 3, write $x = \xi^n u$ with $\xi \nmid u$ and apply part 2. Part 4 follows. $\square$
 
-In the classical theory, the residue field of $B_{\mathrm{dR}}^+$ is $\mathbb{C}_p$, and the theorem is the statement that $B_{\mathrm{dR}}^+$ is a complete discrete valuation ring with that residue field. The source registers the instance `IsDiscreteValuationRing BdRPlus`.
+The source registers the instance `IsDiscreteValuationRing BdRPlus`.
 
 ### Contraction
 
@@ -117,7 +117,7 @@ Lean: `New.Period.exists_Ainf_eq_of_contraction` (Lib/PadicHodge/PeriodRings/Cry
 
 Lean: `New.Lift.mu_sq_dvd_smul_mu_sub` (Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean).
 
-*Proof.* The element $\mu^2$ is not divisible by $p$. By the approximation lemma of Section 2 (`New.Period.dvd_of_forall_exists_sub_mem_span_pow`), it suffices to prove the divisibility modulo $(p, \xi)^m$ for each $m$. Fix $m$, let $u = [\varepsilon^{1/p^m}]$, and let $a \in \mathbb{N}$ represent $\chi(g)$ modulo $p^m$. Then $u^{p^m} = 1 + \mu$, and $\theta(u)$ is a root of unity of order dividing $p^m$, so $g\theta(u) = \theta(u)^a$. Hence $\xi \mid gu - u^a$, and raising to the power $p^m$ gives $g(1+\mu) \equiv (1+\mu)^a$ modulo $(p,\xi)^m$. By the binomial theorem, $(1+\mu)^a = 1 + a\mu + \mu^2 x$. Finally $p^m \mid \chi(g) - a$. $\square$
+*Proof.* By the approximation lemma of Section 2, it suffices to prove the divisibility modulo $(p, \xi)^m$ for each $m$. Let $u = [\varepsilon^{1/p^m}]$ and let $a \in \mathbb{N}$ represent $\chi(g)$ modulo $p^m$. Then $\xi \mid gu - u^a$, and the $p^m$-th power gives $g(1+\mu) \equiv (1+\mu)^a = 1 + a\mu + \mu^2 x$ modulo $(p,\xi)^m$. $\square$
 
 Classically, $g[\varepsilon] = [\varepsilon]^{\chi(g)} = (1+\mu)^{\chi(g)}$, and the lemma is the first two terms of the binomial series. The source does not define $(1+\mu)^{\chi(g)}$ for $\chi(g) \in \mathbb{Z}_p$, and the proof above avoids it.
 
@@ -127,11 +127,7 @@ Classically, $g[\varepsilon] = [\varepsilon]^{\chi(g)} = (1+\mu)^{\chi(g)}$, and
 
 Lean: `New.Period.exists_tPeriod` (Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean).
 
-*Proof.* By the lemma above, $\varphi(\xi) = pu$ with $u$ a unit of $A_{\max}$. Apply $\varphi$ to the divisibility $\tau \mid \xi - p$ of `New.Period.tau_dvd_xi_sub_p`. This gives $\mu \mid pu - p$, say $pu - p = \mu w$. The map $c \mapsto c - pu^2\varphi(c)$ is the identity modulo $p$, so it is onto $A_{\max}$ by successive approximation (`New.Period.Amax.exists_sub_mul_frobEnd_eq`). Choose $c$ with $c - pu^2\varphi(c) = w$, and put
-$$t = \mu\,(p + \mu c).$$
-From $\varphi(\mu) = \varphi(\xi)\varphi(\tau)$, read with $\varphi(\tau) = \mu$, one gets $\varphi(\mu) = pu\mu$. A computation with $\mu w = pu - p$ gives $t = p\mu\,(u + \mu u^2\varphi(c))$, and then $\varphi(t) = pt$. The factor $u + \mu u^2\varphi(c)$ is a unit, because $p \mid \mu$ in $A_{\max}$.
-
-For the Galois action, put $\delta = g(t) - \chi(g)t$. Then $\varphi(\delta) = p\delta$, since $g$ and $\varphi$ commute. The lemma on $\mu$ gives $\mu^2 \mid \delta$. If $\delta = p^n\mu^2 z$, then $p\delta = \varphi(\delta) = p^n(pu\mu)^2\varphi(z)$, so $\delta = p^{n+1}\mu^2 u^2\varphi(z)$. So $p^n \mid \delta$ for every $n$, and $\delta = 0$ because $A_{\max}$ is $p$-adically separated. $\square$
+*Proof.* Write $\varphi(\xi) = pu$ with $u$ a unit of $A_{\max}$, and $pu - p = \mu w$, from $\tau \mid \xi - p$. Solve $c - pu^2\varphi(c) = w$ by successive approximation (`New.Period.Amax.exists_sub_mul_frobEnd_eq`), and put $t = \mu\,(p + \mu c)$. Since $\varphi(\mu) = pu\mu$, a computation gives $t = p\mu\,(u + \mu u^2\varphi(c))$ and $\varphi(t) = pt$. For the Galois action, $\delta = g(t) - \chi(g)t$ satisfies $\varphi(\delta) = p\delta$, and $\mu^2 \mid \delta$ by the lemma on $\mu$. From $\delta = p^n\mu^2 z$ one gets $\delta = p^{n+1}\mu^2 u^2\varphi(z)$, so $\delta$ is divisible by every power of $p$, and $\delta = 0$. $\square$
 
 **Definition (The period t).** `tPeriodAmax` is a choice of the element of the theorem, and `tPeriod` is its image in $B_{\mathrm{dR}}^+$.
 
@@ -151,7 +147,7 @@ In $B_{\mathrm{dR}}^+$, $t$ is associated to $\xi$: $t$ is associated to $p\mu =
 
 Lean: `New.Period.thetaBdR_algebraMap_padicAlgCl` (Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean), `New.Period.BdR.smul_algebraMap_padicAlgCl`.
 
-*Proof.* The extension $\overline{\mathbb{Q}}_p/\mathbb{Q}_p$ is separable, so it is formally étale. So the map $\overline{\mathbb{Q}}_p \to \mathbb{C}_p \cong B^+/\xi$ lifts along each surjection $B^+/\xi^{n+1} \to B^+/\xi^n$, and so to the completion $B_{\mathrm{dR}}^+$. For equivariance, the action of $g$ on $B_{\mathrm{dR}}$ is a map of $\mathbb{Q}_p$-algebras. Since $\overline{\mathbb{Q}}_p$ is normal over $\mathbb{Q}_p$, it restricts to an automorphism $\sigma$ of the image of $\overline{\mathbb{Q}}_p$. Applying the equivariant map $\theta_{\mathrm{dR}}$, which is the identity on $\overline{\mathbb{Q}}_p$, gives $\sigma(x) = g(x)$. $\square$
+*Proof.* The extension $\overline{\mathbb{Q}}_p/\mathbb{Q}_p$ is formally étale, so the map $\overline{\mathbb{Q}}_p \to \mathbb{C}_p \cong B^+/\xi$ lifts to each $B^+/\xi^{n}$ and to the completion. For equivariance, $g$ restricts to an automorphism $\sigma$ of the image of the normal extension $\overline{\mathbb{Q}}_p$, and $\theta_{\mathrm{dR}}$ gives $\sigma = g$. $\square$
 
 **Remark (Formalization).** The algebra structure of $\overline{\mathbb{Q}}_p$ on $B_{\mathrm{dR}}^+$ is a global instance defined by a `choose` of the lifting statement. Lifts are unique, so the choice does not matter, but the instance applies everywhere in the files that import `DeRhamPeriods`. Any statement that uses $\overline{\mathbb{Q}}_p \subset B_{\mathrm{dR}}$ means this embedding.
 
@@ -171,7 +167,7 @@ Lean: `New.Period.coe_mem_hodgeFil_iff` (Lib/PadicHodge/TateSen.lean).
 
 Lean: `New.Period.BdR.exists_sub_mem_of_smul_sub_mem` (Lib/PadicHodge/TateSen.lean).
 
-*Proof.* Suppose that no $x - a$ with $a \in K$ lies in $S$. Then $x - a \ne 0$, and $x - a = u\,t^n$ with $u$ a unit of $B_{\mathrm{dR}}^+$ and $n \in \mathbb{Z}$. Since $j(g)(x - a) - (x - a) \in S$ and $u\,t^n \notin S$, the element $\chi(g)^n j(g)u - u$ is not a unit, so $\theta$ kills it. This gives $\chi(g)^n\, g\theta(u) = \theta(u)$ for $g \in j(\Gamma)$. By Tate, $n = 0$ or $\theta(u) = 0$, and $\theta(u) \neq 0$ since $u$ is a unit. So $n = 0$, and by Ax-Sen-Tate $\theta(u) = b \in K$. Apply this first with $a = 0$ to get $b$, then with $a = b$: the unit $x - b$ has $\theta(x - b) = 0$, which is a contradiction. $\square$
+*Proof.* Suppose that no $x - a$ with $a \in K$ lies in $S$. Write $x - a = u\,t^n$ with $u$ a unit. Since $j(g)(x - a) - (x - a) \in S$, $\theta$ kills $\chi(g)^n j(g)u - u$, so $\chi(g)^n\, g\theta(u) = \theta(u)$. By Tate, $n = 0$, and by Ax-Sen-Tate, $\theta(u) = b \in K$. Applied with $a = 0$ and then $a = b$, this gives a unit $x - b$ with $\theta(x - b) = 0$, a contradiction. $\square$
 
 ### The fundamental exact sequence
 
@@ -186,10 +182,8 @@ Lean: `New.Period.Bmax.fundamental_sequence_surjective` (Lib/PadicHodge/PeriodRi
 
 Statement 1 with $a = 0$ is the surjectivity at the right. With $\beta = 0$ it says that $\varphi - 1$ maps $B_{\max}$ onto $B_{\max}$. Statement 2 is the exactness at $B_{\max}^{\varphi=1}$, and $\mathbb{Q}_p \to B_{\max}^{\varphi=1}$ is injective because $B_{\max}$ is a $\mathbb{Q}_p$-algebra.
 
-*Proof of 1.* First, every $\beta \in B_{\mathrm{dR}}$ is congruent modulo $B_{\mathrm{dR}}^+$ to some $y_0 \in B_{\max}$ (`New.Period.Bmax.exists_coe_eq_sub`). Write $\beta = x/(\xi^ku)$ with $u$ a unit, and approximate $x/u$ modulo $\xi^k$ by an element of $B^+$; $\xi$ is a unit of $B_{\max}$, since it divides $\mu$. Second, for every $a \in B_{\max}$ there is $y \in B_{\max} \cap B_{\mathrm{dR}}^+$ with $\varphi(y) - y = a$ (`New.Period.Bmax.exists_frobEnd_sub_eq_and_coe_eq`). Write $a = e/(p^n\mu^m) + \mu w$ with $e \in A_{\inf}$ and $w \in A_{\max}$. Solve $e = \varphi(c) - \xi^mc$ in $A_{\inf}$ by the Artin-Schreier-Witt equation of Section 2, and $w = d - \varphi(\xi)\varphi(d)$ in $A_{\max}$ by successive approximation. Since $\varphi(\tau) = \mu = \xi\tau$ and $\varphi(\mu) = \varphi(\xi)\mu$, the element $y = c/(p^n\tau^m) - \mu d$ has $\varphi(y) - y = a$, and $p^n\tau^m$ is a unit of $B_{\mathrm{dR}}^+$. Then $y_0 + y_1$, with $y_1$ the solution for $a - (\varphi(y_0) - y_0)$, satisfies statement 1. $\square$
+*Proof of 1.* Every $\beta \in B_{\mathrm{dR}}$ is congruent modulo $B_{\mathrm{dR}}^+$ to some $y_0 \in B_{\max}$ (`New.Period.Bmax.exists_coe_eq_sub`), since $\xi$ is a unit of $B_{\max}$. For every $a \in B_{\max}$ there is $y \in B_{\max} \cap B_{\mathrm{dR}}^+$ with $\varphi(y) - y = a$ (`New.Period.Bmax.exists_frobEnd_sub_eq_and_coe_eq`), by the Artin-Schreier-Witt equation of Section 2 and successive approximation. Then $y_0 + y_1$, with $y_1$ the solution for $a - (\varphi(y_0) - y_0)$, works. $\square$
 
-*Proof of 2.* Every $\varphi^n(y) = y$ lies in $\mathrm{Fil}^0$. A lemma on bounded poles (`New.Period.pow_smul_mem_range_BPlus`) then gives $y \in B^+$. Some $p^my$ lies in $A_{\max}$, and the contraction lemma with $n = 0$ and $u = 1$ gives that $p^{m+1}y$ comes from an element $a \in A_{\inf}$ with $\varphi(a) = a$. The fixed points of $\varphi$ on $W(O^\flat)$ are $W(\mathbb{F}_p) = \mathbb{Z}_p$. So $y = a/p^{m+1} \in \mathbb{Q}_p$. $\square$
-
-**Example.** The element $t^{-1} \in B_{\mathrm{dR}}$ is not in $B_{\mathrm{dR}}^+$. Statement 1 gives $y \in B_{\max}$ with $\varphi(y) = y$ and $y \equiv t^{-1}$ modulo $B_{\mathrm{dR}}^+$. Here one can see $y$ directly: $t^{-1}$ lies in $B_{\max}$, because $t$ is $p\mu$ times a unit, but $\varphi(t^{-1}) = p^{-1}t^{-1}$. So $y$ is not $t^{-1}$, and statement 1 corrects $t^{-1}$ by an element of $B_{\mathrm{dR}}^+$. Statement 2 says that $y$ is unique up to $\mathbb{Q}_p$.
+*Proof of 2.* A lemma on bounded poles (`New.Period.pow_smul_mem_range_BPlus`) gives $y \in B^+$. The contraction lemma then gives that $p^{m+1}y$ comes from some $a \in A_{\inf}$ with $\varphi(a) = a$, and the fixed points of $\varphi$ on $W(O^\flat)$ are $\mathbb{Z}_p$. $\square$
 
 **Remark (Formalization).** The register of findings records as F-056 that the source uses $B_{\max}$ in place of Fontaine's $B_{\mathrm{cris}}$. The docstring of `New.Period.Bmax` says: "The two rings are known to give the same crystalline representations; that comparison is neither proved nor used here." So the exact sequence above is the sequence for $B_{\max}$. The classical sequence for $B_{\mathrm{cris}}$ is not in the source.

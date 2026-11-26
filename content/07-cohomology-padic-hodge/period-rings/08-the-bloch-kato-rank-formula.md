@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The Bloch-Kato rank formula
 
-This section computes the rank of the module $Z_f(T)$ of crystalline cocycles of Section 5, for a lattice $T$ in a potentially crystalline representation. This is the number that Volume 12 needs to bound Selmer groups. The section also proves that $Z_f(T)$ behaves well under reduction modulo $p^m$, and it ends with the potentially unramified characters, which the source treats in the file `Characters`. The source cites S. Bloch and K. Kato, *L-functions and Tamagawa numbers of motives*, Grothendieck Festschrift I (1990), Proposition 3.8 and Corollary 3.8.4, and J. Bellaïche, *An introduction to the conjecture of Bloch and Kato*, Clay summer school notes (2009), Proposition 2.8 and Theorem 2.1.
+This section computes the rank of the module $Z_f(T)$ of crystalline cocycles of Section 5, for a lattice $T$ in a potentially crystalline representation. Volume 12 needs this number to bound Selmer groups. The section also treats reduction modulo $p^m$ and the potentially unramified characters of the file `Characters`. The source cites S. Bloch and K. Kato, *L-functions and Tamagawa numbers of motives*, Grothendieck Festschrift I (1990), Proposition 3.8 and Corollary 3.8.4, and J. Bellaïche, *An introduction to the conjecture of Bloch and Kato*, Clay summer school notes (2009), Proposition 2.8 and Theorem 2.1.
 
 ### The classical formula
 
@@ -39,7 +39,7 @@ The term $H^0$ cancels. The last term is $[K : \mathbb{Q}_p]$ times the number o
 
 ### Crystalline cocycles
 
-The setting of this section is: $T$ is a finite free $\mathbb{Z}_p$-module, also an $R$-module, with an $R$-linear action $\rho$ of $\Gamma$, and $j : \Gamma \to G_p$ has open image of index $n$. The definition of $Z_f(\rho)$ is in Section 5: $c \in Z_f(\rho)$ if $1 \otimes c(g) = (j(g) \otimes \rho(g))y - y$ for one $y \in B_{\max} \otimes T$ and all $g$.
+In this section $T$ is a finite free $\mathbb{Z}_p$-module and an $R$-module, with an $R$-linear action $\rho$ of $\Gamma$, and $j(\Gamma)$ has index $n$ in $G_p$. Recall from Section 5 that $c \in Z_f(\rho)$ if $1 \otimes c(g) = (j(g) \otimes \rho(g))y - y$ for one $y \in B_{\max} \otimes T$.
 
 **Theorem (Basic properties).**
 
@@ -60,7 +60,7 @@ Claim 4 says that $Z_f(\rho)$ is saturated in the module of all maps $\Gamma \to
 
 Lean: `New.Period.crysCocycles.eventually_eq_pow_smul` (Lib/PadicHodge/BlochKato.lean), `New.Period.IsPotentiallyCrystalline.comp_mem_Z1`, `New.Period.IsPotentiallyCrystalline.reducedCocycle`, `New.Period.IsPotentiallyCrystalline.ker_reducedCocycle`.
 
-The statement on the kernel is saturation again: if $q \circ c = 0$, then $c = p^m b$ for a map $b$, and $b \in Z_f(\rho)$ by claim 4. These results connect $Z_f$ with the Galois cohomology of finite modules that Volume 3 uses in [local duality and the Greenberg-Wiles count](/chapter/local-duality/). The source also proves that the reductions are stable under corestriction (`New.Period.IsPotentiallyCrystalline.holdsCorestrictions`), which that count needs.
+The statement on the kernel follows from claim 4. These results connect $Z_f$ with the cohomology of finite modules in [local duality and the Greenberg-Wiles count](/chapter/local-duality/). The source also proves that the reductions are stable under corestriction (`New.Period.IsPotentiallyCrystalline.holdsCorestrictions`).
 
 ### Extensions
 
@@ -70,7 +70,7 @@ A crystalline cocycle gives an extension. Let $C$ be an $R$-module and $a : C \t
 
 Lean: `New.Period.extensionRep` (Lib/PadicHodge/BlochKato.lean), `New.Period.isAdmissible_extensionRep`, `New.Period.jump_extensionRep_le`.
 
-*Proof.* The vector $(0, c)$ satisfies $g(1 \otimes (0, c)) - 1 \otimes (0, c) = 1 \otimes (a(c)(g), 0) = g(y_c, 0) - (y_c, 0)$ for the witness $y_c$ of $a(c)$. So $1 \otimes (0, c) - (y_c, 0)$ is fixed by all $g$, and $1 \otimes (0, c)$ is in the span of fixed periods and the image of $B_{\max} \otimes T$. For the jumps, a form of weight $u \neq 0$ on $T \times C$ that vanishes on $T$ is a form on the trivial module $C$, and is $0$ by Tate's theorem. So restriction to $T$ is injective. $\square$
+*Proof.* For the witness $y_c$ of $a(c)$, the vector $1 \otimes (0, c) - (y_c, 0)$ is fixed by all $g$, so $1 \otimes (0, c)$ is in the span of the fixed periods and the image of $B_{\max} \otimes T$. For the jumps, a form of weight $u \neq 0$ that vanishes on $T$ is $0$ by Tate's theorem, so restriction to $T$ is injective. $\square$
 
 ### Hodge coordinates
 
@@ -85,7 +85,7 @@ The proof of the rank formula needs coordinates in which the filtration is diago
 
 Lean: `New.Period.IsPotentiallyCrystalline.exists_hodge_basis` (Lib/PadicHodge/BlochKato.lean).
 
-The docstring calls this "a case of the existence of bases adapted to the Hodge filtration (Brinon-Conrad 6.3.7)". The proof uses Galois descent from the field fixed by an open subgroup to turn the periods fixed near $1$ into an invertible matrix $U$ of periods fixed by all of $\Gamma$. Its Hodge form $W\,\mathrm{diag}(t^{k_i})$, with $W$ invertible over $B_{\mathrm{dR}}^+$, is again invariant, and $N$ is the inverse of multiplication by it.
+The docstring calls this "a case of the existence of bases adapted to the Hodge filtration (Brinon-Conrad 6.3.7)". The proof uses Galois descent to get an invertible matrix $U$ of periods fixed by all of $\Gamma$, takes its Hodge form $W\,\mathrm{diag}(t^{k_i})$, and lets $N$ be the inverse of multiplication by it.
 
 ### The rank formula
 
@@ -127,8 +127,8 @@ Lean: `New.Period.crysCocycles.fg` (Lib/PadicHodge/BlochKato.lean).
 
 **Example.** Let $\Gamma = G_p$ with $j$ the identity, so $n = 1$.
 
-1. $T = \mathbb{Z}_p$ with the trivial action. The only jump is $0$, so $\operatorname{rank} Z_f = 1$. The coboundaries are $0$. The crystalline cocycles are homomorphisms $G_p \to \mathbb{Z}_p$, and the formula says that they form a module of rank $1$. Classically, $H^1_f(\mathbb{Q}_p, \mathbb{Q}_p)$ is the line of unramified homomorphisms.
-2. $T = \mathbb{Z}_p(1)$. The jump is $-1$, so $\operatorname{rank} Z_f = 1 + 1 = 2$. The coboundaries $g \mapsto (\chi(g) - 1)x$ have rank $1$, and the quotient has rank $1$. Classically, $H^1_f(\mathbb{Q}_p, \mathbb{Q}_p(1))$ is $\mathbb{Z}_p^\times \otimes \mathbb{Q}_p$ under the Kummer map, of dimension $1$.
+1. $T = \mathbb{Z}_p$ with the trivial action. The jump is $0$, so $\operatorname{rank} Z_f = 1$. The crystalline cocycles are homomorphisms $G_p \to \mathbb{Z}_p$, and classically $H^1_f(\mathbb{Q}_p, \mathbb{Q}_p)$ is the line of unramified homomorphisms.
+2. $T = \mathbb{Z}_p(1)$. The jump is $-1$, so $\operatorname{rank} Z_f = 2$: the coboundaries, of rank $1$, and $H^1_f(\mathbb{Q}_p, \mathbb{Q}_p(1)) = \mathbb{Z}_p^\times \otimes \mathbb{Q}_p$, of dimension $1$.
 3. $T = \mathbb{Z}_p(-1)$. The jump is $1$, so $\operatorname{rank} Z_f = 1$, and every crystalline cocycle is a coboundary up to torsion. Classically, $H^1_f(\mathbb{Q}_p, \mathbb{Q}_p(-1)) = 0$.
 
 ### Two consequences
@@ -137,13 +137,13 @@ Lean: `New.Period.crysCocycles.fg` (Lib/PadicHodge/BlochKato.lean).
 
 Lean: `New.Period.IsPotentiallyCrystalline.exists_coboundary_eq_smul` (Lib/PadicHodge/BlochKato.lean).
 
-*Proof.* There are no negative jumps, so $\operatorname{rank} Z_f = d$. A nonzero invariant $x$ would embed the trivial representation in $T$, and $0$ would be a jump of $T$ by the subobject theorem of Section 7, which the hypothesis excludes. So the coboundary map $T \to Z_f$ is injective, its image has rank $d$, and the quotient is torsion. $\square$
+*Proof.* There are no negative jumps, so $\operatorname{rank} Z_f = d$. A nonzero invariant would make $0$ a jump of $T$ by the subobject theorem of Section 7. So the coboundary map $T \to Z_f$ is injective, its image has rank $d$, and the quotient is torsion. $\square$
 
 **Theorem (Twists of the trivial representation).** Let $\Gamma$ act on $T$ by $\chi^{-a}$ with $a \geq 0$, and let $c \in Z_f(\rho)$. If $\rho(s) = 1$, and $j(s)$ is in inertia in the case $a = 0$, then $c(s) = 0$.
 
 Lean: `New.Period.crysCocycles.apply_eq_zero_of_cyclotomicGp` (Lib/PadicHodge/BlochKato.lean).
 
-*Proof.* For $a > 0$, every jump is $a > 0$, so the theorem on positive jumps gives $t \neq 0$ and $x$ with $\rho(g)x - x = t\,c(g)$. At $g = s$ the left side is $0$, and $T$ is torsion free, so $c(s) = 0$. For $a = 0$, it is enough to show $l(c(s)) = 0$ for every linear form $l : T \to \mathbb{Z}_p$. By claim 1 of the basic properties, $l \circ c$ is a crystalline cocycle of the trivial representation, so $l(c(g)) = j(g)y - y$ for some $y \in B_{\max}$. The element $\varphi(y) - y$ is fixed by $\Gamma$, so by the theorem on fixed fractions of Section 5, $p^n(\varphi(y) - y)$ is a Witt vector $w$ over a finite field, and $w = \varphi(x) - x$ for some $x \in A_{\inf}$ by Section 2. The element $y$ is invariant modulo $B_{\mathrm{dR}}^+$, so $y = z + b$ with $z \in B_{\mathrm{dR}}^+$ and $b$ algebraic. Then $p^n y - x$ is fixed by $\varphi$, and the fundamental exact sequence makes it a $p$-adic number $r$. Since $j(s)$ fixes $r$, it moves $x$ by $p^n l(c(s))$. The element $j(s)$ is in inertia, so its action on $x$ is trivial after reduction to the Witt vectors of the residue field. So $p^n l(c(s)) = 0$. $\square$
+*Proof.* For $a > 0$, apply the theorem on positive jumps at $g = s$. For $a = 0$, test against linear forms $l$: $l(c(g)) = j(g)y - y$ with $y \in B_{\max}$, by claim 1. By fixed fractions and Section 2, $p^n(\varphi(y) - y) = \varphi(x) - x$ with $x \in A_{\inf}$. Then $p^n y - x$ is a $p$-adic number by the fundamental exact sequence, so $j(s)$ moves $x$ by $p^n l(c(s))$. Inertia acts trivially after reduction to the Witt vectors of the residue field, so $l(c(s)) = 0$. $\square$
 
 The docstring calls the theorem "a consequence, on cocycles, of the Bloch-Kato computation of $H^1_f$ of Tate twists".
 
@@ -155,7 +155,7 @@ The local conditions of Volume 12 are also applied to characters. The source pro
 
 Lean: `New.Period.exists_unramified_period` (Lib/PadicHodge/Characters.lean).
 
-*Proof.* Put $\alpha = 1 \otimes a$. Solve $\alpha\varphi(x) - x = 1$ by successive approximation modulo powers of $1 - \alpha$. Modulo $1 - \alpha$ the equation is $\varphi(x) - x = 1$, which has a solution by the Artin-Schreier-Witt proposition of Section 2. Since $(1-\alpha)^e \in (p)$ and $A_{\inf} \otimes T$ is $p$-adically complete, the approximations converge. Put $y = (1 - \alpha)x + 1$, which is a unit because $1 - \alpha$ is in the Jacobson radical, and satisfies $\alpha\varphi(y) = y$. Every $m \in$ `FrobGal` fixes $\alpha$ and commutes with $\varphi$, so $m(y)$ solves the same equation, and $m(y)/y$ is fixed by $\varphi$, so lies in $T$. For a Weil pair, $\varphi^k \circ s$ acts trivially on the Witt vectors of the residue field, so the factor is $1$. Then $\varphi^k(s(y)) = y$ and $\alpha^k \varphi^k(y) = y$ give $s(y) = \alpha^k y$. $\square$
+*Proof.* Put $\alpha = 1 \otimes a$. Solve $\alpha\varphi(x) - x = 1$ by successive approximation and put $y = (1 - \alpha)x + 1$, a unit with $\alpha\varphi(y) = y$. Every $m$ in `FrobGal` fixes $\alpha$ and commutes with $\varphi$, so $m(y)/y$ is fixed by $\varphi$ and lies in $T$. For a Weil pair, $\varphi^k \circ s$ is trivial on the Witt vectors of the residue field, so the factor is $1$, and $\alpha^k \varphi^k(y) = y$ gives $s(y) = \alpha^k y$. $\square$
 
 **Theorem (Potentially unramified characters).** Let $\Gamma$ be a topological group, $j$ an open embedding, and $\nu : \Gamma \to \overline{\mathbb{Q}}_p^\times$ a continuous character with $\nu(g) = 1$ for all $g$ near $1$ with $j(g)$ in inertia. Let $T$ be a commutative $\overline{\mathbb{Q}}_p$-algebra and $\rho(g)x = \nu(g)x$. Then:
 
@@ -165,6 +165,6 @@ Lean: `New.Period.exists_unramified_period` (Lib/PadicHodge/Characters.lean).
 
 Lean: `New.Period.isPotentiallyCrystalline_of_unramified_char` (Lib/PadicHodge/Characters.lean), `New.Period.IsPotentiallyCrystalline.of_unramified_char`, `New.Period.jump_eq_jump_one_of_unramified_char`, `New.Period.isKilledBy_X_sub_C_of_unramified_char`, `New.Period.exists_period_of_character`.
 
-*Proof.* Choose an open subgroup $U$ on which $\nu$ is trivial on inertia and $|1 - \nu| < 1$, a Frobenius $\phi \in U$ of some degree $f$, and an $f$-th root $a$ of $\nu(\phi)$ with $|1 - a| < 1$. The value $a$ lies in the ring of integers $O$ of a finite Galois extension of $\mathbb{Q}_p$, and $(1-a)^e \in pO$ for some $e$. Lang's equation gives a unit $y \in A_{\inf} \otimes O$. The identity $j(g)(y) = (1 \otimes \nu(g)^{-1})\,y$ holds on the elements $\phi^k i$ with $i$ in inertia, which are dense near $1$, and it is closed, so it holds near $1$ (`exists_period_of_character`). Then $(1 \otimes x)\,y$ is fixed near $1$ for every $x \in T$, and these elements span $B_{\max} \otimes T$ because $y$ is a unit. This gives 1. On these elements $\beta_{s,k}$ is multiplication by $\nu(s)$, since $\varphi^k(s(y)) = y$, which gives 3. Claim 2 follows from the same period, mapped to $\mathbb{C}_p$. $\square$
+*Proof.* Choose an open subgroup on which $\nu$ is trivial on inertia and $|1 - \nu| < 1$, a Frobenius $\phi$ in it of some degree $f$, and an $f$-th root $a$ of $\nu(\phi)$ with $|1 - a| < 1$. Lang's equation, with coefficients in the integers $O$ of a finite extension that contains $a$, gives a unit $y$. The identity $j(g)(y) = (1 \otimes \nu(g)^{-1})\,y$ holds on the dense set of the $\phi^k i$ with $i$ in inertia, and it is closed, so it holds near $1$ (`exists_period_of_character`). Then the elements $(1 \otimes x)\,y$ are fixed near $1$ and span, which gives 1. On them $\beta_{s,k}$ is multiplication by $\nu(s)$, which gives 3. Claim 2 follows from the same period. $\square$
 
-**Remark (Formalization).** The theorem covers only characters that are unramified on an open subgroup, so of finite order on inertia. The module $T$ is a commutative $\overline{\mathbb{Q}}_p$-algebra, and the coefficients act through $\overline{\mathbb{Q}}_p$. The docstring calls the result "a case of the fact that potentially unramified characters are potentially crystalline of weight 0 (Caruso)". The file gives no further reference. The header of `Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean` names X. Caruso, *An introduction to p-adic period rings* (2019), Section 3, and this is probably the work meant.
+**Remark (Formalization).** The theorem covers only characters that are unramified on an open subgroup, so of finite order on inertia, and $T$ is a commutative $\overline{\mathbb{Q}}_p$-algebra. The docstring cites "Caruso" with no title. The header of `Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean` names X. Caruso, *An introduction to p-adic period rings* (2019), Section 3.

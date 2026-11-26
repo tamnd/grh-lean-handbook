@@ -28,11 +28,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Hodge-Tate jumps
 
-This section defines the Hodge-Tate weights of a representation, which the source calls *jumps*, and proves that a potentially crystalline representation of rank $d$ has $d$ jumps with multiplicity at each embedding of the coefficients. It then computes the jumps of twists, duals, subobjects and restrictions of scalars. The tools are the theorems of Ax-Sen-Tate and of Tate from Section 3, and the field $B_{\mathrm{dR}}$ with its filtration from Section 4. The source cites O. Brinon and B. Conrad, *CMI summer school notes on p-adic Hodge theory* (2009), Section 6.3, for the existence of bases adapted to the filtration.
+This section defines the Hodge-Tate weights, which the source calls *jumps*, and proves that a potentially crystalline representation of rank $d$ has $d$ jumps with multiplicity at each embedding. It computes the jumps of twists, duals, subobjects and restrictions of scalars. The source cites O. Brinon and B. Conrad, *CMI summer school notes on p-adic Hodge theory* (2009), Section 6.3.
 
 ### The classical notion
 
-Let $V$ be a finite-dimensional continuous $\mathbb{Q}_p$-representation of $G_K$. For $i \in \mathbb{Z}$, let $\mathbb{C}_p(i)$ be $\mathbb{C}_p$ with $g$ acting by $\chi(g)^i g$. The representation $V$ is *Hodge-Tate* if $\mathbb{C}_p \otimes_{\mathbb{Q}_p} V$ is isomorphic, as a semilinear representation, to a finite direct sum of the $\mathbb{C}_p(i)$. The multiplicity of $\mathbb{C}_p(i)$ is $\dim_K (\mathbb{C}_p(-i) \otimes V)^{G_K}$, and it does not depend on the decomposition, by the theorem of Tate that $\mathbb{C}_p(i)^{G_K} = 0$ for $i \neq 0$. The integers $i$ that occur are the Hodge-Tate weights. Two sign conventions are in use in the literature. A de Rham representation is Hodge-Tate, and a potentially crystalline representation is de Rham.
+Let $V$ be a finite-dimensional continuous $\mathbb{Q}_p$-representation of $G_K$, and let $\mathbb{C}_p(i)$ be $\mathbb{C}_p$ with $g$ acting by $\chi(g)^i g$. The representation $V$ is *Hodge-Tate* if $\mathbb{C}_p \otimes_{\mathbb{Q}_p} V$ is a finite direct sum of the $\mathbb{C}_p(i)$, as a semilinear representation. The multiplicity of $\mathbb{C}_p(i)$ is $\dim_K (\mathbb{C}_p(-i) \otimes V)^{G_K}$, which is well defined by the theorem of Tate. The integers $i$ that occur are the Hodge-Tate weights, with two sign conventions in the literature.
 
 ### Forms of weight u
 
@@ -44,7 +44,7 @@ The *multiplicity of the jump* $u$ is $\mathrm{jump}(\rho, \gamma, u) = \dim_{\o
 
 Lean: `New.Period.hodgeTateMaps` (Lib/PadicHodge/Crystalline/Basic.lean), `New.Period.jump`, `New.Period.HasJumps`.
 
-The space is a $\overline{\mathbb{Q}}_p$-space and not a $\mathbb{C}_p$-space: if $f$ has weight $u$ and $c \in \mathbb{C}_p$, then $cf$ has weight $u$ only if $c$ is fixed near $1$. An algebraic $c$ is fixed by an open subgroup, so the space is stable under $\overline{\mathbb{Q}}_p$. The condition "near $1$" makes the notion a potential one: it is the weight of the restriction to every small enough open subgroup.
+The space is a $\overline{\mathbb{Q}}_p$-space and not a $\mathbb{C}_p$-space: $cf$ has weight $u$ only if $c$ is fixed near $1$. The condition "near $1$" makes the notion a potential one.
 
 The source also has a pointwise notion. An element $y \in \mathbb{C}_p \otimes_{\mathbb{Z}_p} T$ *has Hodge-Tate weight* $u$ if $(j(g) \otimes \rho(g))\,y = \chi(g)^{-u} y$ for all $g \in \Gamma$.
 
@@ -52,7 +52,7 @@ Lean: `New.HasHodgeTateWeight` (Lib/PadicHodge/Crystalline/Basic.lean).
 
 This notion is used in the files `PadicComparison/HodgeTate/PeriodMap.lean` and `Shimura/Eigenspace.lean` of the source, for classes in étale cohomology. The jumps of this section are defined through $H_u$ only.
 
-**Example.** Let $T = \mathbb{Z}_p(1)$, so $\rho(g) = \chi(g)$, and let $R = \mathbb{Z}_p$. Every $\mathbb{Z}_p$-linear map $T \to \mathbb{C}_p$ is $f_y(x) = xy$ for one $y \in \mathbb{C}_p$. The condition reads $\chi(g)\,xy = \chi(g)^{-u}x\,g(y)$ for $g$ near $1$, that is, $\chi(g)^{1+u} g(y) = y$. If $u = -1$, then $y$ is fixed near $1$, so $y \in \overline{\mathbb{Q}}_p$ by Ax-Sen-Tate, and $H_{-1}$ has dimension $1$. If $u \neq -1$, then $y = 0$ by Tate's theorem. So $\mathbb{Z}_p(1)$ has the single jump $-1$, and its multiset of jumps is $\{-1\}$.
+**Example.** Let $T = \mathbb{Z}_p(1)$ and $R = \mathbb{Z}_p$. A linear map $T \to \mathbb{C}_p$ is $f_y(x) = xy$, and the condition reads $\chi(g)^{1+u} g(y) = y$ for $g$ near $1$. For $u = -1$, $y \in \overline{\mathbb{Q}}_p$ by Ax-Sen-Tate, so $H_{-1}$ has dimension $1$. For $u \neq -1$, $y = 0$ by Tate. So $\mathbb{Z}_p(1)$ has the single jump $-1$.
 
 **Remark (Formalization).** Three points of the definition need care.
 
@@ -74,7 +74,7 @@ If $k_{a(i)} = u$, then $c_i$ is fixed near $1$, so $c_i \in \overline{\mathbb{Q
 
 Lean: `New.Period.finite_hodgeTateMaps` (Lib/PadicHodge/Crystalline/HodgeTateForms.lean).
 
-*Proof.* The $\gamma$-semilinear maps $T \to \mathbb{C}_p$ form a finite-dimensional $\mathbb{C}_p$-space, since a map is determined by its values on finitely many generators. So finitely many elements of $H_u$ span the same $\mathbb{C}_p$-space as $H_u$. By the previous theorem, with all weights equal to $u$, they span $H_u$ over $\overline{\mathbb{Q}}_p$. $\square$
+*Proof.* The $\gamma$-semilinear maps $T \to \mathbb{C}_p$ form a finite-dimensional $\mathbb{C}_p$-space, so finitely many elements of $H_u$ span the same $\mathbb{C}_p$-space. By the previous theorem, they span $H_u$ over $\overline{\mathbb{Q}}_p$. $\square$
 
 **Theorem (Jumps from a basis).** Let $T$ be finite over $R$. If a $\mathbb{C}_p$-basis $(b_i)_{i \in \iota}$ of the $\gamma$-semilinear maps $T \to \mathbb{C}_p$ has $b_i \in H_{u_i}$ for each $i$, then the multiset $\{u_i\}$ lists the jumps of $\rho$ at $\gamma$.
 
@@ -97,7 +97,7 @@ Lean: `New.Period.hodgeMatrix` (Lib/PadicHodge/Crystalline/HodgeTateJumps.lean),
 
 Lean: `New.Period.exists_isHodgeFrame` (Lib/PadicHodge/Crystalline/HodgeTateJumps.lean), `New.Period.IsHodgeFrame`.
 
-The proof is a minimality argument. Among all factorizations $UY = W \cdot \mathrm{diag}(t^{k_i})$ with $Y$ as required, the source takes one with $\det W$ minimal for divisibility in $B_{\mathrm{dR}}^+$. There is one with $Y = 1$, since every matrix $U$ over $B_{\mathrm{dR}}$ can be written as $W \cdot \mathrm{diag}(t^{k_i})$ with $W$ over $B_{\mathrm{dR}}^+$ (`exists_eq_hodgeMatrix`). If $W$ is not invertible, then $\theta(W)$ has a nonzero kernel. The kernel is stable under the twisted action, so by the theorem on stable subspaces of Section 3 (`le_of_hodgeTate_stable`) it contains an algebraic, integral, fixed vector $a$ with some coordinate $a_i = 1$. Then $\theta(Wa) = 0$, so $Wa = tV$, since $\ker\theta_{\mathrm{dR}}$ is generated by an associate of $t$. Cramer's rule gives $\det W = t \det W'$, where $W'$ is $W$ with column $i$ replaced by $V$. Replace column $i$ of $Y$ by $Ya$ and $k_i$ by $k_i + 1$. This gives a factorization with determinant $\det W'$, which contradicts minimality. Classically this is the existence of a basis of $B_{\mathrm{dR}}^+ \otimes V$ adapted to the filtration of $D_{\mathrm{dR}}(V)$ (Brinon-Conrad, Section 6.3).
+The proof is a minimality argument. Among the factorizations $UY = W \cdot \mathrm{diag}(t^{k_i})$, which exist by `exists_eq_hodgeMatrix`, take one with $\det W$ minimal for divisibility. If $W$ is not invertible, the elimination theorem of Section 3 (`le_of_hodgeTate_stable`) gives an algebraic fixed vector $a$ in the kernel of $\theta(W)$ with some $a_i = 1$. Then $Wa = tV$, and changing column $i$ and $k_i$ divides $\det W$ by $t$, which contradicts minimality. Classically this is the existence of a basis adapted to the filtration (Brinon-Conrad, Section 6.3).
 
 **Theorem (Hodge-Tate frames).** Let $R$ be algebraic over $\mathbb{Z}_p$, let $e$ be a finite $R$-basis of $T$, let $\rho$ be potentially crystalline, and let $\gamma : R \to \mathbb{C}_p$. There are an invertible matrix $P$ over $\mathbb{C}_p$ and $k : \iota \to \mathbb{Z}$ with:
 
@@ -107,13 +107,13 @@ The proof is a minimality argument. Among all factorizations $UY = W \cdot \math
 
 Lean: `New.Period.IsPotentiallyCrystalline.exists_isHodgeTateFrame` (Lib/PadicHodge/Crystalline/HodgeTateJumps.lean), `New.Period.IsPotentiallyCrystalline.top_le_span_fixed`, `New.Period.hasJumps_of_rows`.
 
-*Proof.* Since $R$ is algebraic over $\mathbb{Z}_p$, $\gamma$ factors through $\delta : R \to \overline{\mathbb{Q}}_p$. The fixed periods of $\rho$ in $B_{\max} \otimes T$ map to vectors in $B_{\mathrm{dR}}^\iota$ that are fixed near $1$ for the action through $\delta$, and they span. This is the step "potentially crystalline implies potentially de Rham", in coordinates. Choose $|\iota|$ of them that form an invertible matrix $U$. The theorem on Hodge frames gives $UY = W \cdot \mathrm{diag}(t^{k_i})$. Put $P = \theta(W)$, the image of $W$ under $\theta_{\mathrm{dR}}$, which is invertible since $W$ is invertible over $B_{\mathrm{dR}}^+$. Comparing the action of $g$ on $W \cdot \mathrm{diag}(t^{k_i})$, with $g(t) = \chi(g)t$, and reducing modulo $t$ gives the frame property with the factor $\chi(g)^{-k_i}$. The rows of $P^{-1}$ then satisfy the rule of $H_{k_i}$, and the theorem on jumps from a basis gives 2. $\square$
+*Proof.* The fixed periods of $\rho$ map to vectors in $B_{\mathrm{dR}}^\iota$ fixed near $1$ that span: this is "potentially crystalline implies potentially de Rham" in coordinates. Choose an invertible matrix $U$ of them, take its Hodge frame $UY = W \cdot \mathrm{diag}(t^{k_i})$, and put $P = \theta(W)$. Reduction modulo $t$ gives the frame property, and the theorem on jumps from a basis gives 2. $\square$
 
 **Theorem (Number of jumps).** Let $R$ be algebraic over $\mathbb{Z}_p$, let $T$ be finite and free over $R$, and let $\rho$ be potentially crystalline. Then for every $\gamma : R \to \mathbb{C}_p$ there is a multiset $J$ with $|J| = \operatorname{rank}_R T$ that lists the jumps of $\rho$ at $\gamma$.
 
 Lean: `New.Period.IsPotentiallyCrystalline.exists_hasJumps` (Lib/PadicHodge/Crystalline/HodgeTateJumps.lean).
 
-This is the frame theorem for a basis of $T$: the multiset $\{k_i\}$ has one element for each basis vector. Classically, it says that a potentially crystalline representation is Hodge-Tate, with $\dim V$ weights counted with multiplicity.
+Classically, this says that a potentially crystalline representation is Hodge-Tate, with $\dim V$ weights counted with multiplicity.
 
 **Remark (Formalization).** The hypothesis "algebraic over $\mathbb{Z}_p$" covers $R = \mathbb{Z}_p$, finite extensions $E$ of $\mathbb{Q}_p$, their rings of integers, and $\overline{\mathbb{Q}}_p$. It is used to factor $\gamma$ through $\overline{\mathbb{Q}}_p$. The jumps are defined for each $\gamma$ separately. For $R = E$, there are $[E : \mathbb{Q}_p]$ maps $\gamma$, and each has its own multiset.
 
@@ -138,7 +138,7 @@ The proof uses the Hodge-Tate frame $P$ of $\rho$ and the transpose of $P$ as a 
 
 Lean: `New.Period.exists_jump_bound` (Lib/PadicHodge/Crystalline/HodgeTateJumps.lean), `New.Period.jump_eq_zero_iff`.
 
-The bound holds without potential crystallinity: forms of distinct weights are independent over $\mathbb{C}_p$ by the theorem on same weights, and the $\mathbb{C}_p$-space of all semilinear forms is finite-dimensional, so only finitely many weights occur.
+The bound needs no potential crystallinity: forms of distinct weights are independent over $\mathbb{C}_p$.
 
 **Theorem (Subobjects).** Let $R$ be a domain algebraic over $\mathbb{Z}_p$, let $T$ be finite and free, and let $f_i : T \to S_i$ be finitely many equivariant $R$-linear maps that are jointly injective, with each $S_i$ finite, free and potentially crystalline. If $u$ is a jump of $T$ at $\gamma$, then $u$ is a jump of some $S_i$ at $\gamma$.
 
@@ -152,6 +152,6 @@ where $\gamma$ runs over the $\mathbb{Z}_p$-algebra maps and $\mathrm{incl} : \m
 
 Lean: `New.Period.IsPotentiallyCrystalline.sum_jump_eq_jump_overZp` (Lib/PadicHodge/Crystalline/HodgeTateJumps.lean), `New.Period.card_algHom_eq_finrank`, `New.Period.overZp`.
 
-Classically this is the formula $\dim_{\mathbb{Q}_p} \mathrm{gr}^i D_{\mathrm{dR}}(V) = \sum_\gamma \dim \mathrm{gr}^i_\gamma$ for a representation with coefficients in $E$. The number of maps $\gamma$ is $\operatorname{rank}_{\mathbb{Z}_p} R$ (`card_algHom_eq_finrank`). The rank formula of Section 8 is stated for $\rho_{\mathbb{Z}_p}$ and the inclusion, and this theorem converts it to jumps at the embeddings of $R$.
+The number of maps $\gamma$ is $\operatorname{rank}_{\mathbb{Z}_p} R$ (`card_algHom_eq_finrank`). This theorem converts the rank formula of Section 8, stated for $\rho_{\mathbb{Z}_p}$, to jumps at the embeddings of $R$.
 
-**Example.** Let $E$ be a finite extension of $\mathbb{Q}_p$ of degree $r$ with ring of integers $O_E$, and let $T = O_E(1)$, that is, $O_E$ with $g$ acting by $\chi(g)$. At each of the $r$ maps $\gamma : O_E \to \mathbb{C}_p$, the jumps are $\{-1\}$, by the theorem on twists and characters. Over $\mathbb{Z}_p$, $T \cong \mathbb{Z}_p(1)^r$, and the jump $-1$ has multiplicity $r$. The restriction formula reads $r \cdot 1 = r$.
+**Example.** For $T = O_E(1)$, with $E$ of degree $r$ over $\mathbb{Q}_p$, each of the $r$ maps $\gamma$ has the jumps $\{-1\}$, and over $\mathbb{Z}_p$, $T \cong \mathbb{Z}_p(1)^r$ has the jump $-1$ with multiplicity $r$.

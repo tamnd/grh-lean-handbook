@@ -21,7 +21,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The ring A_inf and the map theta
 
-This section defines the ring $A_{\inf}$, Fontaine's map $\theta : A_{\inf} \to O_C$, the actions of Frobenius and of $G_p$, and the elements $\tau$, $\mu$ and $\xi$. Its main result is Fontaine's description of the kernel of $\theta$: it is the principal ideal $(\xi)$. All later rings of the chapter are built from $A_{\inf}$ by adjoining $\xi/p$, inverting elements and completing, so this section is the base of the chapter.
+This section defines the ring $A_{\inf}$, Fontaine's map $\theta : A_{\inf} \to O_C$, the actions of Frobenius and of $G_p$, and the elements $\tau$, $\mu$ and $\xi$. Its main result is Fontaine's theorem $\ker\theta = (\xi)$. All later rings are built from $A_{\inf}$.
 
 ### The ring and the map
 
@@ -43,7 +43,7 @@ The map $\theta$ does not commute with $\varphi$. This failure is the reason for
 
 Lean: `New.Period.epsPow` (Lib/PadicHodge/PeriodRings/Ainf.lean), `New.Period.isPrimitiveRoot_untilt_epsPow`, `New.Period.epsTilt`, `New.Period.epsRoot`, `New.Period.untilt_epsTilt`.
 
-The classical choice is a sequence $(1, \zeta_p, \zeta_{p^2}, \ldots)$ of roots of unity with $\zeta_{p^{n+1}}^p = \zeta_{p^n}$, read as an element of $O^\flat$. The source asks for more: a homomorphism on all of $\mathbb{Q}$, not only on $\mathbb{Z}[1/p]$. It gets one from the lemma `New.Period.exists_tilt_lift_of_character`: every homomorphism $a$ from $\mathbb{Q}$ to the multiplicative monoid of $\mathbb{C}_p$ with $a(1) = 1$ lifts to $O^\flat$, in the sense that some $\chi$ has $\chi(s)^\sharp = a(s)$. The proof sends $s$ to the compatible sequence $a(s/p^n)$ of $p$-power roots of $a(s)$ and reduces it modulo $p$.
+The classical choice is a sequence $(1, \zeta_p, \zeta_{p^2}, \ldots)$ with $\zeta_{p^{n+1}}^p = \zeta_{p^n}$, read in $O^\flat$. The source asks for a homomorphism on all of $\mathbb{Q}$. The lemma `New.Period.exists_tilt_lift_of_character` lifts every homomorphism $a$ from $\mathbb{Q}$ to the multiplicative monoid of $\mathbb{C}_p$ with $a(1) = 1$ to $O^\flat$, by the sequence $a(s/p^n)$ reduced modulo $p$.
 
 **Remark (Formalization).** The source takes for $a$ the map $s \mapsto \iota(e^{2\pi i s})$, where $\iota : \mathbb{C} \to \overline{\mathbb{Q}}_p$ is an isomorphism of fields. Such an isomorphism exists because both fields are algebraically closed of characteristic $0$ and of the same uncountable cardinality. The isomorphism is not explicit, and `New.Period.epsPow` is a `choose` of the lifting lemma. The text never uses a property of $\varepsilon$ beyond the one in the definition above, `New.Period.isPrimitiveRoot_untilt_epsPow`. So the choice of $\iota$ does not matter for any later statement. A reader who prefers a fixed sequence $(\zeta_{p^n})$ can read the whole chapter with it.
 
@@ -56,9 +56,9 @@ $$\tau = [\varepsilon^{1/p}] - 1, \qquad \mu = [\varepsilon] - 1, \qquad \xi = \
 
 Lean: `New.Period.xi_mul_tau` (Lib/PadicHodge/PeriodRings/Ainf.lean), `New.Period.frobEnd_tau`, `New.Period.theta_mu`, `New.Period.theta_xi`, `New.Period.theta_tau_ne_zero`, `New.Period.theta_iterate_frobEnd_xi`.
 
-*Proof.* The first identity is $(X^p - 1) = (X - 1)\sum_{i<p} X^i$ at $X = [\varepsilon^{1/p}]$, since $[\varepsilon^{1/p}]^p = [\varepsilon]$. The second holds because $\varphi[x] = [x^p]$. Now $\theta[\varepsilon] = \varepsilon^\sharp = 1$, so $\theta(\mu) = 0$. The element $\zeta = \theta[\varepsilon^{1/p}]$ is a primitive $p$-th root of unity, so $\theta(\tau) = \zeta - 1 \neq 0$ and $\theta(\xi) = \sum_{i<p} \zeta^i = 0$. Finally $\varphi^{j+1}[\varepsilon^{1/p}] = [\varepsilon^{p^j}]$, whose image under $\theta$ is $1$, so $\theta(\varphi^{j+1}\xi) = \sum_{i<p} 1 = p$. $\square$
+*Proof.* The first identity is $X^p - 1 = (X - 1)\sum_{i<p} X^i$ at $X = [\varepsilon^{1/p}]$, and the second holds because $\varphi[x] = [x^p]$. The element $\theta[\varepsilon^{1/p}]$ is a primitive $p$-th root of unity $\zeta$, so $\theta(\mu) = 0$, $\theta(\tau) = \zeta - 1 \neq 0$ and $\theta(\xi) = 0$. For $j \geq 0$, $\theta(\varphi^{j+1}\xi) = \sum_{i<p} 1 = p$. $\square$
 
-**Example.** For $p = 2$, $\xi = 1 + [\varepsilon^{1/2}]$, and $\theta(\xi) = 1 + (-1) = 0$. Here $\varphi(\xi) = 1 + [\varepsilon]$ and $\theta(\varphi\xi) = 2$. The reduction of $\xi$ modulo $2$ is $\xi_0 = 1 + \varepsilon^{1/2}$ in $O^\flat$. Its untilt has valuation $1$: the valuation $v^\flat(x) = v(x^\sharp)$ of $O^\flat$ has $v^\flat(\varepsilon - 1) = p/(p-1) = 2$ and $v^\flat(\varepsilon^{1/2} - 1) = 1/(p - 1) = 1$, and $\xi_0 = (\varepsilon - 1)/(\varepsilon^{1/2} - 1)$.
+**Example.** For $p = 2$, $\xi = 1 + [\varepsilon^{1/2}]$, $\theta(\xi) = 1 + (-1) = 0$, and $\theta(\varphi\xi) = \theta(1 + [\varepsilon]) = 2$.
 
 ### The kernel of theta
 
@@ -68,19 +68,19 @@ The method of the source is successive approximation. A claim about $W(k)$ is ch
 
 Lean: `New.Period.Witt.dvd_of_mem_of_constantCoeff_dvd` (Lib/PadicHodge/PeriodRings/Ainf.lean).
 
-*Proof.* Let $x \in I$. In a perfect ring of characteristic $p$, an element of $W(k)$ lies in the ideal $(p, c)$ if and only if its zeroth coordinate is divisible by $c_0$ (`New.Period.Witt.mem_span_pair_iff`). So $x = bc + py$ for some $b, y$. Then $py = x - bc \in I$, so $y \in I$. Repeat with $y$ in place of $x$. The partial sums converge $p$-adically, because $W(k)$ is $p$-adically complete, and give $x = c\,b'$ for some $b'$. $\square$
+*Proof.* Let $x \in I$. An element of $W(k)$ lies in $(p, c)$ if and only if its zeroth coordinate is divisible by $c_0$ (`New.Period.Witt.mem_span_pair_iff`). So $x = bc + py$, and $y \in I$ since $I$ is saturated. Repeat with $y$; the partial sums converge $p$-adically and give $c \mid x$. $\square$
 
 **Theorem (A criterion for the kernel).** Let $c \in A_{\inf}$ with $\theta(c) = 0$, and assume that $c_0^\sharp$ divides $p$ in $O_C$. Then for every $a \in A_{\inf}$, $\theta(a) = 0$ if and only if $c$ divides $a$.
 
 Lean: `New.Period.theta_eq_zero_iff_dvd_of_untilt_dvd` (Lib/PadicHodge/PeriodRings/Ainf.lean).
 
-*Proof.* If $c \mid a$ then $\theta(a) = 0$. For the converse, apply the lemma to $I = \ker\theta$. This ideal is saturated for $p$ because $O_C$ is a domain and $p \neq 0$ in it. Let $x \in \ker\theta$. Modulo $p$, $\theta(x)$ is the untilt $x_0^\sharp$ modulo $p$, so $p \mid x_0^\sharp$. Then $c_0^\sharp \mid p \mid x_0^\sharp$. In $O^\flat$, divisibility can be read on untilts, because $v^\flat(x) = v(x^\sharp)$ (`New.Variety.untilt_dvd_iff` in AxTheorem.lean). So $c_0 \mid x_0$, and the lemma applies. $\square$
+*Proof.* Apply the lemma to $I = \ker\theta$, which is saturated for $p$. For $x \in \ker\theta$, $p \mid x_0^\sharp$, so $c_0^\sharp \mid x_0^\sharp$, and divisibility in $O^\flat$ can be read on untilts (`New.Variety.untilt_dvd_iff`). So $c_0 \mid x_0$. $\square$
 
 **Theorem (Fontaine).** For $a \in A_{\inf}$, $\theta(a) = 0$ if and only if $\xi$ divides $a$.
 
 Lean: `New.Period.theta_eq_zero_iff_xi_dvd` (Lib/PadicHodge/PeriodRings/Ainf.lean).
 
-*Proof.* We have $\theta(\xi) = 0$. It remains to show that $\xi_0^\sharp$ divides $p$. The source proves that $\xi - [\xi_0] = p u$ with $u$ a unit of $A_{\inf}$ (`New.Period.associated_p_xi_sub_teichmuller`). The difference is $0$ modulo $p$, so it is $pu$ for some $u$. To see that $u$ is a unit, reduce to $W(k)$ for the residue field $k$ of $O^\flat$. There $\tau$ maps to $0$, since $\varepsilon^{1/p}$ has residue $1$, so each of the $p$ terms of $\xi$ maps to $1$ and $\xi$ maps to $p$. The image of $\xi_0$ in $k$ is $0$, so $[\xi_0]$ maps to $0$. So $p = p \cdot \bar u$ in $W(k)$, hence $\bar u = 1$ and $u$ is a unit. Apply $\theta$: $0 = \theta(\xi) = \xi_0^\sharp + p\,\theta(u)$, so $\xi_0^\sharp = -p\,\theta(u)$ is $p$ times a unit (`New.Period.untilt_constantCoeff_xi_dvd_p`). The criterion applies. $\square$
+*Proof.* We have $\theta(\xi) = 0$, so it remains to show that $\xi_0^\sharp$ divides $p$. The source proves $\xi - [\xi_0] = p u$ with $u$ a unit of $A_{\inf}$ (`New.Period.associated_p_xi_sub_teichmuller`), by reduction to the Witt vectors of the residue field. Then $0 = \theta(\xi) = \xi_0^\sharp + p\,\theta(u)$, so $\xi_0^\sharp$ is $p$ times a unit (`New.Period.untilt_constantCoeff_xi_dvd_p`), and the criterion applies. $\square$
 
 The same method gives a second criterion. It describes the elements that vanish under all the maps $\theta \circ \varphi^j$.
 
@@ -88,7 +88,7 @@ The same method gives a second criterion. It describes the elements that vanish 
 
 Lean: `New.Period.mu_dvd_of_theta_frobEnd` (Lib/PadicHodge/PeriodRings/Ainf.lean), `New.Period.tau_dvd_of_theta_frobEnd`.
 
-*Proof.* Let $I = \bigcap_j \ker(\theta \circ \varphi^j)$. It contains $\mu$, since $\varphi^j\mu = [\varepsilon^{p^j}] - 1$, and it is saturated for $p$. Let $x \in I$. Since $O^\flat$ is a valuation ring, either $\mu_0 \mid x_0$, or $\mu_0 = x_0 c$ with $c$ not a unit. In the second case the source proves, by induction on $n$, that $c^{p^n}$ divides $\mu_0$ for every $n$: write $x = \xi b$ and apply the induction to $\varphi b$, with $c^p$ in place of $c$. Then $\mu_0$ lies in every power of the ideal $(c)$. The ring $O^\flat$ is $c$-adically separated for a non-unit $c$, so $\mu_0 = 0$. This is false, because $\mu_0 = \varepsilon - 1 \neq 0$. So $\mu_0 \mid x_0$, and the lemma gives $\mu \mid a$. For the second claim, $\varphi a$ satisfies the first hypothesis, so $\mu = \varphi\tau$ divides $\varphi a$, and $\varphi$ is bijective. $\square$
+*Proof.* Let $I = \bigcap_j \ker(\theta \circ \varphi^j)$. It contains $\mu$ and is saturated for $p$. Since $O^\flat$ is a valuation ring, either $\mu_0 \mid a_0$, or $\mu_0 = a_0 c$ with $c$ not a unit. In the second case the source proves by induction that $c^{p^n} \mid \mu_0$ for every $n$, so $\mu_0 = 0$, which is false. So $\mu_0 \mid a_0$, and the lemma gives $\mu \mid a$. For the second claim, $\mu = \varphi\tau$ divides $\varphi a$, and $\varphi$ is bijective. $\square$
 
 A consequence is that $g\tau$ is associated to $\tau$ for every $g \in G_p$, since $g$ commutes with $\theta$ and $\varphi$ (`New.Period.associated_smul_tau`). The same holds for $\xi$, by the theorem of Fontaine.
 
@@ -104,7 +104,7 @@ Lean: `New.Period.Ainf.prime_xi` (Lib/PadicHodge/PeriodRings/Ainf.lean), `New.Pe
 
 Lean: `New.Period.Ainf.isAdicComplete_span_pair` (Lib/PadicHodge/PeriodRings/Ainf.lean), `New.Period.Ainf.isAdicComplete_span_singleton`.
 
-*Proof.* The source proves existence of limits from the fact that the map $x \mapsto (x_n - x_{n+1})/a^n$ on sequences is onto, for each generator. For separation, let $x \neq 0$ lie in every power of $(a, c)$. Write $x = p^n y$ with $p \nmid y$. A lemma of approximation (`New.Period.dvd_of_forall_exists_sub_mem_span_pow`) shows that every $\delta$ with $p \nmid \delta$ divides $x$. Take $\delta = \xi y$. Then $\xi \mid p^n$, so $\theta(p^n) = 0$, which is false. $\square$
+*Proof.* The source proves existence of limits directly. For separation, let $x \neq 0$ lie in every power of $(a, c)$, and write $x = p^n y$ with $p \nmid y$. An approximation lemma (`New.Period.dvd_of_forall_exists_sub_mem_span_pow`) shows that $\xi y$ divides $x$, so $\xi \mid p^n$ and $\theta(p^n) = 0$, which is false. $\square$
 
 **Proposition (Artin-Schreier-Witt).** For every $n \geq 0$ and $x \in A_{\inf}$ there is $c \in A_{\inf}$ with $\varphi(c) - \xi^n c = x$.
 

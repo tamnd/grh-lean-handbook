@@ -27,11 +27,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Crystalline representations
 
-This section uses the ring $B_{\max}$ of Section 4 to define admissible, crystalline and potentially crystalline representations. It proves Fontaine's computation of fixed fractions in the form that the source needs, that the fixed periods of an admissible representation contain a basis, and that admissibility is stable under the usual operations. Section 6 uses these results to build the Frobenius operator. The source cites J.-M. Fontaine, *Représentations p-adiques semi-stables*, Astérisque 223 (1994), Exposé III, Sections 1 and 5, and O. Brinon and B. Conrad, *CMI summer school notes on p-adic Hodge theory* (2009), Sections 5.2 and 9.
+This section defines admissible, crystalline and potentially crystalline representations with the ring $B_{\max}$ of Section 4. It proves Fontaine's computation of fixed fractions, that the fixed periods contain a basis, and stability under the usual operations. The source cites J.-M. Fontaine, *Représentations p-adiques semi-stables*, Astérisque 223 (1994), Exposé III, Sections 1 and 5, and O. Brinon and B. Conrad, *CMI summer school notes on p-adic Hodge theory* (2009), Sections 5.2 and 9.
 
 ### The setting
 
-The source does not fix a field $K$. It fixes a group $\Gamma$ with a homomorphism $j : \Gamma \to G_p$ whose image is open. This is the class `OverGp`. The main example is $\Gamma = G_K$ with the inclusion, but the setting also covers open subgroups of $G_K$ and quotients through which a representation factors.
+The source does not fix a field $K$. It fixes a group $\Gamma$ with a homomorphism $j : \Gamma \to G_p$ with open image (the class `OverGp`). The main example is $\Gamma = G_K$ with the inclusion.
 
 Lean: `New.Period.OverGp` (Lib/PadicHodge/Crystalline/Basic.lean).
 
@@ -39,7 +39,7 @@ Let $R$ be a $\mathbb{Z}_p$-algebra, $T$ an $R$-module and $\rho : \Gamma \to \m
 
 Lean: `New.Period.tensorAction` (Lib/PadicHodge/Crystalline/Basic.lean), `New.Period.fixedPeriods`.
 
-Two filters are used. The top filter $\top$ asks that $y$ is fixed by every $g$. The filter $\mathrm{nearOne}$ is the pull-back along $j$ of the filter of neighbourhoods of $1$ in $G_p$. An element is fixed along $\mathrm{nearOne}$ when it is fixed by all $g$ with $j(g)$ in some open neighbourhood of $1$, that is, by the preimage of some open subgroup. Filters let one definition cover both cases, and they spare the source from choosing the open subgroup.
+Two filters are used. The top filter $\top$ asks that $y$ is fixed by every $g$. The filter $\mathrm{nearOne}$ is the pull-back along $j$ of the neighbourhoods of $1$ in $G_p$, so an element is fixed along it when it is fixed by the preimage of some open subgroup, which the source does not choose.
 
 Lean: `New.Period.nearOne` (Lib/PadicHodge/Crystalline/Basic.lean), `New.Period.eventually_nearOne_apply_eq`.
 
@@ -47,7 +47,7 @@ Lean: `New.Period.nearOne` (Lib/PadicHodge/Crystalline/Basic.lean), `New.Period.
 
 Lean: `New.Period.IsAdmissible` (Lib/PadicHodge/Crystalline/Basic.lean), `New.Period.IsCrystalline`, `New.Period.IsPotentiallyCrystalline`, `New.Period.Dpcris`.
 
-In the classical theory (Fontaine, Astérisque 223, Exposé III, Section 5), $V$ is a finite-dimensional continuous $\mathbb{Q}_p$-representation of $G_K$, $D_{\mathrm{cris}}(V) = (B_{\mathrm{cris}} \otimes_{\mathbb{Q}_p} V)^{G_K}$, and $V$ is crystalline if $\dim_{K_0} D_{\mathrm{cris}}(V) = \dim_{\mathbb{Q}_p} V$. Since $B_{\mathrm{cris}}$ is a regular ring in Fontaine's sense, this is equivalent to the statement that the map $B_{\mathrm{cris}} \otimes_{K_0} D_{\mathrm{cris}}(V) \to B_{\mathrm{cris}} \otimes V$ is an isomorphism, and so to the statement that the invariants span $B_{\mathrm{cris}} \otimes V$. The source takes the span condition as the definition. Potentially crystalline classically means crystalline on $G_L$ for a finite extension $L$ of $K$. Along $\mathrm{nearOne}$, an element is fixed by the preimage of an open subgroup that depends on the element. When $D_{\mathrm{pcris}}$ is spanned by finitely many elements, one open subgroup fixes a spanning set, and the two notions agree up to the difference between $B_{\max}$ and $B_{\mathrm{cris}}$.
+In the classical theory (Fontaine, Astérisque 223, Exposé III, Section 5), $V$ is a finite-dimensional continuous $\mathbb{Q}_p$-representation of $G_K$, and $V$ is crystalline if $\dim_{K_0} (B_{\mathrm{cris}} \otimes_{\mathbb{Q}_p} V)^{G_K} = \dim_{\mathbb{Q}_p} V$. Since $B_{\mathrm{cris}}$ is regular, this is equivalent to the statement that the invariants span $B_{\mathrm{cris}} \otimes V$. The source takes the span condition as the definition. Potentially crystalline classically means crystalline on $G_L$ for a finite extension $L$ of $K$. Along $\mathrm{nearOne}$, the open subgroup can depend on the element, but when finitely many elements span, one open subgroup fixes all of them.
 
 **Remark (Formalization).** The definition has no hypotheses on $T$ and $\rho$. There is no continuity, no finiteness and no freeness. The tensor product is over $\mathbb{Z}_p$, not over $R$. These choices have consequences.
 
@@ -61,7 +61,7 @@ The register records the replacement of $B_{\mathrm{cris}}$ by $B_{\max}$ as F-0
 
 Lean: `New.Period.crysCocycles` (Lib/PadicHodge/Crystalline/Basic.lean).
 
-A map in $Z_f(\rho)$ is a cocycle: if $1 \otimes c(g) = g y - y$ for all $g$, then $1 \otimes c(gh) = gh\,y - y = g(hy - y) + (gy - y)$, which is $1 \otimes (\rho(g)c(h) + c(g))$, and $1 \otimes -$ is injective on a lattice. The source does not ask for continuity here either. Classically (Bloch-Kato, *L-functions and Tamagawa numbers of motives*, Grothendieck Festschrift I (1990), Section 3), $H^1_f(K, V)$ is the kernel of $H^1(K, V) \to H^1(K, B_{\mathrm{cris}} \otimes V)$, and $Z_f$ is the module of cocycles whose classes lie in it. Section 8 computes the rank of $Z_f$ for a lattice.
+For $T$ free over $\mathbb{Z}_p$, a map in $Z_f(\rho)$ is a cocycle (Section 8). The source does not ask for continuity. Classically (Bloch-Kato, *L-functions and Tamagawa numbers of motives*, Grothendieck Festschrift I (1990), Section 3), $H^1_f(K, V)$ is the kernel of $H^1(K, V) \to H^1(K, B_{\mathrm{cris}} \otimes V)$, and $Z_f$ is the module of cocycles whose classes lie in it.
 
 ### Two first examples
 
@@ -69,11 +69,9 @@ A map in $Z_f(\rho)$ is a cocycle: if $1 \otimes c(g) = g y - y$ for all $g$, th
 
 Lean: `New.Period.IsAdmissible.tate_twist` (Lib/PadicHodge/Crystalline/Basic.lean), `New.Period.isAdmissible_of_cyclotomicGp_zpow`, `New.Period.exists_tate_twist_unit`.
 
-*Proof.* Let $t \in A_{\max}$ be the period of Section 4, with $g(t) = \chi(g)t$. It is $p\mu$ times a unit, and $p$ and $\mu$ are units of $B_{\max}$, so $t$ is a unit of $B_{\max}$. Put $u = t^{-c}$. Then $j(g)(u) = \chi(g)^{-c}u$, so $(j(g) \otimes \sigma(g))(uy) = u\,(j(g) \otimes \rho(g))(y)$. Multiplication by $u$ maps the fixed periods of $\rho$ onto those of $\sigma$, and it is a unit, so it maps a spanning set to a spanning set. For the second claim, the trivial representation is admissible along every filter, since every $1 \otimes x$ is fixed, and $\chi^c$ is a twist of it. $\square$
+*Proof.* The period $t$ of Section 4 is $p\mu$ times a unit, so it is a unit of $B_{\max}$. Put $u = t^{-c}$. Then $(j(g) \otimes \sigma(g))(uy) = u\,(j(g) \otimes \rho(g))(y)$, so multiplication by $u$ maps the fixed periods of $\rho$ onto those of $\sigma$. For the second claim, the trivial representation is admissible along every filter. $\square$
 
-The proof of the source records more. For every $n$, the pair $(\varphi^n, j(g))$ acts on $u$ by $p^{-nc}\chi(g)^{-c}$, since $\varphi(t) = pt$. This factor $p^{-nc}$ is the reason why the Frobenius operator of a Tate twist is the original one times a power of $p$, below.
-
-Here the source uses that $t$ is a unit of $B_{\max}$. This is the place where it matters that $B_{\max}$ inverts $\mu$: in $B^+$ the element $t$ is not a unit, and $\mathbb{Z}_p(1)$ is not $B^+$-admissible.
+Since $\varphi(t) = pt$, the pair $(\varphi^n, j(g))$ acts on $u$ by $p^{-nc}\chi(g)^{-c}$. This factor gives the Frobenius operator of a Tate twist in Section 6. The proof needs that $t$ is a unit, so it needs that $B_{\max}$ inverts $\mu$.
 
 ### Fixed fractions
 
@@ -83,21 +81,21 @@ The core input is Fontaine's computation of the invariants of the fraction field
 
 Lean: `New.Period.Bmax.exists_witt_ratio` (Lib/PadicHodge/Crystalline/FixedRatios.lean).
 
-So the fraction $a/b$ lies in $W(\mathbb{F}_{p^f})[1/p]$, the field $K_0$ of the classical statement for some unramified $K_0$. Here $W(\mathbb{F}_{p^f})$ is the ring of Witt vectors of the subfield $\{x \in O^\flat : x^{p^f} = x\}$ of $O^\flat$, so it is a subring of $A_{\inf}$, and $w b$ means the image of $w$ in $B_{\max}$ times $b$.
+So $a/b$ lies in $W(\mathbb{F}_{p^f})[1/p]$, the field $K_0$ for some unramified $K_0$. Here $W(\mathbb{F}_{p^f})$ is the Witt ring of $\{x \in O^\flat : x^{p^f} = x\}$, a subring of $A_{\inf}$.
 
-*Proof.* The relation holds on an open subgroup $U$ of $G_p$, since $G_p$ is profinite. Let $L$ be the fixed field of $U$. The source takes a *Kummer chart* for $U$. This is a Teichmüller element $z \in A_{\inf}$ with $\theta(z)$ a uniformizer of $L$, together with an Eisenstein polynomial $E$ over $W(\mathbb{F}_{p^f})$, where $p^f$ is the size of the residue field of $L$. The chart is defined and built in the Kisin folder, and is the subject of the next chapter, [Kisin frames and limits](/chapter/kisin-frames/). With the chart, the source argues as follows. The quotient $a/b$ in $B_{\mathrm{dR}}$ is fixed by $U$, so by the theorem on the invariants of $B_{\mathrm{dR}}$ in Section 4 it is an element $\lambda$ of $L$. Multiply $a$ and $b$ by a power of $\mu$ so that both lie in $B^+$. Expand both in the coordinates that the chart gives, and take a coordinate of $b$ that is not zero. The relation $a = \lambda b$ holds coordinate by coordinate. Cancel the largest power of $z$ and reduce modulo $z$. This gives $\lambda w_1 = w_0$ with $w_0, w_1 \in W(\mathbb{F}_{p^f})$ and $w_1 \neq 0$, after multiplication by a power of $p$. So $\lambda \in W(\mathbb{F}_{p^f})[1/p]$. $\square$
+*Proof.* The relation holds on an open subgroup $U$ with fixed field $L$. The source takes a *Kummer chart* for $U$: a Teichmüller element $z \in A_{\inf}$ with $\theta(z)$ a uniformizer of $L$, with an Eisenstein polynomial over $W(\mathbb{F}_{p^f})$. The chart is built in [Kisin frames and limits](/chapter/kisin-frames/). By the invariants of $B_{\mathrm{dR}}$ (Section 4), $a/b = \lambda \in L$. Expand $a$ and $b$ in the coordinates of the chart, cancel the largest power of $z$ in a nonzero coordinate of $b$, and reduce modulo $z$. This gives $\lambda w_1 = w_0$ with $w_0, w_1 \in W(\mathbb{F}_{p^f})$ and $w_1 \neq 0$, up to a power of $p$. $\square$
 
 **Remark (Formalization).** The degree $f$ and the exponent $n$ are existential and not specified. The theorem does not say that $f$ is the residue degree of the fixed field of $U$, though the proof gives this. Only the containment $a/b \in W(\mathbb{F}_{p^f})[1/p]$ is used later. The proof depends on `New.Lift.exists_kummerChart` (Lib/PadicHodge/Kisin/KummerChartExistence.lean), which comes after this file in the reading order of the source and before it in the import order. The chapter uses the result here and leaves its proof to the next chapter.
 
 ### Regularity and bases
 
-Fontaine calls a ring $B$ with an action of $G$ *regular* when $B$ is a domain, $B^G = \mathrm{Frac}(B)^G$, and every $b \neq 0$ such that the line $\mathbb{Q}_p b$ is $G$-stable is a unit (Fontaine, Astérisque 223, Exposé III, Section 1, and Brinon-Conrad, Section 5.2). The point of regularity is the next statement. The source proves the form that it needs, for vectors of fractions.
+Fontaine calls a ring $B$ with an action of $G$ *regular* when $B$ is a domain, $B^G = \mathrm{Frac}(B)^G$, and every $b \neq 0$ with $\mathbb{Q}_p b$ stable is a unit (Fontaine, Astérisque 223, Exposé III, Section 1). The source proves the form that it needs.
 
 **Theorem (Regularity).** Let $\mathrm{nearOne} \leq F$. Let $w : \iota \to B_{\max}$ be finitely supported and let $b \in B_{\max}$ be nonzero. If $b \cdot g(w) = g(b) \cdot w$ for $F$-almost all $g$, with $g$ acting through $j$ on each coordinate, then $w = b\,a$ for some finitely supported $a$ that is fixed by $F$-almost all $g$.
 
 Lean: `New.Period.fontaine_regularity` (Lib/PadicHodge/Crystalline/Regularity.lean).
 
-*Proof.* Fix a coordinate $i$. The relation holds for $w_i$ and $b$ for all $g$ near $1$, since $\mathrm{nearOne} \leq F$. By the theorem on fixed fractions, $p^n w_i = c\,b$ with $c$ a Witt vector. Since $p$ is a unit of $B_{\max}$, $b$ divides $w_i$. So $w = b\,a$ for some $a$. The relation then reads $b \cdot g(b)\,g(a) = g(b) \cdot b\, a$, and $b$ and $g(b)$ are nonzero in the domain $B_{\max}$, so $g(a) = a$. $\square$
+*Proof.* For each $i$, fixed fractions give $p^n w_i = c\,b$ with $c$ a Witt vector, so $w = b\,a$. The relation reads $b \cdot g(b)\,g(a) = g(b) \cdot b\, a$ in the domain $B_{\max}$, so $g(a) = a$. $\square$
 
 The theorem says that a fixed fraction of elements of $B_{\max}$ is a fixed element of $B_{\max}$. It does not say that the units condition of Fontaine holds. The source does not need it in that form.
 
@@ -105,11 +103,11 @@ The theorem says that a fixed fraction of elements of $B_{\max}$ is a fixed elem
 
 Lean: `New.Period.IsAdmissible.exists_basis` (Lib/PadicHodge/Crystalline/Regularity.lean).
 
-*Proof.* Take a maximal $B_{\max}$-linearly independent family $(x_i)_{i \in s}$ of fixed periods, by Zorn's lemma. It is enough to show that every fixed period $y$ is in the span. If $y$ is not in the family, maximality gives $b \neq 0$ and $w$ with $b y = \sum_i w_i x_i$. Apply $g$, for $g$ that fixes $y$ and all $x_i$ that occur: $g(b)\, y = \sum_i g(w_i) x_i$. Multiply the first equation by $g(b)$ and the second by $b$ and compare coefficients, which is allowed since the $x_i$ are independent: $b\, g(w) = g(b)\, w$. Regularity gives $w = b a$, and then $b y = b \sum_i a_i x_i$, so $y = \sum_i a_i x_i$. The fixed periods span by hypothesis, so the family is a basis. $\square$
+*Proof.* Take a maximal $B_{\max}$-linearly independent family $(x_i)_{i \in s}$ of fixed periods, by Zorn's lemma. For a fixed period $y$, maximality gives $b \neq 0$ and $w$ with $b y = \sum_i w_i x_i$. Applying $g$ and comparing coefficients gives $b\, g(w) = g(b)\, w$. Regularity gives $w = b a$, so $y = \sum_i a_i x_i$. $\square$
 
 **Remark (Formalization).** The basis is indexed by a set $s$ of fixed periods, and the source does not prove that $s$ is finite. For $T$ free of rank $d$ over $\mathbb{Z}_p$, the module $B_{\max} \otimes T$ is free of rank $d$, and every basis has $d$ elements, so $s$ is finite in that case. The theorem is proved by Zorn's lemma, and the basis is not explicit.
 
-Classically, the fixed basis gives the comparison isomorphism $B_{\mathrm{cris}} \otimes_{K_0} D_{\mathrm{cris}}(V) \cong B_{\mathrm{cris}} \otimes_{\mathbb{Q}_p} V$. The source does not state an isomorphism in this form. It uses the basis directly, in the construction of the Frobenius operator below and in Sections 6 to 8.
+Classically, the fixed basis gives the comparison isomorphism $B_{\mathrm{cris}} \otimes_{K_0} D_{\mathrm{cris}}(V) \cong B_{\mathrm{cris}} \otimes_{\mathbb{Q}_p} V$. The source uses the basis directly.
 
 ### Stability
 
@@ -119,7 +117,7 @@ The next three theorems give the stability of admissible representations under s
 
 Lean: `New.Period.IsAdmissible.of_jointly_injective` (Lib/PadicHodge/Crystalline/Regularity.lean), `New.Period.IsAdmissible.of_retraction`, `New.Period.le_of_fixed_mem_of_saturated`.
 
-The proof goes through a retraction. The base change of $(f_i)$ to $B_{\max}$ has a $B_{\max}$-linear left inverse. In coordinates for fixed bases of the $B_{\max} \otimes S_i$, the image is a saturated submodule of a free module that is stable along $F$. A saturated stable submodule is spanned by its fixed elements, by an elimination argument that uses regularity at each step (`le_of_fixed_mem_of_saturated`).
+The proof goes through a retraction: the base change of $(f_i)$ to $B_{\max}$ has a left inverse, and its image is a saturated stable submodule of a free module, which is spanned by its fixed elements (`le_of_fixed_mem_of_saturated`).
 
 **Theorem (Tensor products and quotients).** Let $\beta : T'' \times T \to T'$ be a $\mathbb{Z}_p$-bilinear map that is equivariant for $\sigma$, $\rho$, $\rho'$ and whose values span $T'$. If $\sigma$ and $\rho$ are admissible along $F$, then so is $\rho'$.
 
