@@ -22,7 +22,7 @@ drafted_by: writer@claude-opus-5-5
 
 The jets of a theta function are the coefficients of its Taylor series at $0$. For the vacuum they are algebraic up to a power of the scale, and the automorphisms of $\mathbb{C}$ over $K$ permute them in a controlled way. The tool is again the theta product of Section 5, since its jets are products of jets of one theta function of one variable, and the theorem of complex multiplication tells how $\sigma$ acts on those. This section proves the statement used in [theta kernels and gauges](/chapter/theta-kernels-gauges/): one vector $F$ spans the finite part by its translates, and $\sigma$ takes the jets of each translate of $F$ to the jets of a translate of a second vector $F'$, at a scale of modulus $\Omega_E^{-1/2}$, with the places permuted.
 
-### Conjugate jets
+### The definition
 
 **Definition (Conjugate jets).** Let $\sigma$ be a ring endomorphism of $\mathbb{C}$, $\pi$ a permutation of the places of $E$, $t, t' \in \mathbb{C}$ and $f, f' \in \mathcal{S}(V)$. The jets of $f'$ at scale $t'$ are *$\sigma$-conjugate* to those of $f$ at scale $t$, with the permutation $\pi$, if applying $\sigma$ to the coefficients of $J_t f$ gives $J_{t'}f'$ with each variable $X_{\tau,k}$ renamed $X_{\pi^{-1}\tau,k}$.
 

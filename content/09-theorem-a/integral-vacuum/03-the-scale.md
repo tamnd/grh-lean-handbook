@@ -80,10 +80,11 @@ So $\mathrm{vacuumRoot}^f = \chi_{\mathrm{fin}}(\alpha)^{-1}$. [The field E at t
 
 Lean: `New.Parameters.norm_gal_vacuumRoot` (New/Derivatives/Field/WeilData.lean).
 
-### The scale
+### Definition of the scale
 
 **Definition (Scale).** Put
-$$\mathrm{areaScale} = \sqrt{2\pi/\sqrt d}, \qquad \mathrm{periodFactor} = \frac{\mathrm{vacuumRoot}}{u_{CS}}, \qquad \mathrm{jetScale} = \frac{\mathrm{periodFactor} \cdot \mathrm{areaScale}}{\Omega_0} .$$
+$$\mathrm{areaScale} = \sqrt{2\pi/\sqrt d}, \qquad \mathrm{periodFactor} = \frac{\mathrm{vacuumRoot}}{u_{CS}},$$
+$$\mathrm{jetScale} = \frac{\mathrm{periodFactor} \cdot \mathrm{areaScale}}{\Omega_0} .$$
 
 Lean: `New.Parameters.areaScale`, `New.Parameters.periodFactor`, `New.Parameters.jetScale` (New/Derivatives/Vacuum/TightFrames.lean).
 
