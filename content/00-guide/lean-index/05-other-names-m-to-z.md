@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, M to Z
 
-This section has the 2711 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+This section has the 2733 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
 
 - `New.map_const_smul_eq_inv_distribHaarChar_smul`: `Lib/General/Measure/HaarModulus.lean`, [line 235](lean:Lib/General/Measure/HaarModulus.lean#L235). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.map_reducePiPrime_eq_primePowerSeries`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 522](lean:New/Derivatives/FormalGroup/Exponent.lean#L522). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -235,6 +235,7 @@ This section has the 2711 cited names `New.X` outside the namespace `New.Data` w
 - `New.OscillatorPair.re_inner_integratedRep_pos`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 662](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L662). Cited in [Chapter](/chapter/local-theta/).
 - `New.OscillatorPair.swap`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 627](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L627). Cited in [Chapter](/chapter/local-theta/).
 - `New.OscillatorRep`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 476](lean:Lib/Weil/Fock/OscillatorPair.lean#L476). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
+- `New.ostrowski_taussky`: `Lib/General/Analysis/GaussianIntegral.lean`, [line 78](lean:Lib/General/Analysis/GaussianIntegral.lean#L78). Cited in [Chapter](/chapter/frame-counts/).
 - `New.paddingTuple`: `Lib/Shimura/ThetaNormality/RiemannRelation.lean`, [line 716](lean:Lib/Shimura/ThetaNormality/RiemannRelation.lean#L716). Cited in [Chapter](/chapter/integral-model/).
 - `New.PadicIntegerRing`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 66](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L66). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.padicModel_mem_uniformClosure`: `Lib/GaloisRep/WeightCongruence.lean`, [line 625](lean:Lib/GaloisRep/WeightCongruence.lean#L625). Cited in [Chapter](/chapter/building-representations/).
@@ -992,11 +993,16 @@ This section has the 2711 cited names `New.X` outside the namespace `New.Data` w
 - `New.realConv`: `Lib/Adelic/AutomorphicForms/Basic.lean`, [line 73](lean:Lib/Adelic/AutomorphicForms/Basic.lean#L73). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.RealPlace.besselHaar₀_homogeneousBall`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 747](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L747). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.coe_gramSection`: `New/Spanning/Bessel/GramSection.lean`, [line 605](lean:New/Spanning/Bessel/GramSection.lean#L605). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.RealPlace.differenceX₀_eq_add`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 693](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L693). Cited in [Chapter](/chapter/frame-counts/).
 - `New.RealPlace.eichlerMatrix_mul`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 647](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L647). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.RealPlace.exists_common_vector_of_normOnePairOccursFrom`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 713](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L713). Cited in [Chapter](/chapter/frame-counts/).
 - `New.RealPlace.exists_dilation`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 95](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L95). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.exists_eq_mul_gramSection_mul`: `New/Spanning/Bessel/GramSection.lean`, [line 656](lean:New/Spanning/Bessel/GramSection.lean#L656). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.RealPlace.exists_isTriangularBasis`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 477](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L477). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.exists_majorant_volumeRatio_inv_pow`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 928](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L928). Cited in [Chapter](/chapter/frame-counts/).
 - `New.RealPlace.exists_norm_le_of_besselLength_le`: `New/Spanning/Bessel/Basic.lean`, [line 130](lean:New/Spanning/Bessel/Basic.lean#L130). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.exists_tube`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 896](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L896). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.RealPlace.frameX₀Part_unipotentOf_inv_mul`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 1013](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L1013). Cited in [Chapter](/chapter/frame-counts/).
 - `New.RealPlace.gramDiscReal`: `New/Spanning/Bessel/Basic.lean`, [line 874](lean:New/Spanning/Bessel/Basic.lean#L874). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.gramDiscReal_div_two_le_and_isBoundedInCell`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 110](lean:New/Spanning/Bessel/OpenCellBound.lean#L110). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.gramSection`: `New/Spanning/Bessel/GramSection.lean`, [line 582](lean:New/Spanning/Bessel/GramSection.lean#L582). Cited in [Chapter](/chapter/bessel-real-place/).
@@ -1009,6 +1015,15 @@ This section has the 2711 cited names `New.X` outside the namespace `New.Data` w
 - `New.RealPlace.IsBoundedInCell.norm_sectionMatrix_le`: `New/Spanning/Bessel/GramSection.lean`, [line 453](lean:New/Spanning/Bessel/GramSection.lean#L453). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.IsBoundedInCell.of_mem_ball`: `New/Spanning/Bessel/GramSection.lean`, [line 394](lean:New/Spanning/Bessel/GramSection.lean#L394). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.isBoundedInCell_of_inv_le_gramDiscReal`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 70](lean:New/Spanning/Bessel/OpenCellBound.lean#L70). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.RealPlace.IsNegativeBasis`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 363](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L363). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsNegativeBasis.volumeRatio_eq`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 382](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L382). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 453](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L453). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis.norm_det_eq_mul_norm_last`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 595](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L595). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis.norm_det_le`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 585](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L585). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis.norm_det_mul_le_volumeRatio`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 644](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L644). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis.norm_last_le`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 807](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L807). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis.norm_last_sq_eq_one_add_dotProduct_differenceX₀`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 840](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L840). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.IsTriangularBasis.norm_last_sq_le`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 897](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L897). Cited in [Chapter](/chapter/frame-counts/).
 - `New.RealPlace.IsTube`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 861](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L861). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.IsUnimodularHaar`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 86](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L86). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.IsUnimodularHaar.of_freeEntries`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 270](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L270). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -1021,11 +1036,14 @@ This section has the 2711 cited names `New.X` outside the namespace `New.Data` w
 - `New.RealPlace.measurePreserving_freeEntries_besselHaar₀`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 472](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L472). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.mem_besselU0_iff_unipotentOf`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 601](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L601). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.mem_openCell_iff`: `New/Spanning/Bessel/GramSection.lean`, [line 133](lean:New/Spanning/Bessel/GramSection.lean#L133). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.RealPlace.norm_det_eq_norm_det_mul_inclMatrix`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 289](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L289). Cited in [Chapter](/chapter/frame-counts/).
+- `New.RealPlace.norm_det_subframeBlock`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 767](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L767). Cited in [Chapter](/chapter/frame-counts/).
 - `New.RealPlace.oneSubNormSqInvCorner`: `New/Spanning/Bessel/GramSection.lean`, [line 63](lean:New/Spanning/Bessel/GramSection.lean#L63). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.realFrameGram_gramSection`: `New/Spanning/Bessel/GramSection.lean`, [line 627](lean:New/Spanning/Bessel/GramSection.lean#L627). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.sectionMatrix`: `New/Spanning/Bessel/GramSection.lean`, [line 104](lean:New/Spanning/Bessel/GramSection.lean#L104). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.sectionMatrix_isometry`: `New/Spanning/Bessel/GramSection.lean`, [line 533](lean:New/Spanning/Bessel/GramSection.lean#L533). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.RealPlace.unipotentOf`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 424](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L424). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.RealPlace.volumeRatio_eq_norm_det`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 172](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L172). Cited in [Chapter](/chapter/frame-counts/).
 - `New.regularL`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 177](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L177). Cited in [Chapter](/chapter/prime-number-theorem/), [Chapter](/chapter/primes-in-windows/).
 - `New.regularL_eq`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 191](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L191). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.RelationSetting`: `Lib/ClassField/GreenbergWiles/Relations.lean`, [line 76](lean:Lib/ClassField/GreenbergWiles/Relations.lean#L76). Cited in [Chapter](/chapter/local-duality/).
@@ -2167,6 +2185,7 @@ This section has the 2711 cited names `New.X` outside the namespace `New.Data` w
 - `New.submoduleIndex_colLattice_intVectors`: `Lib/General/Measure/HaarModulus.lean`, [line 481](lean:Lib/General/Measure/HaarModulus.lean#L481). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.subst_coupling`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 67](lean:New/Derivatives/Divisibility/NormalForm.lean#L67). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.subst_expSubst`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 61](lean:New/Derivatives/Divisibility/NormalForm.lean#L61). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.sum_classPoints_succ`: `New/UpperBound/Objects/LiftChains.lean`, [line 205](lean:New/UpperBound/Objects/LiftChains.lean#L205). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.sum_eq_sum_divisors_of_changeLevel_eq`: `Lib/Analytic/PolyaVinogradov.lean`, [line 163](lean:Lib/Analytic/PolyaVinogradov.lean#L163). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.sum_integral_norm_thetaSeries_div_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 578](lean:Lib/Analytic/QuadraticTwist.lean#L578). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.sum_lambdaKResidueClass_mul_posPart`: `New/Reduction/PrimeSums.lean`, [line 45](lean:New/Reduction/PrimeSums.lean#L45). Cited in [Chapter](/chapter/prime-sums/).
@@ -2662,6 +2681,9 @@ This section has the 2711 cited names `New.X` outside the namespace `New.Data` w
 - `New.volU`: `Lib/DiscreteSeries/Haar/CayleyChart.lean`, [line 365](lean:Lib/DiscreteSeries/Haar/CayleyChart.lean#L365). Cited in [Chapter](/chapter/discrete-series/).
 - `New.volume_stdLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 486](lean:Lib/Adelic/Unitary/Defs.lean#L486). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.volume_Ô`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 193](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L193). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.volumeRatio`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 112](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L112). Cited in [Chapter](/chapter/frame-counts/).
+- `New.volumeRatio_inv`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 119](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L119). Cited in [Chapter](/chapter/frame-counts/).
+- `New.volumeRatio_mul_left`: `New/Spanning/RemainingTerms/OneRealPlace.lean`, [line 124](lean:New/Spanning/RemainingTerms/OneRealPlace.lean#L124). Cited in [Chapter](/chapter/frame-counts/).
 - `New.volÔ`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 128](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L128). Cited in [Chapter](/chapter/adeles-hermitian-spaces/), [Chapter](/chapter/siegel-weil/).
 - `New.wave`: `Lib/General/Groups/BesselGroups.lean`, [line 79](lean:Lib/General/Groups/BesselGroups.lean#L79). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/discrete-series/), [Chapter](/chapter/bessel-bruhat/).
 - `New.weak_transference`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 119](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L119). Cited in [Chapter](/chapter/reduction-theory/).
