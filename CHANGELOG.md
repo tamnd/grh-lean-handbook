@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.2.4
+
+New chapters since v0.2.3:
+
+- Volume 5, chapter 5, Characters of GL_n over a finite field (#86).
+- Volume 5, chapter 6, Iwahori exponents, Satake and the chain lemma (#87). Volume 5 is now complete.
+- Volume 6, chapter 2, Local theta correspondence (#89).
+- Volume 6, chapter 3, Theta kernels, theta lifts and the seesaw (#88).
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.3
 
 New chapters since v0.2.2:
