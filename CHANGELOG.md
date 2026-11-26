@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+## v0.1.4
+
+Volume 1, The proof in outline, now has all 13 chapters.
+
+New chapters:
+
+- Volume 0, chapter 2, The claim and its status (#41).
+- Volume 1, chapter 11, The lattice of integral target forms (#42).
+- Volume 9, chapter 1, Theorem A and its plan (#38).
+- Volume 10, chapter 1, Theorem B and its plan (#39).
+
+Fix: the plan of Volume 9, chapter 5 now says that the seesaw constant is a unit, and that the identity is empty when the factor c₀C/d is 0 (#40).
+
+Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.3
 
 Three new chapters and one fix:
