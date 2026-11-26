@@ -21,9 +21,9 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Lifts of translations and theta structures
 
-In [Section 3](/chapter/complex-abelian-varieties/) the twisted translations $\Theta_z$ acted on the space of theta functions, and for $z$ in the dual lattice they sent the space to itself. The operators did not commute. They formed a Heisenberg group, and its irreducibility gave the dimension formula. This section does the same over any base ring, with the algebraic tools of [Section 4](/chapter/complex-abelian-varieties/). A translation of an abelian scheme acts on the sections of a line bundle $L$ only after the choice of an isomorphism $t_z^* L \cong L$. Such an isomorphism exists exactly for $z$ in the kernel $K(L)$ of the pairing. A *theta structure* is a choice of coordinates in which these actions take a standard form. Its main use is rigidity: a homomorphism that respects the theta structures and the classes of the bundles respects the coordinates.
+In [Section 3](/chapter/complex-abelian-varieties/) the twisted translations formed a Heisenberg group. This section does the same over any base ring. A translation acts on the sections of $L$ only after the choice of an isomorphism $t_z^* L \cong L$, which exists exactly for $z$ in the kernel $K(L)$ of the pairing. A *theta structure* is a choice of coordinates in which these actions take a standard form. Its main use is rigidity.
 
-The textbook objects are the theta group $\mathcal{G}(L)$ of pairs $(z, \varphi)$ with $\varphi \colon \mathcal{L} \xrightarrow{\sim} t_z^*\mathcal{L}$, the group $K(L)$ of points $z$ with $t_z^* \mathcal{L} \cong \mathcal{L}$, and the exact sequence $1 \to \mathbb{G}_m \to \mathcal{G}(L) \to K(L) \to 0$ (Mumford, *Abelian Varieties*, Section 23). A theta structure in the textbook sense is an isomorphism of $\mathcal{G}(L)$ with a standard Heisenberg group (Mumford, "On the equations defining abelian varieties I", Invent. Math. 1 (1966), Section 1). The source does not form the group $\mathcal{G}(L)$. It works with the maps on global sections that its elements induce.
+The textbook theta group $\mathcal{G}(L)$ is an extension of $K(L)$ by $\mathbb{G}_m$ (Mumford, *Abelian Varieties*, Section 23), and a theta structure is an isomorphism of $\mathcal{G}(L)$ with a standard Heisenberg group (Mumford, "On the equations defining abelian varieties I", Invent. Math. 1 (1966), Section 1). The source does not form $\mathcal{G}(L)$. It works with the maps on global sections that its elements induce.
 
 ### Lifts of morphisms to sections
 
@@ -41,7 +41,7 @@ Lean: `New.Variety.IsTranslationLift` (Lib/Shimura/ThetaGroup.lean).
 
 Lean: `New.Variety.coordSection` (Lib/Shimura/ThetaGroup.lean).
 
-In the complex model case, $L$ is the bundle of theta functions of type $(B, \chi)$, the coordinate sections are a basis $\theta_j$ of the space of theta functions, and $\Theta_z$ is a translation lift for $z$ in the dual lattice.
+In the complex model case, the coordinate sections are a basis $\theta_j$ of the space of theta functions, and $\Theta_z$ is a translation lift for $z$ in the dual lattice.
 
 **Proposition.** If $\Phi$ is a lift of $f$ from $L$ to $L'$, then $[L'] = f^*[L]$ in $\operatorname{Pic}(X')$. Conversely, let $F \colon Y \to X$ be a morphism over $\operatorname{Spec} R$ and $N$ a line bundle on $Y$ with $[N] = F^*[L]$. Then there is an $R$-linear lift $\Phi \colon H^0(L) \to H^0(N)$ of $F$.
 
@@ -70,11 +70,11 @@ Lean: `New.Variety.exists_isTranslationLift_iff` (Lib/Shimura/ThetaGroup.lean).
 
 *Proof.* By the first proposition of this section, a lift exists if and only if $t_z^*[L] = [L]$. By the definition of the pairing, $\langle z \circ \pi, 1_A \rangle = t_z^*[L] - (z\circ\pi)^*[L] - [L] + 0^*[L]$. The two middle terms are pulled back from $\operatorname{Spec} R$, whose Picard group is trivial since $R$ is local. So the pairing is $t_z^*[L] - [L]$. $\square$
 
-So over a local ring the sections $z$ that have lifts are exactly the sections of $K(L)$. On an abelian variety over $\mathbb{C}$ with $L$ of type $(B, \chi)$, $K(L)$ is $L^\perp / L$, where $L^\perp$ is the dual lattice of [Section 2](/chapter/complex-abelian-varieties/), and the lifts are the operators $\Theta_z$ up to scalars (Birkenhake and Lange, *Complex Abelian Varieties*, Chapter 2).
+So over a local ring the sections that have lifts are exactly the sections of $K(L)$. Over $\mathbb{C}$ with $L$ of type $(B, \chi)$, $K(L)$ is $L^\perp / L$, and the lifts are the operators $\Theta_z$ up to scalars (Birkenhake and Lange, *Complex Abelian Varieties*, Chapter 2).
 
 ### Theta structures
 
-In [Section 3](/chapter/complex-abelian-varieties/) the canonical multiplier gave operators $\Theta_z$ with a Heisenberg law. In a basis adapted to a Lagrangian decomposition of $L^\perp/L$, these operators permute the basis vectors and multiply them by roots of unity. The definition below takes this form as an axiom on a linear system. It also asks for lifts of the maps $y \mapsto -y + \eta(s)$, which correspond to a symmetric bundle.
+In a basis adapted to a Lagrangian decomposition of $L^\perp/L$, the operators $\Theta_z$ of [Section 3](/chapter/complex-abelian-varieties/) permute the basis vectors and multiply them by roots of unity. The definition below takes this form as an axiom. It also asks for lifts of the maps $y \mapsto -y + \eta(s)$, which correspond to a symmetric bundle.
 
 **Definition (Theta structure).** Let $R$ be a ring, $A$ a commutative group object over $\operatorname{Spec} R$, $H$ an abelian group, $L_g \subseteq H$ a subgroup, $\eta \colon H \to A(R)$ a homomorphism to the group of sections, and $N$ a linear system on $A$ whose coordinates $X_t$ are indexed by $t \in H$. Let $c \colon H \to \widehat{H}_R$ assign to each $s \in H$ a character $c_s \colon H \to R^\times$. The data form a *theta structure* if the following hold.
 
@@ -88,7 +88,7 @@ Lean: `New.Variety.IsThetaStructure` (Lib/Shimura/ThetaGroup.lean).
 
 **Remark (Formalization).** The number $|H|$ in condition 4 is `Nat.card H`, which is $0$ for an infinite group. Then condition 4 asks that $0$ is a unit, which holds only in the zero ring. The theorems below assume `[Finite H]` in any case. In condition 5 the sum runs over a `Fintype` instance on $L_g$, so it is only meaningful when $L_g$ is finite. The definition does not ask that $\eta$ is injective, that $N$ is symmetric, or that the coordinates are a basis of $H^0(N)$. Where the theorems need spanning, they assume it.
 
-The textbook form is an isomorphism of the theta group of a symmetric bundle with the Heisenberg group of $K(\delta) \times \widehat{K(\delta)}$ that is compatible with the inverse map (Mumford, "On the equations defining abelian varieties I", Section 2). The source does not need the isomorphism. Its proofs use only the action on the coordinates, so the definition records only this action. In the next chapter the theta structures come from the family of theta-null points, where the theta law holds by construction.
+The textbook form is an isomorphism of the theta group of a symmetric bundle with the Heisenberg group of $K(\delta) \times \widehat{K(\delta)}$ that is compatible with the inverse map (Mumford, "On the equations defining abelian varieties I", Section 2). The proofs of the source use only the action on the coordinates, so the definition records only this action.
 
 In the proofs below, the lifts that the theta law gives are chosen by `choose`. Each is unique only up to a scalar, by the proposition on proportional lifts, and the proofs use only relations that hold for every choice.
 
@@ -140,4 +140,4 @@ Over a local ring, the hypothesis on $y$ says that $y \in K(N)$, by the theorem 
 
 ### What the next chapter uses
 
-In [the next chapter](/chapter/integral-model/) these results are applied to the theta objects of a PEL family over local rings, in `Lib/Shimura/ThetaModuli/ThetaFamilyRigidity.lean`. The torsion theorem gives the criterion `New.ThetaObject.HasSpanningCoords.eq_zero_of_pairing_eq_zero` for a point of the kernel of the polarization to vanish in characteristic $l$. The rigidity theorem gives `New.ThetaObject.HasSpanningCoords.eq_and_comp_toFamily_eq_of_hom`, which identifies two objects that a homomorphism respecting the action, the pairing and the level points relates. The constant functions come from [Section 4](/chapter/complex-abelian-varieties/), through `New.Variety.hasConstFunctions_of_isPullback`.
+In [the next chapter](/chapter/integral-model/) these results are applied to the theta objects of a PEL family over local rings (`Lib/Shimura/ThetaModuli/ThetaFamilyRigidity.lean`). The torsion theorem gives `New.ThetaObject.HasSpanningCoords.eq_zero_of_pairing_eq_zero`, and the rigidity theorem gives `New.ThetaObject.HasSpanningCoords.eq_and_comp_toFamily_eq_of_hom`.

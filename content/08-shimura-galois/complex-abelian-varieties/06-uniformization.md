@@ -29,9 +29,9 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Uniformization and the theorem of Appell and Humbert
 
-The textbook route is the following. The complex points $A(\mathbb{C})$ of an abelian variety form a compact connected complex Lie group. Such a group is commutative, its exponential map $\operatorname{Lie} A \to A(\mathbb{C})$ is surjective, and the kernel is a lattice (Mumford, *Abelian Varieties*, Section 1). The theorem of Appell and Humbert then describes every line bundle on $V/L$ by data $(H, \alpha)$, and its sections by theta functions (Mumford, Section 2; Birkenhake and Lange, *Complex Abelian Varieties*, Chapter 2, Section 2.2).
+In the textbook, $A(\mathbb{C})$ is a compact connected complex Lie group, so its exponential map is surjective with a lattice as kernel (Mumford, *Abelian Varieties*, Section 1). The theorem of Appell and Humbert then describes line bundles on $V/L$ by data $(H, \alpha)$ (Mumford, Section 2; Birkenhake and Lange, *Complex Abelian Varieties*, Section 2.2).
 
-The source has no analytification of schemes. So it builds a small analytic calculus from functions on points: a topology on $A(\mathbb{C})$, holomorphic families of points, and jets. With this calculus it proves two theorems. The first is the uniformization $A(\mathbb{C}) \cong \mathbb{C}^d / L$. The second is the existence half of the theorem of Appell and Humbert: the homogeneous coordinates of a projective embedding, pulled back to $\mathbb{C}^d$, are theta functions of one type with a positive Riemann form.
+The source has no analytification of schemes. It builds a small analytic calculus from functions on points and proves two theorems: the uniformization $A(\mathbb{C}) \cong \mathbb{C}^d / L$, and the existence half of the theorem of Appell and Humbert.
 
 ### Complex points over a valuation ring
 
@@ -43,7 +43,7 @@ Lean: `New.ValuativeArc` (Lib/Shimura/Uniformisation/HolomorphicFamilies.lean).
 
 Lean: `New.bijective_restrict_genericPt` (Lib/Shimura/Uniformisation/HolomorphicFamilies.lean).
 
-This is the valuative criterion of properness. For a family $s$ of sections over $O$, the source writes `atGeneric s` for the family of complex points that it gives. All definitions below allow a general $O$. The uniformization theorem and the theorem of Appell and Humbert are stated for $O = \mathbb{C}$. A complex point of a scheme $A$ over $\mathbb{C}$ is a section $\operatorname{Spec} \mathbb{C} \to A$ (`New.ComplexPoint`).
+This is the valuative criterion of properness. The theorems of this section are stated for $O = \mathbb{C}$. A complex point of a scheme $A$ over $\mathbb{C}$ is a section $\operatorname{Spec} \mathbb{C} \to A$ (`New.ComplexPoint`).
 
 ### Holomorphic families of points
 
@@ -63,8 +63,6 @@ Lean: `New.IsJet` (Lib/Shimura/Uniformisation/HolomorphicFamilies.lean).
 **Definition (First-order constant, immersion).** The family $\varphi$ is *constant to first order at* $w_0$ *in the direction* $v \in P$ if the constant point $\varphi(w_0)$, read over the dual numbers $\mathbb{C}[\varepsilon]$, is a jet of $\varphi$ for evaluation at $v$. Equivalently, $d(s \circ \varphi)_{w_0}(v) = 0$ for every local section $s$ near $\varphi(w_0)$. The family is a *holomorphic immersion at* $w_0$ if it is holomorphic at $w_0$ and constant to first order there only in the direction $0$.
 
 Lean: `New.IsFirstOrderConst` and `New.IsHolomorphicImmersionAt` (Lib/Shimura/Uniformisation/HolomorphicFamilies.lean).
-
-The file proves that a holomorphic family has exactly one jet for each $\ell$ and that jets obey the chain rule (`New.HolomorphicAt.exists_isJet`, `New.IsJet.unique`, `New.isJet_comp_iff`).
 
 ### Uniformizations
 
@@ -122,11 +120,11 @@ Lean: `New.LineBundle.IsProjEmbedding.compactSpace_complexPoint` (Lib/Shimura/Un
 
 Lean: `New.exists_lie_exponential` (Lib/Shimura/Uniformisation/LieExponential.lean).
 
-*Idea of the proof.* No differential equation is solved. For $v \in V$, the value $e(v)$ is a limit of $n \cdot \psi(v/n)$, more precisely of $n \cdot \psi(b_n)$ with $n b_n \to v$, along a non-principal ultrafilter on $\mathbb{N}$. The limit exists because $G$ is compact. Since addition in the chart has derivative $(v, w) \mapsto v + w$ at $0$, the relation "$x$ is such a limit for $v$" is additive and is the graph of a homomorphism. Since $\varphi(x) = v + o(v)$ for such a limit $x$ near $0$, the map $\varphi \circ e$ has derivative $1$ at $0$, and the inverse function theorem gives property 2. The image of $e$ contains a neighbourhood of $0$, so it is an open subgroup of a compact group and has finite index. The kernel is discrete by property 2, and the quotient $V/\ker e$ maps onto an open subgroup of a compact group, which forces the kernel to span $V$ over $\mathbb{R}$. $\square$
+*Idea of the proof.* For $v \in V$, the value $e(v)$ is a limit of $n \cdot \psi(b_n)$ with $n b_n \to v$, along a non-principal ultrafilter on $\mathbb{N}$. The limit exists because $G$ is compact. Since addition in the chart has derivative $(v, w) \mapsto v + w$ at $0$, these limits define a homomorphism, and $\varphi \circ e$ has derivative $1$ at $0$. The inverse function theorem gives property 2. The image of $e$ is an open subgroup of a compact group, so it has finite index. The kernel is discrete by property 2, and compactness forces it to span $V$ over $\mathbb{R}$. $\square$
 
 **Remark (Formalization).** The ultrafilter is the Mathlib `hyperfilter` on $\mathbb{N}$, a choice that no formula determines. The theorem is an existence statement, so the choice does not enter its meaning.
 
-The textbook exponential map is surjective because $A(\mathbb{C})$ is connected. The theorem gives only an image of finite index. The source does not prove that $A(\mathbb{C})$ is connected in the classical topology. It obtains surjectivity in the next theorem from the definition of an abelian scheme.
+The theorem gives only an image of finite index. The source does not prove that $A(\mathbb{C})$ is connected. It obtains surjectivity from the definition of an abelian scheme.
 
 **Theorem (Uniformization).** Let $A$ be an abelian scheme over $\operatorname{Spec} \mathbb{C}$ that is smooth of relative dimension $d$. Let $N$ be a linear system on $A$ with finite index set that embeds $A$ in projective space. Then $A$ has a uniformization by $\mathbb{C}^d$.
 
@@ -140,25 +138,23 @@ Lean: `New.LineBundle.IsProjEmbedding.nonempty_uniformisation` (Lib/Shimura/Unif
 
 *Universality.* A homomorphism that is holomorphic at $0$ is continuous at $0$ and, read in the chart, differentiable at $0$. Property 4 applies. $\square$
 
-**Remark (Formalization).** The divisibility condition in `New.IsAbelianScheme` is used exactly once in the source, in the surjectivity step above. With the textbook definition, surjectivity follows from the connectedness of $A(\mathbb{C})$. [Section 4](/chapter/complex-abelian-varieties/) gives an argument, not checked in Lean, that the two definitions agree. The dimension $d$ is a hypothesis of the theorem. Nowhere is $A(\mathbb{C})$ compared with an analytic space in the sense of Serre's GAGA: the theorem is a statement about the group $A(\mathbb{C})$ and the calculus of this section.
+**Remark (Formalization).** The divisibility condition in `New.IsAbelianScheme` is used exactly once in the source, in the surjectivity step above. With the textbook definition, surjectivity follows from the connectedness of $A(\mathbb{C})$. Nowhere is $A(\mathbb{C})$ compared with an analytic space in the sense of GAGA.
 
 ### The theorem of Appell and Humbert
 
-For the elliptic model case of [Section 2](/chapter/complex-abelian-varieties/), let $N$ be the bundle that embeds $E = \mathbb{C}/L$ as a plane cubic, by the linear system $|3 \cdot 0|$. Pulled back to $\mathbb{C}$, the three homogeneous coordinates become, after multiplication by one nowhere vanishing entire function, three theta functions of one type $(B, \chi)$ whose Riemann form is $3E_0$, where $E_0$ is the Riemann form of the model case. By the dimension formula of [Section 3](/chapter/complex-abelian-varieties/), these span the whole space of theta functions of this type, which has dimension $\sqrt{[L^\perp : L]} = \sqrt{9} = 3$. The theorem below gives this in general.
+For the elliptic model case of [Section 2](/chapter/complex-abelian-varieties/), let $N$ embed $E = \mathbb{C}/L$ as a plane cubic by the linear system $|3 \cdot 0|$. Pulled back to $\mathbb{C}$ and multiplied by one nowhere vanishing entire function, the three coordinates become theta functions of one type with Riemann form $3E_0$. By the dimension formula of [Section 3](/chapter/complex-abelian-varieties/), they span a space of dimension $\sqrt{9} = 3$.
 
 **Theorem (Appell and Humbert, existence).** Let $A$ be a commutative group object over $\operatorname{Spec} \mathbb{C}$ and $u = (e, L)$ a uniformization of $A$ by $V$. Let $N$ be a linear system on $A$ with finite index set $\iota$ that embeds $A$ in projective space, and assume that the class $[N] \in \operatorname{Pic}(A)$ satisfies the parallelogram law. Then there are a form $B$, a function $\chi$ and a map $\theta \colon V \to \mathbb{C}^\iota$ such that $\theta$ is a family of theta coordinates of $z \mapsto e(z)$ for $N$ of type $(B, \chi)$, and the Riemann form of $B$ is positive.
 
 Lean: `New.Uniformisation.appell_humbert` (Lib/Shimura/Uniformisation/AppellHumbert.lean).
 
-The textbook theorem (Mumford, *Abelian Varieties*, Section 2) says more: every line bundle on $V/L$ is $L(H, \alpha)$ for unique data, without any hypothesis on its class. The source proves only the existence of theta coordinates for embedding bundles with the parallelogram law. It does not state uniqueness of $(B, \chi)$, and its proof chooses them.
+The textbook theorem (Mumford, *Abelian Varieties*, Section 2) says that every line bundle on $V/L$ is $L(H, \alpha)$ for unique data. The source does not state uniqueness, and its proof chooses $(B, \chi)$.
 
 *Idea of the proof.* Let $p, s \colon A \times A \to A$ be the projections. The parallelogram law says that the bundle
 $$X = (p^*N \otimes s^*N)^{\otimes 2} \otimes \big((p + s)^* N \otimes (p - s)^* N\big)^{-1}$$
 has trivial class, so it has a frame. Its values define a nowhere vanishing function $C(x, y)$, analytic in fixed charts. One looks for a nowhere vanishing function $\sigma$ on $V$ that trivializes $e^*N$. Restricted to the diagonal, the frame gives the *doubling equation*
 $$\sigma(2z) = \sigma(z)^4\,\exp(q(z, z))\,C(e(z), e(z))$$
 for a bilinear form $q$. It is first solved near $0$, then continued to all of $V$ by halving. The automorphy factor of $\sigma$ along $L$ is then of the Appell-Humbert form, and $\theta(z) = \sigma(z) \cdot (\text{homogeneous coordinates of } e(z))$ are theta functions.
-
-The three analytic steps are separate declarations.
 
 **Lemma.** Let $V$ be a complex normed space and $f \colon V \to \mathbb{C}$ analytic at $0$. Then there are $g \colon V \to \mathbb{C}$ analytic at $0$ and a continuous bilinear form $q$ on $V$ with $g(2z) = 4 g(z) + f(z) + q(z, z)$ for all $z$ near $0$.
 
@@ -182,6 +178,6 @@ Lean: `New.exists_factor_of_automorphy` (Lib/Shimura/ComplexTheta/AppellHumbertD
 
 *End of the proof of the theorem.* With $\sigma$ from the doubling equation, the last lemma gives $B$. Put $\chi(l) = \sigma(l)/\sigma(0)/\exp(B(l, l)/2)$. The doubling equation at points of $L$ gives $|\chi(l)| = 1$, by a computation that eliminates $\exp(q(l, l))$, and the factor of automorphy gives the cocycle rule of Appell-Humbert data. So the $\theta_i$ are theta functions of type $(B, \chi)$.
 
-For positivity, assume that $E(v, iv) \leq 0$ for some $v \neq 0$. By the Liouville argument of [Section 2](/chapter/complex-abelian-varieties/) (`New.IsAppellHumbert.apply_smul_of_nonpos`), applied to each $\theta_i$, one gets $\theta(t v) = \exp(t^2 B(v, v)/2)\,\theta(0)$ for all $t \in \mathbb{C}$. So $\theta(tv)$ and $\theta(0)$ are proportional, and since $N$ embeds $A$, $e(tv) = e(0)$ for all $t$. By condition 5 of a uniformization, the linear map $t \mapsto t v$ and the zero map give the same homomorphism, so $v = 0$ (`New.Uniformisation.linear_ext`). $\square$
+For positivity, assume that $E(v, iv) \leq 0$ for some $v \neq 0$. The Liouville argument of [Section 2](/chapter/complex-abelian-varieties/) (`New.IsAppellHumbert.apply_smul_of_nonpos`) makes $\theta(tv)$ proportional to $\theta(0)$ for all $t \in \mathbb{C}$. Since $N$ embeds $A$, $e(tv) = e(0)$, and condition 5 of a uniformization gives $v = 0$ (`New.Uniformisation.linear_ext`). $\square$
 
 **Remark (Formalization).** The parallelogram law is a hypothesis here, as in [Section 4](/chapter/complex-abelian-varieties/). In the PEL families of the next chapter it is part of the data.

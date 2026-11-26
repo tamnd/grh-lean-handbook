@@ -23,11 +23,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Abelian schemes
 
-The integral model of [the next chapter](/chapter/integral-model/) is a family of abelian varieties over a base of mixed characteristic. So the source needs abelian schemes over a general base, not only complex tori. This section gives the definition of the source, the pairing on the Picard group that replaces the theorem of the cube, and the results on isogenies and torsion that later chapters use. The proofs here are algebraic. They use the description of schemes and line bundles through their points from [Schemes through their points](/chapter/schemes-through-points/).
+The integral model of [the next chapter](/chapter/integral-model/) is a family of abelian varieties over a base of mixed characteristic. So the source needs abelian schemes over a general base. This section gives the definition of the source, the pairing on the Picard group that replaces the theorem of the cube, and the results on isogenies and torsion that later chapters use. The proofs use the language of [Schemes through their points](/chapter/schemes-through-points/).
 
 ### Group objects
 
-Let $S$ be a scheme. The source works in the category of schemes over $S$ and writes a morphism $x \colon T \to A$ over $S$ as a $T$-point of $A$. A *commutative group object* in this category is the class abbreviation `New.AddObj`: an additive group object of Mathlib whose addition is commutative. For such $A$ and every $S$-scheme $T$, the set of $T$-points $A(T)$ is an abelian group, functorial in $T$. The source makes this group structure a global instance by `attribute [instance] Hom.addCommGroup` at line 54 of `Lib/Shimura/AbelianScheme/Basic.lean`. An action of a ring $O$ is the class `New.ModuleObj`: $O$-module structures on all $A(T)$, compatible with pull-back along $T' \to T$.
+Let $S$ be a scheme. A morphism $x \colon T \to A$ over $S$ is a $T$-point of $A$. A *commutative group object* over $S$ is the class abbreviation `New.AddObj`: an additive group object of Mathlib with commutative addition. Every $A(T)$ is then an abelian group, by the global instance `attribute [instance] Hom.addCommGroup` at line 54 of `Lib/Shimura/AbelianScheme/Basic.lean`. An action of a ring $O$ is the class `New.ModuleObj`.
 
 **Remark (Formalization).** The global instance `Hom.addCommGroup` and the reducible instance `ModuleObj.homModule` (line 66) put group and module structures on all sets of morphisms into a group object. None of them is unsound, but they change instance search in every file that imports `Lib/Shimura/AbelianScheme/Basic.lean`. This is finding F-023 of the plan. It does not change the meaning of any statement of this chapter.
 
@@ -41,9 +41,9 @@ Lean: `New.IsAbelianScheme` (Lib/Shimura/AbelianScheme/Basic.lean).
 
 **Remark (Formalization).** The source asks for divisibility where the textbook asks for connected fibres. The docstring of the file says so. The proofs of the source use the condition at one place: in the uniformization of [Section 6](/chapter/complex-abelian-varieties/), the exponential map has an image of finite index $m$ in $A(\mathbb{C})$, and surjectivity of multiplication by $m$ shows that the image is everything. The question whether the two definitions agree is open in the findings of the plan (F-062, question Q-63). The following argument, not checked in Lean, shows that they agree.
 
-Let $A \to S$ be smooth and proper with a commutative group structure. Surjectivity of a morphism over $S$ can be tested on the fibres, and both conditions are conditions on the fibres. So let $S = \operatorname{Spec} k$ with $k$ a field, and let $\bar k$ be an algebraic closure. Let $A^0$ be the connected component of $0$ in $A_{\bar k}$. It is an abelian variety, and $\pi_0 = A_{\bar k}/A^0$ is a finite group of order $r$. If multiplication by every $m \neq 0$ is surjective on $A$, it is surjective on $A_{\bar k}$, and so on $\bar k$-points, since $A$ is of finite type. Then multiplication by $r$ is surjective on the finite group $\pi_0$ and also kills it, so $\pi_0 = 0$ and $A_{\bar k}$ is connected. Conversely, if $A_{\bar k}$ is connected, it is an abelian variety, and multiplication by $m \neq 0$ is an isogeny, hence surjective (Mumford, *Abelian Varieties*, Section 6, Application 2). So `New.IsAbelianScheme` is the textbook notion of an abelian scheme with a commutative group law.
+Let $A \to S$ be smooth and proper with a commutative group structure. Both conditions can be tested on the geometric fibres, so let $S = \operatorname{Spec} \bar k$ with $\bar k$ algebraically closed. The component group $\pi_0 = A/A^0$ is finite of some order $r$. If multiplication by $r$ is surjective on $A$, it is surjective on $\pi_0$ and also kills it, so $\pi_0 = 0$. Conversely, if $A$ is connected, it is an abelian variety, and multiplication by $m \neq 0$ is an isogeny, hence surjective (Mumford, *Abelian Varieties*, Section 6, Application 2). So `New.IsAbelianScheme` is the textbook notion with a commutative group law.
 
-The source does not fix the relative dimension in the definition. Where a result needs it, it adds the hypothesis `SmoothOfRelativeDimension g A.hom` of Mathlib. The base change of an abelian scheme is an abelian scheme: this is an instance in `Lib/Shimura/AbelianScheme/Pairings.lean`. A *homomorphism* is a morphism that is additive on all groups of points (`New.IsAdditive`). An *isogeny* is a homomorphism that is finite, flat and surjective as a morphism of schemes (`New.IsIsogeny`, a class abbreviation). For a section $z$ of $A$ over $S$, the *translation* by $z$ is $x \mapsto x + z$ (`New.translation`).
+The source does not fix the relative dimension in the definition. Where a result needs it, it adds the hypothesis `SmoothOfRelativeDimension g A.hom`. Base change preserves abelian schemes (an instance in `Lib/Shimura/AbelianScheme/Pairings.lean`). A *homomorphism* is a morphism that is additive on all groups of points (`New.IsAdditive`). An *isogeny* is a homomorphism that is finite, flat and surjective (`New.IsIsogeny`, a class abbreviation). The *translation* by a section $z$ is $x \mapsto x + z$ (`New.translation`).
 
 ### The pairing and the parallelogram law
 
@@ -60,7 +60,7 @@ in $\operatorname{Pic}(T)$, for every $S$-scheme $T$ and all $T$-points $x, y$ o
 
 Lean: `New.Pic.ParallelogramLaw` (Lib/Shimura/AbelianScheme/Basic.lean).
 
-For the textbook, the theorem of the cube gives, for every line bundle $\mathcal{L}$ on an abelian variety $X$ and all morphisms $f, g, h \colon Y \to X$, the relation $(f + g + h)^*\mathcal{L} \cong (f + g)^*\mathcal{L} \otimes (f + h)^*\mathcal{L} \otimes (g + h)^*\mathcal{L} \otimes f^*\mathcal{L}^{-1} \otimes g^*\mathcal{L}^{-1} \otimes h^*\mathcal{L}^{-1}$ (Mumford, *Abelian Varieties*, Section 6, Corollary 2). For a symmetric $\mathcal{L}$, that is $(-1)^*\mathcal{L} \cong \mathcal{L}$, it gives the parallelogram law and $[m]^*\mathcal{L} \cong \mathcal{L}^{m^2}$ (Mumford, Section 6, Corollary 3).
+For the textbook, the theorem of the cube gives $(f + g + h)^*\mathcal{L} \cong (f + g)^*\mathcal{L} \otimes (f + h)^*\mathcal{L} \otimes (g + h)^*\mathcal{L} \otimes f^*\mathcal{L}^{-1} \otimes g^*\mathcal{L}^{-1} \otimes h^*\mathcal{L}^{-1}$ (Mumford, *Abelian Varieties*, Section 6, Corollary 2). For a symmetric $\mathcal{L}$ it gives the parallelogram law and $[m]^*\mathcal{L} \cong \mathcal{L}^{m^2}$ (Section 6, Corollary 3).
 
 **Remark (Formalization).** The source does not prove the theorem of the cube. It takes the parallelogram law as a hypothesis wherever it is needed. In the PEL families of [the next chapter](/chapter/integral-model/), the law is a field of the data: `New.PEL.HasClassLaws.parallelogramLaw` in `Lib/Shimura/ThetaModuli/PELThetaTori.lean` reads it off the class laws that the family carries. So the source never needs the cube for a general line bundle, and the classes to which it applies the results below are the ones whose law is part of the data.
 
@@ -98,13 +98,13 @@ Lean: `New.Variety.locallyQuasiFinite_of_pull_picClass` (Lib/Shimura/AbelianSche
 
 Lean: `New.Variety.isIsogeny_of_locallyQuasiFinite` (Lib/Shimura/AbelianScheme/IsogenyFlatness.lean).
 
-The textbook form is that a quasi-finite surjective homomorphism of abelian schemes is finite and flat (Bosch, Lütkebohmert and Raynaud, *Néron Models*, Section 7.3). Finiteness follows from properness and quasi-finiteness. For flatness the source localizes $B$ at a generic point of its special fibre, applies the local criterion of flatness there, and spreads flatness over $B$ by translations, which form an fpqc cover.
+The textbook form is that a quasi-finite surjective homomorphism of abelian schemes is finite and flat (Bosch, Lütkebohmert and Raynaud, *Néron Models*, Section 7.3). For flatness the source localizes $B$ at a generic point of its special fibre, applies the local criterion of flatness, and spreads flatness over $B$ by translations.
 
 **Theorem.** Let $k$ be an Artinian ring. Let $A$ be a commutative group scheme and $B$, $C$ abelian schemes over $\operatorname{Spec} k$. Let $f \colon A \to B$ be an isogeny and $g \colon A \to C$ a homomorphism. Assume that for every finite local Noetherian $k$-algebra $S$ and every point $y \colon \operatorname{Spec} S \to A$ with $f \circ y = 0$, one has $g \circ y = 0$. Then there is a homomorphism $j \colon B \to C$ with $j \circ f = g$.
 
 Lean: `New.Variety.exists_isAdditive_comp_eq_of_isIsogeny` (Lib/Shimura/AbelianScheme/IsogenyFlatness.lean).
 
-This is the universal property of the quotient $B = A/\ker f$ (Edixhoven, van der Geer and Moonen, *Abelian Varieties*, Chapter IV, Section 3). The kernel of $f$ is $\operatorname{Spec} S$ for a finite $k$-algebra $S$, by the proposition on finite kernels. Over an Artinian ring, $S$ is a product of finite local Noetherian algebras, so the hypothesis says that $g$ kills the kernel. Then $g$ descends along the fppf cover $f$.
+This is the universal property of the quotient $B = A/\ker f$ (Edixhoven, van der Geer and Moonen, *Abelian Varieties*, Chapter IV, Section 3). Over an Artinian ring the finite kernel is a product of spectra of finite local Noetherian algebras, so the hypothesis says that $g$ kills the kernel.
 
 ### Torsion is unramified
 
@@ -114,7 +114,7 @@ Lean: `New.Variety.eq_zero_of_nsmul_eq_zero_of_comp_eq_zero` (Lib/Shimura/Abelia
 
 *Proof.* Let $I \subseteq R$ be the ideal that cuts out the locus where $x = 0$. The point $\operatorname{Spec} K$ lies in this locus, so $I$ is a proper ideal, contained in the maximal ideal. Over $R/I^2$ the section $x$ vanishes modulo the square-zero ideal $I/I^2$. Sections that vanish modulo a square-zero ideal form a group isomorphic to $g$ copies of $I/I^2$, through the tangent coordinates of `Lib/Shimura/AbelianScheme/TangentCoordinates.lean`. Multiplication by the unit $m$ is injective on this group, so $x = 0$ over $R/I^2$. This gives $I \subseteq I^2$, and Nakayama's lemma gives $I = 0$. $\square$
 
-In words: over a local ring in which $m$ is a unit, an $m$-torsion section is determined by its value at any one point, for example at the closed point. This is the form of the classical fact that the $m$-torsion of an abelian scheme is étale when $m$ is invertible. The next chapter uses it to compare level structures in characteristic $0$ and in characteristic $p \nmid m$.
+So over a local ring in which $m$ is a unit, an $m$-torsion section is determined by its value at any one point. This is a form of the classical fact that the $m$-torsion is étale when $m$ is invertible.
 
 ### Constant functions
 
@@ -126,4 +126,4 @@ Lean: `New.HasConstFunctions` (Lib/Shimura/AbelianScheme/Basic.lean).
 
 Lean: `New.Variety.hasConstFunctions_of_isPullback` (Lib/Shimura/AbelianScheme/Basic.lean).
 
-The textbook form is $H^0(X, \mathcal{O}_X) = C$, which holds because $H^0(A, \mathcal{O}_A) = k$ for a proper, geometrically integral $k$-scheme, and cohomology commutes with the flat base change $k \to C$. The source states the consequence on points that the theta structures of [Section 5](/chapter/complex-abelian-varieties/) need: a section of a line bundle that is fixed up to a global function is fixed up to a constant of the base.
+The textbook form is $H^0(X, \mathcal{O}_X) = C$, from $H^0(A, \mathcal{O}_A) = k$ and flat base change. The source states the consequence on points that the theta structures of [Section 5](/chapter/complex-abelian-varieties/) need.
