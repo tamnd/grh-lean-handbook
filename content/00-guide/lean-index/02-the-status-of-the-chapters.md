@@ -83,7 +83,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 9 | 6 | The CM curve, its formal group and the normal form | drafted | 12,735 |
 | 9 | 7 | The count and the divisibility of standard data | drafted | 13,326 |
 | 9 | 8 | Theta kernels and gauges | drafted | 13,819 |
-| 9 | 9 | Short columns and the gain | planned | 0 |
+| 9 | 9 | Short columns and the gain | drafted | 14,131 |
 | 9 | 10 | Marked primes and the valuation of a chain | drafted | 13,685 |
 | 9 | 11 | The seesaw identity, part 2: assembly | drafted | 14,413 |
 | 9 | 12 | The archimedean size of the composite lift | drafted | 12,936 |
@@ -116,11 +116,11 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 10 | Grids, columns and turns | drafted | 14,489 |
 | 11 | 11 | Deep level Poincaré series and spanning forms | drafted | 13,433 |
 | 11 | 12 | False lifts | drafted | 14,625 |
-| 11 | 13 | The divisibility is sharp | planned | 0 |
-| 11 | 14 | The comparison operator, part 2 | planned | 0 |
+| 11 | 13 | The divisibility is sharp | drafted | 11,804 |
+| 11 | 14 | The comparison operator, part 2 | drafted | 14,562 |
 | 11 | 15 | Hecke values of character lifts | drafted | 12,609 |
 | 11 | 16 | The height of one lift determinant | drafted | 10,947 |
-| 11 | 17 | The proof of Theorem C | planned | 0 |
+| 11 | 17 | The proof of Theorem C | drafted | 10,336 |
 | 12 | 1 | Regular families: the plan | drafted | 14,812 |
 | 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,594 |
 | 12 | 3 | Auxiliary primes and first-order deformations | drafted | 14,485 |

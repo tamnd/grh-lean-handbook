@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.12
+
+Four new chapters. Volume 11 is now complete.
+
+- Volume 9, chapter 9: short columns and the gain (#182).
+- Volume 11, chapter 13: the divisibility is sharp (#180).
+- Volume 11, chapter 14: the comparison operator, part 2 (#179).
+- Volume 11, chapter 17: the proof of Theorem C (#181).
+
 ## v0.3.11
 
 Four new chapters of Volume 11, and one fix.
