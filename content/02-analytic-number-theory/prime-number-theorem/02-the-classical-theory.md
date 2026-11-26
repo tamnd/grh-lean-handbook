@@ -19,7 +19,7 @@ The orthogonality of the characters modulo $q$ gives
 $$\psi(x; q, a) = \frac{1}{\varphi(q)} \sum_{\chi \bmod q} \bar\chi(a)\, \psi(x, \chi).$$
 The principal character gives the main term: $\psi(x, \chi_0) = \psi(x) + O(\log q \log x)$, and $\psi(x) \sim x$ by the prime number theorem. So the prime number theorem for the progression $a \bmod q$ is the statement $\psi(x, \chi) = o(x)$ for each $\chi \neq \chi_0$, and an error term for $\psi(x; q, a)$ is a bound for $\psi(x, \chi)$. The Dirichlet series of $\chi(n)\Lambda(n)$ is $-L'/L(s, \chi)$. So the size of $\psi(x, \chi)$ is decided by the zeros of $L(s, \chi)$ near the line $\operatorname{Re} s = 1$.
 
-### The zero-free region
+### The region of de la Vallée Poussin
 
 The classical argument starts from the inequality
 $$3 + 4\cos\theta + \cos 2\theta = 2(1 + \cos\theta)^2 \geq 0.$$
