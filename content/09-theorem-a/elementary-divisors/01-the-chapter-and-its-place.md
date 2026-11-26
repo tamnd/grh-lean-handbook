@@ -22,7 +22,7 @@ The measure of "nearly onto" is a colength. For submodules $M$, $N$ of a module 
 
 - the symmetric powers of the standard representation of $\mathrm{GL}_k$ and their divided power lattices, from [Weyl modules](/chapter/weyl-modules/);
 - the parahoric and Levi subgroups of $\mathrm{GL}_k(W)$ for a two block partition, and the count of cosets of a parahoric subgroup over a finite field, from [finite general linear groups](/chapter/finite-gln/);
-- the Hermite form over a valuation ring, from [twisted lattices](/chapter/twisted-lattices/).
+- the Hermite and Smith forms over a valuation ring, from [Fitting ideals](/chapter/fitting-ideals/#lengths-and-determinants).
 
 ### The notation
 
