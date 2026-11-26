@@ -54,7 +54,7 @@ No file of the chapter imports a file of a later chapter of the volume. The impo
 
 ### The sketch
 
-Section 2 turns orders into safe moves and proves the walk. Section 3 builds deep points over a long gap of the Frobenius orbit, with a Taylor expansion in $E$. Section 4 chooses the cuts for the sparse thick pattern and for an arbitrary pattern, and proves the two cut theorems. Section 5 treats sides whose jumps avoid a window below $0$. Section 6 proves that if few jumps are low, the bad cocycles have bounded colength. Section 7 passes to lattices and states the four outputs. Section 8 has exercises and notes.
+Section 2 turns orders into safe moves and proves the walk. Section 3 builds deep points over a long gap of the Frobenius orbit, with a Taylor expansion in $E$. Section 4 chooses the cuts for the sparse thick pattern and for an arbitrary pattern, and proves the two cut theorems. Section 5 treats sides whose jumps avoid a window below $0$. Section 6 proves that if few jumps are low, the bad cocycles have bounded colength. Section 7 passes to lattices, states the four outputs, and ends with exercises and notes.
 
 The idea of the walk is simple. Each side wants a lift of its cocycle to $W(C^\flat)$ that Frobenius almost fixes. One cannot move both lifts at once. So one side moves first, to a stop, while the other rests; then the other side moves; then the first side goes on to its point. A move is safe when the orders of the moved part and the depth of the point at rest add up to the bound that a cokernel killer of $T$ allows. Large jumps of one sign make one side "down" and the other "up", and then the side that is down is a stop.
 
