@@ -60,7 +60,7 @@ The theta lift of forms, edges and arrows are in [theta lifts and the seesaw](/c
 
 Rallis' inner product formula for sharp data, the vacuum coefficients and the Rallis series are in [the Rallis inner product formula](/chapter/rallis-inner-product/). Section 5 states the one result that this chapter applies.
 
-The Hecke values of character lifts are in [Hecke values of character lifts](/chapter/hecke-values/), a later chapter of this volume. Section 6 uses one lemma from it. The lemma is a statement about any descent pair. It does not depend on the results of this chapter.
+The file of this chapter imports the file of [character lifts and tested forms](/chapter/character-lifts/), the next chapter of this volume, because two general lemmas on descent pairs are stated there. Section 3 uses the first, which turns the class sum on $V$ into a Petersson product. Section 6 uses the second, which says that the Hecke polynomial at the root of a lift kills every form with the Hecke polynomials of a lift. Neither lemma depends on the results of this chapter.
 
 ### The sketch
 

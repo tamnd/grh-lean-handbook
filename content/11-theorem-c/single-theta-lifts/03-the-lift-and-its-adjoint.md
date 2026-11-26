@@ -89,7 +89,7 @@ Lean: `New.Data.singleLift_apply` (New/Determinant/Norms/AdjointThetaLift.lean),
 
 ### The descent is the adjoint
 
-The inner product on $V$ is a class sum. To compare it with the integral over $[U(V)]$ the proof uses one lemma from a later chapter.
+The inner product on $V$ is a class sum. To compare it with the integral over $[U(V)]$ the proof uses one lemma from the next chapter.
 
 **Lemma (Class sums and Petersson products).** Let $V$ be standard, let $l$ be twice the Harish-Chandra parameter of the weight $(\kappa, e)$, and let $\Xi$, $\Xi'$ be algebraic forms of weight $(\kappa, e)$ on which a level $K = \mathrm{levelOf}(H)$ acts by a character. Then
 
@@ -99,7 +99,7 @@ where $K_0$ is the stabilizer of the standard lattice and $d_\kappa$ is the dime
 
 Lean: `New.LevelPlaces.LevelForm.inner_eq_petersson` (New/OneLift/HeckeValues/CharacterLift.lean).
 
-The lemma is a general fact on definite spaces. The Petersson product is an integral over $[U(V)]$. It splits into a sum over the classes and an integral over the compact real group, and the Schur orthogonality relations give $d_\kappa$. The source places it in the file of [Hecke values of character lifts](/chapter/hecke-values/).
+The lemma is a general fact on definite spaces. The Petersson product is an integral over $[U(V)]$. It splits into a sum over the classes and an integral over the compact real group, and the Schur orthogonality relations give $d_\kappa$. The source places it in the file of [character lifts and tested forms](/chapter/character-lifts/), and the file of this chapter imports that file to use it.
 
 **Theorem (Adjointness).** Let $l$ fit the pair, let $y$ be a form of type $l$ on $W$, and let $\Xi$ be a form on $V$. Then
 
