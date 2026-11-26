@@ -130,6 +130,6 @@ Lean: `New.second_inequality` (Lib/ClassField/Global/AlbertBrauerHasseNoether.le
 $$h \cdot \# D_v \leq [L : K] \sum_f f(\varpi_v),$$
 since the sum over the $h$ characters is $h$ if $\varpi_v \in W$ and $0$ otherwise. Take prime densities: the left side has density $h$, and the right side has density $[L : K] (1 - \sum_f m_f)$. Since $h \geq 1$, every $m_f = 0$, and $h \leq [L : K]$. For (b), the sum $\sum_f f(\varpi_v / a)$ has density $1$, so it is nonzero for infinitely many $v$ of prime norm, and then $\varpi_v / a \in W$. $\square$
 
-This is the second inequality of Section 2, in the finite idele form, with the equidistribution statement (b) added. Part (b) is the source of Chebotarev in Section 7.
+This is the second inequality of Section 2, in the finite idele form, with the equidistribution statement (b) added. Part (b) is the source of Chebotarev in Section 8.
 
 **Remark (Formalization).** The textbook second inequality is $[C_K : N C_L] \leq [L : K]$ for the full norm group. The source states it for every open $W$ that contains the norms and the totally positive elements. Each application proves that its $W$ is open.

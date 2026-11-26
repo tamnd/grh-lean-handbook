@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The classical theory
 
-This section recalls the textbook statements that the source formalizes. It uses the notation of Neukirch, *Algebraic Number Theory* (Springer, 1999), Chapters V and VI, and of Milne, *Class Field Theory* (version 4.03, 2020). Nothing in this section is a statement of the source. Sections 3 to 7 give the source forms and compare them with the forms here.
+This section recalls the textbook statements that the source formalizes. It uses the notation of Neukirch, *Algebraic Number Theory* (Springer, 1999), Chapters V and VI, and of Milne, *Class Field Theory* (version 4.03, 2020). Nothing in this section is a statement of the source. Sections 3 to 8 give the source forms and compare them with the forms here.
 
 ### Ideles
 
@@ -58,7 +58,7 @@ The source works with $J_{K,f}$ in place of $J_K$. The classical theory gives a 
 
 *Proof.* The group $K_\infty^{\times,0}$ is $\prod_{\text{real}} \mathbb{R}_{>0} \times \prod_{\text{complex}} \mathbb{C}^\times$, and $\theta_K$ is trivial on it. So $\theta_K$ factors through $J_K / K_\infty^{\times,0} = J_{K,f} \times \{\pm 1\}^{r_1}$. By weak approximation every sign vector is the sign vector of some $x \in K^\times$. So every class in $J_K / K^\times K_\infty^{\times,0}$ has a representative in $J_{K,f}$, and $\theta_K(J_{K,f}) = \theta_K(J_K)$, which is the full group. A finite idele $a$ lies in $K^\times K_\infty^{\times,0}$ exactly when $a = x$ in $J_{K,f}$ for some $x \in K^\times$ that is positive at each real place, that is, $x \in K^\times_+$. Pass to closures for the kernel, and to the norm group of $L$ for the last claim. $\square$
 
-For a totally complex field, $K^\times_+ = K^\times$, and the proposition says that $J_{K,f}/K^\times$ has the abelianised Galois group as its profinite completion. This is the case of the existence theorem that the source proves (Section 7).
+For a totally complex field, $K^\times_+ = K^\times$, and the proposition says that $J_{K,f}/K^\times$ has the abelianised Galois group as its profinite completion. This is the case of the existence theorem that the source proves (Section 8).
 
 **Example (Finite ideles of $\mathbb{Q}$).** Every finite idele of $\mathbb{Q}$ is a product $r u$ with $r \in \mathbb{Q}_{>0}$ and $u \in \hat{\mathbb{Z}}^\times = \prod_p \mathbb{Z}_p^\times$, in a unique way. So $J_{\mathbb{Q},f} / \mathbb{Q}^\times_+ \cong \hat{\mathbb{Z}}^\times$, and the proposition becomes the theorem of Kronecker and Weber, $\operatorname{Gal}(\mathbb{Q}^{\mathrm{ab}}/\mathbb{Q}) \cong \hat{\mathbb{Z}}^\times$. With the arithmetic convention, the idele with $p$ at the place $p$ and $1$ elsewhere maps to $\sigma_p$ on $\mathbb{Q}(\zeta_m)$ for $p \nmid m$. This idele is $p \cdot u$ with $u_\ell = p^{-1}$ for $\ell \neq p$ and $u_p = 1$. The principal factor $p$ maps to $1$, so $u$ maps to $\sigma_p$. In general a unit idele $u$ acts on $\zeta_m$ as $\zeta_m \mapsto \zeta_m^{a}$, with $a \equiv u^{-1}$ modulo $m$. With the geometric convention of the source the exponent is $u$.
 

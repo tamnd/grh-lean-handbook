@@ -37,11 +37,11 @@ The source follows the classical order of the cohomological proof, with an analy
 3. **Hecke $L$-functions** (Section 5). The source proves that a partial Hecke $L$-function of a Hecke character $\psi \neq 1$ extends past $s = 1$ along the real line. It uses a theta sum in place of Poisson summation. From this it gets the prime densities that the second inequality needs.
 4. **The second inequality** (Section 5). For a Galois extension $L/K$, an open subgroup of the finite ideles that contains the totally positive elements and the norms from $L$ has index at most $[L : K]$.
 5. **Albert, Brauer, Hasse and Noether** (Section 6). A class in the global Brauer group that is locally zero is zero. The source proves a form with a hypothesis at the real places that is stronger than the textbook hypothesis.
-6. **Reciprocity** (Section 6). The Artin map kills the totally positive elements of $K^\times$. The source follows Artin's method with cyclotomic characters.
-7. **Norm theorems** (Section 6). The Artin map is surjective, its kernel on the extension cut out by a character is the norm group, and the Hasse norm theorem holds for cyclic extensions.
-8. **Existence and Chebotarev** (Section 7). For totally complex $K$, the existence theorem comes from Kummer theory and the norm theorems. Chebotarev comes from the second inequality and the surjectivity of the Artin map.
+6. **Reciprocity** (Section 7). The Artin map kills the totally positive elements of $K^\times$. The source follows Artin's method with cyclotomic characters.
+7. **Norm theorems** (Section 7). The Artin map is surjective, its kernel on the extension cut out by a character is the norm group, and the Hasse norm theorem holds for cyclic extensions.
+8. **Existence and Chebotarev** (Section 8). For totally complex $K$, the existence theorem comes from Kummer theory and the norm theorems. Chebotarev comes from the second inequality and the surjectivity of the Artin map.
 
-Section 3 fixes the setting: the field $\Omega$, the places of $\Omega$, Frobenius elements and finite ideles. The chapter [CM fields and places](/chapter/cm-fields/) explains the fields and the places in more detail. Section 8 gives a table of the differences between the source and Milne's notes *Class Field Theory*, the exercises, and the references.
+Section 3 fixes the setting: the field $\Omega$, the places of $\Omega$, Frobenius elements and finite ideles. The chapter [CM fields and places](/chapter/cm-fields/) explains the fields and the places in more detail. Section 9 gives a table of the differences between the source and Milne's notes *Class Field Theory*, the exercises, and the references.
 
 ### What the chapter does not claim
 
