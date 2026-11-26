@@ -1,0 +1,55 @@
+---
+title: What the chapter proves
+lean:
+  - New/Congruences/Selmer/SelmerData.lean
+  - New/Congruences/Selmer/Count.lean
+  - New/Congruences/Selmer/OneSystem.lean
+  - New/Congruences/Selmer/Mirror.lean
+  - New/Congruences/Selmer/Untied.lean
+  - New/Congruences/Selmer/Descent.lean
+decls: []
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## What the chapter proves
+
+This chapter makes Selmer groups short by adding auxiliary primes. It starts from a Galois lattice $T = O^n$ over a CM field $E$ with local conditions, and it adds primes $v$ at which a class may ramify, but only in a fixed way: the value of the class at the tame generator $\gamma_v$ is a fixed multiple $s_v$ of its value at the Frobenius element $\varphi_v$. These are the *ties*. The main result says that a bounded number of tied primes makes the *tied Selmer group* no longer than a global term plus local terms, and these terms do not depend on the level $\ell^N$ of the auxiliary data. Two further results describe the tied Selmer groups of all twists at once: one matrix of polynomials computes their lengths, and a tie polynomial bounds the classes that the ties do not catch.
+
+### Its place in the plan
+
+The plan of the whole proof is in [the theorem and the plan](/chapter/theorem-and-plan/). Theorem C needs regular families of twists, and [the chain of the proof](/chapter/regular-families-plan/#the-chain-of-the-proof) shows that a regular family needs twists with short Selmer groups. That step is the twisting theorem. Its proof has two chapters: this one, which works with a general *Selmer datum*, and [Stickelberger systems and the twisting theorem](/chapter/twisting-theorem/), which applies the results to the main summands of [the main summands of the attached Galois representations](/chapter/main-summands/). The file Line of that chapter uses the descent theorem of [the descent](/chapter/tied-selmer-groups/#the-descent), the sharp polynomial of [one system for all twists](/chapter/tied-selmer-groups/#one-system-for-all-twists), and the two bounds of [untied classes](/chapter/tied-selmer-groups/#untied-classes). The file MainSummands uses the bound for the global term of [the global term](/chapter/tied-selmer-groups/#the-global-term).
+
+This volume is the argument itself. The reader must follow every step from this book. The background is in Volumes 2 to 8, and each piece of it is stated in one line with a link.
+
+### What it uses
+
+1. Auxiliary prime data, Chebotarev's theorem with a Frobenius element near a given element, tied primes and tie relations: [auxiliary primes](/chapter/tied-traces/#auxiliary-primes), in the previous chapter.
+2. Selmer modules as modules of functions cut out by linear relations, and the bound by rank and length for a module cut out by the relations of a lattice: [relations and cocycles](/chapter/fitting-ideals/#relations-and-cocycles).
+3. The exact length of the kernel of a matrix over a discrete valuation ring, by maximal minors: [lengths and determinants](/chapter/fitting-ideals/#lengths-and-determinants).
+4. The Greenberg-Wiles count as an inequality, with relations in place of dual Selmer cocycles: [relations in place of the dual Selmer group](/chapter/local-duality/#relations-in-place-of-the-dual-selmer-group).
+5. Selmer cocycles with local conditions and the local cocycle modules: [Selmer groups and the Greenberg-Wiles formula](/chapter/local-duality/#selmer-groups-and-the-greenberg-wiles-formula).
+6. Coefficient rings, CM fields and the element $g^c$: [CM fields](/chapter/cm-fields/) and [building the representations](/chapter/building-representations/).
+
+No file of this chapter imports a file of a later chapter of this volume. The file SelmerData imports AuxiliaryPrimes, which `volume.yaml` puts in the earlier chapter [tied traces and even classes](/chapter/tied-traces/).
+
+### Notation
+
+Fix a prime $\ell$. Let $\Omega$ be the algebraic closure of $\mathbb{Q}$, let $E \subseteq \Omega$ be a CM field, and let $G = \mathrm{Gal}(\Omega/E)$. Write $g^c$ for the conjugate of $g$ by the chosen complex conjugation (`New.conjGal`), and
+$$\iota_b(g) = g \text{ if } b = \text{true}, \qquad \iota_b(g) = (g^c)^{-1} \text{ if } b = \text{false},$$
+for `New.idOrConjInv`. For a prime $v$ write $\bar v$ for its conjugate. The ring $O$ is the ring of integers of a finite extension of $\mathbb{Q}_\ell$, with valuation $v$ (`addVal`), and $O/a$ is `New.QuotSpan a`. The character $\mathrm{cyc}$ is the $\ell$-adic cyclotomic character. All lengths are lengths of $O$-modules, with values in $\{0, 1, 2, \dots, \infty\}$. For a set $S$ of places, $S \cup J \cup \bar J$ is `New.Selmer.unionWithConj S J`.
+
+A *cocycle* for $\rho \colon G \to \mathrm{GL}_n(O)$ with values in an $O$-module $B$ is a function $z \colon G \to B^n$ with $z(gh) = z(g) + \rho(g) z(h)$. The module $\mathrm{Sel}(\rho, S, L, B)$ (`New.selmerModule`) consists of the locally constant cocycles that vanish on the inertia groups above the places outside $S$ and obey the set $L$ of linear relations. A relation is a finite sum $\sum_g f(g)[g]$ with matrix coefficients, and $z$ obeys it if $\sum_g f(g) z(g) = 0$.
+
+### A sketch
+
+Let $W = T/a$. A class in $H^1(E, W)$ is replaced by a cocycle. The datum has an element $\gamma_*$ that acts by a scalar $\zeta$ with $\zeta^2 - 1$ a unit. Each class has exactly one cocycle that vanishes at $\gamma_*$, so the source works with these cocycles. Sah's lemma says that such a cocycle is determined by its values on the group $H$ generated by the commutators with $\gamma_*$ and $\gamma_*^c$. On $H$ the action is trivial, so there the cocycle is a homomorphism.
+
+The descent runs as follows.
+
+1. *Count.* The Greenberg-Wiles count bounds the length of the tied Selmer group by the length of a module of relations, the *dual Selmer group*, plus local terms. The ties make the local terms at the auxiliary primes cancel.
+2. *Mirror.* If a class $z$ of the tied Selmer group has a unit value and, at every possible new prime, the values of $z$ at the Frobenius element are values of tied classes at the tame generator, then reciprocity at the conjugate primes $P$ and $\bar P$ forces a bilinear form, the *mirror form*, to vanish. Then each member of the dual Selmer group gives a $G$-map $W \to W^{*c}$. So the dual Selmer group is no longer than the global term.
+3. *Descent.* If the hypothesis of step 2 fails at a new prime $P$, then $P$ can be added with a unit slope so that the sum of the lengths of all tied Selmer groups drops. This sum is bounded independently of the level. So after a bounded number of steps the hypothesis holds, and the groups are short.
+
+The files OneSystem and Untied supply two tools for the next chapter. All twists of $T$ by characters $\prod_j (1 + x_j)^{h_j}$ are cut out by one matrix over a ring of polynomials, so their lengths are minima of valuations of polynomials. The ties catch all classes except those bounded by the valuation of a tie polynomial, a product of determinants $\det((1 + Y)\rho(\varphi_w) - 1)$.
+
+The source claims these results. Lean accepts them, if the reported checks hold. The chapter reports what the declarations state and how the proofs go.
