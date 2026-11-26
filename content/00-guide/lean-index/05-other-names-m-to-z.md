@@ -9,11 +9,12 @@ generated_by: scripts/lean_index.py
 
 ## Other names, M to Z
 
-This section has the 1716 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+This section has the 1938 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
 
 - `New.map_const_smul_eq_inv_distribHaarChar_smul`: `Lib/General/Measure/HaarModulus.lean`, [line 235](lean:Lib/General/Measure/HaarModulus.lean#L235). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.map_star_CM`: `Lib/Adelic/Adeles/Basic.lean`, [line 387](lean:Lib/Adelic/Adeles/Basic.lean#L387). Cited in [Chapter](/chapter/cm-fields/).
 - `New.map_star_complex`: `Lib/Adelic/Adeles/Basic.lean`, [line 383](lean:Lib/Adelic/Adeles/Basic.lean#L383). Cited in [Chapter](/chapter/cm-fields/).
+- `New.mapDomain_mem_universalLevelAlgebra`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 71](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L71). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.mass`: `Lib/Adelic/Unitary/Defs.lean`, [line 557](lean:Lib/Adelic/Unitary/Defs.lean#L557). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.mass_eq_mass_succ_mul_normDensity`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 764](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L764). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.mass_pos`: `Lib/SiegelWeil/Mass.lean`, [line 102](lean:Lib/SiegelWeil/Mass.lean#L102). Cited in [Chapter](/chapter/siegel-weil/).
@@ -28,8 +29,10 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.mellin_thetaSeries`: `Lib/Analytic/DirichletTheta.lean`, [line 231](lean:Lib/Analytic/DirichletTheta.lean#L231). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.mellin_thetaSeries_moebius`: `Lib/Analytic/DirichletTheta.lean`, [line 243](lean:Lib/Analytic/DirichletTheta.lean#L243). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.mem_besselS`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 285](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L285). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.mem_goodTuples`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 149](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L149). Cited in [Chapter](/chapter/upper-bound-objects/), [Chapter](/chapter/equal-multiplicities/).
 - `New.mem_integrableExpSet_of_summable_taylor`: `Lib/Analytic/Landau.lean`, [line 47](lean:Lib/Analytic/Landau.lean#L47). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
 - `New.mem_intGL`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 211](lean:Lib/General/Groups/CongruenceSubgroups.lean#L211). Cited in [Chapter](/chapter/congruence-subgroups/).
+- `New.mem_levelSpace_iff_forall_apply_eq`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 48](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L48). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.mem_nabla`: `Lib/GLn/SchurModule/Basic.lean`, [line 568](lean:Lib/GLn/SchurModule/Basic.lean#L568). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.mem_obeying`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 144](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L144). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.mem_obeying_cocycleRelations`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 166](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L166). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -167,6 +170,7 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.one_le_prod_norm_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 254](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L254). Cited in [Chapter](/chapter/cm-fields/).
 - `New.one_le_rootDiscr`: `New/Reduction/Data/AdmissibleData.lean`, [line 277](lean:New/Reduction/Data/AdmissibleData.lean#L277). Cited in [Chapter](/chapter/cm-fields/).
 - `New.one_sub_chiK_mem_Icc`: `New/Reduction/Zeros/PrimeError.lean`, [line 70](lean:New/Reduction/Zeros/PrimeError.lean#L70). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.one_sub_le_card_allowed_mul`: `New/Spanning/MainTerm/BadTypes.lean`, [line 137](lean:New/Spanning/MainTerm/BadTypes.lean#L137). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.one_sub_le_re_and_norm_le_of_mem_closedBall`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 281](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L281). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.Orbital.formalDegree_eq_weylDimensionPoly`: `Lib/DiscreteSeries/Character/FormalDegree.lean`, [line 476](lean:Lib/DiscreteSeries/Character/FormalDegree.lean#L476). Cited in [Chapter](/chapter/discrete-series/).
 - `New.Orbital.harish_chandra_degree_and_orbital`: `Lib/DiscreteSeries/Character/FormalDegree.lean`, [line 583](lean:Lib/DiscreteSeries/Character/FormalDegree.lean#L583). Cited in [Chapter](/chapter/trace-formula/), [Chapter](/chapter/discrete-series/).
@@ -202,63 +206,152 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.parahoric`: `Lib/General/Groups/BesselGroups.lean`, [line 302](lean:Lib/General/Groups/BesselGroups.lean#L302). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.paramAddRho`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 105](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L105). Cited in [Chapter](/chapter/discrete-series/).
 - `New.Parameters`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 64](lean:New/Reduction/Data/FieldsAndPlaces.lean#L64). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.abs_log_deltaE_sub_log_rootDiscr_le`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 387](lean:New/Derivatives/Field/ChosenPlaces.lean#L387). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.adjoin_betaKInE_zetaInt_eq_top`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 232](lean:New/Derivatives/Field/PrimeDecomposition.lean#L232). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.alpha_apply`: `New/Derivatives/Field/WeilData.lean`, [line 262](lean:New/Derivatives/Field/WeilData.lean#L262). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.apply_Phi_eq_Phi_placePerm`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 56](lean:New/Derivatives/Field/PrimeDecomposition.lean#L56). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.betaKInE_mem_or_star_mem`: `New/Derivatives/Field/WeilData.lean`, [line 239](lean:New/Derivatives/Field/WeilData.lean#L239). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.betaKInE_mul_one_sub`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 127](lean:New/Derivatives/Field/PrimeDecomposition.lean#L127). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.betaKInE_mul_star_notMem_of_star_eq`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 778](lean:New/Derivatives/Field/PrimeDecomposition.lean#L778). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.bigOmega`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 204](lean:New/Reduction/Data/FieldsAndPlaces.lean#L204). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.card_placeClass_eq_one_eq_towerDeg`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 362](lean:New/Reduction/Data/FieldsAndPlaces.lean#L362). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.chiK_eq_one_of_dvd`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 144](lean:New/Reduction/Data/FieldsAndPlaces.lean#L144). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.chiK_eq_one_of_modEq_one`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 852](lean:New/Derivatives/Field/PrimeDecomposition.lean#L852). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.chiK_pow_eq_one_or_neg_one`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 529](lean:New/Derivatives/Field/PrimeDecomposition.lean#L529). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.coe_galOfPlaceInt`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 431](lean:New/Derivatives/Field/PrimeDecomposition.lean#L431). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.conductor_mem_differentIdeal`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 278](lean:New/Derivatives/Field/PrimeDecomposition.lean#L278). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.constantBound`: `New/Reduction/Data/AdmissibleData.lean`, [line 50](lean:New/Reduction/Data/AdmissibleData.lean#L50). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
 - `New.Parameters.coprime_q₁_d`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 188](lean:New/Reduction/Data/FieldsAndPlaces.lean#L188). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.d_pow_ne_neg_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 436](lean:New/Reduction/Data/FieldsAndPlaces.lean#L436). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.deltaE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 353](lean:New/Derivatives/Field/PrimeDecomposition.lean#L353). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.differentGenPhase`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 334](lean:New/Derivatives/Field/PrimeDecomposition.lean#L334). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.differentIdeal_eq_span_and_adjoin_eq_top`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 206](lean:New/Derivatives/Field/PrimeDecomposition.lean#L206). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.differentIdeal_eq_span_deltaE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 366](lean:New/Derivatives/Field/PrimeDecomposition.lean#L366). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.differentIdeal_eq_span_relDifferentGen`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 261](lean:New/Derivatives/Field/PrimeDecomposition.lean#L261). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.differentIdeal_eq_span_relDifferentGen_mul`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 271](lean:New/Derivatives/Field/PrimeDecomposition.lean#L271). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.dvd_d_add_one_div_four_of_dvd_q₁`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 119](lean:New/Reduction/Data/FieldsAndPlaces.lean#L119). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.E`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 195](lean:New/Reduction/Data/FieldsAndPlaces.lean#L195). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.eq_of_smul_eq_or_smul_eq_star`: `New/Derivatives/Field/WeilData.lean`, [line 111](lean:New/Derivatives/Field/WeilData.lean#L111). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.eval_derivative_cyclotomic_dvd_q₁`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 149](lean:New/Derivatives/Field/PrimeDecomposition.lean#L149). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.exists_abs_log_le_and_apply_deltaE_eq`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 354](lean:New/Derivatives/Field/ChosenPlaces.lean#L354). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.exists_chiFin_alpha_pow_mem`: `New/Derivatives/Field/WeilData.lean`, [line 480](lean:New/Derivatives/Field/WeilData.lean#L480). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.exists_eventually_isLargeScale`: `New/Reduction/Data/Existence.lean`, [line 647](lean:New/Reduction/Data/Existence.lean#L647). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
+- `New.Parameters.exists_gal_smul_mem_iff`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 685](lean:New/Derivatives/Field/PrimeDecomposition.lean#L685). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.exists_isSparse`: `New/Reduction/Data/Existence.lean`, [line 244](lean:New/Reduction/Data/Existence.lean#L244). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
 - `New.Parameters.exists_isSparse_of_ranks`: `New/Reduction/Data/Existence.lean`, [line 488](lean:New/Reduction/Data/Existence.lean#L488). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
 - `New.Parameters.exists_large_isSparse`: `New/Reduction/Data/Existence.lean`, [line 167](lean:New/Reduction/Data/Existence.lean#L167). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
+- `New.Parameters.exists_mk_galOfPlaceInt_eq_pow_of_smul_eq`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 594](lean:New/Derivatives/Field/PrimeDecomposition.lean#L594). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.exists_orderOf_placeClass_eq`: `New/Reduction/Data/Existence.lean`, [line 119](lean:New/Reduction/Data/Existence.lean#L119). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
 - `New.Parameters.exists_prime_log_mem_Icc_mul_star_eq`: `New/Reduction/Data/Existence.lean`, [line 513](lean:New/Reduction/Data/Existence.lean#L513). Cited in [Chapter](/chapter/data-exist/).
 - `New.Parameters.exists_prime_pair_norm`: `New/Reduction/Data/Existence.lean`, [line 310](lean:New/Reduction/Data/Existence.lean#L310). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
+- `New.Parameters.exists_smul_eq_or_star`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 698](lean:New/Derivatives/Field/PrimeDecomposition.lean#L698). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.exists_unit_mul_relDifferentGen_real`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 319](lean:New/Derivatives/Field/PrimeDecomposition.lean#L319). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.exists_unit_mul_zetaInt_sub_real`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 298](lean:New/Derivatives/Field/PrimeDecomposition.lean#L298). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.exists_unit_prod_phi_eq_one_and_mul_star_eq`: `New/Derivatives/Field/WeilData.lean`, [line 370](lean:New/Derivatives/Field/WeilData.lean#L370). Cited in [Chapter](/chapter/local-duality/).
+- `New.Parameters.exists_vacuumRoot_pow_mem`: `New/Derivatives/Field/WeilData.lean`, [line 488](lean:New/Derivatives/Field/WeilData.lean#L488). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.exists_zeta_pow_eq`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 482](lean:New/Reduction/Data/FieldsAndPlaces.lean#L482). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.forall_map_galOfPlaceInt_eq_pow_iff`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 495](lean:New/Derivatives/Field/PrimeDecomposition.lean#L495). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.frobElem`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 450](lean:New/Derivatives/Field/PrimeDecomposition.lean#L450). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.frobElem_eq_one`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 861](lean:New/Derivatives/Field/PrimeDecomposition.lean#L861). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.galOfPlace`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 278](lean:New/Reduction/Data/FieldsAndPlaces.lean#L278). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.galOfPlace_zeta`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 389](lean:New/Reduction/Data/FieldsAndPlaces.lean#L389). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.galOfPlaceInt`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 427](lean:New/Derivatives/Field/PrimeDecomposition.lean#L427). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.ideleAbs_alpha_eq_prod`: `New/Derivatives/Field/WeilData.lean`, [line 498](lean:New/Derivatives/Field/WeilData.lean#L498). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.infinitePlace_apply_deltaE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 394](lean:New/Derivatives/Field/PrimeDecomposition.lean#L394). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.instPrimeSevenModEight`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 85](lean:New/Reduction/Data/FieldsAndPlaces.lean#L85). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.instWeilDataE`: `New/Derivatives/Field/WeilData.lean`, [line 420](lean:New/Derivatives/Field/WeilData.lean#L420). Cited in [Chapter](/chapter/local-duality/).
+- `New.Parameters.intValuation_eq_of_mul_star`: `New/Derivatives/Field/WeilData.lean`, [line 93](lean:New/Derivatives/Field/WeilData.lean#L93). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.intValuation_natCast_eq_exp_neg_one`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 675](lean:New/Derivatives/Field/PrimeDecomposition.lean#L675). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.inv_alpha_apply`: `New/Derivatives/Field/WeilData.lean`, [line 270](lean:New/Derivatives/Field/WeilData.lean#L270). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.inv_alpha_mem`: `New/Derivatives/Field/WeilData.lean`, [line 276](lean:New/Derivatives/Field/WeilData.lean#L276). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.irreducible_cyclotomic`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 211](lean:New/Reduction/Data/FieldsAndPlaces.lean#L211). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.IsAdmissibleData`: `New/Reduction/Data/Existence.lean`, [line 552](lean:New/Reduction/Data/Existence.lean#L552). Cited in [Chapter](/chapter/data-exist/).
 - `New.Parameters.IsAdmissibleData.exists_hasFields`: `New/Reduction/Data/Existence.lean`, [line 734](lean:New/Reduction/Data/Existence.lean#L734). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
 - `New.Parameters.IsAdmissibleData.levelPrime_mem`: `New/Reduction/Data/Existence.lean`, [line 575](lean:New/Reduction/Data/Existence.lean#L575). Cited in [Chapter](/chapter/primes-in-windows/).
+- `New.Parameters.isCoprime_q₀_of_not_dvd`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 484](lean:New/Derivatives/Field/PrimeDecomposition.lean#L484). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.IsIdOrConjWithSign`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 454](lean:New/Derivatives/Field/PrimeDecomposition.lean#L454). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.IsLargeScale`: `New/Reduction/Data/Existence.lean`, [line 621](lean:New/Reduction/Data/Existence.lean#L621). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
 - `New.Parameters.IsLargeScale.exists_isAdmissibleData`: `New/Reduction/Data/Existence.lean`, [line 820](lean:New/Reduction/Data/Existence.lean#L820). Cited in [Chapter](/chapter/data-exist/).
 - `New.Parameters.IsLargeScale.exists_isLeast_dvd_log_log_mem_Icc`: `New/Reduction/Data/Existence.lean`, [line 715](lean:New/Reduction/Data/Existence.lean#L715). Cited in [Chapter](/chapter/sizes/).
 - `New.Parameters.IsPrincipalLevelPrime`: `New/Reduction/Data/Existence.lean`, [line 290](lean:New/Reduction/Data/Existence.lean#L290). Cited in [Chapter](/chapter/primes-in-windows/).
 - `New.Parameters.IsSparse`: `New/Reduction/Data/AdmissibleData.lean`, [line 58](lean:New/Reduction/Data/AdmissibleData.lean#L58). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
+- `New.Parameters.isUnit_differentGenPhase`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 347](lean:New/Derivatives/Field/PrimeDecomposition.lean#L347). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.K`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 171](lean:New/Reduction/Data/FieldsAndPlaces.lean#L171). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.logLevelMin`: `New/Reduction/Data/AdmissibleData.lean`, [line 67](lean:New/Reduction/Data/AdmissibleData.lean#L67). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Parameters.logLevelMin_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 338](lean:New/Reduction/Data/AdmissibleData.lean#L338). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Parameters.map_differentIdeal_adjoin_eq_span`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 165](lean:New/Derivatives/Field/PrimeDecomposition.lean#L165). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.map_differentIdeal_eq_span_sqrtNegDInE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 122](lean:New/Derivatives/Field/PrimeDecomposition.lean#L122). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.map_galOfPlaceInt_eq_pow_iff_eq_frobElem_pow`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 562](lean:New/Derivatives/Field/PrimeDecomposition.lean#L562). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.map_galOfPlaceInt_zetaInt_inj`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 541](lean:New/Derivatives/Field/PrimeDecomposition.lean#L541). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.mem_asIdeal_smul_iff`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 441](lean:New/Derivatives/Field/PrimeDecomposition.lean#L441). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.natCast_dvd_pow_sub_galOfPlaceInt_star`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 755](lean:New/Derivatives/Field/PrimeDecomposition.lean#L755). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.natCast_eq_neg_one_of_star_eq`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 798](lean:New/Derivatives/Field/PrimeDecomposition.lean#L798). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.natCast_notMem_sq`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 667](lean:New/Derivatives/Field/PrimeDecomposition.lean#L667). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.ne_two_of_not_dvd_q₁`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 477](lean:New/Derivatives/Field/PrimeDecomposition.lean#L477). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.nonempty_infinitePlace_equiv_finPlace`: `New/Derivatives/Field/WeilData.lean`, [line 126](lean:New/Derivatives/Field/WeilData.lean#L126). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.norm_gal_vacuumRoot`: `New/Derivatives/Field/WeilData.lean`, [line 518](lean:New/Derivatives/Field/WeilData.lean#L518). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.norm_zeta_eq_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 507](lean:New/Reduction/Data/FieldsAndPlaces.lean#L507). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.norm_zeta_pow_eq_one`: `New/Derivatives/Field/WeilData.lean`, [line 346](lean:New/Derivatives/Field/WeilData.lean#L346). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.norm_zeta_sub_one_eq_one`: `New/Derivatives/Field/WeilData.lean`, [line 352](lean:New/Derivatives/Field/WeilData.lean#L352). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.norm_Φ_differentGenPhase`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 387](lean:New/Derivatives/Field/PrimeDecomposition.lean#L387). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.not_dvd_q₁_mul_d_of_inert`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 727](lean:New/Derivatives/Field/PrimeDecomposition.lean#L727). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.not_dvd_q₁_mul_d_of_modEq_one`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 857](lean:New/Derivatives/Field/PrimeDecomposition.lean#L857). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.not_dvd_q₁_of_star_eq`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 789](lean:New/Derivatives/Field/PrimeDecomposition.lean#L789). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.numInfPlaces_E`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 353](lean:New/Reduction/Data/FieldsAndPlaces.lean#L353). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.partner`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 107](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L107). Cited in [Chapter](/chapter/progression-free-sets/).
+- `New.Parameters.phi_weilData_j`: `New/Derivatives/Field/WeilData.lean`, [line 435](lean:New/Derivatives/Field/WeilData.lean#L435). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.placeClass`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 292](lean:New/Reduction/Data/FieldsAndPlaces.lean#L292). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.placeClass_placeOfInt_eq_neg_one_iff`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 458](lean:New/Reduction/Data/FieldsAndPlaces.lean#L458). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/prime-sums/).
 - `New.Parameters.placeClass_sq_eq`: `New/Reduction/Data/Existence.lean`, [line 140](lean:New/Reduction/Data/Existence.lean#L140). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Parameters.placeMulEquiv`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 282](lean:New/Reduction/Data/FieldsAndPlaces.lean#L282). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.placeOfInt`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 287](lean:New/Reduction/Data/FieldsAndPlaces.lean#L287). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.placePerm`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 47](lean:New/Derivatives/Field/PrimeDecomposition.lean#L47). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.prod_deltaE_eq_rootDiscr_pow`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 372](lean:New/Derivatives/Field/PrimeDecomposition.lean#L372). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.prod_phi_eq_norm`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 514](lean:New/Reduction/Data/FieldsAndPlaces.lean#L514). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.q_eq_of_modEq_one`: `New/Derivatives/Field/WeilData.lean`, [line 66](lean:New/Derivatives/Field/WeilData.lean#L66). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.q_eq_pow_lcm_of_inert`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 844](lean:New/Derivatives/Field/PrimeDecomposition.lean#L844). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.q_eq_pow_orderOf_frobElem`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 649](lean:New/Derivatives/Field/PrimeDecomposition.lean#L649). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.q₁`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 110](lean:New/Reduction/Data/FieldsAndPlaces.lean#L110). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.q₁_mul_alpha_mem`: `New/Derivatives/Field/WeilData.lean`, [line 326](lean:New/Derivatives/Field/WeilData.lean#L326). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.q₁_mul_d_dvd_q₂`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 181](lean:New/Reduction/Data/FieldsAndPlaces.lean#L181). Cited in [Chapter](/chapter/notation/).
 - `New.Parameters.q₂`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 175](lean:New/Reduction/Data/FieldsAndPlaces.lean#L175). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.relDifferent_spec`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 243](lean:New/Derivatives/Field/PrimeDecomposition.lean#L243). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.relDifferentGen`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 255](lean:New/Derivatives/Field/PrimeDecomposition.lean#L255). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.relDifferentGen_dvd_q₁`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 258](lean:New/Derivatives/Field/PrimeDecomposition.lean#L258). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.relDifferentGen_eq_prod_sub`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 288](lean:New/Derivatives/Field/PrimeDecomposition.lean#L288). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.ringHom_ext_zetaInt_betaKInE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 468](lean:New/Derivatives/Field/PrimeDecomposition.lean#L468). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.sixty_four_lt_d`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 136](lean:New/Reduction/Data/FieldsAndPlaces.lean#L136). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.smul_eq_iff_exists_frobElem_pow`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 618](lean:New/Derivatives/Field/PrimeDecomposition.lean#L618). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.smul_eq_self_iff_eq_one`: `New/Derivatives/Field/WeilData.lean`, [line 57](lean:New/Derivatives/Field/WeilData.lean#L57). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.smul_eq_self_iff_exists_frobElem_pow`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 635](lean:New/Derivatives/Field/PrimeDecomposition.lean#L635). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.smul_eq_self_iff_of_inert`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 737](lean:New/Derivatives/Field/PrimeDecomposition.lean#L737). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.smul_eq_star_iff_exists_frobElem_pow`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 642](lean:New/Derivatives/Field/PrimeDecomposition.lean#L642). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.smul_eq_star_iff_of_inert`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 746](lean:New/Derivatives/Field/PrimeDecomposition.lean#L746). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.smul_ne_star`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 867](lean:New/Derivatives/Field/PrimeDecomposition.lean#L867). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.span_derivative_cyclotomic_dvd_differentIdeal`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 188](lean:New/Derivatives/Field/PrimeDecomposition.lean#L188). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.sqrtNegDInE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 96](lean:New/Derivatives/Field/PrimeDecomposition.lean#L96). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.sqrtNegDInE_dvd_d`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 118](lean:New/Derivatives/Field/PrimeDecomposition.lean#L118). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Parameters.star_betaKInE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 132](lean:New/Derivatives/Field/PrimeDecomposition.lean#L132). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.star_deltaE`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 361](lean:New/Derivatives/Field/PrimeDecomposition.lean#L361). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.star_differentGenPhase_mul_relDifferentGen`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 342](lean:New/Derivatives/Field/PrimeDecomposition.lean#L342). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.star_differentGenPhase_mul_self`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 337](lean:New/Derivatives/Field/PrimeDecomposition.lean#L337). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.star_mem_iff_notMem`: `New/Derivatives/Field/WeilData.lean`, [line 76](lean:New/Derivatives/Field/WeilData.lean#L76). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.thirteen_le_of_chiK_ne_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 162](lean:New/Reduction/Data/FieldsAndPlaces.lean#L162). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.toCycloField`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 236](lean:New/Reduction/Data/FieldsAndPlaces.lean#L236). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.traceOne_eq_betaKInE`: `New/Derivatives/Field/WeilData.lean`, [line 442](lean:New/Derivatives/Field/WeilData.lean#L442). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.twelve_dvd_q₁`: `New/Derivatives/Field/WeilData.lean`, [line 341](lean:New/Derivatives/Field/WeilData.lean#L341). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.v_alpha_apply`: `New/Derivatives/Field/WeilData.lean`, [line 284](lean:New/Derivatives/Field/WeilData.lean#L284). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.v_alpha_mul_star_mul_relDifferentGen`: `New/Derivatives/Field/WeilData.lean`, [line 304](lean:New/Derivatives/Field/WeilData.lean#L304). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.v_neg_inv_sqrtNegDInE_mul_alpha_mul_star`: `New/Derivatives/Field/WeilData.lean`, [line 399](lean:New/Derivatives/Field/WeilData.lean#L399). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.v_star_alpha_apply`: `New/Derivatives/Field/WeilData.lean`, [line 294](lean:New/Derivatives/Field/WeilData.lean#L294). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.v_weilData_j_mul_alpha_mul_star`: `New/Derivatives/Field/WeilData.lean`, [line 447](lean:New/Derivatives/Field/WeilData.lean#L447). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.vacuumBoundConst`: `New/Derivatives/Vacuum/IntegralVacuum.lean`, [line 280](lean:New/Derivatives/Vacuum/IntegralVacuum.lean#L280). Cited in [Chapter](/chapter/notation/).
+- `New.Parameters.vacuumRoot`: `New/Derivatives/Field/WeilData.lean`, [line 470](lean:New/Derivatives/Field/WeilData.lean#L470). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.vacuumRoot_pow_numInfPlaces`: `New/Derivatives/Field/WeilData.lean`, [line 475](lean:New/Derivatives/Field/WeilData.lean#L475). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.valuation_map_relDifferentGen`: `New/Derivatives/Field/WeilData.lean`, [line 213](lean:New/Derivatives/Field/WeilData.lean#L213). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.valuation_star_relDifferentGen`: `New/Derivatives/Field/WeilData.lean`, [line 231](lean:New/Derivatives/Field/WeilData.lean#L231). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.weilData_j_eq`: `New/Derivatives/Field/WeilData.lean`, [line 432](lean:New/Derivatives/Field/WeilData.lean#L432). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.α`: `New/Derivatives/Field/WeilData.lean`, [line 255](lean:New/Derivatives/Field/WeilData.lean#L255). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Parameters.ζ`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 296](lean:New/Reduction/Data/FieldsAndPlaces.lean#L296). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.Φ`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 200](lean:New/Reduction/Data/FieldsAndPlaces.lean#L200). Cited in [Chapter](/chapter/notation/).
 - `New.ParamsCorrespond`: `Lib/Weil/Lift.lean`, [line 263](lean:Lib/Weil/Lift.lean#L263). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
@@ -511,6 +604,7 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.principalIdele`: `Lib/ClassField/Places/Ideles.lean`, [line 62](lean:Lib/ClassField/Places/Ideles.lean#L62). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.principalMinor`: `Lib/General/LinearAlgebra/HermitianMatrices.lean`, [line 125](lean:Lib/General/LinearAlgebra/HermitianMatrices.lean#L125). Cited in [Chapter](/chapter/weil-representation/).
 - `New.prod_euler_factor_ne_zero`: `Lib/Analytic/ZeroSymmetry.lean`, [line 24](lean:Lib/Analytic/ZeroSymmetry.lean#L24). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.prod_le_re_tupleIdem_coeff_one`: `New/Spanning/MainTerm/BadTypes.lean`, [line 204](lean:New/Spanning/MainTerm/BadTypes.lean#L204). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.prod_tableauPoly_mem_nabla`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 79](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L79). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.proIwahori`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 164](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L164). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.ProjSpace`: `Lib/General/Geometry/ProjectiveSpace.lean`, [line 81](lean:Lib/General/Geometry/ProjectiveSpace.lean#L81). Cited in [Chapter](/chapter/schemes-through-points/).
@@ -578,7 +672,7 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.rankInner_labelChar`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 236](lean:Lib/LocalGL/Green/LabelCharacters.lean#L236). Cited in [Chapter](/chapter/finite-gln/).
 - `New.rankInner_labelChar_mul_constOne`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 207](lean:Lib/LocalGL/Green/LabelCharacters.lean#L207). Cited in [Chapter](/chapter/finite-gln/).
 - `New.rankPart_labelChar`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 158](lean:Lib/LocalGL/Green/LabelCharacters.lean#L158). Cited in [Chapter](/chapter/finite-gln/).
-- `New.re_coeff_one_sub_sum_tupleIdem_le`: `New/Spanning/MainTerm/BadTypes.lean`, [line 228](lean:New/Spanning/MainTerm/BadTypes.lean#L228). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.re_coeff_one_sub_sum_tupleIdem_le`: `New/Spanning/MainTerm/BadTypes.lean`, [line 228](lean:New/Spanning/MainTerm/BadTypes.lean#L228). Cited in [Chapter](/chapter/theorem-b-plan/), [Chapter](/chapter/equal-multiplicities/).
 - `New.re_logDerivMean_one`: `New/Reduction/Zeros/PrimeError.lean`, [line 166](lean:New/Reduction/Zeros/PrimeError.lean#L166). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/prime-sums/).
 - `New.re_logDerivMean_one_eq_add_re_logDeriv`: `New/Reduction/Zeros/PrimeError.lean`, [line 151](lean:New/Reduction/Zeros/PrimeError.lean#L151). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.re_sum_addChar_dotProduct_mul_le`: `New/Spanning/SecondMoment/PositiveType.lean`, [line 102](lean:New/Spanning/SecondMoment/PositiveType.lean#L102). Cited in [Chapter](/chapter/few-translates/).
@@ -624,6 +718,7 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.relLength_iInf_le`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 109](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L109). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.relLength_le_of_mapsTo`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 177](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L177). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.relLength_mono`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 187](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L187). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.rieszMap`: `New/UpperBound/Objects/PoincareMap.lean`, [line 50](lean:New/UpperBound/Objects/PoincareMap.lean#L50). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.rightRegular`: `Lib/Adelic/Hecke/Basic.lean`, [line 54](lean:Lib/Adelic/Hecke/Basic.lean#L54). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.rightStabilizer`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 59](lean:Lib/Adelic/Hecke/ClassSums.lean#L59). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.rootDiscr_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 284](lean:New/Reduction/Data/AdmissibleData.lean#L284). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/cm-fields/).
@@ -657,11 +752,29 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.schurDetExp`: `Lib/GLn/SchurModule/Basic.lean`, [line 232](lean:Lib/GLn/SchurModule/Basic.lean#L232). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.second_inequality`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 345](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L345). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.Seesaw.index_pi_univ`: `Lib/General/Groups/IndexOfProduct.lean`, [line 17](lean:Lib/General/Groups/IndexOfProduct.lean#L17). Cited in [Chapter](/chapter/congruence-subgroups/).
+- `New.Seesaw.IsAdmissibleCoeffs`: `New/UpperBound/Seesaw/AdmissibleCombinations.lean`, [line 110](lean:New/UpperBound/Seesaw/AdmissibleCombinations.lean#L110). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.selfAdjointCodifferent`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 714](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L714). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Selmer.add_denominatorError_le_mul_clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 140](lean:New/Congruences/FirstOrder/TraceRelations.lean#L140). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.addVal_le_length_torsionBy`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 129](lean:Lib/General/Algebra/BlockFittingBound.lean#L129). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.AreCoordinates`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 253](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L253). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.augmentationIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 171](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L171). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.C_algebraMap_trace`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 242](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L242). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.C_det_linearCombination_mem`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 171](lean:New/Congruences/FirstOrder/RibetLemma.lean#L171). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.CharacterRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 811](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L811). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.CharacterRows.addVal_constantCoeff_prod_le`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 379](lean:New/Congruences/FirstOrder/RibetLemma.lean#L379). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.CharacterRows.sum_prod_coeff_mul_prod_det_tiedMatrix`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 356](lean:New/Congruences/FirstOrder/RibetLemma.lean#L356). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 128](lean:New/Congruences/FirstOrder/TraceRelations.lean#L128). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.coboundary_eq_zero_of_apply_eq_zero`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 523](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L523). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coeff_charpoly_map_polyAction_single`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 156](lean:New/Congruences/FirstOrder/RibetLemma.lean#L156). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coeff_mul_prod_of_mem_colon`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 537](lean:New/Congruences/FirstOrder/FittingBlock.lean#L537). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.coeff_zero_mul_coeff_star`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 313](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L313). Cited in [Chapter](/chapter/attached-representations/).
+- `New.Selmer.comp_mem_ribetCocyclesIn_iff`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 410](lean:New/Congruences/FirstOrder/RibetLemma.lean#L410). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coordRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 95](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L95). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coordRows_apply`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 106](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L106). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coordRows_cocycle_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 302](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L302). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coordRows_gen_sub_single_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 317](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L317). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coordRows_linearCombination_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 327](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L327). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coordRows_tau_sub_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 357](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L357). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.crystallineLoss`: `New/Congruences/LocalLoss/Basic.lean`, [line 118](lean:New/Congruences/LocalLoss/Basic.lean#L118). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.defectBound`: `New/Congruences/LocalLoss/Basic.lean`, [line 125](lean:New/Congruences/LocalLoss/Basic.lean#L125). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.denominatorError`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 106](lean:New/Congruences/FirstOrder/TraceRelations.lean#L106). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -671,22 +784,62 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.denominatorLe_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1321](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1321). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.denominatorLe_range_goodLift`: `New/Congruences/FitTwistsExist.lean`, [line 415](lean:New/Congruences/FitTwistsExist.lean#L415). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.denominatorLe_span_trivialLift`: `New/Congruences/FitTwistsExist.lean`, [line 444](lean:New/Congruences/FitTwistsExist.lean#L444). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.det_comp_map_eq_mul_prod`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 323](lean:New/Congruences/FirstOrder/RibetMethod.lean#L323). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.det_linearCombination_sub_one_eq_zero`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 188](lean:New/Congruences/FirstOrder/RibetLemma.lean#L188). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.det_map_polyChar_tame_rows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 782](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L782). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.det_mem_of_coeff_mem`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 342](lean:New/Congruences/FirstOrder/RibetMethod.lean#L342). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.det_polyAction_rowValue`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 87](lean:New/Congruences/FirstOrder/RibetLemma.lean#L87). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.DivisibleQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 90](lean:Lib/General/Algebra/BlockFittingBound.lean#L90). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.divQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 93](lean:Lib/General/Algebra/BlockFittingBound.lean#L93). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.divQuot_injective`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 105](lean:Lib/General/Algebra/BlockFittingBound.lean#L105). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.ellVal_add_le_of_addVal_le`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 116](lean:New/Congruences/FirstOrder/RibetElement.lean#L116). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.evalRowAtChar`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 145](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L145). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.evalRowAtChar_apply`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 150](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L150). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.eventually_exists_map_eq`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 71](lean:New/Congruences/FirstOrder/RibetElement.lean#L71). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.eventually_exists_map_eq_and_eval_one`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 79](lean:New/Congruences/FirstOrder/RibetElement.lean#L79). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.eventually_exists_twistedLattice_and_block_lattices`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 155](lean:New/Congruences/FirstOrder/RibetElement.lean#L155). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.eventually_length_shaOdd_le`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 90](lean:New/Congruences/FirstOrder/TraceRelations.lean#L90). Cited in [Chapter](/chapter/odd-classes/).
+- `New.Selmer.exists_adjugate_polynomial`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 91](lean:New/Congruences/FirstOrder/RibetMethod.lean#L91). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_apply_eq_ite_of_prod_dvd`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 467](lean:New/Congruences/FirstOrder/FittingBlock.lean#L467). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_areCoordinates_ribetGenerators`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 321](lean:New/Congruences/FirstOrder/RibetLemma.lean#L321). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_block_rows`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 619](lean:New/Congruences/FirstOrder/FittingBlock.lean#L619). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_character_projector`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 296](lean:New/Congruences/FirstOrder/RibetLemma.lean#L296). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_common_unit_row`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 326](lean:New/Congruences/FirstOrder/FittingBlock.lean#L326). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_divQuot_eq`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 114](lean:Lib/General/Algebra/BlockFittingBound.lean#L114). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.exists_forall_eq_one_and_forall_eq_zero`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 450](lean:New/Congruences/FirstOrder/FittingBlock.lean#L450). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_isCommonRibetElement_addVal_le`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 551](lean:New/Congruences/FirstOrder/RibetLemma.lean#L551). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_isMainSummand_descentPair`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 480](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L480). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_isMainSummand_mainPair`: `New/Congruences/FitTwistsExist.lean`, [line 297](lean:New/Congruences/FitTwistsExist.lean#L297). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_length_le_loss_add_crystallineSelmerLength`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 214](lean:New/Congruences/FirstOrder/RibetElement.lean#L214). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_mem_fittingIdeal_addVal_constantCoeff_le`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 65](lean:New/Congruences/FirstOrder/FittingBlock.lean#L65). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_mem_fittingIdeal_character`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 724](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L724). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_mem_span_add_mul_eq_add_mul`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 572](lean:New/Congruences/FirstOrder/FittingBlock.lean#L572). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_mem_tiedRows_polyActionAtZero_eq`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 506](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L506). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_mFoldTwist_hasDenominatorsLe`: `New/Congruences/FitTwistsExist.lean`, [line 475](lean:New/Congruences/FitTwistsExist.lean#L475). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_mFoldTwist_hasDivisibleSelmerLengthLe`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 370](lean:New/Congruences/Selmer/TwistingTheorem.lean#L370). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_mFoldTwist_selmerLengthLe_inv_ratio_le`: `New/Congruences/FitTwistsExist.lean`, [line 377](lean:New/Congruences/FitTwistsExist.lean#L377). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_mul_eq_algebraMap_det`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 424](lean:New/Congruences/FirstOrder/RibetMethod.lean#L424). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_mul_prod_X_mem_fittingIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 137](lean:New/Congruences/FirstOrder/FittingBlock.lean#L137). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_mulVec_eq_add_mul_of_mem_tiedRows`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 111](lean:New/Congruences/FirstOrder/RibetLemma.lean#L111). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_operator_det_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1246](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1246). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_operator_ellVal_le_liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1156](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1156). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_perfect_pairing`: `Lib/ClassField/LocalDuality/CrystallineDuality.lean`, [line 419](lean:Lib/ClassField/LocalDuality/CrystallineDuality.lean#L419). Cited in [Chapter](/chapter/local-duality/).
+- `New.Selmer.exists_relations_det_eq_pow_mul_det`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 395](lean:New/Congruences/FirstOrder/FittingBlock.lean#L395). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_ribet_element_of_tied_rows`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 480](lean:New/Congruences/FirstOrder/RibetMethod.lean#L480). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_ribet_polynomial`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 216](lean:New/Congruences/FirstOrder/RibetMethod.lean#L216). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_ringHom_comp_eq_algebraMap`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 144](lean:New/Congruences/FirstOrder/RibetLemma.lean#L144). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_row_apply_eq_zero`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 743](lean:New/Congruences/FirstOrder/FittingBlock.lean#L743). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_rows_addVal_det_le`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 36](lean:Lib/General/Algebra/BlockFittingBound.lean#L36). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.exists_rows_addVal_det_le_of_divisible`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 157](lean:Lib/General/Algebra/BlockFittingBound.lean#L157). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.exists_rows_det_eq_pow_mul_det`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 351](lean:New/Congruences/FirstOrder/FittingBlock.lean#L351). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_smul_eq_zero_divisibleQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 121](lean:Lib/General/Algebra/BlockFittingBound.lean#L121). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.exists_smul_eq_zero_of_mem_ribetCocyclesIn`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 433](lean:New/Congruences/FirstOrder/RibetLemma.lean#L433). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_sum_mul_det_of_mem_fittingIdeal_evalRowAtChar`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 890](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L890). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_sum_mul_det_of_mem_fittingIdeal_map`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 484](lean:New/Congruences/FirstOrder/FittingBlock.lean#L484). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_tiedRows_addVal_det_le`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 539](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L539). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_traceIdeal_multiplier_eq_sum_det`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 218](lean:New/Congruences/FirstOrder/RibetLemma.lean#L218). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_unit_row`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 706](lean:New/Congruences/FirstOrder/FittingBlock.lean#L706). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_unit_rows_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 855](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L855). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.fittingIdeal`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 472](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L472). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.fittingIdeal.exists_addVal_le_relLength`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 680](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L680). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.fittingIdeal.exists_ge_mul_prod_mem`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 547](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L547). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -699,8 +852,15 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.gaussVal_mul`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 269](lean:Lib/General/NumberTheory/GaussValuation.lean#L269). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.HasDivisibleSelmerLengthLe`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 369](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L369). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.HasLiftTrace`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 611](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L611). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.HasTriangleCost`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 46](lean:New/Congruences/FirstOrder/FittingBlock.lean#L46). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.IsAuxTwist`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 130](lean:New/Congruences/FirstOrder/EvenClasses.lean#L130). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.IsCharacterCocycle`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 279](lean:New/Congruences/FirstOrder/FittingBlock.lean#L279). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.isCharacterCocycle_of_mem_formsMod`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 675](lean:New/Congruences/FirstOrder/FittingBlock.lean#L675). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.isCharacterCocycle_of_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 573](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L573). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.IsCommonRibetElement`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 299](lean:New/Congruences/FirstOrder/FittingBlock.lean#L299). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.isConjSelfDual_of_attached`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 347](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L347). Cited in [Chapter](/chapter/attached-representations/).
+- `New.Selmer.IsDetectedBy`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 290](lean:New/Congruences/FirstOrder/FittingBlock.lean#L290). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.IsLatticeIn.det_one_sub`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 191](lean:New/Congruences/FirstOrder/RibetElement.lean#L191). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.isLeast_length_matrixKernel`: `Lib/General/Algebra/SharpMinors.lean`, [line 263](lean:Lib/General/Algebra/SharpMinors.lean#L263). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.isLeast_length_quotient_rowLattice`: `Lib/General/Algebra/SharpMinors.lean`, [line 235](lean:Lib/General/Algebra/SharpMinors.lean#L235). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.IsLiftGenerator`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 742](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L742). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -710,35 +870,94 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.isNegligible_padicValNat_card_stdClasses`: `New/Congruences/FitTwistsExist.lean`, [line 213](lean:New/Congruences/FitTwistsExist.lean#L213). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.isNegligible_padicValNat_oddClassBound`: `New/Congruences/FitTwistsExist.lean`, [line 158](lean:New/Congruences/FitTwistsExist.lean#L158). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.isNegligible_twistError`: `New/Congruences/FitTwistsExist.lean`, [line 176](lean:New/Congruences/FitTwistsExist.lean#L176). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.IsTameGeneratorFamily.dvd_eval_cyclotomicInv_sub_one`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 93](lean:New/Congruences/FirstOrder/RibetElement.lean#L93). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.IsTraceIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 232](lean:New/Congruences/FirstOrder/FittingBlock.lean#L232). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.ker_le_tieIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 189](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L189). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.le_ellVal_geom_sum`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 424](lean:Lib/General/NumberTheory/GaussValuation.lean#L424). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.length_linearMap_quotSpan`: `Lib/General/Algebra/SharpMinors.lean`, [line 136](lean:Lib/General/Algebra/SharpMinors.lean#L136). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.length_linearMap_quotSpan_of_dvd`: `Lib/General/Algebra/SharpMinors.lean`, [line 104](lean:Lib/General/Algebra/SharpMinors.lean#L104). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.length_quotient_span_row`: `Lib/General/Algebra/SharpMinors.lean`, [line 177](lean:Lib/General/Algebra/SharpMinors.lean#L177). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.length_ribetCocyclesVanishingOn_divisibleQuot_le`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 470](lean:New/Congruences/FirstOrder/RibetLemma.lean#L470). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 179](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L179). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.localDefectBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 99](lean:New/Congruences/FirstOrder/TraceRelations.lean#L99). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.map_augmentationIdeal_le_tieIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 194](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L194). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.map_mem_span_range`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 441](lean:New/Congruences/FirstOrder/RibetMethod.lean#L441). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.map_mkQ_formsMod_lt`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 652](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L652). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.map_mul_eq_zero_of_blocks`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 453](lean:New/Congruences/FirstOrder/RibetMethod.lean#L453). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.matrixKernel`: `Lib/General/Algebra/SharpMinors.lean`, [line 44](lean:Lib/General/Algebra/SharpMinors.lean#L44). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.maximalMinors`: `Lib/General/Algebra/SharpMinors.lean`, [line 39](lean:Lib/General/Algebra/SharpMinors.lean#L39). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.mem_formsMod`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 599](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L599). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.mem_map_tiedRows_iff`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 619](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L619). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mem_nonDivisorIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 509](lean:New/Congruences/FirstOrder/FittingBlock.lean#L509). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.mem_of_forall_form_eq_zero`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 617](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L617). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.mem_ribetCocyclesIn_iff`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 401](lean:New/Congruences/FirstOrder/RibetLemma.lean#L401). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mem_ribetCocyclesVanishingOn`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 265](lean:New/Congruences/FirstOrder/FittingBlock.lean#L265). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 221](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L221). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mem_tiedRows_of_forall_eq_zero`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 293](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L293). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mem_traceIdeal`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 372](lean:New/Congruences/FirstOrder/RibetMethod.lean#L372). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mem_traceLeftIdeal_of_forall`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 164](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L164). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.mul_aeval_eq_zero_of_adjugate`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 155](lean:New/Congruences/FirstOrder/RibetMethod.lean#L155). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.mul_det_mem_fittingIdeal`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 494](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L494). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.mul_mem_tieIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 210](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L210). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.nonDivisorIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 503](lean:New/Congruences/FirstOrder/FittingBlock.lean#L503). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.nonempty_characterRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 933](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L933). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.normaliserRow`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 229](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L229). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.normLength_addVal_pow`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 101](lean:New/Congruences/FirstOrder/RibetElement.lean#L101). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.notMem_bPlaces_of_coefficientEmbedding_eq_pow`: `New/Congruences/LocalLoss/CrystallineDefect.lean`, [line 174](lean:New/Congruences/LocalLoss/CrystallineDefect.lean#L174). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Selmer.notMem_bPlaces_of_short_arc`: `New/Congruences/LocalLoss/Basic.lean`, [line 252](lean:New/Congruences/LocalLoss/Basic.lean#L252). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Selmer.oddClassBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 74](lean:New/Congruences/FirstOrder/TraceRelations.lean#L74). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.oddClassBound_le`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 82](lean:New/Congruences/FirstOrder/TraceRelations.lean#L82). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.placeClass_eq_cmSign_mul_pow`: `New/Congruences/LocalLoss/Basic.lean`, [line 196](lean:New/Congruences/LocalLoss/Basic.lean#L196). Cited in [Chapter](/chapter/progression-free-sets/).
+- `New.Selmer.polyAction`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 59](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L59). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyAction_aeval`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 73](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L73). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyAction_eq_reindex`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 69](lean:New/Congruences/FirstOrder/RibetLemma.lean#L69). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyAction_rowValue_coordRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 269](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L269). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyAction_rowValue_coordRows_of_areCoordinates`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 280](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L280). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyAction_rowValue_normaliserRow`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 382](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L382). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyAction_single`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 66](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L66). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyActionAtZero`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 100](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L100). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyActionAtZero_coordRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 130](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L130). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyActionAtZero_single`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 116](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L116). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyActionAtZero_X_smul`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 123](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L123). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyChar`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 84](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L84). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyChar_coordRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 111](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L111). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.polyChar_single`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 90](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L90). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.pow_dvd_geom_sum`: `Lib/General/NumberTheory/CoefficientInclusion.lean`, [line 87](lean:Lib/General/NumberTheory/CoefficientInclusion.lean#L87). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.prod_Ioc_natB_le_pow`: `New/Congruences/FitTwistsExist.lean`, [line 90](lean:New/Congruences/FitTwistsExist.lean#L90). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.range_goodLift_le_span_hasLiftHeckePolynomial`: `New/Congruences/FitTwistsExist.lean`, [line 326](lean:New/Congruences/FitTwistsExist.lean#L326). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.rankOneRep`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 273](lean:New/Congruences/FirstOrder/FittingBlock.lean#L273). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.ribet_columns`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 289](lean:New/Congruences/FirstOrder/RibetElement.lean#L289). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.ribetCocyclesVanishingOn`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 257](lean:New/Congruences/FirstOrder/FittingBlock.lean#L257). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.ribetGenerators`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 248](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L248). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.rowLattice`: `Lib/General/Algebra/SharpMinors.lean`, [line 49](lean:Lib/General/Algebra/SharpMinors.lean#L49). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.rowValue`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 136](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L136). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.rowValue_apply`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 140](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L140). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.rowValue_mem_augmentationIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 287](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L287). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.shaLocalSet`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 174](lean:Lib/GaloisRep/Main/SelmerModules.lean#L174). Cited in [Chapter](/chapter/odd-classes/).
 - `New.Selmer.shaOdd`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 183](lean:Lib/GaloisRep/Main/SelmerModules.lean#L183). Cited in [Chapter](/chapter/odd-classes/), [Chapter](/chapter/building-representations/).
+- `New.Selmer.single_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 415](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L415). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.smul_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 337](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L337). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.smul_one_mem_traceLeftIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 429](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L429). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.smul_X_smul_mem_of_forall_form`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 107](lean:New/Congruences/FirstOrder/FittingBlock.lean#L107). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.sub_one_smul_normaliserRow_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 394](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L394). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.sum_clearingBound_add_padicValNat_le`: `New/Congruences/FitTwistsExist.lean`, [line 232](lean:New/Congruences/FitTwistsExist.lean#L232). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_defectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 109](lean:New/Congruences/FitTwistsExist.lean#L109). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_half_pow_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 78](lean:New/Congruences/FitTwistsExist.lean#L78). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_localDefectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 137](lean:New/Congruences/FitTwistsExist.lean#L137). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_padicValNat_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 65](lean:New/Congruences/FitTwistsExist.lean#L65). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.tie_mem_map_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 681](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L681). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.tie_mem_tieIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 202](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L202). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.tie_mem_traceLeftIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 441](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L441). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.tiedNormaliser`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 235](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L235). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 216](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L216). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.tieIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 178](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L178). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.tieIdeal_le`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 475](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L475). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.trace_mul_aeval_apply`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 407](lean:New/Congruences/FirstOrder/RibetMethod.lean#L407). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.trace_mul_mem_of_mem_span`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 380](lean:New/Congruences/FirstOrder/RibetMethod.lean#L380). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.traceIdeal`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 362](lean:New/Congruences/FirstOrder/RibetMethod.lean#L362). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.traceLeftIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 157](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L157). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.twistError`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 307](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L307). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.X_mem_colon_nonDivisorIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 517](lean:New/Congruences/FirstOrder/FittingBlock.lean#L517). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.selmerModule`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 143](lean:Lib/GaloisRep/Main/SelmerModules.lean#L143). Cited in [Chapter](/chapter/building-representations/).
 - `New.selmerZ1`: `Lib/ClassField/GreenbergWiles/SelmerLevels.lean`, [line 135](lean:Lib/ClassField/GreenbergWiles/SelmerLevels.lean#L135). Cited in [Chapter](/chapter/local-duality/).
 - `New.selmerZ1.card_mul_pow_le`: `Lib/ClassField/GreenbergWiles/SelmerRelations.lean`, [line 90](lean:Lib/ClassField/GreenbergWiles/SelmerRelations.lean#L90). Cited in [Chapter](/chapter/local-duality/).
@@ -815,7 +1034,7 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.SiegelWeil.IsNeighbourVector`: `Lib/SiegelWeil/NeighbourLattices.lean`, [line 92](lean:Lib/SiegelWeil/NeighbourLattices.lean#L92). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.SiegelWeil.IsNeighbourVector.exists_mapsNeighbour`: `Lib/SiegelWeil/NeighbourLattices.lean`, [line 427](lean:Lib/SiegelWeil/NeighbourLattices.lean#L427). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.SiegelWeil.isometrySplitting`: `Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean`, [line 214](lean:Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean#L214). Cited in [Chapter](/chapter/siegel-weil/).
-- `New.SiegelWeil.IsSharp`: `Lib/SiegelWeil/RallisInner/Doubling.lean`, [line 136](lean:Lib/SiegelWeil/RallisInner/Doubling.lean#L136). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.SiegelWeil.IsSharp`: `Lib/SiegelWeil/RallisInner/Doubling.lean`, [line 136](lean:Lib/SiegelWeil/RallisInner/Doubling.lean#L136). Cited in [Chapter](/chapter/rallis-inner-product/), [Chapter](/chapter/single-theta-lifts/).
 - `New.SiegelWeil.IsSharp.hasSum_integral_weilMatrixCoeff_mul`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 221](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L221). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.SiegelWeil.IsSharp.isOpen_level`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 100](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L100). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.SiegelWeil.IsSharp.isUnramifiedOn`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 175](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L175). Cited in [Chapter](/chapter/rallis-inner-product/).
@@ -823,8 +1042,8 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.SiegelWeil.IsSharp.petersson_lift_eq_integral`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 260](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L260). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.SiegelWeil.IsSharp.weilMatrixCoeff_integrated_mul`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 145](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L145). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.SiegelWeil.isSharp_vacuumDatum_of_mul_eq_one`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 647](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L647). Cited in [Chapter](/chapter/rallis-inner-product/).
-- `New.SiegelWeil.IsSharpFn`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 482](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L482). Cited in [Chapter](/chapter/rallis-inner-product/).
-- `New.SiegelWeil.IsSharpFn.isSharp`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 585](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L585). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.SiegelWeil.IsSharpFn`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 482](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L482). Cited in [Chapter](/chapter/rallis-inner-product/), [Chapter](/chapter/single-theta-lifts/).
+- `New.SiegelWeil.IsSharpFn.isSharp`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 585](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L585). Cited in [Chapter](/chapter/rallis-inner-product/), [Chapter](/chapter/single-theta-lifts/).
 - `New.SiegelWeil.IsUnramifiedOn`: `Lib/SiegelWeil/UnramifiedSeries/VacuumCoefficients.lean`, [line 103](lean:Lib/SiegelWeil/UnramifiedSeries/VacuumCoefficients.lean#L103). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.SiegelWeil.Lagrangian`: `Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean`, [line 85](lean:Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean#L85). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.SiegelWeil.Lagrangian.chosenSplitting`: `Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean`, [line 182](lean:Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean#L182). Cited in [Chapter](/chapter/siegel-weil/).
@@ -1147,10 +1366,11 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.sq_sum_hilbertSchmidtNorm_orthoProj_comp_le`: `New/Spanning/SecondMoment/FewTranslates.lean`, [line 288](lean:New/Spanning/SecondMoment/FewTranslates.lean#L288). Cited in [Chapter](/chapter/few-translates/).
 - `New.star_adeleMatrix_mulVec_dotProduct`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 337](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L337). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.star_inequality`: `New/Reduction/MainInequality.lean`, [line 87](lean:New/Reduction/MainInequality.lean#L87). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/lattice-and-prime-sum/), [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
+- `New.star_mulChar_det_mul_self`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 455](lean:New/Determinant/Norms/AdjointThetaLift.lean#L455). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.stdAddChar`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 156](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L156). Cited in [Chapter](/chapter/adeles-hermitian-spaces/), [Chapter](/chapter/discrete-series/).
 - `New.stdAddChar_toAdele`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 276](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L276). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.StdClasses`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 226](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L226). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.stdClassSum`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 394](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L394). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.stdClassSum`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 394](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L394). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/single-theta-lifts/).
 - `New.stdForm`: `Lib/Adelic/Unitary/Defs.lean`, [line 245](lean:Lib/Adelic/Unitary/Defs.lean#L245). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.stdKernel`: `Lib/Weil/DualPair/Defs.lean`, [line 281](lean:Lib/Weil/DualPair/Defs.lean#L281). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.stdLattice`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 143](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L143). Cited in [Chapter](/chapter/weil-representation/).
@@ -1268,10 +1488,11 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.toPoly_schur`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 494](lean:Lib/GLn/SchurModule/WeylKernel.lean#L494). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.toPoly_weylEval`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 330](lean:Lib/GLn/SchurModule/WeylKernel.lean#L330). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.torusChar`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 209](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L209). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.totient_le_mul_card_isPrimitivePolynomial`: `New/Spanning/MainTerm/BadTypes.lean`, [line 101](lean:New/Spanning/MainTerm/BadTypes.lean#L101). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.towerDeg`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 103](lean:New/Reduction/Data/FieldsAndPlaces.lean#L103). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.towerDeg_eq`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 106](lean:New/Reduction/Data/FieldsAndPlaces.lean#L106). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.trace_comparison`: `Lib/Adelic/TraceFormula/TraceComparison.lean`, [line 665](lean:Lib/Adelic/TraceFormula/TraceComparison.lean#L665). Cited in [Chapter](/chapter/trace-formula/).
-- `New.trace_eq_of_isCuspidalAt`: `Lib/Adelic/TraceFormula/CuspidalComparison.lean`, [line 70](lean:Lib/Adelic/TraceFormula/CuspidalComparison.lean#L70). Cited in [Chapter](/chapter/trace-formula/).
+- `New.trace_eq_of_isCuspidalAt`: `Lib/Adelic/TraceFormula/CuspidalComparison.lean`, [line 70](lean:Lib/Adelic/TraceFormula/CuspidalComparison.lean#L70). Cited in [Chapter](/chapter/trace-formula/), [Chapter](/chapter/equal-multiplicities/).
 - `New.trace_eq_of_trace_cutLevel_eq`: `Lib/Adelic/TraceFormula/LevelCut.lean`, [line 348](lean:Lib/Adelic/TraceFormula/LevelCut.lean#L348). Cited in [Chapter](/chapter/trace-formula/).
 - `New.trace_eq_sum_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 265](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L265). Cited in [Chapter](/chapter/cm-fields/).
 - `New.transporter`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 132](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L132). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -1279,6 +1500,7 @@ This section has the 1716 cited names `New.X` outside the namespace `New.Data` w
 - `New.transvectionGL`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 197](lean:Lib/General/Groups/CongruenceSubgroups.lean#L197). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.tupleIdem`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 490](lean:Lib/LocalGL/Green/LabelCharacters.lean#L490). Cited in [Chapter](/chapter/finite-gln/).
 - `New.tupleIdem_orthogonal`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 504](lean:Lib/LocalGL/Green/LabelCharacters.lean#L504). Cited in [Chapter](/chapter/finite-gln/).
+- `New.twiceBlockEntry`: `New/UpperBound/Objects/Weights.lean`, [line 101](lean:New/UpperBound/Objects/Weights.lean#L101). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.twistByChar`: `Lib/GaloisRep/Pseudocharacter/SemisimpleRepresentations.lean`, [line 441](lean:Lib/GaloisRep/Pseudocharacter/SemisimpleRepresentations.lean#L441). Cited in [Chapter](/chapter/attached-representations/).
 - `New.twisted_trace_identity`: `Lib/GaloisRep/BaseChange/TwistedTraceIdentity.lean`, [line 935](lean:Lib/GaloisRep/BaseChange/TwistedTraceIdentity.lean#L935). Cited in [Chapter](/chapter/building-representations/).
 - `New.TwistedLattice`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 109](lean:New/Reduction/Lattices/TwistedLattice.lean#L109). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/).

@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.1
+
+Four new chapters of the argument volumes.
+
+- Volume 9, chapter 2: the objects of the upper bound (#116).
+- Volume 10, chapter 3: equal multiplicities by the trace formula (#118).
+- Volume 11, chapter 3: single theta lifts and their norms (#120).
+- Volume 12, chapter 2: pseudocharacters, Fitting ideals and Ribet elements (#119).
+
 ## v0.3.0
 
 All background volumes are drafted. Milestones G2, G3 and G4 are done.
