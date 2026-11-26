@@ -16,7 +16,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Characters of power moduli
 
-This section proves the first two steps of the plan. The first is algebraic: for $4 \mid Q$ and $k \geq 2$, every character $\chi$ modulo $Q^k$ with $\chi^2 = 1$ is induced from a character modulo $Q^2$, and it has the same L-function. The second is analytic: for every large $X$, no L-function of a character modulo $Q^k \leq X^A$ vanishes on the disc $|s - 1| \leq 1/X$, and its logarithmic derivative is at most $X$ there. Section 5 uses the second result at the centre of Newman's argument.
+This section proves the first two steps of the plan. The first is algebraic: for $4 \mid Q$ and $k \geq 2$, every character $\chi$ modulo $Q^k$ with $\chi^2 = 1$ is induced from a character modulo $Q^2$, and it has the same L-function. The second is analytic: for every large $X$, no L-function of a character modulo $Q^k \leq X^A$ vanishes on the disc $|s - 1| \leq 1/X$, and its logarithmic derivative is at most $X$ there. Sections 5 and 6 use the second result at the centre of Newman's argument.
 
 ### The problem of the real characters
 
