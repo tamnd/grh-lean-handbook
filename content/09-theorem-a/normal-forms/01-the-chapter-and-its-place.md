@@ -51,7 +51,7 @@ where $B$ is the number of boxes in the columns of height below $N$ and $D_p(\ka
 
 ### The model case
 
-Take $p$ inert in $K$. Then $v(\pi_p) = 1$, $\rho_p = 1/(p^2-1)$ and $\gamma_p = p/(p^2-1)$. Take a single column of height one at one place $\tau$ and nothing elsewhere, so that $B = 1$ and $P_y$ is one linear form $\sum_a y_a z_{\tau,b,a}$. Section 4 shows that the predicted divisibility is
+Take $p$ inert in $K$. Then $v(\pi_p) = 1$, $\rho_p = 1/(p^2-1)$ and $\gamma_p = p/(p^2-1)$. Let $N \ge 2$, and take a single column of height one at one place $\tau$ and nothing elsewhere, so that $B = 1$ and $P_y$ is one linear form $\sum_a y_a z_{\tau,b,a}$. Section 4 shows that the predicted divisibility is
 
 $$D_p = \sum_{e \text{ odd}} \frac{1}{p^e} = \frac{p}{p^2-1} = \gamma_p,$$
 
