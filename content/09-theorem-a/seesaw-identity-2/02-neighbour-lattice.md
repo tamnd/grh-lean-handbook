@@ -156,7 +156,7 @@ The translations $n(y)$ represent $L$ modulo integral points at the places above
 
 Lean: `New.Seesaw.exists_class_star_idem_mul_mem_iff`.
 
-*Proof.* The map $w \mapsto \eta\bar w$ preserves integrality in both directions, since $\eta$ is integral and $\eta\,\overline{\eta\bar w} = -w$. It carries $\bar j(\bar\pi^{-1}t + \eta\,\overline{y/N})$ to $j(z - y/N)$, where $z = \eta\pi^{-1}\bar t$. By [the residue lemma for split levels](/decl/New.IsSplitLevel.exists_sub_residueOverN_mem_iff/), there is $y_0$ such that $j(z - y/N)$ is integral exactly when $jNz$ is integral and $y = y_0$. Now $Nz = \eta\bar\pi\,\bar t$. At $P$ the idele $\bar\pi$ is a unit, since $\pi$ is a unit at $\bar P$. So $jNz$ is integral exactly when $j\bar t$ is integral, that is, when $\bar j t$ is integral. $\square$
+*Proof.* The map $w \mapsto \eta\bar w$ preserves integrality in both directions, since $\eta$ is integral and $\eta\,\overline{\eta\bar w} = -w$. It carries $\bar j(\bar\pi^{-1}t + \eta\,\overline{y/N})$ to $j(z - y/N)$, where $z = \eta\pi^{-1}\bar t$. By the residue lemma for split levels (Lean: `New.IsSplitLevel.exists_sub_residueOverN_mem_iff`), there is $y_0$ such that $j(z - y/N)$ is integral exactly when $jNz$ is integral and $y = y_0$. Now $Nz = \eta\bar\pi\,\bar t$. At $P$ the idele $\bar\pi$ is a unit, since $\pi$ is a unit at $\bar P$. So $jNz$ is integral exactly when $j\bar t$ is integral, that is, when $\bar j t$ is integral. $\square$
 
 **Lemma (Translations at the conjugate places).** For every matrix $x$ there is $y_0 : X' \to P \to \mathbb Z/N$ such that, for every $y$, the matrix $(\gamma\otimes 1)x + n(y)$ is integral at $\bar P$ if and only if $x$ is integral at $\bar P$ and $y = y_0$.
 
