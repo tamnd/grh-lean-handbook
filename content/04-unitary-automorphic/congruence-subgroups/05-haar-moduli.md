@@ -8,7 +8,6 @@ decls:
   - New.inv_distribHaarChar_eq_relIndex_div
   - New.map_const_smul_eq_inv_distribHaarChar_smul
   - New.genIndex
-  - New.genIndex_eq_relIndex_div
   - New.genIndex_eq_card
   - New.distribHaarChar_eq_one_of_mem_intGL
   - New.distribHaarChar_diagGL
@@ -89,6 +88,8 @@ Lean: `New.distribHaarChar_diagGL` (Lib/General/Measure/HaarModulus.lean).
 To pass from diagonal matrices to all matrices, one needs a Smith form. The source states the property of $O$ that gives it.
 
 **Definition (Valuation pair).** A subring $O$ of a commutative ring $R$ is a [valuation pair](/decl/New.IsValuationPair/) if for all $a, b \in R$ there is an idempotent $e \in O$ such that $a$ and $b$ are both $O$-multiples of $(1 - e) a + e b$.
+
+Lean: `New.IsValuationPair` (Lib/General/LinearAlgebra/IntegralLattices.lean).
 
 For a valuation ring $O$ with fraction field $R$, take $e = 0$ or $e = 1$: one of $a$ and $b$ divides the other. For a product of valuation rings, take $e$ componentwise. So $\widehat{\mathbb{Z}} \subseteq \mathbb{A}_f$ is a valuation pair.
 

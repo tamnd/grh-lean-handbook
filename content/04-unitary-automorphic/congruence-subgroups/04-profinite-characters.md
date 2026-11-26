@@ -8,7 +8,6 @@ decls:
   - New.QZ.bijective_ofZMod_comp
   - New.card_hom_QZ
   - New.QZChar.exists_apply_ne_zero_of_notMem_ker
-  - New.QZChar.isOfFinAddOrder_of_compactSpace
   - New.QZChar.exists_eval_eq
   - New.QZChar.mem_of_forall_abelianLift
   - New.QZChar.abelianization_ext
