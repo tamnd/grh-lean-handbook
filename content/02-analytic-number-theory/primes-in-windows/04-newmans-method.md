@@ -71,7 +71,7 @@ Lean: `New.summable_vonMangoldt_not_prime` (Lib/Analytic/Primes.lean).
 *Proof.* $\sum_{n \leq x} b(n) = \psi(x) - \theta(x) = O(\sqrt{x})$, by Chebyshev's bound $\theta(y) = O(y)$ applied at $y = x^{1/j}$ for $j \geq 2$. Partial summation then gives convergence of $\sum b(n)n^{-\sigma}$ for every $\sigma > 1/2$, in particular at $\sigma = 3/4$. $\square$
 
 Let $C = \sum_{n \geq 1} b(n)n^{-3/4}$. The source uses only that $C$ is finite. A short computation, which this book made and the source does not need, gives
-$$C = \sum_p \log p\sum_{j \geq 2}p^{-3j/4} = \sum_p \frac{\log p}{p^{3/2} - p^{3/4}} \approx 1.961.$$
+$$C = \sum_p \log p\sum_{j \geq 2}p^{-3j/4} = \sum_p \frac{\log p}{p^{3/2} - p^{3/4}} \approx 1.96.$$
 The primes $2$, $3$, $5$ and $7$ give about $0.61$, $0.38$, $0.21$ and $0.14$. So the condition $X \geq C$ of Section 5 is implied by the condition $X \geq 200$.
 
 The exponent $3/4$ is a choice. Any exponent in $(1/2, 1)$ works. The proof in Section 5 compares the terms of the tail at $1 + z$ with the series of $b$ at $3/4$, and it needs the gap $1/4$ between $1$ and $3/4$ to absorb a loss of $e^{U/200}$.
