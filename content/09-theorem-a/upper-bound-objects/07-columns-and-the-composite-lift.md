@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Columns and the composite lift
 
-This section builds the first of the two maps of the proof. A source form on $X_0$ is lifted $m$ times up the upper chain, with data that are translates of the integral vacuum, glued in pairs. The result is a form on $X_m$, and it is restricted to $Y_m$ by a branching matrix. The name "columns" refers to the weights: every form in the chain has the column numbers of Section 3.
+This section builds the first of the two maps of the proof. A source form on $X_0$ is lifted $m$ times up the upper chain, with data that are translates of the integral vacuum, glued in pairs. The result is a form on $X_m$, and it is restricted to $Y_m$ by a branching matrix.
 
 ### A model case
 
@@ -67,7 +67,7 @@ Lean: `New.Data.IsBranchingMap` (New/UpperBound/Objects/Columns.lean).
 
 Lean: `New.Data.branching` (New/UpperBound/Objects/Columns.lean).
 
-The existence proof applies the branching theorem with the kept columns of Section 3. The norm bound comes from a count of boxes: at most $n_m$ heights, each below $n_m$, with at most $\Delta$ columns of each height. So the number $l = f n_m^2 \Delta$ bounds the boxes, and the size conditions give $(l^l)^6 \le \exp(x^{70})$.
+The norm bound comes from a count of boxes: $l = f n_m^2 \Delta$ bounds the boxes, and the size conditions give $(l^l)^6 \le \exp(x^{70})$.
 
 **Definition (Restriction to Y_m).** For a form $F$ on $X_m$, the form $\mathrm{res}\,F$ on $Y_m$ is
 $$(\mathrm{res}\,F)(h) = \prod_\tau \tau(\bar\pi)^{-n_\tau} \cdot \mathrm{br}\big(F(\mathrm{diag}(h, 1))\big).$$
@@ -75,7 +75,7 @@ Here $\tau$ runs over the infinite places, read as embeddings of the CM type.
 
 Lean: `New.Data.restrictToY` (New/UpperBound/Objects/Columns.lean).
 
-The form $\mathrm{res}\,F$ is smooth, because $h \mapsto \mathrm{diag}(h,1)$ is continuous. It transforms correctly under the rational points, because $\mathrm{br}$ intertwines $\mathrm{diag}(\gamma, 1)$ with $\gamma$, and the character $\prod_\tau z_\tau^{n_\tau}$ is $1$ at $z = 1$. The factor $\prod_\tau \tau(\bar\pi)^{-n_\tau}$ is a normalisation. It is used in [the chain valuation](/chapter/chain-valuation/), where the valuation at a prime above $N$ is counted.
+The form $\mathrm{res}\,F$ is smooth, because $h \mapsto \mathrm{diag}(h,1)$ is continuous. It transforms correctly under the rational points, because $\mathrm{br}$ intertwines $\mathrm{diag}(\gamma, 1)$ with $\gamma$, and the character $\prod_\tau z_\tau^{n_\tau}$ is $1$ at $z = 1$. The factor $\prod_\tau \tau(\bar\pi)^{-n_\tau}$ is a normalisation. [The chain valuation](/chapter/chain-valuation/) uses it.
 
 ### Kernels and data
 

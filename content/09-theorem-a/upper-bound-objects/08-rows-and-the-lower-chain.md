@@ -104,4 +104,4 @@ Lean: `New.Data.doubleLiftChain_eq_zero_of_ramified` (New/UpperBound/Objects/Cha
 
 *Proof.* Regroup the $p$ pairs as $2p$ single factors. Then factor $2i + 1$ is fixed, and the theorem applies. $\square$
 
-**Remark (Formalization).** The space $Y_j$ is chosen by `Exists.choose` from an existence lemma, and so is $z_w$. The lift `liftY` carries the factor of the level index, so that integrality is not lost. The group element in `lowerChain_principalRep` is a chosen lift `liftResidue` of $\mathrm{diag}(s, 1)$. The theorem on ramified forms is stated for any $m'$, not only for $m$.
+**Remark (Formalization).** The space $Y_j$ is chosen by `Exists.choose` from an existence lemma, and so is $z_w$. The lift `liftY` carries the factor of the level index, so that integrality is not lost. The group element in `lowerChain_principalRep` is a chosen lift `liftResidue` of $\mathrm{diag}(s, 1)$.

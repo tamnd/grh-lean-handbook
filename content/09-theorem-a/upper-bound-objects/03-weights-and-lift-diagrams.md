@@ -31,7 +31,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Weights and lift diagrams
 
-The forms on the definite spaces $X_j$ and $Y_m$ take values in irreducible representations of compact unitary groups. Such a representation is fixed by its highest weight at each infinite place $\tau$: a nonincreasing sequence of integers $\mu_0 \ge \mu_1 \ge \dots \ge \mu_{n-1}$. This section fixes these weights. The two maps of the proof must land in the same space of forms on $Y_m$, so the weight that the composite lift gives on $Y_m$ must be a weight that branching from $X_m$ allows. That is the interlacing at the end of the section.
+The forms on the definite spaces $X_j$ and $Y_m$ take values in irreducible representations of compact unitary groups. Such a representation is fixed by its highest weight at each infinite place $\tau$: a nonincreasing sequence of integers $\mu_0 \ge \mu_1 \ge \dots \ge \mu_{n-1}$. The two maps of the proof must land in the same space of forms on $Y_m$, so the weight on $Y_m$ must be one that branching from $X_m$ allows. That is the interlacing at the end of the section.
 
 ### Weights by their columns
 
@@ -107,7 +107,7 @@ Lean: `New.Data.liftDiagram_le` (New/UpperBound/Objects/Weights.lean).
 
 ### The weight of $Y_m$ and branching
 
-The space $Y_m$ has rank $n_m - 1$. By the branching rule from $\mathrm{U}(n)$ to $\mathrm{U}(n-1)$ ([integral Weyl modules and branching](/chapter/weyl-modules/)), a representation of highest weight $\mu$ of $\mathrm{U}(X_m)$ contains the representation of highest weight $\mu'$ of $\mathrm{U}(Y_m)$ exactly when the two weights interlace: $\mu_p \ge \mu'_p \ge \mu_{p+1}$ for all $p < n_m - 1$. In the language of columns, branching removes one box from some columns. The source keeps a fixed number of columns at each height $h \equiv k \pmod{t+1}$ and shortens all the others by one box.
+The space $Y_m$ has rank $n_m - 1$. By the branching rule from $\mathrm{U}(n)$ to $\mathrm{U}(n-1)$ ([integral Weyl modules and branching](/chapter/weyl-modules/)), a representation of highest weight $\mu$ of $\mathrm{U}(X_m)$ contains the representation of highest weight $\mu'$ of $\mathrm{U}(Y_m)$ exactly when the two weights interlace: $\mu_p \ge \mu'_p \ge \mu_{p+1}$ for all $p < n_m - 1$. The source keeps a fixed number of columns at each height $h \equiv k \pmod{t+1}$ and shortens all the others by one box.
 
 **Definition (The weight of $Y_m$).** The number of kept columns of height $h$ is $\Delta/2 - (t+1)/2$ if $h \ge k$ and $t + 1 \mid h - k$, and $0$ otherwise. The column count of $Y_m$ at height $h$ is
 $$c'_\tau(h) = \mathrm{kept}(h) + \big(c_\tau(h+1) - \mathrm{kept}(h+1)\big).$$
@@ -149,7 +149,7 @@ Lean: `New.Data.sum_branchExponent` (New/UpperBound/Objects/Weights.lean).
 
 ### A worked example
 
-The following numbers do not come from admissible data. They show the arithmetic at a small size. Take $k = 2$, $t = 3$, $\Delta/2 = 10$, $\Delta = 20$, $m = 2$, $\kappa(\tau) = 1$, and $\tau$ not an $a$-place. Then $\kappa_1 = 31$, $\kappa_2 = 51$, and $n_0, n_1, n_2 = 2, 6, 10$. The column counts are $c(2) = 31 - 3 = 28$ and $c(6) = 20 - 4 = 16$, and all others below $10$ are $0$.
+These numbers do not come from admissible data. Take $k = 2$, $t = 3$, $\Delta/2 = 10$, $\Delta = 20$, $m = 2$, $\kappa(\tau) = 1$, and $\tau$ not an $a$-place. Then $\kappa_1 = 31$, $\kappa_2 = 51$, and $n_0, n_1, n_2 = 2, 6, 10$. The column counts are $c(2) = 31 - 3 = 28$ and $c(6) = 20 - 4 = 16$, and all others below $10$ are $0$.
 
 The weights are $\mu(X_0) = (0, 0)$ and $\mu(X_1) = (-2, -2, -30, -30, -30, -30)$, with $\ell_1 = 1 - 31$. The diagrams are $\mu^+_1 = (28, 28)$ and $\mu^+_2 = (44, 44, 16, 16, 16, 16)$. With $\ell_2 = 3 - 51 = -48$,
 $$\mu(X_2) = (-4, -4, -32, -32, -32, -32, -48, -48, -48, -48).$$

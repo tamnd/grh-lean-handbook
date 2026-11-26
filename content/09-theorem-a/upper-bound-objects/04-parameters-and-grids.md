@@ -59,7 +59,7 @@ Lean: `New.CentreSystem.IsParam.isBlockRule_neg_insert_of_up` (New/UpperBound/Ob
 
 ### The two grids
 
-The source uses two grids of spaces with nodes $(i, j)$. A flag $z$ selects the grid: $z = \text{false}$ for $Y$, $z = \text{true}$ for $\tilde Y$. The node $(i, j)$ of grid $Y$ is the space $Y^i_j$: the $r$ rows, $i$ blocks of length $t$ of one kind and $j$ blocks of length $t$ of the other. In grid $\tilde Y$ the base has $r + 1$ indices and the blocks have lengths $t + 1$ and $t - 1$. The lower chain is the edge $i = 0$ of grid $Y$. The other nodes are used by the seesaw identity in [the seesaw identity, part 1](/chapter/seesaw-identity-1/).
+The source uses two grids of spaces with nodes $(i, j)$. A flag selects the grid $Y$ or $\tilde Y$. The node $(i, j)$ of grid $Y$ is the space $Y^i_j$: the $r$ rows, $i$ blocks of length $t$ of one kind and $j$ blocks of length $t$ of the other. In grid $\tilde Y$ the base has $r + 1$ indices and the blocks have lengths $t + 1$ and $t - 1$. The lower chain is the edge $i = 0$ of grid $Y$. The other nodes are used by the seesaw identity in [the seesaw identity, part 1](/chapter/seesaw-identity-1/).
 
 **Definition (Grid nodes).** At the node $(i, j)$ with offset $o$:
 
