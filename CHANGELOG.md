@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.2.2
+
+New chapters since v0.2.1:
+
+- Volume 2, chapter 7, Sets with no three-term progressions (#77). Volume 2 is now complete.
+- Volume 4, chapter 2, Quotients and reduction theory (#76).
+- Volume 4, chapter 4, A simple trace formula (#78).
+- Volume 5, chapter 2, The Laplace method (#79).
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.1
 
 New chapters since v0.2.0:

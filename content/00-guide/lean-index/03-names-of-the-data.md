@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Names of the data
 
-The index lists 1147 Lean names that the 34 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 295 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
+The index lists 1392 Lean names that the 38 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 300 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
 
 - `New.Data.a`: `New/Reduction/Data/AdmissibleData.lean`, [line 215](lean:New/Reduction/Data/AdmissibleData.lean#L215). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.a_div_x₁_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 182](lean:New/Reduction/Data/Sizes.lean#L182). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
@@ -122,6 +122,10 @@ The index lists 1147 Lean names that the 34 written chapters cite, on a `Lean:` 
 - `New.Data.IsDenominatorBound`: `New/Determinant/Twist/FitTwists.lean`, [line 197](lean:New/Determinant/Twist/FitTwists.lean#L197). Cited in [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.isDiscreteSeriesBessel_filling_besselSystem`: `New/Spanning/Bessel/FillingData.lean`, [line 529](lean:New/Spanning/Bessel/FillingData.lean#L529). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.isNearIsometry_e₀_comp_scaledPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 257](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L257). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.IsNearPair`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 113](lean:New/Derivatives/Sharpness/NearPairs.lean#L113). Cited in [Chapter](/chapter/progression-free-sets/).
+- `New.Data.IsNearPair.end_ne_start`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 189](lean:New/Derivatives/Sharpness/NearPairs.lean#L189). Cited in [Chapter](/chapter/progression-free-sets/).
+- `New.Data.IsNearPair.eq_and_eq_of_partner_eq`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 170](lean:New/Derivatives/Sharpness/NearPairs.lean#L170). Cited in [Chapter](/chapter/progression-free-sets/).
+- `New.Data.IsNearPair.exponent_unique`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 158](lean:New/Derivatives/Sharpness/NearPairs.lean#L158). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Data.IsNegligible`: `New/Determinant/Twist/FitTwists.lean`, [line 208](lean:New/Determinant/Twist/FitTwists.lean#L208). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Data.IsRegularFamily`: `New/Determinant/Twist/FitTwists.lean`, [line 229](lean:New/Determinant/Twist/FitTwists.lean#L229). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.isSpread_goodPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 339](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L339). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-b-plan/).
@@ -217,6 +221,7 @@ The index lists 1147 Lean names that the 34 written chapters cite, on a `Lean:` 
 - `New.Data.normSqAt_goodProjTranslate_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 526](lean:New/UpperBound/Size/ArchimedeanSize.lean#L526). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.normSqAt_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 231](lean:New/Reduction/ShortAndEnough.lean#L231). Cited in [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.normSqAt_targetLattice`: `New/Reduction/IntegralTargetForms.lean`, [line 102](lean:New/Reduction/IntegralTargetForms.lean#L102). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.notMem_bPlaces_of_two_partners`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 92](lean:New/Derivatives/Sharpness/NearPairs.lean#L92). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Data.offWeight`: `New/Reduction/Data/AdmissibleData.lean`, [line 218](lean:New/Reduction/Data/AdmissibleData.lean#L218). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.orderOf_chiMLocal`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 164](lean:New/Derivatives/Field/ChosenPlaces.lean#L164). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Data.paramW`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 297](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L297). Cited in [Chapter](/chapter/notation/).
