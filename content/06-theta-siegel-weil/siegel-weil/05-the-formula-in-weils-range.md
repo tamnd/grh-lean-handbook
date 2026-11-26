@@ -123,7 +123,7 @@ where $\sigma$ is the bijection of the Lagrangians given by $\gamma$. One term i
 
 The folder of the formula also contains a constancy theorem for automorphic functions. The source uses it where the period of a theta lift between spaces of equal rank must be a constant. It is not used in the proof above.
 
-Let $W$ be a hermitian space and $H$ a splitting of one hyperbolic plane off $W$, with complement $W_0$. A function $D$ on $U(W)(\mathbb{A})$ is an automorphic function, `New.Exchange.IsAutFunction W D`, if it is continuous and left invariant under the rational points.
+Let $W$ be a hermitian space and $H$ a splitting of one hyperbolic plane off $W$, with complement $W_0$. A function $D$ on $U(W)(\mathbb{A})$ is an automorphic function, `New.Exchange.IsAutFunction W D`, if it is continuous and left invariant under the rational points. The singular forms of [the Rallis inner product formula](/chapter/rallis-inner-product/) use the same predicate.
 
 **Theorem (Constancy of automorphic functions).** Let $D$ be an automorphic function on $U(W)(\mathbb{A})$, and let $S$ be a nonempty set of finite places. Suppose that:
 
