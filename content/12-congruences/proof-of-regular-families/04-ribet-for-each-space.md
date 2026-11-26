@@ -77,7 +77,7 @@ Apply the bound for denominators with $O_p(\vartheta)$, $E = e_{X-1}$ and $Z = \
 
 So the bound for denominators gives the claim. $\square$
 
-**Remark (Formalization).** The statement starts with `open scoped Classical in`. The idempotent `tupleIdem` needs decidable equality on the index type of the chosen places, and the statement takes it from classical logic. The theorem on the lift settings of the main pairs uses the instance of its own statement. The two instances are equal only as propositions. So the source closes the goal on the membership of $\varphi_\vartheta$ with `convert` at [line 464](lean:New/Congruences/FitTwistsExist.lean#L464), and the comment at line 463 says why. This is F-025 of the spec, and it is confirmed.
+**Remark (Formalization).** The statement starts with `open scoped Classical in`. The idempotent `tupleIdem` needs decidable equality on the index type of the chosen places, and the statement takes it from classical logic. The theorem on the lift settings of the main pairs uses the instance of its own statement. The two instances are equal only as propositions. So the source closes the goal on the membership of $\varphi_\vartheta$ with `convert` at [line 464](lean:New/Congruences/FitTwistsExist.lean#L464), and the comment at line 463 says why. The register of findings lists this as F-025, with the status open ([settings and instances](/chapter/register-of-findings/#settings-and-instances)). The lines 463 and 464 are as the row says. This chapter does not check which global instance gives the second decidable equality.
 
 ### From `DenominatorLe` to the first clause
 
