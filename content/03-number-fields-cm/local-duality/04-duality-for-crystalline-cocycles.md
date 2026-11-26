@@ -33,8 +33,6 @@ The dimensions of $D_{\mathrm{dR}}/\mathrm{Fil}^0$ for $V$ and for $V^*(1)$ add 
 
 $$\dim Z^1_f(K, V) + \dim Z^1_f(K, V^*(1)) = (2 + n)\, d.$$
 
-This is the cocycle form of the count. It is the analogue in characteristic $0$ of the exponent $2 + d$ of the last section, with the degree $n$ in place of $d$.
-
 ### The objects of the source
 
 The source works with a profinite group $\Gamma$ and a map $\Gamma \to G_{\mathbb{Q}_\ell}$ (the structure `OverGp Γ ℓ`, with map `toGp`). The degree $n$ above is the index of the image of `toGp`.
@@ -65,7 +63,7 @@ $$[Z_f(L) : \ell^m Z_f(L)] \cdot [Z_f(L') : \ell^m Z_f(L')] = \bigl((\ell^m)^d\b
 
 Lean: `New.Period.IsPotentiallyCrystalline.index_mul_index_dual` (Lib/ClassField/LocalDuality/CrystallineDuality.lean).
 
-*Proof.* The source's proof uses two facts. First, the Hodge-Tate jumps of $L'$ are the numbers $-u-1$ for the jumps $u$ of $L$. So the numbers of negative jumps of the two lattices add up to $d$. Second, the rank formula for crystalline cocycles, `crysCocycles.finrank_eq`, expresses the rank of $Z_f$ through the negative jumps. So the two ranks add up to $2d + nd$. For a free module of rank $s$, the index of $\ell^m$ times it is $(\ell^m)^s$. $\square$
+*Proof.* The source's proof uses two facts. First, the Hodge-Tate jumps of $L'$ are the numbers $-u-1$ for the jumps $u$ of $L$. So the numbers of negative jumps of the two lattices add up to $d$. Second, the rank formula for crystalline cocycles, `crysCocycles.finrank_eq`, expresses the rank of $Z_f$ through the negative jumps. So the two ranks add up to $2d + nd$. $\square$
 
 The docstring of the source says that the classical route to this count is Bloch-Kato duality together with the Euler characteristic formula, and that neither is used. The theorem states only the product of the two indices. It does not state that the two groups annihilate each other.
 
