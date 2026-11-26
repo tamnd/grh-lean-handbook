@@ -73,8 +73,8 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 8 | 1 | Complex abelian varieties through theta functions | drafted | 14,604 |
 | 8 | 2 | An integral model without a moduli problem | drafted | 14,661 |
 | 8 | 3 | The congruence relation | drafted | 14,017 |
-| 8 | 4 | What attached means | planned | 0 |
-| 8 | 5 | Building the representations | planned | 0 |
+| 8 | 4 | What attached means | drafted | 14,374 |
+| 8 | 5 | Building the representations | drafted | 12,699 |
 | 9 | 1 | Theorem A and its plan | drafted | 9,018 |
 | 9 | 2 | The objects of the upper bound | planned | 0 |
 | 9 | 3 | The seesaw identity, part 1: unfolding | planned | 0 |
@@ -103,7 +103,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 11 | Local densities at the finite places | planned | 0 |
 | 10 | 12 | The proof of Theorem B | planned | 0 |
 | 11 | 1 | Theorem C and the height argument | drafted | 8,729 |
-| 11 | 2 | Twists, critical pairs and regular families | planned | 0 |
+| 11 | 2 | Twists, critical pairs and regular families | drafted | 11,278 |
 | 11 | 3 | Single theta lifts and their norms | planned | 0 |
 | 11 | 4 | The exchange identity, part 1 | planned | 0 |
 | 11 | 5 | The exchange identity, part 2 | planned | 0 |

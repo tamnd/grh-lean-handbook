@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+## v0.3.0
+
+All background volumes are drafted. Milestones G2, G3 and G4 are done.
+
+- Volumes 0 and 1: the guide and the proof in outline.
+- Volumes 2 to 8: analytic number theory; number fields, class field theory and CM; unitary groups and automorphic forms; representations; the theta correspondence and Siegel-Weil; cohomology and p-adic Hodge theory; Shimura varieties and Galois representations.
+
+New since v0.2.8:
+
+- Volume 8, chapter 2, An integral model without a moduli problem (#110).
+- Volume 8, chapter 4, What attached means (#114).
+- Volume 8, chapter 5, Building the representations (#111). Volume 8 is now complete.
+- Volume 11, chapter 2, Twists, critical pairs and regular families (#113).
+
+The argument volumes 9 to 12 (Theorems A, B and C, and the congruences) are in progress.
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.8
 
 New chapters since v0.2.7:
