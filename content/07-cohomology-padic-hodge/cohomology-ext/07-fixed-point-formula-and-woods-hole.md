@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The fixed point formula and the Woods Hole formula
 
-This section uses the Hodge cohomology, the point classes and the diagonal class of Section 6. It first computes the pull-back of the diagonal class along a twisted graph. The result is a sum of point classes, one for each coincidence, with a Jacobian ratio as the multiplicity. It then states the Woods Hole formula of the source, which is the vanishing half of the holomorphic Lefschetz formula. A model case on the projective line closes the section.
+This section pulls the diagonal class of Section 6 back along a twisted graph. The result is a sum of point classes over the coincidences, with Jacobian ratios as multiplicities. It then states the Woods Hole formula of the source, the vanishing half of the holomorphic Lefschetz formula, and computes a model case.
 
 ### The classical statement
 
@@ -37,17 +37,17 @@ $$\sum_q (-1)^q \operatorname{tr}\big(f^* \mid H^q(M, \mathcal{O}_M)\big) = \sum
 
 In one standard form, the version for $h$-forms replaces $\mathcal{O}_M$ by $\Omega^h_M$. The local term at $x$ then has the numerator $\operatorname{tr}(\Lambda^h df_x)$. Up to the sign $(-1)^h$, this numerator is the coefficient of $z^h$ in $\det(1 - z\,df_x)$. The source uses that coefficient.
 
-The source does not state this equality. It states only one consequence: if the left side vanishes for the reason that the maps kill the relevant classes, then the right side vanishes. It also allows a correspondence in place of a single map. The pair $(c, u)$ below plays the part of a correspondence, and the case $c = \mathrm{id}$ is the case of a single map $u$.
+The source does not state this equality. It states only that the right side vanishes when the maps kill the relevant classes. The pair $(c, u)$ below plays the part of a correspondence, and $c = \mathrm{id}$ is the case of a single map $u$.
 
 ### Coincidences
 
-Let $k$ be a field, and let $W$ and $X$ be functors from $k$-algebras to sets. A coincidence of two maps $u, c : W \to X$ is a point $x \in W(A)$ with $c(x) = u(x)$. Let $k[\varepsilon]$ be the dual numbers.
+Let $k$ be a field with dual numbers $k[\varepsilon]$, and let $W$ and $X$ be functors from $k$-algebras to sets. A coincidence of $u, c : W \to X$ is a point $x \in W(A)$ with $c(x) = u(x)$.
 
 **Definition 7.1 (Reduced coincidence).** A point $x \in W(k[\varepsilon])$ satisfies the condition if $c(x) = u(x)$ implies that $x$ is the image of its base point under $k \to k[\varepsilon]$.
 
 Lean: `New.Variety.ConstIfCoincident` (Lib/Cohomology/Hodge/FixedPointFormula.lean).
 
-So a coincidence has no nonzero tangent vector. This is the algebraic form of the condition that the fixed points are simple.
+This is the algebraic form of the condition that the fixed points are simple.
 
 **Definition 7.2 (Coincidence set).** A finite set $s$ of $k$-points of $W$ is a coincidence set of $u$ and $c$ if three conditions hold. First, every $k[\varepsilon]$-valued point satisfies Definition 7.1. Second, every $w \in s$ is a coincidence. Third, for every $k$-algebra $K$ that is a field, every coincidence $x \in W(K)$ is the image of some $w \in s$.
 
@@ -73,8 +73,6 @@ Lean: `New.Variety.HasJacobianRatio` (Lib/Cohomology/Hodge/FixedPointFormula.lea
 
 Lean: `New.Variety.IsTangentPoly` (Lib/Cohomology/Etale/Basic.lean).
 
-So $B$ is $(dc)^{-1} du$ on the tangent space at $y$, and $P$ is a multiple of its characteristic polynomial in the form $\det(1 - tB)$.
-
 **Lemma 7.6.** Suppose that every field-valued point of $W$ lies in a chart with $d$ coordinates. Let $P$ be a tangent polynomial of $c$ and $u$ at $w$ with $P(1) \neq 0$. Then for every $t \in k$, the Jacobian ratio of $u$ and $c$ at $w$ for $t$ is $P(t)/P(1)$. Every $k[\varepsilon]$-valued coincidence above $w$ is constant.
 
 Lean: `New.Variety.IsTangentPoly.hasJacobianRatio_eval_div` (Lib/Cohomology/Hodge/FixedPointFormula.lean).
@@ -91,7 +89,7 @@ From here $k$ has characteristic $0$. For $t \in k$, let $s_t$ be the map $(a, m
 
 Lean: `New.Variety.scaledGraph` (Lib/Cohomology/Hodge/FixedPointFormula.lean).
 
-At $t = 1$ this is the graph of the pair $(u, c)$. The parameter $t$ scales the derivative of $u$ and nothing else.
+The parameter $t$ scales the derivative of $u$ and nothing else.
 
 **Theorem 7.8 (Fixed point formula).** Let $X$ have an atlas of dimension $d$. Then there is a class $\delta \in \operatorname{Hdg}^d(X \times X)$ with this property. Let $E$ be a field of characteristic $0$ over $k$ and let $W$ be a separated functor on $E$-algebras whose field-valued points lie in charts of dimension $d$. Let $u, c : W \to X$, let $s$ be a coincidence set of $u$ and $c$, let $t \in E$, and let $n(w)$ be the Jacobian ratio at $w$ for $t$, for each $w \in s$. Then two statements hold.
 
@@ -102,13 +100,13 @@ Lean: `New.Variety.exists_diagonal_local_terms` (Lib/Cohomology/Hodge/FixedPoint
 
 *Proof sketch.* Take the diagonal class of Section 6 and forget its supports. Its pull-back along the twisted graph has support in $s$. So it is enough to find its multiplicity at each $w \in s$, by the result of Section 6 that a class with support in $s$ is the sum of its local point classes. Near $w$, the differences of the coordinates of $u \circ s_t$ and $c$ cut out $w$. The transformation law for Grothendieck symbols then gives the multiplicity as the determinant that relates these differences to the coordinate differences at $t = 1$. That determinant is $n(w)$. $\square$
 
-In the classical picture, statement 2 says that the twisted graph meets the diagonal at the coincidences with the given multiplicities. With Lemma 7.6, the multiplicity at a simple coincidence is $P(t)/P(1)$, so the coefficient of $t^h$ is $\operatorname{coeff}_h(P)/P(1)$. For $c = \mathrm{id}$ this is the coefficient of $t^h$ in $\det(1 - t\,du)/\det(1 - du)$. These are the local terms of the Woods Hole formula, in the form that the source uses.
+With Lemma 7.6, the multiplicity at a simple coincidence is $P(t)/P(1)$, so the coefficient of $t^h$ is $\operatorname{coeff}_h(P)/P(1)$. For $c = \mathrm{id}$ this is the coefficient of $t^h$ in $\det(1 - t\,du)/\det(1 - du)$. These are the local terms of the Woods Hole formula, in the form that the source uses.
 
-**Remark (Formalization).** The class $\delta$ comes from an existential statement, and the source does not fix one. The theorem holds for every choice of $\delta$ with the given properties, so the choice does not matter for the uses below. A multiplicity $n(w)$ can be $0$. For example, $P(t)/P(1)$ is $0$ when $t \neq 0$ and $t^{-1}$ is an eigenvalue of $B$. Then $w$ gives no term in statement 2, and the formula still holds. Lemma 7.6 needs $P(1) \neq 0$ because the source divides by $P(1)$, and division by $0$ in Lean gives $0$. The hypothesis excludes this junk value.
+**Remark (Formalization).** The class $\delta$ comes from an existential statement, and any choice works below. A multiplicity $n(w)$ can be $0$. For example, $P(t)/P(1)$ is $0$ when $t \neq 0$ and $t^{-1}$ is an eigenvalue of $B$. Then $w$ gives no term in statement 2, and the formula still holds. Lemma 7.6 needs $P(1) \neq 0$ because the source divides by $P(1)$, and division by $0$ in Lean gives $0$. The hypothesis excludes this junk value.
 
 ### The Hodge-Tate map
 
-The Woods Hole formula needs a way to tell point classes apart. Section 6 gives point classes in $\operatorname{Hdg}^d$, but it gives no tool to show that a sum of them is not zero. The source uses the Hodge-Tate map of Volume 7, chapter 5 (/chapter/comparison-theorems/).
+To tell point classes apart, the source uses the Hodge-Tate map of Volume 7, chapter 5 (/chapter/comparison-theorems/).
 
 **Definition 7.9 (Hodge-Tate map).** For each weight $h$, the Hodge-Tate map $\lambda_h$ is a $k$-linear map from $\operatorname{Hdg}^q(N)$ to a group of pairs $\mathrm{PairH}(N)$. That group is the total cohomology on pairs $(S, M)$ with coefficients $S[1/p]$.
 
@@ -118,7 +116,7 @@ Lean: `New.Variety.hodgeTateMap` (Lib/PadicComparison/HodgeTate/Map.lean).
 
 Lean: `New.Variety.linearIndepOn_hodgeTateMap_pointClass` (Lib/Cohomology/PointClass/LinearIndependence.lean).
 
-The proof reduces to $\mathbb{P}^d$ through the projective embedding, and then to $\mathbb{P}^1$. The register of findings (/chapter/register-of-findings/, "Citations and docstrings", F-108) records that a summary of the source describes this result as a statement about degrees of zero-cycles. The Lean statement is only the linear independence above.
+The register of findings (/chapter/register-of-findings/, "Citations and docstrings", F-108) records that a summary of the source describes this result as a statement about degrees of zero-cycles. The Lean statement is only the linear independence above.
 
 ### The Woods Hole formula
 
@@ -142,9 +140,7 @@ The proof uses two auxiliary results.
 
 Lean: `Polynomial.exists_dual_eval_mul_eq_coeff_mul` (Lib/Cohomology/WoodsHole.lean).
 
-The form exists because the polynomial functions form a subspace of $k^k$ on which the coefficient is well defined, since $k$ is infinite. Any extension to all of $k^k$ works.
-
-**Lemma 7.14.** Assume the atlas of $Y$ and the hypothesis on $u_i$, $b_i$ and $h$ of Theorem 7.12. Lemma 7.14 does not need properness or a projective embedding. In this setting, let $c : W \to Y$, let $\varphi$ be a linear form on $\mathrm{PairH}(W)$, and let $L$ be as in Lemma 7.13. For a class $z \in \operatorname{Hdg}^d(Y \times Y)$, let $\Phi_{t,i}\, z$ be the pull-back of $z$, read over $k$, along the twisted graph of $(u_i, c)$ for $t$. Then
+**Lemma 7.14.** Assume the atlas of $Y$ and the hypothesis on $u_i$, $b_i$ and $h$ of Theorem 7.12. Let $c : W \to Y$, let $\varphi$ be a linear form on $\mathrm{PairH}(W)$, and let $L$ be as in Lemma 7.13. For a class $z \in \operatorname{Hdg}^d(Y \times Y)$, let $\Phi_{t,i}\, z$ be the pull-back of $z$, read over $k$, along the twisted graph of $(u_i, c)$ for $t$. Then
 
 $$\sum_i b_i \, L\Big(t \mapsto \varphi\big(\lambda_d(\Phi_{t,i}\, z)\big)\Big) = 0.$$
 
@@ -176,16 +172,12 @@ $$\frac{-a}{1 - a} + \frac{-a^{-1}}{1 - a^{-1}} = \frac{-a}{1 - a} + \frac{1}{1 
 
 Classically, the formula for $1$-forms has the value $-\operatorname{tr}(u^* \mid H^1(\mathbb{P}^1, \Omega^1)) = -1$. The sign $(-1)^h$ of the numerator accounts for the difference.
 
-For $h = 2 > d$ both coefficients of $t^2$ are $0$, so the sum is $0$. This agrees with Theorem 7.12, whose hypothesis holds for every $h > d$.
-
-For the single map $u$ with $b = 1$, the sums for $h = 0$ and $h = 1$ are not $0$. So the family is not null in these weights. If Theorem 7.12 holds, its hypothesis must fail for $h = 0$ and $h = 1$. A null family needs several maps whose pull-backs cancel. Volume 8 applies the formula to correspondences on Shimura varieties.
+For the single map $u$ with $b = 1$, the family is not null in weights $0$ and $1$, so by Theorem 7.12 its hypothesis must fail there. A null family needs several maps whose pull-backs cancel. Volume 8 applies the formula to correspondences on Shimura varieties.
 
 **Remark (Formalization).** Several points of the Lean statement need care.
 
-1. Only the vanishing half is stated. The source file says that no trace is computed. The conclusion is a sum equal to $0$, not a sum equal to a trace. No comparison with étale or coherent cohomology is stated.
-2. For $h > d$ the hypothesis is vacuous, so the theorem gives a conclusion for free. In that case each tangent polynomial is a multiple of $\det(1 - tB)$ with $B$ of size $d$, so its coefficient of $t^h$ is already $0$.
+1. Only the vanishing half is stated, and no trace is computed.
+2. For $h > d$ the hypothesis is vacuous. The conclusion is then trivial, since each local term has $\operatorname{coeff}_h(P) = 0$ (Exercise 4).
 3. Definition 7.11 is an implication. If some coincidence has no tangent polynomial with $P(1) \neq 0$, for example a coincidence that is not simple, then the condition holds for that $c$ without content.
-4. A tangent polynomial is fixed only up to the scalar $P(0)$. The local term $\operatorname{coeff}_h(P)/P(1)$ does not depend on this scalar. Since $P(1) \neq 0$, also $P(0) \neq 0$.
-5. The theorem lives in the namespace `ellAdicCohom`, but the statement and the proof use only Hodge cohomology and the Hodge-Tate map. The register records this as F-112 (/chapter/register-of-findings/, "Citations and docstrings").
-6. The field $k$ must be algebraically closed and embedded in $\overline{\mathbb{Q}}_p$, through the instance `[EmbeddedInQpBar p k]`. The prime $p$ is implicit, and it enters only through Theorem 7.10. The field $E$ has characteristic $0$. The instance `[IsProper Y.hom]` is a hypothesis, and the proof does not refer to it by name.
-7. The scalars $b$ are a finitely supported function $I \to_0 k$. The set $S$ uses only indices in the support, so the sums are finite sums.
+4. The theorem lives in the namespace `ellAdicCohom`, but the statement and the proof use only Hodge cohomology and the Hodge-Tate map. The register records this as F-112 (/chapter/register-of-findings/, "Citations and docstrings").
+5. The field $k$ must be algebraically closed and embedded in $\overline{\mathbb{Q}}_p$, through the instance `[EmbeddedInQpBar p k]`. The prime $p$ is implicit, and it enters through the Hodge-Tate map. The field $E$ has characteristic $0$. The instance `[IsProper Y.hom]` is a hypothesis, and the proof does not refer to it by name.

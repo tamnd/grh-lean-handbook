@@ -47,7 +47,7 @@ Lean: `New.Variety.HodgeTest.sqZeroExt` (Lib/Cohomology/Hodge/Site.lean).
 
 Lean: `New.Variety.hodgeCoeff` (Lib/Cohomology/Hodge/Site.lean).
 
-A $k$-point of $A \oplus M$ over a point of $A$ is a tangent vector with values in $M$. So a functor $N$ on $k$-algebras, read as $(A, M) \mapsto N(A \oplus M)$, sees the tangent spaces of $N$. The exterior algebra on $M$ collects the forms of all degrees at once.
+A $k$-point of $A \oplus M$ over a point of $A$ is a tangent vector with values in $M$. So a functor $N$ on $k$-algebras, read as $(A, M) \mapsto N(A \oplus M)$, sees the tangent spaces of $N$.
 
 **Definition (Hodge cohomology).** Let $N$ be a functor from $k$-algebras to abelian groups. Its Hodge cohomology in degree $q$ is $\operatorname{Hdg}^q(N) = \operatorname{Ext}^q(N \circ \mathrm{sqZeroExt}, \bigwedge)$ in the category of functors from Hodge tests to abelian groups. For a space $X$ one takes $N = \mathbb{Z}[X]$. For a subfunctor $U \subseteq X$ one takes $N = \mathbb{Z}[X] / \mathbb{Z}[U]$, the relative chains of Section 2.
 
@@ -75,7 +75,7 @@ Lean: `New.Variety.EtaleChart` (Lib/General/Geometry/EtaleCharts.lean).
 
 Lean: `New.Variety.HasAtlas` (Lib/General/Geometry/EtaleCharts.lean).
 
-A smooth separated scheme of finite type over $k$, of pure dimension $d$, has such charts locally. The class asks for finitely many charts, which is a form of quasi-compactness.
+A smooth separated scheme of finite type over $k$, of pure dimension $d$, has such charts locally.
 
 **Proposition (Universal point).** Let $R$ be the ring of a chart with coordinates $x_1, \dots, x_d$. There is a section $u : R \to R \oplus R^d$ of the projection such that $(R, R^d)$ represents the functor $(A, M) \mapsto \operatorname{Hom}_k(R, A \oplus M)$ through $u$. Concretely, $u$ lifts the identity of $R$ and sends $x_i$ to $(x_i, e_i)$.
 
@@ -83,7 +83,7 @@ Lean: `New.Variety.EtaleChart.exists_univPoint` (Lib/Cohomology/Hodge/Site.lean)
 
 *Proof.* An étale map lifts uniquely along a square-zero extension. So a $k$-algebra map $s : R \to A \oplus M$ is determined by its composite with $A \oplus M \to A$ and by the $M$-parts of the $s(x_i)$. These data are exactly a morphism of Hodge tests $(R, R^d) \to (A, M)$. The same uniqueness defines $u$. $\square$
 
-**Example (A chart).** Let $R$ be the ring of a chart of dimension $d$. By the proposition, the functor $\mathbb{Z}[h_R \circ \mathrm{sqZeroExt}]$ is $\mathbb{Z}[\operatorname{Hom}((R, R^d), -)]$. This is projective, by the Yoneda argument of Section 2. So $\operatorname{Hdg}^q(h_R) = 0$ for $q > 0$, and $\operatorname{Hdg}^0(h_R) = \bigwedge_R R^d$. In the classical picture, $\bigwedge_R R^d$ is the algebra of differential forms on $\operatorname{Spec} R$, with basis the products $dx_{i_1} \wedge \dots \wedge dx_{i_p}$. The scaling by $t$ corresponds to the endomorphism of $(R, R^d)$ that multiplies $R^d$ by $t$. So it acts on the forms of degree $p$ by $t^p$. This is the way in which a power of $t$ marks a form degree in Section 7.
+**Example (A chart).** Let $R$ be the ring of a chart of dimension $d$. By the proposition, the functor $\mathbb{Z}[h_R \circ \mathrm{sqZeroExt}]$ is $\mathbb{Z}[\operatorname{Hom}((R, R^d), -)]$. This is projective, by the Yoneda argument of Section 2. So $\operatorname{Hdg}^q(h_R) = 0$ for $q > 0$, and $\operatorname{Hdg}^0(h_R) = \bigwedge_R R^d$. In the classical picture, $\bigwedge_R R^d$ is the algebra of differential forms on $\operatorname{Spec} R$, with basis the products $dx_{i_1} \wedge \dots \wedge dx_{i_p}$. The scaling by $t$ corresponds to the endomorphism of $(R, R^d)$ that multiplies $R^d$ by $t$. So it acts on the forms of degree $p$ by $t^p$.
 
 **Example (A point).** Take $R = k$ with no coordinates. A morphism of Hodge tests $(k, 0) \to (A, M)$ is the unique pair of the structure map and the zero map. So $(k, 0)$ is initial, and $\operatorname{Hdg}^0(h_k) = \bigwedge_k 0 = k$, with no higher groups. The scaling acts as the identity.
 
@@ -95,7 +95,7 @@ A class of a point needs a local model. The source uses Grothendieck's symbol on
 
 Lean: `New.Variety.symbolClass` (Lib/Cohomology/Hodge/GrothendieckSymbol.lean).
 
-A point of $\mathbb{A}^d \setminus 0$ has such witnesses $l$, since its entries generate the unit ideal. Points with several witnesses turn the cocycle into a relative class. The cocycle condition is a Laplace expansion. In degree $1$ the class is the boundary of $dT/T$. The source proves a transformation law: if $f = Mg$ for two tuples that cut out the same locus, the pull-backs $[df/f]$ and $[dg/g]$ differ by $\det M$, under conditions on the forms. In characteristic $0$ it also proves that the symbol in degree $d + 1$ restricts to the product of the symbols in degrees $d$ and $1$. The head of the file on the fixed point formula cites Hartshorne, *Residues and Duality* (1966), III.9, for the symbol.
+A point of $\mathbb{A}^d \setminus 0$ has such witnesses $l$, since its entries generate the unit ideal. The source proves a transformation law: if $f = Mg$ for two tuples that cut out the same locus, the pull-backs $[df/f]$ and $[dg/g]$ differ by $\det M$, under conditions on the forms. In characteristic $0$ it also proves that the symbol in degree $d + 1$ restricts to the product of the symbols in degrees $d$ and $1$. The head of the file on the fixed point formula cites Hartshorne, *Residues and Duality* (1966), III.9, for the symbol.
 
 **Theorem (Excision).** Let $u : X' \to X$ be injective on points with open image, and let every point of $X$ over a field outside the image lie in an open subfunctor contained in $U$. Then pull-back along $u$ is bijective from $\operatorname{Hdg}^q(X, U)$ to $\operatorname{Hdg}^q(X', u^{-1} U)$ for all $q$.
 
@@ -127,7 +127,7 @@ Lean: `New.Variety.IsPointSum.map_eq_sum_pointClass` (Lib/Cohomology/Hodge/Groth
 
 *Proof sketch.* For one point this is the proposition, scaled by $n(z)$. For several points the proof is an induction on $s$, by Mayer-Vietoris: the complement of $s$ is the intersection of the complements of its points. $\square$
 
-**Remark (Formalization).** (1) The definition of $[z]$ uses `Classical.epsilon (IsPointSum {z} 1)` ([GrothendieckSymbol.lean](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L941)). If no class of multiplicity $1$ exists, the epsilon returns an arbitrary class, and $[z]$ is its image. This is a junk value, and the register lists it (F-051 in [Junk values](/chapter/register-of-findings/)). The proposition above shows that the choice does not matter when a class of multiplicity $1$ exists and $X$ is separated. Such a class exists whenever some chart of dimension $d$ contains $z$ and some $d$ functions on it cut out $z$: excision gives it. In Section 7, part (a) of the fixed point formula gives a class with the required multiplicities at the coincidences, so there the junk value does not occur. For a $d$ that is not the dimension of the charts, $[z]$ may be junk. (2) The file has the line `seal H.map` with no `in` ([GrothendieckSymbol.lean](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L802)). It acts to the end of the file and hides the definition of pull-back from `rfl` and `simp` there. The register lists this (F-020 in [Settings and instances](/chapter/register-of-findings/)). It changes how the proofs in the file are written, not what the statements say.
+**Remark (Formalization).** (1) The definition of $[z]$ uses `Classical.epsilon (IsPointSum {z} 1)` ([GrothendieckSymbol.lean](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L941)). If no class of multiplicity $1$ exists, the epsilon returns an arbitrary class, and $[z]$ is its image. This is a junk value, and the register lists it (F-051 in [Junk values](/chapter/register-of-findings/)). The proposition above shows that the choice does not matter when a class of multiplicity $1$ exists and $X$ is separated. If $X$ has an atlas of dimension $d$, the source proves that such a class exists for every $k$-point. For a $d$ that is not the dimension of the charts, $[z]$ may be junk. (2) The file has the line `seal H.map` with no `in` ([GrothendieckSymbol.lean](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L802)). It acts to the end of the file and hides the definition of pull-back from `rfl` and `simp` there. The register lists this (F-020 in [Settings and instances](/chapter/register-of-findings/)). It changes how the proofs in the file are written, not what the statements say.
 
 ### The Künneth formula
 
@@ -139,7 +139,7 @@ Lean: `New.Variety.kunneth` (Lib/Cohomology/Hodge/Kunneth.lean).
 
 *Proof sketch.* Replace $X$ by a subfunctor $V$ built from charts, which the atlas gives. It is Zariski locally all of $X$, so $V \times V$ is dense in $X \times X$ and restriction of classes to it is injective. The proof uses the Leray-Hirsch map of Section 5, with the products with a basis of the classes on $V$, and a dévissage in each factor in turn. At represented functors the Example on charts reduces the claim to forms: the forms on $R \otimes_k R'$ are spanned by products of forms on $R$ and on $R'$. Finally the classes on $V$ in the products are restrictions of classes on $X$. $\square$
 
-The classical Künneth formula is an isomorphism $\bigoplus_{a+b=n} H^a(X, F) \otimes_k H^b(Y, G) \cong H^n(X \times_k Y, F \boxtimes G)$ for quasi-coherent sheaves on suitable schemes over a field. The source cites Stacks Project, Tag 0BEC, for it. The source proves only that the map is onto. Section 7 needs only this.
+The classical Künneth formula is an isomorphism $\bigoplus_{a+b=n} H^a(X, F) \otimes_k H^b(Y, G) \cong H^n(X \times_k Y, F \boxtimes G)$ for quasi-coherent sheaves on suitable schemes over a field. The source cites Stacks Project, Tag 0BEC, for it. The source proves only that the map is onto.
 
 ### The class of the diagonal
 
@@ -151,6 +151,6 @@ Lean: `New.Variety.exists_diagonal_class` (Lib/Cohomology/Hodge/DiagonalClass.le
 
 *Proof sketch.* Each chart $a_i$ of the atlas gives a chart $V_i$ of $X \times X$ near the diagonal, on which the differences of the coordinates cut out $\Delta$. On each $V_i$ the symbol of these differences is a class relative to the complement of $\Delta$. On overlaps the symbols agree, by the transformation law. Below degree $d$ the relative groups along the diagonal vanish, since the differences form a regular sequence of length $d$ in the chart ring. So a Mayer-Vietoris argument glues the local symbols to a global class without obstruction. $\square$
 
-The class $\delta$ is the analogue of the cycle class of the diagonal. The statement is existential: the source does not fix one $\delta$. Section 7 uses any class with the local description.
+The class $\delta$ is the analogue of the cycle class of the diagonal. The statement is existential: the source does not fix one $\delta$.
 
-**Remark (Formalization).** The Künneth formula and the diagonal class both carry the instance `[CharZero k]`. The Künneth formula takes `[hX : HasAtlas d X]` as an instance, and the diagonal class takes `(hX : HasAtlas d X)` as an explicit argument. Neither result is an isomorphism with a classical group. The diagonal class is characterized only by its local form near the diagonal. These are the inputs of the fixed point formula of Section 7, and they are all that it uses.
+**Remark (Formalization).** The Künneth formula and the diagonal class both carry the instance `[CharZero k]`. The Künneth formula takes `[hX : HasAtlas d X]` as an instance, and the diagonal class takes `(hX : HasAtlas d X)` as an explicit argument. Neither result is an isomorphism with a classical group. The diagonal class is characterized only by its local form near the diagonal.
