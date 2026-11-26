@@ -23,7 +23,7 @@ The chapter has three parts, one for each source file.
 2. *Products span* (Sections 5 and 6). A good form $F$ on $W_j$ with $\int F\,\mathsf{F}_i\,\theta^\circ = 0$ for all $i$ is $0$. Here $\theta^\circ$ is the theta kernel of $(W_j, V^\circ)$.
 3. *Gluing maps* (Sections 7 and 8). The first factors on $V''$ are glued to tuples of forms on $V^\circ$. This gives the linear map $\mathrm{glue}_\vartheta$. Its adjoint, applied to the good lift, is a fixed injective map $\Theta^\circ$ up to a nonzero scalar $c'_\vartheta$.
 
-Section 9 has examples and exercises, and Section 10 has the notes.
+Each section has its own examples. Section 9 has the exercises and the notes.
 
 ### The main statements
 
