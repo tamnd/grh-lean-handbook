@@ -89,6 +89,8 @@ $$\sum_{h<N}\Big(\frac{\mathrm{sc}(h)\,\kappa_\sigma(h)}{p^e} + \mathrm{pc}(h)\,
 
 where $\mathrm{sc}(h)$ is the number of congruences on one row of height $h$ at the source ($1$ for the pairing, $h$ for the entries) and $\mathrm{pc}(h)$ the same at the partner. The choice *covers* a pair $(h, h')$ if the entries of one of the two rows are imposed, or the pairing at the partner is imposed and $h = 1$, or the pairing at the source is imposed and $h' = 1$.
 
+Lean: `New.CongruenceChoice` (New/Derivatives/Divisibility/NullFrames.lean).
+
 Why does a covered pair have a pairing divisible by $\pi$? A new direction of height one is a multiple of the first given direction, since $g_{\tau,1}$ is $1 \times 1$. So if $h = 1$ and the pairing at the partner is imposed, $\langle \beta, \beta' \rangle_e = g^{p^e} \sum_a y_{\sigma,a,0}^{p^e} \beta'_a$ is divisible by $\pi$. If $h' = 1$ and the pairing at the source is imposed, the Frobenius step gives $\pi \mid \sum_a \beta_a^{p^e} y_{\sigma',a,0}$, and $\langle\beta,\beta'\rangle_e$ is a multiple of it. If the entries at the partner are imposed, $\pi \mid \beta'$. If the entries at the source are imposed, $\sqrt[p^e]{\pi} \mid \beta$ and so $\pi \mid \beta^{p^e}$.
 
 **Lemma (A choice of cost equal to the deduction term).** For every source $\sigma$, partner $\sigma'$ and exponent $e$ there is a choice of congruences whose cost is $\mathrm{ded}_e(\sigma,\sigma')$ and which covers every pair $(h, h')$ that is not exempt.
@@ -137,6 +139,8 @@ The value of a form with coefficients $\sum_a x_a y_{\tau,a,k'}$ on a row $g_k$ 
 Property 1 is the case analysis above: a pair that is not exempt is covered, and each of the four ways of covering makes the pairing divisible by $\pi$.
 
 For property 2, the norm of the product of the moduli, taken over all $(\tau, h)$ with the power $\kappa_\tau(h)$, is $\|\pi\|$ to the power $\sum_{e,\sigma}\mathrm{cost}$, since a modulus $\sqrt[p^e]{\pi}$ has norm $\|\pi\|^{1/p^e}$ (`New.norm_rpow_sum_cost_eq_prod_congruenceModulus`). The cost of each choice is the deduction term. A divisor has a norm at least that of the multiple, so $\|\det g_{\tau,h}\|$ is at least the norm of the product of its moduli. $\square$
+
+Lean: `New.norm_rpow_sum_cost_eq_prod_congruenceModulus` (New/Derivatives/Divisibility/NullFrames.lean), for the norm of the moduli.
 
 **Remark (Formalization).** The matrices $g_{\tau,h}$ and the roots of $\pi$ are chosen objects, made with `choose`; the theorem asserts only their existence. The pairing at the source and at the partner always uses the first given direction $y_{\cdot,\cdot,0}$, which is the only direction of height one. The theorem is stated for every finite set $S$ of exponents and every family of maps $\mathrm{pr}_e$; the partners and the set $S$ of the count are fixed only in Section 4.
 
