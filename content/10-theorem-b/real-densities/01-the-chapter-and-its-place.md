@@ -47,7 +47,11 @@ $$\Lambda_{R, K}(i, p) = \prod_{l < i} \begin{cases} \max(1, |\delta_l|^{-1})^K 
 
 This is the *head weight* (Lean: `New.headWeight`). The sieve also needs a vector for each list. Let $c_G = \operatorname{vol} U(k)\, S_k(1)/\operatorname{vol} U(r)$, with $S_k(1) = 2\pi^k/(k-1)!$ (Lean: `New.Shape.openCellConst`). For $\sigma \in G_1$ and a list $p$, the vector $N_\sigma(p) \in \mathbb C^{I \times I}$ (Lean: `New.normalizedOrbitalIntegral`) is
 
-$$N_\sigma(p) = \frac{\sqrt{c_G}\, \sqrt{|p_\varrho|^2 - 1}^{\,k - 1}}{|I|} \prod_{a < \varrho} |p_a|^{k + 1 + 2(\varrho - a - 1)} \cdot \mathcal J_W(w_p \sigma), \qquad \mathcal J_W(\gamma) = \int_{G_1} W(y) \otimes \overline{W(\gamma^{-1} y)}\, dy.$$
+$$N_\sigma(p) = \frac{\sqrt{c_G}\, \sqrt{|p_\varrho|^2 - 1}^{\,k - 1}}{|I|} \prod_{a < \varrho} |p_a|^{k + 1 + 2(\varrho - a - 1)} \cdot \mathcal J_W(w_p \sigma).$$
+
+The tensor $\mathcal J_W$ is defined by:
+
+$$\mathcal J_W(\gamma) = \int_{G_1} W(y) \otimes \overline{W(\gamma^{-1} y)}\, dy.$$
 
 Here $w_p$ is the Weyl element with $e_a \mapsto p_a e^*_a$ and $e^*_a \mapsto e_a/\bar p_a$ for $a < \varrho$, and $\mathcal J_W$ is the orbital integral `New.besselOrbitalIntegral` for Haar measure.
 
