@@ -77,7 +77,7 @@ Now fix $j$, a main pair $p$ for $j$ and test forms $\Xi$, $\Xi'$. Apply the lem
 $$\mathtt{DenominatorLe}\ \iota_\ell\ O_p(\tau^j)\ e_{X-1}\ (\mathbb{C}\varphi)\ (\beta_\ell \log \ell).$$
 The projection bound (Section 2), with the trivial stabilizers, gives
 $$\|\iota_\ell\langle \mathrm{pr}\,\Xi, \mathrm{pr}\,\Xi' \rangle\| \leq \exp\big(\beta_\ell \log \ell + v_\ell(h_{\mathrm{std}}) \log \ell\big) = \exp \gamma_\ell .$$
-The level of the lift data is the chosen level of $D$. So the number of classes is $h_{\mathrm{std}}$. This is clause 2 of `HasDenominatorsLe`. $\square$
+The chosen level of the lift data is `D.chosenLevel`, so the number of classes is $h_{\mathrm{std}}$. This is clause 2 of `HasDenominatorsLe`. $\square$
 
 ### What the proof of the theorem shows
 
