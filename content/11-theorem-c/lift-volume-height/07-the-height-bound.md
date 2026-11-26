@@ -19,7 +19,7 @@ This section proves the theorem of Section 1. It has three steps. The first step
 
 Throughout, $U$ is a comparison operator for $j$ (Section 3), $L_\vartheta$ is the space of lifts, $\mathrm{pr}_\vartheta$ is the orthogonal projection onto it, and $\Delta(\vartheta)$ is the determinant of the compression $\mathrm{pr}_\vartheta U_\vartheta|_{L_\vartheta}$ (Section 6). Put $A = f m b\log^2 b$, and let $d$ be the dimension of the good forms on $W_j$.
 
-### Inputs
+### Inputs for the height bound
 
 - *Heights.* A family $(z_\iota)$ has height at most $c$ if there are $H \neq 0$, a real $\alpha$ and reals $e(\ell)$ with $|\sigma(H)| \leq e^\alpha$ for every $\sigma$, $|\iota(H z_\iota)|_\ell \leq \exp(e(\ell))$ for every $\iota$ with prime $\ell$, and $\alpha + \sum_{\ell\in T}e(\ell) \leq c$ for every finite set $T$ of primes. Heights add under products, multiply by $n$ under $n$-th powers, and grow with $c$ (`New.HeightLe.of_mul_le`, `.mul`, `.pow`, `.mono`, [heights over the isomorphisms](/chapter/twisted-lattices/#heights-over-the-isomorphisms-with-the-l-adic-numbers)).
 - *Regular families.* For a regular family $\theta$ and $1 \leq j \leq m$, there is a denominator bound $\beta \colon \mathbb{N} \to \mathbb{R}$ with $\sum_{\ell\in T}\beta(\ell) \leq \mathrm{denominatorBudget}$ for every finite $T$, and with `ClearsProjection` $\iota$ $(\theta(\iota)^j)$ $j$ $\beta(\ell)$ for every $\iota$. Also $\ell$ is prime to the modulus of $\theta(\iota)$ (`New.Data.IsRegularFamily`, [regular families of twists](/chapter/twists-critical-pairs/#regular-families-of-twists)).

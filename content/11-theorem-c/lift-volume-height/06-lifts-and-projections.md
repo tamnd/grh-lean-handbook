@@ -16,7 +16,7 @@ This section studies the space $L_\vartheta$ of lifts, the range of the good lif
 
 The third fact is the archimedean input of Section 7. The projection $\mathrm{pr}_\vartheta$ is defined by the inner product at $\sigma = 1$. An automorphism $\sigma$ of $\mathbb{C}$ does not respect it. So a bound for $\|\mathrm{pr}_\vartheta y\|_\sigma$ is not automatic, and it needs a property of $y$: orthogonality to the false lifts.
 
-### Inputs
+### Inputs on lifts
 
 We use these results of earlier chapters, one line each.
 

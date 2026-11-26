@@ -15,7 +15,7 @@ This section proves property 5 of a comparison operator for $U_1$: it multiplies
 
 The bound is not a bound for an operator norm at $\sigma = 1$ alone. The operator $U_1$ is defined by an adjoint, and an automorphism $\sigma$ of $\mathbb{C}$ does not commute with adjoints. So the proof uses the rank one decomposition of Section 4, in which $U_1\varphi$ is a sum of explicit forms with coefficients that are inner products. Each coefficient is bounded at $\sigma$ by a Cauchy-Schwarz inequality for conjugate pairings.
 
-### Inputs
+### Inputs for the size bound
 
 Let $N$ be the number of pairs $b = (i, c)$ of a choice and a class of $V^\circ$, and $F$ the number of fillings of $\mu^-$ with increasing columns. So the frame index set has $N F$ elements. Let $n_{\mathrm{Aut}} \geq 1$ be the chosen group order and $h_j \geq 1$ the hook number of $\mu^-$. We use the following results of [the comparison operator, part 2](/chapter/comparison-operator-2/), of Volume 4 and of Volume 5, one line each.
 
