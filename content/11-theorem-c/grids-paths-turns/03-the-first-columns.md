@@ -44,7 +44,7 @@ The first path goes down the column $a = 0$ of both grids. A conjugate form $y'$
   Y_0  ------ diagonal period -----> Ytilde^0_0 = Y_0 + line
 ```
 
-### Results used
+### Inputs
 
 1. The transposed lift $L_b$ from $(z, 0, b + 1)$ to $(z, 0, b)$ is `pointTransposedLift`: the transposed lift with the indicator of the inclusion matrix modulo the triangle modulus $\mathfrak{t}_z$, times $n_z(b) = $ `triangleGLCard` $z$ $\vartheta$ $b$, the order of $\mathrm{GL}$ of the node modulo $\mathfrak{t}_z$. Here $\mathfrak{t}_{\mathrm{false}} = \mathfrak{m}_0 = \varpi Q$ and $\mathfrak{t}_{\mathrm{true}} = \mathfrak{b}$. The chain $\mathrm{chain}_z(b)$ composes them ([path data and periods](/chapter/seesaw-squares/#path-data-and-periods)).
 2. The period $I(\Psi; g)$ of a path, the moves `transposedMove`, the edge tuples, the action of node families, the characters $\varepsilon(g, w)$ and the path data are in the same section. The diagonal pairing at the index $0$ is `diagonalPeriodForm`.
@@ -118,7 +118,9 @@ Lean: `New.Data.edges_column`, `New.Data.mem_edges_first`, `New.Data.sum_tuplesO
 *Proof.* Claim 1 is a descending induction on $b$: the step adds the edge $e_{z,b}$. For claim 2, cutting a tuple into its parts on $w$ and off $w$ is a bijection with the pairs, and gluing is its inverse. For claim 4, let $J$ be the inclusion matrix modulo $\mathfrak{m}$. Then $J^T y$ reduces to $J^T J = 1$ modulo $\mathfrak{m}_0$. Since the reduction is local, $J^T y$ is invertible modulo $\mathfrak{m}$, and $(J^T y)^{-1} J^T$ is a left inverse of $y$. $\square$
 
 **Proposition.** For $b \leq m$,
-$$L_b = n_z(b) \sum_y P_z(b)(y)\ \mathrm{transposedMove}(y), \qquad \mathrm{chain}_z(b) = \Big(\prod_{b \leq i < m} n_z(i)\Big) \sum_{S \in \mathrm{tuples}(\mathrm{col}(b))} P_z(b, S)\ \mathrm{formMap}_{\mathrm{col}(b)}(S).$$
+$$L_b = n_z(b) \sum_y P_z(b)(y)\ \mathrm{transposedMove}(y),$$
+
+$$\mathrm{chain}_z(b) = \Big(\prod_{b \leq i < m} n_z(i)\Big) \sum_{S \in \mathrm{tuples}(\mathrm{col}(b))} P_z(b, S)\ \mathrm{formMap}_{\mathrm{col}(b)}(S).$$
 The chain in the grid of the $\tilde Y$ does not depend on the twist.
 
 Lean: `New.Data.pointTransposedLift_eq_sum`, `New.Data.transposedChain_eq_sum`, `New.Data.transposedChain_one_true_eq_transposedChain` (New/Determinant/AuxiliaryForms/GridFirstColumns.lean).
@@ -126,7 +128,7 @@ Lean: `New.Data.pointTransposedLift_eq_sum`, `New.Data.transposedChain_eq_sum`, 
 *Proof.* The datum of $L_b$ is the indicator of the inclusion matrix modulo $\mathfrak{t}_z$. Pulled back along the reduction from $\mathfrak{m}$, it is the function $P_z(b)$, and $P_z(b) = \sum_y P_z(b)(y)\,\delta_y$. The transposed lift is linear in its datum, and with the datum $\delta_y$ it is $\mathrm{transposedMove}(y)$. This is the first identity. The second is a descending induction on $b$. For $b = m$ both sides are the identity. For $b < m$, $\mathrm{chain}_z(b) = L_b \circ \mathrm{chain}_z(b + 1)$. Insert the first identity and the induction hypothesis. The edge $e_{z,b}$ is not in $\mathrm{col}(b + 1)$. Updating $S$ at $e_{z,b}$ multiplies $P_z(b + 1, S)$ by $P_z(b)(y)$ and does not change the form map of $\mathrm{col}(b + 1)$. The sum over $\mathrm{tuples}(\mathrm{col}(b + 1))$ and $y$ is the sum over $\mathrm{tuples}(\mathrm{col}(b))$ (`New.Data.sum_tuplesOn_insert` of [path data and periods](/chapter/seesaw-squares/#path-data-and-periods)). For the last claim: in the grid of the $\tilde Y$ the modulus $\mathfrak{t}_{\mathrm{true}} = \mathfrak{b}$ and the character $\mathrm{gridChar}(\vartheta, \mathrm{false}, b)$ do not contain $\vartheta$. So $L_b$ is the same map for all twists. $\square$
 
 **Theorem.** Let $B$ be a bilinear form on conjugate forms on $Y_0$ and forms on $\tilde Y^0_0$. Then
-$$B\big(\mathrm{chain}^{\vartheta}_{\mathrm{false}}(0)\, y', \mathrm{chain}^{1}_{\mathrm{true}}(0)\, \varphi\big) = \prod_{i < m} n_{\mathrm{false}}(i)\, n_{\mathrm{true}}(i) \sum_{S \in \mathrm{tuples}(\mathrm{first})} \Psi^1(S)\, B\big(\mathrm{formMap}(S)\, y', \mathrm{formMap}(S)\, \varphi\big).$$
+$$\begin{aligned} &B\big(\mathrm{chain}^{\vartheta}_{\mathrm{false}}(0)\, y', \mathrm{chain}^{1}_{\mathrm{true}}(0)\, \varphi\big) \\ &\quad = \prod_{i < m} n_{\mathrm{false}}(i)\, n_{\mathrm{true}}(i) \sum_{S \in \mathrm{tuples}(\mathrm{first})} \Psi^1(S)\, B\big(\mathrm{formMap}(S)\, y', \mathrm{formMap}(S)\, \varphi\big). \end{aligned}$$
 
 Lean: `New.Data.pairing_transposedChain_eq_sum` (New/Determinant/AuxiliaryForms/GridFirstColumns.lean).
 

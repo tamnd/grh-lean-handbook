@@ -150,7 +150,7 @@ Lean: `New.Data.Corner.IsTurn.exists_isPathDatum` (New/Determinant/AuxiliaryForm
 ### The sum over a square
 
 **Theorem.** Let the corner be a turn, let $\Psi'$ be a path datum on the old edges, and let $\Psi$ satisfy the match of the theorem. Let $(L_i, L'_i)_{i \in J}$ satisfy the square law for $\chi$ and $\varepsilon$ with one constant $C$. Let $f(S, v') \in J$ depend only on $S$ on $w$. Then
-$$\sum_{S \in \mathrm{tuples}(\mathrm{old})} \Psi'(S) \sum_{v'} \psi(\operatorname{tr}(v'\, \mathrm{oldColumn}(S)))\, L'_{f(S, v')}(\mathrm{oldMatrix}(S)) = C \sum_{S \in \mathrm{tuples}(\mathrm{new})} \Psi(S)\, L_{f(S, \mathrm{newRow}(S))}(\mathrm{newMatrix}(S)).$$
+$$\begin{aligned} &\sum_{S \in \mathrm{tuples}(\mathrm{old})} \Psi'(S) \sum_{v'} \psi(\operatorname{tr}(v'\, \mathrm{oldColumn}(S)))\, L'_{f(S, v')}(\mathrm{oldMatrix}(S)) \\ &\quad = C \sum_{S \in \mathrm{tuples}(\mathrm{new})} \Psi(S)\, L_{f(S, \mathrm{newRow}(S))}(\mathrm{newMatrix}(S)). \end{aligned}$$
 
 Lean: `New.Data.Corner.IsTurn.sum_eq_of_squareLaw` (New/Determinant/AuxiliaryForms/Turns.lean).
 

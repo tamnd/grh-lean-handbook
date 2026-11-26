@@ -130,7 +130,7 @@ Lean: `New.Data.edges_eq_oldEdges_innerCorner`, `New.Data.edges_update_eq_newEdg
 *Proof.* Unfold the edges of a concatenation: they are the union of the edges of the parts. The step down from $(a, b + 1)$ adds the column edge at $(a, b)$, and the step right from $(a, b)$ adds the row edge at $(a, b)$. The new steps add the row edge at $(a, b + 1)$ and the column edge at $(a + 1, b)$. $\square$
 
 **Lemma.** Let the inner corner be a turn for $\vartheta$ and $w$, with the edges of $q$ and $r$ in $w$. Let $\Psi$ be matched with the column Fourier transform of $\Psi'$, for $\psi = 1$ and $\sigma$. Let the square law hold for every $f$ and $l$, as in the theorem, with constant $C$. Let $F$ be a form at $(0, m)$ and let the functionals $l_S$ at $(k, k)$ depend only on $S$ on $w$. Then
-$$\sum_{S \in \mathrm{tuples}(\mathrm{old})} \Psi'(S)\, l_S\bigl(\mathrm{formMap}_{q\,\mathrm{down}\,\mathrm{right}\,r}(S)\, F\bigr) = C \sum_{S \in \mathrm{tuples}(\mathrm{new})} \Psi(S)\, l_S\bigl(\mathrm{formMap}_{q\,\mathrm{right}\,\mathrm{down}\,r}(S)\, F\bigr).$$
+$$\begin{aligned} &\sum_{S \in \mathrm{tuples}(\mathrm{old})} \Psi'(S)\, l_S\bigl(\mathrm{formMap}_{q\,\mathrm{down}\,\mathrm{right}\,r}(S)\, F\bigr) \\ &\quad = C \sum_{S \in \mathrm{tuples}(\mathrm{new})} \Psi(S)\, l_S\bigl(\mathrm{formMap}_{q\,\mathrm{right}\,\mathrm{down}\,r}(S)\, F\bigr). \end{aligned}$$
 
 Lean: `New.Data.sum_formMap_eq_of_squareLaw` (New/Determinant/AuxiliaryForms/Turns.lean).
 

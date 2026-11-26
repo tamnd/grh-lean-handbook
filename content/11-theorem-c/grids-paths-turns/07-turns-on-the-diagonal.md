@@ -75,7 +75,7 @@ Lean: `New.Data.diagonalCorner`, `New.Data.downPath`, `New.Data.rightPath`, `New
 ### Periods on the common space
 
 **Definition.** For $z$ in the archimedean group of $S$ and a triple $x = (\vartheta, y', \varphi)$,
-$$I^S_{\mathrm{col}}(\Psi; z, p)(x) = \sum_{S \in \mathrm{tuples}(\mathrm{down})} \Psi_\vartheta(S)\ P_z\bigl(\theta^j_{\mathrm{oldColumn}(S), p};\ \mathrm{formMap}_{q(\mathrm{true})}(S)\varphi,\ \mathcal{L}(y_2)\mathcal{L}^{\mathsf T}(y_1)\, \mathrm{formMap}_{q(\mathrm{false})}(S) y'\bigr),$$
+$$\begin{aligned} I^S_{\mathrm{col}}(\Psi; z, p)(x) = \sum_{S \in \mathrm{tuples}(\mathrm{down})} \Psi_\vartheta(S)\ P_z\bigl(&\theta^j_{\mathrm{oldColumn}(S), p};\ \mathrm{formMap}_{q(\mathrm{true})}(S)\varphi, \\ &\mathcal{L}(y_2)\mathcal{L}^{\mathsf T}(y_1)\, \mathrm{formMap}_{q(\mathrm{false})}(S) y'\bigr), \end{aligned}$$
 with $y = \mathrm{oldMatrix}(S)$ and $P_z$ = `periodPairing`, the integral over the group of $\tilde Y^{j+1}_j$ of the weight times the two forms, translated by $z$. $I^S_{\mathrm{row}}(\Psi; z, p)$ is the same on `rightPath` with $\theta^{j+1}_{\mathrm{newRow}(S), p}$ and $\mathcal{L}^{\mathsf T}(x_2)\mathcal{L}(x_1)$, $x = \mathrm{newMatrix}(S)$.
 
 Lean: `New.Data.columnPeriod`, `New.Data.rowPeriod` (New/Determinant/AuxiliaryForms/DiagonalTurns.lean).
