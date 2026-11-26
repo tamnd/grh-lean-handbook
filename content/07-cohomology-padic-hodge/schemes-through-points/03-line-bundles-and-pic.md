@@ -38,7 +38,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section gives the line bundles of the source, their sections, the relation of isomorphism and the Picard group. A line bundle is an open cover with a cocycle of regular functions on points. The Picard group is the set of such cocycles modulo isomorphism, with the tensor product as the group law. The section ends with a comparison with the classical Picard group. The source does not state that comparison.
 
-### The classical picture
+### Invertible sheaves
 
 Let $X$ be a scheme. An invertible sheaf is a sheaf of $\mathcal{O}_X$-modules $\mathcal{L}$ that is locally isomorphic to $\mathcal{O}_X$. The isomorphism classes of invertible sheaves form a group under $\otimes$, the Picard group $\operatorname{Pic} X$, with inverse $\mathcal{L}^\vee = \mathcal{H}om(\mathcal{L}, \mathcal{O}_X)$ (Hartshorne, *Algebraic Geometry*, Chapter II, Section 6). Choose an open cover $(U_i)$ and trivializations $\mathcal{L}|_{U_i} \cong \mathcal{O}_{U_i}$. The two trivializations on $U_i \cap U_j$ differ by a unit $g_{ij} \in \mathcal{O}(U_i \cap U_j)^\times$. These units satisfy $g_{ii} = 1$ and $g_{ij} g_{jk} = g_{ik}$ on triple overlaps. Conversely, such a cocycle defines an invertible sheaf by gluing (Hartshorne, Chapter II, Exercise 5.18, for vector bundles). Two cocycles define isomorphic sheaves if and only if they differ by a coboundary on a common refinement. So
 $$\operatorname{Pic} X \cong \check{H}^1(X, \mathcal{O}_X^\times) \cong H^1(X, \mathcal{O}_X^\times)$$
