@@ -75,7 +75,7 @@ Lean: `New.holMinors` (Lib/DiscreteSeries/FlenstedJensen/Defs.lean).
 
 Lean: `New.holMinorsPi` (Lib/DiscreteSeries/FlenstedJensen/Defs.lean).
 
-The shift $c$ makes both weights $w + c$ and $c$ dominant, so both products of minors are polynomials. At a matrix where a minor in the product vanishes, `New.weightMinors` has the junk value $1$ (Section 3), and so the quotient has a junk value there. On $G$ the relevant minors do not vanish, because the principal minor of $g \in U(p,q)$ on the indices of sign $+1$ has absolute value at least $1$.
+The shift $c$ makes both weights $w + c$ and $c$ dominant, so both products of minors are polynomials. At a singular matrix `New.weightMinors` has the junk value $1$ (Section 3), and where the denominator is $0$ the quotient is $0$ by the Lean convention for division. On $G$ the relevant minors do not vanish, because the principal minor of $g \in U(p,q)$ on the indices of sign $+1$ has absolute value at least $1$.
 
 **Theorem.** Let $a \le b$ be integers, and let $w$ be the weight with $w_i = a$ when $\varepsilon_i = 1$ and $w_i = b$ otherwise. Then for $g \in G$,
 $$\operatorname{holMinors}_\varepsilon(w)(g) = \frac{(\det g)^b}{\Delta_+(g)^{b-a}},$$
