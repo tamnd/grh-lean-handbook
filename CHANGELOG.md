@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.1.6
+
+Four new chapters:
+
+- Volume 2, chapter 1, Dirichlet L-functions and zero symmetry (#50). This is the first chapter of Volume 2 in a release.
+- Volume 2, chapter 2, Polar functions and the explicit formula (#48).
+- Volume 2, chapter 3, Landau's theorem (#52).
+- Volume 12, chapter 1, Regular families: the plan (#51). Each of Volumes 9 to 12 now has its opening chapter.
+
+Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.5
 
 Four new chapters of Volume 0, The guide:
