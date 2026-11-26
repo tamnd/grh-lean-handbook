@@ -69,7 +69,7 @@ Lean: `New.IsJointlyInvariant.sum_chain_mem_nsmul` (New/UpperBound/Objects/LiftC
 
 Next each term is placed in $A$. Fix the tuple $c$ and its points $q$. The kernel product is linear in the pure tensor of the data, through one linear map $\beta$, the composite of the maps $\Phi \mapsto \mathrm{jet}(\omega(q_j, q_{j+1})\Phi)$. By induction on $j$, with the base case and the step case in the hypotheses, the kernel product for each $x$ has $P_m$ at $p$. So the hypothesis on $A$ applies, and the term lies in $A$. There are $h$ tuples, so the sum lies in $h \cdot A$. $\square$
 
-In [the chain valuation](/chapter/chain-valuation/), $A$ is a set of numbers of large valuation at a prime above $N$. The proposition then says that the composite lift has large valuation, with no loss from denominators.
+The first step of the proof is a result of its own, `New.IsJointlyInvariant.sum_chain_eq_sum_kernelProduct`: the value is the sum over the $h$ tuples of classes of the kernel products. [The chain valuation](/chapter/chain-valuation/) uses this unfolding, and bounds each kernel product with the ultrametric gauge at $p$. The proposition itself, with a set $A$, is used for the last path in [grids, paths and turns](/chapter/grids-paths-turns/).
 
 ### Chosen places and free levels
 
