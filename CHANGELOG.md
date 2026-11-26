@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.1.5
+
+Four new chapters of Volume 0, The guide:
+
+- Chapter 3, The statements (#47).
+- Chapter 5, Notation and conventions (#45). It fixes one notation for the whole book.
+- Chapter 7, Reading the Lean (#44).
+- Chapter 9, The two editions (#46). It gives a name map from grh-compact to grh.
+
+Volume 0 now has 5 of its 10 chapters. Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.4
 
 Volume 1, The proof in outline, now has all 13 chapters.
