@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Matched functions
 
-This section defines the local objects of the exchange identity. They live at the ramified places of a split tame character. There the large side of the identity has a function $\Phi$ of $a \times n$ matrices, and the small side has a function $\Psi$ of $n \times b$ matrices. The two functions are *matched* if they are supported on complementary blocks of the same invertible integral matrices, with values that differ by a character of the determinant. The section gives two families of matched pairs: the block determinant functions, and the standard pair of an integral matrix. Both come from Jacobi's identity for complementary minors.
+This section defines the local objects of the exchange identity. They live at the ramified places of a split tame character. There the large side of the identity has a function $\Phi$ of $a \times n$ matrices, and the small side has a function $\Psi$ of $n \times b$ matrices. The two functions are *matched* if they are supported on complementary blocks of the same invertible integral matrices, with values that differ by a character of the determinant. Both families of matched pairs in this section come from Jacobi's identity for complementary minors.
 
 ### The ring
 

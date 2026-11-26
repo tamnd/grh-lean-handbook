@@ -28,11 +28,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Cone images and the large triple
 
-This section assembles the exchange identity for the large triple. It has two parts. The first shows that the cone integral of [the tower](/chapter/rallis-inner-product/#the-tower) reaches every real vector, up to the theta integrals on standard data. The second reduces the exchange identity for $V = V' \oplus W_1$ to an identity of periods over $[U(W_1)]$, by the vanishing theorem of Section 5.
+This section assembles the exchange identity for the large triple. The first part shows that the cone integral of [the tower](/chapter/rallis-inner-product/#the-tower) reaches every real vector, up to the theta integrals on standard data. The second part reduces the exchange identity for $V = V' \oplus W_1$ to an identity of periods over $[U(W_1)]$, by the vanishing theorem of Section 5.
 
 ### The image of the cone integral
 
-Let $W' = W \oplus H$ and $V' = V \oplus H$ with $H$ a hyperbolic plane, with adapted splittings $A$ and $X$ that define isotropic lines in the two copies of $H$. Let $x_B$ be the vector that spans the line of $X$. For $\kappa$ in the maximal compact subgroup of $U(V')$ and $a$ a family of nonzero complex numbers at the infinite places, the *cone point* is $\kappa^{-1} x_B a$. The cone integral $\operatorname{cone}_z(v')$ of a vector $v'$ for $(W', V')$ is the integral over $(\kappa, a)$ of an integrand that, at $(\kappa, a)$, is $|a|^z$ times a translate of the slice of $v'$ at the cone point. Write $|a|$ for the module of the idele that is $a$ at the infinite places and $1$ elsewhere.
+Let $W' = W \oplus H$ and $V' = V \oplus H$ with $H$ a hyperbolic plane, with adapted splittings $A$ and $X$ that define isotropic lines in the two copies of $H$. Let $x_B$ be the vector that spans the line of $X$. For $\kappa$ in the maximal compact subgroup of $U(V')$ and $a$ a family of nonzero complex numbers at the infinite places, the *cone point* is $\kappa^{-1} x_B a$. The cone integral $\operatorname{cone}_z(v')$ of a vector $v'$ for $(W', V')$ is the integral over $(\kappa, a)$ of an integrand that, at $(\kappa, a)$, is $|a|^z$ times a translate of the slice of $v'$ at the cone point.
 
 **Definition.** A real function $\rho$ of $(\kappa, a)$ has a *positive Mellin transform* if for every real $z$ the function $\rho(\kappa, a)|a|^z$ is integrable and has a positive integral.
 
@@ -42,7 +42,7 @@ Lean: `New.Exchange.HasPosMellinTransform` (New/Determinant/Exchange/ConeImage.l
 
 Lean: `New.Exchange.exists_hasPosMellinTransform_mulVec_eq_smul` (New/Determinant/Exchange/ConeImage.lean).
 
-*Proof.* Work place by place. Near $x_B$ the isotropic vectors $y$ form a smooth manifold, and by Witt's theorem there is a smooth family $k(y)$ of isometries with $k(y) x_B = y$ for isotropic $y$ near $x_B$. Take $\beta \geq 0$ smooth, nonzero at $x_B$, supported where this holds and where the squared length of $y$ at each place is within a factor $2$ of that of $x_B$. The cone point is isotropic, so $k$ of it carries $x_B$ to $\kappa^{-1}x_B a$, and $\kappa k(\cdot)$ carries $x_B$ to $x_B a$. The length condition confines $|a_w|$ to a compact annulus, so $\beta$ of the cone point has compact support. It is continuous, nonnegative and nonzero at $(1, 1)$, so its products with $|a|^z$ have positive integrals. $\square$
+*Proof.* Work place by place. Near $x_B$ the isotropic vectors $y$ form a smooth manifold, and by Witt's theorem there is a smooth family $k(y)$ of isometries with $k(y) x_B = y$ for isotropic $y$ near $x_B$. Take $\beta \geq 0$ smooth, nonzero at $x_B$, supported where this holds and where the squared length of $y$ at each place is within a factor $2$ of that of $x_B$. The cone point is isotropic, so $k$ of it carries $x_B$ to $\kappa^{-1}x_B a$, and $\kappa k(\cdot)$ carries $x_B$ to $x_B a$. The length condition gives compact support, and $\beta \geq 0$ is nonzero at $(1, 1)$, so the integrals are positive. $\square$
 
 **Lemma.** Let $\beta$ be smooth of compact support, $k(x)$ a smooth family of real points of $U(V')$ and $v$ a Schwartz vector for $(W, V')$. Then some Schwartz vector $v'$ for $(W', V')$ has the slice $\beta(x)\, k(x) v$ at every $x$ along $A$.
 
@@ -96,7 +96,7 @@ Lean: `New.Exchange.SlicesVanishOutside` (New/Determinant/Exchange/LargeTriple.l
 
 Lean: `New.Exchange.thetaTerm_eq_and_centreCoeff_eq_zero` (New/Determinant/Exchange/LargeTriple.lean).
 
-*Proof.* The point $p$ maps the span of the frame and $W_1$ to itself by a block triangular matrix with diagonal blocks $q$ and $g$. The Weil representation of the parabolic in the mixed model acts by the character $\psi(\frac12\operatorname{tr}(z\,\cdot))$, by $\chi_V(\det q)^{-1}|\det q|^{a/2}$ and by translation; this gives (b). The finite part is a standard datum and is bounded by the indicator of the integral matrices, which gives (a) from the integrability of the real part. For (c), the coefficient at $\jmath T$ is the sum of the terms of the frames $x$ with Gram matrix $T$. A nonzero term needs a nonzero real slice at $k^{-1}Y$, whose Gram matrix is $T$ conjugated by an invertible matrix; by hypothesis it is represented by $t'$, and by the lemma so is $T$. So every term is $0$. $\square$
+*Proof.* The Weil representation of the parabolic in the mixed model acts by the character $\psi(\frac12\operatorname{tr}(z\,\cdot))$, by $\chi_V(\det q)^{-1}|\det q|^{a/2}$ and by translation; this gives (b). The finite part is a standard datum and is bounded by the indicator of the integral matrices, which gives (a) from the integrability of the real part. For (c), the coefficient at $\jmath T$ is the sum of the terms of the frames $x$ with Gram matrix $T$. A nonzero term needs a nonzero real slice at $k^{-1}Y$, whose Gram matrix is $T$ conjugated by an invertible matrix; by hypothesis it is represented by $t'$, and by the lemma so is $T$. So every term is $0$. $\square$
 
 **Lemma (Product formula).** On the pair $(W_1, V' \oplus W_1)$, with characters $\alpha$ and $\alpha\beta$, the theta functional on real data of $f \boxtimes F$ at the translation $(c; 0)$ and the point $(g, u \oplus l)$, evaluated at $\varphi \otimes v$, is the theta functional of $(W_1, V')$ at $f$, $c$, $(g, u)$ evaluated at $\varphi$, times the theta kernel of $(W_1, W_1)$ with characters $\alpha, \alpha$ at $(g, l)$ for $v \otimes F$.
 
@@ -125,8 +125,6 @@ Lean: `New.Exchange.equalRankThetaRatio` (New/Determinant/Exchange/LargeTriple.l
 (b) $\theta_{\mathrm{large}}(v, \Phi_z) = c\, \theta_{\mathrm{small}}(y, \Psi_z)$ for every integral $z$, with $\Phi_z$ the standard row datum and $\Psi_z$ the standard column datum of $z$.
 
 Lean: `New.Exchange.RowColExchangeIdentity` (New/Determinant/Exchange/LargeTriple.lean).
-
-No sign is asked of $C$. By (a), $C > 0$ as soon as $\ell(\mathfrak{c}) > 0$ for one $\mathfrak{c}$.
 
 **Definition (Period identity).** Let $V = V' \oplus W_1$ with $W_1$ of rank $n$, and $\gamma = \nu^{-1}\upsilon^{\lfloor n/2 \rfloor}$. The real vectors $v$ for $(X, V)$ and $v'$ for $(X, V')$ satisfy the *period identity* with weight $\rho$ and period $I_0$ if for each real point $h$ of $U(V)$ there is $p \in U(V') \times U(W_1)$ such that for every invertible $B$, character $\beta$, vector $f$, matrix $x$ and points $g$, $y$: the integral over $u \in [U(W_1)]$ of the theta functional on real data for $f \boxtimes (\chi^{-1}\circ\det)$ at $(x, 0)$ and $(g, y \oplus u)$, with characters $\gamma$ and $\gamma\beta$, at the slice of $v$ at $(ph)^{-1}(B, 0)$ moved by $ph$, equals
 $$\frac{\rho(h)\, I_0}{\nu(\zeta/\bar\zeta)\, |\zeta|^{n/2}}\ \theta_{\gamma,\beta}(f, x, (g, y))(\text{slice of } v' \text{ at } B),$$

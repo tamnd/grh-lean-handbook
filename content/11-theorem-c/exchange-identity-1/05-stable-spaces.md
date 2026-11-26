@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Stable spaces and self-dual lattices
 
-This section proves that an equivariant lift $\mathcal{D}$ is zero on all matched data once one value of it, the image of the standard datum of a frame, has vanishing Fourier coefficients at the self-dual lattices. The proof has a local part and a global part. The local part shows that a $GL_n(F)$-stable space $P$ that contains one standard datum contains every matched datum. The global part takes for $P$ the kernel of $\mathcal{D}$, and uses the Fourier coefficients along a frame to show that $P$ contains the standard datum.
+This section proves that an equivariant lift $\mathcal{D}$ is zero on all matched data once one value of it, the image of the standard datum of a frame, has vanishing Fourier coefficients at the self-dual lattices. The local part shows that a $GL_n(F)$-stable space $P$ that contains one standard datum contains every matched datum. The global part takes for $P$ the kernel of $\mathcal{D}$.
 
 ### A stable space with one standard datum
 
@@ -33,7 +33,7 @@ Let $F$ be a semilocal field, $\chi$ a tame character, and $e \colon b \sqcup a 
 
 Lean: `New.Exchange.exists_pow_smul_add_eq` (New/Determinant/Exchange/StableSpacesStandardData.lean).
 
-*Proof.* $\Psi$ vanishes off the primitive matrices, which form a compact set. A locally constant function with compact support is uniformly locally constant. The sets $\varpi^c O$ form a basis of neighbourhoods of $0$, as $\varpi^c \to 0$ and $O$ is compact and open. $\square$
+*Proof.* $\Psi$ vanishes off the primitive matrices, which form a compact set. A locally constant function with compact support is uniformly locally constant. $\square$
 
 **Lemma.** Let $\Psi$ be matched with $\Phi$ and invariant under $\varpi^c$ times integral matrices. Let $s$ and $x$ be integral with $s x = 1$, and let $p = r \cdot \Psi_s$ with $r$ a function with values in $\mathbb{N}$. Put $d = \varpi^{-c}(1 - x s) + x s$. Then for every $k \in GL_n(O)$ and every $y$,
 $$\Psi(k^{-1} x)\, p(d k y) = |p(d k y)|\, \Psi(y).$$
@@ -101,7 +101,7 @@ A function $f$ on $U(X)$ *vanishes at self-dual lattices* if its coefficient alo
 
 Lean: `New.Exchange.IsSelfDualTestPair`, `New.Space.Splitting.VanishesAtSelfDual` (New/Determinant/Exchange/StableSpacesStandardData.lean).
 
-In case (a) the columns of $x' Y$ span a lattice that is self-dual for $J'$. Case (b) covers the indices that $V'$ cannot represent; Section 6 shows that both sides of the exchange identity have vanishing coefficients there.
+In case (a) the columns of $x' Y$ span a lattice that is self-dual for $J'$.
 
 **Lemma (Landherr).** Let $f$ be automorphic and vanish at self-dual lattices. Let $\det\beta \neq 0$, and let the columns of $q k$, with $k \in GL_b(\hat O)$, be orthonormal for $\beta$ at the finite places. Then the coefficient of $f$ at $\jmath \beta$ vanishes at $\rho\, m(\lambda q, g)$ for all $\rho$ and $g$.
 
@@ -129,4 +129,4 @@ Lean: `New.Exchange.IsEquivariantLift.apply_eq_zero_of_areMatched` (New/Determin
 
 *Proof.* By the proposition it suffices to show that $(\mathcal{D}\Psi_0)_T(1, g) = 0$ when $T$ is skew-hermitian, $\tau = \delta^{-1} T$ is unimodular at $S$, and $g$ is trivial at $S$. Such $T$ is invertible. By part 3 of the lemma, the criterion after Freitag applies, with the shears at $\bar S$ and with the places off $S \cup \bar S$ as its set. It reduces the claim to points $\rho\, m(q_0, g)$ at which the Gram matrix $T[q_0]$ is unimodular at all finite places: at $S \cup \bar S$ it is $\tau$, and elsewhere it is $T[\gamma]$, primitive by the criterion. A unimodular hermitian matrix over $\hat O$ has an integral orthonormal basis $k$. With $T = \jmath\beta$ and $q_0 = \lambda q$, the columns of $q k$ are orthonormal for $\beta$, and the lemma of Landherr gives the vanishing. $\square$
 
-**Remark (Formalization).** The test pairs of case (a) use the frame of $V'$ only up to $GL_b(\hat O)$ and a unitary matrix. The source glues the Gram matrix at $S$ and off $S$ by an idempotent adele; the lemma `New.Exchange.SplitTameChar.isIntMatrix_glue_hermitian` checks that the glued matrix is integral. The source cites Landherr for the Hasse principle; the citation is in the notes of this chapter.
+**Remark (Formalization).** The test pairs of case (a) use the frame of $V'$ only up to $GL_b(\hat O)$ and a unitary matrix. The source glues the Gram matrix at $S$ and off $S$ by an idempotent adele; the lemma `New.Exchange.SplitTameChar.isIntMatrix_glue_hermitian` checks that the glued matrix is integral.

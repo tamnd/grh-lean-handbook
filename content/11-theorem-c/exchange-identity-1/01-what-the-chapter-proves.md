@@ -36,10 +36,9 @@ The argument runs in this order.
 3. Section 4 uses Section 3 to write the difference $\mathcal{D}(\Psi) = \Theta_{\mathrm{large}}(\Phi) - c\, \Theta_{\mathrm{small}}(\Psi)$ as one linear map of $\Psi$ with the laws of an equivariant lift.
 4. Section 5 proves that an equivariant lift that vanishes at the self-dual lattices of a frame vanishes on every matched datum.
 5. Section 6 proves that a Fourier coefficient of a theta integral vanishes at an index that is not negative definite at some real place.
-6. Section 7 proves that a cone integral at the real places changes the theta integrals of standard data only by a positive analytic factor.
-7. Section 8 puts these results together for the large triple. It reduces the exchange identity for $V = V' \oplus W_1$ to a period identity over $[U(W_1)]$.
-8. Section 9 has the exercises and the notes.
+6. Section 7 proves that a cone integral at the real places changes the theta integrals of standard data only by a positive analytic factor. It then puts these results together for the large triple, and reduces the exchange identity for $V = V' \oplus W_1$ to a period identity over $[U(W_1)]$.
+7. Section 8 has the exercises and the notes.
 
-The logic of Section 8 is short. Let $\mathcal{D}$ be the difference of the two sides for a constant $c$. By Section 4 it is an equivariant lift, and by Section 5 it vanishes on matched data if its Fourier coefficients vanish at the self-dual lattices. There are two kinds of such coefficients. At the indices that are not negative definite, both sides vanish by Section 6, or by a hypothesis on the real data. At the one remaining index, $T = J$, both sides are periods, and the period identity over $[U(W_1)]$ fixes $c$ so that the two periods agree.
+The logic of the end of Section 7 is short. Let $\mathcal{D}$ be the difference of the two sides for a constant $c$. By Section 4 it is an equivariant lift, and by Section 5 it vanishes on matched data if its Fourier coefficients vanish at the self-dual lattices. There are two kinds of such coefficients. At the indices that are not negative definite, both sides vanish by Section 6, or by a hypothesis on the real data. At the one remaining index, $T = J$, both sides are periods, and the period identity over $[U(W_1)]$ fixes $c$ so that the two periods agree.
 
 The source states the results of this chapter for every split tame character at once. The constants that the proofs produce do not depend on the character. The chain of the plan uses this property, because it applies the identity to many characters with one constant.

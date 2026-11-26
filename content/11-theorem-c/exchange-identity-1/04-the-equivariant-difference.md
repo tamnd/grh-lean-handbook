@@ -25,7 +25,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The equivariant difference
 
-This section writes the difference of the two sides of the exchange identity as one linear map $\mathcal{D}$ of the small datum $\Psi$. The map $\mathcal{D}$ has three laws: its values are automorphic forms, it is equivariant under the group at the ramified places, and it is invariant under the integral points elsewhere. A map with these laws is an *equivariant lift*. Section 5 shows that an equivariant lift is determined by few values. The main input is the theorem of Section 3: the large side is a function of $\Phi$, but on same-section pairs it depends only on $\Psi$.
+This section writes the difference of the two sides of the exchange identity as one linear map $\mathcal{D}$ of the small datum $\Psi$. The map $\mathcal{D}$ has three laws: its values are automorphic forms, it is equivariant under the group at the ramified places, and it is invariant under the integral points elsewhere. A map with these laws is an *equivariant lift*. The main input is the theorem of Section 3.
 
 ### The setting
 

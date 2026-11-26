@@ -28,7 +28,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Sections and same-section pairs
 
-Matched functions are not stable under the group $GL_n(F)$: the condition refers to the integral matrices $k \in GL_n(O)$, and a translate of a matched pair is matched for a translated lattice. The large side of the exchange identity is equivariant under all of $GL_n(F)$ at the ramified places. This section replaces matched pairs by a larger class that is stable under $GL_n(F)$: the *same-section pairs*. It then proves the key property of the class: a functional of $\Phi$ with the right equivariance depends only on $\Psi$.
+Matched functions are not stable under $GL_n(F)$, as the condition refers to $GL_n(O)$. The large side of the exchange identity is equivariant under all of $GL_n(F)$ at the ramified places. This section replaces matched pairs by a larger class that is stable under $GL_n(F)$: the *same-section pairs*. It then proves the key property of the class: a functional of $\Phi$ with the right equivariance depends only on $\Psi$.
 
 Throughout, $F$ is a semilocal field with ring $O$ (Section 2), and $e \colon b \sqcup a \to n$ splits the indices.
 
