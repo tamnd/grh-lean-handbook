@@ -39,15 +39,21 @@ which is $p/(p^2-1)$ if $p$ is inert and $1/(2d-2)$ if $p = d$. The set $I_p^\ci
 
 The chapter proves three results about standard data. Here is the form in which they are used.
 
-**Integrality.** Let $f$ be standard data of level $\delta \ne 0$ on a standard space, and $Q$ a homogeneous polynomial of degree $l$ with $p$-integral coefficients. Then the jet of $J_{c \cdot \mathrm{jetScale}} f$ along $Q$ has valuation at least $l \cdot v(c/(\bar\delta d))$, for every $c \in \mathbb{C}$. This is Theorem `New.Parameters.norm_jet_jetSeries_le_pow`, proved in Section 8.
+**Integrality.** Let $f$ be standard data of level $\delta \ne 0$ on a standard space, and $Q$ a homogeneous polynomial of degree $l$ with $p$-integral coefficients. Then the jet of $J_{c \cdot \mathrm{jetScale}} f$ along $Q$ has valuation at least $l \cdot v(c/(\bar\delta d))$, for every $c \in \mathbb{C}$. It is proved in Section 8.
 
-**The count.** Let $p$ be non-split and let $f$ be standard data of level one on the space of $n' \times n$ matrices. Fix diagrams with $\kappa_\tau(h)$ columns of height $h$ at each place $\tau$, a standard filling $i'$ of them by rows, and integral matrices $y_\tau$. Let $P_y$ be the product, over all columns of height $h < N = |n'|$, of the minor of $z_\tau y_\tau$ on the rows of the column and the first $h$ columns. Then
+Lean: `New.Parameters.norm_jet_jetSeries_le_pow` (New/Derivatives/Vacuum/Divisibility.lean).
+
+**The count.** Let $p$ be non-split and let $f$ be standard data of level one on the space of $n' \times n$ matrices, and let $c \in \mathbb{C}$ be $p$-integral. Fix diagrams with $\kappa_\tau(h)$ columns of height $h$ at each place $\tau$, a standard filling $i'$ of them by rows, and integral matrices $y_\tau$. Let $P_y$ be the product, over all columns of height $h < N = |n'|$, of the minor of $z_\tau y_\tau$ on the rows of the column and the first $h$ columns. Then
 
 $$v\big(\mathrm{jet}(P_y)(J_{c\cdot\mathrm{jetScale}} f)\big) \ge D_p(\kappa) - f N^3\big(1 + \log_p \max(B, 1)\big),$$
 
-where $B$ is the number of boxes in the columns of height below $N$ and $D_p(\kappa)$ is the predicted divisibility of Section 4. This is Theorem `New.Parameters.norm_jet_minorProd_jetSeries_le`.
+where $B$ is the number of boxes in the columns of height below $N$ and $D_p(\kappa)$ is the predicted divisibility of Section 4. For series with the normal form the bound is the count of Section 4.
 
-**Schur entries with charges.** The same bound holds for the entries of the Schur matrices, after the columns of height one at a set of marked places are removed and the rows carry powers of $p$ that pay for them. This is Theorem `New.Parameters.norm_schurJet_jetSeries_le_of_charges`.
+Lean: `New.Parameters.norm_jet_minorProd_jetSeries_le` (New/Derivatives/Vacuum/Divisibility.lean); for series with the normal form, `New.Parameters.norm_jet_minorProd_le_of_hasNormalForm` (New/Derivatives/Divisibility/Count.lean).
+
+**Schur entries with charges.** The same bound holds for the entries of the Schur matrices, after the columns of height one at a set of marked places are removed and the rows carry powers of $p$ that pay for them (Section 8).
+
+Lean: `New.Parameters.norm_schurJet_jetSeries_le_of_charges` (New/Derivatives/Vacuum/Divisibility.lean).
 
 ### The model case
 
