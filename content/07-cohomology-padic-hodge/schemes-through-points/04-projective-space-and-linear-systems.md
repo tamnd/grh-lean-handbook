@@ -50,7 +50,7 @@ Lean: `New.ProjSpace.coordSection`, `New.ProjSpace.coordRatio` (Lib/General/Geom
 
 Lean: `New.ProjSpace.hyperplaneBundle` (Lib/General/Geometry/ProjectiveSpace.lean).
 
-Classically, $\mathcal{O}(1)$ has the frame $X_i$ on $D_+(X_i)$, and $X_i = (X_i / X_j) X_j$. So the classical transition function from chart $j$ to chart $i$ is $X_i / X_j$. In the convention of the source, a section satisfies $s_i = g_{ij} s_j$, and the sections $X_k$ of $\mathcal{O}(1)$ become the families $s_i = X_k / X_i$. Then $s_i = (X_j / X_i) s_j$, which gives $g_{ij} = X_j / X_i$. The two conventions agree.
+In the convention of the source a section satisfies $s_i = g_{ij} s_j$. The section $X_k$ of $\mathcal{O}(1)$ becomes the family $s_i = X_k / X_i$, and $s_i = (X_j / X_i) s_j$. So $g_{ij} = X_j / X_i$ agrees with the classical bundle.
 
 **Theorem.** Each chart $D_+(X_i)$ is affine. A point $t$ that lands in $D_+(X_i)$ lands in $D_+(X_j)$ if and only if $x_{ij}(A, t)$ is a unit.
 
@@ -105,8 +105,6 @@ Lean: `New.LineBundle.exists_hom_isHomogeneousCoords_of_cover` (Lib/General/Geom
 
 *Proof.* At each point $t$ of $C_{(i, j)}$ the vector $(s_{k,i}(A, t))_k$ has the unit entry $s_{j,i}(A, t)$. The last theorem gives a point $F(t)$ of projective space, and the proof picks one with `choose`. On overlaps, the vectors for two charts differ by the unit $g_{i i'}(A, t)$. The two points are equal because $\mathbb{P}^\kappa \times X$ is a projective embedding over $X$ (Section 5), so a point is determined by its homogeneous coordinates and its image in the base. So the family $F$ is compatible with base change, and `New.exists_hom_of_cover` from Section 2 glues it to a morphism. $\square$
 
-The chosen points $F(t)$ do not appear in the statement. The morphism $f$ is unique by Section 2, so the choice has no effect on the result.
-
 **Theorem.** Let $p \colon Y \to X$ be surjective, and let $(s_j)_{j \in \kappa}$ be sections of $L$ with no common zero at the field-valued points of $X$ that factor through $p$: for each $i$, each field $K$ and each $t \colon \operatorname{Spec} K \to Y$ with $p \circ t$ in $U_i$, some $s_{j,i}(K, p \circ t)$ is nonzero. Then the opens of $U_i$ where $s_{j,i}$ is a unit cover $X$. The cover is given as the cover of a line bundle indexed by $\iota \times \kappa$, with transition functions $1$.
 
 Lean: `New.LineBundle.exists_landsIn_opens_iff_isUnit` (Lib/General/Geometry/ProjectiveSpace.lean).
@@ -136,8 +134,8 @@ Lean: `New.LineBundle.IsLinearSystem.exists_hom_projSpace` (Lib/General/Geometry
 
 *Proof.* Apply the last theorem with $p$ the identity to the coordinate sections $j \mapsto (g_{ij})_i$. They have no common zero, because $g_{ii} = 1$ on $U_i$. The map $f$ pulls $\mathcal{O}(1)$ back to a linear system with the same homogeneous coordinates as $N$ at every point. Two linear systems with this property are equal (`New.LineBundle.IsLinearSystem.ext_of_transition_eq_mul`). Pair $f$ with $s$. $\square$
 
-The equality of line bundles is a strong statement. It holds because a linear system is a line bundle with its cover and trivializations fixed by the coordinates. So a linear system is the same as a morphism to projective space, and not only up to isomorphism.
+So a linear system is the same as a morphism to projective space, and not only up to isomorphism.
 
 **Example.** Take $X = \mathbb{P}^1 = \mathbb{P}^{\{0, 1\}}$ and the linear system $\mathcal{O}(1)$. The point $t$ with values in a ring $A$ given by the vector $(1, a)$ lands in $D_+(X_0)$. Its coordinates for chart $0$ are $x_{00} = 1$ and $x_{01} = a$. It lands in $D_+(X_1)$ if and only if $a$ is a unit, and then $x_{10} = a^{-1}$ and $x_{11} = 1$. The point with the vector $(1, 0)$ lands only in chart $0$. At this point $x_{10}(A, t) = 0$, by the junk convention, since the point is not in chart $1$. This value is consistent with the vector $(1, 0)$: the second condition on homogeneous coordinates applies only to charts that contain the point.
 
-**Remark (Formalization).** The weak form of Theorem 7.1 is sufficient for the uses in the source. `Lib/Shimura/ThetaModuli/FamilyFromPoints.lean` and `Lib/Shimura/ArcExtension.lean` call `New.LineBundle.exists_picClass_eq_pull_hyperplane`. The first passes the identity as $p$, the second a composite of morphisms. The gluing step uses `choose` for the local points, but the glued morphism is unique, so no choice leaks into a statement. The whole section works with an arbitrary scheme $X$ and an arbitrary base $S$. It needs no noetherian or separatedness hypotheses, which is in line with Hartshorne's statement.
+**Remark (Formalization).** `Lib/Shimura/ThetaModuli/FamilyFromPoints.lean` and `Lib/Shimura/ArcExtension.lean` call `New.LineBundle.exists_picClass_eq_pull_hyperplane`. The first passes the identity as $p$, the second a composite of morphisms. The gluing step uses `choose` for the local points, but the glued morphism is unique by Section 2, so no choice appears in a statement. No noetherian or separatedness hypothesis is needed.

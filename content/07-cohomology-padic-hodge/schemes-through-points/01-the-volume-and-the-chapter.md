@@ -58,7 +58,7 @@ The chapter follows the files of `Lib/General/Geometry` in the order in which th
 
 ### The sections
 
-Section 2 gives the functions on points, regularity, the evaluation of sections, gluing of morphisms, and the descent of functions along a flat, surjective, quasi-compact morphism. Section 3 gives line bundles as cocycles, their sections and frames, isomorphism, the Picard group with its group law and pull-back, the triviality of the Picard group of a local ring, and descent of frames. Section 4 gives projective space, the bundle $\mathcal{O}(1)$, homogeneous coordinates and linear systems, and the morphism to projective space that a linear system defines. Section 5 gives projective embeddings, the closed immersion that an embedding defines, the affine charts, and the Segre and Veronese embeddings. Section 6 gives the absolute Frobenius, its action on the Picard group, and the case of Serre's theorem that the source proves. Section 7 gives dense families of complex points and the étale charts and atlases that the cohomology of Chapter 2 needs. Section 8 has the exercises and the notes.
+Section 2 gives functions on points, gluing of morphisms and descent of functions. Section 3 gives line bundles as cocycles and the Picard group. Section 4 gives projective space, homogeneous coordinates and linear systems. Section 5 gives projective embeddings, the closed immersion that an embedding defines, and the Segre and Veronese embeddings. Section 6 gives the absolute Frobenius, its action on the Picard group, and the case of Serre's theorem that the source proves. Section 7 gives dense families of complex points and the étale charts and atlases that the cohomology of Chapter 2 needs. Section 8 has the exercises and the notes.
 
 ### What the chapter uses
 

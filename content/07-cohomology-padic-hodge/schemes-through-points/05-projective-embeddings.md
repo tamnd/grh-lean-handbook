@@ -90,7 +90,7 @@ Lean: `New.LineBundle.IsProjEmbedding.exists_affine_chart` (Lib/General/Geometry
 
 *Proof.* By the closed immersion, $U_i$ is the inverse image of the affine chart $D_+(X_i) \times \operatorname{Spec} R$, so it is affine. The map $\varphi$ sends $X_j$ to the coordinate $g_{ij}$ at the tautological point of $U_i$. For the surjectivity, sections over $U_i$ lift to sections over the chart of projective space, because a closed immersion is surjective on sections over affines. A section over the chart is a polynomial in the $X_j / X_i$. $\square$
 
-This is the classical statement that the affine chart $X \cap D_+(x_i)$ has coordinate ring $R[x_j / x_i] / I$. The second statement gives the value of each element at each point without a choice of a presentation. It is used in `Lib/General/Geometry/SerreTheorem.lean`, `Lib/Shimura/Uniformisation/HolomorphicFamilies.lean` and `Lib/Shimura/ThetaModuli/FlatClosure.lean`.
+This is the classical statement that the affine chart $X \cap D_+(x_i)$ has coordinate ring $R[x_j / x_i] / I$. It is used in `Lib/General/Geometry/SerreTheorem.lean`, `Lib/Shimura/Uniformisation/HolomorphicFamilies.lean` and `Lib/Shimura/ThetaModuli/FlatClosure.lean`.
 
 ### Segre and Veronese
 
@@ -122,7 +122,7 @@ Lean: `New.LineBundle.IsProjEmbedding.pow` (Lib/General/Geometry/ProjectiveSpace
 
 Classically, this is the $d$-uple embedding (Hartshorne, Chapter I, Exercise 2.12).
 
-**Remark (Formalization).** The coordinates of $L^{\otimes m}$ are indexed by ordered $m$-tuples in $\iota^m$, not by monomials of degree $m$. So there are $|\iota|^m$ coordinates, and the coordinates for two tuples that differ by a permutation are equal functions. The docstring of `New.LineBundle.pow` calls this "the Veronese system of all monomials of degree m". That is true up to these repetitions. The embedding of the source is the $m$-uple embedding followed by a linear map into a larger projective space, which repeats coordinates. The repetition does not harm the results: the statement on spans in Section 6 is about the span of all coordinates, and repeated vectors do not change a span. The difference matters only for the counts of coordinates, and the source makes no count of them.
+**Remark (Formalization).** The coordinates of $L^{\otimes m}$ are indexed by ordered $m$-tuples in $\iota^m$, not by monomials of degree $m$. So there are $|\iota|^m$ coordinates, and the coordinates for two tuples that differ by a permutation are equal functions. The docstring of `New.LineBundle.pow` calls this "the Veronese system of all monomials of degree m". That is true up to these repetitions. The embedding of the source is the $m$-uple embedding followed by a linear map into a larger projective space, which repeats coordinates. The repetition does not harm the results: the statement on spans in Section 6 is about a span, and repeated vectors do not change a span.
 
 ### The class of projective schemes
 

@@ -65,8 +65,6 @@ Lean: `New.LineBundle.transition_mul_transition`, `New.LineBundle.isUnit_transit
 
 *Proof.* By the cocycle condition with $k = i$, $g_{ij} g_{ji} = g_{ii} = 1$. $\square$
 
-So the structure does not need a separate field for units. The cocycle condition gives them.
-
 **Definition (Operations).** Let $L = (U_i, g_{ij})_{i \in \iota}$ and $M = (V_k, h_{kl})_{k \in \kappa}$ be line bundles on $X$, and let $p \colon Y \to X$.
 
 1. The *pull-back* $p^* L$ has opens $p^{-1}(U_i)$ and transition functions $t \mapsto g_{ij}(A, t \circ p)$.
@@ -166,7 +164,7 @@ Lean: `New.Pic.eq_zero_of_isLocalRing` (Lib/General/Geometry/LineBundles.lean).
 
 *Proof.* Let $L$ be a line bundle on $\operatorname{Spec} A$. The identity of $\operatorname{Spec} A$ is a point with values in the local ring $A$. Its closed point lies in some $U_i$, so the identity lands in $U_i$, and $U_i$ is all of $\operatorname{Spec} A$. The trivial bundle is then the restriction of $L$ to the single chart $i$, where the transition function is $g_{ii} = 1$. The refinement theorem with the constant map $e = i$ gives $[\mathbf{1}] = [L]$. $\square$
 
-The classical proof says that a finitely generated projective module of rank one over a local ring is free. The proof of the source is shorter, because a line bundle is given by a cover, and a cover of the spectrum of a local ring contains the whole space.
+The proof needs no theory of projective modules, because a cover of the spectrum of a local ring contains the whole space.
 
 ### Descent of frames
 

@@ -69,7 +69,7 @@ Lean: `New.IsSeparatingFamily.pointFn_ext`, `New.IsSeparatingFamily.hom_ext` (Li
 
 *Proof.* (1) On $U$ both functions come from sections $s$ and $s'$, by Section 2. If $s - s' \neq 0$, then, since $X$ is reduced, its basic open is not empty. Some $\xi_z$ lies in it, and there $s - s'$ is a unit. This contradicts the agreement at $\xi_z$. (2) The equalizer of the two morphisms is a closed subscheme, since $G$ is separated. Every $\xi_z$ factors through it, so it is surjective by the last theorem. A surjective closed immersion into a reduced scheme gives $f = g$. $\square$
 
-The second statement is stronger than Hartshorne's exercise in one way: the set of agreement is a dense set of points, not a dense open set. It needs no finiteness hypothesis, because the density is a hypothesis on the family, and not a consequence of the Nullstellensatz.
+The second statement asks for agreement on a dense set of points, not on a dense open set. It needs no finiteness hypothesis, because the density is a hypothesis on the family.
 
 **Theorem.** Let $e$ be a separating family of $X$ and $p$ a family of complex points of $G$, over the same points of $S$. Let $W$ be a linear system on $X$ and $M$ a projective embedding of $G$ over $S$, both with the finite index set $\iota$. If $e_z$ and $p_z$ have the same homogeneous coordinates for all $z$, then there is a morphism $d \colon X \to G$ over $S$ with $d \circ e_z = p_z$ and $d^* M = W$.
 
@@ -116,8 +116,6 @@ This is the infinitesimal lifting criterion of Grothendieck (EGA IV, Section 17)
 **Definition (Atlas).** $X$ is *covered by charts* of dimension $d$ if each point of $X$ with values in a field lies in the locus of some chart. $X$ has an *atlas* of dimension $d$ if it is separated and finitely many charts of dimension $d$ contain all its field-valued points.
 
 Lean: `New.Variety.IsChartCovered`, `New.Variety.HasAtlas` (Lib/General/Geometry/EtaleCharts.lean).
-
-The condition on field-valued points is enough to cover $X$, because the loci are open: a point with values in a ring lies in the union of the loci after a Zariski cover of its spectrum.
 
 **Theorem.** Let $W$ be proper over $\operatorname{Spec} R$, and let $k$ be an $R$-algebra. Then `algPointsOf k R W` is separated. If in addition $W \times_R k$ is smooth of relative dimension $d$ over $k$, it has an atlas of dimension $d$.
 
