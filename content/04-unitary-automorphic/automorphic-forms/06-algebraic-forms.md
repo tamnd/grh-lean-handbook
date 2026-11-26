@@ -151,6 +151,6 @@ Lean: `New.Space.exists_isUnitary_formTranslation` (Lib/Adelic/AutomorphicForms/
 
 **Remark (Formalization).** The theorem states only that some invariant positive definite form exists; it does not record that it is the pairing with the Gram form. The spectral theorem of Section 8 needs only the existence.
 
-### Where the argument uses these objects
+### Where the argument uses algebraic forms
 
 Delta forms are used in [false lifts](/chapter/false-lifts/), [deep level Poincaré series](/chapter/deep-level-poincare/) and [archimedean size](/chapter/archimedean-size/). Free levels are used in [divisibility](/chapter/divisibility/), [archimedean size](/chapter/archimedean-size/), [Poincaré series](/chapter/poincare-series/) and [the proof of Theorem B](/chapter/proof-of-theorem-b/). Pairings are used in [false lifts](/chapter/false-lifts/) and [Hecke values](/chapter/hecke-values/). Unitarity is used in [the denominator bound](/chapter/denominator-bound/) and in Section 8.

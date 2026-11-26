@@ -138,6 +138,6 @@ Lean: `New.Space.isForm_realConv` (Lib/Adelic/AutomorphicForms/Cuspidality.lean)
 
 **Remark (Formalization).** $R(e)F(g)$ is a Bochner integral, so it would be $0$ where the integrand is not integrable. The hypothesis excludes this.
 
-### Where the argument uses these objects
+### Where the argument uses cuspidality
 
 Finite dimension is used in [the objects of the upper bound](/chapter/upper-bound-objects/) and in [grids, paths and turns](/chapter/grids-paths-turns/). The cusp estimate, with threshold $(m^{-2} / (M \kappa^2))^n$, is used in [deep level Poincaré series](/chapter/deep-level-poincare/). Rapid decay is used in [seesaw squares](/chapter/seesaw-squares/) and in [the comparison operator](/chapter/comparison-operator-1/). Cuspidality and projection are not used outside this chapter.

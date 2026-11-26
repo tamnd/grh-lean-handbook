@@ -182,6 +182,6 @@ Lean: `New.Space.classSum_gramForm_eq_mul_petersson` (Lib/Adelic/AutomorphicForm
 
 *Proof.* Apply the last theorem with $\Phi = \overline{\varphi^\natural}$, $\Phi(x,g) = \langle \varphi(g), \rho(x)v^+\rangle$. The values of $\chi$ have absolute value $1$, so $K$ fixes $f(g) = \langle \varphi(g), \varphi'(g)\rangle$, and the class integral at $K$ is the class sum (Section 3). The index and $d$ are nonzero. $\square$
 
-### Where the argument uses these objects
+### Where the argument uses the isomorphism
 
 The map $y \mapsto y^\flat$ and its compatibility with $G_f$ are used in [the seesaw identity](/chapter/seesaw-identity-2/), [the objects of the upper bound](/chapter/upper-bound-objects/), [grids, paths and turns](/chapter/grids-paths-turns/), [single theta lifts](/chapter/single-theta-lifts/) and [the main summands](/chapter/main-summands/). The isomorphism at a fixed level is used in [deep level Poincaré series](/chapter/deep-level-poincare/) and [the proof of Theorem B](/chapter/proof-of-theorem-b/), and the Hecke equivalence in single theta lifts. The integral formula is used in the seesaw identity and deep level Poincaré series. That $\psi^\natural$ is a form is used in [false lifts](/chapter/false-lifts/) and [Hecke values](/chapter/hecke-values/), and the Petersson formula in Hecke values.

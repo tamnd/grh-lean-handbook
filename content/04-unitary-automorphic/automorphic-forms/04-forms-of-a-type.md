@@ -159,6 +159,6 @@ Lean: `New.Space.exists_form_eq_tsum` (Lib/Adelic/AutomorphicForms/RealConvoluti
 
 **Remark (Formalization).** The sums are `tsum`, $0$ if not summable. The bound makes the sum over $I$ converge. If the sum over $\Gamma_V$ diverges, the hypothesis says $\sum_i W_i = 0$, and the conclusion still holds. In the argument the hypothesis is the unfolding of a Poincaré series.
 
-### Where the argument uses these objects
+### Where the argument uses forms of a type
 
 Forms of type $e$: [Hecke values](/chapter/hecke-values/), [single theta lifts](/chapter/single-theta-lifts/), [the exchange identity](/chapter/exchange-identity-2/), [grids, paths and turns](/chapter/grids-paths-turns/), [Poincaré series](/chapter/poincare-series/). Cusp kernels: [upper bound objects](/chapter/upper-bound-objects/), [grids, paths and turns](/chapter/grids-paths-turns/).

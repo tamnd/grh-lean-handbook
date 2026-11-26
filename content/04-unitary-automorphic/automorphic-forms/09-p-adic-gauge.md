@@ -174,6 +174,6 @@ Lean: `New.LevelPlaces.LevelForm.norm_nsmul_inner_le_one` (Lib/Adelic/Automorphi
 
 *Proof.* The inner product is a class sum of values in $O_j$ by the lemma, and $A$ clears its denominators. $\square$
 
-### Where the argument uses these objects
+### Where the argument uses the gauge
 
 The gauge and bounded forms are used in [divisibility](/chapter/divisibility/), [archimedean size](/chapter/archimedean-size/), [theta kernels and gauges](/chapter/theta-kernels-gauges/), [deep level Poincaré series](/chapter/deep-level-poincare/), [lift volume and height](/chapter/lift-volume-height/) and [Hecke values](/chapter/hecke-values/). Weak approximation is also used in [the comparison operator, second part](/chapter/comparison-operator-2/), with integrality of class sums, and the delta form bound in [the comparison operator, first part](/chapter/comparison-operator-1/). Integrality of inner products is used in [the denominator bound](/chapter/denominator-bound/), [integral target forms](/chapter/integral-target-forms/), Hecke values and lift volume and height.

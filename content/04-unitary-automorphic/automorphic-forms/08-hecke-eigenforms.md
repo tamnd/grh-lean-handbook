@@ -79,6 +79,6 @@ Lean: `New.le_span_isSphericalOff` (Lib/Adelic/AutomorphicForms/HeckeEigenforms.
 
 **Remark (Formalization).** The eigenforms are not chosen explicitly. The eigenvalues and the invariant form come from existence statements, and the argument needs only that a spanning set of eigenforms exists.
 
-### Where the argument uses these objects
+### Where the argument uses eigenforms
 
 Hecke polynomials appear in [first-order deformations](/chapter/first-order-deformations/), which also uses the spanning theorem, [the denominator bound](/chapter/denominator-bound/), [the main summands](/chapter/main-summands/) and [the attached representations](/chapter/attached-representations/). [Building representations](/chapter/building-representations/) uses forms spherical off $S$.

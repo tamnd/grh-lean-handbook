@@ -191,6 +191,6 @@ Lean: `New.compactMean_mem_levelSpace`, `New.compactMean_eq_self` (Lib/Adelic/He
 
 The mean is a finite average, since the orbit map has an open stabilizer. The definition is irreducible, so proofs use only these lemmas.
 
-### Where the argument uses these objects
+### Where the argument uses class sums
 
 Class sums: [theta kernels and gauges](/chapter/theta-kernels-gauges/), [divisibility](/chapter/divisibility/), [archimedean size](/chapter/archimedean-size/), [Poincaré series](/chapter/poincare-series/), [integral target forms](/chapter/integral-target-forms/). Class integrals: [seesaw identity](/chapter/seesaw-identity-2/), [upper bound objects](/chapter/upper-bound-objects/), [deep level Poincaré series](/chapter/deep-level-poincare/), [comparison operator](/chapter/comparison-operator-1/), [remaining terms](/chapter/remaining-terms/). Hecke operators: [divisibility](/chapter/divisibility/). Compact means and class integrals: [grids, paths and turns](/chapter/grids-paths-turns/).
