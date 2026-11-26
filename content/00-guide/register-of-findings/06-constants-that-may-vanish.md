@@ -26,7 +26,7 @@ Many theorems of the source have the form "there is a constant $c$ with $X = cY$
 
 The source has several theorems of this form. For each one, the register asks two questions. Does the statement exclude the trivial case? And if it does not, where does the source prove the nonvanishing that the argument needs? The rows below give the answers that the source shows. Where the source does not show an answer, the row is open.
 
-### The rows
+### The constants
 
 | ID | File and line | Finding | Effect on the meaning | Chapter |
 |---|---|---|---|---|

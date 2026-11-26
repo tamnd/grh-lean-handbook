@@ -11,6 +11,8 @@ lean:
   - Lib/PadicHodge/Crystalline/Basic.lean
   - Lib/Adelic/Adeles/Basic.lean
   - Lib/Adelic/Unitary/Defs.lean
+  - Lib/Adelic/Unitary/GramMatrix.lean
+  - Lib/Adelic/Unitary/RationalPoints.lean
   - New/Spanning/SecondMoment/FewTranslates.lean
   - New/Reduction/Lattices/Colength.lean
   - Lib/GaloisRep/Main/SelmerModules.lean
@@ -33,7 +35,7 @@ The folder `Lib` of the source holds the background theories. The guide of the s
 
 This section lists the definitions where the difference matters. The rule for the book is the same in each case. A chapter of the book that uses one of these definitions states the definition of the source next to the textbook definition, and says which one the proof uses.
 
-### The rows
+### The definitions
 
 | ID | File and line | Finding | Effect on the meaning | Chapter |
 |---|---|---|---|---|
@@ -42,7 +44,7 @@ This section lists the definitions where the difference matters. The rule for th
 | F-054, explained | [Lib/GaloisRep/Main/LocalConditions.lean:60](lean:Lib/GaloisRep/Main/LocalConditions.lean#L60), 108 | `GalRep` is a bare group homomorphism, with no continuity. Continuity comes only from the field `continuous` of `Attached`. `PolyKillsAt` (line 108) records which polynomials kill an element. There is no monodromy and no Weil-Deligne representation. | Local-global statements are in the "kills" form only, not in the form of an equality of characteristic polynomials. | [attached-representations](/chapter/attached-representations/) |
 | F-055, explained | [Lib/Cohomology/Etale/Basic.lean:114](lean:Lib/Cohomology/Etale/Basic.lean#L114); [Lib/Cohomology/Etale/FilteredLimits.lean:42](lean:Lib/Cohomology/Etale/FilteredLimits.lean#L42)-45; [Lib/Cohomology/WoodsHole.lean:49](lean:Lib/Cohomology/WoodsHole.lean#L49)-50 | Cohomology is `Abelian.Ext` of presheaves on test rings. The documents say that its equality with étale cohomology "is neither proved nor used". | Soundness does not need the equality. The claim that `Lib` holds known results needs it. | [cohomology-ext](/chapter/cohomology-ext/) |
 | F-056, explained | [Lib/PadicComparison/HodgeTate/PeriodMap.lean:40](lean:Lib/PadicComparison/HodgeTate/PeriodMap.lean#L40)-43; [Lib/PadicHodge/Crystalline/Basic.lean:104](lean:Lib/PadicHodge/Crystalline/Basic.lean#L104)-106 | The Hodge-Tate period map is built, but its bijectivity is not proved. `IsCrystalline` is admissibility for `Bmax`: the fixed periods span `Bmax ⊗ T`. | The book must not call the period map an isomorphism. The period ring is `Bmax`, not the ring $B_{\mathrm{cris}}$ of Fontaine. | [comparison-theorems](/chapter/comparison-theorems/), [period-rings](/chapter/period-rings/) |
-| F-057, explained | [Lib/Adelic/Adeles/Basic.lean:98](lean:Lib/Adelic/Adeles/Basic.lean#L98)-100; [Lib/Adelic/Unitary/Defs.lean:496](lean:Lib/Adelic/Unitary/Defs.lean#L496)-498 | `𝔸 E` is one copy of $\mathbb{C}$ for each infinite place, times the finite adeles. It is the adele ring only when $E$ is totally complex. `Space` is a hermitian matrix $J$ with a point $x$ such that $x^{*} J x$ is $\operatorname{diag}(s)$ at the infinite places and $1$ at the finite places. | The name hides a hypothesis on $E$. A space carries a chosen point, unlike a hermitian space of the textbook. | [adeles-hermitian-spaces](/chapter/adeles-hermitian-spaces/) |
+| F-057, explained | [Lib/Adelic/Adeles/Basic.lean:98](lean:Lib/Adelic/Adeles/Basic.lean#L98)-100; [Lib/Adelic/Unitary/Defs.lean:496](lean:Lib/Adelic/Unitary/Defs.lean#L496)-498 | `𝔸 E` is one copy of $\mathbb{C}$ for each infinite place, times the finite adeles. It is the adele ring only when $E$ is totally complex. `Space` is a matrix $J$ with a point $x$ such that $x^{*} J x$ is $\operatorname{diag}(s)$ at the infinite places and $1$ at the finite places. | The name hides a hypothesis on $E$. A space carries a chosen point, unlike a hermitian space of the textbook. | [adeles-hermitian-spaces](/chapter/adeles-hermitian-spaces/) |
 | F-058, explained | [Lib/Adelic/Adeles/Basic.lean:406](lean:Lib/Adelic/Adeles/Basic.lean#L406)-416 | `HasPrimitiveRoot5040 E`: the field $E$ contains a primitive root of unity of order $7! = 5040$. The comments call such fields "stably unramified". | The documents give no source for the constant $5040$. | [cm-fields](/chapter/cm-fields/) |
 | F-059, open | [New/Spanning/SecondMoment/FewTranslates.lean:151](lean:New/Spanning/SecondMoment/FewTranslates.lean#L151) | `IsNearIsometry` is a lower bound on the Hilbert-Schmidt norm on every subspace. It is not a notion of the operator norm. | The book must compare it with the usual notion of a near isometry. | [few-translates](/chapter/few-translates/), [moments](/chapter/moments/) |
 | F-060, explained | [New/Reduction/Lattices/Colength.lean:30](lean:New/Reduction/Lattices/Colength.lean#L30)-36 | `ColengthDvd M N z` needs no bases and no inclusion $N \leq M$. | It reads as a divisibility of colengths only over a valuation ring. | [twisted-lattices](/chapter/twisted-lattices/) |
@@ -53,6 +55,8 @@ This section lists the definitions where the difference matters. The rule for th
 | F-065, explained | [Lib/LocalGL/Shintani/CosetDescent.lean:99](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L99); `grh/GUIDE.md:54` | The predicate `Lift` is Shintani lifting. The folder `New/Congruences/Lifting` is about $p$-adic Hodge theory. | Two unrelated uses of the word "lift" sit next to the theta lifts. | [notation](/chapter/notation/) |
 | F-066, explained | [Lib/Analytic/Primes.lean:22](lean:Lib/Analytic/Primes.lean#L22)-25, 386-389 | The prime theorem of the file finds one prime $p \equiv 1 \bmod M^k$ in a long window, for moduli that are powers of a fixed multiple of $4$. It is proved directly by Newman's method. | It is far weaker than the theorem of Siegel and Walfisz, which the file names. | [primes-in-windows](/chapter/primes-in-windows/) |
 | F-067, open | [Lib/Analytic/QuadraticTwist.lean:41](lean:Lib/Analytic/QuadraticTwist.lean#L41)-44, 796 | The zero-density input is a weak form. `exists_entireL_quadTwist_ne_zero` (line 796) finds one prime $d$ of the class with no zeros of the twists in a box. | It is the deepest analytic input of the reduction. Its faithfulness to the cited works is not checked. | [polya-vinogradov](/chapter/polya-vinogradov/) |
+| F-139, explained | [Lib/Adelic/Unitary/GramMatrix.lean:98](lean:Lib/Adelic/Unitary/GramMatrix.lean#L98) | The fields of `Space` are `J`, `x` and `gram_point`. That $J$ is hermitian is not a field. It is the lemma `New.Space.isHermitian_J`, proved from the other fields. | A reader must not look for a field of hermitian matrices. The property holds for every `Space`, by the lemma. | [adeles-hermitian-spaces](/chapter/adeles-hermitian-spaces/) |
+| F-141, explained | [Lib/Adelic/Unitary/RationalPoints.lean:173](lean:Lib/Adelic/Unitary/RationalPoints.lean#L173) | `New.Space.witt` needs only `[CMType E]`. It has no hypothesis on the roots of unity of order 5040. | The Witt theorem of the source holds for every CM field, not only for the fields of the proof. | [adeles-hermitian-spaces](/chapter/adeles-hermitian-spaces/) |
 
 ### Three patterns
 
