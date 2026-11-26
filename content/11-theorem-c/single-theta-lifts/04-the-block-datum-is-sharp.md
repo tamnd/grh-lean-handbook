@@ -215,7 +215,7 @@ Lean: `New.DescentPair.chosenFactor_ne_zero` (New/Determinant/Norms/AdjointTheta
 
 *Proof.* Each $q_w$ is at least $2$. For $i \geq 1$, $q_w^i \neq 1$, so $1 - q_w^{-i} \neq 0$. The order of $\mathrm{GL}_r(k_w)$ is positive. $\square$
 
-**Remark (Formalization).** The twist factor $c_Q$ is also never $0$, by the same argument. The source does not state this for `New.DescentPair.twistFactor`, and this chapter does not need it. The constant `New.Rows.twistFactor` of [the first comparison operator](/chapter/comparison-operator-1/) is a different number. Its proof of being nonzero (`New.Rows.twistFactor_ne_zero`) does not apply here.
+**Remark (Formalization).** The twist factor $c_Q$ is also never $0$, by the same argument. The source does not state this for `New.DescentPair.twistFactor`, and this chapter does not need it. The constant `New.Rows.twistFactor` of [the second comparison operator](/chapter/comparison-operator-2/) is a different number. Its proof of being nonzero (`New.Rows.twistFactor_ne_zero`) does not apply here.
 
 **Lemma (The index of the level).** The product $[K_0^V : K]\cdot|\mathsf G_Q|$ is the product over all $w \in M \sqcup Q$ of the index in $\mathrm{GL}_n(k_w)$ of the stabilizer of the $r$ basis vectors $e_{\iota(1)}, \dots, e_{\iota(r)}$.
 
