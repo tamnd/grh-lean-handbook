@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section states the primitive comparison theorem of the source and its three corollaries: finiteness of the $p$-adic cohomology, continuity of the Galois action, and the period map with coefficients in a period ring pair. It combines the almost descent of Section 3 at the point with the duality machine of Section 4.
 
-### The classical result
+### The classical primitive comparison
 
 Let $X$ be a proper smooth rigid analytic variety over $C = \mathbb{C}_p$. Scholze, *p-adic Hodge theory for rigid-analytic varieties*, Forum Math. Pi 1 (2013), Theorem 1.3, proves that the map $H^i_{\mathrm{et}}(X, \mathbb{F}_p) \otimes \mathcal{O}_C/p \to H^i_{\mathrm{et}}(X, \mathcal{O}_X^+/p)$ is an almost isomorphism, and that $H^i_{\mathrm{et}}(X, \mathbb{F}_p)$ is finite. A tilted form of the theorem replaces $\mathcal{O}_C/p$ by $\mathcal{O}^\flat$ and $\mathcal{O}_X^+/p$ by the tilted structure sheaf. The source names Scholze 2013, Theorems 1.3 and 5.1, as the source of the result, and Zavyalov, *Poincaré duality in abstract 6-functor formalisms*, arXiv 2301.03821, Theorem 3.3.3 and Application 1.3.4, as the source of the method.
 

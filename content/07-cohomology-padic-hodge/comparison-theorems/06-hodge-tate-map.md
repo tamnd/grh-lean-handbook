@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section builds the Hodge-Tate map $\lambda_h$ of the source and proves the result that the main argument uses: the value of $\lambda_h$ on a Hodge class comes from a vector of Hodge-Tate weight $h$ in $\mathbb{C}_p \otimes V^{q+h}(Y)$. The result gives the Hodge-Tate jumps of the Galois representations of Volume 8, together with the Woods Hole formula of [the chapter on cohomology](/chapter/cohomology-ext/).
 
-### The classical result
+### The classical Hodge-Tate result
 
 Let $X$ be proper and smooth over a finite extension $K$ of $\mathbb{Q}_p$. Faltings, *p-adic Hodge theory*, J. Amer. Math. Soc. 1 (1988), proves the Hodge-Tate decomposition $H^n_{\mathrm{et}}(X_{\overline{K}}, \mathbb{Q}_p) \otimes C \cong \bigoplus_{i+j=n} H^i(X, \Omega^j) \otimes_K C(-j)$. Scholze, Forum Math. Pi 1 (2013), Corollary 1.8, proves it for proper smooth rigid analytic varieties. Bhatt, *The Hodge-Tate decomposition via perfectoid spaces*, Arizona Winter School 2017 notes, Section 3.4, builds the Hodge-Tate map from the torsor of lifts modulo the square of the kernel of Fontaine's map. The source follows this construction and names these three sources.
 

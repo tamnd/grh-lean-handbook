@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section proves the descent result on which the primitive comparison rests. It says that the points of a perfect $\mathcal{O}^\flat$-algebra in tilts of $p$-adic tests have no higher cohomology, for coefficients that are killed by $p^\flat$ and multiplied by the maximal ideal of $\mathcal{O}^\flat$. Section 5 uses it at the point, where the comparison starts. The second half of the section gives the adic step. It passes from a comparison modulo $p$ to a comparison of $p$-adic coefficients, and Section 5 uses it to lift the primitive comparison to period rings.
 
-### The classical result
+### Almost purity
 
 Let $X$ be a perfectoid space over $\mathbb{C}_p$, and let $\mathcal{O}^+$ be the integral structure sheaf. Scholze proves that for affinoid perfectoid $X = \mathrm{Spa}(R, R^+)$ the cohomology $H^i_v(X, \mathcal{O}^+)$ is almost zero for $i > 0$, and $H^0_v(X, \mathcal{O}^+) = R^+$ almost. Here "almost zero" means killed by the maximal ideal of $\mathcal{O}_C$. The source cites Scholze, *Étale cohomology of diamonds*, arXiv 1709.07343, Theorem 8.7 and Proposition 8.8, and for perfect rings Bhatt and Scholze, *Projectivity of the Witt vector affine Grassmannian*, Invent. Math. 209 (2017), Theorem 4.1.
 

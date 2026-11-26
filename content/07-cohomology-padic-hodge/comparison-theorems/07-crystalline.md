@@ -36,7 +36,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section treats the last of the three results that the main argument uses by name. Let $Y$ be a proper charted scheme over a noetherian ring $R$. First, the representation of a decomposition group at a $p$-adic place on $V^n(Y)$ is crystalline. Second, a congruence relation between maps $W \to Y$ on the special fibre gives a relation between Frobenius operators on $B_{\max} \otimes V^n(Y)$. The period rings come from [the chapter on period rings](/chapter/period-rings/).
 
-### The classical result
+### Classical crystalline theory
 
 Let $X$ be a proper smooth scheme over $W(k)$, with $k$ perfect of characteristic $p$. Fontaine's crystalline conjecture gives an isomorphism $B_{\mathrm{cris}} \otimes_{\mathbb{Q}_p} H^n_{\mathrm{et}}(X_{\overline{K}}, \mathbb{Q}_p) \cong B_{\mathrm{cris}} \otimes_{K_0} H^n_{\mathrm{cris}}(X_k / W(k))[1/p]$, compatible with Frobenius, Galois action and filtrations. So the étale cohomology is crystalline. The source cites Faltings, *Crystalline cohomology and $p$-adic Galois representations* (1989), and Bhatt, Morrow and Scholze, *Integral $p$-adic Hodge theory*, Publ. Math. IHÉS 128 (2018), Theorem 1.1(i).
 
