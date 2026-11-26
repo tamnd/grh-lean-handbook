@@ -67,6 +67,6 @@ The source does not apply the theorems of this chapter by name in `New/`. It rea
 
 ### The plan
 
-Section 2 proves the congruence relation on cohomology from a pointwise relation. Section 3 proves the pointwise relation, by a Möbius cancellation over subspaces and a geometric step at each point. Section 4 builds the eigenquotient and proves its three properties. Section 5 explains when a system of eigenvalues occurs in a weight, through a comparison of two finite counts. Section 6 puts the parts together. Section 7 has the exercises, and Section 8 the notes.
+Section 2 proves the congruence relation on cohomology from a pointwise relation. Section 3 proves the pointwise relation, by a Möbius cancellation over subspaces and a geometric step at each point. Section 4 builds the eigenquotient and proves its three properties. Section 5 explains when a system of eigenvalues occurs in a weight, through a comparison of two finite counts. Section 6 puts the parts together. Section 7 has the exercises and the notes.
 
 Lean accepts the theorems of this chapter, if the checks that the source reports hold. This book did not rerun the checks (Volume 0, Chapter 2).
