@@ -29,7 +29,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Turns off the diagonal
 
-This section applies the one square identity to a square of a grid. It defines the property that a turn gives, the transfer of periods, and proves it for every turn off the diagonal. The constant of the transfer has, up to a norm power, the absolute value of a ratio of Hecke values.
+This section applies the one square identity to a square of a grid. It defines the transfer of periods and proves it for every turn off the diagonal. The constant of the transfer has, up to a norm power, the absolute value of a ratio of Hecke values.
 
 We use the one square identity of [the one square identity](/chapter/seesaw-squares/#the-one-square-identity), the critical pairs of [twists, critical pairs and regular families](/chapter/twists-critical-pairs/), and the ratios $\Lambda$, the ramified ratios and "absolute value up to a norm power" of [moduli and ratios of Hecke values](/chapter/chain-determinant/#moduli-and-ratios-of-hecke-values). Write $\chi_j$ for `untwistedLiftChar` $j$ and $w_j$ for `liftWeight` $j$.
 

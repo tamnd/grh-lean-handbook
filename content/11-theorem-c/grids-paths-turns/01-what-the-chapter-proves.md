@@ -58,11 +58,11 @@ A turn of the half in the grid of the $\tilde Y$ at its corner $(a, b)$ has the 
 
 $$\prod_{i < m} \prod_{j < m} \mathrm{turnRatio}_{ij}(\vartheta).$$
 
-**Step 3. The last path.** On the last path all groups are definite. The forms are algebraic forms, and the period of every path datum is a constant times a finite sum $\Xi$, divided by the order of a finite general linear group (Sections 8 and 9). The sum $\Xi$ is a sum of a bounded number of terms of bounded size.
+**Step 3. The last path.** On the last path all groups are definite. The forms are algebraic forms, and the period of every path datum is a constant times a finite sum $\Xi$, divided by the order of a finite general linear group (Section 8). The sum $\Xi$ is a sum of a bounded number of terms of bounded size.
 
-Section 2 is a tool for Step 3. It finds the weight $(\kappa, e)$ of a regular parameter and bounds the boxes of $\kappa$ and the power $e$.
+Section 2 finds and bounds the weights that Step 3 uses.
 
-The figure shows how the three steps join. The arrows to the right carry path data. The arrows to the left carry proportionality.
+In the figure, the arrows to the right carry path data. The arrows to the left carry proportionality.
 
 ```text
   transposed chains          first path        last path
@@ -82,12 +82,12 @@ Here $n$ is `triangleGLCard false` $\vartheta$ $m$, the order of $\mathrm{GL}$ o
 | 3, 4 | [GridFirstColumns.lean](lean:New/Determinant/AuxiliaryForms/GridFirstColumns.lean) | the first path |
 | 5, 6 | [Turns.lean](lean:New/Determinant/AuxiliaryForms/Turns.lean) | turns, off the diagonal |
 | 7 | [DiagonalTurns.lean](lean:New/Determinant/AuxiliaryForms/DiagonalTurns.lean) | diagonal turns, all turns |
-| 8, 9 | [LastPath.lean](lean:New/Determinant/AuxiliaryForms/LastPath.lean) | the last path |
+| 8 | [LastPath.lean](lean:New/Determinant/AuxiliaryForms/LastPath.lean) | the last path |
 
 No file of this chapter imports a file of a later chapter of Volume 11. The docstring of LastPath.lean refers to SpanningForms.lean, of the next chapter, only in its prose.
 
 ### Two warnings
 
-The constants in this chapter come from existence statements. Many of them are not shown to be nonzero. The constant $C$ of Step 1 and the constant $\beta$ of a proportionality may be $0$. Then the statements hold but carry no information. The constant $c(\vartheta)$ of Step 2 is a unit by its type. The places where this matters are marked by a remark.
+The constants in this chapter come from existence statements. Many of them are not shown to be nonzero. The constant $C$ of Step 1 and the constant $\beta$ of a proportionality may be $0$. Then the statements hold but carry no information. The constant $c(\vartheta)$ of Step 2 is a unit by its type.
 
 The source writes `false` for the grid of the $Y$ and `true` for the grid of the $\tilde Y$. The forms that move in the grid of the $Y$ are conjugate forms. On the first columns, the transposed lifts on the $Y$ side are taken at the twist $\vartheta$, and those on the $\tilde Y$ side at the trivial twist $1$.

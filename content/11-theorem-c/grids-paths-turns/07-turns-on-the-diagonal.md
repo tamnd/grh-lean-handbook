@@ -43,7 +43,7 @@ drafted_by: writer@claude-opus-5-5
 
 A diagonal turn at $j < m$ replaces the node $(j, j)$ of both halves by $(j + 1, j + 1)$. The two grids meet on the diagonal: $\tilde Y^j_j = Y^j_j \oplus E\tilde e_j$. So the square has a line on one side, and the turn of Section 5 runs with $T$ = `Unit`. The period does not pass across the square directly. A seesaw moves it to the space $S = \tilde Y^{j+1}_j = Y^{j+1}_j$ common to both paths. There the line is reversed, the square is crossed, and a second seesaw moves the period on. The section ends with the composite of all $m^2$ turns.
 
-We use the seesaw for periods of [the seesaw for periods](/chapter/theta-lifts-seesaw/#the-seesaw-for-periods) and the theta kernels `modKernel` of [edges and arrows](/chapter/theta-lifts-seesaw/#edges-and-arrows).
+We use [the seesaw for periods](/chapter/theta-lifts-seesaw/#the-seesaw-for-periods) and the theta kernels `modKernel` of [edges and arrows](/chapter/theta-lifts-seesaw/#edges-and-arrows).
 
 ```text
   removed: V' = Y^j_j          Ṽ' = Ỹ^j_j = V' ⊕ E ẽ_j

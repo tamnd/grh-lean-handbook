@@ -31,7 +31,7 @@ drafted_by: writer@claude-opus-5-5
 
 ## The first columns
 
-The first path goes down the column $a = 0$ of both grids. Its spaces are $Y_m, \ldots, Y_0$ and $\tilde Y^m_0, \ldots, \tilde Y^0_0 = Y_0 \oplus E\tilde e_0$. A conjugate form $y'$ on $Y_m$ and a form $\varphi$ on $\tilde Y^m_0$ move down the columns by the transposed chains and meet on $\tilde Y^0_0$. This section writes their period as a constant times the period $I(\Psi^0)$ of one path datum $\Psi^0$. All results are in [GridFirstColumns.lean](lean:New/Determinant/AuxiliaryForms/GridFirstColumns.lean), in the namespace `New.Data`.
+The first path goes down the column $a = 0$ of both grids. A conjugate form $y'$ on $Y_m$ and a form $\varphi$ on $\tilde Y^m_0$ move down the columns by the transposed chains and meet on $\tilde Y^0_0$. This section writes their period as a constant times the period $I(\Psi^0)$ of one path datum $\Psi^0$. All results are in [GridFirstColumns.lean](lean:New/Determinant/AuxiliaryForms/GridFirstColumns.lean).
 
 ```text
   grid of the Y (conj. forms)      grid of the Ytilde (forms)

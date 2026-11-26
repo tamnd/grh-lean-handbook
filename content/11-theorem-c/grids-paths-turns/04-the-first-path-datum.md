@@ -70,4 +70,4 @@ Lean: `New.Data.exists_isPathDatum_diagonalPeriodForm_eq` (New/Determinant/Auxil
 
 **Remark (Formalization).** The statement does not say $C \neq 0$. From the proof, $C = \prod_i C_i$ with $C_i = (|O_E/\varpi| / |O_E/\varpi^{b_0}|)^{r_i^2} > 0$. A user who needs $C \neq 0$ must use the proof, not the statement.
 
-This is Step 1. The constant $C$ and the datum $\Psi^0$ are used in the next chapter, together with the transfer of Section 7 and the proportionality of Section 9.
+This is Step 1. The constant $C$ and the datum $\Psi^0$ are used in the next chapter, together with the transfer of Section 7 and the proportionality of Section 8.
