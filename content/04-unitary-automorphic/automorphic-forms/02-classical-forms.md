@@ -82,7 +82,7 @@ Let $\Gamma \subset G$ be a subgroup, and let $\alpha \in G$ be such that $\Gamm
 
 Lean: the source's form is `New.heckeFun` (Lib/Adelic/Hecke/Basic.lean).
 
-This is the operator of Shimura (1971), Chapter 3, in adelic form. For $\mathbf{G} = \mathrm{GL}_2$, $K_f = \mathrm{GL}_2(\hat{\mathbb{Z}})$ and $g$ the element $\operatorname{diag}(p, 1)$ at $p$, it is the operator $T_p$ of Diamond and Shurman (2005), Chapter 5, up to a power of $p$ that depends on the normalization. The operators of $K_f$-bi-invariant functions with compact support form an algebra under convolution, the Hecke algebra of $K_f$. At a place where $K_f$ is hyperspecial the local Hecke algebra is commutative, by the Satake isomorphism. Its eigenvalues on a form are the Satake parameters, which the source packs into Hecke polynomials. Section 7 states the source's definition of a Hecke polynomial at a split place and its spanning theorem.
+This is the operator of Shimura (1971), Chapter 3, in adelic form. For $\mathbf{G} = \mathrm{GL}_2$, $K_f = \mathrm{GL}_2(\hat{\mathbb{Z}})$ and $g$ the element $\operatorname{diag}(p, 1)$ at $p$, it is the operator $T_p$ of Diamond and Shurman (2005), Chapter 5, up to a power of $p$ that depends on the normalization. The operators of $K_f$-bi-invariant functions with compact support form an algebra under convolution, the Hecke algebra of $K_f$. At a place where $K_f$ is hyperspecial the local Hecke algebra is commutative, by the Satake isomorphism. Its eigenvalues on a form are the Satake parameters, which the source packs into Hecke polynomials. Section 8 states the source's definition of a Hecke polynomial at a split place and its spanning theorem.
 
 ### What the source keeps and what it drops
 

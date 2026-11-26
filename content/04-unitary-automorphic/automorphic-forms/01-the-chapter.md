@@ -20,7 +20,7 @@ This chapter is the third chapter of Volume 4. It gives the automorphic forms th
 
 ### The plan of the chapter
 
-The chapter has nine sections.
+The chapter has ten sections.
 
 1. *The chapter and its place* (this section).
 2. *Classical automorphic forms.* Modular forms of weight $k$ and level $\Gamma_0(N)$, automorphic forms on a reductive group over the adeles in the sense of Borel and Jacquet, cusp forms, the finite dimension of a space of cusp forms of fixed type, and the classical Hecke operators. Nothing in this section is new. It fixes the model that the later sections follow.
@@ -28,17 +28,18 @@ The chapter has nine sections.
 4. *Forms of a type.* The source's automorphic functions and its forms of type $e$, for a function $e$ on $G_\infty$: bounded automorphic functions that the right convolution by $e$ fixes. The Petersson product, the representation of $G_f$ on forms, and the kernels $e_\lambda$ attached to discrete series parameters.
 5. *Cuspidality and finite dimension.* Forms of type $e$, for a cusp kernel $e$, have vanishing constant terms and decay rapidly in the height. The space of such forms of a fixed level is finite-dimensional.
 6. *Algebraic forms on definite groups.* For a definite space, the forms are functions on $G_f$ with values in a finite-dimensional representation of the rational group. At a level where all stabilizers are trivial, such a form is a vector-valued function on the finite set of double cosets $\Gamma_{V,f} \backslash G_f / K$.
-7. *Automorphic forms as algebraic forms, and eigenforms.* On the standard definite space, forms of type $e_\lambda$ are the same as algebraic forms of the matching weight. The Petersson product is a class sum. A finite-dimensional space of algebraic forms that the Hecke operators at almost all split places preserve is spanned by eigenforms.
-8. *The $p$-adic gauge.* The size at a prime $p$ of the value of an algebraic form, and the integrality of class sums.
-9. *Exercises and notes.*
+7. *Automorphic forms as algebraic forms.* On the standard definite space, forms of type $e_\lambda$ are the same as algebraic forms of the matching weight, and Hecke polynomials match. The Petersson product is a class sum.
+8. *Hecke eigenforms.* Hecke polynomials, eigenforms, and the theorem that a finite-dimensional space of algebraic forms that the Hecke operators at almost all split places preserve is spanned by eigenforms.
+9. *The $p$-adic gauge.* The size at a prime $p$ of the value of an algebraic form, and the integrality of class sums.
+10. *Exercises and notes.*
 
 ### How the three theorems use the chapter
 
-*Theorem A.* [Theorem A: the plan](/chapter/theorem-a-plan/) shows that the source forms are spanned by forms whose lifts are short at every archimedean place and divisible by large powers of the small primes. The lifts land in spaces of algebraic forms on definite groups (Section 6). The divisibility is read through the $p$-adic gauge of Section 8, and the Hecke operators of Section 3 enter the divisibility at the primes. The forms supported on one double coset (Section 6) are the building blocks of the columns of the lift. The finite dimension of Section 5 enters through the rows of the lift, which are forms of type $e_\lambda$ on an indefinite group.
+*Theorem A.* [Theorem A: the plan](/chapter/theorem-a-plan/) shows that the source forms are spanned by forms whose lifts are short at every archimedean place and divisible by large powers of the small primes. The lifts land in spaces of algebraic forms on definite groups (Section 6). The divisibility is read through the $p$-adic gauge of Section 9, and the Hecke operators of Section 3 enter the divisibility at the primes. The forms supported on one double coset (Section 6) are the building blocks of the columns of the lift. The finite dimension of Section 5 enters through the rows of the lift, which are forms of type $e_\lambda$ on an indefinite group.
 
 *Theorem B.* [Theorem B: the plan](/chapter/theorem-b-plan/) shows that a few translates of the image of the source fill almost all of the target. It uses the Poincaré series of Section 4, the forms of type $e$ of Section 4, the dimension formula $\#(\Gamma \backslash G_f / K) \cdot \dim W$ of Section 6, and the Hecke operators of Section 3.
 
-*Theorem C.* [Theorem C: the plan](/chapter/theorem-c-plan/) gives the matching lower bound for the covolume of a family of target forms. It uses the forms of type $e$ and the Petersson product of Section 4, the finite dimension of Section 5 for auxiliary forms of deep level, the identity of Section 7 between the Petersson product and a class sum, and the integrality of Section 8. The congruences that Theorem C needs ([regular families: the plan](/chapter/regular-families-plan/)) use the spanning by eigenforms of Section 7 and the unitary pairing on algebraic forms that the spanning needs.
+*Theorem C.* [Theorem C: the plan](/chapter/theorem-c-plan/) gives the matching lower bound for the covolume of a family of target forms. It uses the forms of type $e$ and the Petersson product of Section 4, the finite dimension of Section 5 for auxiliary forms of deep level, the identity of Section 7 between the Petersson product and a class sum, and the integrality of Section 9. The congruences that Theorem C needs ([regular families: the plan](/chapter/regular-families-plan/)) use the spanning by eigenforms of Section 8 and the unitary pairing on algebraic forms that the spanning needs.
 
 Each later section ends with a part that names the chapters where the argument uses its objects.
 
