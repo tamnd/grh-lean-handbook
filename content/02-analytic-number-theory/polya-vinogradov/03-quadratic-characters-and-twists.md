@@ -72,7 +72,7 @@ Lean: `New.legendreSym_eq_jacobiSym_ordCompl` (Lib/Analytic/QuadraticTwist.lean)
 
 So, for fixed $n$, the value $(n/d)$ at a prime $d \equiv 7 \bmod 8$ is the value at $v = d$ of the function $v \mapsto (-v/n^\circ)$, which is periodic in $v$ with period $n^\circ$. This function is defined for every $v \geq 1$, prime or not. The mean square of Section 5 sums it over all $v \leq T^2$.
 
-Both congruences matter. The condition $d \equiv 3 \bmod 4$ gives the sign $(-1)^{(m - 1)/2}$ that reciprocity needs, absorbed into $-d$. The condition $d \equiv 7 \bmod 8$ removes the power of $2$. For $d \equiv 3 \bmod 8$ one would get $(n/d) = (-1)^k(-d/n^\circ)$, and the coefficient would depend on $k$ as well.
+Both congruences matter. The condition $d \equiv 3 \bmod 4$ gives the sign $(-1)^{(m - 1)/2}$ that reciprocity needs, absorbed into $-d$. The condition $d \equiv 7 \bmod 8$ removes the power of $2$. For $d \equiv 3 \bmod 8$ one would get $(n/d) = (-1)^k(-d/n^\circ)$. The sign depends only on $n$, so it could be put into the coefficients of Section 5 (Exercise 5), but the source does not do this.
 
 **Example.** Let $d = 7$ and $n = 12 = 2^2\cdot 3$. Then $n^\circ = 3$, and $(12/7) = (5/7) = -1$, since the squares modulo $7$ are $1, 2, 4$. On the other side, $(-7/3) = (2/3) = -1$. The two values agree.
 
