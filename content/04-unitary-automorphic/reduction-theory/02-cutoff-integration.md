@@ -52,7 +52,7 @@ Lean: `New.Space.quotMeasure` (Lib/Adelic/Reduction/FiniteVolume.lean).
 
 **Remark (Formalization).** The chosen cutoff $\beta_0$ is `Classical.epsilon` of the property of being a cutoff. If no cutoff exists, $\beta_0$ is an unspecified function, and the results below assume that one exists. Even then, $\beta_0 \mu$ depends on the choice on sets that are not invariant. Only the integrals and distributions of invariant functions are canonical, by the theorem on independence below, and these are all that the source uses. Finding F-047 of the plan records this choice.
 
-### Unfolding
+### Unfolding by a cutoff
 
 **Theorem (Unfolding).** Assume that $\nu$ is invariant under $h \mapsto h^{-1}$, and let $\beta$ be a cutoff. Then the map $(x, h) \mapsto h x$ carries the product measure $(\beta\mu) \times \nu$ on $X \times H$ to $\mu$. In particular, if a cutoff exists, then $(x, h) \mapsto hx$ carries $\mu_H \times \nu$ to $\mu$, where $\mu_H$ is the orbit measure.
 

@@ -65,7 +65,7 @@ Lean: `New.span_norm_le_eq_top_of_covering` (Lib/Adelic/Reduction/FirstMinimumSh
 
 **Remark (Formalization).** The constant in (2) is $m^2$, where Banaszczyk has $m/2$. The constant enters the argument only through the short basis constant below, and no step needs the sharp form. The hypothesis is on the dual alone, and $\Lambda$ is an arbitrary subgroup. Part (1) is the step of the induction.
 
-### The first minimum and the height
+### Definitions of the first minimum and the height
 
 Let $V = (J, x)$ be a space. For $\xi \in E^n$, the vector $x^{-1}\xi$ has a component in $\mathbb{C}^n$ at each infinite place $w$. Put these together into one vector $\mathrm{a}(\xi)$ in the Euclidean space $\mathbb{C}^{f \times n}$, which has real dimension $m = 2fn$. Its norm is the *length* of $\xi$:
 $$\|\xi\|_V^2 = \sum_{w} \sum_{i} |(x_w^{-1} \xi)_i|^2.$$
@@ -161,7 +161,7 @@ Lean: `New.Rows.inf_le_firstMinimum_sum` (Lib/Adelic/Reduction/FirstMinimumShort
 
 So the height of a block diagonal point is at most the larger of the two heights.
 
-### Where the argument uses this section
+### Where the argument uses short bases and heights
 
 The short bases for $I_n$ bound the lattice vectors in the class count and the size estimate of [Theorem A: the plan](/chapter/theorem-a-plan/), and in the comparison operator of [Theorem C: the plan](/chapter/theorem-c-plan/). There the short bases also give $\lambda(S)\lambda(T)/(C(N)|n'||n|) \le \lambda(\operatorname{Hom}(S, T))$ for two spaces of ranks $|n|$ and $|n'|$, which bounds the theta kernel. Rapid decay and moderate growth are the conditions on the functions of the seesaw stages of Theorem A and of the exchange steps and diagonal turns of Theorem C.
 

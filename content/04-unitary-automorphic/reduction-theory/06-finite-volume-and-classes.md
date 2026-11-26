@@ -138,7 +138,7 @@ in the normalization $\operatorname{vol}(G_\infty) = \operatorname{vol}(K_0) = 1
 
 **Remark (Formalization).** The finiteness of classes is proved only for spaces with all signs $1$ and levels inside $K_0$. The index $[K_0 : K]$ is a natural number with the junk value $0$ when the index is infinite. For a level it is finite and nonzero, so the factor $[K_0 : K]^{-1}$ is the true inverse. The class sum is a finite sum with weights $1/\#(\cdots)$, where a cardinality has the junk value $0$ for an infinite set. The theorem on finiteness of classes excludes this. The representatives $g_c$ of `New.classSum` (Lib/Adelic/Hecke/Basic.lean) are chosen, but the sum does not depend on the choice. The Haar measures of $G_f$ and $G$ are right invariant, because the rational points of the standard space are a lattice in $G_f$ (Section 2).
 
-### Where the argument uses this section
+### Where the argument uses the finiteness results
 
 Weil's criterion makes the theta integrals of the Siegel and Weil formula converge, and Mahler's criterion gives the convergence of theta lifts. The compactness of the definite quotient makes continuous functions integrable in the seesaw stages of [Theorem A: the plan](/chapter/theorem-a-plan/) and in the periods of the false lifts of [Theorem C: the plan](/chapter/theorem-c-plan/). The class sum formula turns these periods, the norm of the character lift and the explicit matching of the exchange step into finite sums.
 
