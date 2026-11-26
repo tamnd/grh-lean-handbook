@@ -73,7 +73,7 @@ Lean: `New.Filling.tsum_le_relIndex_pow_mul` (New/Spanning/Unfolding/ReducedPoin
 
 Lean: `New.Filling.submoduleIndex_smul_intVectors`, `New.Filling.submoduleIndex_smul_ne_zero` (New/Spanning/Unfolding/ReducedPoints.lean).
 
-*Proof.* $c\hat{\mathcal O}^\iota$ is the lattice of the columns of the scalar matrix $c\cdot 1$, whose determinant is $c^{|\iota|}$. The index of a column lattice is the index of its determinant, from [the lattice indices](/chapter/anatomy-of-a-term/). The index $[\hat{\mathcal O} : c\hat{\mathcal O}]$ is positive. $\square$
+*Proof.* $c\hat{\mathcal O}^\iota$ is the lattice of the columns of the scalar matrix $c\cdot 1$, whose determinant is $c^{|\iota|}$. The index of a column lattice is the index of its determinant (`New.submoduleIndex_colLattice_intVectors`, in [congruence subgroups](/chapter/congruence-subgroups/)). The index $[\hat{\mathcal O} : c\hat{\mathcal O}]$ is positive. $\square$
 
 **Remark (Formalization).** The index is `New.submoduleIndex`, a natural number. For an infinite index Lean gives the value $0$. The second statement excludes this case here, and the colouring lemma asks for `relIndex K K' ≠ 0` for the same reason.
 
