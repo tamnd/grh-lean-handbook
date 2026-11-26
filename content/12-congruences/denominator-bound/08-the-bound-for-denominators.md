@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The bound for denominators
 
-This section joins the operator at one base system to the forms. The operator $\mathrm{diagOp}(s)$ of [the operator at one base system](/chapter/denominator-bound/#the-operator-at-one-base-system) acts on algebraic forms of level $L$. Composed with $\mathrm{typeProjection}(c)$, it gives an operator $G$ on the forms of $O$ that has each lift generator as an eigenvector. One $G$ exists for each basis vector of $Z$, and an integral combination of them serves all basis vectors at once. Its determinant then gives the bound `DenominatorLe` that [the theorem and its plan](/chapter/theorem-and-plan/) uses.
+This section joins the operator at one base system to the forms. The operator $\mathrm{diagOp}(s)$ of [the operator at one base system](/chapter/denominator-bound/#the-operator-at-one-base-system) acts on algebraic forms of level $L$. Composed with $\mathrm{typeProjection}(c)$, it gives an operator $G$ on the forms of $O$ that has each lift generator as an eigenvector. One $G$ exists for each basis vector of $Z$, and an integral combination of them serves all basis vectors at once. Its determinant then gives the bound `DenominatorLe` that [the chain of the proof](/chapter/regular-families-plan/#the-chain-of-the-proof) uses.
 
 ### The operator for one lift generator
 
