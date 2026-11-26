@@ -32,7 +32,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Positions and the stationary position
 
-Laplace's method needs a group $S$ and a map $j$ on which the phase difference $\operatorname{tr}\mu(g - 1) - \operatorname{tr}\mu'(g' - 1)$ is additive. This section finds such groups. They are stabilizers of flags of vectors $v_1, \dots, v_{j_0}$ in $\mathbb{C}^n$, together with an isometry $i_0$ of a smaller hermitian space into the orthogonal complement of the flag. Groups of this kind occur in the Bessel case of the Gan-Gross-Prasad problem for unitary groups (Gan, Gross and Prasad, *Astérisque* 346, 2012). Here we only need the linear algebra. The second half of the section builds the vectors from polynomials, when the weights $\mu$ and $\mu'$ lie on opposite sides of $0$.
+Laplace's method needs a group $S$ and a map $j$ on which the phase difference $\operatorname{tr}\mu(g - 1) - \operatorname{tr}\mu'(g' - 1)$ is additive. This section finds such groups. They are stabilizers of flags of vectors $v_1, \dots, v_{j_0}$ in $\mathbb{C}^n$, together with an isometry $i_0$ of a smaller hermitian space into the orthogonal complement of the flag. Groups of this kind occur in the Bessel case of the Gan-Gross-Prasad problem for unitary groups (Gan, Gross and Prasad, *Astérisque* 346, 2012). The second half of the section builds the vectors from polynomials.
 
 ### Positions
 
@@ -172,4 +172,4 @@ The isometry: on $e(X)$ the sign is $+1$, so $i_0$ is isometric there; off $X$ i
 
 Stationarity follows from the identities for $\mu$ above. The bounds use that all the nodes are integers. So two distinct nodes differ by at least $1$, and every $|p'(\mu_i)|$, $|q(\mu_i)|$ and $|q'(\mu'_j)|$ is at least $1$. The numerators are at most products of $L$ factors of size at most $3B + B'$. $\square$
 
-**Remark (Formalization).** In the source the nodes are indexed from $0$ and the vectors from $1$, as here. The statement only asks the weights of $k$ to lie in $[0, B']$ off $X$. It does not ask that $\mu' \leq 3B$, which the Laplace datum needs; section 8 adds this hypothesis separately. The theorem gives the sign $(-1)^{L'}$ of $\langle v_{j_0}, v_{j_0}\rangle_\varepsilon$ exactly. For one vector ($d = 0$) and $L'$ even, the vector $v_1$ is a unit vector of positive norm.
+**Remark (Formalization).** The statement only asks the weights of $k$ to lie in $[0, B']$ off $X$. It does not ask that $\mu' \leq 3B$, which the Laplace datum needs; section 8 adds this hypothesis separately. For $d = 0$ and $L'$ even, $v_1$ has norm $+1$.

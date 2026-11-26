@@ -86,8 +86,6 @@ Lean: `New.DiscreteSeries.IsStationary.isLaplaceDatum` (New/Appendix/DiscreteSer
 $$ \Phi(g - 1, g' - 1) = \sigma(g) + \overline{-\sigma(g)} = \sigma(g) - \overline{\sigma(g)}, $$
 which is condition 1. Condition 3 is additivity of $\sigma$, and condition 4 holds since $\sigma - \overline\sigma$ is imaginary. Conditions 5 and 6 are hypotheses. For condition 7, let $u \in U(X)$. Let $y \in U(\eta)$ be $u$ on the coordinates $e'(X)$ and the identity elsewhere; this needs $\eta = 1$ on $e'(X)$. Take $g = 1 + i_0(y - 1)i_0^\dagger$. Since $i_0$ is the identity from $e'(X)$ to $e(X)$, the element $g$ is $u$ on the coordinates $e(X)$ and the identity elsewhere. $\square$
 
-So in a stationary position the phase difference is additive on $R$. This is the reason for the definition of a stationary position.
-
 **Theorem (Period over the group of a position).** Let the hypotheses of the previous theorem hold with $B \geq 1$. Let $l$ and $k$ have large gap $h$ and entries at most $L$ in absolute value. Let $\beta \geq 10^{12}$, $\#n + \#m + L \leq \beta$ and $h \geq 10^{30}((\#n + \#m)^2\log\beta)^3$. Let $\nu$ be a right invariant measure on $R$ that is finite on compact sets. Then $\theta$ is integrable and
 $$ \nu\{g \in R : \|g\| \leq \beta + 1,\ \|g'\| \leq \beta + 1\} \leq \beta^{20(\#n + \#m)^2}\left|\int_R \theta\,d\nu\right|. $$
 Lean: `New.DiscreteSeries.IsStationary.integrable_periodIntegrand_and_measure_le` (New/Appendix/DiscreteSeries/PositionGroup.lean).
