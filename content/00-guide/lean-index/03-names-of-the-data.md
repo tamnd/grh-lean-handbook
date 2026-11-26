@@ -1,0 +1,308 @@
+---
+title: Names of the data
+lean: []
+decls: []
+status: drafted
+drafted_by: writer@claude-opus-5-5
+generated_by: scripts/lean_index.py
+---
+
+## Names of the data
+
+The index lists 709 Lean names that the 26 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 295 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
+
+- `New.Data.a`: `New/Reduction/Data/AdmissibleData.lean`, [line 215](lean:New/Reduction/Data/AdmissibleData.lean#L215). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.a_div_x₁_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 182](lean:New/Reduction/Data/Sizes.lean#L182). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.abs_log_M_mul_rootDisc_le`: `New/Reduction/Data/Sizes.lean`, [line 232](lean:New/Reduction/Data/Sizes.lean#L232). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.allowedLoss`: `New/UpperBound/Size/Estimates.lean`, [line 318](lean:New/UpperBound/Size/Estimates.lean#L318). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.aPlaces`: `New/Reduction/Data/AdmissibleData.lean`, [line 238](lean:New/Reduction/Data/AdmissibleData.lean#L238). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.b`: `New/Reduction/Data/AdmissibleData.lean`, [line 178](lean:New/Reduction/Data/AdmissibleData.lean#L178). Cited in [Chapter](/chapter/notation/).
+- `New.Data.bad_types_rare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 244](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L244). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.bigOmega_le_one`: `New/Reduction/Data/Sizes.lean`, [line 213](lean:New/Reduction/Data/Sizes.lean#L213). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.bPlaces`: `New/Reduction/Data/AdmissibleData.lean`, [line 126](lean:New/Reduction/Data/AdmissibleData.lean#L126). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.card_aPlaces`: `New/Reduction/PrimeSums.lean`, [line 79](lean:New/Reduction/PrimeSums.lean#L79). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.card_aPlaces_mul_excess_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 130](lean:New/UpperBound/Size/ArchimedeanSize.lean#L130). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.card_aPlaces_mul_mainPrimeSum`: `New/Reduction/PrimeSums.lean`, [line 165](lean:New/Reduction/PrimeSums.lean#L165). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.card_filter_mem_bPlaces`: `New/Reduction/PrimeSums.lean`, [line 101](lean:New/Reduction/PrimeSums.lean#L101). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.card_rowIndex`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 275](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L275). Cited in [Chapter](/chapter/notation/).
+- `New.Data.card_Y_le`: `New/UpperBound/Objects/Rows.lean`, [line 531](lean:New/UpperBound/Objects/Rows.lean#L531). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.cast_weight`: `New/Reduction/Data/Magnitudes.lean`, [line 112](lean:New/Reduction/Data/Magnitudes.lean#L112). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.chainChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 378](lean:New/Reduction/Data/LevelAndTwists.lean#L378). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Data.chainDeterminant`: `New/Determinant/Chain/NormOfChain.lean`, [line 103](lean:New/Determinant/Chain/NormOfChain.lean#L103). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.chainDeterminant_pos`: `New/Determinant/Chain/NormOfChain.lean`, [line 109](lean:New/Determinant/Chain/NormOfChain.lean#L109). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.chainSize`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 214](lean:New/UpperBound/Size/ArchimedeanSize.lean#L214). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.chainSize_sub_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 338](lean:New/UpperBound/Size/ArchimedeanSize.lean#L338). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.chiM`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 259](lean:New/Derivatives/Field/ChosenPlaces.lean#L259). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.chiMLocal`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 156](lean:New/Derivatives/Field/ChosenPlaces.lean#L156). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.chiMLocal_apply_eq_one_of_pow_q₁_eq_one`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 174](lean:New/Derivatives/Field/ChosenPlaces.lean#L174). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.chiZero`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 255](lean:New/Derivatives/Field/ChosenPlaces.lean#L255). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.classAut_eq_bot_of_le_chosenLevel`: `New/UpperBound/Objects/LiftChains.lean`, [line 535](lean:New/UpperBound/Objects/LiftChains.lean#L535). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.classAut_eq_bot_of_le_levelOf_chosenPlace`: `New/UpperBound/Objects/LiftChains.lean`, [line 518](lean:New/UpperBound/Objects/LiftChains.lean#L518). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.classAut_lastResidueLevel_eq_bot`: `New/Reduction/IntegralTargetForms.lean`, [line 50](lean:New/Reduction/IntegralTargetForms.lean#L50). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.ClearsProjection`: `New/Determinant/Twist/FitTwists.lean`, [line 164](lean:New/Determinant/Twist/FitTwists.lean#L164). Cited in [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.compositeLift`: `New/UpperBound/Objects/Columns.lean`, [line 992](lean:New/UpperBound/Objects/Columns.lean#L992). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.constantBound_le`: `New/Reduction/Data/AdmissibleData.lean`, [line 98](lean:New/Reduction/Data/AdmissibleData.lean#L98). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.CriticalPair`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 272](lean:New/Derivatives/Field/ChosenPlaces.lean#L272). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.CriticalPair.algPart_pos`: `New/OneLift/HeckeValues/TwistedRatio.lean`, [line 160](lean:New/OneLift/HeckeValues/TwistedRatio.lean#L160). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.CriticalPair.IsMainPair`: `New/Determinant/Twist/FitTwists.lean`, [line 124](lean:New/Determinant/Twist/FitTwists.lean#L124). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.CriticalPair.IsMainPair.isRamified`: `New/Determinant/Twist/FitTwists.lean`, [line 142](lean:New/Determinant/Twist/FitTwists.lean#L142). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.CriticalPair.IsRamified`: `New/Determinant/Twist/FitTwists.lean`, [line 115](lean:New/Determinant/Twist/FitTwists.lean#L115). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.CriticalPair.ratio`: `New/Determinant/Twist/FitTwists.lean`, [line 78](lean:New/Determinant/Twist/FitTwists.lean#L78). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.CriticalPair.ratio_eq_algPart_div`: `New/OneLift/HeckeValues/TwistedRatio.lean`, [line 209](lean:New/OneLift/HeckeValues/TwistedRatio.lean#L209). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.CriticalPair.ratio_ne_zero`: `New/OneLift/HeckeValues/TwistedRatio.lean`, [line 260](lean:New/OneLift/HeckeValues/TwistedRatio.lean#L260). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.cyclotomicConductor`: `New/Reduction/Data/AdmissibleData.lean`, [line 194](lean:New/Reduction/Data/AdmissibleData.lean#L194). Cited in [Chapter](/chapter/notation/).
+- `New.Data.denominatorBudget`: `New/Determinant/Twist/FitTwists.lean`, [line 153](lean:New/Determinant/Twist/FitTwists.lean#L153). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.descentPair`: `New/UpperBound/Objects/Rows.lean`, [line 309](lean:New/UpperBound/Objects/Rows.lean#L309). Cited in [Chapter](/chapter/notation/).
+- `New.Data.directionAmount`: `New/Reduction/Data/AdmissibleData.lean`, [line 264](lean:New/Reduction/Data/AdmissibleData.lean#L264). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/prime-sums/).
+- `New.Data.directionAmount_mem_Icc`: `New/Reduction/PrimeSums.lean`, [line 267](lean:New/Reduction/PrimeSums.lean#L267). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.divisibilityError`: `New/Reduction/ShortAndEnough.lean`, [line 41](lean:New/Reduction/ShortAndEnough.lean#L41). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.divisibilityError_eq_zero`: `New/Reduction/ShortAndEnough.lean`, [line 49](lean:New/Reduction/ShortAndEnough.lean#L49). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.divisibilityError_nonneg`: `New/Reduction/ShortAndEnough.lean`, [line 43](lean:New/Reduction/ShortAndEnough.lean#L43). Cited in [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.dvd_levelPrime_sub_one`: `New/Reduction/Data/Magnitudes.lean`, [line 149](lean:New/Reduction/Data/Magnitudes.lean#L149). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.dvd_natB`: `New/Reduction/Data/AdmissibleData.lean`, [line 124](lean:New/Reduction/Data/AdmissibleData.lean#L124). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.E`: `New/Reduction/Data/AdmissibleData.lean`, [line 181](lean:New/Reduction/Data/AdmissibleData.lean#L181). Cited in [Chapter](/chapter/notation/).
+- `New.Data.enough_forms`: `New/Reduction/ShortAndEnough.lean`, [line 448](lean:New/Reduction/ShortAndEnough.lean#L448). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/), [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.error_le_padicValNat_lossProduct`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 449](lean:New/Derivatives/Sharpness/NearPairs.lean#L449). Cited in [Chapter](/chapter/sizes/).
+- `New.Data.errorUnit`: `New/Reduction/Data/AdmissibleData.lean`, [line 255](lean:New/Reduction/Data/AdmissibleData.lean#L255). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.exists_adjoint_chain_comp_eq_smul_rallisProduct`: `New/Determinant/Chain/NormOfChain.lean`, [line 303](lean:New/Determinant/Chain/NormOfChain.lean#L303). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.exists_besselSystem`: `New/Spanning/Bessel/FillingData.lean`, [line 339](lean:New/Spanning/Bessel/FillingData.lean#L339). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.exists_chainDeterminant_one_div_eq`: `New/Determinant/Twist/LongForms.lean`, [line 162](lean:New/Determinant/Twist/LongForms.lean#L162). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.exists_chainDeterminant_pos_and_div_chainDeterminant_one_eq`: `New/Determinant/Chain/NormOfChain.lean`, [line 419](lean:New/Determinant/Chain/NormOfChain.lean#L419). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.exists_char_hasWeight`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 230](lean:New/Derivatives/Field/ChosenPlaces.lean#L230). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.exists_colengthDvd_gaugeLe_divisibilityError`: `New/Reduction/ShortAndEnough.lean`, [line 74](lean:New/Reduction/ShortAndEnough.lean#L74). Cited in [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.exists_err_gaugeLe_compositeLift`: `New/UpperBound/Divisibility/LocalDivisibility.lean`, [line 494](lean:New/UpperBound/Divisibility/LocalDivisibility.lean#L494). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.exists_hasSmallRatios_heightLe_liftDeterminant_div`: `New/Determinant/Twist/LongForms.lean`, [line 139](lean:New/Determinant/Twist/LongForms.lean#L139). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.exists_le_finrank_iSup_range_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 410](lean:New/Reduction/ShortAndEnough.lean#L410). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.exists_lowerChain_poincare_eq`: `New/Reduction/ShortAndEnough.lean`, [line 217](lean:New/Reduction/ShortAndEnough.lean#L217). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.exists_m_eq_two_pow`: `New/Reduction/Data/AdmissibleData.lean`, [line 118](lean:New/Reduction/Data/AdmissibleData.lean#L118). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.exists_r_eq_three_pow`: `New/Reduction/Data/AdmissibleData.lean`, [line 120](lean:New/Reduction/Data/AdmissibleData.lean#L120). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.exists_span_isAuxiliaryForm_eq_top`: `New/Determinant/Twist/LongForms.lean`, [line 59](lean:New/Determinant/Twist/LongForms.lean#L59). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.exists_zeta_pow_eq_of_isIntegral`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 201](lean:New/Derivatives/Field/ChosenPlaces.lean#L201). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.exp_logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 95](lean:New/Reduction/Data/AdmissibleData.lean#L95). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.exp_logX`: `New/Reduction/Data/AdmissibleData.lean`, [line 91](lean:New/Reduction/Data/AdmissibleData.lean#L91). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.exp_logX₁`: `New/Reduction/Data/AdmissibleData.lean`, [line 93](lean:New/Reduction/Data/AdmissibleData.lean#L93). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.f`: `New/Reduction/Data/AdmissibleData.lean`, [line 191](lean:New/Reduction/Data/AdmissibleData.lean#L191). Cited in [Chapter](/chapter/notation/).
+- `New.Data.f_div_N_sub_one_le`: `New/UpperBound/Size/ShortColumns.lean`, [line 955](lean:New/UpperBound/Size/ShortColumns.lean#L955). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.f_eq_card_aPlaces_mul`: `New/Reduction/PrimeSums.lean`, [line 83](lean:New/Reduction/PrimeSums.lean#L83). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.f_even`: `New/Reduction/Data/Sizes.lean`, [line 135](lean:New/Reduction/Data/Sizes.lean#L135). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.f_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 125](lean:New/Reduction/Data/Sizes.lean#L125). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.filling`: `New/Spanning/Bessel/FillingData.lean`, [line 461](lean:New/Spanning/Bessel/FillingData.lean#L461). Cited in [Chapter](/chapter/sizes/).
+- `New.Data.finrank_principalForms_spaceW`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 69](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L69). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.finrank_sourceForm_le_two_mul`: `New/Reduction/ShortAndEnough.lean`, [line 290](lean:New/Reduction/ShortAndEnough.lean#L290). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.finrank_targetForms_ne_zero`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 307](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L307). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.gain`: `New/UpperBound/Size/ShortColumns.lean`, [line 83](lean:New/UpperBound/Size/ShortColumns.lean#L83). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.gainExponent`: `New/Reduction/ShortAndEnough.lean`, [line 89](lean:New/Reduction/ShortAndEnough.lean#L89). Cited in [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.gap`: `New/Reduction/Data/AdmissibleData.lean`, [line 209](lean:New/Reduction/Data/AdmissibleData.lean#L209). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.goodForms`: `New/UpperBound/Objects/Rows.lean`, [line 292](lean:New/UpperBound/Objects/Rows.lean#L292). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/integral-target-forms/).
+- `New.Data.goodLift`: `New/Determinant/Twist/FitTwists.lean`, [line 108](lean:New/Determinant/Twist/FitTwists.lean#L108). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.goodPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 120](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L120). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.halfGap`: `New/Reduction/Data/AdmissibleData.lean`, [line 206](lean:New/Reduction/Data/AdmissibleData.lean#L206). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.hasAmplitudeBlocks_scaledPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 168](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L168). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.HasDenominatorsLe`: `New/Determinant/Twist/FitTwists.lean`, [line 180](lean:New/Determinant/Twist/FitTwists.lean#L180). Cited in [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.HasLogBound`: `New/Reduction/Data/Magnitudes.lean`, [line 49](lean:New/Reduction/Data/Magnitudes.lean#L49). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.HasLogLower`: `New/Reduction/Data/Magnitudes.lean`, [line 172](lean:New/Reduction/Data/Magnitudes.lean#L172). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.HasLogUpper`: `New/Reduction/Data/Magnitudes.lean`, [line 169](lean:New/Reduction/Data/Magnitudes.lean#L169). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.HasSmallRatios`: `New/Determinant/Twist/FitTwists.lean`, [line 218](lean:New/Determinant/Twist/FitTwists.lean#L218). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.HasSmallRatios.heightLe_inv_rpow_mul_prod_quotientRatio`: `New/Determinant/Chain/NormOfChain.lean`, [line 436](lean:New/Determinant/Chain/NormOfChain.lean#L436). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.hasWeight_liftChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 342](lean:New/Reduction/Data/LevelAndTwists.lean#L342). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.heightLe_chainDeterminant_one_div`: `New/Determinant/Twist/LongForms.lean`, [line 180](lean:New/Determinant/Twist/LongForms.lean#L180). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.heightLe_liftDeterminant_ratio`: `New/OneLift/LiftVolumeHeight.lean`, [line 729](lean:New/OneLift/LiftVolumeHeight.lean#L729). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.hundred_mul_m_le_k`: `New/Reduction/Data/Magnitudes.lean`, [line 572](lean:New/Reduction/Data/Magnitudes.lean#L572). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.indexLe_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 373](lean:New/Reduction/ShortAndEnough.lean#L373). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.indexLe_of_mem_image_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 342](lean:New/Reduction/ShortAndEnough.lean#L342). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.injective_lift_targetLattice`: `New/Reduction/IntegralTargetForms.lean`, [line 113](lean:New/Reduction/IntegralTargetForms.lean#L113). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.integral_forms_long`: `New/Determinant/Twist/LongForms.lean`, [line 214](lean:New/Determinant/Twist/LongForms.lean#L214). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/), [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.integralRamified`: `New/Reduction/ShortAndEnough.lean`, [line 208](lean:New/Reduction/ShortAndEnough.lean#L208). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.invGainFactor`: `New/Reduction/ShortAndEnough.lean`, [line 93](lean:New/Reduction/ShortAndEnough.lean#L93). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.IsAuxiliaryForm`: `New/Determinant/Twist/LongForms.lean`, [line 43](lean:New/Determinant/Twist/LongForms.lean#L43). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.IsChainDatum`: `New/UpperBound/Objects/Columns.lean`, [line 960](lean:New/UpperBound/Objects/Columns.lean#L960). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.IsChosen`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 68](lean:New/Derivatives/Field/ChosenPlaces.lean#L68). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.IsComparisonOperator`: `New/OneLift/LiftVolumeHeight.lean`, [line 172](lean:New/OneLift/LiftVolumeHeight.lean#L172). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.isComparisonOperator_comparisonOp`: `New/OneLift/LiftVolumeHeight.lean`, [line 554](lean:New/OneLift/LiftVolumeHeight.lean#L554). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Data.IsDenominatorBound`: `New/Determinant/Twist/FitTwists.lean`, [line 197](lean:New/Determinant/Twist/FitTwists.lean#L197). Cited in [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.isDiscreteSeriesBessel_filling_besselSystem`: `New/Spanning/Bessel/FillingData.lean`, [line 529](lean:New/Spanning/Bessel/FillingData.lean#L529). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.isNearIsometry_e₀_comp_scaledPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 257](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L257). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.IsNegligible`: `New/Determinant/Twist/FitTwists.lean`, [line 208](lean:New/Determinant/Twist/FitTwists.lean#L208). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Data.IsRegularFamily`: `New/Determinant/Twist/FitTwists.lean`, [line 229](lean:New/Determinant/Twist/FitTwists.lean#L229). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.isSpread_goodPoincare`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 339](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L339). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.isStd_spaceY_of_le`: `New/UpperBound/Objects/Rows.lean`, [line 248](lean:New/UpperBound/Objects/Rows.lean#L248). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.jetSize`: `New/Reduction/Data/AdmissibleData.lean`, [line 259](lean:New/Reduction/Data/AdmissibleData.lean#L259). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/prime-sums/).
+- `New.Data.jetSize_mem_Icc`: `New/Reduction/PrimeSums.lean`, [line 235](lean:New/Reduction/PrimeSums.lean#L235). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.jetSize_sub_mainPrimeSum_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 74](lean:New/UpperBound/Size/ArchimedeanSize.lean#L74). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.jetSize_sub_primeSum_mem_Icc`: `New/Reduction/PrimeSums.lean`, [line 253](lean:New/Reduction/PrimeSums.lean#L253). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.k`: `New/Reduction/Data/AdmissibleData.lean`, [line 200](lean:New/Reduction/Data/AdmissibleData.lean#L200). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.k_add_t_add_one_le_halfGap`: `New/Reduction/Data/Magnitudes.lean`, [line 605](lean:New/Reduction/Data/Magnitudes.lean#L605). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.k_even`: `New/Reduction/Data/Magnitudes.lean`, [line 586](lean:New/Reduction/Data/Magnitudes.lean#L586). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.k_le_r`: `New/Reduction/Data/Magnitudes.lean`, [line 445](lean:New/Reduction/Data/Magnitudes.lean#L445). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.k_pos`: `New/Reduction/Data/Magnitudes.lean`, [line 576](lean:New/Reduction/Data/Magnitudes.lean#L576). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.lambdaKResidueClass_mul_posPart_le_ite`: `New/Reduction/PrimeSums.lean`, [line 187](lean:New/Reduction/PrimeSums.lean#L187). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.lastLevelChar`: `New/UpperBound/Objects/RowChain.lean`, [line 357](lean:New/UpperBound/Objects/RowChain.lean#L357). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.lastResidueLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 128](lean:New/UpperBound/Objects/RowChain.lean#L128). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.le_constantBound`: `New/Reduction/Data/Magnitudes.lean`, [line 56](lean:New/Reduction/Data/Magnitudes.lean#L56). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.le_finrank_ramifiedSourceForms`: `New/UpperBound/Size/ShortColumns.lean`, [line 944](lean:New/UpperBound/Size/ShortColumns.lean#L944). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.le_mainAmount`: `New/Reduction/PrimeSums.lean`, [line 289](lean:New/Reduction/PrimeSums.lean#L289). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
+- `New.Data.le_of_hasLogBound`: `New/Reduction/Data/Magnitudes.lean`, [line 405](lean:New/Reduction/Data/Magnitudes.lean#L405). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelOf_lastResidueLevel_le_chosenLevel`: `New/Reduction/IntegralTargetForms.lean`, [line 38](lean:New/Reduction/IntegralTargetForms.lean#L38). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.levelPlaces`: `New/UpperBound/Objects/Rows.lean`, [line 90](lean:New/UpperBound/Objects/Rows.lean#L90). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.levelPrime`: `New/Reduction/Data/AdmissibleData.lean`, [line 140](lean:New/Reduction/Data/AdmissibleData.lean#L140). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelPrime_injective`: `New/Reduction/Data/AdmissibleData.lean`, [line 146](lean:New/Reduction/Data/AdmissibleData.lean#L146). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelPrime_mem`: `New/Reduction/Data/AdmissibleData.lean`, [line 148](lean:New/Reduction/Data/AdmissibleData.lean#L148). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelPrime_mem_Ioo`: `New/Reduction/Data/Sizes.lean`, [line 206](lean:New/Reduction/Data/Sizes.lean#L206). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelPrime_modEq_one`: `New/Reduction/Data/Magnitudes.lean`, [line 144](lean:New/Reduction/Data/Magnitudes.lean#L144). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelPrime_modEq_one_q₂_sq`: `New/Reduction/Data/AdmissibleData.lean`, [line 144](lean:New/Reduction/Data/AdmissibleData.lean#L144). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.levelPrime_prime`: `New/Reduction/Data/AdmissibleData.lean`, [line 142](lean:New/Reduction/Data/AdmissibleData.lean#L142). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.liftChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 332](lean:New/Reduction/Data/LevelAndTwists.lean#L332). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Data.liftDeterminant`: `New/Determinant/Chain/NormOfChain.lean`, [line 73](lean:New/Determinant/Chain/NormOfChain.lean#L73). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.liftDeterminant_pos`: `New/Determinant/Chain/NormOfChain.lean`, [line 86](lean:New/Determinant/Chain/NormOfChain.lean#L86). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.LiftIndex`: `New/Reduction/Data/LevelAndTwists.lean`, [line 349](lean:New/Reduction/Data/LevelAndTwists.lean#L349). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.liftWeight`: `New/Reduction/Data/AdmissibleData.lean`, [line 246](lean:New/Reduction/Data/AdmissibleData.lean#L246). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.liftWeight_eq`: `New/Reduction/Data/Magnitudes.lean`, [line 137](lean:New/Reduction/Data/Magnitudes.lean#L137). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.liftWeight_le_two_mul_b`: `New/Reduction/Data/LevelAndTwists.lean`, [line 114](lean:New/Reduction/Data/LevelAndTwists.lean#L114). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.liftWeight_le_weight_add`: `New/Reduction/Data/LevelAndTwists.lean`, [line 109](lean:New/Reduction/Data/LevelAndTwists.lean#L109). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.localPrimeSum`: `New/UpperBound/Size/ShortColumns.lean`, [line 72](lean:New/UpperBound/Size/ShortColumns.lean#L72). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.log_classNumber_le`: `New/Reduction/Data/Sizes.lean`, [line 161](lean:New/Reduction/Data/Sizes.lean#L161). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_invGainFactor_le`: `New/Reduction/ShortAndEnough.lean`, [line 127](lean:New/Reduction/ShortAndEnough.lean#L127). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.log_liftWeight_le`: `New/Reduction/Data/LevelAndTwists.lean`, [line 131](lean:New/Reduction/Data/LevelAndTwists.lean#L131). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_logX₁_le_log_logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 106](lean:New/Reduction/Data/AdmissibleData.lean#L106). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_M_div_bigOmega_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 219](lean:New/Reduction/Data/Sizes.lean#L219). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_N_mem`: `New/Reduction/Data/AdmissibleData.lean`, [line 160](lean:New/Reduction/Data/AdmissibleData.lean#L160). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_N_mem_Icc`: `New/Reduction/Data/LevelAndTwists.lean`, [line 234](lean:New/Reduction/Data/LevelAndTwists.lean#L234). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_shiftedWeight_le`: `New/Reduction/Data/LevelAndTwists.lean`, [line 97](lean:New/Reduction/Data/LevelAndTwists.lean#L97). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 89](lean:New/Reduction/Data/AdmissibleData.lean#L89). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logB_pow_le_x`: `New/Reduction/Data/Sizes.lean`, [line 63](lean:New/Reduction/Data/Sizes.lean#L63). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logLevelTarget`: `New/Reduction/Data/LevelAndTwists.lean`, [line 198](lean:New/Reduction/Data/LevelAndTwists.lean#L198). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logLevelTarget_eq_logLevelMin`: `New/Reduction/Data/LevelAndTwists.lean`, [line 204](lean:New/Reduction/Data/LevelAndTwists.lean#L204). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logLevelTarget_mem_Icc`: `New/Reduction/Data/LevelAndTwists.lean`, [line 212](lean:New/Reduction/Data/LevelAndTwists.lean#L212). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logX`: `New/Reduction/Data/AdmissibleData.lean`, [line 85](lean:New/Reduction/Data/AdmissibleData.lean#L85). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logX_le_logX₁`: `New/Reduction/Data/AdmissibleData.lean`, [line 102](lean:New/Reduction/Data/AdmissibleData.lean#L102). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logX₁`: `New/Reduction/Data/AdmissibleData.lean`, [line 87](lean:New/Reduction/Data/AdmissibleData.lean#L87). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logX₁_le_logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 104](lean:New/Reduction/Data/AdmissibleData.lean#L104). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.logX₁_pow_le_logB`: `New/Reduction/Data/Sizes.lean`, [line 58](lean:New/Reduction/Data/Sizes.lean#L58). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.lowerChainAtLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 403](lean:New/UpperBound/Objects/RowChain.lean#L403). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.lowerChainAtLevel_injective`: `New/Determinant/Chain/ChainNorms.lean`, [line 794](lean:New/Determinant/Chain/ChainNorms.lean#L794). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.lt_of_hasLogBound`: `New/Reduction/Data/Magnitudes.lean`, [line 398](lean:New/Reduction/Data/Magnitudes.lean#L398). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.M`: `New/Reduction/Data/AdmissibleData.lean`, [line 235](lean:New/Reduction/Data/AdmissibleData.lean#L235). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.m`: `New/Reduction/Data/AdmissibleData.lean`, [line 108](lean:New/Reduction/Data/AdmissibleData.lean#L108). Cited in [Chapter](/chapter/notation/).
+- `New.Data.m_even`: `New/Reduction/Data/Magnitudes.lean`, [line 159](lean:New/Reduction/Data/Magnitudes.lean#L159). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.m_mem`: `New/Reduction/Data/AdmissibleData.lean`, [line 114](lean:New/Reduction/Data/AdmissibleData.lean#L114). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.M_mem_Icc`: `New/Reduction/Data/Magnitudes.lean`, [line 508](lean:New/Reduction/Data/Magnitudes.lean#L508). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.m_pow_eq_two_pow_towerExp`: `New/Reduction/Data/Sizes.lean`, [line 108](lean:New/Reduction/Data/Sizes.lean#L108). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.m_pow_le_two_pow_l₀`: `New/Reduction/Data/Sizes.lean`, [line 116](lean:New/Reduction/Data/Sizes.lean#L116). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.m_sq_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 69](lean:New/Reduction/Data/Sizes.lean#L69). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.mainAmount`: `New/Reduction/PrimeSums.lean`, [line 62](lean:New/Reduction/PrimeSums.lean#L62). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/prime-sums/).
+- `New.Data.mainAmount_nonneg`: `New/Reduction/PrimeSums.lean`, [line 295](lean:New/Reduction/PrimeSums.lean#L295). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/).
+- `New.Data.mainAmount_sub_add_two_mul_sum_gain`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 178](lean:New/UpperBound/Size/ArchimedeanSize.lean#L178). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.mainPrimeSum`: `New/Reduction/PrimeSums.lean`, [line 68](lean:New/Reduction/PrimeSums.lean#L68). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.mem_aPlaces_iff_of_mul_mem_bPlaces`: `New/Reduction/PrimeSums.lean`, [line 89](lean:New/Reduction/PrimeSums.lean#L89). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.mem_integralVectors_targetLattice`: `New/Reduction/IntegralTargetForms.lean`, [line 90](lean:New/Reduction/IntegralTargetForms.lean#L90). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.MFoldTwist`: `New/Reduction/Data/LevelAndTwists.lean`, [line 372](lean:New/Reduction/Data/LevelAndTwists.lean#L372). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.MFoldTwist.powTwist`: `New/Reduction/Data/LevelAndTwists.lean`, [line 387](lean:New/Reduction/Data/LevelAndTwists.lean#L387). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.mul_completion_cost_le`: `New/Determinant/Twist/LongForms.lean`, [line 120](lean:New/Determinant/Twist/LongForms.lean#L120). Cited in [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.mul_jetSize_sub_mainPrimeSum_sub_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 105](lean:New/UpperBound/Size/ArchimedeanSize.lean#L105). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.mul_log_logB_le_logX`: `New/Reduction/Data/AdmissibleData.lean`, [line 100](lean:New/Reduction/Data/AdmissibleData.lean#L100). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.N`: `New/Reduction/Data/AdmissibleData.lean`, [line 154](lean:New/Reduction/Data/AdmissibleData.lean#L154). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.n`: `New/Reduction/Data/AdmissibleData.lean`, [line 225](lean:New/Reduction/Data/AdmissibleData.lean#L225). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.n_even`: `New/UpperBound/Objects/Weights.lean`, [line 125](lean:New/UpperBound/Objects/Weights.lean#L125). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.N_le_pow`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 725](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L725). Cited in [Chapter](/chapter/sizes/).
+- `New.Data.N_modEq_one`: `New/Reduction/Data/LevelAndTwists.lean`, [line 222](lean:New/Reduction/Data/LevelAndTwists.lean#L222). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.N_modEq_one_q₂_sq`: `New/Reduction/Data/AdmissibleData.lean`, [line 158](lean:New/Reduction/Data/AdmissibleData.lean#L158). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.N_prime`: `New/Reduction/Data/AdmissibleData.lean`, [line 156](lean:New/Reduction/Data/AdmissibleData.lean#L156). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.nat_le_of_hasLogBound`: `New/Reduction/Data/Magnitudes.lean`, [line 411](lean:New/Reduction/Data/Magnitudes.lean#L411). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.nat_lt_of_hasLogBound`: `New/Reduction/Data/Magnitudes.lean`, [line 408](lean:New/Reduction/Data/Magnitudes.lean#L408). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.natB`: `New/Reduction/Data/AdmissibleData.lean`, [line 83](lean:New/Reduction/Data/AdmissibleData.lean#L83). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.natX`: `New/Reduction/Data/AdmissibleData.lean`, [line 79](lean:New/Reduction/Data/AdmissibleData.lean#L79). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.natX₁`: `New/Reduction/Data/AdmissibleData.lean`, [line 81](lean:New/Reduction/Data/AdmissibleData.lean#L81). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 185](lean:New/Reduction/ShortAndEnough.lean#L185). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/), [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.normalizedPoincare_mem_integralVectors`: `New/Reduction/ShortAndEnough.lean`, [line 304](lean:New/Reduction/ShortAndEnough.lean#L304). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.normSqAt_goodProjTranslate_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 526](lean:New/UpperBound/Size/ArchimedeanSize.lean#L526). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.normSqAt_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 231](lean:New/Reduction/ShortAndEnough.lean#L231). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.normSqAt_targetLattice`: `New/Reduction/IntegralTargetForms.lean`, [line 102](lean:New/Reduction/IntegralTargetForms.lean#L102). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.offWeight`: `New/Reduction/Data/AdmissibleData.lean`, [line 218](lean:New/Reduction/Data/AdmissibleData.lean#L218). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.orderOf_chiMLocal`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 164](lean:New/Derivatives/Field/ChosenPlaces.lean#L164). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.paramW`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 297](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L297). Cited in [Chapter](/chapter/notation/).
+- `New.Data.piMBar`: `New/Reduction/Data/AdmissibleData.lean`, [line 150](lean:New/Reduction/Data/AdmissibleData.lean#L150). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.piMBar_mul_star`: `New/Reduction/Data/AdmissibleData.lean`, [line 152](lean:New/Reduction/Data/AdmissibleData.lean#L152). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.piN`: `New/Reduction/Data/AdmissibleData.lean`, [line 163](lean:New/Reduction/Data/AdmissibleData.lean#L163). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.piN_mul_star`: `New/Reduction/Data/AdmissibleData.lean`, [line 165](lean:New/Reduction/Data/AdmissibleData.lean#L165). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.placeClass_of_mem_bPlaces`: `New/Reduction/Data/AdmissibleData.lean`, [line 128](lean:New/Reduction/Data/AdmissibleData.lean#L128). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.posRank`: `New/Reduction/Data/AdmissibleData.lean`, [line 230](lean:New/Reduction/Data/AdmissibleData.lean#L230). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.primeRemainder_le`: `New/Reduction/OneSidedBound.lean`, [line 33](lean:New/Reduction/OneSidedBound.lean#L33). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
+- `New.Data.primeSum`: `New/Reduction/Data/AdmissibleData.lean`, [line 251](lean:New/Reduction/Data/AdmissibleData.lean#L251). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/prime-sums/).
+- `New.Data.primeSum_le`: `New/Reduction/PrimeSums.lean`, [line 206](lean:New/Reduction/PrimeSums.lean#L206). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.primeSum_mem_Icc`: `New/Reduction/PrimeSums.lean`, [line 223](lean:New/Reduction/PrimeSums.lean#L223). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.prod_phi_zeta_pow_pow_liftWeight_zero_eq_one`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 212](lean:New/Derivatives/Field/ChosenPlaces.lean#L212). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.q₁`: `New/Reduction/Data/AdmissibleData.lean`, [line 188](lean:New/Reduction/Data/AdmissibleData.lean#L188). Cited in [Chapter](/chapter/notation/).
+- `New.Data.q₁_le`: `New/Reduction/Data/Sizes.lean`, [line 141](lean:New/Reduction/Data/Sizes.lean#L141). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.q₂_le`: `New/Reduction/Data/Sizes.lean`, [line 146](lean:New/Reduction/Data/Sizes.lean#L146). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.r`: `New/Reduction/Data/AdmissibleData.lean`, [line 110](lean:New/Reduction/Data/AdmissibleData.lean#L110). Cited in [Chapter](/chapter/notation/).
+- `New.Data.r_add_one`: `New/Reduction/Data/Magnitudes.lean`, [line 440](lean:New/Reduction/Data/Magnitudes.lean#L440). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.r_add_six_le_t`: `New/Reduction/Data/Magnitudes.lean`, [line 596](lean:New/Reduction/Data/Magnitudes.lean#L596). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.r_le_two_mul_k`: `New/Reduction/Data/Sizes.lean`, [line 103](lean:New/Reduction/Data/Sizes.lean#L103). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.r_mem`: `New/Reduction/Data/AdmissibleData.lean`, [line 116](lean:New/Reduction/Data/AdmissibleData.lean#L116). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.r_odd`: `New/Reduction/Data/Magnitudes.lean`, [line 153](lean:New/Reduction/Data/Magnitudes.lean#L153). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.RankOneIndex`: `New/Determinant/Twist/FitTwists.lean`, [line 100](lean:New/Determinant/Twist/FitTwists.lean#L100). Cited in [Chapter](/chapter/reading-the-lean/).
+- `New.Data.realPlaceSizes`: `New/Spanning/Bessel/FillingData.lean`, [line 260](lean:New/Spanning/Bessel/FillingData.lean#L260). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.reducedHalfGap`: `New/Reduction/Data/AdmissibleData.lean`, [line 212](lean:New/Reduction/Data/AdmissibleData.lean#L212). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.rootDisc`: `New/Reduction/Data/AdmissibleData.lean`, [line 197](lean:New/Reduction/Data/AdmissibleData.lean#L197). Cited in [Chapter](/chapter/notation/).
+- `New.Data.rootDisc_mem_Icc`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 433](lean:New/Derivatives/Field/ChosenPlaces.lean#L433). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.RowIndex`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 266](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L266). Cited in [Chapter](/chapter/notation/).
+- `New.Data.scale_inequalities`: `New/Reduction/Data/Magnitudes.lean`, [line 77](lean:New/Reduction/Data/Magnitudes.lean#L77). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.seesaw_identity`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 624](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L624). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.seesawConst`: `New/Reduction/ShortAndEnough.lean`, [line 170](lean:New/Reduction/ShortAndEnough.lean#L170). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.shiftedWeight`: `New/Reduction/Data/AdmissibleData.lean`, [line 243](lean:New/Reduction/Data/AdmissibleData.lean#L243). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.shiftedWeight_mem_Icc`: `New/Reduction/Data/LevelAndTwists.lean`, [line 88](lean:New/Reduction/Data/LevelAndTwists.lean#L88). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.signsW`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 328](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L328). Cited in [Chapter](/chapter/notation/).
+- `New.Data.spaceW`: `New/UpperBound/Objects/Rows.lean`, [line 274](lean:New/UpperBound/Objects/Rows.lean#L274). Cited in [Chapter](/chapter/notation/).
+- `New.Data.spaceY`: `New/UpperBound/Objects/Rows.lean`, [line 244](lean:New/UpperBound/Objects/Rows.lean#L244). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/integral-target-forms/).
+- `New.Data.spaceY_gram_eq`: `New/UpperBound/Objects/Rows.lean`, [line 254](lean:New/UpperBound/Objects/Rows.lean#L254). Cited in [Chapter](/chapter/notation/).
+- `New.Data.span_isShort_ramifiedSourceForms_eq_top`: `New/UpperBound/Size/ShortColumns.lean`, [line 1002](lean:New/UpperBound/Size/ShortColumns.lean#L1002). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.span_short_integralRamified_eq_top`: `New/Reduction/ShortAndEnough.lean`, [line 254](lean:New/Reduction/ShortAndEnough.lean#L254). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.sparse`: `New/Reduction/Data/AdmissibleData.lean`, [line 134](lean:New/Reduction/Data/AdmissibleData.lean#L134). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.sum_aPlaces_lambdaKResidueClass_mul_posPart`: `New/Reduction/PrimeSums.lean`, [line 114](lean:New/Reduction/PrimeSums.lean#L114). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.sum_aPlaces_primeSum`: `New/Reduction/PrimeSums.lean`, [line 135](lean:New/Reduction/PrimeSums.lean#L135). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.sum_divisibilityError_mul_log_le`: `New/Reduction/ShortAndEnough.lean`, [line 56](lean:New/Reduction/ShortAndEnough.lean#L56). Cited in [Chapter](/chapter/theorems-a-b-c/).
+- `New.Data.sum_hilbertSchmidtNorm_scaledPoincare_sq_le`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 270](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L270). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.sum_log_weight`: `New/Reduction/PrimeSums.lean`, [line 153](lean:New/Reduction/PrimeSums.lean#L153). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.t`: `New/Reduction/Data/AdmissibleData.lean`, [line 203](lean:New/Reduction/Data/AdmissibleData.lean#L203). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.t_odd`: `New/Reduction/Data/Magnitudes.lean`, [line 593](lean:New/Reduction/Data/Magnitudes.lean#L593). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.TameChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 260](lean:New/Reduction/Data/LevelAndTwists.lean#L260). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.TameChar.normQ`: `New/Reduction/Data/LevelAndTwists.lean`, [line 277](lean:New/Reduction/Data/LevelAndTwists.lean#L277). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.TameChar.one`: `New/Reduction/Data/LevelAndTwists.lean`, [line 301](lean:New/Reduction/Data/LevelAndTwists.lean#L301). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.TameChar.pow`: `New/Reduction/Data/LevelAndTwists.lean`, [line 361](lean:New/Reduction/Data/LevelAndTwists.lean#L361). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Data.targetDim`: `New/UpperBound/Objects/Rows.lean`, [line 300](lean:New/UpperBound/Objects/Rows.lean#L300). Cited in [Chapter](/chapter/notation/).
+- `New.Data.targetDim_eq_finrank_goodForms_spaceW`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 406](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L406). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.targetDim_le_card_mul_besselDegree_mul_mass`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 93](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L93). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.targetDim_mul_sum_hilbertSchmidtNorm_sq_le`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 288](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L288). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.targetDim_pos`: `New/Reduction/ShortAndEnough.lean`, [line 403](lean:New/Reduction/ShortAndEnough.lean#L403). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.targetForms`: `New/UpperBound/Objects/Rows.lean`, [line 296](lean:New/UpperBound/Objects/Rows.lean#L296). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/integral-target-forms/).
+- `New.Data.targetLattice`: `New/Reduction/IntegralTargetForms.lean`, [line 64](lean:New/Reduction/IntegralTargetForms.lean#L64). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/integral-target-forms/).
+- `New.Data.targetParameter`: `New/Reduction/Data/LevelAndTwists.lean`, [line 160](lean:New/Reduction/Data/LevelAndTwists.lean#L160). Cited in [Chapter](/chapter/notation/).
+- `New.Data.ten_thousand_le_m`: `New/Reduction/Data/Magnitudes.lean`, [line 436](lean:New/Reduction/Data/Magnitudes.lean#L436). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.totalRemainder`: `New/Reduction/PrimeSums.lean`, [line 73](lean:New/Reduction/PrimeSums.lean#L73). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.totalRemainder_eq`: `New/Reduction/PrimeSums.lean`, [line 177](lean:New/Reduction/PrimeSums.lean#L177). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
+- `New.Data.towerDeg_le_card_bPlaces_mul`: `New/Reduction/Data/AdmissibleData.lean`, [line 132](lean:New/Reduction/Data/AdmissibleData.lean#L132). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.towerExp`: `New/Reduction/Data/AdmissibleData.lean`, [line 112](lean:New/Reduction/Data/AdmissibleData.lean#L112). Cited in [Chapter](/chapter/notation/).
+- `New.Data.towerExp_le`: `New/Reduction/Data/AdmissibleData.lean`, [line 122](lean:New/Reduction/Data/AdmissibleData.lean#L122). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.towerExp_ne_zero`: `New/Reduction/Data/Sizes.lean`, [line 80](lean:New/Reduction/Data/Sizes.lean#L80). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.trace_heckeOnGood_eq`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 270](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L270). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Data.Twist`: `New/Reduction/Data/LevelAndTwists.lean`, [line 281](lean:New/Reduction/Data/LevelAndTwists.lean#L281). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/regular-families-plan/).
+- `New.Data.two_mul_sum_gain_mul_log`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 146](lean:New/UpperBound/Size/ArchimedeanSize.lean#L146). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.untwistedLiftChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 308](lean:New/Reduction/Data/LevelAndTwists.lean#L308). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Data.untwistedLiftChar_hasWeight`: `New/Reduction/Data/LevelAndTwists.lean`, [line 318](lean:New/Reduction/Data/LevelAndTwists.lean#L318). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
+- `New.Data.volume_targetLattice`: `New/Reduction/IntegralTargetForms.lean`, [line 108](lean:New/Reduction/IntegralTargetForms.lean#L108). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.weight`: `New/Reduction/Data/AdmissibleData.lean`, [line 136](lean:New/Reduction/Data/AdmissibleData.lean#L136). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.weight_add_x_pow_le_two_mul_b`: `New/Reduction/Data/LevelAndTwists.lean`, [line 73](lean:New/Reduction/Data/LevelAndTwists.lean#L73). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.weight_eq`: `New/Reduction/Data/AdmissibleData.lean`, [line 138](lean:New/Reduction/Data/AdmissibleData.lean#L138). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.weight_le_b`: `New/Reduction/Data/LevelAndTwists.lean`, [line 69](lean:New/Reduction/Data/LevelAndTwists.lean#L69). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.weight_le_liftWeight_sub`: `New/Reduction/Data/LevelAndTwists.lean`, [line 79](lean:New/Reduction/Data/LevelAndTwists.lean#L79). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.weight_mem_Icc`: `New/Reduction/Data/LevelAndTwists.lean`, [line 57](lean:New/Reduction/Data/LevelAndTwists.lean#L57). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.weylNormSq_compositeLift_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 436](lean:New/UpperBound/Size/ArchimedeanSize.lean#L436). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.X`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 254](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L254). Cited in [Chapter](/chapter/notation/).
+- `New.Data.x`: `New/Reduction/Data/AdmissibleData.lean`, [line 172](lean:New/Reduction/Data/AdmissibleData.lean#L172). Cited in [Chapter](/chapter/notation/).
+- `New.Data.x_pow_le_x₁`: `New/Reduction/Data/Sizes.lean`, [line 46](lean:New/Reduction/Data/Sizes.lean#L46). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.x₁`: `New/Reduction/Data/AdmissibleData.lean`, [line 175](lean:New/Reduction/Data/AdmissibleData.lean#L175). Cited in [Chapter](/chapter/notation/).
+- `New.Data.x₁_pow_le_b`: `New/Reduction/Data/Sizes.lean`, [line 52](lean:New/Reduction/Data/Sizes.lean#L52). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.x₁_pow_le_sqrt_b`: `New/Reduction/Data/Sizes.lean`, [line 87](lean:New/Reduction/Data/Sizes.lean#L87). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.Y`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 270](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L270). Cited in [Chapter](/chapter/notation/).
+- `New.Data.Θ`: `New/Determinant/Chain/NormOfChain.lean`, [line 95](lean:New/Determinant/Chain/NormOfChain.lean#L95). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.ϱ`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 247](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L247). Cited in [Chapter](/chapter/notation/).
