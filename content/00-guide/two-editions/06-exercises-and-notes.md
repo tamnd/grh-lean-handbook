@@ -16,7 +16,7 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* The differences are five docstrings and the place of one comment line relative to `import New.Main`. A docstring is attached to a declaration, but it is not part of its type or its value.
 
-**Exercise 2.** The readable main inequality is $m \cdot \mathrm{rem} \leq f a \log^5 b$. The compact one is $m \cdot \mathrm{rem} \leq \log^2 b \cdot \mathcal B$. Show that the two right sides are equal. Then add the four compact errors per dimension of Section 3 (length, missing dimensions, index, covolume) and show that their sum is at most $f a \log^5 b$ under the scale conditions. Which term needs $b^{-2} x^{99}$ to be small?
+**Exercise 2.** The readable main inequality is $m \cdot \mathrm{rem} \leq f a \log^5 b$. The compact one is $m \cdot \mathrm{rem} \leq \log^2 b \cdot \mathcal B$. Show that the two right sides are equal. Then add the four compact errors per dimension of Section 3 (length, missing dimensions, index, covolume) and show that their sum is at most $f a \log^5 b$ under the scale conditions. In which term does the crude bound $|h_{\mathrm{main}}| + m|\mathrm{rem}| \leq b^2 x^{99}$ enter?
 
 *Hint.* $\mathcal B = f a \log^3 b$. The missing dimensions give $4 x^{99}$, and $x^{99} \leq b$ is far smaller than $f a \log^4 b$, since $a \geq x b$. The index term is $10 \log(1 + b^2) \cdot f a \log^3 b \leq 30 f a \log^4 b$ for large $b$.
 
@@ -24,9 +24,9 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* The gamma density with shape $k + 1$ and rate $3$ has its mass near $k/3$. For the window estimate the mass must be in $[t, t^2]$. For the term $(3/R)^k$ to beat $e^{3t}$ one needs $k \gg t$.
 
-**Exercise 4.** Let $E(v) = \sin(v)$ for $v \geq 0$. Compute its transform $\Phi(s) = \int_0^\infty \sin(v) e^{(1-s)v}\,dv$ for $\operatorname{Re} s > 1$. Show that $(s - 1)\Phi(s)$ is analytic on $\operatorname{Re} s \geq 1$, so that $E$ satisfies the analytic clause of the compact `IsPolar`. Check the conclusion of the window lemma for $E$ and $E' = 0$ directly.
+**Exercise 4.** Let $E(v) = 1$ for $v \geq 0$. Compute its transform $\Phi(s) = \int_0^\infty e^{(1-s)v}\,dv$ for $\operatorname{Re} s > 1$, and its meromorphic continuation. In Lean the function $s \mapsto (s - 1)\Phi(s)$ has the value $0 \cdot \Phi(1) = 0$ at $s = 1$. Show that this function is not analytic at $s = 1$, so that $E$ fails the analytic clause of the compact `IsPolar`. Show that the conclusion of the window lemma fails for $E$ and $E' = 0$. Then do the same for $E(v) = e^{-v}\sin v$, and show that here the clause holds.
 
-*Hint.* $\Phi(s) = 1/((s-1)^2 + 1)$, with poles at $1 \pm i$. For the conclusion, $\sin u \leq 0$ on a subinterval of length $\pi$ of every interval of length $2\pi$.
+*Hint.* For $E = 1$, $\Phi(s) = 1/(s - 1)$, so $(s - 1)\Phi(s)$ is $1$ for $s \neq 1$ and $0$ at $s = 1$: it is not continuous at $1$. The window lemma would give $1 \leq e^{-t}$. For $E(v) = e^{-v}\sin v$, $\Phi(s) = 1/(s^2 + 1)$, with poles at $\pm i$, which have real part $0$.
 
 **Exercise 5.** In the readable data, $b$ is a multiple of $q_1 x_1$ (the field `dvd_natB`). Find in the readable construction of the data the place where $b$ is chosen from $x_1$. Explain why a proof that changes $x_1$ after the data are made would have to change $b$, and so all the objects that depend on $b$.
 

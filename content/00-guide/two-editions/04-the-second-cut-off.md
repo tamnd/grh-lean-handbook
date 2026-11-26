@@ -36,7 +36,7 @@ Lean: `New.eventually_abs_primeRemainder_le` (New/Reduction/Zeros/PrimeNumberThe
 
 *Proof.* The source applies a Tauberian theorem to $v \mapsto R_q(e^v)$ and the function $F(s) = G_q(s)/s$, with a zero-free region and a growth bound for the L-functions. [The weighted prime remainder](/chapter/weighted-prime-remainder/) explains the proof. $\square$
 
-The file cites Montgomery and Vaughan, *Multiplicative Number Theory I*, Corollary 11.19, a form of the Siegel–Walfisz theorem for a fixed modulus. In the readable data, $\log x_1 \geq x^{\varepsilon/12}$. With $B$ large, the theorem gives $|R_{q_0}(x_1)| \leq x^{-2}$ and $|R_1(x_1)| \leq x^{-2}$ (`New.eventually_abs_primeRemainder_exp_le`). So both terms at $x_1$ are negligible, at every admissible $x_1$.
+The file cites Montgomery and Vaughan, *Multiplicative Number Theory I*, Corollary 11.19, a form of the Siegel and Walfisz theorem for a fixed modulus. In the readable data, $\log x_1 \geq x^{\varepsilon/12}$. With $B$ large, the theorem gives $|R_{q_0}(x_1)| \leq x^{-2}$ and $|R_1(x_1)| \leq x^{-2}$ (`New.eventually_abs_primeRemainder_exp_le`). So both terms at $x_1$ are negligible, at every admissible $x_1$.
 
 **Remark (Formalization).** In the readable data, $x_1$ is an integer, and the field `dvd_natB` asks that $q_1 x_1$ divides $b$. The weights are the integers $b$ and $x b / x_1$. So $x_1$ is tied to $b$, and the construction of the data fixes $x_1$ before $b$. The proof cannot change $x_1$ after the data are made. This is why it needs a bound at every large $x_1$, that is, a pointwise prime number theorem.
 
