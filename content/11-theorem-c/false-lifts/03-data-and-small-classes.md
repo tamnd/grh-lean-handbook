@@ -32,7 +32,7 @@ Lean: `New.SiegelWeil.DescentsVanish` (Lib/Weil/Periods/DescentVanishing.lean).
 
 We use $S = \Sigma^c$, the complement of $\Sigma$. The data are then the vacuum off $\Sigma$. The lift and the kernel are those of [the Weil representation](/chapter/weil-representation/); the definition is also in [descents and block periods](/chapter/bessel-periods/#descents-and-block-periods). The next fact reduces the test to special data.
 
-**Theorem (Special data suffice).** Let $V$ be definite, $A$ a set of finite places disjoint from its conjugate, and $Y$ automorphic. Suppose that the lift of $Y$ by the datum $v_P \otimes \Psi \otimes \mathrm{vac}$ is zero for every polynomial $P$ and every Schwartz–Bruhat function $\Psi$ of the components at $A$. Here $v_P$ is the Fock vector of $P$ at infinity and $\Psi \otimes \mathrm{vac}$ is `schrodingerOp A Ψ` applied to the vacuum. Then the descents of $Y$ vanish above the complement of the conjugate closure of $A$.
+**Theorem (Special data suffice).** Let $V$ be definite, $A$ a set of finite places disjoint from its conjugate, and $Y$ automorphic. Suppose that the lift of $Y$ by the datum $v_P \otimes \Psi \otimes \mathrm{vac}$ is zero for every polynomial $P$ and every Schwartz-Bruhat function $\Psi$ of the components at $A$. Here $v_P$ is the Fock vector of $P$ at infinity and $\Psi \otimes \mathrm{vac}$ is `schrodingerOp A Ψ` applied to the vacuum. Then the descents of $Y$ vanish above the complement of the conjugate closure of $A$.
 
 Lean: `New.SiegelWeil.DescentsVanish.of_schrodingerOp` (Lib/Weil/Periods/DescentVanishing.lean).
 
@@ -48,7 +48,7 @@ Lean: `New.DescentPair.descentPairing`, `New.DescentPair.BlockDescentVanishes` (
 
 ### Small classes
 
-To pass from special functions to all Schwartz–Bruhat functions, we use classes modulo the ideles $i!$. One idele serves at all places of $O$ at once.
+To pass from special functions to all Schwartz-Bruhat functions, we use classes modulo the ideles $i!$. One idele serves at all places of $O$ at once.
 
 **Definition (Factorial boxes).** `factorialIdele E i` is the finite idele $i!$. The box $\mathrm{Box}_i$ (`factorialBox m S i`) is the group of vectors $x$ with $(i!)^{-1}x$ integral at the places of $S$. The indicator of the class of $z$ modulo $i!$ at $S$ is $1_{C_i(z)}(y) = 1$ if $y - z \in \mathrm{Box}_i$, and $0$ otherwise.
 
@@ -57,7 +57,7 @@ Lean: `New.factorialIdele`, `New.factorialBox`, `New.cosetIndicator_factorialIde
 **Lemma (Boxes).**
 
 1. If $i \leq j$, then $\mathrm{Box}_j \subseteq \mathrm{Box}_i$.
-2. Let $\Psi$ be Schwartz–Bruhat at $S$ and $x$ a vector. For all large $i$, $\Psi$ is constant on $C_i(x)$.
+2. Let $\Psi$ be Schwartz-Bruhat at $S$ and $x$ a vector. For all large $i$, $\Psi$ is constant on $C_i(x)$.
 
 Lean: `New.antitone_factorialBox`, `New.IsSchwartzBruhat.eventually_const` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
@@ -69,7 +69,7 @@ Lean: `New.mem_of_nested_cosets` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
 *Proof.* Induction on $F$. If $F$ is empty, $\Psi = 0$. Otherwise choose $a \in F$ with $i(a)$ smallest. Then $a + U_{i(a)}$ is the largest coset. For $x \in F$, $x + U_{i(x)}$ lies in a coset of $U_{i(a)}$, so it lies in $a + U_{i(a)}$ or is disjoint from it. Let $C$ be the indicator of $a + U_{i(a)}$. The function $\Psi - \Psi(a) C$ is constant on each coset of $F \setminus \{a\}$, and it vanishes on $a + U_{i(a)}$ and off the union. So it lies in $P$ by induction. Also $\Psi(a)C \in P$. $\square$
 
-**Theorem (Small classes suffice).** Let $P$ be a subspace of the functions on $m$-vectors over $\mathbb{A}_f$. Suppose that for every $x$, $1_{C_i(x)} \in P$ for all large $i$. Then $P$ contains every Schwartz–Bruhat function $\Psi$ at $S$.
+**Theorem (Small classes suffice).** Let $P$ be a subspace of the functions on $m$-vectors over $\mathbb{A}_f$. Suppose that for every $x$, $1_{C_i(x)} \in P$ for all large $i$. Then $P$ contains every Schwartz-Bruhat function $\Psi$ at $S$.
 
 Lean: `New.IsSchwartzBruhat.mem_of_eventually_coset` (New/OneLift/FalseLifts/BottomOfTower.lean).
 

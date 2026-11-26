@@ -30,9 +30,13 @@ We keep the descent pair $O$, the functional $u$, the polynomial $P$, the point 
 
 ### The block datum and the level group
 
-The function $\Psi_{\mathrm{bl}}$ of [descent pairs](/chapter/single-theta-lifts/#descent-pairs-and-the-vector-kernel) is read on the reductions at the places of $O$. It vanishes unless $x$ is integral at these places. On integral $x$ it is $0$ unless $\bar x_w = e$ at every chosen place $w$, and then it is $\prod_{w \in Q} \psi_w(\det \bar x_w')$. For $A \in U(W)(\mathbb{A}_f)$ we write $\Psi_A(x) = \Psi_{\mathrm{bl}}(xA)$ (`O.translatedBlockFn A`). It is Schwartz–Bruhat at the places of $O$.
+The function $\Psi_{\mathrm{bl}}$ of [descent pairs](/chapter/single-theta-lifts/#descent-pairs-and-the-vector-kernel) is read on the reductions at the places of $O$. It vanishes unless $x$ is integral at these places. On integral $x$ it is $0$ unless $\bar x_w = e$ at every chosen place $w$, and then it is $\prod_{w \in Q} \psi_w(\det \bar x_w')$. For $A \in U(W)(\mathbb{A}_f)$ we write $\Psi_A(x) = \Psi_{\mathrm{bl}}(xA)$ (`O.translatedBlockFn A`). It is Schwartz-Bruhat at the places of $O$.
+
+Lean: `New.DescentPair.translatedBlockFn` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
 The level group of $O$ consists of the $h$ in the maximal level whose reductions fix $e$ at the chosen places and are block lower triangular at $Q$. Its character is $\chi_O(h) = \prod_{w \in Q} \psi_w(\det \bar h_w')^{-1}$ (`O.levelChar`), where $\bar h_w'$ is the block of the rows and columns $\iota$. The forms in `O.FormV` satisfy $h y = \chi_O(h) y$ for $h$ in the level group. The twisted translation of a function is $(h \cdot \Psi)(x) = \overline{\chi_O(h)}\, \Psi(h^{-1}x)$ (`O.levelTranslate h Ψ`).
+
+Lean: `New.DescentPair.levelTranslate` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
 **Lemma (The level group and $\Psi_A$).** Let $A \in U(W)(\mathbb{A}_f)$.
 
@@ -59,7 +63,7 @@ Lean: `New.DescentPair.translatedBlockFn_eq_one_of_hasIntegralBlockRatio` (New/O
 
 ### Moving the pairing
 
-**Lemma (Invariance of the pairing).** Let $\Psi$ be Schwartz–Bruhat at the places of $O$.
+**Lemma (Invariance of the pairing).** Let $\Psi$ be Schwartz-Bruhat at the places of $O$.
 
 1. If $k$ is in the maximal level and $y' = ky$, then $B(\Psi(k^{-1}\cdot), y') = B(\Psi, y)$.
 2. If $h$ is in the level group, then $B(h \cdot \Psi, y) = B(\Psi, y)$.
@@ -94,6 +98,8 @@ Lean: `New.DescentPair.eventually_descentPairing_eq_zero_of_hasIntegralBlockRati
 *Proof.* Choose $A \in U(W)(\mathbb{A}_f)$ with the components $(z_w')^{-1}$ at the places of $O$ and $1$ elsewhere (`exists_atPlace_eq`). By the lemma on the value $1$, $\Psi_A(z) = 1$. By part 2 of the lemma on boxes, for large $i$ the function $\Psi_A$ is $1$ on $C = C_i(z)$. Fix such an $i$.
 
 The indicator $1_C$ has finitely many twisted translates (`New.DescentPair.finite_range_levelTranslate`): $\chi_O$ takes finitely many values, and the class of $kz$ depends locally constantly on $k$ in the compact maximal level. Let $\Psi_1$ be the mean of these translates. We check four facts with the lemma on the mean.
+
+Lean: `New.DescentPair.finite_range_levelTranslate` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
 1. $B(\Psi_1, y) = B(1_C, y)$, since $B(\cdot, y)$ is constant on the translates by part 2 of the invariance of the pairing.
 2. $\Psi_1$ reads only the components at the places of $O$, since $L(\Psi) = \Psi(\mathrm{idem}\cdot x) - \Psi(x)$ is $0$ on the translates.
@@ -130,6 +136,10 @@ by the one place lemma of Section 2. As $\#G_\lambda \neq 0$, $B(1_C, y) = 0$. $
 
 ### The proof of the theorem
 
-*Proof of the bottom of the tower.* The places of $O$ are disjoint from their conjugates (`isConjDisjoint_places`). By the theorem on special data, it suffices to show $B(\Psi, y) = 0$ for all $P$, all $g$ and all Schwartz–Bruhat $\Psi$ at the places of $O$. Let $P_0$ be the kernel of $\Psi \mapsto B(\Psi, y)$. By the theorem on small classes, it suffices that $1_{C_i(z)} \in P_0$ for all large $i$, for every $z$. If $z$ has an integral block ratio at every place of $O$, this is Case 1, with the hypothesis on the block datum. Otherwise Case 2 gives $B(1_{C_i(z)}, y) = 0$ for every $i$. $\square$
+**Theorem (The bottom of the tower).** Let $\psi_w \neq 1$ for $w \in Q$, let the hyperplane sums annihilate $y$, and let the block descent vanish for $y$ for every polynomial $P$. Then the descents of $\overline{\langle u, y\rangle}$ to $U(W)$, for the character `O.charW`, vanish above $\Sigma^c$.
+
+Lean: `New.DescentPair.descentsVanish_of_hyperplaneSumsAnnihilate` (New/OneLift/FalseLifts/BottomOfTower.lean).
+
+*Proof.* The places of $O$ are disjoint from their conjugates (`isConjDisjoint_places`). By the theorem on special data, it suffices to show $B(\Psi, y) = 0$ for all $P$, all $g$ and all Schwartz-Bruhat $\Psi$ at the places of $O$. Let $P_0$ be the kernel of $\Psi \mapsto B(\Psi, y)$. By the theorem on small classes, it suffices that $1_{C_i(z)} \in P_0$ for all large $i$, for every $z$. If $z$ has an integral block ratio at every place of $O$, this is Case 1, with the hypothesis on the block datum. Otherwise Case 2 gives $B(1_{C_i(z)}, y) = 0$ for every $i$. $\square$
 
 **Example.** Take $r = 1$, $n = 2$, one chosen place and no twist place. Then $\Psi_{\mathrm{bl}}$ is the indicator of the integral $x$ with $x \equiv (1, 0)^T$. Case 1 covers the points $z = (z_1, z_2)^T$ with $z_1 \neq 0$ and $|z_2| < |z_1|$. For $A = z_1^{-1}$, the function $\Psi_A$ is the indicator of $z_1\big((1,0)^T + \varpi\mathcal{O}_w \oplus \varpi\mathcal{O}_w\big)$, where $\varpi$ is a uniformiser, and it contains $z$. The other points satisfy $|z_2| \geq |z_1|$. For them the row $l = (-z_2/z_1, 1)$ (or $(1,0)$ if $z_1 = 0$) gives $\bar\lambda \neq 0$, and the hyperplane group of $\bar\lambda$ is the full group $k_w^\times$. The form action of $s$ is $\psi_w(s)$ times the translation by a lift of $\mathrm{diag}(s, 1)$. So the condition "hyperplane sums annihilate" says that the sum of the translates of $y$ by the lifts of $\mathrm{diag}(s,1)$, $s \in k_w^\times$, is zero: $y$ has no component that is invariant under this torus of the residue group.

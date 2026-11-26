@@ -6,7 +6,6 @@ lean:
   - New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean
 decls:
   - New.Rows.stdClassSum_gramForm_eq_zero
-  - New.Rows.descentsVanish_hyperbolicSum
   - New.DescentPair.descentsVanish_of_hyperplaneSumsAnnihilate
   - New.SiegelWeil.descentsVanish_add_planes
 status: drafted
@@ -26,7 +25,7 @@ $$H_w(X) = \sum_{i=0}^{n} (-X)^i q^{\binom{i}{2}} T_{w,i},$$
 
 and the Hecke root of lifts is $x_w = $ `O.liftHeckeRoot w` $= (\alpha_w q^{n-r-1})^{-1}$, with $|\alpha_w| = q^{r/2}$. So $|x_w| = q^{1-n+r/2}$. The chapter [character lifts](/chapter/character-lifts/#hecke-polynomials-of-lifts) proves that every theta lift lies in the kernel of $H_w(x_w)$.
 
-**Definition (The three conditions).** A form $\Xi$ in `O.FormV` satisfies the three conditions at $w$ if:
+We say that a form $\Xi$ in `O.FormV` satisfies *the three conditions* at $w$ if:
 
 1. the hyperplane sums annihilate $\Xi$ (`O.HyperplaneSumsAnnihilate Ξ`, Section 2): for rows $\lambda_v$ over the residue fields of the chosen places, with at least one $\lambda_v \neq 0$, the product over $v \in M$ of the sums $\sum_{s} \psi_v(\det s)^{-1} s$ over the invertible $s = 1 + u\lambda_v$ kills $\Xi$;
 2. $\theta^* \Xi = 0$;
@@ -58,23 +57,23 @@ The proof has four steps.
 
 1. *The bottom of the tower* (Sections 2 to 4). From conditions 1 and 2 we get that all descents of the matrix coefficients of $\Xi$ to $U(W)$ vanish, for all data that are the vacuum off $\Sigma$. Condition 2 gives this only for one datum, the block datum $\Psi_{\mathrm{bl}} \otimes \mathrm{vac}$. The hyperplane sums move the vanishing from this datum to all data. The tool is a lemma on matrices: a point $z$ without an "integral block ratio" has an annihilating row, and the row gives a shear that fixes the class of $z$.
 
-   **Theorem (The bottom of the tower).** Let $\psi_w \neq 1$ for $w \in Q$, and let the hyperplane sums annihilate the form $y$. If the descents of $\overline{\langle u, y\rangle}$ by the data $v_P \otimes \Psi_{\mathrm{bl}} \otimes \mathrm{vac}$ vanish for all polynomials $P$, then all descents of $\overline{\langle u, y\rangle}$ to $U(W)$, twisted by $\nu_W$ and with data that are the vacuum off $\Sigma$, vanish.
+**Theorem (The bottom of the tower).** Let $\psi_w \neq 1$ for $w \in Q$, and let the hyperplane sums annihilate the form $y$. If the descents of $\overline{\langle u, y\rangle}$ by the data $v_P \otimes \Psi_{\mathrm{bl}} \otimes \mathrm{vac}$ vanish for all polynomials $P$, then all descents of $\overline{\langle u, y\rangle}$ to $U(W)$, twisted by $\nu_W$ and with data that are the vacuum off $\Sigma$, vanish.
 
-   Lean: `New.DescentPair.descentsVanish_of_hyperplaneSumsAnnihilate` (New/OneLift/FalseLifts/BottomOfTower.lean).
+Lean: `New.DescentPair.descentsVanish_of_hyperplaneSumsAnnihilate` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
 2. *Small roots* (Section 5). A bounded function on a unitary group of rank $m$ that is spherical at $w$ and killed by $H_w(X)$ with $q^{m+1}|X| \leq 1$ is zero. The proof uses the $q$-binomial theorem and the maximum principle of Volume 6.
 
 3. *The hyperbolic plane step* (Section 6). If the descents of $Y$ to $W$ vanish, then the descents to $W$ plus one hyperbolic plane are bounded. The Hecke transfer moves condition 3 to these descents at a point of small modulus. So by step 2 they are zero. Induction on the number of planes gives the following theorem.
 
-   **Theorem (The tower).** Let the descents of $Y$ to $W$ twisted by $a$ vanish for data that are the vacuum off $\Sigma$. Let $w$ be split off $\Sigma$, with $a$ unramified at $\bar w$, let $Y$ be spherical at $w$ and killed by $H_w(X)$, with $|X| = (q^{r/2} q^{n-r-1})^{-1}$. If $W'$ is $W$ plus $p$ hyperbolic planes and $2r + 2p + 3 < n$, then the descents of $Y$ to $W'$ twisted by $a\,\upsilon^{p}$ vanish.
+**Theorem (The tower).** Let the descents of $Y$ to $W$ twisted by $a$ vanish for data that are the vacuum off $\Sigma$. Let $w$ be split off $\Sigma$, with $a$ unramified at $\bar w$, let $Y$ be spherical at $w$ and killed by $H_w(X)$, with $|X| = (q^{r/2} q^{n-r-1})^{-1}$. If $W'$ is $W$ plus $p$ hyperbolic planes and $2r + 2p + 3 < n$, then the descents of $Y$ to $W'$ twisted by $a\,\upsilon^{p}$ vanish.
 
-   Lean: `New.SiegelWeil.descentsVanish_add_planes` (New/OneLift/FalseLifts/HyperbolicPlaneStep.lean).
+Lean: `New.SiegelWeil.descentsVanish_add_planes` (New/OneLift/FalseLifts/HyperbolicPlaneStep.lean).
 
 4. *Periods* (Sections 7 and 8). The descents to $W \oplus \mathbb{H}^N$ vanish (`New.Rows.descentsVanish_hyperbolicSum`). A theta kernel of $W$ is absorbed in the matrix coefficient. Then the theorem of [descents and periods](/chapter/bessel-periods/#descents-and-block-periods) turns vanishing descents to the hyperbolic space $\mathbb{H}^N$ into vanishing periods over $U(I_l)$.
 
 ### What the chapter uses
 
-From Volume 6: the Weil representation and its data ([the Weil representation](/chapter/weil-representation/)), the zero terms along an isotropic frame ([Siegel–Weil](/chapter/siegel-weil/)), the Hecke transfer and the maximum principle ([a maximum principle at a split place](/chapter/siegel-weil/#a-maximum-principle-at-a-split-place)), and the vanishing of block periods ([Bessel periods](/chapter/bessel-periods/)). From Volume 9: the descent pair, the block datum, the level group and the hyperplane sums ([the objects of the upper bound](/chapter/upper-bound-objects/)). From this volume: the descent and its harmonic datum ([single theta lifts](/chapter/single-theta-lifts/)), point forms ([character lifts](/chapter/character-lifts/)), and divided lattices and product forms ([the comparison operator, part 1](/chapter/comparison-operator-1/)). No file of this chapter imports a file of a later chapter of Volume 11.
+From Volume 6: the Weil representation and its data ([the Weil representation](/chapter/weil-representation/)), the zero terms along an isotropic frame ([Siegel-Weil](/chapter/siegel-weil/)), the Hecke transfer and the maximum principle ([a maximum principle at a split place](/chapter/siegel-weil/#a-maximum-principle-at-a-split-place)), and the vanishing of block periods ([Bessel periods](/chapter/bessel-periods/)). From Volume 9: the descent pair, the block datum, the level group and the hyperplane sums ([the objects of the upper bound](/chapter/upper-bound-objects/)). From this volume: the descent and its harmonic datum ([single theta lifts](/chapter/single-theta-lifts/)), point forms ([character lifts](/chapter/character-lifts/)), and divided lattices and product forms ([the comparison operator, part 1](/chapter/comparison-operator-1/)). No file of this chapter imports a file of a later chapter of Volume 11.
 
 ### Where the results are used
 
