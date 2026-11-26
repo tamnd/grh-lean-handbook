@@ -137,7 +137,7 @@ For $n \geq 3$ the second term is smaller than $2/q$. So the lemma loses a facto
 
 ### The application in the source
 
-[The chapter on moments](/chapter/moments/) applies the theorem once, in `New.sum_leadingMinor_eq_zero_le` of New/Spanning/Unfolding/MomentBounds.lean. There $G$ is a subgroup $\Gamma$ of the residue group, $\pi$ is the reduction at a place $w$ above the first level prime $p_0$, with $q = p_0$ and $n$ the Bessel index set. The function $\Theta$ is a weight $\beta \geq 0$ of positive type. The columns of $A_0$ are the first $l$ frame vectors and those of $A_1$ are their linear forms, so the determinant is the leading minor of size $l$ of the Gram matrix of the frame. The hypothesis on stabilizers is $Y = \beta(\Gamma)/b^{6k}$. The source has $b^{10} \leq p_0$ and $p_0^l\sqrt{p_0^{|n|}} \leq b^{6k}$. So
+[The chapter on moments](/chapter/moments/) applies the theorem once, in `New.Filling.sum_leadingMinor_eq_zero_le` of New/Spanning/Unfolding/MomentBounds.lean. There $G$ is a subgroup $\Gamma$ of the residue group, $\pi$ is the reduction at a place $w$ above the first level prime $p_0$, with $q = p_0$ and $n$ the Bessel index set. The function $\Theta$ is a weight $\beta \geq 0$ of positive type. The columns of $A_0$ are the first $l$ frame vectors and those of $A_1$ are their linear forms, so the determinant is the leading minor of size $l$ of the Gram matrix of the frame. The hypothesis on stabilizers is $Y = \beta(\Gamma)/b^{6k}$. The source has $b^{10} \leq p_0$ and $p_0^l\sqrt{p_0^{|n|}} \leq b^{6k}$. So
 
 $$b^{10}\sum_{\text{minor} = 0}\beta \leq p_0\sum_{\text{minor} = 0}\beta \leq 2\beta(\Gamma) + b^{6k}\cdot\frac{\beta(\Gamma)}{b^{6k}} = 3\beta(\Gamma),$$
 
