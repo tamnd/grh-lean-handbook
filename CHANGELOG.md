@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.7
+
+Four new chapters of the argument volumes.
+
+- Volume 9, chapter 11: the seesaw identity, part 2: assembly (#151).
+- Volume 10, chapter 10: Poincaré series and unfolding (#150).
+- Volume 10, chapter 11: the remaining terms (#152).
+- Volume 12, chapter 8: cup products (#153).
+
 ## v0.3.6
 
 Four new chapters of the argument volumes, and one correction.

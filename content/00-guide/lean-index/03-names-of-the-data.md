@@ -9,11 +9,13 @@ generated_by: scripts/lean_index.py
 
 ## Names of the data
 
-The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 627 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
+The index lists 6929 Lean names that the 92 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 682 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
 
 - `New.Data.a`: `New/Reduction/Data/AdmissibleData.lean`, [line 215](lean:New/Reduction/Data/AdmissibleData.lean#L215). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.a_div_x₁_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 182](lean:New/Reduction/Data/Sizes.lean#L182). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.abs_log_M_mul_rootDisc_le`: `New/Reduction/Data/Sizes.lean`, [line 232](lean:New/Reduction/Data/Sizes.lean#L232). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.abs_sum_log_mass_ratio_sub_le`: `New/Spanning/Unfolding/FrameMass.lean`, [line 67](lean:New/Spanning/Unfolding/FrameMass.lean#L67). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.absNorm_pow_mul_card_dvd_residueMatrixCount_pow`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 421](lean:New/UpperBound/Seesaw/GoodDatum.lean#L421). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.add_mem_admissibleTranslations_mul_N`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 249](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L249). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.adjoint_singleLift_apply`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 867](lean:New/Determinant/Norms/AdjointThetaLift.lean#L867). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.allowedLoss`: `New/UpperBound/Size/Estimates.lean`, [line 318](lean:New/UpperBound/Size/Estimates.lean#L318). Cited in [Chapter](/chapter/theorem-a-plan/).
@@ -29,11 +31,15 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.card_aPlaces`: `New/Reduction/PrimeSums.lean`, [line 79](lean:New/Reduction/PrimeSums.lean#L79). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
 - `New.Data.card_aPlaces_mul_excess_le`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 130](lean:New/UpperBound/Size/ArchimedeanSize.lean#L130). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.card_aPlaces_mul_mainPrimeSum`: `New/Reduction/PrimeSums.lean`, [line 165](lean:New/Reduction/PrimeSums.lean#L165). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.card_besselCoord_le_pow`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 195](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L195). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.card_besselSystem_le_add_pow`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 157](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L157). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.card_classAut_dvd_chosenGroupOrder`: `New/UpperBound/Objects/LiftChains.lean`, [line 548](lean:New/UpperBound/Objects/LiftChains.lean#L548). Cited in [Chapter](/chapter/upper-bound-objects/).
+- `New.Data.card_classes_eq_card_mul_pow_mul_mass`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 384](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L384). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.card_filter_mem_bPlaces`: `New/Reduction/PrimeSums.lean`, [line 101](lean:New/Reduction/PrimeSums.lean#L101). Cited in [Chapter](/chapter/prime-sums/).
 - `New.Data.card_gluingClasses_le`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 198](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L198). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.card_gridIndex`: `New/UpperBound/Objects/Parameters.lean`, [line 172](lean:New/UpperBound/Objects/Parameters.lean#L172). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.card_le_residueMatrixCount`: `New/UpperBound/Seesaw/Cut.lean`, [line 212](lean:New/UpperBound/Seesaw/Cut.lean#L212). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.card_mul_prod_frameMass_le`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 517](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L517). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.card_rowIndex`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 275](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L275). Cited in [Chapter](/chapter/notation/).
 - `New.Data.card_X`: `New/UpperBound/Objects/Columns.lean`, [line 658](lean:New/UpperBound/Objects/Columns.lean#L658). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.card_Y_le`: `New/UpperBound/Objects/Rows.lean`, [line 531](lean:New/UpperBound/Objects/Rows.lean#L531). Cited in [Chapter](/chapter/integral-target-forms/).
@@ -63,6 +69,9 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.chosenGL`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 341](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L341). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.chosenGroupOrder`: `New/UpperBound/Objects/LiftChains.lean`, [line 422](lean:New/UpperBound/Objects/LiftChains.lean#L422). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.ChosenPlace`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 75](lean:New/Derivatives/Field/ChosenPlaces.lean#L75). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Data.chosenRatio`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 44](lean:New/UpperBound/Seesaw/GoodDatum.lean#L44). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.chosenRatio_apply_of_N_mem`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 55](lean:New/UpperBound/Seesaw/GoodDatum.lean#L55). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.chosenRatio_mul_star`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 47](lean:New/UpperBound/Seesaw/GoodDatum.lean#L47). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.classAut_eq_bot_of_le_chosenLevel`: `New/UpperBound/Objects/LiftChains.lean`, [line 535](lean:New/UpperBound/Objects/LiftChains.lean#L535). Cited in [Chapter](/chapter/integral-target-forms/).
 - `New.Data.classAut_eq_bot_of_le_levelOf_chosenPlace`: `New/UpperBound/Objects/LiftChains.lean`, [line 518](lean:New/UpperBound/Objects/LiftChains.lean#L518). Cited in [Chapter](/chapter/integral-target-forms/).
 - `New.Data.classAut_lastResidueLevel_eq_bot`: `New/Reduction/IntegralTargetForms.lean`, [line 50](lean:New/Reduction/IntegralTargetForms.lean#L50). Cited in [Chapter](/chapter/integral-target-forms/).
@@ -139,6 +148,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.errorUnit`: `New/Reduction/Data/AdmissibleData.lean`, [line 255](lean:New/Reduction/Data/AdmissibleData.lean#L255). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/theorems-a-b-c/).
 - `New.Data.evaluatedDatum`: `New/UpperBound/Seesaw/EdgePairEvaluation.lean`, [line 1193](lean:New/UpperBound/Seesaw/EdgePairEvaluation.lean#L1193). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Data.evaluatedDatum_out`: `New/UpperBound/Seesaw/UnfoldingStages.lean`, [line 934](lean:New/UpperBound/Seesaw/UnfoldingStages.lean#L934). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.evaluatedTensor`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 491](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L491). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.exists_adjoint_chain_comp_eq_smul_rallisProduct`: `New/Determinant/Chain/NormOfChain.lean`, [line 303](lean:New/Determinant/Chain/NormOfChain.lean#L303). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorem-c-plan/).
 - `New.Data.exists_adjoint_singleLift_comp_eq`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 1015](lean:New/Determinant/Norms/AdjointThetaLift.lean#L1015). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.exists_asAlgebraHom_eq_heckeSplit`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 235](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L235). Cited in [Chapter](/chapter/equal-multiplicities/).
@@ -157,7 +167,11 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.exists_heckeAlgebra_eq_asAlgebraHom`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 216](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L216). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.exists_heckeAlgebra_eq_mul_inner_of_hasSum_rallisTerm`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 153](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L153). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.exists_heckeAlgebra_inner_eq_inner_translate`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 69](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L69). Cited in [Chapter](/chapter/equal-multiplicities/).
-- `New.Data.exists_integral_mul_lowerChainUpTo_eq_cutSum`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 413](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L413). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.exists_integral_eq_mul_inner_restrictToFormY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 90](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L90). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.exists_integral_mul_lowerChainUpTo_eq_cutSum`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 413](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L413). Cited in [Chapter](/chapter/seesaw-identity-1/), [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.exists_isAdmissibleCombination_evaluatedDatum`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 494](lean:New/UpperBound/Seesaw/GoodDatum.lean#L494). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.exists_isAdmissibleCombination_gluedVacuum`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 535](lean:New/UpperBound/Seesaw/GoodDatum.lean#L535). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.exists_isAdmissibleCombination_seesawDatum`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 592](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L592). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.exists_isFullMark`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 230](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L230). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.exists_isPrimitivePolynomial`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 57](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L57). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.exists_isStageCut`: `New/UpperBound/Seesaw/Cut.lean`, [line 100](lean:New/UpperBound/Seesaw/Cut.lean#L100). Cited in [Chapter](/chapter/seesaw-identity-1/).
@@ -165,10 +179,12 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.exists_le_finrank_iSup_range_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 410](lean:New/Reduction/ShortAndEnough.lean#L410). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.exists_levelPrime_mem_of_isChosen`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 107](lean:New/Derivatives/Field/ChosenPlaces.lean#L107). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.exists_lowerChain_poincare_eq`: `New/Reduction/ShortAndEnough.lean`, [line 217](lean:New/Reduction/ShortAndEnough.lean#L217). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.exists_lowerChainUpTo_poincareAt_eq`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 540](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L540). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.exists_m_eq_two_pow`: `New/Reduction/Data/AdmissibleData.lean`, [line 118](lean:New/Reduction/Data/AdmissibleData.lean#L118). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.exists_mem_eigenPart_of_heckeSplit_eq_smul`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 446](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L446). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.exists_mulChar_orderOf_eq_sq_of_isChosen`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 135](lean:New/Derivatives/Field/ChosenPlaces.lean#L135). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.exists_piM_mul_star_eq_levelPrime_mul_coprime`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 94](lean:New/Derivatives/Field/ChosenPlaces.lean#L94). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Data.exists_poincareAt_eq_poincareMap_comp`: `New/Spanning/Unfolding/SeriesPeriod.lean`, [line 695](lean:New/Spanning/Unfolding/SeriesPeriod.lean#L695). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.exists_principalForms_eq_liftSeries`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 747](lean:New/Determinant/Norms/AdjointThetaLift.lean#L747). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.exists_r_eq_three_pow`: `New/Reduction/Data/AdmissibleData.lean`, [line 120](lean:New/Reduction/Data/AdmissibleData.lean#L120). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.exists_rallisTerm_eq_inner`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 125](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L125). Cited in [Chapter](/chapter/equal-multiplicities/).
@@ -191,6 +207,8 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.f_even`: `New/Reduction/Data/Sizes.lean`, [line 135](lean:New/Reduction/Data/Sizes.lean#L135). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.f_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 125](lean:New/Reduction/Data/Sizes.lean#L125). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.filling`: `New/Spanning/Bessel/FillingData.lean`, [line 461](lean:New/Spanning/Bessel/FillingData.lean#L461). Cited in [Chapter](/chapter/sizes/).
+- `New.Data.filling_fits`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 58](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L58). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.filling_reduction_surjective`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 591](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L591). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.finite_criticalPair`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 307](lean:New/Derivatives/Field/ChosenPlaces.lean#L307). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.finite_isChosen`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 127](lean:New/Derivatives/Field/ChosenPlaces.lean#L127). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.finite_setOf_inf_eigenPart_ne_bot`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 438](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L438). Cited in [Chapter](/chapter/equal-multiplicities/).
@@ -199,6 +217,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.finrank_sourceForm_le_two_mul`: `New/Reduction/ShortAndEnough.lean`, [line 290](lean:New/Reduction/ShortAndEnough.lean#L290). Cited in [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.finrank_targetForms_ne_zero`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 307](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L307). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.fitsParams_descentPair`: `New/UpperBound/Objects/Rows.lean`, [line 841](lean:New/UpperBound/Objects/Rows.lean#L841). Cited in [Chapter](/chapter/single-theta-lifts/).
+- `New.Data.flipScale_mul_divStar_ideleA`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 86](lean:New/UpperBound/Seesaw/GoodDatum.lean#L86). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.gain`: `New/UpperBound/Size/ShortColumns.lean`, [line 83](lean:New/UpperBound/Size/ShortColumns.lean#L83). Cited in [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.gainExponent`: `New/Reduction/ShortAndEnough.lean`, [line 89](lean:New/Reduction/ShortAndEnough.lean#L89). Cited in [Chapter](/chapter/theorems-a-b-c/).
 - `New.Data.gap`: `New/Reduction/Data/AdmissibleData.lean`, [line 209](lean:New/Reduction/Data/AdmissibleData.lean#L209). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
@@ -232,6 +251,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.HasExceptionalOrbits`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 271](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L271). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.hasHeckePolynomial_of_mem_eigenPart`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 299](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L299). Cited in [Chapter](/chapter/equal-multiplicities/), [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.hasLatticeBounds_of_unfoldStage_ne_zero`: `New/UpperBound/Seesaw/UnfoldingStages.lean`, [line 1104](lean:New/UpperBound/Seesaw/UnfoldingStages.lean#L1104). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.hasLevel_transposedLiftY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 251](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L251). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.hasLiftHeckePolynomial_singleLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 1030](lean:New/Determinant/Norms/AdjointThetaLift.lean#L1030). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.HasLogBound`: `New/Reduction/Data/Magnitudes.lean`, [line 49](lean:New/Reduction/Data/Magnitudes.lean#L49). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.hasLogBound_deltaE`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 421](lean:New/Derivatives/Field/ChosenPlaces.lean#L421). Cited in [Chapter](/chapter/field-at-primes/).
@@ -267,14 +287,22 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.inner_poincareAt`: `New/UpperBound/Objects/PoincareMap.lean`, [line 197](lean:New/UpperBound/Objects/PoincareMap.lean#L197). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.inner_singleLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 837](lean:New/Determinant/Norms/AdjointThetaLift.lean#L837). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.integral_forms_long`: `New/Determinant/Twist/LongForms.lean`, [line 214](lean:New/Determinant/Twist/LongForms.lean#L214). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/), [Chapter](/chapter/theorem-c-plan/).
-- `New.Data.integral_mul_liftY_poincareAt`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 358](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L358). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.integral_mul_liftY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 201](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L201). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.integral_mul_liftY_poincareAt`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 358](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L358). Cited in [Chapter](/chapter/seesaw-identity-1/), [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.integral_mul_poincareAt`: `New/UpperBound/Objects/PoincareMap.lean`, [line 215](lean:New/UpperBound/Objects/PoincareMap.lean#L215). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.integral_unfoldStageOn`: `New/UpperBound/Seesaw/UnfoldingStages.lean`, [line 688](lean:New/UpperBound/Seesaw/UnfoldingStages.lean#L688). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.integral_unfoldStageOn_mul_transposedLiftY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 307](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L307). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.integralRamified`: `New/Reduction/ShortAndEnough.lean`, [line 208](lean:New/Reduction/ShortAndEnough.lean#L208). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.integralSourceForms`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 74](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L74). Cited in [Chapter](/chapter/chain-valuation/).
+- `New.Data.inv_pow_le_frameMass`: `New/Spanning/Unfolding/FrameMass.lean`, [line 178](lean:New/Spanning/Unfolding/FrameMass.lean#L178). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.inv_unitSphereMass_le_pow`: `New/Spanning/Unfolding/FrameMass.lean`, [line 147](lean:New/Spanning/Unfolding/FrameMass.lean#L147). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.invGainFactor`: `New/Reduction/ShortAndEnough.lean`, [line 93](lean:New/Reduction/ShortAndEnough.lean#L93). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.isAdmissibleCombination_arrowProduct_translatedPointDatumY`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 459](lean:New/UpperBound/Seesaw/GoodDatum.lean#L459). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.isAdmissibleCombination_cutSum`: `New/UpperBound/Seesaw/Cut.lean`, [line 356](lean:New/UpperBound/Seesaw/Cut.lean#L356). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.isAdmissibleCombination_pointDatumY`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 336](lean:New/UpperBound/Seesaw/GoodDatum.lean#L336). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.isAdmissibleCombination_sum_ungluedVacuum`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 268](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L268). Cited in [Chapter](/chapter/chain-valuation/).
+- `New.Data.isAdmissibleCombination_translatedPointDatumY`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 370](lean:New/UpperBound/Seesaw/GoodDatum.lean#L370). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.isAdmissibleEval_doubleLiftEvalY`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 167](lean:New/UpperBound/Seesaw/GoodDatum.lean#L167). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.IsAuxiliaryForm`: `New/Determinant/Twist/LongForms.lean`, [line 43](lean:New/Determinant/Twist/LongForms.lean#L43). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/).
 - `New.Data.IsBranchingMap`: `New/UpperBound/Objects/Columns.lean`, [line 675](lean:New/UpperBound/Objects/Columns.lean#L675). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.isCentralProj_e₀`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 399](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L399). Cited in [Chapter](/chapter/upper-bound-objects/).
@@ -297,6 +325,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.IsExceptional.star_ne`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 182](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L182). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.IsFullMark`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 69](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L69). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.IsFullMark.collisionSum_placesInducing_eq_zero`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 490](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L490). Cited in [Chapter](/chapter/chain-valuation/).
+- `New.Data.isInvariant_seesawDatum`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 509](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L509). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.isJointlyInvariant_of_plainTensor`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 295](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L295). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.IsMarked`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 57](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L57). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.IsMarked.card_le`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 314](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L314). Cited in [Chapter](/chapter/chain-valuation/).
@@ -321,9 +350,13 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.IsNearPair.exponent_unique`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 158](lean:New/Derivatives/Sharpness/NearPairs.lean#L158). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Data.IsNegligible`: `New/Determinant/Twist/FitTwists.lean`, [line 208](lean:New/Determinant/Twist/FitTwists.lean#L208). Cited in [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.isParam_gridParam`: `New/UpperBound/Objects/Parameters.lean`, [line 835](lean:New/UpperBound/Objects/Parameters.lean#L835). Cited in [Chapter](/chapter/upper-bound-objects/).
+- `New.Data.isRapid_conjFormY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 260](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L260). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.IsRegularFamily`: `New/Determinant/Twist/FitTwists.lean`, [line 229](lean:New/Determinant/Twist/FitTwists.lean#L229). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.IsRegularFamily.heightLe_of_eq_zpow_mul`: `New/OneLift/HeckeValues/TwistedRatio.lean`, [line 375](lean:New/OneLift/HeckeValues/TwistedRatio.lean#L375). Cited in [Chapter](/chapter/twists-critical-pairs/).
 - `New.Data.IsScalingAt`: `New/UpperBound/Size/ShortColumns.lean`, [line 599](lean:New/UpperBound/Size/ShortColumns.lean#L599). Cited in [Chapter](/chapter/upper-bound-objects/).
+- `New.Data.isScalingAtM_lastScaling`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 138](lean:New/UpperBound/Seesaw/GoodDatum.lean#L138). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.isScalingAtM_of_eq_one_or_eq`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 105](lean:New/UpperBound/Seesaw/GoodDatum.lean#L105). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.isScalingAtM_one`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 131](lean:New/UpperBound/Seesaw/GoodDatum.lean#L131). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.isSeparated_gridCentres`: `New/UpperBound/Objects/Parameters.lean`, [line 548](lean:New/UpperBound/Objects/Parameters.lean#L548). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.IsSmallNonsplit.not_dvd_M_mul_N`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 197](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L197). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.IsSplitOffLevel`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 105](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L105). Cited in [Chapter](/chapter/equal-multiplicities/).
@@ -354,6 +387,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.lastLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 167](lean:New/UpperBound/Objects/RowChain.lean#L167). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.lastLevelChar`: `New/UpperBound/Objects/RowChain.lean`, [line 357](lean:New/UpperBound/Objects/RowChain.lean#L357). Cited in [Chapter](/chapter/integral-target-forms/).
 - `New.Data.lastResidueLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 128](lean:New/UpperBound/Objects/RowChain.lean#L128). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.latticeScale_two_mul`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 147](lean:New/UpperBound/Seesaw/GoodDatum.lean#L147). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.le_b_of_eq_dualResolutionFactor`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 726](lean:New/Derivatives/Vacuum/ShortVectors.lean#L726). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Data.le_constantBound`: `New/Reduction/Data/Magnitudes.lean`, [line 56](lean:New/Reduction/Data/Magnitudes.lean#L56). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.le_finrank_ramifiedSourceForms`: `New/UpperBound/Size/ShortColumns.lean`, [line 944](lean:New/UpperBound/Size/ShortColumns.lean#L944). Cited in [Chapter](/chapter/theorem-b-plan/).
@@ -392,12 +426,15 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.localPrimeSum`: `New/UpperBound/Size/ShortColumns.lean`, [line 72](lean:New/UpperBound/Size/ShortColumns.lean#L72). Cited in [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.log_chosenGroupOrder_le`: `New/UpperBound/Objects/LiftChains.lean`, [line 605](lean:New/UpperBound/Objects/LiftChains.lean#L605). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.log_classNumber_le`: `New/Reduction/Data/Sizes.lean`, [line 161](lean:New/Reduction/Data/Sizes.lean#L161). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_filling_besselDegree_mem_Icc`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 278](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L278). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.log_invGainFactor_le`: `New/Reduction/ShortAndEnough.lean`, [line 127](lean:New/Reduction/ShortAndEnough.lean#L127). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.log_liftWeight_le`: `New/Reduction/Data/LevelAndTwists.lean`, [line 131](lean:New/Reduction/Data/LevelAndTwists.lean#L131). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.log_logX₁_le_log_logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 106](lean:New/Reduction/Data/AdmissibleData.lean#L106). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.log_M_div_bigOmega_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 219](lean:New/Reduction/Data/Sizes.lean#L219). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.log_N_mem`: `New/Reduction/Data/AdmissibleData.lean`, [line 160](lean:New/Reduction/Data/AdmissibleData.lean#L160). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.log_N_mem_Icc`: `New/Reduction/Data/LevelAndTwists.lean`, [line 234](lean:New/Reduction/Data/LevelAndTwists.lean#L234). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.log_pow_div_pow_sub_one_le`: `New/Spanning/Unfolding/FrameMass.lean`, [line 42](lean:New/Spanning/Unfolding/FrameMass.lean#L42). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.log_prod_unitSphereMass`: `New/Spanning/Unfolding/FrameMass.lean`, [line 203](lean:New/Spanning/Unfolding/FrameMass.lean#L203). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.log_shiftedWeight_le`: `New/Reduction/Data/LevelAndTwists.lean`, [line 97](lean:New/Reduction/Data/LevelAndTwists.lean#L97). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 89](lean:New/Reduction/Data/AdmissibleData.lean#L89). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.logB_pow_le_x`: `New/Reduction/Data/Sizes.lean`, [line 63](lean:New/Reduction/Data/Sizes.lean#L63). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
@@ -410,6 +447,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.logX₁_le_logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 104](lean:New/Reduction/Data/AdmissibleData.lean#L104). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.logX₁_pow_le_logB`: `New/Reduction/Data/Sizes.lean`, [line 58](lean:New/Reduction/Data/Sizes.lean#L58). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.lowerChain`: `New/UpperBound/Objects/RowChain.lean`, [line 178](lean:New/UpperBound/Objects/RowChain.lean#L178). Cited in [Chapter](/chapter/upper-bound-objects/).
+- `New.Data.lowerChain_eq_of_lowerChainUpTo_eq`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 75](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L75). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.lowerChain_mem_levelSpace`: `New/UpperBound/Objects/RowChain.lean`, [line 372](lean:New/UpperBound/Objects/RowChain.lean#L372). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.lowerChain_principalRep`: `New/UpperBound/Objects/RowChain.lean`, [line 419](lean:New/UpperBound/Objects/RowChain.lean#L419). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.lowerChainAtLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 403](lean:New/UpperBound/Objects/RowChain.lean#L403). Cited in [Chapter](/chapter/integral-target-forms/).
@@ -428,6 +466,8 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.mainAmount_nonneg`: `New/Reduction/PrimeSums.lean`, [line 295](lean:New/Reduction/PrimeSums.lean#L295). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/).
 - `New.Data.mainAmount_sub_add_two_mul_sum_gain`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 178](lean:New/UpperBound/Size/ArchimedeanSize.lean#L178). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.mainPrimeSum`: `New/Reduction/PrimeSums.lean`, [line 68](lean:New/Reduction/PrimeSums.lean#L68). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/prime-sums/).
+- `New.Data.mainSecondMoment_div_identitySecondMoment_eq`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 604](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L604). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.mainSecondMoment_div_identitySecondMoment_mem_Icc`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 692](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L692). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.map_evaluatedDatum_of_conj_mem`: `New/UpperBound/Seesaw/UnfoldingStages.lean`, [line 910](lean:New/UpperBound/Seesaw/UnfoldingStages.lean#L910). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.Data.mem_aPlaces_iff_of_mul_mem_bPlaces`: `New/Reduction/PrimeSums.lean`, [line 89](lean:New/Reduction/PrimeSums.lean#L89). Cited in [Chapter](/chapter/prime-sums/).
 - `New.Data.mem_eigenPart`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 290](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L290). Cited in [Chapter](/chapter/equal-multiplicities/).
@@ -445,7 +485,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.N`: `New/Reduction/Data/AdmissibleData.lean`, [line 154](lean:New/Reduction/Data/AdmissibleData.lean#L154). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.n`: `New/Reduction/Data/AdmissibleData.lean`, [line 225](lean:New/Reduction/Data/AdmissibleData.lean#L225). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.n_even`: `New/UpperBound/Objects/Weights.lean`, [line 125](lean:New/UpperBound/Objects/Weights.lean#L125). Cited in [Chapter](/chapter/data-and-sizes/).
-- `New.Data.N_le_pow`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 725](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L725). Cited in [Chapter](/chapter/sizes/).
+- `New.Data.N_le_pow`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 725](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L725). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/poincare-series/).
 - `New.Data.N_modEq_one`: `New/Reduction/Data/LevelAndTwists.lean`, [line 222](lean:New/Reduction/Data/LevelAndTwists.lean#L222). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.N_modEq_one_q₂_sq`: `New/Reduction/Data/AdmissibleData.lean`, [line 158](lean:New/Reduction/Data/AdmissibleData.lean#L158). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.N_prime`: `New/Reduction/Data/AdmissibleData.lean`, [line 156](lean:New/Reduction/Data/AdmissibleData.lean#L156). Cited in [Chapter](/chapter/data-and-sizes/).
@@ -477,6 +517,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.paramX`: `New/UpperBound/Objects/Weights.lean`, [line 146](lean:New/UpperBound/Objects/Weights.lean#L146). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.paramY`: `New/UpperBound/Objects/Parameters.lean`, [line 147](lean:New/UpperBound/Objects/Parameters.lean#L147). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.piM`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 64](lean:New/Derivatives/Field/ChosenPlaces.lean#L64). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Data.piM_mul_normQ_mem_ideal`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 315](lean:New/UpperBound/Seesaw/GoodDatum.lean#L315). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.piM_mul_star`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 79](lean:New/Derivatives/Field/ChosenPlaces.lean#L79). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.piM_ne_zero`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 89](lean:New/Derivatives/Field/ChosenPlaces.lean#L89). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.piMBar`: `New/Reduction/Data/AdmissibleData.lean`, [line 150](lean:New/Reduction/Data/AdmissibleData.lean#L150). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
@@ -488,6 +529,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.placesInducing`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 80](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L80). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.placesInducingConj`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 85](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L85). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.plainTensor_eq_sum_ungluedVacuum`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 225](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L225). Cited in [Chapter](/chapter/chain-valuation/).
+- `New.Data.poincare_eq_poincareMap_comp`: `New/Spanning/Unfolding/SeriesPeriod.lean`, [line 749](lean:New/Spanning/Unfolding/SeriesPeriod.lean#L749). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.poincareAt`: `New/UpperBound/Objects/PoincareMap.lean`, [line 188](lean:New/UpperBound/Objects/PoincareMap.lean#L188). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.poincareAt_smul`: `New/UpperBound/Objects/PoincareMap.lean`, [line 206](lean:New/UpperBound/Objects/PoincareMap.lean#L206). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.posRank`: `New/Reduction/Data/AdmissibleData.lean`, [line 230](lean:New/Reduction/Data/AdmissibleData.lean#L230). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
@@ -503,6 +545,8 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.principalLevel_le_levelX`: `New/UpperBound/Objects/Columns.lean`, [line 640](lean:New/UpperBound/Objects/Columns.lean#L640). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.principalRep`: `New/UpperBound/Objects/Rows.lean`, [line 287](lean:New/UpperBound/Objects/Rows.lean#L287). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.principalRep_mem_eigenPart`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 424](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L424). Cited in [Chapter](/chapter/equal-multiplicities/).
+- `New.Data.prod_frameMass_mul_le`: `New/Spanning/Unfolding/FrameMass.lean`, [line 248](lean:New/Spanning/Unfolding/FrameMass.lean#L248). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Data.prod_frameMass_mul_openCellConst_eq`: `New/Spanning/Unfolding/FrameMass.lean`, [line 329](lean:New/Spanning/Unfolding/FrameMass.lean#L329). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.prod_phi_zeta_pow_pow_liftWeight_zero_eq_one`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 212](lean:New/Derivatives/Field/ChosenPlaces.lean#L212). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Data.projOn_translateDatum`: `New/UpperBound/Divisibility/ChainValuation.lean`, [line 103](lean:New/UpperBound/Divisibility/ChainValuation.lean#L103). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.q_eq_levelPrime`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 124](lean:New/Derivatives/Field/ChosenPlaces.lean#L124). Cited in [Chapter](/chapter/field-at-primes/).
@@ -522,16 +566,20 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.RankOneIndex`: `New/Determinant/Twist/FitTwists.lean`, [line 100](lean:New/Determinant/Twist/FitTwists.lean#L100). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/twists-critical-pairs/).
 - `New.Data.realPlaceSizes`: `New/Spanning/Bessel/FillingData.lean`, [line 260](lean:New/Spanning/Bessel/FillingData.lean#L260). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.reducedHalfGap`: `New/Reduction/Data/AdmissibleData.lean`, [line 212](lean:New/Reduction/Data/AdmissibleData.lean#L212). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.relIndex_latticeStabilizer`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 338](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L338). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.restrictedChain`: `New/UpperBound/Objects/Columns.lean`, [line 883](lean:New/UpperBound/Objects/Columns.lean#L883). Cited in [Chapter](/chapter/upper-bound-objects/).
+- `New.Data.restrictToFormY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 67](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L67). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.restrictToY`: `New/UpperBound/Objects/Columns.lean`, [line 779](lean:New/UpperBound/Objects/Columns.lean#L779). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.rootDisc`: `New/Reduction/Data/AdmissibleData.lean`, [line 197](lean:New/Reduction/Data/AdmissibleData.lean#L197). Cited in [Chapter](/chapter/notation/).
 - `New.Data.rootDisc_mem_Icc`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 433](lean:New/Derivatives/Field/ChosenPlaces.lean#L433). Cited in [Chapter](/chapter/data-and-sizes/), [Chapter](/chapter/field-at-primes/).
 - `New.Data.RowIndex`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 266](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L266). Cited in [Chapter](/chapter/notation/).
 - `New.Data.scale_inequalities`: `New/Reduction/Data/Magnitudes.lean`, [line 77](lean:New/Reduction/Data/Magnitudes.lean#L77). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.scaledSiegelConst_le`: `New/Spanning/Unfolding/FillingAdmissible.lean`, [line 539](lean:New/Spanning/Unfolding/FillingAdmissible.lean#L539). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.scaledVolumeRatio_le`: `New/Spanning/Bessel/FillingData.lean`, [line 200](lean:New/Spanning/Bessel/FillingData.lean#L200). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.Data.scalingGenerator`: `New/UpperBound/Size/ShortColumns.lean`, [line 635](lean:New/UpperBound/Size/ShortColumns.lean#L635). Cited in [Chapter](/chapter/upper-bound-objects/).
-- `New.Data.seesaw_identity`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 624](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L624). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/), [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.seesaw_identity`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 624](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L624). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/), [Chapter](/chapter/seesaw-identity-1/), [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.seesawConst`: `New/Reduction/ShortAndEnough.lean`, [line 170](lean:New/Reduction/ShortAndEnough.lean#L170). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-a-plan/).
+- `New.Data.seesawDatum`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 503](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L503). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.shiftedWeight`: `New/Reduction/Data/AdmissibleData.lean`, [line 243](lean:New/Reduction/Data/AdmissibleData.lean#L243). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.shiftedWeight_mem_Icc`: `New/Reduction/Data/LevelAndTwists.lean`, [line 88](lean:New/Reduction/Data/LevelAndTwists.lean#L88). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.signsW`: `New/UpperBound/Objects/LabelsAndIndexTypes.lean`, [line 328](lean:New/UpperBound/Objects/LabelsAndIndexTypes.lean#L328). Cited in [Chapter](/chapter/notation/).
@@ -559,6 +607,7 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.sum_heckeScalingExponent`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 94](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L94). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.sum_hilbertSchmidtNorm_scaledPoincare_sq_le`: `New/Spanning/SecondMoment/SpanningTheorem.lean`, [line 270](lean:New/Spanning/SecondMoment/SpanningTheorem.lean#L270). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.sum_log_weight`: `New/Reduction/PrimeSums.lean`, [line 153](lean:New/Reduction/PrimeSums.lean#L153). Cited in [Chapter](/chapter/prime-sums/).
+- `New.Data.sum_quotient_chosenLevel_eq_sum_cutPoints`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 327](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L327). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.t`: `New/Reduction/Data/AdmissibleData.lean`, [line 203](lean:New/Reduction/Data/AdmissibleData.lean#L203). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.t_odd`: `New/Reduction/Data/Magnitudes.lean`, [line 593](lean:New/Reduction/Data/Magnitudes.lean#L593). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.TameChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 260](lean:New/Reduction/Data/LevelAndTwists.lean#L260). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
@@ -591,9 +640,13 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.trace_heckeOnGood_eq_sum`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 211](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L211). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.trace_mul_tupleIdem_eq`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 237](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L237). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.translateDatum`: `New/UpperBound/Objects/Columns.lean`, [line 871](lean:New/UpperBound/Objects/Columns.lean#L871). Cited in [Chapter](/chapter/upper-bound-objects/).
+- `New.Data.transposedLiftY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 173](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L173). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.transposedLiftY_apply`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 186](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L186). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.Twist`: `New/Reduction/Data/LevelAndTwists.lean`, [line 281](lean:New/Reduction/Data/LevelAndTwists.lean#L281). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.Twist.Q_one`: `New/Determinant/Twist/FitTwists.lean`, [line 60](lean:New/Determinant/Twist/FitTwists.lean#L60). Cited in [Chapter](/chapter/twists-critical-pairs/).
 - `New.Data.Twist.toAutChar_one`: `New/Determinant/Twist/FitTwists.lean`, [line 56](lean:New/Determinant/Twist/FitTwists.lean#L56). Cited in [Chapter](/chapter/twists-critical-pairs/).
+- `New.Data.twistedPairWeil_datumY_of_mem_levelY`: `New/UpperBound/Seesaw/SeesawIdentity.lean`, [line 231](lean:New/UpperBound/Seesaw/SeesawIdentity.lean#L231). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.two_div_and_inv_sqrt_deltaE_mem_Icc`: `New/Spanning/Unfolding/FrameMass.lean`, [line 94](lean:New/Spanning/Unfolding/FrameMass.lean#L94). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Data.two_mul_card_rowIndex_lt`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 742](lean:New/Determinant/Norms/AdjointThetaLift.lean#L742). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.two_mul_sum_gain_mul_log`: `New/UpperBound/Size/ArchimedeanSize.lean`, [line 146](lean:New/UpperBound/Size/ArchimedeanSize.lean#L146). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/theorem-a-plan/).
 - `New.Data.two_pow_dvd_right_of_dvd_mul`: `New/UpperBound/Divisibility/MarkedPrimes.lean`, [line 140](lean:New/UpperBound/Divisibility/MarkedPrimes.lean#L140). Cited in [Chapter](/chapter/chain-valuation/).
@@ -609,6 +662,8 @@ The index lists 6435 Lean names that the 88 written chapters cite, on a `Lean:` 
 - `New.Data.untwistedLiftChar`: `New/Reduction/Data/LevelAndTwists.lean`, [line 308](lean:New/Reduction/Data/LevelAndTwists.lean#L308). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Data.untwistedLiftChar_hasWeight`: `New/Reduction/Data/LevelAndTwists.lean`, [line 318](lean:New/Reduction/Data/LevelAndTwists.lean#L318). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Data.v_gradingY_genericConst_eq_ideleA_mul_star`: `New/UpperBound/Seesaw/LevelIdeles.lean`, [line 86](lean:New/UpperBound/Seesaw/LevelIdeles.lean#L86). Cited in [Chapter](/chapter/seesaw-identity-1/).
+- `New.Data.v_piM_eq_one_of_N_mem`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 63](lean:New/UpperBound/Seesaw/GoodDatum.lean#L63). Cited in [Chapter](/chapter/seesaw-identity-2/).
+- `New.Data.v_star_piM_mul_chosenRatio`: `New/UpperBound/Seesaw/GoodDatum.lean`, [line 69](lean:New/UpperBound/Seesaw/GoodDatum.lean#L69). Cited in [Chapter](/chapter/seesaw-identity-2/).
 - `New.Data.vacuumProjFinPart_gluedDoubleLiftDatum`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 86](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L86). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.vacuumProjFinPart_translateDatum`: `New/UpperBound/Divisibility/ChainDatumExpansion.lean`, [line 56](lean:New/UpperBound/Divisibility/ChainDatumExpansion.lean#L56). Cited in [Chapter](/chapter/chain-valuation/).
 - `New.Data.volU_div_volU_le`: `New/Spanning/Bessel/FillingData.lean`, [line 179](lean:New/Spanning/Bessel/FillingData.lean#L179). Cited in [Chapter](/chapter/bessel-real-place/).

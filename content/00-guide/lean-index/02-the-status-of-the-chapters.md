@@ -85,7 +85,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 9 | 8 | Theta kernels and gauges | drafted | 13,819 |
 | 9 | 9 | Short columns and the gain | planned | 0 |
 | 9 | 10 | Marked primes and the valuation of a chain | drafted | 13,685 |
-| 9 | 11 | The seesaw identity, part 2: assembly | planned | 0 |
+| 9 | 11 | The seesaw identity, part 2: assembly | drafted | 14,413 |
 | 9 | 12 | The archimedean size of the composite lift | planned | 0 |
 | 9 | 13 | Elementary divisors of a Hecke operator | planned | 0 |
 | 9 | 14 | Divisibility prime by prime | planned | 0 |
@@ -99,8 +99,8 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 7 | The anatomy of a term | drafted | 14,539 |
 | 10 | 8 | Local densities at the finite places | drafted | 14,633 |
 | 10 | 9 | Reduced points and frame counts | drafted | 14,403 |
-| 10 | 10 | Poincaré series and unfolding | planned | 0 |
-| 10 | 11 | The remaining terms | planned | 0 |
+| 10 | 10 | Poincaré series and unfolding | drafted | 14,423 |
+| 10 | 11 | The remaining terms | drafted | 14,407 |
 | 10 | 12 | The main term | planned | 0 |
 | 10 | 13 | Moments of the Poincaré map | planned | 0 |
 | 10 | 14 | The proof of Theorem B | planned | 0 |
@@ -128,7 +128,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 12 | 5 | The main summands of the attached Galois representations | drafted | 14,570 |
 | 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | drafted | 14,549 |
 | 12 | 7 | Exponent lattices and Kummer charts | drafted | 14,635 |
-| 12 | 8 | Cup products on Kisin modules | planned | 0 |
+| 12 | 8 | Cup products on Kisin modules | drafted | 14,552 |
 | 12 | 9 | The local loss at ℓ | planned | 0 |
 | 12 | 10 | Stickelberger systems and the twisting theorem | planned | 0 |
 | 12 | 11 | From a congruence to a Selmer class | planned | 0 |
