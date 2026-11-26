@@ -14,7 +14,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Theorem A
 
-This volume proves Theorem A, the upper bound of the argument. Theorem A says two things about one linear map from a space of source forms to a space of target forms. Part (a) says that the source is spanned by integral forms whose images are short at every archimedean conjugate. Part (b) says that the images of integral forms have small index in the target lattice. This chapter states Theorem A exactly, with all its sizes. It states the three inputs of the proof: the divisibility of a chain of theta lifts prime by prime, the seesaw identity, and the archimedean size of the chain. It shows how the three inputs meet, and it proves Theorem A from them. The last sections give a map of the twelve later chapters of the volume, the prerequisites from the earlier volumes, exercises, and notes.
+This volume proves Theorem A, the upper bound of the argument. Theorem A says two things about one linear map from a space of source forms to a space of target forms. Part (a) says that the source is spanned by integral forms whose images are short at every archimedean conjugate. Part (b) says that the images of integral forms have small index in the target lattice. This chapter states Theorem A exactly, with all its sizes. It states the three inputs of the proof: the divisibility of a chain of theta lifts prime by prime, the seesaw identity, and the archimedean size of the chain. It shows how the three inputs meet, and it proves Theorem A from them. The last sections give a map of the fourteen later chapters of the volume, the prerequisites from the earlier volumes, exercises, and notes.
 
 ### Where Theorem A sits
 

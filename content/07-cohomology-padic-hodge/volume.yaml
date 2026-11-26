@@ -5,7 +5,7 @@ title: Cohomology and p-adic Hodge theory
 summary: >-
   Schemes through their points, cohomology as Ext on test rings, period rings, Kisin frames, the comparison theorems on test objects and Fitting ideals.
 words: 45000
-source: Lib/Cohomology, Lib/PadicHodge, Lib/PadicComparison, Lib/General/Geometry, Lib/General/Algebra
+source: Lib/Cohomology, Lib/PadicHodge, Lib/PadicComparison, Lib/General/Geometry, Lib/General/Algebra, Lib/General/NumberTheory
 chapters:
   - id: schemes-through-points
     title: Schemes through their points
@@ -29,6 +29,8 @@ chapters:
     source:
       - Lib/PadicHodge/PeriodRings
       - Lib/PadicHodge/Crystalline
+      - Lib/PadicHodge/TateSen
+      - Lib/PadicHodge/Characters
       - Lib/PadicHodge/BlochKato
       - Lib/PadicHodge
   - id: kisin-frames
@@ -49,7 +51,7 @@ chapters:
   - id: fitting-ideals
     title: Fitting ideals, lengths and coefficient rings
     plan: >-
-      The algebra for Selmer bounds.
+      The algebra for Selmer bounds: all of Lib/General/Algebra and Lib/General/NumberTheory (NumberTheory/CMFields is in Volume 3).
     research: h §4
     source:
       - Lib/General/Algebra
