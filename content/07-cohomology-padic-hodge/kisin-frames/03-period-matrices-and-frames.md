@@ -72,7 +72,7 @@ Lean: `New.Lift.Chart.IsPeriodMatrixOf` (Lib/PadicHodge/Kisin/PeriodMatrixBasis.
 
 Lean: `New.Lift.Chart.IsChartOf.exists_isPeriodMatrixOf` (Lib/PadicHodge/Kisin/PeriodMatrixBasis.lean).
 
-*Proof.* Take $M$ with invariant columns. The jumps in $[-a, b]$ give that $U = (E\tau)^a M$ and $U' = (E\tau)^b M^{-1}$ have entries in $B^+$. Then $UU' = (E\tau)^{a+b}$, which is condition 1. The invariance of the columns of $M$ under $\varphi$ and under $\Gamma$ gives conditions 2 and 3. The elements that fix the chart are in $j(\Gamma)$, because $c$ is a chart of $j$. Condition 4 follows from the description of $S_B$. $\square$
+*Proof.* Take $M$ with invariant columns. The jumps in $[-a, b]$ give that $U = (E\tau)^a M$ and $U' = (E\tau)^b M^{-1}$ have entries in $B^+$. Then $UU' = (E\tau)^{a+b}$, which is condition 1. The source then checks conditions 2 to 4 from the invariance of the columns of $M$. For condition 3 it uses that the elements that fix the chart are in $j(\Gamma)$, because $c$ is a chart of $j$. $\square$
 
 The docstring of the theorem says what it does not do. It supplies a period matrix over $B^+$ for jumps in $[-a, b]$. It does not supply a Frobenius-stable submodule. That is the work of the frame.
 
