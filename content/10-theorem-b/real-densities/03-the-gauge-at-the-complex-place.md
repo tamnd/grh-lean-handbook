@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The gauge at the complex place
 
-The general machine of [the chapter on frames](/chapter/local-frames/) needs a gauge for the place datum: sizes of numbers for one scale, and one constant $\Lambda$ whose powers bound moduli and volumes. This section builds the gauge at $\mathbb C$ for a scale $L \geq \rho$. The only field that needs real work is the common bound. It asks for a function $\varphi$ on the free span $X'$ that controls the products of a vector $u$ with a set of short vectors, and whose power $\varphi^s$ has a small integral. The model integral of [the opening section](/chapter/real-densities/#the-chapter-and-its-place) is the core of the proof.
+This section builds the gauge of [the chapter on frames](/chapter/local-frames/) at $\mathbb C$ for a scale $L \geq \rho$. Only the common bound needs real work, and the model integral of [the opening section](/chapter/real-densities/#the-chapter-and-its-place) is its core.
 
 ### The fields of a gauge
 
@@ -50,7 +50,7 @@ The last field is stated in full below.
 
 Lean: `New.Floors.RealPlaceSizes.gauge`, `New.Floors.RealPlaceSizes.mem_gauge_ofSize_iff` (New/Spanning/Frames/RealPlaceGauge.lean).
 
-The source uses this gauge with $L = \rho$ for the leading minors and with larger $L$ in the shells of [Section 5](/chapter/real-densities/#cut-bessel-functions-over-shells). The checks use two facts on the sizes: $\rho \geq 8r$ and $\rho \geq 4$.
+The source uses $L = \rho$ for the leading minors and larger $L$ in [the shells](/chapter/real-densities/#cut-bessel-functions-over-shells).
 
 **Lemma.** Assume the sizes at a real place. Then $4 \leq \rho$.
 
@@ -58,7 +58,7 @@ Lean: `New.Floors.RealPlaceSizes.four_le` (New/Spanning/Frames/RealPlaceGauge.le
 
 *Proof.* The rank $r$ is at least $1$, and $\rho \geq 8r$. $\square$
 
-Most fields are short checks. A sum of at most $r + 1$ terms of modulus at most $L^i$ has modulus at most $(r+1) L^i \leq L^{i+1}$, since $r + 1 \leq 8r \leq L$. The constant $\Lambda = L^2 \geq 16$ is finite. The datum has $m = 0$. The constant `kernelBound` of the place $\mathbb C$ is $\pi^2 \geq 1$. The level is $1$. The entries of the basis have modulus at most $2$. The element of trace one is $\tfrac12$ and the skew unit is $\tfrac i2$, so their quotient has modulus $1$. An element of the box has operator norm at most $\rho \leq L$, so its entries have modulus at most $L$. The modulus at $\mathbb C$ is $|x|^2$, so $|x| \leq L^j$ gives modulus at most $\Lambda^j$. The disc of radius $L^j$ has area $\pi L^{2j} \leq \Lambda^{j+1}$, since $\pi \leq 4 \leq L$. The block rank is $2m + 2 = 2$, and $4 \leq k - 1$. The spheres of $\mathbb C^2$ carry the disintegration of the block, and the sphere through a vector of size $j$ has mass at most $4\pi^2 L^{2j} \leq \Lambda^{2(j+1)}$.
+A sum of at most $r + 1$ terms of modulus at most $L^i$ has modulus at most $(r+1) L^i \leq L^{i+1}$, since $r + 1 \leq 8r \leq L$. The constant $\Lambda = L^2 \geq 16$ is finite. The datum has $m = 0$. The constant `kernelBound` of the place $\mathbb C$ is $\pi^2 \geq 1$. The level is $1$. The entries of the basis have modulus at most $2$. The element of trace one is $\tfrac12$ and the skew unit is $\tfrac i2$, so their quotient has modulus $1$. An element of the box has operator norm at most $\rho \leq L$, so its entries have modulus at most $L$. The modulus at $\mathbb C$ is $|x|^2$, so $|x| \leq L^j$ gives modulus at most $\Lambda^j$. The disc of radius $L^j$ has area $\pi L^{2j} \leq \Lambda^{j+1}$, since $\pi \leq 4 \leq L$. The block rank is $2m + 2 = 2$, and $4 \leq k - 1$. The spheres of $\mathbb C^2$ carry the disintegration of the block, and the sphere through a vector of size $j$ has mass at most $4\pi^2 L^{2j} \leq \Lambda^{2(j+1)}$.
 
 For a close pair, $|\omega_1|^2 + |\omega_2|^2 < 1$, so every entry of $\omega_1$ and $\omega_2$ has modulus at most $1$ and every entry of $\omega_1 - \omega_2$ has modulus at most $2$. The last close field takes $c = L^{-(i+2)}$.
 
@@ -76,7 +76,7 @@ $$W = \{w \in X' : v w = 0,\ |x^{-1} e w|^2 + |(xy)^{-1} e w|^2 < 1\}.$$
 
 Lean: `New.Floors.PlaceData.commonVectors`, `New.Floors.PlaceData.IsShortFrom` (New/Spanning/Frames/Levels.lean).
 
-In general $W$ is the set of $w$ with $vw = 0$ such that $(x^{-1} e w, (xy)^{-1} e w)$ is a close pair. The products of $u \in X'$ with $W$ are the numbers $\langle u, w \rangle = u^* w$.
+In general $W$ is the set of $w$ with $vw = 0$ such that $(x^{-1} e w, (xy)^{-1} e w)$ is a close pair.
 
 The set `productDifferences` is the set of numbers $M^{-1}(\langle \omega_1, \omega'_1 \rangle - \langle \omega_2, \omega'_2 \rangle)$ for two close pairs $(\omega_1, \omega_2)$ and $(\omega'_1, \omega'_2)$, with $\langle u, v \rangle = u^* J_1 v$.
 
@@ -105,7 +105,7 @@ Lean: `New.Floors.RealPlaceSizes.card_freeIndex_complexData`, `New.Floors.RealPl
 
 ### Linear conditions
 
-The proof of the common bound reduces $W$ to a ball in a subspace. The subspace consists of the $w$ that satisfy at most $3n$ linear conditions.
+The proof of the common bound reduces $W$ to a ball in a subspace cut out by at most $3n$ linear conditions.
 
 **Lemma.** Let $e$ embed $X'$ as above, let $g \in G_1$, and suppose $J_1$ fixes $g e w$. Then $|g e w|^2 = |w|^2$.
 
@@ -153,7 +153,7 @@ Lean: `New.Floors.setLIntegral_inv_pow_sphereDensity_le` (New/Spanning/Frames/Re
 
 *Proof.* The integrand is $36^s \pi^{s+1}/s!$, a constant in $r$. The constant is bounded uniformly in $s$, since $(36\pi)^s/s! \leq e^{36\pi}$ and $\pi e^{36\pi} \leq 4 \cdot 3^{144}$. The bound follows on integration over $(0, R]$. $\square$
 
-In Lean the integrand is $(\mathrm{ofReal}(r/36))^{-1}$ to the power $s$, and $R$ enters through $\mathrm{ofReal}$. So a negative $R$ gives the bound $0$, which is correct since the domain is then empty.
+In Lean the integrand is $(\mathrm{ofReal}(r/36))^{-s}$, and a negative $R$ gives the bound $0$ on an empty domain.
 
 **Theorem.** Let $C$ be a matrix with column set $\iota$, with $\operatorname{card} \iota = s + 1 + 3n$, $\operatorname{rank} C \leq 3n$, $L \geq 4$ and $\operatorname{card} \iota \leq L$. There are a set $D$ and a matrix $O$ with columns in $D$ such that $CO = 0$, $O^* O = 1$, and for every $j$
 
@@ -188,8 +188,6 @@ Lean: `New.Floors.RealPlaceSizes.exists_isCommonBound` (New/Spanning/Frames/Real
 
 *Proof.* Take $C$ of rank at most $3n$ as in the lemma on linear conditions, and $O$ as in the integral theorem. The hypotheses hold by the lemma on the free index set and $\rho \leq L$. Let $\varphi(u) = 36/|O^* u|^2$. Condition 4 is the integral theorem, since `volumeExponent` is $s$. For conditions 2 and 3, let $q = |O^* u|^2$. If $q = 0$, then $\varphi(u) = \infty$. If $q > 0$, the disc lemma and the area lemma give condition 2. For condition 3, pick $w \in W$ with $\langle u, w \rangle = \sqrt q/2$. If $c$ is in the set, then $\bar c \sqrt q/2 \in$ `productDifferences`, so $|c| \sqrt q/2 \leq 1$. The set lies in the disc of radius $2/\sqrt q$. $\square$
 
-This proves the last field of the gauge. The gauge applies it with $g$ in the box and $z$ a position, and takes $x = g$ and $y = z$.
-
 ### Leading minors
 
 The general file proves that the leading minors of the frame Gram matrix of $\gamma$ have size $9n$ when $y$ and $\gamma^{-1} y$ are near (Lean: `New.Floors.Gauge.leadingMinor_mem_ofSize_of_isNear`, New/Spanning/Frames/Correlations.lean). The point $y$ is near at $l$ if some element $\xi$ of the partly unitriangular group of level $l$ moves it into the box.
@@ -200,6 +198,6 @@ Lean: `New.Floors.RealPlaceSizes.norm_leadingMinor_le_of_isNear` (New/Spanning/F
 
 *Proof.* Apply the general theorem to the gauge with $L = \rho$. $\square$
 
-This bound is used in [Section 5](/chapter/real-densities/#cut-bessel-functions-over-shells). If one of the first $j$ products $p_0 \cdots p_{j-1}$ has modulus above $\rho^{9n}$, the density of the floor form vanishes.
+In [Section 5](/chapter/real-densities/#cut-bessel-functions-over-shells), if one of the first $j$ products $p_0 \cdots p_{j-1}$ has modulus above $\rho^{9n}$, the density of the floor form vanishes.
 
-**Example.** This example lies outside the sizes, which ask for $\varrho \geq 10^8$. It shows only the count of conditions. Take $n = 1$, so $\varrho = 0$ and there is only the frame vector $z$. The matrix $v$ has no rows, and $N$ has the single row of the coordinate at $z$. The matrix $C$ has the two rows $N x^{-1} e$ and $N (xy)^{-1} e$, so its rank is at most $2 \leq 3n$. The vectors $w$ with $Cw = 0$ are carried by $x^{-1} e$ and $(xy)^{-1} e$ into vectors with coordinate $0$ at $z$. On these vectors $h$ is the Euclidean form, so the condition $|x^{-1} e w|^2 + |(xy)^{-1} e w|^2 < 1$ becomes $|w|^2 < 1/2$ on the kernel. The set $\langle u, W \rangle$ is then the open disc of radius $|O^* u|/\sqrt 2$ when $O$ spans that kernel, which contains the disc of the lemma.
+**Example.** This example lies outside the sizes ($\varrho \geq 10^8$). Take $n = 1$, so $\varrho = 0$ and there is only the frame vector $z$. The matrix $v$ has no rows, and $N$ has the single row of the coordinate at $z$. The matrix $C$ has the two rows $N x^{-1} e$ and $N (xy)^{-1} e$, so its rank is at most $2 \leq 3n$. On the kernel of $C$ the form $h$ is Euclidean after $x^{-1} e$ and $(xy)^{-1} e$, so the condition $|x^{-1} e w|^2 + |(xy)^{-1} e w|^2 < 1$ becomes $|w|^2 < 1/2$ on the kernel. The set $\langle u, W \rangle$ is then the open disc of radius $|O^* u|/\sqrt 2$ when $O$ spans that kernel, which contains the disc of the lemma.
