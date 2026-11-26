@@ -23,9 +23,9 @@ The argument of the source reduces the Riemann hypothesis to three theorems A, B
 1. [The objects of the upper bound](/chapter/upper-bound-objects/) attaches a label to each index of a type. It uses the central idempotents $e_c$ of Section 5 and the vanishing of $e_c$ on hyperplane sums.
 2. [Equal multiplicities](/chapter/equal-multiplicities/) bounds the number of bad types. It uses the lower bound for the degree of $\Xi_c$, [Theorem](/decl/New.labelChar_degree_bounds/).
 3. [The trace formula](/chapter/trace-formula/) uses that $\Xi_c$ is an irreducible character of $\mathrm{GL}_r(k)$, [Theorem](/decl/New.IsLabel.isIrreducibleChar_labelChar/).
-4. [Building representations](/chapter/building-representations/) compares labels at a prime and at a place above it. It uses the Shintani lift, [Theorem](/decl/New.shintani_lift_labelChar/), and the lift of the determinant characters, [Proposition](/decl/New.lift_detChar/).
+4. [Building representations](/chapter/building-representations/) compares labels at a prime and at a place above it. It uses the Shintani lift, [Theorem](/decl/New.shintani_lift_labelChar/), and the lift of the determinant characters, [Theorem](/decl/New.lift_detChar/).
 5. [The chain determinant](/chapter/chain-determinant/) and [the denominator bound](/chapter/denominator-bound/) use the orthogonal central idempotents of a tuple of labels.
-6. [The main summands](/chapter/main-summands/) uses a count of Galois conjugates of a root of unity, [Lemma](/decl/New.injOn_Iio_pow_card_pow_of_isPrimitiveRoot/).
+6. [The main summands](/chapter/main-summands/) uses a count of Galois conjugates of a root of unity, [Theorem](/decl/New.injOn_Iio_pow_card_pow_of_isPrimitiveRoot/).
 
 ### The model case
 

@@ -118,7 +118,7 @@ Lean: `New.rankInner_labelChar`, `New.rankInner_labelChar_mul_constOne`, `New.sk
 
 The degree is the value at $1$. The proof below finds it exactly, although the source states only a bound. Let $\delta_1$ be the indicator function of the classes of identity maps. A factor $\tau_P$ of degree $d$ in front of $F$ multiplies the pairing with $\delta_1 \mu$ by $(-1)^d / (q^d - 1)$. This follows from the adjunction and [the corollary on $C_\eta\mu$](/decl/New.mulMoebius_greenCuspidal_lsmul/) at the generator $1$ of $k$. So $\langle \Xi_c, \delta_1 \mu \rangle_r \cdot B = (-1)^r$ with $B = \prod_{P \mid c} (q^{\deg P} - 1) \leq q^r$. With $\mu(1) = \prod_{i<r}(-q^i)$, this gives
 $$\Xi_c(1) = \frac{|\mathrm{GL}_r(k)|}{B \prod_{i<r} q^i} = \frac{\prod_{i=1}^r (q^i - 1)}{\prod_{P \mid c} (q^{\deg P} - 1)}.$$
-In rank $2$ this is $q - 1$ for irreducible $c$ and $q + 1$ for $c = (X-a)(X-b)$, as in Section 1.
+In rank $2$ this is $q - 1$ or $q + 1$, as in Section 1.
 
 **Theorem (Degree bound).** Let $(K, T)$ be faithful, let $n$ be a finite set and let $c$ be a label of degree $|n|$. Put $d = \Xi_c(1)$ on $\mathrm{GL}_n(k)$. Then $\operatorname{Re} d \geq 0$ and
 $$\frac{1 - |n|/q}{q^{|n|}} \leq \frac{d \, \bar d}{|\mathrm{GL}_n(k)|}.$$
@@ -163,7 +163,7 @@ Lean: `New.labelIdem`, `New.labelIdem_orthogonal`, `New.isClassFunction_labelIde
 
 2. The $h = 1 + u l^{\mathsf T}$ that are invertible form a subgroup $N$. Choose a basis whose first vector $v$ has $l \cdot v = 1$ and whose other vectors span the hyperplane $l^{\perp}$. In it, $N$ is the group of block triangular matrices with a $1 \times 1$ block $g \in k^\times$, an identity block on $l^\perp$, and an arbitrary corner. The mean over $N$ of $\Xi_c \cdot \chi^{-1}(\det)$ is then a value of $\partial^1_{\chi \circ \det} \Xi_c$, and this vanishes. Indeed, $\chi \circ \det$ in rank $1$ is $\tau_{X - x_\chi}$ by orthonormality part 4, and $X - x_\chi$ does not divide $c$, so part 3 applies. The same holds for every translate $\Xi_c(\cdot \, x)$, by clause 3 of irreducibility, so each coefficient of $H_l e_c$ is $0$.
 
-3. The tensor product of a family of elements is multiplicative, so the products of the $e_{c_w}$ inherit the relations of 1. A sum of orthogonal idempotents is idempotent. $\square$
+3. Tensor products are multiplicative, so 1 gives the relations. A sum of orthogonal idempotents is idempotent. $\square$
 
 **Theorem (Twists and conjugates).** Let $(K, T)$ be faithful.
 
