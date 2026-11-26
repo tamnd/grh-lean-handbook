@@ -79,7 +79,7 @@ The exponent $\varepsilon$ is not part of the parameters or of the data. It is a
 
 Lean: `New.eventually_exists_data` (New/Reduction/Data/Existence.lean).
 
-The book writes $\varepsilon$ (with `\varepsilon`) for this exponent and for nothing else. The bound $y^{-1/2 + \varepsilon}$ of the remainder in the main theorem uses the same letter; Volume 1, [the main inequality](/chapter/main-inequality/), relates the two.
+The book writes $\varepsilon$ (with `\varepsilon`) for this exponent and for nothing else. The bound of the remainder in the main theorem has a different margin, and the book writes it $\eta$: $R_{q_0}(y) \leq y^{-1/2 + \eta}$ (Section 6). Volume 1, [the main inequality](/chapter/main-inequality/), relates the two: it applies this theorem with $\varepsilon = \min(1/200, \eta/7)$.
 
 ### The ranks and the gap
 

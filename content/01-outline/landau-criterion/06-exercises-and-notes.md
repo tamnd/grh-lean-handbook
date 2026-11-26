@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 
 **Exercise 2.** Let $0 < \beta < 1$. Suppose that $\psi(x) - x \geq -x^\beta$ for all large $x$. Prove that $\zeta(s) \neq 0$ for $\operatorname{Re} s > \beta$, with no hypothesis on real zeros. Then explain why the upper bound $\psi(x) - x \leq x^\beta$ does not give the same conclusion by this method, and compare with the remainder $R$ of Section 2.
 
-*Hint.* The measure $(K e^{\beta v} + \psi(e^v) - e^v)\, dv$ on $v > 0$ is positive for a suitable $K$. Its transform is $K/(s - \beta)$ plus the transform of $\psi(x) - x$ in Section 2, and the residues of that transform at real zeros are $-\operatorname{ord}_\sigma \zeta/\sigma \leq 0$. Section 2 shows that an upper bound for $R$ is a lower bound for $\psi(t) - t$ on average.
+*Hint.* The measure $(C_0 e^{\beta v} + \psi(e^v) - e^v)\, dv$ on $v > 0$ is positive for a suitable constant $C_0$. Its transform is $C_0/(s - \beta)$ plus the transform of $\psi(x) - x$ in Section 2, and the residues of that transform at real zeros are $-\operatorname{ord}_\sigma \zeta/\sigma \leq 0$. Section 2 shows that an upper bound for $R$ is a lower bound for $\psi(t) - t$ on average.
 
 **Exercise 3.** Let $q = 1$, let $d \equiv 7 \bmod 8$ be prime, and let $\zeta_K = \zeta \cdot L(\cdot, \chi_K)$ be the Dedekind zeta function of $K = \mathbb{Q}(\sqrt{-d})$. Show that the Dirichlet series of $\lambda = \Lambda(1 - \chi_K)$ is $-2\zeta'/\zeta + \zeta_K'/\zeta_K$. Deduce that the residue of the transform of $R_1$ at $\rho \neq 0, 1$ is
 $$\frac{2\operatorname{ord}_\rho \zeta - \operatorname{ord}_\rho \zeta_K}{\rho(1 - \rho)},$$

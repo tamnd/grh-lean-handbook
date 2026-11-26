@@ -76,7 +76,7 @@ Volume 1 follows the chain of Section 2 from the top down. Chapters 2 to 4 are t
 3. [The weighted prime remainder](/chapter/weighted-prime-remainder/). The weights $\lambda = \Lambda(1 - \chi_K)$ on $n \equiv 1 \bmod q$, the remainder $R_q$, the constant $c_q$, and the poles of the Mellin transform with the sign of each residue.
 4. [Landau's criterion](/chapter/landau-criterion/). Landau's theorem for Dirichlet series with coefficients of one sign, and the criterion: a one-sided bound for every prime $d$ of a class gives no zeros in $\operatorname{Re} s > \beta$. The choice of $d$ through the quadratic twists.
 5. [Why a lattice can bound a prime sum](/chapter/lattice-and-prime-sum/). The idea of the method of Section 3 in full, with the model cases of Liouville and Bost.
-6. [Fields, places and twists](/chapter/fields-places-twists/). The parameters $q_0$ and $d$, the fields $K$ and $E = K(\zeta_{q_1})$, the places of $E$ read in $(\mathbb{Z}/q_1)^\times$, and the twists.
+6. [Fields, places and twists](/chapter/fields-places-twists/). The parameters $q_0$ and $d$, the fields $K$ and $E = K(\zeta_{q_1})$ with $q_1 = q_0 \cdot \mathrm{towerDeg}(s)$ the modulus of the tower, the places of $E$ read in $(\mathbb{Z}/q_1)^\times$, and the twists.
 7. [The data and its sizes](/chapter/data-and-sizes/). Every field of the data, the five scale inequalities, the table of sizes and the weights.
 8. [The data exist](/chapter/data-exist/). Sets with no three-term progressions, primes in windows, and the recipe for the data.
 9. [Prime sums and the total remainder](/chapter/prime-sums/). The prime sums, the main amount, and the identity for $\mathrm{rem}$ in terms of $R_{q_0}$ and $R_1$.

@@ -61,7 +61,7 @@ Lean: `New.Data.card_aPlaces` (New/Reduction/PrimeSums.lean).
 
 Lean: `New.Data.f_eq_card_aPlaces_mul` (New/Reduction/PrimeSums.lean).
 
-*Proof of both.* Write $t = 3 l_0 2^s$, so $q_1 = q_0 t$. Every prime factor of $t$ is $2$ or $3$, and $2$ and $3$ divide $q_0$, since $18480 \mid q_0$. So $\varphi(q_0 t) = t\,\varphi(q_0)$, and $f = \varphi(q_1) = t\,\varphi(q_0)$. The reduction map is onto, so its kernel $\Phi_a$ has index $\varphi(q_0)$ and $\#\Phi_a = f/\varphi(q_0) = t$. The second lemma follows. $\square$
+*Proof of both.* By definition $q_1 = q_0 \cdot 3 l_0 2^s$. Every prime factor of $3 l_0 2^s$ is $2$ or $3$, and $2$ and $3$ divide $q_0$, since $18480 \mid q_0$. So $\varphi(q_0 \cdot 3 l_0 2^s) = 3 l_0 2^s\,\varphi(q_0)$, and $f = \varphi(q_1) = 3 l_0 2^s\,\varphi(q_0)$. The reduction map is onto, so its kernel $\Phi_a$ has index $\varphi(q_0)$ and $\#\Phi_a = f/\varphi(q_0) = 3 l_0 2^s$. The second lemma follows. $\square$
 
 The next lemma turns a condition modulo $q_1$ into a condition modulo $q_0$.
 

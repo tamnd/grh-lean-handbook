@@ -20,7 +20,7 @@ This chapter states the three theorems that the main inequality uses, and it giv
 
 ### The objects
 
-Fix the data $D$ of [the data and its sizes](/chapter/data-and-sizes/). It gives the scales $x$, $x_1$, $b$, with $(\log b)^{100} \leq x$, $x^{10^6} \leq x_1$ and $x_1^{10^6} \leq b$, the long order $a = x b$, the number $m \in [\sqrt{x}, 2\sqrt{x}]$ of lifts, the rank $r \in [x^5, 3x^5]$, the numbers $k = r + 1 - m$ and $t = 5r$, the CM field $E$ with $f$ infinite places, and a prime level $N$. The theorems speak about the following objects. The later volumes construct them. This chapter uses only the properties that it states.
+Fix the data $D$ of [the data and its sizes](/chapter/data-and-sizes/). It gives the scales $x$, $x_1$, $b$, with $(\log b)^{100} \leq x$, $x^{10^6} \leq x_1$ and $x_1^{10^6} \leq b$, the long order $a = x b$, the number $m \in [\sqrt{x}, 2\sqrt{x}]$ of lifts, the rank $r \in [x^5, 3x^5]$, the numbers $k = r + 1 - m$ and $t = 5r$, the CM field $E$ with $f$ infinite places, a prime level $N$, and the main amount $\mathrm{main}$ of [the prime sums](/chapter/prime-sums/). The theorems speak about the following objects. The later volumes construct them. This chapter uses only the properties that it states.
 
 1. The *source* $\mathrm{src}$ is a space of ramified source forms. It lies in the space of all source forms, of dimension $D_X$.
 2. The *target* $T$ is a space of good forms. Its dimension is $d_T$.
@@ -41,7 +41,7 @@ Three notions of [twisted lattices](/chapter/twisted-lattices/) occur in the sta
 
 The product formula turns these notions into an inequality. If $y$ completes to a basis, then a nonzero algebraic number built from the Gram determinant cannot be small at every place. [Twisted lattices](/chapter/twisted-lattices/) proves the form that Theorem C uses. Section 5 states it.
 
-**Definition (The unit of loss).** The unit of loss is $\mathrm{errorUnit} = f a \log^3 b$.
+**Definition (The unit of loss).** The unit of loss is $\mathrm{err}_0 = f a \log^3 b$.
 
 Lean: `New.Data.errorUnit` (New/Reduction/Data/AdmissibleData.lean).
 
@@ -51,7 +51,7 @@ All errors of the three theorems are small multiples of $f a \log^3 b$ or of $f 
 
 The plan of the proof can be seen in the lattice $\mathbb{Z}^d \subset \mathbb{R}^d$. Let $y_1, \dots, y_d \in \mathbb{Z}^d$ be independent. Their determinant is a nonzero integer, so $|\det(y)| \geq 1$. Hadamard's inequality gives $|\det(y)|^2 \leq \prod_i \|y_i\|^2$. If every $\|y_i\|^2 \leq e^h$, then $0 \leq \log |\det(y)|^2 \leq d h$. Now let the $y_i$ be integral only up to a denominator: $Q y_i \in \mathbb{Z}^d$ for an integer $Q \geq 1$. Then $Q^d \det(y)$ is a nonzero integer, and $\log|\det(y)|^2 \geq -2d \log Q$. The index of the family is $\delta = d \log Q$, and the bound reads $c + 2\delta \geq 0$ with $c = d h$. The factor $2$ is the factor of Theorem C. It comes from the square in the Gram determinant.
 
-In the twisted lattice the volume of the lattice is not $1$. The lower bound has an extra term, the height of the volume ratio $Z(1)/Z(\xi_\iota)$ of the chain determinants. Theorem C computes this height. It is about $-d_T \cdot \mathrm{mainAmount}$. So the inequality $c + 2\delta \geq 0$ becomes $c + 2\delta \geq d_T\,\mathrm{mainAmount}$, up to errors. Theorem A gives the other side: $c \leq n(\mathrm{mainAmount} - m\,\mathrm{rem})$, up to errors, for $n$ vectors. With $n$ close to $d_T$ by Theorem B, the main amounts cancel and $m \cdot \mathrm{rem}$ is bounded by the errors.
+In the twisted lattice the volume of the lattice is not $1$. The lower bound has an extra term, the height of the volume ratio $Z(1)/Z(\xi_\iota)$ of the chain determinants. Theorem C computes this height. It is about $-d_T \cdot \mathrm{main}$. So the inequality $c + 2\delta \geq 0$ becomes $c + 2\delta \geq d_T\,\mathrm{main}$, up to errors. Theorem A gives the other side: $c \leq n(\mathrm{main} - m\,\mathrm{rem})$, up to errors, for $n$ vectors. With $n$ close to $d_T$ by Theorem B, the main amounts cancel and $m \cdot \mathrm{rem}$ is bounded by the errors.
 
 ### The budget
 

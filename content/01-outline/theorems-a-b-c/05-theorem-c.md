@@ -20,23 +20,23 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Theorem C, long forms
 
-Theorems A and B give an upper bound for the covolume of many short integral forms. Theorem C gives the lower bound. It says that a family of target forms of small index that spans almost all of the target cannot have a small covolume. The lower bound is about $d_T\,\mathrm{mainAmount}$, the same main term as in Theorem A. The volume of the lattice changes with the twist, and ratios of Hecke $L$-values measure the change.
+Theorems A and B give an upper bound for the covolume of many short integral forms. Theorem C gives the lower bound. It says that a family of target forms of small index that spans almost all of the target cannot have a small covolume. The lower bound is about $d_T\,\mathrm{main}$, the same main term as in Theorem A. The volume of the lattice changes with the twist, and ratios of Hecke $L$-values measure the change.
 
 ### The statement of Theorem C
 
 **Theorem (Theorem C, integral forms are long).** Let $y_1, \dots, y_n$ be linearly independent target forms with $n \geq (1 - 4/b^2)\,d_T$. Suppose that $y$ has index at most $\delta$ and covolume at most $c$ in the target lattice. Then
 
-$$d_T\bigl(\mathrm{mainAmount} - 3 f a \log^4 b\bigr) \leq c + 2\delta.$$
+$$d_T\bigl(\mathrm{main} - 3 f a \log^4 b\bigr) \leq c + 2\delta.$$
 
 Lean: `New.Data.integral_forms_long` (New/Determinant/Twist/LongForms.lean).
 
-Here $\mathrm{mainAmount} = m k \cdot \mathrm{directionAmount}$, and the direction amount is the sum over the infinite places $\sigma$ of $s_\infty(\kappa_\sigma) - s_{\mathrm{fin}}(\kappa_\sigma, \sigma)$. The size of a derivative of order $\kappa$ is $s_\infty(\kappa) = \log\kappa! + \kappa\log(M/\Omega)$, and $s_{\mathrm{fin}}$ is the prime sum that measures its divisibility ([the prime sums](/chapter/prime-sums/)). The hypothesis on $n$ comes from Theorem B, and the bounds $c$ and $\delta$ come from Theorem A.
+Here $\mathrm{main} = m k \cdot \mathrm{directionAmount}$, and the direction amount is the sum over the infinite places $\sigma$ of $s_\infty(\kappa_\sigma) - s_{\mathrm{fin}}(\kappa_\sigma, \sigma)$. The size of a derivative of order $\kappa$ is $s_\infty(\kappa) = \log\kappa! + \kappa\log(M/\Omega)$, and $s_{\mathrm{fin}}$ is the prime sum that measures its divisibility ([the prime sums](/chapter/prime-sums/)). The hypothesis on $n$ comes from Theorem B, and the bounds $c$ and $\delta$ come from Theorem A.
 
 ### The lower bound in a twisted lattice
 
 The model case of Section 1 gives $c + 2\delta \geq 0$ for a basis of $\mathbb{Z}^d$. In general the family $y$ is completed to a basis by auxiliary forms $z$. The integrality of $y$ is tested on the lifts $\Theta_\xi y$ for many twists $\xi$, and the lattice has a volume $Z(\xi) = \det(\Theta_\xi^*\Theta_\xi)$ that depends on $\xi$. At each $\iota$ above a prime $\ell$, the proof picks one twist $\xi_\iota$ whose modulus is prime to $\ell$.
 
-**Theorem (A twist for each prime).** Let $L$ be a twisted lattice on $V$ whose maps $\Theta_\xi$ are all injective. Let $y_1, \dots, y_n, z_1, \dots, z_{n'}$ be a basis of $V$, and let $\xi_\iota$ be a twist allowed at the prime of $\iota$, for each $\iota$. Suppose that:
+**Theorem (A twist for each prime).** Let $\mathcal{L}$ be a twisted lattice on $V$ whose maps $\Theta_\xi$ are all injective. Let $y_1, \dots, y_n, z_1, \dots, z_{n'}$ be a basis of $V$, and let $\xi_\iota$ be a twist allowed at the prime of $\iota$, for each $\iota$. Suppose that:
 
 1. $y$ has covolume at most $c$ and index at most $\delta$;
 2. $\gamma(\xi) \neq 0$ for every twist $\xi$, and $\gamma(\xi)\,\Theta_\xi z_i$ is integral at $\iota$ whenever $\xi$ is allowed at the prime of $\iota$;
@@ -47,11 +47,11 @@ Then $0 \leq c + 2\delta + n'(b_{\mathrm{short}} + b_{\mathrm{denom}}) + b_{\mat
 
 Lean: `New.TwistedLattice.covolume_add_index_nonneg` (New/Reduction/Lattices/TwistedLattice.lean).
 
-*Proof.* Let $G(\xi)$ be the Gram determinant of the family $\Theta_\xi(y, z)$. Then $G(\xi) = Z(\xi)\cdot G_0$, where $G_0$ is the Gram determinant of $(y, z)$ in $V$. For each $\iota$ write
+*Proof.* Let $\operatorname{Gram}(\xi)$ be the Gram determinant of the family $\Theta_\xi(y, z)$. Then $\operatorname{Gram}(\xi) = Z(\xi)\cdot \operatorname{Gram}_0$, where $\operatorname{Gram}_0$ is the Gram determinant of $(y, z)$ in $V$. For each $\iota$ write
 
-$$G(1) = |\gamma(\xi_\iota)|^{2n'} G(\xi_\iota)\cdot |\gamma(\xi_\iota)|^{-2n'}\cdot \frac{Z(1)}{Z(\xi_\iota)}.$$
+$$\operatorname{Gram}(1) = |\gamma(\xi_\iota)|^{2n'} \operatorname{Gram}(\xi_\iota)\cdot |\gamma(\xi_\iota)|^{-2n'}\cdot \frac{Z(1)}{Z(\xi_\iota)}.$$
 
-This uses $\gamma(\xi_\iota) \neq 0$ and $Z(\xi_\iota) \neq 0$, which holds as $\Theta_{\xi_\iota}$ is injective. The first factor has height at most $2\delta$: at $\iota$ the matrix of the index carries $y$ to integral forms, $\gamma$ makes $z$ integral, and the Gram matrix uses $\iota$ and its conjugate. The second factor has height at most $n' b_{\mathrm{denom}}$, and the third at most $b_{\mathrm{volume}}$. So the constant family $G(1)$ has height at most $2\delta + n' b_{\mathrm{denom}} + b_{\mathrm{volume}}$. It is not zero, because $(y, z)$ is a basis and $\Theta_1$ is injective. By Hadamard's inequality for the conjugates, $|\sigma G(1)| \leq e^{c + n' b_{\mathrm{short}}}$ for every $\sigma$. The product formula, in the form `New.HeightLe.neg_le_of_norm_map_le`, says that a nonzero number of height at most $h$ whose conjugates are at most $e^{c'}$ has $-h \leq c'$. This is the inequality. $\square$
+This uses $\gamma(\xi_\iota) \neq 0$ and $Z(\xi_\iota) \neq 0$, which holds as $\Theta_{\xi_\iota}$ is injective. The first factor has height at most $2\delta$: at $\iota$ the matrix of the index carries $y$ to integral forms, $\gamma$ makes $z$ integral, and the Gram matrix uses $\iota$ and its conjugate. The second factor has height at most $n' b_{\mathrm{denom}}$, and the third at most $b_{\mathrm{volume}}$. So the constant family $\operatorname{Gram}(1)$ has height at most $2\delta + n' b_{\mathrm{denom}} + b_{\mathrm{volume}}$. It is not zero, because $(y, z)$ is a basis and $\Theta_1$ is injective. By Hadamard's inequality for the conjugates, $|\sigma \operatorname{Gram}(1)| \leq e^{c + n' b_{\mathrm{short}}}$ for every $\sigma$. The product formula, in the form `New.HeightLe.neg_le_of_norm_map_le`, says that a nonzero number of height at most $h$ whose conjugates are at most $e^{c'}$ has $-h \leq c'$. This is the inequality. $\square$
 
 So Theorem C needs auxiliary forms, twists $\xi_\iota$ with small ratios, and a height bound for $Z(1)/Z(\xi_\iota)$. The injectivity of the lifts is `New.Data.injective_lift_targetLattice`, and the volume of the target lattice at $\vartheta$ is $Z(\vartheta)$ (`New.Data.volume_targetLattice`).
 
@@ -89,13 +89,13 @@ Lean: `New.exists_isRegularFamily` (New/Congruences/FitTwistsExist.lean).
 
 Lean: `New.Data.heightLe_liftDeterminant_ratio` (New/OneLift/LiftVolumeHeight.lean).
 
-The budget is chosen so that $k\log b\cdot\mathrm{denominatorBudget} = f a \log^4 b/m$. So the theorem gives the height $d_T(f a\log^4 b/m - k\,\mathrm{directionAmount})$ for each $j$ (`New.Data.exists_hasSmallRatios_heightLe_liftDeterminant_div`). The chain determinant factors as the product of the $m$ single lift determinants times the $d_T$-th power of a scalar: a power of $\mathrm{Nm}\,Q$ times quotient ratios of Hecke values (`New.Data.exists_chainDeterminant_one_div_eq`). The inverse scalar has height at most $m^2 t x_1 \leq b$. The $m$ single lifts add up to $d_T(f a\log^4 b - m k\,\mathrm{directionAmount})$, and $m k\,\mathrm{directionAmount} = \mathrm{mainAmount}$.
+The budget is chosen so that $k\log b\cdot\mathrm{denominatorBudget} = f a \log^4 b/m$. So the theorem gives the height $d_T(f a\log^4 b/m - k\,\mathrm{directionAmount})$ for each $j$ (`New.Data.exists_hasSmallRatios_heightLe_liftDeterminant_div`). The chain determinant factors as the product of the $m$ single lift determinants times the $d_T$-th power of a scalar: a power of $\mathrm{Nm}\,Q$ times quotient ratios of Hecke values (`New.Data.exists_chainDeterminant_one_div_eq`). The inverse scalar has height at most $m^2 t x_1 \leq b$. The $m$ single lifts add up to $d_T(f a\log^4 b - m k\,\mathrm{directionAmount})$, and $m k\,\mathrm{directionAmount} = \mathrm{main}$.
 
-**Lemma (The inverse ratio).** Let $\theta$ have small ratios, and let each single lift quotient have height at most $d_T(f a\log^4 b/m - k\,\mathrm{directionAmount})$. Then $Z(1)/Z(\theta(\iota))$ has height at most $d_T(b + f a\log^4 b - \mathrm{mainAmount})$.
+**Lemma (The inverse ratio).** Let $\theta$ have small ratios, and let each single lift quotient have height at most $d_T(f a\log^4 b/m - k\,\mathrm{directionAmount})$. Then $Z(1)/Z(\theta(\iota))$ has height at most $d_T(b + f a\log^4 b - \mathrm{main})$.
 
 Lean: `New.Data.heightLe_chainDeterminant_one_div` (New/Determinant/Twist/LongForms.lean).
 
-The sign is the point. The height bound for $Z(1)/Z(\xi_\iota)$ is negative, about $-d_T\,\mathrm{mainAmount}$. In the inequality of a twist for each prime, a negative $b_{\mathrm{volume}}$ forces $c + 2\delta$ to be large.
+The sign is the point. The height bound for $Z(1)/Z(\xi_\iota)$ is negative, about $-d_T\,\mathrm{main}$. In the inequality of a twist for each prime, a negative $b_{\mathrm{volume}}$ forces $c + 2\delta$ to be large.
 
 ### The proof of Theorem C
 
@@ -103,13 +103,13 @@ The sign is the point. The height bound for $Z(1)/Z(\xi_\iota)$ is negative, abo
 
 1. Short: $b_{\mathrm{short}} = 2x_1^2b^2$, by the definition of auxiliary forms.
 2. Denominator: $|\gamma(\theta(\iota))|^{-2}$ is the square of the inverse of a power of $\mathrm{Nm}\,Q$ times $m^2$ turn ratios. Its height is at most $2m^2tx_1 \leq b$. So $b_{\mathrm{denom}} = b$.
-3. Volume: $b_{\mathrm{volume}} = d_T(b + f a\log^4 b - \mathrm{mainAmount})$, by the lemma on the inverse ratio.
+3. Volume: $b_{\mathrm{volume}} = d_T(b + f a\log^4 b - \mathrm{main})$, by the lemma on the inverse ratio.
 
-The theorem gives $0 \leq c + 2\delta + n'(2x_1^2b^2 + b) + d_T(b + f a\log^4 b - \mathrm{mainAmount})$. The cost of completion bounds the third term by $d_T b$. As $b \leq f a\log^4 b$, both terms $d_T b$ are at most $d_T f a\log^4 b$. So $d_T(\mathrm{mainAmount} - 3 f a\log^4 b) \leq c + 2\delta$. $\square$
+The theorem gives $0 \leq c + 2\delta + n'(2x_1^2b^2 + b) + d_T(b + f a\log^4 b - \mathrm{main})$. The cost of completion bounds the third term by $d_T b$. As $b \leq f a\log^4 b$, both terms $d_T b$ are at most $d_T f a\log^4 b$. So $d_T(\mathrm{main} - 3 f a\log^4 b) \leq c + 2\delta$. $\square$
 
 ### What Theorem C costs
 
-The error $3 f a\log^4 b$ per dimension has three parts. One is the budget of the denominators, $f a\log^4 b/m$ for each of the $m$ single lifts. One is the term $b$ from the quotient ratios in the chain determinant. One is the term $b$ from the completion by auxiliary forms. In the units of Section 1, $\mathrm{denominatorBudget} = \mathrm{errorUnit}/(mk)$, so each single lift costs $k\log b\cdot\mathrm{denominatorBudget} = \log b\cdot\mathrm{errorUnit}/m$ per dimension.
+The error $3 f a\log^4 b$ per dimension has three parts. One is the budget of the denominators, $f a\log^4 b/m$ for each of the $m$ single lifts. One is the term $b$ from the quotient ratios in the chain determinant. One is the term $b$ from the completion by auxiliary forms. In the units of Section 1, $\mathrm{denominatorBudget} = \mathrm{err}_0/(mk)$, so each single lift costs $k\log b\cdot\mathrm{denominatorBudget} = \log b\cdot\mathrm{err}_0/m$ per dimension.
 
 **Remark (Formalization).** The family $\theta$ is a function on all pairs $\iota$, and the height of a family of complex numbers indexed by $\iota$ is defined with one multiplier $H \neq 0$ for all $\iota$. So the theorem uses a different twist at each prime, but one common bound.
 

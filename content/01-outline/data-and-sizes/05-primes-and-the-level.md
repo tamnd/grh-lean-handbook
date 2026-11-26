@@ -49,8 +49,8 @@ Lean: `New.Data.levelPrime_modEq_one`, `New.Data.dvd_levelPrime_sub_one`, `New.D
 ### The root discriminant and the period
 
 The period of the field is
-$$\Omega = \exp\bigl(c_{\mathrm{CS}}(d)\bigr) \cdot \frac{2\pi}{\mathrm{rd}_E},$$
-where $c_{\mathrm{CS}}(d) = \gamma - \operatorname{Re}(L'/L)(1, \chi_K)$ and $\mathrm{rd}_E = \lvert d_E \rvert^{1/[E:\mathbb{Q}]}$ is the root discriminant (`New.Parameters.bigOmega`, `New.chowlaSelbergConst`). The source uses $\Omega$ only through its definition and the bounds below.
+$$\Omega = \exp\bigl(C_d\bigr) \cdot \frac{2\pi}{\mathrm{rd}_E},$$
+where $C_d = \gamma - \operatorname{Re}(L'/L)(1, \chi_K)$ and $\mathrm{rd}_E = \lvert d_E \rvert^{1/[E:\mathbb{Q}]}$ is the root discriminant (`New.Parameters.bigOmega`, `New.chowlaSelbergConst`). The source uses $\Omega$ only through its definition and the bounds below.
 
 **Theorem (The root discriminant).** The root discriminant of $E$ satisfies
 $$x^{10} \leq \mathrm{rd}_E \leq x^{12}.$$
@@ -67,9 +67,9 @@ The proof is in [the field E at the primes](/chapter/field-at-primes/) (Volume 9
 
 Lean: `New.Data.bigOmega_le_one`, `New.Data.log_M_div_bigOmega_mem_Icc`, `New.Data.abs_log_M_mul_rootDisc_le` (New/Reduction/Data/Sizes.lean). The lower bound $x^{-13} \leq \Omega$ is an instance of `New.Data.HasLogBound` in New/Reduction/Data/LevelAndTwists.lean.
 
-*Proof.* The constant terms are small. One has $\lvert c_{\mathrm{CS}}(d)\rvert \leq C_P$, and $1 \leq 2\pi \leq e^6$, so $\lvert c_{\mathrm{CS}}(d)\rvert + 6 \leq C_P + 6 \leq \log x$ by (S1) and (S2).
+*Proof.* The constant terms are small. One has $\lvert C_d\rvert \leq C_P$, and $1 \leq 2\pi \leq e^6$, so $\lvert C_d\rvert + 6 \leq C_P + 6 \leq \log x$ by (S1) and (S2).
 
-Part 1. One has $\log\Omega = c_{\mathrm{CS}}(d) + \log 2\pi - \log \mathrm{rd}_E$. By the theorem above, this is at most $\lvert c_{\mathrm{CS}}(d) \rvert + 6 - 10 \log x \leq 0$, and at least $-\lvert c_{\mathrm{CS}}(d)\rvert - 12 \log x \geq -13 \log x$.
+Part 1. One has $\log\Omega = C_d + \log 2\pi - \log \mathrm{rd}_E$. By the theorem above, this is at most $\lvert C_d \rvert + 6 - 10 \log x \leq 0$, and at least $-\lvert C_d\rvert - 12 \log x \geq -13 \log x$.
 
 Part 2. By part 1 and Lemma (The primes and $M$), $M/\Omega \geq M \geq b^{20}$, and $M/\Omega \leq b^{22} x^{13} \leq b^{23}$, since $13 \log x \leq \log b$.
 
@@ -83,34 +83,34 @@ $$20\, j \log b \leq s_\infty(j) \leq 25\, j \log b \qquad (j \leq a)$$
 
 The level $N$ must cancel the main term of the jet sizes. The source fixes the window for $\log N$ by a formula in the other data.
 
-**Definition (The lower end $N_-$).** For an exponent $s$, a rank $m$, weights $\kappa : \Phi \to \mathbb{N}$, an integer $M$ and a real number $L$ put
-$$\log N_- = m \cdot \frac{1}{f}\sum_{\tau \in \Phi} \log \kappa(\tau) + (m - 1) \log \frac{M\, \mathrm{rd}_E}{2\pi} - \frac{15}{2} L .$$
-So $N_- = \bar\kappa^{\,m} (M\,\mathrm{rd}_E/2\pi)^{m-1} e^{-15L/2}$, where $\bar\kappa$ is the geometric mean of the weights.
+**Definition (The lower end $N_-$).** For an exponent $s$, a rank $m$, weights $\kappa : \Phi \to \mathbb{N}$, an integer $M$ and a real number $B$ put
+$$\log N_- = m \cdot \frac{1}{f}\sum_{\tau \in \Phi} \log \kappa(\tau) + (m - 1) \log \frac{M\, \mathrm{rd}_E}{2\pi} - \frac{15}{2} B .$$
+So $N_- = \bar\kappa^{\,m} (M\,\mathrm{rd}_E/2\pi)^{m-1} e^{-15B/2}$, where $\bar\kappa$ is the geometric mean of the weights.
 
 Lean: `New.Parameters.logLevelMin` (New/Reduction/Data/AdmissibleData.lean); at the values of the data it is `New.Data.logLevelTarget` (New/Reduction/Data/LevelAndTwists.lean), with `New.Data.logLevelTarget_eq_logLevelMin`.
 
-**Theorem (The size of $N_-$).** Let $s, m, M \in \mathbb{N}$, let $\kappa : \Phi(s) \to \mathbb{N}$ and $L \in \mathbb{R}$. Assume
-$$2 \leq m, \qquad 7 \leq L, \qquad 1 \leq \kappa(\tau) \leq e^L \ (\tau \in \Phi), \qquad e^{20L} \leq M \leq e^{22L}, \qquad q_1 d \leq e^L .$$
+**Theorem (The size of $N_-$).** Let $s, m, M \in \mathbb{N}$, let $\kappa : \Phi(s) \to \mathbb{N}$ and $B \in \mathbb{R}$. Assume
+$$2 \leq m, \qquad 7 \leq B, \qquad 1 \leq \kappa(\tau) \leq e^B \ (\tau \in \Phi), \qquad e^{20B} \leq M \leq e^{22B}, \qquad q_1 d \leq e^B .$$
 Then
-$$m L \leq \log N_- \leq 24\, m L .$$
+$$m B \leq \log N_- \leq 24\, m B .$$
 
 Lean: `New.Parameters.logLevelMin_mem_Icc` (New/Reduction/Data/AdmissibleData.lean).
 
-*Proof.* The idea is that each of the three terms has a known size: the mean of $\log\kappa$ lies in $[0, L]$, and the middle logarithm lies in $[19L, 23L]$.
+*Proof.* The idea is that each of the three terms has a known size: the mean of $\log\kappa$ lies in $[0, B]$, and the middle logarithm lies in $[19B, 23B]$.
 
-First, $1 \leq \mathrm{rd}_E \leq q_1 d$ (`New.rootDiscr_mem_Icc`, with `New.Parameters.conductor_mem_differentIdeal`). The upper bound holds since the different of $E$ contains $q_1 d$. Second, the mean $w = \frac1f\sum_\tau \log\kappa(\tau)$ lies in $[0, L]$, since each $\log\kappa(\tau)$ does (`New.sum_log_div_card_mem_Icc`). Third, put $G = \log(M\,\mathrm{rd}_E/2\pi)$. From $M \geq e^{20L}$, $\mathrm{rd}_E \geq 1$ and $2\pi \leq e^{2} \leq e^L$ one gets $G \geq 19L$. From $M \leq e^{22L}$, $\mathrm{rd}_E \leq e^L$ and $2\pi \geq 1$ one gets $G \leq 23L$ (`New.log_mul_div_two_pi_mem_Icc`).
+First, $1 \leq \mathrm{rd}_E \leq q_1 d$ (`New.rootDiscr_mem_Icc`, with `New.Parameters.conductor_mem_differentIdeal`). The upper bound holds since the different of $E$ contains $q_1 d$. Second, the mean $w = \frac1f\sum_\tau \log\kappa(\tau)$ lies in $[0, B]$, since each $\log\kappa(\tau)$ does (`New.sum_log_div_card_mem_Icc`). Third, put $G = \log(M\,\mathrm{rd}_E/2\pi)$. From $M \geq e^{20B}$, $\mathrm{rd}_E \geq 1$ and $2\pi \leq e^{2} \leq e^B$ one gets $G \geq 19B$. From $M \leq e^{22B}$, $\mathrm{rd}_E \leq e^B$ and $2\pi \geq 1$ one gets $G \leq 23B$ (`New.log_mul_div_two_pi_mem_Icc`).
 
-Lower bound: $\log N_- = m w + (m-1)G - \tfrac{15}2 L \geq 19(m - 1)L - \tfrac{15}{2}L$. This is at least $mL$ if $18 m \geq 26.5$, which holds for $m \geq 2$.
+Lower bound: $\log N_- = m w + (m-1)G - \tfrac{15}2 B \geq 19(m - 1)B - \tfrac{15}{2}B$. This is at least $mB$ if $18 m \geq 26.5$, which holds for $m \geq 2$.
 
-Upper bound: $\log N_- \leq mL + 23(m-1)L - \tfrac{15}2 L = 24 mL - 30.5 L \leq 24 mL$. $\square$
+Upper bound: $\log N_- \leq mB + 23(m-1)B - \tfrac{15}2 B = 24 mB - 30.5 B \leq 24 mB$. $\square$
 
-**Remark (Formalization).** The theorem does not use the data. It is stated for arbitrary $s$, $m$, $\kappa$, $M$ and $L$, so that the construction of the data in [the data exist](/chapter/data-exist/) can use it before the level exists. Exercise 5 shows that the hypothesis $m \geq 2$ is needed in some form. The hypotheses hold for the data with $L = \log b$: the weights lie in $[1, b]$, $M \in [b^{20}, b^{22}]$, and $q_1 d \leq x^{13} \leq b$.
+**Remark (Formalization).** The theorem does not use the data. It is stated for arbitrary $s$, $m$, $\kappa$, $M$ and $B$, so that the construction of the data in [the data exist](/chapter/data-exist/) can use it before the level exists. Exercise 5 shows that the hypothesis $m \geq 2$ is needed in some form. The hypotheses hold for the data with $B = \log b$: the weights lie in $[1, b]$, $M \in [b^{20}, b^{22}]$, and $q_1 d \leq x^{13} \leq b$.
 
 ### The level
 
 **Definition (The level).** The data contain a prime $N$ with
 $$N \equiv 1 \pmod{q_2^2}, \qquad \log N_- \leq \log N \leq \log N_- + \sqrt{\log b},$$
-where $\log N_-$ is taken at the exponent $s$, the rank $m$, the weights $\kappa$, the integer $M = p_0p_1$ and $L = \log b$. The data also contain an integer $\pi_N$ of $E$ with $\pi_N \overline{\pi_N} = N$.
+where $\log N_-$ is taken at the exponent $s$, the rank $m$, the weights $\kappa$, the integer $M = p_0p_1$ and $B = \log b$. The data also contain an integer $\pi_N$ of $E$ with $\pi_N \overline{\pi_N} = N$.
 
 Lean: `New.Data.N`, `New.Data.N_prime`, `New.Data.N_modEq_one_q₂_sq`, `New.Data.log_N_mem`, `New.Data.piN`, `New.Data.piN_mul_star` (New/Reduction/Data/AdmissibleData.lean).
 
@@ -124,7 +124,7 @@ Lean: `New.Data.N`, `New.Data.N_prime`, `New.Data.N_modEq_one_q₂_sq`, `New.Dat
 
 Lean: `New.Data.N_modEq_one`, `New.Data.logLevelTarget_mem_Icc`, `New.Data.log_N_mem_Icc` (New/Reduction/Data/LevelAndTwists.lean). Parts 4 and 5 are instances of `New.Data.HasLogBound` in the same file.
 
-*Proof.* Part 1 is the argument for the primes $p_i$. Part 2 is the theorem above with $L = \log b$. Its hypotheses: $m \geq 10^4 \geq 2$; $\log b \geq 7$; $1 \leq \kappa(\tau) \leq b$ by Section 4; $M \in [b^{20}, b^{22}]$; and $q_1 d \leq b$. Part 3 adds the width $\sqrt{\log b}$ of the window: $\sqrt{\log b} \leq \log b \leq 6 m \log b$, so the upper end is at most $(24 + 6) m \log b$. Part 4 follows from part 3 and $\sqrt x \leq m \leq 2\sqrt x$, since $\log 60 \leq 32$. Part 5: $\log N \geq m\log b \geq 10^4 \log b \geq 101 \log b$. $\square$
+*Proof.* Part 1 is the argument for the primes $p_i$. Part 2 is the theorem above with $B = \log b$. Its hypotheses: $m \geq 10^4 \geq 2$; $\log b \geq 7$; $1 \leq \kappa(\tau) \leq b$ by Section 4; $M \in [b^{20}, b^{22}]$; and $q_1 d \leq b$. Part 3 adds the width $\sqrt{\log b}$ of the window: $\sqrt{\log b} \leq \log b \leq 6 m \log b$, so the upper end is at most $(24 + 6) m \log b$. Part 4 follows from part 3 and $\sqrt x \leq m \leq 2\sqrt x$, since $\log 60 \leq 32$. Part 5: $\log N \geq m\log b \geq 10^4 \log b \geq 101 \log b$. $\square$
 
 The construction in [the data exist](/chapter/data-exist/) takes $N$ from a window for primes $\equiv 1 \pmod{q_2^2}$, a consequence of the Siegel and Walfisz theorem, and $\pi_N$ from a sum of two squares. It needs the width $\sqrt{\log b}$ of the window, the modulus $q_2^2 \leq x^{66 q_0 d}$ (Section 3), and the upper bound $\log N_- \leq 24 m \log b$ for the start of the window.
 
@@ -139,14 +139,14 @@ $$\#\Phi_a \Bigl( m\bigl(s_\infty(a) - s_{\mathrm{main}}\bigr) - a\log N \Bigr) 
 
 Lean: `New.Data.mul_jetSize_sub_mainPrimeSum_sub_le`, `New.Data.card_aPlaces_mul_excess_le` (New/UpperBound/Size/ArchimedeanSize.lean).
 
-*Proof.* Put $w = \frac1f\sum_\tau\log\kappa(\tau)$ and $G = \log(M\,\mathrm{rd}_E/2\pi)$. The constant $c_1$ of $s_{\mathrm{main}}$ satisfies $c_1 = -1 - c_{\mathrm{CS}}(d)$ (`New.re_logDerivMean_one`). With the definition of $\Omega$ this gives $\log(M/\Omega) = 1 + c_1 + G$, so $c_1$ cancels in $s_\infty(a) - s_{\mathrm{main}}$. With Stirling's bound $\log a! \leq a \log a - a + 1 + \tfrac12\log a$, the excess is
+*Proof.* Put $w = \frac1f\sum_\tau\log\kappa(\tau)$ and $G = \log(M\,\mathrm{rd}_E/2\pi)$. The constant $c_1$ of $s_{\mathrm{main}}$ satisfies $c_1 = -1 - C_d$ (`New.re_logDerivMean_one`). With the definition of $\Omega$ this gives $\log(M/\Omega) = 1 + c_1 + G$, so $c_1$ cancels in $s_\infty(a) - s_{\mathrm{main}}$. With Stirling's bound $\log a! \leq a \log a - a + 1 + \tfrac12\log a$, the excess is
 $$s_\infty(a) - s_{\mathrm{main}} \leq a(w + G) + 1 + \tfrac12 \log a .$$
 The lower end of the window gives $\log N \geq m(w + G) - (G + \tfrac{15}{2}\log b)$. So
 $$m\bigl(s_\infty(a) - s_{\mathrm{main}}\bigr) - a\log N \leq m\bigl(1 + \tfrac12\log a\bigr) + a\bigl(G + \tfrac{15}2\log b\bigr).$$
 The terms $m a (w + G)$ cancel. The first term is at most $a \log b$, and $G \leq 23 \log b$ by the proposition on $\Omega$. So the total is at most $a\log b + a(23 + 8)\log b = 32\, a\log b$. The second claim is the first one times $\#\Phi_a \leq f$. $\square$
 
 The error $32 f a \log b$ is small against the error unit
-$$\mathrm{err} = f\, a \log^3 b$$
+$$\mathrm{err}_0 = f\, a \log^3 b$$
 (`New.Data.errorUnit`), the unit in which the source measures the losses of the argument. The main amount is at least $x^4 f a$ (`New.Data.le_mainAmount`, New/Reduction/PrimeSums.lean), and $\log^3 b \leq x^{3/100}$ by (S2). So the error unit is smaller than the main amount by a factor $x^{3.97}$ at least.
 
 ### The class number

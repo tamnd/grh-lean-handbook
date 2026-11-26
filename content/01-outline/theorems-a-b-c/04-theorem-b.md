@@ -20,15 +20,15 @@ Theorem C needs a family that spans almost all of the target, and the source is 
 
 ### The statement of Theorem B
 
-**Theorem (Theorem B, enough forms).** The target has dimension $d_T > 0$, and there is a finite set $t \subseteq \bar G$ with
+**Theorem (Theorem B, enough forms).** The target has dimension $d_T > 0$, and there is a finite set $\mathcal{T} \subseteq \bar G$ with
 
-$$\#t \cdot \dim\mathrm{src} \leq 5\, d_T \log(1 + 2b^2)$$
+$$\#\mathcal{T} \cdot \dim\mathrm{src} \leq 5\, d_T \log(1 + 2b^2)$$
 
-such that the images $s\mathfrak{p}(\mathrm{src})$, $s \in t$, span a subspace of dimension at least $(1 - 4/b^2)\, d_T$.
+such that the images $s\mathfrak{p}(\mathrm{src})$, $s \in \mathcal{T}$, span a subspace of dimension at least $(1 - 4/b^2)\, d_T$.
 
 Lean: `New.Data.enough_forms` (New/Reduction/ShortAndEnough.lean).
 
-The theorem has two parts, and they are used in different places. The bound on $\#t$ multiplies the index bound of Theorem A (b). The bound on the dimension is the hypothesis $n \geq (1 - 4/b^2) d_T$ of Theorem C. The positivity $d_T > 0$ lets the main inequality divide by $d_T$. Theorem B is a statement about ranges, and the scalars $c_B$ and $c_{ss}^{-1}$ in $\mathfrak{p}$ do not change ranges.
+The theorem has two parts, and they are used in different places. The bound on $\#\mathcal{T}$ multiplies the index bound of Theorem A (b). The bound on the dimension is the hypothesis $n \geq (1 - 4/b^2) d_T$ of Theorem C. The positivity $d_T > 0$ lets the main inequality divide by $d_T$. Theorem B is a statement about ranges, and the scalars $c_B$ and $c_{ss}^{-1}$ in $\mathfrak{p}$ do not change ranges.
 
 ### A model case: random subspaces
 
@@ -44,31 +44,31 @@ Lean: `New.IsSpread` (New/Spanning/SecondMoment/FewTranslates.lean).
 
 **Remark (Formalization).** The share $\alpha$ is a quotient in $\mathbb{R}$, so it is $0$ if $\dim W = 0$, by the convention $x/0 = 0$. The theorems below assume $\dim W > 0$.
 
-**Theorem (Few maps span almost everything).** Let $V$ and $W$ be finite-dimensional with $V \neq 0$ and $\dim W > 0$. Let $0 < \varepsilon < 1/16$, and let the maps $B_s$ spread with the error $3\varepsilon/2$. Then there is a finite set $t$ of indices with
+**Theorem (Few maps span almost everything).** Let $V$ and $W$ be finite-dimensional with $V \neq 0$ and $\dim W > 0$. Let $0 < \varepsilon_0 < 1/16$, and let the maps $B_s$ spread with the error $3\varepsilon_0/2$. Then there is a finite set $\mathcal{T}$ of indices with
 
-$$\#t \cdot \dim V \leq \tfrac{5}{2}\bigl(1 + \log(1/(16\varepsilon))\bigr)\dim W \quad\text{and}\quad (1 - 16\varepsilon)\dim W \leq \dim \sum_{s \in t} B_s(V).$$
+$$\#\mathcal{T} \cdot \dim V \leq \tfrac{5}{2}\bigl(1 + \log(1/(16\varepsilon_0))\bigr)\dim W \quad\text{and}\quad (1 - 16\varepsilon_0)\dim W \leq \dim \sum_{s \in \mathcal{T}} B_s(V).$$
 
 Lean: `New.IsSpread.exists_few_le_finrank_iSup_range` (New/Spanning/SecondMoment/FewTranslates.lean).
 
-*Proof.* Choose the maps greedily. Let $F$ be the span of the images chosen so far, with share $\alpha$, and suppose that $1 - \alpha > 16\varepsilon$. Spread gives $s$ with $\dim B_s^{-1}(F) \leq ((1 + \alpha)/2 + 3\varepsilon/2)\dim V$. Since $\dim(F + B_s V) - \dim F = \dim V - \dim B_s^{-1}(F)$, the step adds at least $((1 - \alpha)/2 - 3\varepsilon/2)\dim V$ dimensions. As $\varepsilon < (1 - \alpha)/16$, this is at least $(1/2 - 3/32)(1 - \alpha)\dim V \geq \frac{2}{5}(1 - \alpha)\dim V$. So each step multiplies the codimension of $F$ by at most $1 - \rho \leq e^{-\rho}$, with the rate $\rho = 2\dim V/(5\dim W)$. After $L$ steps the codimension is at most $\max(16\varepsilon, e^{-L\rho})\dim W$. Take $L = \lceil \log(1/(16\varepsilon))/\rho \rceil$. The first step shows $\rho \leq 1$, so $L \dim V \leq \frac{5}{2}\log(1/(16\varepsilon))\dim W + \dim V \leq \frac{5}{2}(1 + \log(1/(16\varepsilon)))\dim W$. $\square$
+*Proof.* Choose the maps greedily. Let $F$ be the span of the images chosen so far, with share $\alpha$, and suppose that $1 - \alpha > 16\varepsilon_0$. Spread gives $s$ with $\dim B_s^{-1}(F) \leq ((1 + \alpha)/2 + 3\varepsilon_0/2)\dim V$. Since $\dim(F + B_s V) - \dim F = \dim V - \dim B_s^{-1}(F)$, the step adds at least $((1 - \alpha)/2 - 3\varepsilon_0/2)\dim V$ dimensions. As $\varepsilon_0 < (1 - \alpha)/16$, this is at least $(1/2 - 3/32)(1 - \alpha)\dim V \geq \frac{2}{5}(1 - \alpha)\dim V$. So each step multiplies the codimension of $F$ by at most $1 - \rho \leq e^{-\rho}$, with the rate $\rho = 2\dim V/(5\dim W)$. After $J$ steps the codimension is at most $\max(16\varepsilon_0, e^{-J\rho})\dim W$. Take $J = \lceil \log(1/(16\varepsilon_0))/\rho \rceil$. The first step shows $\rho \leq 1$, so $J \dim V \leq \frac{5}{2}\log(1/(16\varepsilon_0))\dim W + \dim V \leq \frac{5}{2}(1 + \log(1/(16\varepsilon_0)))\dim W$. $\square$
 
 ### Spread from a second moment
 
 The spread of the Poincaré maps comes from two numbers: how close the projected map is to an isometry, and how much its translates overlap on average. For a linear map $A$ between finite-dimensional inner product spaces, $\|A\|$ denotes the Hilbert-Schmidt norm, and $\mathrm{pr}_U$ is the orthogonal projection onto $U$.
 
-**Definition (Near isometry in mean square).** A linear map $A : S \to T$ is a *near isometry with the error* $\varepsilon$ if $\|A\,\mathrm{pr}_U\|^2 \geq \dim U - \varepsilon\dim S$ for every subspace $U$ of $S$.
+**Definition (Near isometry in mean square).** A linear map $A : S \to T$ is a *near isometry with the error* $\varepsilon_0$ if $\|A\,\mathrm{pr}_U\|^2 \geq \dim U - \varepsilon_0\dim S$ for every subspace $U$ of $S$.
 
 Lean: `New.IsNearIsometry` (New/Spanning/SecondMoment/FewTranslates.lean).
 
-**Theorem (One translate).** Let a finite group $\Gamma$ act unitarily on $T$ by $\rho$, and let $\mathrm{pr}_0$ be the orthogonal projection onto a subspace $T_0$ with $\mathrm{pr}_0\,\rho(s) = \rho(s)\,\mathrm{pr}_0$ for all $s$. Let $B : S \to T$ be linear and $\varepsilon \geq 0$. Suppose that $\mathrm{pr}_0 B$ is a near isometry with the error $\varepsilon$, and that
+**Theorem (One translate).** Let a finite group $\Gamma$ act unitarily on $T$ by $\rho$, and let $\mathrm{pr}_0$ be the orthogonal projection onto a subspace $T_0$ with $\mathrm{pr}_0\,\rho(s) = \rho(s)\,\mathrm{pr}_0$ for all $s$. Let $B : S \to T$ be linear and $\varepsilon_0 \geq 0$. Suppose that $\mathrm{pr}_0 B$ is a near isometry with the error $\varepsilon_0$, and that
 
-$$\dim T_0 \cdot \sum_{s \in \Gamma}\|B^*\rho(s)B\|^2 \leq \#\Gamma\,(1 + \varepsilon)(\dim S)^2.$$
+$$\dim T_0 \cdot \sum_{s \in \Gamma}\|B^*\rho(s)B\|^2 \leq \#\Gamma\,(1 + \varepsilon_0)(\dim S)^2.$$
 
-Then the maps $\mathrm{pr}_0\,\rho(s)\,B : S \to T_0$ spread with the error $3\varepsilon/2$.
+Then the maps $\mathrm{pr}_0\,\rho(s)\,B : S \to T_0$ spread with the error $3\varepsilon_0/2$.
 
 Lean: `New.isSpread_of_second_moment` (New/Spanning/SecondMoment/FewTranslates.lean).
 
-*Proof.* Let $W \subseteq T_0$ have dimension $\alpha\dim T_0$. By the Cauchy-Schwarz inequality for the Hilbert-Schmidt product, $(\sum_s \|\mathrm{pr}_W\rho(s)B\|^2)^2 \leq \dim W \cdot \#\Gamma\sum_s\|B^*\rho(s)B\|^2 \leq \#\Gamma^2\alpha(1 + \varepsilon)(\dim S)^2$. So some $s$ has $\|\mathrm{pr}_W\rho(s)B\|^2 \leq \sqrt{\alpha(1 + \varepsilon)}\dim S$. Let $U$ be the preimage of $W$ under $\mathrm{pr}_0\rho(s)B$. The map $\mathrm{pr}_0\rho(s)B\,\mathrm{pr}_U$ has image in $W$, and $\rho(s)$ is unitary and commutes with $\mathrm{pr}_0$. So the near isometry gives $\dim U - \varepsilon\dim S \leq \|\mathrm{pr}_W\rho(s)B\|^2$. Hence $\dim U \leq (\sqrt{\alpha(1 + \varepsilon)} + \varepsilon)\dim S \leq ((1 + \alpha)/2 + 3\varepsilon/2)\dim S$, by $\sqrt{uv} \leq (u + v)/2$. $\square$
+*Proof.* Let $W \subseteq T_0$ have dimension $\alpha\dim T_0$. By the Cauchy-Schwarz inequality for the Hilbert-Schmidt product, $(\sum_s \|\mathrm{pr}_W\rho(s)B\|^2)^2 \leq \dim W \cdot \#\Gamma\sum_s\|B^*\rho(s)B\|^2 \leq \#\Gamma^2\alpha(1 + \varepsilon_0)(\dim S)^2$. So some $s$ has $\|\mathrm{pr}_W\rho(s)B\|^2 \leq \sqrt{\alpha(1 + \varepsilon_0)}\dim S$. Let $U$ be the preimage of $W$ under $\mathrm{pr}_0\rho(s)B$. The map $\mathrm{pr}_0\rho(s)B\,\mathrm{pr}_U$ has image in $W$, and $\rho(s)$ is unitary and commutes with $\mathrm{pr}_0$. So the near isometry gives $\dim U - \varepsilon_0\dim S \leq \|\mathrm{pr}_W\rho(s)B\|^2$. Hence $\dim U \leq (\sqrt{\alpha(1 + \varepsilon_0)} + \varepsilon_0)\dim S \leq ((1 + \alpha)/2 + 3\varepsilon_0/2)\dim S$, by $\sqrt{uv} \leq (u + v)/2$. $\square$
 
 ### The Poincaré maps spread
 
@@ -76,7 +76,7 @@ Lean: `New.isSpread_of_second_moment` (New/Spanning/SecondMoment/FewTranslates.l
 
 Lean: `New.Data.isSpread_goodPoincare` (New/Spanning/SecondMoment/SpanningTheorem.lean).
 
-The proof applies the theorem on one translate with $\varepsilon = (8b^2)^{-1}$ to the Poincaré map $P$ scaled by $(\mathrm{vol}\,J\cdot\nu)^{-1/2}$, where $J$ is the principal level and $\nu$ the covolume of its unipotent points. Volume 10 supplies three facts.
+The proof applies the theorem on one translate with $\varepsilon_0 = (8b^2)^{-1}$ to the Poincaré map $P$ scaled by $(\mathrm{vol}\,J\cdot\nu)^{-1/2}$, where $J$ is the principal level and $\nu$ the covolume of its unipotent points. Volume 10 supplies three facts.
 
 1. *Bad types are rare.* The projection $e_0$ is a product of two central idempotents, one for each level prime, and the coefficient at $1$ of the complement of each has real part at most $b^{-8}/2$ (`New.Data.bad_types_rare`).
 2. *Near isometry.* The map $e_0 P$ is a near isometry with the error $5b^{-4}$ (`New.Data.isNearIsometry_e₀_comp_scaledPoincare`).
@@ -86,9 +86,9 @@ The sizes give $5b^{-4} \leq (8b^2)^{-1}$ and $9b^{-4} \leq (8b^2)^{-1}$.
 
 ### The proof of Theorem B
 
-*Proof.* The target is not zero (`New.Data.finrank_targetForms_ne_zero`), so $d_T > 0$. Apply the theorem on few maps to the good Poincaré maps, with $V$ the space of all source forms, $W$ the target and $\varepsilon = (8b^2)^{-1}$, which is less than $1/16$. It gives $t$ with $\#t\cdot D_X \leq \frac{5}{2}(1 + \log(b^2/2))\, d_T$ and images of dimension at least $(1 - 2/b^2)d_T$, since $16\varepsilon = 2/b^2$. The factor is at most $5\log(1 + 2b^2)$, as $b^2/2 \leq 1 + 2b^2$ and $1 \leq \log(1 + 2b^2)$ (`New.Data.five_halves_mul_one_add_log_le`). Since $\dim\mathrm{src} \leq D_X$, the first bound of the theorem follows.
+*Proof.* The target is not zero (`New.Data.finrank_targetForms_ne_zero`), so $d_T > 0$. Apply the theorem on few maps to the good Poincaré maps, with $V$ the space of all source forms, $W$ the target and $\varepsilon_0 = (8b^2)^{-1}$, which is less than $1/16$. It gives $\mathcal{T}$ with $\#\mathcal{T}\cdot D_X \leq \frac{5}{2}(1 + \log(b^2/2))\, d_T$ and images of dimension at least $(1 - 2/b^2)d_T$, since $16\varepsilon_0 = 2/b^2$. The factor is at most $5\log(1 + 2b^2)$, as $b^2/2 \leq 1 + 2b^2$ and $1 \leq \log(1 + 2b^2)$ (`New.Data.five_halves_mul_one_add_log_le`). Since $\dim\mathrm{src} \leq D_X$, the first bound of the theorem follows.
 
-For the second bound, pass from all source forms to $\mathrm{src}$. For each $s$, the image of $\mathrm{src}$ has codimension at most $D_X - \dim\mathrm{src}$ in the image of all source forms. So the span of the images $s\mathfrak{p}(\mathrm{src})$, $s \in t$, loses at most $\#t(D_X - \dim\mathrm{src})$ dimensions. The ramified forms have codimension at most $f/(N - 1)\cdot D_X$, and $f/(N - 1) \leq b^{-8}$, because $f \leq b$ and $b^9 + 1 \leq N$. So the loss is at most $b^{-8}\cdot\#t D_X \leq b^{-8}\cdot 5\log(1 + 2b^2)\, d_T \leq (2/b^2)\, d_T$. The span has dimension at least $(1 - 2/b^2 - 2/b^2)d_T = (1 - 4/b^2)d_T$. $\square$
+For the second bound, pass from all source forms to $\mathrm{src}$. For each $s$, the image of $\mathrm{src}$ has codimension at most $D_X - \dim\mathrm{src}$ in the image of all source forms. So the span of the images $s\mathfrak{p}(\mathrm{src})$, $s \in \mathcal{T}$, loses at most $\#\mathcal{T}(D_X - \dim\mathrm{src})$ dimensions. The ramified forms have codimension at most $f/(N - 1)\cdot D_X$, and $f/(N - 1) \leq b^{-8}$, because $f \leq b$ and $b^9 + 1 \leq N$. So the loss is at most $b^{-8}\cdot\#\mathcal{T} D_X \leq b^{-8}\cdot 5\log(1 + 2b^2)\, d_T \leq (2/b^2)\, d_T$. The span has dimension at least $(1 - 2/b^2 - 2/b^2)d_T = (1 - 4/b^2)d_T$. $\square$
 
 ### What Theorem B costs
 

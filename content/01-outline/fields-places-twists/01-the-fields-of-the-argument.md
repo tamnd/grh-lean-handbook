@@ -24,14 +24,14 @@ Here is the list, in the order of the chapter. Each item has its exact statement
 3. The tower degree $\mathrm{towerDeg}(s) = 3 \cdot l_0(s) \cdot 2^s$, where $l_0(s)$ is a power of $3$ between $27s$ and $81s$, and the modulus $q_1 = q_0 \cdot \mathrm{towerDeg}(s)$ (Section 3).
 4. The field $E = K(\zeta)$, with $\zeta$ a primitive root of unity of order $q_1$. It has degree $\varphi(q_1)$ over $K$, it is abelian over $\mathbb{Q}$, and it is a CM field (Section 3).
 5. The group $\Phi$ of the infinite places of $E$, with an isomorphism $\Phi \cong \mathrm{Gal}(E/K) \cong (\mathbb{Z}/q_1)^\times$ (Section 4).
-6. The number $\Omega = e^{\mathrm{CS}(d)} \cdot 2\pi / \mathrm{rd}_E$, where $\mathrm{CS}(d) = \gamma - \operatorname{Re} L'/L(1, \chi_K)$ and $\mathrm{rd}_E$ is the root discriminant of $E$ (Section 4).
+6. The number $\Omega = e^{C_d} \cdot 2\pi / \mathrm{rd}_E$, where $C_d = \gamma - \operatorname{Re} L'/L(1, \chi_K)$ and $\mathrm{rd}_E$ is the root discriminant of $E$ (Section 4).
 7. Characters of $U(1)(\mathbb{A}_E)$ with a weight and a tame part, the tame characters, twists and $m$-fold twists, and the characters $\mu_j^0 \vartheta^j$ of a chain of lifts (Section 6).
 
 Section 5 is a worked example with $q_0 = 18480$, $d = 9239$ and $s = 0$.
 
 ### What the chapter uses
 
-The chapter uses algebraic number theory at the level of Neukirch, Chapter I: Dedekind domains, the decomposition of primes in Galois extensions, the Dedekind and Kummer criterion, and cyclotomic fields. It also uses the adeles. The only analysis is the definition of the constant $\mathrm{CS}(d)$ (see [the weighted prime remainder](/chapter/weighted-prime-remainder/)).
+The chapter uses algebraic number theory at the level of Neukirch, Chapter I: Dedekind domains, the decomposition of primes in Galois extensions, the Dedekind and Kummer criterion, and cyclotomic fields. It also uses the adeles. The only analysis is the definition of the constant $C_d$ (see [the weighted prime remainder](/chapter/weighted-prime-remainder/)).
 
 ### The sketch
 

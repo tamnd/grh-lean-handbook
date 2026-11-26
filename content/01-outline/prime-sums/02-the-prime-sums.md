@@ -59,7 +59,7 @@ Lean: `New.Data.cast_weight`, `New.Data.weight_mem_Icc`, `New.Data.weight_le_b` 
 
 $$s_{\mathrm{fin}}(y, \sigma) = \sum_{1 \leq \nu \leq a} \Lambda_K(\nu)\Bigl(\frac{y}{\nu} - \kappa(-\nu\sigma)\Bigr)_+ ,$$
 
-where $t_+ = \max(t, 0)$.
+where $u_+ = \max(u, 0)$ for real $u$.
 
 Lean: `New.Data.primeSum` (New/Reduction/Data/AdmissibleData.lean).
 

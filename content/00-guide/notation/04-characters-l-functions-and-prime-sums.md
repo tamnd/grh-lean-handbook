@@ -49,7 +49,7 @@ Mathlib's `DirichletCharacter.LFunction` is the function $L(s, \chi)$, equal to 
 
 Lean: `New.entireL` (Lib/General/NumberTheory/ImaginaryQuadraticField.lean), with `DirichletCharacter.LFunction` (Mathlib) and `DirichletCharacter.LFunctionTrivChar₁` (Mathlib).
 
-The book writes $\tilde L$, as Volume 1 does in [the weighted prime remainder](/chapter/weighted-prime-remainder/). The comments of the source write $E_\chi$ for it, and so does Volume 1 in [the Landau criterion](/chapter/landau-criterion/) and [the main inequality](/chapter/main-inequality/). The book does not use $E_\chi$, because $E$ is the field. For $N = 1$ one has $\tilde L(s, 1) = (s - 1)\zeta(s)$.
+The book writes $\tilde L$, and so does Volume 1. The comments of the source write $E_\chi$ for it. The book does not use $E_\chi$, because $E$ is the field. For $N = 1$ one has $\tilde L(s, 1) = (s - 1)\zeta(s)$.
 
 The completed $L$-function of Mathlib, `DirichletCharacter.completedLFunction`, is written $\Lambda(s, \chi)$. It is $L(s, \chi)$ times the gamma factor $\Gamma_{\mathbb{R}}(s + \mathfrak{a})$, with $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$ (Mathlib's `Complex.Gammaℝ`) and $\mathfrak{a} \in \{0, 1\}$ the parity, and it has no factor $q^{s/2}$. The letter $\Lambda$ also names the von Mangoldt function $\Lambda(n)$. The book keeps both, as Iwaniec and Kowalski do, since the completed function has two arguments $(s, \chi)$ and the von Mangoldt function has one integer argument. In Volume 1, [the half-plane and the line](/chapter/half-plane-to-line/) gives the parity the letter $a(\chi)$; the book writes $\mathfrak{a}$ in this place, since $a$ is the long order.
 
@@ -81,7 +81,7 @@ Lean: `New.re_logDerivMean_one` (New/Reduction/Zeros/PrimeError.lean).
 
 *Proof.* There is one character modulo $1$, and $\varphi(1) = 1$. So $G_1(s) = \tilde L'/\tilde L(s, \chi_K) - Z'/Z(s) - 1$ with $Z(s) = (s - 1)\zeta(s)$. Since $(s - 1)\zeta(s) = 1 + \gamma(s - 1) + O((s-1)^2)$ near $s = 1$, one has $Z'/Z(1) = \gamma$. So $\operatorname{Re} G_1(1) = \operatorname{Re} \tilde L'/\tilde L(1, \chi_K) - \gamma - 1 = -C_d - 1$. $\square$
 
-Volume 1, [the weighted prime remainder](/chapter/weighted-prime-remainder/), writes $\mathrm{cs}_d$ for $C_d$, and [the prime sums](/chapter/prime-sums/) writes $C_d$. The book writes $C_d$.
+The book writes $C_d$, and so does Volume 1.
 
 **Definition (The remainder $R_q$).** For $q \geq 1$ and real $y$,
 $$R_q(y) = \sum_{n \leq y} \lambda_q(n)\Bigl(\frac1n - \frac1y\Bigr) - \frac{\log y}{\varphi(q)} - c_q.$$
@@ -108,7 +108,7 @@ $$\mathrm{dir} = \sum_{\sigma \in \Phi}\bigl(s_\infty(\kappa(\sigma)) - s_{\math
 
 Lean: `New.Data.directionAmount` (New/Reduction/Data/AdmissibleData.lean), `New.Data.mainAmount` (New/Reduction/PrimeSums.lean).
 
-The book writes $\mathrm{main}$ for the main amount. Volume 1 writes it in three ways: "main amount", $\mathrm{mainAmount}$ and $\mathrm{main}$; and [the main inequality](/chapter/main-inequality/) also says that the source's $M$ is the main amount, which clashes with the principal level $M = p_0 p_1$. In the book $M$ is always $p_0 p_1$.
+The book writes $\mathrm{main}$ for the main amount, and so does Volume 1. In the book $M$ is always the principal level $p_0 p_1$, never the main amount.
 
 **Definition (The expected value and the total remainder).**
 $$s_{\mathrm{main}} = a\Bigl(\log a - \frac1f \sum_{\tau \in \Phi} \log\kappa(\tau) + c_1\Bigr), \qquad \mathrm{rem} = \sum_{\tau \in \Phi_a}\bigl(s_{\mathrm{fin}}(a, \tau) - s_{\mathrm{main}}\bigr).$$
@@ -127,6 +127,6 @@ Volume 1, [the prime sums](/chapter/prime-sums/), proves this lemma. It is the p
 
 Lean: `New.Data.errorUnit` (New/Reduction/Data/AdmissibleData.lean).
 
-The book writes $\mathrm{err}_0$ for this unit. Volume 1 writes $\mathrm{errorUnit}$, and it uses $\mathrm{err}$ for two other objects: the divisibility errors `New.Data.divisibilityError` and the total error $4 f a \log^4 b + 2I$ of the main inequality. The book keeps $\mathrm{err}(p)$, with its argument, for the divisibility errors, and writes $\mathrm{err}$ with no argument for the total error.
+The book writes $\mathrm{err}_0$ for this unit. The word $\mathrm{err}$ also names two other objects: the divisibility errors `New.Data.divisibilityError` and the total error $4 f a \log^4 b + 2I$ of the main inequality. The book keeps $\mathrm{err}(p)$, with its argument, for the divisibility errors, and writes $\mathrm{err}$ with no argument for the total error.
 
 **Example.** Let $\sigma \in \Phi_b$ and $y = \kappa(\sigma) = b$. The term $\nu = 1$ of $s_{\mathrm{fin}}(b, \sigma)$ has $\Lambda_K(1) = 0$. A term $\nu = p$, an inert prime with $p \nmid q_1$, has the weight $2 \log p$ and the factor $(b/p - \kappa([-p]\sigma))_+$. The place $[-p]\sigma$ is in $\Phi_b$ only for few $p$, by sparseness, and otherwise its weight is $\lfloor a/x_1 \rfloor = \lfloor x b/x_1 \rfloor$. So the factor is $b/p - \lfloor xb/x_1 \rfloor$ when this is positive, that is, for $p$ below about $x_1/x$.

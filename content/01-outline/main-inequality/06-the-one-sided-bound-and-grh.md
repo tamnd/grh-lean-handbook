@@ -47,35 +47,35 @@ The first term is $64 \varphi(q_0) x^{-1/2 + 6\varepsilon}$. Since $x \geq 1$ an
 
 The criterion needs the bound for real $y$. The passage uses the slow variation of $R_q$.
 
-**Lemma (Floor lemmas).** Let $d$ be a prime and $q \geq 1$. For $y \geq 2$, $R_q(y) - R_q(\lfloor y \rfloor) \leq 26/y$. For $y \geq 2$ and $-1 \leq t \leq 0$, $\lfloor y \rfloor^t \leq 2 y^t$.
+**Lemma (Floor lemmas).** Let $d$ be a prime and $q \geq 1$. For $y \geq 2$, $R_q(y) - R_q(\lfloor y \rfloor) \leq 26/y$. For $y \geq 2$ and $-1 \leq u \leq 0$, $\lfloor y \rfloor^u \leq 2 y^u$.
 
 Lean: `New.primeRemainder_sub_primeRemainder_floor_le`, `New.natFloor_rpow_le_two_mul_rpow` (New/Reduction/OneSidedBound.lean).
 
-*Proof.* For $y \geq 2$, $y/2 \leq \lfloor y \rfloor \leq y$ and $y - \lfloor y \rfloor < 1$. By [slow variation](/decl/New.abs_primeRemainder_sub_le/), $R_q(y) - R_q(\lfloor y \rfloor) \leq 13 (y - \lfloor y \rfloor)/\lfloor y \rfloor \leq 13/(y/2)$. For the second claim, $t \leq 0$ gives $\lfloor y \rfloor^t \leq (y/2)^t = 2^{-t} y^t \leq 2 y^t$, since $-t \leq 1$. $\square$
+*Proof.* For $y \geq 2$, $y/2 \leq \lfloor y \rfloor \leq y$ and $y - \lfloor y \rfloor < 1$. By [slow variation](/decl/New.abs_primeRemainder_sub_le/), $R_q(y) - R_q(\lfloor y \rfloor) \leq 13 (y - \lfloor y \rfloor)/\lfloor y \rfloor \leq 13/(y/2)$. For the second claim, $u \leq 0$ gives $\lfloor y \rfloor^u \leq (y/2)^u = 2^{-u} y^u \leq 2 y^u$, since $-u \leq 1$. $\square$
 
 **Lemma (The congruence of the parameters).** Let $q_0 > 0$ be even and $d \equiv q_0/2 - 1 \pmod{q_0}$. Then $q_0 \mid 2(d + 1)$ and $q_0 \nmid d + 1$.
 
 Lean: `New.dvd_two_mul_succ_and_not_dvd_succ` (New/Reduction/OneSidedBound.lean).
 
-*Proof.* Write $q_0 = 2q$. Then $d + 1 \equiv q \pmod{2q}$. So $2(d + 1) \equiv 2q \equiv 0$, and $d + 1 \equiv q \not\equiv 0$, since $0 < q < 2q$. $\square$
+*Proof.* Since $q_0$ is even, $q_0/2$ is an integer, and $d + 1 \equiv q_0/2 \pmod{q_0}$. So $2(d + 1) \equiv q_0 \equiv 0$, and $d + 1 \equiv q_0/2 \not\equiv 0$, since $0 < q_0/2 < q_0$. $\square$
 
 This is the form in which the structure of parameters stores the congruence.
 
-**Theorem (One-sided bound).** Let $q_0 > 0$ be a multiple of $18480$, let $d$ be a prime with $d \equiv q_0/2 - 1 \pmod{q_0}$, and let $\varepsilon > 0$. Then
+**Theorem (One-sided bound).** Let $q_0 > 0$ be a multiple of $18480$, let $d$ be a prime with $d \equiv q_0/2 - 1 \pmod{q_0}$, and let $\eta > 0$. Then
 
-$$R_{q_0}(y) \;\leq\; y^{-1/2 + \varepsilon}$$
+$$R_{q_0}(y) \;\leq\; y^{-1/2 + \eta}$$
 
 for all large real $y$.
 
 Lean: `New.eventually_primeRemainder_le_rpow` (New/Reduction/OneSidedBound.lean).
 
-*Proof.* The numbers $q_0$ and $d$, with the lemma above, form parameters $P$. Put $\delta = \min(1/200, \varepsilon/7)$. Then $0 < \delta < 1/100$ and $7\delta \leq \varepsilon$. Put $t = -1/2 + 6\delta$ and $C = 64\varphi(q_0) + 3$. Then $-1 \leq t \leq 0$. For large real $y$, three things hold: $y \geq 2$; the bound at integers, with $\delta$ in place of $\varepsilon$, holds at $\lfloor y \rfloor$; and $y^\delta \geq 2C + 26$. For such $y$,
+*Proof.* The numbers $q_0$ and $d$, with the lemma above, form parameters $P$. Put $\varepsilon_1 = \min(1/200, \eta/7)$. Then $0 < \varepsilon_1 < 1/100$ and $7\varepsilon_1 \leq \eta$. Put $u = -1/2 + 6\varepsilon_1$ and $C = 64\varphi(q_0) + 3$. Then $-1 \leq u \leq 0$. For large real $y$, three things hold: $y \geq 2$; the bound at integers, with $\varepsilon_1$ in place of $\varepsilon$, holds at $\lfloor y \rfloor$; and $y^{\varepsilon_1} \geq 2C + 26$. For such $y$,
 
-$$R_{q_0}(y) \;\leq\; R_{q_0}(\lfloor y \rfloor) + 26 y^{-1} \;\leq\; C \lfloor y \rfloor^t + 26 y^{-1} \;\leq\; 2C y^t + 26 y^t \;\leq\; y^\delta y^t \;=\; y^{-1/2 + 7\delta} \;\leq\; y^{-1/2 + \varepsilon}.$$
+$$R_{q_0}(y) \;\leq\; R_{q_0}(\lfloor y \rfloor) + 26 y^{-1} \;\leq\; C \lfloor y \rfloor^u + 26 y^{-1} \;\leq\; 2C y^u + 26 y^u \;\leq\; y^{\varepsilon_1} y^u \;=\; y^{-1/2 + 7\varepsilon_1} \;\leq\; y^{-1/2 + \eta}.$$
 
-Here $y^{-1} \leq y^t$ since $t \geq -1$ and $y \geq 1$. $\square$
+Here $y^{-1} \leq y^u$ since $u \geq -1$ and $y \geq 1$. $\square$
 
-**Example.** Take $q = 1$, so $q_0 = 18480$ and $\varphi(q_0) = 3840$. The constant of the bound at integers is $C = 64 \cdot 3840 + 3 = 245763$. The class $q_0/2 - 1 = 9239$ contains the primes $9239$, $46199$, $64679$, $138599$, and so on (each is $9239 + 18480 k$; for example $27719 = 53 \cdot 523$ is not prime). For $\varepsilon = 1/10$, $\delta = 1/200$, and the proof needs $y^{1/200} \geq 2C + 26 = 491552$, that is $y \geq 491552^{200} \approx 10^{1138}$. The other thresholds are not explicit.
+**Example.** Take $q_0 = 18480$, the least modulus of the parameters, so $\varphi(q_0) = 3840$. The constant of the bound at integers is $C = 64 \cdot 3840 + 3 = 245763$. The class $q_0/2 - 1 = 9239$ contains the primes $9239$, $46199$, $64679$, $138599$, and so on (each is $9239 + 18480 k$; for example $27719 = 53 \cdot 523$ is not prime). For $\eta = 1/10$, $\varepsilon_1 = 1/200$, and the proof needs $y^{1/200} \geq 2C + 26 = 491552$, that is $y \geq 491552^{200} \approx 10^{1138}$. The other thresholds are not explicit.
 
 ### The half-plane theorem
 
@@ -95,9 +95,9 @@ The statement is the proposition `DirichletLNonvanishingRightOfHalf` of Statemen
 
 *The case $\rho = 1$.* Then $\chi \neq 1$, and $L(1, \chi) \neq 0$ by Dirichlet's theorem (`DirichletCharacter.LFunction_ne_zero_of_one_le_re` (Mathlib)).
 
-*The case $\rho \neq 1$.* Choose $\beta$ with $1/2 < \beta < \operatorname{Re} \rho$. Put $q_0 = 18480 q$ and $d_0 = 9240 q - 1$, so $q_0 = 2(d_0 + 1)$ and $d_0 = q_0/2 - 1$. The number $d_0$ is odd. A common prime factor of $d_0$ and $2(d_0 + 1)$ divides $2$ or divides both $d_0$ and $d_0 + 1$, so $d_0$ is prime to $q_0$. Since $9240 = 8 \cdot 1155$, $d_0 \equiv -1 \equiv 7 \pmod 8$. Also $8 \mid q_0$.
+*The case $\rho \neq 1$.* Choose $\beta$ with $1/2 < \beta < \operatorname{Re} \rho$. Put $q_0 = 18480 q$ and $d_0 = 9240 q - 1$, where $q$ is the modulus of $\chi$. This $q_0$ is the modulus of the parameters to which the one-sided bound is applied, as in the source. Then $q_0 = 2(d_0 + 1)$ and $d_0 = q_0/2 - 1$. The number $d_0$ is odd. A common prime factor of $d_0$ and $2(d_0 + 1)$ divides $2$ or divides both $d_0$ and $d_0 + 1$, so $d_0$ is prime to $q_0$. Since $9240 = 8 \cdot 1155$, $d_0 \equiv -1 \equiv 7 \pmod 8$. Also $8 \mid q_0$.
 
-For every prime $d \equiv d_0 \pmod{q_0}$, the one-sided bound with $\varepsilon = \beta - 1/2 > 0$ gives $R^{(d)}_{q_0}(y) \leq y^{-1/2 + (\beta - 1/2)} = y^{\beta - 1}$ for all large $y$. So the criterion applies to the character $\chi'$ modulo $q_0$ induced by $\chi$ (`DirichletCharacter.changeLevel` (Mathlib)), and $L(\rho, \chi') \neq 0$.
+For every prime $d \equiv d_0 \pmod{q_0}$, the one-sided bound with $\eta = \beta - 1/2 > 0$ gives $R^{(d)}_{q_0}(y) \leq y^{-1/2 + (\beta - 1/2)} = y^{\beta - 1}$ for all large $y$. So the criterion applies to the character $\chi'$ modulo $q_0$ induced by $\chi$ (`DirichletCharacter.changeLevel` (Mathlib)), and $L(\rho, \chi') \neq 0$.
 
 The induced character differs from $\chi$ only at the primes $p \mid q_0$, $p \nmid q$. For $\chi \neq 1$ or $\rho \neq 1$, Mathlib gives
 

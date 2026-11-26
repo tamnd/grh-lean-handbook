@@ -18,13 +18,13 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* The points $(1, 2, 0)$, $(2, 0, 1)$ and $(0, 2, 1)$ lie on the sphere, and in base $3$ they give $1 + 2 \cdot 3$, $2 + 9$ and $2 \cdot 3 + 9$. Their digit vectors $u$, $w$ have $u + w = (1, 4, 1) \neq 2v = (4, 0, 2)$, and the entry $4$ is not a digit in base $3$. The proof compares digits of the two sides, and this needs entries less than $B$.
 
-**Exercise 3.** Let $M$, $A$ be fixed, and assume the Siegel-Walfisz theorem in the form of Section 4. Let $U \geq W$ and $q = M^k \leq W^A$. Show that the number of primes $p \equiv 1 \pmod q$ with $\log p \in [U, U + W]$ is at least $e^{U + W}/(2\varphi(q)(U + W))$ for large $W$. Deduce that the window $[U, U + 1]$ is already enough for the source form when $W$ is large, provided $U \geq W$.
+**Exercise 3.** Let $Q$, $A$ be fixed, and assume the Siegel-Walfisz theorem in the form of Section 4. Let $U \geq W$ and $q = Q^k \leq W^A$. Show that the number of primes $p \equiv 1 \pmod q$ with $\log p \in [U, U + W]$ is at least $e^{U + W}/(2\varphi(q)(U + W))$ for large $W$. Deduce that the window $[U, U + 1]$ is already enough for the source form when $W$ is large, provided $U \geq W$.
 
 *Hint.* Write the count with $\psi(e^{U + W}; q, 1) - \psi(e^U; q, 1)$. The main term is $(e^{U + W} - e^U)/\varphi(q)$, and the error is at most $e^{U+W}(U + W)^{-A - 2}$. For the second part, replace $W$ by $1$ in the length only, and keep $q \leq W^A \leq U^A$.
 
 **Exercise 4.** In [the corollary on the scales](/decl/New.eventually_exists_data_scales/), show that $x^{\varepsilon/7} \leq \log x_1$ also holds for every large $x$. Then show that $x^{\varepsilon/6} \leq \log x_1$ holds only when $\exp(x^{\varepsilon/6})$ is an integer. So the exponent $\varepsilon/6$ itself cannot be used, and some loss is necessary.
 
-*Hint.* For the first part, $t^{7/6} - 1 \geq t$ for large $t$, with $t = x^{\varepsilon/7}$. For the second part, $x_1 = \lfloor e^W \rfloor \leq e^W$, with equality only if $e^W$ is an integer, and $\log$ is strictly increasing.
+*Hint.* For the first part, $u^{7/6} - 1 \geq u$ for large $u$, with $u = x^{\varepsilon/7}$. For the second part, $x_1 = \lfloor e^W \rfloor \leq e^W$, with equality only if $e^W$ is an integer, and $\log$ is strictly increasing.
 
 **Exercise 5.** Let $n \geq 1$ and $\varepsilon > 0$ be fixed. Condition 8 of [a large scale](/decl/New.Parameters.IsLargeScale/) at $W = x^{\varepsilon/6}$ asks for $(5184 y)^n \leq e^{\varepsilon y/6}$, where $y = \log x$. Show that it holds for every large $y$. Show that $y \geq (12 n/\varepsilon) \log(12 n/\varepsilon) \cdot C$ is enough for a suitable absolute constant $C$, if $n/\varepsilon \geq 5184$.
 

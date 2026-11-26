@@ -23,12 +23,12 @@ This section defines the constant $C_P$ of the parameters and the three scales $
 The argument has many constants that depend on $q_0$ and $d$ but not on $x$. The source puts all of them into one number and asks that $\log\log b$ be much larger than it.
 
 **Definition (The constant of the parameters).** Let $P = (q_0, d)$ be parameters. The constant $C_P$ is
-$$C_P = C_{\mathrm{vac}} + (2d + 6) + q_0 + \lvert c_{\mathrm{CS}}(d)\rvert + \sum_{w} \bigl\lvert \log \lvert \Phi_{q_0}'(w)\rvert \bigr\rvert .$$
-Here $C_{\mathrm{vac}}$ is the natural number in the bound $\exp(C_{\mathrm{vac}} q_1^2)$ for the conjugates of the values of the integral vacuum, $c_{\mathrm{CS}}(d) = \gamma - \operatorname{Re} (L'/L)(1, \chi_K)$ is the constant of Chowla and Selberg, $\Phi_{q_0}$ is the cyclotomic polynomial of order $q_0$, and $w$ runs over the primitive $q_0$-th roots of unity in $\mathbb{C}$.
+$$C_P = C_{\mathrm{vac}} + (2d + 6) + q_0 + \lvert C_d\rvert + \sum_{w} \bigl\lvert \log \lvert \Phi_{q_0}'(w)\rvert \bigr\rvert .$$
+Here $C_{\mathrm{vac}}$ is the natural number in the bound $\exp(C_{\mathrm{vac}} q_1^2)$ for the conjugates of the values of the integral vacuum, $C_d = \gamma - \operatorname{Re} (L'/L)(1, \chi_K)$ is the constant of Chowla and Selberg, $\Phi_{q_0}$ is the cyclotomic polynomial of order $q_0$, and $w$ runs over the primitive $q_0$-th roots of unity in $\mathbb{C}$.
 
 Lean: `New.Parameters.constantBound` (New/Reduction/Data/AdmissibleData.lean).
 
-The five terms come from five places of the argument. The integral vacuum is the theta function of rank one whose values Theorem A uses (Volume 9). The constant $c_{\mathrm{CS}}(d)$ is the value of the constant $c_q$ of the prime remainder that [the weighted prime remainder](/chapter/weighted-prime-remainder/) computes. The derivative $\Phi_{q_0}'(w)$ at a root $w$ is the factor at $w$ in the discriminant of $\mathbb{Q}(\zeta_{q_0})$, since $\prod_w \Phi_{q_0}'(w)$ is that discriminant up to sign. The term $2d + 6$ enters, next to $C_{\mathrm{vac}}$, the bound in Theorem A for the action of the Weil representation on the vacuum.
+The five terms come from five places of the argument. The integral vacuum is the theta function of rank one whose values Theorem A uses (Volume 9). The constant $C_d$ is the value of the constant $c_q$ of the prime remainder that [the weighted prime remainder](/chapter/weighted-prime-remainder/) computes. The derivative $\Phi_{q_0}'(w)$ at a root $w$ is the factor at $w$ in the discriminant of $\mathbb{Q}(\zeta_{q_0})$, since $\prod_w \Phi_{q_0}'(w)$ is that discriminant up to sign. The term $2d + 6$ enters, next to $C_{\mathrm{vac}}$, the bound in Theorem A for the action of the Weil representation on the vacuum.
 
 **Remark (Formalization).** The number $C_{\mathrm{vac}}$ is `New.Parameters.vacuumBoundConst`, and the source defines it by `choose` from an existence statement (`New.Parameters.exists_mul_vacElem_integral_bounded`), which gives one constant for every exponent $s$ of the tower. So it has no formula: the argument uses only the bound that it satisfies. Its definition takes only $P$ as input, so $C_P$ depends on $q_0$ and $d$ and on nothing else. This matters, since the data contain the inequality $10^{12} C_P \leq \log\log b$: if $C_P$ depended on the data, the inequality would be circular. The definition of $C_P$ is the reason that the file of the data imports a file of Theorem A. So the data are not at the bottom of the imports of the source.
 
@@ -37,7 +37,7 @@ $$64 \leq C_P, \qquad q_0 \leq C_P, \qquad d \leq C_P, \qquad \varphi(q_0) \leq 
 
 Lean: `New.Data.le_constantBound` (New/Reduction/Data/Magnitudes.lean).
 
-*Proof.* The terms $C_{\mathrm{vac}}$, $\lvert c_{\mathrm{CS}}(d)\rvert$ and the sum are at least $0$. So $C_P \geq q_0 + 2d + 6$. The prime $d$ satisfies $d > 64$ (`New.Parameters.sixty_four_lt_d`), because $q_0 \mid 2(d+1)$ and $q_0 \geq 18480$. So each of $64$, $q_0$, $d$ is at most $C_P$. Last, $\varphi(q_0) \leq q_0$. $\square$
+*Proof.* The terms $C_{\mathrm{vac}}$, $\lvert C_d\rvert$ and the sum are at least $0$. So $C_P \geq q_0 + 2d + 6$. The prime $d$ satisfies $d > 64$ (`New.Parameters.sixty_four_lt_d`), because $q_0 \mid 2(d+1)$ and $q_0 \geq 18480$. So each of $64$, $q_0$, $d$ is at most $C_P$. Last, $\varphi(q_0) \leq q_0$. $\square$
 
 The lemma is weak on purpose: it is all that the sizes need. The true value is larger. Since $q_0 \mid 2(d + 1)$, one has $d \geq q_0/2 - 1 \geq 9239$, and so $C_P \geq 18480 + 2 \cdot 9239 + 6 = 36964$.
 

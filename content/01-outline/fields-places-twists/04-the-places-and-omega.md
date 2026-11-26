@@ -82,7 +82,7 @@ With $N_{E/K}(\zeta) = 1$ this gives $\prod_v \Phi_v(\zeta^k)^{n} = 1$ for every
 ### The number $\Omega$
 
 The constant of Chowla and Selberg is the real number
-$$\mathrm{CS}(d) = \gamma - \operatorname{Re} \frac{L'}{L}(1, \chi_K),$$
+$$C_d = \gamma - \operatorname{Re} \frac{L'}{L}(1, \chi_K),$$
 where $\gamma$ is Euler's constant and $L(s, \chi_K)$ is the Dirichlet L-function of the character $\chi_K = (\cdot/d)$.
 
 Lean: `New.chowlaSelbergConst` (Lib/General/NumberTheory/ImaginaryQuadraticField.lean).
@@ -90,7 +90,7 @@ Lean: `New.chowlaSelbergConst` (Lib/General/NumberTheory/ImaginaryQuadraticField
 **Remark (Formalization).** The source writes $\chi_K$ as the twist of the character modulo $1$ by $(\cdot/d)$, a character modulo $1 \cdot d$, and it takes the logarithmic derivative of the entire function `New.entireL` of this character. For $d$ odd the character is not principal, so this function is $L(s, \chi_K)$ itself. Its value at $s = 1$ is not $0$, so the logarithmic derivative at $1$ is a true value, not a junk value. The value $L'/L(1,\chi_K)$ is real, since $\chi_K$ is real; the real part in the definition only makes the type real.
 
 **Definition.** For parameters $(q_0, d)$ and $s \ge 0$ let
-$$\Omega = e^{\mathrm{CS}(d)} \cdot \frac{2\pi}{\mathrm{rd}_E},$$
+$$\Omega = e^{C_d} \cdot \frac{2\pi}{\mathrm{rd}_E},$$
 where $\mathrm{rd}_E = |d_E|^{1/[E:\mathbb{Q}]}$ is the root discriminant of $E$.
 
 Lean: `New.Parameters.bigOmega` (New/Reduction/Data/FieldsAndPlaces.lean).
@@ -105,6 +105,6 @@ Lean: `New.rootDiscr_mem_Icc` (New/Reduction/Data/AdmissibleData.lean).
 
 For the data the source proves the sharper bounds $x^{10} \le \mathrm{rd}_E \le x^{12}$, and from them
 $$x^{-13} \le \Omega \le 1$$
-(Lean: `New.Data.rootDisc_mem_Icc`, and an instance at [LevelAndTwists.lean](lean:New/Reduction/Data/LevelAndTwists.lean#L184)). The proof uses $|\mathrm{CS}(d)| + 6 \le \log x$, a scale inequality of [the data and its sizes](/chapter/data-and-sizes/), and $1 \le 2\pi \le e^6$.
+(Lean: `New.Data.rootDisc_mem_Icc`, and an instance at [LevelAndTwists.lean](lean:New/Reduction/Data/LevelAndTwists.lean#L184)). The proof uses $|C_d| + 6 \le \log x$, a scale inequality of [the data and its sizes](/chapter/data-and-sizes/), and $1 \le 2\pi \le e^6$.
 
-**Remark (Formalization).** The role of $\Omega$ is in the later volumes. The source uses it as the scale by which the Galois conjugates of the Petersson norms of the lifts differ: for $\sigma \in \mathrm{Aut}(\mathbb{C}/K)$, the absolute value of the conjugate of the Petersson square of a scaled lift of total row length $J$ is $\Omega^{-J}$ times a positive constant times the squared norm of another lift (see `New.Data.CriticalPair.exists_norm_map_inner_trivialLift_eq_mul` in New/OneLift/HeckeValues/AlgebraicPartSize.lean). The same constant $\mathrm{CS}(d)$ appears in the value of the constant $c_q$ of [the weighted prime remainder](/chapter/weighted-prime-remainder/).
+**Remark (Formalization).** The role of $\Omega$ is in the later volumes. The source uses it as the scale by which the Galois conjugates of the Petersson norms of the lifts differ: for $\sigma \in \mathrm{Aut}(\mathbb{C}/K)$ (here $\sigma$ is an automorphism of $\mathbb{C}$, not an automorphism $\sigma_v$ of $E$), the absolute value of the conjugate of the Petersson square of a scaled lift of total row length $J$ is $\Omega^{-J}$ times a positive constant times the squared norm of another lift (see `New.Data.CriticalPair.exists_norm_map_inner_trivialLift_eq_mul` in New/OneLift/HeckeValues/AlgebraicPartSize.lean). The same constant $C_d$ appears in the value of the constant $c_q$ of [the weighted prime remainder](/chapter/weighted-prime-remainder/).

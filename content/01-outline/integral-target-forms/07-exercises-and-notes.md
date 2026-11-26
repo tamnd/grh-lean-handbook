@@ -7,8 +7,8 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Exercises
 
-1. In the model case of Section 2, let the classes be $c_1, \dots, c_r$ with stabilisers of orders $s_1, \dots, s_r$, and let $\chi$ be trivial. Write the Gram matrix of the forms $\delta_{c_1}, \dots, \delta_{c_r}$. Show that $A \langle \varphi, \varphi' \rangle$ is integral at $\iota$ for all forms $\varphi$ integral at $\bar\iota$ and $\varphi'$ integral at $\iota$ if and only if every $s_i$ divides $A$ in $\mathcal{O}_\iota$.
-   *Hint.* Take $\varphi = \varphi' = \delta_{c_i}$ for the converse.
+1. In the model case of Section 2, let the classes be $c_1, \dots, c_r$ with stabilisers of orders $s_1, \dots, s_r$, and let $\chi$ be trivial. Write the Gram matrix of the forms $\mathbf{1}_{c_1}, \dots, \mathbf{1}_{c_r}$. Show that $A \langle \varphi, \varphi' \rangle$ is integral at $\iota$ for all forms $\varphi$ integral at $\bar\iota$ and $\varphi'$ integral at $\iota$ if and only if every $s_i$ divides $A$ in $\mathcal{O}_\iota$.
+   *Hint.* Take $\varphi = \varphi' = \mathbf{1}_{c_i}$ for the converse.
 
 2. Let $u : V \to S$ be a linear map of finite-dimensional complex inner product spaces, and let $v_1, \dots, v_d$ be a basis of $V$. Prove that $\det(\langle u v_i, u v_k\rangle) = \det(u^* u)\det(\langle v_i, v_k\rangle)$. Deduce that $Z(\xi) \neq 0$ when $\Theta_\xi$ is injective.
    *Hint.* Write $v_i = \sum_j P_{ji} e_j$ for an orthonormal basis $e$, and use $\det(P^* M P) = |\det P|^2 \det M$.

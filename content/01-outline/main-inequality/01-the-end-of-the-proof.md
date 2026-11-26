@@ -18,8 +18,8 @@ The chapter proves four results, in this order.
 
 1. **The main inequality.** For admissible data $D$, $m \cdot \mathrm{rem} \leq f a \log^5 b$. Here $m$ is the number of theta lifts, $\mathrm{rem}$ is the total remainder of the prime sums, $f$ is the number of infinite places of the CM field $E$, $a = xb$ is the long order and $b$ is the large weight. The proof compares an upper bound and a lower bound for the covolume of one family of lattice vectors. The two bounds have the same main term, and it cancels.
 2. **The bound at $x$.** The identity of [the prime sums and the total remainder](/chapter/prime-sums/) writes $\mathrm{rem}$ through the weighted prime remainder $R_{q_0}$ at $x$ and at the cut-off $x_1$. Division by $m a \#\Phi_b$ gives $R_{q_0}(x) \leq \varphi(q_0) \log^6 b / m + |R_{q_0}(x_1)| + \log b \, |R_1(x_1)|$.
-3. **The one-sided bound.** The prime number theorem for $R_q$, applied at the huge cut-off $x_1$, makes the last two terms smaller than $x^{-2}$. The data have $m \geq \sqrt{x}$ and $\log b \leq 2 x^{\varepsilon}$. So $R_{q_0}(x) \leq (64 \varphi(q_0) + 3) x^{-1/2 + 6\varepsilon}$ for all large integers $x$, and then $R_{q_0}(y) \leq y^{-1/2 + \varepsilon}$ for all large real $y$.
-4. **The half-plane theorem.** The criterion of [Landau's criterion](/chapter/landau-criterion/) turns a one-sided bound $R_{q_0}(y) \leq y^{\beta - 1}$, for every prime $d$ in a class modulo $q_0$, into $L(\rho, \psi) \neq 0$ for every character $\psi$ modulo $q_0$ and every $\rho \neq 1$ with $\operatorname{Re} \rho > \beta$. The source applies it with $q_0 = 18480 q$, to the character modulo $q_0$ that $\chi$ induces.
+3. **The one-sided bound.** The prime number theorem for $R_q$, applied at the huge cut-off $x_1$, makes the last two terms smaller than $x^{-2}$. The data have $m \geq \sqrt{x}$ and $\log b \leq 2 x^{\varepsilon}$. So $R_{q_0}(x) \leq (64 \varphi(q_0) + 3) x^{-1/2 + 6\varepsilon}$ for all large integers $x$, and then, for every margin $\eta > 0$, $R_{q_0}(y) \leq y^{-1/2 + \eta}$ for all large real $y$.
+4. **The half-plane theorem.** The criterion of [Landau's criterion](/chapter/landau-criterion/) turns a one-sided bound $R_{q_0}(y) \leq y^{\beta - 1}$, for every prime $d$ in a class modulo $q_0$, into $L(\rho, \psi) \neq 0$ for every character $\psi$ modulo $q_0$ and every $\rho \neq 1$ with $\operatorname{Re} \rho > \beta$. The source applies it with $q_0 = 18480 q$, where $q$ is the modulus of $\chi$, to the character modulo $q_0$ that $\chi$ induces.
 
 ### Where the chapter sits
 
@@ -27,19 +27,19 @@ The chapter proves four results, in this order.
 
 ### A model of the main inequality
 
-The main inequality has one idea, and a model shows it. Let $V$ be a real number, the logarithm of a covolume. Suppose that two arguments bound it, one from above and one from below, with the same main term $d \cdot M$:
+The main inequality has one idea, and a model shows it. Let $c$ be a real number, the logarithm of a covolume of a family in a space of dimension $d_T$. Suppose that two arguments bound it, one from above and one from below, with the same main term $d_T \cdot \mathrm{main}$:
 
-$$d (M - e_1) \;\leq\; V \;\leq\; n (M - m \cdot \mathrm{rem} + e_2) + e_3,$$
+$$d_T (\mathrm{main} - e_1) \;\leq\; c \;\leq\; n (\mathrm{main} - m \cdot \mathrm{rem} + e_2) + e_3,$$
 
-with $0 < n \leq d$, $M + e_2 \geq 0$ and $n \geq d/2$. Then $n(M + e_2) \leq d (M + e_2)$, so the main terms cancel, and
+with $0 < n \leq d_T$, $\mathrm{main} + e_2 \geq 0$ and $n \geq d_T/2$. Then $n(\mathrm{main} + e_2) \leq d_T (\mathrm{main} + e_2)$, so the main terms cancel, and
 
-$$n \, m \cdot \mathrm{rem} \;\leq\; d (e_1 + e_2) + e_3, \qquad m \cdot \mathrm{rem} \;\leq\; 2 (e_1 + e_2) + 2 e_3 / d.$$
+$$n \, m \cdot \mathrm{rem} \;\leq\; d_T (e_1 + e_2) + e_3, \qquad m \cdot \mathrm{rem} \;\leq\; 2 (e_1 + e_2) + 2 e_3 / d_T.$$
 
-The point is that $M$ is very large. In the source, $M$ is the main amount, at least $x^4 f a$, while the errors are of size $f a \log^4 b$. Neither bound alone says anything about $\mathrm{rem}$. Only the cancellation of $M$ between them leaves a statement about the primes. Section 3 carries out this model with the exact objects and the exact errors.
+The point is that $\mathrm{main}$ is very large. In the source, $\mathrm{main}$ is the main amount `New.Data.mainAmount`, at least $x^4 f a$, while the errors are of size $f a \log^4 b$. Neither bound alone says anything about $\mathrm{rem}$. Only the cancellation of $\mathrm{main}$ between them leaves a statement about the primes. Section 3 carries out this model with the exact objects and the exact errors.
 
 ### The exponents in one line
 
-The data have $m \in [\sqrt{x}, 2\sqrt{x}]$ and $\log b \leq 2x^{\varepsilon}$, with $0 < \varepsilon < 1/100$ fixed, and $x_1$ so large that the prime number theorem makes $R(x_1)$ smaller than $x^{-2}$. So the bound at $x$ reads
+The data have $m \in [\sqrt{x}, 2\sqrt{x}]$ and $\log b \leq 2x^{\varepsilon}$, with $0 < \varepsilon < 1/100$ fixed, and $x_1$ so large that the prime number theorem makes $|R_{q_0}(x_1)|$ and $|R_1(x_1)|$ smaller than $x^{-2}$. So the bound at $x$ reads
 
 $$R_{q_0}(x) \;\leq\; \frac{\varphi(q_0) (2 x^{\varepsilon})^6}{x^{1/2}} + x^{-2} + 2 x^{\varepsilon} x^{-2} \;\leq\; (64 \varphi(q_0) + 3)\, x^{-1/2 + 6\varepsilon}.$$
 

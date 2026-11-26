@@ -19,7 +19,7 @@ This section assembles the pieces. It first defines *admissible data*: explicit 
 
 ### Admissible data
 
-**Definition (Admissible data).** Let $P$ be parameters, $x \in \mathbb{N}$ and $W \in \mathbb{R}$. Let $m, r, s, b, N \in \mathbb{N}$, let $T \subseteq \Phi$ be finite, let $g_0, g_1 \in \mathbb{N}$, let $\alpha$ be an integer of $K$ and let $\beta$ be an integer of $E$. These objects are *admissible data at $x$ and $W$* if the following hold.
+**Definition (Admissible data).** Let $P$ be parameters, $x \in \mathbb{N}$ and $W \in \mathbb{R}$. Let $m, r, s, b, N \in \mathbb{N}$, let $T \subseteq \Phi$ be finite, let $p_0, p_1 \in \mathbb{N}$, let $\alpha$ be an integer of $K$ and let $\beta$ be an integer of $E$. These objects are *admissible data at $x$ and $W$* if the following hold.
 
 1. $m$ is the least power of $2$ with $m \geq \sqrt{x}$.
 2. $r$ is the least power of $3$ with $r \geq x^5$.
@@ -28,12 +28,14 @@ This section assembles the pieces. It first defines *admissible data*: explicit 
 5. Every $\sigma \in T$ has class $-1$ modulo $q_0$.
 6. $\operatorname{towerDeg}(s) \leq \#T \cdot \log b$.
 7. $T$ is sparse for the primes up to $(r + 1 - m)(5r)$.
-8. $g_0$ and $g_1$ are prime, $g_i \equiv 1 \pmod{q_2^2}$, $g_0 \neq g_1$, and $g_i \in [b^{10}, b^{11}]$.
-9. $\alpha\bar\alpha = g_0 g_1$.
-10. $N$ is prime, $N \equiv 1 \pmod{q_2^2}$, and $\log N_- \leq \log N \leq \log N_- + \sqrt{\log b}$, where $\log N_-$ is formed with $s$, $m$, the weights $\kappa(\tau) = b$ for $\tau \in T$ and $\kappa(\tau) = \lfloor xb/\lfloor e^W \rfloor \rfloor$ otherwise, $M = g_0 g_1$ and $\log b$.
+8. $p_0$ and $p_1$ are prime, $p_i \equiv 1 \pmod{q_2^2}$, $p_0 \neq p_1$, and $p_i \in [b^{10}, b^{11}]$.
+9. $\alpha\bar\alpha = p_0 p_1$.
+10. $N$ is prime, $N \equiv 1 \pmod{q_2^2}$, and $\log N_- \leq \log N \leq \log N_- + \sqrt{\log b}$, where $\log N_-$ is formed with $s$, $m$, the weights $\kappa(\tau) = b$ for $\tau \in T$ and $\kappa(\tau) = \lfloor xb/\lfloor e^W \rfloor \rfloor$ otherwise, $M = p_0 p_1$ and $\log b$.
 11. $\beta\bar\beta = N$.
 
 Lean: `New.Parameters.IsAdmissibleData` (New/Reduction/Data/Existence.lean).
+
+Lean writes the two primes as a family `g : Fin 2 → ℕ`, and its comments call them $p_0$ and $p_1$. This book writes $p_0$, $p_1$, as in the data.
 
 The ranks, the exponent and the scales are determined by $x$ and $W$. The places and the primes are any with the properties. This split is the point of the definition: the existence theorem can state the exact values of $x_1$, $b$, $m$ and $r$, while it leaves the places and the primes free.
 
@@ -67,7 +69,7 @@ Lean: `New.Parameters.IsAdmissibleData.exists_hasFields` (New/Reduction/Data/Exi
 
 | inequality of the data | proof at a large scale |
 |---|---|
-| $10^{12} c_P \leq \log\log b$ | $10^{12} c_P \leq \log W \leq 6 \log W \leq \log\log b$ |
+| $10^{12} C_P \leq \log\log b$ | $10^{12} C_P \leq \log W \leq 6 \log W \leq \log\log b$ |
 | $100 \log\log b \leq \log x$ | $100 \log\log b \leq 100(6 \log W + 1) \leq \log x$ |
 | $10^6 \log x \leq \log x_1$ | $10^6 \log x \leq W - 1 \leq \log x_1$, by $2 \cdot 10^6 \log x \leq W$ |
 | $10^6 \log x_1 \leq \log b$ | $10^6 \log x_1 \leq 10^6 W \leq W^6 \leq \log b$ |
@@ -94,9 +96,9 @@ Lean: `New.eventually_exists_data_of_isAdmissibleData` (New/Reduction/Data/Exist
 
 Lean: `New.eventually_exists_data` (New/Reduction/Data/Existence.lean).
 
-*Proof.* Let $n$ be the exponent of [the large scales](/decl/New.Parameters.exists_eventually_isLargeScale/). Put $M = q_0 d$, which is divisible by $4$, and $A = n + 7$. [The theorem on windows](/decl/New.exists_prime_modEq_one_log_mem/) holds for every large $W$, and $W = x^{\varepsilon/6}$ tends to infinity with $x$. So for every large $x$ three things hold at once: $W$ is a large scale for $\log x$ with exponent $n$; every window $[U, U + W]$ with $U \in [W, W^{n+7}]$ holds a prime $\equiv 1 \pmod{(q_0 d)^k}$ for each $k > 1$ with $(q_0 d)^k \leq W^{n+7}$; and the theorem that admissible data are fields applies. [The proposition on admissible data](/decl/New.Parameters.IsLargeScale.exists_isAdmissibleData/) gives admissible data at $x$ and $W$. [The theorem on fields](/decl/New.eventually_exists_data_of_isAdmissibleData/) gives $D$. Its fields are the admissible data, so items 2 to 5 are properties 1, 2 and 4 of the admissible data, rewritten with $x_1 = \lfloor e^W \rfloor$ and $W^6 = x^\varepsilon$. Items 6 and 7 are part of the theorem on fields. $\square$
+*Proof.* Let $n$ be the exponent of [the large scales](/decl/New.Parameters.exists_eventually_isLargeScale/). Put $Q = q_0 d$, which is divisible by $4$, and $A = n + 7$. [The theorem on windows](/decl/New.exists_prime_modEq_one_log_mem/) holds for every large $W$, and $W = x^{\varepsilon/6}$ tends to infinity with $x$. So for every large $x$ three things hold at once: $W$ is a large scale for $\log x$ with exponent $n$; every window $[U, U + W]$ with $U \in [W, W^{n+7}]$ holds a prime $\equiv 1 \pmod{(q_0 d)^k}$ for each $k > 1$ with $(q_0 d)^k \leq W^{n+7}$; and the theorem that admissible data are fields applies. [The proposition on admissible data](/decl/New.Parameters.IsLargeScale.exists_isAdmissibleData/) gives admissible data at $x$ and $W$. [The theorem on fields](/decl/New.eventually_exists_data_of_isAdmissibleData/) gives $D$. Its fields are the admissible data, so items 2 to 5 are properties 1, 2 and 4 of the admissible data, rewritten with $x_1 = \lfloor e^W \rfloor$ and $W^6 = x^\varepsilon$. Items 6 and 7 are part of the theorem on fields. $\square$
 
-The proof is short because the earlier statements are exactly what it needs. The finding F-097 of the [register of findings](/chapter/register-of-findings/) asks whether the uniformity of the theorem on windows is what the data need. Here the two statements meet: the theorem on windows is applied with $M = q_0 d$ and $A = n + 7$, and its conclusion is the hypothesis of the proposition. Lean accepts this step, if the reported checks hold.
+The proof is short because the earlier statements are exactly what it needs. The finding F-097 of the [register of findings](/chapter/register-of-findings/) asks whether the uniformity of the theorem on windows is what the data need. Here the two statements meet: the theorem on windows is applied with $Q = q_0 d$ and $A = n + 7$, and its conclusion is the hypothesis of the proposition. Lean accepts this step, if the reported checks hold.
 
 ### What the end of the proof uses
 

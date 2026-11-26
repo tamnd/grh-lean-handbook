@@ -64,9 +64,9 @@ Then $c + 2\delta + n'(b_{\mathrm{short}} + b_{\mathrm{denom}}) + b_{\mathrm{vol
 
 Lean: `New.TwistedLattice.covolume_add_index_nonneg` (New/Reduction/Lattices/TwistedLattice.lean).
 
-[Twisted lattices](/chapter/twisted-lattices/#the-lattice-inequality) proves it. The proof writes the Gram determinant for the trivial twist as a product of three factors. Let $\Gamma(\xi)$ be the Gram determinant of the family $\Theta_\xi(y, z)$. By the identity of the volume, $\Gamma(\xi) = Z(\xi) \cdot \det\langle (y,z), (y,z)\rangle$ for every $\xi$. So
-$$\Gamma(1) = \big(|\gamma(\xi_\iota)|^{2n'}\, \Gamma(\xi_\iota)\big) \cdot |\gamma(\xi_\iota)|^{-2n'} \cdot \frac{Z(1)}{Z(\xi_\iota)}.$$
-The three factors have heights at most $2\delta$, $n' b_{\mathrm{denom}}$ and $b_{\mathrm{volume}}$. The covolume bounds the conjugates of $\Gamma(1)$, and the product formula closes the argument.
+[Twisted lattices](/chapter/twisted-lattices/#the-lattice-inequality) proves it. The proof writes the Gram determinant for the trivial twist as a product of three factors. Let $\mathrm{Gram}(\xi)$ be the Gram determinant of the family $\Theta_\xi(y, z)$. By the identity of the volume, $\mathrm{Gram}(\xi) = Z(\xi) \cdot \det\langle (y,z), (y,z)\rangle$ for every $\xi$. So
+$$\mathrm{Gram}(1) = \big(|\gamma(\xi_\iota)|^{2n'}\, \mathrm{Gram}(\xi_\iota)\big) \cdot |\gamma(\xi_\iota)|^{-2n'} \cdot \frac{Z(1)}{Z(\xi_\iota)}.$$
+The three factors have heights at most $2\delta$, $n' b_{\mathrm{denom}}$ and $b_{\mathrm{volume}}$. The covolume bounds the conjugates of $\mathrm{Gram}(1)$, and the product formula closes the argument.
 
 **Theorem (Theorem C).** Let $y_1, \dots, y_n$ be linearly independent target forms with $n \geq (1 - 4/b^2) d_T$. If $y$ has index at most $\delta$ and covolume at most $c$ in the target lattice, then
 $$d_T \big(A_{\mathrm{main}} - 3 f a \log^4 b\big) \leq c + 2\delta.$$

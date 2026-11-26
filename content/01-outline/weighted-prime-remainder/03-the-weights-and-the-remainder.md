@@ -114,7 +114,7 @@ Lean: `New.abs_primeRemainder_exp_le` (New/Reduction/Zeros/PrimeError.lean).
 
 **Lemma (The form with positive parts).** Let $z > 0$, and let $A \in \mathbb{N}$ with $\lfloor z \rfloor \leq A$. Then
 $$R_q(z) = \sum_{n = 1}^{A} \lambda(n)\Bigl(\frac{1}{n} - \frac{1}{z}\Bigr)^{+} - \frac{\log z}{\varphi(q)} - c_q,$$
-where $t^+ = \max(t, 0)$. If $A \geq z$, then also $R_q(z) = A^{-1}\sum_{n = 1}^{A} \lambda(n)(A/n - A/z)^+ - \log z/\varphi(q) - c_q$.
+where $u^+ = \max(u, 0)$ for real $u$. If $A \geq z$, then also $R_q(z) = A^{-1}\sum_{n = 1}^{A} \lambda(n)(A/n - A/z)^+ - \log z/\varphi(q) - c_q$.
 
 Lean: `New.primeRemainder_eq_sum_posPart` (New/Reduction/Zeros/PrimeError.lean), and `New.primeRemainder_eq_sum` for the second form.
 

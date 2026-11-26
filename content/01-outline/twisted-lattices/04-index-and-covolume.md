@@ -89,13 +89,13 @@ Lean: `New.TwistedLattice.mem_integralVectors` (New/Reduction/Lattices/TwistedLa
 
 ### The index
 
-**Definition (Index at most δ).** Let $y = (y_k)_{k \in S}$ be a finite family in $V$, and let $\delta \in \mathbb{R}$. The family has *index at most $\delta$* if there are real numbers $\delta_\ell \geq 0$, for $\ell \in \mathbb{N}$, such that $\sum_{\ell \in U} \delta_\ell \log \ell \leq \delta$ for every finite set $U$ of primes, and for every $\iota \mid \ell$ some square matrix over $\mathcal{O}_\iota$ carries $y$ into the vectors of $V$ integral at $\iota$ with loss $\delta_\ell$.
+**Definition (Index at most δ).** Let $y = (y_k)_{k \in S}$ be a finite family in $V$, and let $\delta \in \mathbb{R}$. The family has *index at most $\delta$* if there are real numbers $e(\ell) \geq 0$, for $\ell \in \mathbb{N}$, such that $\sum_{\ell \in U} e(\ell) \log \ell \leq \delta$ for every finite set $U$ of primes, and for every $\iota \mid \ell$ some square matrix over $\mathcal{O}_\iota$ carries $y$ into the vectors of $V$ integral at $\iota$ with loss $e(\ell)$.
 
 Lean: `New.TwistedLattice.IndexLe` (New/Reduction/Lattices/TwistedLattice.lean).
 
-In the model of Section 2, a family $v$ of $n$ vectors with $Dv \subset \Lambda$ has index at most $n \log D$, with the matrix $D \cdot 1$ at each $\iota$.
+In the model of Section 2, a family $v$ of $n$ vectors with $Dv \subset \mathcal{L}$ has index at most $n \log D$, with the matrix $D \cdot 1$ at each $\iota$.
 
-**Example (Rank one).** In the standard twisted lattice with $n = 1$, let $y = 1/2$. At $\iota \mid 2$ the $1 \times 1$ matrix $(2)$ carries $y$ into $\mathcal{O}_\iota$, and $\|\iota 2\| = 2^{-1}$. At $\iota \mid \ell$ with $\ell$ odd, $y$ is already integral. So $y$ has index at most $\log 2$, with $\delta_2 = 1$ and $\delta_\ell = 0$ for $\ell \neq 2$. No smaller bound holds: for any matrix $(u)$ with $u/2 \in \mathcal{O}_\iota$ we have $\|\iota u\| \leq 1/2$.
+**Example (Rank one).** In the standard twisted lattice with $n = 1$, let $y = 1/2$. At $\iota \mid 2$ the $1 \times 1$ matrix $(2)$ carries $y$ into $\mathcal{O}_\iota$, and $\|\iota 2\| = 2^{-1}$. At $\iota \mid \ell$ with $\ell$ odd, $y$ is already integral. So $y$ has index at most $\log 2$, with $\delta_2 = 1$ and $e(\ell) = 0$ for $\ell \neq 2$. No smaller bound holds: for any matrix $(u)$ with $u/2 \in \mathcal{O}_\iota$ we have $\|\iota u\| \leq 1/2$.
 
 The matrix at $\iota$ does not depend on the twist. It must work for all twists allowed at $\ell$ at once.
 
@@ -104,7 +104,7 @@ The matrix at $\iota$ does not depend on the twist. It must work for all twists 
 1. If $y$ has index at most $\delta$ and $\delta \leq \delta'$, then $y$ has index at most $\delta'$.
 2. If $f$ is a bijection and $y \circ f$ has index at most $\delta$, then $y$ has index at most $\delta$.
 3. If $y$ and $y'$ have index at most $\delta$ and $\delta'$, then the joined family $y \sqcup y'$ has index at most $\delta + \delta'$.
-4. Let $t$ be a finite set, and for $s \in t$ let $A_s \subset V$ be a set such that every finite family in $A_s$ has index at most $\delta$. If every member of $y$ lies in some $A_s$, $s \in t$, then $y$ has index at most $\#t \cdot \delta$.
+4. Let $J$ be a finite set, and for $s \in J$ let $A_s \subset V$ be a set such that every finite family in $A_s$ has index at most $\delta$. If every member of $y$ lies in some $A_s$, $s \in J$, then $y$ has index at most $\#J \cdot \delta$.
 
 Lean: `New.TwistedLattice.IndexLe.mono` (New/Reduction/Lattices/TwistedLattice.lean).
 
@@ -114,7 +114,7 @@ Lean: `New.TwistedLattice.IndexLe.sumElim` (New/Reduction/Lattices/TwistedLattic
 
 Lean: `New.TwistedLattice.indexLe_card_mul` (New/Reduction/Lattices/TwistedLattice.lean).
 
-*Proof.* Part 1 keeps the data. Part 2 permutes the rows and columns of each matrix. Part 3 adds the numbers $\delta_\ell$ and uses block matrices. Part 4 is by induction on $t$: split $y$ into the members in $A_s$ for one $s$ and the others, and apply parts 2 and 3. For $t = \emptyset$ the family is empty, and the empty matrix carries it with loss $0$. $\square$
+*Proof.* Part 1 keeps the data. Part 2 permutes the rows and columns of each matrix. Part 3 adds the numbers $e(\ell)$ and uses block matrices. Part 4 is by induction on $J$: split $y$ into the members in $A_s$ for one $s$ and the others, and apply parts 2 and 3. For $J = \emptyset$ the family is empty, and the empty matrix carries it with loss $0$. $\square$
 
 ### The covolume
 

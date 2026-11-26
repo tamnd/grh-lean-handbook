@@ -11,13 +11,13 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* $9240 = 8 \cdot 1155$. A common divisor of $d_0$ and $q_0 = 2(d_0 + 1)$ divides $2$, and $d_0$ is odd.
 
-**Exercise 2.** In the proof of the star inequality, put $\ell = f a \log^4 b$, $u = f a \log^3 b$ and $e = 4\ell + 20 \log(1 + 2b^2)\, u$. Show that $\log(1 + 2b^2) \leq 2\log b + 2$ for $b \geq 1$, and deduce that $2e \leq f a \log^5 b$ when $\log b \geq 100$. Which term of $2e$ is the largest?
+**Exercise 2.** In the proof of the star inequality, put $\mathrm{loss} = f a \log^4 b$, $\mathrm{err}_0 = f a \log^3 b$ and $\mathrm{err} = 4\,\mathrm{loss} + 20 \log(1 + 2b^2)\, \mathrm{err}_0$. Show that $\log(1 + 2b^2) \leq 2\log b + 2$ for $b \geq 1$, and deduce that $2\,\mathrm{err} \leq f a \log^5 b$ when $\log b \geq 100$. Which term of $2\,\mathrm{err}$ is the largest?
 
-*Hint.* $1 + 2b^2 \leq 3b^2$ and $\log 3 < 2$. Then $2e \leq 88\, f a \log^4 b + 80\, f a \log^3 b$. The index term is the largest: it is about ten times the other two together.
+*Hint.* $1 + 2b^2 \leq 3b^2$ and $\log 3 < 2$. Then $2\,\mathrm{err} \leq 88\, f a \log^4 b + 80\, f a \log^3 b$. The index term is the largest: it is about ten times the other two together.
 
-**Exercise 3.** Suppose that the data could be chosen with $x^{\theta} \leq m$ for some $0 < \theta \leq 1/2$, with all other conditions of the end of the proof unchanged. Show that $R_{q_0}(x) \leq (64\,\varphi(q_0) + 3)\, x^{-\theta + 6\varepsilon}$ for large integers $x$. Which half-plane free of zeros would Landau's criterion give? Why does a value $\theta > 1/2$ give nothing more?
+**Exercise 3.** Suppose that the data could be chosen with $x^{\theta} \leq m$ for some $0 < \theta \leq 1/2$, with all other conditions of the end of the proof unchanged. Show that $R_{q_0}(x) \leq (64\,\varphi(q_0) + 3)\, x^{-\theta + 6\varepsilon_1}$ for large integers $x$. Which half-plane free of zeros would Landau's criterion give? Why does a value $\theta > 1/2$ give nothing more?
 
-*Hint.* Follow the proof of the one-sided bound in Section 2. The criterion needs a bound $R_{q_0}(x) \leq x^{\beta - 1}$ with $\beta > 1/2$, and it gives no zeros in $\operatorname{Re} s > \beta$. Take $\beta = 1 - \theta + 7\varepsilon$. For the last question, $\beta > 1/2$ is a hypothesis of the criterion, and the half-plane theorem already covers $\operatorname{Re} s > 1/2$.
+*Hint.* Follow the proof of the one-sided bound in Section 2. The criterion needs a bound $R_{q_0}(x) \leq x^{\beta - 1}$ with $\beta > 1/2$, and it gives no zeros in $\operatorname{Re} s > \beta$. Take $\beta = 1 - \theta + 7\varepsilon_1$. For the last question, $\beta > 1/2$ is a hypothesis of the criterion, and the half-plane theorem already covers $\operatorname{Re} s > 1/2$.
 
 **Exercise 4.** This is a model of size against divisibility. Let $n \geq 1$ and $N = \binom{2n}{n}$. Show that every prime $p$ with $n < p \leq 2n$ divides $N$, and that $N \leq 4^n$. Deduce that
 $$\sum_{n < p \leq 2n} \log p \leq n \log 4.$$

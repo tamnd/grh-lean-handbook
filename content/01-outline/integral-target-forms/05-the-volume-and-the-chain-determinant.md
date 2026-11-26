@@ -74,7 +74,7 @@ Lean: `New.Data.chainDeterminant_pos` (New/Determinant/Chain/NormOfChain.lean).
 
 ### The single lifts
 
-For $1 \leq j \leq m$ there is a space $W_j$ of rank $r$ and a theta lift from the good forms on $W_j$ for the twist $\vartheta^j$, the *good lift* (`New.Data.goodLift`), treated in [the single theta lifts](/chapter/single-theta-lifts/). The good forms on $W_j$ have dimension $d_T$ (`New.Data.targetDim_eq_finrank_goodForms_spaceW`).
+For $1 \leq j \leq m$ let $W_j$ be the diagonal hermitian space of rank $r$ over $E$ with the sign $+1$ on the basis vectors with basis number less than $k + j - 1$ and the sign $-1$ on the others (Lean: `New.Data.spaceW`, `New.Data.signsW`, New/UpperBound/Objects/Rows.lean and New/UpperBound/Objects/LabelsAndIndexTypes.lean). There is a theta lift from the good forms on $W_j$ for the twist $\vartheta^j$, the *good lift* (`New.Data.goodLift`), treated in [the single theta lifts](/chapter/single-theta-lifts/). The good forms on $W_j$ have dimension $d_T$ (`New.Data.targetDim_eq_finrank_goodForms_spaceW`).
 
 **Definition (Lift determinant).** For an $m$-fold twist $\vartheta$ and $1 \leq j \leq m$, the lift determinant $Z_j(\vartheta)$ is the volume $\det(u^* u)$ of the good lift $u$ at $j$ for the twist $\vartheta^j$.
 

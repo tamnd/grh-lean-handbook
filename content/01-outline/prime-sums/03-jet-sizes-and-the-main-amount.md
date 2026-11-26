@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Jet sizes, the direction amount and the main amount
 
-This section defines the main amount, the leading term that the two bounds of the lattice argument share. It proves two bounds for it: $x^4 f a \leq \text{main amount}$, and so the main amount is nonnegative. The main inequality uses the second bound ([the main inequality and the end of the proof](/chapter/main-inequality/)). The section first defines the jet size and the direction amount, from which the main amount is made.
+This section defines the main amount, the leading term that the two bounds of the lattice argument share. It proves two bounds for it: $x^4 f a \leq \mathrm{main}$, and so the main amount is nonnegative. The main inequality uses the second bound ([the main inequality and the end of the proof](/chapter/main-inequality/)). The section first defines the jet size and the direction amount, from which the main amount is made.
 
 ### The jet size
 
@@ -51,7 +51,7 @@ Lean: `New.Data.jetSize_mem_Icc` (New/Reduction/PrimeSums.lean).
 
 **Definition (Direction amount).** The *direction amount* is the sum over all $f$ places
 
-$$\sum_{\sigma \in \Phi} \Bigl(s_\infty\bigl(\kappa(\sigma)\bigr) - s_{\mathrm{fin}}\bigl(\kappa(\sigma), \sigma\bigr)\Bigr).$$
+$$\mathrm{dir} = \sum_{\sigma \in \Phi} \Bigl(s_\infty\bigl(\kappa(\sigma)\bigr) - s_{\mathrm{fin}}\bigl(\kappa(\sigma), \sigma\bigr)\Bigr).$$
 
 Lean: `New.Data.directionAmount` (New/Reduction/Data/AdmissibleData.lean).
 
@@ -81,23 +81,25 @@ The lower bound uses the $b$-places only, through the condition $3 l_0 2^s \leq 
 
 **Definition (Main amount).** The *main amount* is
 
-$$\text{main amount} = m\, k \cdot \text{direction amount} = m k \sum_{\sigma \in \Phi}\Bigl(s_\infty\bigl(\kappa(\sigma)\bigr) - s_{\mathrm{fin}}\bigl(\kappa(\sigma), \sigma\bigr)\Bigr),$$
+$$\mathrm{main} = m\, k\, \mathrm{dir} = m k \sum_{\sigma \in \Phi}\Bigl(s_\infty\bigl(\kappa(\sigma)\bigr) - s_{\mathrm{fin}}\bigl(\kappa(\sigma), \sigma\bigr)\Bigr),$$
 
 where $m \in [\sqrt{x}, 2\sqrt{x}]$ is the number of theta lifts in a chain and $k = r + 1 - m$ is the rank of the source, with $r \in [x^5, 3x^5]$ the rank of the target.
 
 Lean: `New.Data.mainAmount` (New/Reduction/PrimeSums.lean).
 
-A chain has $m$ lifts, and each lift contributes $k$ copies of the direction amount. The main amount occurs in the lower bound of Theorem C for the volume of the lattice (Volume 11). It occurs in Theorem A as $\text{main amount} - m \cdot \mathrm{rem}$ ([Theorems A, B and C](/chapter/theorems-a-b-c/)). The main inequality compares the two bounds, and the main amount cancels.
+The book writes $\mathrm{main}$ for the main amount and $\mathrm{dir}$ for the direction amount. The letter $M$ is always the principal level $p_0 p_1$.
 
-**Proposition (Lower bound for the main amount).** $x^4 f a \leq \text{main amount}$.
+A chain has $m$ lifts, and each lift contributes $k$ copies of the direction amount. The main amount occurs in the lower bound of Theorem C for the volume of the lattice (Volume 11). It occurs in Theorem A as $\mathrm{main} - m \cdot \mathrm{rem}$ ([Theorems A, B and C](/chapter/theorems-a-b-c/)). The main inequality compares the two bounds, and the main amount cancels.
+
+**Proposition (Lower bound for the main amount).** $x^4 f a \leq \mathrm{main}$.
 
 Lean: `New.Data.le_mainAmount` (New/Reduction/PrimeSums.lean).
 
 *Proof.* By the proposition on the direction amount and $\#\Phi_a = 3 l_0 2^s$,
 
-$$\text{main amount} \geq m k \cdot b \cdot 3 l_0 2^s .$$
+$$\mathrm{main} \geq m k \cdot b \cdot 3 l_0 2^s .$$
 
-So it suffices to prove $x^4 f a \leq mk \cdot b \cdot 3 l_0 2^s$. Put $f = 3 l_0 2^s \cdot \varphi(q_0)$ and $a = xb$. The inequality becomes $x^5 \varphi(q_0) \leq mk$. The data give $m \geq \sqrt{x}$ and $r \geq x^5$. The table of sizes gives $100 m \leq k$ (Lean: `New.Data.hundred_mul_m_le_k`), so $r + 1 = k + m \leq 2k$ and $k \geq x^5/2$. So $mk \geq x^{11/2}/2$, and it suffices that $2\varphi(q_0) \leq \sqrt{x}$. This holds. The bound $\varphi(q_0) \leq q_0 \leq c$ holds for the constant $c$ of the parameters (Lean: `New.Data.le_constantBound`), and the scale inequalities give $10^{12} c \leq \log\log b$ and $(\log b)^{100} \leq x$. So $\varphi(q_0) \leq 10^{-14} \log x$, which is far below $\sqrt{x}/2$. $\square$
+So it suffices to prove $x^4 f a \leq mk \cdot b \cdot 3 l_0 2^s$. Put $f = 3 l_0 2^s \cdot \varphi(q_0)$ and $a = xb$. The inequality becomes $x^5 \varphi(q_0) \leq mk$. The data give $m \geq \sqrt{x}$ and $r \geq x^5$. The table of sizes gives $100 m \leq k$ (Lean: `New.Data.hundred_mul_m_le_k`), so $r + 1 = k + m \leq 2k$ and $k \geq x^5/2$. So $mk \geq x^{11/2}/2$, and it suffices that $2\varphi(q_0) \leq \sqrt{x}$. This holds. The bound $\varphi(q_0) \leq q_0 \leq C_P$ holds for the constant $C_P$ of the parameters (Lean: `New.Data.le_constantBound`), and the scale inequalities give $10^{12} C_P \leq \log\log b$ and $(\log b)^{100} \leq x$. So $\varphi(q_0) \leq 10^{-14} \log x$, which is far below $\sqrt{x}/2$. $\square$
 
 **Remark (Formalization).** The source proves the first step, $x^4 f a \leq mk \cdot b \cdot 3 l_0 2^s$, by its automation for sizes (`New.Data.le_of_hasLogBound`), which compares the logarithms of the two sides through the scale inequalities. The proof above is the same comparison by hand. The automation is the subject of a remark in [the data and its sizes](/chapter/data-and-sizes/).
 

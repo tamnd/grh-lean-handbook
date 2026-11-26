@@ -26,53 +26,53 @@ The theorem has no other hypothesis. All the conditions on the scales are fields
 
 Fix the number
 
-$$h \;=\; \mathrm{main} - m \cdot \mathrm{rem} + L, \qquad L = f a \log^4 b.$$
+$$h \;=\; \mathrm{main} - m \cdot \mathrm{rem} + \mathrm{loss}, \qquad \mathrm{loss} = f a \log^4 b.$$
 
-Theorems A (a) and B give about $d_T$ independent lattice vectors of squared length at most $e^h$, so a covolume at most $d_T h$ and a small index. Theorem C bounds the covolume plus twice the index from below by $d_T(\mathrm{main} - 3L)$. The term $d_T \cdot \mathrm{main}$ cancels, and $d_T \cdot m \cdot \mathrm{rem}$ is left against errors of order $d_T f a \log^4 b$.
+Theorems A (a) and B give about $d_T$ independent lattice vectors of squared length at most $e^h$, so a covolume at most $d_T h$ and a small index. Theorem C bounds the covolume plus twice the index from below by $d_T(\mathrm{main} - 3 \mathrm{loss})$. The term $d_T \cdot \mathrm{main}$ cancels, and $d_T \cdot m \cdot \mathrm{rem}$ is left against errors of order $d_T f a \log^4 b$.
 
 ### The proof
 
-*Proof.* The proof has eight steps. Write $I = 10 \log(1 + 2b^2) \cdot f a \log^3 b$ for the index per dimension.
+*Proof.* The proof has eight steps. Write $I = 10 \log(1 + 2b^2) \cdot \mathrm{err}_0$ for the index per dimension, with the unit $\mathrm{err}_0 = f a \log^3 b$ of Section 2. Write $\mathcal{G}$ for the finite set of translates; the source calls it `t`.
 
-*Step 1: the translates.* By [Theorem B](/decl/New.Data.enough_forms/), $d_T > 0$, and there is a finite set $t \subseteq G$ with $\#t \cdot \dim \mathrm{src} \leq 5 d_T \log(1 + 2b^2)$ and $(1 - 4/b^2) d_T \leq \dim \sum_{g \in t} g \mathfrak{p}(\mathrm{src})$.
+*Step 1: the translates.* By [Theorem B](/decl/New.Data.enough_forms/), $d_T > 0$, and there is a finite set $\mathcal{G} \subseteq G$ with $\#\mathcal{G} \cdot \dim \mathrm{src} \leq 5 d_T \log(1 + 2b^2)$ and $(1 - 4/b^2) d_T \leq \dim \sum_{g \in \mathcal{G}} g \mathfrak{p}(\mathrm{src})$.
 
 *Step 2: the short forms.* Let $S$ be the set of integral source forms $\varphi$ with $\|\Theta_1 \, g \mathfrak{p} \, \varphi\|_\sigma^2 \leq e^h$ for all $g \in G$ and all $\sigma$. By [Theorem A (a)](/decl/New.Data.span_short_integralRamified_eq_top/), $S$ spans $\mathrm{src}$.
 
-*Step 3: the family.* Let $Y = \bigcup_{g \in t} g \mathfrak{p}(S)$. Since $S$ spans $\mathrm{src}$ and each $g \mathfrak{p}$ is linear, $Y$ spans $\sum_{g \in t} g \mathfrak{p}(\mathrm{src})$. A spanning set of a finite-dimensional space contains a basis. So there are $y_1, \dots, y_n$ in $Y$, linearly independent, with $n = \dim \sum_{g \in t} g \mathfrak{p}(\mathrm{src})$. By Step 1, $n \geq (1 - 4/b^2) d_T$. Since the $y_i$ are independent in $T$, $n \leq d_T$.
+*Step 3: the family.* Let $\mathcal{Y} = \bigcup_{g \in \mathcal{G}} g \mathfrak{p}(S)$. Since $S$ spans $\mathrm{src}$ and each $g \mathfrak{p}$ is linear, $\mathcal{Y}$ spans $\sum_{g \in \mathcal{G}} g \mathfrak{p}(\mathrm{src})$. A spanning set of a finite-dimensional space contains a basis. So there are $y_1, \dots, y_n$ in $\mathcal{Y}$, linearly independent, with $n = \dim \sum_{g \in \mathcal{G}} g \mathfrak{p}(\mathrm{src})$. By Step 1, $n \geq (1 - 4/b^2) d_T$. Since the $y_i$ are independent in $T$, $n \leq d_T$.
 
-*Step 4: the covolume.* Each $y_i$ is $g \mathfrak{p} \varphi$ with $g \in t$ and $\varphi \in S$. So $\|\Theta_1 y_i\|_\sigma^2 \leq e^h$ for every $\sigma$. By [Hadamard's inequality](/decl/New.TwistedLattice.covolumeLe_of_normSqAt_le/), $y$ has covolume at most $n h$.
+*Step 4: the covolume.* Each $y_i$ is $g \mathfrak{p} \varphi$ with $g \in \mathcal{G}$ and $\varphi \in S$. So $\|\Theta_1 y_i\|_\sigma^2 \leq e^h$ for every $\sigma$. By [Hadamard's inequality](/decl/New.TwistedLattice.covolumeLe_of_normSqAt_le/), $y$ has covolume at most $n h$.
 
-*Step 5: the index.* Each $\varphi \in S$ is integral. So [Theorem A (b)](/decl/New.Data.indexLe_normalizedPoincare/) applies to $y$ and $t$, and $y$ has index at most
+*Step 5: the index.* Each $\varphi \in S$ is integral. So [Theorem A (b)](/decl/New.Data.indexLe_normalizedPoincare/) applies to $y$ and $\mathcal{G}$, and $y$ has index at most
 
-$$\#t \cdot \dim \mathrm{src} \cdot 2 f a \log^3 b \;\leq\; 5 d_T \log(1 + 2b^2) \cdot 2 f a \log^3 b \;=\; d_T \, I.$$
+$$\#\mathcal{G} \cdot \dim \mathrm{src} \cdot 2 f a \log^3 b \;\leq\; 5 d_T \log(1 + 2b^2) \cdot 2 f a \log^3 b \;=\; d_T \, I.$$
 
 The inequality is Step 1. An index bound remains true for a larger number, so $y$ has index at most $d_T I$.
 
 *Step 6: the lower bound.* The family $y$ is independent, $n \geq (1 - 4/b^2) d_T$, its index is at most $d_T I$ and its covolume is at most $n h$. By [Theorem C](/decl/New.Data.integral_forms_long/),
 
-$$d_T (\mathrm{main} - 3L) \;\leq\; n h + 2 d_T I. \tag{3.1}$$
+$$d_T (\mathrm{main} - 3 \mathrm{loss}) \;\leq\; n h + 2 d_T I. \tag{3.1}$$
 
-*Step 7: the cancellation.* By [the bound for the main amount](/decl/New.Data.mainAmount_nonneg/), $\mathrm{main} \geq 0$, and $L > 0$. Since $n \leq d_T$,
+*Step 7: the cancellation.* By [the bound for the main amount](/decl/New.Data.mainAmount_nonneg/), $\mathrm{main} \geq 0$, and $\mathrm{loss} > 0$. Since $n \leq d_T$,
 
-$$n (\mathrm{main} + L) \;\leq\; d_T (\mathrm{main} + L). \tag{3.2}$$
+$$n (\mathrm{main} + \mathrm{loss}) \;\leq\; d_T (\mathrm{main} + \mathrm{loss}). \tag{3.2}$$
 
-Now $n h = n(\mathrm{main} + L) - n \, m \cdot \mathrm{rem}$. Insert this into (3.1), and use (3.2):
+Now $n h = n(\mathrm{main} + \mathrm{loss}) - n \, m \cdot \mathrm{rem}$. Insert this into (3.1), and use (3.2):
 
-$$d_T (\mathrm{main} - 3L) \;\leq\; d_T (\mathrm{main} + L) - n \, m \cdot \mathrm{rem} + 2 d_T I.$$
+$$d_T (\mathrm{main} - 3 \mathrm{loss}) \;\leq\; d_T (\mathrm{main} + \mathrm{loss}) - n \, m \cdot \mathrm{rem} + 2 d_T I.$$
 
 The terms $d_T \cdot \mathrm{main}$ cancel, and
 
-$$n \, m \cdot \mathrm{rem} \;\leq\; d_T \cdot \mathrm{err}, \qquad \mathrm{err} = 4L + 2I. \tag{3.3}$$
+$$n \, m \cdot \mathrm{rem} \;\leq\; d_T \cdot \mathrm{err}, \qquad \mathrm{err} = 4 \mathrm{loss} + 2I. \tag{3.3}$$
 
 *Step 8: division by $n$.* The scales give $4/b^2 \leq 1/2$. So $d_T = 2(1 - 1/2) d_T \leq 2(1 - 4/b^2) d_T \leq 2n$. Since $d_T > 0$, $n > 0$. From (3.3), $n \, m \cdot \mathrm{rem} \leq d_T |\mathrm{err}| \leq 2n |\mathrm{err}| = n |2 \mathrm{err}|$. Divide by $n$:
 
 $$m \cdot \mathrm{rem} \;\leq\; |2 \, \mathrm{err}| \;=\; 8 f a \log^4 b + 40 \log(1 + 2b^2) \cdot f a \log^3 b.$$
 
-The last step is a comparison of sizes. Since $b \geq 3$, $\log(1 + 2b^2) \leq \log(3 b^2) \leq 3 \log b$. So $|2 \mathrm{err}| \leq 128 f a \log^4 b$. The data have $\log \log b \geq 10^{12} c_P \geq 64 \cdot 10^{12}$, so $\log b \geq 128$, and $128 f a \log^4 b \leq f a \log^5 b$. $\square$
+The last step is a comparison of sizes. Since $b \geq 3$, $\log(1 + 2b^2) \leq \log(3 b^2) \leq 3 \log b$. So $|2 \mathrm{err}| \leq 128 f a \log^4 b$. The data have $\log \log b \geq 10^{12} C_P \geq 64 \cdot 10^{12}$, so $\log b \geq 128$, and $128 f a \log^4 b \leq f a \log^5 b$. $\square$
 
 **Remark.** The comparison in Step 7 is the heart of the method. Theorem A bounds the length of a form by $\mathrm{main} - m \cdot \mathrm{rem}$ plus an error. Theorem C bounds the covolume from below by $d_T \cdot \mathrm{main}$ minus an error. The main amount is at least $x^4 f a$. It is larger than every error by a factor of at least $x^4/\log^4 b$. So the method needs the main amount to be the same number in both theorems, and the data are designed for this.
 
-**Remark.** Step 7 needs $\mathrm{main} + L \geq 0$, because the family has $n \leq d_T$ members and not exactly $d_T$. If $h$ were negative, the inequality $n h \leq d_T h$ would fail. The missing $d_T - n$ dimensions are at most $4 d_T / b^2$, but Step 7 does not use this: it uses only the sign of $\mathrm{main} + L$, and the number of missing dimensions enters only through $n \geq d_T/2$ in Step 8.
+**Remark.** Step 7 needs $\mathrm{main} + \mathrm{loss} \geq 0$, because the family has $n \leq d_T$ members and not exactly $d_T$. If $h$ were negative, the inequality $n h \leq d_T h$ would fail. The missing $d_T - n$ dimensions are at most $4 d_T / b^2$, but Step 7 does not use this: it uses only the sign of $\mathrm{main} + \mathrm{loss}$, and the number of missing dimensions enters only through $n \geq d_T/2$ in Step 8.
 
 **Remark (Formalization).** The family in Step 3 is chosen by a lemma of Mathlib that extracts a linearly independent family, indexed by $\mathrm{Fin}\, n$ with $n$ the dimension of the span, from a spanning set (`exists_fun_fin_finrank_span_eq` (Mathlib)). The source writes the error with an absolute value $|2 \mathrm{err}|$, because the final comparison of sizes is made for $|2 \mathrm{err}|$. Since $\mathrm{err} > 0$, the absolute value changes nothing. The final comparison $|2 \mathrm{err}| \leq f a \log^5 b$ is proved by the size automation of the source, `New.Data.le_of_hasLogBound`. This tactic compares the exponents of two monomials in the scales, with the five scale inequalities. It proves the same inequality as the computation above, with other intermediate constants. [The data and its sizes](/chapter/data-and-sizes/) describes it.
 
@@ -86,7 +86,7 @@ The proof has three sources of error. The source lists them in a table, per dime
 | index | Theorems A (b) and B | $20 \log(1 + 2b^2) \cdot f a \log^3 b$ |
 | covolume | Theorem C | $3 f a \log^4 b$ |
 
-The index enters twice in Theorem C, and the table shows the doubled amount $2I$. The sum of the three rows is $\mathrm{err} = 4L + 2I$. The family has at least $d_T/2$ members, so $m \cdot \mathrm{rem}$ is at most twice the sum, and twice the sum is at most $f a \log^5 b$.
+The index enters twice in Theorem C, and the table shows the doubled amount $2I$. The sum of the three rows is $\mathrm{err} = 4 \mathrm{loss} + 2I$. The family has at least $d_T/2$ members, so $m \cdot \mathrm{rem}$ is at most twice the sum, and twice the sum is at most $f a \log^5 b$.
 
 Every error is $f a$ times a power of $\log b$, and so smaller than the main amount $x^4 f a$ by a factor $x^4/\log^5 b$. Section 4 divides by $m$, and this saving $1/m$ is the saving of the whole method.
 
@@ -100,21 +100,21 @@ The source has a second edition, `grh-compact`, which proves the same theorem in
 
 The compact edition writes the spine as one chain of inequalities, for one family of target forms:
 
-$$\mathrm{main} \;\leq\; \frac{V + 2\delta}{d_T} \;\leq\; \mathrm{main} - m \cdot \mathrm{rem},$$
+$$\mathrm{main} \;\leq\; \frac{c + 2\delta}{d_T} \;\leq\; \mathrm{main} - m \cdot \mathrm{rem},$$
 
-up to errors, where $e^V$ bounds the squared covolume of the lifts at all conjugates and $\delta$ bounds the logarithm of the index.
+up to errors, where $e^c$ bounds the squared covolume of the lifts at all conjugates and $\delta$ bounds the logarithm of the index.
 
 Among the scales it lists, one comment matters here: $m$, the number of lifts, lies in $[\sqrt{x}, 2\sqrt{x}]$, and "the saving $x^{-1/2}$ is $1/m$".
 
-It lists the errors per dimension, with $L = f a \log^4 b$:
+It lists the errors per dimension, with $\mathrm{loss} = f a \log^4 b$:
 
 | source | compact edition |
 |---|---|
-| length, Theorem A (a) | $L$ |
+| length, Theorem A (a) | $\mathrm{loss}$ |
 | missing dimensions, Theorem B | $4 b^{-2} \cdot b^2 x^{99}$ |
 | index, Theorems A (b) and B | $2 \cdot 5 \log(1 + b^2) \cdot f a \log^3 b$ |
-| covolume, Theorem C | $3L$ |
+| covolume, Theorem C | $3 \mathrm{loss}$ |
 
 and says that their sum is at most $f a \log^5 b$, and that exponents such as $99$ are slack: every power of $x$ that occurs is below $b$.
 
-**Remark (Formalization).** The two editions treat the missing dimensions in different ways. The compact edition bounds $-h$ by a crude bound $b^2 x^{99}$ for $|\mathrm{main} + \mathrm{rem}|$, and pays $(d_T - n)(-h) \leq (4/b^2) d_T \cdot b^2 x^{99}$. The readable edition uses only $\mathrm{main} + L \geq 0$ (Step 7), and has no row for the missing dimensions. The two editions also state the index of Theorem A (b) with $\log(1 + b^2)$ and $\log(1 + 2b^2)$. In both editions the main inequality reads $m \cdot \mathrm{rem} \leq f a \log^5 b$: the compact edition writes it as `star_inequality` (grh-compact), with the bound $\log^2 b$ times its `budget` $f a \log^3 b$. Findings F-113 and F-114 of Volume 0 record the differences of the two editions.
+**Remark (Formalization).** The two editions treat the missing dimensions in different ways. The compact edition bounds $-h$ by a crude bound $b^2 x^{99}$ for $|\mathrm{main} + \mathrm{rem}|$, and pays $(d_T - n)(-h) \leq (4/b^2) d_T \cdot b^2 x^{99}$. The readable edition uses only $\mathrm{main} + \mathrm{loss} \geq 0$ (Step 7), and has no row for the missing dimensions. The two editions also state the index of Theorem A (b) with $\log(1 + b^2)$ and $\log(1 + 2b^2)$. In both editions the main inequality reads $m \cdot \mathrm{rem} \leq f a \log^5 b$: the compact edition writes it as `star_inequality` (grh-compact), with the bound $\log^2 b$ times its `budget` $f a \log^3 b$. Findings F-113 and F-114 of Volume 0 record the differences of the two editions.

@@ -52,7 +52,7 @@ Lean: `New.TwistedLattice.norm_pow_mul_det_gram_le` (New/Reduction/Lattices/Twis
 
 Lean: `New.TwistedLattice.heightLe_pow_mul_det_gram` (New/Reduction/Lattices/TwistedLattice.lean).
 
-*Proof.* The index gives matrices at $\iota$ and at $\bar\iota$ with the same loss $\delta_\ell$, since $\iota$ and $\bar\iota$ lie over the same prime. Both matrices serve for the twist $\xi_\iota$, because the matrices of the index do not depend on the twist. Apply the local bound and [the lemma](/decl/New.HeightLe.of_le/) with no multiplier, with $e(\ell) = 2\delta_\ell \log \ell$. $\square$
+*Proof.* The index gives matrices at $\iota$ and at $\bar\iota$ with the same loss $e(\ell)$, since $\iota$ and $\bar\iota$ lie over the same prime. Both matrices serve for the twist $\xi_\iota$, because the matrices of the index do not depend on the twist. Apply the local bound and [the lemma](/decl/New.HeightLe.of_le/) with no multiplier, with $e(\ell) = 2e(\ell) \log \ell$. $\square$
 
 ### The inequality
 
@@ -86,8 +86,8 @@ The first factor has height at most $2\delta$, by the last lemma, with hypothesi
 [Theorem C](/chapter/proof-of-theorem-c/) applies the theorem to the twisted lattice of [integral target forms](/chapter/integral-target-forms/).
 
 **Theorem (Theorem C: integral forms are long).** Let $y_1, \dots, y_n$ be linearly independent target forms with $n \geq (1 - 4/b^2) d_T$. If $y$ has index at most $\delta$ and covolume at most $c$ in this twisted lattice, then
-$$d_T\,(\mathrm{mainAmount} - 3 f a \log^4 b) \leq c + 2\delta.$$
+$$d_T\,(\mathrm{main} - 3 f a \log^4 b) \leq c + 2\delta.$$
 
 Lean: `New.Data.integral_forms_long` (New/Determinant/Twist/LongForms.lean).
 
-The proof completes $y$ to a basis by auxiliary forms $z$, with $n' = d_T - n$. It applies the theorem with $b_{\mathrm{short}} = 2x_1^2 b^2$, $b_{\mathrm{denom}} = b$, and $b_{\mathrm{volume}} = d_T(b + f a \log^4 b - \mathrm{mainAmount})$. With $n'(2x_1^2b^2 + b) \leq d_T b$ and $b \leq f a \log^4 b$, the three extra terms sum to at most $d_T(3 f a \log^4 b - \mathrm{mainAmount})$. So the theorem gives $c + 2\delta \geq d_T(\mathrm{mainAmount} - 3 f a \log^4 b)$. Here $\log b$ is the number `D.logB` of the source.
+The proof completes $y$ to a basis by auxiliary forms $z$, with $n' = d_T - n$. It applies the theorem with $b_{\mathrm{short}} = 2x_1^2 b^2$, $b_{\mathrm{denom}} = b$, and $b_{\mathrm{volume}} = d_T(b + f a \log^4 b - \mathrm{main})$. With $n'(2x_1^2b^2 + b) \leq d_T b$ and $b \leq f a \log^4 b$, the three extra terms sum to at most $d_T(3 f a \log^4 b - \mathrm{main})$. So the theorem gives $c + 2\delta \geq d_T(\mathrm{main} - 3 f a \log^4 b)$. Here $\log b$ is the number `D.logB` of the source.
