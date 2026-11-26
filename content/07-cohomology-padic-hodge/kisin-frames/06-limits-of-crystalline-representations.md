@@ -75,7 +75,11 @@ Lean: `New.Period.exists_finite_groupRing_quotient` (Lib/PadicHodge/Limit/Crysta
 
 *Proof.* The source outlines the proof as follows. $T$ is the image of $\mathbb{Z}_p[G]$ in the product of the matrix algebras. Each $\tau_s$ is conjugate to a representation over the integers of a finite extension of $\mathbb{Q}_p$. So the image lies in a finite $\mathbb{Z}_p$-module. It has no torsion, since it lies in matrices over $\overline{\mathbb{Q}}_p$, so it is free. For property 4, the columns of the maps $u_s$ are jointly injective equivariant maps from $T$ to the $\tau_s$. The crystalline property passes to subrepresentations of finite direct sums (`New.Period.IsAdmissible.of_jointly_injective`), and every jump of $T$ is a jump of some $\tau_s$. $\square$
 
-The map $w$ allows twists. For a decomposition group $\Delta$ and the map $g \mapsto \chi(g)^{-d}[g]$, the representation $\tau_s$ read along $w$ is the Tate twist of the restriction of $\tau_s$ to $\Delta$. The source defines this map as `New.GaloisRep.tateTwistHom`.
+The map $w$ allows twists. For a decomposition group $\Delta$ and the map $g \mapsto \chi(g)^{-d}[g]$, the representation $\tau_s$ read along $w$ is the Tate twist of the restriction of $\tau_s$ to $\Delta$. The source defines this map.
+
+**Definition.** Let $A$ be a place of $\Omega$ with a fixed embedding that induces it, and let $d \geq 0$. The map `tateTwistHom A d` sends $g$ in the decomposition group at $A$ to $\chi(g)^{-d}[g]$ in $\mathbb{Z}_\ell[\mathrm{Gal}(\Omega/E)]$, where $\chi$ is the cyclotomic character.
+
+Lean: `New.GaloisRep.tateTwistHom` (Lib/PadicHodge/Limit/TraceLimit.lean).
 
 ### The limit theorem
 
