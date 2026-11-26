@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.3.11
+
+Four new chapters of Volume 11, and one fix.
+
+- Volume 11, chapter 10: grids, columns and turns (#173).
+- Volume 11, chapter 12: false lifts (#175).
+- Volume 11, chapter 15: Hecke values of character lifts (#176).
+- Volume 11, chapter 16: the height of one lift determinant (#177).
+- Fix: link texts now use the title "Grids, columns and turns" (#174).
+
 ## v0.3.10
 
 Four new chapters of the argument volumes. Volume 10 is now complete.
