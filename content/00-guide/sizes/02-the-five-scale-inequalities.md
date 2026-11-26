@@ -15,7 +15,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The five scale inequalities
 
-This section states the axioms of the sizes: the conditions on the parameters, the constant $C_P$, and the five inequalities between the scales. Every other row of the table of Section 3 is a consequence of these and of the explicit choices of the ranks, the field and the primes. The proofs of the consequences are in [the scales](/chapter/data-and-sizes/#the-scales) of Volume 1.
+This section states the axioms of the sizes: the conditions on the parameters, the constant $C_P$, and the five inequalities between the scales. Every other row of the table of Section 3 is a consequence of these and of the explicit choices of the ranks, the field and the primes. The proofs of the consequences are in [the scales](/chapter/data-and-sizes/#the-scales-and-the-five-inequalities) of Volume 1.
 
 ### The parameters
 
