@@ -23,6 +23,9 @@ decls:
   - New.IsSumOfRootsOfUnity
   - New.IsSumOfRootsOfUnity.sum
   - New.IsSumOfRootsOfUnity.mul_mem_nsmul
+  - New.Data.EdgeTuple
+  - New.Data.tupleAction
+  - New.Data.edgeCharProd
   - New.Data.IsPathDatum
   - New.Data.sum_tuplesOn_insert
   - New.Data.sum_tuplesOn_tupleAction
@@ -88,11 +91,11 @@ Lean: `New.Data.gridSpace_subdiag`, `New.Data.gridSpace_diag` (New/Determinant/A
 
 *Proof.* The two index sets have the same size, since $t$ is odd, and the same number of signs $-1$. So a bijection keeps the signs. Both spaces are diagonal spaces of their signs. The diagonal case is the same computation for $j \geq 1$ and holds by definition for $j = 0$. $\square$
 
-**Definition.** For a matrix $y$ modulo $\mathfrak{m}$, `transposedMove` $y$ is the transposed lift from forms at $(a, b + 1)$ to forms at $(a, b)$, with the characters $\mathrm{gridChar}(\vartheta, \lnot z, b)$, the polynomial `gridHarmonic` and $\Psi = \delta_y$. The map `liftMove` $y$ is the lift from $(a, b)$ to $(a + 1, b)$, with $\mathrm{gridChar}(\vartheta, z, a)$ and $\Psi = \delta_y$. The *transposed chain* from $(0, m)$ to $(0, b)$ is the identity for $b = m$, the composite $L_b \circ \mathrm{chain}(b + 1)$ for $b < m$, and $0$ for $b > m$. Here $L_b$ is the transposed lift with the indicator of the inclusion matrix modulo the triangle modulus, times the order of $\mathrm{GL}$ over that ring.
+**Definition.** For a matrix $y$ modulo $\mathfrak{m}$, `transposedMove` $y$ is the transposed lift from forms at $(a, b + 1)$ to forms at $(a, b)$, with the characters $\mathrm{gridChar}(\vartheta, \lnot z, b)$, the polynomial `gridHarmonic` and $\Psi = \delta_y$. The map `liftMove` $y$ is the lift from $(a, b)$ to $(a + 1, b)$, with $\mathrm{gridChar}(\vartheta, z, a)$ and $\Psi = \delta_y$. The *transposed chain* from $(0, m)$ to $(0, b)$ is the identity for $b = m$, the composite $L_b \circ \mathrm{chain}(b + 1)$ for $b < m$, and $0$ for $b > m$. Here $L_b$ is the transposed lift with the inclusion matrix, times the order of $\mathrm{GL}$ modulo the triangle modulus.
 
 Lean: `New.Data.transposedMove`, `New.Data.liftMove`, `New.Data.transposedChain` (New/Determinant/AuxiliaryForms/PathData.lean).
 
-**Remark (Formalization).** The value $0$ of the chain for $b > m$ is a junk value. No path uses it.
+**Remark (Formalization).** The value $0$ of the chain for $b > m$ is a junk value.
 
 **Lemma.** Let $k$ be an integral point of a unitary group of index type $n'$. Then $\mathrm{gridChar}(\vartheta, c, l, n)(\det(1, k)) = \chi(\det k \bmod \mathfrak{m})$, where $\chi$ is the character modulo $\mathfrak{m}$ of the tame part `gridTamePart`. If $z$ is true or $a \neq 0$, the index of the level at $(z, a, b)$ is the order of $\mathrm{GL}_n(O_E/\mathfrak{b})$.
 
@@ -115,6 +118,8 @@ Lean: `New.IsSumOfRootsOfUnity.sum`, `New.IsSumOfRootsOfUnity.mul_mem_nsmul` (Ne
 ### Edge tuples and path data
 
 **Definition.** An *edge tuple* $S$ is a matrix $S(p, q)$ modulo $\mathfrak{m}$ for each pair of nodes, of size $|q| \times |p|$. A *node family* $g$ is an element $g(p) \in \mathrm{GL}(O_E/\mathfrak{m})$ for each node. It acts by $(g \cdot S)(p, q) = g(q)^{-1} S(p, q)\, g(p)$. It is *admissible* if $g(z, 0, m)$ is in the level of $(z, 0, m)$ for both $z$, and $g(\mathrm{true}, a, a) = g(\mathrm{false}, a, a) \oplus 1$ for all $a$. An edge from $p$ to $q$ is *vertical* if $p_1$ holds exactly when the first index changes. Its character `edgeChar` is the character modulo $\mathfrak{m}$ of `gridTamePart`, with the twist exactly when the edge is vertical. For a set $w$ of edges, $\mathrm{tuples}(w)$ is the set of tuples that vanish outside $w$, and $\varepsilon(g, w) = \prod_{(p, q) \in w} \chi_{(p,q)}(\det g(q) / \det g(p))$.
+
+Lean: `New.Data.EdgeTuple`, `New.Data.tupleAction`, `New.Data.edgeCharProd` (New/Determinant/AuxiliaryForms/PathData.lean).
 
 **Definition.** $\Psi$ is a *path datum* for $N$ and $w$ if:
 
