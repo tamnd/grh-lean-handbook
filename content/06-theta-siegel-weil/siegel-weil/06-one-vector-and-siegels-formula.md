@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section applies the Siegel-Weil formula to the smallest case: $S$ is one hyperbolic plane, so $p = 1$, and $T$ is the definite space $E^\kappa$ with the form $x^* x$. The rank of $T$ is at least $3$, which is Weil's range $2 < m$. The theta function then counts vectors, and one Fourier coefficient of the formula counts the vectors of one norm $\alpha$. The result is Siegel's formula for the mean number of representations of $\alpha$ by $x^*x$ over a genus.
 
-### The classical statement
+### Siegel's classical formula
 
 Let $L$ be a positive definite lattice of rank $m$ and $\alpha$ a positive number. Siegel's formula says that the weighted mean of the numbers $r(L_i, \alpha)$ of vectors of norm $\alpha$ over the classes $L_1, \dots, L_h$ of the genus of $L$ is a product of local densities:
 $$\frac{\sum_i r(L_i, \alpha)/\#\mathrm{Aut}(L_i)}{\sum_i 1/\#\mathrm{Aut}(L_i)} = \prod_v \beta_v(\alpha),$$
