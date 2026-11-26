@@ -42,7 +42,7 @@ The square law with constant $\kappa/c$ says that $\sum_y \Psi(y)L'(y) = (\kappa
 
 The same pattern appears in the exchange identity.
 
-**Theorem (The exchange identity, the constant).** Under the hypotheses of [the exchange identity, part 1](/chapter/exchange-identity-1/), there are $C > 0$ and a Schwartz vector $x$ such that every character $\nu$ that is tame for $(\mathfrak{m}, \chi)$ has a number $c$ with $|c|^2 = C\cdot L_{\mathfrak{m}}(\nu, e) \neq 0$ by which the two theta integrals differ.
+**Theorem (The exchange identity, the constant).** Under the hypotheses of [the exchange identity, part 2](/chapter/exchange-identity-2/), there are $C > 0$ and a Schwartz vector $x$ such that every character $\nu$ that is tame for $(\mathfrak{m}, \chi)$ has a number $c$ with $|c|^2 = C\cdot L_{\mathfrak{m}}(\nu, e) \neq 0$ by which the two theta integrals differ.
 
 Lean: `New.Exchange.exchange_identity` (New/Determinant/Exchange/TheoremForPartners.lean).
 

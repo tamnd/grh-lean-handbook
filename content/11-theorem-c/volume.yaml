@@ -5,7 +5,7 @@ title: 'Theorem C: long forms'
 summary: >-
   The height argument: twists and regular families, theta lifts and their norms, the exchange identity, the chain determinant, Hecke values, false lifts and the comparison operator.
 words: 60000
-source: New/Determinant, New/OneLift, New/Derivatives/Sharpness (without NearPairs), New/UpperBound/Kernels/DefiniteKernelSize
+source: New/Determinant (without Twist/LongForms, in Volume 1), New/OneLift, New/Derivatives/Sharpness (without NearPairs), New/UpperBound/Kernels/DefiniteKernelSize
 chapters:
   - id: theorem-c-plan
     title: Theorem C and the height argument
@@ -23,48 +23,93 @@ chapters:
     title: Single theta lifts and their norms
     source:
       - New/Determinant/Norms
+  - id: character-lifts
+    title: Character lifts and tested forms
+    plan: >-
+      The lift of a character, its norm, tested forms.
+    source:
+      - New/OneLift/HeckeValues/CharacterLift
+      - New/OneLift/HeckeValues/CharacterLiftNorm
+      - New/OneLift/TestedForms
   - id: exchange-identity-1
     title: The exchange identity, part 1
     plan: >-
-      Matched functions.
+      Matching partners, cone images, negative indices, stable spaces, the large triple.
     source:
-      - New/Determinant/Exchange/ExplicitMatching
       - New/Determinant/Exchange/MatchingPartners
-      - New/Determinant/Exchange/TheoremForPartners
+      - New/Determinant/Exchange/ConeImage
+      - New/Determinant/Exchange/NegativeIndices
+      - New/Determinant/Exchange/EquivariantDifference
+      - New/Determinant/Exchange/StableSpacesStandardData
+      - New/Determinant/Exchange/LargeTriple
   - id: exchange-identity-2
     title: The exchange identity, part 2
     plan: >-
-      Removing planes and the stable range.
+      Real vectors, removing planes, the theorem for partners, exchange data, explicit matching.
     source:
-      - New/Determinant/Exchange
+      - New/Determinant/Exchange/RealVectors
+      - New/Determinant/Exchange/RemovingPlanes
+      - New/Determinant/Exchange/VanishingDescends
+      - New/Determinant/Exchange/TheoremForPartners
+      - New/OneLift/ComparisonOperator/OneExchange
+      - New/OneLift/ComparisonOperator/ExchangeData
+      - New/OneLift/ComparisonOperator/DeterminantProducts
+      - New/Determinant/Exchange/ExplicitMatching
   - id: seesaw-squares
-    title: Seesaw squares
+    title: Seesaw squares and grid paths
     plan: >-
-      Seesaw squares, and why the constant may vanish.
+      Seesaw squares, and why the constant may vanish; paths in a grid and their data.
     source:
-      - New/Determinant/Exchange/OneSquare
       - New/Determinant/Chain/SquareLaw
+      - New/Determinant/Exchange/OneSquare
+      - New/Determinant/AuxiliaryForms/GridPaths
+      - New/Determinant/AuxiliaryForms/PathData
   - id: chain-determinant
     title: The chain determinant and its factorization
-    source:
-      - New/Determinant/Chain
-  - id: grids-paths-turns
-    title: Grids, paths and turns
     plan: >-
-      Determinant/AuxiliaryForms (grids). With figures.
+      Triangle norms, moduli, triangle lifts, chain norms, the norm of a chain.
     source:
-      - New/Determinant/AuxiliaryForms
+      - New/Determinant/Chain/TriangleNorms
+      - New/Determinant/Chain/Moduli
+      - New/Determinant/Chain/TriangleLifts
+      - New/Determinant/Chain/ChainNorms
+      - New/Determinant/Chain/NormOfChain
+  - id: comparison-operator-1
+    title: The comparison operator, part 1
+    plan: >-
+      Glued lattices and forms, theta kernel estimates, line coordinates, the definite kernel, first factors.
+    source:
+      - New/OneLift/ComparisonOperator/GluedLattices
+      - New/OneLift/ComparisonOperator/GluedForms
+      - New/OneLift/ComparisonOperator/ThetaKernelEstimates
+      - New/OneLift/ComparisonOperator/LineCoordinates
+      - New/UpperBound/Kernels/DefiniteKernelSize
+      - New/OneLift/ComparisonOperator/FirstFactors
+  - id: grids-paths-turns
+    title: Grids, columns and turns
+    plan: >-
+      First columns, turns, diagonal turns, the last path. With figures.
+    source:
+      - New/Determinant/AuxiliaryForms/RegularParameters
+      - New/Determinant/AuxiliaryForms/GridFirstColumns
+      - New/Determinant/AuxiliaryForms/Turns
+      - New/Determinant/AuxiliaryForms/DiagonalTurns
+      - New/Determinant/AuxiliaryForms/LastPath
   - id: deep-level-poincare
     title: Deep level Poincaré series and spanning forms
     plan: >-
-      Determinant/AuxiliaryForms: DeepLevel, SpanningForms.
+      The deep level period, vanishing, the first path, spanning forms.
     source:
-      - New/Determinant/AuxiliaryForms/DeepLevel
+      - New/Determinant/AuxiliaryForms/DeepLevelPoincarePeriod
+      - New/Determinant/AuxiliaryForms/DeepLevelVanishing
+      - New/Determinant/AuxiliaryForms/FirstPath
       - New/Determinant/AuxiliaryForms/SpanningForms
-  - id: hecke-values
-    title: Hecke values of character lifts
+  - id: false-lifts
+    title: False lifts
+    plan: >-
+      The bottom of the tower, the hyperbolic plane step, periods of false lifts.
     source:
-      - New/OneLift/HeckeValues
+      - New/OneLift/FalseLifts
   - id: sharpness
     title: The divisibility is sharp
     plan: >-
@@ -75,32 +120,29 @@ chapters:
       - New/Derivatives/Sharpness/Couplings
       - New/Derivatives/Sharpness/Cases
       - New/Derivatives/Sharpness/BoundAttained
-  - id: false-lifts
-    title: False lifts
-    source:
-      - New/OneLift/TestedForms
-      - New/OneLift/FalseLifts
-  - id: comparison-operator-1
-    title: The comparison operator, part 1
-    plan: >-
-      Gluing maps and three exchanges.
-    source:
-      - New/OneLift/ComparisonOperator/GluingMaps
-      - New/OneLift/ComparisonOperator/Glued
-      - New/OneLift/ComparisonOperator/ThreeExchanges
-      - New/OneLift/ComparisonOperator/OneExchange
   - id: comparison-operator-2
     title: The comparison operator, part 2
     plan: >-
-      The basis problem and theta kernel bounds.
+      Three exchanges, products span, gluing maps.
     source:
-      - New/OneLift/ComparisonOperator
-      - New/UpperBound/Kernels/DefiniteKernelSize
+      - New/OneLift/ComparisonOperator/ThreeExchanges
+      - New/OneLift/ComparisonOperator/ProductsSpan
+      - New/OneLift/ComparisonOperator/GluingMaps
+  - id: hecke-values
+    title: Hecke values of character lifts
+    plan: >-
+      Central action, the period at one, the algebraic part, heights of twisted values.
+    source:
+      - New/OneLift/HeckeValues/CentralAction
+      - New/OneLift/HeckeValues/PeriodAtOne
+      - New/OneLift/HeckeValues/AlgebraicPartIntegrality
+      - New/OneLift/HeckeValues/AlgebraicPartSize
+      - New/OneLift/HeckeValues/TwistedValueHeights
   - id: lift-volume-height
     title: The height of one lift determinant
     source:
       - New/OneLift/LiftVolumeHeight
   - id: proof-of-theorem-c
     title: The proof of Theorem C
-    source:
-      - New/Determinant/Twist/LongForms
+    plan: >-
+      Determinant/Twist/LongForms (the file is in Volume 1, chapter theorems-a-b-c).

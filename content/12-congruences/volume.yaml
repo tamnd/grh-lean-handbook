@@ -30,36 +30,88 @@ chapters:
       - New/Congruences/FirstOrder/KummerMaps
       - New/Congruences/FirstOrder/HeckeStrings
       - New/Congruences/FirstOrder/AuxiliaryPrimeTie
-  - id: denominator-bound
-    title: From a congruence to a Selmer class
+  - id: tied-traces
+    title: Tied traces and even classes
     plan: >-
-      The denominator bound. Congruences/FirstOrder: TraceRelations, DenominatorBound.
+      Auxiliary primes, even classes, cocycles of Tate twists, norms at one prime, tied traces.
     source:
-      - New/Congruences/FirstOrder
+      - New/Congruences/Selmer/AuxiliaryPrimes
+      - New/Congruences/FirstOrder/EvenClasses
+      - New/Congruences/FirstOrder/TateTwistCocycles
+      - New/Congruences/FirstOrder/OnePrime
+      - New/Congruences/FirstOrder/TiedTraces
   - id: main-summands
     title: The main summands of the attached Galois representations
+    plan: >-
+      Main summand weights and b-places, Selmer hypotheses, attached representations, rows and columns from labels.
     source:
-      - New/Congruences/GaloisRepresentations
+      - New/Congruences/LocalLoss/Basic
+      - New/Congruences/GaloisRepresentations/SelmerHypotheses
+      - New/Congruences/GaloisRepresentations/AttachedRepresentations
+      - New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels
+      - New/Congruences/GaloisRepresentations/BaseLevelOfLabel
+      - New/Congruences/GaloisRepresentations/RowsFromEigensystems
   - id: tied-selmer-groups
     title: Tied Selmer groups and the Greenberg-Wiles count
     plan: >-
-      Congruences/Selmer (first half).
+      Selmer data, the count, one system, the mirror, untied classes, descent.
     source:
-      - New/Congruences/Selmer
+      - New/Congruences/Selmer/SelmerData
+      - New/Congruences/Selmer/Count
+      - New/Congruences/Selmer/OneSystem
+      - New/Congruences/Selmer/Mirror
+      - New/Congruences/Selmer/Untied
+      - New/Congruences/Selmer/Descent
+  - id: exponent-lattices
+    title: Exponent lattices and Kummer charts
+    plan: >-
+      Lattices with prescribed orders, Hodge expansions, the pairing lemma, side points, tame charts.
+    source:
+      - New/Congruences/Lifting/ExponentLattices
+      - New/Congruences/Lifting/HodgeExpansion
+      - New/Congruences/Lifting/CupProductBound
+      - New/Congruences/Lifting/SidePoints
+      - New/Congruences/Lifting/TameCharts
+  - id: cup-products
+    title: Cup products on Kisin modules
+    plan: >-
+      The long gap, safe moves, cut exponent bounds, deep points, few low jumps, orthogonality bounds.
+    source:
+      - New/Congruences/Lifting/LongGap
+      - New/Congruences/Lifting/SafeMoves
+      - New/Congruences/Lifting/CutExponentBounds
+      - New/Congruences/Lifting/DeepPoints
+      - New/Congruences/Lifting/FewLowJumps
+      - New/Congruences/Lifting/CupOrthogonalityBounds
+  - id: local-loss
+    title: The local loss at ℓ
+    plan: >-
+      Crystalline cocycles and defect, local lattices, the Tate dual bound.
+    source:
+      - New/Congruences/LocalLoss/CrystallineCocycles
+      - New/Congruences/LocalLoss/CrystallineDefect
+      - New/Congruences/LocalLoss/LocalLattices
+      - New/Congruences/LocalLoss/TateDualBound
   - id: twisting-theorem
     title: Stickelberger systems and the twisting theorem
     plan: >-
-      Congruences/Selmer (second half).
+      Stickelberger and L-value systems, class sums, the line, the general theorem, main summands, the twisting theorem.
     source:
-      - New/Congruences/Selmer/Stickelberger
+      - New/Congruences/Selmer/StickelbergerSystems
+      - New/Congruences/Selmer/ClassSums
+      - New/Congruences/Selmer/LValueSystems
+      - New/Congruences/Selmer/StickelbergerLine
+      - New/Congruences/Selmer/Line
+      - New/Congruences/Selmer/RootsOfUnity
+      - New/Congruences/Selmer/GeneralTheorem
+      - New/Congruences/Selmer/MainSummands
       - New/Congruences/Selmer/TwistingTheorem
-  - id: local-loss
-    title: The local loss at ℓ
+  - id: denominator-bound
+    title: From a congruence to a Selmer class
+    plan: >-
+      The denominator bound: trace relations, the bound.
     source:
-      - New/Congruences/LocalLoss
-  - id: cup-products
-    title: Cup products on Kisin modules
-    source:
-      - New/Congruences/Lifting
+      - New/Congruences/FirstOrder/TraceRelations
+      - New/Congruences/FirstOrder/DenominatorBound
   - id: proof-of-regular-families
     title: The proof of the existence of regular families
