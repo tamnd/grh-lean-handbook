@@ -14,7 +14,7 @@ decls:
   - New.Floors.RealPlaceSizes
   - New.Data.realPlaceSizes
   - New.Data.N_le_pow
-  - New.Data.mul_completion_cost_le
+  - New.Data.filling
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
@@ -56,7 +56,11 @@ Lean: `New.Filling.IsAdmissible` (New/Spanning/Unfolding/Setup.lean).
 
 The class is at Setup.lean:501. The instance for the data is at Spanning/Unfolding/FillingAdmissible.lean:743.
 
-**Lemma (The data give filling data).** The filling data of $D$ (`New.Data.filling`, Spanning/Bessel/FillingData.lean:461) have $b = D.b$, the primes of $D$, and each size field holds.
+**Lemma (The data give filling data).** The filling data of $D$ have $b = D.b$, the primes of $D$, and each size field holds.
+
+Lean: `New.Data.filling` (New/Spanning/Bessel/FillingData.lean).
+
+The definition is at FillingData.lean:461.
 
 *How the fields are proved.* Field 1 is the field `levelPrime_mem` of the data: `le_levelPrime i := (D.levelPrime_mem i).1`. Every other size field is proved by `D.le_of_hasLogBound` or `D.nat_le_of_hasLogBound`, with `D.card_X₀` to identify the rank. In terms of the table:
 
