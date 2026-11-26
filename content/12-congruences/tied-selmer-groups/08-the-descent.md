@@ -98,7 +98,7 @@ Lean: `New.Selmer.totalTiedLength` (New/Congruences/Selmer/Descent.lean).
 
 Lean: `New.Selmer.exists_unit_residue_notMem`, `New.Selmer.sum_lt_sum_of_ne_top` (New/Congruences/Selmer/Descent.lean).
 
-*Proof.* There are $q - 1$ nonzero residues. For the sum, split off $b$. $\square$
+*Proof.* There are $q - 1$ nonzero residues. Split off $b$. $\square$
 
 **Lemma (One step).** Let $\#k > 2 \cdot \mathrm{rank}(T_i) \cdot e + 1$, and let $P$ be new auxiliary for $i$ with $\mathrm{Sel}_i(J) \not\subseteq \mathrm{F}(J, P)$ modulo some $\varpi^k$, $1 \leq k \leq e$. Then for some unit $s$, adding $P$ with slope $s$ for $i$ and $0$ for the other data lowers $\mathrm{tot}$.
 
