@@ -49,16 +49,16 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 3 | 5 | CM elliptic curves | planned | 0 |
 | 4 | 1 | Adeles and hermitian spaces | drafted | 12,742 |
 | 4 | 2 | Quotients and reduction theory | drafted | 14,726 |
-| 4 | 3 | Automorphic forms on unitary groups | planned | 0 |
+| 4 | 3 | Automorphic forms on unitary groups | drafted | 13,860 |
 | 4 | 4 | A simple trace formula | drafted | 14,711 |
 | 4 | 5 | Congruence subgroups and Haar moduli | planned | 0 |
 | 5 | 1 | Discrete series through one matrix coefficient | drafted | 14,653 |
 | 5 | 2 | Laplace's method for discrete series coefficients | drafted | 14,688 |
-| 5 | 3 | Bessel subgroups and Bruhat measures | planned | 0 |
-| 5 | 4 | Integral Weyl modules and branching | planned | 0 |
+| 5 | 3 | Bessel subgroups and Bruhat measures | drafted | 14,677 |
+| 5 | 4 | Integral Weyl modules and branching | drafted | 14,531 |
 | 5 | 5 | Characters of GL_n over a finite field | planned | 0 |
 | 5 | 6 | Iwahori exponents, Satake and the chain lemma | planned | 0 |
-| 6 | 1 | The Weil representation from a vacuum | planned | 0 |
+| 6 | 1 | The Weil representation from a vacuum | drafted | 14,692 |
 | 6 | 2 | Local theta in the Fock model | planned | 0 |
 | 6 | 3 | Theta kernels, theta lifts and the seesaw | planned | 0 |
 | 6 | 4 | Bessel periods and one step of unfolding | planned | 0 |

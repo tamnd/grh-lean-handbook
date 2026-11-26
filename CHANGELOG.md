@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.2.3
+
+New chapters since v0.2.2:
+
+- Volume 4, chapter 3, Automorphic forms on unitary groups (#81).
+- Volume 5, chapter 3, Bessel subgroups and Bruhat measures (#83).
+- Volume 5, chapter 4, Integral Weyl modules and branching (#82).
+- Volume 6, chapter 1, The Weil representation (#84). This opens Volume 6.
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.2
 
 New chapters since v0.2.1:
