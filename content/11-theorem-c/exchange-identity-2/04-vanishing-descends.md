@@ -83,6 +83,6 @@ By induction the vanishing holds for $(W_+, V_+)$. The standard splittings of $W
 
 **Remark (Formalization).** The hypothesis on the weight is $k \leq \mu_w$ for a natural number $k$, so $k = 0$ is always allowed. Then the theorem needs $\operatorname{rk} V \geq \operatorname{rk} W/2$. Section 5 uses the theorem with $J$ positive definite of rank $2k$, $k \leq \mu_w$ at every place, $2k + 1$ planes, and the bottom pair $(J, 0)$. There $\operatorname{rk} V - \operatorname{rk} W/2 = -k$, the extreme case of the hypothesis. This is why the size of the weight enters. The vanishing is stated for one character $\mathfrak{c}$ at a time and for all standard data of $\mathfrak{c}$, so no uniformity in $\mathfrak{c}$ is needed.
 
-### Example
+### Example: a point outside the Euler product
 
 Let $\mu_w = 1$ at every infinite place, so $k = 1$ is allowed. Let $W$ have rank $4$ and $V$ rank $1$. Then $e = 1 - 2 = -1 \geq -k$. The point $e + 1 = 0$ lies outside the region of the Euler product. Fact 3 says that $\Lambda(0) \neq 0$, because $0 > -1$. With $V$ of rank $0$ instead, $e = -2 < -1$, and the theorem does not apply. If $\mu_w \geq 2$ everywhere, it applies again.

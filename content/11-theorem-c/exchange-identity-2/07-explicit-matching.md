@@ -72,7 +72,7 @@ Lean: `New.Rows.exists_clm_eq_thetaIntegral_modDatum`, `New.Rows.exists_linearMa
 (a) $|c|^2 = C\,L_{\mathfrak{m}}(\nu^{-1}, d) \neq 0$ for $\nu = \alpha/\upsilon^{s_0}$;
 
 (b) for all $\eta$, $g$ and matched $\Phi$, $\Psi$ for $\chi^{-1}$,
-$$c'\,\mathrm{cs}_{K_0}\bigl(h \mapsto \alpha(\det h)\,\theta^{W, I_a}_{\upsilon^{|l|}, 1}(\Phi, \mathrm{SD}(\eta))(g, h)\bigr) = c\,\alpha(\det g)\int_{[U(V')]}\alpha(\det x)^{-1}\,\theta^{V', W}_{\upsilon^{|l|}, \upsilon^{|l|}}(\Psi, \mathrm{MP}(\eta))(x, g)\,dx.$$
+$$\begin{aligned}&c'\,\mathrm{cs}_{K_0}\bigl(h \mapsto \alpha(\det h)\,\theta^{W, I_a}_{\upsilon^{|l|}, 1}(\Phi, \mathrm{SD}(\eta))(g, h)\bigr)\\ &\quad= c\,\alpha(\det g)\int_{[U(V')]}\alpha(\det x)^{-1}\,\theta^{V', W}_{\upsilon^{|l|}, \upsilon^{|l|}}(\Psi, \mathrm{MP}(\eta))(x, g)\,dx.\end{aligned}$$
 
 Lean: `New.Rows.exists_stdClassSum_eq_of_exchange`, `New.Rows.exists_stdClassSum_eq_mul_integral_modKernel` (New/Determinant/Exchange/ExplicitMatching.lean).
 

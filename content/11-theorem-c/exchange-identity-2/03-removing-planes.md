@@ -124,6 +124,6 @@ If $d = d' + 2$, split $p$ as $d' + 1$ planes and one plane. There is an adapted
 
 **Remark (Formalization).** The vector $x_0$ is an iterated cone or dual cone integral of $x$. The theorem forgets it and keeps only its existence, because later steps need only the vector $y_0$ on the small side. The cone integral at each step uses the weight $\mu$ of the fixed family of characters, and the constant $D$ changes at each step by $C_0^2/|\kappa_A|^2$, which does not depend on $\mathfrak{c}$. The theorem has no hypothesis on $\mu$. Signs enter only through the counts of minus signs, so the spaces $V$, $V'$ are free up to their signs.
 
-### Example
+### Example: one plane
 
 Let $W$ have rank $2$, and let $U$ and $V$ have rank $1$. Then $\operatorname{rk} V - \operatorname{rk} W/2 = 0$. Add one plane: $W' = W \oplus H$ of rank $4$ and $V'$ of rank $3$ with one minus sign more than $V$. The theorem on cones applies with $z = 0$. Here $|\gamma|^2 = C_0^2 L^\sharp(1)^2$, and $L_*(1) = L^\sharp(1)^2 L_*(0)$ with $L_*(0) = 1$. The constant $D$ changes to $D C_0^2/|\kappa_A|^2$. With two planes, $W'$ has rank $6$ and $V'$ rank $5$. The first step goes down to $(W \oplus H, V \oplus H)$, where $\operatorname{rk} - \operatorname{rk}/2 = 3 - 2 = 1$, so the cone has exponent $2$. The second step goes down to $(W, V)$, where this number is $0$, so the cone has exponent $1$.
