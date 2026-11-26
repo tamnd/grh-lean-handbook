@@ -33,7 +33,7 @@ Let $\chi$ be a Dirichlet character of conductor $f$. The generalized Bernoulli 
 $$\sum_{a=1}^{f} \chi(a) \frac{T e^{aT}}{e^{fT} - 1} = \sum_{k \ge 0} B_{k,\chi} \frac{T^k}{k!}.$$
 For each multiple $F$ of $f$ one has $B_{k,\chi} = F^{k-1} \sum_{a=1}^{F} \chi(a) B_k(a/F)$, where $B_k(X)$ is the Bernoulli polynomial (Washington, Proposition 4.1). For $k \ge 1$ one has $L(1-k, \chi) = -B_{k,\chi}/k$ (Washington, Theorem 4.2). For $\chi \ne 1$, $B_{k,\chi} = 0$ when $\chi(-1) \ne (-1)^k$. In particular $B_{1,\chi} = \frac{1}{f}\sum_{a=1}^{f} \chi(a) a$ for $\chi \ne 1$, and it is $0$ for $\chi$ even. So only odd characters appear in the formula for $h^-$.
 
-The source uses the values $L(\chi, -e)$ for $e \ge 1$ and $\chi$ not necessarily primitive. They vanish exactly when $\chi(-1) = (-1)^e$. Section 3 states this as [Lemma](/decl/New.OddPart.LFunction_neg_nat_eq_zero_iff/), and it proves the relation between $L(\chi, -e)$ and the twisted Bernoulli sums. Dirichlet L-functions are the subject of [Dirichlet L-functions](/chapter/dirichlet-l-functions/) in Volume 2.
+The source uses the values $L(\chi, -e)$ for $e \ge 1$ and $\chi$ not necessarily primitive. They vanish exactly when $\chi(-1) = (-1)^e$. Volume 2 proves this as [Lemma](/decl/New.OddPart.LFunction_neg_nat_eq_zero_iff/). Section 3 proves the relation between $L(\chi, -e)$ and the twisted Bernoulli sums. Dirichlet L-functions are the subject of [Dirichlet L-functions](/chapter/dirichlet-l-functions/) in Volume 2.
 
 ### Stickelberger's theorem
 
