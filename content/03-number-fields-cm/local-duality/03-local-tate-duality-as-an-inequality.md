@@ -25,7 +25,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section states local Tate duality and the local Euler characteristic formula in their textbook forms. It derives from them a bound on orthogonal groups of cocycles. Then it gives the form that the source proves: the same bound, proved without the two theorems, and a divisibility that takes a maximal orthogonal pair as a hypothesis.
 
-### The textbook form
+### The textbook form of local duality
 
 Let $k$ be a finite extension of $\mathbb{Q}_p$ and let $M$ be a finite discrete $G_k$-module. Its *Cartier dual* is $M^\vee = \mathrm{Hom}(M, \bar k^\times)$, with $(g f)(m) = g f(g^{-1} m)$. If $M$ is killed by $n$, then $M^\vee = \mathrm{Hom}(M, \mu_n)$. The evaluation pairing $M^\vee \times M \to \bar k^\times$ and the cup product give pairings
 
@@ -49,7 +49,7 @@ Equality holds when $\bar X$ and $\bar W$ are annihilators of each other and bot
 
 The source proves the bound and the divisibility of this remark. It does not prove that the pairing is perfect, and it does not prove the Euler characteristic formula.
 
-### The objects of the source
+### The local objects of the source
 
 **Definition (Cartier dual).** For a finite discrete $\Gamma$-module $M$, `M.cartierDual` is the discrete $\Gamma$-module of additive maps $f : M \to \Omega^\times$, with $(g f)(m) = g f(g^{-1} m)$.
 

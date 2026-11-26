@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 
 The steps of the last section carry Weil data: an element, an idele and a *splitting character* on a CM field. A splitting character is an unramified unitary Hecke character that restricts to the quadratic character of the CM extension on the real subfield. 
 
-### The textbook form
+### The textbook form of splitting characters
 
 Let $E$ be a CM field with maximal real subfield $E^+$, complex conjugation $x \mapsto \bar x$ and a CM type $\Phi$, one embedding $\Phi_w$ for each infinite place $w$. Weil introduced the characters of type $A_0$: those $\chi$ for which there is an integer function $n$ on the embeddings with $\chi((\alpha)) = \prod_\sigma \sigma(\alpha)^{n_\sigma}$ for $\alpha \equiv 1$ modulo the conductor (A. Weil, "On a certain type of characters of the idèle-class group of an algebraic number-field", *Proceedings of the International Symposium on Algebraic Number Theory, Tokyo-Nikko 1955*, Science Council of Japan, 1956). An exposition of these characters is in A. Raghuram, "Notes on the arithmetic of Hecke L-functions", arXiv:2207.03399, §4. The source cites both.
 

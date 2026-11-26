@@ -26,7 +26,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section moves from local fields to number fields. It states the classical formula of Greenberg and Wiles, which compares a Selmer group with a dual Selmer group. Then it gives the objects of the source: Selmer cocycles, split places, trivialised cocycles and a reciprocity law for power residue symbols. The source does not prove the formula. It proves upper bounds for Selmer cocycles, and it uses reciprocity at split primes in the place of Poitou-Tate duality.
 
-### The textbook form
+### The textbook form of the formula
 
 Let $K$ be a number field, let $\Sigma$ be a finite set of places of $K$ that contains the infinite places, and let $M$ be a finite module for $G_{K,\Sigma}$, the Galois group of the maximal extension of $K$ unramified outside $\Sigma$. Let $M^* = \mathrm{Hom}(M, \mu)$ be the Cartier dual. A *system of local conditions* is a family $\mathcal{L} = (L_v)$ of subgroups $L_v \subseteq H^1(K_v, M)$, with $L_v = H^1_{\mathrm{ur}}(K_v, M)$ for $v \notin \Sigma$. The *Selmer group* is
 

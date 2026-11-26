@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 
 The global counts of the last two sections bound cohomology. This section and the next one are about existence. Grunwald's theorem gives a global character with prescribed local components at finitely many places. The source uses it to build CM extensions of prime degree, called *steps*, with a prescribed tame character at a split place. This section gives the classical theorem with Wang's correction, then the source's version in prime exponent, then the steps.
 
-### The textbook form
+### The textbook form of Grunwald-Wang
 
 Let $K$ be a number field, $n \geq 1$, $S$ a finite set of places of $K$, and for each $v \in S$ let $\chi_v$ be a continuous character of $K_v^\times$ of order dividing $n$. The question is whether there is a character $\chi$ of the idele class group $\mathbb{A}_K^\times/K^\times$ of order dividing $n$ whose restriction to $K_v^\times$ is $\chi_v$ for every $v \in S$.
 

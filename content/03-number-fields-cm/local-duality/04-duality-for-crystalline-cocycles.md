@@ -22,7 +22,7 @@ drafted_by: writer@claude-opus-5-5
 
 The divisibility of the last section takes a maximal orthogonal pair as a hypothesis. The source supplies this pair in one case: the reductions modulo $\ell^m$ of the crystalline cocycles of a potentially crystalline lattice and of its dual. This section gives the classical statement, the Bloch-Kato orthogonality, and then the three statements of the source.
 
-### The textbook form
+### The textbook form of Bloch-Kato duality
 
 Let $K$ be a finite extension of $\mathbb{Q}_\ell$ of degree $n$, and let $V$ be a de Rham representation of $G_K$ of dimension $d$ over $\mathbb{Q}_\ell$. Bloch and Kato define $H^1_f(K, V)$ as the kernel of $H^1(K, V) \to H^1(K, B_{\mathrm{cris}} \otimes V)$. For a lattice $T \subset V$, $H^1_f(K, T)$ is the preimage of $H^1_f(K, V)$. The classical facts are the following (Bloch and Kato, "L-functions and Tamagawa numbers of motives", in *The Grothendieck Festschrift*, Volume I, Birkhäuser, 1990, §3).
 
@@ -33,7 +33,7 @@ The dimensions of $D_{\mathrm{dR}}/\mathrm{Fil}^0$ for $V$ and for $V^*(1)$ add 
 
 $$\dim Z^1_f(K, V) + \dim Z^1_f(K, V^*(1)) = (2 + n)\, d.$$
 
-### The objects of the source
+### The crystalline objects of the source
 
 The source works with a profinite group $\Gamma$ and a map $\Gamma \to G_{\mathbb{Q}_\ell}$ (the structure `OverGp Γ ℓ`, with map `toGp`). The degree $n$ above is the index of the image of `toGp`.
 
