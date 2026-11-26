@@ -68,11 +68,11 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 7 | 2 | Cohomology as Ext on test rings | drafted | 14,615 |
 | 7 | 3 | Period rings and crystalline representations | drafted | 14,614 |
 | 7 | 4 | Kisin frames and limits | drafted | 12,039 |
-| 7 | 5 | The comparison theorems on test objects | planned | 0 |
-| 7 | 6 | Fitting ideals, lengths and coefficient rings | planned | 0 |
-| 8 | 1 | Complex abelian varieties through theta functions | planned | 0 |
+| 7 | 5 | The comparison theorems on test objects | drafted | 14,654 |
+| 7 | 6 | Fitting ideals, lengths and coefficient rings | drafted | 14,491 |
+| 8 | 1 | Complex abelian varieties through theta functions | drafted | 14,604 |
 | 8 | 2 | An integral model without a moduli problem | planned | 0 |
-| 8 | 3 | The congruence relation | planned | 0 |
+| 8 | 3 | The congruence relation | drafted | 14,017 |
 | 8 | 4 | What attached means | planned | 0 |
 | 8 | 5 | Building the representations | planned | 0 |
 | 9 | 1 | Theorem A and its plan | drafted | 8,818 |

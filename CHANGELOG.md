@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.2.7
+
+New chapters since v0.2.6:
+
+- Volume 7, chapter 5, The comparison theorems on test objects (#100).
+- Volume 7, chapter 6, Fitting ideals, lengths and coefficient rings (#102). Volume 7 is now complete.
+- Volume 8, chapter 1, Complex abelian varieties through theta functions (#103). This opens Volume 8.
+- Volume 8, chapter 3, The congruence relation (#104).
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.6
 
 New chapters since v0.2.5:
