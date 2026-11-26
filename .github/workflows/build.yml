@@ -1,0 +1,135 @@
+# The GRH Lean Handbook.
+# On each push and pull request: ghb check, against lsernau/grh-lean at the pin of EDITION.
+# On a tag v*, or by hand: build the front pages and each volume with written chapters, as PDF and EPUB, and publish
+# the release with the notes of CHANGELOG.md.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Publish the books as the release v<version in EDITION>"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    outputs:
+      pin: ${{ steps.ed.outputs.pin }}
+      volumes: ${{ steps.vols.outputs.volumes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: ed
+        run: echo "pin=$(awk '/^grh /{print $2}' EDITION)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: lsernau/grh-lean
+          ref: ${{ steps.ed.outputs.pin }}
+          path: grh-lean
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install .
+      - name: ghb check
+        run: python -m ghb --source grh-lean check --volume all
+      - id: vols
+        name: the volumes to build
+        run: |
+          v=$(python - <<'PY'
+          import glob, json, os
+          vols = sorted({int(os.path.basename(os.path.dirname(os.path.dirname(f)))[:2])
+                         for f in glob.glob("content/[0-9][0-9]-*/*/[0-9][0-9]-*.md")})
+          print(json.dumps(["front"] + [str(n) for n in vols]))
+          PY
+          )
+          echo "volumes=$v" >> "$GITHUB_OUTPUT"
+          echo "volumes: $v"
+
+  build:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/v')
+    needs: check
+    runs-on: ubuntu-24.04
+    env:
+      PANDOC: "3.12"
+    strategy:
+      fail-fast: false
+      matrix:
+        volume: ${{ fromJSON(needs.check.outputs.volumes) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: lsernau/grh-lean
+          ref: ${{ needs.check.outputs.pin }}
+          path: grh-lean
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install .
+      - name: tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils epubcheck
+          curl -fsSL -o pandoc.deb "https://github.com/jgm/pandoc/releases/download/$PANDOC/pandoc-$PANDOC-1-amd64.deb"
+          sudo dpkg -i pandoc.deb
+          curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+          sudo mv tectonic /usr/local/bin/
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/Tectonic
+          key: tectonic-${{ hashFiles('tex/handbook.sty') }}
+          restore-keys: tectonic-
+      - name: build
+        run: python -m ghb --source grh-lean build --volume ${{ matrix.volume }} --formats pdf,epub --out out --move
+      - name: epubcheck
+        run: epubcheck out/*.epub || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: volume-${{ matrix.volume }}
+          path: |
+            out/grh-lean-handbook-*.pdf
+            out/grh-lean-handbook-*.epub
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release)
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - name: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ver="$(awk '/^version /{print $2}' EDITION)"
+          v="v$ver"
+          # the notes: the section "## v<version>" of CHANGELOG.md
+          awk -v h="## $v" '$0 == h {on = 1; next} on && /^## / {exit} on {print}' CHANGELOG.md > notes.md
+          [ -s notes.md ] || echo "The volumes of edition $v. See CHANGELOG.md." > notes.md
+          cd out && sha256sum * > SHA256SUMS && cd ..
+          if gh release view "$v" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$v" out/* --clobber -R "$GITHUB_REPOSITORY"
+          else
+            gh release create "$v" out/* -R "$GITHUB_REPOSITORY" --title "The GRH Lean Handbook $v" --notes-file notes.md
+          fi

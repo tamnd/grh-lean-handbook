@@ -1,0 +1,100 @@
+# Volume 11 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 11
+title: 'Theorem C: long forms'
+summary: >-
+  The height argument: twists and regular families, theta lifts and their norms, the exchange identity, the chain determinant, Hecke values, false lifts and the comparison operator.
+words: 60000
+source: New/Determinant, New/OneLift, New/Derivatives/Sharpness
+chapters:
+  - id: theorem-c-plan
+    title: Theorem C and the height argument
+    plan: >-
+      The statement, the four inputs, and the model case: a nonzero algebraic integer of small size at every place.
+    research: e §0
+  - id: twists-critical-pairs
+    title: Twists, critical pairs and regular families
+    plan: >-
+      The statement of the existence of regular families (proved in Volume 12).
+    source:
+      - New/Determinant/Twist/FitTwists
+      - New/OneLift/HeckeValues/TwistedRatio
+  - id: single-theta-lifts
+    title: Single theta lifts and their norms
+    source:
+      - New/Determinant/Norms
+  - id: exchange-identity-1
+    title: The exchange identity, part 1
+    plan: >-
+      Matched functions.
+    source:
+      - New/Determinant/Exchange/ExplicitMatching
+      - New/Determinant/Exchange/MatchingPartners
+      - New/Determinant/Exchange/TheoremForPartners
+  - id: exchange-identity-2
+    title: The exchange identity, part 2
+    plan: >-
+      Removing planes and the stable range.
+    source:
+      - New/Determinant/Exchange
+  - id: seesaw-squares
+    title: Seesaw squares
+    plan: >-
+      Seesaw squares, and why the constant may vanish.
+    source:
+      - New/Determinant/Exchange/OneSquare
+      - New/Determinant/Chain/SquareLaw
+  - id: chain-determinant
+    title: The chain determinant and its factorization
+    source:
+      - New/Determinant/Chain
+  - id: grids-paths-turns
+    title: Grids, paths and turns
+    plan: >-
+      Determinant/AuxiliaryForms (grids). With figures.
+    source:
+      - New/Determinant/AuxiliaryForms
+  - id: deep-level-poincare
+    title: Deep level Poincaré series and spanning forms
+    plan: >-
+      Determinant/AuxiliaryForms: DeepLevel, SpanningForms.
+    source:
+      - New/Determinant/AuxiliaryForms/DeepLevel
+      - New/Determinant/AuxiliaryForms/SpanningForms
+  - id: hecke-values
+    title: Hecke values of character lifts
+    source:
+      - New/OneLift/HeckeValues
+  - id: sharpness
+    title: The divisibility is sharp
+    source:
+      - New/Derivatives/Sharpness
+  - id: false-lifts
+    title: False lifts
+    source:
+      - New/OneLift/TestedForms
+      - New/OneLift/FalseLifts
+  - id: comparison-operator-1
+    title: The comparison operator, part 1
+    plan: >-
+      Gluing maps and three exchanges.
+    source:
+      - New/OneLift/ComparisonOperator/GluingMaps
+      - New/OneLift/ComparisonOperator/Glued
+      - New/OneLift/ComparisonOperator/ThreeExchanges
+      - New/OneLift/ComparisonOperator/OneExchange
+  - id: comparison-operator-2
+    title: The comparison operator, part 2
+    plan: >-
+      The basis problem and theta kernel bounds.
+    source:
+      - New/OneLift/ComparisonOperator
+      - New/UpperBound/Kernels/DefiniteKernelSize
+  - id: lift-volume-height
+    title: The height of one lift determinant
+    source:
+      - New/OneLift/LiftVolumeHeight
+  - id: proof-of-theorem-c
+    title: The proof of Theorem C
+    source:
+      - New/Determinant/Twist/LongForms

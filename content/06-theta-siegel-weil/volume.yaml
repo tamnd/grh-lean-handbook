@@ -1,0 +1,62 @@
+# Volume 6 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 6
+title: The theta correspondence and the Siegel-Weil formula
+summary: >-
+  The Weil representation, local theta, theta lifts and the seesaw, Bessel periods, the Siegel-Weil formula and the Rallis inner product formula.
+words: 45000
+source: Lib/Weil, Lib/SiegelWeil, Lib/DiscreteSeries/Theta
+chapters:
+  - id: weil-representation
+    title: The Weil representation from a vacuum
+    plan: >-
+      The Heisenberg group, the cocycle as a Gauss sum, the Fock model, mixed models, Weil's invariance.
+    research: h §2
+    source:
+      - Lib/Weil/Construction
+      - Lib/Weil/Fock
+      - Lib/Weil/MixedModel
+  - id: local-theta
+    title: Local theta in the Fock model
+    plan: >-
+      Local theta in the Fock model, and the argument of Howe that replaces Howe duality.
+    research: g §8
+    source:
+      - Lib/DiscreteSeries/Theta
+  - id: theta-lifts-seesaw
+    title: Theta kernels, theta lifts and the seesaw
+    plan: >-
+      Growth, definite lifts, the Galois law, the seesaw for periods.
+    research: h §2
+    source:
+      - Lib/Weil/DualPair
+      - Lib/Weil/Lift
+      - Lib/Weil/Seesaw
+      - Lib/Weil/CompactLift
+      - Lib/Weil/TameGaussSum
+  - id: bessel-periods
+    title: Bessel periods and one step of unfolding
+    research: h §2
+    source:
+      - Lib/Weil/Periods
+  - id: siegel-weil
+    title: The Siegel-Weil formula
+    plan: >-
+      The Siegel-Weil formula in Weil's range, and Siegel's mass.
+    research: h §7
+    source:
+      - Lib/SiegelWeil/Formula
+      - Lib/SiegelWeil/OneVector
+      - Lib/SiegelWeil/Mass
+      - Lib/SiegelWeil/NeighbourLattices
+      - Lib/SiegelWeil
+  - id: rallis-inner-product
+    title: Doubling and the Rallis inner product formula
+    plan: >-
+      Doubling, the Rallis inner product formula and the tower.
+    research: h §7
+    source:
+      - Lib/SiegelWeil/RallisInner
+      - Lib/SiegelWeil/UnramifiedSeries
+      - Lib/SiegelWeil/Tower
+      - Lib/SiegelWeil/SingularForms

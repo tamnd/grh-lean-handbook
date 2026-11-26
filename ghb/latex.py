@@ -1,0 +1,262 @@
+"""The LaTeX and PDF of a volume, on the pipeline of The Riemann Handbook and The Handbook of Algorithms.
+
+volume Markdown → pandoc (filters/ghb.lua) → body.tex → fallback fonts → main.tex → tectonic → PDF.
+
+The front pages (content/front) come first: the title page, the copyright page and "About this edition".
+"""
+
+from __future__ import annotations
+
+import os
+import re
+import shutil
+import subprocess
+import time
+
+from .fonts import Fallback
+from .util import tex, volume_hue
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BOOK = "The GRH Lean Handbook"
+
+
+def pandoc_latex(md: str) -> str:
+    cmd = ["pandoc", "-f", "markdown-auto_identifiers-raw_tex", "-t", "latex", "--columns=50",
+           "--lua-filter", os.path.join(ROOT, "filters", "ghb.lua"),
+           "--top-level-division=chapter", "--wrap=preserve", "--syntax-highlighting=pygments"]
+    r = subprocess.run(cmd, input=md, capture_output=True, text=True)
+    if r.returncode:
+        raise RuntimeError("pandoc failed:\n" + r.stderr[-4000:])
+    if r.stderr.strip():
+        print(r.stderr.strip()[:2000])
+    return r.stdout
+
+
+def _raw(s: str) -> str:
+    return "```{=latex}\n" + s + "\n```\n"
+
+
+def front_md(book, vol, version: str, date: str) -> str:
+    """The Markdown of the front pages, with raw LaTeX around each page."""
+    values = book.front_values(vol, version, date)
+    tfm, tbody = book.front_md("title", values)
+    _, cbody = book.front_md("copyright", values)
+    efm, ebody = book.front_md("edition", values)
+    name = tex(tfm.get("title", BOOK))
+    if vol is None:
+        head = rf"\begin{{hbtitle}}{{{name}}}{{}}{{{name}}}{{{tex(str(tfm.get('subtitle', '')))}}}"
+    else:
+        head = rf"\begin{{hbtitle}}{{{name}}}{{{vol.number}}}{{{tex(vol.title)}}}{{{tex(vol.summary)}}}"
+    out = [_raw(head), tbody, _raw(r"\end{hbtitle}"),
+           _raw(r"\begin{hbcopyrightpage}"), cbody, _raw(r"\end{hbcopyrightpage}"),
+           _raw(rf"\hbfrontpage{{{tex(str(efm.get('title', 'About this edition')))}}}{{front-edition}}"
+                + "\n" + r"\begin{hbabout}"), ebody, _raw(r"\end{hbabout}")]
+    return "\n\n".join(out)
+
+
+def main_tex(book, vol, version: str, date: str) -> str:
+    number = vol.number if vol else 0
+    hue = volume_hue(number)
+    title = tex(vol.title) if vol else "The front pages"
+    full = f"{BOOK}, Volume {number}: {title}" if vol else f"{BOOK}: the front pages"
+    body = "\\tableofcontents\n\\mainmatter\n\\input{body.tex}\n" if vol else ""
+    return rf"""\documentclass[10pt,twoside,openany]{{book}}
+\RequirePackage{{xcolor}}
+\definecolor{{hbaccent}}{{HTML}}{{{hue}}}
+\usepackage{{handbook}}
+\renewcommand\hbvolnum{{{number}}}
+\renewcommand\hbvolname{{{title}}}
+\hypersetup{{pdftitle={{{full}}},pdfauthor={{The grh-lean-handbook contributors}},
+  pdfsubject={{{title}}},pdfkeywords={{Generalized Riemann Hypothesis, Lean, lsernau/grh-lean, {title}}}}}
+\begin{{document}}
+\frontmatter
+\input{{front.tex}}
+{body}\end{{document}}
+"""
+
+
+_TT = re.compile(r"\\texttt\{((?:[^{}]|\{\})*)\}")
+
+
+def _breaks(t: str) -> str:
+    t = re.sub(r"(\\_|\.|/)(?=.)", r"\1\\allowbreak{}", t)
+    return re.sub(r"(?<=[a-z0-9])(?=[A-Z])", r"\\allowbreak{}", t)   # CamelCase file names
+
+
+_HREF = re.compile(r"(\\href\{(?:[^{}]|\\[{}])*\})\{((?:[^{}\\]|\\[#_&%])*)\}")
+
+
+def break_names(tex: str) -> str:
+    """Let a long Lean name or path break across lines: after each `_`, `.` and `/`, and inside CamelCase, in
+    inline code and in the text of a link. Without this, a name such as
+    every_character_of_theta_integrals_local_matching runs into the margin."""
+    tex = _TT.sub(lambda m: r"\texttt{" + _breaks(m[1]) + "}", tex)
+    tex = _HREF.sub(lambda m: m[1] + "{" + _breaks(m[2]) + "}", tex)
+    # a bare module path in a table cell: ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin
+    return _PATH.sub(lambda m: _breaks(m[0]), tex)
+
+
+_PATH = re.compile(r"(?<![\\{\w/])[A-Z][A-Za-z0-9]*(?:/[A-Z][A-Za-z0-9]*)+(?![\w}])")
+
+
+_BARE_SCRIPT = re.compile(r"(?<!\\)([_^])(\\(?:math[a-z]+|operatorname\*?|text[a-z]*|boldsymbol)\{[^{}]*\})")
+
+
+def brace_scripts(tex: str) -> str:
+    """Repair math that KaTeX accepts and XeTeX with unicode-math does not: `x_\\mathcal{R}` becomes
+    `x_{\\mathcal{R}}`, and `\\not\\leadsto` becomes `\\centernot\\leadsto`."""
+    tex = _BARE_SCRIPT.sub(r"\1{\2}", tex)
+    # amssymb's \triangle is a macro, not a math character: `Q_\triangle` gives "Missing { inserted"
+    tex = re.sub(r"(?<!\\)([_^])(\\triangle)(?![a-zA-Z])", r"\1{\2}", tex)
+    # a prime, then a subscript, then a superscript: KaTeX allows it, TeX sees a double superscript
+    tex = _PRIME_SUB_SUP.sub(_prime_sub_sup, tex)
+    # unicode-math sets \mathrm in the text font, which has no math Greek: `\mathrm{k\Omega}` (a unit) loses its Ω.
+    # The Greek letter goes outside, upright from the math font (\symup; \mathup is the text font too).
+    tex = _MATHRM_GREEK.sub(lambda m: (r"\mathrm{" + m[1] + "}" if m[1] else "") + r"\symup{" + "\\" + m[2] + "}", tex)
+    # unicode-math's \not looks for a negated character; ↝ has none and XeTeX dies ("bad native font flag"),
+    # and before a group, as in the negated "|~" \not\mathrel{|\!\sim}, it gives "Missing { inserted"
+    tex = re.sub(r"\\not\s*\\mathrel\{([^{}]*)\}", lambda m: r"\centernot{\mathrel{" + m[1] + "}}", tex)
+    return tex.replace(r"\not\leadsto", r"\centernot\leadsto")
+
+
+_GREEK = ("alpha beta gamma delta epsilon varepsilon zeta eta theta vartheta iota kappa lambda mu nu xi pi rho sigma "
+          "tau upsilon phi varphi chi psi omega Gamma Delta Theta Lambda Xi Pi Sigma Upsilon Phi Psi Omega").split()
+_MATHRM_GREEK = re.compile(r"\\mathrm\{([^{}\\]*)\\(" + "|".join(_GREEK) + r")\s*\}")
+
+
+_PRIME_SUB_SUP = re.compile(r"(\\[a-zA-Z]+|[A-Za-z0-9)\]}])('+)(_(?:\{[^{}]*\}|\\?[A-Za-z0-9]+))(?=\^)")
+_BIG_OPS = {r"\sum", r"\prod", r"\coprod", r"\bigcup", r"\bigcap", r"\bigoplus", r"\int", r"\oint"}
+
+
+def _prime_sub_sup(m: re.Match) -> str:
+    base, primes, sub = m.groups()
+    if base in _BIG_OPS:   # Σ'' with limits: amsmath's \sideset
+        return r"\sideset{}{" + primes + "}" + base + sub
+    return base + primes + sub + "{}"
+
+
+def _math_hats(m: re.Match) -> str:
+    s = m.group(0)
+    return re.sub(r"([A-Za-z])\u0302", r"\\hat{\1}", s) if "\u0302" in s else s
+
+
+_AUX = ("main.aux", "main.toc", "main.out")
+
+
+def _aux_state(outdir: str) -> tuple:
+    state = []
+    for f in _AUX:
+        p = os.path.join(outdir, f)
+        state.append(open(p, "rb").read() if os.path.exists(p) else None)
+    return tuple(state)
+
+
+def run_tex(outdir: str, max_passes: int = 5):
+    """Run XeTeX one pass per tectonic process until the aux, toc and bookmark files are stable.
+
+    Within one process tectonic keeps XeTeX's cache of glyph boxes from pass to pass, keyed by font number.
+    Once the contents fill in, later passes load the fonts in another order, and a small font can get the
+    boxes of a large one: a line with a 7 pt cross-reference got the height of a 54 pt chapter number.
+    A fresh process for every pass has no such cache."""
+    for f in _AUX:
+        p = os.path.join(outdir, f)
+        if os.path.exists(p):
+            os.remove(p)
+    passes = 0
+    while True:
+        before = _aux_state(outdir)
+        r = subprocess.run(["tectonic", "-X", "compile", "--keep-logs", "--keep-intermediates", "-r", "0",
+                            "main.tex"], cwd=outdir, capture_output=True, text=True)
+        passes += 1
+        if r.returncode or _aux_state(outdir) == before or passes >= max_passes:
+            break
+    for f in os.listdir(outdir):   # the intermediates are not part of the build
+        if f.startswith("main.") and f not in ("main.tex", "main.pdf", "main.log", "main.epub"):
+            os.remove(os.path.join(outdir, f))
+    return r, passes
+
+
+def build(book, vol, md: str, outdir: str, edition: str, date: str, pdf: bool = True) -> dict:
+    os.makedirs(outdir, exist_ok=True)
+    t0 = time.time()
+    open(os.path.join(outdir, "body.md"), "w").write(md)
+    body = pandoc_latex(md)
+    # a long Lean term in a code block: let fvextra break it at any character, with a mark at the break
+    body = body.replace("\\begin{verbatim}", "\\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\\small]")
+    body = body.replace("\\end{verbatim}", "\\end{Verbatim}")
+    t1 = time.time()
+    fb = Fallback()
+    body = fb.apply(body)
+    body = brace_scripts(body)
+    body = break_names(body)
+    # ⧺ (concatenation) is absent from Libertinus Math; in mathematics it is drawn as two overlapping plus signs
+    body = re.sub(r"(?<!\}\{)⧺", lambda m: r"\mathbin{+\mkern-10mu+}", body)
+    # the outer joins ⟕ ⟖ ⟗ are absent from Libertinus Math; in mathematics they come from STIX Two Math
+    body = re.sub(r"(?<!\}\{)([⟕⟖⟗])", lambda m: r"\mathbin{\text{\hbfbC " + m.group(1) + "}}", body)
+    # so is the diamond operator ⋄ (\diamond, U+22C4); as a bare subscript (the diamond norm, `\|X\|_\diamond`)
+    # the replacement needs braces, or TeX stops with "Missing { inserted"
+    body = re.sub(r"(?<!\\)([_^])\s*\\diamond(?![a-zA-Z])", lambda m: m.group(1) + r"{\text{\hbfbC ⋄}}", body)
+    body = re.sub(r"\\diamond(?![a-zA-Z])", lambda m: r"\mathbin{\text{\hbfbC ⋄}}", body)
+    # a combining circumflex (U+0302) after a letter in mathematics, as in N̂, has no glyph there: it is \hat
+    body = re.sub(r"\\\((.*?)\\\)|\\\[(.*?)\\\]", _math_hats, body, flags=re.S)
+    open(os.path.join(outdir, "body.tex"), "w").write(body)
+    ftex = break_names(brace_scripts(fb.apply(pandoc_latex(front_md(book, vol, edition, date)))))
+    open(os.path.join(outdir, "front.tex"), "w").write(ftex)
+    open(os.path.join(outdir, "main.tex"), "w").write(main_tex(book, vol, edition, date))
+    shutil.copy(os.path.join(ROOT, "tex", "handbook.sty"), outdir)
+    info = {"pandoc_s": round(t1 - t0, 1), "missing_glyphs": dict(sorted(fb.missing.items(), key=lambda x: -x[1]))}
+    if pdf:
+        t2 = time.time()
+        r, passes = run_tex(outdir)
+        info["tectonic_s"] = round(time.time() - t2, 1)
+        info["passes"] = passes
+        info["ok"] = r.returncode == 0
+        if r.returncode:
+            info["error"] = (r.stdout + r.stderr)[-6000:]
+        info["overfull"] = overfull(outdir)
+        pdfp = os.path.join(outdir, "main.pdf")
+        if os.path.exists(pdfp):
+            info["pdf"] = pdfp
+            try:
+                out = subprocess.run(["pdfinfo", pdfp], capture_output=True, text=True).stdout
+                info["pages"] = int(next(l.split()[-1] for l in out.splitlines() if l.startswith("Pages")))
+            except Exception:
+                pass
+    return info
+
+
+_OVERFULL = re.compile(r"^Overfull \\hbox \(([0-9.]+)pt too wide\) (?:in paragraph|detected) at lines? ([0-9]+)", re.M)
+
+
+def overfull(outdir: str, min_pt: float = 1.0) -> list[str]:
+    """The overfull boxes of the log, each with its file and the nearest label above it, so that a writer can find
+    the statement (spec 09.4). The file is the last of front.tex and body.tex that the log opened before the
+    message."""
+    log = os.path.join(outdir, "main.log")
+    if not os.path.exists(log):
+        return []
+    labels = {}
+    for f in ("front.tex", "body.tex"):
+        p = os.path.join(outdir, f)
+        lines = open(p, encoding="utf-8").read().split("\n") if os.path.exists(p) else []
+        labels[f] = [(i + 1, m.group(1)) for i, ln in enumerate(lines)
+                     for m in re.finditer(r"\\label\{([^{}]+)\}", ln)]
+    text = open(log, encoding="utf-8", errors="replace").read()
+    opens = sorted((m.start(), m.group(1)) for m in re.finditer(r"\(\./(front\.tex|body\.tex)", text))
+    out = []
+    for m in _OVERFULL.finditer(text):
+        pt, no = float(m.group(1)), int(m.group(2))
+        if pt < min_pt:
+            continue
+        f = "main.tex"
+        for pos, name in opens:
+            if pos > m.start():
+                break
+            f = name
+        near = ""
+        for i, lab in labels.get(f, []):
+            if i > no:
+                break
+            near = lab
+        out.append(f"{pt:.1f}pt at {f}:{no}" + (f" near {near}" if near else ""))
+    return out

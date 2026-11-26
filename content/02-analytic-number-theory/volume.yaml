@@ -1,0 +1,51 @@
+# Volume 2 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 2
+title: Analytic number theory
+summary: >-
+  Dirichlet L-functions, Landau's theorem, the prime number theorem in progressions, primes in windows, Pólya-Vinogradov and sets with no three-term progressions.
+words: 30000
+source: Lib/Analytic, Reduction/Data/Existence (in part)
+chapters:
+  - id: dirichlet-l-functions
+    title: Dirichlet L-functions and zero symmetry
+    plan: >-
+      Dirichlet L-functions, the completed L-function for every character, and zero symmetry.
+    source:
+      - Lib/Analytic/EntireLFunction
+      - Lib/Analytic/ZeroSymmetry
+      - Lib/Analytic/DirichletTheta
+  - id: polar-functions
+    title: Polar functions and the explicit formula
+    plan: >-
+      IsPolar, the residues at zeros.
+  - id: landau-theorem
+    title: Landau's theorem
+    plan: >-
+      Landau's theorem on integrals with coefficients of one sign.
+    source:
+      - Lib/Analytic/Landau
+  - id: prime-number-theorem
+    title: The prime number theorem in progressions
+    plan: >-
+      A zero-free region and the prime number theorem in progressions, for a fixed modulus.
+    source:
+      - Lib/Analytic/PrimeNumberTheorem
+  - id: primes-in-windows
+    title: Primes in windows
+    plan: >-
+      Primes p ≡ 1 mod M^k in windows of log p. A remark on how weak this is next to Siegel-Walfisz, and why it is enough.
+    source:
+      - Lib/Analytic/Primes
+  - id: polya-vinogradov
+    title: Pólya-Vinogradov and quadratic twists
+    plan: >-
+      The Pólya-Vinogradov inequality and zero density for quadratic twists. A section on why nothing is circular: no zero-free region or density input is assumed.
+    research: g §3
+    source:
+      - Lib/Analytic/PolyaVinogradov
+      - Lib/Analytic/QuadraticTwist
+  - id: progression-free-sets
+    title: Sets with no three-term progressions
+    plan: >-
+      Sets with no three-term progressions (the Behrend part of Reduction/Data/Existence).

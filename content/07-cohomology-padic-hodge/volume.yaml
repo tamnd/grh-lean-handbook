@@ -1,0 +1,56 @@
+# Volume 7 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 7
+title: Cohomology and p-adic Hodge theory
+summary: >-
+  Schemes through their points, cohomology as Ext on test rings, period rings, Kisin frames, the comparison theorems on test objects and Fitting ideals.
+words: 45000
+source: Lib/Cohomology, Lib/PadicHodge, Lib/PadicComparison, Lib/General/Geometry, Lib/General/Algebra
+chapters:
+  - id: schemes-through-points
+    title: Schemes through their points
+    plan: >-
+      Line bundles as point functions, Pic, projective embeddings, a case of Serre's theorem.
+    research: h §4
+    source:
+      - Lib/General/Geometry
+  - id: cohomology-ext
+    title: Cohomology as Ext on test rings
+    plan: >-
+      What it is, what it is not (it is not compared with SGA 4), base change, Hodge cohomology, the Woods Hole formula.
+    research: g §6
+    source:
+      - Lib/Cohomology
+  - id: period-rings
+    title: Period rings and crystalline representations
+    plan: >-
+      A_inf, B_max, B_dR⁺, admissibility, Hodge-Tate jumps, the Bloch-Kato rank formula.
+    research: h §8
+    source:
+      - Lib/PadicHodge/PeriodRings
+      - Lib/PadicHodge/Crystalline
+      - Lib/PadicHodge/BlochKato
+      - Lib/PadicHodge
+  - id: kisin-frames
+    title: Kisin frames and limits
+    plan: >-
+      Kisin frames and limits of crystalline representations.
+    research: h §8
+    source:
+      - Lib/PadicHodge/Kisin
+      - Lib/PadicHodge/Limit
+  - id: comparison-theorems
+    title: The comparison theorems on test objects
+    plan: >-
+      Almost descent, the primitive comparison, the Hodge-Tate map, the crystalline comparison.
+    research: h §9
+    source:
+      - Lib/PadicComparison
+  - id: fitting-ideals
+    title: Fitting ideals, lengths and coefficient rings
+    plan: >-
+      The algebra for Selmer bounds.
+    research: h §4
+    source:
+      - Lib/General/Algebra
+      - Lib/General/NumberTheory

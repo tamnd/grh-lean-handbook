@@ -1,0 +1,48 @@
+# Volume 4 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 4
+title: Unitary groups and automorphic forms
+summary: >-
+  Adeles and hermitian spaces, reduction theory, automorphic forms on unitary groups, a simple trace formula and congruence subgroups.
+words: 30000
+source: Lib/Adelic, Lib/General/Groups
+chapters:
+  - id: adeles-hermitian-spaces
+    title: Adeles and hermitian spaces
+    plan: >-
+      The adeles of the source, measures, the standing form (the identity at every finite place), Witt, Iwasawa and Landherr.
+    research: g §2
+    source:
+      - Lib/Adelic/Adeles
+      - Lib/Adelic/Unitary
+      - Lib/Adelic/Witt
+      - Lib/Adelic/Landherr
+  - id: reduction-theory
+    title: Quotients and reduction theory
+    plan: >-
+      Cutoff integration, Minkowski, finite volume, Mahler's criterion.
+    source:
+      - Lib/Adelic/QuotientMeasure
+      - Lib/Adelic/Reduction
+  - id: automorphic-forms
+    title: Automorphic forms on unitary groups
+    plan: >-
+      Automorphic forms on definite and indefinite unitary groups: forms of a type, cuspidality, finite dimension, Hecke operators, gauges.
+    source:
+      - Lib/Adelic/Hecke
+      - Lib/Adelic/AutomorphicForms
+  - id: trace-formula
+    title: A simple trace formula
+    plan: >-
+      A simple trace formula across signatures, with test functions cuspidal at one place.
+    research: g §2, §10
+    source:
+      - Lib/Adelic/TraceFormula
+  - id: congruence-subgroups
+    title: Congruence subgroups and Haar moduli
+    plan: >-
+      Congruence subgroups, profinite characters and Haar moduli.
+    research: h §4
+    source:
+      - Lib/General/Groups
+      - Lib/General/Measure

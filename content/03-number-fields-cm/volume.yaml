@@ -1,0 +1,48 @@
+# Volume 3 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 3
+title: Number fields, class field theory and complex multiplication
+summary: >-
+  CM fields, class field theory on finite ideles, local duality, odd classes over cyclotomic fields and CM elliptic curves.
+words: 35000
+source: Lib/ClassField, Lib/Cyclotomic, Lib/CM
+chapters:
+  - id: cm-fields
+    title: CM fields, towers and places
+    plan: >-
+      CM fields, cyclotomic towers, places and the standing condition μ₅₀₄₀ ⊂ E.
+    research: g §0, §2
+    source:
+      - Lib/ClassField/Places
+      - Lib/General/NumberTheory/CMFields
+  - id: class-field-theory
+    title: Class field theory on finite ideles
+    plan: >-
+      Cochains, Br = ℚ/ℤ, the second inequality, reciprocity, existence for totally complex fields, Chebotarev as an existence statement, Hecke L-functions. A table of the differences from Milne, Class Field Theory.
+    research: g §4
+    source:
+      - Lib/ClassField
+  - id: local-duality
+    title: Local duality and the Greenberg-Wiles count
+    plan: >-
+      Local duality and the Greenberg-Wiles count as inequalities, Grunwald in prime exponent, CM splitting characters.
+    research: g §4
+    source:
+      - Lib/ClassField/LocalDuality
+      - Lib/ClassField/GreenbergWiles
+      - Lib/ClassField/Grunwald
+      - Lib/ClassField/Global/CMSplittingCharacters
+  - id: odd-classes
+    title: Odd classes over cyclotomic fields
+    plan: >-
+      Voronoi, Stickelberger, a Kolyvagin system of Gauss sums, the bound on Ш_odd.
+    research: g §7
+    source:
+      - Lib/Cyclotomic
+  - id: cm-elliptic-curves
+    title: CM elliptic curves
+    plan: >-
+      CM elliptic curves for ℚ(√−d): σ and θ, good reduction, formal groups, Kronecker's limit formula and the Chowla-Selberg formula (up to a unit, without Gamma values).
+    research: g §5
+    source:
+      - Lib/CM

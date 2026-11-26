@@ -1,0 +1,129 @@
+# Made by `ghb ledger --write` from lsernau/grh-lean at 72fead102f663d5c7a407964a13dc0cf9d977207. Do not edit by hand.
+- name: DirichletLNonvanishingRightOfHalf
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/03-the-four-statements.md
+  number: Definition 2.3.2
+  file: Statements.lean
+  line: 6
+  kind: def
+  digest: 09859f071924
+- name: DirichletLZerosOnLine
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/03-the-four-statements.md
+  number: Definition 2.3.3
+  file: Statements.lean
+  line: 10
+  kind: def
+  digest: 8c007ae72b89
+- name: LFunction_eq_zero_re
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/06-the-five-theorems.md
+  number: Theorem 2.6.8
+  file: Main.lean
+  line: 17
+  kind: theorem
+  digest: 2bda39dd3937
+- name: LFunction_eq_zero_re_of_isPrimitive
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/06-the-five-theorems.md
+  number: Theorem 2.6.9
+  file: Main.lean
+  line: 21
+  kind: theorem
+  digest: 0edd58b9f75b
+- name: LFunction_ne_zero_of_half_lt_re
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/06-the-five-theorems.md
+  number: Theorem 2.6.7
+  file: Main.lean
+  line: 13
+  kind: theorem
+  digest: 83eff0a98a22
+- name: New.exists_isPrimitive_changeLevel_eq
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/05-reflection-for-every-character.md
+  number: Lemma 2.5.3
+  file: Lib/Analytic/ZeroSymmetry.lean
+  line: 42
+  kind: lemma
+  digest: 2083c09a5627
+- name: New.gammaFactor_changeLevel
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/05-reflection-for-every-character.md
+  number: Lemma 2.5.4
+  file: Lib/Analytic/ZeroSymmetry.lean
+  line: 49
+  kind: lemma
+  digest: eac5a495e5da
+- name: New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/05-reflection-for-every-character.md
+  number: Theorem 2.5.5
+  file: Lib/Analytic/ZeroSymmetry.lean
+  line: 61
+  kind: lemma
+  digest: ef10568e49a5
+- name: New.grh
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/03-the-four-statements.md
+  number: Theorem 2.3.9
+  file: New/Reduction/OneSidedBound.lean
+  line: 239
+  kind: theorem
+  digest: 765b5563b79b
+- name: New.prod_euler_factor_ne_zero
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/05-reflection-for-every-character.md
+  number: Lemma 2.5.1
+  file: Lib/Analytic/ZeroSymmetry.lean
+  line: 24
+  kind: lemma
+  digest: 0dbc2efbced8
+- name: New.zeros_on_line
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/06-the-five-theorems.md
+  number: Theorem 2.6.1
+  file: New/Main.lean
+  line: 28
+  kind: lemma
+  digest: 2cc4a35012e7
+- name: New.zeta_zeros_on_line
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/04-the-zeta-function.md
+  number: Theorem 2.4.4
+  file: New/Main.lean
+  line: 47
+  kind: lemma
+  digest: 05c1b7f775d2
+- name: PrimitiveDirichletLZerosOnLine
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/03-the-four-statements.md
+  number: Definition 2.3.4
+  file: Statements.lean
+  line: 14
+  kind: def
+  digest: 20bc9a27781c
+- name: RiemannZetaZerosOnLine
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/03-the-four-statements.md
+  number: Definition 2.3.1
+  file: Statements.lean
+  line: 3
+  kind: def
+  digest: 2951246edcdf
+- name: riemannHypothesis
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/06-the-five-theorems.md
+  number: Theorem 2.6.4
+  file: Main.lean
+  line: 5
+  kind: theorem
+  digest: ac8f831be050
+- name: riemannZeta_eq_zero_re
+  chapter: 01/half-plane-to-line
+  section: content/01-outline/half-plane-to-line/06-the-five-theorems.md
+  number: Theorem 2.6.5
+  file: Main.lean
+  line: 8
+  kind: theorem
+  digest: 13f71bda0bb0

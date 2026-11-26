@@ -1,0 +1,87 @@
+# Volume 10 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 10
+title: 'Theorem B: enough forms'
+summary: >-
+  The spanning theorem: few translates, equal multiplicities, Poincaré series and their moments, the remaining terms, the main term and the local densities.
+words: 55000
+source: New/Spanning
+chapters:
+  - id: theorem-b-plan
+    title: Theorem B and its plan
+    plan: >-
+      The four layers: linear algebra, dimension, unfolding, bounds.
+    research: d §1
+  - id: few-translates
+    title: Few translates suffice
+    plan: >-
+      Spread families and a greedy cover.
+    source:
+      - New/Spanning/SecondMoment/FewTranslates
+      - New/Spanning/SecondMoment/PositiveType
+  - id: equal-multiplicities
+    title: Equal multiplicities by the trace formula
+    source:
+      - New/Spanning/Multiplicities
+      - New/Spanning/MainTerm/BadTypes
+  - id: bessel-real-place
+    title: Bessel functions at a real place
+    source:
+      - New/Spanning/Bessel
+  - id: poincare-series
+    title: Poincaré series and unfolding
+    plan: >-
+      Spanning/Unfolding: Setup, PoincareSeries, SeriesPeriod, FillingAdmissible.
+    source:
+      - New/Spanning/Unfolding/Setup
+      - New/Spanning/Unfolding/PoincareSeries
+      - New/Spanning/Unfolding/SeriesPeriod
+      - New/Spanning/Unfolding/FillingAdmissible
+      - New/Spanning/Unfolding
+  - id: moments
+    title: Moments of the Poincaré map
+    plan: >-
+      Near isometry and the second moment. Each exchange of a sum and an integral is shown with its convergence.
+    source:
+      - New/Spanning/Unfolding/Moments
+      - New/Spanning/Unfolding/MomentBounds
+      - New/Spanning/Unfolding/AmplitudeSums
+  - id: anatomy-of-a-term
+    title: The anatomy of a term
+    plan: >-
+      Spanning/Unfolding: Terms, Climbing, Link.
+    source:
+      - New/Spanning/Unfolding/Terms
+      - New/Spanning/Unfolding/TermStructure
+      - New/Spanning/Unfolding/Climbing
+      - New/Spanning/Unfolding/Link
+  - id: remaining-terms
+    title: The remaining terms
+    plan: >-
+      Gains mod M, Siegel's lemma, Schur's test.
+    source:
+      - New/Spanning/RemainingTerms
+  - id: main-term
+    title: The main term
+    plan: >-
+      Kloosterman sums as orbital integrals, a one-sided sieve.
+    source:
+      - New/Spanning/MainTerm
+  - id: real-densities
+    title: Local densities at the real places
+    plan: >-
+      Spanning/Frames, the files on the real places.
+    source:
+      - New/Spanning/Frames/Real
+  - id: finite-densities
+    title: Local densities at the finite places
+    plan: >-
+      Spanning/Frames, the files on the finite places.
+    source:
+      - New/Spanning/Frames
+  - id: proof-of-theorem-b
+    title: The proof of Theorem B
+    plan: >-
+      Spanning/SecondMoment/SpanningTheorem and Reduction/ShortAndEnough (part B).
+    source:
+      - New/Spanning/SecondMoment/SpanningTheorem

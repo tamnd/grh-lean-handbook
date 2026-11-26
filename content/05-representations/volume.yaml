@@ -1,0 +1,60 @@
+# Volume 5 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 5
+title: Representations of real, p-adic and finite groups
+summary: >-
+  Discrete series of U(p, q), Laplace's method for their coefficients, Bessel subgroups, integral Weyl modules, characters of GL_n over a finite field, and Iwahori exponents.
+words: 40000
+source: Lib/DiscreteSeries, Lib/GLn, Lib/LocalGL, New/Appendix
+chapters:
+  - id: discrete-series
+    title: Discrete series through one matrix coefficient
+    plan: >-
+      The Flensted-Jensen coefficient, orthogonality, the formal degree, the holomorphic case, the cusp kernel.
+    research: g §8
+    source:
+      - Lib/DiscreteSeries/FlenstedJensen
+      - Lib/DiscreteSeries/Rigidity
+      - Lib/DiscreteSeries/Character
+      - Lib/DiscreteSeries/Holomorphic
+      - Lib/DiscreteSeries/CuspKernel
+      - Lib/DiscreteSeries/Haar
+      - Lib/General/Analysis/HolomorphicIntegrals
+  - id: laplace-method
+    title: Laplace's method for discrete series coefficients
+    plan: >-
+      Steep parameters, the Gaussian shape near the identity, stationary positions, the lower bound for periods.
+    research: f §8
+    source:
+      - New/Appendix/DiscreteSeries
+  - id: bessel-bruhat
+    title: Bessel subgroups and Bruhat measures
+    research: g §8
+    source:
+      - Lib/DiscreteSeries/Bessel
+      - Lib/DiscreteSeries/Bruhat
+  - id: weyl-modules
+    title: Integral Weyl modules and branching
+    plan: >-
+      Integral Weyl modules and branching, with explicit norms.
+    research: h §5
+    source:
+      - Lib/GLn
+      - Lib/General/LinearAlgebra
+  - id: finite-gln
+    title: Characters of GL_n over a finite field
+    plan: >-
+      Green and Shintani, for squarefree labels.
+    research: h §6
+    source:
+      - Lib/LocalGL/Green
+      - Lib/LocalGL/Shintani
+  - id: iwahori-satake
+    title: Iwahori exponents, Satake and the chain lemma
+    plan: >-
+      Iwahori exponents, Satake and the unitary chain lemma.
+    research: h §6
+    source:
+      - Lib/LocalGL/Iwahori
+      - Lib/LocalGL/SphericalChainLemma
+      - Lib/Weil/Unramified

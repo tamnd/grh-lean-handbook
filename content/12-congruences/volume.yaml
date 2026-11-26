@@ -1,0 +1,65 @@
+# Volume 12 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 12
+title: Congruences and Selmer groups
+summary: >-
+  The existence of regular families: Ribet's method, first-order deformations, the denominator bound, tied Selmer groups, the twisting theorem, the local loss and cup products.
+words: 45000
+source: New/Congruences
+chapters:
+  - id: regular-families-plan
+    title: 'Regular families: the plan'
+    plan: >-
+      The statement, the denominator budget, the chain from Ribet's method to the twisting theorem.
+    research: f §2
+    source:
+      - New/Congruences/FitTwistsExist
+  - id: ribet-elements
+    title: Pseudocharacters, Fitting ideals and Ribet elements
+    plan: >-
+      Congruences/FirstOrder: RibetMethod, FittingBlock, RibetLemma.
+    source:
+      - New/Congruences/FirstOrder/Ribet
+      - New/Congruences/FirstOrder/FittingBlock
+  - id: first-order-deformations
+    title: Auxiliary primes and first-order deformations
+    plan: >-
+      Congruences/FirstOrder: TrianglePrimes, KummerMaps, HeckeStrings.
+    source:
+      - New/Congruences/FirstOrder/TrianglePrimes
+      - New/Congruences/FirstOrder/KummerMaps
+      - New/Congruences/FirstOrder/HeckeStrings
+      - New/Congruences/FirstOrder/AuxiliaryPrimeTie
+  - id: denominator-bound
+    title: From a congruence to a Selmer class
+    plan: >-
+      The denominator bound. Congruences/FirstOrder: TraceRelations, DenominatorBound.
+    source:
+      - New/Congruences/FirstOrder
+  - id: main-summands
+    title: The main summands of the attached Galois representations
+    source:
+      - New/Congruences/GaloisRepresentations
+  - id: tied-selmer-groups
+    title: Tied Selmer groups and the Greenberg-Wiles count
+    plan: >-
+      Congruences/Selmer (first half).
+    source:
+      - New/Congruences/Selmer
+  - id: twisting-theorem
+    title: Stickelberger systems and the twisting theorem
+    plan: >-
+      Congruences/Selmer (second half).
+    source:
+      - New/Congruences/Selmer/Stickelberger
+      - New/Congruences/Selmer/TwistingTheorem
+  - id: local-loss
+    title: The local loss at ℓ
+    source:
+      - New/Congruences/LocalLoss
+  - id: cup-products
+    title: Cup products on Kisin modules
+    source:
+      - New/Congruences/Lifting
+  - id: proof-of-regular-families
+    title: The proof of the existence of regular families

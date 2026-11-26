@@ -1,0 +1,79 @@
+# Volume 9 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 9
+title: 'Theorem A: short forms'
+summary: >-
+  The upper bound: the seesaw identity, the archimedean size of the composite lift, and the divisibility of the forms prime by prime.
+words: 45000
+source: New/UpperBound, New/Derivatives (without Sharpness)
+chapters:
+  - id: theorem-a-plan
+    title: Theorem A and its plan
+    plan: >-
+      The statement, the three inputs (divisibility, the seesaw identity, the archimedean size) and how they meet.
+    research: c §0
+  - id: upper-bound-objects
+    title: The objects of the upper bound
+    plan: >-
+      Labels, weights, grids, lift laws at N, chains, columns, rows, the Poincaré map.
+    source:
+      - New/UpperBound/Objects
+  - id: theta-kernels-gauges
+    title: Theta kernels and gauges
+    plan: >-
+      UpperBound/Kernels, without DefiniteKernelSize.
+    source:
+      - New/UpperBound/Kernels/JetConjugatesAndBounds
+      - New/UpperBound/Kernels/ThetaLiftGauge
+  - id: seesaw-identity-1
+    title: The seesaw identity, part 1
+    plan: >-
+      Admissible combinations, neighbour lattices, unfolding.
+    source:
+      - New/UpperBound/Seesaw/Admissible
+      - New/UpperBound/Seesaw/Neighbour
+      - New/UpperBound/Seesaw/UnfoldingStages
+      - New/UpperBound/Seesaw/IntegralAsCosetSum
+  - id: seesaw-identity-2
+    title: The seesaw identity, part 2
+    plan: >-
+      Cuts and the assembly; the constant, which is allowed to be 0, and why the argument does not need it nonzero.
+    research: c §4 q1
+    source:
+      - New/UpperBound/Seesaw
+  - id: archimedean-size
+    title: The archimedean size of the composite lift
+    source:
+      - New/UpperBound/Size
+  - id: field-at-primes
+    title: The field E at the primes
+    plan: >-
+      Splitting, the different, Weil data, chosen places.
+    source:
+      - New/Derivatives/Field
+  - id: cm-formal-group
+    title: The CM curve and its formal group
+    plan: >-
+      Derivatives of theta functions, the Frobenius congruence, the exponent theorem.
+    source:
+      - New/Derivatives/FormalGroup
+  - id: normal-forms
+    title: Normal forms and the count
+    source:
+      - New/Derivatives/Divisibility
+  - id: integral-vacuum
+    title: The integral vacuum and tight frames
+    source:
+      - New/Derivatives/Vacuum
+  - id: elementary-divisors
+    title: Elementary divisors of a Hecke operator
+    source:
+      - New/UpperBound/ElementaryDivisors
+  - id: divisibility
+    title: Divisibility prime by prime
+    source:
+      - New/UpperBound/Divisibility
+  - id: proof-of-theorem-a
+    title: The proof of Theorem A
+    plan: >-
+      Reduction/ShortAndEnough (part A).

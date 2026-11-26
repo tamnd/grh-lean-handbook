@@ -1,0 +1,54 @@
+# Volume 8 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 8
+title: Shimura varieties and Galois representations
+summary: >-
+  Complex abelian varieties, an integral model without a moduli problem, the congruence relation, and the Galois representations that the argument attaches to automorphic forms.
+words: 40000
+source: Lib/Shimura, Lib/GaloisRep
+chapters:
+  - id: complex-abelian-varieties
+    title: Complex abelian varieties through theta functions
+    plan: >-
+      Appell-Humbert, the theta group, uniformization, abelian schemes.
+    research: h §3
+    source:
+      - Lib/Shimura/ComplexTheta
+      - Lib/Shimura/AbelianScheme
+      - Lib/Shimura/ThetaGroup
+      - Lib/Shimura/Uniformisation
+  - id: integral-model
+    title: An integral model without a moduli problem
+    plan: >-
+      The PEL datum of the source, good reduction, theta-null points, the Hecke tower.
+    research: h §3
+    source:
+      - Lib/Shimura/IntegralModel
+      - Lib/Shimura
+  - id: congruence-relation
+    title: The congruence relation
+    plan: >-
+      The congruence relation and the Galois representation on an eigenquotient.
+    research: h §3
+    source:
+      - Lib/Shimura/CongruenceRelation
+      - Lib/Shimura/TraceFormula
+      - Lib/Shimura/Transfer
+      - Lib/Shimura/Eigenspace
+  - id: attached-representations
+    title: What attached means
+    plan: >-
+      Agreement at most Frobenius elements, "kills" against "characteristic", pseudocharacters.
+    research: g §9
+    source:
+      - Lib/GaloisRep/Main/Defs
+      - Lib/GaloisRep/Main/AttachedRepresentations
+      - Lib/GaloisRep/Main/LocalConditions
+      - Lib/GaloisRep/Pseudocharacter
+  - id: building-representations
+    title: Building the representations
+    plan: >-
+      Limits, base change, theta lifts, local-global compatibility at split places. The rest of Lib/GaloisRep.
+    research: g §9
+    source:
+      - Lib/GaloisRep

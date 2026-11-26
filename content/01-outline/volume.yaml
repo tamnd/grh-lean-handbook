@@ -1,0 +1,104 @@
+# Volume 1 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 1
+title: The proof in outline
+summary: >-
+  The complete proof of GRH from Theorems A, B and C, with full proofs of every step above them.
+words: 45000
+source: New/Main, New/Reduction
+chapters:
+  - id: theorem-and-plan
+    title: The theorem and the plan
+    plan: >-
+      The five statements. The plan in one page: the one-sided bound, the lattice inequality, Theorems A, B and C. A diagram of the volumes.
+  - id: half-plane-to-line
+    title: From the half-plane to the line
+    plan: >-
+      Zero symmetry for every Dirichlet character, primitive or not, and the deduction of the zeros on the line from nonvanishing in Re s > 1/2.
+    research: a §4.2
+    source:
+      - New/Main
+      - Lib/Analytic/ZeroSymmetry
+  - id: weighted-prime-remainder
+    title: The weighted prime remainder
+    plan: >-
+      λ = Λ(1 − χ_K) on n ≡ 1 mod q; R_q(x); the constant c_q and its value through the Chowla-Selberg constant; the Mellin transform and its poles; the sign of each residue.
+    research: b §2.1
+    source:
+      - New/Reduction/Zeros/PrimeError
+      - Lib/Analytic/EntireLFunction
+  - id: landau-criterion
+    title: Landau's criterion
+    plan: >-
+      A model case: Landau's theorem for Dirichlet series with coefficients of one sign. The criterion: a one-sided bound for every prime d in a class gives no zeros in Re s > β. Why the twists by (·/d) enter with a minus sign, why one d without twisted zeros near ρ is enough, and the zero-density theorem that gives that d (stated, proved in Volume 2).
+    research: b §2.3, §2.4
+    source:
+      - New/Reduction/Zeros/Criterion
+      - Lib/Analytic/Landau
+  - id: lattice-and-prime-sum
+    title: Why a lattice can bound a prime sum
+    plan: >-
+      The idea of the method, with no proofs: an integral lattice of forms, whose covolume is bounded above by short vectors and below by a product formula. The main amount, which is the same in both bounds. Where the prime sum enters (the shortness bound contains mainAmount − m·rem). The model case: Liouville's inequality and the slope inequality of Bost. Why the result stops at exponent 1/2 (m ≈ √x).
+    research: b §7, §10 q1
+  - id: fields-places-twists
+    title: Fields, places and twists
+    plan: >-
+      The parameters (18480 | q₀, d ≡ q₀/2 − 1 mod q₀), K, E = K(ζ_{q₁}), the tower degree, Φ ≅ (ℤ/q₁)ˣ, Ω, tame characters, twists, m-fold twists.
+    research: b §1.1, §1.3
+    source:
+      - New/Reduction/Data/FieldsAndPlaces
+      - New/Reduction/Data/LevelAndTwists
+  - id: data-and-sizes
+    title: The data and its sizes
+    plan: >-
+      Every field of D, grouped as in the source. The five scale inequalities and the derived table, with proofs of the main rows. The weights κ. The automation HasLogBound in one remark.
+    research: b §1.2, §1.4
+    source:
+      - New/Reduction/Data/AdmissibleData
+      - New/Reduction/Data/Magnitudes
+      - New/Reduction/Data/Sizes
+  - id: data-exist
+    title: The data exist
+    plan: >-
+      Sets with no three-term progressions (Behrend, Shapira), primes p ≡ 1 mod M^k with log p in a window, and the explicit recipe for D.
+    research: b §1.5
+    source:
+      - New/Reduction/Data/Existence
+      - Lib/Analytic/Primes
+  - id: prime-sums
+    title: Prime sums and the total remainder
+    plan: >-
+      primeSum, mainPrimeSum, jetSize, the direction amount and the main amount. The identity rem = a(#Φ_b(R_{q₀}(x) − R_{q₀}(x₁)) + #Φ_a R₁(x₁)), proved in full and checked in a small case.
+    research: b §4
+    source:
+      - New/Reduction/PrimeSums
+  - id: twisted-lattices
+    title: Twisted lattices
+    plan: >-
+      The index bound, the covolume bound, Hadamard's inequality, heights over the embeddings ℂ ≅ ℚ̄_ℓ, the product formula, colength. The inequality covolume + 2·index ≥ 0.
+    research: b §3
+    source:
+      - New/Reduction/Lattices
+  - id: integral-target-forms
+    title: The lattice of integral target forms
+    plan: >-
+      The target forms (stated as objects with their properties, with links to Volumes 9 to 11), the target lattice, and its volume, which is the chain determinant.
+    research: b §5
+    source:
+      - New/Reduction/IntegralTargetForms
+  - id: theorems-a-b-c
+    title: Theorems A, B and C
+    plan: >-
+      The exact statements, with their sizes and their errors, and a one-page plan of each proof.
+    research: b §6, e §0
+    source:
+      - New/Reduction/ShortAndEnough
+  - id: main-inequality
+    title: The main inequality and the end of the proof
+    plan: >-
+      star_inequality, with every error term; the one-sided bound R_{q₀}(y) ≤ y^(−1/2+ε); the prime number theorem at the second cut-off; the proof of GRH.
+    research: b §7, §8
+    source:
+      - New/Reduction/MainInequality
+      - New/Reduction/OneSidedBound
+      - New/Reduction/Zeros/PrimeNumberTheorem

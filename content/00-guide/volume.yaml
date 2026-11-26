@@ -1,0 +1,69 @@
+# Volume 0 of The GRH Lean Handbook. The plan is spec 07.3 and 07.4. The number of a chapter is its
+# place in this list. A chapter is written when its folder has section files NN-<slug>.md.
+number: 0
+title: Guide
+summary: >-
+  What the book is, the claim and its status, the statements, the notation, the sizes, how to read the Lean, the findings and the index of Lean names.
+words: 30000
+source: the documents, Statements, Main, every flag
+chapters:
+  - id: preface
+    title: Preface
+    plan: >-
+      What the book is, who it is for, what it is not (it is not a check).
+  - id: claim-and-status
+    title: The claim and its status
+    plan: >-
+      The five theorems. The checks the authors report, and what the repository does and does not contain (no logs, no CI, a stand-in sandbox for Comparator). The origin of the proof (Alpöge, remark.pdf; the shorter rewriting by Claude). "No mathematician has read it through." What the kernel check guarantees and what it does not.
+    research: a §2, §6
+  - id: statements
+    title: The statements
+    plan: >-
+      Statements.lean line by line against Mathlib: RiemannHypothesis, DirichletCharacter.LFunction, the principal character, the unused primitivity hypothesis. What a reader must trust.
+    research: a §3, §4, §6.5
+    source:
+      - Statements
+      - Main
+  - id: how-to-read
+    title: How to read this book
+    plan: >-
+      The map of the proof (a diagram), the volumes, the reading paths, the form of a chapter, the status of each chapter.
+  - id: notation
+    title: Notation and conventions
+    plan: >-
+      Every letter: q₀, d, K, E, Φ, Φ_a, Φ_b, x, x₁, b, m, r, k, t, Δ, a, M, N, f, Ω, κ, and the spaces X_j, V_j, Y_j, W_j. Normalizations of measures, characters and norms.
+    source:
+      - Lib/General/Analysis/FiniteFourier
+      - Lib/General/Analysis/FourierTransforms
+      - Lib/General/Analysis/GaussianIntegral
+      - Lib/General/Analysis/MeanValueAndTaylor
+      - Lib/General/Analysis/PackingAndSobolev
+      - Lib/General/Combinatorics
+      - Lib/General/Topology
+  - id: sizes
+    title: The table of sizes
+    plan: >-
+      The five scale inequalities, the derived table of Data/Sizes, the error budget of the main inequality, and the size conditions of each later part (for example 10⁵ ≤ ϱ in Filling and 10⁸ ≤ ϱ in RealPlaceSizes). One row for each constant, with the file and line that imposes it.
+    research: b §1.4, d §3
+  - id: reading-the-lean
+    title: Reading the Lean
+    plan: >-
+      The settings file Lib/Speed, junk values (x/0 = 0, tsum and integrals that give 0), objects defined by choose, seal and irreducibility, respectTransparency, local and global instances, Fintype.ofFinite, HasLogBound and grind for sizes. For each: what it means for a reader of a statement.
+    research: all notes, §3 of each
+    source:
+      - Lib/Speed
+      - Lib/Base
+  - id: register-of-findings
+    title: The register of findings
+    plan: >-
+      Each point of 05 with its status: explained (with the chapter that explains it) or open (with its issue).
+  - id: two-editions
+    title: The two editions
+    plan: >-
+      A table from the names of grh-compact to the names of grh, and the steps that the editions prove by different arguments.
+    research: a §7.3
+  - id: lean-index
+    title: Glossary and index of Lean names
+    plan: >-
+      Made by the build from the Lean: lines, with a table of the status of each chapter.
+    generated: lean-index
