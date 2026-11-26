@@ -25,7 +25,7 @@ Class field theory describes the abelianisation of a Galois group. To compare tw
 
 Let $\mathbb{Q}/\mathbb{Z}$ have the discrete topology. For a topological group $G$, a character of $G$ is a continuous homomorphism $\chi : G \to \mathbb{Q}/\mathbb{Z}$. The characters make a group under pointwise addition. In this section we write $X(G)$ for this group. Since the target is discrete, a homomorphism is continuous exactly when its kernel is open.
 
-The source defines $X(G)$ as the group of continuous $1$-cocycles of $G$ with values in $\mathbb{Q}/\mathbb{Z}$ for the trivial action. For the trivial action, the cocycle condition is $\chi(gh) = \chi(g) + \chi(h)$, so the two definitions agree. The map $x \mapsto e^{2\pi i x}$ identifies $\mathbb{Q}/\mathbb{Z}$ with the roots of unity in $\mathbb{C}^\times$. The source has this map as `New.QZ.expUnit` and proves that its kernel is trivial.
+The source defines $X(G)$ as the group of continuous $1$-cocycles of $G$ with values in $\mathbb{Q}/\mathbb{Z}$ for the trivial action. For the trivial action, the cocycle condition is $\chi(gh) = \chi(g) + \chi(h)$, so the two definitions agree. The map $x \mapsto e^{2\pi i x}$ identifies $\mathbb{Q}/\mathbb{Z}$ with the roots of unity in $\mathbb{C}^\times$. This map has [trivial kernel](/decl/New.QZ.expUnit_eq_one_iff/).
 
 The first fact is the injectivity of a divisible group, in a form that does not ask the map to be injective.
 
@@ -65,7 +65,7 @@ Lean: `New.QZChar.exists_apply_ne_zero_of_notMem_ker` (Lib/General/Groups/Profin
 
 *Proof.* The complement of $\ker f$ is open and contains $\sigma$. So there is an open subgroup $V$ with $\sigma V \cap \ker f = \emptyset$. Then $f(\sigma) \notin f(V)$. By the corollary, a homomorphism $u : C/f(V) \to \mathbb{Q}/\mathbb{Z}$ is nonzero at the class of $f(\sigma)$. The composite $\chi = u \circ (C \to C/f(V)) \circ f$ kills $V$. So its kernel is open and $\chi$ is continuous. It kills $\ker f$, and $\chi(\sigma) \neq 0$. $\square$
 
-From now on let $G$ be compact. A character has an open kernel of finite index, so it has finite order (`New.QZChar.isOfFinAddOrder_of_compactSpace`). The next theorem is the surjectivity half of duality: every homomorphism from the dual group to $\mathbb{Q}/\mathbb{Z}$ is evaluation at a point.
+From now on let $G$ be compact. A character has an open kernel of finite index, so it has [finite order](/decl/New.QZChar.isOfFinAddOrder_of_compactSpace/). The next theorem is the surjectivity half of duality: every homomorphism from the dual group to $\mathbb{Q}/\mathbb{Z}$ is evaluation at a point.
 
 **Theorem.** Let $G$ be a compact group and let $t : X(G) \to \mathbb{Q}/\mathbb{Z}$ be a homomorphism. Then there is $g \in G$ with $\chi(g) = t(\chi)$ for every character $\chi$.
 

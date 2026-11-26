@@ -27,7 +27,7 @@ An automorphism of a locally compact abelian group multiplies Haar measure by a 
 
 Let $A$ be a locally compact abelian group with Haar measure $\mu$. Let a group $G$ act on $A$ by continuous additive automorphisms. For $g \in G$, the measure $s \mapsto \mu(g s)$ is again a Haar measure. So there is a positive real number $\Delta_A(g)$ with
 $$\mu(g s) = \Delta_A(g)\, \mu(s)$$
-for every Borel set $s$. The number does not depend on $\mu$, and $g \mapsto \Delta_A(g)$ is a homomorphism to $\mathbb{R}_{>0}$. This is the module of Weil (*Basic Number Theory*, Ch. I, §2) and Bourbaki (*Intégration*, Ch. VII, §1). Mathlib calls it `distribHaarChar` (Mathlib).
+for every Borel set $s$. The number does not depend on $\mu$, and $g \mapsto \Delta_A(g)$ is a homomorphism to $\mathbb{R}_{>0}$. This is the module of Weil (*Basic Number Theory*, Ch. I, §2) and Bourbaki (*Intégration*, Ch. VII, §1). Mathlib calls it the Haar character of the action.
 
 For subgroups $H$ and $K$ of $A$, write $[K : H \cap K]$ for the index of $H \cap K$ in $K$.
 
@@ -56,7 +56,7 @@ Then $\iota$ is multiplicative.
 
 Lean: `New.genIndex` (Lib/General/Measure/HaarModulus.lean).
 
-The value at a unit is positive. The source writes $\iota$ as a multiplicative character of the monoid $R$, and the index form of the theorem above is `New.genIndex_eq_relIndex_div`.
+The value at a unit is positive. The function $\iota$ is a multiplicative character of the monoid $R$. For a unit, the theorem above gives $\iota$ as [a ratio of indices](/decl/New.genIndex_eq_relIndex_div/).
 
 **Remark (Formalization).** The value $0$ at a non-unit is a convention. It comes from the way Mathlib extends a homomorphism on the units to a multiplicative character of the ring. For a non-discrete field, the only non-unit is $0$, and multiplication by $0$ sends every set to a set of measure $0$. So the convention agrees with the scaling in this case. For the finite adeles, an element with one component $0$ is a non-unit, and the convention again gives $0$. The source proves no statement about $\iota$ at a non-unit except through the character laws. Each theorem below that uses $\iota$ at a determinant has the determinant of an invertible matrix, which is a unit. So no theorem below depends on the convention.
 
@@ -106,7 +106,7 @@ For a field with $O$ the valuation ring, this is the classical formula $\Delta_{
 
 ### Lattices
 
-Now let $A$ be a commutative ring with an involution, and let $R \subseteq A$ be a subring. The source collects the properties of $\widehat{\mathbb{Z}} \subseteq \mathbb{A}_f$, or of $\widehat{\mathcal{O}}_E \subseteq \mathbb{A}_{E,f}$ for an imaginary quadratic field $E$, in the class [`New.IsAdelic`](/decl/New.IsAdelic/). Its fields say: $R$ is open, compact and stable under the involution; $R$ is a valuation pair; some $i \in R$ has $-i^2 = 1$ and $\bar\imath = -i$, and some $\tau \in R$ has $\tau + \bar\tau = 1$; and $-1 = \bar c c$ for some $c \in R$. This section uses only that $R$ is open, compact, stable under the involution and a valuation pair.
+Now let $A$ be a commutative ring with an involution, and let $R \subseteq A$ be a subring. The source collects the properties of $\widehat{\mathbb{Z}} \subseteq \mathbb{A}_f$, or of $\widehat{\mathcal{O}}_E \subseteq \mathbb{A}_{E,f}$ for an imaginary quadratic field $E$, in the class of [adelic pairs](/decl/New.IsAdelic/). Its fields say: $R$ is open, compact and stable under the involution; $R$ is a valuation pair; some $i \in R$ has $-i^2 = 1$ and $\bar\imath = -i$, and some $\tau \in R$ has $\tau + \bar\tau = 1$; and $-1 = \bar c c$ for some $c \in R$. This section uses only that $R$ is open, compact, stable under the involution and a valuation pair.
 
 **Proposition.** Assume that $R \subseteq A$ has these properties. Then $\iota(u) \geq 1$ for every $u \in R$ that is a unit of $A$. Also $\iota(\bar a) = \iota(a)$ for every $a \in A$.
 
