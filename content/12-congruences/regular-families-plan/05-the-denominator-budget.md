@@ -57,7 +57,9 @@ Lean: `New.Selmer.crystallineLoss` (New/Congruences/LocalLoss/Basic.lean).
 **Remark (Formalization).** The definition is `@[irreducible]`, so other proofs see only its stated properties. The lower end $b - 30h^3$ is a truncated subtraction of natural numbers: it is $0$ if $30 h^3 > b$. Then the product starts at $1$. For the data, $b$ is much larger than $30 h^3$, so this case does not occur, but the definition does not use this.
 
 **Definition (The local defect bounds).** With $b$ = `D.natB` the weight as a natural number, $h$ = `D.halfGap` $= r^8$ and $M$ = `D.M` the product of the two level primes, put
-$$\mathrm{defectBound}(l) = 10^6 \cdot \frac{m}{k} \cdot \big(b\, v_l(M) + \mathrm{crystallineLoss}(h, b, l)\big), \qquad \mathrm{localDefectBound}(\ell) = 4 f \cdot \mathrm{defectBound}(\ell).$$
+$$\mathrm{defectBound}(l) = 10^6 \cdot \frac{m}{k} \cdot \big(b\, v_l(M) + \mathrm{crystallineLoss}(h, b, l)\big)$$
+and
+$$\mathrm{localDefectBound}(\ell) = 4 f \cdot \mathrm{defectBound}(\ell).$$
 
 Lean: `New.Selmer.defectBound` (New/Congruences/LocalLoss/Basic.lean).
 
