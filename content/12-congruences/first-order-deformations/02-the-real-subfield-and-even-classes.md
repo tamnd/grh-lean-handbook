@@ -98,6 +98,8 @@ Lean: `New.Selmer.evenClasses` (New/Congruences/FirstOrder/EvenClasses.lean).
 
 The textbook object is the Selmer group of the Tate twist, a subgroup of $H^1(G, (O/\ell^\nu)(-e))$ cut out by local conditions ([local duality](/chapter/local-duality/)). Complex conjugation acts on $H^1$, and the even part is the $+1$ eigenspace. The source works with cocycles, not with classes.
 
+The source puts even classes and tame generator families in the later chapter [tied traces and even classes](/chapter/tied-traces/), and this section states them because the Kummer maps of this chapter use them.
+
 **Remark (Formalization).** An even class in the source is a cocycle, not a cohomology class. A coboundary $g \mapsto (\mathrm{cyc}(g)^{-e} - 1) b$ lies in the set when it satisfies the four conditions, and it is not identified with $0$. The statements of this chapter are about values $z(g)$ at given elements, so they hold for each cocycle. Condition 4 asks more than a local condition on classes: it asks the cocycle itself to vanish on $\ker \mathrm{cyc}$ in each decomposition group above $\ell$. The values lie in vectors of length one over $O/\ell^\nu$. This is a matrix form of the scalar module, and it does not change the meaning.
 
 Condition 3 is the meaning of "even" here. Over $F$, the element $c$ acts on $(O/\ell^\nu)(-e)^+$ by $\mathrm{cyc}^+(c)^{-e} = 1$. So conjugation by $c$ sends a cocycle $z$ to $g \mapsto z(cgc)$, and an even class is a fixed point of this action.

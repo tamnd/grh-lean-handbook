@@ -31,7 +31,7 @@ The chapter uses these facts from earlier volumes.
 7. The chain lemma for Satake parameters of unitary unramified representations: [Iwahori exponents and the chain lemma](/chapter/iwahori-satake/).
 8. Ribet's element of a trace ideal, and the notions of trace ideal and common Ribet element: [Ribet elements](/chapter/ribet-elements/).
 
-The chapter also uses definitions that belong to [the bound for denominators](/chapter/denominator-bound/): even classes, the triangle condition, the tied ideal, the trace elements of the Hecke algebra and the reductions modulo $\ell^\nu/(2 n!)$. This chapter states each of them in full where it first appears.
+The chapter also uses definitions that belong to the next chapter, [tied traces and even classes](/chapter/tied-traces/): even classes, the triangle condition, the tied ideal, the trace elements of the Hecke algebra and the reductions modulo $\ell^\nu/(2 n!)$. The root chains use the twisting character and the twisted representation $u$, which are defined in [the main summands of the attached Galois representations](/chapter/main-summands/). This chapter states each of them in full where it first appears.
 
 ### Notation
 

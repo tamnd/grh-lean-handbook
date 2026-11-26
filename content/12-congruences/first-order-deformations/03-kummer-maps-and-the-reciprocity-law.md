@@ -20,7 +20,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Kummer maps and the reciprocity law
 
-The places of the triangle are chosen one at a time. At each step the argument needs a function on $G$ that pairs with every even class and that sees a new place. These functions are the Kummer maps. They are the restrictions to $G$ of the relations of the Greenberg-Wiles count over $F$. This section defines them, proves the reciprocity law that they satisfy, and counts them modulo $\ell$.
+The places of the triangle are chosen one at a time. At each step the argument needs a function on $G$ that pairs with every even class and that sees a new place. These functions are the Kummer maps. They are the restrictions to $G$ of the relations of the Greenberg-Wiles count over $F$. This section defines them, proves the reciprocity law that they satisfy, and counts them modulo $\ell$. The even classes come from the later chapter [tied traces and even classes](/chapter/tied-traces/), and this section uses them in the form of [the previous section](/chapter/first-order-deformations/#the-real-subfield-and-even-classes).
 
 The notation is that of [the real subfield and even classes](/chapter/first-order-deformations/#the-real-subfield-and-even-classes). In particular $x \mapsto x^\flat$ is the map $G_F \to G$, $\mathrm{cyc}^+$ is the extension of $\mathrm{cyc}$ that is $1$ at $c$, and $w^+$ is the prime of $F$ below a prime $w$ of $E$.
 
