@@ -2,7 +2,8 @@
 title: The assembly of the seesaw
 lean:
   - New/UpperBound/Seesaw/SeesawIdentity.lean
-decls: []
+decls:
+  - New.Data.seesaw_identity
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
