@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+## v0.1.7
+
+New chapters:
+
+- Volume 0, chapter 4, How to read this book (#58). It gives reading paths through the 13 volumes.
+- Volume 0, chapter 6, The table of sizes (#57).
+- Volume 3, chapter 1, CM fields, towers and places (#53). This is the first chapter of Volume 3 in a release.
+
+Fixes:
+
+- Volume 1 now uses the notation of Volume 0, chapter 5 in all chapters (#55).
+- The builder now treats `namespace A.B` and `end B` as Lean 4 does (#56).
+
+Volume 0 now has 7 of its 10 chapters. Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.6
 
 Four new chapters:
