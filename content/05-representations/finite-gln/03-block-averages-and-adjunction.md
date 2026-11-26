@@ -28,19 +28,13 @@ Let $a$ be an endomorphism of $V$ and $b$ an endomorphism of $W$. For a linear m
 
 **Definition (Block average, cuspidal).** For $F \in \mathcal{H}(k)$ and classes $a, b$, the *block average* is
 $$\delta F(a, b) = \frac{1}{|\mathrm{Hom}(W, V)|} \sum_{x \in \mathrm{Hom}(W, V)} F([g_{a,b,x}]),$$
-for any endomorphisms in the classes $a$ and $b$. The function $F$ is *cuspidal* if $\delta F(a, b) = 0$ whenever $\dim a \neq 0$ and $\dim b \neq 0$.
+for any endomorphisms in the classes $a$ and $b$. The function $F$ is *cuspidal* if $\delta F(a, b) = 0$ whenever $\dim a \neq 0$ and $\dim b \neq 0$. If $\dim o = 0$, then $\delta F(o, a) = F(a)$ and $\delta F(a, o) = F(a)$ for every class $a$, since the only map $x$ is $0$.
 
-Lean: `New.Hall.blockAverage`, `New.Hall.IsCuspidal`, `New.blockTriangularEnd`, `New.Hall.blockAverage_simClassOf` (Lib/LocalGL/Green/HallAlgebra.lean).
+Lean: `New.Hall.blockAverage`, `New.Hall.IsCuspidal`, `New.blockTriangularEnd`, `New.Hall.blockAverage_simClassOf`, `New.Hall.blockAverage_of_dim_eq_zero` (Lib/LocalGL/Green/HallAlgebra.lean).
 
 The block average does not depend on the chosen endomorphisms: an isomorphism of $V$ and one of $W$ change $x$ by a bijection of $\mathrm{Hom}(W, V)$. For each class $a$, the function $b \mapsto \delta F(a, b)$ is an element of $\mathcal{H}(k)$, which this chapter writes $\delta F(a, \cdot)$.
 
 For invertible $a$ and $b$, the block maps $g_{a,b,x}$ form the coset $(b, a) U$ of the unipotent radical $U$ of a parabolic subgroup, and $\delta F(a, b)$ is the mean of $F$ over this coset. This is the value at $(a, b)$ of the Harish-Chandra restriction of $F$ to the Levi subgroup. So the definition agrees with the classical notion of a cuspidal class function on $\mathrm{GL}_n(k)$ (see Springer, Sém. Bourbaki 441, Section 1, which the source cites).
-
-**Lemma (A block of dimension $0$).** If $\dim o = 0$, then $\delta F(o, a) = F(a)$ and $\delta F(a, o) = F(a)$ for every class $a$.
-
-Lean: `New.Hall.blockAverage_of_dim_eq_zero` (Lib/LocalGL/Green/HallAlgebra.lean).
-
-*Proof.* There is one map $x$, the zero map, and the block map is $a$ on $W \times 0$ or on $0 \times V$. $\square$
 
 ### Mackey's formula
 
@@ -67,33 +61,23 @@ For a finite set $I$ with $n$ elements, $\langle F|_{\mathrm{GL}_I}, H|_{\mathrm
 
 **Theorem (Adjunction).** For $A, B, X \in \mathcal{H}(k)$ and $n \geq 0$,
 $$\langle A * B, X \rangle_n = \sum_{p + q = n} \langle A, \partial^q_B X \rangle_p.$$
+If $f \in \mathcal{H}(k)$ vanishes on the classes of dimension different from $d$, then $\langle f * H, F \rangle_{d+n} = \langle H, \partial^d_f F \rangle_n$ for all $H, F$ and $n$.
 
-Lean: `New.Hall.rankInner_mul_eq_sum_skew` (Lib/LocalGL/Green/HallAlgebra.lean).
+Lean: `New.Hall.rankInner_mul_eq_sum_skew`, `New.Hall.rankInner_mul_eq_rankInner_skew` (Lib/LocalGL/Green/HallAlgebra.lean).
 
 *Proof.* Let $G = \mathrm{GL}_n(k)$ and $V = k^n$. By the definition of the product,
 $$|G| \, \langle A * B, X \rangle_n = \sum_{g \in G} \sum_{W} \overline{A([g|_W])} \, \overline{B([g|_{V/W}])} \, X([g]),$$
-where $W$ runs over the $g$-stable subspaces. Exchange the sums. For each $p$, the group $G$ permutes the subspaces of dimension $p$ transitively. Let $W_0$ be one of them and $P$ its stabilizer, so there are $|G|/|P|$ of them. The pairs $(g, W)$ with $\dim W = p$ contribute $(|G|/|P|) \sum_{g \in P} \overline{A([g|_{W_0}])} \, \overline{B([g|_{V/W_0}])} \, X([g])$. The group $P$ is the set of block maps $g_{a,b,x}$ with $a \in \mathrm{GL}(W_0)$, $b \in \mathrm{GL}(V/W_0)$ and $x$ arbitrary, after a choice of complement. So the mean over $P$ is the mean over $a \in \mathrm{GL}_p(k)$ of $\overline{A([a])}$ times the mean over $b \in \mathrm{GL}_q(k)$ of $\overline{B([b])} \, \delta X([a], [b])$. This is $\langle A, \partial^q_B X \rangle_p$. $\square$
-
-**Corollary (Adjunction in one degree).** Let $f \in \mathcal{H}(k)$ vanish on the classes of dimension different from $d$. Then for all $H, F$ and $n$, $\langle f * H, F \rangle_{d+n} = \langle H, \partial^d_f F \rangle_n$.
-
-Lean: `New.Hall.rankInner_mul_eq_rankInner_skew` (Lib/LocalGL/Green/HallAlgebra.lean).
-
-*Proof.* Write $f * H = H * f$ and apply [the adjunction](/decl/New.Hall.rankInner_mul_eq_sum_skew/) with $A = H$ and $B = f$. For $q \neq d$ the function $f$ vanishes on $\mathrm{GL}_q(k)$, so $\partial^q_f F = 0$. $\square$
+where $W$ runs over the $g$-stable subspaces. Exchange the sums. For each $p$, the group $G$ permutes the subspaces of dimension $p$ transitively. Let $W_0$ be one of them and $P$ its stabilizer, so there are $|G|/|P|$ of them. The pairs $(g, W)$ with $\dim W = p$ contribute $(|G|/|P|) \sum_{g \in P} \overline{A([g|_{W_0}])} \, \overline{B([g|_{V/W_0}])} \, X([g])$. The group $P$ is the set of block maps $g_{a,b,x}$ with $a \in \mathrm{GL}(W_0)$, $b \in \mathrm{GL}(V/W_0)$ and $x$ arbitrary, after a choice of complement. So the mean over $P$ is the mean over $a \in \mathrm{GL}_p(k)$ of $\overline{A([a])}$ times the mean over $b \in \mathrm{GL}_q(k)$ of $\overline{B([b])} \, \delta X([a], [b])$. This is $\langle A, \partial^q_B X \rangle_p$. For the second claim, write $f * H = H * f$ and apply the first with $A = H$ and $B = f$. For $q \neq d$ the function $f$ vanishes on $\mathrm{GL}_q(k)$, so $\partial^q_f F = 0$. $\square$
 
 ### Cuspidal functions act by derivations
 
 **Theorem (Leibniz rule for the pairing).** Let $c \in \mathcal{H}(k)$ be cuspidal and $d \neq 0$. For all $F, H \in \mathcal{H}(k)$,
 $$\langle c, F * H \rangle_d = \langle c, F \rangle_d \, \langle \mathbb{1}, H \rangle_0 + \langle \mathbb{1}, F \rangle_0 \, \langle c, H \rangle_d.$$
+For every $f \in \mathcal{H}(k)$, the skew of $c$ is $\partial^d_f c = \langle f, c \rangle_d \cdot 1$.
 
-Lean: `New.Hall.rankInner_mul_of_isCuspidal` (Lib/LocalGL/Green/HallAlgebra.lean).
+Lean: `New.Hall.rankInner_mul_of_isCuspidal`, `New.Hall.skew_of_isCuspidal` (Lib/LocalGL/Green/HallAlgebra.lean).
 
-*Proof.* The left side is the conjugate of $\langle F * H, c \rangle_d = \sum_{p+q=d} \langle F, \partial^q_H c \rangle_p$, by [the adjunction](/decl/New.Hall.rankInner_mul_eq_sum_skew/). The term of $(p, q)$ involves $\delta c(a, b)$ with $\dim a = p$ and $\dim b = q$. Since $c$ is cuspidal, it vanishes unless $p = 0$ or $q = 0$. As $d \neq 0$, the two remaining terms $(d, 0)$ and $(0, d)$ are distinct. By the lemma on a block of dimension $0$, $\partial^0_H c = \overline{H(o)} \, c$ and $\partial^d_H c(o) = \langle H, c \rangle_d$. So the two terms are $\overline{H(o)} \langle F, c \rangle_d$ and $\overline{F(o)} \langle H, c \rangle_d$. Take conjugates and use $\langle \mathbb{1}, H \rangle_0 = H(o)$. $\square$
-
-**Corollary (Skew of a cuspidal function).** Let $c$ be cuspidal and $d \neq 0$. For every $f \in \mathcal{H}(k)$, $\partial^d_f c = \langle f, c \rangle_d \cdot 1$.
-
-Lean: `New.Hall.skew_of_isCuspidal` (Lib/LocalGL/Green/HallAlgebra.lean).
-
-*Proof.* At the class $o$ of dimension $0$, $\delta c(o, \cdot) = c$, so $\partial^d_f c(o) = \langle f, c \rangle_d$. At a class $a$ with $\dim a \neq 0$, $\delta c(a, b) = 0$ for every $b$ of dimension $d \neq 0$, so $\partial^d_f c(a) = 0 = 1(a)$. $\square$
+*Proof.* The left side is the conjugate of $\langle F * H, c \rangle_d = \sum_{p+q=d} \langle F, \partial^q_H c \rangle_p$, by [the adjunction](/decl/New.Hall.rankInner_mul_eq_sum_skew/). The term of $(p, q)$ involves $\delta c(a, b)$ with $\dim a = p$ and $\dim b = q$. Since $c$ is cuspidal, it vanishes unless $p = 0$ or $q = 0$. As $d \neq 0$, the two remaining terms $(d, 0)$ and $(0, d)$ are distinct. By the definition of the block average at a class of dimension $0$, $\partial^0_H c = \overline{H(o)} \, c$ and $\partial^d_H c(o) = \langle H, c \rangle_d$. So the two terms are $\overline{H(o)} \langle F, c \rangle_d$ and $\overline{F(o)} \langle H, c \rangle_d$. Take conjugates and use $\langle \mathbb{1}, H \rangle_0 = H(o)$. For the skew: at the class $o$ of dimension $0$, $\delta c(o, \cdot) = c$, so $\partial^d_f c(o) = \langle f, c \rangle_d$. At a class $a$ with $\dim a \neq 0$, $\delta c(a, b) = 0$ for every $b$ of dimension $d \neq 0$, so $\partial^d_f c(a) = 0 = 1(a)$. $\square$
 
 **Theorem (Skew by a cuspidal function is a derivation).** Let $c$ be cuspidal and $d \neq 0$. For all $F, H \in \mathcal{H}(k)$,
 $$\partial^d_c (F * H) = (\partial^d_c F) * H + F * (\partial^d_c H).$$
