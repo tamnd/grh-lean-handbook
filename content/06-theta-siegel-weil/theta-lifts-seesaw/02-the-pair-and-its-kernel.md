@@ -34,7 +34,7 @@ Let $S$ have Gram matrix $J_S$, point $x_S$ and signs $s$, and let $T$ have $J_T
 
 Lean: `New.Space.hom` (Lib/Weil/DualPair/Defs.lean).
 
-The pair acts on maps by $\iota(g, h) : x \mapsto h x g^{-1}$. This is a homomorphism $\iota$ from $G_S \times G_T$ to the unitary group of $\operatorname{Hom}(S, T)$ (`New.G.onHom`).
+The pair acts on maps by $\iota(g, h) : x \mapsto h x g^{-1}$. This is a homomorphism $\iota$ from $G_S \times G_T$ to the unitary group of $\operatorname{Hom}(S, T)$.
 
 ### Characters and the twisted action
 
@@ -48,7 +48,7 @@ with $\theta$ the theta functional of $\operatorname{Hom}(S, T)$.
 
 Lean: `New.pairWeil`, `New.pairTheta` (Lib/Weil/DualPair/Defs.lean).
 
-The scalar $a(\det h) b(\det g)^{-1}$ is `New.pairChar`. It has modulus one, so $\omega_{a,b}$ preserves the inner product of data (`New.dataInner_pairWeil`). For the classical reason of the twist, see the notes: the Weil representation of $\mathrm{U}(W)$ restricted to $\mathrm{U}(S) \times \mathrm{U}(T)$ needs a choice of splitting characters, and $a, b$ play that part here.
+The scalar $a(\det h) b(\det g)^{-1}$ has modulus one, so $\omega_{a,b}$ preserves the inner product of data. The reason for the twist is classical: the Weil representation of $\mathrm{U}(W)$ restricted to $\mathrm{U}(S) \times \mathrm{U}(T)$ needs a choice of splitting characters, and $a, b$ play that part here.
 
 **Lemma.** Let $g \in \Gamma_S$ and $h \in \Gamma_T$ be rational points. Then for every datum $f$ and every adelic matrix $x$, read as a vector on pairs of indices,
 $$(\omega_{a,b}(g, h) f)(x) = f\big((h^{-1} \otimes g^{\mathsf{T}})\, x\big).$$
@@ -68,11 +68,11 @@ Lean: `New.pairTheta_mul` (Lib/Weil/DualPair/WeilAction.lean).
 
 Lean: `New.pairThetaKer` (Lib/Weil/DualPair/WeilAction.lean).
 
-The joint continuity is `New.continuous_pairWeil`. The invariance under $\Gamma_S \times \Gamma_T$ follows from the substitution lemma above and the invariance $\theta(\omega(\gamma) f) = \theta(f)$ of the theta functional under rational points of $\mathrm{U}(\operatorname{Hom}(S, T))$, which is Weil's theorem of [the Weil representation from a vacuum](/chapter/weil-representation/).
+The action is jointly continuous. The invariance under $\Gamma_S \times \Gamma_T$ follows from the substitution lemma above and the invariance $\theta(\omega(\gamma) f) = \theta(f)$ of the theta functional under rational points of $\mathrm{U}(\operatorname{Hom}(S, T))$, which is Weil's theorem of [the Weil representation from a vacuum](/chapter/weil-representation/).
 
 ### The real and the finite part of a datum
 
-At the real places the data space is a Fock space. For a Fock vector $v$ and a datum $f$, the source forms the datum $v \otimes f$ by integrating the Heisenberg action of the real points against $v$ (`New.Space.integrated`). The real points of the pair act on $v$ through the real Weil representation $\Omega_{\gamma, \gamma'}$ of the pair (`New.realPairWeil`). This is the action $\prod_w (\det y_w)^{\gamma_w} (\det x_w)^{-\gamma'_w}$ times the Fock operator of $z \mapsto y z x^{-1}$.
+At the real places the data space is a Fock space. For a Fock vector $v$ and a datum $f$, the datum $v \otimes f$ is formed by integrating the Heisenberg action of the real points against $v$. The real points of the pair act on $v$ through the real Weil representation $\Omega_{\gamma, \gamma'}$ of the pair. This is the action $\prod_w (\det y_w)^{\gamma_w} (\det x_w)^{-\gamma'_w}$ times the Fock operator of $z \mapsto y z x^{-1}$.
 
 **Lemma.** Let $a$ have weight $\gamma$ and $b$ weight $\gamma'$, with any tame parts. For real points $x \in G_{S,\infty}$ and $y \in G_{T,\infty}$, taken with trivial finite parts, and for a Fock vector $v$ and a datum $f$,
 $$\omega_{a,b}((x, 1), (y, 1))(v \otimes f) = (\Omega_{\gamma,\gamma'}(x, y) v) \otimes f.$$
@@ -97,7 +97,7 @@ The argument chooses its finite data through a modulus.
 
 Lean: `New.Modulus` (Lib/Weil/DualPair/Defs.lean).
 
-A prime $w$ with $w \neq \bar w$ lies above a prime of $F$ that splits in $E$. So the primes of a modulus lie above split primes of $F$. At such a prime the unitary group is a general linear group, and a function of matrices modulo $\mathfrak{m}$ makes sense as a finite datum. The residue ring is $\mathcal{O}_E/\mathfrak{m}$, and $\mathfrak{m}$ has a finite set of prime divisors (`New.Modulus.places`). A function $\Psi$ on vectors modulo $\mathfrak{m}$ is read on finite adelic vectors $x$ by `New.Modulus.liftFn`: keep the components of $x$ at the primes of $\mathfrak{m}$, and if they are integral, take $\Psi$ of their reduction. Otherwise the value is $0$.
+A prime $w$ with $w \neq \bar w$ lies above a prime of $F$ that splits in $E$. So the primes of a modulus lie above split primes of $F$. At such a prime the unitary group is a general linear group, and a function of matrices modulo $\mathfrak{m}$ makes sense as a finite datum. The residue ring is $\mathcal{O}_E/\mathfrak{m}$, and $\mathfrak{m}$ has a finite set of prime divisors. A function $\Psi$ on vectors modulo $\mathfrak{m}$ is read on finite adelic vectors $x$ as follows: keep the components of $x$ at the primes of $\mathfrak{m}$, and if they are integral, take $\Psi$ of their reduction. Otherwise the value is $0$.
 
 **Remark (Formalization).** The reduction map $\hat{\mathcal{O}}_E \to \mathcal{O}_E/\mathfrak{m}$ that `liftFn` uses is `New.Modulus.reduction`, a `choose` from an existence statement. The statement fixes it as a ring map that extends reduction on $\mathcal{O}_E$ and has kernel $t \hat{\mathcal{O}}_E$ for an integral idele $t$ equal to $1$ off $\mathfrak{m}$. By continuity these properties determine the map, so the choice does not matter. The source does not state this uniqueness, and the statements of this chapter do not need it.
 
@@ -107,7 +107,7 @@ With the standard characters of the signs of $S$ and $T$ it is written $\theta^{
 
 Lean: `New.modDatum`, `New.modKernel`, `New.stdKernel` (Lib/Weil/DualPair/Defs.lean).
 
-The part at the primes of $\mathfrak{m}$ is put in by the Schrödinger operator of a Schwartz-Bruhat function (`New.Space.schrodingerOp`). That operator is a `choose` of a generalized inverse, and its value is arbitrary on other inputs. The lift of $\Psi$ is Schwartz-Bruhat above the primes of $\mathfrak{m}$ (`New.Modulus.isSchwartzBruhat_liftFn`), so the kernel is the intended one.
+**Remark (Formalization).** The part at the primes of $\mathfrak{m}$ is put in by the Schrödinger operator of a Schwartz-Bruhat function, `New.Space.schrodingerOp`. That operator is a `choose` of a generalized inverse, and its value is arbitrary on functions that are not Schwartz-Bruhat. The lift of $\Psi$ is Schwartz-Bruhat above the primes of $\mathfrak{m}$ (`New.Modulus.isSchwartzBruhat_liftFn`), so the kernel is the intended one.
 
 ### Laws of the kernel
 
@@ -119,9 +119,9 @@ For $k'$ in the standard level of $G_{T,f}$ the same holds on the right, with $\
 
 Lean: `New.modKernel_mul_stdLevel_left`, `New.modKernel_mul_stdLevel_right` (Lib/Weil/DualPair/KernelLaws.lean).
 
-*Proof.* By the translation law the kernel at $g(1, k)$ is the kernel of the moved datum. An integral point acts on the vacuum by the scalar of the characters, and on the function at $\mathfrak{m}$ by substitution of its reduction (`New.pairWeil_modDatum_stdLevel`). $\square$
+*Proof.* By the translation law the kernel at $g(1, k)$ is the kernel of the moved datum. An integral point acts on the vacuum by the scalar of the characters, and on the function at $\mathfrak{m}$ by substitution of its reduction. $\square$
 
-The kernel also changes by a scalar under a twist of the characters: $\theta^{S,T}_{a\mu, b\mu'}[\Psi, P](g, h) = \mu(\det h) \mu'(\det g)^{-1} \theta^{S,T}_{a,b}[\Psi, P](g, h)$ (`New.modKernel_twist`).
+The kernel also changes by a scalar under a twist of the characters: $\theta^{S,T}_{a\mu, b\mu'}[\Psi, P](g, h) = \mu(\det h) \mu'(\det g)^{-1} \theta^{S,T}_{a,b}[\Psi, P](g, h)$.
 
 ### The seesaw identities
 
@@ -138,6 +138,6 @@ $$\theta^{S \oplus V, T}_{a a', b}[\Psi \otimes \Psi', P P'](g \oplus g', h) = \
 
 Lean: `New.modKernel_sum_left` (Lib/Weil/DualPair/KernelLaws.lean).
 
-*Proof of both.* The product datum of the two blocks is the datum of the product function and the product polynomial: the vacuum, the Schrödinger operators and the Fock vectors of polynomials all split over a block decomposition of the coordinates (`New.boxProd_integrated_schrodingerOp_liftFn`). The action $\omega_{a,b}$ and the theta functional are multiplicative for this product of data. The determinant of $h \oplus h'$ is $\det h \det h'$, which turns the character $b b'$ into the product of the two scalars. $\square$
+*Proof of both.* The product datum of the two blocks is the datum of the product function and the product polynomial: the vacuum, the Schrödinger operators and the Fock vectors of polynomials all split over a block decomposition of the coordinates. The action $\omega_{a,b}$ and the theta functional are multiplicative for this product of data. The determinant of $h \oplus h'$ is $\det h \det h'$, which turns the character $b b'$ into the product of the two scalars. $\square$
 
-The general form `New.modKernel_block_right` allows any splitting of the coordinates of $T$ compatible with the signs, with a block diagonal point and a block diagonal $h$. The versions with standard characters are `New.stdKernel_sum_right` and `New.stdKernel_sum_left`. Section 5 uses identities of this kind, through the hypothesis that two kernels agree up to weights.
+The same identity holds for any splitting of the coordinates of $T$ compatible with the signs, with a block diagonal point and a block diagonal $h$. It holds also for the standard characters. Section 5 uses identities of this kind, through the hypothesis that two kernels agree up to weights.

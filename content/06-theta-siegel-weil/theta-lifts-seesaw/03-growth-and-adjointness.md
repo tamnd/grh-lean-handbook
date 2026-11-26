@@ -42,7 +42,7 @@ Here $\|\cdot\|$ is the operator norm of a complex $n' \times n'$ matrix.
 
 Lean: `New.Space.exists_reduction_norm_le_height` (Lib/Weil/DualPair/ThetaLiftConvergence.lean).
 
-*Proof.* By Mahler's criterion of [reduction theory](/chapter/reduction-theory/) there is a compact $\Omega$ such that every $g$ with $\operatorname{ht}_V(g) \leq 2$ has a rational translate in $\Omega$. A halving step (`New.Space.exists_height_mul_inv_le_max`) gives, for every $g$, a real point $y$ with $\|y_\tau\| \leq 2$ for all $\tau$ and
+*Proof.* By Mahler's criterion of [reduction theory](/chapter/reduction-theory/) there is a compact $\Omega$ such that every $g$ with $\operatorname{ht}_V(g) \leq 2$ has a rational translate in $\Omega$. A halving step gives, for every $g$, a real point $y$ with $\|y_\tau\| \leq 2$ for all $\tau$ and
 $$\operatorname{ht}_V(g (y, 1)^{-1}) \leq \max(\operatorname{ht}_V(g)/2, 2).$$
 We prove by induction on $k$: if $\operatorname{ht}_V(g) \leq 2^{k+1}$, then $g$ is reduced by a list of $k$ points of norm at most $2$ whose product has norm at most $2^k$. For $k = 0$ this is Mahler's criterion. For the step, apply the halving step to $g$, and the induction hypothesis to $g (y, 1)^{-1}$, which has height at most $2^{k+1}$. Append $y$ to the list. Finally choose $k$ with $2^k \leq \operatorname{ht}_V(g) < 2^{k+1}$. This is possible since $\operatorname{ht}_V(g) \geq 1$. $\square$
 
@@ -60,11 +60,11 @@ $$|\theta(\omega(g, h)\varphi)| \leq C \|\varphi\| \big(\operatorname{ht}_S(g) \
 
 Lean: `New.ThetaKernel.moderate_growth` (Lib/Weil/DualPair/ThetaLiftConvergence.lean).
 
-*Proof.* Apply the previous lemma with $g_0 = 1$ to the kernel and to its swap, the kernel for $T$ and $S$ with the same $\theta$ (`New.ThetaKernel.swap`). Both statements hold for all large exponents, so there is one $A$ for both. For given $g, h$ this gives $\gamma \in \Gamma_S$ and $\delta \in \Gamma_T$ with $\|\omega(\gamma g, 1)\| \leq 2^A \operatorname{ht}_S(g)^A$ and $\|\omega(1, \delta h)\| \leq 2^A \operatorname{ht}_T(h)^A$. By the invariance of $\theta$,
+*Proof.* Apply the previous lemma with $g_0 = 1$ to the kernel and to its swap, the kernel for $T$ and $S$ with the same $\theta$ and with $\omega$ read on $G_T \times G_S$. Both statements hold for all large exponents, so there is one $A$ for both. For given $g, h$ this gives $\gamma \in \Gamma_S$ and $\delta \in \Gamma_T$ with $\|\omega(\gamma g, 1)\| \leq 2^A \operatorname{ht}_S(g)^A$ and $\|\omega(1, \delta h)\| \leq 2^A \operatorname{ht}_T(h)^A$. By the invariance of $\theta$,
 $$\theta(\omega(g, h)\varphi) = \theta(\omega(\gamma g, \delta h)\varphi) = \theta\big(\omega(\gamma g, 1)\, \omega(1, \delta h)\, \varphi\big).$$
 So $|\theta(\omega(g, h)\varphi)| \leq \|\theta\|\, 4^A \operatorname{ht}_S(g)^A \operatorname{ht}_T(h)^A \|\varphi\|$. $\square$
 
-In particular, for fixed $h$ and $\varphi$, the function $g \mapsto \theta(\omega(g, h)\varphi)$ has moderate growth on $G_S$ (`New.ThetaKernel.isModerate`). If $\varphi$ is fixed by an open subgroup of $G_{S,f}$, this function is automorphic (`New.ThetaKernel.isAutomorphic`).
+In particular, for fixed $h$ and $\varphi$, the function $g \mapsto \theta(\omega(g, h)\varphi)$ has moderate growth on $G_S$. If $\varphi$ is fixed by an open subgroup of $G_{S,f}$, this function is automorphic.
 
 **Remark (Formalization).** For the Weil representation the usual proofs bound the theta series on a Siegel set by a direct estimate. The source does not use the form of $\omega$ at all. It uses only that $\omega$ is a continuous homomorphism, so that its norm is bounded on compact sets and submultiplicative, and that reduction theory writes every point as a rational translate of a compact set times about $\log_2 \operatorname{ht}$ real points of bounded size. The exponent $A$ that comes out depends on the bound of $\omega$ on the compact set, and the proof gives no explicit value.
 
@@ -84,7 +84,7 @@ Lean: `New.ThetaKernel.lift_equivariant` (Lib/Weil/DualPair/ThetaLiftConvergence
 
 *Proof.* The integrand $g \mapsto \theta(\omega(g, h l)\varphi)\, y(g)$ is left invariant under $\Gamma_S$, and the quotient measure is invariant under right translation by $k$. Substitute $g k$ for $g$ and use $\omega(g k, h l) = \omega(g, h)\, \omega(k, l)$. $\square$
 
-The case $k = 1$ is the right translation law $\mathcal{L}_\varphi y(h l) = \mathcal{L}_{\omega(1, l)\varphi} y(h)$ (`New.lift_mul_right`). The lift is left invariant under $\Gamma_T$ (`New.ThetaKernel.fixesLeft_lift`).
+The case $k = 1$ is the right translation law $\mathcal{L}_\varphi y(h l) = \mathcal{L}_{\omega(1, l)\varphi} y(h)$. The lift is left invariant under $\Gamma_T$.
 
 **Theorem (Convergence).** Let $y$ be automorphic of rapid decay on $G_S$.
 
@@ -96,7 +96,7 @@ Lean: `New.ThetaKernel.integrable_theta_mul`, `New.ThetaKernel.exists_clm_lift`,
 
 *Proof.* Moderate growth gives $|\theta(\omega(g, h)\varphi)\, y(g)| \leq |C| \|\varphi\| \operatorname{ht}_T(h)^A \cdot |y(g)| \operatorname{ht}_S(g)^A$. Since $y$ is rapid, the last factor is bounded. The integrand is continuous, and $[S]$ has finite measure. This proves 1, and integration of the bound gives the moderate growth in 3. For 2, take $L_h$ to be the integral over $[S]$ of the operator valued function $g \mapsto y(g)\, \theta \circ \omega(g, h)$. For continuity, write $\mathcal{L}_\varphi y(h) = L_1(\omega(1, h)\varphi)$ by the right translation law, and use the continuity of $h \mapsto \omega(1, h)\varphi$. $\square$
 
-By 1, the lift is bilinear in $\varphi$ and $y$ (`New.ThetaKernel.liftBilin`).
+By 1, the lift is bilinear in $\varphi$ and $y$.
 
 **Remark (Formalization).** The lift is not asserted to be automorphic in general. Its level depends on $\varphi$: by the equivariance lemma, it is right invariant under $l$ when $\omega(1, l)\varphi = \varphi$. The lift of a form of a type is treated in Section 4, where the edge hypotheses supply the type.
 
@@ -123,7 +123,7 @@ Lean: `New.ThetaKernel.integral_mul_lift_eq_integral_mul_lift_swap`, `New.ThetaK
 
 *Proof.* The previous lemma with $U = T$, $M = 1$ and $j$ the identity shows that $(h, g) \mapsto y'(h)\, \theta(\omega(g, h)\varphi)\, y(g)$ is integrable on $[T] \times [S]$. Fubini's theorem exchanges the two integrals, and the inner integral over $[T]$ is $\mathcal{L}'_\varphi y'(g)$. For the second identity apply the first to $\bar y'$, which is again rapid. $\square$
 
-The map $y' \mapsto \overline{\mathcal{L}'_\varphi \bar y'}$ is the descent. The theorem says that the descent is the adjoint of the lift on functions of rapid decay. Cusp forms are of rapid decay, so the theorem covers the usual case of lifts of cusp forms. The source states the identity with the same datum and the conjugation outside the lift, so it needs no conjugation on $X$.
+The map $y' \mapsto \overline{\mathcal{L}'_\varphi \bar y'}$ is the descent. The theorem says that the descent is the adjoint of the lift on functions of rapid decay. Cusp forms are of rapid decay, so the theorem covers the usual case of lifts of cusp forms. The identity has the same datum on both sides and the conjugation outside the lift, so it needs no conjugation on $X$.
 
 ### Rapid decay of the kernel of the pair
 
@@ -139,6 +139,6 @@ With $\Psi$ supported on matrices with a right inverse, the same holds with the 
 
 Lean: `New.pairTheta_modDatum_decay`, `New.pairTheta_modDatum_decay_of_rightInv` (Lib/Weil/DualPair/KernelDecay.lean).
 
-*Proof sketch.* Let $w$ be a prime of $\mathfrak{m}$. If the lift of $\Psi$ is nonzero at a finite adelic matrix $x$, then the component $x_w$ has a left inverse over the residue ring at $w$. So the datum is supported on maps that are injective at $w$ (`New.pairTheta_decay_of_injective`). Let $\operatorname{ht}_S(g) > 2$. Take a short isotropic vector $c$ of $S$ at $g$ and a short basis $d$ of $T$ at $h$, of length at most a constant times $\operatorname{ht}_T(h)$. The rational maps $z \mapsto d_i \langle c, z \rangle$ of rank one are isotropic for the form of $\operatorname{Hom}(S, T)$, and they act on data by translations that do not change $\theta$. Since the support of the finite datum consists of maps injective at $w$, the pairing of each point of the support with these rank one maps is nonzero (the conditions of `New.IsShortPair`). Small shifts along these maps then let the proof trade a power of $\operatorname{ht}_S(g)$ for a moment of the Fock vector $v$. The moderate growth theorem bounds the rest. $\square$
+*Proof sketch.* Let $w$ be a prime of $\mathfrak{m}$. If the lift of $\Psi$ is nonzero at a finite adelic matrix $x$, then the component $x_w$ has a left inverse over the residue ring at $w$. So the datum is supported on maps that are injective at $w$. Let $\operatorname{ht}_S(g) > 2$. Take a short isotropic vector $c$ of $S$ at $g$ and a short basis $d$ of $T$ at $h$, of length at most a constant times $\operatorname{ht}_T(h)$. The rational maps $z \mapsto d_i \langle c, z \rangle$ of rank one are isotropic for the form of $\operatorname{Hom}(S, T)$, and they act on data by translations that do not change $\theta$. Since the support of the finite datum consists of maps injective at $w$, the pairing of each point of the support with these rank one maps is nonzero. Small shifts along these maps then let the proof trade a power of $\operatorname{ht}_S(g)$ for a moment of the Fock vector $v$. The moderate growth theorem bounds the rest. $\square$
 
 **Remark (Formalization).** The docstring of the file names the method: small shifts along a short isotropic vector, instead of Siegel sets. For decay the file cites Kudla and Rallis (1994), where estimates of this kind are made on Siegel sets. The source needs at least one prime in $\mathfrak{m}$. With $\mathfrak{m} = \mathcal{O}_E$ the hypothesis `h_ne` fails, and the theorem says nothing. The constants $B$, $N$ and $C$ are not given explicitly.
