@@ -91,6 +91,8 @@ Lean: `New.Filling.mem_latticeStabilizer_iff` (New/Spanning/MainTerm/FillingLeve
 
 **Definition (Character at $T$).** $\operatorname{charOnPlaces}(T)(x) = \psi_f(-\varpi^{-1}\,\tilde x)$, where $\tilde x$ extends $x$ by zero, $\psi_f$ is the standard character of the finite adeles and $\varpi$ is the generator of the different in the data $S$ ([Section 3](/chapter/main-term/#frequencies-and-poisson-summation)).
 
+Lean: `New.Filling.charOnPlaces` (New/Spanning/MainTerm/GlobalSieve.lean).
+
 **Lemma (Traces).** $\operatorname{charOnPlaces}(T)(x + \bar x) = 1$.
 
 Lean: `New.Filling.charOnPlaces_add_star` (New/Spanning/MainTerm/FillingLevel.lean).
