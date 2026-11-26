@@ -181,7 +181,7 @@ Lean: `New.Seesaw.DoubleLiftData.conjTranspose_latticeLift_mulVec_mem`, `New.See
 
 *Proof.* First, $\mathrm{selfOrConj}(\beta)_j\kappa_j\,(B^*y)_j$ is integral away from $n$. Indeed $(B^*y)_j = \sum_i \bar B_{ij}y_i$. When the valuations of the weights at $i$ and $j$ agree, $v(\bar B_{ij}) \le 1$ gives the bound. When they differ, $B_{ij}$ vanishes at $\bar w$ by the lemma, so $\bar B_{ij}$ vanishes at $w$ (Lean: `New.Seesaw.conjTranspose_mulVec_mem_weightedTranslations`). Second, $B^*y$ vanishes above $N$, so $g$ acts on it by the rows $\kappa_j$ (Section 2). With the last lemma, $i^*y = gB^*y$ has entries $\kappa_j(B^*y)_j$. $\square$
 
-### The main theorem
+### The main theorem on evaluation
 
 **Theorem (The evaluation of a pair is admissible).** Suppose that:
 
@@ -196,7 +196,7 @@ Lean: `New.Seesaw.isAdmissibleEval_finEval`.
 *Proof.* $B$ is integral by the corollary on integrality. Let $c \neq 0$ be the constant of the corollary on the zero term of the vacuum, and $K$ the order of the away quotient $Q$. Take $C = cK$. Let $n$ be prime to $N$ and $y$ with $\mathrm{selfOrConj}(\beta)y$ integral away from $n$.
 
 1. By Section 3, $\rho(y)\phi_0 = \xi\rho(y')\phi_0$ with $\xi$ a root of unity and $y'$ vanishing above $N$, with the same denominators.
-2. By the theorem on the value at a translate, $\mathrm{ev}_D(\rho(y')\phi_0) = \zeta\,\mathrm{arrowTensor}^{-1}(\rho(i^*y')\mathrm{ZT}^{\mathrm f}_D(\phi_0))$.
+2. By the theorem on the value at a translate, $\mathrm{ev}_D(\rho(y')\phi_0) = \zeta\,A^{-1}\bigl(\rho(i^*y')\mathrm{ZT}^{\mathrm f}_D(\phi_0)\bigr)$, where $A$ is $\mathrm{arrowTensor}$.
 3. By the proposition on denominators, $i^*y'$ vanishes above $N$ and has the denominators $\mathrm{selfOrConj}(\beta)$ away from $n$.
 4. Substitute the corollary: the vector is $\xi\zeta c$ times $\mathrm{arrowTensor}^{-1}$ of $\rho(i^*y')\sum_{(y,q)}\rho(r(y,q))\phi_0'$. By the theorem on the sum over the neighbour lattice (Section 3), that vector is an admissible combination of the vectors $K\,G(t_1, t_2)$. Its image under multiplication by $c$ is an admissible combination of the vectors $cK\,G(t_1, t_2)$.
 5. Multiplication by $\zeta$ and by $\xi$, each $0$ or a root of unity, keeps a combination admissible (Lean: `New.Seesaw.IsAdmissibleCombination.smul_of_eq_zero_or_isOfFinOrder`). $\square$

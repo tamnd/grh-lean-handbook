@@ -100,7 +100,7 @@ Lean: `New.Seesaw.exists_finHeisenbergOp_vacElem_eq_of_coprime`.
 
 *Proof.* Let $l = \epsilon y$ be the part of $y$ above $N$. The places above $N$ are prime to $n$, so $\mathrm{selfOrConj}(\beta)\,y$ is integral there. By the lemma $\mathrm{selfOrConj}(\beta)$ is a unit there, so $l$ is integral. It also has the denominator property, since it is $0$ elsewhere. Put $y' = y - l$, which vanishes above $N$ and has the property. Translation of the vacuum by the integral vector $-l$ gives a root of unity times the vacuum translated by the sum (Lean: `New.Seesaw.exists_finHeisenbergOp_add_vacElem`). So $\rho(y)\phi_0 = \zeta\rho(y - l)\phi_0$. $\square$
 
-### The main theorem
+### The main theorem on the gluing
 
 **Definition (Admissible evaluation).** A map $\mathcal L$ from data on a pair space $\mathrm{Hom}(V', V^- \oplus V'')$ to tensors of finite data on the two standard edges is an admissible evaluation for $(N, P, \beta)$ with weights $d$ if there is a constant $C$ with the following property. For every $n$ prime to $N$, every proposition $p$, and every $y$ with $d_b\,y_{b,a}$ integral away from $n$, the vector $\mathcal L(\rho(y)\phi_0)$ is an admissible combination of the vectors $C\,G(t_1, t_2)$, over $\bar\beta t_1$ and $\bar\beta t_2$ integral away from $n$, with denominator $\#\bigl(\hat{\mathcal O}/(\beta)\bigr)^{\mathrm{PairIndex}\times X'}$ away from $n$ and size $1$ under $p$.
 
