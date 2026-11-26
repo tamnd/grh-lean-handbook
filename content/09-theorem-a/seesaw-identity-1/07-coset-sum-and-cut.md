@@ -18,7 +18,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The integral as a coset sum
 
-After the unfolding, the outer variable of each stage is integrated over the quotient of $U(Y_j)(\mathbb A)$ by the rational points of the Bessel group. This section replaces each such integral by a finite sum over classes modulo the level, with weights. The weights are inverse multiplicities, and the support theorem of Section 6 makes them finite and nonzero where the integrand is not $0$.
+This section replaces the integral over each outer variable by a finite sum over classes modulo the level, weighted by inverse multiplicities. The support theorem of Section 6 makes the multiplicities nonzero where the integrand is not $0$.
 
 ### A weighted fundamental domain
 
@@ -28,7 +28,7 @@ Lean: `New.Seesaw.coverMultiplicity`.
 
 **Remark (Formalization).** The count is `Set.ncard`, which is $0$ on an infinite set. So a multiplicity of $0$ can mean either that no translate of $T$ contains $t$ or that infinitely many do. The users always prove that the multiplicity divides a power of $q$, which excludes both.
 
-**Proposition (A cut exists).** Let $J \subseteq A$ be levels of $U(V)(\mathbb A_f)$, let $D$ be compact and contained in a subgroup $B \supseteq A$, and suppose that for each $x \in D$ there is $n$ with $(x u x^{-1})^{q^n} \in A$ for all $u \in J$. Let $W$ be a property of points such that each point with $W$ has a translate by $S$ in $D$. Then there is a finite $T \subseteq H/J$ such that $T$ is stable under $S \cap A$, every point over $T$ lies in $B$, and the multiplicity divides a power of $q$ at the points of $T$ and at the points with $W$.
+**Proposition (A cut exists).** Let $J \subseteq A$ be levels of $H = U(V)(\mathbb A_f)$, let $D \subseteq B$ be compact, with $B \supseteq A$ a subgroup, and suppose that for each $x \in D$ there is $n$ with $(x u x^{-1})^{q^n} \in A$ for all $u \in J$. Let $S$ be a subgroup and $W$ a property such that each point with $W$ has a translate by $S$ in $D$. Then there is a finite $T \subseteq H/J$ such that $T$ is stable under $S \cap A$, every point over $T$ lies in $B$, and the multiplicity divides a power of $q$ at the points of $T$ and at the points with $W$.
 
 Lean: `New.Seesaw.exists_finset_coverMultiplicity_dvd_pow`.
 
@@ -40,9 +40,9 @@ $$\int_{R(E)\backslash U(V)(\mathbb A)} f(g)\, dg = \kappa \sum_{t \in T} m(t)^{
 
 Lean: `New.Grading.exists_integral_eq_sum_over_cut`.
 
-*Proof.* Take a cutoff $\beta$ for the Bessel group: a measurable weight whose integral over each orbit is $1$. Average $\beta$ over the finite Bessel group to get a weight $\alpha(g_\infty)\psi(g_{\mathrm f})$ with $\psi = m^{-1}$ on $T$ and $0$ off $T$. Its integral over each orbit is $1$ where $m \neq 0$ (Lean: `New.Seesaw.lintegral_indicator_inv_coverMultiplicity`). Unfolding against this weight turns the integral into the weighted integral of the period, which factors. The archimedean part gives $\kappa = \int a\,\alpha$, and the finite part is the sum over $T$. $\square$
+*Proof.* Take a cutoff $\beta$ for the Bessel group: a measurable weight whose integral over each orbit is $1$. Average $\beta$ over the finite Bessel group to get a weight $\alpha(g_\infty)\psi(g_{\mathrm f})$ with $\psi = m^{-1}$ on $T$ and $0$ off $T$. Its integral over each orbit is $1$ where $m \neq 0$ (Lean: `New.Seesaw.lintegral_indicator_inv_coverMultiplicity`). Unfolding against this weight gives the weighted integral of the period, which factors. The archimedean part gives $\kappa = \int a\,\alpha$, and the finite part is the sum over $T$. $\square$
 
-**Remark (Formalization).** The constant $\kappa$ is given by an existence statement and may be $0$. It depends only on $\mathsf{Y}$, $A$ and $a$, which is what the users need, and it goes into the constant $c$ of Section 1.
+**Remark (Formalization).** The constant $\kappa$ is given by an existence statement and may be $0$. It depends only on $\mathsf{Y}$, $A$ and $a$.
 
 ### The cuts of the tower
 
@@ -50,15 +50,15 @@ Lean: `New.Grading.exists_integral_eq_sum_over_cut`.
 
 Lean: `New.Data.IsStageCut`, `New.Data.exists_isStageCut`.
 
-The second Lean name says that a stage cut exists. Its proof applies the proposition, with $W$ the bounded orbit property. A point whose lattice lies between $\bar q^{\,j}\Lambda^-$ and $q^{-j}\Lambda^-$ is a translate of one of finitely many cosets of the standard level supported on $\vartheta.Q \cup \overline{\vartheta.Q}$, and the power condition holds for these (Lean: `New.Data.exists_conj_pow_mem_stdLevel`). The set $\Omega_j$ (Lean: `New.Data.cutPoints`) is the image of the chosen level for $j = 0$ and a chosen stage cut for $j > 0$.
+A stage cut exists by the proposition, with $W$ the bounded orbit property. A point whose lattice lies between $\bar q^{\,j}\Lambda^-$ and $q^{-j}\Lambda^-$ is a translate of one of finitely many cosets of the standard level supported on $\vartheta.Q \cup \overline{\vartheta.Q}$, and the power condition holds for these (Lean: `New.Data.exists_conj_pow_mem_stdLevel`). The set $\Omega_j$ (Lean: `New.Data.cutPoints`) is the image of the chosen level for $j = 0$ and a chosen stage cut for $j > 0$.
 
-**Remark (Formalization).** For $j > 0$, $\Omega_j$ is defined by `choose`. Only the four properties of a stage cut are used.
+**Remark (Formalization).** For $j > 0$, $\Omega_j$ is a `choose` object; only the four properties of a stage cut are used.
 
 **Proposition (The size of a cut).** If $\vartheta.Q = \emptyset$ and $k < m$, every finite set $T$ of classes modulo $J_k(\vartheta)$ whose points are integral has at most $M^{f n^2}$ elements, where $M = p_0 p_1$, $f$ is the number of infinite places of $E$ and $n = n(m)$.
 
 Lean: `New.Data.card_le_residueMatrixCount`.
 
-*Proof.* With $\vartheta.Q = \emptyset$, the level is the subgroup of the standard level that reduces to $1$ at the chosen places, which lie above $p_0$ and $p_1$. Distinct classes of integral points give distinct matrices modulo the chosen places, and there are at most $M^{f n^2}$ such residue matrices. $\square$
+*Proof.* With $\vartheta.Q = \emptyset$, distinct classes of integral points have distinct reductions at the chosen places, which lie above $p_0$ and $p_1$, and there are at most $M^{f n^2}$ residue matrices. $\square$
 
 **Definition (The cut sum).** For a function $S$ on tuples of classes, $\Sigma_k S$ is the sum of $S$ over $\Omega_0 \times \dots \times \Omega_{k-1}$, each term divided by the multiplicities of its coordinates, with the coordinates from $k$ on the class of $1$.
 

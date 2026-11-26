@@ -108,7 +108,7 @@ Lean: `New.Seesaw.IsAdmissibleCombination.map`, `New.Seesaw.IsAdmissibleCombinat
 
 Lean: `New.Seesaw.IsAdmissibleCombination.pure`.
 
-*Proof.* Induction on $m$. For $m = 0$ the empty tensor is $1$, the value at the family $y = 0$; here the $A_j$ must contain $0$, which is why they are groups. For the step, rule (4) of the corollary, with $b$ the tensor product, gives $f_m \otimes (f_{m-1}\otimes\cdots\otimes f_0)$ as a combination indexed by pairs (a family $s$, a pair $t$), with denominator $d^m d$ and size $|B|^m |B|$. Merge the pair into the family: put $y = s$ with the coordinates $2m$ and $2m+1$ replaced by $t$. The first $m$ factors of the pure tensor of $y$ do not see these coordinates, so the term of $(s, t)$ equals the pure tensor of $y$. Rule (3) with $\zeta = 1$ ends the proof. $\square$
+*Proof.* Induction on $m$. For $m = 0$ the empty tensor is $1$, the value at the family $y = 0$; here the $A_j$ must contain $0$, which is why they are groups. For the step, rule (4) of the corollary, with $b$ the tensor product, gives $f_m \otimes (f_{m-1}\otimes\cdots\otimes f_0)$ as a combination indexed by pairs (a family $s$, a pair $t$), with denominator $d^m d$ and size $|B|^m |B|$. Merge the pair into the family, replacing the coordinates $2m$ and $2m+1$ of $s$ by $t$; the first $m$ factors do not see them. Rule (3) with $\zeta = 1$ ends the proof. $\square$
 
 ### Clearing the denominator
 
@@ -120,7 +120,7 @@ Lean: `New.Seesaw.IsAdmissibleCombination.normUnit_smul`.
 
 *Proof.* Write $z = \sum_x r(x)\, C\, v(x)$ and $z_0 = \sum_x r(x) v(x)$. Then $u a z = (u a C)\, z_0$. The coefficients $d\, r$ show that $d z_0$ is a combination of the $v(x)$ with denominator $1$ and size $dB$, since $d\, r(x) \in \mathcal{O}_{(n)}$ and $\sum |\sigma(d r(x))| = d \sum |\sigma(r(x))|$. If $aC \neq 0$, then $u a C = d$ and $u a z = d z_0$. If $aC = 0$, then $u a z = 0 = 0 \cdot (d z_0)$, which is a combination by rule (2) with $c = 0$. $\square$
 
-**Remark (Formalization).** The function $\mathrm{normUnit}$ on $\mathbb{C}$ comes from the normalization monoid structure of a field: $\mathrm{normUnit}(x) = x^{-1}$ for $x \neq 0$ and $\mathrm{normUnit}(0) = 1$, so that $x\,\mathrm{normUnit}(x) = 1$ for $x\neq 0$. The proposition has content only when $aC \neq 0$. When $aC = 0$ it says that $0$ is a combination. In [part 2](/chapter/seesaw-identity-2/) this proposition is applied with $a = c_0$, the constant of the unfolding, and with $d = R^{2m}$, $R = M^{f n_m^2}$; the seesaw constant is $u^{-1}$, which is $c_0 C/d$ if $c_0 C \neq 0$ and $1$ otherwise. The remark on the seesaw constant in [Theorem A and its plan](/chapter/theorem-a-plan/) discusses the case $c_0 C = 0$.
+**Remark (Formalization).** On a field, $\mathrm{normUnit}(x) = x^{-1}$ for $x \neq 0$ and $\mathrm{normUnit}(0) = 1$. The proposition has content only when $aC \neq 0$. When $aC = 0$ it says that $0$ is a combination. In [part 2](/chapter/seesaw-identity-2/) this proposition is applied with $a = c_0$, the constant of the unfolding, and with $d = R^{2m}$, $R = M^{f n_m^2}$; the seesaw constant is $u^{-1}$, which is $c_0 C/d$ if $c_0 C \neq 0$ and $1$ otherwise. The remark on the seesaw constant in [Theorem A and its plan](/chapter/theorem-a-plan/) discusses the case $c_0 C = 0$.
 
 ### Translations
 

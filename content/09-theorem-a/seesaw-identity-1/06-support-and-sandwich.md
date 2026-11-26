@@ -16,7 +16,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The support of the stages
 
-The coset sum of Section 7 runs over the classes of finite points $x$ with $\mathcal{W}_k(a, x) \neq 0$. This section shows that these points have lattices between two fixed lattices. The bound is proved by induction on $k$: the frequency theorem of Section 4 carries a bound on one space to the next, and the ramification of $\varphi$ at the places above $\pi_N$ removes the one case where the induction fails.
+This section shows that the finite points $x$ with $\mathcal{W}_k(a, x) \neq 0$ have lattices between two fixed lattices. The proof is an induction on $k$, and the ramification of $\varphi$ above $\pi_N$ removes the one case where the induction fails.
 
 For a grading $\mathsf{Y}$ of $V$ and a finite point $x$, write $\Lambda'$ for the lattice of $x$ and $\Lambda$ for the lattice of $1$. Write $\Lambda'^{+}$ for the projection of $\Lambda'$ to $X^\perp$, the span of the string, and $\Lambda'^{-} = \Lambda' \cap X^\perp$, so $\Lambda'^- \subseteq \Lambda'^+$. Let $q$ be a finite idele. The pair of bounds
 
@@ -44,7 +44,7 @@ $$\bar q^{\,k+1} m = (\bar q/a)\,\mathrm{sh}(\bar q^{\,k} z) \in M'^-$$
 
 by the second hypothesis. $\square$
 
-In the tower the first hypothesis is $\mathrm{sh}\,\Lambda_k^+ = \mathfrak a\,\Lambda_{k+1}^-$ of Section 3 (Lean: `New.Data.map_stringMapFin_latticePlus_gradingY`). The second hypothesis is the frequency theorem of Section 4, with $q = $ `New.Data.twistIdele` $\vartheta$, an idele that generates the product of the places of $\vartheta.Q$.
+In the tower the first hypothesis is $\mathrm{sh}\,\Lambda_k^+ = \mathfrak a\,\Lambda_{k+1}^-$ of Section 3 (Lean: `New.Data.map_stringMapFin_latticePlus_gradingY`), and the second is the frequency theorem of Section 4, with $q$ a generator of the product of the places of $\vartheta.Q$ (Lean: `New.Data.twistIdele`).
 
 The other half of the induction gets the upper bound from the lower bound by duality. This fails in one case.
 
@@ -52,15 +52,15 @@ The other half of the induction gets the upper bound from the lower bound by dua
 
 Lean: `New.Grading.SpansLattice.hasLatticeBounds_or_latticeSplitsAt`.
 
-*Proof.* Duality gives $q^k \Lambda'^+ \subseteq \Lambda^+$. Suppose the upper bound fails: there is $y \in \Lambda'^-$ with $q^k y \notin \Lambda^-$. As $q^k y \in \Lambda^+$, and $\Lambda^+/\Lambda^-$ is the quotient computed in Section 3, the vector $q^k y$ generates $\Lambda^+$ over $\Lambda^-$ at some place $w$ above $N$, and this quotient is nonzero only for odd $s$. At $w$, with $q$ a unit there,
+*Proof.* Duality gives $q^k \Lambda'^+ \subseteq \Lambda^+$. Suppose the upper bound fails: there is $y \in \Lambda'^-$ with $q^k y \notin \Lambda^-$. By the corollary of Section 3 on vectors of $\Lambda^+$ outside $\Lambda^-$, $s$ is odd and $q^k y$ generates $\Lambda^+$ over $\Lambda^-$ at some place $w$ of $P$ or its conjugate. At $w$, with $q$ a unit there,
 
 $$\Lambda'^+_w \subseteq q^{-k}\Lambda^+_w = q^{-k}\Lambda^-_w + \hat{\mathcal O}_w\, y \subseteq \Lambda'^-_w$$
 
-by the lower bound (Lean: `New.Grading.latticeSplitsAt_of_generates`). If $w \notin P$ then $\bar w \in P$, and the split passes to the conjugate place. $\square$
+by the lower bound (Lean: `New.Grading.latticeSplitsAt_of_generates`). $\square$
 
 ### Ramification kills the split case
 
-**Lemma (Scalings preserve a split lattice).** If the lattice of $x$ splits along $X$ at $w \neq \bar w$, and $z$ is an integral unitary adele equal to $1$ off $w$ and $\bar w$, then $x^{-1}\,\iota(z)\,x$ is integral and trivial off $w$, $\bar w$. Here $\iota(z)$ scales $X$ by $z$ and fixes the string.
+**Lemma (Scalings preserve a split lattice).** If the lattice of $x$ splits along $X$ at $w \neq \bar w$, and $z$ is an integral unitary adele equal to $1$ off $w$ and $\bar w$, then $x^{-1}\,\iota(z)\,x$ is integral and trivial off $w$, $\bar w$.
 
 Lean: `New.Grading.LatticeSplitsAt.conj_scalarFin_mem`.
 
@@ -75,7 +75,7 @@ Lean: `New.Data.unfoldStage_eq_zero_of_scalingGenerator`, `New.Data.unfoldStage_
 
 *Proof.* (1) Replace $(\xi, y)$ at the index $2j+2$ by $(a, x)$. By Section 5, $\mathcal{W}_{2j+2}(\gamma(a,x))$ is the source function of $\Theta_{j+1}\varphi$ at a form $l$ that does not depend on $\varphi$. By the invariance of the evaluated data, $(1, z_w)$ fixes the last datum, and the lifts commute with the central action. So the value does not change if $\varphi$ is translated by $z_w$, or by $z_w^i$. The mean over $i$ is the value at the sum of the translates, which is $0$, and $N - 1 \neq 0$. (2) The place $w$ is not chosen and is not in $\vartheta.Q$ (Lean: `New.Data.notMem_Q_of_mem_piNPlaces`), so the level is maximal above $w$, and the scaling lemma gives the hypothesis of (1). $\square$
 
-**Remark (Formalization).** The chosen scaling `New.Data.scalingGenerator` is defined with `choose`. The theorem uses only its specified properties: it is integral, equal to $1$ off $w$ and $\bar w$, and of order $N - 1$ modulo $w$.
+**Remark (Formalization).** The scaling `New.Data.scalingGenerator` is a `choose` object. Only its specified properties are used.
 
 **Theorem (Support).** Let $\varphi$ be ramified, let $y_0$ lie in the chosen level, and let $k + 1 \leq 2\varrho + 1$. Suppose $\mathcal{W}_{k+1}(a, x) \neq 0$, and let $r'$ be a finite point of the Bessel group of $\mathsf{Y}_{k+1}$ such that the lattice of $r' x$ is graded. Then $r'x$ has the bounds with $q$ and $k + 1$:
 
@@ -83,4 +83,4 @@ $$\bar q^{\,k+1}\Lambda^- \subseteq \Lambda'^-, \qquad q^{k+1}\Lambda'^- \subset
 
 Lean: `New.Data.hasLatticeBounds_of_unfoldStage_ne_zero`.
 
-*Proof.* Strong induction on $k$. As $\mathcal{W}_{k+1}(a, x)$ is an integral that is not $0$, there is $\gamma$ with $\mathcal{W}_k(\gamma) \neq 0$ and a nonzero constant term at $\gamma g_k$ and $(a, x)$. The orbit of the finite part of $\gamma g_k$ is bounded with $k$: for $k = 0$ because $y_0$ is in the chosen level, which lies in the standard level (Lean: `New.Grading.SpansLattice.hasBoundedOrbit_zero`), and for $k > 0$ by the induction hypothesis, since every orbit has a graded point (Lean: `New.Grading.HasBoundedOrbit.of_forall`). The frequency theorem gives the second hypothesis of the sandwich lemma, and the sandwich lemma gives the lower bound with $k + 1$. The proposition gives both bounds, or a split at a place of $\pi_N$ with $k + 1$ even. The split case contradicts $\mathcal{W}_{k+1}(a, x) \neq 0$ by the vanishing theorem. $\square$
+*Proof.* Strong induction on $k$. As the integral $\mathcal{W}_{k+1}(a, x)$ is not $0$, there is $\gamma$ with $\mathcal{W}_k(\gamma) \neq 0$ and a nonzero constant term at $\gamma g_k$ and $(a, x)$. The orbit of the finite part of $\gamma g_k$ is bounded with $k$: for $k = 0$ because $y_0$ is in the chosen level, which lies in the standard level (Lean: `New.Grading.SpansLattice.hasBoundedOrbit_zero`), and for $k > 0$ by the induction hypothesis, since every orbit has a graded point (Lean: `New.Grading.HasBoundedOrbit.of_forall`). The frequency theorem and the sandwich lemma give the lower bound with $k + 1$. The proposition gives both bounds, or a split at a place of $\pi_N$ with $k + 1$ even. The split case contradicts $\mathcal{W}_{k+1}(a, x) \neq 0$ by the vanishing theorem. $\square$
