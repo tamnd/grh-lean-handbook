@@ -124,7 +124,7 @@ Lean: `New.Data.heightLe_chainDeterminant_one_div` (New/Determinant/Twist/LongFo
 
 1. The scalar. By the lemma on the scalar of the chain, the family $s(\theta(\iota))^{-1}$ has height at most $m\,m\,t\,x_1$. The sizes give $m\,m\,t\,x_1 \leq b$. So it has height at most $b$. Its $d$-th power has height at most $d\,b$.
 2. The single lifts. The product over $j \in \{1, \dots, m\}$ of the $m$ families has height at most the sum of the $m$ bounds. The set has $m$ elements, so the sum is
-$$m\cdot d\Bigl(\frac{fa\log^4 b}{m} - k\cdot\mathrm{directionAmount}\Bigr) = d\,\bigl(fa\log^4 b - m k\cdot\mathrm{directionAmount}\bigr) = d\,\bigl(fa\log^4 b - \mathrm{mainAmount}\bigr),$$
+$$\begin{aligned} m\cdot d\Bigl(\frac{fa\log^4 b}{m} - k\cdot\mathrm{directionAmount}\Bigr) &= d\,\bigl(fa\log^4 b - m k\cdot\mathrm{directionAmount}\bigr) \\ &= d\,\bigl(fa\log^4 b - \mathrm{mainAmount}\bigr), \end{aligned}$$
 as $m \neq 0$ and $\mathrm{mainAmount} = m k\cdot\mathrm{directionAmount}$.
 3. The product. The product of the two families has height at most $d\,b + d(fa\log^4 b - \mathrm{mainAmount}) = d(b + fa\log^4 b - \mathrm{mainAmount})$. By the inverted factorization at $\vartheta = \theta(\iota)$, this product is the family $Z(1)/Z(\theta(\iota))$.
 
