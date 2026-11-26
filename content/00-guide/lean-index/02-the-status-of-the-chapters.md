@@ -13,10 +13,10 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 
 | Vol. | Ch. | Title | Status | Words |
 |---|---|---|---|---|
-| 0 | 1 | Preface | planned | 0 |
-| 0 | 2 | The claim and its status | drafted | 9,434 |
+| 0 | 1 | Preface | drafted | 3,917 |
+| 0 | 2 | The claim and its status | drafted | 9,449 |
 | 0 | 3 | The statements | drafted | 11,079 |
-| 0 | 4 | How to read this book | planned | 0 |
+| 0 | 4 | How to read this book | drafted | 9,392 |
 | 0 | 5 | Notation and conventions | drafted | 10,046 |
 | 0 | 6 | The table of sizes | drafted | 12,911 |
 | 0 | 7 | Reading the Lean | drafted | 14,522 |
@@ -38,7 +38,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 2 | 1 | Dirichlet L-functions and zero symmetry | drafted | 9,245 |
 | 2 | 2 | Polar functions and the explicit formula | drafted | 8,378 |
 | 2 | 3 | Landau's theorem | drafted | 8,820 |
-| 2 | 4 | The prime number theorem in progressions | planned | 0 |
+| 2 | 4 | The prime number theorem in progressions | drafted | 11,927 |
 | 2 | 5 | Primes in windows | planned | 0 |
 | 2 | 6 | Pólya-Vinogradov and quadratic twists | planned | 0 |
 | 2 | 7 | Sets with no three-term progressions | planned | 0 |
@@ -47,7 +47,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 3 | 3 | Local duality and the Greenberg-Wiles count | planned | 0 |
 | 3 | 4 | Odd classes over cyclotomic fields | planned | 0 |
 | 3 | 5 | CM elliptic curves | planned | 0 |
-| 4 | 1 | Adeles and hermitian spaces | planned | 0 |
+| 4 | 1 | Adeles and hermitian spaces | drafted | 12,742 |
 | 4 | 2 | Quotients and reduction theory | planned | 0 |
 | 4 | 3 | Automorphic forms on unitary groups | planned | 0 |
 | 4 | 4 | A simple trace formula | planned | 0 |

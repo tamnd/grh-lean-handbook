@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+## v0.1.8
+
+New chapters:
+
+- Volume 0, chapter 1, Preface (#61).
+- Volume 0, chapter 10, Glossary and index of Lean names (#63). The index lists the Lean names that the written chapters cite, and it is rebuilt at each release (#64).
+- Volume 2, chapter 4, The prime number theorem in progressions (#60).
+- Volume 4, chapter 1, Adeles and hermitian spaces (#65). This is the first chapter of Volume 4 in a release.
+
+Fix: one file count for the source in Volume 0 (#62).
+
+Volume 0 now has 9 of its 10 chapters. Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.7
 
 New chapters:

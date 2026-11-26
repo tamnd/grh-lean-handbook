@@ -9,31 +9,53 @@ generated_by: scripts/lean_index.py
 
 ## Other names, M to Z
 
-This section has the 197 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+This section has the 277 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
 
 - `New.map_star_CM`: `Lib/Adelic/Adeles/Basic.lean`, [line 387](lean:Lib/Adelic/Adeles/Basic.lean#L387). Cited in [Chapter](/chapter/cm-fields/).
 - `New.map_star_complex`: `Lib/Adelic/Adeles/Basic.lean`, [line 383](lean:Lib/Adelic/Adeles/Basic.lean#L383). Cited in [Chapter](/chapter/cm-fields/).
+- `New.maxCompact`: `Lib/Adelic/Witt/IwasawaDecomposition.lean`, [line 72](lean:Lib/Adelic/Witt/IwasawaDecomposition.lean#L72). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.mellin_thetaSeries`: `Lib/Analytic/DirichletTheta.lean`, [line 231](lean:Lib/Analytic/DirichletTheta.lean#L231). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.mellin_thetaSeries_moebius`: `Lib/Analytic/DirichletTheta.lean`, [line 243](lean:Lib/Analytic/DirichletTheta.lean#L243). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.mem_integrableExpSet_of_summable_taylor`: `Lib/Analytic/Landau.lean`, [line 47](lean:Lib/Analytic/Landau.lean#L47). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
 - `New.mem_placeOfEmb`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 424](lean:Lib/ClassField/Places/ValuationSubrings.lean#L424). Cited in [Chapter](/chapter/cm-fields/).
+- `New.mem_ratAdeles_of_stdAddChar_eq_one`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 309](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L309). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.mem_star_place`: `Lib/Adelic/Adeles/Basic.lean`, [line 401](lean:Lib/Adelic/Adeles/Basic.lean#L401). Cited in [Chapter](/chapter/cm-fields/).
+- `New.mem_stdLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 380](lean:Lib/Adelic/Unitary/Defs.lean#L380). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.mem_Ô`: `Lib/Adelic/Adeles/Basic.lean`, [line 182](lean:Lib/Adelic/Adeles/Basic.lean#L182). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.modEq_orderOf_of_div_pow_eq`: `New/Reduction/Data/Existence.lean`, [line 154](lean:New/Reduction/Data/Existence.lean#L154). Cited in [Chapter](/chapter/data-exist/).
 - `New.mul_lt_l₀`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 92](lean:New/Reduction/Data/FieldsAndPlaces.lean#L92). Cited in [Chapter](/chapter/notation/).
 - `New.mul_rank_lt_two_pow`: `New/Reduction/Data/Existence.lean`, [line 405](lean:New/Reduction/Data/Existence.lean#L405). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-exist/).
 - `New.natFloor_rpow_le_two_mul_rpow`: `New/Reduction/OneSidedBound.lean`, [line 170](lean:New/Reduction/OneSidedBound.lean#L170). Cited in [Chapter](/chapter/main-inequality/).
+- `New.norm_charMean_le_one`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 96](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L96). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_deriv_regularL_le`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 367](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L367). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.norm_det_formGram_le`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 116](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L116). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.norm_det_mul_det_gram_mul_det_le_one`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 77](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L77). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.norm_det_pairing_sq_le`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 129](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L129). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.norm_gaussianTheta_char_le`: `Lib/Analytic/DirichletTheta.lean`, [line 420](lean:Lib/Analytic/DirichletTheta.lean#L420). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.norm_gaussSum_of_isPrimitive`: `Lib/Analytic/PolyaVinogradov.lean`, [line 29](lean:Lib/Analytic/PolyaVinogradov.lean#L29). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.norm_integral_mul_cpow_le`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 50](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L50). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_iteratedDeriv_dslope_le`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 166](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L166). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_logDeriv_entireL_le`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 163](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L163). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_logDeriv_regularL_le`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 111](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L111). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_LSeries_char_le`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 152](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L152). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_LSeries_le_mul_norm_regularL`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 280](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L280). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_regularL_le_linear`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 213](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L213). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_regularL_le_sq`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 297](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L297). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_sum_char_sub_le`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 120](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L120). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_taylorCoeff_dslope_le`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 192](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L192). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_taylorCoeff_dslope_le_inv_pow`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 292](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L292). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_taylorCoeff_transform_sub_le`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 119](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L119). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_taylorCoeff_transform_sub_le_of_lipschitz`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 244](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L244). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.norm_thetaSeries_inv`: `Lib/Analytic/DirichletTheta.lean`, [line 399](lean:Lib/Analytic/DirichletTheta.lean#L399). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.norm_thetaSeries_le`: `Lib/Analytic/DirichletTheta.lean`, [line 141](lean:Lib/Analytic/DirichletTheta.lean#L141). Cited in [Chapter](/chapter/dirichlet-l-functions/).
+- `New.normNegOneIdele`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 518](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L518). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.OddPart.LFunction_neg_nat_eq_zero_iff`: `Lib/Cyclotomic/Voronoi.lean`, [line 153](lean:Lib/Cyclotomic/Voronoi.lean#L153). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.ofReal_re_logDerivMean_one`: `New/Reduction/Zeros/PrimeError.lean`, [line 335](lean:New/Reduction/Zeros/PrimeError.lean#L335). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.ofSplitPlace`: `Lib/Adelic/Unitary/Defs.lean`, [line 317](lean:Lib/Adelic/Unitary/Defs.lean#L317). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.one_le_prod_norm_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 254](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L254). Cited in [Chapter](/chapter/cm-fields/).
 - `New.one_le_rootDiscr`: `New/Reduction/Data/AdmissibleData.lean`, [line 277](lean:New/Reduction/Data/AdmissibleData.lean#L277). Cited in [Chapter](/chapter/cm-fields/).
 - `New.one_sub_chiK_mem_Icc`: `New/Reduction/Zeros/PrimeError.lean`, [line 70](lean:New/Reduction/Zeros/PrimeError.lean#L70). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.one_sub_le_re_and_norm_le_of_mem_closedBall`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 281](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L281). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.Parameters`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 64](lean:New/Reduction/Data/FieldsAndPlaces.lean#L64). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.bigOmega`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 204](lean:New/Reduction/Data/FieldsAndPlaces.lean#L204). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.card_placeClass_eq_one_eq_towerDeg`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 362](lean:New/Reduction/Data/FieldsAndPlaces.lean#L362). Cited in [Chapter](/chapter/fields-places-twists/).
@@ -88,12 +110,13 @@ This section has the 197 cited names `New.X` outside the namespace `New.Data` wi
 - `New.Parameters.vacuumBoundConst`: `New/Derivatives/Vacuum/IntegralVacuum.lean`, [line 280](lean:New/Derivatives/Vacuum/IntegralVacuum.lean#L280). Cited in [Chapter](/chapter/notation/).
 - `New.Parameters.ζ`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 296](lean:New/Reduction/Data/FieldsAndPlaces.lean#L296). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.Φ`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 200](lean:New/Reduction/Data/FieldsAndPlaces.lean#L200). Cited in [Chapter](/chapter/notation/).
-- `New.PlaceEmbedding`: `Lib/Adelic/Adeles/Basic.lean`, [line 65](lean:Lib/Adelic/Adeles/Basic.lean#L65). Cited in [Chapter](/chapter/cm-fields/).
+- `New.PlaceEmbedding`: `Lib/Adelic/Adeles/Basic.lean`, [line 65](lean:Lib/Adelic/Adeles/Basic.lean#L65). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.placeOfEmb`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 405](lean:Lib/ClassField/Places/ValuationSubrings.lean#L405). Cited in [Chapter](/chapter/cm-fields/).
 - `New.placeOfEmb_comp_star`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 563](lean:Lib/ClassField/Places/ValuationSubrings.lean#L563). Cited in [Chapter](/chapter/cm-fields/).
 - `New.placeOver`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 453](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L453). Cited in [Chapter](/chapter/cm-fields/).
 - `New.poisson_summation_gaussianMonomial`: `Lib/Analytic/DirichletTheta.lean`, [line 267](lean:Lib/Analytic/DirichletTheta.lean#L267). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.pow_classNumber_mem_principal_sup`: `Lib/ClassField/Places/Ideles.lean`, [line 319](lean:Lib/ClassField/Places/Ideles.lean#L319). Cited in [Chapter](/chapter/cm-fields/).
+- `New.pow_three_le_mul_norm_regularL_pow`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 43](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L43). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.PrimePadicIso`: `New/Reduction/Lattices/Heights.lean`, [line 30](lean:New/Reduction/Lattices/Heights.lean#L30). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/regular-families-plan/).
 - `New.PrimePadicIso.Carries`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 75](lean:New/Reduction/Lattices/TwistedLattice.lean#L75). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.PrimePadicIso.Carries.fromBlocks`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 86](lean:New/Reduction/Lattices/TwistedLattice.lean#L86). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -119,10 +142,14 @@ This section has the 197 cited names `New.X` outside the namespace `New.Data` wi
 - `New.quadTwist`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 64](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L64). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.quadTwist_apply`: `Lib/Analytic/EntireLFunction.lean`, [line 44](lean:Lib/Analytic/EntireLFunction.lean#L44). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.quadTwist_ne_one`: `Lib/Analytic/EntireLFunction.lean`, [line 56](lean:Lib/Analytic/EntireLFunction.lean#L56). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.quasiReflection`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 89](lean:Lib/Adelic/Witt/WittTheorem.lean#L89). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.quasiReflection_mulVec`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 104](lean:Lib/Adelic/Witt/WittTheorem.lean#L104). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.quotMean`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 703](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L703). Cited in [Chapter](/chapter/notation/).
 - `New.re_coeff_one_sub_sum_tupleIdem_le`: `New/Spanning/MainTerm/BadTypes.lean`, [line 228](lean:New/Spanning/MainTerm/BadTypes.lean#L228). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.re_logDerivMean_one`: `New/Reduction/Zeros/PrimeError.lean`, [line 166](lean:New/Reduction/Zeros/PrimeError.lean#L166). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/prime-sums/).
 - `New.re_logDerivMean_one_eq_add_re_logDeriv`: `New/Reduction/Zeros/PrimeError.lean`, [line 151](lean:New/Reduction/Zeros/PrimeError.lean#L151). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.regularL`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 177](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L177). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.regularL_eq`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 191](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L191). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.rootDiscr_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 284](lean:New/Reduction/Data/AdmissibleData.lean#L284). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/cm-fields/).
 - `New.Selmer.add_denominatorError_le_mul_clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 140](lean:New/Congruences/FirstOrder/TraceRelations.lean#L140). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 128](lean:New/Congruences/FirstOrder/TraceRelations.lean#L128). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -164,15 +191,51 @@ This section has the 197 cited names `New.X` outside the namespace `New.Data` wi
 - `New.Selmer.sum_localDefectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 137](lean:New/Congruences/FitTwistsExist.lean#L137). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_padicValNat_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 65](lean:New/Congruences/FitTwistsExist.lean#L65). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.twistError`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 307](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L307). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.signedSpace`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 524](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L524). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.signMatrix`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 159](lean:Lib/General/Groups/CongruenceSubgroups.lean#L159). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space`: `Lib/Adelic/Unitary/Defs.lean`, [line 498](lean:Lib/Adelic/Unitary/Defs.lean#L498). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.baseLattice`: `Lib/Adelic/Unitary/Defs.lean`, [line 537](lean:Lib/Adelic/Unitary/Defs.lean#L537). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.discreteTopology_Gamma`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 110](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L110). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.exists_splitting`: `Lib/Adelic/Witt/IwasawaDecomposition.lean`, [line 174](lean:Lib/Adelic/Witt/IwasawaDecomposition.lean#L174). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.exists_x_eq_and_ratEmbed_conj_eq`: `Lib/Adelic/Landherr.lean`, [line 461](lean:Lib/Adelic/Landherr.lean#L461). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.gram_point`: `Lib/Adelic/Unitary/Defs.lean`, [line 504](lean:Lib/Adelic/Unitary/Defs.lean#L504). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.isHermitian_J`: `Lib/Adelic/Unitary/GramMatrix.lean`, [line 98](lean:Lib/Adelic/Unitary/GramMatrix.lean#L98). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.isUnit_J`: `Lib/Adelic/Unitary/GramMatrix.lean`, [line 81](lean:Lib/Adelic/Unitary/GramMatrix.lean#L81). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.landherr`: `Lib/Adelic/Landherr.lean`, [line 438](lean:Lib/Adelic/Landherr.lean#L438). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.map_J`: `Lib/Adelic/Unitary/GramMatrix.lean`, [line 77](lean:Lib/Adelic/Unitary/GramMatrix.lean#L77). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.move`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 568](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L568). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.neg`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 558](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L558). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.ratEmbed`: `Lib/Adelic/Unitary/Defs.lean`, [line 515](lean:Lib/Adelic/Unitary/Defs.lean#L515). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 289](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L289). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting.exists_eq_radicalElement_mul_levi_mul_isAdapted`: `Lib/Adelic/Witt/IwasawaDecomposition.lean`, [line 628](lean:Lib/Adelic/Witt/IwasawaDecomposition.lean#L628). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting.exists_mem_maxCompact_actsOnFrame`: `Lib/Adelic/Witt/IwasawaDecomposition.lean`, [line 525](lean:Lib/Adelic/Witt/IwasawaDecomposition.lean#L525). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting.IsAdapted`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 881](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L881). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting.iwasawa`: `Lib/Adelic/Witt/IwasawaDecomposition.lean`, [line 614](lean:Lib/Adelic/Witt/IwasawaDecomposition.lean#L614). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting.levi`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 613](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L613). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Splitting.radicalElement`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 675](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L675). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.sum`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 540](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L540). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.toRatCoords`: `Lib/Adelic/Unitary/Defs.lean`, [line 511](lean:Lib/Adelic/Unitary/Defs.lean#L511). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.weak_approximation`: `Lib/Adelic/Unitary/WeakApproximation.lean`, [line 366](lean:Lib/Adelic/Unitary/WeakApproximation.lean#L366). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.witt`: `Lib/Adelic/Unitary/RationalPoints.lean`, [line 173](lean:Lib/Adelic/Unitary/RationalPoints.lean#L173). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Γ`: `Lib/Adelic/Unitary/Defs.lean`, [line 522](lean:Lib/Adelic/Unitary/Defs.lean#L522). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.Γf`: `Lib/Adelic/Unitary/Defs.lean`, [line 526](lean:Lib/Adelic/Unitary/Defs.lean#L526). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.star_inequality`: `New/Reduction/MainInequality.lean`, [line 87](lean:New/Reduction/MainInequality.lean#L87). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/lattice-and-prime-sum/), [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
+- `New.stdAddChar`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 156](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L156). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.stdAddChar_toAdele`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 276](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L276). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.stdForm`: `Lib/Adelic/Unitary/Defs.lean`, [line 245](lean:Lib/Adelic/Unitary/Defs.lean#L245). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.stdLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 228](lean:Lib/Adelic/Unitary/Defs.lean#L228). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.stdLevelIndex`: `Lib/Adelic/Unitary/Defs.lean`, [line 403](lean:Lib/Adelic/Unitary/Defs.lean#L403). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.stdSpace`: `Lib/Adelic/Unitary/Defs.lean`, [line 550](lean:Lib/Adelic/Unitary/Defs.lean#L550). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.strong_approximation`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 455](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L455). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.sum_lambdaKResidueClass_mul_posPart`: `New/Reduction/PrimeSums.lean`, [line 45](lean:New/Reduction/PrimeSums.lean#L45). Cited in [Chapter](/chapter/prime-sums/).
+- `New.sum_range_char_add`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 108](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L108). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.tendsto_logDerivMean_residue`: `New/Reduction/Zeros/PrimeError.lean`, [line 387](lean:New/Reduction/Zeros/PrimeError.lean#L387). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.tendsto_primeRemainder`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 233](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L233). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/main-inequality/).
 - `New.tendsto_sub_mul_logDeriv_entireL_analyticOrderNatAt`: `Lib/Analytic/EntireLFunction.lean`, [line 180](lean:Lib/Analytic/EntireLFunction.lean#L180). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/polar-functions/).
 - `New.tendsto_sub_mul_logDerivMean`: `New/Reduction/Zeros/PrimeError.lean`, [line 363](lean:New/Reduction/Zeros/PrimeError.lean#L363). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/weighted-prime-remainder/).
 - `New.tendsto_sub_mul_of_continuousAt`: `Lib/Analytic/EntireLFunction.lean`, [line 163](lean:Lib/Analytic/EntireLFunction.lean#L163). Cited in [Chapter](/chapter/polar-functions/).
 - `New.thetaSeries`: `Lib/Analytic/DirichletTheta.lean`, [line 35](lean:Lib/Analytic/DirichletTheta.lean#L35). Cited in [Chapter](/chapter/dirichlet-l-functions/).
-- `New.toAdele`: `Lib/Adelic/Adeles/Basic.lean`, [line 107](lean:Lib/Adelic/Adeles/Basic.lean#L107). Cited in [Chapter](/chapter/cm-fields/).
+- `New.toAdele`: `Lib/Adelic/Adeles/Basic.lean`, [line 107](lean:Lib/Adelic/Adeles/Basic.lean#L107). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.towerDeg`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 103](lean:New/Reduction/Data/FieldsAndPlaces.lean#L103). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.towerDeg_eq`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 106](lean:New/Reduction/Data/FieldsAndPlaces.lean#L106). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.trace_eq_sum_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 265](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L265). Cited in [Chapter](/chapter/cm-fields/).
@@ -201,10 +264,27 @@ This section has the 197 cited names `New.X` outside the namespace `New.Data` wi
 - `New.TwistedLattice.volume_eq_det_adjoint_comp`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 359](lean:New/Reduction/Lattices/TwistedLattice.lean#L359). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.TwistedLattice.volume_ne_zero`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 363](lean:New/Reduction/Lattices/TwistedLattice.lean#L363). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/).
 - `New.two_pow_le_of_pow_eq_one`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 468](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L468). Cited in [Chapter](/chapter/data-exist/).
+- `New.U`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 302](lean:Lib/General/Groups/CongruenceSubgroups.lean#L302). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.U.hasse_principle_coboundary`: `Lib/Adelic/Landherr.lean`, [line 536](lean:Lib/Adelic/Landherr.lean#L536). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.uniformizer`: `Lib/Adelic/Adeles/Basic.lean`, [line 149](lean:Lib/Adelic/Adeles/Basic.lean#L149). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.USign`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 309](lean:Lib/General/Groups/CongruenceSubgroups.lean#L309). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.v_uniformizer`: `Lib/Adelic/Adeles/Basic.lean`, [line 154](lean:Lib/Adelic/Adeles/Basic.lean#L154). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.Variety.classAut_eq_bot`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 986](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L986). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.volume_stdLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 486](lean:Lib/Adelic/Unitary/Defs.lean#L486). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.volume_Ô`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 193](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L193). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.volÔ`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 128](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L128). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Weil.normNegOne`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 497](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L497). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.WeilData.hasWeight_upsilonU1_zpow`: `Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean`, [line 148](lean:Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean#L148). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.witt`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 281](lean:Lib/Adelic/Witt/WittTheorem.lean#L281). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.witt_of_quasiReflection_mem`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 213](lean:Lib/Adelic/Witt/WittTheorem.lean#L213). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.witt_Ô`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 510](lean:Lib/Adelic/Witt/WittTheorem.lean#L510). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.zero_density_quadTwist`: `Lib/Analytic/QuadraticTwist.lean`, [line 732](lean:Lib/Analytic/QuadraticTwist.lean#L732). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/landau-criterion/).
 - `New.zeros_on_line`: `New/Main.lean`, [line 28](lean:New/Main.lean#L28). Cited in [Chapter](/chapter/half-plane-to-line/).
 - `New.zeta_zeros_on_line`: `New/Main.lean`, [line 47](lean:New/Main.lean#L47). Cited in [Chapter](/chapter/half-plane-to-line/).
+- `New.Ô`: `Lib/Adelic/Adeles/Basic.lean`, [line 179](lean:Lib/Adelic/Adeles/Basic.lean#L179). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.ψf`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 143](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L143). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.ψf_coe`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 203](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L203). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.ψf_eq_one_of_mem`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 211](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L211). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.Ω`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 40](lean:Lib/ClassField/Places/GaloisDefs.lean#L40). Cited in [Chapter](/chapter/cm-fields/).
-- `New.𝔸`: `Lib/Adelic/Adeles/Basic.lean`, [line 100](lean:Lib/Adelic/Adeles/Basic.lean#L100). Cited in [Chapter](/chapter/cm-fields/).
+- `New.𝔸`: `Lib/Adelic/Adeles/Basic.lean`, [line 100](lean:Lib/Adelic/Adeles/Basic.lean#L100). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.𝔸f`: `Lib/Adelic/Adeles/Basic.lean`, [line 94](lean:Lib/Adelic/Adeles/Basic.lean#L94). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
