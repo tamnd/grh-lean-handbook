@@ -33,7 +33,7 @@ Lean: `New.gammaFactor_changeLevel` (Lib/Analytic/ZeroSymmetry.lean).
 
 *Proof.* The class of $-1$ is a unit modulo $q^*$ and modulo $q$. So $\chi(-1) = \psi(-1)$, and $\chi$ is even exactly when $\psi$ is even. Both gamma factors are then given by the same branch of the definition. $\square$
 
-### The completed L-function
+### Definition and analytic facts
 
 **Definition (Completed L-function).** Let $\chi$ be a character modulo $q$. The *completed L-function* of $\chi$ is the meromorphic function
 $$\Lambda(s, \chi) = G_\chi(s)\, L(s, \chi).$$
