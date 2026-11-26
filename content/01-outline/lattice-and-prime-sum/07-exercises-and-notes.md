@@ -21,9 +21,9 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* By the example of integral lattices, $\hat\mu_{\max}(\bar F) \leq 0$. The finite part of $h(\varphi)$ is $\leq 0$, and $\|\varphi\|_\infty = (v^{\mathsf T} G v)^{1/2}$. Directly: $v^{\mathsf T} G v$ is a positive integer.
 
-**Exercise 4.** In the proof of the main inequality (Section 5), suppose that $n = d_T$. Show that Step 4 gives $m\operatorname{rem} \leq 4L + 2I$ without the sign of the main amount. Then find where the proof uses $\mathrm{mainAmount} \geq 0$ when $n < d_T$.
+**Exercise 4.** In the proof of the main inequality (Section 5), suppose that $n = d_T$. Show that Step 4 gives $m\operatorname{rem} \leq 4L + 2I$ without the sign of the main amount. Then find where the proof uses $\mathrm{main} \geq 0$ when $n < d_T$.
 
-*Hint.* For $n < d_T$, the inequality of Theorem C contains $(d_T - n)\,\mathrm{mainAmount}$ on the left side. A nonnegative term on the left side of an upper bound for $n\,m\operatorname{rem}$ only helps.
+*Hint.* For $n < d_T$, the inequality of Theorem C contains $(d_T - n)\,\mathrm{main}$ on the left side. A nonnegative term on the left side of an upper bound for $n\,m\operatorname{rem}$ only helps.
 
 **Exercise 5.** Section 6 shows that $m \leq 2\sqrt x$ enters the bound $q_1 \leq x^{12}$ of [the data and its sizes](/chapter/data-and-sizes/). Suppose that $m \approx x^\theta$ with $\theta > 1/2$ and that $2^s = m^{22}$. Find the new bounds for $f$ and $q_1$ as powers of $x$. Then find one more bound of that chapter that uses the upper bound for $q_1$ or $f$.
 
@@ -37,7 +37,7 @@ The source cites some works on bounds for sums over primes by size against divis
 
 The slope inequality and its form with a filtration are due to Bost. The source cites Bost, *Algebraic leaves of algebraic foliations over number fields* (2001), and Gaudron, *Pentes des fibrés vectoriels adéliques sur un corps global* (2006), with no place in these works. It also cites Laurent, *Linear forms in two logarithms and interpolation determinants* (1994), for interpolation determinants: a determinant of values of functions at points is bounded above by analysis and below by the product formula. The proof of Theorem C has this shape. The source does not cite the exposé of Bost in the Séminaire Bourbaki on periods and isogenies, and this book does not use it.
 
-The source has no model cases. The head of the compact edition (New/Main.lean of grh-compact, lines 26 to 112) gives the same plan in other names: the main amount is `mainHeight` and the unit of loss is `budget`. It says that the saving $x^{-1/2}$ is $1/m$. Sections 3, 4 and 6 of this chapter are not in the source.
+The source has no model cases. The head of the compact edition (New/Main.lean of grh-compact, lines 27 to 115) gives the same plan in other names: the main amount is `mainHeight` and the unit of loss is `budget`. It says that the saving $x^{-1/2}$ is $1/m$. Sections 3, 4 and 6 of this chapter are not in the source.
 
 Theorem B is not a bound on the covolume. It gives the family of translates of the upper bound, and the dimension that Theorem C must fill. Only Theorem C is a lower bound (Section 5). Why $m$ has the size $\sqrt x$, and which comparison fails for a larger $m$, is open in the research notes of this book (research note b, §10, question 1).
 

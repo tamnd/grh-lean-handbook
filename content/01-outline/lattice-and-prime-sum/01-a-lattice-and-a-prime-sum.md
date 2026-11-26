@@ -13,15 +13,15 @@ This chapter explains the idea of the method of the source. It proves few result
 ### Where the chapter sits
 
 [The plan](/chapter/theorem-and-plan/) of the proof has three layers. At the top, [Landau's criterion](/chapter/landau-criterion/) turns a one-sided bound for a weighted sum over primes into the absence of zeros of L-functions in the half-plane $\operatorname{Re} s > 1/2$. The bound that it needs is
-$$R_{q_0}(y) \leq y^{-1/2 + \varepsilon} \qquad \text{for all large real } y,$$
-for each $\varepsilon > 0$, where $R_{q_0}$ is [the weighted prime remainder](/chapter/weighted-prime-remainder/). In the middle, the main inequality of the source gives this bound. At the bottom, Theorems A, B and C give the main inequality. This chapter explains why a lattice, a geometric object, can bound a sum over primes.
+$$R_{q_0}(y) \leq y^{-1/2 + \eta} \qquad \text{for all large real } y,$$
+for each $\eta > 0$, where $R_{q_0}$ is [the weighted prime remainder](/chapter/weighted-prime-remainder/). In the middle, the main inequality of the source gives this bound. At the bottom, Theorems A, B and C give the main inequality. This chapter explains why a lattice, a geometric object, can bound a sum over primes.
 
 ### The idea in one paragraph
 
-A nonzero integer has absolute value at least $1$. The argument has no other source of lower bounds. The source applies it, through the product formula, to a Gram determinant: the squared covolume of a family of $n$ vectors $y_1, \dots, y_n$ in a lattice of rank $d_T$, the space of target forms. There are two bounds for this one number.
+A nonzero integer has absolute value at least $1$. The argument has no other source of lower bounds. The source applies it, through the product formula, to a Gram determinant: the squared covolume of a family of $n$ vectors $y_1, \dots, y_n$ in a lattice of rank $d_T$, the space of target forms. There are two bounds for this one number. In them $\mathrm{main}$ is the main amount and $\operatorname{rem}$ is the total remainder of Section 5.
 
-1. The upper bound. The vectors are short. Theorem A gives forms whose squared length at every conjugate is at most $\exp(\mathrm{mainAmount} - m \operatorname{rem} + f a \log^4 b)$, and Theorem B says that the translates of these forms span almost all of the target. Hadamard's inequality bounds the squared covolume of $n$ short vectors by the product of their squared lengths: at most $\exp\bigl(n(\mathrm{mainAmount} - m \operatorname{rem} + f a \log^4 b)\bigr)$.
-2. The lower bound. The vectors are integral. Theorem C says that integral forms are long: the squared covolume, corrected by the index, is at least $\exp\bigl(d_T(\mathrm{mainAmount} - 3 f a \log^4 b)\bigr)$. Its proof is the product formula for one algebraic number.
+1. The upper bound. The vectors are short. Theorem A gives forms whose squared length at every conjugate is at most $\exp(\mathrm{main} - m \operatorname{rem} + f a \log^4 b)$, and Theorem B says that the translates of these forms span almost all of the target. Hadamard's inequality bounds the squared covolume of $n$ short vectors by the product of their squared lengths: at most $\exp\bigl(n(\mathrm{main} - m \operatorname{rem} + f a \log^4 b)\bigr)$.
+2. The lower bound. The vectors are integral. Theorem C says that integral forms are long: the squared covolume, corrected by the index, is at least $\exp\bigl(d_T(\mathrm{main} - 3 f a \log^4 b)\bigr)$. Its proof is the product formula for one algebraic number.
 
 The main amount is the same in both bounds. It is very large, at least $x^4 f a$. When $n$ is close to $d_T$, the two bounds give
 $$n \, m \operatorname{rem} \leq d_T \cdot (\text{errors}),$$
@@ -34,7 +34,7 @@ The prime sum enters the upper bound through divisibility. The forms of Theorem 
 Here are the objects of the paragraph above, in the words of the source. The exact definitions are in [the data and its sizes](/chapter/data-and-sizes/).
 
 - The data $D$ fix three scales $x \leq x_1 \leq b$, each enormous against the one before, and the long order $a = x b$.
-- The field $E = K(\zeta_{q_1})$, with $K = \mathbb{Q}(\sqrt{-d})$, has $f$ infinite places, and two sets $\Phi_a$ and $\Phi_b$ of them carry special weights.
+- The field $E = K(\zeta_{q_1})$, with $K = \mathbb{Q}(\sqrt{-d})$ and $q_1 = q_0 \cdot \mathrm{towerDeg}(s)$ for the tower exponent $s$ ([the fields, the places and the twists](/chapter/fields-places-twists/)), has $f$ infinite places, and two sets $\Phi_a$ and $\Phi_b$ of them carry special weights.
 - The number $m$ of theta lifts in a chain is a power of $2$ with $\sqrt x \leq m \leq 2\sqrt x$ ([the table of sizes](/chapter/data-and-sizes/#the-table-of-sizes)).
 - The target forms are a complex vector space of dimension $d_T$ with an integral structure at every prime: a twisted lattice ([twisted lattices](/chapter/twisted-lattices/)).
 - The main amount compares the size $s_\infty$ of a derivative with the prime sum $s_{\mathrm{fin}}$ that measures its divisibility (Section 5).

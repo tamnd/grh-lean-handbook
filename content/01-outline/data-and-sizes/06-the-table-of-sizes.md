@@ -18,7 +18,7 @@ This section collects every size of the data in one table, which later chapters 
 
 ### The table
 
-All bounds hold for every choice of data $D$. In the last column, a name without a namespace is in `New.Data`. The letters are those of Sections 2 to 5: $L = \log x$, $\Delta = 2r^8$, $\kappa$ is the weight of a place, $\kappa^{(i)}$ and $\kappa_j$ are the shifted weights, and $s_\infty$ is the jet size.
+All bounds hold for every choice of data $D$. In the last column, a name without a namespace is in `New.Data`. The letters are those of Sections 2 to 5: $\Delta = 2r^8$, $\kappa$ is the weight of a place, $\kappa^{(i)}$ and $\kappa_j$ are the shifted weights, and $s_\infty$ is the jet size.
 
 | Quantity | Size | Lean |
 |---|---|---|
@@ -58,7 +58,7 @@ All bounds hold for every choice of data $D$. In the last column, a name without
 | $N_-$ | $m\log b \leq \log N_- \leq 24 m \log b$ | `logLevelTarget_mem_Icc` |
 | $N$ | $m\log b \leq \log N \leq 30 m\log b$, $b^{101} \leq N$ | `log_N_mem_Icc`, instance |
 | $s_\infty(j)$, $j \leq a$ | $20 j\log b \leq s_\infty(j) \leq 25 j\log b$ | `jetSize_mem_Icc` |
-| $\mathrm{err}$ | $\mathrm{err} = f a \log^3 b$ | `errorUnit` |
+| $\mathrm{err}_0$ | $\mathrm{err}_0 = f a \log^3 b$ | `errorUnit` |
 
 The word "instance" means that the bound is an instance of `New.Data.HasLogBound`, which the next subsection explains. The rows for $\mathrm{rd}_E$, $h_E$ and $N_-$ are the three rows with an outside input: the theorem on the root discriminant (Volume 9), the bound for the class number by Minkowski's method, and the bounds for the root discriminant and the weights in the theorem on $N_-$.
 
@@ -101,10 +101,10 @@ The exponents are crude. The rule for sums adds $1$ at each step, and the rule f
 
 **Example (The automation at work).** Consider the row $k + t + 1 \leq \tfrac12\Delta$ (`New.Data.k_add_t_add_one_le_halfGap`). Instance search finds:
 
-1. the upper exponent $5L + 3$ of $k$ and the upper exponent $5L + 8$ of $t$;
-2. by the rule for sums, the upper exponent $\max(5L + 3, 5L + 8) + 1 = 5L + 9$ of $k + t$;
-3. by the same rule and the exponent $0$ of $1$, the upper exponent $\max(5L + 9, 0) + 1 = 5L + 10$ of $k + t + 1$;
-4. the lower exponent $5L$ of $r$, so the lower exponent $8 \cdot 5L = 40L$ of $\tfrac12\Delta = r^8$.
+1. the upper exponent $5 \log x + 3$ of $k$ and the upper exponent $5 \log x + 8$ of $t$;
+2. by the rule for sums, the upper exponent $\max(5 \log x + 3, 5 \log x + 8) + 1 = 5 \log x + 9$ of $k + t$;
+3. by the same rule and the exponent $0$ of $1$, the upper exponent $\max(5 \log x + 9, 0) + 1 = 5 \log x + 10$ of $k + t + 1$;
+4. the lower exponent $5 \log x$ of $r$, so the lower exponent $8 \cdot 5 \log x = 40 \log x$ of $\tfrac12\Delta = r^8$.
 
-The default argument must show $5L + 10 < 40L$. This holds since $L \geq 6.4 \cdot 10^{15}$ by the scale inequalities, and `grind` finds it. In the same way, the row for $n_m = k + m(t + 1)$ comes from the upper exponents $5L + 3$, $\tfrac12 L + 2$ and $5L + 8$ and gives $n_m \leq e^{5.5L + 12}$, while the lower exponents $5L - 2$, $\tfrac12 L$ and $5L$ give $n_m \geq e^{5.5 L}$.
+The default argument must show $5 \log x + 10 < 40 \log x$. This holds since $\log x \geq 6.4 \cdot 10^{15}$ by the scale inequalities, and `grind` finds it. In the same way, the row for $n_m = k + m(t + 1)$ comes from the upper exponents $5 \log x + 3$, $\tfrac12 \log x + 2$ and $5 \log x + 8$ and gives $n_m \leq e^{5.5 \log x + 12}$, while the lower exponents $5 \log x - 2$, $\tfrac12 \log x$ and $5 \log x$ give $n_m \geq e^{5.5 \log x}$.
 

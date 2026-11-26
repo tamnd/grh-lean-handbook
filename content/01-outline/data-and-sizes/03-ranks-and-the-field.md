@@ -36,7 +36,7 @@ Here $\sqrt x = \exp(\tfrac12 \log x)$ and $x^5 = \exp(5 \log x)$.
 
 Lean: `New.Data.m_mem`, `New.Data.r_mem`, `New.Data.exists_m_eq_two_pow`, `New.Data.exists_r_eq_three_pow`, `New.Data.towerExp_le`, `New.Data.dvd_natB` (New/Reduction/Data/AdmissibleData.lean).
 
-The number $m$ is the length of the chain of theta lifts. The number $r$ is the rank of the hermitian spaces $W_j$ of the target. The number $s$ is `New.Data.towerExp`. Property 3 says that $m$ is a power of $2$ with positive exponent and that $2^s = m^{22}$. The field of the data is $E = E(s)$. So the field grows with $x$, and its degree is tied to $m$.
+The number $m$ is the length of the chain of theta lifts. The number $r$ is the rank of the hermitian spaces $W_j$ of the target. Here $W_j$ is the diagonal hermitian space of rank $r$ over $E$ with the sign $+1$ on the first $\operatorname{posRank}(j) = k + j - 1$ basis numbers and $-1$ on the others (`New.Data.spaceW`, `New.Data.signsW`; Volume 0, [the notation](/chapter/notation/), Section 5). The number $s$ is `New.Data.towerExp`. Property 3 says that $m$ is a power of $2$ with positive exponent and that $2^s = m^{22}$. The field of the data is $E = E(s)$. So the field grows with $x$, and its degree is tied to $m$.
 
 Recall from [fields, places and twists](/chapter/fields-places-twists/) the numbers that $s$ determines:
 $$l_0 = 3^{\lfloor \log_3 s\rfloor + 4}, \qquad \operatorname{towerDeg}(s) = 3 l_0 \, 2^s, \qquad q_1 = q_0 \operatorname{towerDeg}(s), \qquad q_2 = (q_0 d)^{s + 6}.$$

@@ -18,10 +18,10 @@ This section collects the inequalities that the recipe needs into one definition
 
 ### Large scales
 
-**Definition (Large scale).** Let $P$ be parameters, $n \in \mathbb{N}$ and $y, W \in \mathbb{R}$. Let $h$ be the class number of $K = \mathbb{Q}(\sqrt{-d})$, and let $c_P$ be the constant of the parameters (see below). Then $W$ is a *large scale for $y$ with exponent $n$* if the following nine conditions hold:
+**Definition (Large scale).** Let $P$ be parameters, $n \in \mathbb{N}$ and $y, W \in \mathbb{R}$. Let $h$ be the class number of $K = \mathbb{Q}(\sqrt{-d})$, and let $C_P$ be the constant of the parameters (see below). Then $W$ is a *large scale for $y$ with exponent $n$* if the following nine conditions hold:
 
 1. $100\,(6 \log W + 1) \leq y$;
-2. $10^{12}\, c_P \leq \log W$;
+2. $10^{12}\, C_P \leq \log W$;
 3. $2 \cdot 10^6\, y \leq W$;
 4. $2h + 2 \leq W$;
 5. $0 < n$;
@@ -32,7 +32,7 @@ This section collects the inequalities that the recipe needs into one definition
 
 Lean: `New.Parameters.IsLargeScale` (New/Reduction/Data/Existence.lean).
 
-The constant $c_P$ is the sum of a bound for the conjugates of the integral vacuum, the number $2d + 6$, $q_0$, the absolute value of the constant $\gamma - \operatorname{Re} L'/L(1, \chi_K)$, and $\sum_w |\log |\Phi'(w)||$, where $\Phi$ is the cyclotomic polynomial of order $q_0$ and $w$ runs over its roots. It depends on $q_0$ and $d$ only. The chapter [the data and its sizes](/chapter/data-and-sizes/) explains where each part is used.
+The constant $C_P$ is the sum of a bound for the conjugates of the integral vacuum, the number $2d + 6$, $q_0$, the absolute value of the Chowla and Selberg constant $C_d = \gamma - \operatorname{Re} L'/L(1, \chi_K)$, and $\sum_w |\log |\Phi_{q_0}'(w)||$, where $\Phi_{q_0}$ is the cyclotomic polynomial of order $q_0$ and $w$ runs over its roots. It depends on $q_0$ and $d$ only. The chapter [the data and its sizes](/chapter/data-and-sizes/) explains where each part is used.
 
 The conditions say that $W$ is small against $x = e^y$ (condition 1), large against the parameters (conditions 2 and 4), and large against every fixed power of $y$ that the construction meets (conditions 3, 8 and 9). Condition 7 is the reason for the exponent $n$: it makes the modulus $q_2^2$ at most $W^n$. Conditions 8 and 9 are the hypotheses $(5184 y)^n \leq W$ and $7776 y n 2^n \leq W$ of [the sparse set from the ranks](/decl/New.Parameters.exists_isSparse_of_ranks/).
 
@@ -103,4 +103,4 @@ Lean: `New.Parameters.exists_prime_log_mem_Icc_mul_star_eq` (New/Reduction/Data/
 
 The last step shows that a prime $N \equiv 1 \pmod 4$ is $\beta\bar\beta$ for some integer $\beta$ of $E$. This is the cheapest way to find an element of norm $N$ in the sense of the data. The data ask for $\beta\bar\beta = N$ in $E$, not for a prime of $E$ of norm $N$ over $\mathbb{Q}$. The element $a + b'i$ already lies in $\mathbb{Q}(i) \subseteq E$.
 
-**Remark (Formalization).** Four points. First, the primes $p_i$ and the ideals $I_i$, $J_i$ are chosen with `choose`, and the pair $(i, j)$ is an existential witness of the pigeonhole step. The data record only the properties, so no later step depends on the choice. Second, the prime $N$ is found in one window of length $W$, which is shorter than the interval of length $\sqrt{\log b}$ that the data allow. The source uses $W \leq \sqrt{L}$ to pass from one to the other. Third, the weights enter only through $\log N_-$ and through the bounds $\kappa(\tau) \in [1, b]$. The weight off $\Phi_b$ is $\lfloor x b / x_1 \rfloor$, a natural-number quotient. It lies in $[1, b]$ when $1 \leq x \leq x_1 \leq b$, by `New.ite_mul_div_mem_Icc`: the quotient is at least $1$ since $xb \geq b \geq x_1$, and at most $b$ since $xb \leq x_1 b$. Fourth, some small steps of this section have their own names in the source: `New.Parameters.constantBound` is $c_P$; `New.log_floor_exp_mem_Icc` is the bound $\log x_1 \in [W - 1, W]$; `New.Parameters.IsLargeScale.exists_isLeast_dvd_log_log_mem_Icc` applies the lemma on $b$ with $q = q_1$ and also records $e^{\log b} = b$; `New.exists_ne_isPrincipal_mul` is the pigeonhole step; and `New.Parameters.exists_mul_star_eq_prime` is the sum of two squares.
+**Remark (Formalization).** Four points. First, the primes $p_i$ and the ideals $I_i$, $J_i$ are chosen with `choose`, and the pair $(i, j)$ is an existential witness of the pigeonhole step. The data record only the properties, so no later step depends on the choice. Second, the prime $N$ is found in one window of length $W$, which is shorter than the interval of length $\sqrt{\log b}$ that the data allow. The source uses $W \leq \sqrt{L}$ to pass from one to the other. Third, the weights enter only through $\log N_-$ and through the bounds $\kappa(\tau) \in [1, b]$. The weight off $\Phi_b$ is $\lfloor x b / x_1 \rfloor$, a natural-number quotient. It lies in $[1, b]$ when $1 \leq x \leq x_1 \leq b$, by `New.ite_mul_div_mem_Icc`: the quotient is at least $1$ since $xb \geq b \geq x_1$, and at most $b$ since $xb \leq x_1 b$. Fourth, some small steps of this section have their own names in the source: `New.Parameters.constantBound` is $C_P$; `New.log_floor_exp_mem_Icc` is the bound $\log x_1 \in [W - 1, W]$; `New.Parameters.IsLargeScale.exists_isLeast_dvd_log_log_mem_Icc` applies the lemma on $b$ with $q = q_1$ and also records $e^{\log b} = b$; `New.exists_ne_isPrincipal_mul` is the pigeonhole step; and `New.Parameters.exists_mul_star_eq_prime` is the sum of two squares.

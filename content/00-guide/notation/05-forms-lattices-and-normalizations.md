@@ -73,7 +73,7 @@ Lean: `New.Data.spaceY` (New/UpperBound/Objects/Rows.lean), `New.Data.spaceY_gra
 
 Lean: `New.Data.spaceW` (New/UpperBound/Objects/Rows.lean), `New.Data.signsW` (New/UpperBound/Objects/LabelsAndIndexTypes.lean).
 
-The number $k + j - 1$ is `D.posRank j`, and the basis numbers come from a fixed bijection of the index type with $\{0, \ldots, r - 1\}$. Volume 1 does not use the letters $W_j$ and $V$; it names only $Y_0$ and $Y_m$. The book uses $W_j$ and $V$ as the source does.
+The number $k + j - 1$ is `D.posRank j`, and the basis numbers come from a fixed bijection of the index type with $\{0, \ldots, r - 1\}$. The book uses $W_j$ and $V$ as the source does, and Volume 1 defines $W_j$ where it first uses it.
 
 ### Parameters, characters and twists
 
@@ -99,15 +99,15 @@ Lean: `New.Data.descentPair` (New/UpperBound/Objects/Rows.lean).
 
 ### Forms
 
-**Definition (Good forms and target forms).** The good forms on a space are the image of the idempotent $e_0 \in \mathbb{C}[\mathsf{G}]$ on the forms of principal level at the chosen places above $p_0$ and $p_1$. The target forms are the good forms on $Y_0$, and $d_0$ is their dimension over $\mathbb{C}$.
+**Definition (Good forms and target forms).** The good forms on a space are the image of the idempotent $e_0 \in \mathbb{C}[\mathsf{G}]$ on the forms of principal level at the chosen places above $p_0$ and $p_1$. The target forms are the good forms on $Y_0$, and $d_T$ is their dimension over $\mathbb{C}$.
 
 Lean: `New.Data.goodForms` (New/UpperBound/Objects/Rows.lean), `New.Data.targetForms` (New/UpperBound/Objects/Rows.lean), `New.Data.targetDim` (New/UpperBound/Objects/Rows.lean).
 
-The book writes $d_0$ for `D.targetDim`, since $d$ is the prime of the parameters. Volume 1 writes $\dim$ of the target forms in words.
+The book writes $d_T$ for `D.targetDim`, since $d$ is the prime of the parameters and $d_0 = q_0/2 - 1$ is the class of the primes $d$ in the proof of the main theorem. Volume 1 also writes $d_T$.
 
 ### Twisted lattices
 
-**Definition (Twisted lattice).** A twisted lattice on a complex vector space $V$, with twists $\xi \in T$ and a trivial twist $1$, is a family of linear maps $\Theta_\xi$ from $V$ to inner product spaces, in each of them a module of vectors integral at each $\iota$, and coordinates on the space of $\Theta_1$ in which the inner product has a positive definite rational matrix. If $\xi$ is allowed at the prime of $\iota$, the product of a vector integral at $\bar\iota$ and a vector integral at $\iota$ is integral at $\iota$.
+**Definition (Twisted lattice).** A twisted lattice on a complex vector space $V$ (any space here, not the space $V = I_{r+t}$ above), with twists $\xi \in T$ and a trivial twist $1$, is a family of linear maps $\Theta_\xi$ from $V$ to inner product spaces, in each of them a module of vectors integral at each $\iota$, and coordinates on the space of $\Theta_1$ in which the inner product has a positive definite rational matrix. If $\xi$ is allowed at the prime of $\iota$, the product of a vector integral at $\bar\iota$ and a vector integral at $\iota$ is integral at $\iota$.
 
 Lean: `New.TwistedLattice` (New/Reduction/Lattices/TwistedLattice.lean).
 
@@ -117,7 +117,7 @@ Here $\iota$ is a pair of a prime $\ell$ and a ring isomorphism $\mathbb{C} \to 
 
 Lean: `New.TwistedLattice.IndexLe` (New/Reduction/Lattices/TwistedLattice.lean), `New.TwistedLattice.CovolumeLe` (New/Reduction/Lattices/TwistedLattice.lean), `New.TwistedLattice.volume` (New/Reduction/Lattices/TwistedLattice.lean).
 
-The book writes $e(\ell)$ for the local loss; Volume 1 also writes $\delta_\ell$. In this section $\sigma$ is an automorphism of $\mathbb{C}$, not a place. Lean defines the volume as the square of the determinant norm of $\Theta_\xi$ (Mathlib's `LinearMap.normDet`), with a value in $\mathbb{C}$.
+The book writes $e(\ell)$ for the local loss, and so does Volume 1. In this section $\sigma$ is an automorphism of $\mathbb{C}$, not a place. Lean defines the volume as the square of the determinant norm of $\Theta_\xi$ (Mathlib's `LinearMap.normDet`), with a value in $\mathbb{C}$.
 
 **Definition (Height).** A family $y_\iota$ of complex numbers has height at most $c$ if there are $H \neq 0$, a real $\alpha$ and $h(\ell) \geq 0$ with $|\sigma H| \leq e^\alpha$ for all $\sigma$, $\|\iota(H y_\iota)\| \leq \ell^{h(\ell)}$ for all $\iota$ above $\ell$, and $\alpha + \sum_\ell h(\ell) \log \ell \leq c$.
 

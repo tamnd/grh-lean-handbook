@@ -40,7 +40,7 @@ Lean: `New.Data.exists_err_gaugeLe_compositeLift` (New/UpperBound/Divisibility/L
 
 Volume 9 proves this theorem in [divisibility prime by prime](/chapter/divisibility/). The proof takes the allowed losses of [the archimedean size](/chapter/archimedean-size/) as the numbers $\mathrm{err}(p)$. They are nonzero only at the small nonsplit primes and at $N$.
 
-**Definition (The divisibility errors).** The function $\mathrm{err} : \mathbb{N} \to \mathbb{R}$ is a choice of the numbers of the theorem on the divisibility of the composite lift.
+**Definition (The divisibility errors).** The function $p \mapsto \mathrm{err}(p)$, from $\mathbb{N}$ to $\mathbb{R}$, is a choice of the numbers of the theorem on the divisibility of the composite lift.
 
 Lean: `New.Data.divisibilityError` (New/Reduction/ShortAndEnough.lean).
 
@@ -50,7 +50,7 @@ Lean: `New.Data.divisibilityError_nonneg`, `New.Data.divisibilityError_eq_zero`,
 
 *Proof.* Each part is a part of the specification of the chosen function. $\square$
 
-**Remark (Formalization).** The definition reads `D.exists_err_gaugeLe_compositeLift.choose`. In Lean, `choose` applied to a proof of $\exists\, e, P(e)$ gives some $e$ with $P(e)$, and nothing else is known about it. Here the proof of existence names a witness, the allowed losses, but the definition does not unfold to it: the later proofs use only the four properties, through the lemmas above. So $\mathrm{err}$ has no formula. The choice is harmless: every statement of this chapter holds for every function with the four properties.
+**Remark (Formalization).** The definition reads `D.exists_err_gaugeLe_compositeLift.choose`. In Lean, `choose` applied to a proof of $\exists\, e, P(e)$ gives some $e$ with $P(e)$, and nothing else is known about it. Here the proof of existence names a witness, the allowed losses, but the definition does not unfold to it: the later proofs use only the four properties, through the lemmas above. So $\mathrm{err}(p)$ has no formula. The choice is harmless: every statement of this chapter holds for every function with the four properties.
 
 ### The gain factor
 
@@ -78,11 +78,11 @@ The term $b$ is the cost of the integer parts. It is far below $f a \log^3 b \ge
 
 ### The seesaw constant
 
-The second constant comes from the seesaw identity of Volume 9. Let $\mathcal{P}_{g,t}$ be the Poincaré map from forms on the space $X_0$ to forms on $Y_0$, built from a linear form $t$ on the values of forms on $X_0$ and an archimedean point $g$ of $U(Y_0)$. For a twist $\vartheta$, the *lower chain* $\iota_\vartheta$ is the composite of the $m$ lifts from forms on $Y_0$ to forms on $Y_m$.
+The second constant comes from the seesaw identity of Volume 9. Let $\mathcal{P}_{g,\omega}$ be the Poincaré map from forms on the space $X_0$ to forms on $Y_0$, built from a linear form $\omega$ on the values of forms on $X_0$ and an archimedean point $g$ of $U(Y_0)$. For a twist $\vartheta$, the *lower chain* $\iota_\vartheta$ is the composite of the $m$ lifts from forms on $Y_0$ to forms on $Y_m$.
 
-**Theorem (The seesaw identity).** For every linear form $t$ and every archimedean point $g$ there is a number $c \in \mathbb{C}^\times$ such that every twist $\vartheta$ has a chain datum $\Psi$ with
+**Theorem (The seesaw identity).** For every linear form $\omega$ and every archimedean point $g$ there is a number $c \in \mathbb{C}^\times$ such that every twist $\vartheta$ has a chain datum $\Psi$ with
 
-$$\iota_\vartheta(\mathcal{P}_{g,t}\varphi) = c \cdot B_\vartheta\varphi$$
+$$\iota_\vartheta(\mathcal{P}_{g,\omega}\varphi) = c \cdot B_\vartheta\varphi$$
 
 for every ramified source form $\varphi$, where $B_\vartheta$ is the composite lift with the datum $\Psi$.
 
@@ -94,11 +94,11 @@ Volume 9 proves it in [the seesaw identity, part 1](/chapter/seesaw-identity-1/)
 
 Lean: `New.Data.seesawConst` (New/Reduction/ShortAndEnough.lean).
 
-**Remark (Formalization).** The seesaw constant is chosen by `choose`, like $\mathrm{err}$. Its type is the group of units $\mathbb{C}^\times$, so it is nonzero by its type, and $c_{ss}^{-1}$ makes sense. This does not make the theta integrals behind it nonzero. In the proof of the seesaw identity the constant is $u^{-1}$ with $u = \mathrm{normUnit}(c_0 C / d)$, where $c_0$ comes from the unfolding of the lower chain, $C$ comes from the admissible combination of the seesaw datum, and $d$ is a positive integer, a power of the number of residue matrices. The function `normUnit` of Mathlib sends a nonzero element $a$ of a field to $a^{-1}$, and it sends $0$ to $1$. So if $c_0 C/d \neq 0$, then $c = c_0C/d$. If $c_0 C / d = 0$, then $u = 1$, the datum $\Psi$ has glued tensor $u c_0$ times the seesaw datum, which is $0$, and the identity holds with $c = 1$. In that case it carries no information. Theorem A does not need more. It uses the identity only to bound sizes and divisibility from above, and these bounds hold for any constant that satisfies the identity. The nonvanishing that the argument needs comes back on the determinant side, in Theorem C (Section 6).
+**Remark (Formalization).** The seesaw constant is chosen by `choose`, like the numbers $\mathrm{err}(p)$. Its type is the group of units $\mathbb{C}^\times$, so it is nonzero by its type, and $c_{ss}^{-1}$ makes sense. This does not make the theta integrals behind it nonzero. In the proof of the seesaw identity the constant is $u^{-1}$ with $u = \mathrm{normUnit}(c_0 C / d)$, where $c_0$ comes from the unfolding of the lower chain, $C$ comes from the admissible combination of the seesaw datum, and $d$ is a positive integer, a power of the number of residue matrices. The function `normUnit` of Mathlib sends a nonzero element $a$ of a field to $a^{-1}$, and it sends $0$ to $1$. So if $c_0 C/d \neq 0$, then $c = c_0C/d$. If $c_0 C / d = 0$, then $u = 1$, the datum $\Psi$ has glued tensor $u c_0$ times the seesaw datum, which is $0$, and the identity holds with $c = 1$. In that case it carries no information. Theorem A does not need more. It uses the identity only to bound sizes and divisibility from above, and these bounds hold for any constant that satisfies the identity. The nonvanishing that the argument needs comes back on the determinant side, in Theorem C (Section 6).
 
 ### The normalized map
 
-Let $\bar G$ act on the forms on $Y_0$, let $e_0$ be the central idempotent of $\mathbb{C}[\bar G]$ that projects onto the good part, and let $\mathcal{P} = \mathcal{P}_{g,t}$ be the Poincaré map for the Bessel data. The *good Poincaré map* of $s \in \bar G$ is $\#\bar G \cdot e_0\, s\, \mathcal{P}$, from all source forms to the target ([Theorem](/decl/New.Data.isSpread_goodPoincare/)). The factor $\#\bar G$ makes the coefficients of $\#\bar G \cdot e_0$ algebraic integers, so that the projection keeps integrality.
+Let $\bar G$ act on the forms on $Y_0$, let $e_0$ be the central idempotent of $\mathbb{C}[\bar G]$ that projects onto the good part, and let $\mathcal{P} = \mathcal{P}_{g,\omega}$ be the Poincaré map for the Bessel data. The *good Poincaré map* of $s \in \bar G$ is $\#\bar G \cdot e_0\, s\, \mathcal{P}$, from all source forms to the target ([Theorem](/decl/New.Data.isSpread_goodPoincare/)). The factor $\#\bar G$ makes the coefficients of $\#\bar G \cdot e_0$ algebraic integers, so that the projection keeps integrality.
 
 **Definition (The normalized Poincaré map).** For $s \in \bar G$, the map $s\mathfrak{p} : \mathrm{src} \to T$ is
 

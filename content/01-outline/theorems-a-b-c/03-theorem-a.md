@@ -21,19 +21,19 @@ Theorem A is the upper bound of the argument. Part (a) says that the source is s
 
 ### The statements
 
-Recall the main amount and the total remainder of [the prime sums](/chapter/prime-sums/). The main amount is $\mathrm{mainAmount} = m k \sum_\tau (s_\infty(\kappa(\tau)) - s_{\mathrm{fin}}(\kappa(\tau), \tau))$, summed over the infinite places $\tau$ of $E$, where $\kappa$ is the weight, $s_\infty(j) = \log j! + j\log(M/\Omega)$ is the size of a derivative of order $j$, and $s_{\mathrm{fin}}$ is the prime sum that measures its divisibility. The total remainder is $\mathrm{rem} = \sum_{\tau \in \Phi_a} (s_{\mathrm{fin}}(a, \tau) - s_{\mathrm{main}})$, summed over the $a$-places, with the main part $s_{\mathrm{main}}$ of the prime sums.
+Recall the main amount and the total remainder of [the prime sums](/chapter/prime-sums/). The main amount is $\mathrm{main} = m k \sum_\tau (s_\infty(\kappa(\tau)) - s_{\mathrm{fin}}(\kappa(\tau), \tau))$, summed over the infinite places $\tau$ of $E$, where $\kappa$ is the weight, $s_\infty(j) = \log j! + j\log(M/\Omega)$ is the size of a derivative of order $j$, and $s_{\mathrm{fin}}$ is the prime sum that measures its divisibility. The total remainder is $\mathrm{rem} = \sum_{\tau \in \Phi_a} (s_{\mathrm{fin}}(a, \tau) - s_{\mathrm{main}})$, summed over the $a$-places, with the main part $s_{\mathrm{main}}$ of the prime sums.
 
 **Theorem (Theorem A (a), short forms).** The span over $\mathbb{C}$ of the set of $\varphi \in \mathrm{src}_{\mathrm{int}}$ such that
 
-$$\|\Theta_1(s\mathfrak{p}\varphi)\|_\sigma^2 \leq \exp\bigl(\mathrm{mainAmount} - m \cdot \mathrm{rem} + f a \log^4 b\bigr)$$
+$$\|\Theta_1(s\mathfrak{p}\varphi)\|_\sigma^2 \leq \exp\bigl(\mathrm{main} - m \cdot \mathrm{rem} + f a \log^4 b\bigr)$$
 
 for every $s \in \bar G$ and every automorphism $\sigma$ of $\mathbb{C}$ is all of $\mathrm{src}$.
 
 Lean: `New.Data.span_short_integralRamified_eq_top` (New/Reduction/ShortAndEnough.lean).
 
-**Theorem (Theorem A (b), small index).** Let $t$ be a finite subset of $\bar G$, and let $y_1, \dots, y_n$ be target forms such that each $y_i$ is $s\mathfrak{p}\varphi$ for some $s \in t$ and some $\varphi \in \mathrm{src}_{\mathrm{int}}$. Then $y$ has index at most
+**Theorem (Theorem A (b), small index).** Let $\mathcal{T}$ be a finite subset of $\bar G$, and let $y_1, \dots, y_n$ be target forms such that each $y_i$ is $s\mathfrak{p}\varphi$ for some $s \in \mathcal{T}$ and some $\varphi \in \mathrm{src}_{\mathrm{int}}$. Then $y$ has index at most
 
-$$\#t \cdot \dim \mathrm{src} \cdot 2 f a \log^3 b$$
+$$\#\mathcal{T} \cdot \dim \mathrm{src} \cdot 2 f a \log^3 b$$
 
 in the target lattice.
 
@@ -51,7 +51,7 @@ Lean: `New.Data.span_isShort_ramifiedSourceForms_eq_top` (New/UpperBound/Size/Sh
 
 **Theorem (Size of the composite lift).** Let $\Psi$ be a chain datum for the trivial twist, let $\sigma$ be an automorphism of $\mathbb{C}$, let $\varphi$ be a source form, and let $B$ be real. Suppose that every value of $\sigma\varphi$ has squared Weyl norm at most $e^B$. Then every value of the $\sigma$-conjugate of $B_1\varphi$ has squared Weyl norm at most $\exp(B + \beta)$, where
 
-$$\beta = \mathrm{mainAmount} - m\cdot \mathrm{rem} + 2\sum_{p \in \mathcal{S}} \mathrm{gain}_p \log p + f a \log^3 b.$$
+$$\beta = \mathrm{main} - m\cdot \mathrm{rem} + 2\sum_{p \in \mathcal{S}} \mathrm{gain}_p \log p + f a \log^3 b.$$
 
 Lean: `New.Data.weylNormSq_compositeLift_le` (New/UpperBound/Size/ArchimedeanSize.lean).
 
@@ -84,17 +84,17 @@ Lean: `New.Data.indexLe_of_mem_image_normalizedPoincare` (New/Reduction/ShortAnd
 
 The gains cancel, and the exponent is at most
 
-$$\mathrm{mainAmount} - m\cdot\mathrm{rem} + x^{99} + 4 f a \log^3 b + 2b.$$
+$$\mathrm{main} - m\cdot\mathrm{rem} + x^{99} + 4 f a \log^3 b + 2b.$$
 
 The sizes give $x^{99} + 4 f a\log^3 b + 2b \leq f a\log^4 b$. $\square$
 
-*Proof of Theorem A (b).* Sort the family by translates. For each $s \in t$, the members of the form $s\mathfrak{p}\varphi$ have index at most $\dim\mathrm{src} \cdot 2 f a \log^3 b$ by the lemma on one translate. Index bounds add over a union of families ([twisted lattices](/chapter/twisted-lattices/)), so the whole family has index at most $\#t$ times this bound. $\square$
+*Proof of Theorem A (b).* Sort the family by translates. For each $s \in \mathcal{T}$, the members of the form $s\mathfrak{p}\varphi$ have index at most $\dim\mathrm{src} \cdot 2 f a \log^3 b$ by the lemma on one translate. Index bounds add over a union of families ([twisted lattices](/chapter/twisted-lattices/)), so the whole family has index at most $\#\mathcal{T}$ times this bound. $\square$
 
 ### What Theorem A costs
 
 Part (a) costs $f a \log^4 b$ per vector. The slack has three parts. The projection to the good part costs $x^{99}$. The short forms, the composite lift and the gains (twice) cost $f a\log^3 b$ each. The integer parts of the gains cost $2b$. All three are far below $f a \log^4 b$: the sizes give $x^{10^{12}} \leq b$, so $x^{99} < b$, and $b \leq a$.
 
-Part (b) costs $2 f a \log^3 b$ per dimension of the source and per translate. With the bound $\#t \dim\mathrm{src} \leq 5 d_T\log(1 + 2b^2)$ of Theorem B, the index of the family of the main inequality is at most $d_T \cdot 10\log(1 + 2b^2)\cdot f a\log^3 b$.
+Part (b) costs $2 f a \log^3 b$ per dimension of the source and per translate. With the bound $\#\mathcal{T} \dim\mathrm{src} \leq 5 d_T\log(1 + 2b^2)$ of Theorem B, the index of the family of the main inequality is at most $d_T \cdot 10\log(1 + 2b^2)\cdot f a\log^3 b$.
 
 ### The plan in Volume 9
 

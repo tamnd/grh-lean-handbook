@@ -57,7 +57,7 @@ For $j < m$ the source states the Gram matrix of $Y_j$ (`New.Data.spaceY_gram_eq
 
 ### The target forms
 
-Let $\mathsf{G} = \prod_w \mathrm{GL}_r(\mathbb{F}_w)$ be the product of the general linear groups over the residue fields $\mathbb{F}_w$ of the chosen places $w$ above the two level primes $p_0$ and $p_1$. For a hermitian space $V$ of the data, the *principal forms* on $V$ are the automorphic forms on $U(V)$ of a fixed parameter $\varsigma$ that are fixed by the principal level at the chosen places. The group $\mathsf{G}$ acts on them through integral lifts of its elements. The source fixes an element $e_0$ of the group algebra $\mathbb{C}[\mathsf{G}]$, a sum of idempotents over a set of good families.
+Let $\mathsf{G} = \prod_w \mathrm{GL}_r(\mathbb{F}_w)$ be the product of the general linear groups over the residue fields $\mathbb{F}_w$ of the chosen places $w$ above the two level primes $p_0$ and $p_1$. For a hermitian space $V$ of the data (in this section $V$ is any such space, for example $Y_0$ or a space $W_j$ of Section 5), the *principal forms* on $V$ are the automorphic forms on $U(V)$ of a fixed parameter $\varsigma$ that are fixed by the principal level at the chosen places. The group $\mathsf{G}$ acts on them through integral lifts of its elements. The source fixes an element $e_0$ of the group algebra $\mathbb{C}[\mathsf{G}]$, a sum of idempotents over a set of good families.
 
 **Definition (Good forms).** The good forms on $V$ are the image of $e_0$ acting on the principal forms on $V$.
 

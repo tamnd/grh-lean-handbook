@@ -9,7 +9,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## What the data need
 
-This chapter proves that the data of the argument exist. The main inequality of the source holds for every term $D$ of the type of data, and it bounds the prime remainder $R_{q_0}(x)$ at the length $x$ of $D$ (see [the plan](/chapter/theorem-and-plan/) and [the main inequality](/chapter/main-inequality/)). To get a bound at every large integer $x$, one needs, for each such $x$, data whose length is $x$ and whose other scales have an explicit size. The existence theorem gives exactly this. It is the last input to the one-sided bound $R_{q_0}(y) \leq y^{-1/2 + \varepsilon}$.
+This chapter proves that the data of the argument exist. The main inequality of the source holds for every term $D$ of the type of data, and it bounds the prime remainder $R_{q_0}(x)$ at the length $x$ of $D$ (see [the plan](/chapter/theorem-and-plan/) and [the main inequality](/chapter/main-inequality/)). To get a bound at every large integer $x$, one needs, for each such $x$, data whose length is $x$ and whose other scales have an explicit size. The existence theorem gives exactly this. It is the last input to the one-sided bound $R_{q_0}(y) \leq y^{-1/2 + \eta}$. Here $\eta > 0$ is the margin of that bound; in this chapter $\varepsilon$ is only the exponent of the scales.
 
 ### The demands
 
@@ -18,8 +18,8 @@ $$\operatorname{towerDeg}(s) = 3 l_0 2^s, \qquad q_1 = q_0 \operatorname{towerDe
 Let $E = K(\zeta_{q_1})$. Its infinite places $\Phi$ form a group isomorphic to $(\mathbb{Z}/q_1\mathbb{Z})^\times$. Data for $P$ consist of the following objects.
 
 1. **Scales.** Integers $x$, $x_1$, $b$ with the five scale inequalities
-$$10^{12} c_P \leq \log\log b, \quad (\log b)^{100} \leq x, \quad x^{10^6} \leq x_1, \quad x_1^{10^6} \leq b, \quad (\log x_1)^6 \leq \log b,$$
-where $c_P$ is a constant that depends on $q_0$ and $d$ only, and with $q_1 x_1 \mid b$.
+$$10^{12} C_P \leq \log\log b, \quad (\log b)^{100} \leq x, \quad x^{10^6} \leq x_1, \quad x_1^{10^6} \leq b, \quad (\log x_1)^6 \leq \log b,$$
+where $C_P$ is a constant that depends on $q_0$ and $d$ only, and with $q_1 x_1 \mid b$.
 2. **Ranks.** A power of two $m = 2^{e+1}$ in $[\sqrt{x}, 2\sqrt{x}]$, the exponent $s = 22(e+1)$, so that $2^s = m^{22}$, with $s \leq 32 \log x$, and a power of three $r$ in $[x^5, 3x^5]$.
 3. **Places.** A set $\Phi_b \subseteq \Phi$ of places whose classes are $\equiv -1 \pmod{q_0}$, with $\operatorname{towerDeg}(s) \leq \#\Phi_b \cdot \log b$, and which is sparse for the primes $\ell \leq kt$, where $k = r + 1 - m$ and $t = 5r$. The weight is $b$ on $\Phi_b$ and $\lfloor xb/x_1 \rfloor$ elsewhere.
 4. **Primes.** Two distinct primes $p_0, p_1 \equiv 1 \pmod{q_2^2}$ in $[b^{10}, b^{11}]$, with an integer $\alpha$ of $K$ such that $\alpha\bar\alpha = p_0 p_1$. A prime $N \equiv 1 \pmod{q_2^2}$ with $\log N$ in an interval $[\log N_-, \log N_- + \sqrt{\log b}]$, where $\log N_-$ is an explicit number between $m \log b$ and $24 m \log b$, and an integer $\beta$ of $E$ with $\beta\bar\beta = N$.
@@ -49,7 +49,7 @@ The exponents are forced by the scale inequalities. Here is the reason for each.
 | $x^{10^6} \leq x_1$ | $10^6 \log x \leq W - 1$ | $W$ is a power of $x$ |
 | $x_1^{10^6} \leq b$ | $10^6 W \leq W^6$ | $W \geq 10^2$ |
 | $(\log x_1)^6 \leq \log b$ | $W^6 \leq \log b$ | the choice of $b$ |
-| $10^{12} c_P \leq \log\log b$ | $10^{12} c_P \leq \log W$ | $x$ large |
+| $10^{12} C_P \leq \log\log b$ | $10^{12} C_P \leq \log W$ | $x$ large |
 
 The first row is the only place where the bound $\varepsilon < 1/100$ enters: $\log b$ is about $x^{\varepsilon}$, and its hundredth power must stay below $x$. The fourth row is the reason for the exponent $6$ in $W^6$. The upper bound $\log x_1 \leq W$ and the lower bound $\log b \geq W^6$ give $(\log x_1)^6 \leq \log b$ with no room to spare.
 

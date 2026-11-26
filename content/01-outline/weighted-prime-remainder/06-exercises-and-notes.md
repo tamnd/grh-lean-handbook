@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Exercises
 
-1. Take $d = 23$ and $q = 1$. List the $n \leq 30$ with $\lambda(n) \neq 0$, and compute $R_1(10)$ and $R_1(30)$ with $c_1 = -1 - \mathrm{cs}_{23} = -1.999337$. *Hint.* The squares modulo $23$ are $1, 2, 3, 4, 6, 8, 9, 12, 13, 16, 18$. So $2$ and $3$ split, and $5$ and $7$ are inert.
+1. Take $d = 23$ and $q = 1$. List the $n \leq 30$ with $\lambda(n) \neq 0$, and compute $R_1(10)$ and $R_1(30)$ with $c_1 = -1 - C_{23} = -1.999337$. *Hint.* The squares modulo $23$ are $1, 2, 3, 4, 6, 8, 9, 12, 13, 16, 18$. So $2$ and $3$ split, and $5$ and $7$ are inert.
 2. Check the numbers of the explicit formula for the weighted sum in Section 2. Show that $\sum_{k \geq 1} 1/(2k(2k + 1)) = 1 - \log 2$, and that $-(2 + \gamma - \log 4\pi) - \log 2\pi + 1 - \log 2 = -1 - \gamma$. *Hint.* $1/(2k(2k + 1)) = 1/(2k) - 1/(2k + 1)$, and $\sum_{j \geq 2}(-1)^j/j = 1 - \log 2$.
 3. Let $d \equiv 3 \bmod 4$ be a prime and $q = 1$. From $\sum \lambda(n)n^{-s} = -2\zeta'/\zeta + \zeta_K'/\zeta_K$, compute the residues of $\sum \lambda(n)n^{-s}/(s(s - 1))$ at $s = 1$ (a double pole: give the two coefficients of the Laurent expansion), at a zero of $\zeta$, and at a zero of $L(s, \chi_K)$ that is not a zero of $\zeta$. Deduce the main term $\log x$ and the constant $c_1$ of $R_1$.
 4. Let $a : \mathbb{N} \to [0, \infty)$ with $\sum a(n)n^{-\sigma} < \infty$ for $\sigma > 1$. Show by partial summation that for every $r \in \mathbb{N}$ and $\operatorname{Re} s > 1$, $\sum a(n)n^{-s} = (s + r - 1)\int_1^\infty y^{-r}\bigl(\sum_{n \leq y} a(n)n^{r - 1}\bigr) y^{-s}\, dy$. Why does the source ask $\operatorname{Re} s > 2$?
@@ -26,6 +26,6 @@ The file New/Reduction/Zeros/PrimeError.lean names Davenport as its source, with
 
 The source differs from the textbook treatment in three points. It works with the entire functions $\tilde L$, so that the pole at $s = 1$ is explicit. It proves that $G_q(1)$ is real through the transform. It gives the residue at $s = 1$ as the junk value of a division by zero. The main theorem asks $d \equiv 7 \bmod 8$, but its proof uses only $d \neq 2$. The research note on the remainder says that the terms $c_q$ and $\log x/\varphi(q)$ kill the double pole at $s = 1$. More exactly, $\log x/\varphi(q)$ removes the double pole, and $c_q$ removes the simple pole that is left.
 
-The relevant findings of the notes are F-039 (the residue at $s = 1$ as a division by zero), F-064 (the unit of the formula of Chowla and Selberg is not shown to be algebraic), F-077 (the sign of the residues, to be checked by a person) and F-092 (the thresholds depend on $|\mathrm{cs}_d|$, and so on $d$).
+The relevant findings of the notes are F-039 (the residue at $s = 1$ as a division by zero), F-064 (the unit of the formula of Chowla and Selberg is not shown to be algebraic), F-077 (the sign of the residues, to be checked by a person) and F-092 (the thresholds depend on $|C_d|$, and so on $d$).
 
 Status: this chapter was drafted by a model. No person has checked it against the source.

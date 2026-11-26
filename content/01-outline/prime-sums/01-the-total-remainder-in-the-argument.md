@@ -16,23 +16,23 @@ It writes the total remainder, which the lattice argument bounds, through the we
 
 ### Where the chapter sits
 
-[The plan](/chapter/theorem-and-plan/) has five layers. At the top, [Landau's criterion](/chapter/landau-criterion/) turns a one-sided bound $R_{q_0}(y) \leq y^{-1/2 + \varepsilon}$ for every prime $d$ in a class into the absence of zeros in $\operatorname{Re} s > 1/2 + \varepsilon$. At the bottom, Theorems A, B and C give the main inequality
+[The plan](/chapter/theorem-and-plan/) has five layers. At the top, [Landau's criterion](/chapter/landau-criterion/) turns a one-sided bound $R_{q_0}(y) \leq y^{-1/2 + \eta}$ for every prime $d$ in a class into the absence of zeros in $\operatorname{Re} s > 1/2 + \eta$. Here $\eta > 0$ is a margin; Section 6 takes $\eta = 6\varepsilon$, with $\varepsilon$ the exponent of the scales of the data. At the bottom, Theorems A, B and C give the main inequality
 
 $$m \cdot \mathrm{rem} \leq f\, a\, (\log b)^5$$
 
 ([the main inequality and the end of the proof](/chapter/main-inequality/)). The identity of this chapter connects the two layers. With it, the main inequality becomes an upper bound for $R_{q_0}(x)$, with error terms at the second scale $x_1$ that the prime number theorem controls. Section 6 makes this deduction.
 
-The heuristic reason that a lattice can bound a prime sum is in [why a lattice can bound a prime sum](/chapter/lattice-and-prime-sum/). That chapter explains that the shortness bound of Theorem A contains the term $\text{main amount} - m \cdot \mathrm{rem}$, so that a positive total remainder makes the short vectors shorter. This chapter gives the exact definitions of the two terms.
+The heuristic reason that a lattice can bound a prime sum is in [why a lattice can bound a prime sum](/chapter/lattice-and-prime-sum/). That chapter explains that the shortness bound of Theorem A contains the term $\mathrm{main} - m \cdot \mathrm{rem}$, with $\mathrm{main}$ the main amount of Section 3, so that a positive total remainder makes the short vectors shorter. This chapter gives the exact definitions of the two terms.
 
 ### What the chapter uses
 
 The chapter uses three earlier chapters of this volume.
 
 1. The weighted prime remainder $R_q(z)$ and the weight $\Lambda_K(n) = \Lambda(n)(1 - \chi_K(n))$, from [the weighted prime remainder](/chapter/weighted-prime-remainder/). Section 2 recalls them.
-2. The field $E = K(\zeta_{q_1})$ and its group $\Phi \cong (\mathbb{Z}/q_1\mathbb{Z})^\times$ of infinite places, from [fields, places and twists](/chapter/fields-places-twists/).
+2. The modulus $q_1 = q_0 \cdot 3 l_0 2^s$, with $s$ the tower exponent of the data and $l_0 = 3^{\lfloor \log_3 s \rfloor + 4}$ (Lean: `New.Parameters.q₁`), the field $E = K(\zeta_{q_1})$ with $\zeta_{q_1}$ a primitive root of unity of order $q_1$, and its group $\Phi \cong (\mathbb{Z}/q_1\mathbb{Z})^\times$ of infinite places, from [fields, places and twists](/chapter/fields-places-twists/).
 3. The data $D$, its scales $x$, $x_1$, $b$, $a = xb$, its sets of places $\Phi_a$ and $\Phi_b$, its weights $\kappa$, and the table of sizes, from [the data and its sizes](/chapter/data-and-sizes/).
 
-The chapter uses no analytic input. Every proof is a finite computation with sums over $1 \leq \nu \leq a$ and over places. The only estimates are the elementary bound $\sum_{n \leq N} \Lambda(n)/n \leq 2 \log N$ and, in a forward result of Section 4, the Stirling bound for $\log a!$.
+The chapter uses no analytic input. Every proof is a finite computation with sums over $1 \leq \nu \leq a$ and over places. The only estimates are the elementary bound $\sum_{n \leq y} \Lambda(n)/n \leq 2 \log y$ and, in a forward result of Section 4, the Stirling bound for $\log a!$.
 
 ### The idea of the identity
 

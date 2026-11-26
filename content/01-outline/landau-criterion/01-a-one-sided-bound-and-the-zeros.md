@@ -15,8 +15,8 @@ This chapter proves the step of the proof that turns a bound for a sum over prim
 ### Where the chapter sits
 
 [The plan](/chapter/theorem-and-plan/) of the proof has three layers. At the bottom, Theorems A, B and C of Volumes 9 to 11 give a lattice inequality. In the middle, [the main inequality and the end of the proof](/chapter/main-inequality/) turns the lattice inequality into a one-sided bound for a weighted prime remainder $R_{q_0}$:
-$$R_{q_0}(y) \leq y^{-1/2 + \varepsilon} \qquad \text{for all large } y.$$
-At the top, this chapter turns the bound into the non-vanishing of $L(s, \psi)$ for every character $\psi$ modulo $q_0$ and every $s \neq 1$ with $\operatorname{Re} s > 1/2$. The last chapter of the volume then passes from the modulus $q_0$ to an arbitrary modulus $q$. [From the half-plane to the line](/chapter/half-plane-to-line/) then gives the zeros on the critical line.
+$$R_{q_0}(y) \leq y^{-1/2 + \eta} \qquad \text{for all large } y.$$
+Here $\eta > 0$ is a margin, and the bound holds for every $\eta > 0$. At the top, this chapter turns the bound into the non-vanishing of $L(s, \psi)$ for every character $\psi$ modulo $q_0$ and every $s \neq 1$ with $\operatorname{Re} s > 1/2$. The last chapter of the volume then passes from the modulus $q_0$ to an arbitrary modulus $q$. [From the half-plane to the line](/chapter/half-plane-to-line/) then gives the zeros on the critical line.
 
 The remainder $R_{q_0}$ is defined in [the weighted prime remainder](/chapter/weighted-prime-remainder/). It depends on a prime $d \equiv 7 \bmod 8$ and on the imaginary quadratic field $K = \mathbb{Q}(\sqrt{-d})$. With $\chi_K = (\cdot / d)$ and $\Lambda$ the von Mangoldt function, the weight is
 $$\lambda(n) = \Lambda(n)\bigl(1 - \chi_K(n)\bigr) \quad \text{for } n \equiv 1 \bmod q_0, \qquad \lambda(n) = 0 \quad \text{otherwise},$$
@@ -26,7 +26,7 @@ with a constant $c_{q_0}$ that makes $R_{q_0}(x) \to 0$. The factor $1 - \chi_K(
 
 ### The three ideas
 
-The first idea is Landau's theorem. A Laplace transform $\int_0^\infty e^{-sv}\, d\mu(v)$ of a positive measure has a singularity at the real point where it stops converging. A one-sided bound $R(y) \leq y^{\beta - 1}$ makes $K y^\beta - y R(y)$ positive for a suitable $K$, and so gives a positive measure whose transform is $K/(s - \beta)$ minus the transform of $R$. If the residues of the transform of $R$ at the real points have the right sign, the transform of the measure converges in all of $\operatorname{Re} s > \beta$, and the transform of $R$ has no pole there. Section 2 does the classical case, the Riemann zeta function. Section 3 proves the form of the theorem that the source uses.
+The first idea is Landau's theorem. A Laplace transform $\int_0^\infty e^{-sv}\, d\mu(v)$ of a positive measure has a singularity at the real point where it stops converging. A one-sided bound $R(y) \leq y^{\beta - 1}$ makes $C_0 y^\beta - y R(y)$ positive for a suitable constant $C_0$, and so gives a positive measure whose transform is $C_0/(s - \beta)$ minus the transform of $R$. If the residues of the transform of $R$ at the real points have the right sign, the transform of the measure converges in all of $\operatorname{Re} s > \beta$, and the transform of $R$ has no pole there. Section 2 does the classical case, the Riemann zeta function. Section 3 proves the form of the theorem that the source uses.
 
 The second idea is the sign of the residues. The transform of $R_{q_0}$ has a pole at each zero of $L(s, \psi)$ and at each zero of the twist $L(s, \psi\chi_K)$, for the characters $\psi$ modulo $q_0$. The residue at a zero $\rho$ is
 $$\frac{n(\rho) - n'(\rho)}{\varphi(q_0)\, \rho\, (1 - \rho)},$$

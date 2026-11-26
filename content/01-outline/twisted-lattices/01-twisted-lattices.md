@@ -23,14 +23,14 @@ $$c + 2\delta + n'(b_{\mathrm{short}} + b_{\mathrm{denom}}) + b_{\mathrm{volume}
 Here $c$ bounds the logarithm of the squared covolume of $\Theta_1 y$ at every archimedean place, $\delta$ bounds the logarithm of the index of $y$, $b_{\mathrm{short}}$ bounds the squared length of each $\Theta_1 z_j$, $b_{\mathrm{denom}}$ bounds the denominators of the $z_j$, and $b_{\mathrm{volume}}$ bounds the height of the ratio of the volumes of $\Theta_1$ and $\Theta_{\xi}$ for one twist $\xi = \xi_\iota$ at each prime. The precise statement is [Theorem](/decl/New.TwistedLattice.covolume_add_index_nonneg/).
 
 In Theorem C the three auxiliary terms have explicit sizes. In the notation of [the data and its sizes](/chapter/data-and-sizes/), the source takes
-$$b_{\mathrm{short}} = 2x_1^2 b^2, \qquad b_{\mathrm{denom}} = b, \qquad b_{\mathrm{volume}} = d_T\,(b + f a \log^4 b - \mathrm{mainAmount}),$$
-where $d_T$ is the dimension of the space of target forms. With $n'(2x_1^2b^2 + b) \leq d_T b$ and $b \leq f a \log^4 b$, the inequality becomes
-$$c + 2\delta \geq d_T\,(\mathrm{mainAmount} - 3 f a \log^4 b).$$
+$$b_{\mathrm{short}} = 2x_1^2 b^2, \qquad b_{\mathrm{denom}} = b, \qquad b_{\mathrm{volume}} = d_T\,(b + f a \log^4 b - \mathrm{main}),$$
+where $d_T$ is the dimension of the space of target forms and $\mathrm{main}$ is the main amount of [the prime sums](/chapter/prime-sums/) (`New.Data.mainAmount`). With $n'(2x_1^2b^2 + b) \leq d_T b$ and $b \leq f a \log^4 b$, the inequality becomes
+$$c + 2\delta \geq d_T\,(\mathrm{main} - 3 f a \log^4 b).$$
 This is the statement of Theorem C. Section 6 of this chapter does the arithmetic.
 
 ### The proof in one paragraph
 
-Let $\mathrm{Gram}(\xi)$ be the Gram determinant of the vectors $\Theta_\xi y_1, \dots, \Theta_\xi z_{n'}$. Since $y \cup z$ is a basis and $\Theta_1$ is injective, $\mathrm{Gram}(1) \neq 0$. The proof bounds this one number at every place. At an archimedean place, Fischer's and Hadamard's inequalities bound $|\sigma\,\mathrm{Gram}(1)|$ by $\exp(c + n' b_{\mathrm{short}})$. At a prime $\ell$ and an isomorphism $\iota\colon \mathbb{C} \cong \overline{\mathbb{Q}}_\ell$, the proof writes
+Let $\mathrm{Gram}(\xi)$ be the Gram determinant of the vectors $\Theta_\xi y_1, \dots, \Theta_\xi z_{n'}$. Since $y \cup z$ is a basis and $\Theta_1$ is injective, $\mathrm{Gram}(1) \neq 0$. The proof bounds this one number at every place. At an archimedean place, Fischer's and Hadamard's inequalities bound $|\sigma\,\mathrm{Gram}(1)|$ by $\exp(c + n' b_{\mathrm{short}})$. At a prime $\ell$ and an isomorphism $\iota\colon \mathbb{C} \cong \bar{\mathbb{Q}}_\ell$, the proof writes
 $$\mathrm{Gram}(1) = \mathrm{Gram}(\xi_\iota) \cdot \frac{Z(1)}{Z(\xi_\iota)},$$
 where $Z(\xi)$ is the squared volume of $\Theta_\xi$. The index bound makes $\mathrm{Gram}(\xi_\iota)$ almost integral at $\iota$, and the height bound controls the ratio. The product formula says that a nonzero algebraic number cannot be small at every place. So the bounds at all places add up to a number at least $0$, which is the inequality.
 
@@ -40,8 +40,8 @@ The chapter uses Hadamard's and Fischer's inequalities, the Cauchy-Schwarz inequ
 
 ### The plan of the chapter
 
-Section 2 does the model cases: Liouville's inequality in rank one, then lattices in $\mathbb{R}^n$ with Minkowski's and Hadamard's inequalities. Section 3 defines heights over the isomorphisms $\mathbb{C} \cong \overline{\mathbb{Q}}_\ell$ and proves the product formula in the form that the source uses. Section 4 defines twisted lattices, the index and the covolume. Section 5 defines the colength, which produces index bounds. Section 6 proves the inequality and shows how Theorem C uses it. Section 7 has exercises and notes.
+Section 2 does the model cases: Liouville's inequality in rank one, then lattices in $\mathbb{R}^n$ with Minkowski's and Hadamard's inequalities. Section 3 defines heights over the isomorphisms $\mathbb{C} \cong \bar{\mathbb{Q}}_\ell$ and proves the product formula in the form that the source uses. Section 4 defines twisted lattices, the index and the covolume. Section 5 defines the colength, which produces index bounds. Section 6 proves the inequality and shows how Theorem C uses it. Section 7 has exercises and notes.
 
 ### Notation
 
-Throughout, $\ell$ is a prime, $\iota$ is an isomorphism of fields $\mathbb{C} \cong \overline{\mathbb{Q}}_\ell$, and $\sigma$ is an automorphism of the field $\mathbb{C}$. The norm on $\overline{\mathbb{Q}}_\ell$ is the unique extension of the $\ell$-adic absolute value, so $\|\ell\| = \ell^{-1}$. A family indexed by $\iota$ has one member for each pair of a prime $\ell$ and an isomorphism $\iota$ over $\ell$. We write $\iota \mid \ell$ for such a pair. Logarithms are natural. A "covolume at most $c$" always means that the *squared* covolume is at most $e^c$, as in the source.
+Throughout, $\ell$ is a prime, $\iota$ is an isomorphism of fields $\mathbb{C} \cong \bar{\mathbb{Q}}_\ell$, and $\sigma$ is an automorphism of the field $\mathbb{C}$. The norm on $\bar{\mathbb{Q}}_\ell$ is the unique extension of the $\ell$-adic absolute value, so $\|\ell\| = \ell^{-1}$. A family indexed by $\iota$ has one member for each pair of a prime $\ell$ and an isomorphism $\iota$ over $\ell$. We write $\iota \mid \ell$ for such a pair. Logarithms are natural. A "covolume at most $c$" always means that the *squared* covolume is at most $e^c$, as in the source.

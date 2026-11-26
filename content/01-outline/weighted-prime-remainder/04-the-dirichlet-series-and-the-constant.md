@@ -71,13 +71,13 @@ The residue at $s = 1$ is $2 - 1 = 1$, the residue of $s/(s - 1)$. A zero of $\z
 ### The Chowla-Selberg constant
 
 **Definition (The Chowla-Selberg constant).** For a prime $d$ let
-$$\mathrm{cs}_d = \gamma - \operatorname{Re} \frac{\tilde L'}{\tilde L}(1, \chi_K),$$
-where $\chi_K = (\cdot/d)$ is a character modulo $d$ and $\gamma$ is Euler's constant. For odd $d$, $\chi_K$ is not principal, $\tilde L = L$, and $L'/L(1, \chi_K)$ is real, since $\chi_K$ is real. So $\mathrm{cs}_d = \gamma - L'/L(1, \chi_K)$.
+$$C_d = \gamma - \operatorname{Re} \frac{\tilde L'}{\tilde L}(1, \chi_K),$$
+where $\chi_K = (\cdot/d)$ is a character modulo $d$ and $\gamma$ is Euler's constant. For odd $d$, $\chi_K$ is not principal, $\tilde L = L$, and $L'/L(1, \chi_K)$ is real, since $\chi_K$ is real. So $C_d = \gamma - L'/L(1, \chi_K)$.
 
 Lean: `New.chowlaSelbergConst` (Lib/General/NumberTheory/ImaginaryQuadraticField.lean).
 
 **Proposition (The constant for q = 1).** Let $d$ be a prime. Then
-$$c_1 = \operatorname{Re} G_1(1) = -1 - \gamma + \operatorname{Re} \frac{\tilde L'}{\tilde L}(1, \chi_K) = -1 - \mathrm{cs}_d.$$
+$$c_1 = \operatorname{Re} G_1(1) = -1 - \gamma + \operatorname{Re} \frac{\tilde L'}{\tilde L}(1, \chi_K) = -1 - C_d.$$
 
 Lean: `New.re_logDerivMean_one` (New/Reduction/Zeros/PrimeError.lean), with `New.re_logDerivMean_one_eq_add_re_logDeriv` for the middle form.
 
@@ -86,25 +86,25 @@ Lean: `New.re_logDerivMean_one` (New/Reduction/Zeros/PrimeError.lean), with `New
 The constant has a closed form through the Gamma function, which explains the name. The source does not prove it and does not use it.
 
 **Example (A formula with Gamma values).** Let $d > 3$ be a prime with $d \equiv 3 \bmod 4$, and let $h$ be the class number of $K = \mathbb{Q}(\sqrt{-d})$. Then
-$$\mathrm{cs}_d = -\log 2\pi + \frac{1}{h}\sum_{a = 1}^{d - 1} \chi_K(a) \log\Gamma\Bigl(\frac{a}{d}\Bigr).$$
+$$C_d = -\log 2\pi + \frac{1}{h}\sum_{a = 1}^{d - 1} \chi_K(a) \log\Gamma\Bigl(\frac{a}{d}\Bigr).$$
 *Derivation.* Write $L(s, \chi_K) = d^{-s}\sum_{a = 1}^{d - 1} \chi_K(a)\zeta(s, a/d)$ with the Hurwitz zeta function. The values $\zeta(0, x) = 1/2 - x$ and $\partial_s \zeta(0, x) = \log\Gamma(x) - \frac{1}{2}\log 2\pi$ (Lerch) give $L(0, \chi_K) = -\frac{1}{d}\sum a\chi_K(a) = h$ (Davenport, Chapter 6, for the class number) and $L'/L(0, \chi_K) = -\log d + \frac{1}{h}\sum \chi_K(a)\log\Gamma(a/d)$. The character $\chi_K$ is odd and primitive, so $\xi(s) = (d/\pi)^{(s + 1)/2}\Gamma((s + 1)/2)L(s, \chi_K)$ satisfies $\xi(1 - s) = \xi(s)$ (Davenport, Chapter 9; by Chapter 2, the Gauss sum of $\chi_K$ is $i\sqrt d$, so the root number is $1$). So $\xi'/\xi(0) = -\xi'/\xi(1)$. With $\Gamma'/\Gamma(1) = -\gamma$ and $\Gamma'/\Gamma(1/2) = -\gamma - 2\log 2$ this gives
 $$\frac{L'}{L}(1, \chi_K) = \gamma + \log 2\pi - \log d - \frac{L'}{L}(0, \chi_K) = \gamma + \log 2\pi - \frac{1}{h}\sum_{a = 1}^{d - 1} \chi_K(a)\log\Gamma\Bigl(\frac{a}{d}\Bigr).$$
 Subtract from $\gamma$. $\square$
 
 For $d = 7$ the class number is $1$, the residues are $1, 2, 4$, and
-$$\mathrm{cs}_7 = \log\frac{\Gamma(1/7)\Gamma(2/7)\Gamma(4/7)}{\Gamma(3/7)\Gamma(5/7)\Gamma(6/7)} - \log 2\pi = 0.561580, \qquad c_1 = -1.561580.$$
-Also $\mathrm{cs}_{23} = 0.999337$, with $h = 3$. The formula gives
-$$\pi e^{\mathrm{cs}_d} \cdot \frac{2\pi}{\sqrt d} = \frac{\pi}{\sqrt d}\prod_{a = 1}^{d - 1} \Gamma\Bigl(\frac{a}{d}\Bigr)^{\chi_K(a)/h}.$$
+$$C_7 = \log\frac{\Gamma(1/7)\Gamma(2/7)\Gamma(4/7)}{\Gamma(3/7)\Gamma(5/7)\Gamma(6/7)} - \log 2\pi = 0.561580, \qquad c_1 = -1.561580.$$
+Also $C_{23} = 0.999337$, with $h = 3$. The formula gives
+$$\pi e^{C_d} \cdot \frac{2\pi}{\sqrt d} = \frac{\pi}{\sqrt d}\prod_{a = 1}^{d - 1} \Gamma\Bigl(\frac{a}{d}\Bigr)^{\chi_K(a)/h}.$$
 This product of Gamma values is the one in the formula of Selberg and Chowla for the periods of elliptic curves with complex multiplication by $K$ (A. Selberg and S. Chowla, J. reine angew. Math. 227 (1967), 86 to 110).
 
 ### Where the constant goes
 
-The source proves a form of the formula of Chowla and Selberg with $\mathrm{cs}_d$ in place of the Gamma values ([Lemma](/decl/New.CMLattice.chowla_selberg/)). For a prime $d$ and a CM lattice $C$ for $K$ in the sense of the source, there is a complex number $u$ with $\|\iota_p u\| = 1$ at every $p$-adic place $\iota_p : \mathbb{C} \to \mathbb{C}_p$, such that for every automorphism $\sigma$ of $\mathbb{C}$ over $K$ the lattice $C^\sigma$ satisfies
-$$\operatorname{area}(C^\sigma)\, |\sigma(u)|^2 = \pi e^{\mathrm{cs}_d} \cdot \frac{2\pi}{\sqrt d}.$$
+The source proves a form of the formula of Chowla and Selberg with $C_d$ in place of the Gamma values ([Lemma](/decl/New.CMLattice.chowla_selberg/)). For a prime $d$ and a CM lattice $\mathcal{C}$ for $K$ in the sense of the source, there is a complex number $u$ with $\|\iota_p u\| = 1$ at every $p$-adic place $\iota_p : \mathbb{C} \to \mathbb{C}_p$, such that for every automorphism $\sigma$ of $\mathbb{C}$ over $K$ the lattice $\mathcal{C}^\sigma$ satisfies
+$$\operatorname{area}(\mathcal{C}^\sigma)\, |\sigma(u)|^2 = \pi e^{C_d} \cdot \frac{2\pi}{\sqrt d}.$$
 Its proof uses Kronecker's limit formula, summed over the ideal classes ([Lemma](/decl/New.CMLattice.sum_kronecker_terms/), [CM elliptic curves](/chapter/cm-elliptic-curves/)).
 
-The data use the period $\Omega = e^{\mathrm{cs}_d} \cdot 2\pi/D_E$, where $D_E$ is the root discriminant of the number field $E$ of the data ([Definition](/decl/New.Parameters.bigOmega/)). The main prime sum is $a(\log(a/\bar w) + c_1)$, where $a$ is the number of steps and $\log\bar w$ is a mean of logarithms of weights. The archimedean size of a jet of order $a$ is $\log a! + a\log(M/\Omega)$. In the difference, $\mathrm{cs}_d$ cancels, and Stirling's formula gives
-$$\log a! + a\log\frac{M}{\Omega} - a\Bigl(\log\frac{a}{\bar w} + c_1\Bigr) \leq a\Bigl(\log\bar w + \log\frac{M D_E}{2\pi}\Bigr) + 1 + \frac{\log a}{2}$$
-([Lemma](/decl/New.Data.jetSize_sub_mainPrimeSum_le/)). So the argument never needs the value of $\mathrm{cs}_d$, only that the same constant appears in the period and in the prime sum. The thresholds "for large $x$" in the later chapters depend on $|\mathrm{cs}_d|$, and so on $d$ ([data and sizes](/chapter/data-and-sizes/)).
+The data use the period $\Omega = e^{C_d} \cdot 2\pi/\mathrm{rd}_E$, where $\mathrm{rd}_E$ is the root discriminant of the number field $E$ of the data ([Definition](/decl/New.Parameters.bigOmega/)). The main prime sum is $a(\log(a/\bar\kappa) + c_1)$, where $a = xb$ is the long order and $\log\bar\kappa$ is the mean of the logarithms of the weights $\kappa(\tau)$ over all places $\tau \in \Phi$. The archimedean size of a jet of order $a$ is $\log a! + a\log(M/\Omega)$. In the difference, $C_d$ cancels, and Stirling's formula gives
+$$\log a! + a\log\frac{M}{\Omega} - a\Bigl(\log\frac{a}{\bar\kappa} + c_1\Bigr) \leq a\Bigl(\log\bar\kappa + \log\frac{M \mathrm{rd}_E}{2\pi}\Bigr) + 1 + \frac{\log a}{2}$$
+([Lemma](/decl/New.Data.jetSize_sub_mainPrimeSum_le/)). So the argument never needs the value of $C_d$, only that the same constant appears in the period and in the prime sum. The thresholds "for large $x$" in the later chapters depend on $|C_d|$, and so on $d$ ([data and sizes](/chapter/data-and-sizes/)).
 
-**Remark (Formalization).** The source defines $\mathrm{cs}_d$ with $\chi_K$ as the twist of the character $1$ modulo $1$, at level $1 \cdot d$, and with a real part. For odd $d$ this is the textbook constant $\gamma - L'/L(1, \chi_K)$. The form of the formula of Chowla and Selberg in the source has no Gamma values. It gives the periods up to the number $u$, and the later files take $u$ with `choose`. The source proves that $u$ is a unit at every $p$-adic place. It does not prove that $u$ is algebraic, and the notes leave open whether the argument needs this (finding F-064).
+**Remark (Formalization).** The source defines $C_d$ with $\chi_K$ as the twist of the character $1$ modulo $1$, at level $1 \cdot d$, and with a real part. For odd $d$ this is the textbook constant $\gamma - L'/L(1, \chi_K)$. The form of the formula of Chowla and Selberg in the source has no Gamma values. It gives the periods up to the number $u$, and the later files take $u$ with `choose`. The source proves that $u$ is a unit at every $p$-adic place. It does not prove that $u$ is algebraic, and the notes leave open whether the argument needs this (finding F-064).

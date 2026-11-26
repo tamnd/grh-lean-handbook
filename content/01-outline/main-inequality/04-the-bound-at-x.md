@@ -70,7 +70,7 @@ Section 6 inserts the sizes $m \geq \sqrt{x}$, $\log b \leq 2x^\varepsilon$ and 
 
 ### Example
 
-Take $q_0 = 18480$, so $\varphi(q_0) = \varphi(2^4) \varphi(3) \varphi(5) \varphi(7) \varphi(11) = 8 \cdot 2 \cdot 4 \cdot 6 \cdot 10 = 3840$. Suppose that the data have $x = 10^{2000}$, $\varepsilon = 1/200$ and $\log b = x^{\varepsilon} = 10^{10}$, and suppose that $m = 2^{3322}$, the least power of $2$ above $\sqrt{x} = 10^{1000}$. (These numbers show the orders of size only. The data have more conditions, for example $\log \log b \geq 10^{12} c_P$, and the data of Section 6 exist only for large $x$.) Then
+Take $q_0 = 18480$, so $\varphi(q_0) = \varphi(2^4) \varphi(3) \varphi(5) \varphi(7) \varphi(11) = 8 \cdot 2 \cdot 4 \cdot 6 \cdot 10 = 3840$. Suppose that the data have $x = 10^{2000}$, $\varepsilon = 1/200$ and $\log b = x^{\varepsilon} = 10^{10}$, and suppose that $m = 2^{3322}$, the least power of $2$ above $\sqrt{x} = 10^{1000}$. (These numbers show the orders of size only. The data have more conditions, for example $\log \log b \geq 10^{12} C_P$, and the data of Section 6 exist only for large $x$.) Then
 
 $$\frac{\varphi(q_0) \log^6 b}{m} \;\leq\; \frac{3840 \cdot 10^{60}}{10^{1000}} \;<\; 10^{-936}.$$
 

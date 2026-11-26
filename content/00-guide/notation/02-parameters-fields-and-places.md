@@ -138,12 +138,12 @@ Lean: `New.Parameters.bigOmega` (New/Reduction/Data/FieldsAndPlaces.lean).
 The source proves $x^{-13} \leq \Omega \leq 1$ for the data (Section 3). The number $\Omega$ enters the jet size $s_\infty$ of Section 4 through $\log(M/\Omega)$.
 
 **Definition (The constant of the parameters $C_P$).** 
-$$C_P = c_{\mathrm{vac}} + (2d + 6) + q_0 + |C_d| + \sum_{w} \bigl|\log |\Phi_{q_0}'(w)|\bigr|,$$
-where $w$ runs over the primitive $q_0$-th roots of unity in $\mathbb{C}$, $\Phi_{q_0}$ is the cyclotomic polynomial of order $q_0$, and $c_{\mathrm{vac}}$ is the natural number of the bound for the conjugates of the integral vacuum.
+$$C_P = C_{\mathrm{vac}} + (2d + 6) + q_0 + |C_d| + \sum_{w} \bigl|\log |\Phi_{q_0}'(w)|\bigr|,$$
+where $w$ runs over the primitive $q_0$-th roots of unity in $\mathbb{C}$, $\Phi_{q_0}$ is the cyclotomic polynomial of order $q_0$, and $C_{\mathrm{vac}}$ is the natural number of the bound for the conjugates of the integral vacuum.
 
 Lean: `New.Parameters.constantBound` (New/Reduction/Data/AdmissibleData.lean), `New.Parameters.vacuumBoundConst` (New/Derivatives/Vacuum/IntegralVacuum.lean).
 
-**Remark (Formalization).** The number $c_{\mathrm{vac}}$ is defined by `choose` from an existence theorem. It has no formula, and it may be $0$. Only the lower bounds of the next lemma and the first scale inequality of Section 3 use $C_P$, so the argument needs no value of $c_{\mathrm{vac}}$. The letter $\Phi_{q_0}$ is the cyclotomic polynomial only inside this formula; elsewhere $\Phi$ is the group of places.
+**Remark (Formalization).** The number $C_{\mathrm{vac}}$ is defined by `choose` from an existence theorem. It has no formula, and it may be $0$. Only the lower bounds of the next lemma and the first scale inequality of Section 3 use $C_P$, so the argument needs no value of $C_{\mathrm{vac}}$. The letter $\Phi_{q_0}$ is the cyclotomic polynomial only inside this formula; elsewhere $\Phi$ is the group of places.
 
 **Lemma.** $64 \leq C_P$, $q_0 \leq C_P$, $d \leq C_P$ and $\varphi(q_0) \leq C_P$.
 

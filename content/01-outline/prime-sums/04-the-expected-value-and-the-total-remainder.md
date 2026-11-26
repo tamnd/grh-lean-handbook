@@ -83,9 +83,9 @@ The rest of this section states forward results from [the archimedean size](/cha
 
 In Theorem A, a chain of $m$ theta lifts is asked to be divisible by $p^{\mathrm{gain}_p}$ at each small prime $p < x_1$ that does not split in $K$. The gains add up to the prime sums.
 
-**Proposition (Gains and prime sums).** Let $\mathcal{P}$ be the set of primes $p < x_1$ with $\chi_K(p) \neq 1$. Then
+**Proposition (Gains and prime sums).** Let $U$ be the set of primes $p < x_1$ with $\chi_K(p) \neq 1$. Then
 
-$$2\sum_{p \in \mathcal{P}}\mathrm{gain}_p \log p = m\sum_{\tau \in \Phi_a}s_{\mathrm{fin}}(a, \tau) + m k\sum_{\tau \in \Phi}s_{\mathrm{fin}}\bigl(\kappa(\tau), \tau\bigr).$$
+$$2\sum_{p \in U}\mathrm{gain}_p \log p = m\sum_{\tau \in \Phi_a}s_{\mathrm{fin}}(a, \tau) + m k\sum_{\tau \in \Phi}s_{\mathrm{fin}}\bigl(\kappa(\tau), \tau\bigr).$$
 
 Lean: `New.Data.two_mul_sum_gain_mul_log` (New/UpperBound/Size/ArchimedeanSize.lean).
 
@@ -93,7 +93,7 @@ The two sums on the right have two sources. Each lift has a Young diagram at eac
 
 **Proposition (The exponent).**
 
-$$\text{main amount} - m\cdot\mathrm{rem} + 2\sum_{p \in \mathcal{P}}\mathrm{gain}_p\log p = m\, \#\Phi_a\, s_{\mathrm{main}} + m k\sum_{\tau \in \Phi}s_\infty\bigl(\kappa(\tau)\bigr).$$
+$$\mathrm{main} - m\cdot\mathrm{rem} + 2\sum_{p \in U}\mathrm{gain}_p\log p = m\, \#\Phi_a\, s_{\mathrm{main}} + m k\sum_{\tau \in \Phi}s_\infty\bigl(\kappa(\tau)\bigr).$$
 
 Lean: `New.Data.mainAmount_sub_add_two_mul_sum_gain` (New/UpperBound/Size/ArchimedeanSize.lean).
 

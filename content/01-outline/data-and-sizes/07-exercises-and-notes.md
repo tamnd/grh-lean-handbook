@@ -14,9 +14,9 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* Use $m = 2^{e+1} \leq 2\sqrt x$ and $s = 22(e + 1)$, as in the remark of Section 3. One gets $s \leq 22 + (11/\log 2)\log x$.
 
-**Exercise 2.** Compute, with the rules of Section 6, an upper and a lower exponent of $n_m = k + m(t + 1)$ from the exponents of $k$, $m$ and $t$ in the table. Check that you get $5.5L + 12$ and $5.5L$, with $L = \log x$. Then use the rules to prove $n_m \leq \tfrac12\Delta$, and say how large the margin is.
+**Exercise 2.** Compute, with the rules of Section 6, an upper and a lower exponent of $n_m = k + m(t + 1)$ from the exponents of $k$, $m$ and $t$ in the table. Check that you get $5.5\log x + 12$ and $5.5\log x$. Then use the rules to prove $n_m \leq \tfrac12\Delta$, and say how large the margin is.
 
-*Hint.* The rule for sums adds $1$ to the upper exponent at each sum. The lower exponent of $\tfrac12\Delta$ is $40L$.
+*Hint.* The rule for sums adds $1$ to the upper exponent at each sum. The lower exponent of $\tfrac12\Delta$ is $40\log x$.
 
 **Exercise 3.** Prove that the off weight $x b / x_1$ is an integer divisible by $q_1$, and that $\kappa(\tau) = a / x_1$ holds as an equation of real numbers. Which field of the data does the proof use? Give data, with all fields except this one, for which the natural number $x b / x_1$ of the source differs from the real number $a / x_1$.
 
@@ -26,9 +26,9 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* The places with a given class modulo $q_0$ form a coset of the kernel $\Phi_a$ of the reduction map. Use $\Phi \cong (\mathbb{Z}/q_1)^\times$ and the lemma on $\#\Phi_a$ in Section 4.
 
-**Exercise 5.** In the theorem on the size of $N_-$ (Section 5), the hypothesis is $2 \leq m$. Show that the lower bound $m L \leq \log N_-$ follows from the proof for every real $m \geq 53/36$, and that it can fail for $m = 1$. Why does the source not need the case $m = 1$?
+**Exercise 5.** In the theorem on the size of $N_-$ (Section 5), the hypothesis is $2 \leq m$. Show that the lower bound $m B \leq \log N_-$ follows from the proof for every real $m \geq 53/36$, and that it can fail for $m = 1$. Why does the source not need the case $m = 1$?
 
-*Hint.* The proof gives $\log N_- \geq 19(m - 1)L - \tfrac{15}{2}L$. For $m = 1$, take all weights equal to $1$.
+*Hint.* The proof gives $\log N_- \geq 19(m - 1)B - \tfrac{15}{2}B$. For $m = 1$, take all weights equal to $1$.
 
 **Exercise 6.** Prove $q_1 \leq x^{12}$ without the automation, using only the table and the scale inequalities. Then prove the stronger bound $q_1 \leq x^{11 + 1/100}$.
 

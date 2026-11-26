@@ -17,11 +17,11 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* For the second part, quadratic reciprocity gives $(13/d) = (d/13)$. Choose the class of $d$ modulo $13$ and use the Chinese remainder theorem and Dirichlet's theorem on primes in progressions.
 
-**Exercise 3.** Let $L = \mathbb{Q}(\zeta_{q_1})$. Show that the discriminant of $E$ is $(-d)^{\varphi(q_1)} \cdot \mathrm{disc}(L)^2$, and deduce $\mathrm{rd}_E = \sqrt{d} \cdot \mathrm{rd}_L$. With the formula for $\mathrm{disc}(L)$, show
+**Exercise 3.** Let $F = \mathbb{Q}(\zeta_{q_1})$, with $\zeta_{q_1}$ a primitive root of unity of order $q_1$ in $\mathbb{C}$. Show that the discriminant of $E$ is $(-d)^{\varphi(q_1)} \cdot \mathrm{disc}(F)^2$, and deduce $\mathrm{rd}_E = \sqrt{d} \cdot \mathrm{rd}_F$. With the formula for $\mathrm{disc}(F)$, show
 $$\mathrm{rd}_E = \sqrt{d} \cdot \frac{q_1}{\prod_{p \mid q_0} p^{1/(p-1)}}.$$
 Compare this with the bound $\mathrm{rd}_E \le q_1 d$ of Section 4.
 
-*Hint.* The discriminants of $K$ and $L$ are prime to each other, so the rings of integers satisfy $\mathcal{O}_E = \mathcal{O}_K \otimes \mathcal{O}_L$. For $\mathrm{disc}(L)$ see Washington, Proposition 2.7. The primes of $q_1$ are the primes of $q_0$.
+*Hint.* The discriminants of $K$ and $F$ are prime to each other, so the rings of integers satisfy $\mathcal{O}_E = \mathcal{O}_K \otimes \mathcal{O}_F$. For $\mathrm{disc}(F)$ see Washington, Proposition 2.7. The primes of $q_1$ are the primes of $q_0$.
 
 **Exercise 4.** Let $p \nmid q_1 d$ be prime and let $w$ be a place of $E$ over $p$. Show that $\bar w = w$ if and only if $\chi_K(p) = -1$ and $p^k \equiv -1 \bmod q_1$ for some odd $k$. Deduce that no place over a prime $p \equiv 1 \bmod 5$ is fixed by conjugation.
 

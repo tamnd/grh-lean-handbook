@@ -30,7 +30,7 @@ So $\log b \geq \exp(6.4 \cdot 10^{13})$, and $x \geq (\log b)^{100}$. The sourc
 
 ### What the chapter uses
 
-The chapter uses the parameters and the field of the previous chapter: the modulus $q_0$, the prime $d$, the field $K = \mathbb{Q}(\sqrt{-d})$, the tower degree, the modulus $q_1$, the field $E = K(\zeta_{q_1})$, its group of infinite places $\Phi \cong (\mathbb{Z}/q_1)^\times$, and the number $\Omega$. It uses one bound from the theory of the field that the book proves in Volume 9: the root discriminant $\mathrm{rd}_E$ lies in $[x^{10}, x^{12}]$. It uses the Minkowski bound for the class number, in a crude form. It uses no analytic number theory. The chapter is the reference for sizes: it proves nothing deep, but every later bound rests on it.
+The chapter uses the parameters and the field of the previous chapter: the modulus $q_0$, the prime $d$, the field $K = \mathbb{Q}(\sqrt{-d})$, the tower degree $\operatorname{towerDeg}(s)$, the modulus $q_1 = q_0 \operatorname{towerDeg}(s)$ (`New.Parameters.q₁`), the field $E = K(\zeta_{q_1})$ with $\zeta_{q_1}$ a primitive root of unity of order $q_1$, its group of infinite places $\Phi \cong (\mathbb{Z}/q_1)^\times$, and the number $\Omega$. It uses one bound from the theory of the field that the book proves in Volume 9: the root discriminant $\mathrm{rd}_E$ lies in $[x^{10}, x^{12}]$. It uses the Minkowski bound for the class number, in a crude form. It uses no analytic number theory. The chapter is the reference for sizes: it proves nothing deep, but every later bound rests on it.
 
 ### The plan
 

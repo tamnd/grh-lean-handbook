@@ -22,7 +22,7 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* Use the corollary at the end of Section 3 for one direction. For the family $2$, the answer is $c \geq -\log 2$.
 
-**Exercise 4.** Let $\Lambda \subset \mathbb{R}^2$ be the lattice $\mathbb{Z}^2$ and let $v_1 = (1/2, 0)$, $v_2 = (0, 1)$. In the standard twisted lattice on $\mathbb{C}^2$, find the least covolume bound and the least index bound for $v$, and check the inequality of Section 6 with $n' = 0$.
+**Exercise 4.** Let $\mathcal{L} \subset \mathbb{R}^2$ be the lattice $\mathbb{Z}^2$ and let $v_1 = (1/2, 0)$, $v_2 = (0, 1)$. In the standard twisted lattice on $\mathbb{C}^2$, find the least covolume bound and the least index bound for $v$, and check the inequality of Section 6 with $n' = 0$.
 
 *Hint.* $\det \mathrm{Gram}(v) = 1/4$, so $c = -2\log 2$. The matrix $\operatorname{diag}(2, 1)$ gives index at most $\log 2$. The inequality is an equality.
 
@@ -40,7 +40,7 @@ Liouville's inequality for algebraic numbers dates from 1844. The product formul
 
 The source files cite three works as related to the method of this chapter: Bost, *Algebraic leaves of algebraic foliations over number fields* (2001); Laurent, *Linear forms in two logarithms and interpolation determinants* (1994); and Gaudron, *Pentes des fibrés vectoriels adéliques sur un corps global* (2006). The method of interpolation determinants bounds a determinant above by its size and below by the product formula. The slope method of Bost and Gaudron puts such bounds in the language of adelic vector bundles. The list of references of the source gives no place in these works, and this book has not compared them with the source.
 
-The notions of this chapter differ from those of the literature in three ways. The places are the automorphisms of $\mathbb{C}$ and the isomorphisms $\mathbb{C} \cong \overline{\mathbb{Q}}_\ell$. Heights are bounds for families indexed by these isomorphisms, so the multiplier is common but the number may change with $\iota$. And the integral structure is given at each $\iota$ through several twists, with the covolume only for the trivial twist. The second point lets the source use a different twist at each prime.
+The notions of this chapter differ from those of the literature in three ways. The places are the automorphisms of $\mathbb{C}$ and the isomorphisms $\mathbb{C} \cong \bar{\mathbb{Q}}_\ell$. Heights are bounds for families indexed by these isomorphisms, so the multiplier is common but the number may change with $\iota$. And the integral structure is given at each $\iota$ through several twists, with the covolume only for the trivial twist. The second point lets the source use a different twist at each prime.
 
 The research notes of this book describe the inequality as "covolume $+ 2 \cdot$ index $\geq 0$". The Lean statement has three more terms, $n'(b_{\mathrm{short}} + b_{\mathrm{denom}}) + b_{\mathrm{volume}}$, for the auxiliary vectors and the change of twist. The short form holds only when these terms are $0$, as in the rank-one example of Section 6.
 

@@ -56,7 +56,7 @@ Lean: `New.Parameters.E`, `New.Parameters.K`, `New.Parameters.ζ` (New/Reduction
 
 Lean: `New.Parameters.irreducible_cyclotomic` (New/Reduction/Data/FieldsAndPlaces.lean).
 
-*Proof.* Let $M = \mathbb{Q}(\zeta_d)$. For $d \equiv 3 \bmod 4$ the Gauss sum $\sum_a (a/d) \zeta_d^a$ is a square root of $-d$, so $K \subset M$, and it is enough to prove that $\Phi_{q_1}$ is irreducible over $M$. Since $q_1$ is prime to $d$, the field $L = M(\zeta_{q_1})$ contains a primitive root of order $q_1 d$. So $[L : \mathbb{Q}] \ge \varphi(q_1)\varphi(d)$ and $[L : M] \ge \varphi(q_1) = \deg \Phi_{q_1}$. $\square$
+*Proof.* For $n \geq 1$ let $\zeta_n$ be a primitive $n$-th root of unity in $\mathbb{C}$. Let $F = \mathbb{Q}(\zeta_d)$. For $d \equiv 3 \bmod 4$ the Gauss sum $\sum_a (a/d) \zeta_d^a$ is a square root of $-d$, so $K \subset F$, and it is enough to prove that $\Phi_{q_1}$ is irreducible over $F$. Since $q_1$ is prime to $d$, the field $F' = F(\zeta_{q_1})$ contains a primitive root of order $q_1 d$. So $[F' : \mathbb{Q}] \ge \varphi(q_1)\varphi(d)$ and $[F' : F] \ge \varphi(q_1) = \deg \Phi_{q_1}$. $\square$
 
 The proof uses only that $q_1$ and $d$ are coprime (Section 2). The classical form is: if $m$ and $n$ are coprime then $\mathbb{Q}(\zeta_m) \cap \mathbb{Q}(\zeta_n) = \mathbb{Q}$ (Washington, *Introduction to Cyclotomic Fields*, Chapter 2).
 
@@ -86,7 +86,7 @@ So the torsion of $\mathcal{O}_E^\times$ is the cyclic group $\langle \zeta \ran
 
 Lean: `New.Parameters.norm_zeta_eq_one` (New/Reduction/Data/FieldsAndPlaces.lean).
 
-*Proof.* The norm is the product of the conjugates $\zeta^a$, $a \in (\mathbb{Z}/q_1)^\times$, that is, $\zeta^{\sigma}$ with $\sigma$ the sum of the units modulo $q_1$. For $q_1 > 2$ the units come in pairs $\{a, -a\}$, so $\sigma \equiv 0 \bmod q_1$. Here $q_1 \ge 18480$. $\square$
+*Proof.* The norm is the product of the conjugates $\zeta^a$, $a \in (\mathbb{Z}/q_1)^\times$, that is, $\zeta^{S}$ with $S$ the sum of the units modulo $q_1$. For $q_1 > 2$ the units come in pairs $\{a, -a\}$, so $S \equiv 0 \bmod q_1$. Here $q_1 \ge 18480$. $\square$
 
 ### The standing hypothesis: a root of unity of order $5040$
 

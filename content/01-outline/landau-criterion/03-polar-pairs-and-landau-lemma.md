@@ -40,16 +40,16 @@ At $s = 1$ the formula reads $0/0$. With the convention $x/0 = 0$ of Lean it giv
 
 The first step is the measure of Step 3 of the model proof.
 
-**Lemma (The positive measure).** Let $E$ be measurable with $|E(v)| \leq C e^v$ for $v \geq 0$. Let $\beta > 0$, and suppose that $E(v) \leq e^{(\beta - 1)v}$ for all large $v$. Then there are a measure $\mu$ on $\mathbb{R}$ and a real number $K$ such that, for every $s$ with $\operatorname{Re} s > \beta + 2$, the function $e^{-(\operatorname{Re} s)|v|}$ is $\mu$-integrable and
-$$\int_{\mathbb{R}} e^{-s|v|}\, d\mu(v) = \frac{K}{s - \beta} - \int_0^\infty E(v)\, e^{(1 - s)v}\, dv.$$
+**Lemma (The positive measure).** Let $E$ be measurable with $|E(v)| \leq C e^v$ for $v \geq 0$. Let $\beta > 0$, and suppose that $E(v) \leq e^{(\beta - 1)v}$ for all large $v$. Then there are a measure $\mu$ on $\mathbb{R}$ and a real number $C_0$ such that, for every $s$ with $\operatorname{Re} s > \beta + 2$, the function $e^{-(\operatorname{Re} s)|v|}$ is $\mu$-integrable and
+$$\int_{\mathbb{R}} e^{-s|v|}\, d\mu(v) = \frac{C_0}{s - \beta} - \int_0^\infty E(v)\, e^{(1 - s)v}\, dv.$$
 
-Lean: `New.exists_measure_laplace_eq` (Lib/Analytic/Landau.lean), with `New.exists_mul_exp_le` (Lib/Analytic/Landau.lean) for the constant $K$.
+Lean: `New.exists_measure_laplace_eq` (Lib/Analytic/Landau.lean), with `New.exists_mul_exp_le` (Lib/Analytic/Landau.lean) for the constant $C_0$. The source writes $K$ for $C_0$; this book keeps $K$ for the quadratic field.
 
-*Proof.* Let $Y \geq 0$ be such that $E(v) \leq e^{(\beta - 1)v}$ for $v \geq Y$. Put $K = \max(1, |C| e^{2Y})$. We claim that $E(v) e^v \leq K e^{\beta v}$ for every $v > 0$. For $v \geq Y$ we have $E(v) e^v \leq e^{\beta v} \leq K e^{\beta v}$. For $0 < v \leq Y$ we have $E(v) e^v \leq |C| e^{2v} \leq |C| e^{2Y} \leq K \leq K e^{\beta v}$, since $\beta v \geq 0$. Here $\beta > 0$ is used. Let $\mu$ be the measure on $(0, \infty)$ with the density $K e^{\beta v} - E(v) e^v \geq 0$ with respect to $dv$. For $\operatorname{Re} s > \beta + 2$ both $K e^{(\beta - s)v}$ and $E(v) e^{(1 - s)v}$ are integrable on $(0, \infty)$, and
-$$\int e^{-sv}\, d\mu(v) = K\int_0^\infty e^{(\beta - s)v}\, dv - \int_0^\infty E(v)\, e^{(1 - s)v}\, dv = \frac{K}{s - \beta} - \int_0^\infty E(v)\, e^{(1 - s)v}\, dv.$$
+*Proof.* Let $Y \geq 0$ be such that $E(v) \leq e^{(\beta - 1)v}$ for $v \geq Y$. Put $C_0 = \max(1, |C| e^{2Y})$. We claim that $E(v) e^v \leq C_0 e^{\beta v}$ for every $v > 0$. For $v \geq Y$ we have $E(v) e^v \leq e^{\beta v} \leq C_0 e^{\beta v}$. For $0 < v \leq Y$ we have $E(v) e^v \leq |C| e^{2v} \leq |C| e^{2Y} \leq C_0 \leq C_0 e^{\beta v}$, since $\beta v \geq 0$. Here $\beta > 0$ is used. Let $\mu$ be the measure on $(0, \infty)$ with the density $C_0 e^{\beta v} - E(v) e^v \geq 0$ with respect to $dv$. For $\operatorname{Re} s > \beta + 2$ both $C_0 e^{(\beta - s)v}$ and $E(v) e^{(1 - s)v}$ are integrable on $(0, \infty)$, and
+$$\int e^{-sv}\, d\mu(v) = C_0\int_0^\infty e^{(\beta - s)v}\, dv - \int_0^\infty E(v)\, e^{(1 - s)v}\, dv = \frac{C_0}{s - \beta} - \int_0^\infty E(v)\, e^{(1 - s)v}\, dv.$$
 On $(0, \infty)$ we have $e^{-sv} = e^{-s|v|}$. $\square$
 
-The measure $\mu$ is the place where the one-sided bound becomes a positivity. Only an upper bound for $E$ enters. The object with one sign is the density $K e^{\beta v} - E(v)e^v$, not the weights $\lambda(n)$.
+The measure $\mu$ is the place where the one-sided bound becomes a positivity. Only an upper bound for $E$ enters. The object with one sign is the density $C_0 e^{\beta v} - E(v)e^v$, not the weights $\lambda(n)$.
 
 ### Landau's lemma in the form of the source
 
@@ -73,9 +73,9 @@ Lean: `New.exists_Ioi_subset_integrableExpSet` (Lib/Analytic/Landau.lean).
 
 Lean: `New.IsPolar.landau` (Lib/Analytic/Landau.lean).
 
-*Proof.* Let $C$ and $\Phi$ be as in the definition. By [Lemma](/decl/New.exists_measure_laplace_eq/), there are $\mu$ and $K$ such that $F(s) = \int e^{-s|v|}\, d\mu$ converges and equals $\Psi(s) := K/(s - \beta) - \Phi(s)$ for $\operatorname{Re} s > \beta + 2$. Let $S$ be the set of real $t$ at which $F$ converges absolutely. It contains $(\beta + 2, \infty)$, so its complement is bounded above.
+*Proof.* Let $C$ and $\Phi$ be as in the definition. By [Lemma](/decl/New.exists_measure_laplace_eq/), there are $\mu$ and $C_0$ such that $F(s) = \int e^{-s|v|}\, d\mu$ converges and equals $\Psi(s) := C_0/(s - \beta) - \Phi(s)$ for $\operatorname{Re} s > \beta + 2$. Let $S$ be the set of real $t$ at which $F$ converges absolutely. It contains $(\beta + 2, \infty)$, so its complement is bounded above.
 
-Step 1: the residues of $\Psi$. Let $\operatorname{Re} \rho > \beta$. Then $\operatorname{Re} \rho > 0$, so $(z - \rho)\Phi(z) \to r(\rho)$ by property 3. The function $K/(s - \beta)$ is continuous at $\rho$, since $\rho \neq \beta$. So $(z - \rho)\Psi(z) \to -r(\rho)$.
+Step 1: the residues of $\Psi$. Let $\operatorname{Re} \rho > \beta$. Then $\operatorname{Re} \rho > 0$, so $(z - \rho)\Phi(z) \to r(\rho)$ by property 3. The function $C_0/(s - \beta)$ is continuous at $\rho$, since $\rho \neq \beta$. So $(z - \rho)\Psi(z) \to -r(\rho)$.
 
 Step 2: the point $a$. Let $a$ be the least upper bound of $\{\beta\} \cup (\mathbb{R} \setminus S)$. So $a = \max(\beta, \sigma_c)$, where $\sigma_c$ is the abscissa of convergence. Every $t > a$ is in $S$, and $(a, \infty)$ is open, so it lies in the interior of $S$. So $F$ is analytic on $\operatorname{Re} s > a$. The functions $\Psi$ and $F$ are meromorphic on the connected half-plane $\operatorname{Re} s > a$, and they are equal on $\operatorname{Re} s > \beta + 2$. By the identity theorem they are equal on a punctured neighbourhood of every point of $\operatorname{Re} s > a$.
 
@@ -85,4 +85,4 @@ Step 4: the residue at $\rho$. So $a = \beta$, and $F$ is analytic at every $\rh
 
 The proof uses the hypothesis on $r$ at one real point only, the point $a$. But this point is not known in advance, so the theorem asks the sign at every real point to the right of $\beta$.
 
-**Remark (Formalization).** The theorem asks only $\beta > 0$. It is used twice. First, property 3 of a polar pair gives the residues only in $\operatorname{Re} s > 0$, and Step 1 needs them at points to the right of $\beta$. Second, the constant $K$ of the lemma needs $e^{\beta v} \geq 1$ for $v > 0$. The criterion of Section 5 has $\beta > 1/2$, and it passes $\beta > 0$ to this theorem by linear arithmetic. The condition $\beta > 1/2$ is used only for the choice of the prime $d$. The theorem bounds $E$ from above only, and it asks only the real part of $r$ at real points. In the application $r$ is real at real points.
+**Remark (Formalization).** The theorem asks only $\beta > 0$. It is used twice. First, property 3 of a polar pair gives the residues only in $\operatorname{Re} s > 0$, and Step 1 needs them at points to the right of $\beta$. Second, the constant $C_0$ of the lemma needs $e^{\beta v} \geq 1$ for $v > 0$. The criterion of Section 5 has $\beta > 1/2$, and it passes $\beta > 0$ to this theorem by linear arithmetic. The condition $\beta > 1/2$ is used only for the choice of the prime $d$. The theorem bounds $E$ from above only, and it asks only the real part of $r$ at real points. In the application $r$ is real at real points.
