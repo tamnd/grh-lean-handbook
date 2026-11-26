@@ -15,7 +15,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Weights of regular parameters
 
-On the last path the forms are algebraic forms of a weight $(\kappa, e)$. Section 7 must find this weight from the parameter of the node, and it must bound the weight. This section gives the two tools: every regular parameter comes from a weight, and a bound on the parameter bounds the weight. All results are in [RegularParameters.lean](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean), in the namespace `New.Exchange`.
+On the last path the forms are algebraic forms of a weight $(\kappa, e)$. Section 9 must find this weight from the parameter of the node, and it must bound the weight. This section gives the two tools: every regular parameter comes from a weight, and a bound on the parameter bounds the weight. All results are in [RegularParameters.lean](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean), in the namespace `New.Exchange`.
 
 ### Results used
 
@@ -86,4 +86,4 @@ Lean: `New.Exchange.exists_isHCParam_of_hasGap` (New/Determinant/AuxiliaryForms/
 
 ### Where the results are used
 
-Section 7 applies `exists_isHCParam_of_le` to the parameters of the nodes $(z, j, m)$ of the last path, with the columns above the rank prescribed by the weights of the theta lifts. It applies the two bounds to get the bounds of `natAbs_lastPathDetExp_le` and `boxes_lastPathColumns_le_natB_mul`. The corollary is used in Section 7 for the branching pairing, and also in [SpanningTheorem.lean](lean:New/Spanning/SecondMoment/SpanningTheorem.lean) and in [RowsFromEigensystems.lean](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean).
+Sections 8 and 9 apply `exists_isHCParam_of_le` to the parameters of the nodes $(z, j, m)$ of the last path, with the columns above the rank prescribed by the weights of the theta lifts. They apply the two bounds to get the bounds of `natAbs_lastPathDetExp_le` and `boxes_lastPathColumns_le_natB_mul`. The corollary is used in Section 8 for the branching pairing, and also in [SpanningTheorem.lean](lean:New/Spanning/SecondMoment/SpanningTheorem.lean) and in [RowsFromEigensystems.lean](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean).

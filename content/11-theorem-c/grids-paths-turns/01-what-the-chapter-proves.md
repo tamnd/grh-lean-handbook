@@ -52,15 +52,15 @@ A turn of the half in the grid of the $\tilde Y$ at its corner $(a, b)$ has the 
 
 ### The three steps
 
-**Step 1. The first path.** A conjugate form on $Y_m$ and a form on $\tilde Y^m_0$ move down the first columns by iterated transposed theta lifts. Their period on $\tilde Y^0_0$ is a constant times the period of one path datum $\Psi^0$ on the first path (Section 3).
+**Step 1. The first path.** A conjugate form on $Y_m$ and a form on $\tilde Y^m_0$ move down the first columns by iterated transposed theta lifts. Their period on $\tilde Y^0_0$ is a constant times the period of one path datum $\Psi^0$ on the first path (Sections 3 and 4).
 
-**Step 2. The turns.** A path datum on a path gives a path datum on the turned path. Proportionality of periods goes back the other way, with a constant $c$ (Section 4). Off the diagonal the constant comes from the one square identity (Section 5). On the diagonal it comes from two seesaws and a reversal of the line (Section 6). Composed over the $m^2$ turns, the constant $c(\vartheta)$ has, up to a constant and a power of $\mathrm{Nm}(Q)$, the absolute value
+**Step 2. The turns.** A path datum on a path gives a path datum on the turned path. Proportionality of periods goes back the other way, with a constant $c$ (Section 5). Off the diagonal the constant comes from the one square identity (Section 6). On the diagonal it comes from two seesaws and a reversal of the line (Section 7). Composed over the $m^2$ turns, the constant $c(\vartheta)$ has, up to a constant and a power of $\mathrm{Nm}(Q)$, the absolute value
 
 $$\prod_{i < m} \prod_{j < m} \mathrm{turnRatio}_{ij}(\vartheta).$$
 
-**Step 3. The last path.** On the last path all groups are definite. The forms are algebraic forms, and the period of every path datum is a constant times a finite sum $\Xi$, divided by the order of a finite general linear group (Section 7). The sum $\Xi$ is a sum of a bounded number of terms of bounded size.
+**Step 3. The last path.** On the last path all groups are definite. The forms are algebraic forms, and the period of every path datum is a constant times a finite sum $\Xi$, divided by the order of a finite general linear group (Sections 8 and 9). The sum $\Xi$ is a sum of a bounded number of terms of bounded size.
 
-Section 2 is a lemma for Step 3. It finds the weight $(\kappa, e)$ of a regular parameter and bounds the boxes of $\kappa$ and the power $e$.
+Section 2 is a tool for Step 3. It finds the weight $(\kappa, e)$ of a regular parameter and bounds the boxes of $\kappa$ and the power $e$.
 
 The figure shows how the three steps join. The arrows to the right carry path data. The arrows to the left carry proportionality.
 
@@ -79,10 +79,10 @@ Here $n$ is `triangleGLCard false` $\vartheta$ $m$, the order of $\mathrm{GL}$ o
 | Section | File | Content |
 |---|---|---|
 | 2 | [RegularParameters.lean](lean:New/Determinant/AuxiliaryForms/RegularParameters.lean) | weights of regular parameters |
-| 3 | [GridFirstColumns.lean](lean:New/Determinant/AuxiliaryForms/GridFirstColumns.lean) | the first path |
-| 4, 5 | [Turns.lean](lean:New/Determinant/AuxiliaryForms/Turns.lean) | turns, off the diagonal |
-| 6 | [DiagonalTurns.lean](lean:New/Determinant/AuxiliaryForms/DiagonalTurns.lean) | diagonal turns, all turns |
-| 7 | [LastPath.lean](lean:New/Determinant/AuxiliaryForms/LastPath.lean) | the last path |
+| 3, 4 | [GridFirstColumns.lean](lean:New/Determinant/AuxiliaryForms/GridFirstColumns.lean) | the first path |
+| 5, 6 | [Turns.lean](lean:New/Determinant/AuxiliaryForms/Turns.lean) | turns, off the diagonal |
+| 7 | [DiagonalTurns.lean](lean:New/Determinant/AuxiliaryForms/DiagonalTurns.lean) | diagonal turns, all turns |
+| 8, 9 | [LastPath.lean](lean:New/Determinant/AuxiliaryForms/LastPath.lean) | the last path |
 
 No file of this chapter imports a file of a later chapter of Volume 11. The docstring of LastPath.lean refers to SpanningForms.lean, of the next chapter, only in its prose.
 
