@@ -54,7 +54,7 @@ So $y$ is a lift generator, and the bound for denominators gives the claim. $\sq
 
 The pair $V$ of the main summand is the untwisted pair, not $O$. This is why the main summands of Section 3 do not depend on the twist. The twist enters only through the character identity and through the twisted Selmer group.
 
-### The line of a main pair
+### The denominator for the line of a main pair
 
 Let $p = (\nu, z)$ be a main pair for $j$, and let $Y_\vartheta$ = `p.lValueData hp.hasLiftRank ϑ` be the data of the theta lift of $\nu\vartheta$ from $U(1)$ to $U(2z)$. Write $O_p(\vartheta)$ for its descent pair and $\varphi_\vartheta$ = `Y_ϑ.trivialLift` for the lifted form. Let $e_{X-1}$ be the idempotent `tupleIdem Unit` of the labels $X - 1$ at all chosen places of $O_p(\vartheta)$.
 
