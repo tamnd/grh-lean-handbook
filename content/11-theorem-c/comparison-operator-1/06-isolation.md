@@ -2,6 +2,7 @@
 title: Isolation
 lean:
   - New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean
+  - Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean
 decls:
   - New.Data.eight_mul_pow_mul_two_pow_le
   - New.Data.two_pow_mul_pow_f_le_b_pow_nStar
