@@ -77,7 +77,7 @@ Lean: `New.exists_map_norm_eq_of_abelianLift_artinAt_eq_one` (Lib/ClassField/Glo
 
 The hypothesis that $\chi$ kills the complex conjugations says that every real place of $K$ stays real in $L$. Then every element is a local norm at the real places, so the theorem has the textbook hypotheses at all places.
 
-### Albert, Brauer, Hasse and Noether
+### The local-global principle
 
 **Theorem (Albert, Brauer, Hasse, Noether).** Let $\alpha \in H^2(\Gamma, \Omega^\times)$. Suppose that $\operatorname{res}_{D_A} \alpha = 0$ for the decomposition group $D_A$ of every place $A$ of $\Omega$ over a finite place of $K$. Suppose that there is an open subgroup $U$ of $\Gamma$ that contains every complex conjugation, with $\operatorname{res}_U \alpha = 0$. Then $\alpha = 0$.
 Lean: `New.albert_brauer_hasse_noether` (Lib/ClassField/Global/AlbertBrauerHasseNoether.lean).

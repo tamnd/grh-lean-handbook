@@ -136,7 +136,7 @@ Lean: `New.Cohomology.resH2_classOfInvariant` (Lib/ClassField/Local/InvariantMap
 
 This is the classical rule $\operatorname{inv}_{k'} \circ \operatorname{res} = [k' : k] \operatorname{inv}_k$ of Serre, *Local Fields*, Chapter XIII, §3. The source proves it in the form "a map of local fields with ramification index $e$ and residue degree $f$ multiplies the invariant by $ef$", and uses $ef = [\Gamma : V]$.
 
-### The local Artin map
+### The local Artin map in the source
 
 **Definition (Local Artin property).** A homomorphism $f : L^\times \to \Gamma^{\mathrm{ab}}$ has the property `IsLocalArtin Γ k A` if, for every continuous character $\chi$ of $\Gamma$ and every $x \in L^\times$,
 $$\operatorname{classOfInvariant}(\chi(f(x))) = -\operatorname{cyclicClass}(\chi, x).$$

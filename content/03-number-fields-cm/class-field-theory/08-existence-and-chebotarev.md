@@ -43,7 +43,7 @@ Lean: `New.QZChar.apply_eq_zero_of_artinMap_eq_one` (Lib/ClassField/Global/Exist
 
 *Proof.* Take $S$ large: it contains the places over $n$ and the places where $\psi$ is ramified, and it satisfies the generation condition. The character $\psi$ kills the ideles that are $n$-th powers at $S$ and units off $S$, place by place: at $v \in S$ because $n \psi = 0$, and off $S$ because $\psi$ is unramified there. It also kills $K^\times$. Since $\operatorname{artinMap}(a) = 1$, every Kummer character kills the Artin symbol of $a$. By part 2 of the previous lemma, $a$ lies in the group that $\psi$ kills. $\square$
 
-### The existence theorem
+### Existence for totally complex fields
 
 **Lemma (Factorisation).** Let $C$ be a topological group, and let $\theta : (\mathbb{A}_{K,f})^\times \to C$ be a continuous homomorphism whose kernel contains the kernel of $\operatorname{artinMap}$. Then there is a continuous homomorphism $\mu : \Gamma \to C$ such that $\mu(g) = \theta(x)$ whenever the class of $g$ in $\Gamma^{\mathrm{ab}}$ is $\operatorname{artinMap}(x)$.
 Lean: `New.exists_comp_artinMap_of_ker_le` (Lib/ClassField/Global/ExistenceTheorem.lean).
