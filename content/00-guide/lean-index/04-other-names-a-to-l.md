@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 7085 cited names outside the namespace `New.Data`. This section has 3918 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 7256 cited names outside the namespace `New.Data`. This section has 3994 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -53,6 +53,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.aeval_root_finAdele_surjective`: `Lib/General/NumberTheory/CMFields.lean`, [line 134](lean:Lib/General/NumberTheory/CMFields.lean#L134). Cited in [Chapter](/chapter/cm-fields/).
 - `New.albert_brauer_hasse_noether`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 697](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L697). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.AlgForm`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 112](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L112). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.algFormCentralRep`: `New/UpperBound/Size/ShortColumns.lean`, [line 433](lean:New/UpperBound/Size/ShortColumns.lean#L433). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.algFormCoeff`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 155](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L155). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.algFormRep`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 117](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L117). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.AlgHeckeChar`: `Lib/ClassField/Local/ArtinMap.lean`, [line 96](lean:Lib/ClassField/Local/ArtinMap.lean#L96). Cited in [Chapter](/chapter/attached-representations/).
@@ -167,6 +168,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.chiAdelic`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 669](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L669). Cited in [Chapter](/chapter/weil-representation/).
 - `New.chiFin`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 676](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L676). Cited in [Chapter](/chapter/weil-representation/).
 - `New.chiK`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 58](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L58). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/fitting-ideals/).
+- `New.chiK_eq_neg_one_of_ne`: `New/Derivatives/Sharpness/Cases.lean`, [line 581](lean:New/Derivatives/Sharpness/Cases.lean#L581). Cited in [Chapter](/chapter/sharpness/).
 - `New.chosenCutoff`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 75](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L75). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/reduction-theory/).
 - `New.chosenRoot`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 118](lean:Lib/LocalGL/Green/TauFunctions.lean#L118). Cited in [Chapter](/chapter/finite-gln/).
 - `New.chowlaSelbergConst`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 74](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L74). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/cm-elliptic-curves/).
@@ -211,17 +213,24 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.CMLattice.exists_functional_equation_exponentSeries`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 350](lean:New/Derivatives/FormalGroup/Exponent.lean#L350). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_galConjugate`: `Lib/CM/ConjugateCurve.lean`, [line 389](lean:Lib/CM/ConjugateCurve.lean#L389). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_galConjugate_of_g₂_g₃`: `Lib/CM/ConjugateCurve.lean`, [line 354](lean:Lib/CM/ConjugateCurve.lean#L354). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.exists_isGreatest_norm_deriv`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 165](lean:New/Derivatives/Sharpness/OneCurve.lean#L165). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal`: `Lib/CM/GoodReduction.lean`, [line 230](lean:Lib/CM/GoodReduction.lean#L230). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal_mul`: `Lib/CM/GoodReduction.lean`, [line 249](lean:Lib/CM/GoodReduction.lean#L249). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal_sq`: `Lib/CM/ChowlaSelberg.lean`, [line 257](lean:Lib/CM/ChowlaSelberg.lean#L257). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_negLogTheta_frobenius_congruence`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 257](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L257). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.CMLattice.exists_norm_coeff_le_norm_coeff_prod_pow`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 227](lean:New/Derivatives/Sharpness/OneCurve.lean#L227). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.exists_norm_coeff_subst_add_le`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 239](lean:New/Derivatives/Sharpness/OneCurve.lean#L239). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.exists_norm_deriv_eq_maxDerivNorm`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 181](lean:New/Derivatives/Sharpness/OneCurve.lean#L181). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.exists_norm_twistedTranslate_theta_le`: `Lib/CM/FiniteLattices.lean`, [line 166](lean:Lib/CM/FiniteLattices.lean#L166). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.CMLattice.exists_prod_rescale_rescale_thetaProd_eq`: `New/Derivatives/Sharpness/Couplings.lean`, [line 471](lean:New/Derivatives/Sharpness/Couplings.lean#L471). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.exists_prod_twistedTranslate_eq_thetaProd_mul`: `New/Derivatives/Vacuum/StandardDataProducts.lean`, [line 109](lean:New/Derivatives/Vacuum/StandardDataProducts.lean#L109). Cited in [Chapter](/chapter/normal-forms/).
 - `New.CMLattice.exists_rescale_theta_eq_mul_expSubst`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 240](lean:New/Derivatives/FormalGroup/Exponent.lean#L240). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_rescale_theta_eq_pow_mul_aeval`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 146](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L146). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_rescale_theta_eq_pow_mul_one_add_smul`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 224](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L224). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_rescale_theta_eq_theta_pow_mul`: `Lib/CM/Integrality/IsogenyIntegrality.lean`, [line 62](lean:Lib/CM/Integrality/IsogenyIntegrality.lean#L62). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_scaled_formalParam`: `Lib/CM/FormalGroup/FormalParameter.lean`, [line 224](lean:Lib/CM/FormalGroup/FormalParameter.lean#L224). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.exists_scaledThetaProd_mem_mul_eq_one`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 488](lean:New/Derivatives/Sharpness/LeastValuation.lean#L488). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.exists_scaledThetaProd_mul_eq_one`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 468](lean:New/Derivatives/Sharpness/LeastValuation.lean#L468). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.exists_seriesToCp_eq_exponentSeries_of_inert`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 420](lean:New/Derivatives/FormalGroup/Exponent.lean#L420). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_seriesToCp_eq_exponentSeries_of_ramified`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 446](lean:New/Derivatives/FormalGroup/Exponent.lean#L446). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_smul_negLogThetaPart_sub_rescale_eq`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 282](lean:New/Derivatives/FormalGroup/Exponent.lean#L282). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -241,10 +250,27 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.CMLattice.integralSeriesRing`: `Lib/CM/FormalGroup/IntegralParameter.lean`, [line 252](lean:Lib/CM/FormalGroup/IntegralParameter.lean#L252). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.IsComplexMultiplicationData`: `Lib/CM/ChowlaSelberg.lean`, [line 333](lean:Lib/CM/ChowlaSelberg.lean#L333). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.IsTorsion`: `Lib/CM/Integrality/TorsionValues.lean`, [line 91](lean:Lib/CM/Integrality/TorsionValues.lean#L91). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.isUnit_of_rescale_thetaProd_eq`: `New/Derivatives/Sharpness/Couplings.lean`, [line 455](lean:New/Derivatives/Sharpness/Couplings.lean#L455). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.jetRing`: `New/Derivatives/Vacuum/JetIntegrality.lean`, [line 104](lean:New/Derivatives/Vacuum/JetIntegrality.lean#L104). Cited in [Chapter](/chapter/normal-forms/).
+- `New.CMLattice.katz_divisibility_limit`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 330](lean:New/Derivatives/Sharpness/OneCurve.lean#L330). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.latticeModule`: `Lib/CM/GoodReduction.lean`, [line 67](lean:Lib/CM/GoodReduction.lean#L67). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.latticeModule_galConjugate_eq_mul`: `Lib/CM/ChowlaSelberg.lean`, [line 525](lean:Lib/CM/ChowlaSelberg.lean#L525). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.LeastValLE`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 259](lean:New/Derivatives/Sharpness/LeastValuation.lean#L259). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.LeastValLE.add`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 296](lean:New/Derivatives/Sharpness/LeastValuation.lean#L296). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.LeastValLE.exists_monomial`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 362](lean:New/Derivatives/Sharpness/LeastValuation.lean#L362). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.LeastValLE.mono`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 280](lean:New/Derivatives/Sharpness/LeastValuation.lean#L280). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_of_copySubst`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 314](lean:New/Derivatives/Sharpness/LeastValuation.lean#L314). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_of_rescale`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 343](lean:New/Derivatives/Sharpness/LeastValuation.lean#L343). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_of_unit_coefficients`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 509](lean:New/Derivatives/Sharpness/LeastValuation.lean#L509). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_partnerDegree_of_isCouplingFamily`: `New/Derivatives/Sharpness/Couplings.lean`, [line 506](lean:New/Derivatives/Sharpness/Couplings.lean#L506). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_six_of_isCouplingFamily`: `New/Derivatives/Sharpness/Couplings.lean`, [line 581](lean:New/Derivatives/Sharpness/Couplings.lean#L581). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_zero`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 290](lean:New/Derivatives/Sharpness/LeastValuation.lean#L290). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.leastValLE_zero_of_span`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 548](lean:New/Derivatives/Sharpness/LeastValuation.lean#L548). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.max_norm_torsionValue`: `Lib/CM/Integrality/TorsionValues.lean`, [line 373](lean:Lib/CM/Integrality/TorsionValues.lean#L373). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.maxDerivNorm`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 160](lean:New/Derivatives/Sharpness/OneCurve.lean#L160). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.maxDerivNorm_add_le`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 258](lean:New/Derivatives/Sharpness/OneCurve.lean#L258). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.maxDerivNorm_le_one`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 213](lean:New/Derivatives/Sharpness/OneCurve.lean#L213). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.maxDerivNorm_zero`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 219](lean:New/Derivatives/Sharpness/OneCurve.lean#L219). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.mem_span_monomialSection`: `Lib/CM/Integrality/IntegralSections.lean`, [line 435](lean:Lib/CM/Integrality/IntegralSections.lean#L435). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.monomialSection`: `Lib/CM/Sigma/ThetaSections.lean`, [line 627](lean:Lib/CM/Sigma/ThetaSections.lean#L627). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.multiSeriesRing`: `Lib/CM/Integrality/LogTheta.lean`, [line 504](lean:Lib/CM/Integrality/LogTheta.lean#L504). Cited in [Chapter](/chapter/cm-elliptic-curves/).
@@ -252,29 +278,40 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.CMLattice.norm_a₁_le_one`: `Lib/CM/Integrality/TorsionValues.lean`, [line 65](lean:Lib/CM/Integrality/TorsionValues.lean#L65). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.norm_coeff_exponentSeries_eq_one`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 566](lean:New/Derivatives/FormalGroup/Exponent.lean#L566). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.norm_coeff_exponentSeries_sub_le`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 406](lean:New/Derivatives/FormalGroup/Exponent.lean#L406). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.CMLattice.norm_coeff_formalParam_of_eq_primeNorm_pow`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 293](lean:New/Derivatives/Sharpness/OneCurve.lean#L293). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.norm_coeff_pow_taylorVia_translatedX_lt_one`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 379](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L379). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.norm_coeff_pow_taylorVia_translatedX_recursion_lt_one`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 346](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L346). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.norm_coeff_smul_negLogTheta_sub_rescale_le`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 199](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L199). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.norm_coeff_taylorVia_translatedX_eq_one`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 416](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L416). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.norm_constantCoeff_le_of_mem_jetRing`: `New/Derivatives/Vacuum/JetIntegrality.lean`, [line 144](lean:New/Derivatives/Vacuum/JetIntegrality.lean#L144). Cited in [Chapter](/chapter/normal-forms/).
+- `New.CMLattice.norm_deriv_le_one`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 202](lean:New/Derivatives/Sharpness/OneCurve.lean#L202). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.norm_disc_eq_one`: `Lib/CM/GoodReduction.lean`, [line 792](lean:Lib/CM/GoodReduction.lean#L792). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.norm_eq_one_of_piPrimeInt_dvd_sub_one`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 279](lean:New/Derivatives/Sharpness/OneCurve.lean#L279). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.norm_jet_thetaProd_pow_mul_le_one`: `New/Derivatives/Vacuum/JetIntegrality.lean`, [line 202](lean:New/Derivatives/Vacuum/JetIntegrality.lean#L202). Cited in [Chapter](/chapter/normal-forms/).
 - `New.CMLattice.norm_le_one_of_mapsTo_lattice`: `Lib/CM/Integrality/IsogenyIntegrality.lean`, [line 127](lean:Lib/CM/Integrality/IsogenyIntegrality.lean#L127). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.norm_piPrime_mul_coeff_negLogTheta_le_one`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 170](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L170). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.CMLattice.norm_pow_div_of_inert`: `New/Derivatives/Sharpness/Couplings.lean`, [line 428](lean:New/Derivatives/Sharpness/Couplings.lean#L428). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.norm_prod_le_one`: `Lib/CM/ChowlaSelberg.lean`, [line 454](lean:Lib/CM/ChowlaSelberg.lean#L454). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.norm_scaledDisc_le_one`: `Lib/CM/GoodReduction.lean`, [line 726](lean:Lib/CM/GoodReduction.lean#L726). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.one_lt_norm_pow_div_of_inert`: `New/Derivatives/Sharpness/Couplings.lean`, [line 442](lean:New/Derivatives/Sharpness/Couplings.lean#L442). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.pderiv_mem_jetRing`: `New/Derivatives/Vacuum/JetIntegrality.lean`, [line 161](lean:New/Derivatives/Vacuum/JetIntegrality.lean#L161). Cited in [Chapter](/chapter/normal-forms/).
 - `New.CMLattice.pow_four_eq_one_of_mul_mem_iff`: `Lib/CM/FiniteLattices.lean`, [line 94](lean:Lib/CM/FiniteLattices.lean#L94). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.pow_le_maxDerivNorm_of_eq_primeNorm_pow`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 313](lean:New/Derivatives/Sharpness/OneCurve.lean#L313). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.prod_area_mul_norm_disc_galConjugate`: `Lib/CM/ChowlaSelberg.lean`, [line 649](lean:Lib/CM/ChowlaSelberg.lean#L649). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.prod_norm_eq_one`: `Lib/CM/ChowlaSelberg.lean`, [line 488](lean:Lib/CM/ChowlaSelberg.lean#L488). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.prod_rescale_theta_mem`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 391](lean:New/Derivatives/Sharpness/LeastValuation.lean#L391). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.prod_scaledDisc_t`: `Lib/CM/GoodReduction.lean`, [line 761](lean:Lib/CM/GoodReduction.lean#L761). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.rescale_mem_range_of_mem_multiSeriesRing`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 379](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L379). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.CMLattice.rescale_mem_range_seriesToCp_of_mem_multiSeriesRing`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 586](lean:New/Derivatives/Sharpness/LeastValuation.lean#L586). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.rescale_thetaProd`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 205](lean:New/Derivatives/FormalGroup/Resolution.lean#L205). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.rescale_thetaProd_eq_mul_expSubst`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 405](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L405). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.rescale_translatedY_mem_integralSeriesRing`: `Lib/CM/Integrality/IsogenyIntegrality.lean`, [line 73](lean:Lib/CM/Integrality/IsogenyIntegrality.lean#L73). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.riemannZeta₁_mul_entireL_eq_sum`: `Lib/CM/ChowlaSelberg.lean`, [line 541](lean:Lib/CM/ChowlaSelberg.lean#L541). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.scaledDisc_two_isogeny`: `Lib/CM/GoodReduction.lean`, [line 626](lean:Lib/CM/GoodReduction.lean#L626). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.scaledIdeal_map_mul_galConjugate_le`: `Lib/CM/ChowlaSelberg.lean`, [line 511](lean:Lib/CM/ChowlaSelberg.lean#L511). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.scaledThetaProd`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 423](lean:New/Derivatives/Sharpness/LeastValuation.lean#L423). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.scaledThetaProd_eq_prod_subst`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 439](lean:New/Derivatives/Sharpness/LeastValuation.lean#L439). Cited in [Chapter](/chapter/sharpness/).
+- `New.CMLattice.scaledThetaProd_mem`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 460](lean:New/Derivatives/Sharpness/LeastValuation.lean#L460). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.sections_le_span_monomialSection`: `Lib/CM/Sigma/ThetaSections.lean`, [line 788](lean:Lib/CM/Sigma/ThetaSections.lean#L788). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.smul_derivative_derivative_negLogTheta_mem`: `New/Derivatives/Vacuum/JetIntegrality.lean`, [line 78](lean:New/Derivatives/Vacuum/JetIntegrality.lean#L78). Cited in [Chapter](/chapter/normal-forms/).
 - `New.CMLattice.sum_kronecker_terms`: `Lib/CM/ChowlaSelberg.lean`, [line 581](lean:Lib/CM/ChowlaSelberg.lean#L581). Cited in [Chapter](/chapter/cm-elliptic-curves/).
@@ -283,19 +320,25 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.CMLattice.theta_add_mul_theta_sub`: `Lib/CM/Sigma/ThetaSections.lean`, [line 266](lean:Lib/CM/Sigma/ThetaSections.lean#L266). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.theta_sq`: `Lib/CM/Sigma/ThetaSections.lean`, [line 187](lean:Lib/CM/Sigma/ThetaSections.lean#L187). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.thetaProd`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 155](lean:New/Derivatives/FormalGroup/Resolution.lean#L155). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.CMLattice.thetaProd_smul`: `New/Derivatives/Sharpness/Cases.lean`, [line 69](lean:New/Derivatives/Sharpness/Cases.lean#L69). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.thetaQuotient_eq_one`: `Lib/CM/ConjugateCurve.lean`, [line 471](lean:Lib/CM/ConjugateCurve.lean#L471). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.torsionValue`: `Lib/CM/Integrality/TorsionValues.lean`, [line 95](lean:Lib/CM/Integrality/TorsionValues.lean#L95). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.translatedX`: `Lib/CM/Sigma/Basic.lean`, [line 741](lean:Lib/CM/Sigma/Basic.lean#L741). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.translatedY`: `Lib/CM/Sigma/Basic.lean`, [line 744](lean:Lib/CM/Sigma/Basic.lean#L744). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.translatedY_add_mem_multiSeriesRing`: `Lib/CM/Integrality/LogTheta.lean`, [line 645](lean:Lib/CM/Integrality/LogTheta.lean#L645). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.varpiValuation_mul_add_one_of_inert`: `New/Derivatives/Sharpness/Couplings.lean`, [line 419](lean:New/Derivatives/Sharpness/Couplings.lean#L419). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.weierstrass_equation`: `Lib/CM/Sigma/ThetaSections.lean`, [line 255](lean:Lib/CM/Sigma/ThetaSections.lean#L255). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.θ`: `Lib/CM/Sigma/Basic.lean`, [line 738](lean:Lib/CM/Sigma/Basic.lean#L738). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMType`: `Lib/Adelic/Adeles/Basic.lean`, [line 82](lean:Lib/Adelic/Adeles/Basic.lean#L82). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.CMTypeOver`: `Lib/GaloisRep/BaseChange/CommutingHeckeFamilies.lean`, [line 78](lean:Lib/GaloisRep/BaseChange/CommutingHeckeFamilies.lean#L78). Cited in [Chapter](/chapter/local-duality/).
 - `New.cocycleRelations`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 161](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L161). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.coeff_copySubst`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 211](lean:New/Derivatives/Sharpness/LeastValuation.lean#L211). Cited in [Chapter](/chapter/sharpness/).
 - `New.coeff_eq_dsCoeff_of_isKHighest`: `Lib/DiscreteSeries/Rigidity/KernelFixes.lean`, [line 517](lean:Lib/DiscreteSeries/Rigidity/KernelFixes.lean#L517). Cited in [Chapter](/chapter/discrete-series/).
 - `New.coeff_heckePoly`: `Lib/GaloisRep/Main/Defs.lean`, [line 137](lean:Lib/GaloisRep/Main/Defs.lean#L137). Cited in [Chapter](/chapter/attached-representations/).
 - `New.coeff_hyperplaneSum_eq_ite`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 229](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L229). Cited in [Chapter](/chapter/false-lifts/).
+- `New.coeff_prod_copySubst_rescale`: `New/Derivatives/Sharpness/Couplings.lean`, [line 306](lean:New/Derivatives/Sharpness/Couplings.lean#L306). Cited in [Chapter](/chapter/sharpness/).
+- `New.coeff_prod_rename_copyEmbedding`: `New/Derivatives/Sharpness/BoundAttained.lean`, [line 71](lean:New/Derivatives/Sharpness/BoundAttained.lean#L71). Cited in [Chapter](/chapter/sharpness/).
+- `New.coeff_subst_mul_subst`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 141](lean:New/Derivatives/Sharpness/OneCurve.lean#L141). Cited in [Chapter](/chapter/sharpness/).
 - `New.CoeffRing`: `Lib/General/NumberTheory/CoefficientRings.lean`, [line 113](lean:Lib/General/NumberTheory/CoefficientRings.lean#L113). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.CoeffRing.dvd_iff_norm_le`: `Lib/General/NumberTheory/CoefficientRings.lean`, [line 165](lean:Lib/General/NumberTheory/CoefficientRings.lean#L165). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.CoeffRing.dvd_of_toIntQpBar_dvd`: `Lib/General/NumberTheory/CoefficientInclusion.lean`, [line 54](lean:Lib/General/NumberTheory/CoefficientInclusion.lean#L54). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -395,6 +438,10 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.convolve`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 648](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L648). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.convolve_formalDegree_mul_dsCoeffInFrame_comp_frameEquiv`: `New/Spanning/Bessel/SchurBound.lean`, [line 120](lean:New/Spanning/Bessel/SchurBound.lean#L120). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.convolve_formalDegree_mul_dsCoeffInFrame_self`: `New/Spanning/Bessel/SchurBound.lean`, [line 104](lean:New/Spanning/Bessel/SchurBound.lean#L104). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.copyEmbedding`: `New/Derivatives/Sharpness/BoundAttained.lean`, [line 51](lean:New/Derivatives/Sharpness/BoundAttained.lean#L51). Cited in [Chapter](/chapter/sharpness/).
+- `New.copyExponent`: `New/Derivatives/Sharpness/BoundAttained.lean`, [line 58](lean:New/Derivatives/Sharpness/BoundAttained.lean#L58). Cited in [Chapter](/chapter/sharpness/).
+- `New.copyExponent_apply`: `New/Derivatives/Sharpness/BoundAttained.lean`, [line 63](lean:New/Derivatives/Sharpness/BoundAttained.lean#L63). Cited in [Chapter](/chapter/sharpness/).
+- `New.copySubst`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 106](lean:New/Derivatives/Sharpness/LeastValuation.lean#L106). Cited in [Chapter](/chapter/sharpness/).
 - `New.Core.dyadicDiag`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 186](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L186). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Core.encard_le_of_dyadic_box`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 669](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L669). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.exists_eq_zero_of_zpow_mul_mem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 711](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L711). Cited in [Chapter](/chapter/reduction-theory/).
@@ -410,6 +457,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.cosetIndicator_factorialIdele`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 476](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L476). Cited in [Chapter](/chapter/false-lifts/).
 - `New.countError`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 48](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L48). Cited in [Chapter](/chapter/main-inequality/).
 - `New.coupling`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 38](lean:New/Derivatives/Divisibility/NormalForm.lean#L38). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.couplingSubst`: `New/Derivatives/Sharpness/Couplings.lean`, [line 274](lean:New/Derivatives/Sharpness/Couplings.lean#L274). Cited in [Chapter](/chapter/sharpness/).
 - `New.couplingSum`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 43](lean:New/Derivatives/Divisibility/NormalForm.lean#L43). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.cuspConst`: `Lib/Adelic/AutomorphicForms/Cuspidality.lean`, [line 81](lean:Lib/Adelic/AutomorphicForms/Cuspidality.lean#L81). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.cutLevel`: `Lib/Adelic/TraceFormula/LevelCut.lean`, [line 44](lean:Lib/Adelic/TraceFormula/LevelCut.lean#L44). Cited in [Chapter](/chapter/trace-formula/).
@@ -431,6 +479,8 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.deductionTerm`: `New/Derivatives/Divisibility/NullFrames.lean`, [line 116](lean:New/Derivatives/Divisibility/NullFrames.lean#L116). Cited in [Chapter](/chapter/normal-forms/).
 - `New.deductionTerm_empty`: `New/Derivatives/Divisibility/Count.lean`, [line 447](lean:New/Derivatives/Divisibility/Count.lean#L447). Cited in [Chapter](/chapter/normal-forms/).
 - `New.deductionTerm_eraseHeightOne`: `New/Derivatives/Divisibility/Count.lean`, [line 458](lean:New/Derivatives/Divisibility/Count.lean#L458). Cited in [Chapter](/chapter/normal-forms/).
+- `New.degree_partnerDegree`: `New/Derivatives/Sharpness/Couplings.lean`, [line 85](lean:New/Derivatives/Sharpness/Couplings.lean#L85). Cited in [Chapter](/chapter/sharpness/).
+- `New.degree_powerDegree`: `New/Derivatives/Sharpness/Couplings.lean`, [line 81](lean:New/Derivatives/Sharpness/Couplings.lean#L81). Cited in [Chapter](/chapter/sharpness/).
 - `New.deltaForm`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 206](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L206). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.deltaForm_apply`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 217](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L217). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.denominator`: `New/Spanning/MainTerm/Frequencies.lean`, [line 28](lean:New/Spanning/MainTerm/Frequencies.lean#L28). Cited in [Chapter](/chapter/main-term/).
@@ -736,6 +786,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.div_add_card_le_prod_one_sub_inv`: `Lib/Analytic/Primes.lean`, [line 36](lean:Lib/Analytic/Primes.lean#L36). Cited in [Chapter](/chapter/primes-in-windows/).
 - `New.div_mem_unitaryLevel_of_besselU_mul`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 999](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L999). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.div_pow_le_norm_regularL`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 86](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L86). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.div_sub_one_le_padicValNat_factorial`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 219](lean:New/Derivatives/Sharpness/NearPairs.lean#L219). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.dominantTorus`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 140](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L140). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.dotProduct_cons_zero_init`: `New/Spanning/Unfolding/Climbing.lean`, [line 706](lean:New/Spanning/Unfolding/Climbing.lean#L706). Cited in [Chapter](/chapter/poincare-series/).
 - `New.DoubleCosets`: `Lib/Adelic/Hecke/Basic.lean`, [line 83](lean:Lib/Adelic/Hecke/Basic.lean#L83). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -1129,6 +1180,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.exists_equiv_prod_subgroupOf`: `Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean`, [line 411](lean:Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean#L411). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.exists_equiv_quotient_prod_block`: `Lib/Weil/Periods/Unfolding.lean`, [line 55](lean:Lib/Weil/Periods/Unfolding.lean#L55). Cited in [Chapter](/chapter/bessel-periods/).
 - `New.exists_equiv_schur_one_row_eq_symPowMatrix`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 908](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L908). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.exists_extend_basis_of_span_eq_top`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 34](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L34). Cited in [Chapter](/chapter/proof-of-theorem-c/).
 - `New.exists_extension_double`: `Lib/Shimura/Uniformisation/AppellHumbert.lean`, [line 111](lean:Lib/Shimura/Uniformisation/AppellHumbert.lean#L111). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.exists_factor_of_automorphy`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 509](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L509). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.exists_family_algHom_charpoly_mem`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 281](lean:New/Congruences/FirstOrder/RibetMethod.lean#L281). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1167,7 +1219,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.exists_isPrimitive_changeLevel_eq`: `Lib/Analytic/ZeroSymmetry.lean`, [line 42](lean:Lib/Analytic/ZeroSymmetry.lean#L42). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.exists_isPrimitiveMatrix_localSection_eq`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 330](lean:New/Determinant/Exchange/MatchingPartners.lean#L330). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.exists_isProGalois_ker_of_isCyclic`: `Lib/ClassField/Global/NormTheorems.lean`, [line 108](lean:Lib/ClassField/Global/NormTheorems.lean#L108). Cited in [Chapter](/chapter/class-field-theory/).
-- `New.exists_isRegularFamily`: `New/Congruences/FitTwistsExist.lean`, [line 517](lean:New/Congruences/FitTwistsExist.lean#L517). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
+- `New.exists_isRegularFamily`: `New/Congruences/FitTwistsExist.lean`, [line 517](lean:New/Congruences/FitTwistsExist.lean#L517). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/proof-of-theorem-c/), [Chapter](/chapter/regular-families-plan/).
 - `New.exists_isRootChoice`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 174](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L174). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_isRootChoice_GL`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 195](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L195). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_isTableauBasis`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 97](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L97). Cited in [Chapter](/chapter/weyl-modules/).
@@ -1177,6 +1229,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.exists_isWeakBaseChange_of_matching`: `Lib/GaloisRep/BaseChange/PrimeDegreeTransfer.lean`, [line 869](lean:Lib/GaloisRep/BaseChange/PrimeDegreeTransfer.lean#L869). Cited in [Chapter](/chapter/building-representations/).
 - `New.exists_iwahoriHeckeHom_injective`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 307](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L307). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_iwasawa_bruhat`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 383](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L383). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.exists_jet_mul_prod_X`: `New/Derivatives/Sharpness/Couplings.lean`, [line 148](lean:New/Derivatives/Sharpness/Couplings.lean#L148). Cited in [Chapter](/chapter/sharpness/).
 - `New.exists_kummer_chars`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 648](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L648). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_lattice_of_g₂_g₃`: `Lib/CM/Sigma/Basic.lean`, [line 951](lean:Lib/CM/Sigma/Basic.lean#L951). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.exists_le_weight_of_mem_vanishingIdeal_pow`: `Lib/General/Algebra/MultivariatePolynomials.lean`, [line 186](lean:Lib/General/Algebra/MultivariatePolynomials.lean#L186). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -1193,6 +1246,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.exists_measure_laplace_eq`: `Lib/Analytic/Landau.lean`, [line 104](lean:Lib/Analytic/Landau.lean#L104). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_mem_filtration_smear_word`: `New/Spanning/Bessel/SchurBound.lean`, [line 74](lean:New/Spanning/Bessel/SchurBound.lean#L74). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_monoidHom_extend`: `Lib/General/Groups/ProfiniteCharacters.lean`, [line 398](lean:Lib/General/Groups/ProfiniteCharacters.lean#L398). Cited in [Chapter](/chapter/congruence-subgroups/).
+- `New.exists_monomial_max_norm_coeff`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 45](lean:New/Derivatives/Sharpness/OneCurve.lean#L45). Cited in [Chapter](/chapter/sharpness/).
 - `New.exists_mul_abs_gaussianMonomial_mul_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 404](lean:Lib/Analytic/QuadraticTwist.lean#L404). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_mul_eq_mul_gramSection_mul`: `New/Spanning/Bessel/OpenCellBound.lean`, [line 524](lean:New/Spanning/Bessel/OpenCellBound.lean#L524). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_mul_exp_le`: `Lib/Analytic/Landau.lean`, [line 84](lean:Lib/Analytic/Landau.lean#L84). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
@@ -1207,6 +1261,8 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.exists_norm_schurJet_le_norm_jet_minorProd`: `New/Derivatives/Divisibility/Count.lean`, [line 800](lean:New/Derivatives/Divisibility/Count.lean#L800). Cited in [Chapter](/chapter/normal-forms/).
 - `New.exists_odd_mem_thetaSpace_deriv_eq_one`: `Lib/CM/Sigma/Basic.lean`, [line 455](lean:Lib/CM/Sigma/Basic.lean#L455). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.exists_orthonormal_Ô`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 352](lean:Lib/Adelic/Witt/WittTheorem.lean#L352). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.exists_pderiv_mul_eq_smul`: `New/Derivatives/Sharpness/Couplings.lean`, [line 126](lean:New/Derivatives/Sharpness/Couplings.lean#L126). Cited in [Chapter](/chapter/sharpness/).
+- `New.exists_pderiv_mul_expSubst`: `New/Derivatives/Sharpness/Couplings.lean`, [line 108](lean:New/Derivatives/Sharpness/Couplings.lean#L108). Cited in [Chapter](/chapter/sharpness/).
 - `New.exists_pos_le_norm_gaussianMellin`: `Lib/Analytic/DirichletTheta.lean`, [line 303](lean:Lib/Analytic/DirichletTheta.lean#L303). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_prime_modEq_one_log_mem`: `Lib/Analytic/Primes.lean`, [line 389](lean:Lib/Analytic/Primes.lean#L389). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
 - `New.exists_rankInner_labelChar_eq_finMean`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 164](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L164). Cited in [Chapter](/chapter/finite-gln/).
@@ -1240,6 +1296,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.expect_addChar_dotProduct`: `New/Spanning/SecondMoment/PositiveType.lean`, [line 65](lean:New/Spanning/SecondMoment/PositiveType.lean#L65). Cited in [Chapter](/chapter/few-translates/).
 - `New.expSubst`: `Lib/General/Algebra/IntegralPowerSeries.lean`, [line 179](lean:Lib/General/Algebra/IntegralPowerSeries.lean#L179). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.expSubst_nsmul`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 349](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L349). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.factorial_mul_coeff_subst_add`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 133](lean:New/Derivatives/Sharpness/OneCurve.lean#L133). Cited in [Chapter](/chapter/sharpness/).
 - `New.factorialBox`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 450](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L450). Cited in [Chapter](/chapter/false-lifts/).
 - `New.factorialIdele`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 442](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L442). Cited in [Chapter](/chapter/false-lifts/).
 - `New.factorsThrough_sq_of_sq_eq_one`: `Lib/Analytic/Primes.lean`, [line 87](lean:Lib/Analytic/Primes.lean#L87). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
@@ -1907,6 +1964,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.finrank_biSup_map_le`: `New/Spanning/SecondMoment/FewTranslates.lean`, [line 522](lean:New/Spanning/SecondMoment/FewTranslates.lean#L522). Cited in [Chapter](/chapter/few-translates/).
 - `New.finrank_biSup_range_le`: `New/Spanning/SecondMoment/FewTranslates.lean`, [line 537](lean:New/Spanning/SecondMoment/FewTranslates.lean#L537). Cited in [Chapter](/chapter/theorem-b-plan/), [Chapter](/chapter/few-translates/).
 - `New.finrank_fixedFieldOf`: `Lib/ClassField/Places/ProfiniteGalois.lean`, [line 259](lean:Lib/ClassField/Places/ProfiniteGalois.lean#L259). Cited in [Chapter](/chapter/cm-fields/).
+- `New.finrank_ker_mul_le`: `New/UpperBound/Size/ShortColumns.lean`, [line 900](lean:New/UpperBound/Size/ShortColumns.lean#L900). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.finrank_levelSpace_smoothFormRep`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 313](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L313). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.finrank_sup_range_add_finrank_comap`: `New/Spanning/SecondMoment/FewTranslates.lean`, [line 393](lean:New/Spanning/SecondMoment/FewTranslates.lean#L393). Cited in [Chapter](/chapter/few-translates/).
 - `New.finRightRep`: `Lib/Adelic/AutomorphicForms/Basic.lean`, [line 78](lean:Lib/Adelic/AutomorphicForms/Basic.lean#L78). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -2489,6 +2547,9 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.GalSemidirect`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 75](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L75). Cited in [Chapter](/chapter/finite-gln/).
 - `New.gammaFactor_changeLevel`: `Lib/Analytic/ZeroSymmetry.lean`, [line 49](lean:Lib/Analytic/ZeroSymmetry.lean#L49). Cited in [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero`: `Lib/Analytic/ZeroSymmetry.lean`, [line 61](lean:Lib/Analytic/ZeroSymmetry.lean#L61). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
+- `New.gammaPrime`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 129](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L129). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.gammaPrime_le_one`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 153](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L153). Cited in [Chapter](/chapter/sharpness/).
+- `New.gammaPrime_of_split`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 131](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L131). Cited in [Chapter](/chapter/sharpness/).
 - `New.gapThreshold`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 96](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L96). Cited in [Chapter](/chapter/discrete-series/).
 - `New.GaugeLe`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 167](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L167). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.GaugeLe.add`: `New/UpperBound/Divisibility/LocalDivisibility.lean`, [line 100](lean:New/UpperBound/Divisibility/LocalDivisibility.lean#L100). Cited in [Chapter](/chapter/divisibility/).
@@ -2530,6 +2591,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.GL.exists_star_matrix`: `Lib/GLn/Dual.lean`, [line 271](lean:Lib/GLn/Dual.lean#L271). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.GL.exists_toPoly_eq_hookNumber_dual_smul`: `Lib/GLn/Dual.lean`, [line 513](lean:Lib/GLn/Dual.lean#L513). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.GL.exists_weylGram_mul_eq_hookNumber_dual_smul`: `Lib/GLn/Dual.lean`, [line 488](lean:Lib/GLn/Dual.lean#L488). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.GL.ext_weylEval`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 193](lean:Lib/GLn/SchurModule/WeylKernel.lean#L193). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.GL.HasLeadingTerm`: `Lib/GLn/SchurModule/MinorBasis.lean`, [line 79](lean:Lib/GLn/SchurModule/MinorBasis.lean#L79). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.GL.HasLeadingTerm.leadingCoeff_mem_nabla`: `Lib/GLn/SchurModule/MinorBasis.lean`, [line 531](lean:Lib/GLn/SchurModule/MinorBasis.lean#L531). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.GL.hasLeftInv_comulMatrix`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 637](lean:Lib/GLn/SchurModule/GramMatrix.lean#L637). Cited in [Chapter](/chapter/weyl-modules/).
@@ -2776,6 +2838,8 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.HasSimpleZero.charpoly_ne_pow`: `Lib/Adelic/TraceFormula/TestFunction.lean`, [line 232](lean:Lib/Adelic/TraceFormula/TestFunction.lean#L232). Cited in [Chapter](/chapter/trace-formula/).
 - `New.HasStableLifts`: `Lib/General/Measure/HaarModulus.lean`, [line 99](lean:Lib/General/Measure/HaarModulus.lean#L99). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.hasSum_couplingSum`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 90](lean:New/Derivatives/Divisibility/NormalForm.lean#L90). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.hasSum_div_pow_positivePartnerExponents`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 252](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L252). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.hasSum_gammaPrime`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 221](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L221). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.hasSum_ideal_classes`: `Lib/CM/ChowlaSelberg.lean`, [line 402](lean:Lib/CM/ChowlaSelberg.lean#L402). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.hasSum_residueClass_one`: `Lib/Analytic/Primes.lean`, [line 201](lean:Lib/Analytic/Primes.lean#L201). Cited in [Chapter](/chapter/primes-in-windows/).
 - `New.hasSum_subst_couplingSum`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 105](lean:New/Derivatives/Divisibility/NormalForm.lean#L105). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -2830,7 +2894,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.heckeSplit_comm`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 250](lean:Lib/Weil/Unramified/SplitHecke.lean#L250). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.heckeSplit_dual`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 175](lean:Lib/Weil/Unramified/SplitHecke.lean#L175). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.heckeSplit_star`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 128](lean:Lib/Weil/Unramified/SplitHecke.lean#L128). Cited in [Chapter](/chapter/iwahori-satake/).
-- `New.HeightLe`: `New/Reduction/Lattices/Heights.lean`, [line 41](lean:New/Reduction/Lattices/Heights.lean#L41). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
+- `New.HeightLe`: `New/Reduction/Lattices/Heights.lean`, [line 41](lean:New/Reduction/Lattices/Heights.lean#L41). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/proof-of-theorem-c/), [Chapter](/chapter/regular-families-plan/).
 - `New.HeightLe.inv_const`: `New/Reduction/Lattices/Heights.lean`, [line 134](lean:New/Reduction/Lattices/Heights.lean#L134). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.HeightLe.mono`: `New/Reduction/Lattices/Heights.lean`, [line 77](lean:New/Reduction/Lattices/Heights.lean#L77). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.HeightLe.mul`: `New/Reduction/Lattices/Heights.lean`, [line 141](lean:New/Reduction/Lattices/Heights.lean#L141). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -2928,6 +2992,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.idelesPowAt`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 60](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L60). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.idelesUnitOff`: `Lib/ClassField/Places/Ideles.lean`, [line 83](lean:Lib/ClassField/Places/Ideles.lean#L83). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.identDistrib_orbitMeasure`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 220](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L220). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.iInf_ker_sum_pow_eq_range`: `New/UpperBound/Size/ShortColumns.lean`, [line 472](lean:New/UpperBound/Size/ShortColumns.lean#L472). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.image_normOneLatticeVectors_eq_orbit_inter`: `Lib/SiegelWeil/Mass.lean`, [line 141](lean:Lib/SiegelWeil/Mass.lean#L141). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.InCut`: `New/Spanning/Bessel/Basic.lean`, [line 870](lean:New/Spanning/Bessel/Basic.lean#L870). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.inCut_of_besselCut_ne_zero`: `New/Spanning/Bessel/CutTailBound.lean`, [line 261](lean:New/Spanning/Bessel/CutTailBound.lean#L261). Cited in [Chapter](/chapter/bessel-real-place/).
@@ -3054,6 +3119,10 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.IsComplexConj`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 50](lean:Lib/ClassField/Places/GaloisDefs.lean#L50). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsComplexConj.mul_self`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 101](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L101). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsContPeriodic`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 688](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L688). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.IsCouplingFamily`: `New/Derivatives/Sharpness/Couplings.lean`, [line 52](lean:New/Derivatives/Sharpness/Couplings.lean#L52). Cited in [Chapter](/chapter/sharpness/).
+- `New.IsCouplingFamily.isLowestTerm_pderiv_couplingSum`: `New/Derivatives/Sharpness/Couplings.lean`, [line 201](lean:New/Derivatives/Sharpness/Couplings.lean#L201). Cited in [Chapter](/chapter/sharpness/).
+- `New.IsCouplingFamily.norm_coeff_pairExponent`: `New/Derivatives/Sharpness/Couplings.lean`, [line 358](lean:New/Derivatives/Sharpness/Couplings.lean#L358). Cited in [Chapter](/chapter/sharpness/).
+- `New.IsCouplingFamily.norm_coeff_powerDegree`: `New/Derivatives/Sharpness/Couplings.lean`, [line 242](lean:New/Derivatives/Sharpness/Couplings.lean#L242). Cited in [Chapter](/chapter/sharpness/).
 - `New.IsCovolOneLattice`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 271](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L271). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.isCovolOneLattice_ratAdeles`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 433](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L433). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.isCuspidal_greenTau`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 367](lean:Lib/LocalGL/Green/TauFunctions.lean#L367). Cited in [Chapter](/chapter/finite-gln/).
@@ -3134,6 +3203,7 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.IsIntegralAbove.exists_mul_eq`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 92](lean:New/Derivatives/FormalGroup/Resolution.lean#L92). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.IsIntegralAbove.norm_conj_le_one`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 123](lean:New/Derivatives/FormalGroup/Resolution.lean#L123). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.IsIntegralAbove.norm_le_one`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 117](lean:New/Derivatives/FormalGroup/Resolution.lean#L117). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.isIntegralAbove_of_isIntegral_mul`: `New/Derivatives/Sharpness/Cases.lean`, [line 56](lean:New/Derivatives/Sharpness/Cases.lean#L56). Cited in [Chapter](/chapter/sharpness/).
 - `New.IsInvariantDistribution`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 188](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L188). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsInvariantDistribution.eq_zero_of_isImage`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 567](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L567). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsIrreducibleChar`: `Lib/General/Groups/CharacterTheory.lean`, [line 77](lean:Lib/General/Groups/CharacterTheory.lean#L77). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/finite-gln/).
@@ -3182,6 +3252,10 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.IsLocalGalois.finite_Z1`: `Lib/ClassField/LocalDuality/KummerFiniteness.lean`, [line 349](lean:Lib/ClassField/LocalDuality/KummerFiniteness.lean#L349). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLocalGalois.isClassOfInvariant_classOfInvariant`: `Lib/ClassField/Local/InvariantMap.lean`, [line 216](lean:Lib/ClassField/Local/InvariantMap.lean#L216). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsLocalGalois.mem_zmultiples_of_index_prime`: `Lib/ClassField/Local/InvariantMap.lean`, [line 58](lean:Lib/ClassField/Local/InvariantMap.lean#L58). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.IsLowestTerm`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 59](lean:New/Derivatives/Sharpness/LeastValuation.lean#L59). Cited in [Chapter](/chapter/sharpness/).
+- `New.IsLowestTerm.mul`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 65](lean:New/Derivatives/Sharpness/LeastValuation.lean#L65). Cited in [Chapter](/chapter/sharpness/).
+- `New.IsLowestTerm.pow`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 98](lean:New/Derivatives/Sharpness/LeastValuation.lean#L98). Cited in [Chapter](/chapter/sharpness/).
+- `New.IsLowestTerm.prod`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 87](lean:New/Derivatives/Sharpness/LeastValuation.lean#L87). Cited in [Chapter](/chapter/sharpness/).
 - `New.IsMatch`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 418](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L418). Cited in [Chapter](/chapter/local-theta/).
 - `New.IsMatch.centred_casimirValue_eq`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 436](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L436). Cited in [Chapter](/chapter/local-theta/).
 - `New.IsMatch.centredParam_lt_or_lt`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 486](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L486). Cited in [Chapter](/chapter/local-theta/).
@@ -3253,7 +3327,9 @@ This section and the next have the 7085 cited names outside the namespace `New.D
 - `New.IsSeparatingFamily.pointFn_ext`: `Lib/General/Geometry/DenseComplexPoints.lean`, [line 115](lean:Lib/General/Geometry/DenseComplexPoints.lean#L115). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.IsSeriesGenerator`: `Lib/CM/FormalGroup/IntegralParameter.lean`, [line 75](lean:Lib/CM/FormalGroup/IntegralParameter.lean#L75). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.IsSeriesGenerator.mem_of_expSubst_smul_eq`: `Lib/General/Algebra/SeriesBounds.lean`, [line 386](lean:Lib/General/Algebra/SeriesBounds.lean#L386). Cited in [Chapter](/chapter/cm-formal-group/).
-- `New.IsShort`: `New/UpperBound/Size/ShortColumns.lean`, [line 155](lean:New/UpperBound/Size/ShortColumns.lean#L155). Cited in [Chapter](/chapter/theorem-a-plan/).
+- `New.IsShort`: `New/UpperBound/Size/ShortColumns.lean`, [line 155](lean:New/UpperBound/Size/ShortColumns.lean#L155). Cited in [Chapter](/chapter/theorem-a-plan/), [Chapter](/chapter/short-columns-gain/).
+- `New.IsShort.sub_translate`: `New/UpperBound/Size/ShortColumns.lean`, [line 164](lean:New/UpperBound/Size/ShortColumns.lean#L164). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.isShort_deltaForm`: `New/UpperBound/Size/ShortColumns.lean`, [line 339](lean:New/UpperBound/Size/ShortColumns.lean#L339). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.IsSlice`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 331](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L331). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsSlice.exists_isImage`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 515](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L515). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsSmoothRep`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 627](lean:Lib/Adelic/Hecke/ClassSums.lean#L627). Cited in [Chapter](/chapter/automorphic-forms/).

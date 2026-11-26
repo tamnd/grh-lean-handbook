@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, M to Z
 
-This section has the 3167 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+This section has the 3262 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
 
 - `New.map_const_smul_eq_inv_distribHaarChar_smul`: `Lib/General/Measure/HaarModulus.lean`, [line 235](lean:Lib/General/Measure/HaarModulus.lean#L235). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.map_reducePiPrime_eq_primePowerSeries`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 522](lean:New/Derivatives/FormalGroup/Exponent.lean#L522). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -58,7 +58,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.minorsMatrix`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 120](lean:Lib/GLn/SchurModule/TensorModel.lean#L120). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.mixedCartan`: `Lib/GLn/Dual.lean`, [line 644](lean:Lib/GLn/Dual.lean#L644). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.mixedWeight`: `Lib/GLn/Dual.lean`, [line 544](lean:Lib/GLn/Dual.lean#L544). Cited in [Chapter](/chapter/weyl-modules/).
-- `New.modDatum`: `Lib/Weil/DualPair/Defs.lean`, [line 264](lean:Lib/Weil/DualPair/Defs.lean#L264). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.modDatum`: `Lib/Weil/DualPair/Defs.lean`, [line 264](lean:Lib/Weil/DualPair/Defs.lean#L264). Cited in [Chapter](/chapter/theta-lifts-seesaw/), [Chapter](/chapter/sharpness/).
 - `New.modEq_orderOf_of_div_pow_eq`: `New/Reduction/Data/Existence.lean`, [line 154](lean:New/Reduction/Data/Existence.lean#L154). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
 - `New.modKernel`: `Lib/Weil/DualPair/Defs.lean`, [line 274](lean:Lib/Weil/DualPair/Defs.lean#L274). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.modKernel_mul_stdLevel_left`: `Lib/Weil/DualPair/KernelLaws.lean`, [line 168](lean:Lib/Weil/DualPair/KernelLaws.lean#L168). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
@@ -98,6 +98,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.norm_add_one_le_of_mem_frameBox`: `New/Spanning/Bessel/Basic.lean`, [line 205](lean:New/Spanning/Bessel/Basic.lean#L205). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.norm_adeleExtension_le_one_iff`: `New/Derivatives/Vacuum/Scale.lean`, [line 75](lean:New/Derivatives/Vacuum/Scale.lean#L75). Cited in [Chapter](/chapter/normal-forms/).
 - `New.norm_charMean_le_one`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 96](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L96). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_coeff_copySubst_le`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 226](lean:New/Derivatives/Sharpness/LeastValuation.lean#L226). Cited in [Chapter](/chapter/sharpness/).
 - `New.norm_coeff_expSubst_le_one`: `Lib/General/Algebra/SeriesBounds.lean`, [line 212](lean:Lib/General/Algebra/SeriesBounds.lean#L212). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.norm_coeff_expSubst_smul_le_one`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 131](lean:New/Derivatives/Divisibility/NormalForm.lean#L131). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.norm_coeff_expSubst_sub_one_le`: `Lib/General/Algebra/SeriesBounds.lean`, [line 305](lean:Lib/General/Algebra/SeriesBounds.lean#L305). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -163,6 +164,8 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.norm_thetaSeries_inv`: `Lib/Analytic/DirichletTheta.lean`, [line 399](lean:Lib/Analytic/DirichletTheta.lean#L399). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.norm_thetaSeries_le`: `Lib/Analytic/DirichletTheta.lean`, [line 141](lean:Lib/Analytic/DirichletTheta.lean#L141). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.norm_wave`: `Lib/General/Groups/BesselGroups.lean`, [line 82](lean:Lib/General/Groups/BesselGroups.lean#L82). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/discrete-series/).
+- `New.norm_weylEval_le_one_of_integral`: `New/UpperBound/Size/ShortColumns.lean`, [line 189](lean:New/UpperBound/Size/ShortColumns.lean#L189). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.norm_weylRep_mulVec_det_smul_weylEval_le_one`: `New/UpperBound/Size/ShortColumns.lean`, [line 220](lean:New/UpperBound/Size/ShortColumns.lean#L220). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.normAbsChar`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 201](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L201). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.normalizedOrbitalIntegral`: `New/Spanning/Bessel/Basic.lean`, [line 924](lean:New/Spanning/Bessel/Basic.lean#L924). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.normDensity`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 484](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L484). Cited in [Chapter](/chapter/siegel-weil/).
@@ -217,6 +220,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.one_le_genIndex`: `Lib/General/Measure/HaarModulus.lean`, [line 420](lean:Lib/General/Measure/HaarModulus.lean#L420). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.one_le_prod_norm_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 254](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L254). Cited in [Chapter](/chapter/cm-fields/).
 - `New.one_le_rootDiscr`: `New/Reduction/Data/AdmissibleData.lean`, [line 277](lean:New/Reduction/Data/AdmissibleData.lean#L277). Cited in [Chapter](/chapter/cm-fields/).
+- `New.one_mem_positivePartnerExponents`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 187](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L187). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.one_sub_chiK_mem_Icc`: `New/Reduction/Zeros/PrimeError.lean`, [line 70](lean:New/Reduction/Zeros/PrimeError.lean#L70). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.one_sub_le_card_allowed_mul`: `New/Spanning/MainTerm/BadTypes.lean`, [line 137](lean:New/Spanning/MainTerm/BadTypes.lean#L137). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.one_sub_le_re_and_norm_le_of_mem_closedBall`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 281](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L281). Cited in [Chapter](/chapter/prime-number-theorem/).
@@ -242,11 +246,16 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.OscillatorRep`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 476](lean:Lib/Weil/Fock/OscillatorPair.lean#L476). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
 - `New.ostrowski_taussky`: `Lib/General/Analysis/GaussianIntegral.lean`, [line 78](lean:Lib/General/Analysis/GaussianIntegral.lean#L78). Cited in [Chapter](/chapter/frame-counts/).
 - `New.paddingTuple`: `Lib/Shimura/ThetaNormality/RiemannRelation.lean`, [line 716](lean:Lib/Shimura/ThetaNormality/RiemannRelation.lean#L716). Cited in [Chapter](/chapter/integral-model/).
+- `New.padicInt_sum_four_squares`: `New/Derivatives/Sharpness/LeastValuation.lean`, [line 237](lean:New/Derivatives/Sharpness/LeastValuation.lean#L237). Cited in [Chapter](/chapter/sharpness/).
 - `New.PadicIntegerRing`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 66](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L66). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.padicModel_mem_uniformClosure`: `Lib/GaloisRep/WeightCongruence.lean`, [line 625](lean:Lib/GaloisRep/WeightCongruence.lean#L625). Cited in [Chapter](/chapter/building-representations/).
 - `New.PadicPlace`: `Lib/General/Algebra/AdicCompletion.lean`, [line 76](lean:Lib/General/Algebra/AdicCompletion.lean#L76). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.PadicPlace.ofIso`: `New/OneLift/TestedForms.lean`, [line 398](lean:New/OneLift/TestedForms.lean#L398). Cited in [Chapter](/chapter/character-lifts/).
 - `New.PadicPlace.ιₚ_ofIso`: `New/OneLift/TestedForms.lean`, [line 403](lean:New/OneLift/TestedForms.lean#L403). Cited in [Chapter](/chapter/character-lifts/).
+- `New.padicValNat_factorial_eq_div_add`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 213](lean:New/Derivatives/Sharpness/NearPairs.lean#L213). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.padicValNat_factorial_mem_Icc`: `Lib/General/Algebra/IntegralPowerSeries.lean`, [line 230](lean:Lib/General/Algebra/IntegralPowerSeries.lean#L230). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.padicValNat_mono_of_dvd`: `New/Derivatives/Sharpness/NearPairs.lean`, [line 207](lean:New/Derivatives/Sharpness/NearPairs.lean#L207). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.pairExponent`: `New/Derivatives/Sharpness/Couplings.lean`, [line 168](lean:New/Derivatives/Sharpness/Couplings.lean#L168). Cited in [Chapter](/chapter/sharpness/).
 - `New.pairingAnnihilator`: `Lib/ClassField/GaloisCohomology/KummerCyclicClasses.lean`, [line 147](lean:Lib/ClassField/GaloisCohomology/KummerCyclicClasses.lean#L147). Cited in [Chapter](/chapter/local-duality/).
 - `New.pairingBoundSq`: `New/Spanning/Bessel/Basic.lean`, [line 881](lean:New/Spanning/Bessel/Basic.lean#L881). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.PairOccursAt`: `New/Spanning/Unfolding/Terms.lean`, [line 70](lean:New/Spanning/Unfolding/Terms.lean#L70). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -479,7 +488,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Parameters.norm_pow_sub_conj_partner_le`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 138](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L138). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.Parameters.norm_pow_succ_div_mul_piPrimeInt`: `New/Derivatives/FormalGroup/ThetaProducts.lean`, [line 114](lean:New/Derivatives/FormalGroup/ThetaProducts.lean#L114). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.Parameters.norm_quadGen_le`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 646](lean:New/Derivatives/Vacuum/ShortVectors.lean#L646). Cited in [Chapter](/chapter/integral-vacuum/).
-- `New.Parameters.norm_ringEquiv_intVacuum_le`: `New/Derivatives/Vacuum/IntegralVacuum.lean`, [line 400](lean:New/Derivatives/Vacuum/IntegralVacuum.lean#L400). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.Parameters.norm_ringEquiv_intVacuum_le`: `New/Derivatives/Vacuum/IntegralVacuum.lean`, [line 400](lean:New/Derivatives/Vacuum/IntegralVacuum.lean#L400). Cited in [Chapter](/chapter/integral-vacuum/), [Chapter](/chapter/sharpness/).
 - `New.Parameters.norm_schurJet_jetSeries_le_of_charges`: `New/Derivatives/Vacuum/Divisibility.lean`, [line 246](lean:New/Derivatives/Vacuum/Divisibility.lean#L246). Cited in [Chapter](/chapter/normal-forms/).
 - `New.Parameters.norm_vacuumFn_vecAtPoint_le`: `New/UpperBound/Kernels/JetConjugatesAndBounds.lean`, [line 287](lean:New/UpperBound/Kernels/JetConjugatesAndBounds.lean#L287). Cited in [Chapter](/chapter/theta-kernels-gauges/).
 - `New.Parameters.norm_zeta_eq_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 507](lean:New/Reduction/Data/FieldsAndPlaces.lean#L507). Cited in [Chapter](/chapter/fields-places-twists/).
@@ -522,6 +531,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Parameters.relDifferentGen`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 255](lean:New/Derivatives/Field/PrimeDecomposition.lean#L255). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.relDifferentGen_dvd_q₁`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 258](lean:New/Derivatives/Field/PrimeDecomposition.lean#L258). Cited in [Chapter](/chapter/cm-fields/).
 - `New.Parameters.relDifferentGen_eq_prod_sub`: `New/Derivatives/Field/PrimeDecomposition.lean`, [line 288](lean:New/Derivatives/Field/PrimeDecomposition.lean#L288). Cited in [Chapter](/chapter/field-at-primes/).
+- `New.Parameters.resolutionForms`: `New/Derivatives/Sharpness/Cases.lean`, [line 81](lean:New/Derivatives/Sharpness/Cases.lean#L81). Cited in [Chapter](/chapter/sharpness/).
 - `New.Parameters.resolutionLinearForm`: `New/Derivatives/Vacuum/TightFrames.lean`, [line 659](lean:New/Derivatives/Vacuum/TightFrames.lean#L659). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Parameters.resolutionLinearForm_realImage`: `New/Derivatives/Vacuum/TightFrames.lean`, [line 673](lean:New/Derivatives/Vacuum/TightFrames.lean#L673). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Parameters.resolutionShift`: `New/Derivatives/Vacuum/TightFrames.lean`, [line 650](lean:New/Derivatives/Vacuum/TightFrames.lean#L650). Cited in [Chapter](/chapter/integral-vacuum/).
@@ -554,7 +564,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Parameters.sum_mul_conj_mem_quadInt`: `New/Derivatives/Vacuum/TightFrames.lean`, [line 223](lean:New/Derivatives/Vacuum/TightFrames.lean#L223). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Parameters.sum_pullForm_resolutionLinearForm_apply`: `New/Derivatives/Vacuum/TightFrames.lean`, [line 795](lean:New/Derivatives/Vacuum/TightFrames.lean#L795). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Parameters.thetaMultiples`: `New/Derivatives/Vacuum/StandardDataProducts.lean`, [line 417](lean:New/Derivatives/Vacuum/StandardDataProducts.lean#L417). Cited in [Chapter](/chapter/normal-forms/).
-- `New.Parameters.thirteen_le_of_chiK_ne_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 162](lean:New/Reduction/Data/FieldsAndPlaces.lean#L162). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.Parameters.thirteen_le_of_chiK_ne_one`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 162](lean:New/Reduction/Data/FieldsAndPlaces.lean#L162). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/sharpness/).
 - `New.Parameters.toCycloField`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 236](lean:New/Reduction/Data/FieldsAndPlaces.lean#L236). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Parameters.trace_coeff_cyclotomicQuotient_div_mul_pow`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 294](lean:New/Derivatives/Vacuum/ShortVectors.lean#L294). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Parameters.traceOne_eq_betaKInE`: `New/Derivatives/Field/WeilData.lean`, [line 442](lean:New/Derivatives/Field/WeilData.lean#L442). Cited in [Chapter](/chapter/field-at-primes/).
@@ -588,6 +598,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.partialHecke_hyperplane_count_of_invariant`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 491](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L491). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.partialHecke_mem_levelSpace`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 431](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L431). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.partialHecke_zero_eq_heckeGL`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 321](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L321). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.partnerDegree`: `New/Derivatives/Sharpness/Couplings.lean`, [line 65](lean:New/Derivatives/Sharpness/Couplings.lean#L65). Cited in [Chapter](/chapter/sharpness/).
 - `New.Patching.adjoint_aeval_map_starRingEnd`: `Lib/LocalGL/SphericalChainLemma.lean`, [line 55](lean:Lib/LocalGL/SphericalChainLemma.lean#L55). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.Patching.aeval_cofactor_eq_zero`: `Lib/LocalGL/SphericalChainLemma.lean`, [line 209](lean:Lib/LocalGL/SphericalChainLemma.lean#L209). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.Patching.aeval_conj_eq_zero`: `Lib/LocalGL/SphericalChainLemma.lean`, [line 239](lean:Lib/LocalGL/SphericalChainLemma.lean#L239). Cited in [Chapter](/chapter/iwahori-satake/).
@@ -899,9 +910,12 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.PointFn.point_eq_of_ofSection_eq`: `Lib/General/Geometry/LineBundles.lean`, [line 411](lean:Lib/General/Geometry/LineBundles.lean#L411). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.poisson_summation_gaussianMonomial`: `Lib/Analytic/DirichletTheta.lean`, [line 267](lean:Lib/Analytic/DirichletTheta.lean#L267). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.polya_vinogradov`: `Lib/Analytic/PolyaVinogradov.lean`, [line 182](lean:Lib/Analytic/PolyaVinogradov.lean#L182). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.positivePartnerExponents_of_split`: `Lib/CM/FormalGroup/PrimeNotation.lean`, [line 196](lean:Lib/CM/FormalGroup/PrimeNotation.lean#L196). Cited in [Chapter](/chapter/sharpness/).
 - `New.posSemidef_prod_mul`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 98](lean:New/Spanning/MainTerm/SieveSystem.lean#L98). Cited in [Chapter](/chapter/main-term/).
 - `New.pow_classNumber_mem_principal_sup`: `Lib/ClassField/Places/Ideles.lean`, [line 319](lean:Lib/ClassField/Places/Ideles.lean#L319). Cited in [Chapter](/chapter/cm-fields/).
+- `New.pow_le_of_submultiplicative`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 83](lean:New/Derivatives/Sharpness/OneCurve.lean#L83). Cited in [Chapter](/chapter/sharpness/).
 - `New.pow_three_le_mul_norm_regularL_pow`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 43](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L43). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.powerDegree`: `New/Derivatives/Sharpness/Couplings.lean`, [line 61](lean:New/Derivatives/Sharpness/Couplings.lean#L61). Cited in [Chapter](/chapter/sharpness/).
 - `New.powerIdele`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 70](lean:New/UpperBound/Seesaw/StandardLines.lean#L70). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.predictedDivisibility`: `New/Derivatives/Divisibility/Count.lean`, [line 422](lean:New/Derivatives/Divisibility/Count.lean#L422). Cited in [Chapter](/chapter/normal-forms/).
 - `New.PrimePadicIso`: `New/Reduction/Lattices/Heights.lean`, [line 30](lean:New/Reduction/Lattices/Heights.lean#L30). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
@@ -1070,6 +1084,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.relationsOn`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 92](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L92). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.relEval`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 79](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L79). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.relEval_apply`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 140](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L140). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relIndex_mul_finrank_levelSpace`: `New/UpperBound/Size/ShortColumns.lean`, [line 517](lean:New/UpperBound/Size/ShortColumns.lean#L517). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.relIndex_norm_unit_pow`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 469](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L469). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.relLength`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 95](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L95). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.relLength_add_length_inf`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 121](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L121). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -1089,12 +1104,23 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.areMatched_det_one`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 857](lean:New/Determinant/Exchange/ExplicitMatching.lean#L857). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.blockColDatum`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 64](lean:New/Determinant/Exchange/MatchingPartners.lean#L64). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Rows.blockRowDatum`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 57](lean:New/Determinant/Exchange/MatchingPartners.lean#L57). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Rows.card_columnFilling_colsMinus_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 612](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L612). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.card_firstFactorIndex_le_two_mul_n`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 92](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L92). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.card_padIndex_sum_flatIndex_sum_secondFactorIndex`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 121](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L121). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.card_rowIndex_sum_fin_le_two_mul_n`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 98](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L98). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.card_secondFactorIndex_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 580](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L580). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.card_stdClasses_le_exp_of_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 629](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L629). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.carrierCoeff`: `New/OneLift/ComparisonOperator/ExchangeData.lean`, [line 134](lean:New/OneLift/ComparisonOperator/ExchangeData.lean#L134). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.carrierForm`: `New/OneLift/ComparisonOperator/ExchangeData.lean`, [line 120](lean:New/OneLift/ComparisonOperator/ExchangeData.lean#L120). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.carrierForm_mem_rapidOfLevel_and_isAdelicHol`: `New/OneLift/ComparisonOperator/ThreeExchanges.lean`, [line 374](lean:New/OneLift/ComparisonOperator/ThreeExchanges.lean#L374). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.carrierForm_ne_zero`: `New/OneLift/ComparisonOperator/ThreeExchanges.lean`, [line 470](lean:New/OneLift/ComparisonOperator/ThreeExchanges.lean#L470). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.classAut_gluingLevel_eq_bot`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 199](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L199). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.classForm`: `New/OneLift/TestedForms.lean`, [line 124](lean:New/OneLift/TestedForms.lean#L124). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.coeff_labelIdem_X_sub_one`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 453](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L453). Cited in [Chapter](/chapter/false-lifts/).
+- `New.Rows.colsMinus_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 574](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L574). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.columnDatum`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 93](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L93). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.columnDatum_mul_ite_eq_ite_mem_rowStabilizer`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 102](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L102). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.conj_normalizedDescent_glue`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 418](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L418). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.dataInner_traceChar`: `New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean`, [line 252](lean:New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean#L252). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.descentsVanish_hyperbolicSum`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 127](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L127). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.detKernel`: `New/OneLift/HeckeValues/PeriodAtOne.lean`, [line 55](lean:New/OneLift/HeckeValues/PeriodAtOne.lean#L55). Cited in [Chapter](/chapter/hecke-values/).
@@ -1144,29 +1170,64 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.exists_linearMap_eq_integral_modKernel`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 536](lean:New/Determinant/Exchange/ExplicitMatching.lean#L536). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.exists_mul_apply_eq_apply_matchedPoly`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 422](lean:New/Determinant/Exchange/ExplicitMatching.lean#L422). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.exists_mul_eq_circle_mean`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 275](lean:New/Determinant/Exchange/ExplicitMatching.lean#L275). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_mul_firstFactorPairing_eq`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 293](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L293). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.exists_mul_stdClassSum_eq_carrierForm`: `New/OneLift/ComparisonOperator/ThreeExchanges.lean`, [line 284](lean:New/OneLift/ComparisonOperator/ThreeExchanges.lean#L284). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.exists_mul_stdClassSum_eq_integral_modKernel`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 788](lean:New/Determinant/Exchange/ExplicitMatching.lean#L788). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_mul_stdClassSum_modKernelStdSpace_eq_one`: `New/OneLift/ComparisonOperator/ThreeExchanges.lean`, [line 216](lean:New/OneLift/ComparisonOperator/ThreeExchanges.lean#L216). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.exists_ne_zero_isModKernelScale`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 366](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L366). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.exists_norm_modKernel_sub_fockInner_le`: `New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean`, [line 500](lean:New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean#L500). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.exists_norm_twistFactor_sq_eq`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 311](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L311). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.exists_projOn_eq_pairTheta_ne_zero`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 194](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L194). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.exists_stackedDetProd_eq_sum_unitary`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 384](lean:New/Determinant/Exchange/ExplicitMatching.lean#L384). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.exists_stdClassSum_eq_mul_integral_modKernel`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 697](lean:New/Determinant/Exchange/ExplicitMatching.lean#L697). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.exists_stdClassSum_eq_of_exchange`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 622](lean:New/Determinant/Exchange/ExplicitMatching.lean#L622). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_stdClassSum_modKernelStdSpace_neg_eq_one`: `New/OneLift/ComparisonOperator/ThreeExchanges.lean`, [line 258](lean:New/OneLift/ComparisonOperator/ThreeExchanges.lean#L258). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.firstFactor`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 245](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L245). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.firstFactorChar_mul_upsilonU1_zpow`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 387](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L387). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.firstFactorPairing`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 253](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L253). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.firstFactorPairing_eq_mul_thirdExchangeLeftSide`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 259](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L259). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.firstFactorScale`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 238](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L238). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.firstFactorScale_ne_zero`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 240](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L240). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.firstMinimum_mul_le_hom`: `New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean`, [line 197](lean:New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean#L197). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.fixesLeft_modKernelStdSpace`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 466](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L466). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.fockInner_realPairWeil_variableMinor_pow_eq_self`: `New/OneLift/ComparisonOperator/ThreeExchanges.lean`, [line 432](lean:New/OneLift/ComparisonOperator/ThreeExchanges.lean#L432). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.fockPoly_cartanProduct`: `New/OneLift/ComparisonOperator/GluedForms.lean`, [line 121](lean:New/OneLift/ComparisonOperator/GluedForms.lean#L121). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.formTupleNormSq`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 88](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L88). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.genIdele_apply_of_notMem`: `New/OneLift/ComparisonOperator/GluedLattices.lean`, [line 153](lean:New/OneLift/ComparisonOperator/GluedLattices.lean#L153). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.glue`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 350](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L350). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.glue_mem_integralForms`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 552](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L552). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.glueFactor`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 999](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L999). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.glueFactor_ne_zero`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1003](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1003). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.glueLattice`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 211](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L211). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.gluingLevel`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 190](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L190). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.goodForm_mul_liftMod_congruenceGroup`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 401](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L401). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.hasColumnsBelow_colsMinus`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 158](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L158). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.hasColumnsBelow_colsPlus`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 136](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L136). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.hasColumnsBelow_of_eq_zero`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 114](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L114). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.hookNumberMinus`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 58](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L58). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.hookNumberMinus_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 599](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L599). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.hyperplaneSum_apply_eq_zero`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 799](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L799). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.hyperplaneSum_apply_eq_zero_of_rank_one`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 494](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L494). Cited in [Chapter](/chapter/false-lifts/), [Chapter](/chapter/hecke-values/).
 - `New.Rows.hyperplaneSum_mul_labelIdem_X_sub_one`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 472](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L472). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.inf_le_firstMinimum_sum`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 933](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L933). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.Rows.inner_adjoint_glue`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 370](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L370). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.inner_adjoint_glue_goodLift_eq_integral`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 460](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L460). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.inner_adjoint_glue_goodLift_eq_sum_integral`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 499](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L499). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.inner_classForm`: `New/OneLift/TestedForms.lean`, [line 138](lean:New/OneLift/TestedForms.lean#L138). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.inner_eq_stdClassSum_gramForm`: `New/OneLift/TestedForms.lean`, [line 131](lean:New/OneLift/TestedForms.lean#L131). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.inner_periodLift`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1038](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1038). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.inner_pointForm`: `New/OneLift/TestedForms.lean`, [line 209](lean:New/OneLift/TestedForms.lean#L209). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.integrable_and_mul_stdClassSum_eq_integral_mul`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 223](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L223). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.integral_conj_pairTheta_mul_algFormCoeff_eq_zero`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 223](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L223). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.integral_modKernel_matchedPoly_of_isEmpty`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 921](lean:New/Determinant/Exchange/ExplicitMatching.lean#L921). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.integral_modKernel_stackedDetProd`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 564](lean:New/Determinant/Exchange/ExplicitMatching.lean#L564). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.integral_mul_modKernel_sum_translates`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 316](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L316). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.isGlued_glueLattice`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 226](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L226). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.isGlued_splittingV_of_isGlued`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 215](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L215). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.isIntegralAndSmall_firstFactor`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 323](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L323). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.IsIntegralFormTuple`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 82](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L82). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.IsModKernelScale`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 329](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L329). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.isOrthogonalToFalseLifts_glue_periodLift`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1056](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1056). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.IsPeak`: `Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean`, [line 370](lean:Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean#L370). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.IsPeak.le_firstMinimum`: `Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean`, [line 556](lean:Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean#L556). Cited in [Chapter](/chapter/discrete-series/).
 - `New.Rows.IsPointLift`: `New/OneLift/TestedForms.lean`, [line 74](lean:New/OneLift/TestedForms.lean#L74). Cited in [Chapter](/chapter/character-lifts/).
@@ -1181,22 +1242,33 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.lift_modDatum_eq_zero_of_mem_span`: `Lib/SiegelWeil/Reproduction.lean`, [line 343](lean:Lib/SiegelWeil/Reproduction.lean#L343). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.lift_polyVector_blockDatum_eq_zero`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 81](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L81). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.liftFn_charOfTamePart_det_eq_residueDatum`: `New/OneLift/HeckeValues/PeriodAtOne.lean`, [line 91](lean:New/OneLift/HeckeValues/PeriodAtOne.lean#L91). Cited in [Chapter](/chapter/hecke-values/).
+- `New.Rows.M_pow_denominatorExponent_sq_mul_le_exp`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 650](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L650). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.matchedPoly`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 136](lean:New/Determinant/Exchange/ExplicitMatching.lean#L136). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.modKernel_expect_traceChar`: `New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean`, [line 449](lean:New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean#L449). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.modKernelScale`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 121](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L121). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.modKernelScale_ne_zero`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 128](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L128). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.modKernelStdSpace_embFin_mul`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 51](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L51). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.mul_firstFactorPairing_mem_rapidFunctions`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 274](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L274). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.mul_mul_thetaKernelPairing_mem_rapidFunctions`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 480](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L480). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.mul_stdClassSum_eq_integral_mul_modKernel`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 268](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L268). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.nonempty_carrierIndex_embedding_firstFactorIndex`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 104](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L104). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.norm_modKernelScale_mul_modKernelStdSpace_le`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 282](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L282). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.norm_modKernelScale_mul_modKernelStdSpace_le_one`: `New/UpperBound/Kernels/DefiniteKernelSize.lean`, [line 161](lean:New/UpperBound/Kernels/DefiniteKernelSize.lean#L161). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.norm_pairHomInf_le_mul`: `New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean`, [line 300](lean:New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean#L300). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.norm_schur_mulVec_le`: `Lib/GLn/Dual.lean`, [line 719](lean:Lib/GLn/Dual.lean#L719). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.Rows.normalizedDescent_classForm`: `New/OneLift/TestedForms.lean`, [line 171](lean:New/OneLift/TestedForms.lean#L171). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.normalizedDescent_eq_zero_of_mem_orthogonal`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 829](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L829). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.normalizedDescent_pointForm`: `New/OneLift/TestedForms.lean`, [line 277](lean:New/OneLift/TestedForms.lean#L277). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.normSqAt_glue_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 755](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L755). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.periodLift`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1033](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1033). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.periodLift_injective`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1068](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1068). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.piM_sq_mem_placeAt_descentPair_one`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 744](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L744). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.places_levelModulus`: `Lib/General/Algebra/LevelModulus.lean`, [line 103](lean:Lib/General/Algebra/LevelModulus.lean#L103). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Rows.pointForm`: `New/OneLift/TestedForms.lean`, [line 201](lean:New/OneLift/TestedForms.lean#L201). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.pointFormDatum`: `New/OneLift/TestedForms.lean`, [line 222](lean:New/OneLift/TestedForms.lean#L222). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.pointLift`: `New/OneLift/TestedForms.lean`, [line 186](lean:New/OneLift/TestedForms.lean#L186). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.polyMatrixCoeff_eq_holMinorsPi_mul_conj`: `Lib/SiegelWeil/Reproduction.lean`, [line 115](lean:Lib/SiegelWeil/Reproduction.lean#L115). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Rows.principalLevel_le_gluingLevel`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 638](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L638). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.prod_range_corank_one_sub_q_pow`: `New/OneLift/HeckeValues/PeriodAtOne.lean`, [line 76](lean:New/OneLift/HeckeValues/PeriodAtOne.lean#L76). Cited in [Chapter](/chapter/hecke-values/).
 - `New.Rows.prod_variableMinor_mem_holomorphicData`: `Lib/SiegelWeil/Reproduction.lean`, [line 170](lean:Lib/SiegelWeil/Reproduction.lean#L170). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.realConv_holMinorsPi_eq_zero_of_lift_eq_zero`: `Lib/SiegelWeil/Reproduction.lean`, [line 295](lean:Lib/SiegelWeil/Reproduction.lean#L295). Cited in [Chapter](/chapter/siegel-weil/).
@@ -1210,7 +1282,10 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.rowFixingLevel`: `New/OneLift/ComparisonOperator/GluedLattices.lean`, [line 262](lean:New/OneLift/ComparisonOperator/GluedLattices.lean#L262). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.rowFixingLevel_le_levelOf`: `New/OneLift/ComparisonOperator/GluedLattices.lean`, [line 433](lean:New/OneLift/ComparisonOperator/GluedLattices.lean#L433). Cited in [Chapter](/chapter/comparison-operator-1/).
 - `New.Rows.rowStabilizer`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 82](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L82). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.SecondFactorFormValues`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 62](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L62). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.splittingV`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 174](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L174). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.stdClassSum_gramForm_eq_zero`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 324](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L324). Cited in [Chapter](/chapter/false-lifts/).
+- `New.Rows.stdClassSum_gramForm_eq_zero_of_mem_falseLiftsAt`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 865](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L865). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.stdClassSum_gramForm_eq_zero_of_rank_one`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 522](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L522). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.stdClassSum_gramForm_kernelVector_eq_zero`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 402](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L402). Cited in [Chapter](/chapter/false-lifts/).
 - `New.Rows.stdClassSum_period_eq_zero`: `New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean`, [line 619](lean:New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean#L619). Cited in [Chapter](/chapter/false-lifts/), [Chapter](/chapter/hecke-values/).
@@ -1218,18 +1293,33 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.stdClassSum_tower`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 359](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L359). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.stdLevel_le_rightStabilizer_detKernel`: `New/OneLift/HeckeValues/PeriodAtOne.lean`, [line 194](lean:New/OneLift/HeckeValues/PeriodAtOne.lean#L194). Cited in [Chapter](/chapter/hecke-values/).
 - `New.Rows.sum_heckePolyCoeff_smul_modDatum_eq_modDatum`: `New/OneLift/HeckeValues/PeriodAtOne.lean`, [line 216](lean:New/OneLift/HeckeValues/PeriodAtOne.lean#L216). Cited in [Chapter](/chapter/hecke-values/).
+- `New.Rows.sum_mul_colsMinus_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 586](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L586). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.sum_slice_eq_zero_of_mem_falseLiftsAt`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 912](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L912). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.tamePart_twistPlace_ne_one`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 846](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L846). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.thetaKernelPairing_adjoint_glue_eq_zero`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 954](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L954). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.tsum_inv_norm_realCoord_pow_le`: `New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean`, [line 368](lean:New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean#L368). Cited in [Chapter](/chapter/comparison-operator-1/).
+- `New.Rows.twistFactor`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 307](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L307). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.twistFactor_mul_firstFactorPairing`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 317](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L317). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.twistFactor_mul_inner_adjoint_glue`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1012](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1012). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.twistFactor_ne_zero`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1084](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1084). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.twistFactor_smul_adjoint_glue_comp`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 1048](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L1048). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.twoSidedSubst_firstColsCoord`: `New/OneLift/ComparisonOperator/DeterminantProducts.lean`, [line 136](lean:New/OneLift/ComparisonOperator/DeterminantProducts.lean#L136). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.twoSidedSubst_stackedDetProd`: `New/OneLift/ComparisonOperator/DeterminantProducts.lean`, [line 91](lean:New/OneLift/ComparisonOperator/DeterminantProducts.lean#L91). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.weilScalar_glueLattice`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 230](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L230). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.Rows.weylGauge_add_le_max`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 848](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L848). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Rows.weylGauge_classSum_le_one`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 856](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L856). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Rows.weylGauge_deltaForm_le`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 252](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L252). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.Rows.weylGauge_firstFactor_le_one`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 329](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L329). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.weylNormSq_deltaForm_le`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 280](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L280). Cited in [Chapter](/chapter/short-columns-gain/).
+- `New.Rows.weylNormSq_evalForm_productForm_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 712](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L712). Cited in [Chapter](/chapter/comparison-operator-2/).
+- `New.Rows.weylNormSq_firstFactor_le`: `New/OneLift/ComparisonOperator/GluingMaps.lean`, [line 337](lean:New/OneLift/ComparisonOperator/GluingMaps.lean#L337). Cited in [Chapter](/chapter/comparison-operator-2/).
 - `New.rowShear`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 125](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L125). Cited in [Chapter](/chapter/false-lifts/).
 - `New.rowShear_mul_eq_self_of_vecMul_eq_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 127](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L127). Cited in [Chapter](/chapter/false-lifts/).
 - `New.rowShear_mul_inclMatrix`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 135](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L135). Cited in [Chapter](/chapter/false-lifts/).
 - `New.rowSubst`: `Lib/GLn/SchurModule/Basic.lean`, [line 247](lean:Lib/GLn/SchurModule/Basic.lean#L247). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.rowSubst_mem_nabla`: `Lib/GLn/SchurModule/Basic.lean`, [line 629](lean:Lib/GLn/SchurModule/Basic.lean#L629). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.rpow_le_norm_factorial`: `Lib/General/Algebra/IntegralPowerSeries.lean`, [line 251](lean:Lib/General/Algebra/IntegralPowerSeries.lean#L251). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.rpow_pow_le_norm_factorial_succ`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 117](lean:New/Derivatives/Sharpness/OneCurve.lean#L117). Cited in [Chapter](/chapter/sharpness/).
 - `New.sameSectionPairs`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 273](lean:New/Determinant/Exchange/MatchingPartners.lean#L273). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.sameSectionPairs.exists_linear_factor`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 428](lean:New/Determinant/Exchange/MatchingPartners.lean#L428). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.sameSectionPairs.translate_mem`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 303](lean:New/Determinant/Exchange/MatchingPartners.lean#L303). Cited in [Chapter](/chapter/exchange-identity-1/).
@@ -2546,7 +2636,9 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.Space.ϱ`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 253](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L253). Cited in [Chapter](/chapter/weil-representation/).
 - `New.span_conjWeylRep_eq_top`: `Lib/GLn/SchurModule/Polarisation.lean`, [line 61](lean:Lib/GLn/SchurModule/Polarisation.lean#L61). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.span_fillingPoly`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 256](lean:Lib/GLn/SchurModule/TensorModel.lean#L256). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.span_isShort_eq_top`: `New/UpperBound/Size/ShortColumns.lean`, [line 369](lean:New/UpperBound/Size/ShortColumns.lean#L369). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.span_norm_le_eq_top_of_covering`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 195](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L195). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.span_setOf_mem_eq_top_of_eq_range`: `New/UpperBound/Size/ShortColumns.lean`, [line 530](lean:New/UpperBound/Size/ShortColumns.lean#L530). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.SpansBranchingMaps`: `Lib/GLn/Branching/IntegralMap.lean`, [line 63](lean:Lib/GLn/Branching/IntegralMap.lean#L63). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.specMap`: `Lib/General/Geometry/LineBundles.lean`, [line 50](lean:Lib/General/Geometry/LineBundles.lean#L50). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.sphericalAt`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 77](lean:Lib/Weil/Unramified/SplitHecke.lean#L77). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
@@ -2607,6 +2699,7 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.sum_inv_det_hyperplaneGroup_eq_zero`: `New/OneLift/FalseLifts/BottomOfTower.lean`, [line 210](lean:New/OneLift/FalseLifts/BottomOfTower.lean#L210). Cited in [Chapter](/chapter/false-lifts/).
 - `New.sum_lambdaKResidueClass_mul_posPart`: `New/Reduction/PrimeSums.lean`, [line 45](lean:New/Reduction/PrimeSums.lean#L45). Cited in [Chapter](/chapter/prime-sums/).
 - `New.sum_mul_eq_normal_order`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 229](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L229). Cited in [Chapter](/chapter/local-theta/).
+- `New.sum_pow_apply_eq_zero_iff_exists_eq_sub`: `New/UpperBound/Size/ShortColumns.lean`, [line 449](lean:New/UpperBound/Size/ShortColumns.lean#L449). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.sum_range_char_add`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 108](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L108). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.sum_schur_smul_nablaBasis`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 512](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L512). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.sum_sq_thetaSeries_jacobiSym_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 536](lean:Lib/Analytic/QuadraticTwist.lean#L536). Cited in [Chapter](/chapter/polya-vinogradov/).
@@ -2714,14 +2807,14 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.twisted_trace_identity`: `Lib/GaloisRep/BaseChange/TwistedTraceIdentity.lean`, [line 935](lean:Lib/GaloisRep/BaseChange/TwistedTraceIdentity.lean#L935). Cited in [Chapter](/chapter/building-representations/).
 - `New.TwistedLattice`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 109](lean:New/Reduction/Lattices/TwistedLattice.lean#L109). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/).
 - `New.TwistedLattice.conjCoord`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 265](lean:New/Reduction/Lattices/TwistedLattice.lean#L265). Cited in [Chapter](/chapter/twisted-lattices/).
-- `New.TwistedLattice.covolume_add_index_nonneg`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 477](lean:New/Reduction/Lattices/TwistedLattice.lean#L477). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/).
-- `New.TwistedLattice.CovolumeLe`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 275](lean:New/Reduction/Lattices/TwistedLattice.lean#L275). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-c-plan/).
+- `New.TwistedLattice.covolume_add_index_nonneg`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 477](lean:New/Reduction/Lattices/TwistedLattice.lean#L477). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/proof-of-theorem-c/).
+- `New.TwistedLattice.CovolumeLe`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 275](lean:New/Reduction/Lattices/TwistedLattice.lean#L275). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/proof-of-theorem-c/).
 - `New.TwistedLattice.CovolumeLe.norm_map_det_gram_le`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 294](lean:New/Reduction/Lattices/TwistedLattice.lean#L294). Cited in [Chapter](/chapter/twisted-lattices/).
-- `New.TwistedLattice.CovolumeLe.sumElim`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 330](lean:New/Reduction/Lattices/TwistedLattice.lean#L330). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.TwistedLattice.CovolumeLe.sumElim`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 330](lean:New/Reduction/Lattices/TwistedLattice.lean#L330). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/proof-of-theorem-c/).
 - `New.TwistedLattice.covolumeLe_of_normSqAt_le`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 317](lean:New/Reduction/Lattices/TwistedLattice.lean#L317). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/main-inequality/).
 - `New.TwistedLattice.exists_matrix_elim_mem_lattice`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 388](lean:New/Reduction/Lattices/TwistedLattice.lean#L388). Cited in [Chapter](/chapter/twisted-lattices/).
-- `New.TwistedLattice.heightLe_pow_mul_det_gram`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 450](lean:New/Reduction/Lattices/TwistedLattice.lean#L450). Cited in [Chapter](/chapter/twisted-lattices/).
-- `New.TwistedLattice.IndexLe`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 159](lean:New/Reduction/Lattices/TwistedLattice.lean#L159). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-c-plan/).
+- `New.TwistedLattice.heightLe_pow_mul_det_gram`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 450](lean:New/Reduction/Lattices/TwistedLattice.lean#L450). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/proof-of-theorem-c/).
+- `New.TwistedLattice.IndexLe`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 159](lean:New/Reduction/Lattices/TwistedLattice.lean#L159). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/proof-of-theorem-c/).
 - `New.TwistedLattice.IndexLe.mono`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 168](lean:New/Reduction/Lattices/TwistedLattice.lean#L168). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.TwistedLattice.IndexLe.of_comp_equiv`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 174](lean:New/Reduction/Lattices/TwistedLattice.lean#L174). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.TwistedLattice.IndexLe.sumElim`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 207](lean:New/Reduction/Lattices/TwistedLattice.lean#L207). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -3158,11 +3251,13 @@ This section has the 3167 cited names `New.X` outside the namespace `New.Data` w
 - `New.weylKernel`: `Lib/GLn/SchurModule/Basic.lean`, [line 370](lean:Lib/GLn/SchurModule/Basic.lean#L370). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.weylKernel_eq_sum_fillingPoly`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 382](lean:Lib/GLn/SchurModule/WeylKernel.lean#L382). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.weylNormSq`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 380](lean:Lib/GLn/SchurModule/GramMatrix.lean#L380). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.weylNormSq_det_smul_weylRep_mulVec_weylEval_le`: `New/UpperBound/Size/ShortColumns.lean`, [line 281](lean:New/UpperBound/Size/ShortColumns.lean#L281). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.weylNormSq_le_mul_of_toPoly_eq`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 661](lean:Lib/GLn/SchurModule/GramMatrix.lean#L661). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.weylNormSq_nonneg`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 384](lean:Lib/GLn/SchurModule/GramMatrix.lean#L384). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.weylNormSq_schur_le`: `Lib/GLn/SchurModule/SchurNorm.lean`, [line 207](lean:Lib/GLn/SchurModule/SchurNorm.lean#L207). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.weylRep`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 659](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L659). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.weylRep_coeff_eq_prod_weightMinors`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 258](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L258). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.weylRep_mul_weylRep_zero`: `New/UpperBound/Size/ShortColumns.lean`, [line 203](lean:New/UpperBound/Size/ShortColumns.lean#L203). Cited in [Chapter](/chapter/short-columns-gain/).
 - `New.witt`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 281](lean:Lib/Adelic/Witt/WittTheorem.lean#L281). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.witt_of_quasiReflection_mem`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 213](lean:Lib/Adelic/Witt/WittTheorem.lean#L213). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.witt_Ô`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 510](lean:Lib/Adelic/Witt/WittTheorem.lean#L510). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
