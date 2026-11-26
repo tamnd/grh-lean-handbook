@@ -61,7 +61,7 @@ Fix $d$, $p$, the partners $\tau' = \mathrm{pr}_e\tau$ and $N$. Among the height
 
 **Definition (Predicted divisibility).** The predicted divisibility of $\kappa$ at $p$ is
 
-$$D_p(\kappa) = v(\pi_p) \sum_{e \in I_p} \sum_\tau \Big( \Big(\frac{a_\tau}{p^e} - a_{\tau'} - a'_{\tau'}\Big)^+ + \Big(\frac{l_\tau}{p^e} - l_{\tau'}\Big)^+ - \frac{a'_\tau}{p^e} \Big) - [p = d]\, \frac12 \sum_\tau \big(\min(a_\tau, a_{\tau'} + a'_{\tau'}) + a'_\tau + \min(l_\tau, l_{\tau'})\big),$$
+$$\begin{aligned} D_p(\kappa) &= v(\pi_p) \sum_{e \in I_p} \sum_\tau \Big( \Big(\frac{a_\tau}{p^e} - a_{\tau'} - a'_{\tau'}\Big)^+ + \Big(\frac{l_\tau}{p^e} - l_{\tau'}\Big)^+ - \frac{a'_\tau}{p^e} \Big) \\ &\quad - [p = d]\, \frac12 \sum_\tau \big(\min(a_\tau, a_{\tau'} + a'_{\tau'}) + a'_\tau + \min(l_\tau, l_{\tau'})\big), \end{aligned}$$
 
 with $\tau' = \mathrm{pr}_e\tau$ in the first sum and $\tau' = \mathrm{pr}_0\tau$ in the second.
 
