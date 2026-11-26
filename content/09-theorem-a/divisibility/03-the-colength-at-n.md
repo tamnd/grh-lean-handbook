@@ -67,7 +67,7 @@ Lean: `New.Data.mul_sumDegreeOf_le` (New/UpperBound/Divisibility/ColengthAtLevel
 
 Lean: `New.Data.integralFormsAt_one_le` (New/UpperBound/Divisibility/ColengthAtLevel.lean).
 
-*Proof.* We have $\delta_0^\vee = d^{-1}$ with $d = \delta_0(\Sigma_N \setminus \Pi_\pi)$. By the lemma on the image of a diagonal point, $d$ acts at each $\tau$ by a diagonal matrix with entries $1$ and $N$, which is integral. The gauge at $g\,d^{-1}$ of a value is the norm of the Schur functor of these integral matrices applied to the vector whose norm is the gauge at $g$. A polynomial representation of an integral matrix does not increase the norm. So the gauge at $g\delta_0^\vee$ is at most the gauge at $g$, which is at most $1$. $\square$
+*Proof.* We have $\delta_0^\vee = d^{-1}$ with $d = \delta_0(\Sigma_N \setminus \Pi_N)$. By the lemma on the image of a diagonal point, $d$ acts at each $\tau$ by a diagonal matrix with entries $1$ and $N$, which is integral. The gauge at $g\,d^{-1}$ of a value is the norm of the Schur functor of these integral matrices applied to the vector whose norm is the gauge at $g$. A polynomial representation of an integral matrix does not increase the norm. So the gauge at $g\delta_0^\vee$ is at most the gauge at $g$, which is at most $1$. $\square$
 
 **Lemma (Adapted representatives).** For every finite adelic point $c$ there is a rational point $\gamma$ such that $\gamma c \delta_0^\vee$ is integral above $N$ and $\delta_0(\Sigma_N)^{-1}\gamma c \delta_0$ is integral above $N$.
 

@@ -29,7 +29,7 @@ drafted_by: writer@claude-opus-5-5
 
 At the prime $p = N$ the lifts of the chain are glued at the level, and the lift laws of [the objects of the upper bound](/chapter/upper-bound-objects/) undo the gluing. Those laws are stated for an abstract split level $P$ and an abstract representation of $\mathrm{GL}_{n \sqcup \ast}(E_P)$. This section supplies the concrete objects: the split level $\Sigma_N$, the points $\delta_j$ that change the standard lattice to the lattice $L_j$, and the representation of $\mathrm{GL}(E_{\Sigma_N})$ on forms. It then proves that the level $K_j$ is the mirabolic group read in a basis of $L_j$, and it defines the module $\mathcal A'$ whose colength Section 3 bounds.
 
-Throughout this section and the next two, $p = N$ and $\iota_N : \mathbb C \to \mathbb C_N$ is the fixed embedding. Recall that $N \equiv 1$ modulo the cyclotomic conductor ([the data and their sizes](/chapter/data-and-sizes/)). So $N$ splits completely in $E$, and the Frobenius at $N$ is trivial ([the field E at the primes](/chapter/field-at-primes/)). Write $\pi$ for the integer of $K$ with $\pi\bar\pi = N$, and $\Pi_\pi$ for the set of primes of $E$ that divide $\pi$.
+Throughout this section and the next two, $p = N$ and $\iota_N : \mathbb C \to \mathbb C_N$ is the fixed embedding. Recall that $N \equiv 1$ modulo the cyclotomic conductor ([the data and their sizes](/chapter/data-and-sizes/)). So $N$ splits completely in $E$, and the Frobenius at $N$ is trivial ([the field E at the primes](/chapter/field-at-primes/)). Write $\pi$ for the integer of $K$ with $\pi\bar\pi = N$, and $\Pi_N$ for the set of primes of $E$ that divide $\pi$.
 
 ### The places above N
 
@@ -62,7 +62,7 @@ Index the basis of $X_j$ by $n_j \sqcup \{\ast\}$, with last basis vector $e_\as
 **Definition (Diagonal points).**
 
 1. $\delta_j(S)$ is the finite adelic point of the unitary group of $X_j$ that is supported above $N$ with component $\mathrm{diag}_S(N)$ at $\Sigma_N$.
-2. $\delta_j = \delta_j(\Pi_\pi)$.
+2. $\delta_j = \delta_j(\Pi_N)$.
 3. $\delta_j^\vee = \delta_j\,\delta_j(\Sigma_N)^{-1}$.
 
 Lean: `New.Data.diagPoint`, `New.Data.diagPointN`, `New.Data.dualPointN` (New/UpperBound/Divisibility/SetupAtLevel.lean).
