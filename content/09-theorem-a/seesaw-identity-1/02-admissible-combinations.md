@@ -86,7 +86,7 @@ Lean: `New.Seesaw.IsAdmissibleCombination.bind`.
 
 *Size.* Fix $\sigma$ and assume $p$. By the triangle inequality,
 
-$$\sum_y |\sigma(t(y))| \leq \sum_y \sum_x |\sigma(c(x))|\, |\sigma(r_x(y))| = \sum_x |\sigma(c(x))| \sum_y |\sigma(r_x(y))| \leq \sum_x |\sigma(c(x))|\, |B'| \leq B |B'| \leq C. \quad \square$$
+$$\begin{aligned}\sum_y |\sigma(t(y))| &\leq \sum_y \sum_x |\sigma(c(x))|\, |\sigma(r_x(y))| \\ &= \sum_x |\sigma(c(x))| \sum_y |\sigma(r_x(y))| \leq \sum_x |\sigma(c(x))|\, |B'| \leq B |B'| \leq C. \quad \square\end{aligned}$$
 
 **Remark (Formalization).** The size is $B |B'|$, not $B B'$. When $p$ fails, the sizes are arbitrary real numbers, and $B'$ may be negative; the absolute value makes the bound correct in the second inequality, where $\sum_y |\sigma(r_x(y))| \leq B' \leq |B'|$. The sum over $y$ in the proof runs over the support of $t$, which is a subset of the union of the supports of the $r_x$. The choice of $r_x$ is made with `choose!`, which is harmless: any admissible $r_x$ works.
 

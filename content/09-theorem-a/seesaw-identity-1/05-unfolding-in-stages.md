@@ -52,7 +52,7 @@ Lean: `New.Seesaw.DoubleLiftData.constTerm_mul_constTerm_eq_inv_mul_zeroTerm`, `
 
 **Theorem (The double unfolding).** Let $D$ be double lift data. There is a constant $\zeta_D$ with the following property. Let $a$, $b$ be characters of $[U(1)]$, $f$, $f'$ data on $\mathrm{Hom}(V, V')$ and $\mathrm{Hom}(V', V'')$, $k \in U(X_0)$, and $W$ an equivariant function on the Bessel group of $\mathsf{Y}$. Then
 
-$$\int_{[R']}\int_{[R]} W(g)\,\mathrm{CT}_{\mathrm{sh}}(f)(g, r)\,\mathrm{CT}_{\mathrm{sh}'}(f')(r, \iota'' k)\, dg\, dr = \int_{[U(X)]} W(\iota g)\, \zeta_D \int_{[U(X')]} \theta\Big(\mathrm{tw}_{a,b}(g, r, \epsilon(k))\, D.\mathrm{zeroTerm}\big(\varrho(S)(f \boxtimes f')\big)\Big)\, dr\, dg.$$
+$$\begin{aligned}&\int_{[R']}\int_{[R]} W(g)\,\mathrm{CT}_{\mathrm{sh}}(f)(g, r)\,\mathrm{CT}_{\mathrm{sh}'}(f')(r, \iota'' k)\, dg\, dr \\ &\quad = \int_{[U(X)]} W(\iota g)\, \zeta_D \int_{[U(X')]} \theta\Big(\mathrm{tw}_{a,b}(g, r, \epsilon(k))\, D.\mathrm{zeroTerm}\big(\varrho(S)(f \boxtimes f')\big)\Big)\, dr\, dg.\end{aligned}$$
 
 Lean: `New.Seesaw.DoubleLiftData.exists_integral_constTermAtStringMap_mul_eq`.
 
