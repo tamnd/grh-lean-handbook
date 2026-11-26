@@ -32,7 +32,7 @@ and the Hecke root of lifts is $x_w = $ `O.liftHeckeRoot w` $= (\alpha_w q^{n-r-
 2. $\theta^* \Xi = 0$;
 3. $H_w(x_w)\,\Xi = 0$, for one split place $w$ off $\Sigma$.
 
-A false lift in the sense of [character lifts](/chapter/character-lifts/#point-forms-and-tested-forms) satisfies conditions 2 and 3. Condition 1 replaces the condition $\Xi \in \mathrm{range}(e_0)$. In rank $r = 1$, Section 7 shows that $\Xi \in \mathrm{range}(e_0)$ implies condition 1.
+A false lift in the sense of [character lifts](/chapter/character-lifts/#point-forms-and-tested-forms) satisfies conditions 2 and 3. Condition 1 replaces the condition $\Xi \in \mathrm{range}(e_0)$. In rank $r = 1$, Section 8 shows that $\Xi \in \mathrm{range}(e_0)$ implies condition 1.
 
 ### The main theorem
 
@@ -48,7 +48,7 @@ Then $f$ is left invariant under the rational points of $U(I_l)$, and $\mathrm{c
 
 Lean: `New.Rows.stdClassSum_gramForm_eq_zero` (New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean).
 
-The proof is in [Section 6](/chapter/false-lifts/#periods-of-false-lifts). The class sum is the finite form of the integral over $[U(I_l)]$; see [class sums and Petersson products](/chapter/character-lifts/#class-sums-and-petersson-products).
+The proof is in [Section 7](/chapter/false-lifts/#periods-of-false-lifts). The class sum is the finite form of the integral over $[U(I_l)]$; see [class sums and Petersson products](/chapter/character-lifts/#class-sums-and-petersson-products).
 
 **Remark (Formalization).** The rank condition $2r + 2\#N + 3 < n$ is an explicit hypothesis `h_rank` on the cardinalities of the index types. It is not part of `FitsParams`. The register of findings lists it as F-087. The later chapters must supply it when they apply the theorem.
 
@@ -56,21 +56,21 @@ The proof is in [Section 6](/chapter/false-lifts/#periods-of-false-lifts). The c
 
 The proof has four steps.
 
-1. *The bottom of the tower* (Sections 2 and 3). From conditions 1 and 2 we get that all descents of the matrix coefficients of $\Xi$ to $U(W)$ vanish, for all data that are the vacuum off $\Sigma$. Condition 2 gives this only for one datum, the block datum $\Psi_{\mathrm{bl}} \otimes \mathrm{vac}$. The hyperplane sums move the vanishing from this datum to all data. The tool is a lemma on matrices: a point $z$ without an "integral block ratio" has an annihilating row, and the row gives a shear that fixes the class of $z$.
+1. *The bottom of the tower* (Sections 2 to 4). From conditions 1 and 2 we get that all descents of the matrix coefficients of $\Xi$ to $U(W)$ vanish, for all data that are the vacuum off $\Sigma$. Condition 2 gives this only for one datum, the block datum $\Psi_{\mathrm{bl}} \otimes \mathrm{vac}$. The hyperplane sums move the vanishing from this datum to all data. The tool is a lemma on matrices: a point $z$ without an "integral block ratio" has an annihilating row, and the row gives a shear that fixes the class of $z$.
 
    **Theorem (The bottom of the tower).** Let $\psi_w \neq 1$ for $w \in Q$, and let the hyperplane sums annihilate the form $y$. If the descents of $\overline{\langle u, y\rangle}$ by the data $v_P \otimes \Psi_{\mathrm{bl}} \otimes \mathrm{vac}$ vanish for all polynomials $P$, then all descents of $\overline{\langle u, y\rangle}$ to $U(W)$, twisted by $\nu_W$ and with data that are the vacuum off $\Sigma$, vanish.
 
    Lean: `New.DescentPair.descentsVanish_of_hyperplaneSumsAnnihilate` (New/OneLift/FalseLifts/BottomOfTower.lean).
 
-2. *Small roots* (Section 4). A bounded function on a unitary group of rank $m$ that is spherical at $w$ and killed by $H_w(X)$ with $q^{m+1}|X| \leq 1$ is zero. The proof uses the $q$-binomial theorem and the maximum principle of Volume 6.
+2. *Small roots* (Section 5). A bounded function on a unitary group of rank $m$ that is spherical at $w$ and killed by $H_w(X)$ with $q^{m+1}|X| \leq 1$ is zero. The proof uses the $q$-binomial theorem and the maximum principle of Volume 6.
 
-3. *The hyperbolic plane step* (Section 5). If the descents of $Y$ to $W$ vanish, then the descents to $W$ plus one hyperbolic plane are bounded. The Hecke transfer moves condition 3 to these descents at a point of small modulus. So by step 2 they are zero. Induction on the number of planes gives the following theorem.
+3. *The hyperbolic plane step* (Section 6). If the descents of $Y$ to $W$ vanish, then the descents to $W$ plus one hyperbolic plane are bounded. The Hecke transfer moves condition 3 to these descents at a point of small modulus. So by step 2 they are zero. Induction on the number of planes gives the following theorem.
 
    **Theorem (The tower).** Let the descents of $Y$ to $W$ twisted by $a$ vanish for data that are the vacuum off $\Sigma$. Let $w$ be split off $\Sigma$, with $a$ unramified at $\bar w$, let $Y$ be spherical at $w$ and killed by $H_w(X)$, with $|X| = (q^{r/2} q^{n-r-1})^{-1}$. If $W'$ is $W$ plus $p$ hyperbolic planes and $2r + 2p + 3 < n$, then the descents of $Y$ to $W'$ twisted by $a\,\upsilon^{p}$ vanish.
 
    Lean: `New.SiegelWeil.descentsVanish_add_planes` (New/OneLift/FalseLifts/HyperbolicPlaneStep.lean).
 
-4. *Periods* (Sections 6 and 7). The descents to $W \oplus \mathbb{H}^N$ vanish (`New.Rows.descentsVanish_hyperbolicSum`). A theta kernel of $W$ is absorbed in the matrix coefficient. Then the theorem of [descents and periods](/chapter/bessel-periods/#descents-and-block-periods) turns vanishing descents to the hyperbolic space $\mathbb{H}^N$ into vanishing periods over $U(I_l)$.
+4. *Periods* (Sections 7 and 8). The descents to $W \oplus \mathbb{H}^N$ vanish (`New.Rows.descentsVanish_hyperbolicSum`). A theta kernel of $W$ is absorbed in the matrix coefficient. Then the theorem of [descents and periods](/chapter/bessel-periods/#descents-and-block-periods) turns vanishing descents to the hyperbolic space $\mathbb{H}^N$ into vanishing periods over $U(I_l)$.
 
 ### What the chapter uses
 
@@ -78,4 +78,4 @@ From Volume 6: the Weil representation and its data ([the Weil representation](/
 
 ### Where the results are used
 
-Section 7 gives three special cases. The case of point forms (`New.Rows.stdClassSum_period_eq_zero`) and the case of a line (`New.Rows.stdClassSum_gramForm_eq_zero_of_rank_one`) are used in [Hecke values of character lifts](/chapter/hecke-values/). The case of product forms (`New.Rows.DividedSplitting.stdClassSum_inner_productForm_eq_zero`) is used in [the comparison operator, part 2](/chapter/comparison-operator-2/), where it gives property 3 of the comparison operator: its values are orthogonal to the false lifts.
+Section 8 gives three special cases. The case of point forms (`New.Rows.stdClassSum_period_eq_zero`) and the case of a line (`New.Rows.stdClassSum_gramForm_eq_zero_of_rank_one`) are used in [Hecke values of character lifts](/chapter/hecke-values/). The case of product forms (`New.Rows.DividedSplitting.stdClassSum_inner_productForm_eq_zero`) is used in [the comparison operator, part 2](/chapter/comparison-operator-2/), where it gives property 3 of the comparison operator: its values are orthogonal to the false lifts.
