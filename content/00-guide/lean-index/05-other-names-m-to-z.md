@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, M to Z
 
-This section has the 1339 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+This section has the 1575 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
 
 - `New.map_star_CM`: `Lib/Adelic/Adeles/Basic.lean`, [line 387](lean:Lib/Adelic/Adeles/Basic.lean#L387). Cited in [Chapter](/chapter/cm-fields/).
 - `New.map_star_complex`: `Lib/Adelic/Adeles/Basic.lean`, [line 383](lean:Lib/Adelic/Adeles/Basic.lean#L383). Cited in [Chapter](/chapter/cm-fields/).
@@ -28,6 +28,8 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.mem_besselS`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 285](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L285). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.mem_integrableExpSet_of_summable_taylor`: `Lib/Analytic/Landau.lean`, [line 47](lean:Lib/Analytic/Landau.lean#L47). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
 - `New.mem_nabla`: `Lib/GLn/SchurModule/Basic.lean`, [line 568](lean:Lib/GLn/SchurModule/Basic.lean#L568). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.mem_obeying`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 144](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L144). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.mem_obeying_cocycleRelations`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 166](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L166). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.mem_placeOfEmb`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 424](lean:Lib/ClassField/Places/ValuationSubrings.lean#L424). Cited in [Chapter](/chapter/cm-fields/).
 - `New.mem_range_scalar_of_commute_schur`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 647](lean:Lib/GLn/SchurModule/WeylKernel.lean#L647). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.mem_ratAdeles_of_stdAddChar_eq_one`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 309](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L309). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -67,6 +69,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.nonempty_splittingChar_of_cmTypeOver`: `Lib/ClassField/Grunwald.lean`, [line 552](lean:Lib/ClassField/Grunwald.lean#L552). Cited in [Chapter](/chapter/local-duality/).
 - `New.nonempty_weilData_of_not_dvd_differentIdeal`: `Lib/ClassField/Grunwald.lean`, [line 659](lean:Lib/ClassField/Grunwald.lean#L659). Cited in [Chapter](/chapter/local-duality/).
 - `New.norm_charMean_le_one`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 96](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L96). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.norm_coeff_expSubst_le_one`: `Lib/General/Algebra/SeriesBounds.lean`, [line 212](lean:Lib/General/Algebra/SeriesBounds.lean#L212). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.norm_deriv_regularL_le`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 367](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L367). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.norm_det_blockDiagPart`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 109](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L109). Cited in [Chapter](/chapter/discrete-series/).
 - `New.norm_det_formGram_le`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 116](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L116). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -109,6 +112,8 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.normDensity`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 484](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L484). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.normNegOneIdele`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 518](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L518). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.normOneLatticeVectors`: `Lib/SiegelWeil/Mass.lean`, [line 107](lean:Lib/SiegelWeil/Mass.lean#L107). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.nullstellensatz_exists_le_ker`: `Lib/General/Algebra/MultivariatePolynomials.lean`, [line 294](lean:Lib/General/Algebra/MultivariatePolynomials.lean#L294). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.obeying`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 84](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L84). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.OddPart.artin_reciprocity_of_mem_component`: `Lib/Cyclotomic/Kolyvagin/ReciprocityComponentBounds.lean`, [line 281](lean:Lib/Cyclotomic/Kolyvagin/ReciprocityComponentBounds.lean#L281). Cited in [Chapter](/chapter/odd-classes/).
 - `New.OddPart.component`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 254](lean:Lib/GaloisRep/Main/SelmerModules.lean#L254). Cited in [Chapter](/chapter/odd-classes/).
 - `New.OddPart.derivativeSum`: `Lib/Cyclotomic/Kolyvagin/DerivativeCocycles.lean`, [line 228](lean:Lib/Cyclotomic/Kolyvagin/DerivativeCocycles.lean#L228). Cited in [Chapter](/chapter/odd-classes/).
@@ -128,6 +133,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.OddPart.isOfFinOrder_of_norm_eq_one`: `Lib/Cyclotomic/Stickelberger.lean`, [line 77](lean:Lib/Cyclotomic/Stickelberger.lean#L77). Cited in [Chapter](/chapter/odd-classes/).
 - `New.OddPart.IsStickelbergerBound`: `Lib/Cyclotomic/Voronoi.lean`, [line 136](lean:Lib/Cyclotomic/Voronoi.lean#L136). Cited in [Chapter](/chapter/odd-classes/).
 - `New.OddPart.IsUnramifiedTorsionHom`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 910](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L910). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.OddPart.length_le_of_detecting_points`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 281](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L281). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.OddPart.length_shaOdd_le_addVal_pow`: `Lib/Cyclotomic/OddSha.lean`, [line 554](lean:Lib/Cyclotomic/OddSha.lean#L554). Cited in [Chapter](/chapter/odd-classes/).
 - `New.OddPart.length_shaOdd_le_of_le_sq`: `Lib/Cyclotomic/OddSha.lean`, [line 571](lean:Lib/Cyclotomic/OddSha.lean#L571). Cited in [Chapter](/chapter/odd-classes/).
 - `New.OddPart.length_shaOdd_le_of_sq_lt`: `Lib/Cyclotomic/OddSha.lean`, [line 593](lean:Lib/Cyclotomic/OddSha.lean#L593). Cited in [Chapter](/chapter/odd-classes/).
@@ -163,6 +169,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.OscillatorPair.re_inner_integratedRep_pos`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 662](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L662). Cited in [Chapter](/chapter/local-theta/).
 - `New.OscillatorPair.swap`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 627](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L627). Cited in [Chapter](/chapter/local-theta/).
 - `New.OscillatorRep`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 476](lean:Lib/Weil/Fock/OscillatorPair.lean#L476). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
+- `New.PadicIntegerRing`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 66](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L66). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.PadicPlace`: `Lib/General/Algebra/AdicCompletion.lean`, [line 76](lean:Lib/General/Algebra/AdicCompletion.lean#L76). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.pairingAnnihilator`: `Lib/ClassField/GaloisCohomology/KummerCyclicClasses.lean`, [line 147](lean:Lib/ClassField/GaloisCohomology/KummerCyclicClasses.lean#L147). Cited in [Chapter](/chapter/local-duality/).
 - `New.pairSign`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 106](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L106). Cited in [Chapter](/chapter/local-theta/).
@@ -260,7 +267,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Period.Ainf.isAdicComplete_span_singleton`: `Lib/PadicHodge/PeriodRings/Ainf.lean`, [line 1026](lean:Lib/PadicHodge/PeriodRings/Ainf.lean#L1026). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.Ainf.prime_p`: `Lib/PadicHodge/PeriodRings/Ainf.lean`, [line 900](lean:Lib/PadicHodge/PeriodRings/Ainf.lean#L900). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.Ainf.prime_xi`: `Lib/PadicHodge/PeriodRings/Ainf.lean`, [line 981](lean:Lib/PadicHodge/PeriodRings/Ainf.lean#L981). Cited in [Chapter](/chapter/period-rings/).
-- `New.Period.Amax`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 60](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L60). Cited in [Chapter](/chapter/period-rings/).
+- `New.Period.Amax`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 60](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L60). Cited in [Chapter](/chapter/period-rings/), [Chapter](/chapter/comparison-theorems/).
 - `New.Period.Amax.exists_lift`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 153](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L153). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.Amax.xiDivP`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 98](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L98). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.associated_p_frobEnd_xi`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 251](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L251). Cited in [Chapter](/chapter/period-rings/).
@@ -274,7 +281,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Period.BdRPlus.exists_associated_xi_pow`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 922](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L922). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.BdRPlus.isUnit_iff`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 906](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L906). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.BdRPlus.prime_xi`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 947](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L947). Cited in [Chapter](/chapter/period-rings/).
-- `New.Period.Bmax`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 71](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L71). Cited in [Chapter](/chapter/period-rings/).
+- `New.Period.Bmax`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 71](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L71). Cited in [Chapter](/chapter/period-rings/), [Chapter](/chapter/comparison-theorems/).
 - `New.Period.Bmax.exists_padic_eq_of_frobEnd_fixed`: `Lib/PadicHodge/Crystalline/FixedRatios.lean`, [line 87](lean:Lib/PadicHodge/Crystalline/FixedRatios.lean#L87). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.Bmax.exists_witt_ratio`: `Lib/PadicHodge/Crystalline/FixedRatios.lean`, [line 390](lean:Lib/PadicHodge/Crystalline/FixedRatios.lean#L390). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.Bmax.fundamental_sequence_surjective`: `Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean`, [line 432](lean:Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean#L432). Cited in [Chapter](/chapter/period-rings/).
@@ -349,7 +356,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Period.IsFiniteGroupRingQuotient`: `Lib/PadicHodge/Limit/CrystallineLimit.lean`, [line 237](lean:Lib/PadicHodge/Limit/CrystallineLimit.lean#L237). Cited in [Chapter](/chapter/kisin-frames/).
 - `New.Period.IsHodgeFrame`: `Lib/PadicHodge/Crystalline/HodgeTateJumps.lean`, [line 109](lean:Lib/PadicHodge/Crystalline/HodgeTateJumps.lean#L109). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.IsHodgeTateFrame`: `Lib/PadicHodge/Crystalline/HodgeTateJumps.lean`, [line 86](lean:Lib/PadicHodge/Crystalline/HodgeTateJumps.lean#L86). Cited in [Chapter](/chapter/period-rings/).
-- `New.Period.IsKilledBy`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 258](lean:Lib/PadicHodge/Crystalline/Basic.lean#L258). Cited in [Chapter](/chapter/period-rings/).
+- `New.Period.IsKilledBy`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 258](lean:Lib/PadicHodge/Crystalline/Basic.lean#L258). Cited in [Chapter](/chapter/period-rings/), [Chapter](/chapter/congruence-relation/).
 - `New.Period.IsKilledBy.of_jointly_injective`: `Lib/PadicHodge/Crystalline/Regularity.lean`, [line 486](lean:Lib/PadicHodge/Crystalline/Regularity.lean#L486). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.isKilledBy_iff`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 263](lean:Lib/PadicHodge/Crystalline/Basic.lean#L263). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.isKilledBy_X_sub_C_of_unramified_char`: `Lib/PadicHodge/Characters.lean`, [line 843](lean:Lib/PadicHodge/Characters.lean#L843). Cited in [Chapter](/chapter/period-rings/).
@@ -375,10 +382,10 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Period.isPotentiallyCrystalline_of_unramified_char`: `Lib/PadicHodge/Characters.lean`, [line 865](lean:Lib/PadicHodge/Characters.lean#L865). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.isPrimitiveRoot_untilt_epsPow`: `Lib/PadicHodge/PeriodRings/Ainf.lean`, [line 149](lean:Lib/PadicHodge/PeriodRings/Ainf.lean#L149). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.isUnit_smul_of_dvd_mu`: `Lib/PadicHodge/PeriodRings/CrystallineRings.lean`, [line 270](lean:Lib/PadicHodge/PeriodRings/CrystallineRings.lean#L270). Cited in [Chapter](/chapter/period-rings/).
-- `New.Period.IsWeilPair`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 134](lean:Lib/PadicHodge/Crystalline/Basic.lean#L134). Cited in [Chapter](/chapter/period-rings/).
+- `New.Period.IsWeilPair`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 134](lean:Lib/PadicHodge/Crystalline/Basic.lean#L134). Cited in [Chapter](/chapter/period-rings/), [Chapter](/chapter/comparison-theorems/), [Chapter](/chapter/congruence-relation/).
 - `New.Period.IsWeilPair.smul_eq_of_fixed_nearOne`: `Lib/PadicHodge/Crystalline/Regularity.lean`, [line 328](lean:Lib/PadicHodge/Crystalline/Regularity.lean#L328). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.isWeilPair_zero_iff`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 139](lean:Lib/PadicHodge/Crystalline/Basic.lean#L139). Cited in [Chapter](/chapter/period-rings/).
-- `New.Period.jump`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 210](lean:Lib/PadicHodge/Crystalline/Basic.lean#L210). Cited in [Chapter](/chapter/period-rings/).
+- `New.Period.jump`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 210](lean:Lib/PadicHodge/Crystalline/Basic.lean#L210). Cited in [Chapter](/chapter/period-rings/), [Chapter](/chapter/congruence-relation/).
 - `New.Period.jump_eq_jump_one_of_unramified_char`: `Lib/PadicHodge/Characters.lean`, [line 832](lean:Lib/PadicHodge/Characters.lean#L832). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.jump_eq_of_pairing`: `Lib/PadicHodge/Crystalline/HodgeTateJumps.lean`, [line 583](lean:Lib/PadicHodge/Crystalline/HodgeTateJumps.lean#L583). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.jump_eq_zero_iff`: `Lib/PadicHodge/Crystalline/HodgeTateJumps.lean`, [line 557](lean:Lib/PadicHodge/Crystalline/HodgeTateJumps.lean#L557). Cited in [Chapter](/chapter/period-rings/).
@@ -388,7 +395,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Period.le_of_echelon`: `Lib/PadicHodge/TateSen.lean`, [line 294](lean:Lib/PadicHodge/TateSen.lean#L294). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.le_of_fixed_mem_of_saturated`: `Lib/PadicHodge/Crystalline/Regularity.lean`, [line 183](lean:Lib/PadicHodge/Crystalline/Regularity.lean#L183). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.le_of_hodgeTate_stable`: `Lib/PadicHodge/TateSen.lean`, [line 344](lean:Lib/PadicHodge/TateSen.lean#L344). Cited in [Chapter](/chapter/period-rings/).
-- `New.Period.linearFrob`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 224](lean:Lib/PadicHodge/Crystalline/Basic.lean#L224). Cited in [Chapter](/chapter/period-rings/).
+- `New.Period.linearFrob`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 224](lean:Lib/PadicHodge/Crystalline/Basic.lean#L224). Cited in [Chapter](/chapter/period-rings/), [Chapter](/chapter/comparison-theorems/), [Chapter](/chapter/congruence-relation/).
 - `New.Period.linearFrob_apply`: `Lib/PadicHodge/Crystalline/Regularity.lean`, [line 354](lean:Lib/PadicHodge/Crystalline/Regularity.lean#L354). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.linearFrob_eq_tensorAction_of_exists`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 230](lean:Lib/PadicHodge/Crystalline/Basic.lean#L230). Cited in [Chapter](/chapter/period-rings/).
 - `New.Period.linearFrob_mul`: `Lib/PadicHodge/Crystalline/Regularity.lean`, [line 387](lean:Lib/PadicHodge/Crystalline/Regularity.lean#L387). Cited in [Chapter](/chapter/period-rings/).
@@ -439,6 +446,9 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Period.xi_mul_tau`: `Lib/PadicHodge/PeriodRings/Ainf.lean`, [line 181](lean:Lib/PadicHodge/PeriodRings/Ainf.lean#L181). Cited in [Chapter](/chapter/period-rings/).
 - `New.Pic`: `Lib/General/Geometry/LineBundles.lean`, [line 878](lean:Lib/General/Geometry/LineBundles.lean#L878). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Pic.eq_zero_of_isLocalRing`: `Lib/General/Geometry/LineBundles.lean`, [line 985](lean:Lib/General/Geometry/LineBundles.lean#L985). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Pic.pairing`: `Lib/Shimura/AbelianScheme/Basic.lean`, [line 199](lean:Lib/Shimura/AbelianScheme/Basic.lean#L199). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Pic.ParallelogramLaw`: `Lib/Shimura/AbelianScheme/Basic.lean`, [line 203](lean:Lib/Shimura/AbelianScheme/Basic.lean#L203). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Pic.ParallelogramLaw.pairing_nsmul_left`: `Lib/Shimura/AbelianScheme/Pairings.lean`, [line 127](lean:Lib/Shimura/AbelianScheme/Pairings.lean#L127). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Pic.pull`: `Lib/General/Geometry/LineBundles.lean`, [line 966](lean:Lib/General/Geometry/LineBundles.lean#L966). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Pic.pull_comp`: `Lib/General/Geometry/LineBundles.lean`, [line 975](lean:Lib/General/Geometry/LineBundles.lean#L975). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.PlaceEmbedding`: `Lib/Adelic/Adeles/Basic.lean`, [line 65](lean:Lib/Adelic/Adeles/Basic.lean#L65). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -469,6 +479,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.PrimePadicIso.integers`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 58](lean:New/Reduction/Lattices/TwistedLattice.lean#L58). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.PrimePadicIso.inv_pow_le_norm_of_dvd`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 67](lean:New/Reduction/Lattices/TwistedLattice.lean#L67). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.PrimePadicIso.norm_place`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 63](lean:New/Reduction/Lattices/TwistedLattice.lean#L63). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.primePowerSeries`: `Lib/General/Algebra/SeriesCongruences.lean`, [line 47](lean:Lib/General/Algebra/SeriesCongruences.lean#L47). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.primeRemainder`: `New/Reduction/Zeros/PrimeError.lean`, [line 65](lean:New/Reduction/Zeros/PrimeError.lean#L65). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/).
 - `New.primeRemainder_eq_integral_countError_sub`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 80](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L80). Cited in [Chapter](/chapter/main-inequality/).
 - `New.primeRemainder_eq_sum`: `New/Reduction/Zeros/PrimeError.lean`, [line 215](lean:New/Reduction/Zeros/PrimeError.lean#L215). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/prime-sums/).
@@ -488,8 +499,8 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.ProjSpace.isLinearSystem_hyperplaneBundle`: `Lib/General/Geometry/ProjectiveSpace.lean`, [line 205](lean:Lib/General/Geometry/ProjectiveSpace.lean#L205). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.ProjSpace.isProper_specZIsTerminal_from`: `Lib/General/Geometry/ProjectiveSpace.lean`, [line 430](lean:Lib/General/Geometry/ProjectiveSpace.lean#L430). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.ProjSpace.landsIn_chart_iff_isUnit`: `Lib/General/Geometry/ProjectiveSpace.lean`, [line 150](lean:Lib/General/Geometry/ProjectiveSpace.lean#L150). Cited in [Chapter](/chapter/schemes-through-points/).
-- `New.q_binomial_submodule`: `Lib/General/Combinatorics.lean`, [line 96](lean:Lib/General/Combinatorics.lean#L96). Cited in [Chapter](/chapter/siegel-weil/).
-- `New.QuadField`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 97](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L97). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/cm-fields/).
+- `New.q_binomial_submodule`: `Lib/General/Combinatorics.lean`, [line 96](lean:Lib/General/Combinatorics.lean#L96). Cited in [Chapter](/chapter/siegel-weil/), [Chapter](/chapter/congruence-relation/).
+- `New.QuadField`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 97](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L97). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/cm-fields/), [Chapter](/chapter/fitting-ideals/).
 - `New.QuadField.different_eq_span_and_adjoin_betaK`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 240](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L240). Cited in [Chapter](/chapter/cm-fields/).
 - `New.QuadField.embOfPrimitiveRoot`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 157](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L157). Cited in [Chapter](/chapter/cm-fields/).
 - `New.QuadField.finrank_eq_two`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 131](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L131). Cited in [Chapter](/chapter/cm-fields/).
@@ -505,6 +516,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.quasiReflection_mulVec`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 104](lean:Lib/Adelic/Witt/WittTheorem.lean#L104). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.quotMean`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 703](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L703). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/reduction-theory/).
 - `New.quotMean_tsum_eq_integral`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 860](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L860). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.QuotSpan`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 62](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L62). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.QZ`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 168](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L168). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.QZ.carry`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 184](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L184). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.QZ.carry_add_add_carry`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 204](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L204). Cited in [Chapter](/chapter/class-field-theory/).
@@ -529,6 +541,11 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.re_logDerivMean_one`: `New/Reduction/Zeros/PrimeError.lean`, [line 166](lean:New/Reduction/Zeros/PrimeError.lean#L166). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/prime-sums/).
 - `New.re_logDerivMean_one_eq_add_re_logDeriv`: `New/Reduction/Zeros/PrimeError.lean`, [line 151](lean:New/Reduction/Zeros/PrimeError.lean#L151). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.realAdele`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 264](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L264). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.RealComplexForm`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 71](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L71). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.RealComplexForm.dualLattice`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 149](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L149). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.RealComplexForm.riemannForm`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 108](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L108). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.RealComplexForm.thetaShift`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 144](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L144). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.RealComplexForm.thetaSpace`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 97](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L97). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.realConv`: `Lib/Adelic/AutomorphicForms/Basic.lean`, [line 73](lean:Lib/Adelic/AutomorphicForms/Basic.lean#L73). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.RealPlace.besselHaar₀_homogeneousBall`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 747](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L747). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.RealPlace.eichlerMatrix_mul`: `Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean`, [line 647](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L647). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -556,7 +573,15 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.RelationSetting.localCocycles`: `Lib/ClassField/GreenbergWiles/Relations.lean`, [line 113](lean:Lib/ClassField/GreenbergWiles/Relations.lean#L113). Cited in [Chapter](/chapter/local-duality/).
 - `New.RelationSetting.reductions`: `Lib/ClassField/GreenbergWiles/RelationsModL.lean`, [line 60](lean:Lib/ClassField/GreenbergWiles/RelationsModL.lean#L60). Cited in [Chapter](/chapter/local-duality/).
 - `New.RelationSetting.relations`: `Lib/ClassField/GreenbergWiles/Relations.lean`, [line 142](lean:Lib/ClassField/GreenbergWiles/Relations.lean#L142). Cited in [Chapter](/chapter/local-duality/).
+- `New.relationsOn`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 92](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L92). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relEval`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 79](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L79). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relEval_apply`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 140](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L140). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.relIndex_norm_unit_pow`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 469](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L469). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.relLength`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 95](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L95). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relLength_add_length_inf`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 121](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L121). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relLength_iInf_le`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 109](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L109). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relLength_le_of_mapsTo`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 177](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L177). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.relLength_mono`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 187](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L187). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.rightRegular`: `Lib/Adelic/Hecke/Basic.lean`, [line 54](lean:Lib/Adelic/Hecke/Basic.lean#L54). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.rightStabilizer`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 59](lean:Lib/Adelic/Hecke/ClassSums.lean#L59). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.rootDiscr_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 284](lean:New/Reduction/Data/AdmissibleData.lean#L284). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/cm-fields/).
@@ -564,6 +589,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.IsPeak.le_firstMinimum`: `Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean`, [line 556](lean:Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean#L556). Cited in [Chapter](/chapter/discrete-series/).
 - `New.Rows.letterPoly_highestVector_mem_holomorphicData`: `Lib/SiegelWeil/Reproduction.lean`, [line 253](lean:Lib/SiegelWeil/Reproduction.lean#L253). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.lift_modDatum_eq_zero_of_mem_span`: `Lib/SiegelWeil/Reproduction.lean`, [line 343](lean:Lib/SiegelWeil/Reproduction.lean#L343). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Rows.places_levelModulus`: `Lib/General/Algebra/LevelModulus.lean`, [line 103](lean:Lib/General/Algebra/LevelModulus.lean#L103). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Rows.polyMatrixCoeff_eq_holMinorsPi_mul_conj`: `Lib/SiegelWeil/Reproduction.lean`, [line 115](lean:Lib/SiegelWeil/Reproduction.lean#L115). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.prod_variableMinor_mem_holomorphicData`: `Lib/SiegelWeil/Reproduction.lean`, [line 170](lean:Lib/SiegelWeil/Reproduction.lean#L170). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.realConv_holMinorsPi_eq_zero_of_lift_eq_zero`: `Lib/SiegelWeil/Reproduction.lean`, [line 295](lean:Lib/SiegelWeil/Reproduction.lean#L295). Cited in [Chapter](/chapter/siegel-weil/).
@@ -574,6 +600,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.weylGauge_deltaForm_le`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 252](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L252). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.rowSubst`: `Lib/GLn/SchurModule/Basic.lean`, [line 247](lean:Lib/GLn/SchurModule/Basic.lean#L247). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.rowSubst_mem_nabla`: `Lib/GLn/SchurModule/Basic.lean`, [line 629](lean:Lib/GLn/SchurModule/Basic.lean#L629). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.rpow_le_norm_factorial`: `Lib/General/Algebra/IntegralPowerSeries.lean`, [line 251](lean:Lib/General/Algebra/IntegralPowerSeries.lean#L251). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.saturatingElem`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 635](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L635). Cited in [Chapter](/chapter/weil-representation/).
 - `New.scaleRootsEquiv`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 543](lean:Lib/LocalGL/Green/LabelCharacters.lean#L543). Cited in [Chapter](/chapter/finite-gln/).
 - `New.schur`: `Lib/GLn/SchurModule/Basic.lean`, [line 339](lean:Lib/GLn/SchurModule/Basic.lean#L339). Cited in [Chapter](/chapter/weyl-modules/).
@@ -588,6 +615,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.second_inequality`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 345](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L345). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.selfAdjointCodifferent`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 714](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L714). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Selmer.add_denominatorError_le_mul_clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 140](lean:New/Congruences/FirstOrder/TraceRelations.lean#L140). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.addVal_le_length_torsionBy`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 129](lean:Lib/General/Algebra/BlockFittingBound.lean#L129). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 128](lean:New/Congruences/FirstOrder/TraceRelations.lean#L128). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.crystallineLoss`: `New/Congruences/LocalLoss/Basic.lean`, [line 118](lean:New/Congruences/LocalLoss/Basic.lean#L118). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.defectBound`: `New/Congruences/LocalLoss/Basic.lean`, [line 125](lean:New/Congruences/LocalLoss/Basic.lean#L125). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -598,7 +626,11 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.denominatorLe_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1321](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1321). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.denominatorLe_range_goodLift`: `New/Congruences/FitTwistsExist.lean`, [line 415](lean:New/Congruences/FitTwistsExist.lean#L415). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.denominatorLe_span_trivialLift`: `New/Congruences/FitTwistsExist.lean`, [line 444](lean:New/Congruences/FitTwistsExist.lean#L444). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.DivisibleQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 90](lean:Lib/General/Algebra/BlockFittingBound.lean#L90). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.divQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 93](lean:Lib/General/Algebra/BlockFittingBound.lean#L93). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.divQuot_injective`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 105](lean:Lib/General/Algebra/BlockFittingBound.lean#L105). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.eventually_length_shaOdd_le`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 90](lean:New/Congruences/FirstOrder/TraceRelations.lean#L90). Cited in [Chapter](/chapter/odd-classes/).
+- `New.Selmer.exists_divQuot_eq`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 114](lean:Lib/General/Algebra/BlockFittingBound.lean#L114). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.exists_isMainSummand_descentPair`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 480](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L480). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_isMainSummand_mainPair`: `New/Congruences/FitTwistsExist.lean`, [line 297](lean:New/Congruences/FitTwistsExist.lean#L297). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_mFoldTwist_hasDenominatorsLe`: `New/Congruences/FitTwistsExist.lean`, [line 475](lean:New/Congruences/FitTwistsExist.lean#L475). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -607,9 +639,24 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.exists_operator_det_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1246](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1246). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_operator_ellVal_le_liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1156](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1156). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_perfect_pairing`: `Lib/ClassField/LocalDuality/CrystallineDuality.lean`, [line 419](lean:Lib/ClassField/LocalDuality/CrystallineDuality.lean#L419). Cited in [Chapter](/chapter/local-duality/).
+- `New.Selmer.exists_rows_addVal_det_le`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 36](lean:Lib/General/Algebra/BlockFittingBound.lean#L36). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.exists_rows_addVal_det_le_of_divisible`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 157](lean:Lib/General/Algebra/BlockFittingBound.lean#L157). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.exists_smul_eq_zero_divisibleQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 121](lean:Lib/General/Algebra/BlockFittingBound.lean#L121). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.fittingIdeal`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 472](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L472). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.fittingIdeal.exists_addVal_le_relLength`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 680](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L680). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.fittingIdeal.exists_ge_mul_prod_mem`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 547](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L547). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.fittingIdeal.mul_mem_of_smul_mem`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 516](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L516). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.fittingIdeal.sup_smul_top_le`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 481](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L481). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.formsMod`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 591](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L591). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.formsMod_anti`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 608](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L608). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.frequently_lt_card_residueField`: `Lib/General/NumberTheory/LargeResidueField.lean`, [line 125](lean:Lib/General/NumberTheory/LargeResidueField.lean#L125). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.gaussVal`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 167](lean:Lib/General/NumberTheory/GaussValuation.lean#L167). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.gaussVal_mul`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 269](lean:Lib/General/NumberTheory/GaussValuation.lean#L269). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.HasDivisibleSelmerLengthLe`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 369](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L369). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.HasLiftTrace`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 611](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L611). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.IsAuxTwist`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 130](lean:New/Congruences/FirstOrder/EvenClasses.lean#L130). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.isLeast_length_matrixKernel`: `Lib/General/Algebra/SharpMinors.lean`, [line 263](lean:Lib/General/Algebra/SharpMinors.lean#L263). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.isLeast_length_quotient_rowLattice`: `Lib/General/Algebra/SharpMinors.lean`, [line 235](lean:Lib/General/Algebra/SharpMinors.lean#L235). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.IsLiftGenerator`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 742](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L742). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.IsMainSummand`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 621](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L621). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.IsMainSummandLike`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 434](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L434). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -617,15 +664,27 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.isNegligible_padicValNat_card_stdClasses`: `New/Congruences/FitTwistsExist.lean`, [line 213](lean:New/Congruences/FitTwistsExist.lean#L213). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.isNegligible_padicValNat_oddClassBound`: `New/Congruences/FitTwistsExist.lean`, [line 158](lean:New/Congruences/FitTwistsExist.lean#L158). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.isNegligible_twistError`: `New/Congruences/FitTwistsExist.lean`, [line 176](lean:New/Congruences/FitTwistsExist.lean#L176). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.le_ellVal_geom_sum`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 424](lean:Lib/General/NumberTheory/GaussValuation.lean#L424). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.length_linearMap_quotSpan`: `Lib/General/Algebra/SharpMinors.lean`, [line 136](lean:Lib/General/Algebra/SharpMinors.lean#L136). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.length_linearMap_quotSpan_of_dvd`: `Lib/General/Algebra/SharpMinors.lean`, [line 104](lean:Lib/General/Algebra/SharpMinors.lean#L104). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.length_quotient_span_row`: `Lib/General/Algebra/SharpMinors.lean`, [line 177](lean:Lib/General/Algebra/SharpMinors.lean#L177). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 179](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L179). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.localDefectBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 99](lean:New/Congruences/FirstOrder/TraceRelations.lean#L99). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.map_mkQ_formsMod_lt`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 652](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L652). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.matrixKernel`: `Lib/General/Algebra/SharpMinors.lean`, [line 44](lean:Lib/General/Algebra/SharpMinors.lean#L44). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.maximalMinors`: `Lib/General/Algebra/SharpMinors.lean`, [line 39](lean:Lib/General/Algebra/SharpMinors.lean#L39). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.mem_formsMod`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 599](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L599). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.mem_of_forall_form_eq_zero`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 617](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L617). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.mul_det_mem_fittingIdeal`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 494](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L494). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.notMem_bPlaces_of_coefficientEmbedding_eq_pow`: `New/Congruences/LocalLoss/CrystallineDefect.lean`, [line 174](lean:New/Congruences/LocalLoss/CrystallineDefect.lean#L174). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Selmer.notMem_bPlaces_of_short_arc`: `New/Congruences/LocalLoss/Basic.lean`, [line 252](lean:New/Congruences/LocalLoss/Basic.lean#L252). Cited in [Chapter](/chapter/progression-free-sets/).
 - `New.Selmer.oddClassBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 74](lean:New/Congruences/FirstOrder/TraceRelations.lean#L74). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.oddClassBound_le`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 82](lean:New/Congruences/FirstOrder/TraceRelations.lean#L82). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.placeClass_eq_cmSign_mul_pow`: `New/Congruences/LocalLoss/Basic.lean`, [line 196](lean:New/Congruences/LocalLoss/Basic.lean#L196). Cited in [Chapter](/chapter/progression-free-sets/).
+- `New.Selmer.pow_dvd_geom_sum`: `Lib/General/NumberTheory/CoefficientInclusion.lean`, [line 87](lean:Lib/General/NumberTheory/CoefficientInclusion.lean#L87). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.prod_Ioc_natB_le_pow`: `New/Congruences/FitTwistsExist.lean`, [line 90](lean:New/Congruences/FitTwistsExist.lean#L90). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.range_goodLift_le_span_hasLiftHeckePolynomial`: `New/Congruences/FitTwistsExist.lean`, [line 326](lean:New/Congruences/FitTwistsExist.lean#L326). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.rowLattice`: `Lib/General/Algebra/SharpMinors.lean`, [line 49](lean:Lib/General/Algebra/SharpMinors.lean#L49). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.shaLocalSet`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 174](lean:Lib/GaloisRep/Main/SelmerModules.lean#L174). Cited in [Chapter](/chapter/odd-classes/).
 - `New.Selmer.shaOdd`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 183](lean:Lib/GaloisRep/Main/SelmerModules.lean#L183). Cited in [Chapter](/chapter/odd-classes/).
 - `New.Selmer.sum_clearingBound_add_padicValNat_le`: `New/Congruences/FitTwistsExist.lean`, [line 232](lean:New/Congruences/FitTwistsExist.lean#L232). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -650,6 +709,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Shape.Form.splitGram`: `Lib/General/Groups/BesselGroups.lean`, [line 147](lean:Lib/General/Groups/BesselGroups.lean#L147). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Shape.Form.unipotentBelow`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 182](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L182). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Shape.G₁`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 235](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L235). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.shiftDiff`: `Lib/General/Algebra/AdicCompletion.lean`, [line 174](lean:Lib/General/Algebra/AdicCompletion.lean#L174). Cited in [Chapter](/chapter/comparison-theorems/), [Chapter](/chapter/fitting-ideals/).
 - `New.shintani_lift_labelChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 717](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L717). Cited in [Chapter](/chapter/finite-gln/).
 - `New.SiegelWeil.bddAbove_norm_sub_tsum_norm_zeroTerm`: `Lib/SiegelWeil/Formula/WeilRange.lean`, [line 595](lean:Lib/SiegelWeil/Formula/WeilRange.lean#L595). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.SiegelWeil.blockPeriod`: `Lib/Weil/Periods/DescentVanishing.lean`, [line 385](lean:Lib/Weil/Periods/DescentVanishing.lean#L385). Cited in [Chapter](/chapter/bessel-periods/).
@@ -1076,6 +1136,7 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.sum_thetaTailIntegral_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 615](lean:Lib/Analytic/QuadraticTwist.lean#L615). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.sum_twoRho_eq_zero`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 97](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L97). Cited in [Chapter](/chapter/local-theta/).
 - `New.summable_vonMangoldt_not_prime`: `Lib/Analytic/Primes.lean`, [line 189](lean:Lib/Analytic/Primes.lean#L189). Cited in [Chapter](/chapter/primes-in-windows/).
+- `New.SUnit.dirichlet_unit_theorem`: `Lib/General/NumberTheory/SUnitsAndClassNumber.lean`, [line 153](lean:Lib/General/NumberTheory/SUnitsAndClassNumber.lean#L153). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.swap_mul_transvectionGL`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 153](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L153). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.symPowMatrix`: `Lib/GLn/SchurModule/Basic.lean`, [line 510](lean:Lib/GLn/SchurModule/Basic.lean#L510). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.Tableau`: `Lib/GLn/SchurModule/Basic.lean`, [line 82](lean:Lib/GLn/SchurModule/Basic.lean#L82). Cited in [Chapter](/chapter/weyl-modules/).
@@ -1109,9 +1170,15 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.ThetaKernel.moderate_growth`: `Lib/Weil/DualPair/ThetaLiftConvergence.lean`, [line 348](lean:Lib/Weil/DualPair/ThetaLiftConvergence.lean#L348). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.ThetaKernel.petersson_lift_eq_petersson_descent`: `Lib/Weil/DualPair/ThetaLiftConvergence.lean`, [line 541](lean:Lib/Weil/DualPair/ThetaLiftConvergence.lean#L541). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.ThetaKernel.theta_rat_mul`: `Lib/Weil/DualPair/ThetaLiftConvergence.lean`, [line 332](lean:Lib/Weil/DualPair/ThetaLiftConvergence.lean#L332). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.ThetaObject.TorusModel`: `Lib/Shimura/Uniformisation/TorusModel.lean`, [line 76](lean:Lib/Shimura/Uniformisation/TorusModel.lean#L76). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.ThetaObject.TorusModel.exists_isTranslationLift_of_dualLattice`: `Lib/Shimura/Uniformisation/TorusModel.lean`, [line 464](lean:Lib/Shimura/Uniformisation/TorusModel.lean#L464). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.ThetaObject.TorusModel.multiplier_eq_canonicalMultiplier`: `Lib/Shimura/Uniformisation/TorusModel.lean`, [line 477](lean:Lib/Shimura/Uniformisation/TorusModel.lean#L477). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.thetaSeries`: `Lib/Analytic/DirichletTheta.lean`, [line 35](lean:Lib/Analytic/DirichletTheta.lean#L35). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.thetaTailIntegral`: `Lib/Analytic/QuadraticTwist.lean`, [line 61](lean:Lib/Analytic/QuadraticTwist.lean#L61). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.ThetaTori.canonicalMultiplier`: `Lib/Shimura/ComplexTheta/DimensionFormula.lean`, [line 713](lean:Lib/Shimura/ComplexTheta/DimensionFormula.lean#L713). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.ThetaTori.formSpan`: `Lib/Shimura/ThetaNormality/NormalGeneration.lean`, [line 250](lean:Lib/Shimura/ThetaNormality/NormalGeneration.lean#L250). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.ThetaTori.isAppellHumbert_canonicalMultiplier`: `Lib/Shimura/ComplexTheta/DimensionFormula.lean`, [line 743](lean:Lib/Shimura/ComplexTheta/DimensionFormula.lean#L743). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.ThetaTori.normalizedShift`: `Lib/Shimura/ComplexTheta/DimensionFormula.lean`, [line 717](lean:Lib/Shimura/ComplexTheta/DimensionFormula.lean#L717). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.three_lines_bound_of_LFunction_eq_zero`: `Lib/Analytic/QuadraticTwist.lean`, [line 206](lean:Lib/Analytic/QuadraticTwist.lean#L206). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.three_mul_sum_range_two_mul_sub_sq`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 47](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L47). Cited in [Chapter](/chapter/local-theta/).
 - `New.three_mul_sum_sq_of_injOn`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 58](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L58). Cited in [Chapter](/chapter/local-theta/).
@@ -1162,6 +1229,9 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.typeKernel`: `Lib/Adelic/AutomorphicForms/Basic.lean`, [line 68](lean:Lib/Adelic/AutomorphicForms/Basic.lean#L68). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.U`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 302](lean:Lib/General/Groups/CongruenceSubgroups.lean#L302). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.U.hasse_principle_coboundary`: `Lib/Adelic/Landherr.lean`, [line 536](lean:Lib/Adelic/Landherr.lean#L536). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Uniformisation`: `Lib/Shimura/Uniformisation/HolomorphicFamilies.lean`, [line 188](lean:Lib/Shimura/Uniformisation/HolomorphicFamilies.lean#L188). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Uniformisation.appell_humbert`: `Lib/Shimura/Uniformisation/AppellHumbert.lean`, [line 396](lean:Lib/Shimura/Uniformisation/AppellHumbert.lean#L396). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Uniformisation.card_torsion`: `Lib/Shimura/Uniformisation/HolomorphicFamilies.lean`, [line 745](lean:Lib/Shimura/Uniformisation/HolomorphicFamilies.lean#L745). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.uniformizer`: `Lib/Adelic/Adeles/Basic.lean`, [line 149](lean:Lib/Adelic/Adeles/Basic.lean#L149). Cited in [Chapter](/chapter/class-field-theory/), [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.upsilon_mul_finMultiplier`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 1006](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L1006). Cited in [Chapter](/chapter/weil-representation/).
 - `New.USign`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 309](lean:Lib/General/Groups/CongruenceSubgroups.lean#L309). Cited in [Chapter](/chapter/adeles-hermitian-spaces/), [Chapter](/chapter/discrete-series/), [Chapter](/chapter/weil-representation/).
@@ -1171,21 +1241,59 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.vacuumMeasure`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 159](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L159). Cited in [Chapter](/chapter/weil-representation/).
 - `New.vacuumSum_eq_L_div_eulerProd`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 946](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L946). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.vacuumSum_pair`: `Lib/SiegelWeil/RallisInner/SharpData.lean`, [line 921](lean:Lib/SiegelWeil/RallisInner/SharpData.lean#L921). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.ValuativeArc`: `Lib/Shimura/Uniformisation/HolomorphicFamilies.lean`, [line 74](lean:Lib/Shimura/Uniformisation/HolomorphicFamilies.lean#L74). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.abelianDim`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 111](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L111). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.AbFunctor`: `Lib/Cohomology/Etale/Basic.lean`, [line 73](lean:Lib/Cohomology/Etale/Basic.lean#L73). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.absFrobenius`: `Lib/General/Geometry/SerreTheorem.lean`, [line 86](lean:Lib/General/Geometry/SerreTheorem.lean#L86). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.absFrobenius_apply`: `Lib/General/Geometry/SerreTheorem.lean`, [line 98](lean:Lib/General/Geometry/SerreTheorem.lean#L98). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.absFrobenius_comm`: `Lib/General/Geometry/SerreTheorem.lean`, [line 94](lean:Lib/General/Geometry/SerreTheorem.lean#L94). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.algBaseChangeAdj`: `Lib/General/Algebra/CohomologyBaseChange.lean`, [line 260](lean:Lib/General/Algebra/CohomologyBaseChange.lean#L260). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Variety.algebraMap_mem_of_isLocalization`: `Lib/Shimura/Eigenspace.lean`, [line 395](lean:Lib/Shimura/Eigenspace.lean#L395). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.almostCoeff`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 71](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L71). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.Cancels`: `Lib/Cohomology/Etale/Basic.lean`, [line 295](lean:Lib/Cohomology/Etale/Basic.lean#L295). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Cancels.mono`: `Lib/Cohomology/Etale/Basic.lean`, [line 299](lean:Lib/Cohomology/Etale/Basic.lean#L299). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.cancels_moebius_of_factorsThrough_sup`: `Lib/Shimura/IntegralModel/TowerExistence.lean`, [line 51](lean:Lib/Shimura/IntegralModel/TowerExistence.lean#L51). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.cartier`: `Lib/Shimura/CongruenceRelation/KernelReduction.lean`, [line 97](lean:Lib/Shimura/CongruenceRelation/KernelReduction.lean#L97). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.classAut_eq_bot`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 986](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L986). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Variety.CoeffCompBijective.periodAlg_of_almostCoeff`: `Lib/PadicComparison/Primitive/PeriodCoefficients.lean`, [line 398](lean:Lib/PadicComparison/Primitive/PeriodCoefficients.lean#L398). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.comp_absFrobenius`: `Lib/General/Geometry/SerreTheorem.lean`, [line 89](lean:Lib/General/Geometry/SerreTheorem.lean#L89). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.ComparedTheory`: `Lib/PadicComparison/Duality/LineIntegration.lean`, [line 511](lean:Lib/PadicComparison/Duality/LineIntegration.lean#L511). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isClosedClass_isFiniteLerayHirsch`: `Lib/PadicComparison/Duality/LineIntegration.lean`, [line 613](lean:Lib/PadicComparison/Duality/LineIntegration.lean#L613). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.IsFiniteLerayHirsch`: `Lib/PadicComparison/Duality/LineIntegration.lean`, [line 607](lean:Lib/PadicComparison/Duality/LineIntegration.lean#L607). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_iff_of_isCohomEquiv`: `Lib/PadicComparison/Duality/LineIntegration.lean`, [line 666](lean:Lib/PadicComparison/Duality/LineIntegration.lean#L666). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_iff_of_locally_bijective`: `Lib/PadicComparison/Duality/GoodPairs.lean`, [line 242](lean:Lib/PadicComparison/Duality/GoodPairs.lean#L242). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_of_prod_projLine`: `Lib/PadicComparison/Duality/GoodPairs.lean`, [line 292](lean:Lib/PadicComparison/Duality/GoodPairs.lean#L292). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_of_retract`: `Lib/PadicComparison/Duality/LineIntegration.lean`, [line 688](lean:Lib/PadicComparison/Duality/LineIntegration.lean#L688). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_principal_open`: `Lib/PadicComparison/Duality/GoodPairs.lean`, [line 498](lean:Lib/PadicComparison/Duality/GoodPairs.lean#L498). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_standard_etale`: `Lib/PadicComparison/Duality/GoodPairs.lean`, [line 655](lean:Lib/PadicComparison/Duality/GoodPairs.lean#L655). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_topPoints_of_surjective`: `Lib/PadicComparison/Duality/LineIntegration.lean`, [line 883](lean:Lib/PadicComparison/Duality/LineIntegration.lean#L883). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ComparedTheory.mem_of_isClosedClass_of_isCharting`: `Lib/Cohomology/SmoothBaseChange.lean`, [line 113](lean:Lib/Cohomology/SmoothBaseChange.lean#L113). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.Comparison.IsBijective.of_mod`: `Lib/PadicComparison/Completion.lean`, [line 273](lean:Lib/PadicComparison/Completion.lean#L273). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.Comparison.isClosedClass`: `Lib/General/Geometry/EtaleCharts.lean`, [line 1039](lean:Lib/General/Geometry/EtaleCharts.lean#L1039). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.compatibleRoots`: `Lib/PadicComparison/ToricTower.lean`, [line 346](lean:Lib/PadicComparison/ToricTower.lean#L346). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.CompatibleRootsAreLines`: `Lib/PadicComparison/ToricTower.lean`, [line 385](lean:Lib/PadicComparison/ToricTower.lean#L385). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.CongruenceRelation`: `Lib/Cohomology/Etale/Basic.lean`, [line 1028](lean:Lib/Cohomology/Etale/Basic.lean#L1028). Cited in [Chapter](/chapter/comparison-theorems/), [Chapter](/chapter/congruence-relation/).
 - `New.Variety.ConstIfCoincident`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 92](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L92). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.continuousUpTo_locConstCoeff`: `Lib/Cohomology/Etale/FilteredLimits.lean`, [line 406](lean:Lib/Cohomology/Etale/FilteredLimits.lean#L406). Cited in [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.coordSection`: `Lib/Shimura/ThetaGroup.lean`, [line 91](lean:Lib/Shimura/ThetaGroup.lean#L91). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.coordSection`: `Lib/Shimura/ThetaGroup.lean`, [line 91](lean:Lib/Shimura/ThetaGroup.lean#L91). Cited in [Chapter](/chapter/schemes-through-points/), [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.countTerm`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 449](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L449). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.CrysPeriodAlgebra`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 102](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L102). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.crysPeriodCoeff`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 95](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L95). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.definiteForms`: `Lib/Shimura/TraceFormula/DefiniteTrace.lean`, [line 343](lean:Lib/Shimura/TraceFormula/DefiniteTrace.lean#L343). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.ellAdicCoeff`: `Lib/Cohomology/Etale/EllAdicCohomology.lean`, [line 46](lean:Lib/Cohomology/Etale/EllAdicCohomology.lean#L46). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.ellAdicCohom`: `Lib/Cohomology/Etale/EllAdicCohomology.lean`, [line 77](lean:Lib/Cohomology/Etale/EllAdicCohomology.lean#L77). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.ellAdicCohom.congruence_relation`: `Lib/Shimura/CongruenceRelation/EichlerShimura.lean`, [line 121](lean:Lib/Shimura/CongruenceRelation/EichlerShimura.lean#L121). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ellAdicCohom.continuous_galoisAction`: `Lib/PadicComparison/Primitive/ComparisonTheorem.lean`, [line 376](lean:Lib/PadicComparison/Primitive/ComparisonTheorem.lean#L376). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.ellAdicCohom.ellAdicPull_frobEnd`: `Lib/Shimura/CongruenceRelation/EichlerShimura.lean`, [line 75](lean:Lib/Shimura/CongruenceRelation/EichlerShimura.lean#L75). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ellAdicCohom.frobEnd`: `Lib/Shimura/CongruenceRelation/EichlerShimura.lean`, [line 54](lean:Lib/Shimura/CongruenceRelation/EichlerShimura.lean#L54). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ellAdicCohom.frobEnd_app`: `Lib/Shimura/CongruenceRelation/EichlerShimura.lean`, [line 66](lean:Lib/Shimura/CongruenceRelation/EichlerShimura.lean#L66). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.ellAdicCohom.galoisAction`: `Lib/Cohomology/Etale/EllAdicCohomology.lean`, [line 85](lean:Lib/Cohomology/Etale/EllAdicCohomology.lean#L85). Cited in [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.ellAdicCohom.woods_hole`: `Lib/Cohomology/WoodsHole.lean`, [line 214](lean:Lib/Cohomology/WoodsHole.lean#L214). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.ellAdicCohom.galoisAction_eq_one_of_inertia`: `Lib/Shimura/CongruenceRelation/EichlerShimura.lean`, [line 209](lean:Lib/Shimura/CongruenceRelation/EichlerShimura.lean#L209). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ellAdicCohom.isCrystalline_and_linearFrob_rel`: `Lib/PadicComparison/CrystallineFrobenius.lean`, [line 713](lean:Lib/PadicComparison/CrystallineFrobenius.lean#L713). Cited in [Chapter](/chapter/comparison-theorems/), [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ellAdicCohom.transfer`: `Lib/Cohomology/Etale/ProperFunctors.lean`, [line 961](lean:Lib/Cohomology/Etale/ProperFunctors.lean#L961). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ellAdicCohom.woods_hole`: `Lib/Cohomology/WoodsHole.lean`, [line 214](lean:Lib/Cohomology/WoodsHole.lean#L214). Cited in [Chapter](/chapter/cohomology-ext/), [Chapter](/chapter/congruence-relation/).
 - `New.Variety.eq_zero_of_apply_eq_zero_of_dominant`: `Lib/General/Geometry/SerreTheorem.lean`, [line 268](lean:Lib/General/Geometry/SerreTheorem.lean#L268). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.eq_zero_of_nsmul_eq_zero_of_comp_eq_zero`: `Lib/Shimura/AbelianScheme/TangentCoordinates.lean`, [line 538](lean:Lib/Shimura/AbelianScheme/TangentCoordinates.lean#L538). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.etaClass`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 750](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L750). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.etale_polyEval_iff`: `Lib/General/Geometry/EtaleCharts.lean`, [line 573](lean:Lib/General/Geometry/EtaleCharts.lean#L573). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.EtaleChart`: `Lib/General/Geometry/EtaleCharts.lean`, [line 154](lean:Lib/General/Geometry/EtaleCharts.lean#L154). Cited in [Chapter](/chapter/schemes-through-points/), [Chapter](/chapter/cohomology-ext/).
@@ -1195,14 +1303,38 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Variety.eventually_mem_formSpan_of_mul_pow`: `Lib/General/Geometry/SerreTheorem.lean`, [line 193](lean:Lib/General/Geometry/SerreTheorem.lean#L193). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.eventually_span_coordSection`: `Lib/General/Geometry/SerreTheorem.lean`, [line 287](lean:Lib/General/Geometry/SerreTheorem.lean#L287). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.exists_absFrobenius`: `Lib/General/Geometry/SerreTheorem.lean`, [line 61](lean:Lib/General/Geometry/SerreTheorem.lean#L61). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.exists_cell_over`: `Lib/PadicComparison/Descent/TestCovers.lean`, [line 360](lean:Lib/PadicComparison/Descent/TestCovers.lean#L360). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.exists_crysPeriodAlgebra`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 130](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L130). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.exists_diagonal_class`: `Lib/Cohomology/Hodge/DiagonalClass.lean`, [line 245](lean:Lib/Cohomology/Hodge/DiagonalClass.lean#L245). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.exists_diagonal_local_terms`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 692](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L692). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.exists_ellAdicCoeff_modShortExact`: `Lib/Cohomology/Etale/EllAdicCohomology.lean`, [line 146](lean:Lib/Cohomology/Etale/EllAdicCohomology.lean#L146). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.exists_faithfullyFlat_padicTest`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 194](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L194). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.exists_finite_kernel_ring`: `Lib/Shimura/AbelianScheme/Basic.lean`, [line 424](lean:Lib/Shimura/AbelianScheme/Basic.lean#L424). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.exists_hasHodgeTateWeight`: `Lib/PadicComparison/HodgeTate/PeriodMap.lean`, [line 271](lean:Lib/PadicComparison/HodgeTate/PeriodMap.lean#L271). Cited in [Chapter](/chapter/comparison-theorems/), [Chapter](/chapter/congruence-relation/).
 - `New.Variety.exists_hasSignType_mul_iff`: `Lib/Adelic/TraceFormula/ChangingSigns.lean`, [line 377](lean:Lib/Adelic/TraceFormula/ChangingSigns.lean#L377). Cited in [Chapter](/chapter/trace-formula/).
+- `New.Variety.exists_isAdditive_comp_eq_of_isIsogeny`: `Lib/Shimura/AbelianScheme/IsogenyFlatness.lean`, [line 89](lean:Lib/Shimura/AbelianScheme/IsogenyFlatness.lean#L89). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.exists_isBallFamily`: `Lib/Shimura/Uniformisation/BallModel.lean`, [line 908](lean:Lib/Shimura/Uniformisation/BallModel.lean#L908). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.exists_isCoefficientSystem`: `Lib/Shimura/Transfer/WeightOccurs.lean`, [line 638](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L638). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.exists_isCoincidenceSet`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 110](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L110). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.exists_isEigenQuotient`: `Lib/Shimura/Eigenspace.lean`, [line 152](lean:Lib/Shimura/Eigenspace.lean#L152). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.exists_isLieLine`: `Lib/Shimura/CongruenceRelation/KernelReduction.lean`, [line 356](lean:Lib/Shimura/CongruenceRelation/KernelReduction.lean#L356). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.exists_isSectionLift`: `Lib/Shimura/ThetaGroup.lean`, [line 164](lean:Lib/Shimura/ThetaGroup.lean#L164). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.exists_isTranslationLift_iff`: `Lib/Shimura/ThetaGroup.lean`, [line 355](lean:Lib/Shimura/ThetaGroup.lean#L355). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.exists_mul_pow_mem_formSpan_of_isSection`: `Lib/General/Geometry/SerreTheorem.lean`, [line 231](lean:Lib/General/Geometry/SerreTheorem.lean#L231). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.exists_param_pow_card_eq_zero`: `Lib/Shimura/CongruenceRelation/KernelReduction.lean`, [line 809](lean:Lib/Shimura/CongruenceRelation/KernelReduction.lean#L809). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.exists_period_map`: `Lib/PadicComparison/HodgeTate/PeriodMap.lean`, [line 171](lean:Lib/PadicComparison/HodgeTate/PeriodMap.lean#L171). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.exists_primitive_period_comparison`: `Lib/PadicComparison/Primitive/Periods.lean`, [line 304](lean:Lib/PadicComparison/Primitive/Periods.lean#L304). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.exists_residue_torsion_emb`: `Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean`, [line 59](lean:Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean#L59). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.exists_test_function`: `Lib/Shimura/TraceFormula/TestFunction.lean`, [line 327](lean:Lib/Shimura/TraceFormula/TestFunction.lean#L327). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.exists_torusModel`: `Lib/Shimura/Uniformisation/ModelExists.lean`, [line 390](lean:Lib/Shimura/Uniformisation/ModelExists.lean#L390). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.exists_words_comb_eq_zero`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 223](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L223). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.finite_and_primitive_comparison`: `Lib/PadicComparison/Primitive/ComparisonTheorem.lean`, [line 230](lean:Lib/PadicComparison/Primitive/ComparisonTheorem.lean#L230). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.finite_H_ellAdicCoeff`: `Lib/Cohomology/Etale/EllAdicCohomology.lean`, [line 166](lean:Lib/Cohomology/Etale/EllAdicCohomology.lean#L166). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.finite_padic_cohomology`: `Lib/PadicComparison/Primitive/ComparisonTheorem.lean`, [line 358](lean:Lib/PadicComparison/Primitive/ComparisonTheorem.lean#L358). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.finsum_countTerm_marked_eq_definite`: `Lib/Shimura/TraceFormula/MarkedDefiniteSums.lean`, [line 837](lean:Lib/Shimura/TraceFormula/MarkedDefiniteSums.lean#L837). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.frameLattice`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 350](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L350). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.freeAb`: `Lib/Cohomology/Etale/Basic.lean`, [line 118](lean:Lib/Cohomology/Etale/Basic.lean#L118). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.frobeniusTwist`: `Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean`, [line 534](lean:Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean#L534). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.H`: `Lib/Cohomology/Etale/Basic.lean`, [line 114](lean:Lib/Cohomology/Etale/Basic.lean#L114). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.H.map`: `Lib/Cohomology/Etale/Basic.lean`, [line 140](lean:Lib/Cohomology/Etale/Basic.lean#L140). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.H.push`: `Lib/Cohomology/Etale/Basic.lean`, [line 144](lean:Lib/Cohomology/Etale/Basic.lean#L144). Cited in [Chapter](/chapter/cohomology-ext/).
@@ -1210,38 +1342,76 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Variety.HasAtlas`: `Lib/General/Geometry/EtaleCharts.lean`, [line 379](lean:Lib/General/Geometry/EtaleCharts.lean#L379). Cited in [Chapter](/chapter/schemes-through-points/), [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.HasAtlas.exists_isCharting`: `Lib/General/Geometry/EtaleCharts.lean`, [line 980](lean:Lib/General/Geometry/EtaleCharts.lean#L980). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.hasAtlas_algPointsOf`: `Lib/General/Geometry/PointsOfProperSchemes.lean`, [line 417](lean:Lib/General/Geometry/PointsOfProperSchemes.lean#L417). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.hasConstFunctions_of_isPullback`: `Lib/Shimura/AbelianScheme/Basic.lean`, [line 472](lean:Lib/Shimura/AbelianScheme/Basic.lean#L472). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.hasCoveringPoints_padic`: `Lib/PadicComparison/Descent/TestCovers.lean`, [line 461](lean:Lib/PadicComparison/Descent/TestCovers.lean#L461). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.HasCrysComparison`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 247](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L247). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.hasCrysComparison_chart`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 843](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L843). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.hasCrysComparison_of_etale`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 445](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L445). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.HasFlatBaseChange.isBijective_of_isReductionMod`: `Lib/PadicComparison/Completion.lean`, [line 414](lean:Lib/PadicComparison/Completion.lean#L414). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.HasJacobianRatio`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 175](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L175). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.hasLineFormula_locallyConstant`: `Lib/Cohomology/ProjectiveLine/ConstantLineFormula.lean`, [line 454](lean:Lib/Cohomology/ProjectiveLine/ConstantLineFormula.lean#L454). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.hasPartitions_locConstCoeff`: `Lib/Cohomology/Etale/DenseSubfunctors.lean`, [line 580](lean:Lib/Cohomology/Etale/DenseSubfunctors.lean#L580). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.HasProjEmbedding`: `Lib/General/Geometry/ProjectiveSpace.lean`, [line 606](lean:Lib/General/Geometry/ProjectiveSpace.lean#L606). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.HasProjEmbedding.of_isClosedImmersion_pi`: `Lib/General/Geometry/SerreTheorem.lean`, [line 397](lean:Lib/General/Geometry/SerreTheorem.lean#L397). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.heckeSum`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 404](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L404). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.hodge_excision`: `Lib/Cohomology/Hodge/GrothendieckSymbol.lean`, [line 876](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L876). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.hodgeCoeff`: `Lib/Cohomology/Hodge/Site.lean`, [line 153](lean:Lib/Cohomology/Hodge/Site.lean#L153). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.HodgeH`: `Lib/Cohomology/Hodge/Site.lean`, [line 241](lean:Lib/Cohomology/Hodge/Site.lean#L241). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.HodgeH.baseChange`: `Lib/Cohomology/Hodge/Site.lean`, [line 312](lean:Lib/Cohomology/Hodge/Site.lean#L312). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.HodgeH.scale`: `Lib/Cohomology/Hodge/Site.lean`, [line 264](lean:Lib/Cohomology/Hodge/Site.lean#L264). Cited in [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.hodgeTateMap`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 389](lean:Lib/PadicComparison/HodgeTate/Map.lean#L389). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.hodgeTateMap`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 389](lean:Lib/PadicComparison/HodgeTate/Map.lean#L389). Cited in [Chapter](/chapter/cohomology-ext/), [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.hodgeTateMap_galois_twist`: `Lib/PadicComparison/HodgeTate/GaloisWeight.lean`, [line 175](lean:Lib/PadicComparison/HodgeTate/GaloisWeight.lean#L175). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.HodgeTatePair`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 79](lean:Lib/PadicComparison/HodgeTate/Map.lean#L79). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.HodgeTatePair.contractionCocycle`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 256](lean:Lib/PadicComparison/HodgeTate/Map.lean#L256). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.HodgeTatePair.contractionPow`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 272](lean:Lib/PadicComparison/HodgeTate/Map.lean#L272). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.HodgeTest`: `Lib/General/Geometry/EtaleCharts.lean`, [line 68](lean:Lib/General/Geometry/EtaleCharts.lean#L68). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.HodgeTest.sqZeroExt`: `Lib/Cohomology/Hodge/Site.lean`, [line 119](lean:Lib/Cohomology/Hodge/Site.lean#L119). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.homReprEquiv`: `Lib/Cohomology/Etale/Basic.lean`, [line 1109](lean:Lib/Cohomology/Etale/Basic.lean#L1109). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.homTiltIso`: `Lib/PadicComparison/Descent/TestCovers.lean`, [line 268](lean:Lib/PadicComparison/Descent/TestCovers.lean#L268). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IdealFamily.isDetectedAtPoints_of_proper`: `Lib/Cohomology/ProperBaseChange/Theorem.lean`, [line 1119](lean:Lib/Cohomology/ProperBaseChange/Theorem.lean#L1119). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.invHeckeIsogeny`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 384](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L384). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsAbsIntegrallyClosed`: `Lib/General/Algebra/AbsIntegrallyClosed.lean`, [line 36](lean:Lib/General/Algebra/AbsIntegrallyClosed.lean#L36). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Variety.IsAcyclicAt`: `Lib/General/Algebra/CohomologyBaseChange.lean`, [line 217](lean:Lib/General/Algebra/CohomologyBaseChange.lean#L217). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.isAcyclicAt_perfectTilt`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 906](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L906). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.IsAcyclicOnPerfect`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 864](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L864). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.isAcyclicOnPerfect_almostCoeff`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 927](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L927). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.isBijective_algToBaseChange`: `Lib/Cohomology/SmoothBaseChange.lean`, [line 73](lean:Lib/Cohomology/SmoothBaseChange.lean#L73). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.IsCell`: `Lib/PadicComparison/Descent/TestCategory.lean`, [line 246](lean:Lib/PadicComparison/Descent/TestCategory.lean#L246). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IsChartCovered`: `Lib/General/Geometry/EtaleCharts.lean`, [line 372](lean:Lib/General/Geometry/EtaleCharts.lean#L372). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.IsChartCovered.pairRestrictBijective`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 780](lean:Lib/PadicComparison/HodgeTate/Map.lean#L780). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IsCharted`: `Lib/General/Geometry/EtaleCharts.lean`, [line 1052](lean:Lib/General/Geometry/EtaleCharts.lean#L1052). Cited in [Chapter](/chapter/schemes-through-points/), [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.IsCharting`: `Lib/General/Geometry/EtaleCharts.lean`, [line 925](lean:Lib/General/Geometry/EtaleCharts.lean#L925). Cited in [Chapter](/chapter/schemes-through-points/), [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.IsCharting`: `Lib/General/Geometry/EtaleCharts.lean`, [line 925](lean:Lib/General/Geometry/EtaleCharts.lean#L925). Cited in [Chapter](/chapter/schemes-through-points/), [Chapter](/chapter/cohomology-ext/), [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IsClosedClass`: `Lib/Cohomology/Etale/BijectiveComparisons.lean`, [line 360](lean:Lib/Cohomology/Etale/BijectiveComparisons.lean#L360). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.IsClosedClass.freeAb_iSup_locus`: `Lib/General/Geometry/EtaleCharts.lean`, [line 949](lean:Lib/General/Geometry/EtaleCharts.lean#L949). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.IsCoefficientSystem`: `Lib/Shimura/Transfer/WeightOccurs.lean`, [line 590](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L590). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.IsCohomDense`: `Lib/Cohomology/Etale/Basic.lean`, [line 226](lean:Lib/Cohomology/Etale/Basic.lean#L226). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsCohomDense.isCohomEquiv`: `Lib/Cohomology/Etale/DenseSubfunctors.lean`, [line 96](lean:Lib/Cohomology/Etale/DenseSubfunctors.lean#L96). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsCohomEquiv`: `Lib/Cohomology/Etale/Basic.lean`, [line 164](lean:Lib/Cohomology/Etale/Basic.lean#L164). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsCohomEquiv.bijective_ellAdicPull`: `Lib/Cohomology/Etale/EllAdicCohomology.lean`, [line 189](lean:Lib/Cohomology/Etale/EllAdicCohomology.lean#L189). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.isCohomEquiv_tensorPoint_tateGen`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 211](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L211). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsCoincidenceSet`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 99](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L99). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.IsCompleteTorsionFree.existsUnique_witt_lift`: `Lib/PadicComparison/Crystalline/DividedPowerEnvelope.lean`, [line 123](lean:Lib/PadicComparison/Crystalline/DividedPowerEnvelope.lean#L123). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IsCover`: `Lib/Cohomology/Etale/BijectiveComparisons.lean`, [line 496](lean:Lib/Cohomology/Etale/BijectiveComparisons.lean#L496). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.isCover_of_points`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 786](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L786). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.IsDerivedComplete`: `Lib/PadicComparison/Completion.lean`, [line 69](lean:Lib/PadicComparison/Completion.lean#L69). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IsDetectedAtPoints`: `Lib/Cohomology/ProperBaseChange/Theorem.lean`, [line 1049](lean:Lib/Cohomology/ProperBaseChange/Theorem.lean#L1049). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.IsEigenQuotient`: `Lib/Shimura/Eigenspace.lean`, [line 132](lean:Lib/Shimura/Eigenspace.lean#L132). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsEigenQuotient.exists_sum_baseChange_eq_zero_of_jump_eq_zero`: `Lib/Shimura/Eigenspace.lean`, [line 282](lean:Lib/Shimura/Eigenspace.lean#L282). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsEigenQuotient.isCrystalline`: `Lib/Shimura/Eigenspace.lean`, [line 219](lean:Lib/Shimura/Eigenspace.lean#L219). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsEigenQuotient.isKilledBy`: `Lib/Shimura/Eigenspace.lean`, [line 236](lean:Lib/Shimura/Eigenspace.lean#L236). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsFrameFor`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 85](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L85). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.isIsogeny_of_locallyQuasiFinite`: `Lib/Shimura/AbelianScheme/IsogenyFlatness.lean`, [line 230](lean:Lib/Shimura/AbelianScheme/IsogenyFlatness.lean#L230). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.isLerayHirschBasis_of_reprBy`: `Lib/Cohomology/LerayHirsch.lean`, [line 299](lean:Lib/Cohomology/LerayHirsch.lean#L299). Cited in [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.IsNullFamily`: `Lib/Cohomology/Etale/Basic.lean`, [line 1011](lean:Lib/Cohomology/Etale/Basic.lean#L1011). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.IsLine`: `Lib/PadicComparison/ToricTower.lean`, [line 107](lean:Lib/PadicComparison/ToricTower.lean#L107). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.isNilpotent_of_trace_pow_succ_eq_zero`: `Lib/Shimura/Transfer/WeightOccurs.lean`, [line 49](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L49). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsNullFamily`: `Lib/Cohomology/Etale/Basic.lean`, [line 1011](lean:Lib/Cohomology/Etale/Basic.lean#L1011). Cited in [Chapter](/chapter/cohomology-ext/), [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsNullHecke`: `Lib/Shimura/Transfer/Lefschetz.lean`, [line 51](lean:Lib/Shimura/Transfer/Lefschetz.lean#L51). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.IsOpenSubfunctor`: `Lib/General/Geometry/EtaleCharts.lean`, [line 118](lean:Lib/General/Geometry/EtaleCharts.lean#L118). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.IsPadicPeriodMap`: `Lib/PadicComparison/HodgeTate/PeriodMap.lean`, [line 110](lean:Lib/PadicComparison/HodgeTate/PeriodMap.lean#L110). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.IsPeriodMap`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 356](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L356). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsPeriodMap.finrank_eq_abelianDim`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 577](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L577). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsPeriodRingPair`: `Lib/PadicComparison/Primitive/PeriodCoefficients.lean`, [line 123](lean:Lib/PadicComparison/Primitive/PeriodCoefficients.lean#L123). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.isPeriodRingPair_OC`: `Lib/PadicComparison/Primitive/PeriodCoefficients.lean`, [line 133](lean:Lib/PadicComparison/Primitive/PeriodCoefficients.lean#L133). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.IsPointSum`: `Lib/Cohomology/Hodge/GrothendieckSymbol.lean`, [line 932](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L932). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsPointSum.map_eq_pointClass`: `Lib/Cohomology/Hodge/GrothendieckSymbol.lean`, [line 999](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L999). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsPointSum.map_eq_sum_pointClass`: `Lib/Cohomology/Hodge/GrothendieckSymbol.lean`, [line 1006](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L1006). Cited in [Chapter](/chapter/cohomology-ext/).
@@ -1251,8 +1421,15 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Variety.IsProperOver.isTestCohomEquiv_field_extension`: `Lib/Cohomology/ProperBaseChange/Theorem.lean`, [line 761](lean:Lib/Cohomology/ProperBaseChange/Theorem.lean#L761). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsProperOver.proper_base_change`: `Lib/Cohomology/ProperBaseChange/Theorem.lean`, [line 625](lean:Lib/Cohomology/ProperBaseChange/Theorem.lean#L625). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.isProperOver_pointsToBase`: `Lib/General/Geometry/PointsOfProperSchemes.lean`, [line 206](lean:Lib/General/Geometry/PointsOfProperSchemes.lean#L206). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.IsReflection`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 160](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L160). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsRegularHecke`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 458](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L458). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsSafe`: `Lib/Shimura/HeckeTower/HeckeData.lean`, [line 346](lean:Lib/Shimura/HeckeTower/HeckeData.lean#L346). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsSectionLift`: `Lib/Shimura/ThetaGroup.lean`, [line 78](lean:Lib/Shimura/ThetaGroup.lean#L78). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsSectionLift.exists_eq_smul`: `Lib/Shimura/ThetaGroup.lean`, [line 279](lean:Lib/Shimura/ThetaGroup.lean#L279). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsSectionLift.picClass_eq`: `Lib/Shimura/ThetaGroup.lean`, [line 123](lean:Lib/Shimura/ThetaGroup.lean#L123). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.IsSeparatedFunctor`: `Lib/General/Geometry/EtaleCharts.lean`, [line 126](lean:Lib/General/Geometry/EtaleCharts.lean#L126). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.isSeparatedFunctor_algPointsOf`: `Lib/General/Geometry/PointsOfProperSchemes.lean`, [line 320](lean:Lib/General/Geometry/PointsOfProperSchemes.lean#L320). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.IsSignedFrame`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 169](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L169). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.IsTangentPoly`: `Lib/Cohomology/Etale/Basic.lean`, [line 990](lean:Lib/Cohomology/Etale/Basic.lean#L990). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsTangentPoly.constIfCoincident`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 368](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L368). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsTangentPoly.hasJacobianRatio_eval_div`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 308](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L308). Cited in [Chapter](/chapter/cohomology-ext/).
@@ -1264,30 +1441,89 @@ This section has the 1339 cited names `New.X` outside the namespace `New.Data` w
 - `New.Variety.IsTest.quotient`: `Lib/Cohomology/Etale/Basic.lean`, [line 614](lean:Lib/Cohomology/Etale/Basic.lean#L614). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.isTest_of_preValuationRing`: `Lib/Cohomology/Etale/Basic.lean`, [line 540](lean:Lib/Cohomology/Etale/Basic.lean#L540). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.IsTestCohomEquiv`: `Lib/Cohomology/Etale/Basic.lean`, [line 411](lean:Lib/Cohomology/Etale/Basic.lean#L411). Cited in [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.isTestCohomEquiv_baseChangeTransition`: `Lib/Cohomology/SmoothBaseChange.lean`, [line 266](lean:Lib/Cohomology/SmoothBaseChange.lean#L266). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.isTestCohomEquiv_baseChangeTransition`: `Lib/Cohomology/SmoothBaseChange.lean`, [line 266](lean:Lib/Cohomology/SmoothBaseChange.lean#L266). Cited in [Chapter](/chapter/cohomology-ext/), [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsTestEigenform`: `Lib/Shimura/Transfer/WeightOccurs.lean`, [line 280](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L280). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsTestVector`: `Lib/Shimura/TraceFormula/TestFunction.lean`, [line 47](lean:Lib/Shimura/TraceFormula/TestFunction.lean#L47). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsThetaStructure`: `Lib/Shimura/ThetaGroup.lean`, [line 375](lean:Lib/Shimura/ThetaGroup.lean#L375). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsThetaStructure.card_nsmul_eq_zero_of_isTranslationLift`: `Lib/Shimura/ThetaGroup.lean`, [line 504](lean:Lib/Shimura/ThetaGroup.lean#L504). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsThetaStructure.pull_eq_of_intertwines`: `Lib/Shimura/ThetaGroup.lean`, [line 399](lean:Lib/Shimura/ThetaGroup.lean#L399). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsThetaStructure.pull_eq_of_picClass_eq`: `Lib/Shimura/ThetaGroup.lean`, [line 448](lean:Lib/Shimura/ThetaGroup.lean#L448). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsTranslationLift`: `Lib/Shimura/ThetaGroup.lean`, [line 82](lean:Lib/Shimura/ThetaGroup.lean#L82). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsTranslationLift.mul`: `Lib/Shimura/ThetaGroup.lean`, [line 334](lean:Lib/Shimura/ThetaGroup.lean#L334). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsTranslationLift.pow`: `Lib/Shimura/ThetaGroup.lean`, [line 339](lean:Lib/Shimura/ThetaGroup.lean#L339). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.IsTwistedReduction`: `Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean`, [line 550](lean:Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean#L550). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.IsTwistedReduction.exists_comp_eq_smul`: `Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean`, [line 681](lean:Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean#L681). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ker_factors_of_torsionPoint`: `Lib/Shimura/CongruenceRelation/KernelReduction.lean`, [line 300](lean:Lib/Shimura/CongruenceRelation/KernelReduction.lean#L300). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.kunneth`: `Lib/Cohomology/Hodge/Kunneth.lean`, [line 287](lean:Lib/Cohomology/Hodge/Kunneth.lean#L287). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.lerayHirsch`: `Lib/Cohomology/LerayHirsch.lean`, [line 51](lean:Lib/Cohomology/LerayHirsch.lean#L51). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.linearIndepOn_hodgeTateMap_pointClass`: `Lib/Cohomology/PointClass/LinearIndependence.lean`, [line 629](lean:Lib/Cohomology/PointClass/LinearIndependence.lean#L629). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.locallyQuasiFinite_of_pull_picClass`: `Lib/Shimura/AbelianScheme/Pairings.lean`, [line 52](lean:Lib/Shimura/AbelianScheme/Pairings.lean#L52). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.locConstCoeff`: `Lib/Cohomology/Etale/Basic.lean`, [line 395](lean:Lib/Cohomology/Etale/Basic.lean#L395). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.locConstToTilt`: `Lib/PadicComparison/Primitive/PeriodCoefficients.lean`, [line 516](lean:Lib/PadicComparison/Primitive/PeriodCoefficients.lean#L516). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.LongExactSeq.Hom.five_lemma`: `Lib/General/Algebra/LongExactSequences.lean`, [line 314](lean:Lib/General/Algebra/LongExactSequences.lean#L314). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Variety.LongExactSeq.Hom.four_lemma`: `Lib/General/Algebra/LongExactSequences.lean`, [line 291](lean:Lib/General/Algebra/LongExactSequences.lean#L291). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Variety.MaxIdealFlat.exists_smul_eq`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 77](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L77). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.mayer_vietoris_shortExact`: `Lib/Cohomology/Etale/DenseSubfunctors.lean`, [line 57](lean:Lib/Cohomology/Etale/DenseSubfunctors.lean#L57). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.Model`: `Lib/Shimura/HeckeTower/Model.lean`, [line 75](lean:Lib/Shimura/HeckeTower/Model.lean#L75). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.aeval_heckePoly_eq_zero_of_isEigenQuotient`: `Lib/Shimura/Eigenspace.lean`, [line 540](lean:Lib/Shimura/Eigenspace.lean#L540). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.congruence`: `Lib/Shimura/HeckeTower/Model.lean`, [line 145](lean:Lib/Shimura/HeckeTower/Model.lean#L145). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.exists_galois_rep`: `Lib/Shimura/Eigenspace.lean`, [line 689](lean:Lib/Shimura/Eigenspace.lean#L689). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.exists_isHeckeAction`: `Lib/Shimura/HeckeTower/Model.lean`, [line 694](lean:Lib/Shimura/HeckeTower/Model.lean#L694). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.IsHeckeAction`: `Lib/Shimura/HeckeTower/Model.lean`, [line 598](lean:Lib/Shimura/HeckeTower/Model.lean#L598). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.isKilledBy_heckePoly_of_isEigenQuotient`: `Lib/Shimura/Eigenspace.lean`, [line 615](lean:Lib/Shimura/Eigenspace.lean#L615). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.isNullHecke_mul_of_kills_weight`: `Lib/Shimura/Eigenspace.lean`, [line 418](lean:Lib/Shimura/Eigenspace.lean#L418). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.isNullHecke_of_isNullFamily`: `Lib/Shimura/Transfer/Lefschetz.lean`, [line 465](lean:Lib/Shimura/Transfer/Lefschetz.lean#L465). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.Model.jumpsRelAt_of_isEigenQuotient`: `Lib/Shimura/Eigenspace.lean`, [line 482](lean:Lib/Shimura/Eigenspace.lean#L482). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.ModuliPoint`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 288](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L288). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.ModuliPoint.act`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 366](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L366). Cited in [Chapter](/chapter/complex-abelian-varieties/).
+- `New.Variety.ModuliPoint.IsLevelIso`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 380](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L380). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.mul_mem_formSpan_succ`: `Lib/General/Geometry/SerreTheorem.lean`, [line 137](lean:Lib/General/Geometry/SerreTheorem.lean#L137). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.natCast_eq_zero_of_over_charP`: `Lib/General/Geometry/SerreTheorem.lean`, [line 52](lean:Lib/General/Geometry/SerreTheorem.lean#L52). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.OccursInWeight`: `Lib/Shimura/Transfer/Lefschetz.lean`, [line 60](lean:Lib/Shimura/Transfer/Lefschetz.lean#L60). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.occursInWeight_of_isTestEigenform`: `Lib/Shimura/Transfer/WeightOccurs.lean`, [line 303](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L303). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.PadicTest`: `Lib/PadicComparison/Descent/TestCategory.lean`, [line 253](lean:Lib/PadicComparison/Descent/TestCategory.lean#L253). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PadicTest.bijective_generic_points`: `Lib/PadicComparison/Primitive/ComparisonTheorem.lean`, [line 67](lean:Lib/PadicComparison/Primitive/ComparisonTheorem.lean#L67). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PadicTest.isLine_compatibleRoots`: `Lib/PadicComparison/ToricTower.lean`, [line 745](lean:Lib/PadicComparison/ToricTower.lean#L745). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PadicTest.isTest`: `Lib/PadicComparison/Descent/TestCovers.lean`, [line 85](lean:Lib/PadicComparison/Descent/TestCovers.lean#L85). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PadicTest.ker_theta`: `Lib/PadicComparison/Descent/TestCovers.lean`, [line 139](lean:Lib/PadicComparison/Descent/TestCovers.lean#L139). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PadicTest.thetaIso`: `Lib/PadicComparison/Descent/TestCovers.lean`, [line 185](lean:Lib/PadicComparison/Descent/TestCovers.lean#L185). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PadicTest.tilt`: `Lib/PadicComparison/Descent/TestCategory.lean`, [line 321](lean:Lib/PadicComparison/Descent/TestCategory.lean#L321). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PairRestrictBijective`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 676](lean:Lib/PadicComparison/HodgeTate/Map.lean#L676). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.PairRestrictBijective.exists_hodgeTateMap_eq`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 702](lean:Lib/PadicComparison/HodgeTate/Map.lean#L702). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.pdIdeal`: `Lib/PadicComparison/Descent/TestCategory.lean`, [line 58](lean:Lib/PadicComparison/Descent/TestCategory.lean#L58). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.perfectRing_of_etale`: `Lib/General/Algebra/PerfectAlgebras.lean`, [line 523](lean:Lib/General/Algebra/PerfectAlgebras.lean#L523). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Variety.pFlat`: `Lib/PadicComparison/Descent/TestCategory.lean`, [line 485](lean:Lib/PadicComparison/Descent/TestCategory.lean#L485). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.picClass_pull_absFrobenius`: `Lib/General/Geometry/SerreTheorem.lean`, [line 108](lean:Lib/General/Geometry/SerreTheorem.lean#L108). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.Variety.pointClass`: `Lib/Cohomology/Hodge/GrothendieckSymbol.lean`, [line 941](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L941). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.pointMap`: `Lib/Cohomology/Etale/Basic.lean`, [line 211](lean:Lib/Cohomology/Etale/Basic.lean#L211). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.pow_transition_apply`: `Lib/General/Geometry/SerreTheorem.lean`, [line 220](lean:Lib/General/Geometry/SerreTheorem.lean#L220). Cited in [Chapter](/chapter/schemes-through-points/).
+- `New.Variety.primitiveMap`: `Lib/PadicComparison/Primitive/PeriodCoefficients.lean`, [line 554](lean:Lib/PadicComparison/Primitive/PeriodCoefficients.lean#L554). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.primitivePeriodMap_isBijective`: `Lib/PadicComparison/Primitive/Periods.lean`, [line 235](lean:Lib/PadicComparison/Primitive/Periods.lean#L235). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.projLine`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 538](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L538). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.pull_nsmul_eq_sq_smul`: `Lib/Shimura/AbelianScheme/Pairings.lean`, [line 209](lean:Lib/Shimura/AbelianScheme/Pairings.lean#L209). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.Variety.relFreeAb`: `Lib/Cohomology/Etale/Basic.lean`, [line 1155](lean:Lib/Cohomology/Etale/Basic.lean#L1155). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.relFreeAb.excision`: `Lib/Cohomology/Etale/RelativeChains.lean`, [line 341](lean:Lib/Cohomology/Etale/RelativeChains.lean#L341). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.reprBy`: `Lib/Cohomology/Etale/Basic.lean`, [line 129](lean:Lib/Cohomology/Etale/Basic.lean#L129). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.restrictToPairs`: `Lib/PadicComparison/HodgeTate/Map.lean`, [line 409](lean:Lib/PadicComparison/HodgeTate/Map.lean#L409). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.scaledGraph`: `Lib/Cohomology/Hodge/FixedPointFormula.lean`, [line 416](lean:Lib/Cohomology/Hodge/FixedPointFormula.lean#L416). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.shortExact_kummerSeq`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 100](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L100). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.span_range_crysComparison_pull_eq_top`: `Lib/PadicComparison/Crystalline/ComparisonMap.lean`, [line 1189](lean:Lib/PadicComparison/Crystalline/ComparisonMap.lean#L1189). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.sum_mul_hodgeTateMap_scaledGraph_eq_zero`: `Lib/Cohomology/WoodsHole.lean`, [line 140](lean:Lib/Cohomology/WoodsHole.lean#L140). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.symbolClass`: `Lib/Cohomology/Hodge/GrothendieckSymbol.lean`, [line 255](lean:Lib/Cohomology/Hodge/GrothendieckSymbol.lean#L255). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.tateGen`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 145](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L145). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.tensorCoeff`: `Lib/PadicComparison/Descent/AlmostDescent.lean`, [line 66](lean:Lib/PadicComparison/Descent/AlmostDescent.lean#L66). Cited in [Chapter](/chapter/comparison-theorems/).
 - `New.Variety.TestCohomology.mayer_vietoris_bijective`: `Lib/Cohomology/Etale/ProperFunctors.lean`, [line 144](lean:Lib/Cohomology/Etale/ProperFunctors.lean#L144). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.Variety.TestRing`: `Lib/Cohomology/Etale/Basic.lean`, [line 371](lean:Lib/Cohomology/Etale/Basic.lean#L371). Cited in [Chapter](/chapter/cohomology-ext/).
-- `New.Variety.TorsionCoeff.HasLineFormula`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 1063](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L1063). Cited in [Chapter](/chapter/cohomology-ext/).
+- `New.Variety.thickeningOver`: `Lib/PadicComparison/HodgeTate/GenericFibre.lean`, [line 334](lean:Lib/PadicComparison/HodgeTate/GenericFibre.lean#L334). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.thickeningOver.exact_mulMu_proj`: `Lib/PadicComparison/HodgeTate/GenericFibre.lean`, [line 444](lean:Lib/PadicComparison/HodgeTate/GenericFibre.lean#L444). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.thickeningOver.mulMu`: `Lib/PadicComparison/HodgeTate/GenericFibre.lean`, [line 376](lean:Lib/PadicComparison/HodgeTate/GenericFibre.lean#L376). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.thickeningOver.mulMu_twist`: `Lib/PadicComparison/HodgeTate/GaloisWeight.lean`, [line 79](lean:Lib/PadicComparison/HodgeTate/GaloisWeight.lean#L79). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.tiltTheory`: `Lib/PadicComparison/Primitive/PeriodCoefficients.lean`, [line 650](lean:Lib/PadicComparison/Primitive/PeriodCoefficients.lean#L650). Cited in [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.TorsionCoeff.HasLineFormula`: `Lib/Cohomology/ProjectiveLine/ChernClass.lean`, [line 1063](lean:Lib/Cohomology/ProjectiveLine/ChernClass.lean#L1063). Cited in [Chapter](/chapter/cohomology-ext/), [Chapter](/chapter/comparison-theorems/).
+- `New.Variety.trace_definiteForms_eq_finsum_countTerm`: `Lib/Shimura/TraceFormula/DefiniteTrace.lean`, [line 576](lean:Lib/Shimura/TraceFormula/DefiniteTrace.lean#L576). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.trace_definiteForms_rep_eq_zero_of_isNullHecke`: `Lib/Shimura/Transfer/WeightOccurs.lean`, [line 206](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L206). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.UniversalFamily.exists_ne_bot_factorsThrough_sup`: `Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean`, [line 950](lean:Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean#L950). Cited in [Chapter](/chapter/congruence-relation/).
+- `New.Variety.UniversalFamily.GraphClosure.congruenceRelation`: `Lib/Shimura/IntegralModel/TowerExistence.lean`, [line 86](lean:Lib/Shimura/IntegralModel/TowerExistence.lean#L86). Cited in [Chapter](/chapter/congruence-relation/).
 - `New.Variety.zeroPoints`: `Lib/Cohomology/Etale/Basic.lean`, [line 446](lean:Lib/Cohomology/Etale/Basic.lean#L446). Cited in [Chapter](/chapter/cohomology-ext/).
 - `New.volU`: `Lib/DiscreteSeries/Haar/CayleyChart.lean`, [line 365](lean:Lib/DiscreteSeries/Haar/CayleyChart.lean#L365). Cited in [Chapter](/chapter/discrete-series/).
 - `New.volume_stdLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 486](lean:Lib/Adelic/Unitary/Defs.lean#L486). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
