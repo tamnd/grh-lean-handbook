@@ -39,13 +39,13 @@ The definition is a bicommutant. The set of $S$-linear maps that keep $A_{\max}$
 
 Lean: `New.Lift.Chart.adjoinEDivPClosure_eq_bicommutant` (Lib/PadicHodge/Kisin/Bicommutant.lean).
 
-*Proof.* The coordinate map $\lambda_0 : A_{\inf} \to S$ of the chosen topological basis is $S$-linear and is the identity on $S$. It extends to $B^+$, and the extension keeps $A_{\max}$. It fixes $S[E/p]$ and $S_B$. In one direction, let $y \in S_B$. Write $p^m y$ as a polynomial in $E/p$ with coefficients in $A_{\inf}$, modulo $p^n A_{\max}$. Apply $\lambda_0$ to the coefficients. Since $y \in S_B$, this does not change $p^m y$, and the result is in $S[E/p]$ modulo $p^n A_{\max}$. In the other direction, an element of the closure is a limit of elements of $S[E/p]$, and each of these commutes with all the maps $G$. The limit commutes too, since the maps $G$ keep $p^n A_{\max}$. $\square$
+*Proof.* The source outlines the proof as follows. The coordinate map $\lambda_0 : A_{\inf} \to S$ of the chosen topological basis is $S$-linear and is the identity on $S$. Its extension to $B^+$ keeps the image of $A_{\max}$, and it fixes $S[E/p]$ and $S_B$. Let $y$ be in the closure, with $p^m y = s_n + p^n w_n$ for every $n$. Then $\lambda_0$ moves $p^m y$ by an element of $p^n A_{\max}$ for every $n$, so it does not move it. In the other direction, let $y \in S_B$. Then $\lambda_0$ sends polynomial approximations of $p^m y$ over $A_{\max}$ into $S[E/p]$. $\square$
 
 **Lemma.** The image of $\varphi(E)$ in $B^+$ has an inverse in $S_B$.
 
 Lean: `New.Lift.Chart.exists_bicommutant_mul_phi_E_eq_one` (Lib/PadicHodge/Kisin/Bicommutant.lean).
 
-*Proof.* The element $\varphi(E)$ is associated to $\varphi(\xi)$, and $\varphi(\xi)$ is associated to $p$ in $A_{\max}$. So $\varphi(E)$ is a unit of $B^+$. Its inverse is $p^{-1}$ times a unit of $A_{\max}$ that is a power series in $E/p$ over $S$, so it is in the closure of $S[E/p]$. $\square$
+*Proof.* The element $\varphi(E)$ is associated to $\varphi(\xi)$, and $\varphi(\xi)$ is associated to $p$ in $A_{\max}$. So $\varphi(E)$ is a unit of $B^+$. The ring $S_B$ has this property: if $w \in S_B$ is nonzero and $wu \in S_B$, then $u \in S_B$. Apply it with $w = \varphi(E)$, which is in $S_B$, and $u = \varphi(E)^{-1}$, with $wu = 1$. $\square$
 
 Every $S$-linear map $f : A_{\inf} \to A_{\inf}$ extends to an $S$-linear map of $B^+$ that keeps the image of $A_{\max}$ (`New.Lift.Chart.exists_extendToBPlus`). The source chooses one extension, `New.Lift.Chart.extendToBPlus`. This is the second use of `choose` in the chapter.
 
@@ -96,7 +96,7 @@ Lean: `New.Lift.Chart.IsPeriodBasis` (Lib/PadicHodge/Kisin/PeriodMatrixBasis.lea
 
 Lean: `New.Lift.Chart.IsPeriodMatrix.exists_basis` (Lib/PadicHodge/Kisin/PeriodMatrixBasis.lean).
 
-The proof takes the module of solutions $x$ of condition 4. It is an $S$-module inside $A_{\inf}^d$. Condition 1 of a period matrix gives $d$ independent solutions, from the columns of $E^h W'$ for a suitable $W'$. A determinant argument picks $d$ solutions that generate. Condition 5 comes from approximation modulo powers of $p$ and $\xi$.
+The proof builds $Q$ and $Z$ from the $S$-module of the solutions $x$ in condition 4 (`exists_spanning_matrix` in the source). It proves condition 5 by approximation modulo powers of $p$ (`dvd_dotProduct_of_spanning`). Condition 4 holds over $S$, not over $A_{\inf}$. Condition 5 is the extra information that the next step needs to pass from $S$ to $A_{\inf}$.
 
 ### The key step: $p$ does not divide $\det Q$
 
@@ -114,7 +114,7 @@ The second lemma, `New.exists_mulVec_eq_zero_and_forall_comp_eq`, is Artin's arg
 
 Lean: `New.Lift.Chart.not_dvd_det_of_frobenius` (Lib/PadicHodge/Kisin/PeriodMatrixFrame.lean).
 
-*Proof.* Suppose $p \mid \det Q$. Then the reduction of $Q$ modulo $p$, a matrix over $\mathcal{O}_C^\flat$, kills a nonzero vector. Artin's argument gives such a vector $a$ that is fixed by the elements that fix $S$. The approximation theorem of the previous section approximates the components of $a$ by elements of $S$. The first lemma, applied to the coordinate maps of the chosen basis of $A_{\inf}$ over $S$, gives a matrix $N$ over $S$ with $p \nmid \det N$. The Frobenius relation then forces every component of $\det B \cdot \det N$ to vanish modulo $p$. This is a contradiction. $\square$
+*Proof.* The source outlines the proof as follows. The hypothesis on $Q$ and $t$ and the first lemma give a matrix $N$ over $S$ with $p \nmid \det N$, whose rows read coordinates of entries of $Qt$ in the chosen basis of $A_{\inf}$ over $S$. Suppose $p \mid \det Q$. Then the reduction of $Q$ modulo $p$, a matrix over $\mathcal{O}_C^\flat$, kills a nonzero vector $a$. Artin's argument and the Galois hypothesis let one take $a$ fixed by the elements that fix $S$. The approximation theorem of the previous section then approximates $a$ from $S$. With the Frobenius relation this forces every component of $\det B \cdot \det N$ to vanish modulo $p$. But $\det B \cdot \det N$ is not $0$ modulo $p$. This is a contradiction. $\square$
 
 The role of $p \nmid \det Q$ is this. Over $A_{\inf}[1/p]$ the matrix $Q$ is invertible after $\tau$ is inverted. With $p \nmid \det Q$, the source shows that $Q$ divides $\tau^h$ over $A_{\inf}$ itself, which is property (a) below.
 
@@ -131,7 +131,7 @@ The role of $p \nmid \det Q$ is this. Over $A_{\inf}[1/p]$ the matrix $Q$ is inv
 
 Lean: `New.Lift.Chart.IsPeriodMatrix.exists_frame` (Lib/PadicHodge/Kisin/PeriodMatrixFrame.lean).
 
-*Proof.* Take the period basis $(Q, Z)$. The Frobenius relation $\varphi(U) = vUF$ gives $\varphi(U)\varphi(Z) = \varphi(E)^h \varphi(Q)$. The element $\varphi(E)$ is invertible in $S_B$. So the columns of $v^{-1}\varphi(Q)$ are solutions of $UY = E^h X$ with $Y$ over $S_B$, and condition 4 of a period basis writes them as $QB$ with $B$ over $S$. This is property 5. The Galois relation gives property 6 in the same way. Property 4 comes from $UW = (E\tau)^h$. The theorem $p \nmid \det Q$ applies, and condition 5 of a period basis with $\delta = \det Q$ gives that each entry of the adjugate relation is divisible. This gives $L$ with $QL = \tau^h$. $\square$
+*Proof.* Take the period basis $(Q, Z)$. The Frobenius relation $\varphi(U) = vUF$ and the inverse of $\varphi(E)$ in $S_B$ show that the columns of $v^{-1}\varphi(Q)$ are solutions of $UY = E^h X$ with $Y$ over $S_B$. Condition 4 of a period basis writes them as $QB$ with $B$ over $S$. This is property 5. The relation $UW = (E\tau)^h$ says that the columns of $\tau^h$ are solutions with $Y$ over $B^+$. By the theorem above $p \nmid \det Q$, and condition 5 of a period basis then puts every such solution in the $A_{\inf}$-span of the columns of $Q$. This gives $L$ with $QL = \tau^h$. For property 6, the source writes $U\,g(Z) = E^h Q G = UZG$ and cancels $U$. $\square$
 
 **Remark (Formalization).** The frame is the case of Kisin's theorem that the source uses. The docstring of `New.Lift.Chart.IsPeriodMatrix.exists_frame` says that it "says nothing on finite height". Classically the columns of $Q$ would span a Breuil-Kisin module $\mathfrak{M}$ with $\varphi$-matrix $vB$. Finite $E$-height would say that $vB$ divides $E^h$ over $S$. The source does not state this. Property 5 gives only that $\varphi(Q)$ is in the $S$-span of the columns of $Q$.
 
