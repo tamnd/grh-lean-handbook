@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.3.9
+
+Four new chapters of the argument volumes, and two fixes.
+
+- Volume 10, chapter 13: moments of the Poincaré map (#161).
+- Volume 11, chapter 7: seesaw squares and grid paths (#164).
+- Volume 11, chapter 8: the chain determinant and its factorization (#162).
+- Volume 11, chapter 9: the comparison operator, part 1 (#165).
+- Fixes: a declaration name in Volume 10, chapter 2 (#163); two links in Volume 11, chapter 3 (#166).
+
 ## v0.3.8
 
 Four new chapters of the argument volumes, and one fix.

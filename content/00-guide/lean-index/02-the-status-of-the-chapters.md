@@ -102,7 +102,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 10 | Poincaré series and unfolding | drafted | 14,423 |
 | 10 | 11 | The remaining terms | drafted | 14,407 |
 | 10 | 12 | The main term | drafted | 14,638 |
-| 10 | 13 | Moments of the Poincaré map | planned | 0 |
+| 10 | 13 | Moments of the Poincaré map | drafted | 12,346 |
 | 10 | 14 | The proof of Theorem B | planned | 0 |
 | 11 | 1 | Theorem C and the height argument | drafted | 8,914 |
 | 11 | 2 | Twists, critical pairs and regular families | drafted | 11,278 |
@@ -110,9 +110,9 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 4 | Character lifts and tested forms | drafted | 13,710 |
 | 11 | 5 | The exchange identity, part 1 | drafted | 14,598 |
 | 11 | 6 | The exchange identity, part 2 | drafted | 14,434 |
-| 11 | 7 | Seesaw squares and grid paths | planned | 0 |
-| 11 | 8 | The chain determinant and its factorization | planned | 0 |
-| 11 | 9 | The comparison operator, part 1 | planned | 0 |
+| 11 | 7 | Seesaw squares and grid paths | drafted | 14,626 |
+| 11 | 8 | The chain determinant and its factorization | drafted | 14,576 |
+| 11 | 9 | The comparison operator, part 1 | drafted | 13,665 |
 | 11 | 10 | Grids, columns and turns | planned | 0 |
 | 11 | 11 | Deep level Poincaré series and spanning forms | planned | 0 |
 | 11 | 12 | False lifts | planned | 0 |
