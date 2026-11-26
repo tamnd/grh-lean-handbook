@@ -40,10 +40,10 @@ From Volume 7 the chapter uses the Kummer charts, the forms of a type, the Kisin
 
 ### The sketch
 
-Section 2 defines the cost and the depth step, and proves that a depth step exists for every $n \neq 0$. Section 3 defines the lattices with prescribed orders, proves the gap rule and the other rules, and proves the depth lemma. Section 4 identifies the standard lattices with $\varphi^l(M)$ and proves the rules of Hodge expansions. Section 5 defines the sides of a pairing and proves the pairing lemma. Section 6 defines lift ideals and proves the three cokernel killers. Section 7 builds the side points. Section 8 proves the existence of tame charts and the cokernel killer for tame charts. Section 9 has exercises and the notes.
+Section 2 defines the cost and the depth step, and proves that a depth step exists for every $n \neq 0$. Section 3 defines the lattices with prescribed orders and proves the gap rule and the other rules. Section 4 proves the depth lemma. Section 5 identifies the standard lattices with $\varphi^l(M)$ and proves the rules of Hodge expansions. Section 6 defines the sides of a pairing and proves the pairing lemma. Section 7 defines lift ideals and proves the cokernel killers. Section 8 builds the side points. Section 9 proves the existence of tame charts and the cokernel killer for tame charts. Section 10 has exercises and the notes.
 
 The order of the files is the order of the sections. No file of this chapter imports a file of a later chapter of the volume. The imports are: exponent lattices from the frame theorem of Volume 7; Hodge expansions from exponent lattices and a file on matrix norms; the cup product bound from Hodge expansions; side points and tame charts from the cup product bound.
 
 ### The status
 
-The source claims all the results of this chapter with full Lean proofs. The chapter states what Lean states. Where the source chooses an object by choice, or where a constant can be $0$, a remark says so. Finding F-088 of the notes touches the unramified cokernel killer of Section 6, which needs $p \geq 5$; the notes section discusses it.
+The source claims all the results of this chapter with full Lean proofs. The chapter states what Lean states. Where the source chooses an object by choice, or where a constant can be $0$, a remark says so. Finding F-088 of the notes touches the unramified cokernel killer of Section 7, which needs $p \geq 5$; the notes section discusses it.
