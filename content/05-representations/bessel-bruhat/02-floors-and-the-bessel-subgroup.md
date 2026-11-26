@@ -24,7 +24,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Floors and the Bessel subgroup
 
-This section fixes the hermitian space, its basis, the levels and floors of the basis vectors, and the groups that the chapter uses. It proves that the Bessel subgroup $S$ normalises its unipotent part $\mathsf U$, that the sum of the simple root entries is an additive character of $S$, and that the definite factor $H$ of $S$ is a compact unitary group $U(k)$. The last result of the section controls the factor $H$ of an element of $\mathsf U H$ that lies in a congruence subgroup. The Poincaré series of Theorem B use it to count cosets.
+This section fixes the hermitian space, its basis, the levels and floors, and the groups of the chapter. It proves that the Bessel subgroup $S$ normalises its unipotent part $\mathsf U$, that the sum of the simple root entries is an additive character of $S$, and that the definite factor $H$ of $S$ is a compact unitary group $U(k)$. The last result controls the factor $H$ of an element of $\mathsf U H$ in a congruence subgroup.
 
 ### The space and its basis
 

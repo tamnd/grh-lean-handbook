@@ -16,7 +16,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Heisenberg groups of the floors
 
-This section describes the group $\mathcal N_a$ of floor $a$ by explicit Eichler transformations, and proves that $\mathsf U$ is the product $\mathcal N_0 \mathcal N_1 \cdots \mathcal N_{\varrho - 1}$ with unique factors. Two consequences follow: the Bessel subgroup is $S = \mathsf U H$, and the character $\sigma$ of a conjugate of a Heisenberg element is a value of the form. The big cell of the next section uses the Heisenberg elements to clear one floor at a time. The measures of Sections 4 and 6 are convolutions along the same factorisation.
+This section describes the group $\mathcal N_a$ of floor $a$ by explicit Eichler transformations, and proves that $\mathsf U$ is the product $\mathcal N_0 \mathcal N_1 \cdots \mathcal N_{\varrho - 1}$ with unique factors. Two consequences follow: the Bessel subgroup is $S = \mathsf U H$, and the character $\sigma$ of a conjugate of a Heisenberg element is a value of the form. The big cell of the next section uses the Heisenberg elements to clear one floor at a time. The measures on the floors in Section 7 are convolutions along the same factorisation.
 
 Throughout this section $A$ has a fixed element $\tau$ with $\tau + \bar\tau = 1$, and $J_T$ is hermitian and invertible. Over a field of characteristic zero the source takes $\tau = 1/2$. An element $\beta$ is *skew* if $\bar\beta = -\beta$. For $x \in A$ put $\operatorname{sk}(x) = x - \bar x$, a skew element.
 

@@ -21,7 +21,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Weyl elements and the big cell
 
-The unfolding of Poincaré series gives a sum over double cosets $\mathsf U \gamma \mathsf U$. The terms are simple when $\gamma$ lies in the big cell. This section proves that an element whose frame matrix has nonzero leading minors is $u^{-1} w_p \sigma u'$, where $w_p$ is a Weyl element on all hyperbolic pairs and $\sigma$ fixes these pairs, and that the factors are unique. Over a subring $R$ the factors are integral when the minors are units of $R$. This is the integral form that the counting of double cosets needs.
+The unfolding of Poincaré series gives a sum over double cosets $\mathsf U \gamma \mathsf U$. This section proves that an element whose frame matrix has nonzero leading minors is $u^{-1} w_p \sigma u'$, where $w_p$ is a Weyl element on all hyperbolic pairs and $\sigma$ fixes these pairs, and that the factors are unique. Over a subring $R$ the factors are integral when the minors are units of $R$.
 
 For a connected reductive group over a field the Bruhat decomposition is $G = \bigsqcup_w B w B$, and the big cell is the open cell of the longest Weyl element (Borel, *Linear Algebraic Groups*, 2nd ed., Theorem 14.12). Here the unipotent group $\mathsf U$ is the unipotent radical of a parabolic subgroup, not of a Borel subgroup, and the Levi part on the middle block is the factor $\sigma$. The source proves this case directly, over a commutative ring with involution, by a descent through the floors.
 
@@ -61,7 +61,7 @@ Lean: `New.Filling.leadingMinor_weylElem_mul` (Lib/DiscreteSeries/Bruhat/BigCell
 
 *Proof.* The element $\sigma$ fixes all $e_a$ and $e^*_a$, so it preserves the middle block. So $w_p \sigma e_a = p_a e^*_a$, and $w_p \sigma z = \sigma z$ lies in the middle block. Then $h(e_b, p_a e^*_a) = p_a \delta_{ab}$, $h(z, p_a e^*_a) = 0$ and $h(e_b, \sigma z) = 0$. $\square$
 
-**Example.** Let $\varrho = 1$ and let the middle block be $z$ alone with $h(z, z) = -1$. The basis is $(e_0, z, e^*_0)$. Then $Z(1)$ is $\operatorname{diag}(h(e_0, e_0), h(z, z)) = \operatorname{diag}(0, -1)$, so $\delta_1(1) = 0$ and the identity is not in the big cell. For $w_p$ we get $Z(w_p) = \operatorname{diag}(p_0, -1)$ and $\delta_1 = p_0$. An element $\gamma$ lies in the big cell when $h(e_0, \gamma e_0)$, the coefficient of $e^*_0$ in $\gamma e_0$, is not zero. If $\gamma$ preserves the hyperbolic plane and acts on it by $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ in the basis $(e_0, e^*_0)$, the condition is $c \ne 0$, as for the big cell of $SL_2$.
+For $\varrho = 1$ this is the computation of the model case in Section 1: the big cell is the set where $h(e_0, \gamma e_0) \ne 0$, and for $\gamma$ acting on the hyperbolic plane by $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the condition is $c \ne 0$, as for $SL_2$.
 
 ### The pivot and one step of the descent
 

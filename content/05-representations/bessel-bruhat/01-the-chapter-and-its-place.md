@@ -17,19 +17,18 @@ The plan of the proof is in [the theorem and its plan](/chapter/theorem-and-plan
 
 This chapter supplies the tools for these steps, in the order in which they are proved:
 
-1. The groups: floors, the floor groups $H_l$, the unipotent groups $\mathcal N_l$ and $\mathcal N_{<l}$, the Bessel subgroup $S$ and its character.
-2. The Heisenberg groups $\mathcal N_a$ of the floors, and the factorisation of $\mathsf U$ as a product $\mathcal N_0 \cdots \mathcal N_{\varrho - 1}$ with unique factors.
-3. The big cell: an element $\gamma$ with nonzero leading minors of its frame matrix is $u^{-1} w_p \sigma u'$, with unique factors; over a ring the factors are integral when the minors are units.
-4. Explicit measures on $\mathsf U^0$ and $\mathsf U$, homogeneous balls, tubes and the measure on $\mathsf U \backslash G_1$.
-5. Bessel functions and a Schur bound for their convolutions.
-6. Places with a Plancherel inequality, measures on quadrics, and the fibre bounds for the orbit maps.
-7. The complex place: polar coordinates, the Cartan decomposition of the last floor, the hyperboloid and the sphere fibres, with explicit densities.
+1. Section 2: floors, the floor groups $H_l$, the unipotent groups $\mathcal N_l$ and $\mathcal N_{<l}$, the Bessel subgroup $S$ and its character.
+2. Section 3: the Heisenberg groups $\mathcal N_a$ of the floors, and the factorisation of $\mathsf U$ as a product $\mathcal N_0 \cdots \mathcal N_{\varrho - 1}$ with unique factors.
+3. Section 4: the big cell. An element $\gamma$ with nonzero leading minors of its frame matrix is $u^{-1} w_p \sigma u'$, with unique factors. Over a ring the factors are integral when the minors are units.
+4. Section 5: explicit measures on $\mathsf U^0$ and $\mathsf U$, homogeneous balls, tubes and the measure on $\mathsf U \backslash G_1$.
+5. Section 6: Bessel functions and a Schur bound for their convolutions.
+6. Section 7: places with a Plancherel inequality, measures on quadrics, fibre bounds for the orbit maps, and the complex place with explicit densities.
 
-The sizes of the data of the proof, such as $\varrho \ge 10^5$, are fixed in [the data and its sizes](/chapter/data-and-sizes/). The results of this chapter hold for every $\varrho$ and every $k$, with two exceptions that the text states: the hyperboloid and sphere results need $k \ge 2$.
+The sizes of the data of the proof, such as $\varrho \ge 10^5$, are fixed in [the data and its sizes](/chapter/data-and-sizes/). The results of this chapter hold for every $\varrho$ and every $k$, with one exception: the hyperboloid and sphere results of Section 7 need $k \ge 2$.
 
 ### What the chapter uses
 
-The chapter uses linear algebra over a commutative ring with an involution, the unitary group $U(J) = \{g : g^* J g = J\}$ of a hermitian matrix $J$, and Haar measure on locally compact groups. It uses the Eichler transformations of a hermitian space, the cutoff construction of a measure on a quotient (see [quotients and reduction theory](/chapter/reduction-theory/)), and the explicit Haar measure $[\mathrm{haarU}](/decl/New.haarU/)$ of a compact unitary group from [discrete series through one matrix coefficient](/chapter/discrete-series/). It uses the idempotent kernels of that chapter in Section 5.
+The chapter uses linear algebra over a commutative ring with an involution, the unitary group $U(J) = \{g : g^* J g = J\}$ of a hermitian matrix $J$, and Haar measure on locally compact groups. It uses the Eichler transformations of a hermitian space, the cutoff construction of a measure on a quotient (see [quotients and reduction theory](/chapter/reduction-theory/)), and the explicit Haar measure $[\mathrm{haarU}](/decl/New.haarU/)$ of a compact unitary group from [discrete series through one matrix coefficient](/chapter/discrete-series/). It uses the idempotent kernels of that chapter in Section 6.
 
 ### The model case $\varrho = 0$
 
@@ -47,10 +46,10 @@ The descent is by floors. The floor of $e_a$ and $e^*_a$ is $a$, the floor of $z
 
 For the big cell, the leading minor $\delta_{j+1}$ of $Z(\gamma)$ does not change under $\mathsf U$ on both sides. At the step $j$ the element has the form $w \sigma$ with $\sigma \in H_j$, and $\delta_{j+1}$ is a product of earlier scalars and the pivot $h(e_j, \sigma e_j)$. So the pivot is a unit. Two Heisenberg elements of floor $j$ then move $\sigma$ into $H_{j+1}$, up to a Weyl element of floor $j$. Uniqueness follows from a comparison of columns.
 
-For the measures, each floor has a Heisenberg group, and Haar measure on it is the image of Lebesgue measure. The convolution of these measures is a Haar measure on $\mathsf U$. The orbit map $g \mapsto g^{-1} f_b$ sends Haar measure to a measure on a quadric. The fibre bounds compare these images with explicit measures on quadrics, through a disintegration of Lebesgue measure along the hermitian form. At the complex place the disintegration is explicit: polar coordinates on $\mathbb C^k$ and the area of the sphere.
+For the measures, Haar measure on each Heisenberg group is the image of Lebesgue measure, and the orbit map $g \mapsto g^{-1} f_b$ is compared with explicit measures on quadrics through a disintegration of Lebesgue measure along the hermitian form.
 
 ### What is not here
 
-The chapter builds no Bessel model and no representation. A Bessel function in this chapter is a function with two transformation laws, nothing more. The Schur bound of Section 5 is proved from an idempotent kernel, not from the theory of discrete series representations. No uniqueness of Bessel models is used.
+The chapter builds no Bessel model and no representation. A Bessel function here is a function with two transformation laws. The Schur bound of Section 6 is proved from an idempotent kernel, not from the theory of discrete series representations. No uniqueness of Bessel models is used.
 
-**Remark (Formalization).** The source does not construct a Bessel model. The head of [UnipotentHaarMeasure.lean](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L40) says so in these words: "No Bessel model is constructed here." The argument needs only functions with the two transformation laws and the measure bounds of this chapter. The structure that the source calls a Bessel function is `New.IsBesselFunction` in [Basic.lean](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L662).
+**Remark (Formalization).** The source does not construct a Bessel model. The head of [UnipotentHaarMeasure.lean](lean:Lib/DiscreteSeries/Bessel/UnipotentHaarMeasure.lean#L40) says so in these words: "No Bessel model is constructed here." The structure that the source calls a Bessel function is `New.IsBesselFunction` in [Basic.lean](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L662).
