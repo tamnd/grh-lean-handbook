@@ -10,8 +10,6 @@ decls:
   - New.Filling.tsum_indicator_smul_eq_tsum_stabilizer
   - New.Filling.integral_besselKernel_eq_zero_of_not_charsAgree
   - New.Filling.amplitudeSum_eq_zero_of_not_charsAgree
-  - New.PairOccursInColumnsAt
-  - New.IsTopIndex
   - New.exists_isTopIndex
   - New.IsTopIndex.ne_zero_or_ne_zero
   - New.PairOccursInColumnsAt.of_le
@@ -26,8 +24,6 @@ decls:
   - New.Filling.CharsAgree.exists_coords_ne_zero_of_common_vector
   - New.Filling.CharsAgree.leadingMinor_ne_zero
   - New.Filling.CharsAgree.exists_hasCellRank
-  - New.Filling.MeetsAt
-  - New.Filling.meetNorm
   - New.Filling.one_le_meetNorm
   - New.Filling.prod_le_meetNorm
   - New.Filling.vectorFixer
