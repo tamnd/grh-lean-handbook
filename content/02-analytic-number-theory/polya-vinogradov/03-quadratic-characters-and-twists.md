@@ -33,7 +33,7 @@ The *odd part* $n^\circ$ of $n \neq 0$ is $n/2^{k}$, where $2^k$ is the largest 
 
 Lean: `New.exists_dirichletCharacter_eq_jacobiSym` (Lib/Analytic/QuadraticTwist.lean).
 
-*Proof.* Induction on the prime factorization of $b$. For $b = 1$ take the trivial character. If $\psi$ works for $b$ and $p$ is a prime, the twist $\psi(\cdot/p)$ modulo $bp$ works for $bp$: its value at $v$ is $(v/b)(v/p) = (v/bp)$, by [Lemma](/decl/New.quadTwist_apply/) and the multiplicativity of the Jacobi symbol in the lower argument. $\square$
+*Proof.* Induction on the prime factorization of $b$. For $b = 1$ take the trivial character. If $\psi$ works for $b$ and $p$ is a prime, the twist $\psi(\cdot/p)$ modulo $bp$ works for $bp$: its value at $v$ is $(v/b)(v/p) = (v/bp)$, by [the formula for the values of the twist](/decl/New.quadTwist_apply/) and the multiplicativity of the Jacobi symbol in the lower argument. $\square$
 
 The Jacobi symbol $(v/b)$ in Mathlib is defined for every $b \in \mathbb{N}$, also for even $b$, by the same product over the prime factors. So the lemma has no parity condition. For $b = 0$ the statement is empty.
 
@@ -78,7 +78,7 @@ Both congruences matter. The condition $d \equiv 3 \bmod 4$ gives the sign $(-1)
 
 ### Parity and primitivity of the twists
 
-For a character $\psi$ modulo $M$ and a prime $d$, the twist $\psi\chi_K$ is the character modulo $Md$ with the value $\psi(n)(n/d)$ at $n$ ([Lemma](/decl/New.quadTwist_apply/)). If $d \equiv 3 \bmod 4$, then $(-1/d) = -1$, so $\psi\chi_K(-1) = -\psi(-1)$: the twist has the parity opposite to that of $\psi$, for every such $d$.
+For a character $\psi$ modulo $M$ and a prime $d$, the twist $\psi\chi_K$ is the character modulo $Md$ with the value $\psi(n)(n/d)$ at $n$ ([the formula for its values](/decl/New.quadTwist_apply/)). If $d \equiv 3 \bmod 4$, then $(-1/d) = -1$, so $\psi\chi_K(-1) = -\psi(-1)$: the twist has the parity opposite to that of $\psi$, for every such $d$.
 
 **Lemma (The twist of a primitive character).** Let $\psi$ be a primitive character modulo $M$, and let $d$ be an odd prime with $\gcd(M, d) = 1$. Then $\psi\chi_K$ is primitive modulo $Md$.
 
