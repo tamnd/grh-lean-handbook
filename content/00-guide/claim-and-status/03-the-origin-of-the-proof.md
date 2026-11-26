@@ -36,7 +36,7 @@ The repository at the pin has one commit, dated 25 November 2026, with the messa
 
 ### Two editions, two proofs
 
-The repository holds two Lean projects. The readable edition `grh/` has about 300,000 lines of code in 803 files. The compact edition `grh-compact/` has about 76,000 lines of code (root `README.md`, lines 15 and 16). Each README says that the other edition uses other arguments for some steps (`grh/README.md`, line 12).
+The repository holds two Lean projects. The readable edition `grh/` has about 300,000 lines of code in 803 files under `src/`: 495 in `Lib`, 306 in `New`, and the two files `Main.lean` and `Statements.lean`. The compact edition `grh-compact/` has about 76,000 lines of code (root `README.md`, lines 15 and 16). Each README says that the other edition uses other arguments for some steps (`grh/README.md`, line 12).
 
 The two editions share the file of statements, the five theorem types, the file `Challenge.lean`, the configuration of Comparator, the lakefile, the toolchain and the manifest. Below the file of main theorems they differ. They are two proofs of the same five statements, not two layouts of one proof. One difference is visible at the top of the argument. The readable edition reaches the second cut-off of its prime sums by a prime number theorem in arithmetic progressions with an error term. The compact edition has no such theorem and uses a different argument there. The one-sided bounds that the two editions prove for the same prime sum also have different exponents.
 
