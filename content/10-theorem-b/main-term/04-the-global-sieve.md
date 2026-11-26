@@ -114,7 +114,7 @@ Lean: `New.Filling.sq_sum_globalWeight_le` (New/Spanning/MainTerm/GlobalSieve.le
 ### The sieve
 
 **Theorem (The sieve).** Let $S$ be admissible. Let $A$ be a finite set of units of $E$ with $t$ and $t^{-1}$ integral off $T$ for $t \in A$, let $1/M$ be integral off $T$, and let $U \subseteq A$. Let $J_T$ be a sieve system on $\mathcal L_T$ of length $\varrho$ with $\operatorname{unitOrOne}$, $\iota(w) = M^{-1}w^{-1}$, the character $\psi_T$, a bound $E_T$, the weights $\prod_{l<i}[\mathcal O:\delta_l\mathcal O]^{n^6/2}$ and the decay $\beta_T$. Let $\operatorname{bandLimit}_v$ be the forms of the Bessel system at $v$. Then
-$$\operatorname{Re}\sum_{t \in U}\sum_{p, q : \{0..\varrho-1\} \to A}\prod_v \operatorname{bandLimit}_{v,n}(x_v(p,t), x_v(q,t))\cdot J_{T,n}(y(p,t), y(q,t)) \leq \prod_{i<n}c_i\Bigl(\prod_v\frac{1 + b^{-10}}{\deg_v}E_T + b^{2403n^9f}\operatorname{decayConst}\Bigr).$$
+$$\begin{aligned} &\operatorname{Re}\sum_{t \in U}\sum_{p, q : \{0..\varrho-1\} \to A}\prod_v \operatorname{bandLimit}_{v,n}(x_v(p,t), x_v(q,t))\cdot J_{T,n}(y(p,t), y(q,t)) \\ &\qquad\leq \prod_{i<n}c_i\Bigl(\prod_v\frac{1 + b^{-10}}{\deg_v}E_T + b^{2403n^9f}\operatorname{decayConst}\Bigr).\end{aligned}$$
 Here $x_v(p,t)_a = \operatorname{unitOrOne}(s_{v,a}\Phi_v(\text{entry } a))$ and $y(p,t)$ is the image at $T$ of the head $p_0, \dots, p_{\varrho-1}, t, 1, 1, \dots$.
 
 Lean: `New.Filling.sieve` (New/Spanning/MainTerm/GlobalSieve.lean).

@@ -45,7 +45,7 @@ Lean: `New.Filling.sieve_constant_le` (New/Spanning/MainTerm/EnergyEstimate.lean
 ### Siegel's step and the sieve
 
 **Theorem (Siegel's step, global form).** Let $1/M$, $1/N$ and the lattice basis be integral off $T$, let $G$ be a filling datum and $Y$ an intermediate group. For finitely many distinct classes $(c_i, \bar n_i, c'_i, \sigma_i)$ with $\sigma_i$ in the floor group, last entry $t_i$ with $|t_i|_v > N$, positions integral off $T$ and $n_i \in Y$ at $T$,
-$$r^2\sum_i\Bigl\|\sum_{p}\operatorname{cosetAmplitude}(w_{(p, t_i)}\sigma_i)\Bigr\|^2 \leq (1 + b^{-6})\operatorname{scaledSiegelConst}\cdot\operatorname{Re}\sum_t\sum_{p,q}\prod_v\operatorname{bandLimit}_n\cdot\frac{\rho_\pi(p, q)}{\operatorname{massRatio}(Y)},$$
+$$\begin{aligned} &r^2\sum_i\Bigl\|\sum_{p}\operatorname{cosetAmplitude}(w_{(p, t_i)}\sigma_i)\Bigr\|^2 \\ &\qquad\leq (1 + b^{-6})\operatorname{scaledSiegelConst}\cdot\operatorname{Re}\sum_t\sum_{p,q}\prod_v\operatorname{bandLimit}_n\cdot\frac{\rho_\pi(p, q)}{\operatorname{massRatio}(Y)},\end{aligned}$$
 where $p$ runs over the heads with entries in a finite set $T_0$ of $T$-units.
 
 Lean: `New.Filling.IsFillingData.mul_sum_norm_sum_cosetAmplitude_sq_le` (New/Spanning/MainTerm/EnergyEstimate.lean).

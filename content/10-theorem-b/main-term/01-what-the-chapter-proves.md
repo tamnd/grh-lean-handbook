@@ -44,7 +44,7 @@ Both definitions belong to [Poincaré series and unfolding](/chapter/poincare-se
 Lean: `New.Filling.mainSecondMoment`, `New.Filling.unipotentCovolume` (New/Spanning/Unfolding/Setup.lean).
 
 **Theorem (The main term).** Let $S$ be admissible, let $S_g$ be a set of chosen places above $p_0$, and let $D$ be a choice of vectors as above. Then
-$$\operatorname{linkSecondMoment}\bigl(\{\gamma : \operatorname{termDisc}\gamma \neq 0\},\ \{s \in \operatorname{fixer}(S_g, D) : s \text{ open}\}\bigr) \leq (1 + b^{-4})\,(b^{6k})^{-\# S_g}\, \mathcal D_{\mathrm{main}}\, \nu^2.$$
+$$\begin{aligned} &\operatorname{linkSecondMoment}\bigl(\{\gamma : \operatorname{termDisc}\gamma \neq 0\},\ \{s \in \operatorname{fixer}(S_g, D) : s \text{ open}\}\bigr) \\ &\qquad\leq (1 + b^{-4})\,(b^{6k})^{-\# S_g}\, \mathcal D_{\mathrm{main}}\, \nu^2.\end{aligned}$$
 Here $\operatorname{termDisc}\gamma = |\Delta|^2 - N^2|\Delta'|^2$, with $\Delta$ the determinant and $\Delta'$ the leading minor of size $\varrho$ of the frame products of $\gamma$.
 
 Lean: `New.Filling.linkSecondMoment_isOpenElement_le` (New/Spanning/MainTerm/EnergyEstimate.lean).

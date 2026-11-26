@@ -60,7 +60,7 @@ Lean: `New.Filling.IsFillingData.sum_sq_norm_sum_cosetAmplitude_le_headSumNormSq
 *Proof.* By the corollary on scaled orbital integrals of [Section 6](/chapter/main-term/#kloosterman-sums-and-unfolding), each coset amplitude times $w\,\mu(K(M))$ is an entry of the scaled orbital integral at $T$ paired with the integral at infinity. The distinct reductions give distinct cosets $a$. The squared norms of the entries add up to at most the squared norm of the whole matrix, and the pairing with $R$ is the head sum. $\square$
 
 **Lemma (One point).** Let the terms $(c'_i, s_i, \gamma_i)$ be distinct, with the same left class, the same $h(z, \gamma_i z)$ and the same $X_0$-part of $\gamma_i z$, so that all translates send $z$ to the same point $e$ at $T$. Let $R$ be positive semidefinite. Then
-$$w^2\,\mu_H(K(M))\,\mu(K(M))^2\,\#(Z/K(M))\sum_i\Bigl\|\sum_p\operatorname{cosetAmplitude}(w_p\gamma_i)\Bigr\|^2 \leq \operatorname{Re}\sum_{p,q}R_{pq}\,\operatorname{fiberPairing}(\omega_p, \omega_q)(e).$$
+$$\begin{aligned} &w^2\,\mu_H(K(M))\,\mu(K(M))^2\,\#(Z/K(M))\sum_i\Bigl\|\sum_p\operatorname{cosetAmplitude}(w_p\gamma_i)\Bigr\|^2 \\ &\qquad\leq \operatorname{Re}\sum_{p,q}R_{pq}\,\operatorname{fiberPairing}(\omega_p, \omega_q)(e).\end{aligned}$$
 
 Lean: `New.Filling.IsFillingData.mul_sum_norm_sum_cosetAmplitude_sq_le_fiberPairing` (New/Spanning/MainTerm/SiegelTopBound.lean).
 
