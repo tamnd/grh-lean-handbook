@@ -62,11 +62,11 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 6 | 2 | Local theta in the Fock model | drafted | 14,620 |
 | 6 | 3 | Theta kernels, theta lifts and the seesaw | drafted | 13,549 |
 | 6 | 4 | Bessel periods and one step of unfolding | drafted | 14,628 |
-| 6 | 5 | The Siegel-Weil formula | planned | 0 |
+| 6 | 5 | The Siegel-Weil formula | drafted | 14,503 |
 | 6 | 6 | Doubling and the Rallis inner product formula | drafted | 13,907 |
 | 7 | 1 | Schemes through their points | drafted | 14,990 |
-| 7 | 2 | Cohomology as Ext on test rings | planned | 0 |
-| 7 | 3 | Period rings and crystalline representations | planned | 0 |
+| 7 | 2 | Cohomology as Ext on test rings | drafted | 14,615 |
+| 7 | 3 | Period rings and crystalline representations | drafted | 14,614 |
 | 7 | 4 | Kisin frames and limits | drafted | 12,039 |
 | 7 | 5 | The comparison theorems on test objects | planned | 0 |
 | 7 | 6 | Fitting ideals, lengths and coefficient rings | planned | 0 |

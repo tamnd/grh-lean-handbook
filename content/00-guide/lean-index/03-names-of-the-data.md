@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Names of the data
 
-The index lists 2769 Lean names that the 50 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 300 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
+The index lists 3167 Lean names that the 53 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 300 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
 
 - `New.Data.a`: `New/Reduction/Data/AdmissibleData.lean`, [line 215](lean:New/Reduction/Data/AdmissibleData.lean#L215). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.a_div_x₁_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 182](lean:New/Reduction/Data/Sizes.lean#L182). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
