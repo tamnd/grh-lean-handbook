@@ -29,7 +29,7 @@ drafted_by: writer@claude-opus-5-5
 
 The integral model of [the next chapter](/chapter/integral-model/) is a family of abelian varieties with an action of the ring of integers $\mathcal{O}_E$ of a CM field $E$. The source needs the converse of the previous sections: every complex member of the family is a complex torus given by linear algebra over $E$. This section states the linear-algebra side and the two results that connect it to the family. The family (`New.ThetaFamily`) and its objects (`New.ThetaObject`) belong to the next chapter. An object over $R$ has an abelian scheme $A$ with an action of $\mathcal{O}_E$, a linear system that embeds $A$, level points, and a ring map $\mathcal{O}_E \to R$.
 
-### The model case
+### The model case of CM elliptic curves
 
 Let $E$ be an imaginary quadratic field, $n = 1$ and $L = \mathcal{O}_E \subset \mathbb{C}$. Every elliptic curve over $\mathbb{C}$ with an action of $\mathcal{O}_E$ that acts on the tangent space through $E \subset \mathbb{C}$ is $\mathbb{C}/\mathfrak{a}$ for a fractional ideal $\mathfrak{a}$, unique up to $E^\times$, and $\mathfrak{a} = E \cap x \widehat{\mathcal{O}}_E$ for an idele $x$. This is the shape of the general case: a lattice $E^n \cap x \widehat{\mathcal{O}}_E^n$ for an adelic matrix $x$, with a complex structure on $(E \otimes \mathbb{R})^n$ as the extra datum.
 
