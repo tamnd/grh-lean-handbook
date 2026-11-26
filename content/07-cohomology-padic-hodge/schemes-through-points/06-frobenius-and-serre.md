@@ -27,7 +27,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Frobenius and sections of powers
 
-This section treats two results of `Lib/General/Geometry/SerreTheorem.lean`. The first is the absolute Frobenius of a scheme in characteristic $l$ and its action on the Picard group. The second is a case of Serre's theorem: for large $m$, the monomials of degree $m$ in the coordinates of a projective embedding span the sections of the $m$-th power. Both are used in the construction of the integral model and in the congruence relation (Volume 12, [the integral model](/chapter/integral-model/) and [the congruence relation](/chapter/congruence-relation/)).
+This section treats two results of `Lib/General/Geometry/SerreTheorem.lean`. The first is the absolute Frobenius of a scheme in characteristic $l$ and its action on the Picard group. The second is a case of Serre's theorem: for large $m$, the monomials of degree $m$ in the coordinates of a projective embedding span the sections of the $m$-th power. Both are used in the construction of the integral model and in the congruence relation (Volume 8, [the integral model](/chapter/integral-model/) and [the congruence relation](/chapter/congruence-relation/)).
 
 ### The absolute Frobenius
 
