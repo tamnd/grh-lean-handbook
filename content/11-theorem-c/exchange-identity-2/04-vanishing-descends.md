@@ -15,7 +15,7 @@ drafted_by: writer@claude-opus-5-5
 
 The exchange identity has a constant $C$ and a factor $c$ with $C|c|^2 = L_*(e)\,\ell(\mathfrak{c})$, where $\ell(\mathfrak{c})$ is the equal rank ratio. The identity is useful only if $\ell(\mathfrak{c}) \neq 0$ for some vector. This section proves that vanishing of the large theta integral passes from $(W \oplus H, V \oplus H)$ down to $(W, V)$. Section 5 uses it to show $\ell(\mathfrak{c}) \neq 0$. If the ratio were $0$ at every vector, a large theta integral would vanish, the vanishing would descend to a pair $(J, 0)$, and there the integral of the vacuum is a volume, which is not $0$.
 
-The tool is analytic continuation. The constant term along the new line is a value of Tate's integral. For the vectors of the cone image theorem of [the first part](/chapter/exchange-identity-1/#the-image-of-the-cone-integral), this integral is the theta integral of $(W, V)$ times factors that have no zero at the point in question. So if the theta integral above vanishes, the one below vanishes too.
+The tool is analytic continuation. The constant term along the new line is a value of Tate's integral. For the vectors of the cone image theorem of [the first part](/chapter/exchange-identity-1/#cone-images-and-the-large-triple), this integral is the theta integral of $(W, V)$ times factors that have no zero at the point in question. So if the theta integral above vanishes, the one below vanishes too.
 
 ### The property
 
