@@ -93,8 +93,8 @@ The values of $\chi$ are roots of unity, so they have norm $1$. The sets of $i$ 
 
 Let $\mathrm{intVacuum} = \mathrm{vacuumScale}^{12}\,\mathrm{vac}$ be the integral vacuum of $\mathcal{S}$ (`New.Parameters.intVacuum`, in [the integral vacuum](/chapter/integral-vacuum/#the-integral-vacuum)).
 
-**Theorem (Reduction to the curve).** Let $w$ be a tight frame of length $M$ with multiplicities $c_i \geq 3|l|$. Suppose $\mathrm{val}_{12}(l) \leq r$. Let $\mathfrak{m}$ have the ideal $(\pi_M)$ and let $y$ be a finite adelic vector. Then there are an exponent $\gamma$ on the variables $z_{\tau,b}$ and a class $y_0$ modulo $\mathfrak{m}$ with $\sum_{b<12}\gamma(\tau, b) = l_\tau$ for every $\tau$ and
-$$p^{-r}\bigl|\iota_p\bigl(M^{12f}\,\mathrm{intVacuum}(\mathrm{fin}(y))\bigr)\bigr| \leq \bigl|\iota_p\bigl(\mathrm{vacuumScale}^{12}\,\mathrm{coeff}_\gamma\,\mathrm{twelveTaylor}(\mathrm{indicatorDatum}\,\mathfrak{m}\,y_0)\bigr)\bigr|.$$
+**Theorem (Reduction to the curve).** Let $w$ be a tight frame of length $M$ with multiplicities $c_i \geq 3|l|$. Suppose $\mathrm{val}_{12}(l) \leq r$. Let $\mathfrak{m}$ have the ideal $(\pi_M)$ and let $y$ be a finite adelic vector. Then there are an exponent $\gamma$ on the variables $z_{\tau,b}$ and a class $y_0$ modulo $\mathfrak{m}$ with $\sum_{b<12}\gamma(\tau, b) = l_\tau$ for every $\tau$ and the following property. Put $A = \mathrm{vacuumScale}^{12}\,\mathrm{coeff}_\gamma\,\mathrm{twelveTaylor}(\mathrm{indicatorDatum}\,\mathfrak{m}\,y_0)$. Then
+$$p^{-r}\bigl|\iota_p\bigl(M^{12f}\,\mathrm{intVacuum}(\mathrm{fin}(y))\bigr)\bigr| \leq |\iota_p(A)|.$$
 
 Lean: `New.Data.exists_le_norm_coeff_indicatorDatum` (New/Derivatives/Sharpness/BoundAttained.lean).
 

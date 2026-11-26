@@ -26,7 +26,7 @@ drafted_by: writer@claude-opus-5-5
 
 At an inert prime the rate $\gamma_p$ alone does not reach the forced divisibility $S_p$. The extra divisibility comes from the couplings $z_\tau^{p^e}z_{\tau^+}$ in the normal form of the theta product. This section shows that a product of couplings has a coefficient with negative valuation. The reason is a scalar $\kappa$ with $|\kappa| > 1$ in front of the couplings.
 
-### The setting
+### The scalar
 
 In this section the variables are $z_\tau$, one for each element $\tau$ of a finite set $\Phi$. (In Lean they are indexed by $\Phi \times \mathrm{Unit}$.) A partner rule $\mathrm{pr}(e, \tau)$ is given. For integral $l_{a,b}$ the coupling sum is
 $$\Xi = \sum_{a \text{ odd}}\sum_{b \geq 0}l_{a,b}\,\Gamma_a^{p^b}, \qquad \Gamma_a = \sum_\tau z_\tau^{p^a}z_{\mathrm{pr}(a,\tau)}$$

@@ -106,7 +106,7 @@ Lean: `New.Data.le_two_mul_b` (New/Derivatives/Sharpness/Cases.lean).
 
 *Proof.* $l_\tau \leq \kappa(\tau) + x^{42} \leq 2b$. $\square$
 
-### The inert primes above $k$
+### The loss at an inert prime above $k$
 
 **Lemma (A quotient below $n^\sharp$).** Let $p > k$ and $l$ near the weights. Then $\lfloor(l_\tau - n^\sharp)_+/p\rfloor \leq n^\sharp$.
 
@@ -131,7 +131,7 @@ Next, $l_\tau^- \leq \kappa(\tau)$, because $l_\tau \leq \kappa(\tau) + x^{42} \
 $$i - j_\tau = (i - l_{-p\tau})_+ \leq \Bigl(\frac{\kappa(\tau)}{p} - \kappa(-p\tau)\Bigr)_+ \leq s_p(\kappa(\tau), \tau).$$
 Add the two inequalities. $\square$
 
-### The primes up to $k$
+### The comparison at primes up to $k$
 
 **Lemma (Legendre with three parts).** Let $p \geq 3$, $l$ near the weights and $l = \nu' + \nu'' + \eta$. Then
 $$v(l!) \leq v(\nu'!) + v(\nu''!) + v(\eta!) + 3f(\log b + 2).$$
