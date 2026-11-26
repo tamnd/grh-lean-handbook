@@ -132,4 +132,4 @@ since the sum over the $h$ characters is $h$ if $\varpi_v \in W$ and $0$ otherwi
 
 This is the second inequality of Section 2, in the finite idele form, with the equidistribution statement (b) added. Part (b) is the source of Chebotarev in Section 7.
 
-**Remark (Formalization).** The textbook second inequality is $[C_K : N C_L] \leq [L : K]$ for the full norm group. The source states it for every open $W$ that contains the norms and the totally positive elements, and it asks $W$ to be open. Each application proves this for its $W$.
+**Remark (Formalization).** The textbook second inequality is $[C_K : N C_L] \leq [L : K]$ for the full norm group. The source states it for every open $W$ that contains the norms and the totally positive elements. Each application proves that its $W$ is open.
