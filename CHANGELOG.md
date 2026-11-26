@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.1.2
+
+Four more chapters of Volume 1, The proof in outline:
+
+- Chapter 6, Fields, places and twists (#29).
+- Chapter 8, The data exist (#25).
+- Chapter 12, Theorems A, B and C (#28).
+- Chapter 13, The main inequality and the end of the proof (#27).
+
+Volume 1 now has 9 of its 13 chapters. Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.1
 
 Four chapters of Volume 1, The proof in outline:
