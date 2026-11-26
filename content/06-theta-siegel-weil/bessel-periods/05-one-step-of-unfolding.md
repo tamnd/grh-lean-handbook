@@ -31,7 +31,7 @@ $$W'(h) = \int_{[R]} W(r)\, \mathrm{CT}(r, h)\, d\mu_R(r), \qquad h \in G'.$$
 
 Lean: `New.Grading.unfoldStep` (Lib/Weil/Periods/ConstantTerm.lean).
 
-For equivariant $W$ the integrand is continuous and invariant under $R(E)$, so the integral is a true integral over the compact quotient $[R]$. The function $W'$ is continuous, and it is left invariant under $R'(E)$ (Lean: `New.Grading.continuous_unfoldStep`, `New.Grading.unfoldStep_rat_mul`). Continuity holds because $W'(h)$ is a fixed bounded functional of $\omega(1, h)\Phi$, and $h \mapsto \omega(1, h)\Phi$ is continuous. Invariance follows from the substitution law of [Proposition](/decl/New.Grading.constTerm_mul/) and [Lemma](/decl/New.Grading.hasDegreeGe_zero_mul_stringMap_mul_sub/): for $\gamma \in R'(E)$ the map $\gamma^{-1} T$ is in the class of $T$.
+For equivariant $W$ the integrand is continuous and invariant under $R(E)$, so the integral is a true integral over the compact quotient $[R]$. The function $W'$ is continuous, and it is left invariant under $R'(E)$ (Lean: `New.Grading.continuous_unfoldStep`, `New.Grading.unfoldStep_rat_mul`). Invariance follows from the substitution law of [Proposition](/decl/New.Grading.constTerm_mul/) and [Lemma](/decl/New.Grading.hasDegreeGe_zero_mul_stringMap_mul_sub/): for $\gamma \in R'(E)$ the map $\gamma^{-1} T$ is in the class of $T$.
 
 ### The terms of the theta kernel
 
@@ -65,7 +65,7 @@ Lean: `New.Grading.integral_tsum_classTerm_eq_zero`, with `New.Grading.exists_cl
 
 $$\sum_{x' \in R(E) x} \int_{[R]} k_{x'}(h, r)\, d\mu_R = \int_{R(E)_x \backslash R} k_x(h, r)\, dr.$$
 
-Since $w_x$ does not survive, there is $u \in U$ with $u - 1$ of degree $\geq 2$ and $w_x(u - 1)$ of degree $\geq 1$, such that $\beta(T u, T) \neq \beta(w_x u, w_x)$. By the equivariance of $W$, the substitution law and [Proposition](/decl/New.Grading.constTerm_eq_homBicharacter_mul/), left translation by $u$ multiplies $k_x(h, \cdot)$ by a constant $c$ with $|c| = 1$ and $c \neq 1$. A continuous function on $R$ that is left invariant under a discrete subgroup $\Gamma$, and that is multiplied by a constant $c \neq 1$ of modulus $1$ under left translation by one element $u$, has integral $0$ over $\Gamma \backslash R$ (Lean: `New.integral_quotMeasure_eq_zero_of_twist`). The element $u$ need not normalise $\Gamma$. The source proves this by a mean argument over the closed group of the left translations $t$ that keep the defect $|F(t u y) - c F(t y)|$, which contains $\Gamma$ and $u$. Apply it with $\Gamma = R(E)_x$. $\square$
+Since $w_x$ does not survive, there is $u \in U$ with $u - 1$ of degree $\geq 2$ and $w_x(u - 1)$ of degree $\geq 1$, such that $\beta(T u, T) \neq \beta(w_x u, w_x)$. By the equivariance of $W$, the substitution law and [Proposition](/decl/New.Grading.constTerm_eq_homBicharacter_mul/), left translation by $u$ multiplies $k_x(h, \cdot)$ by a constant $c$ with $|c| = 1$ and $c \neq 1$. A continuous function on $R$ that is left invariant under a discrete subgroup $\Gamma$, and that is multiplied by a constant $c \neq 1$ of modulus $1$ under left translation by one element $u$, has integral $0$ over $\Gamma \backslash R$ (Lean: `New.integral_quotMeasure_eq_zero_of_twist`). Apply it with $\Gamma = R(E)_x$. $\square$
 
 ### The classes that survive
 
@@ -79,7 +79,7 @@ such that $k_{e(q, x)}(h, r) = k_x(\gamma_q^{-1} h, r)$ for all $q$, $x$, $h$ an
 
 Lean: `New.Grading.exists_equiv_agreeingTranslates`, with `New.exists_equiv_quotient_prod_block` (Lib/Weil/Periods/Unfolding.lean).
 
-*Proof.* For $d = 0$ every rational $\delta \in G'(E)$ acts on the classes, since no weight is lowered. A rational $\delta$ keeps a class of $\mathcal{C}$ in $\mathcal{C}$ if and only if $\delta \in R'(E)$, by [Proposition](/decl/New.Grading.agreesWithStringMap_mul_iff/). So the translates of $\mathcal{C}$ are blocks, and $(q, x) \mapsto \gamma_q x$ is a bijection onto $\mathcal{D}$. This is a general fact on group actions. The formula for the terms is the substitution law. $\square$
+*Proof.* For $d = 0$ every rational $\delta \in G'(E)$ acts on the classes, since no weight is lowered. A rational $\delta$ keeps a class of $\mathcal{C}$ in $\mathcal{C}$ if and only if $\delta \in R'(E)$, by [Proposition](/decl/New.Grading.agreesWithStringMap_mul_iff/). So the translates of $\mathcal{C}$ are blocks, and $(q, x) \mapsto \gamma_q x$ is a bijection onto $\mathcal{D}$. The formula for the terms is the substitution law. $\square$
 
 **Lemma (One translate gives one value).** Let $W$ be equivariant. Then for every $h$,
 
@@ -99,7 +99,7 @@ Lean: `New.Grading.hasSum_unfoldStep` (Lib/Weil/Periods/Unfolding.lean).
 
 *Proof.* The left side is the sum of the integrals of the terms over $\mathcal{D}$. Transport the sum along the bijection $e$ and sum first over $x \in \mathcal{C}$. For fixed $q$ the inner sum is $W'(\gamma_q^{-1} h)$, by the last lemma applied at $\gamma_q^{-1}h$. $\square$
 
-The map $q \mapsto \gamma_q^{-1}$ is a bijection from $G'(E)/R'(E)$ onto $R'(E) \backslash G'(E)$. So the right side is the familiar sum $\sum_{\gamma \in R'(E) \backslash G'(E)} W'(\gamma h)$. It is well defined because $W'$ is left invariant under $R'(E)$.
+Since $q \mapsto \gamma_q^{-1}$ is a bijection onto $R'(E) \backslash G'(E)$, the right side is the sum $\sum_{\gamma \in R'(E) \backslash G'(E)} W'(\gamma h)$.
 
 ### The main theorem
 
@@ -118,7 +118,7 @@ Lean: `New.Grading.integral_besselGroup_unfold` (Lib/Weil/Periods/Unfolding.lean
 
 *Step 1: a uniform bound.* For each $h$ there is a rational $\delta \in G'(E)$ with $\|\omega(1, \delta h)\| \leq 2^B \mathrm{ht}(h)^B$, for a fixed $B$. This is the growth bound of the theta kernel after reduction (Lean: `New.ThetaKernel.eventually_exists_norm_omega_le_mul_height_pow`). The decay of $y$ absorbs this growth. So there is a constant $c$ such that $\sum_{x \in S} |k_x(h, r)\, y(h)| \leq c$ for all $h$, $r$ and every set $S$ of classes (Lean: `New.Grading.exists_tsum_enorm_classTerm_mul_le`).
 
-*Step 2: exchange of the integrals.* By Step 1 with $S$ the set of all classes, the function $(h, r) \mapsto W(r)\theta(r, h)y(h)$ is bounded on $[G'] \times [R]$. Both measures are finite, so it is integrable for the product measure. Fubini's theorem gives
+*Step 2: exchange of the integrals.* By Step 1, the function $(h, r) \mapsto W(r)\theta(r, h)y(h)$ is bounded on $[G'] \times [R]$, and both measures are finite. Fubini's theorem gives
 
 $$\int_{[R]} W(r) \int_{[G']} \theta(r, h)\, y(h)\, dh\, d\mu_R(r) = \int_{[G']} \Big(\int_{[R]} W(r)\theta(r, h)\, d\mu_R(r)\Big) y(h)\, dh.$$
 
@@ -126,7 +126,7 @@ $$\int_{[R]} W(r) \int_{[G']} \theta(r, h)\, y(h)\, dh\, d\mu_R(r) = \int_{[G']}
 
 *Step 4: unfolding.* By Step 1 and the last bound of the lemma on the translates, $\sum_q |W'(\gamma_q^{-1} h)\, y(h)| \leq c\, \mu_R([R])$ for every $h$ (Lean: `New.Grading.exists_tsum_enorm_unfoldStep_mul_le`). So the integral over $[G']$ of the sum of the absolute values is finite, since $[G']$ has finite volume. The unfolding of a sum over $G'(E)/R'(E)$ then applies (Lean: `New.integral_tsum_orbit_of_lt_top_or_integrable`). It gives the integrability (1), and it turns the integral over $[G']$ of the sum into the integral over $R'(E) \backslash G'$ of the term at the trivial coset, which is $W'(h)y(h)$. $\square$
 
-**Remark (Formalization).** The integrability in (1) is a conclusion of the theorem, not a hypothesis. This matters, because the integral of a function that is not integrable is $0$ in Lean. The identity in (2) is an identity of true integrals. The left side is an iterated integral, and the source proves that its integrand is integrable for the product measure. The theorem has no hypothesis on the constants $c$ of the two gradings. The constants enter only in the equivariance of $W'$ below. The theorem treats one step, for the strings of a hook orbit with a definite complement $X$. The iteration is not in this chapter. It is in [seesaw identity, part 1](/chapter/seesaw-identity-1/), which starts from a source function and applies the step once at each string length.
+**Remark (Formalization).** The integrability in (1) is a conclusion of the theorem, not a hypothesis. This matters, because the integral of a function that is not integrable is $0$ in Lean. The identity in (2) is an identity of true integrals. The source proves that the integrand of the iterated integral is integrable for the product measure. The theorem has no hypothesis on the constants $c$ of the two gradings. The iteration is in [seesaw identity, part 1](/chapter/seesaw-identity-1/), which starts from a source function and applies the step once at each string length.
 
 ### The unfolded function is equivariant
 
@@ -140,4 +140,4 @@ $$\mathrm{CT}(g, u h) = \beta(T, u^{-1}T)^{\pm 1}\, \mathrm{CT}(g, h),$$
 
 a phase that does not depend on $g$ and $h$. The source computes it as $\psi\big(\tfrac{\jmath}{2}\operatorname{tr}(T T^\dagger u)\big)$. For equal constants, $T T^\dagger = \mathfrak{e}'$ by [Proposition](/decl/New.Grading.formAdjoint_stringMap_mul_stringMap/). So the phase is $\psi_{U'}(u)$, the generic character of $Y'$. Integrate against $W(r)$: the phase comes out of the integral, and $W'(u \gamma h) = \psi_{U'}(u) W'(\gamma h)$. $\square$
 
-**Remark (Formalization).** The hypothesis that the constants are equal is used only in the identity $T T^\dagger = \mathfrak{e}'$. Without it, $T T^\dagger$ is the shift of $Y'$ with the constant $c$ of $Y$, and $W'$ transforms by a different character. This theorem does not say that $W'$ is a source function of an automorphic form on $U(X')$, even when $s - 1$ is odd. The iteration in [seesaw identity, part 1](/chapter/seesaw-identity-1/) proves such an identification separately, after an even number of steps, from [Proposition](/decl/New.Grading.IsEquivariant.eq_sourceFn/) and [Theorem](/decl/New.Grading.integral_besselMeasure_eq_of_mean/).
+**Remark (Formalization).** The hypothesis that the constants are equal is used only in the identity $T T^\dagger = \mathfrak{e}'$. This theorem does not say that $W'$ is a source function of an automorphic form on $U(X')$, even when $s - 1$ is odd. The iteration in [seesaw identity, part 1](/chapter/seesaw-identity-1/) proves such an identification separately, after an even number of steps, from [Proposition](/decl/New.Grading.IsEquivariant.eq_sourceFn/) and [Theorem](/decl/New.Grading.integral_besselMeasure_eq_of_mean/).

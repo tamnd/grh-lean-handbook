@@ -4,7 +4,6 @@ lean:
   - Lib/Weil/Periods/Grading.lean
   - Lib/Weil/Periods/Equivariant.lean
   - Lib/Weil/Periods/BesselIntegral.lean
-  - Lib/Weil/Periods/RealAndFinitePoints.lean
 decls:
   - New.Grading.unipotent
   - New.Grading.inclX
@@ -19,7 +18,6 @@ decls:
   - New.Grading.isEquivariant_sourceFn
   - New.Grading.IsEquivariant.eq_sourceFn
   - New.Grading.integral_besselMeasure_eq_of_mean
-  - New.Grading.exists_integral_eq_mul_integral_besselReal
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
@@ -45,8 +43,6 @@ Lean: `New.Grading.besselGroup`, `New.Grading.mem_besselGroup`, `New.Grading.rat
 
 The group $R$ contains $U$ and $\iota_X(H)$ (Lean: `New.Grading.unipotent_le_besselGroup`, `New.Grading.inclX_mem_besselGroup`), and it is closed (Lean: `New.Grading.isClosed_besselGroup`).
 
-**Example (Short strings).** If $s = 1$, every basis vector has grade $0$. Then $U = 1$, and $R$ is the stabiliser of $e_0$, which is $\iota_X(H)$. If $s = 2$, the string vector $e_0$ has the highest grade $1$, so $R$ is the stabiliser of the isotropic vector $e_0$. The group $U$ is the unipotent radical of the parabolic subgroup that fixes the line $E e_0$. It is a Heisenberg group, and its centre consists of the $u$ with $u e_1 = e_1 + t e_0$ and $u = 1$ on $X$ and $e_0$. If $s = 3$ with grades $2, 0, -2$, then $R$ fixes $e_0$ and sends $e_1$ to $e_1$ plus a multiple of $e_0$. This is the Bessel subgroup of Gan, Gross and Prasad for the pair $X \subset V$ of codimension $3$.
-
 **Proposition (Levi decomposition).** There is a continuous homomorphism $p \colon R \to H$ with these properties:
 
 1. $r \cdot \iota_X(p(r))^{-1} \in U$ for every $r \in R$;
@@ -64,15 +60,15 @@ So $R = U \rtimes \iota_X(H)$: every $g \in R$ is $n \cdot \iota_X(a)$ with $n \
 
 Lean: `New.Grading.isCocompact_ratBessel` (Lib/Weil/Periods/BesselIntegral.lean).
 
-*Proof.* There is a compact $A \subseteq \mathbb{A}$ that meets every coset $a + E$, since $\mathbb{A}/E$ is compact. The group $H$ is the unitary group of a definite space, so $H(E) \backslash H$ is compact: there is a compact $D \subseteq H$ such that each $a \in H$ has a rational $\delta$ with $\delta a \in D$. Let $g \in R$. First move $p(g)$ into $D$ with $\gamma = \iota_X(\delta)$ for a rational $\delta$. Then $\gamma g = m\, \iota_X(a)$ with $m \in U$ and $a \in D$. The matrix $m - 1$ raises grades, so $m$ is unitriangular for the order of the grades. By downward recursion on the grades there is a rational unitriangular matrix $Z$ such that every entry of $m^{-1} Z$ is $0$, $1$ or an element of $A$. A lemma on frames of bounded entries then gives a rational unitriangular isometry $\beta$ that moves $m$ into a fixed compact set $K$ of $G$. The element $\beta$ agrees with $1$ wherever the grade does not rise, so $\beta \in R(E)$. Then $\beta\gamma g \in K \cdot \iota_X(D)$, and the compact set is $R \cap K \cdot \iota_X(D)$. $\square$
+*Proof.* There is a compact $A \subseteq \mathbb{A}$ that meets every coset $a + E$, since $\mathbb{A}/E$ is compact. The group $H$ is the unitary group of a definite space, so $H(E) \backslash H$ is compact: there is a compact $D \subseteq H$ such that each $a \in H$ has a rational $\delta$ with $\delta a \in D$. Let $g \in R$. First move $p(g)$ into $D$ with $\gamma = \iota_X(\delta)$ for a rational $\delta$. Then $\gamma g = m\, \iota_X(a)$ with $m \in U$ and $a \in D$. The matrix $m - 1$ raises grades, so $m$ is unitriangular for the order of the grades. By downward recursion on the grades there is a rational unitriangular matrix $Z$ such that every entry of $m^{-1} Z$ is $0$, $1$ or an element of $A$. A lemma on frames of bounded entries then gives a rational unitriangular isometry $\beta$ with $\beta m$ in a fixed compact set $K$ of $G$. The element $\beta$ agrees with $1$ wherever the grade does not rise, so $\beta \in R(E)$. Then $\beta\gamma g \in K \cdot \iota_X(D)$, and the compact set is $R \cap K \cdot \iota_X(D)$. $\square$
 
 **Definition (The measure on $[R]$).** The measure $\mu_R$ on $R$ is Haar measure times a cutoff: it integrates functions that are left invariant under $R(E)$ over the quotient $R(E) \backslash R$.
 
 Lean: `New.Grading.besselMeasure`, with the instances `New.Grading.isFiniteMeasure_besselMeasure` and `New.Grading.isMulRightInvariant_haar_besselGroup` (Lib/Weil/Periods/BesselIntegral.lean).
 
-The measure is finite by cocompactness. Since $R(E)$ has finite covolume, $R$ is unimodular.
+The measure is finite by cocompactness.
 
-**Remark (Formalization).** The measure $\mu_R$ is the measure `quotMeasure` of the library on adelic quotients, for the Haar measure `haar` that Mathlib fixes on the group $R$. Its normalisation is not the Tamagawa measure, and no statement of this chapter needs a normalisation. For a function that is not invariant under $R(E)$, or not integrable, the value of $\int f\, d\mu_R$ has no meaning as an integral over $[R]$. The integral of a function that is not integrable is $0$ in Lean. The theorems of Section 5 state integrability as a conclusion, so that their identities are identities of true integrals.
+**Remark (Formalization).** The measure $\mu_R$ is the measure `quotMeasure` of the library on adelic quotients, for the Haar measure `haar` that Mathlib fixes on the group $R$. Its normalisation is not the Tamagawa measure, and no statement of this chapter needs a normalisation. The integral of a function that is not integrable is $0$ in Lean. The theorems of Section 5 state integrability as a conclusion, so that their identities are identities of true integrals.
 
 ### The generic character
 
@@ -98,7 +94,7 @@ Lean: `New.Grading.unipotentChar_mul`, `New.Grading.unipotentChar_of_mem_Gamma`,
 
 *Proof.* (1) The shift lowers grades by $2$, so $\operatorname{tr}(\mathfrak{e} A)$ depends only on the entries of $A$ of degree exactly $2$. For $u, u'$ in $U^{\geq 2}$ the part of degree $2$ of $u u' - 1$ is the sum of the parts of degree $2$ of $u - 1$ and $u' - 1$, because the product $(u - 1)(u' - 1)$ has degree at least $4$. So the trace is additive, and $\psi$ turns the sum into a product. (2) For $\gamma$ rational the trace is an element of $E$, and $\psi$ is trivial on $E$. (3) The shift kills $X$ and $\iota_X(a)$ is the identity on the string, so $\iota_X(a)$ commutes with $\mathfrak{e}$, and the trace is invariant under conjugation. $\square$
 
-So $\psi_U$ is a character of $U^{\geq 2}(\mathbb{A})$, trivial on rational points and invariant under $H$. If $s$ is odd, every grade is even, so every element of $U$ has $u - 1$ of degree at least $2$ (Lean: `New.Grading.hasDegreeGe_two_of_odd`). Then $U^{\geq 2} = U$, and $\psi_U$ is a character of all of $U(\mathbb{A})$. This is the Bessel case. If $s$ is even, $U^{\geq 2}$ is a proper subgroup, and $\psi_U$ is a character of it only. This is the Fourier-Jacobi case. For $s = 2$, $U^{\geq 2}$ is the centre of the Heisenberg group, $\mathfrak{e} e_0 = -Nc^2 e_1$, and $\psi_U(u) = \psi(-\tfrac{\jmath}{2} N c^2 t)$ for $u e_1 = e_1 + t e_0$.
+So $\psi_U$ is a character of $U^{\geq 2}(\mathbb{A})$, trivial on rational points and invariant under $H$. If $s$ is odd, every grade is even, so every element of $U$ has $u - 1$ of degree at least $2$ (Lean: `New.Grading.hasDegreeGe_two_of_odd`). Then $U^{\geq 2} = U$, and $\psi_U$ is a character of all of $U(\mathbb{A})$. This is the Bessel case. If $s$ is even, $U^{\geq 2}$ is a proper subgroup, and $\psi_U$ is a character of it only. This is the Fourier-Jacobi case.
 
 ### Equivariant functions
 
@@ -134,11 +130,11 @@ Lean: `New.Grading.IsEquivariant.eq_sourceFn` (Lib/Weil/Periods/Equivariant.lean
 
 *Proof.* Write $r = u\, \iota_X(a)$ with $u \in U$. Since $s$ is odd, $u \in U^{\geq 2}$, so $W(r) = \psi_U(u) W(\iota_X(a)) = \psi_U(u)\varphi_t(a) = \mathcal{W}_\varphi(r)$. $\square$
 
-**Remark (Formalization).** The projection $p$ in the source function is `New.Grading.leviPart`, which is defined as the `choose` of the existence statement [Proposition](/decl/New.Grading.exists_besselGroup_proj/). The source does not use any property of the chosen $p$ beyond the four properties listed there. Any two such projections agree: by (1) and (3), $p(r)$ is determined by $r$ modulo $U$, and by (2) it is then fixed. So the function $\mathcal{W}_\varphi$ does not depend on the choice. For even $s$ the source does not claim that $\mathcal{W}_\varphi$ is equivariant. In the Fourier-Jacobi case an equivariant function needs a Weil representation of the Heisenberg group, and the source does not construct one here.
+**Remark (Formalization).** The projection $p$ in the source function is `New.Grading.leviPart`, which is defined as the `choose` of the existence statement [Proposition](/decl/New.Grading.exists_besselGroup_proj/). Any two such projections agree: by (1) and (3), $p(r)$ is determined by $r$ modulo $U$, and by (2) it is then fixed. So the function $\mathcal{W}_\varphi$ does not depend on the choice. For even $s$ the source does not claim that $\mathcal{W}_\varphi$ is equivariant.
 
 ### Integrals over the Bessel group
 
-Two results reduce integrals over $[R]$ to smaller groups. The first averages over the part of $U$ that moves $X$ into grade $1$. The grades of the string are distinct, so at most one string vector has grade $1$. It exists if and only if $s$ is even.
+The next result reduces integrals over $[R]$ to $[H]$. It averages over the part of $U$ that moves $X$ into grade $1$. The grades of the string are distinct, so at most one string vector has grade $1$. It exists if and only if $s$ is even.
 
 **Theorem (Integration over $[R]$).** Let $q$ be a finite set with an injective map $v$ into the basis indices of grade $1$, so that $q$ has at most one element. Define $\mathrm{row}(n) \in \mathbb{A}^{q \times X}$ by $\mathrm{row}(n)_{j, a} = c \cdot (n - 1)_{v(j), x_a}$. There is a constant $\kappa \in \mathbb{C}$ with this property. Let $\phi \colon R \to \mathbb{C}$, $f \colon H \times \mathbb{A}^{q \times X} \to \mathbb{C}$ and $M \colon H \to \mathbb{C}$ satisfy:
 
@@ -153,12 +149,4 @@ Lean: `New.Grading.integral_besselMeasure_eq_of_mean` (Lib/Weil/Periods/BesselIn
 
 *Proof.* Let $\bar M(r) = M(p(r))$. Both $\phi$ and $\bar M$ are continuous and invariant under $R(E)$, so they are integrable for $\mu_R$ by cocompactness. For an adelic vector $b \in \mathbb{A}^{q \times X}$, the Eichler transformation $v \mapsto v + h(u, v)x - h(x, v)(u + \varsigma x)$, with $x$ the string vector of grade $1$ and $u \in X$ built from $b$, gives an element $u_b \in U$. It depends continuously on $b$, and $\mathrm{row}(n u_b) = b + \mathrm{row}(n)$ for $n \in U$, because the row is additive on $U$: the cross term $(n - 1)(u_b - 1)$ has degree at least $2$. Average $\phi - \bar M$ over the right translates by these elements, inside the subgroup $p^{-1}(H(E))$, which is unimodular. By (2) and (3) the average over $b$ is $\int (f(a, b + c) - M(a))\, db = 0$. Since right translation keeps Haar measure, the integral of $\phi - \bar M$ is $0$. The function $\bar M$ factors through $p$, and an integral over $[R]$ of a function of $p(r)$ is a fixed multiple of the integral over $[H]$, by unfolding in stages along $p$. $\square$
 
-**Remark (Formalization).** The theorem does not claim $\kappa \neq 0$. The constant comes from unfolding in stages, and it is the volume of a quotient for the chosen Haar measures. The source does not compute it. A use of the theorem that needs a nonzero right side must get $\kappa \neq 0$ from another argument. If $q$ is empty, the theorem applies with no row, and it compares $\int_{[R]} \phi$ with $\int_{[H]} \phi \circ \iota_X$ for functions that are invariant under $U$.
-
-The second result splits $R(\mathbb{A}) = R(F_\infty) \times R(\mathbb{A}_f)$.
-
-**Proposition (Real and finite points).** Let $K$ be a level of $G_f$, an open subgroup of the standard compact subgroup. Put $J = R(\mathbb{A}_f) \cap K$. There is a real $c_K \neq 0$ with this property. Let $t_0 \in R(\mathbb{A}_f)$, let $f$ be integrable on $R$ for Haar measure, and let $a$ be a function on $R(F_\infty)$ such that $f(s, t_0 t) = a(s) \mathbf{1}_K(t)$ for all $s \in R(F_\infty)$ and $t \in R(\mathbb{A}_f)$. Then $a$ is integrable and $\int_R f = c_K \int_{R(F_\infty)} a$.
-
-Lean: `New.Grading.exists_integral_eq_mul_integral_besselReal`, with `New.Grading.besselProdEquiv` and `New.Grading.isMulRightInvariant_haar_besselReal_besselFin` (Lib/Weil/Periods/RealAndFinitePoints.lean).
-
-*Proof.* The image of the product of the Haar measures of the two factors is a Haar measure on $R$, so the Haar measure of $R$ is $c'$ times it, with $c' > 0$. Translate by $(1, t_0)$. In the coordinates $(s, t)$ the translated function is the product $a(s)\mathbf{1}_J(t)$, so Fubini gives $\int f = c' \operatorname{vol}(J) \int a$. Put $c_K = c' \operatorname{vol}(J)$. The set $J$ is open and contains $1$, so its volume is positive. It is compact, so its volume is finite. So $c_K \neq 0$. $\square$
+**Remark (Formalization).** The theorem does not claim $\kappa \neq 0$. It is the volume of a quotient for the chosen Haar measures, and the source does not compute it.

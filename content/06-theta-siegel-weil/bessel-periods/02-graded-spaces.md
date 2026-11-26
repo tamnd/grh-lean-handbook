@@ -23,7 +23,7 @@ This section sets up the linear algebra of the chapter. A graded space is a herm
 
 ### Spaces with a point
 
-Let $E$ be a CM field with complex conjugation $z \mapsto \bar z$, and let $\mathbb{A}$ be its adele ring. A hermitian space with a point (Lean: `New.Space`) is a hermitian matrix $J$ over $E$, indexed by a finite set $\iota$, with an adelic matrix $x$ such that $x^{*} J x$ is a diagonal matrix of signs at the infinite places and $1$ at the finite places. Its group $G$ is the adelic unitary group of that standard form. For $g \in G$ the matrix $x g x^{-1}$ lies in $U(J)(\mathbb{A})$. It is the matrix of $g$ in rational coordinates (Lean: `New.Space.ratCoordMatrix`). All conditions on matrices in this chapter are conditions on this matrix. The group $V.\Gamma$ of rational points is the set of $g$ whose matrix in rational coordinates has entries in $E$.
+Let $E$ be a CM field with complex conjugation $z \mapsto \bar z$, and let $\mathbb{A}$ be its adele ring. A hermitian space with a point (Lean: `New.Space`) is a hermitian matrix $J$ over $E$, indexed by a finite set $\iota$, with an adelic matrix $x$ such that $x^{*} J x$ is a diagonal matrix of signs at the infinite places and $1$ at the finite places. Its group $G$ is the adelic unitary group of that standard form. For $g \in G$ the matrix $x g x^{-1}$ lies in $U(J)(\mathbb{A})$. It is the matrix of $g$ in rational coordinates (Lean: `New.Space.ratCoordMatrix`). The group $V.\Gamma$ of rational points is the set of $g$ whose matrix in rational coordinates has entries in $E$.
 
 ### Gradings
 
@@ -77,9 +77,7 @@ Lean: `New.Grading.shift_mulVec_stringPower` (Lib/Weil/Periods/StringPowers.lean
 
 *Proof.* Both sides are multiples of $e_{i+1}$, so one compares coefficients: $t_i\, p_i = p_{i+1}$. If $2i + 2 < s$ both coefficients are powers of $c$ with exponents that differ by one, and $t_i = c$. If $e_i$ has grade $1$, then $2i + 2 = s$, $p_i = c^{-1}$ and $p_{i+1} = -N c$, so $t_i = -N c^2$. If $e_i$ has grade $0$, then $p_i = 1$, $p_{i+1} = -Nc$ and $t_i = -Nc$. If $2i \geq s$ both coefficients carry the factor $-N$ and $t_i = c$. $\square$
 
-The shift raises grades by exactly $2$. So it is nilpotent, and $\mathfrak{e}^s = 0$. The vectors $\mathfrak{e}^0, \dots, \mathfrak{e}^{s-1}$ form a basis of $X^\perp$, and with the shift as multiplication, $X^\perp$ is a free module of rank one over $E[\mathfrak{e}]/(\mathfrak{e}^s)$. Over the finite adeles the source proves that the $\mathfrak{e}^i$ span $X^\perp$ (Lean: `New.Grading.exists_stringSum_eq`).
-
-**Example (Small strings).** For $s = 1$ the string is one vector $e_0$ of grade $0$ and norm $-N$, $\mathfrak{e}^0 = e_0$ and $\mathfrak{e} = 0$. For $s = 2$ the string is a hyperbolic plane with $e_0$ of grade $1$ and $e_1$ of grade $-1$. Then $\mathfrak{e}^0 = c^{-1} e_0$, $\mathfrak{e}^1 = -Nc\, e_1$, and $\mathfrak{e} e_0 = -N c^2 e_1$. For $s = 3$ the grades are $2, 0, -2$, and $\mathfrak{e}^0 = c^{-1} e_0$, $\mathfrak{e}^1 = e_1$, $\mathfrak{e}^2 = -Nc\, e_2$. The shift sends $e_0$ to $c\, e_1$ and $e_1$ to $-Nc\, e_2$. In each case one checks the pairing $\langle \mathfrak{e}^i, \mathfrak{e}^{s-1-i} \rangle = -N$ directly.
+The shift raises grades by exactly $2$. So it is nilpotent, and $\mathfrak{e}^s = 0$. The vectors $\mathfrak{e}^0, \dots, \mathfrak{e}^{s-1}$ form a basis of $X^\perp$, and with the shift as multiplication, $X^\perp$ is a free module of rank one over $E[\mathfrak{e}]/(\mathfrak{e}^s)$.
 
 ### The map between neighbouring strings
 
@@ -103,7 +101,7 @@ Lean: `New.Grading.stringMap_mulVec_stringPower`, with `New.Grading.stringMapFin
 
 *Proof.* One compares $\tau_i\, p_i$ with the coefficient $p'_i$ for the string of length $s - 1$, in the cases of the definitions. The case $i = s - 1$ holds since $\mathfrak{e}^{s-1} = 0$ in $V'$. $\square$
 
-So $T$ is the reduction $E[\mathfrak{e}]/(\mathfrak{e}^s) \to E[\mathfrak{e}]/(\mathfrak{e}^{s-1})$ on $X^\perp$, and zero on $X$. This explains the factors $\tau_a$: they are the ratios of the normalising coefficients of the two strings.
+So $T$ is the reduction $E[\mathfrak{e}]/(\mathfrak{e}^s) \to E[\mathfrak{e}]/(\mathfrak{e}^{s-1})$ on $X^\perp$, and zero on $X$.
 
 ### The adjoint identities
 
@@ -120,4 +118,4 @@ Lean: `New.Grading.formAdjoint_stringMap_mul_stringMap`, which joins `New.Gradin
 
 **Example (The case $s = 3$).** Let $s = 3$ and $s' = 2$. Then $T e_0 = e'_0$, $T e_1 = -Nc\, e'_1$ and $T e_2 = 0$. From $\langle T e_0, e'_1 \rangle' = 1 = \langle e_0, e_2 \rangle$ one gets $T^\dagger e'_1 = e_2$. From $\langle T e_1, e'_0 \rangle' = -Nc = \langle e_1, c\, e_1 \rangle$ one gets $T^\dagger e'_0 = c\, e_1$. So $T^\dagger T e_0 = c\, e_1$ and $T^\dagger T e_1 = -Nc\, e_2$. These are the values of the shift of $V$. In the other order, $T T^\dagger e'_0 = c\, T e_1 = -N c^2 e'_1$, which is the shift of $V'$ at the vector $e'_0$ of grade $1$, if $c' = c$.
 
-**Remark (Formalization).** The constant $c$ is a field of the structure `New.Grading`, not a datum chosen inside a proof. Each grading carries its own constant, and the hypothesis $c' = c$ of part (2) is stated as `Y'.genericConst = Y.genericConst`. Part (1) needs no such hypothesis. Part (2) is used only for the iteration of the unfolding in Section 5. A chain of gradings in which all constants are equal satisfies the hypothesis at each step.
+**Remark (Formalization).** The constant $c$ is a field of the structure `New.Grading`, not a datum chosen inside a proof. Each grading carries its own constant, and the hypothesis $c' = c$ of part (2) is stated as `Y'.genericConst = Y.genericConst`. Part (1) needs no such hypothesis. Part (2) is used only for the iteration of the unfolding in Section 5.
