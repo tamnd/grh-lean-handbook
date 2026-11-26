@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Orbital integrals and the Selberg principle
 
-Now let $R$ be irreducible. This section unfolds $I_R$ into a sum of orbital integrals, one for each conjugacy class of rational points with characteristic polynomial $R$. It then proves the Selberg principle in the form that the argument needs: if some complex root of $R$ at some infinite place lies off the unit circle, every orbital integral of $e \otimes \varphi$ at such a point is $0$. So $I_R(\varphi) = 0$ for these $R$, and only the polynomials with all roots on the unit circle remain for Section 6.
+Now let $R$ be irreducible. This section unfolds $I_R$ into a sum of orbital integrals, one for each conjugacy class of rational points with characteristic polynomial $R$. It then proves the Selberg principle in the form that the argument needs: if some complex root of $R$ at some infinite place lies off the unit circle, every orbital integral of $e \otimes \varphi$ at such a point is $0$. So $I_R(\varphi) = 0$ for these $R$.
 
 ### Classes and orbital integrals
 
@@ -101,4 +101,4 @@ Lean: `New.Space.geometricSide_singleton_eq_zero_of_norm_ne_one` (Lib/Adelic/Tra
 
 ### Where the principle has content
 
-If all signs $s_j$ at the infinite place $v$ are equal, then $U(\operatorname{diag} s)$ at $v$ is a compact group $U(N)$. Every element is unitary, and its eigenvalues have absolute value $1$. So for a definite space the hypothesis of the Selberg principle never holds at $v$. For an indefinite space it can. Take $N = 2$ and signs $(1, -1)$, so that $U(1,1)$ at $v$ contains the hyperbolic elements with eigenvalues $\lambda$ and $\bar\lambda^{-1}$, $|\lambda| \neq 1$. In general the eigenvalues of an element of $U(p, q)$ are stable under $\lambda \mapsto \bar\lambda^{-1}$. The terms of such $\gamma$ appear in the trace formula of an indefinite space and have no partner in a definite space. The Selberg principle removes them.
+If all signs $s_j$ at the infinite place $v$ are equal, then $U(\operatorname{diag} s)$ at $v$ is a compact group $U(N)$. Every element is unitary, and its eigenvalues have absolute value $1$. So for a definite space the hypothesis of the Selberg principle never holds at $v$. For an indefinite space it can. Take $N = 2$ and signs $(1, -1)$, so that $U(1,1)$ at $v$ contains the hyperbolic elements with eigenvalues $\lambda$ and $\bar\lambda^{-1}$, $|\lambda| \neq 1$. The terms of such $\gamma$ appear in the trace formula of an indefinite space and have no partner in a definite space. The Selberg principle removes them.

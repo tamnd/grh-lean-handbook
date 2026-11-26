@@ -15,11 +15,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The kernel and the geometric side
 
-This section writes the trace of a Hecke operator on forms as the integral of a kernel over the diagonal. It then splits the integral by the characteristic polynomial of the rational points. The result is the identity $\operatorname{vol}(K) \operatorname{tr} T = \sum_R I_R(a \star 1_K)$. Sections 4 to 6 compute the terms $I_R$. The sum over $R$ converges because the real factor of the test function decays to a high order.
+This section writes the trace of a Hecke operator on forms as the integral of a kernel over the diagonal. It then splits the integral by the characteristic polynomial of the rational points. The result is the identity $\operatorname{vol}(K) \operatorname{tr} T = \sum_R I_R(a \star 1_K)$. Sections 4 to 6 compute the terms $I_R$.
 
 ### Setting
 
-Fix a CM field $E$, an index set $n$ with $N = |n| \geq 1$ elements and a family of signs $s : n \to \{\pm 1\}$. Let $V$ be a hermitian space over $E$ with an adelic frame, as in [adeles and hermitian spaces](/chapter/adeles-hermitian-spaces/). The group $G = G_\infty \times G_f$ is the adelic unitary group of $V$, read in the frame. The group $\Gamma$ is the image of the rational points $U(V)(E)$ in $G$, and $[G] = \Gamma \backslash G$. Integrals over $[G]$ use the measure $dx$ of [reduction theory](/chapter/reduction-theory/), for which $[G]$ has finite volume.
+Fix $N = |n| \geq 1$, signs $s$, and a space $V$ as in Section 1, with adelic group $G = G_\infty \times G_f$. The group $\Gamma$ is the image of the rational points $U(V)(E)$ in $G$, and $[G] = \Gamma \backslash G$. Integrals over $[G]$ use the measure $dx$ of [reduction theory](/chapter/reduction-theory/), for which $[G]$ has finite volume.
 
 A *level* is an open subgroup $K$ of the standard maximal compact subgroup $K_0$ of $G_f$. Its volume $\operatorname{vol}(K)$ is taken for the Haar measure fixed on $G_f$. It is positive.
 

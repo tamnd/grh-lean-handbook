@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Test functions and cuspidality
 
-The trace formula of this chapter uses test functions of the form $e \otimes \varphi$ on $G = G_\infty \times G_f$. The real factor $e$ is a cusp kernel. The finite factor $\varphi$ is a locally constant function of compact support on $G_f$. This section defines the finite factors and the two local conditions that the proof puts on them: cuspidality at one split place, and a simple zero at a second place. It ends with a model case for $\mathrm{GL}_2$ and with the source of cuspidal test functions in the argument.
+The trace formula of this chapter uses test functions of the form $e \otimes \varphi$ on $G = G_\infty \times G_f$. The real factor $e$ is a cusp kernel. The finite factor $\varphi$ is a locally constant function of compact support on $G_f$. This section defines the finite factors and the two local conditions that the proof puts on them: cuspidality at one split place, and a simple zero at a second place.
 
 ### Test functions
 

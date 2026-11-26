@@ -19,7 +19,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The terms of reducible polynomials
 
-This section proves that $I_R(\varphi) = 0$ when $R$ is not irreducible, for a test function $\varphi$ that is cuspidal at a split place $w$ and has simple zeros at a place $w'$. The simple zero excludes the proper powers $R = Q^j$. Every other reducible monic $R$ is a product $A C$ of coprime factors. Then the elements with characteristic polynomial $A C$ at $w$ are conjugate to block diagonal elements, and a descent to the block diagonal group shows that a conjugation invariant linear form on this set kills every cuspidal test function. The source credits the vanishing of these terms to Deligne and Kazhdan. The descent follows Harish-Chandra.
+This section proves that $I_R(\varphi) = 0$ when $R$ is not irreducible, for a test function $\varphi$ that is cuspidal at a split place $w$ and has simple zeros at a place $w'$. The simple zero excludes the proper powers $R = Q^j$. Every other reducible monic $R$ is a product $A C$ of coprime factors. A descent to the block diagonal group at $w$ shows that an invariant distribution on the elements of characteristic polynomial $A C$ kills every cuspidal test function. The source credits the vanishing of these terms to Deligne and Kazhdan. The descent follows Harish-Chandra.
 
 ### A factorisation
 

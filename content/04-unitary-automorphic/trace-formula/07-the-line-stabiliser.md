@@ -20,13 +20,12 @@ decls:
   - New.IsCuspidalAt.convIndicator_offPlace
   - New.exists_atPlace_eq_of_convIndicator_ne_zero
   - New.exists_auxiliary_place
-  - New.trace_eq_of_isCuspidalAt
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
 ## The line stabiliser and the proof
 
-[The comparison of traces](/decl/New.trace_comparison/) has a hypothesis at a second place $w'$: on the support of the test function, the component at $w'$ has a simple zero. This section removes it. The idea is to pass to a smaller level at an auxiliary split place $v$, the stabiliser $J$ of a line modulo $v$. There the Hecke operator $T^+$ of $\operatorname{diag}(\varpi, 1, \dots, 1)$ has positive powers supported on elements with a simple zero. A relation $T^+ T^- = q^{N-2}(1 + (q^N - 1) e)$ in the Hecke algebra of $J$ then lets the traces of the products $A^l (T^+)^m$, $l, m \geq 1$, determine the trace of $A$ on the vectors fixed by $\mathrm{GL}_N(\mathcal{O}_v)$. The argument is linear algebra on a finite-dimensional space.
+[The comparison of traces](/decl/New.trace_comparison/) asks for a simple zero at a second place $w'$ on the support of the test function. This section removes that hypothesis. At an auxiliary split place $v$ the level is cut down to the stabiliser $J$ of a line. The positive powers of the Hecke operator $T^+$ of $\operatorname{diag}(\varpi, 1, \dots, 1)$ are supported on elements with a simple zero. The relation $T^+ T^- = q^{N-2}(1 + (q^N - 1) e)$ then lets the traces of $A^l (T^+)^m$, $l, m \geq 1$, determine the trace of $A$ on the spherical vectors at $v$.
 
 ### The stabiliser of a line
 
@@ -35,7 +34,7 @@ Let $v$ be a finite place of $E$, with local field $E_v$, ring of integers $\mat
 **Definition (Line stabiliser).** The group $J \subset \mathrm{GL}_N(\mathcal{O})$ is the set of $k \in \mathrm{GL}_N(\mathcal{O})$ whose reduction modulo $\varpi$ keeps the line $k e_i$. In other words, the reduction lies in the parabolic subgroup whose $i$-th column vanishes outside the row $i$.
 Lean: `New.lineStabilizer` (Lib/Adelic/TraceFormula/LineStabiliser.lean).
 
-For $N = 2$ and $i$ the first index, $J$ is the Iwahori subgroup of matrices that are upper triangular modulo $\varpi$. In general $J$ is a parahoric subgroup, of index $(q^N - 1)/(q - 1)$ in $\mathrm{GL}_N(\mathcal{O})$, the number of lines in $k^N$.
+For $N = 2$ and $i$ the first index, $J$ is the Iwahori subgroup of matrices that are upper triangular modulo $\varpi$. In general $J$ is a parahoric subgroup (Exercise 3).
 
 **Definition (The operators).** Let $T^+$ be the sum in the group algebra $\mathbb{C}[\mathrm{GL}_N(E_v)]$ of chosen representatives of the cosets in $J t J / J$. Let $T^-$ be the same sum for $J t^{-1} J / J$, and let $e_{\mathrm{sph}}$ be the mean of chosen lifts to $\mathrm{GL}_N(\mathcal{O})$ of the elements of $\mathrm{GL}_N(k)$.
 Lean: `New.lineHecke` (Lib/Adelic/TraceFormula/LineStabiliser.lean).
@@ -63,9 +62,9 @@ Lean: `New.inner_lineRaise` (Lib/Adelic/TraceFormula/LineStabiliser.lean).
 **Theorem (Support of the powers).** For $m \geq 1$, the element $(T^+)^m$ of $\mathbb{C}[\mathrm{GL}_N(E_v)]$ is a combination of elements $g$ such that $g k$ has a simple zero for every $k \in J$.
 Lean: `New.lineHecke_pow_mem_spanOn` (Lib/Adelic/TraceFormula/LineStabiliser.lean).
 
-*Proof.* Let $D$ be the set of integral $g$ whose reduction $\bar g$ keeps the line of $e_i$, acts invertibly on $k^N / k e_i$, and has $\bar g_{ii} = 0$. Every element of $J t J$ lies in $D$. If $g \in D$ and $h$ is integral and keeps the line with an invertible action on the quotient, then $g h \in D$, since $\overline{(gh)}_{ii} = \bar g_{ii} \bar h_{ii} = 0$. So by induction $(T^+)^m$ is a combination of elements of $D$, and $D J = D$. An element of $D$ has, in a basis that starts with $e_i$, the reduction $\begin{pmatrix} 0 & * \\ 0 & g' \end{pmatrix}$ with $g'$ invertible. Its characteristic polynomial is $X \det(X - g')$ with $\det g' \neq 0$, so $0$ is a simple root, as in [the definition](/decl/New.HasSimpleZero/). $\square$
+*Proof.* Let $D$ be the set of integral $g$ whose reduction $\bar g$ keeps the line of $e_i$, acts invertibly on $k^N / k e_i$, and has $\bar g_{ii} = 0$. Every element of $J t J$ lies in $D$. If $g \in D$ and $h \in D$ or $h \in J$, then $g h \in D$, since $\overline{(gh)}_{ii} = \bar g_{ii} \bar h_{ii} = 0$. So $(T^+)^m$ is a combination of elements of $D$, and $D J = D$. An element of $D$ has, in a basis that starts with $e_i$, the reduction $\begin{pmatrix} 0 & * \\ 0 & g' \end{pmatrix}$ with $g'$ invertible. Its characteristic polynomial is $X \det(X - g')$ with $\det g' \neq 0$, so $0$ is a simple root, as in [the definition](/decl/New.HasSimpleZero/). $\square$
 
-**Remark (Formalization).** The element $T^+$ is a sum over chosen representatives (`Quotient.out`), and $e_{\mathrm{sph}}$ uses chosen lifts. On vectors fixed by $J$, or by the kernel of the reduction, the action does not depend on the choices. The sum over cosets is defined by a `finsum`, so it would be $0$ if there were infinitely many cosets. Here there are $q^{N-1}$.
+**Remark (Formalization).** The element $T^+$ is a sum over chosen representatives (`Quotient.out`), and $e_{\mathrm{sph}}$ uses chosen lifts. The sum over cosets is defined by a `finsum`, so it would be $0$ if there were infinitely many cosets. Here there are $q^{N-1}$.
 
 ### Traces from the line relations
 
@@ -82,8 +81,6 @@ Lean: `New.LineRelation.trace_mul_mean_eq` (Lib/Adelic/TraceFormula/LineDetermin
 *Proof.* Decompose $B$ into the generalised eigenspaces $B_\alpha$ of $A$. They are stable under $T^\pm$ and $e$, and the line relations hold on each $B_\alpha$ (`New.LineRelation.restrict_maxGenEigenspace`). On $B_\alpha$, $A - \alpha$ is nilpotent and commutes with $e$, so $\operatorname{tr}(A e) = \sum_\alpha \alpha \operatorname{rank}(e|_{B_\alpha})$. The term of $\alpha = 0$ vanishes. Fix $\alpha \neq 0$. In the same way $\operatorname{tr}(A^{l+1} (T^+)^{j+1}) = \sum_\alpha \alpha^{l+1} \operatorname{tr}((T^+)^{j+1}|_{B_\alpha})$. Since these agree with the primed sums for all $l$, a Vandermonde argument gives $\operatorname{tr}((T^+)^{j+1}|_{B_\alpha}) = \operatorname{tr}((T'^+)^{j+1}|_{B'_\alpha})$ for every $j$. On $B_\alpha$,
 $$ |\det T^+|^2 = \det(T^+ T^-) = d^{\dim B_\alpha} (1 + c)^{\operatorname{rank} e|_{B_\alpha}} \neq 0 $$
 (`New.LineRelation.norm_det_sq`). So $T^+$ is invertible on $B_\alpha$. For invertible operators the traces of the positive powers determine the characteristic polynomial. So $T^+|_{B_\alpha}$ and $T'^+|_{B'_\alpha}$ have the same characteristic polynomial. This gives the same dimension and the same determinant. By the formula for $|\det T^+|^2$ and $d > 0$, $(1 + c)^{\operatorname{rank}}$ agrees, and since $1 + c > 1$, the ranks agree. $\square$
-
-The positivity of $c$ is used only in the last step, to recover the rank from $(1 + c)^{\operatorname{rank}}$.
 
 ### Cutting the level
 
@@ -123,8 +120,7 @@ Lean: `New.exists_auxiliary_place` (Lib/Adelic/TraceFormula/CuspidalComparison.l
 
 ### The proof of the main theorem
 
-**Theorem (Comparison for cuspidal test functions).** Let $E$ contain a primitive $5040$-th root of unity and have an even number of infinite places. Let $N \geq 2$, and let $V$ and $V'$ be spaces of signs $s$ and $s'$. Let $l$ be a family of doubled parameters with the gap condition with constant $10 N^5$ for $s$ and for $s'$. Let $K$ be a level, and let $a \in \mathbb{C}[G_f]$ keep the $K$-fixed vectors in every representation. Let $w$ be a split place with $a \star 1_K$ cuspidal at $w$. Let $T$ and $T'$ be operators that act as $a$ on the forms of type $e_\lambda$ and level $K$ for $V$ and for $V'$. Then $\operatorname{tr} T = \operatorname{tr} T'$.
-Lean: `New.trace_eq_of_isCuspidalAt` (Lib/Adelic/TraceFormula/CuspidalComparison.lean).
+We now prove [the theorem of Section 1](/decl/New.trace_eq_of_isCuspidalAt/). Its hypotheses are those of [the comparison of traces](/decl/New.trace_comparison/), without the simple zero at $w'$, and with $a$ in the universal level algebra of $K$.
 
 *Proof.* Take $v$ by [the auxiliary place lemma](/decl/New.exists_auxiliary_place/), and fix an index $i$. Let $K' = K_J$ with $J$ the line stabiliser at $v$. By [finiteness](/decl/New.Space.finite_levelSpace/), the forms of level $K'$ form a finite-dimensional space for $V$ and for $V'$. The representations on forms are unitary (`New.Space.inner_formRep`). By [the passage to the cut level](/decl/New.trace_eq_of_trace_cutLevel_eq/) it suffices to show, for all $l, m \geq 0$, that $b = \iota_v((T^+)^{m+1}) \operatorname{off}_v(a^{l+1})$ has the same trace at level $K'$ for $V$ and for $V'$. Apply [the comparison of traces](/decl/New.trace_comparison/) to $b$, at level $K'$, with $w' = v$. Two hypotheses remain.
 
@@ -133,4 +129,4 @@ Lean: `New.trace_eq_of_isCuspidalAt` (Lib/Adelic/TraceFormula/CuspidalComparison
 
 This gives the equality of the traces of $b$, and the theorem follows. $\square$
 
-**Remark (Formalization).** The hypothesis that $a$ keeps the $K$-fixed vectors in every representation (`New.universalLevelAlgebra`) appears here, not in [the comparison of traces](/decl/New.trace_comparison/). It is used to restrict $a$ to the $K$-fixed vectors in the passage to the cut level. The roots of unity are used twice in this section: for the comparison itself, and to make the places of prime norm split. As in Section 6, the hypothesis that the number of infinite places is even follows from the roots of unity (finding F-140).
+**Remark (Formalization).** The hypothesis that $a$ keeps the $K$-fixed vectors in every representation (`New.universalLevelAlgebra`) appears here, not in [the comparison of traces](/decl/New.trace_comparison/). It is used to restrict $a$ to the $K$-fixed vectors in the passage to the cut level.
