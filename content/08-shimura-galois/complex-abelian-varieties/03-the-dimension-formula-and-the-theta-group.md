@@ -28,7 +28,7 @@ The first is the dimension formula of Frobenius. The textbooks state it with ele
 
 Throughout the section, $V$ is a finite-dimensional complex space, $L$ is a full-rank lattice in $V$, and $(B, \chi)$ is Appell-Humbert data for $L$ with Riemann form $E$. We write $\Theta(B, \chi)$ for the space of theta functions.
 
-### The model case
+### The model case at level n
 
 For the lattice $L = \mathbb{Z} + \tau\mathbb{Z}$ and the form $nB$ of [Section 2](/chapter/complex-abelian-varieties/), the space $\Theta(nB, \chi^n)$ has the basis
 $$\vartheta_k(z) = \sum_{m \in \mathbb{Z}} \exp\Bigl(\pi i n \bigl(m + \tfrac{k}{n}\bigr)^2\tau + 2\pi i n\bigl(m + \tfrac{k}{n}\bigr) z\Bigr) \qquad (k \in \mathbb{Z}/n),$$
