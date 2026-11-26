@@ -41,7 +41,7 @@ Here $N$ is the chosen group order of the data, $r'$ is the rank of the main sum
 
 ### The idea in one paragraph
 
-Ribet's method finds an element that acts on one summand of a reducible representation and is zero on the others, and that kills a lattice modulo a congruence ideal. Ribet used it to construct unramified extensions from congruences between Eisenstein series and cusp forms (Ribet, *A modular construction of unramified p-extensions of* $\mathbb{Q}(\mu_p)$, Invent. Math. 34 (1976)). This chapter uses the version that works with traces only. It does not choose a lattice in which the representation is upper triangular. It takes a square matrix $B$ over the group algebra whose rows give relations modulo a two-sided ideal $\mathfrak{a}$ of traces. Then Cayley and Hamilton give a polynomial $P$ with $P(0) = \det B$, such that $P(\rho_0)$ multiplies a left ideal into $\mathfrak{a}$. The trace $f = \operatorname{tr} \rho(\rho_1 P(\rho_0))$ is the Ribet element. On the points of $\mathcal{X}$, $f$ is $\mu_0 \det(\psi B) \prod_e \det(\eta_e B)$, a product of determinants that the chapter bounds by Fitting ideals.
+Ribet's method finds an element that acts on one summand of a reducible representation and is zero on the others, and that kills a lattice modulo a congruence ideal. This chapter uses the version that works with traces only. It does not choose a lattice in which the representation is upper triangular. It takes a square matrix $B$ over the group algebra whose rows give relations modulo a two-sided ideal $\mathfrak{a}$ of traces. Then Cayley and Hamilton give a polynomial $P$ with $P(0) = \det B$, such that $P(\rho_0)$ multiplies a left ideal into $\mathfrak{a}$. The trace $f = \operatorname{tr} \rho(\rho_1 P(\rho_0))$ is the Ribet element. On the points of $\mathcal{X}$, $f$ is $\mu_0 \det(\psi B) \prod_e \det(\eta_e B)$, a product of determinants that the chapter bounds by Fitting ideals.
 
 ### The sketch of the proof
 
@@ -61,8 +61,4 @@ The chapter uses these results from earlier volumes. It states each of them wher
 - Fitting ideals, relative lengths and the modules of forms modulo a power of the uniformizer, from [Fitting ideals](/chapter/fitting-ideals/) in Volume 7.
 - Coefficient rings, the normalized length and the valuation $v_\ell$ on $\overline{\mathbb{Q}}_\ell$, also from [Fitting ideals](/chapter/fitting-ideals/).
 
-It also uses definitions from later chapters of this volume. The modules of cocycles that obey the relations of the family come from [the local loss](/chapter/local-loss/). The constants $\beta_\ell$, $e_\ell$ and the bounds for odd classes come from [the bound for denominators](/chapter/denominator-bound/). The chapter states these definitions where it uses them, and it uses only the facts that it states.
-
-### The status of the claim
-
-The chapter explains the proof in the source. It does not claim that the proof is correct. It does not check that the source builds. The constants in the bounds are the constants of the source, and the chapter does not try to make them smaller.
+It also uses results of two later chapters of this volume, because two of its files import them. The modules of cocycles that obey the relations of the family are defined in [The main summands of the attached Galois representations](/chapter/main-summands/). The constants $\mathrm{loc}$ and $e_\ell$ and one bound on cocycles come from [From a congruence to a Selmer class](/chapter/denominator-bound/). The chapter states each of these results once, exactly, where it uses it.

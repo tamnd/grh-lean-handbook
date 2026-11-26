@@ -35,7 +35,7 @@ The Ribet element of a matrix $B$ of tied rows has the value $\mu_0 \det(\tilde\
 
 ### Background
 
-- $\mathrm{Coc}(\rho, B)$ is the $O$-module of cocycles $c : G \to B^r$ for $\rho$ that obey the linear relations among the families $(u_x(g) - 1)_x$ ([`New.Selmer.ribetCocyclesIn`](/decl/New.Selmer.ribetCocyclesIn/), in [Local loss](/chapter/local-loss/)).
+- For an $O$-module $B$, $\mathrm{Coc}(\rho, B)$ is the $O$-module of the $c : G \to B^r$ with $c(gh) = c(g) + \rho(g)c(h)$ for all $g, h$, and with $\sum_g \theta_g c(g) = 0$ for every finitely supported $\theta : G \to O$ with $\sum_g \theta_g(u_x(g) - 1) = 0$ for all $x$. For $B = O/p$ it is written $\mathrm{Coc}(\rho, p)$. The definition lives in [The main summands of the attached Galois representations](/chapter/main-summands/), a later chapter, because that chapter uses the same modules for the local loss.
 - Let $O$ be a discrete valuation ring with fraction field $K$, and $\psi : A \to M_d(O)$ a surjective map of $O$-algebras. If an $O$-module of vectors over $(K/O)^d$ of length at most $b$ contains every vector that $\psi(N)$ kills, then some square matrix $B$ with rows in $N$ has $v(\det \psi(B)) \leq b$ ([Block determinants](/chapter/fitting-ideals/#block-determinants)).
 - The forms modulo $p$, the triangle cost and the Fitting bound with the factor $\prod_{j \in I} X_j$ are in [Fitting ideals and the triangle cost](/chapter/ribet-elements/#fitting-ideals-and-the-triangle-cost).
 
@@ -117,7 +117,7 @@ Lean: `New.Selmer.exists_sum_mul_det_of_mem_fittingIdeal_evalRowAtChar` (New/Con
 
 ### Gluing the characters
 
-One matrix must serve all characters at once. Elements $\pi_e$ that separate the characters do this.
+Elements $\pi_e$ that separate the characters do this.
 
 **Proposition (Gluing).** Let $\chi_e : A \to \Lambda$ be characters and $\pi_e \in A$ with $\chi_{e'}(\pi_e) = \mu_e$ if $e' = e$ and $0$ otherwise. Let $N \subseteq A^{\iota_0 \sqcup \iota}$, let some row of $N$ be under each $\chi_e$ the unit vector $i$ on $\iota_0$, and let each row of $B_e$ be the $\iota$-part under $\chi_e$ of a row of $N$ that is zero on $\iota_0$. Then a square matrix $M$ with rows in $N$ has $\det \chi_e(M) = \mu_e^{\#\iota} \det B_e$ for all $e$. The same holds for relations among generators $y$ of a module modulo $\ker\chi_e$.
 

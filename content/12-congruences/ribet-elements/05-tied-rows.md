@@ -58,7 +58,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Tied rows
 
-The theorem of [Ribet's method for tied rows](/chapter/ribet-elements/#ribets-method-for-tied-rows) takes a square matrix of tied rows as given. This section makes the rows concrete. It fixes the ring, the generators and the left ideal in which the rows live. It then lists the rows that are tied for simple reasons. The next section puts these rows together into matrices with small determinants.
+The theorem of [Ribet's method for tied rows](/chapter/ribet-elements/#ribets-method-for-tied-rows) takes a square matrix of tied rows as given. This section makes the rows concrete.
 
 ### The set-up
 
@@ -143,8 +143,6 @@ Lean: `New.Selmer.tiedRows`, `New.Selmer.mem_tiedRows` (New/Congruences/FirstOrd
 
 ### The trace ideal
 
-The tie ideal connects with traces through one hypothesis on the module $\mathcal{J}$.
-
 **Definition (Trace ideal hypothesis).** Let $S$ be an $O$-algebra of functions from $Y$ to $L[X_j]$, and let $\mathcal{J}$ be an $S$-module of such functions. Then $\mathcal{J}$ is a trace ideal for the $u_x$, $p$, the ties and $\varepsilon$ if:
 
 1. $S$ contains the constant functions $X_j$;
@@ -168,7 +166,7 @@ So the value of each tied row is $b + m\rho_0$ with $b \in \mathfrak{a}_0$. This
 
 ### Rows that are tied
 
-The basic test is simple. A row whose value every $\tilde u_x$ kills is tied, by item 1 of the tie ideal.
+A row whose value every $\tilde u_x$ kills is tied, by item 1 of the tie ideal.
 
 **Lemma.** If $\tilde u_x(\langle r \rangle) = 0$ for all $x$, then $r \in N(\rho_0)$.
 
@@ -230,8 +228,6 @@ Lean: `New.Selmer.coboundary_eq_zero_of_apply_eq_zero` (New/Congruences/FirstOrd
 
 *Proof.* $\rho(\gamma)m - m = (y - 1)m$. As $y - 1$ is a unit, $m = 0$. So $\rho(g)m - m = 0$. $\square$
 
-So a coboundary that vanishes at $\gamma$ is zero. Each class has at most one cocycle that vanishes at $\gamma$. This is why the modules of cocycles in the next section ask for $c(\gamma) = 0$.
-
-**Example (A trivial family).** Let $Y$ be one point and $u$ the trivial representation of degree $1$. Then $u(g) - 1 = 0$ for all $g$, so $z = 0$ is a family of coordinates. For every row $r$, $\tilde u(\langle r \rangle) = \sum_i \tilde u(r_i)\,(u(\mathrm{gen}_i) - 1) = 0$. So every row is tied, and the tie ideal gives no constraint. In the application the $u_x$ are the models of the family, and the constraint comes from items 3 and 4 of the tie ideal.
+So a coboundary that vanishes at $\gamma$ is zero. This is why the modules of cocycles in the next section ask for $c(\gamma) = 0$.
 
 **Remark (Formalization).** The rows are vectors over the noncommutative ring $R[G]$, and the ideals are left ideals, that is, submodules of $R[G]$ over itself. The value $\langle r \rangle$ puts the entries of $r$ on the left of $\mathrm{gen}_i - 1$. The map $\xi_*$ forgets the coordinates in $W$. The map $\tilde\rho_0$ is only $O$-linear, because the substitution $X_j = 0$ is not $R$-linear.

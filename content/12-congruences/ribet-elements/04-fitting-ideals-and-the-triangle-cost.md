@@ -42,7 +42,7 @@ Each index $j \in J$ carries two pairs of group elements, $\tau_j, \tau'_j$ and 
 
 Lean: `New.Selmer.HasTriangleCost` (New/Congruences/FirstOrder/FittingBlock.lean).
 
-Here $Z_1[C]$ is the $C$-torsion of $Z_1$. The triangle says that, after the earlier ties hold, the next tie holds up to $C$. In [the bound for denominators](/chapter/denominator-bound/), a triangle of primes with prescribed Frobenius elements gives this property.
+Here $Z_1[C]$ is the $C$-torsion of $Z_1$. The triangle says that, after the earlier ties hold, the next tie holds up to $C$. In [Tied traces and even classes](/chapter/tied-traces/), a triangle of primes with prescribed Frobenius elements gives this property.
 
 ### Three stages
 
@@ -105,8 +105,6 @@ Lean: `New.Selmer.coeff_mul_prod_of_mem_colon` (New/Congruences/FirstOrder/Fitti
 *Proof.* Expand the product in the order of the types:
 $$\prod_e d_e = \prod_e (d_e + \zeta_e) - \sum_e \zeta_e \prod_{k < e} (d_k + \zeta_k) \prod_{k > e} d_k .$$
 For each $e$, $\prod_{k < e}(d_k + \zeta_k) = \prod_{k<e} \Gamma_k X_{=k}$ is a multiple of $X_{<e}$. So the error term lies in $\mathfrak{n}$, and so does $F$ times it. Its coefficients at divisors of $\prod_j X_j$ vanish. The main term is $F \prod_e \Gamma_e \cdot \prod_j X_j$. Its coefficient at a divisor $X^i$ of $\prod_j X_j$ is the constant term of $F \prod_e \Gamma_e$ if $X^i = \prod_j X_j$, and $0$ otherwise. $\square$
-
-The lemma is the reason why only the coefficient of $\prod_j X_j$ is read. The error terms $\zeta_e$ come from earlier types, and they are invisible in that coefficient.
 
 **Lemma.** Let $f : M \to R^\iota$ be linear and $N \subseteq M$. Every $d \in \operatorname{Fitt}(f(N))$ is a finite sum $\sum_i w_i \det B_i$, where each row of $B_i$ is $f$ of an element of $N$.
 
