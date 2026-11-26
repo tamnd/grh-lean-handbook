@@ -14,6 +14,7 @@ decls:
   - New.Selmer.IsMainSummandWeights.le_two_mul_natAbs
   - New.Selmer.hasFewLowJumps_tateDual_of_isMainSummandWeights
   - New.Selmer.subset_Icc_of_jump_eq_single
+  - New.Selmer.sum_count_neg_sub_one_le
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
@@ -109,9 +110,15 @@ Lean: `New.Selmer.IsMainSummandWeights.le_two_mul_natAbs` (New/Congruences/Local
 
 Lean: `New.Selmer.hasFewLowJumps_tateDual_of_isMainSummandWeights` (New/Congruences/LocalLoss/CrystallineDefect.lean).
 
-*Proof.* A jump $u$ of $L^\vee(1)$ means that $-u - 1$ is a jump of $L$, with the same multiplicity. Condition 1: a negative member of $U(\gamma)$ is in $J$, so $2|u| \geq h_2$ by the previous lemma. A negative member $u$ of $U'(\gamma)$ has $-u - 1 \geq 0$ a jump of $L$, so $2(-u-1) \geq h_2$ and $2u \leq -h_2$. Condition 2: by a reindexing,
-$$\sum_{u \in [-h_2^2 - 1,\, h_2^2 + 1]} \#_J(-u - 1) \leq \#\{u \in J : |u| \leq 2h_2^2\},$$
-proved by induction on $J$ with $2 \leq h_2^2$. The main summand weights bound the right side by $rm/k$. $\square$
+*Proof.* A jump $u$ of $L^\vee(1)$ means that $-u - 1$ is a jump of $L$, with the same multiplicity. Condition 1: a negative member of $U(\gamma)$ is in $J$, so $2|u| \geq h_2$ by the previous lemma. A negative member $u$ of $U'(\gamma)$ has $-u - 1 \geq 0$ a jump of $L$, so $2(-u-1) \geq h_2$ and $2u \leq -h_2$. Condition 2: the sum of the jumps of $L^\vee(1)$ over $[-h_2^2 - 1, h_2^2 + 1]$ is the left side of the next lemma, with $h = h_2$ and $J = J(\sigma(\gamma))$. The main summand weights bound its right side by $rm/k$. $\square$
+
+**Lemma (Reindexing low jumps).** Let $2 \leq h^2$ and let $J$ be a multiset of integers. Then
+$$\sum_{u \in [-h^2 - 1,\, h^2 + 1]} \#_J(-u - 1) \leq \#\{u \in J : |u| \leq 2h^2\},$$
+with multiplicities.
+
+Lean: `New.Selmer.sum_count_neg_sub_one_le` (New/Congruences/LocalLoss/CrystallineDefect.lean).
+
+*Proof.* Induction on $J$. Adding a member $a$ adds $1$ to the left side exactly when $u = -a - 1$ lies in $[-h^2 - 1, h^2 + 1]$. Then $|a| \leq h^2 + 2 \leq 2h^2$, so it adds $1$ to the right side too. $\square$
 
 **Lemma (The dual of a character).** If $L$ is potentially crystalline with the single jump $c < t$ at every embedding, then every jump of $L^\vee(1)$ lies in $[-h_2^2 - 1, 0]$.
 

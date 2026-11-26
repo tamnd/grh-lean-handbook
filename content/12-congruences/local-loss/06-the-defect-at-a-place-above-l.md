@@ -10,7 +10,6 @@ decls:
   - New.Selmer.IsSummandClass
   - New.Selmer.normLength_dualDefect_le_of_isSummandClass
   - New.Selmer.summand_defect_le_at_place
-  - New.Selmer.sum_count_neg_sub_one_le
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
@@ -137,10 +136,9 @@ This is the result that [main summands](/chapter/main-summands/) cites: the defe
 
 The two comparisons show which term of $\mathrm{defectBound}(\ell)$ pays for which case.
 
-| Case | Exponent | Paid by |
+| Case | Bound before the comparison | Paid by |
 |---|---|---|
-| tame, $\ell = p_n$ | polynomial in $r$ | $b\,v_\ell(M)$ |
-| crystalline, small $\ell \leq kt$ | about $\lambda m/(kt)$ per rank | $\lambda$ |
-| crystalline, large $\ell$ | $\mu \lambda$ and $\lambda$ per rank | $\lambda$ |
+| tame, $\ell = p_n$ | $3r^2((r+t)r+1)^2 + 150(h_2^2 + 4t + 2)$ | $b\,v_\ell(M)$ |
+| crystalline | $10^5(\rho \lfloor 2\lambda/(kt) \rfloor m + \mu\lambda)$ in total | $\lambda$ |
 
 For the generic prime, $\ell \nmid M$ and $\ell > 2b + 30h_2^3$, all terms are $0$. The sum of $\mathrm{defectBound}(\ell)$ over all primes is then a finite sum, which the [denominator budget](/chapter/regular-families-plan/#the-denominator-budget) controls.
