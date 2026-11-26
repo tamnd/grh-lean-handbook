@@ -35,7 +35,7 @@ A Bessel system for a shape $\mathfrak s$, a real $b$ and a natural number $f$ i
 6. $8r \leq b$, where $r = 2\varrho + k + 1$ is the size of the matrices of $G_1$.
 7. $W^\flat$ has local bounds: a family of forms $J_i(p, q)$, one for each floor, that satisfies the hypotheses of the one sided sieve of [the chapter on the main term](/chapter/main-term/).
 
-From these fields the chapter derives two more results that its users need. The coordinates of $W$ are orthonormal in $L^2(\mathsf U\backslash G_1)$ ([Lemma](/decl/New.BesselSystem.orthonormal/)), which [the chapter on moments](/chapter/moments/) uses for the identity term of the second moment. And the pairing of $W^\flat$ with its translate by $\gamma$ is bounded on the open cell by an explicit power of the Gram discriminant of $\gamma$ ([Theorem](/decl/New.BesselSystem.enorm_integral_pairKernel_cut_le/)), which [the chapter on the remaining terms](/chapter/remaining-terms/) uses.
+From these fields the chapter derives two more results that its users need. The coordinates of $W$ are orthonormal in $L^2(\mathsf U\backslash G_1)$ ([Lemma](/decl/New.BesselSystem.orthonormal/)), which [the chapter on Poincaré series](/chapter/poincare-series/) uses for the term $\gamma = 1$ of an amplitude sum (`New.Filling.amplitudeSum_besselS_one_eq_ite`, New/Spanning/Unfolding/AmplitudeSums.lean). And the pairing of $W^\flat$ with its translate by $\gamma$ is bounded on the open cell by an explicit power of the Gram discriminant of $\gamma$ ([Theorem](/decl/New.BesselSystem.enorm_integral_pairKernel_cut_le/)), which [the chapter on the remaining terms](/chapter/remaining-terms/) uses.
 
 ### The plan of the construction
 

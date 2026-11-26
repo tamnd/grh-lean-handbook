@@ -113,7 +113,7 @@ So $\chi_R(t) = 1$ for $t \leq R/2$, $\chi_R(t) = 0$ for $t \geq R$, and $\chi_R
 3. $F^\flat(y) \neq F(y)$ implies $\ell(y) > b^{6n+2}/2$.
 4. If $F$ is a Bessel function for $\rho$, then so is $F^\flat$.
 
-Lean: `New.enorm_besselCut_le`, `New.enorm_besselCut_sub_le`, `New.inCut_of_besselCut_ne_zero`, `New.lt_besselLength_of_besselCut_ne`, `New.IsBesselFunction.besselCut` (New/Spanning/Bessel/CutTailBound.lean).
+Lean: `New.enorm_besselCut_le`, `New.enorm_besselCut_sub_le`, `New.inCut_of_besselCut_ne_zero`, `New.lt_besselLength_of_besselCut_ne`, `New.IsBesselFunction.smul_of_invariant`, `New.IsBesselFunction.besselCut` (New/Spanning/Bessel/CutTailBound.lean).
 
 *Proof.* (1) $\chi$ takes values in $[0, 1]$. (2) and (3) are the two values of $\chi$ outside the middle range. (4) A continuous bounded real function that is left invariant under $S$ multiplies a Bessel function into a Bessel function (`New.IsBesselFunction.smul_of_invariant`), and $\ell$ is left invariant under $S$. $\square$
 
