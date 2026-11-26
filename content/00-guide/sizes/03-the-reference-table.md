@@ -158,6 +158,9 @@ Section 5 explains the error terms. The jet size is $s_\infty(j) = \log j! + j \
 
 On the scale of $x$, the ranks and the field have the following degrees:
 
-$$\deg m = \tfrac12, \quad \deg r = \deg k = \deg t = 5, \quad \deg n_m = \tfrac{11}{2}, \quad \deg f = 11, \quad \deg \mathrm{rd}_E \in [10, 12], \quad \deg \Delta = 40.$$
+$$\begin{gathered}
+\deg m = \tfrac12, \quad \deg r = \deg k = \deg t = 5, \quad \deg n_m = \tfrac{11}{2}, \\
+\deg f = 11, \quad \deg \mathrm{rd}_E \in [10, 12], \quad \deg \Delta = 40.
+\end{gathered}$$
 
 The degree of $f$ is $11$ up to the factor $e^{C_P}(\log b)^{1/5}$, and $(\log b)^{1/5} \leq x^{1/500}$ by (S2). The number $\Omega$ has degree in $[-13, 0]$. All weights, primes and levels have a degree in $b$: $\kappa$ has degree $1$ up to a power of $x$ or $x_1$, the primes $p_i$ have degree in $[10, 11]$, $M$ has degree in $[20, 22]$, and $N$ has degree in $[m, 30m]$. So $N$ is the only quantity that is large on the scale of $b$: it is a power of $b$ whose exponent is about $\sqrt{x}$.
