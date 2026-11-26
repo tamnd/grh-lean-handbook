@@ -33,7 +33,7 @@ Lean: `New.IsShort` (New/UpperBound/Size/ShortColumns.lean).
 
 Lean: `New.Data.span_isShort_ramifiedSourceForms_eq_top` (New/UpperBound/Size/ShortColumns.lean).
 
-*Proof.* Put $Z = \exp(f a \log^3 b)/4^f$. The source forms that are $Z$-short span all source forms. This is a lemma of [the archimedean size](/chapter/archimedean-size/), proved from short columns. If $\varphi$ is $B$-short and $k$ is a finite adelic point with integral entries, then $\varphi$ minus its right translate by $k$ is $4B$-short. The operator $\prod_w(1 - z_w)$ has $f$ factors of this kind, so it sends $Z$-short forms to $4^f Z$-short forms. Its image is $\mathrm{src}$ (Section 1). So the images of the $Z$-short forms span $\mathrm{src}$, and they are $\exp(f a\log^3 b)$-short. $\square$
+*Proof.* Put $Z = \exp(f a \log^3 b)/4^f$. The source forms that are $Z$-short span all source forms. This is a lemma of [short columns and the gain](/chapter/short-columns-gain/). If $\varphi$ is $B$-short and $k$ is a finite adelic point with integral entries, then $\varphi$ minus its right translate by $k$ is $4B$-short. The operator $\prod_w(1 - z_w)$ has $f$ factors of this kind, so it sends $Z$-short forms to $4^f Z$-short forms. Its image is $\mathrm{src}$ (Section 1). So the images of the $Z$-short forms span $\mathrm{src}$, and they are $\exp(f a\log^3 b)$-short. $\square$
 
 ### The size of the good part
 

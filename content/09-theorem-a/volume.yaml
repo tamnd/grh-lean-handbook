@@ -5,7 +5,7 @@ title: 'Theorem A: short forms'
 summary: >-
   The upper bound: the seesaw identity, the archimedean size of the composite lift, and the divisibility of the forms prime by prime.
 words: 45000
-source: New/UpperBound, New/Derivatives (without Sharpness)
+source: New/UpperBound (without Kernels/DefiniteKernelSize), New/Derivatives (without Sharpness, except Sharpness/NearPairs)
 chapters:
   - id: theorem-a-plan
     title: Theorem A and its plan
@@ -18,61 +18,111 @@ chapters:
       Labels, weights, grids, lift laws at N, chains, columns, rows, the Poincaré map.
     source:
       - New/UpperBound/Objects
-  - id: theta-kernels-gauges
-    title: Theta kernels and gauges
-    plan: >-
-      UpperBound/Kernels, without DefiniteKernelSize.
-    source:
-      - New/UpperBound/Kernels/JetConjugatesAndBounds
-      - New/UpperBound/Kernels/ThetaLiftGauge
   - id: seesaw-identity-1
-    title: The seesaw identity, part 1
+    title: 'The seesaw identity, part 1: unfolding'
     plan: >-
-      Admissible combinations, neighbour lattices, unfolding.
+      Admissible combinations, standard lines, glued levels, edge pairs, frequencies; the unfolding in stages, the integral as a coset sum, the cut.
     source:
-      - New/UpperBound/Seesaw/Admissible
-      - New/UpperBound/Seesaw/Neighbour
-      - New/UpperBound/Seesaw/UnfoldingStages
+      - New/UpperBound/Seesaw/AdmissibleCombinations
+      - New/UpperBound/Seesaw/StandardLines
+      - New/UpperBound/Seesaw/Sandwich
+      - New/UpperBound/Seesaw/GluedLevel
+      - New/UpperBound/Seesaw/EdgePairEvaluation
+      - New/UpperBound/Seesaw/Frequency
+      - New/UpperBound/Seesaw/LevelIdeles
       - New/UpperBound/Seesaw/IntegralAsCosetSum
-  - id: seesaw-identity-2
-    title: The seesaw identity, part 2
-    plan: >-
-      Cuts and the assembly; the constant `seesawConst` is a unit of its type, but the factor c₀C/d may be 0, and then both sides of the identity are 0; nonvanishing comes back on the determinant side.
-    research: c §4 q1
-    source:
-      - New/UpperBound/Seesaw
-  - id: archimedean-size
-    title: The archimedean size of the composite lift
-    source:
-      - New/UpperBound/Size
+      - New/UpperBound/Seesaw/UnfoldingStages
+      - New/UpperBound/Seesaw/Cut
   - id: field-at-primes
     title: The field E at the primes
     plan: >-
       Splitting, the different, Weil data, chosen places.
     source:
       - New/Derivatives/Field
-  - id: cm-formal-group
-    title: The CM curve and its formal group
-    plan: >-
-      Derivatives of theta functions, the Frobenius congruence, the exponent theorem.
-    source:
-      - New/Derivatives/FormalGroup
-  - id: normal-forms
-    title: Normal forms and the count
-    source:
-      - New/Derivatives/Divisibility
   - id: integral-vacuum
     title: The integral vacuum and tight frames
+    plan: >-
+      Tight frames, the integral vacuum, short vectors.
     source:
-      - New/Derivatives/Vacuum
+      - New/Derivatives/Vacuum/TightFrames
+      - New/Derivatives/Vacuum/IntegralVacuum
+      - New/Derivatives/Vacuum/ShortVectors
+  - id: cm-formal-group
+    title: The CM curve, its formal group and the normal form
+    plan: >-
+      The Frobenius congruence, the exponent theorem, resolutions of the identity; couplings and the normal form of theta products.
+    source:
+      - New/Derivatives/FormalGroup
+      - New/Derivatives/Divisibility/NormalForm
+  - id: normal-forms
+    title: The count and the divisibility of standard data
+    plan: >-
+      Null frames and the count; the scale, jet integrality, standard data and their divisibility.
+    source:
+      - New/Derivatives/Divisibility/NullFrames
+      - New/Derivatives/Divisibility/Count
+      - New/Derivatives/Vacuum/Scale
+      - New/Derivatives/Vacuum/JetIntegrality
+      - New/Derivatives/Vacuum/StandardDataProducts
+      - New/Derivatives/Vacuum/Divisibility
+  - id: theta-kernels-gauges
+    title: Theta kernels and gauges
+    plan: >-
+      UpperBound/Kernels, without DefiniteKernelSize (Volume 11).
+    source:
+      - New/UpperBound/Kernels/JetConjugatesAndBounds
+      - New/UpperBound/Kernels/ThetaLiftGauge
+  - id: short-columns-gain
+    title: Short columns and the gain
+    plan: >-
+      Short forms span; the gain; near pairs; the divisibility bound is at least the gain.
+    source:
+      - New/UpperBound/Size/ShortColumns
+      - New/Derivatives/Sharpness/NearPairs
+      - New/UpperBound/Divisibility/JetExponent
+  - id: chain-valuation
+    title: Marked primes and the valuation of a chain
+    plan: >-
+      Full marks, scaled Hecke operators, gauge bounds for chains, chain data.
+    source:
+      - New/UpperBound/Divisibility/MarkedPrimes
+      - New/UpperBound/Divisibility/ChainValuation
+      - New/UpperBound/Divisibility/ChainDatumExpansion
+  - id: seesaw-identity-2
+    title: 'The seesaw identity, part 2: assembly'
+    plan: >-
+      Neighbour lattices and vacua, admissible evaluation, good data, the assembly; the constant `seesawConst` is a unit of its type, but the factor c₀C/d may be 0, and then both sides of the identity are 0; nonvanishing comes back on the determinant side.
+    research: c §4 q1
+    source:
+      - New/UpperBound/Seesaw/NeighbourLattice
+      - New/UpperBound/Seesaw/NeighbourVacuum
+      - New/UpperBound/Seesaw/AdmissibleEvaluation
+      - New/UpperBound/Seesaw/GoodDatum
+      - New/UpperBound/Seesaw/SeesawIdentity
+  - id: archimedean-size
+    title: The archimedean size of the composite lift
+    plan: >-
+      The class count, the estimates, the size of the composite lift.
+    source:
+      - New/UpperBound/Size/ClassCount
+      - New/UpperBound/Size/Estimates
+      - New/UpperBound/Size/ArchimedeanSize
   - id: elementary-divisors
     title: Elementary divisors of a Hecke operator
     source:
       - New/UpperBound/ElementaryDivisors
   - id: divisibility
     title: Divisibility prime by prime
+    plan: >-
+      The level N, Hecke edges, the mark operator, nonsplit primes, local divisibility.
     source:
-      - New/UpperBound/Divisibility
+      - New/UpperBound/Divisibility/SetupAtLevel
+      - New/UpperBound/Divisibility/ColengthAtLevel
+      - New/UpperBound/Divisibility/ValuationAtLevel
+      - New/UpperBound/Divisibility/ValuationAtNonSplitPrimes
+      - New/UpperBound/Divisibility/HeckeEdges
+      - New/UpperBound/Divisibility/MarkOperator
+      - New/UpperBound/Divisibility/LocalDivisibility
   - id: proof-of-theorem-a
     title: The proof of Theorem A
     plan: >-

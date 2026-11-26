@@ -5,7 +5,7 @@ title: 'Theorem C: long forms'
 summary: >-
   The height argument: twists and regular families, theta lifts and their norms, the exchange identity, the chain determinant, Hecke values, false lifts and the comparison operator.
 words: 60000
-source: New/Determinant, New/OneLift, New/Derivatives/Sharpness
+source: New/Determinant, New/OneLift, New/Derivatives/Sharpness (without NearPairs), New/UpperBound/Kernels/DefiniteKernelSize
 chapters:
   - id: theorem-c-plan
     title: Theorem C and the height argument
@@ -67,8 +67,14 @@ chapters:
       - New/OneLift/HeckeValues
   - id: sharpness
     title: The divisibility is sharp
+    plan: >-
+      Sharpness/NearPairs is in Volume 9 (Theorem A uses it).
     source:
-      - New/Derivatives/Sharpness
+      - New/Derivatives/Sharpness/OneCurve
+      - New/Derivatives/Sharpness/LeastValuation
+      - New/Derivatives/Sharpness/Couplings
+      - New/Derivatives/Sharpness/Cases
+      - New/Derivatives/Sharpness/BoundAttained
   - id: false-lifts
     title: False lifts
     source:
