@@ -2,7 +2,7 @@
 # scripts/release.sh VERSION NOTES_FILE
 #
 # Make the release vVERSION of The GRH Lean Handbook (spec 09.5):
-#   1. write "version VERSION" in EDITION, and keep the pin "grh <commit>" (a new pin is a pull request of its own);
+#   1. write "version VERSION" in EDITION, rebuild the index of Lean names from GHB_SOURCE, and keep the pin "grh <commit>" (a new pin is a pull request of its own);
 #   2. move the notes under "## Unreleased" in CHANGELOG.md, with the notes of NOTES_FILE, to "## vVERSION";
 #   3. open the release pull request and merge it with gh pr merge --admin --squash --delete-branch;
 #   4. tag the merge commit vVERSION and push the tag. The tag starts the build of the books (build.yml).
@@ -31,6 +31,15 @@ cd "$WT"
 PIN=$(awk '/^grh /{print $2}' EDITION)
 [[ -n $PIN ]] || { echo "EDITION has no grh pin" >&2; exit 1; }
 printf 'version %s\ngrh %s\n' "$VER" "$PIN" > EDITION
+
+# Rebuild the generated sections of the index of Lean names (Volume 0, chapter 10; spec 10.4).
+SRC=${GHB_SOURCE:-$HOME/ghb-work/grh-lean}
+if [[ -d $SRC/grh/src && -f scripts/lean_index.py ]]; then
+  python3 scripts/lean_index.py --source "$SRC"
+  git add content/00-guide/lean-index
+else
+  echo "warning: no source at $SRC; the index of Lean names is not rebuilt" >&2
+fi
 
 python3 - "$VER" "$NOTES" <<'PY'
 import sys
