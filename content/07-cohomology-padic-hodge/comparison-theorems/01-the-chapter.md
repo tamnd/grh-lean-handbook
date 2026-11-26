@@ -58,7 +58,7 @@ The source claims that these weaker statements are enough for the argument. Lean
 
 The proofs follow the perfectoid method of Scholze. The source replaces each geometric object by an algebraic one.
 
-*Test rings.* A cell is a complete valuation ring, absolutely integrally closed, of mixed characteristic. A $p$-adic test is a finite product of cells with a map from $\mathcal{O}_C$. Its tilt is a perfect ring in characteristic $p$. The functor from $p$-adic tests to perfect $\mathcal{O}^\flat$-algebras is fully faithful, and Fontaine's map $\theta$ recovers the test from the Witt vectors of its tilt. Section 2 proves these facts.
+*Test rings.* A cell is a complete valuation ring, absolutely integrally closed, of mixed characteristic. A $p$-adic test is a nonempty product of cells with a map from $\mathcal{O}_C$. The product can be infinite. Its tilt is a perfect ring in characteristic $p$. The functor from $p$-adic tests to perfect $\mathcal{O}^\flat$-algebras is fully faithful, and Fontaine's map $\theta$ recovers the test from the Witt vectors of its tilt. Section 2 proves these facts.
 
 *Almost descent.* Points of a perfect $\mathcal{O}^\flat$-algebra in tilts of tests satisfy v-descent for the almost coefficients. Čech descent then gives acyclicity. The proof reduces to a valuation ring over which the tilt of a test is faithfully flat. Section 3 gives the proof and the adic step that passes from coefficients mod $p$ to $p$-adic coefficients.
 
