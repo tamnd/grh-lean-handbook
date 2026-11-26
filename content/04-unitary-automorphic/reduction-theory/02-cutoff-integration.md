@@ -50,7 +50,7 @@ The quotient measure is a measure on $G$, not on $\Gamma \backslash G$. An integ
 
 Lean: `New.Space.quotMeasure` (Lib/Adelic/Reduction/FiniteVolume.lean).
 
-**Remark (Formalization).** The chosen cutoff $\beta_0$ is `Classical.epsilon` of the property of being a cutoff. If the action has a cutoff, $\beta_0$ is one. If not, $\beta_0$ is an unspecified function and the orbit measure has no meaning. The results below assume that a cutoff exists. Even then, the measure $\beta_0 \mu$ on $X$ depends on the choice: its values on sets that are not invariant are not canonical. Only the integrals and the distributions of invariant functions are canonical, by the theorem on independence below. Every statement of the source that uses the quotient measure integrates an invariant function, or states the result as an identity of distributions. Finding F-047 of the plan records this choice.
+**Remark (Formalization).** The chosen cutoff $\beta_0$ is `Classical.epsilon` of the property of being a cutoff. If no cutoff exists, $\beta_0$ is an unspecified function, and the results below assume that one exists. Even then, $\beta_0 \mu$ depends on the choice on sets that are not invariant. Only the integrals and distributions of invariant functions are canonical, by the theorem on independence below, and these are all that the source uses. Finding F-047 of the plan records this choice.
 
 ### Unfolding
 
