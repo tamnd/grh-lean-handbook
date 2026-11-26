@@ -118,7 +118,7 @@ Lean: `New.Floors.IntegralPlace.IsLargeLatticeData.unipotentMass_mul_inner_besse
 
 If $uy \notin Z$, then $u$ lies in no $S_c$, since $u y c^{-1} \in K(g) \le Z$ and $c \in Z$ would give $uy \in Z$; both sides are $0$. If $uy \in Z$, fact (2) gives exactly one coset $d$ with $u \in S_d$. For this $d$, the lemma on independence gives $W_Z(y)_d = \chi_g(yd^{-1}) = \psi(g^{-1}\sigma(u^{-1}))$, since $u\cdot yd^{-1} \in K(g)$. By laws (3) and (2),
 
-$$W_Z(yx)_d = \chi_g(yxd^{-1}) = \chi_g\bigl(yx(uy)^{-1}\cdot u y d^{-1}\bigr) = \chi_g\bigl(u^{-1}\cdot uyx(uy)^{-1}\bigr) = \psi\bigl(g^{-1}\sigma(u^{-1})\bigr)\chi_g\bigl(uyx(uy)^{-1}\bigr).$$
+$$\begin{aligned}W_Z(yx)_d &= \chi_g(yxd^{-1}) = \chi_g\bigl(yx(uy)^{-1}\cdot u y d^{-1}\bigr) = \chi_g\bigl(u^{-1}\cdot uyx(uy)^{-1}\bigr)\\ &= \psi\bigl(g^{-1}\sigma(u^{-1})\bigr)\chi_g\bigl(uyx(uy)^{-1}\bigr).\end{aligned}$$
 
 The two characters cancel in $a_d$, because $|\psi| = 1$. This proves the claim.
 
