@@ -89,6 +89,6 @@ def IsBadPrime (a : ZMod N) (β H : ℝ) (d : ℕ) : Prop :=
 
 The first clause casts $d$ to `ZMod N` and compares it with $a$. This is the congruence $d \equiv a \pmod N$. The count of bad primes up to $X$ is then `#{d ∈ Ioc 0 X | IsBadPrime a (1 / 2 + 9 * δ) H d}`, the number of $d \in \{1, \dots, X\}$ that are bad for $(a, 1/2 + 9\delta, H)$. To count, Lean must decide the property for each $d$. The property involves an existence statement over characters and zeros, and Lean has no algorithm for it. The source opens the scope `Classical` for this statement (`open scoped Classical in`), which makes every proposition decidable by the axiom of choice. This changes nothing for a reader: the count is the usual count. Section 5 reads the full statement, with its symbol $O$.
 
-### What to take from this section
+### What to take from the coercions and sums
 
 Read the type of each number. Find each cast. A cast of a natural number difference, or of a quotient in `ℕ`, is a place to stop and check. A finite sum is the usual sum over a finite set. Its set is often an interval `Icc 1 ⌊y⌋₊`, which is empty for $y < 1$. A function of a real variable is defined on all of $\mathbb{R}$, even where the mathematics needs only large values, and a reader must check that the statements use it only there.

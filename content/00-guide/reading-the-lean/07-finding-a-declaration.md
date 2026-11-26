@@ -67,6 +67,6 @@ A `Lean:` line in this book has the form ``Lean: `Name` (path).``. The path is r
 
 To check that Lean accepts the proof, the README gives the commands: `lake exe cache get` and `lake build` with the pinned Lean and Mathlib, and `lake env lean scripts/PrintAxioms.lean` to list the axioms. The README says that the first of its five results is `'riemannHypothesis' depends on axioms: [propext, Classical.choice, Quot.sound]`. These are the three standard axioms of Mathlib. The README also reports that the independent checkers nanoda, con-leche and con-ron accept an export of the five theorems, and that the tool Comparator accepts the proofs against `Challenge.lean`. This book does not repeat these checks. It says "Lean accepts, if the reported checks hold".
 
-### What to take from this section
+### What to take from the search
 
 A full name gives the file by a search for its last component. A short name inside a statement is resolved by the type of the object before the dot, and by the `namespace`, `variable` and `open` lines of the file. A proof is read by its comments, its `have` steps and its `calc` chains. The trust in the theorem rests on `Statements.lean`, the five statements of `Main.lean` and the axioms, not on the rest of the source.

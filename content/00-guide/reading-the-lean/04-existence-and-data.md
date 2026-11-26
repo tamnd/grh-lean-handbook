@@ -161,6 +161,6 @@ A term `P : Parameters` holds the five fields, and `P.q₀` is the first. The da
 
 A class is a structure that instance search fills in (Section 6). Some data of the source are classes, and so a statement does not name them. The class `Fact d.Prime` holds a proof that $d$ is prime. The classes `ThePrime p`, `PadicIso ℓ`, `CMType E` and `WeilData E` fix a prime, an isomorphism $\mathbb{C} \simeq \overline{\mathbb{Q}}_\ell$, a CM type and the data of the Weil representation. A statement with such an argument speaks about the instance in scope. The source also makes instances from facts: after the structure above it proves `instance : NeZero P.q₀ := ⟨by grind [zero_dvd_iff]⟩`, so that every statement about `P.q₀` gets $q_0 \neq 0$ without a hypothesis.
 
-### What to take from this section
+### What to take from choice and data
 
 An `∃` in a hypothesis is used by `obtain` inside a proof. An object defined by `choose` or `epsilon` has only the properties of the lemmas next to it, and for `epsilon` only under the hypothesis of existence. A unit is a nonzero number by its type. A structure carries its numbers and its proofs together, and a class is a structure that the statement does not name.

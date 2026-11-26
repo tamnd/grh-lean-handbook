@@ -124,6 +124,6 @@ The line `omit [NeZero N] in` removes the hypothesis $N \neq 0$ from this lemma 
 
 *Proof.* Suppose that the factor at a prime $p \mid M$ vanishes. Then $\chi(p) = p^{s}$. For a character with values in $\mathbb{C}$, $\overline{\chi(p)} = \chi(p)^{-1}$. Take norms: $p^{\operatorname{Re} s} = |\chi(p)| = |\chi(p)^{-1}| = p^{-\operatorname{Re} s}$. Since $p \geq 2$, this gives $\operatorname{Re} s = -\operatorname{Re} s$, so $\operatorname{Re} s = 0$, against the hypothesis. $\square$
 
-### What to take from this section
+### What to take from the statements
 
 A statement of the source is a type. Its arguments are the objects and the proofs of the hypotheses, in the order of the binders. Some arguments are hidden: implicit arguments in braces, instance arguments in square brackets, and section variables from a `variable` line, with `include` and `omit` lines that change the list. A reader who checks a sentence of this book against the Lean must collect all of them. Section 7 shows where to find them.

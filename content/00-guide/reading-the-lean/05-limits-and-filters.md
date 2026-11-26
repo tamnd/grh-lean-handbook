@@ -99,6 +99,6 @@ In [fields, places and twists](/chapter/fields-places-twists/) this is [Theorem]
 
 The proof of the last theorem starts with a step that combines Section 4 and this section. It proves, for each character $\xi$ modulo $N$, the existence of a primitive character that induces it, by [Lemma](/decl/New.exists_isPrimitive_changeLevel_eq/) of Section 4. Then it writes `choose M hMN ψ hM hψ h_induced using h_exists`. The tactic `choose` turns the statement $\forall \xi\, \exists M\, \exists \psi \dots$ into functions $\xi \mapsto M(\xi)$ and $\xi \mapsto \psi(\xi)$ with their properties. This is the axiom of choice in a proof. It is allowed because the goal is a proposition, and it adds no datum to any statement.
 
-### What to take from this section
+### What to take from the filters
 
 A statement with `∀ᶠ y in atTop` is a statement for all large $y$, with no explicit threshold. A statement with `Tendsto` is a limit, and the filter says from where: `𝓝[≠] ρ` ignores the point $\rho$ and its junk value. A statement with `=O[atTop]` has an implicit constant that may depend on every argument of the statement.

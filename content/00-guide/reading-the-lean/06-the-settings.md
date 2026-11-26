@@ -127,6 +127,6 @@ So in `New/Reduction/MainInequality.lean` a line such as `have h_share : 4 / D.b
 
 **Remark (Formalization).** For a reader of a statement, `HasLogBound` is a proof device. A statement that the source proves in this way is the plain inequality in its type, and a reader can read it so. Two points need care. First, the method compares exponents, so it proves only inequalities with room to spare, of the kind $A \leq B$ where $\log B - \log A$ is large compared with the errors in the exponents. An inequality that is tight cannot be proved this way. Second, in a lemma with an instance argument such as `[D.HasLogUpper F l]`, the exponent $l$ is a variable of the lemma. The lemma holds for every $l$ with the bound, and at each use instance search finds one $l$. A reader who wants to know which bound was used must find the instances that search applied.
 
-### What to take from this section
+### What to take from the settings
 
 The settings of `Lib/Speed.lean`, the options of the build, `seal`, `@[irreducible]` and the transparency option change how Lean finds proofs. They do not change a statement that is written in full. Instances can change a statement, but only for a class that holds data and has more than one element. Default arguments `(h : P := by tac)` are hypotheses, proved by a tactic when the caller omits them, and the statement still has them.
