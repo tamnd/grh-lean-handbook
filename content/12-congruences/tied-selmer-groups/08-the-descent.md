@@ -32,7 +32,7 @@ Start from the first prime alone. While some new auxiliary prime $P$ has a class
 
 Background used: if $f$ identifies $O/a$ with the $a$-torsion of $B$, the Selmer module with values in $O/a$ has the length of the $a$-torsion of the one with values in $B$ (`New.Selmer.length_torsionBy_selmerModule`, file DivisibleSelmerModules); a cocycle in $\mathrm{Sel}(\rho, S, L)$ that vanishes on inertia above $S \setminus S'$ lies in $\mathrm{Sel}(\rho, S', K)$ for $K \subseteq L$ (`New.Selmer.mem_selmerModule_of_eq_zero_on_inertiaAbove`, file TameSelmerCocycles). Both files belong to [Selmer groups and the Greenberg-Wiles formula](/chapter/local-duality/#selmer-groups-and-the-greenberg-wiles-formula).
 
-### The textbook form
+### The literature
 
 Lowering Selmer groups modulo $\ell^n$ by local conditions at Chebotarev primes is known; the source cites Mazur and Rubin, Diophantine stability (2018), and Fakhruddin, Khare and Patrikis, Relative deformation theory, relative Selmer groups, and lifting irreducible Galois representations (2021). The source's form is below.
 

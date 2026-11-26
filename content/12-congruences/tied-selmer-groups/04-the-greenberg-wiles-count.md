@@ -142,8 +142,8 @@ Lean: `New.Selmer.SelmerDatum.length_add_length_tiedSelmer_le` (New/Congruences/
 
 *Proof.* Let $\mathrm{ev}(c) = c(\gamma_*)$ on $Z(\emptyset)$. It is onto $W_a$: every $y = (\zeta - 1) b$ is the value at $\gamma_*$ of the coboundary of $b$, which lies in $Z(\emptyset)$. Each $z \in \mathrm{Sel}(J)$ lies in $Z(\emptyset)$, since it is unramified at $P_0$ and $\bar P_0$, and it lies in the kernel of $\mathrm{ev}$. So $\mathrm{len}\, Z(\emptyset) = \mathrm{len}\, W_a + \mathrm{len}\, \ker \mathrm{ev} \geq \mathrm{len}\, W_a + \mathrm{len}\, \mathrm{Sel}(J)$. $\square$
 
-**Lemma (A case of the Greenberg-Wiles inequality).** For some finite set $R$,
-$$\mathrm{len}\, Z(\emptyset) + (\#S' + r_\infty)\, \mathrm{len}\, W_a \leq \mathrm{len}\, \mathrm{Sel}^*(J) + \mathrm{len}\, W_a + \sum_{v \in S'} \mathrm{len}\, \mathrm{Loc}(\rho, T.\mathrm{localRelations} \cup \mathrm{tie}(J, x, i), A_v, O/a).$$
+**Lemma (A case of the Greenberg-Wiles inequality).** Let $\Lambda_v = \mathrm{len}\, \mathrm{Loc}(\rho, T.\mathrm{localRelations} \cup \mathrm{tie}(J, x, i), A_v, O/a)$. For some finite $R$,
+$$\mathrm{len}\, Z(\emptyset) + (\#S' + r_\infty)\, \mathrm{len}\, W_a \leq \mathrm{len}\, \mathrm{Sel}^*(J) + \mathrm{len}\, W_a + \sum_{v \in S'} \Lambda_v.$$
 
 Lean: `New.Selmer.SelmerDatum.exists_length_cocycles_le` (New/Congruences/Selmer/Count.lean).
 

@@ -42,7 +42,7 @@ Background used:
 - The kernel of a matrix $\bar A$ over a discrete valuation ring on $(O/\mathrm{ev}(a))^k$ has as length the least valuation of an image of a maximal minor of $(A, a)$ (`New.Selmer.isLeast_length_matrixKernel`, [lengths and determinants](/chapter/fitting-ideals/#lengths-and-determinants)).
 - Over a number field, the continuous cocycles with values in a finite discrete module that are unramified outside a finite set form a finite set (`New.finite_cocycles_unramified_outside`, [Selmer groups and the Greenberg-Wiles formula](/chapter/local-duality/#selmer-groups-and-the-greenberg-wiles-formula)).
 
-### The textbook form
+### Textbook and source
 
 In the textbook, $H^1$ of a finite quotient is computed by a finite complex of free modules, and the cohomology at a point $x : \Lambda \to O'$ is that of the specialised complex. The source does not use complexes. It writes the cocycle rule, the unramified conditions and the local relations as one linear system on a finite quotient of $G$, and reads the length from its maximal minors.
 
