@@ -25,9 +25,9 @@ and the *defect bound* is $\mathrm{defectBound}(\ell) = 10^6 \frac{m}{k}\big(b\,
 
 The main result of the chapter is a bound at one place. Let the multisets $J(\sigma)$, for the complex embeddings $\sigma$ of $E$, be the weights of a main summand. Let $L_c$, for $c$ in $\{\mathrm{none}\} \cup \{0, \dots, t-1\}$, be lattices: $L_{\mathrm{none}}$ is the main summand, with rank $r$ and jumps $J(\sigma_{e,g})$ at the embedding $c_g$ of $O$, and $L_c$ has the single jump $c$. Let the class $\mathcal{Q}$ be tame at a level prime, or crystalline. Then for large $O$ and each $c$ with $L_c \in \mathcal{Q}$,
 $$\lambda_O\big(\delta_{\mathcal{Q}}(L_c^\vee(1))\big) \leq [G_\ell : j(\Gamma)] \cdot \mathrm{rank}(L_c) \cdot \frac{\mathrm{defectBound}(\ell)}{x},$$
-with $x = 1$ for the main summand and $x = t$ otherwise. This is [the defect at a place](/decl/New.Selmer.summand_defect_le_at_place/) in [Section 5](/chapter/local-loss/#the-defect-at-a-place-above-l).
+with $x = 1$ for the main summand and $x = t$ otherwise. This is [the defect at a place](/decl/New.Selmer.summand_defect_le_at_place/) in [Section 6](/chapter/local-loss/#the-defect-at-a-place-above).
 
-The second result links the defect to the cocycles of the argument. For a family of lattices $u_x$ and a lattice $\rho$ in the class, the cocycles modulo $\ell^m$ that obey the relations of the family, modulo those that obey the relations of crystalline cocycles, have length at most $\delta_{\mathcal{Q}}(L^\vee(1))$. This is [the Ribet cocycle bound](/decl/New.Selmer.relLength_ribetCocycles_le/) of [Section 7](/chapter/local-loss/#tate-duality-and-ribet-cocycles). Section 6 builds the local lattices to which both results apply.
+The second result links the defect to the cocycles of the argument. For a family of lattices $u_x$ and a lattice $\rho$ in the class, the cocycles modulo $\ell^m$ that obey the relations of the family, modulo those that obey the relations of crystalline cocycles, have length at most $\delta_{\mathcal{Q}}(L^\vee(1))$. This is [the Ribet cocycle bound](/decl/New.Selmer.relLength_ribetCocycles_le/) of [Section 8](/chapter/local-loss/#tate-duality-and-ribet-cocycles). Section 7 builds the local lattices to which both results apply.
 
 ### The model case
 
@@ -39,11 +39,11 @@ Let $\Gamma = G_\ell$, $O = \mathbb{Z}_\ell$, and let $\ell$ be much larger than
 - From [period rings](/chapter/period-rings/#the-bloch-kato-rank-formula): the Bloch-Kato rank formula for $Z_f$ over $\mathbb{Z}_\ell$.
 - From [Kisin frames](/chapter/kisin-frames/#charts-and-kummer-charts): Kummer charts, their letters, ramification $e$ and residue degree $f$.
 - From [side points](/chapter/exponent-lattices/#side-points): windows of jumps and the condition that $\ell$ has no multiple near a point.
-- From [cup products](/chapter/cup-products/): four bounds on cup products for a Kummer chart. We state them once in Section 4.
+- From [cup products](/chapter/cup-products/): four bounds on cup products. We state three in Section 4 and the tame one in Section 6.
 - From [main summands](/chapter/main-summands/): signs, b-places, main summand weights, the defect bound, the crystalline colength and the Ribet cocycles.
 - From Volume 2, [progression-free sets](/chapter/progression-free-sets/): the sparse set of b-places, through the lemma on short arcs.
 
-No file of this chapter imports a file of a later chapter of Volume 12. Two results of [the denominator bound](/chapter/denominator-bound/) use this chapter. We state them in Section 7.
+No file of this chapter imports a file of a later chapter of Volume 12. Two results of [the denominator bound](/chapter/denominator-bound/) use this chapter. We state them in Section 8.
 
 ### The sketch
 
@@ -57,7 +57,7 @@ Section 4 is the core. It proves the bound for crystalline classes in three regi
 2. $\ell > Q$ and $\lambda \geq h^3$. The chart is unramified, and the bound for any pattern gives a cup exponent.
 3. $\ell > Q$ and $\lambda < h^3$. Then $\ell$ divides no integer near the windows. The defect is $0$ or is bounded by the number of low jumps.
 
-Section 5 checks the hypotheses of Section 4 for the data $D$, handles the tame classes at the level primes, and proves the main theorem. Section 6 restricts a global lattice to a place above $\ell$ and checks that it lies in the right class. Section 7 proves the Tate duality bound for Ribet cocycles.
+Section 5 checks the hypotheses of Section 4 for the data $D$. Section 6 handles the tame classes at the level primes and proves the main theorem. Section 7 restricts a global lattice to a place above $\ell$ and checks that it lies in the right class. Section 8 proves the Tate duality bound for Ribet cocycles. Section 9 has exercises and notes.
 
 ### The status
 

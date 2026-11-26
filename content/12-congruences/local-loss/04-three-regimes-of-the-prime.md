@@ -40,7 +40,7 @@ Lean: `New.Lift.KummerChart.hasCupExponent_any_pattern` (New/Congruences/Lifting
 
 Lean: `New.Lift.KummerChart.hasCupExponent_sparse_thick` (New/Congruences/Lifting/CupOrthogonalityBounds.lean).
 
-The fourth result, for tame classes, is stated in [Section 5](/chapter/local-loss/#the-defect-at-a-place-above-l), where it is used.
+The fourth result, for tame classes, is stated in [Section 6](/chapter/local-loss/#the-defect-at-a-place-above), where it is used.
 
 ### Letters that read thickness
 
@@ -138,6 +138,6 @@ Case $\ell \leq Q$. From $2b < \ell(v + 1) \leq Q(v + 1)$, $2v < (K + 1)Q$, $Q^2
 
 Case $\ell > Q$. Condition 5 of reading thickness gives that $\kappa$ is unramified and $\ell \geq 7$. If $h^3 \leq v$, the exponent for large loss is $10^4 K m$, and exponent to defect gives the bound. If $v < h^3$, then $\ell$ divides no integer in $(b - 30h^3, b + 30h^3]$, by the contrapositive of the lemma on a multiple in the window. The gap lemma gives $\mathrm{NoMult}$ at $b + \delta$ and at $G + \delta$. Since $e = 1$, condition 1 gives $f = [G_\ell : j(\Gamma)]$. The theorem for small loss gives the bound. $\square$
 
-**Remark (Formalization).** The quotient $\lfloor 2\lambda/Q \rfloor$ is a quotient of natural numbers, and the bound $10^5(\dots)$ is a natural number cast to the nonnegative reals. The chart $\kappa$, the root $\zeta$ and the functions $T, s$ are inputs of the theorem. [Section 5](/chapter/local-loss/#the-defect-at-a-place-above-l) builds them for large $O$.
+**Remark (Formalization).** The quotient $\lfloor 2\lambda/Q \rfloor$ is a quotient of natural numbers, and the bound $10^5(\dots)$ is a natural number cast to the nonnegative reals. The chart $\kappa$, the root $\zeta$ and the functions $T, s$ are inputs of the theorem. [Section 5](/chapter/local-loss/#the-defect-at-a-place-above) builds them for large $O$.
 
 **Example (A picture of the regimes).** For the data, $Q = kt$ and $h = h_2 = r^8$. A prime $\ell \leq kt$ is small, and then the defect costs a factor $\lfloor \log_\ell h_2^3 \rfloor + 1 \leq m$ in the exponent. A prime $\ell > kt$ with $\ell$ dividing an integer near $b$ has loss $\lambda \geq h_2^3$, and the bound for any pattern applies. A prime $\ell > kt$ with no multiple near $b$ and $\lambda < h_2^3$ falls in the third regime. There the defect is $0$ unless $L$ has negative jumps near $0$ and $\lambda \geq h_2/5$; this is the model case of the chapter.

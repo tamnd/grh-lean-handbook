@@ -80,7 +80,7 @@ Lean: `New.Selmer.noMultipleNear_of_forall_not_dvd` (New/Congruences/LocalLoss/C
 
 Lean: `New.Selmer.CrystallineSizes` (New/Congruences/LocalLoss/CrystallineCocycles.lean).
 
-Read $A \ll B$ as $99A \leq B$. The conditions say $Q^2 \ll h$, $h^3 \ll G$, $h^3 G \ll b$, $\log b \ll m$ and $Q\eta \ll h^3$, with room for the width $W$ and the shift $\delta$. In the argument, $Q = kt$ bounds the small primes, $h$ is the half gap, $G$ is the weight off the b-places, $b$ is the weight at the b-places, $\eta = h^2 + 1$ is the radius of the low window and $W = 4t$ is the width of the far windows. [Section 5](/chapter/local-loss/#the-defect-at-a-place-above-l) proves that the data satisfy these conditions.
+Read $A \ll B$ as $99A \leq B$. The conditions say $Q^2 \ll h$, $h^3 \ll G$, $h^3 G \ll b$, $\log b \ll m$ and $Q\eta \ll h^3$, with room for the width $W$ and the shift $\delta$. In the argument, $Q = kt$ bounds the small primes, $h$ is the half gap, $G$ is the weight off the b-places, $b$ is the weight at the b-places, $\eta = h^2 + 1$ is the radius of the low window and $W = 4t$ is the width of the far windows. [Section 5](/chapter/local-loss/#the-defect-at-a-place-above) proves that the data satisfy these conditions.
 
 Two consequences are used often. From 3 and 7, $\eta \leq h^3 \leq G$, and $\delta + W \leq \eta + W \leq h^3 \leq G$. So the low window and the far windows of width $W$ at $G + \delta$ lie in $[-2G, 2G]$. From 2, $m \leq h$ and $Q \leq h$.
 
@@ -95,4 +95,4 @@ Two consequences are used often. From 3 and 7, $\eta \leq h^3 \leq G$, and $\del
 
 Lean: `New.Selmer.HasFewLowJumps` (New/Congruences/LocalLoss/CrystallineCocycles.lean).
 
-Condition 1 says that negative jumps are far from $0$, at distance at least $h/2$. Condition 2 bounds the number of jumps in the low window, with multiplicity. In the third regime the defect is $0$ when there are no negative jumps near $0$, and condition 2 bounds the defect in the remaining case. For a main summand, $\mu$ is $\lfloor rm/k \rfloor$, by the third condition of the main summand weights; see [Section 5](/chapter/local-loss/#the-defect-at-a-place-above-l).
+Condition 1 says that negative jumps are far from $0$, at distance at least $h/2$. Condition 2 bounds the number of jumps in the low window, with multiplicity. In the third regime the defect is $0$ when there are no negative jumps near $0$, and condition 2 bounds the defect in the remaining case. For a main summand, $\mu$ is $\lfloor rm/k \rfloor$, by the third condition of the main summand weights; see [Section 5](/chapter/local-loss/#the-defect-at-a-place-above).
