@@ -97,7 +97,7 @@ Lean: `New.Data.IsMarked.mul_sum_heckeScalingExponent_le_loss` (New/UpperBound/D
 
 *Proof.* By [the sum of the scaling exponents](/decl/New.Data.sum_heckeScalingExponent/), $\sum A_{\mathfrak l} \le af$, and $\#\Lambda \le f$ ([the size of a marked set](/decl/New.Data.IsMarked.card_le/)). With $j_p \le 2mfa/p + 1$ the left side is at most $(14fa + p/m)/p$. The bounds on the parameters, with $p < x_1$, give $14fa + p/m \le f(\log b)^2a$, and $f(\log b)^2a/p \le \mathrm{loss}(p)$. $\square$
 
-**Theorem (Colength of the image).** For a marked set $\Lambda$, $\mathrm{IsOntoUpToColength}(p, \mathcal A_\iota, j_p, Y^m, \mathrm{loss}(p)\,D_X)$.
+**Theorem (Colength of the image).** For a marked set $\Lambda$, $$\mathrm{IsOntoUpToColength}(p, \mathcal A_\iota, j_p, Y^m, \mathrm{loss}(p)\,D_X).$$
 
 Lean: `New.Data.IsMarked.isOntoUpToColength_prod_scaledHeckeOperator_pow` (New/UpperBound/Divisibility/LocalDivisibility.lean).
 
