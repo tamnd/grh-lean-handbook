@@ -52,7 +52,7 @@ The elements $s$ in clause 3 are the *geometric* Frobenius elements: $s^{-1}$ ra
 **Theorem.** Let $X$ be a model over $R$ for $\mathrm{GU}$ of rank $a \geq 1$, at a neat level $\mathfrak{N}$, with $\nu$ extra points. Let $\ell$ be a prime. Let $R$ be the localization of $\mathcal{O}_E$ at a submonoid $M$ that meets no safe place. Let $\theta(w, j) \in \mathbb{C}$ for safe $w$ and $j \in \mathbb{N}$. Let $J$ be a multiset of integers $h \geq 0$, and assume that $\theta$ occurs in weight $h$ (with parameter $\nu$) for every $h \in J$. Then there is a continuous representation $\rho : \operatorname{Gal}(\Omega/E) \to \mathrm{GL}_m(\bar{\mathbb{Q}}_\ell)$ such that at every safe place $w$, $\rho$ is spherical above $w$, with the multiset $J$ at the embedding $E \to \mathbb{C}$ given with $E$ and $0$ at the other embeddings, and with the polynomial
 $$P_w(X) = \sum_{j = 0}^{a} (-1)^j q^{\binom{j}{2}} \iota_\ell(\theta(w, j)) X^{a - j}, \qquad q = |k_w|.$$
 
-Lean: `New.Variety.Model.exists_galois_rep` ([Eigenspace.lean, line 689](lean:Lib/Shimura/Eigenspace.lean#L689)).
+Lean: `New.Variety.Model.exists_galois_rep` (Lib/Shimura/Eigenspace.lean).
 
 Here $\iota_\ell : \mathbb{C} \cong \bar{\mathbb{Q}}_\ell$ is the isomorphism that the source fixes once and for all, and $P_w$ is `New.heckePoly`. The textbook form of the classical case is Deligne, *Formes modulaires et représentations l-adiques*, Séminaire Bourbaki 355 (1969), Théorème 4.9, and for unitary Shimura varieties Harris and Taylor (2001), Chapter VII. Both attach a representation of the correct dimension, cut out as an isotypic part. The source states less, as the remarks below explain.
 

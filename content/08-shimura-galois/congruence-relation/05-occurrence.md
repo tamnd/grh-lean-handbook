@@ -74,7 +74,7 @@ A tangent polynomial of $(c, u_i)$ at $y$ is $P(t) = P(0) \det(1 - tA)$, where $
 
 **Lemma (Lefschetz formula as a marked count).** Let $X$ be a model at a neat level $\mathfrak{N}$, and let $b$ be a Hecke element. Assume that for all deep levels $i$ of the tower and all $\alpha$, the family of maps $p_q \circ m_\alpha$, for the cosets $q$, with coefficients $b(q)$, is null in weight $h$ in dimension $\dim X$. Then $b$ is $h$-null.
 
-Lean: `New.Variety.Model.isNullHecke_of_isNullFamily` ([Lefschetz.lean, line 465](lean:Lib/Shimura/Transfer/Lefschetz.lean#L465)).
+Lean: `New.Variety.Model.isNullHecke_of_isNullFamily` (Lib/Shimura/Transfer/Lefschetz.lean).
 
 *Proof.* Fix a deep level $i$ whose legs contain the support of $b$. Each coincidence of $p_1$ and $p_q \circ m_{2\alpha}$ at a complex point of level $i$ has, by neatness, exactly one fixed pair $(z, \mu)$ with $z \in \mathrm{GL}_n(E)$. This sends coincidences to classes of marked triples. The map is injective by neatness and onto by the uniformisation of the model. Each fibre over a class has (number of lattice solutions) times $|\text{deck group}|$ points, and the number of lattice solutions cancels the denominator $P(1)$ of the local term. So the sum in the null family is $|\text{deck group}|$ times the sum in the definition of $h$-null. $\square$
 
@@ -106,7 +106,7 @@ Putting the two together:
 $$h = m\big(a - 1 + a(N_\infty - 1)\big) + l_j,$$
 with $N_\infty$ the number of infinite places of $E$, then $f$ has trace $0$ on the definite forms with coefficients in $\xi$.
 
-Lean: `New.Variety.trace_definiteForms_rep_eq_zero_of_isNullHecke` ([WeightOccurs.lean, line 206](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L206)).
+Lean: `New.Variety.trace_definiteForms_rep_eq_zero_of_isNullHecke` (Lib/Shimura/Transfer/WeightOccurs.lean).
 
 *Proof.* By the two propositions, the trace is the marked count of $f$ with the weight $\omega$ read off from the character. The character is a product of the $q_\sigma$ at the eigenvalues, and on the marked side this product is a sum of powers of $X$ in which $X^h$ occurs a fixed number $M \geq 1$ of times. So the trace is $1/M$ times a linear form $\Lambda$ applied to the products $\prod_\sigma q_\sigma$. The hypothesis says that $\Lambda$ kills the products $\prod_t (1 - \sigma(2\alpha) t)$ over the Lie roots $t$, for every $\alpha$. A lemma of the source on evaluations of symmetric polynomials then shows that $\Lambda$ kills $\prod_\sigma q_\sigma$ as well. It uses that the images of the elements $2\alpha$ under the complex embeddings are algebraically independent in a suitable sense, and that $\deg q_\sigma$ is at most the parameter $\nu = \sum_\sigma \deg q_\sigma + 1$. So the trace is $0$. $\square$
 
@@ -114,7 +114,7 @@ Lean: `New.Variety.trace_definiteForms_rep_eq_zero_of_isNullHecke` ([WeightOccur
 
 **Lemma.** Let $V$ be a finite-dimensional complex vector space and $f \in \operatorname{End}(V)$ with $\operatorname{tr}(f^{k}) = 0$ for all $k \geq 1$. Then $f$ is nilpotent.
 
-Lean: `New.Variety.isNilpotent_of_trace_pow_succ_eq_zero` ([WeightOccurs.lean, line 49](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L49)).
+Lean: `New.Variety.isNilpotent_of_trace_pow_succ_eq_zero` (Lib/Shimura/Transfer/WeightOccurs.lean).
 
 *Proof.* The power sums $p_k = \sum_i \lambda_i^k$ of the eigenvalues of $f$ are the traces of $f^k$, so they are all $0$. Newton's identities $k e_k = \sum_{i = 1}^{k} (-1)^{i - 1} e_{k - i} p_i$ over $\mathbb{C}$ give $e_k = 0$ for all $k \geq 1$. So the characteristic polynomial of $f$ is $X^{\dim V}$, and $f$ is nilpotent by the theorem of Cayley and Hamilton. $\square$
 
@@ -132,7 +132,7 @@ The element $b$ is a product $b_1 b_0$. Here $b_0$ averages against $\chi$ over 
 
 **Theorem (Test eigenforms occur).** Let $a$ be odd, $\mathfrak{N}$ neat, and let $\xi$, $q_\sigma$, $l$ and $m$ be as in the proposition on null elements. Let $\theta$ be the eigenvalues of a test eigenform of level $\mathfrak{N}$ with coefficients in $\xi$. Then for every $j$, $\theta$ occurs in weight $m(a - 1 + a(N_\infty - 1)) + l_j$, with parameter $\nu = \sum_\sigma \deg q_\sigma + 1$.
 
-Lean: `New.Variety.occursInWeight_of_isTestEigenform` ([WeightOccurs.lean, line 303](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L303)).
+Lean: `New.Variety.occursInWeight_of_isTestEigenform` (Lib/Shimura/Transfer/WeightOccurs.lean).
 
 *Proof.* Let $p = \sum_L c_L \tau_L$ with $\sum_L c_L \theta(L) = 1$, and suppose that every $b p$ is $h$-null. The words $\tau_L$ are supported on unitary similitudes with component $1$ at $w_1$, because the safe places differ from $w_1$. Since $\phi$ is an eigenform, $p \phi = \sum_L c_L \theta(L) \phi = \phi$. The test function gives $b$ with $(bp)^k \phi \neq 0$ for all $k$ and $(bp)^{k + 1}$ regular of type $\chi$. Each $(bp)^{k + 1} = ((bp)^k b) p$ is $h$-null by assumption, so it has trace $0$ on the definite forms. By the lemma, $bp$ is nilpotent there. Then $(bp)^k \phi = 0$ for large $k$, a contradiction. $\square$
 
@@ -140,7 +140,7 @@ Lean: `New.Variety.occursInWeight_of_isTestEigenform` ([WeightOccurs.lean, line 
 
 **Theorem (Coefficient systems).** Let $a$ be odd, $i : K_0 \to E$ and $s_0 : K_0 \to \mathbb{C}$ embeddings, and $\kappa$ a weight for $E$. Then there are a representation $\xi$ of $\mathrm{GL}_a(E)$ extending $\kappa$ (up to conjugation of unitary elements), integers $\mu, N \in \mathbb{N}$ and central exponents $A$ with $A(s_0) = \mu$, such that for every jump $z$ of $\kappa$ at an embedding $\sigma$ over $s_0$: $z + \mu \geq 0$, and for every CM type $\Psi$ with $\Psi(v_0) = \sigma$ and no other embedding over $s_0$, the eigenvalues of every test eigenform of neat level for $\Psi$ with coefficients in $\xi$ occur in weight $z + \mu$, with parameter $N + 1$.
 
-Lean: `New.Variety.exists_isCoefficientSystem` ([WeightOccurs.lean, line 638](lean:Lib/Shimura/Transfer/WeightOccurs.lean#L638)), with `New.Variety.IsCoefficientSystem`.
+Lean: `New.Variety.exists_isCoefficientSystem` (Lib/Shimura/Transfer/WeightOccurs.lean), with `New.Variety.IsCoefficientSystem`.
 
 *Proof.* Twist the representation of weight $\kappa$ by $m$-th powers of the norm of the determinant, with $m$ large. By the Weyl character formula its character becomes a product of a Schur polynomial $s_{l_\sigma}$ with natural exponents at each $\sigma$ over $s_0$, and $(-x_1)^m$ at the others. Each jump $z$ at $\sigma$ is some $l_{\sigma, j} - m$, so $z + \mu$ with $\mu = m a N_\infty$ is the weight of the last theorem. $\square$
 

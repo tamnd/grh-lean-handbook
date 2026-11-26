@@ -98,7 +98,7 @@ The model of [the integral model](/chapter/integral-model/) has, at each level $
 
 **Definition (The congruence field of a model).** Let $w$ be a split safe place with $q = p^f$, let $i$ be a level with $g_A \in s_i$ for all $A$, and let $\mathfrak{p} \subseteq R$ contain the image of $w$. Then the family $(u_A)_A$ satisfies the congruence relation modulo $\mathfrak{p}$, with coefficients $\mu(A) = (-1)^{r(A)} q^{\binom{r(A)}{2}}$ and exponents $(n - r(A)) f$.
 
-Lean: field `congruence` of `New.Variety.Model` ([Model.lean, line 145](lean:Lib/Shimura/HeckeTower/Model.lean#L145)).
+Lean: `New.Variety.Model.congruence` (Lib/Shimura/HeckeTower/Model.lean), a field of `New.Variety.Model`.
 
 Unwound, for every point $x$ of the cover in characteristic $p$ over $\mathfrak{p}$,
 $$\sum_{A \leq k_w^n} (-1)^{r(A)} q^{\binom{r(A)}{2}} \left[\operatorname{Frob}^{(n - r(A)) f}(u_A(x))\right] = 0,$$
@@ -120,7 +120,7 @@ The geometric step is the analogue of the classical fact that the $p + 1$ quotie
 $$A \longmapsto \alpha(A) \circ \operatorname{Spec}\left(\operatorname{Frob}^{m(A)} \circ \pi\right)$$
 depends only on $A + W$.
 
-Lean: `New.Variety.UniversalFamily.exists_ne_bot_factorsThrough_sup` ([HeckeNeighbours.lean, line 950](lean:Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean#L950)).
+Lean: `New.Variety.UniversalFamily.exists_ne_bot_factorsThrough_sup` (Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean).
 
 The idea is as follows. Each Hecke neighbour comes with an isogeny $\psi_A$ from the abelian variety $y$ of $z$ to the abelian variety $y'_A$ of $z \cdot g_A$. Its kernel on torsion has $w$-part $A$, and its degree is a power of $q$. Reduce modulo $\pi$ and twist by Frobenius. The twisted reduction $g_A$ of $\psi_A$ has the same degree $q^n$ for every $A$: a factor $q^{\dim A}$ from $\psi_A$ and $q^{n - \dim A}$ from Frobenius. Now one nonzero $w$-torsion section $t$ reduces to $0$. Adding $t$ to $A$ changes the kernel of $\psi_A$ only by a section that the reduction does not see. So the kernels of $g_A$ and $g_{A'}$ agree when $A + kt = A' + kt$, and rigidity makes the targets equal. So $W = kt$.
 
