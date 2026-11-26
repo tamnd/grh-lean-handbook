@@ -62,6 +62,8 @@ Lean: `New.Variety.ModuliPoint` (Lib/Shimura/Uniformisation/AdelicFrames.lean).
 
 The lattice of $x$ is $E^n \cap x\widehat{\mathcal{O}}_E^n$, embedded in $(E \otimes \mathbb{R})^n$ by the CM type (`New.Variety.frameLattice`). An adelic similitude $g$ with integral inverse and elements $\alpha_i \in \mathcal{O}_E$ act by $(x, J, P) \mapsto (x g, J, \alpha_i P_i)$ (`New.Variety.ModuliPoint.act`).
 
+Lean: `New.Variety.frameLattice`, `New.Variety.ModuliPoint.act` (Lib/Shimura/Uniformisation/AdelicFrames.lean).
+
 **Definition (Isomorphism at level $K$).** Let $K$ be a subgroup of $GL_n(\mathbb{A}_{f,E})$ and $a = (x, J, P)$, $b = (x', J', P')$ moduli points. A matrix $z \in GL_n(E)$ is an *isomorphism from $a$ to $b$ at level $K$* if $x'^{-1} z x \in K$, $\Phi_{v_0}(z)\,J\,\Phi_{v_0}(z)^{-1} = J'$, and $z P_i - P'_i$ lies in the lattice of $x'$ for every $i$.
 
 Lean: `New.Variety.ModuliPoint.IsLevelIso` (Lib/Shimura/Uniformisation/AdelicFrames.lean).
