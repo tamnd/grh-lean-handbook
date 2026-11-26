@@ -133,7 +133,7 @@ Let $W$ be a hermitian space and $H$ a splitting of one hyperbolic plane off $W$
 
 Then $D(g) = D(1)$ for every $g$.
 
-Lean: `New.Exchange.IsAutFunction.apply_eq_apply_one`, `New.Exchange.IsAutFunction` (Lib/SiegelWeil/Formula/StrongApproximation.lean; Lib/SiegelWeil/SingularForms/CentreCoefficients.lean).
+Lean: `New.Exchange.IsAutFunction.apply_eq_apply_one`, `New.Exchange.exists_torus_mul_rational_fixes`, `New.Exchange.exists_torus_mul_quasiReflection_fixes`, `New.Exchange.IsAutFunction` (Lib/SiegelWeil/Formula/StrongApproximation.lean; Lib/SiegelWeil/SingularForms/CentreCoefficients.lean).
 
 *Proof.* Hypothesis 1 means that $D$ takes the same value at points that agree off $S \cup \bar S$. In the radical of any splitting of a hyperbolic plane with complement $W_0$, the parameters that are rational plus a part supported on $S \cup \bar S$ are dense, and off $S \cup \bar S$ such a point is rational. With continuity and the left invariance, $D$ is left invariant under the radicals of all these splittings. This is additive strong approximation. Hypothesis 3 then gives $F$. Witt's theorem and the quasi-reflections give, for a finite set $R$ of places, the invariance under the components on $R \cup \bar R$ of a Levi element with a rational block of $W_0$ (`exists_torus_mul_rational_fixes`, `exists_torus_mul_quasiReflection_fixes`). Weak approximation in $W_0$ makes the rational points dense up to points that are trivial on $R$. With the Iwasawa decomposition and hypothesis 2, every point reduces to such Levi elements. $\square$
 
