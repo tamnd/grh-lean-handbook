@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 1681 cited names outside the namespace `New.Data`. This section has 946 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 2087 cited names outside the namespace `New.Data`. This section has 1243 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -43,7 +43,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.aeval_root_finAdele_eq_zero_iff`: `Lib/General/NumberTheory/CMFields.lean`, [line 141](lean:Lib/General/NumberTheory/CMFields.lean#L141). Cited in [Chapter](/chapter/cm-fields/).
 - `New.aeval_root_finAdele_surjective`: `Lib/General/NumberTheory/CMFields.lean`, [line 134](lean:Lib/General/NumberTheory/CMFields.lean#L134). Cited in [Chapter](/chapter/cm-fields/).
 - `New.albert_brauer_hasse_noether`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 697](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L697). Cited in [Chapter](/chapter/class-field-theory/).
-- `New.AlgForm`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 112](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L112). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.AlgForm`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 112](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L112). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.algFormCoeff`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 155](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L155). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.algFormRep`: `Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean`, [line 117](lean:Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean#L117). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.analyticAt_entireL`: `Lib/Analytic/EntireLFunction.lean`, [line 124](lean:Lib/Analytic/EntireLFunction.lean#L124). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/dirichlet-l-functions/).
@@ -62,30 +62,42 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.atPlace_ofSplitPlace`: `Lib/Adelic/Unitary/Defs.lean`, [line 326](lean:Lib/Adelic/Unitary/Defs.lean#L326). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.AutChar`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 74](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L74). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.AutChar.exists_hasWeight_of_prod_eq_one`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 594](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L594). Cited in [Chapter](/chapter/fields-places-twists/).
+- `New.AutChar.frobValue`: `Lib/Weil/Unramified/HeckeTransfer.lean`, [line 56](lean:Lib/Weil/Unramified/HeckeTransfer.lean#L56). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.AutChar.HasWeight`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 126](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L126). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.AutChar.HasWeight.L_ne_zero`: `Lib/ClassField/Avatar/HeckeBaseChange.lean`, [line 120](lean:Lib/ClassField/Avatar/HeckeBaseChange.lean#L120). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.average_quotMeasure_eq_quotMean`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 829](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L829). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.basicCosetRep`: `Lib/Weil/Unramified/HeckeGL.lean`, [line 380](lean:Lib/Weil/Unramified/HeckeGL.lean#L380). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.basicDoubleCoset`: `Lib/Adelic/Unitary/Defs.lean`, [line 177](lean:Lib/Adelic/Unitary/Defs.lean#L177). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.BasisTableau`: `Lib/GLn/SchurModule/Basic.lean`, [line 177](lean:Lib/GLn/SchurModule/Basic.lean#L177). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.besselQuotMeasure`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 630](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L630). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.besselS_le_normalizer_besselU`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 886](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L886). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.blockHom`: `Lib/General/Groups/BesselGroups.lean`, [line 161](lean:Lib/General/Groups/BesselGroups.lean#L161). Cited in [Chapter](/chapter/finite-gln/).
+- `New.blockParahoric`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 135](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L135). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.blockTriangularEnd`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 257](lean:Lib/LocalGL/Green/HallAlgebra.lean#L257). Cited in [Chapter](/chapter/finite-gln/).
 - `New.borelMul`: `Lib/GLn/SchurModule/Basic.lean`, [line 63](lean:Lib/GLn/SchurModule/Basic.lean#L63). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.card_classAut_mul_mul`: `Lib/Adelic/Hecke/Basic.lean`, [line 136](lean:Lib/Adelic/Hecke/Basic.lean#L136). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.card_classes_eq_classSum`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 208](lean:Lib/Adelic/Hecke/ClassSums.lean#L208). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.card_divisors_le_two_mul_sqrt`: `Lib/Analytic/PolyaVinogradov.lean`, [line 121](lean:Lib/Analytic/PolyaVinogradov.lean#L121). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.card_dual_cocycles_le_of_trivial`: `Lib/ClassField/LocalDuality/DualityInequality.lean`, [line 144](lean:Lib/ClassField/LocalDuality/DualityInequality.lean#L144). Cited in [Chapter](/chapter/local-duality/).
+- `New.card_echelonRows_mem_residueKer`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 393](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L393). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.card_GL_eq_prod`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 428](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L428). Cited in [Chapter](/chapter/finite-gln/).
 - `New.card_mul_card_le_of_le_pairingAnnihilator`: `Lib/ClassField/LocalDuality/DualityInequality.lean`, [line 219](lean:Lib/ClassField/LocalDuality/DualityInequality.lean#L219). Cited in [Chapter](/chapter/local-duality/).
 - `New.card_mul_card_le_of_orthogonal`: `Lib/ClassField/LocalDuality/DualityInequality.lean`, [line 304](lean:Lib/ClassField/LocalDuality/DualityInequality.lean#L304). Cited in [Chapter](/chapter/local-duality/).
 - `New.card_transporter`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 154](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L154). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.casimir_dsCoeffSmooth`: `Lib/DiscreteSeries/FlenstedJensen/CasimirEigenfunction.lean`, [line 802](lean:Lib/DiscreteSeries/FlenstedJensen/CasimirEigenfunction.lean#L802). Cited in [Chapter](/chapter/discrete-series/).
 - `New.charMean`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 93](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L93). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.charMean_eq_zero`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 103](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L103). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.charName`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 290](lean:Lib/LocalGL/Green/TauFunctions.lean#L290). Cited in [Chapter](/chapter/finite-gln/).
 - `New.chebotarev`: `Lib/ClassField/Global/Chebotarev.lean`, [line 30](lean:Lib/ClassField/Global/Chebotarev.lean#L30). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.chiAdelic`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 669](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L669). Cited in [Chapter](/chapter/weil-representation/).
 - `New.chiFin`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 676](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L676). Cited in [Chapter](/chapter/weil-representation/).
 - `New.chiK`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 58](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L58). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/fields-places-twists/).
 - `New.chosenCutoff`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 75](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L75). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/reduction-theory/).
+- `New.chosenRoot`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 118](lean:Lib/LocalGL/Green/TauFunctions.lean#L118). Cited in [Chapter](/chapter/finite-gln/).
 - `New.chowlaSelbergConst`: `Lib/General/NumberTheory/ImaginaryQuadraticField.lean`, [line 74](lean:Lib/General/NumberTheory/ImaginaryQuadraticField.lean#L74). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/fields-places-twists/).
 - `New.classAut`: `Lib/Adelic/Hecke/Basic.lean`, [line 80](lean:Lib/Adelic/Hecke/Basic.lean#L80). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
+- `New.classInner`: `Lib/General/Groups/CharacterTheory.lean`, [line 56](lean:Lib/General/Groups/CharacterTheory.lean#L56). Cited in [Chapter](/chapter/finite-gln/).
+- `New.classInner_evalGL_prod`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 1040](lean:Lib/LocalGL/Green/HallAlgebra.lean#L1040). Cited in [Chapter](/chapter/finite-gln/).
 - `New.classIntegral`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 74](lean:Lib/Adelic/Hecke/ClassSums.lean#L74). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.classIntegral_eq_classSum`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 173](lean:Lib/Adelic/Hecke/ClassSums.lean#L173). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.classSum`: `Lib/Adelic/Hecke/Basic.lean`, [line 132](lean:Lib/Adelic/Hecke/Basic.lean#L132). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
@@ -118,6 +130,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.colengthDvd_top_smul_top`: `New/Reduction/Lattices/Colength.lean`, [line 189](lean:New/Reduction/Lattices/Colength.lean#L189). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.ColumnFilling`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 100](lean:Lib/GLn/SchurModule/TensorModel.lean#L100). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.compactMean`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 670](lean:Lib/Adelic/Hecke/ClassSums.lean#L670). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.compactMean_diagGL_compactMean_diagGL`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 494](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L494). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.compactMean_eq_self`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 728](lean:Lib/Adelic/Hecke/ClassSums.lean#L728). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.compactMean_mem_levelSpace`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 726](lean:Lib/Adelic/Hecke/ClassSums.lean#L726). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.conjAut`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 103](lean:New/Reduction/Lattices/TwistedLattice.lean#L103). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -156,7 +169,15 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.denseRange_algebraMap_finAdele`: `Lib/Adelic/Adeles/Basic.lean`, [line 770](lean:Lib/Adelic/Adeles/Basic.lean#L770). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.denseRange_algebraMap_Ô`: `Lib/Adelic/Adeles/Basic.lean`, [line 757](lean:Lib/Adelic/Adeles/Basic.lean#L757). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.denseRange_Φ`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 487](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L487). Cited in [Chapter](/chapter/cm-fields/).
+- `New.derivation_prod_det`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 106](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L106). Cited in [Chapter](/chapter/local-theta/).
+- `New.DescendsOnCoset`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 57](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L57). Cited in [Chapter](/chapter/finite-gln/).
+- `New.DescendsOnCoset.induce`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 477](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L477). Cited in [Chapter](/chapter/finite-gln/).
+- `New.DescendsTo`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 86](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L86). Cited in [Chapter](/chapter/finite-gln/).
+- `New.DescendsTo.card_mul_classInner`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 618](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L618). Cited in [Chapter](/chapter/finite-gln/).
+- `New.DescendsTo.iff_comp_inl_eq_evalGL`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 221](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L221). Cited in [Chapter](/chapter/finite-gln/).
+- `New.DescendsTo.induceClassFn_parabolic`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 324](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L324). Cited in [Chapter](/chapter/finite-gln/).
 - `New.det_gram_comp`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 60](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L60). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.detChar`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 157](lean:Lib/LocalGL/Green/TauFunctions.lean#L157). Cited in [Chapter](/chapter/finite-gln/).
 - `New.detPow`: `Lib/GLn/SchurModule/Basic.lean`, [line 217](lean:Lib/GLn/SchurModule/Basic.lean#L217). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.diagramWeight`: `Lib/GLn/SchurModule/Basic.lean`, [line 69](lean:Lib/GLn/SchurModule/Basic.lean#L69). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.differentiableAt_integral_mul_cpow`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 63](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L63). Cited in [Chapter](/chapter/prime-number-theorem/).
@@ -186,6 +207,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.DiscreteSeries.exists_expMinor_eq_cexp`: `New/Appendix/DiscreteSeries/MinorSecondOrder.lean`, [line 248](lean:New/Appendix/DiscreteSeries/MinorSecondOrder.lean#L248). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_intDiagonal_mul_positionIsometry`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 647](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L647). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_norm_dsCoeff_div_cexp_sub_le`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 332](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L332). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.exists_not_isEigenDirection`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 460](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L460). Cited in [Chapter](/chapter/local-theta/).
 - `New.DiscreteSeries.exists_principalMinor_conj_reducedExp_eq_cexp`: `New/Appendix/DiscreteSeries/OneMinor.lean`, [line 573](lean:New/Appendix/DiscreteSeries/OneMinor.lean#L573). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_unitary_mul_posSemidef`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 43](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L43). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.exists_weightMinors_conj_reducedExp_eq_cexp`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 151](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L151). Cited in [Chapter](/chapter/laplace-method/).
@@ -197,9 +219,11 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.DiscreteSeries.gapWeightedNormSq`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 88](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L88). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.InducesOn`: `New/Appendix/DiscreteSeries/Positions.lean`, [line 69](lean:New/Appendix/DiscreteSeries/Positions.lean#L69). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.inducesOn_conj_inl_sub_one`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 568](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L568). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.inner_polarisation_eq_zero`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 237](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L237). Cited in [Chapter](/chapter/local-theta/).
 - `New.DiscreteSeries.integral_decay_le`: `Lib/DiscreteSeries/Haar/TotalMass.lean`, [line 427](lean:Lib/DiscreteSeries/Haar/TotalMass.lean#L427). Cited in [Chapter](/chapter/discrete-series/).
 - `New.DiscreteSeries.integral_idempotentKernel_mul_eq_zero`: `Lib/DiscreteSeries/CuspKernel.lean`, [line 267](lean:Lib/DiscreteSeries/CuspKernel.lean#L267). Cited in [Chapter](/chapter/discrete-series/).
 - `New.DiscreteSeries.inv_one_add_sq_pow_le_exp_pow_four`: `New/Appendix/DiscreteSeries/Periods.lean`, [line 87](lean:New/Appendix/DiscreteSeries/Periods.lean#L87). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.IsEigenDirection`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 430](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L430). Cited in [Chapter](/chapter/local-theta/).
 - `New.DiscreteSeries.IsLaplaceDatum`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 101](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L101). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsLaplaceDatum.exists_laplaceIntegrand_eq_and_norm_subOnePair_le`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 664](lean:New/Appendix/DiscreteSeries/Localization.lean#L664). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.IsLaplaceDatum.exists_laplaceIntegrand_eq_and_onBlock_eq`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 608](lean:New/Appendix/DiscreteSeries/Localization.lean#L608). Cited in [Chapter](/chapter/laplace-method/).
@@ -272,6 +296,9 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.DiscreteSeries.norm_weightMinors_sq_le_exp`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 129](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L129). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.one_add_norm_sq_le_norm_det_one_add`: `New/Appendix/DiscreteSeries/Localization.lean`, [line 482](lean:New/Appendix/DiscreteSeries/Localization.lean#L482). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.one_le_pow_mul_kTypeNormSq`: `New/Appendix/DiscreteSeries/GaussianShape.lean`, [line 47](lean:New/Appendix/DiscreteSeries/GaussianShape.lean#L47). Cited in [Chapter](/chapter/laplace-method/).
+- `New.DiscreteSeries.polarisation_eq_zero_of_isCompactPrimitive`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 305](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L305). Cited in [Chapter](/chapter/local-theta/).
+- `New.DiscreteSeries.polarisation_one_eq_of_lt`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 221](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L221). Cited in [Chapter](/chapter/local-theta/).
+- `New.DiscreteSeries.polarisation_self_eq_smul_of_isCompactPrimitive`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 323](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L323). Cited in [Chapter](/chapter/local-theta/).
 - `New.DiscreteSeries.polyVec`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 58](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L58). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.positionGroup`: `New/Appendix/DiscreteSeries/PositionGroup.lean`, [line 93](lean:New/Appendix/DiscreteSeries/PositionGroup.lean#L93). Cited in [Chapter](/chapter/laplace-method/).
 - `New.DiscreteSeries.positionIsometry`: `New/Appendix/DiscreteSeries/StationaryPosition.lean`, [line 400](lean:New/Appendix/DiscreteSeries/StationaryPosition.lean#L400). Cited in [Chapter](/chapter/laplace-method/).
@@ -286,6 +313,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.div_add_card_le_prod_one_sub_inv`: `Lib/Analytic/Primes.lean`, [line 36](lean:Lib/Analytic/Primes.lean#L36). Cited in [Chapter](/chapter/primes-in-windows/).
 - `New.div_mem_unitaryLevel_of_besselU_mul`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 999](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L999). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.div_pow_le_norm_regularL`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 86](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L86). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.dominantTorus`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 140](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L140). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.DoubleCosets`: `Lib/Adelic/Hecke/Basic.lean`, [line 83](lean:Lib/Adelic/Hecke/Basic.lean#L83). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.dsCoeff_eq_holMinors`: `Lib/DiscreteSeries/Holomorphic/ModelFunction.lean`, [line 643](lean:Lib/DiscreteSeries/Holomorphic/ModelFunction.lean#L643). Cited in [Chapter](/chapter/discrete-series/).
 - `New.dsCoeff_eq_holMinors_lowestKType`: `Lib/DiscreteSeries/Holomorphic/ModelFunction.lean`, [line 598](lean:Lib/DiscreteSeries/Holomorphic/ModelFunction.lean#L598). Cited in [Chapter](/chapter/discrete-series/).
@@ -307,6 +335,9 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.eulerProd`: `Lib/ClassField/HeckeL/EulerProduct.lean`, [line 73](lean:Lib/ClassField/HeckeL/EulerProduct.lean#L73). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.evalClassReps`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 89](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L89). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.evalClassReps_injective`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 100](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L100). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.evalGL_detChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 126](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L126). Cited in [Chapter](/chapter/finite-gln/).
+- `New.evalGL_labelChar_map`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 488](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L488). Cited in [Chapter](/chapter/finite-gln/).
+- `New.evalGL_labelChar_mul_det`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 608](lean:Lib/LocalGL/Green/LabelCharacters.lean#L608). Cited in [Chapter](/chapter/finite-gln/).
 - `New.eventually_abs_le_inv_pow_of_transform`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 319](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L319). Cited in [Chapter](/chapter/main-inequality/), [Chapter](/chapter/prime-number-theorem/).
 - `New.eventually_abs_primeRemainder_exp_le`: `New/Reduction/OneSidedBound.lean`, [line 95](lean:New/Reduction/OneSidedBound.lean#L95). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/main-inequality/).
 - `New.eventually_abs_primeRemainder_le`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 217](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L217). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/main-inequality/).
@@ -320,19 +351,34 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.eventually_norm_logDeriv_entireL_le_near_one`: `Lib/Analytic/Primes.lean`, [line 138](lean:Lib/Analytic/Primes.lean#L138). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
 - `New.eventually_norm_logDerivMean_div_le`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 178](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L178). Cited in [Chapter](/chapter/main-inequality/).
 - `New.eventually_norm_realConv_sub_le`: `Lib/Adelic/AutomorphicForms/RealConvolution.lean`, [line 249](lean:Lib/Adelic/AutomorphicForms/RealConvolution.lean#L249). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.eventually_pow_mul_mem_dominantTorus`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 665](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L665). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.eventually_primeRemainder_le_rpow`: `New/Reduction/OneSidedBound.lean`, [line 200](lean:New/Reduction/OneSidedBound.lean#L200). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/main-inequality/).
 - `New.eventually_primeRemainder_natCast_le`: `New/Reduction/OneSidedBound.lean`, [line 125](lean:New/Reduction/OneSidedBound.lean#L125). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
 - `New.eventually_rpow_lt_thetaTailIntegral`: `Lib/Analytic/QuadraticTwist.lean`, [line 275](lean:Lib/Analytic/QuadraticTwist.lean#L275). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.eventually_unramified`: `Lib/ClassField/Places/Ideles.lean`, [line 192](lean:Lib/ClassField/Places/Ideles.lean#L192). Cited in [Chapter](/chapter/cm-fields/).
 - `New.eventuallyEq_of_eq_far_right`: `Lib/Analytic/Landau.lean`, [line 143](lean:Lib/Analytic/Landau.lean#L143). Cited in [Chapter](/chapter/landau-theorem/).
 - `New.Exchange.exchange_identity`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 1051](lean:New/Determinant/Exchange/TheoremForPartners.lean#L1051). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Exchange.exists_local_gauss_sum`: `Lib/Weil/TameGaussSum.lean`, [line 154](lean:Lib/Weil/TameGaussSum.lean#L154). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.idemAdele`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 437](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L437). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Exchange.integral_kernel_mul_forms_eq_integral_periodPairing`: `Lib/Weil/Seesaw.lean`, [line 581](lean:Lib/Weil/Seesaw.lean#L581). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.IsConjKernelPair`: `Lib/Weil/Seesaw.lean`, [line 128](lean:Lib/Weil/Seesaw.lean#L128). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.isConjKernelPair_kernelPair`: `Lib/Weil/Seesaw.lean`, [line 146](lean:Lib/Weil/Seesaw.lean#L146). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.IsEdgeFamily`: `Lib/Weil/Seesaw.lean`, [line 135](lean:Lib/Weil/Seesaw.lean#L135). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.IsEdgeFamily.exists_lift_eq_realConv`: `Lib/Weil/Seesaw.lean`, [line 376](lean:Lib/Weil/Seesaw.lean#L376). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.IsEdgeFamily.petersson_lift_eq_mul_inner_modTransposedLift`: `Lib/Weil/Seesaw.lean`, [line 392](lean:Lib/Weil/Seesaw.lean#L392). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.isEdgeFamily_of_paramsCorrespond`: `Lib/Weil/Seesaw.lean`, [line 166](lean:Lib/Weil/Seesaw.lean#L166). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.IsSeesawMatched`: `Lib/Weil/Seesaw.lean`, [line 620](lean:Lib/Weil/Seesaw.lean#L620). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.IsTriangle.eq_zero_of_weightedChain_eq_zero`: `New/Determinant/Chain/TriangleNorms.lean`, [line 349](lean:New/Determinant/Chain/TriangleNorms.lean#L349). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.Exchange.IsTriangle.ne_zero_of_squareCommutes`: `New/Determinant/Chain/TriangleNorms.lean`, [line 390](lean:New/Determinant/Chain/TriangleNorms.lean#L390). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Exchange.kernelPair`: `Lib/Weil/Seesaw.lean`, [line 78](lean:Lib/Weil/Seesaw.lean#L78). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.matrixFourier`: `Lib/General/Analysis/FiniteFourier.lean`, [line 86](lean:Lib/General/Analysis/FiniteFourier.lean#L86). Cited in [Chapter](/chapter/notation/).
+- `New.Exchange.modLift`: `Lib/Weil/Seesaw.lean`, [line 88](lean:Lib/Weil/Seesaw.lean#L88). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.modTransposedLift`: `Lib/Weil/Seesaw.lean`, [line 94](lean:Lib/Weil/Seesaw.lean#L94). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.one_square_identity_of_isEdgeFamily`: `New/Determinant/Exchange/OneSquare.lean`, [line 965](lean:New/Determinant/Exchange/OneSquare.lean#L965). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Exchange.seesaw_periods`: `Lib/Weil/Seesaw.lean`, [line 653](lean:Lib/Weil/Seesaw.lean#L653). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.SquareCommutes`: `New/Determinant/Chain/TriangleNorms.lean`, [line 141](lean:New/Determinant/Chain/TriangleNorms.lean#L141). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.exists_abs_gaussianMonomial_le_rpow`: `Lib/Analytic/QuadraticTwist.lean`, [line 389](lean:Lib/Analytic/QuadraticTwist.lean#L389). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.exists_antitone_of_swap`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 134](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L134). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_atPlace_eq_of_convIndicator_ne_zero`: `Lib/Adelic/TraceFormula/OffPlace.lean`, [line 124](lean:Lib/Adelic/TraceFormula/OffPlace.lean#L124). Cited in [Chapter](/chapter/trace-formula/).
 - `New.exists_auxiliary_place`: `Lib/Adelic/TraceFormula/CuspidalComparison.lean`, [line 44](lean:Lib/Adelic/TraceFormula/CuspidalComparison.lean#L44). Cited in [Chapter](/chapter/trace-formula/).
 - `New.exists_basis_frameLength_le_two_zpow`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 582](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L582). Cited in [Chapter](/chapter/reduction-theory/).
@@ -341,21 +387,28 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.exists_character_components`: `Lib/Cyclotomic/OddSha.lean`, [line 414](lean:Lib/Cyclotomic/OddSha.lean#L414). Cited in [Chapter](/chapter/odd-classes/).
 - `New.exists_comp_artinMap`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 883](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L883). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_comp_artinMap_of_ker_le`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 714](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L714). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.exists_compactMean_and_swap_eq_sum`: `Lib/LocalGL/Iwahori/SphericalExponents.lean`, [line 274](lean:Lib/LocalGL/Iwahori/SphericalExponents.lean#L274). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.exists_conj_mulLeft_eq`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 633](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L633). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_dirichletCharacter_eq_jacobiSym`: `Lib/Analytic/QuadraticTwist.lean`, [line 309](lean:Lib/Analytic/QuadraticTwist.lean#L309). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_dual_isometry`: `Lib/GLn/Dual.lean`, [line 467](lean:Lib/GLn/Dual.lean#L467). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.exists_eigenvector_of_functional`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 193](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L193). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_entireL_quadTwist_ne_zero`: `Lib/Analytic/QuadraticTwist.lean`, [line 796](lean:Lib/Analytic/QuadraticTwist.lean#L796). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/polya-vinogradov/).
+- `New.exists_eq_evalGL`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 1025](lean:Lib/LocalGL/Green/HallAlgebra.lean#L1025). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_eq_toBesselH`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 89](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L89). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.exists_equiv_prod_subgroupOf`: `Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean`, [line 411](lean:Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean#L411). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.exists_equiv_schur_one_row_eq_symPowMatrix`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 908](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L908). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_fillingMatrix_leftInverse`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 278](lean:Lib/GLn/SchurModule/TensorModel.lean#L278). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_fillingMatrix_mulVec_eq_iff_mem_span`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 323](lean:Lib/GLn/SchurModule/TensorModel.lean#L323). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_hasPrimeDensity_addChar_uniformizer`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 216](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L216). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.exists_heckeSplit_eq_smul`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 506](lean:Lib/Weil/Unramified/SplitHecke.lean#L506). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_idele_classGroup_hom`: `Lib/ClassField/Places/Ideles.lean`, [line 309](lean:Lib/ClassField/Places/Ideles.lean#L309). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.exists_inf_trivialOn_le`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 400](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L400). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.exists_integral_comp_quotMeasure_eq_smul`: `Lib/Adelic/QuotientMeasure/UnfoldingInStages.lean`, [line 56](lean:Lib/Adelic/QuotientMeasure/UnfoldingInStages.lean#L56). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.exists_inv_mul_mul_map_eq_diagGL_mul`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 776](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L776). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_Ioi_subset_integrableExpSet`: `Lib/Analytic/Landau.lean`, [line 182](lean:Lib/Analytic/Landau.lean#L182). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_Ioi_subset_integrableExpSet_of_analyticAt`: `Lib/Analytic/Landau.lean`, [line 160](lean:Lib/Analytic/Landau.lean#L160). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_isBoundedDualBasis`: `Lib/Adelic/Reduction/FiniteVolume.lean`, [line 277](lean:Lib/Adelic/Reduction/FiniteVolume.lean#L277). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.exists_isChar_descendsTo_labelChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 326](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L326). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_isCoprime_mul_of_not_irreducible`: `Lib/Adelic/TraceFormula/ReduciblePolynomials.lean`, [line 38](lean:Lib/Adelic/TraceFormula/ReduciblePolynomials.lean#L38). Cited in [Chapter](/chapter/trace-formula/).
 - `New.exists_isDualIsometry`: `Lib/GLn/Dual.lean`, [line 414](lean:Lib/GLn/Dual.lean#L414). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_isDualPairing_of_isHCParam`: `Lib/GLn/Dual.lean`, [line 1079](lean:Lib/GLn/Dual.lean#L1079). Cited in [Chapter](/chapter/weyl-modules/).
@@ -364,38 +417,54 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.exists_isPrimitive_changeLevel_eq`: `Lib/Analytic/ZeroSymmetry.lean`, [line 42](lean:Lib/Analytic/ZeroSymmetry.lean#L42). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.exists_isProGalois_ker_of_isCyclic`: `Lib/ClassField/Global/NormTheorems.lean`, [line 108](lean:Lib/ClassField/Global/NormTheorems.lean#L108). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_isRegularFamily`: `New/Congruences/FitTwistsExist.lean`, [line 517](lean:New/Congruences/FitTwistsExist.lean#L517). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/regular-families-plan/).
+- `New.exists_isRootChoice`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 174](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L174). Cited in [Chapter](/chapter/finite-gln/).
+- `New.exists_isRootChoice_GL`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 195](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L195). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_isTableauBasis`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 97](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L97). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_isThetaFunctional_signedSpace`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 818](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L818). Cited in [Chapter](/chapter/weil-representation/).
 - `New.exists_isUnit_sub_star`: `Lib/Adelic/Unitary/Defs.lean`, [line 583](lean:Lib/Adelic/Unitary/Defs.lean#L583). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.exists_iwahoriHeckeHom_injective`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 307](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L307). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.exists_iwasawa_bruhat`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 383](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L383). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_kummer_chars`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 648](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L648). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_length_shaOdd_le`: `Lib/Cyclotomic/OddSha.lean`, [line 645](lean:Lib/Cyclotomic/OddSha.lean#L645). Cited in [Chapter](/chapter/odd-classes/).
+- `New.exists_level_pairWeil`: `Lib/Weil/DualPair/WeilAction.lean`, [line 685](lean:Lib/Weil/DualPair/WeilAction.lean#L685). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.exists_lift_brauerLift`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 768](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L768). Cited in [Chapter](/chapter/finite-gln/).
+- `New.exists_lift_ofAlgForm_eq_smul`: `Lib/Weil/CompactLift/DefiniteThetaLift.lean`, [line 193](lean:Lib/Weil/CompactLift/DefiniteThetaLift.lean#L193). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.exists_map_norm_eq_of_abelianLift_artinAt_eq_one`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 602](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L602). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_measure_laplace_eq`: `Lib/Analytic/Landau.lean`, [line 104](lean:Lib/Analytic/Landau.lean#L104). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_mul_abs_gaussianMonomial_mul_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 404](lean:Lib/Analytic/QuadraticTwist.lean#L404). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_mul_exp_le`: `Lib/Analytic/Landau.lean`, [line 84](lean:Lib/Analytic/Landau.lean#L84). Cited in [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/landau-theorem/).
 - `New.exists_mul_mem_integralAbove`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 88](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L88). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.exists_ne_zero_inv_mulVec_mem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 137](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L137). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.exists_norm_char_semidirect`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 478](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L478). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_norm_eq_of_forall_mem_closure`: `Lib/Adelic/Landherr.lean`, [line 62](lean:Lib/Adelic/Landherr.lean#L62). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_norm_eq_sq_add_sq`: `Lib/Adelic/Landherr.lean`, [line 85](lean:Lib/Adelic/Landherr.lean#L85). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_orthonormal_Ô`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 352](lean:Lib/Adelic/Witt/WittTheorem.lean#L352). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_pos_le_norm_gaussianMellin`: `Lib/Analytic/DirichletTheta.lean`, [line 303](lean:Lib/Analytic/DirichletTheta.lean#L303). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_prime_modEq_one_log_mem`: `Lib/Analytic/Primes.lean`, [line 389](lean:Lib/Analytic/Primes.lean#L389). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
+- `New.exists_rankInner_labelChar_eq_finMean`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 164](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L164). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_reciprocity_character`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 309](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L309). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_regularL_eq_of_sq_eq_one`: `Lib/Analytic/Primes.lean`, [line 113](lean:Lib/Analytic/Primes.lean#L113). Cited in [Chapter](/chapter/primes-in-windows/).
 - `New.exists_reps_integralAbove`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 232](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L232). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.exists_root_near_one`: `Lib/ClassField/LocalDuality/KummerFiniteness.lean`, [line 49](lean:Lib/ClassField/LocalDuality/KummerFiniteness.lean#L49). Cited in [Chapter](/chapter/local-duality/).
 - `New.exists_shift_le_re_exponent`: `Lib/Analytic/Primes.lean`, [line 234](lean:Lib/Analytic/Primes.lean#L234). Cited in [Chapter](/chapter/primes-in-windows/).
+- `New.exists_sorted_isIwahoriEigen_of_diagGL_smul`: `Lib/LocalGL/Iwahori/SortedExponents.lean`, [line 523](lean:Lib/LocalGL/Iwahori/SortedExponents.lean#L523). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.exists_sorted_of_detChar`: `Lib/LocalGL/Iwahori/SortedExponents.lean`, [line 843](lean:Lib/LocalGL/Iwahori/SortedExponents.lean#L843). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_sq_add_sq_quadraticAlgebra`: `Lib/Adelic/Landherr.lean`, [line 128](lean:Lib/Adelic/Landherr.lean#L128). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_sub_mem_Ô`: `Lib/Adelic/Adeles/Basic.lean`, [line 784](lean:Lib/Adelic/Adeles/Basic.lean#L784). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_summable_ge_of_isSquare`: `Lib/Analytic/QuadraticTwist.lean`, [line 422](lean:Lib/Analytic/QuadraticTwist.lean#L422). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_summable_ge_of_isSquare_ordCompl`: `Lib/Analytic/QuadraticTwist.lean`, [line 453](lean:Lib/Analytic/QuadraticTwist.lean#L453). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_summable_mul_norm_sum_jacobiSym_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 483](lean:Lib/Analytic/QuadraticTwist.lean#L483). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_superset_sup_idelesUnitOff_eq_top`: `Lib/ClassField/Places/Ideles.lean`, [line 376](lean:Lib/ClassField/Places/Ideles.lean#L376). Cited in [Chapter](/chapter/cm-fields/).
+- `New.exists_swap_conj_mem_proIwahori`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 166](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L166). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_three_term_free`: `New/Reduction/Data/Existence.lean`, [line 80](lean:New/Reduction/Data/Existence.lean#L80). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/progression-free-sets/).
+- `New.exists_torus_induced_descendsTo`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 718](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L718). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_transporter`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 122](lean:Lib/Adelic/Hecke/ClassSums.lean#L122). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.exists_unipotent_conj_mem_proIwahori`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 460](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L460). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_unit_star_mul_self_eq`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 373](lean:Lib/Adelic/Witt/WittTheorem.lean#L373). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.exists_weylGram_mulVec_eq_hookNumber_smul`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 176](lean:Lib/GLn/SchurModule/GramMatrix.lean#L176). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.factorsThrough_sq_of_sq_eq_one`: `Lib/Analytic/Primes.lean`, [line 87](lean:Lib/Analytic/Primes.lean#L87). Cited in [Chapter](/chapter/data-exist/), [Chapter](/chapter/primes-in-windows/).
+- `New.faithfulChar`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 83](lean:Lib/LocalGL/Green/TauFunctions.lean#L83). Cited in [Chapter](/chapter/finite-gln/).
+- `New.faithfulChar_injective`: `Lib/General/Geometry/GaloisCovers.lean`, [line 182](lean:Lib/General/Geometry/GaloisCovers.lean#L182). Cited in [Chapter](/chapter/finite-gln/).
 - `New.Filling`: `New/Spanning/Unfolding/Setup.lean`, [line 58](lean:New/Spanning/Unfolding/Setup.lean#L58). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.amplitude`: `New/Spanning/Unfolding/Setup.lean`, [line 669](lean:New/Spanning/Unfolding/Setup.lean#L669). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.amplitudeSum`: `New/Spanning/Unfolding/Setup.lean`, [line 680](lean:New/Spanning/Unfolding/Setup.lean#L680). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/theorem-b-plan/).
@@ -440,6 +509,8 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.finite_cocycles_unramified_outside`: `Lib/ClassField/GreenbergWiles/SelmerLevels.lean`, [line 153](lean:Lib/ClassField/GreenbergWiles/SelmerLevels.lean#L153). Cited in [Chapter](/chapter/local-duality/).
 - `New.finite_levelSpace_smoothFormRep`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 304](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L304). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.finiteIndex_idele_subgroup_of_isOpen`: `Lib/ClassField/Places/Ideles.lean`, [line 383](lean:Lib/ClassField/Places/Ideles.lean#L383). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
+- `New.finMean`: `Lib/General/Groups/CharacterTheory.lean`, [line 52](lean:Lib/General/Groups/CharacterTheory.lean#L52). Cited in [Chapter](/chapter/finite-gln/).
+- `New.finMean_ite`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 253](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L253). Cited in [Chapter](/chapter/finite-gln/).
 - `New.finMultiplier`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 943](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L943). Cited in [Chapter](/chapter/weil-representation/).
 - `New.finMultiplier_eq_of_supportedOn`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 1020](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L1020). Cited in [Chapter](/chapter/weil-representation/).
 - `New.finMultiplier_eq_one_of_mem`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 979](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L979). Cited in [Chapter](/chapter/weil-representation/).
@@ -455,6 +526,16 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.finrank_fixedFieldOf`: `Lib/ClassField/Places/ProfiniteGalois.lean`, [line 259](lean:Lib/ClassField/Places/ProfiniteGalois.lean#L259). Cited in [Chapter](/chapter/cm-fields/).
 - `New.finrank_levelSpace_smoothFormRep`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 313](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L313). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.finRightRep`: `Lib/Adelic/AutomorphicForms/Basic.lean`, [line 78](lean:Lib/Adelic/AutomorphicForms/Basic.lean#L78). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.Fischer.eq_zero_of_mem_perpInDegree`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 599](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L599). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.fockLaplacian_eq_zero`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 608](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L608). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.fockLaplacian_eq_zero_of_pderiv_eq_zero`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 466](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L466). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.glOp_mem_polyDegreeLE`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 582](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L582). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.inner_X_mul`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 552](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L552). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.isLaplaceHarmonic_of_isKHighest`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 658](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L658). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.mapsTo_perpInDegree`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 696](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L696). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.perpInDegree`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 594](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L594). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.perpInDegree_ne_bot`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 503](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L503). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fischer.polyDegreeLE`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 560](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L560). Cited in [Chapter](/chapter/local-theta/).
 - `New.fischer_det_inequality`: `Lib/General/LinearAlgebra/MinorProducts.lean`, [line 246](lean:Lib/General/LinearAlgebra/MinorProducts.lean#L246). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.fischer_inequality`: `Lib/General/LinearAlgebra/MinorProducts.lean`, [line 262](lean:Lib/General/LinearAlgebra/MinorProducts.lean#L262). Cited in [Chapter](/chapter/discrete-series/).
 - `New.FitsRanks`: `Lib/GLn/SchurModule/Basic.lean`, [line 237](lean:Lib/GLn/SchurModule/Basic.lean#L237). Cited in [Chapter](/chapter/weyl-modules/).
@@ -485,6 +566,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.Floors.TraceOne.heisenbergElem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 70](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L70). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Fock.beta_mul_realVac`: `Lib/Weil/Fock/Basic.lean`, [line 235](lean:Lib/Weil/Fock/Basic.lean#L235). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.blockU`: `Lib/Weil/Fock/Basic.lean`, [line 888](lean:Lib/Weil/Fock/Basic.lean#L888). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Fock.canonical_commutation`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 97](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L97). Cited in [Chapter](/chapter/local-theta/).
 - `New.Fock.denseRange_polyVector`: `Lib/Weil/Fock/PolynomialVectors.lean`, [line 201](lean:Lib/Weil/Fock/PolynomialVectors.lean#L201). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.det_fromBlocks_mul_fromBlocks_eq_realMultiplier_mul`: `Lib/Weil/Fock/Basic.lean`, [line 416](lean:Lib/Weil/Fock/Basic.lean#L416). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.detTwist`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 352](lean:Lib/Weil/Fock/OscillatorPair.lean#L352). Cited in [Chapter](/chapter/weil-representation/).
@@ -497,7 +579,9 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.Fock.fockMatrixCoeff_eq_fockInner`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 260](lean:Lib/Weil/Fock/OscillatorPair.lean#L260). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.fockMoment`: `Lib/Weil/Fock/WeightedNorms.lean`, [line 63](lean:Lib/Weil/Fock/WeightedNorms.lean#L63). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.fockSpace`: `Lib/Weil/Fock/Basic.lean`, [line 545](lean:Lib/Weil/Fock/Basic.lean#L545). Cited in [Chapter](/chapter/weil-representation/).
-- `New.Fock.glOp`: `Lib/Weil/Fock/Basic.lean`, [line 114](lean:Lib/Weil/Fock/Basic.lean#L114). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Fock.glOp`: `Lib/Weil/Fock/Basic.lean`, [line 114](lean:Lib/Weil/Fock/Basic.lean#L114). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
+- `New.Fock.glOp_commutator`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 182](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L182). Cited in [Chapter](/chapter/local-theta/).
+- `New.Fock.glOp_neg`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 199](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L199). Cited in [Chapter](/chapter/local-theta/).
 - `New.Fock.hasDerivAt_realHeisenbergOp`: `Lib/Weil/Fock/Basic.lean`, [line 767](lean:Lib/Weil/Fock/Basic.lean#L767). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.hasDerivAt_realWeil`: `Lib/Weil/Fock/PolynomialVectors.lean`, [line 378](lean:Lib/Weil/Fock/PolynomialVectors.lean#L378). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.heisenbergDeriv`: `Lib/Weil/Fock/Basic.lean`, [line 126](lean:Lib/Weil/Fock/Basic.lean#L126). Cited in [Chapter](/chapter/weil-representation/).
@@ -505,10 +589,10 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.Fock.holomorphicCoord_eq`: `Lib/Weil/Fock/Basic.lean`, [line 98](lean:Lib/Weil/Fock/Basic.lean#L98). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.integral_exp_holomorphicCoord`: `Lib/Weil/Fock/Basic.lean`, [line 278](lean:Lib/Weil/Fock/Basic.lean#L278). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.isVacuum_realVac`: `Lib/Weil/Fock/Basic.lean`, [line 302](lean:Lib/Weil/Fock/Basic.lean#L302). Cited in [Chapter](/chapter/weil-representation/).
-- `New.Fock.lowerOp`: `Lib/Weil/Fock/Basic.lean`, [line 109](lean:Lib/Weil/Fock/Basic.lean#L109). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Fock.lowerOp`: `Lib/Weil/Fock/Basic.lean`, [line 109](lean:Lib/Weil/Fock/Basic.lean#L109). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
 - `New.Fock.norm_realMultiplier_le`: `Lib/Weil/Fock/Basic.lean`, [line 202](lean:Lib/Weil/Fock/Basic.lean#L202). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.normalizedVolume`: `Lib/General/Analysis/GaussianIntegral.lean`, [line 119](lean:Lib/General/Analysis/GaussianIntegral.lean#L119). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weil-representation/).
-- `New.Fock.oscillatorPair_detTwist`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 592](lean:Lib/Weil/Fock/OscillatorPair.lean#L592). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Fock.oscillatorPair_detTwist`: `Lib/Weil/Fock/OscillatorPair.lean`, [line 592](lean:Lib/Weil/Fock/OscillatorPair.lean#L592). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
 - `New.Fock.piTensor`: `Lib/Weil/Fock/Basic.lean`, [line 830](lean:Lib/Weil/Fock/Basic.lean#L830). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.piTensor_polyVector`: `Lib/Weil/Fock/Basic.lean`, [line 855](lean:Lib/Weil/Fock/Basic.lean#L855). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.polyVector`: `Lib/Weil/Fock/Basic.lean`, [line 726](lean:Lib/Weil/Fock/Basic.lean#L726). Cited in [Chapter](/chapter/weil-representation/).
@@ -517,7 +601,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.Fock.polyVector_one`: `Lib/Weil/Fock/Basic.lean`, [line 760](lean:Lib/Weil/Fock/Basic.lean#L760). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.posProj`: `Lib/Weil/Fock/Basic.lean`, [line 90](lean:Lib/Weil/Fock/Basic.lean#L90). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.principalMinor_sign_eq_det`: `Lib/Weil/Fock/Basic.lean`, [line 184](lean:Lib/Weil/Fock/Basic.lean#L184). Cited in [Chapter](/chapter/weil-representation/).
-- `New.Fock.raiseOp`: `Lib/Weil/Fock/Basic.lean`, [line 104](lean:Lib/Weil/Fock/Basic.lean#L104). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Fock.raiseOp`: `Lib/Weil/Fock/Basic.lean`, [line 104](lean:Lib/Weil/Fock/Basic.lean#L104). Cited in [Chapter](/chapter/weil-representation/), [Chapter](/chapter/local-theta/).
 - `New.Fock.realAction`: `Lib/Weil/Fock/Basic.lean`, [line 510](lean:Lib/Weil/Fock/Basic.lean#L510). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.realHeisenberg`: `Lib/Weil/Fock/Basic.lean`, [line 70](lean:Lib/Weil/Fock/Basic.lean#L70). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.realHeisenbergOp`: `Lib/Weil/Fock/Basic.lean`, [line 554](lean:Lib/Weil/Fock/Basic.lean#L554). Cited in [Chapter](/chapter/weil-representation/).
@@ -531,6 +615,48 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.Fock.realWeil_vacVector_apply_zero`: `Lib/Weil/Fock/PolynomialVectors.lean`, [line 69](lean:Lib/Weil/Fock/PolynomialVectors.lean#L69). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.vacVector`: `Lib/Weil/Fock/Basic.lean`, [line 557](lean:Lib/Weil/Fock/Basic.lean#L557). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Fock.weilDeriv`: `Lib/Weil/Fock/Basic.lean`, [line 119](lean:Lib/Weil/Fock/Basic.lean#L119). Cited in [Chapter](/chapter/weil-representation/).
+- `New.FockDualPair`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 111](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L111). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.centre`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 278](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L278). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.centredCasimir_oscRows`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 377](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L377). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.centredCasimir_swap_oscRows`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 393](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L393). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.centredCasimir_swap_oscRows_eq_add`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 413](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L413). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.centredParam`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 173](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L173). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.columnShift`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 117](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L117). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.fockLaplacian`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 318](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L318). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.globalSign`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 113](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L113). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsJointHighest`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 361](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L361). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsJointHighest.isPreJointHarmonic`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 389](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L389). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsLaplaceHarmonic`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 341](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L341). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsMatchedPair`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 330](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L330). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsPreJointHarmonic`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 347](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L347). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsPreJointHarmonic.sub_smul`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 399](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L399). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsTermwiseHarmonic`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 336](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L336). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.IsTermwiseHarmonic.isLaplaceHarmonic`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 375](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L375). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.Layer`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 319](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L319). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.layerCol`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 326](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L326). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.layerRow`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 323](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L323). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.lower_mul_lower`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 311](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L311). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.lower_mul_raise`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 304](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L304). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.matchingPoint`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 417](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L417). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.oscRows`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 281](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L281). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.oscRows_E_sub_centre`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 343](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L343). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.oscRowsUnit`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 209](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L209). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.oscRowsUnit_commutator`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 247](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L247). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.polarisation`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 323](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L323). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.quadraticOp`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 298](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L298). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.quarticOp`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 294](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L294). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.relWeight`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 168](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L168). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.rowShift`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 115](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L115). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.std`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 124](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L124). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.sum_centredParam_sq`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 422](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L422). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.swap`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 140](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L140). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.swap_indexSign`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 374](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L374). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.swap_oscRows_E`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 385](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L385). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.swap_oscRows_E_sub_centre`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 360](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L360). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.swap_swap`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 147](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L147). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.vacuumWeight`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 164](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L164). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.varEquiv`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 119](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L119). Cited in [Chapter](/chapter/local-theta/).
+- `New.FockDualPair.varSign`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 152](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L152). Cited in [Chapter](/chapter/local-theta/).
 - `New.fockPairing`: `Lib/GLn/SchurModule/Basic.lean`, [line 94](lean:Lib/GLn/SchurModule/Basic.lean#L94). Cited in [Chapter](/chapter/weyl-modules/), [Chapter](/chapter/weil-representation/).
 - `New.fockPairing_comm`: `Lib/GLn/SchurModule/Basic.lean`, [line 665](lean:Lib/GLn/SchurModule/Basic.lean#L665). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fockPairing_rowSubst`: `Lib/GLn/SchurModule/Basic.lean`, [line 687](lean:Lib/GLn/SchurModule/Basic.lean#L687). Cited in [Chapter](/chapter/weyl-modules/).
@@ -539,16 +665,19 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.fockPairing_toPoly_toPoly`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 167](lean:Lib/GLn/SchurModule/GramMatrix.lean#L167). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.formalDegree_pos`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 545](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L545). Cited in [Chapter](/chapter/discrete-series/).
 - `New.formGram`: `Lib/General/LinearAlgebra/GramDeterminant.lean`, [line 100](lean:Lib/General/LinearAlgebra/GramDeterminant.lean#L100). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.formLift`: `Lib/Weil/Lift.lean`, [line 767](lean:Lib/Weil/Lift.lean#L767). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.four_mul_le_norm_stdAddChar_sub_one`: `Lib/Analytic/PolyaVinogradov.lean`, [line 43](lean:Lib/Analytic/PolyaVinogradov.lean#L43). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.FrameClass`: `Lib/Adelic/TraceFormula/OrbitalUnfolding.lean`, [line 111](lean:Lib/Adelic/TraceFormula/OrbitalUnfolding.lean#L111). Cited in [Chapter](/chapter/trace-formula/).
 - `New.freeLevelEquiv`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 244](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L244). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.G`: `Lib/Adelic/Unitary/Defs.lean`, [line 238](lean:Lib/Adelic/Unitary/Defs.lean#L238). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.G.toUnitary`: `Lib/Adelic/Unitary/Defs.lean`, [line 419](lean:Lib/Adelic/Unitary/Defs.lean#L419). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.galActionGL`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 71](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L71). Cited in [Chapter](/chapter/finite-gln/).
 - `New.GaloisRep.apply_eq_one_of_natCast_mem_asIdeal`: `Lib/ClassField/Grunwald.lean`, [line 771](lean:Lib/ClassField/Grunwald.lean#L771). Cited in [Chapter](/chapter/local-duality/).
 - `New.GaloisRep.exists_isStepOfLocalChar`: `Lib/ClassField/Grunwald.lean`, [line 859](lean:Lib/ClassField/Grunwald.lean#L859). Cited in [Chapter](/chapter/local-duality/).
 - `New.GaloisRep.exists_step_of_local_char`: `Lib/ClassField/Grunwald.lean`, [line 928](lean:Lib/ClassField/Grunwald.lean#L928). Cited in [Chapter](/chapter/local-duality/).
 - `New.GaloisRep.IsSplitPrimeToDisc.exists_place_above_ne`: `Lib/GaloisRep/Main/QuadraticStep.lean`, [line 73](lean:Lib/GaloisRep/Main/QuadraticStep.lean#L73). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.GaloisRep.IsStepOfLocalChar`: `Lib/ClassField/Grunwald.lean`, [line 747](lean:Lib/ClassField/Grunwald.lean#L747). Cited in [Chapter](/chapter/local-duality/).
+- `New.GalSemidirect`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 75](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L75). Cited in [Chapter](/chapter/finite-gln/).
 - `New.gammaFactor_changeLevel`: `Lib/Analytic/ZeroSymmetry.lean`, [line 49](lean:Lib/Analytic/ZeroSymmetry.lean#L49). Cited in [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero`: `Lib/Analytic/ZeroSymmetry.lean`, [line 61](lean:Lib/Analytic/ZeroSymmetry.lean#L61). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.gapThreshold`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 96](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L96). Cited in [Chapter](/chapter/discrete-series/).
@@ -600,6 +729,9 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.GL.weylNormSq_mulVec_le_of_equivariant`: `Lib/GLn/Branching/NormBound.lean`, [line 656](lean:Lib/GLn/Branching/NormBound.lean#L656). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.GL.weylNormSq_weylEval_permArray`: `Lib/GLn/SchurModule/GramMatrix.lean`, [line 428](lean:Lib/GLn/SchurModule/GramMatrix.lean#L428). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.GL.zariski_dense_unitary`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 585](lean:Lib/GLn/SchurModule/WeylKernel.lean#L585). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.GlModule`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 56](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L56). Cited in [Chapter](/chapter/local-theta/).
+- `New.GlModule.centredCasimir`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 252](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L252). Cited in [Chapter](/chapter/local-theta/).
+- `New.GlModule.centredCasimir_apply`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 259](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L259). Cited in [Chapter](/chapter/local-theta/).
 - `New.glMultiplier`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 686](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L686). Cited in [Chapter](/chapter/weil-representation/).
 - `New.glMultiplier_inv`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 750](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L750). Cited in [Chapter](/chapter/weil-representation/).
 - `New.glMultiplier_mul_diagGL_mul`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 712](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L712). Cited in [Chapter](/chapter/weil-representation/).
@@ -608,20 +740,62 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.gramForm_conjWeylRep`: `Lib/GLn/SchurModule/SchurNorm.lean`, [line 330](lean:Lib/GLn/SchurModule/SchurNorm.lean#L330). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.gramForm_highestVector_self`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 324](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L324). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.gramForm_mem_embValRing`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 706](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L706). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
+- `New.greenCuspidal_simClassOf_eq_mul`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 369](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L369). Cited in [Chapter](/chapter/finite-gln/).
+- `New.greenTau`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 133](lean:Lib/LocalGL/Green/TauFunctions.lean#L133). Cited in [Chapter](/chapter/finite-gln/).
+- `New.greenTau_eq`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 437](lean:Lib/LocalGL/Green/TauFunctions.lean#L437). Cited in [Chapter](/chapter/finite-gln/).
+- `New.greenTau_eq_zero_of_dim_ne`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 375](lean:Lib/LocalGL/Green/TauFunctions.lean#L375). Cited in [Chapter](/chapter/finite-gln/).
 - `New.grh`: `New/Reduction/OneSidedBound.lean`, [line 239](lean:New/Reduction/OneSidedBound.lean#L239). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/two-editions/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/main-inequality/).
 - `New.grunwald`: `Lib/ClassField/Grunwald.lean`, [line 177](lean:Lib/ClassField/Grunwald.lean#L177). Cited in [Chapter](/chapter/local-duality/).
 - `New.H2`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 104](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L104). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.haarU`: `Lib/DiscreteSeries/Haar/CayleyChart.lean`, [line 374](lean:Lib/DiscreteSeries/Haar/CayleyChart.lean#L374). Cited in [Chapter](/chapter/discrete-series/).
 - `New.hadamard_det_inequality`: `Lib/General/LinearAlgebra/MinorProducts.lean`, [line 278](lean:Lib/General/LinearAlgebra/MinorProducts.lean#L278). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.Hall`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 71](lean:Lib/LocalGL/Green/HallAlgebra.lean#L71). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.blockAverage`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 521](lean:Lib/LocalGL/Green/HallAlgebra.lean#L521). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.blockAverage_mul`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 619](lean:Lib/LocalGL/Green/HallAlgebra.lean#L619). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.blockAverage_mulMoebius`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 144](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L144). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.blockAverage_of_dim_eq_zero`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 722](lean:Lib/LocalGL/Green/HallAlgebra.lean#L722). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.blockAverage_simClassOf`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 570](lean:Lib/LocalGL/Green/HallAlgebra.lean#L570). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.brauerLift`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 549](lean:Lib/LocalGL/Green/HallAlgebra.lean#L549). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.classInner_evalGL`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 791](lean:Lib/LocalGL/Green/HallAlgebra.lean#L791). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.conj_moebius`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 198](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L198). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.crapo_complementation`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 62](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L62). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.evalGL`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 139](lean:Lib/LocalGL/Green/HallAlgebra.lean#L139). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.greenCuspidal`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 553](lean:Lib/LocalGL/Green/HallAlgebra.lean#L553). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.greenCuspidal_eq_zero_of_dim_lt_one`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 234](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L234). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.greenCuspidal_mul_constOne`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 211](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L211). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.IsCuspidal`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 533](lean:Lib/LocalGL/Green/HallAlgebra.lean#L533). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.IsCuspidal.exists_charpoly_eq_pow`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 296](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L296). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.isCuspidal_greenCuspidal`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 240](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L240). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.isSemisimple_of_moebius_ne_zero`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 107](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L107). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.isUnit_constOne`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 478](lean:Lib/LocalGL/Green/HallAlgebra.lean#L478). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.moebius`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 525](lean:Lib/LocalGL/Green/HallAlgebra.lean#L525). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.moebius_eq_one_of_dim_eq_zero`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 135](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L135). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.moebius_mul_constOne`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 97](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L97). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.mul_apply_eq_zero_of_dim_lt`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 228](lean:Lib/LocalGL/Green/HallAlgebra.lean#L228). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.mul_simClassOf`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 351](lean:Lib/LocalGL/Green/HallAlgebra.lean#L351). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.mulMoebius`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 529](lean:Lib/LocalGL/Green/HallAlgebra.lean#L529). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.one_sub_constOne_pow_apply_eq_zero`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 455](lean:Lib/LocalGL/Green/HallAlgebra.lean#L455). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.rankInner`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 537](lean:Lib/LocalGL/Green/HallAlgebra.lean#L537). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.rankInner_mul_eq_rankInner_skew`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 912](lean:Lib/LocalGL/Green/HallAlgebra.lean#L912). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.rankInner_mul_eq_sum_skew`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 802](lean:Lib/LocalGL/Green/HallAlgebra.lean#L802). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.rankInner_mul_of_isCuspidal`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 941](lean:Lib/LocalGL/Green/HallAlgebra.lean#L941). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.skew`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 542](lean:Lib/LocalGL/Green/HallAlgebra.lean#L542). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.skew_mul`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 986](lean:Lib/LocalGL/Green/HallAlgebra.lean#L986). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.skew_of_isCuspidal`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 967](lean:Lib/LocalGL/Green/HallAlgebra.lean#L967). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Hall.sum_moebius_simClassOf_endOnSub`: `Lib/LocalGL/Green/CuspidalFunctions.lean`, [line 101](lean:Lib/LocalGL/Green/CuspidalFunctions.lean#L101). Cited in [Chapter](/chapter/finite-gln/).
+- `New.HasCommonLift`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 94](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L94). Cited in [Chapter](/chapter/finite-gln/).
 - `New.HasCutoff`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 86](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L86). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.hasCutoff_count`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 448](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L448). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.hasCutoff_of_proper`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 345](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L345). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.HasFiniteCosets`: `Lib/Adelic/Hecke/Basic.lean`, [line 241](lean:Lib/Adelic/Hecke/Basic.lean#L241). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.HasFiniteType`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 79](lean:Lib/Adelic/Hecke/ClassSums.lean#L79). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.HasFiniteType.of_le`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 191](lean:Lib/Adelic/Hecke/ClassSums.lean#L191). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.HasFixedField`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 82](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L82). Cited in [Chapter](/chapter/finite-gln/).
+- `New.hasFixedField_iff_ne_one`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 604](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L604). Cited in [Chapter](/chapter/finite-gln/).
 - `New.HasHeckePolyAt`: `Lib/GaloisRep/Main/Defs.lean`, [line 73](lean:Lib/GaloisRep/Main/Defs.lean#L73). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.hasHeckePolyAt_iff`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 450](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L450). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.HasHeckePolynomial`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 384](lean:Lib/Weil/Unramified/SplitHecke.lean#L384). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.HasHeckePolynomial`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 384](lean:Lib/Weil/Unramified/SplitHecke.lean#L384). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
+- `New.hasHeckePolynomial_of_heckeSplit`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 406](lean:Lib/Weil/Unramified/SplitHecke.lean#L406). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.hasHeckePolynomial_toAlgForm_iff`: `Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean`, [line 275](lean:Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean#L275). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.HasHolGap`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 398](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L398). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HasLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 257](lean:Lib/Adelic/Unitary/Defs.lean#L257). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -643,9 +817,13 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.HCParam.dsCoeff`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 193](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L193). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.dsKernel`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 201](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L201). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.DsModule`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 329](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L329). Cited in [Chapter](/chapter/discrete-series/).
+- `New.HCParam.exists_highest_vector`: `Lib/DiscreteSeries/Rigidity/HighestVectorsAndFiltration.lean`, [line 92](lean:Lib/DiscreteSeries/Rigidity/HighestVectorsAndFiltration.lean#L92). Cited in [Chapter](/chapter/local-theta/).
 - `New.HCParam.flenstedJensen`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 183](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L183). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.formalDegree`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 197](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L197). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.HasGap`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 161](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L161). Cited in [Chapter](/chapter/discrete-series/).
+- `New.HCParam.HasGap.casimirValue_sub_centre`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 119](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L119). Cited in [Chapter](/chapter/local-theta/).
+- `New.HCParam.HasGap.two_mul_relWeight`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 71](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L71). Cited in [Chapter](/chapter/local-theta/).
+- `New.HCParam.HasGap.two_mul_sum_lowestKType`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 107](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L107). Cited in [Chapter](/chapter/local-theta/).
 - `New.HCParam.HasLargeGap`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 170](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L170). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.HasLargeGap.exists_bump_conv_dsKernel`: `Lib/DiscreteSeries/Rigidity/KernelFixes.lean`, [line 167](lean:Lib/DiscreteSeries/Rigidity/KernelFixes.lean#L167). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.HasLargeGap.isIdempotentKernel_dsKernel`: `Lib/DiscreteSeries/Rigidity/KernelFixes.lean`, [line 143](lean:Lib/DiscreteSeries/Rigidity/KernelFixes.lean#L143). Cited in [Chapter](/chapter/discrete-series/).
@@ -657,16 +835,26 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.HCParam.laplaceIntegrand`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 94](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L94). Cited in [Chapter](/chapter/laplace-method/).
 - `New.HCParam.lowestKType`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 175](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L175). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HCParam.phase`: `New/Appendix/DiscreteSeries/SteepParameters.lean`, [line 67](lean:New/Appendix/DiscreteSeries/SteepParameters.lean#L67). Cited in [Chapter](/chapter/laplace-method/).
+- `New.HCParam.rootCone`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 119](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L119). Cited in [Chapter](/chapter/local-theta/).
 - `New.HCParam.splitCoeff`: `Lib/DiscreteSeries/FlenstedJensen/CasimirEigenfunction.lean`, [line 507](lean:Lib/DiscreteSeries/FlenstedJensen/CasimirEigenfunction.lean#L507). Cited in [Chapter](/chapter/discrete-series/).
 - `New.hcParameter`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 88](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L88). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.heckeCoeff`: `Lib/ClassField/HeckeL/EulerProduct.lean`, [line 63](lean:Lib/ClassField/HeckeL/EulerProduct.lean#L63). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.heckeCoset`: `Lib/Adelic/Hecke/Basic.lean`, [line 77](lean:Lib/Adelic/Hecke/Basic.lean#L77). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.heckeFun`: `Lib/Adelic/Hecke/Basic.lean`, [line 73](lean:Lib/Adelic/Hecke/Basic.lean#L73). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.heckeCoset_mulSingle_zero_eq`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 245](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L245). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckeFun`: `Lib/Adelic/Hecke/Basic.lean`, [line 73](lean:Lib/Adelic/Hecke/Basic.lean#L73). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
 - `New.heckeFun_eq_sum`: `Lib/Adelic/Hecke/Basic.lean`, [line 285](lean:Lib/Adelic/Hecke/Basic.lean#L285). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.heckeFun_heckeFun`: `Lib/Adelic/Hecke/Basic.lean`, [line 378](lean:Lib/Adelic/Hecke/Basic.lean#L378). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.heckePoly`: `Lib/GaloisRep/Main/Defs.lean`, [line 66](lean:Lib/GaloisRep/Main/Defs.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.heckePolyOp`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 379](lean:Lib/Weil/Unramified/SplitHecke.lean#L379). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.heckeSplit`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 66](lean:Lib/Weil/Unramified/SplitHecke.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.heckeFun_iwahoriDoubleCoset_eq_iwahoriDegree_smul`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 201](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L201). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckeGL`: `Lib/Adelic/Unitary/Defs.lean`, [line 262](lean:Lib/Adelic/Unitary/Defs.lean#L262). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckeGL_eq_sum`: `Lib/Weil/Unramified/HeckeGL.lean`, [line 510](lean:Lib/Weil/Unramified/HeckeGL.lean#L510). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckePoly`: `Lib/GaloisRep/Main/Defs.lean`, [line 66](lean:Lib/GaloisRep/Main/Defs.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
+- `New.heckePolyEval`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 371](lean:Lib/Weil/Unramified/SplitHecke.lean#L371). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckePolyOp`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 379](lean:Lib/Weil/Unramified/SplitHecke.lean#L379). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
+- `New.heckeSplit`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 66](lean:Lib/Weil/Unramified/SplitHecke.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
+- `New.heckeSplit_adjoint`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 207](lean:Lib/Weil/Unramified/SplitHecke.lean#L207). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckeSplit_comm`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 250](lean:Lib/Weil/Unramified/SplitHecke.lean#L250). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckeSplit_dual`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 175](lean:Lib/Weil/Unramified/SplitHecke.lean#L175). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.heckeSplit_star`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 128](lean:Lib/Weil/Unramified/SplitHecke.lean#L128). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.HeightLe`: `New/Reduction/Lattices/Heights.lean`, [line 41](lean:New/Reduction/Lattices/Heights.lean#L41). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/regular-families-plan/).
 - `New.HeightLe.inv_const`: `New/Reduction/Lattices/Heights.lean`, [line 134](lean:New/Reduction/Lattices/Heights.lean#L134). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.HeightLe.mono`: `New/Reduction/Lattices/Heights.lean`, [line 77](lean:New/Reduction/Lattices/Heights.lean#L77). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -737,6 +925,8 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.hookNumber_pos`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 57](lean:Lib/GLn/SchurModule/WeylKernel.lean#L57). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.hua_integral_le`: `Lib/General/Analysis/HolomorphicIntegrals.lean`, [line 572](lean:Lib/General/Analysis/HolomorphicIntegrals.lean#L572). Cited in [Chapter](/chapter/discrete-series/).
 - `New.hyperbolicSpace`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 70](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L70). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.hyperplaneSum`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 162](lean:Lib/LocalGL/Green/TauFunctions.lean#L162). Cited in [Chapter](/chapter/finite-gln/).
+- `New.hyperplaneSum_mul_labelIdem`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 399](lean:Lib/LocalGL/Green/LabelCharacters.lean#L399). Cited in [Chapter](/chapter/finite-gln/).
 - `New.ideleAbs`: `Lib/Adelic/Adeles/IdeleModulus.lean`, [line 66](lean:Lib/Adelic/Adeles/IdeleModulus.lean#L66). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.ideleAbs_toAdele`: `Lib/Adelic/Adeles/IdeleModulus.lean`, [line 122](lean:Lib/Adelic/Adeles/IdeleModulus.lean#L122). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.ideleAt`: `Lib/ClassField/Places/Ideles.lean`, [line 80](lean:Lib/ClassField/Places/Ideles.lean#L80). Cited in [Chapter](/chapter/class-field-theory/).
@@ -744,7 +934,9 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.idelesUnitOff`: `Lib/ClassField/Places/Ideles.lean`, [line 83](lean:Lib/ClassField/Places/Ideles.lean#L83). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.identDistrib_orbitMeasure`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 220](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L220). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.index_ker_abelianLift_comp_artinMap`: `Lib/ClassField/Global/NormTheorems.lean`, [line 162](lean:Lib/ClassField/Global/NormTheorems.lean#L162). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.induceClassFn`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 67](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L67). Cited in [Chapter](/chapter/finite-gln/).
 - `New.inertiaGroup`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 228](lean:Lib/ClassField/Places/GaloisDefs.lean#L228). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
+- `New.injOn_Iio_pow_card_pow_of_isPrimitiveRoot`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 564](lean:Lib/LocalGL/Green/LabelCharacters.lean#L564). Cited in [Chapter](/chapter/finite-gln/).
 - `New.inner_lineRaise`: `Lib/Adelic/TraceFormula/LineStabiliser.lean`, [line 727](lean:Lib/Adelic/TraceFormula/LineStabiliser.lean#L727). Cited in [Chapter](/chapter/trace-formula/).
 - `New.integrable_quotMeasure_tsum`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 462](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L462). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.integrable_two_div_norm_pow`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 509](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L509). Cited in [Chapter](/chapter/discrete-series/).
@@ -771,13 +963,27 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.integralFormsAt`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 176](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L176). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.intGL`: `Lib/General/Groups/CongruenceSubgroups.lean`, [line 207](lean:Lib/General/Groups/CongruenceSubgroups.lean#L207). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.isAlgebraic_of_norm_complexToCp_le`: `Lib/General/NumberTheory/PadicLimitsValuation.lean`, [line 50](lean:Lib/General/NumberTheory/PadicLimitsValuation.lean#L50). Cited in [Chapter](/chapter/twisted-lattices/).
+- `New.IsArrow`: `Lib/Weil/Lift.lean`, [line 773](lean:Lib/Weil/Lift.lean#L773). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsArrow.coe_formLift`: `Lib/Weil/Lift.lean`, [line 927](lean:Lib/Weil/Lift.lean#L927). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsArrow.formRep_formLift`: `Lib/Weil/Lift.lean`, [line 933](lean:Lib/Weil/Lift.lean#L933). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsArrow.inner_formLift_adjoint`: `Lib/Weil/Lift.lean`, [line 960](lean:Lib/Weil/Lift.lean#L960). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsBadPrime`: `Lib/Analytic/QuadraticTwist.lean`, [line 724](lean:Lib/Analytic/QuadraticTwist.lean#L724). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/polya-vinogradov/).
 - `New.IsBesselFunction`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 662](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L662). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBesselFunction.enorm_besselS_mul`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 667](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L667). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBesselFunction.enorm_integral_besselS_mul`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 646](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L646). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.IsBlockRule`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 55](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L55). Cited in [Chapter](/chapter/local-theta/), [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsBlockRule.neg`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 317](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L317). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsBlockRule.shift`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 351](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L351). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsBlockRule.symm`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 255](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L255). Cited in [Chapter](/chapter/local-theta/).
+- `New.isBlockRule_iff_isMatch`: `Lib/DiscreteSeries/Theta/BlockRule.lean`, [line 303](lean:Lib/DiscreteSeries/Theta/BlockRule.lean#L303). Cited in [Chapter](/chapter/local-theta/).
 - `New.IsBoundedMeasurable`: `Lib/General/Measure/IdempotentKernel.lean`, [line 38](lean:Lib/General/Measure/IdempotentKernel.lean#L38). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBoundedMeasurable.integral_inner_translate`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 262](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L262). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.IsBoundedMeasurable.lintegral_sq_convolve_convolve_le`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 570](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L570). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.IsCentralProj`: `Lib/General/Groups/CharacterTheory.lean`, [line 373](lean:Lib/General/Groups/CharacterTheory.lean#L373). Cited in [Chapter](/chapter/finite-gln/).
+- `New.isCentralProj_sum_tupleIdem`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 515](lean:Lib/LocalGL/Green/LabelCharacters.lean#L515). Cited in [Chapter](/chapter/finite-gln/).
+- `New.isCentralProj_tupleIdem`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 497](lean:Lib/LocalGL/Green/LabelCharacters.lean#L497). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsChar`: `Lib/General/Groups/CharacterTheory.lean`, [line 65](lean:Lib/General/Groups/CharacterTheory.lean#L65). Cited in [Chapter](/chapter/finite-gln/).
+- `New.isClassFunction_labelIdem_coeff`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 388](lean:Lib/LocalGL/Green/LabelCharacters.lean#L388). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsClassOfInvariant`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 389](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L389). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.isClosed_range_artinMap`: `Lib/ClassField/Global/NormTheorems.lean`, [line 44](lean:Lib/ClassField/Global/NormTheorems.lean#L44). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.isCMField_adjoinRoot_of_forall_root_mul_star_eq`: `Lib/General/NumberTheory/CMFields.lean`, [line 91](lean:Lib/General/NumberTheory/CMFields.lean#L91). Cited in [Chapter](/chapter/cm-fields/).
@@ -791,6 +997,7 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.IsContPeriodic`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 688](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L688). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.IsCovolOneLattice`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 271](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L271). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.isCovolOneLattice_ratAdeles`: `Lib/Adelic/Adeles/AdditiveCharacter.lean`, [line 433](lean:Lib/Adelic/Adeles/AdditiveCharacter.lean#L433). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.isCuspidal_greenTau`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 367](lean:Lib/LocalGL/Green/TauFunctions.lean#L367). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsCuspidalAt`: `Lib/Adelic/TraceFormula/TestFunction.lean`, [line 135](lean:Lib/Adelic/TraceFormula/TestFunction.lean#L135). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsCuspidalAt.convIndicator_mul`: `Lib/Adelic/TraceFormula/TestFunction.lean`, [line 195](lean:Lib/Adelic/TraceFormula/TestFunction.lean#L195). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsCuspidalAt.convIndicator_offPlace`: `Lib/Adelic/TraceFormula/OffPlace.lean`, [line 99](lean:Lib/Adelic/TraceFormula/OffPlace.lean#L99). Cited in [Chapter](/chapter/trace-formula/).
@@ -805,15 +1012,32 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.isCutoff_chosenCutoff`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 91](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L91). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.IsDerivedAction`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 100](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L100). Cited in [Chapter](/chapter/discrete-series/).
 - `New.IsDualPairing`: `Lib/GLn/Dual.lean`, [line 1046](lean:Lib/GLn/Dual.lean#L1046). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.IsEdge`: `Lib/Weil/Lift.lean`, [line 391](lean:Lib/Weil/Lift.lean#L391). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsEdge.exists_petersson_lift_eq_mul`: `Lib/Weil/Lift.lean`, [line 854](lean:Lib/Weil/Lift.lean#L854). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsEdge.isArrow`: `Lib/Weil/Lift.lean`, [line 798](lean:Lib/Weil/Lift.lean#L798). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsEdge.isForm_star_lift_swap`: `Lib/Weil/Lift.lean`, [line 830](lean:Lib/Weil/Lift.lean#L830). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.isEdge_of_isJointHarmonic`: `Lib/Weil/Lift.lean`, [line 698](lean:Lib/Weil/Lift.lean#L698). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsEigenform`: `Lib/GaloisRep/Main/Defs.lean`, [line 82](lean:Lib/GaloisRep/Main/Defs.lean#L82). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.isEmpty_iff_isVoid`: `Lib/Speed.lean`, [line 77](lean:Lib/Speed.lean#L77). Cited in [Chapter](/chapter/reading-the-lean/).
+- `New.IsExponent`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 184](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L184). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.apply_diagGL_unit`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 395](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L395). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.apply_monomial_translate`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 452](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L452). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.apply_partialHecke`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 584](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L584). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.apply_proIwahori`: `Lib/LocalGL/Iwahori/QuadraticRelation.lean`, [line 389](lean:Lib/LocalGL/Iwahori/QuadraticRelation.lean#L389). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.apply_swap_diagGL_mulSingle`: `Lib/LocalGL/Iwahori/SphericalExponents.lean`, [line 491](lean:Lib/LocalGL/Iwahori/SphericalExponents.lean#L491). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.eq_zero_of_apply_permGL_swap_eq_zero`: `Lib/LocalGL/Iwahori/SphericalExponents.lean`, [line 518](lean:Lib/LocalGL/Iwahori/SphericalExponents.lean#L518). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.eq_zero_of_eq_zero_on_spherical`: `Lib/LocalGL/Iwahori/SphericalExponents.lean`, [line 596](lean:Lib/LocalGL/Iwahori/SphericalExponents.lean#L596). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsExponent.exists_sorted`: `Lib/LocalGL/Iwahori/SortedExponents.lean`, [line 329](lean:Lib/LocalGL/Iwahori/SortedExponents.lean#L329). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsFaithfulMulChar`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 88](lean:Lib/LocalGL/Green/TauFunctions.lean#L88). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsFinAdelePresentation`: `Lib/General/NumberTheory/CMFields.lean`, [line 180](lean:Lib/General/NumberTheory/CMFields.lean#L180). Cited in [Chapter](/chapter/cm-fields/).
 - `New.isFiniteMeasure_quotMeasure_of_cocompact`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 620](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L620). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.IsFrob`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 113](lean:Lib/ClassField/Places/GaloisDefs.lean#L113). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.IsFrob.cyclotomicCharMod_eq`: `Lib/ClassField/Places/DecompositionCyclotomic.lean`, [line 210](lean:Lib/ClassField/Places/DecompositionCyclotomic.lean#L210). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsFrob.inv_mul_mem_inertiaGroup`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 238](lean:Lib/ClassField/Places/GaloisDefs.lean#L238). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsFrob.mem_ker_cyclotomicCharMod_iff`: `Lib/ClassField/Places/DecompositionCyclotomic.lean`, [line 221](lean:Lib/ClassField/Places/DecompositionCyclotomic.lean#L221). Cited in [Chapter](/chapter/cm-fields/).
+- `New.IsHalfEdge`: `Lib/Weil/Lift.lean`, [line 351](lean:Lib/Weil/Lift.lean#L351). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsHCParam`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 95](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L95). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/weyl-modules/).
+- `New.IsHCParam.paramsCorrespond_iff`: `Lib/Weil/CompactLift/DefiniteThetaLift.lean`, [line 71](lean:Lib/Weil/CompactLift/DefiniteThetaLift.lean#L71). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsHeckeFunction`: `Lib/Adelic/Hecke/Basic.lean`, [line 244](lean:Lib/Adelic/Hecke/Basic.lean#L244). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.IsHeckeFunction.heckeFun_mem`: `Lib/Adelic/Hecke/Basic.lean`, [line 410](lean:Lib/Adelic/Hecke/Basic.lean#L410). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.isHeckeFunction_doubleCoset`: `Lib/Adelic/Hecke/Basic.lean`, [line 267](lean:Lib/Adelic/Hecke/Basic.lean#L267). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -832,16 +1056,36 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.IsImage`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 364](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L364). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsInvariantDistribution`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 188](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L188). Cited in [Chapter](/chapter/trace-formula/).
 - `New.IsInvariantDistribution.eq_zero_of_isImage`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 567](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L567). Cited in [Chapter](/chapter/trace-formula/).
+- `New.IsIrreducibleChar`: `Lib/General/Groups/CharacterTheory.lean`, [line 77](lean:Lib/General/Groups/CharacterTheory.lean#L77). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsIrreducibleChar.extend_semidirect`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 266](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L266). Cited in [Chapter](/chapter/finite-gln/).
+- `New.isIrreducibleChar_and_mem_virtualChars_and_exists_mul`: `Lib/General/Groups/CharacterTheory.lean`, [line 671](lean:Lib/General/Groups/CharacterTheory.lean#L671). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsIwahoriEigen`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 190](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L190). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsIwahoriEigen.exists_isExponent`: `Lib/LocalGL/Iwahori/SortedExponents.lean`, [line 475](lean:Lib/LocalGL/Iwahori/SortedExponents.lean#L475). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsJointHarmonic`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 434](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L434). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsJointHarmonic.exists_eq_smul_of_column_weight`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 656](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L656). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsJointHarmonic.exists_eq_smul_of_row_weight`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 636](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L636). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsJointHarmonic.howe_argument`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 536](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L536). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsJointHarmonic.swap`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 502](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L502). Cited in [Chapter](/chapter/local-theta/).
+- `New.isJointHarmonic_jointHarmonicAt`: `Lib/Weil/Lift.lean`, [line 312](lean:Lib/Weil/Lift.lean#L312). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsKDominant`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 390](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L390). Cited in [Chapter](/chapter/discrete-series/).
 - `New.isKHighest_dsGenerator`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 366](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L366). Cited in [Chapter](/chapter/discrete-series/).
+- `New.IsLabel`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 153](lean:Lib/LocalGL/Green/TauFunctions.lean#L153). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsLabel.isChar_labelChar`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 304](lean:Lib/LocalGL/Green/LabelCharacters.lean#L304). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsLabel.isIrreducibleChar_labelChar`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 280](lean:Lib/LocalGL/Green/LabelCharacters.lean#L280). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsLabel.scaleRoots`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 553](lean:Lib/LocalGL/Green/LabelCharacters.lean#L553). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsLargeLevel.SplitPlaces`: `Lib/ClassField/GreenbergWiles/SelmerLevels.lean`, [line 262](lean:Lib/ClassField/GreenbergWiles/SelmerLevels.lean#L262). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLargeLevel.SplitPlaces.card_trivialised_of_isHigmanProjective`: `Lib/ClassField/GreenbergWiles/CocycleCounts.lean`, [line 339](lean:Lib/ClassField/GreenbergWiles/CocycleCounts.lean#L339). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLargeLevel.SplitPlaces.FrobeniiDetectRoots`: `Lib/ClassField/GreenbergWiles/SelmerLevels.lean`, [line 319](lean:Lib/ClassField/GreenbergWiles/SelmerLevels.lean#L319). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLargeLevel.SplitPlaces.hasFewCocycles_of_central`: `Lib/ClassField/GreenbergWiles/CocycleCounts.lean`, [line 707](lean:Lib/ClassField/GreenbergWiles/CocycleCounts.lean#L707). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLargeLevel.SplitPlaces.power_residue_reciprocity`: `Lib/ClassField/GreenbergWiles/SplitPrimeReciprocity.lean`, [line 912](lean:Lib/ClassField/GreenbergWiles/SplitPrimeReciprocity.lean#L912). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLargeLevel.SplitPlaces.PowerResidueSymbols`: `Lib/ClassField/GreenbergWiles/SplitPrimeReciprocity.lean`, [line 838](lean:Lib/ClassField/GreenbergWiles/SplitPrimeReciprocity.lean#L838). Cited in [Chapter](/chapter/local-duality/).
+- `New.IsLayering`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 131](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L131). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsLayering.isJointHighest_prod_det`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 231](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L231). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsLayering.isKHighest_and_isTermwiseHarmonic`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 190](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L190). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsLayering.polarisation_prod_det`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 152](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L152). Cited in [Chapter](/chapter/local-theta/).
 - `New.IsLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 393](lean:Lib/Adelic/Unitary/Defs.lean#L393). Cited in [Chapter](/chapter/adeles-hermitian-spaces/), [Chapter](/chapter/automorphic-forms/).
 - `New.IsLevel.isCompact`: `Lib/Adelic/Unitary/Defs.lean`, [line 471](lean:Lib/Adelic/Unitary/Defs.lean#L471). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.IsLiftWeight`: `Lib/Weil/CompactLift/ThetaKernelDefs.lean`, [line 78](lean:Lib/Weil/CompactLift/ThetaKernelDefs.lean#L78). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsLocalArtin`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 418](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L418). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsLocalArtin.exists_frob_of_isUniformiser`: `Lib/ClassField/Local/ArtinMap.lean`, [line 164](lean:Lib/ClassField/Local/ArtinMap.lean#L164). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsLocalGalois`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 91](lean:Lib/ClassField/Places/GaloisDefs.lean#L91). Cited in [Chapter](/chapter/class-field-theory/), [Chapter](/chapter/local-duality/).
@@ -851,6 +1095,29 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.IsLocalGalois.finite_Z1`: `Lib/ClassField/LocalDuality/KummerFiniteness.lean`, [line 349](lean:Lib/ClassField/LocalDuality/KummerFiniteness.lean#L349). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsLocalGalois.isClassOfInvariant_classOfInvariant`: `Lib/ClassField/Local/InvariantMap.lean`, [line 216](lean:Lib/ClassField/Local/InvariantMap.lean#L216). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsLocalGalois.mem_zmultiples_of_index_prime`: `Lib/ClassField/Local/InvariantMap.lean`, [line 58](lean:Lib/ClassField/Local/InvariantMap.lean#L58). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.IsMatch`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 418](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L418). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.centred_casimirValue_eq`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 436](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L436). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.centredParam_lt_or_lt`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 486](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L486). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.col_eq_of_isMatchedPair`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 105](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L105). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.eval_matchingPoint_ne_zero`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 572](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L572). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.exists_isJointHarmonic`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 423](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L423). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.exists_isMatchedPair_of_outer`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 292](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L292). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.exists_isMatchedPair_of_relWeight_ne_zero`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 268](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L268). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.hasGap_column`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 422](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L422). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.hasGap_row`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 420](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L420). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.hasLargeGap`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 91](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L91). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.isEigenDirection_of_polarisation`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 542](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L542). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.isEigenDirection_of_swap_polarisation`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 556](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L556). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.isLayering`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 350](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L350). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.left`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 424](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L424). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.lt_or_exists_isMatchedPair`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 511](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L511). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.pderiv_eq_zero_of_lt_centredParam`: `Lib/DiscreteSeries/Theta/LocalCorrespondence.lean`, [line 514](lean:Lib/DiscreteSeries/Theta/LocalCorrespondence.lean#L514). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.relWeight_eq_neg`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 145](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L145). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.right`: `Lib/DiscreteSeries/Theta/FockDualPair.lean`, [line 427](lean:Lib/DiscreteSeries/Theta/FockDualPair.lean#L427). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.row_eq_of_isMatchedPair`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 110](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L110). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.sign_mul_relWeight_nonneg`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 174](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L174). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.three_mul_sum_sq_sub`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 196](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L196). Cited in [Chapter](/chapter/local-theta/).
+- `New.IsMatch.unique`: `Lib/DiscreteSeries/Theta/FockJointHarmonics.lean`, [line 618](lean:Lib/DiscreteSeries/Theta/FockJointHarmonics.lean#L618). Cited in [Chapter](/chapter/local-theta/).
 - `New.isMulRightInvariant_of_finite_covolume`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 574](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L574). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.IsNearIsometry`: `New/Spanning/SecondMoment/FewTranslates.lean`, [line 151](lean:New/Spanning/SecondMoment/FewTranslates.lean#L151). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-b-plan/).
 - `New.IsOntoUpToColength`: `New/Reduction/Lattices/Colength.lean`, [line 104](lean:New/Reduction/Lattices/Colength.lean#L104). Cited in [Chapter](/chapter/twisted-lattices/).
@@ -872,6 +1139,9 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.IsPrimitiveMatrix`: `Lib/Adelic/Witt/WittTheorem.lean`, [line 71](lean:Lib/Adelic/Witt/WittTheorem.lean#L71). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.isProbabilityMeasure_haarU`: `Lib/DiscreteSeries/Haar/TotalMass.lean`, [line 297](lean:Lib/DiscreteSeries/Haar/TotalMass.lean#L297). Cited in [Chapter](/chapter/discrete-series/).
 - `New.IsProGalois`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 68](lean:Lib/ClassField/Places/GaloisDefs.lean#L68). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.IsRootChoice`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 73](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L73). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsRootChoice.exists_conj_eq_of_map_eq`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 391](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L391). Cited in [Chapter](/chapter/finite-gln/).
+- `New.IsRootChoice.index_mul_finMean_eq_classInner`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 400](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L400). Cited in [Chapter](/chapter/finite-gln/).
 - `New.IsSaturating`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 483](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L483). Cited in [Chapter](/chapter/weil-representation/).
 - `New.IsShort`: `New/UpperBound/Size/ShortColumns.lean`, [line 155](lean:New/UpperBound/Size/ShortColumns.lean#L155). Cited in [Chapter](/chapter/theorem-a-plan/).
 - `New.IsSlice`: `Lib/Adelic/TraceFormula/FibreIntegral.lean`, [line 331](lean:Lib/Adelic/TraceFormula/FibreIntegral.lean#L331). Cited in [Chapter](/chapter/trace-formula/).
@@ -887,14 +1157,29 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.isStep_stepField`: `Lib/ClassField/Grunwald.lean`, [line 445](lean:Lib/ClassField/Grunwald.lean#L445). Cited in [Chapter](/chapter/local-duality/).
 - `New.IsTableauBasis`: `Lib/GLn/SchurModule/Basic.lean`, [line 126](lean:Lib/GLn/SchurModule/Basic.lean#L126). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.isTableauBasis_epsilon`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 137](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L137). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.isThetaLift_thetaKernel`: `Lib/Weil/CompactLift/DefiniteThetaLift.lean`, [line 284](lean:Lib/Weil/CompactLift/DefiniteThetaLift.lean#L284). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsTotallyPositive`: `Lib/ClassField/Places/Ideles.lean`, [line 207](lean:Lib/ClassField/Places/Ideles.lean#L207). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.IsTotallyPositive.exists_resH2_cyclicClass_eq_zero`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 111](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L111). Cited in [Chapter](/chapter/class-field-theory/).
-- `New.IsUnitary`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 608](lean:Lib/Adelic/Hecke/ClassSums.lean#L608). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.IsUnitary.le_span_joint_eigenvectors`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 303](lean:Lib/Weil/Unramified/SplitHecke.lean#L303). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.IsUnitary`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 608](lean:Lib/Adelic/Hecke/ClassSums.lean#L608). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
+- `New.IsUnitary.adjoint_eq_inv`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 616](lean:Lib/Adelic/Hecke/ClassSums.lean#L616). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.IsUnitary.le_span_joint_eigenvectors`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 303](lean:Lib/Weil/Unramified/SplitHecke.lean#L303). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
 - `New.IsUnitaryCasimirGe`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 157](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L157). Cited in [Chapter](/chapter/discrete-series/).
 - `New.IsUnitaryRep`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 69](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L69). Cited in [Chapter](/chapter/discrete-series/).
 - `New.isVacuum_vacuumFn`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 166](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L166). Cited in [Chapter](/chapter/weil-representation/).
 - `New.iteratedDeriv_transform`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 33](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L33). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.iwahoriDegree`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 66](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L66). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.iwahoriHeckeHom`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 515](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L515). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.jointHarmonic`: `Lib/Weil/Lift.lean`, [line 274](lean:Lib/Weil/Lift.lean#L274). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.jointHarmonicAt`: `Lib/Weil/Lift.lean`, [line 269](lean:Lib/Weil/Lift.lean#L269). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Kernel`: `Lib/Weil/CompactLift/ThetaKernelDefs.lean`, [line 133](lean:Lib/Weil/CompactLift/ThetaKernelDefs.lean#L133). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Kernel.lift`: `Lib/Weil/CompactLift/ThetaKernelDefs.lean`, [line 189](lean:Lib/Weil/CompactLift/ThetaKernelDefs.lean#L189). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Kernel.lift_equivariant`: `Lib/Weil/CompactLift/ThetaKernelDefs.lean`, [line 217](lean:Lib/Weil/CompactLift/ThetaKernelDefs.lean#L217). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.labelChar`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 141](lean:Lib/LocalGL/Green/TauFunctions.lean#L141). Cited in [Chapter](/chapter/finite-gln/).
+- `New.labelChar_degree_bounds`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 752](lean:Lib/LocalGL/Green/TauFunctions.lean#L752). Cited in [Chapter](/chapter/finite-gln/).
+- `New.labelChar_eq_greenTau`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 353](lean:Lib/LocalGL/Green/TauFunctions.lean#L353). Cited in [Chapter](/chapter/finite-gln/).
+- `New.labelChar_X_sub_C`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 86](lean:Lib/LocalGL/Green/LabelCharacters.lean#L86). Cited in [Chapter](/chapter/finite-gln/).
+- `New.labelIdem`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 171](lean:Lib/LocalGL/Green/TauFunctions.lean#L171). Cited in [Chapter](/chapter/finite-gln/).
+- `New.labelIdem_orthogonal`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 359](lean:Lib/LocalGL/Green/LabelCharacters.lean#L359). Cited in [Chapter](/chapter/finite-gln/).
 - `New.lambdaKResidueClass`: `New/Reduction/Zeros/PrimeError.lean`, [line 45](lean:New/Reduction/Zeros/PrimeError.lean#L45). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/landau-criterion/).
 - `New.lambdaKResidueClass_eq_ite`: `New/Reduction/PrimeSums.lean`, [line 38](lean:New/Reduction/PrimeSums.lean#L38). Cited in [Chapter](/chapter/prime-sums/).
 - `New.lambdaKResidueClass_le_two_mul`: `New/Reduction/Zeros/PrimeError.lean`, [line 89](lean:New/Reduction/Zeros/PrimeError.lean#L89). Cited in [Chapter](/chapter/weighted-prime-remainder/).
@@ -926,8 +1211,19 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `New.levelSpace_ext_doubleCosets`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 76](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L76). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.levelSpace_smoothFormRep_apply`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 66](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.LFunction_ne_zero_of_primeRemainder_le`: `New/Reduction/Zeros/Criterion.lean`, [line 37](lean:New/Reduction/Zeros/Criterion.lean#L37). Cited in [Chapter](/chapter/two-editions/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/main-inequality/).
+- `New.Lift`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 99](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L99). Cited in [Chapter](/chapter/finite-gln/).
 - `New.Lift.cupOrthogonal`: `Lib/ClassField/LocalDuality/CrystallineDuality.lean`, [line 186](lean:Lib/ClassField/LocalDuality/CrystallineDuality.lean#L186). Cited in [Chapter](/chapter/local-duality/).
 - `New.Lift.dualDefect`: `Lib/ClassField/LocalDuality/CrystallineDuality.lean`, [line 198](lean:Lib/ClassField/LocalDuality/CrystallineDuality.lean#L198). Cited in [Chapter](/chapter/local-duality/).
+- `New.Lift.evalGL_mem_virtualChars`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 297](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L297). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.exists_lift_of_descendsTo`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 240](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L240). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.lift_constOne`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 283](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L283). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.mul`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 384](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L384). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.mulMoebius`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 433](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L433). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.one`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 290](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L290). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.rankPart_mulMoebius_mul_constOne`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 462](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L462). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.rankPart_of_hasCommonLift`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 273](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L273). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.sub`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 305](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L305). Cited in [Chapter](/chapter/finite-gln/).
+- `New.lift_detChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 520](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L520). Cited in [Chapter](/chapter/finite-gln/).
 - `New.linearIndependent_nablaBasis`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 179](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L179). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.lineHecke`: `Lib/Adelic/TraceFormula/LineStabiliser.lean`, [line 412](lean:Lib/Adelic/TraceFormula/LineStabiliser.lean#L412). Cited in [Chapter](/chapter/trace-formula/).
 - `New.lineHecke_pow_mem_spanOn`: `Lib/Adelic/TraceFormula/LineStabiliser.lean`, [line 827](lean:Lib/Adelic/TraceFormula/LineStabiliser.lean#L827). Cited in [Chapter](/chapter/trace-formula/).
@@ -955,5 +1251,6 @@ This section and the next have the 1681 cited names outside the namespace `New.D
 - `riemannHypothesis`: `Main.lean`, [line 5](lean:Main.lean#L5). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/half-plane-to-line/).
 - `riemannZeta_eq_zero_re`: `Main.lean`, [line 8](lean:Main.lean#L8). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/half-plane-to-line/).
 - `RiemannZetaZerosOnLine`: `Statements.lean`, [line 3](lean:Statements.lean#L3). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/half-plane-to-line/).
+- `sub_mul_pow_mul_prod_le_mul_prod`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 656](lean:Lib/LocalGL/Green/TauFunctions.lean#L656). Cited in [Chapter](/chapter/finite-gln/).
 - `Subgroup.IsCocompact`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 58](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L58). Cited in [Chapter](/chapter/reduction-theory/).
 - `Subgroup.quotMeasure`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 118](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L118). Cited in [Chapter](/chapter/reduction-theory/).

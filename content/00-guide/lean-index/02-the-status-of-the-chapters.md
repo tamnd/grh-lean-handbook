@@ -56,11 +56,11 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 5 | 2 | Laplace's method for discrete series coefficients | drafted | 14,688 |
 | 5 | 3 | Bessel subgroups and Bruhat measures | drafted | 14,677 |
 | 5 | 4 | Integral Weyl modules and branching | drafted | 14,531 |
-| 5 | 5 | Characters of GL_n over a finite field | planned | 0 |
-| 5 | 6 | Iwahori exponents, Satake and the chain lemma | planned | 0 |
+| 5 | 5 | Characters of GL_n over a finite field | drafted | 14,383 |
+| 5 | 6 | Iwahori exponents, Satake and the chain lemma | drafted | 14,425 |
 | 6 | 1 | The Weil representation from a vacuum | drafted | 14,692 |
-| 6 | 2 | Local theta in the Fock model | planned | 0 |
-| 6 | 3 | Theta kernels, theta lifts and the seesaw | planned | 0 |
+| 6 | 2 | Local theta in the Fock model | drafted | 14,620 |
+| 6 | 3 | Theta kernels, theta lifts and the seesaw | drafted | 13,549 |
 | 6 | 4 | Bessel periods and one step of unfolding | planned | 0 |
 | 6 | 5 | The Siegel-Weil formula | planned | 0 |
 | 6 | 6 | Doubling and the Rallis inner product formula | planned | 0 |
