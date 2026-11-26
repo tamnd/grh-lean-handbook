@@ -73,7 +73,7 @@ Lean: `New.Core.exists_rat_frame_of_adelic` (Lib/Adelic/Landherr.lean).
 
 *Proof.* Induction on $t$. For a new index $j$, column $j$ of $X$ times the sign $s_j$ has norm $1$ for $s_j J$. The previous theorem gives a rational $w$ with $w^* J w = s_j$. Replace $J$ by its projection $J'$ to the orthogonal complement of $w$. Shear $X$ so that its column $j$ becomes $0$, and change its other columns so that the Gram matrix for $J'$ is the old one for the indices of $t$. The induction hypothesis gives a rational frame for $J'$. Project its columns to the orthogonal complement of $w$ and put $w$ in column $j$. $\square$
 
-### Landherr's theorem
+### Landherr's theorem for spaces
 
 **Theorem (Landherr, case of the source).** Let $V$ and $W$ be spaces with the same signs $s$. Then $a^* J_V a = J_W$ for some $a \in \mathrm{GL}_n(E)$.
 

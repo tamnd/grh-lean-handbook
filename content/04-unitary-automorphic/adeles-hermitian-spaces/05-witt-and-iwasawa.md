@@ -79,7 +79,7 @@ Lean: `New.witt_Ô`, `New.IsPrimitiveMatrix` (Lib/Adelic/Witt/WittTheorem.lean).
 
 **Remark (Formalization).** The theorem is for the standard form $1$ only. This is sufficient for the source: the point $x$ of a space moves its form to the identity at every finite place, so Witt over $\hat{\mathcal{O}}_E$ for the identity form gives Witt for the base lattice of every space. The theorem does not cover lattices that are not unimodular. The source has no theorem for them.
 
-### The Iwasawa decomposition
+### The Iwasawa decomposition of the source
 
 **Definition (Maximal compact subgroup).** The subgroup $K_\infty K_0$ of $G$ is the product of the groups $U(\mathrm{diag}(s)) \cap U(1)$ at the infinite places and of $K_0$.
 
