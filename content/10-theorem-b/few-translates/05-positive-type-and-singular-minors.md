@@ -53,7 +53,15 @@ Lean: `New.orthonormal_addChar_div_sqrt` (New/Spanning/SecondMoment/PositiveType
 
 *Proof.* $\langle c_x, c_y\rangle = q^{-|n|}\sum_\zeta\psi((x - y)\cdot\zeta)$, by $\overline{\psi(t)} = \psi(-t)$. By orthogonality the sum is $q^{|n|}$ if $x = y$ and $0$ otherwise. $\square$
 
-The point of the second family is a change of basis. Let $e_z$ be the indicator of $z$ in $\ell^2(k^n)$. For $g, g' \in \mathrm{GL}_n(k)$, with $g^{-\mathsf T} = (g^{\mathsf T})^{-1}$, the inner product $\langle c_{g^{-\mathsf T}x}, e_{g'z}\rangle$ is $\psi(x\cdot g^{-1}g'z)/\sqrt{q^{|n|}}$ (Lean: `New.inner_addChar_invTranspose_smul_single`). It depends on $g$ and $g'$ only through $g^{-1}g'$. So the inner products between the two families have the form of [Lemma](/decl/New.inner_sum_sum_eq_card_mul/).
+The point of the second family is a change of basis. Let $e_z$ be the indicator of $z$ in $\ell^2(k^n)$, and write $g^{-\mathsf T} = (g^{\mathsf T})^{-1}$.
+
+**Lemma (The change of basis).** Let $\psi$ be an additive character of $k$, let $r$ be real, let $g, g' \in \mathrm{GL}_n(k)$, and let $x, z \in k^n$. The function $\zeta \mapsto \psi(-(g^{-\mathsf T}x)\cdot\zeta)/r$ has the inner product $\psi(x\cdot g^{-1}g'z)/r$ with $e_{g'z}$.
+
+Lean: `New.inner_addChar_invTranspose_smul_single` (New/Spanning/SecondMoment/PositiveType.lean).
+
+*Proof.* The inner product is the conjugate of the value at $g'z$, that is $\psi((g^{-\mathsf T}x)\cdot g'z)/r$, and $(g^{-\mathsf T}x)\cdot g'z = x\cdot g^{-1}g'z$. $\square$
+
+For $r = \sqrt{q^{|n|}}$ the function is $c_{g^{-\mathsf T}x}$. The inner product depends on $g$ and $g'$ only through $g^{-1}g'$. So the inner products between the two families have the form of [Lemma](/decl/New.inner_sum_sum_eq_card_mul/).
 
 ### The character sum
 
