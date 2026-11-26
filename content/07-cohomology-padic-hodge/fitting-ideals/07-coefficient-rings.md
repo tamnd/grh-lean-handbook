@@ -56,7 +56,7 @@ Here `New.PadicIntegerRing R ℓ` says that $R$ is a discrete valuation ring of 
 
 **Remark (Formalization).** These statements use `Nat.card`, which is $0$ for an infinite type. This junk value explains the form of the hypotheses. In part 3 the hypothesis `[Finite X]` is necessary. Without it, an infinite $X$ has $\# X = 0 \leq \# Y$ for every $Y$, but $\operatorname{len} X = \infty$. In part 4 no finiteness hypothesis is needed. If $Y$ is infinite, then $\# Y = 0$ and every number divides it, but then $\operatorname{len} Y = \infty$ and the conclusion holds. If $Y$ is finite and nonzero in cardinality, then $\# X$ divides a positive number, so $\# X \neq 0$ and $X$ is finite. The use in `New/Congruences/LocalLoss/TateDualBound.lean` is through part 4, and the use in `New/Congruences/Selmer/Count.lean` is through part 3.
 
-### The rings
+### The rings inside $\bar{\mathbb{Q}}_\ell$
 
 Let $\bar{\mathbb{Q}}_\ell$ be an algebraic closure of $\mathbb{Q}_\ell$ with its norm, `PadicAlgCl ℓ` in the source.
 
