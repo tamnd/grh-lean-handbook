@@ -70,7 +70,7 @@ The proof has four steps.
 
    Lean: `New.SiegelWeil.descentsVanish_add_planes` (New/OneLift/FalseLifts/HyperbolicPlaneStep.lean).
 
-4. *Periods* (Sections 6 and 7). The descents to $W \oplus \mathbb{H}^N$ vanish (`New.Rows.descentsVanish_hyperbolicSum`). A theta kernel of $W$ is absorbed in the matrix coefficient. Then the theorem of [descents and periods](/chapter/bessel-periods/#descents-and-periods) turns vanishing descents to the hyperbolic space $\mathbb{H}^N$ into vanishing periods over $U(I_l)$.
+4. *Periods* (Sections 6 and 7). The descents to $W \oplus \mathbb{H}^N$ vanish (`New.Rows.descentsVanish_hyperbolicSum`). A theta kernel of $W$ is absorbed in the matrix coefficient. Then the theorem of [descents and periods](/chapter/bessel-periods/#descents-and-block-periods) turns vanishing descents to the hyperbolic space $\mathbb{H}^N$ into vanishing periods over $U(I_l)$.
 
 ### What the chapter uses
 
