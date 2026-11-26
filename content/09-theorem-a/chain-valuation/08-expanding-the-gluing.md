@@ -78,7 +78,7 @@ Lean: `New.Data.vacuumProjFinPart_gluedDoubleLiftDatum` (New/UpperBound/Divisibi
 
 *Proof.* By the lemma before last, $P_N$ fixes $v_{t,j}$. By the projection rule of Section 6, $P_N\varrho_f(z)v_{t,j}$ is $\varrho_f(z)v_{t,j}$ if $z$ is integral at $\Pi_N \cup \bar\Pi_N$, and $0$ otherwise. In the term $y$ of the gluing, the first factor is $\varrho_f(\mathrm{pc}(y))v_{t,2i}$. By the last lemma it is killed unless $y = 0$. For $y = 0$ both pole matrices are $0$, and the term is $v_{t,2i}\otimes v_{t,2i+1}$. $\square$
 
-### Expanding the gluing
+### The gluing as a sum of translates
 
 **Lemma.** Let $t$ vanish at the places above $N$. Let $z$ vanish at the places outside $\Pi_N \cup \bar\Pi_N$. Then $\varrho_f(z)\,v_{t,j} = \varrho_f(z + t_j)\,v_{0,j}$.
 
