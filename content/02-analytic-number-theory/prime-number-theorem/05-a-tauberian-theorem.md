@@ -36,7 +36,7 @@ So $R(u)$ is close to a number that is small. The two errors are: the width of t
 
 ### The textbook route
 
-The classical proof of an error term goes through Perron's formula and a contour integral: $\psi(x, \chi)$ is an integral of $-L'/L(s, \chi)\, x^s/s$ on a vertical line, and the line is moved to the left into the zero-free region (Davenport, Chapters 17 and 19). Montgomery and Vaughan, Section 6.2, use a contour integral in their Tauberian form, and the source cites that section. The method here replaces the vertical contour by one disc. It needs the function only in a bounded region, and it needs no truncated Perron formula. The price is a weak error term: the method gives powers of $u = \log y$, and it cannot give $\exp(-c\sqrt{\log y})$, because the disc must reach to the left of the line by $\eta$ and the gain is only $e^{-u\eta}$.
+The classical proof of an error term goes through Perron's formula and a contour integral: $\psi(x, \chi)$ is an integral of $-L'/L(s, \chi)\, x^s/s$ on a vertical line, and the line is moved to the left into the zero-free region (Davenport, Chapters 17 and 19). Montgomery and Vaughan, Section 6.2, use a contour integral in their Tauberian form, and the source cites that section. The method here replaces the vertical contour by one disc. It needs the function only in a bounded region, and it needs no truncated Perron formula. The error term depends on the width of the region. With the width $l^{-A}$ of Section 4 the gain is $e^{-u l^{-A}}$, and the method gives powers of $u = \log y$. With the classical width $c/l$ the same method gives $\exp(-c'\sqrt u)$ (Exercise 4). The source needs only powers, so it uses the weak region.
 
 ### The transform and its derivatives
 

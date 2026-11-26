@@ -20,7 +20,7 @@ This section proves that $\tilde L(s, \chi)$ has no zero in the region $\operato
 
 The classical region is $\sigma \geq 1 - c/\log(q(|t| + 2))$, with one possible exception (Section 2). Put $T = e^l$. The region of the source is
 $$\sigma \geq 1 - (\log T)^{-25}, \qquad |s| \leq T.$$
-For a fixed $q$ and $|t| \leq T$ it is contained in the classical region for large $T$, with room to spare: $(\log T)^{-25}$ is much smaller than $c/\log(qT)$. So the source proves a weaker statement. It also proves the bound $|\tilde L'/\tilde L| \leq 2(\log T)^{25}$ in the region; the classical bound is $O(\log(qT))$ in a slightly smaller region (Davenport, Chapter 19, and Montgomery and Vaughan, Chapter 11). The proof of the weak form is close to the first proofs of a region of this shape for $\zeta$, which bound $|\zeta|$ and $|\zeta'|$ and use (2.1) with absolute values. Titchmarsh, *The Theory of the Riemann Zeta-Function*, Section 3.6, proves a region $\sigma \geq 1 - A(\log t)^{-9}$ for $\zeta$ in this way.
+For a fixed $q$ and $|t| \leq T$ it is contained in the classical region for large $T$, with room to spare: $(\log T)^{-25}$ is much smaller than $c/\log(qT)$. So the source proves a weaker statement. It also proves the bound $|\tilde L'/\tilde L| \leq 2(\log T)^{25}$ in the region; the classical bound is $O(\log(qT))$ in a slightly smaller region (Davenport, Chapter 19, and Montgomery and Vaughan, Chapter 11). The proof of the weak form bounds $|f_\chi|$ and $|f_\chi'|$ and uses (2.1) with absolute values. The classical proof uses the Hadamard product in place of the derivative bound.
 
 ### The inequality of Mathlib
 
