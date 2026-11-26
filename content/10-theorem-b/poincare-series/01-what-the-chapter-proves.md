@@ -36,7 +36,9 @@ The chapter proves the following results. Each is stated and proved in full in t
 4. *Reduced groups and the term structure* (section 5). The orders of the reduced images of the Bessel groups, and the rank of the common isotropic space of a term in terms of its cell rank.
 5. *The Petersson formula* (section 6). The inner product of two Poincaré series is $\operatorname{vol}(K(M))$ times an amplitude sum over all terms.
 6. *Admissibility* (section 7). The filling of the data $D$ satisfies `IsAdmissible`. Its proof needs the mass of the frames and the order of the classes.
-7. *The series as a period* (section 8). The Poincaré series of $D$ is the Bessel period of a theta kernel. This is the form of the series that Theorem A uses.
+7. *The series as a period* (section 8). For one choice of a real point and a linear form, the form that represents the Bessel period of a source form of $D$ is the Poincaré series of the Bessel function. The proof of Theorem B uses this identity.
+
+Section 9 has exercises and notes.
 
 ### What the chapter uses
 
