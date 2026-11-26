@@ -61,7 +61,7 @@ Lean: `New.norm_le_of_term_le_majorant` (Lib/Analytic/Primes.lean).
 
 The set $s$ is a finite set in one application and an infinite set in the other. The sum over $s$ is the full majorant at $1 + 1/U$, restricted to $s$, so the lemma never needs to know which terms are in $s$.
 
-### The bound on the circle
+### The main estimate
 
 **Proposition (The bound on the circle).** Assume (H1) to (H5), and assume that $|a(n)| \leq |b(n)|$ for every $n$ with $\log n \in [U, U + X^2]$. Let $z \in \mathbb{C}$ with $|z| = 1/X$, and let
 $$P(z) = \sum_{n < \lceil e^U\rceil} T_a(1 + z, n).$$
