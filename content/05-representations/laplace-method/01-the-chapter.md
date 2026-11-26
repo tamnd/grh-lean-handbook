@@ -45,7 +45,7 @@ The restriction bound is a special case of a general statement about a group $S$
 $$ \theta(s) = c_l(g)\, \overline{c_k(g')}\, e^{-\varphi(s)}. $$
 A Laplace datum is a list of conditions on $l$, $k$, $j$ and $\varphi$. The main ones are: $l$ is steep, $\varphi(s)$ is the difference $\operatorname{tr}\mu(g-1) - \operatorname{tr}\mu'(g'-1)$ of the two phases, $\varphi$ is additive and imaginary, and the image of $j$ contains a diagonal copy of $U(X)$. Section 2 gives the full list.
 
-**Theorem (Laplace's method).** Let $(l, k, j, \varphi)$ be a Laplace datum with $B \geq 1$, for a measure $\nu$ on $S$ that is finite on compact sets. Let $s \mapsto g$ be proper and let $s \mapsto g'$ be continuous. Let $l$ and $k$ have large gap $h$ and entries of absolute value at most $L$. Let $\beta \geq 10^{12}$ with $\#n + \#m + L \leq \beta$ and $10^{30}((\#n + \#m)^2 \log \beta)^3 \leq h$. Then $\theta$ is integrable, and
+**Theorem (Laplace's method).** Let $(l, k, j, \varphi)$ be a Laplace datum with $B \geq 1$, for a right invariant measure $\nu$ on $S$ that is finite on compact sets. Let $s \mapsto g$ be proper and let $s \mapsto g'$ be continuous. Let $l$ and $k$ have large gap $h$ and entries of absolute value at most $L$. Let $\beta \geq 10^{12}$ with $\#n + \#m + L \leq \beta$ and $10^{30}((\#n + \#m)^2 \log \beta)^3 \leq h$. Then $\theta$ is integrable, and
 $$ \nu\{ s : \|g\| \leq \beta + 1,\ \|g'\| \leq \beta + 1 \} \leq \beta^{20(\#n + \#m)^2} \left| \int_S \theta \, d\nu \right|. $$
 Lean: `New.DiscreteSeries.IsLaplaceDatum.laplace_method` (New/Appendix/DiscreteSeries/Periods.lean).
 
