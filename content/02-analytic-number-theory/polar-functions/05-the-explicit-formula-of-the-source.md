@@ -5,11 +5,6 @@ lean:
   - New/Reduction/Zeros/Criterion.lean
 decls:
   - New.isPolar_primeRemainder
-  - New.integral_primeRemainder
-  - New.ofReal_re_logDerivMean_one
-  - New.tendsto_sub_mul_logDerivMean
-  - New.tendsto_logDerivMean_residue
-  - New.abs_primeRemainder_exp_le
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---

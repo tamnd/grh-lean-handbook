@@ -7,6 +7,7 @@ decls:
   - New.IsPolar
   - New.integrableOn_laplace_of_abs_le
   - New.laplace_pow
+  - New.IsPolar.landau
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---

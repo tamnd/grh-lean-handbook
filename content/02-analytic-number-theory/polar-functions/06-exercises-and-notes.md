@@ -14,7 +14,7 @@ drafted_by: writer@claude-opus-5-5
    *Hint.* $\tilde L(s, \psi_0) = (s - 1)\zeta(s)\prod_{p \mid q}(1 - p^{-s})$, and $\zeta(0) = -1/2$. Two factors $1 - p^{-s}$ and $1 - p'^{-s}$ with $p \neq p'$ have a common zero only at $s = 0$, since $\log p/\log p'$ is irrational.
 
 3. Let $0 < \beta \leq 2$ and $m \in \mathbb{N}$. Show that $E(v) = v^m e^{(\beta - 1)v}$ is polar if and only if $m = 0$.
-   *Hint.* For $m \geq 1$ the transform is $m!/(s - \beta)^{m + 1}$ for $\operatorname{Re} s > 2$. For the bound $|E(v)| \leq Ce^v$ when $\beta = 2$, look at the case $m \geq 1$ first: it fails, and this already settles the case.
+   *Hint.* For $m \geq 1$ the transform is $m!/(s - \beta)^{m + 1}$ for $\operatorname{Re} s > 2$. For $m \geq 1$ and $\beta = 2$ the bound $|E(v)| \leq Ce^v$ fails. For $m \geq 1$ and $\beta < 2$ the pole at $\beta$ has order $m + 1 \geq 2$, as in the example of a double pole in Section 4.
 
 4. Let $E$ be polar with residues $r$. Show that $v \mapsto E(v + a)$ is polar for every $a \geq 0$, and find its residues.
    *Hint.* Substitute $v \mapsto v - a$ in the transform. The integral over $(0, a)$ is an entire function of $s$, and the residue at $\rho$ is multiplied by $e^{(\rho - 1)a}$.
