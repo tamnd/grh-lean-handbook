@@ -31,11 +31,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Cut Bessel functions over shells
 
-This section bounds the forms $\mathcal I_j(p, q; \omega)$ of a cut Bessel function $F$ for $j \leq \varrho$. The general machine of [the chapter on frames](/chapter/local-frames/) bounds such a form by a sum over shells of positions. This section supplies the shells at $\mathbb C$, the mass bound, the size of the pairing and a gauge in which both lists are heads. The result is the bound of the forms by the head weights and the decay $\ell_{k - n^7}$ of [Section 1](/chapter/real-densities/#the-chapter-and-its-place).
+This section bounds the forms $\mathcal I_j(p, q; \omega)$ of a cut Bessel function for $j \leq \varrho$. It supplies the shells at $\mathbb C$, the mass bound, the pairing and a gauge for both heads to the shell sum of [the chapter on frames](/chapter/local-frames/). The result is the bound of the forms by the head weights and the decay $\ell_{k - n^7}$ of [Section 1](/chapter/real-densities/#the-chapter-and-its-place).
 
 ### The objects of the general machine
 
-The general machine uses the following objects. Each is stated here in one line. [The chapter on frames](/chapter/local-frames/) gives the details.
+The general machine uses these objects, with details in [the chapter on frames](/chapter/local-frames/).
 
 1. The head density is $\kappa_j(p, q) = \prod_{a < j} \operatorname{mod}(p_a q_a)^{d_a/2}$ with $d_a = k + 1 + 2(\varrho - a - 1)$ (Lean: `New.Floors.PlaceData.headDensity`, New/Spanning/Frames/Densities.lean).
 2. The form is $\mathcal I_j(p, q; \omega) = \kappa_j(p, q) \int \Phi_j(x, g; \omega)\, d(\mathsf M \times \mathsf m_j)$, where $\Phi_j$ is a double integral over floor $j$ of two partial correlations of $F$ (Lean: `New.Floors.PlaceData.floorForm`).
@@ -56,7 +56,7 @@ Lean: `New.Floors.IsCutBessel.formConst` (New/Spanning/Frames/RealShells.lean).
 
 **Remark (Formalization).** The ratio $\lambda$ is an extended real. The source uses its real part `toReal`, which is $0$ for $\lambda = \infty$. Section 2 proves $0 < \lambda < \infty$, so the real part is $\lambda$ and $c_F > 0$.
 
-Two facts on the sizes are used often. They are $10^{10} n^4 \leq s$, and the volume exponent of the place datum at $\mathbb C$ is $s$.
+**Lemma.** $10^{10} n^4 \leq s$, and the volume exponent at $\mathbb C$ is $s$.
 
 Lean: `New.Floors.IsCutBessel.mul_pow_four_le_s`, `New.Floors.IsCutBessel.volumeExponent_eq` (New/Spanning/Frames/RealShells.lean).
 
@@ -99,7 +99,7 @@ Lean: `New.Floors.IsCutBessel.exists_gauge_isHead` (New/Spanning/Frames/RealShel
 
 *Proof.* Use induction on $j$. For $j = 0$ take $L = \rho$. The weights are empty products, so the bound is $\rho^K \leq \rho^K$. For the step, let $L$ serve for $j$, and let $x = p_0 \cdots p_j$ and $y = q_0 \cdots q_j$. Put $L' = \max(L, |x|^{-1}, |y|^{-1})$. Then $p$ and $q$ are heads of length $j + 1$ for $L'$. Let $B = \rho^K \Lambda_{R,K}(j, p) \Lambda_{R,K}(j, q)$. The induction gives $L^K \leq B$. The first lemma, used twice, gives $L'^K \leq B \max(1, |x|^{-1})^K \max(1, |y|^{-1})^K$. Since $|x|, |y| \leq R$, the second lemma turns the right side into $\rho^K \Lambda_{R,K}(j+1, p) \Lambda_{R,K}(j+1, q)$. $\square$
 
-**Remark (Formalization).** The head weight is $0$ when some partial product exceeds $R$. Then the second property says $L^K \leq 0$, and the lemma does not give it. The property is stated only for $R$ that bound all partial products, so it is never used in that case. The main bound below treats that case on its own.
+**Remark (Formalization).** The head weight is $0$ when some partial product exceeds $R$. The second property is stated only for $R$ that bound all partial products, so it never claims $L^K \leq 0$. The main bound below treats the other case on its own.
 
 ### The pieces of the shell sum
 
@@ -211,8 +211,8 @@ $$|I|\, |c_F\, \mathcal I_j(p, q; \omega)| \leq \Theta\, b^{2000n^9}\, \ell_{k -
 
 Lean: `New.Floors.IsCutBessel.norm_floorForm_le` (New/Spanning/Frames/RealShells.lean).
 
-The source states the hypothesis as $(\operatorname{kernelBound}/\operatorname{mod}(y))^{|{\rm Free}|}$. At $\mathbb C$ the kernel bound is $\pi^2$, the modulus of $y$ is $|y|^2$, and $|{\rm Free}| = k - 5$.
+The source writes $(\operatorname{kernelBound}/\operatorname{mod}(y))^{|{\rm Free}|}$, which at $\mathbb C$ is this factor, as $|{\rm Free}| = k - 5$.
 
 *Proof.* Let $R = b^{60n^2}$. Since $n \geq 3$ and $\rho = b^{6n+2}$, we have $\rho^{9n} \leq R$. Suppose that some partial product of $p$ or $q$ of length $l \leq j$ has modulus above $R$. Then it is above $\rho^{9n}$, the form is $0$, and the bound holds. Otherwise take $L$ from the gauge lemma with $K = n^6$, so $L^{n^6} \leq \rho^{n^6} H$ with $H$ the product of the two head weights. Put $t = \max(1, \rho^{24} |y|)$. For $t > 1$ we have $t = \rho^{24} |y|$. The previous lemma with $m = k - 5 \geq s$ turns the hypothesis into the gain $V/t^s$. Then $|\mathcal I_j| \leq \kappa_j \int \mathsf F_j\, d\mathsf M$, the shell sum bounds this with $\varphi = \mathsf F_j \leq \mathsf F^+_j$, and the lemma on the decay finishes the proof. $\square$
 
-**Remark (Formalization).** The docstring of the theorem writes the factor of the hypothesis as $(\pi/\|y\|)^{2(k-5)}$. This is the same number as $(\pi^2/|y|^2)^{k-5}$. The hypothesis is checked in [Section 6](/chapter/real-densities/#band-limits-and-the-local-bounds) with the band limits of the Bessel function.
+**Remark (Formalization).** The docstring writes the factor as $(\pi/\|y\|)^{2(k-5)}$, which equals $(\pi^2/|y|^2)^{k-5}$. The hypothesis is checked in [Section 6](/chapter/real-densities/#band-limits-and-the-local-bounds) with the band limits of the Bessel function.
