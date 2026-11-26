@@ -41,7 +41,7 @@ The basis of Section 3 gives the action of a matrix on the semi-invariants as a 
 
 ### The setting
 
-At each place $\tau$ of a finite set $\Phi$ there is a finite set $n_\tau$ of rows, with $|n_\tau|$ elements. The weight is $\kappa_\tau(h)$, the number of columns of height $h$, for $h < |n_\tau|$. Columns of the full height $|n_\tau|$ are not counted in $\kappa$. Their minors are the determinants, and the source takes them into account by a power of the determinant, the integer $e_\tau$ of the representation `New.weylRep` below. A column of height $0$ has the empty minor $1$, so $\kappa_\tau(0)$ plays no role.
+At each place $\tau$ of a finite set $\Phi$ there is a finite set $n_\tau$ of rows. The weight is $\kappa_\tau(h)$, the number of columns of height $h$, for $h < |n_\tau|$. Columns of the full height $|n_\tau|$ are not counted in $\kappa$. The source accounts for them by a power $e_\tau$ of the determinant in `New.weylRep` below.
 
 In the textbook language, the pair $(\kappa, e)$ is the dominant weight $\mu_\tau = (\mu_{\tau,1} \ge \dots \ge \mu_{\tau, |n_\tau|})$ with $\kappa_\tau(h) = \mu_{\tau,h} - \mu_{\tau, h+1}$ for $0 < h < |n_\tau|$ and $e_\tau = \mu_{\tau, |n_\tau|}$. Every dominant integral weight of $\prod_\tau GL_{n_\tau}$ has this form, with $e_\tau \in \mathbb Z$.
 
@@ -68,7 +68,7 @@ Lean: `New.sum_schur_smul_nablaBasis` (Lib/GLn/SchurModule/SchurMatrix.lean).
 
 *Proof.* The polynomial $b'_i(zy)$ is a semi-invariant of the weight of $\kappa$ plus $d_\tau$ full columns at each $\tau$, by the discussion after the definition. By Section 3 (`New.nabla_le_span_nablaBasis_mul_detPow`), it is a combination of the $b_j D_d$. So the coefficients exist, and `Function.invFun` picks coefficients that work. $\square$
 
-**Remark (Formalization).** The Schur matrix is a total function of $z$. If the sizes do not fit $\kappa$, the row $i$ is the value of `Function.invFun` at a point outside the range, which is an unspecified vector. No statement of the source uses $S(z)$ in that case. All the lemmas below assume `New.FitsRanks`. For square $z$, that is $n' = n$, the condition holds, $d = 0$, and the expansion is $b_i(zy) = \sum_j S(z)_{ij} b_j(y)$. The coefficients are then unique, because the $b_j D_d$ are linearly independent (`New.GL.linearIndependent_nablaBasis_mul_detPow`). So in every case that is used, the matrix does not depend on the choice.
+**Remark (Formalization).** The Schur matrix is a total function of $z$. If the sizes do not fit $\kappa$, row $i$ is the value of `Function.invFun` outside its range, an unspecified vector. All the lemmas below assume `New.FitsRanks`, and then the coefficients are unique, because the $b_j D_d$ are linearly independent (`New.GL.linearIndependent_nablaBasis_mul_detPow`). So in every case that is used, the matrix does not depend on the choice.
 
 **Theorem.** Let the sizes fit $\kappa$. Let $z_\tau$ be of size $n'_\tau \times n_\tau$.
 
@@ -79,7 +79,7 @@ Lean: `New.sum_schur_smul_nablaBasis` (Lib/GLn/SchurModule/SchurMatrix.lean).
 
 Lean: `New.schur_mul_left`, `New.schur_mul_right`, `New.schur_one`, `New.schur_smul` (Lib/GLn/SchurModule/SchurMatrix.lean).
 
-*Proof.* (1) Substitution is functorial: $b'_i(gzy)$ is $b'_i(g \cdot)$ evaluated at $zy$. Expand $b'_i(gy') = \sum_k S(g)_{ik} b'_k(y')$, with no determinant factor because $g$ is square, put $y' = zy$, and expand each $b'_k(zy)$ by the lemma. This gives $\sum_j (S(g) S(z))_{ij}\, b_j D_d$. The coefficients of such an expansion are unique by the independence of the $b_j D_d$, so $S(gz) = S(g) S(z)$. (2) is the same computation in the other order. The substitution of $g$ multiplies $D_d(y)$ by $\prod_\tau \det(g_\tau)^{d_\tau}$. (3) The substitution of $1$ is the identity. (4) A scalar is a diagonal matrix, and the diagonal case below gives $\prod_\tau t_\tau^{(\text{number of entries of } i_\tau)}$, which is the number of boxes for every $i$. Then apply (1). $\square$
+*Proof.* (1) Expand $b'_i(gy') = \sum_k S(g)_{ik} b'_k(y')$, put $y' = zy$, and expand each $b'_k(zy)$ by the lemma. This gives $\sum_j (S(g) S(z))_{ij}\, b_j D_d$, and the coefficients are unique by the independence of the $b_j D_d$. (2) is the same computation in the other order. (3) The substitution of $1$ is the identity. (4) follows from the diagonal case below and (1). $\square$
 
 **Definition.** For an array $y$ over $R$ with rows $n$, the *evaluation vector* is $\operatorname{ev}_y = (b_i(y))_i$.
 
@@ -91,7 +91,7 @@ Lean: `New.schur_mulVec_weylEval` (Lib/GLn/SchurModule/SchurMatrix.lean).
 
 *Proof.* Evaluate the expansion of the lemma at $y$. $\square$
 
-This lemma gives the meaning of the Weyl module in the source. A vector $\xi$ of coordinates is read as a linear form on $\nabla(\kappa)$, through $b_i \mapsto \xi_i$. The evaluation vector $\operatorname{ev}_y$ is the form $f \mapsto f(y)$. The Schur matrix moves these point evaluations by $y \mapsto zy$. So the module of vectors $\xi$, with the action $\xi \mapsto S(g)\xi$, is the dual of the module of semi-invariants. In Jantzen, *Representations of Algebraic Groups*, 2nd ed., 2003, Part II, 2.13, a Weyl module is defined in this way, as the dual of an induced module $H^0$. The source does not state the identification with Jantzen's modules, and the chapter does not use it.
+So a vector $\xi$ of coordinates is a linear form on $\nabla(\kappa)$, through $b_i \mapsto \xi_i$, and $\operatorname{ev}_y$ is the form $f \mapsto f(y)$. The module of vectors $\xi$ with the action $\xi \mapsto S(g)\xi$ is the dual of the module of semi-invariants. This is how Jantzen, *Representations of Algebraic Groups*, 2nd ed., 2003, Part II, 2.13, defines a Weyl module. The source does not state the identification, and the chapter does not use it.
 
 ### Weights and the character
 
@@ -156,7 +156,7 @@ Over $\mathbb Q$ a Weyl module is a summand of a tensor product of exterior powe
 
 Lean: `New.ColumnFilling`, `New.fillingPoly`, `New.minorsMatrix`, `New.fillingMatrix` (Lib/GLn/SchurModule/TensorModel.lean).
 
-The column fillings index the standard basis of $\bigotimes_{\text{columns}} \Lambda^h R^{n_\tau}$: a strictly increasing sequence is a basis vector $e_{r_1} \wedge \dots \wedge e_{r_h}$. The matrix $\operatorname{Min}(z)$ is the matrix of $\bigotimes \Lambda^h z$ in this basis, since the entries of $\Lambda^h z$ are the $h \times h$ minors. The coordinates in the definition of $F$ exist, because $f_T$ is a semi-invariant of weight $\kappa$ (Section 2) and the $b$ span the semi-invariants over $\mathbb Z$ (Section 3). They are unique by independence. So the choice by `Function.invFun` is harmless here.
+The column fillings index the standard basis of $\bigotimes_{\text{columns}} \Lambda^h R^{n_\tau}$, and $\operatorname{Min}(z)$ is the matrix of $\bigotimes \Lambda^h z$ in this basis. The coordinates in the definition of $F$ exist and are unique, by Sections 2 and 3. So the choice by `Function.invFun` is harmless here.
 
 **Theorem.**
 
@@ -182,4 +182,3 @@ The textbook statement of (3) is that the Weyl module over $\mathbb Z$ is a dire
 
 **Remark (Formalization).** The direct summand in (3) is a summand of $\mathbb Z$-modules only. The left inverse $Q$ is not equivariant, and no statement says it is. The source uses $Q$ to show that some vectors are integral, as in (5), and never to move the group action.
 
-In the model case of Section 1, a column filling is a word of $k$ letters, $\operatorname{Min}(z) = z^{\otimes k}$, and $F$ is the $0$-$1$ matrix of that section. Section 5 shows that $F^{\mathsf T} F$ is the Gram matrix in general.

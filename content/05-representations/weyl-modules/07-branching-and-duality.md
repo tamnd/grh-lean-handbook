@@ -24,10 +24,6 @@ decls:
   - New.GL.MixedCartanEmbedding
   - New.nonempty_mixedCartanEmbedding
   - New.mixedCartan
-  - New.Rows.HasColumnsBelow
-  - New.Rows.cartanProduct
-  - New.Rows.mixedCartan_mulVec_cartanProduct
-  - New.Rows.weylNormSq_cartanProduct
   - New.IsDualPairing
   - New.exists_isDualPairing_of_isHCParam
 status: drafted
@@ -35,11 +31,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Branching and duality
 
-This section gives the maps between Weyl modules that the source uses. The first is the branching map from $GL_{n+1}$ to $GL_n \times GL_1$. The second is the duality between a Weyl module and the module of the reversed weight. The third is the Cartan embedding of a mixed weight into a tensor product. The last is an invariant pairing between the weights with Harish-Chandra parameters $l$ and $-l$. All four are integer matrices with explicit norm bounds.
+This section gives the maps between Weyl modules that the source uses: the branching map from $GL_{n+1}$ to $GL_n \times GL_1$, the duality with the reversed weight, the Cartan embedding of a mixed weight, and an invariant pairing between the parameters $l$ and $-l$. All four are integer matrices.
 
 ### The branching rule
 
-The textbook statement is the branching rule with multiplicity one. Let $\lambda$ be a highest weight of $GL_{n+1}(\mathbb C)$. The restriction of the irreducible representation $V_\lambda$ to $GL_n(\mathbb C)$ is the direct sum of the $V_\mu$ over the $\mu$ that interlace $\lambda$, that is, $\lambda_1 \ge \mu_1 \ge \lambda_2 \ge \cdots \ge \mu_n \ge \lambda_{n+1}$, and each $V_\mu$ occurs once. See Goodman and Wallach, *Symmetry, Representations, and Invariants*, 2009, Theorem 8.1.1, and Zhelobenko, *Compact Lie Groups and their Representations*, 1973, Chapter X. The subgroup $GL_1$ in the corner acts on the summand $V_\mu$ by the character $s^{|\lambda| - |\mu|}$.
+The textbook statement is the branching rule with multiplicity one. The restriction of the irreducible representation $V_\lambda$ of $GL_{n+1}(\mathbb C)$ to $GL_n(\mathbb C)$ is the direct sum of the $V_\mu$ over the $\mu$ with $\lambda_1 \ge \mu_1 \ge \lambda_2 \ge \cdots \ge \mu_n \ge \lambda_{n+1}$, each once. See Goodman and Wallach, *Symmetry, Representations, and Invariants*, 2009, Theorem 8.1.1, and Zhelobenko, *Compact Lie Groups and their Representations*, 1973, Chapter X. The corner $GL_1$ acts on $V_\mu$ by $s^{|\lambda| - |\mu|}$.
 
 The source does not state the decomposition. For one interlacing pair it constructs an integer matrix that is equivariant, bounds its norm and shows that every equivariant map is a multiple of it.
 
@@ -61,9 +57,9 @@ where $\mu_\gamma(\tau, 0)$ is the diagram weight of $\gamma$ at row $0$, the nu
 
 Lean: `New.exists_branching_matrix` (Lib/GLn/Branching/IntegralMap.lean).
 
-The sum in item 2 is the number of boxes of $\kappa_0$ in the columns of height at least $q$. So the operator norm of $br$ is at most $L^{3L}$. The parameter $q$ allows a smaller $L$ when the low columns all lose a box. For $q = 0$ the hypothesis on $\kappa'$ is empty, and $L$ bounds all boxes of $\kappa_0$.
+The sum in item 2 is the number of boxes of $\kappa_0$ in the columns of height at least $q$. So the operator norm of $br$ is at most $L^{3L}$. For $q = 0$ the hypothesis on $\kappa'$ is empty.
 
-**Remark (Formalization).** The theorem does not state that $br \neq 0$. With $br = 0$, item 3 would say that every equivariant map is $0$. The textbook branching rule says the opposite: for an interlacing pair the map exists and is not zero. The proof in the source shows $br \neq 0$. The nonvanishing appears as the local fact `value_ne` inside the proof of `New.GL.spansBranchingMaps_of_equivariant`, but no exported lemma states it. The matrix $br$ is given by an existential statement, so a user who needs $br \neq 0$ must repeat the construction below and use item (a) of `New.GL.exists_int_branching_of_weylKernel`, by which one row vector of $B$ has the polynomial $c$ times the branch vector, with $c > 0$.
+**Remark (Formalization).** The theorem does not state that $br \neq 0$. With $br = 0$, item 3 would say that every equivariant map is $0$, which is the opposite of the textbook rule. The proof shows $br \neq 0$ as the local fact `value_ne` inside the proof of `New.GL.spansBranchingMaps_of_equivariant`, but no exported lemma states it. A user who needs it must repeat the construction below and use item (a) of `New.GL.exists_int_branching_of_weylKernel`.
 
 The proof has three parts.
 
@@ -75,7 +71,7 @@ where $P$ is the permutation array of the fixed numbering of the rows and $P_1$ 
 $$B \, S_{\gamma + \kappa'}(\operatorname{diag}(g, s)) = \Big( \prod_\tau s_\tau^{\mu_\gamma(\tau, 0)} \det(g_\tau)^{\kappa'_\tau(|n_\tau|)} \Big) S_{\kappa_0}(g) B.$$
 The matrix $B$ is read off from the coefficients of a kernel in two arrays, as the Gram matrix was in Section 5. So it has integer entries by construction, and the equivariance is a substitution of rows.
 
-*Norm and uniqueness.* The lemma `New.GL.weylNormSq_mulVec_le_of_equivariant` shows $\|B\xi\|^2 \le c^2 \|\xi\|^2$. Its proof works on the evaluation vectors, which span. With $c \le (L^L)^3$ this is item 2. The lemma `New.GL.exists_cyclic_lower_triangular` gives a vector $v$ whose images under $S_\kappa(\operatorname{diag}(g, 1))$, for lower triangular $g$, span all coordinate vectors. So an equivariant $T$ is determined by one number $x\, T\, v$. The lemma `New.GL.spansBranchingMaps_of_equivariant` applies this to $T - aB$, with $a$ chosen so that this number is $0$. It needs $c \neq 0$. $\square$
+*Norm and uniqueness.* The lemma `New.GL.weylNormSq_mulVec_le_of_equivariant` shows $\|B\xi\|^2 \le c^2 \|\xi\|^2$, which is item 2. The lemma `New.GL.exists_cyclic_lower_triangular` gives a vector $v$ whose images under $S_\kappa(\operatorname{diag}(g, 1))$, for lower triangular $g$, span. So an equivariant $T$ is determined by one number $x\, T\, v$. The lemma `New.GL.spansBranchingMaps_of_equivariant` applies this to $T - aB$, with $a$ chosen so that this number is $0$, which needs $c \neq 0$. $\square$
 
 Lean: `New.GL.branchVector` (Lib/GLn/Branching/NormBound.lean), `New.GL.exists_smul_weylKernel_mul_eq_toPoly`, `New.GL.weylNormSq_mulVec_le_of_equivariant` (Lib/GLn/Branching/NormBound.lean), `New.GL.exists_int_branching_of_weylKernel`, `New.GL.exists_cyclic_lower_triangular`, `New.GL.spansBranchingMaps_of_equivariant` (Lib/GLn/Branching/IntegralMap.lean).
 
@@ -113,9 +109,9 @@ Lean: `New.GL.IsDualIsometry` (Lib/GLn/Dual.lean).
 
 Lean: `New.exists_isDualIsometry`, and the same statement as one conjunction, `New.exists_dual_isometry` (Lib/GLn/Dual.lean).
 
-*Proof.* Take $J$ from the duality matrix lemma, and $K$ from the same lemma with $e$ and $e'$ exchanged. Both are equivariant up to a power of the determinant, and the exponents agree. So $JK$ and $KJ$ commute with all $S(g)$ applied to evaluation vectors, and these vectors span. So $JK = 1$ and $KJ = 1$. The isometry follows from $G = F^{\mathsf T} F$: $J^{\mathsf T} F_\kappa^{\mathsf T} F_\kappa J = F_{\kappa'}^{\mathsf T} P^{\mathsf T} P F_{\kappa'} = F_{\kappa'}^{\mathsf T} F_{\kappa'}$. $\square$
+*Proof.* Take $J$ from the duality matrix lemma, and $K$ from the same lemma with $e$ and $e'$ exchanged. Then $JK$ and $KJ$ commute with all $S(g)$ on the evaluation vectors, which span. So $JK = 1$ and $KJ = 1$. The isometry follows from $G = F^{\mathsf T} F$ and $P^{\mathsf T} P = 1$. $\square$
 
-**Remark (Formalization).** The matrix $J$ identifies the lattice of weight $\kappa'$ with that of weight $\kappa$ composed with $g \mapsto g^{-\mathsf T}$. Over $\mathbb Q$ this is the dual representation. Over $\mathbb Z$ it is not the dual lattice, since $G$ is not unimodular. The source docstring says so.
+**Remark (Formalization).** The matrix $J$ identifies the lattice of weight $\kappa'$ with that of weight $\kappa$ composed with $g \mapsto g^{-\mathsf T}$. Over $\mathbb Q$ this is the dual representation. Over $\mathbb Z$ it is not the dual lattice, since $G$ is not unimodular.
 
 **Corollary.** For the reversed weight $\kappa'$:
 
@@ -151,19 +147,6 @@ Lean: `New.nonempty_mixedCartanEmbedding`, and the chosen one `New.mixedCartan` 
 
 **Remark (Formalization).** `New.mixedCartan` is chosen by `Nonempty.some`. Only the four properties of the structure are available about it.
 
-The *Cartan product* puts two vectors in smaller sets of letters together. Let $\varepsilon : N \sqcup m \simeq n$ split the letters. The condition `New.Rows.HasColumnsBelow` $n\, N\, k_p$ says that $|N| \le |n|$ and $k_p$ has no column of height $h$ with $|N| \le h < |n|$. For $g$ invertible, `New.Rows.cartanProduct` $\varepsilon\, g\, y\, \eta$ applies the Schur matrix of the $N$-columns of $g$ to $y$ and that of the $m$-columns of $g^{-\mathsf T}$ to $\eta$, takes the tensor product, and applies the left inverse of $M$.
-
-Lean: `New.Rows.HasColumnsBelow`, `New.Rows.cartanProduct` (Lib/GLn/Dual.lean).
-
-**Theorem.** Let $k_p$ and $k_m$ have columns below $|N|$ and $|m|$. Then:
-
-1. over a field of characteristic $0$, $M$ sends the Cartan product at $g = 1$ back to the tensor product of the images, so the left inverse loses nothing;
-2. $\|\operatorname{cartanProduct}(\varepsilon, 1, y, \eta)\|^2 = \|y\|^2 \|\eta\|^2$.
-
-Lean: `New.Rows.mixedCartan_mulVec_cartanProduct`, `New.Rows.weylNormSq_cartanProduct` (Lib/GLn/Dual.lean).
-
-*Proof.* For item 1 both sides are bilinear in $(y, \eta)$. By the spanning of the translates of evaluation vectors it is enough to take translates of evaluation vectors, where item 3 of the definition applies. For item 2, $M$ is an isometry and sends the product to a tensor. The form on tensors factors, and the inclusions of the letters keep each norm. $\square$
-
 ### The dual pairing
 
 The last result connects the duality with the automorphic forms of the source. Let $E$ be a CM field, and let $l$ list twice the Harish-Chandra parameter of $(\kappa, e)$ at each infinite place, in the sense of `New.IsHCParam` of Section 6.
@@ -181,6 +164,6 @@ Lean: `New.IsDualPairing` (Lib/GLn/Dual.lean).
 
 Lean: `New.exists_isDualPairing_of_isHCParam` (Lib/GLn/Dual.lean).
 
-*Proof.* Number the rows by decreasing $l$. Then the numbering for $-l$ is the reversed one, and $\kappa'$ is the reversed weight of $\kappa$. Take the dual isometry $J$ and put $A = G_{\kappa'} J$. Invariance follows from item 4 of the dual isometry. The determinant power that appears is $e' + e$, and `New.IsHCParam.add_eq_neg_sum_of_neg` computes it from the two parameter conditions. Item 3 follows from $G_{\kappa'} H' = \operatorname{hook}(\kappa') \cdot 1$ and the inverse of $J$. Item 4 holds with $v' = \overline{Jv}$, by the isometry $J^{\mathsf T} G_{\kappa'} J = G_\kappa$. $\square$
+*Proof.* Number the rows by decreasing $l$, so that $\kappa'$ is the reversed weight of $\kappa$. Put $A = G_{\kappa'} J$ with $J$ the dual isometry. Invariance follows from item 4 of the dual isometry, with the determinant power computed by `New.IsHCParam.add_eq_neg_sum_of_neg`. Item 3 follows from $G_{\kappa'} H' = \operatorname{hook}(\kappa') \cdot 1$. Item 4 holds with $v' = \overline{Jv}$, by $J^{\mathsf T} G_{\kappa'} J = G_\kappa$. $\square$
 
 The theorem is used in `New/Determinant/AuxiliaryForms/LastPath.lean` in the proof of Theorem C.

@@ -31,18 +31,16 @@ decls:
   - New.weylNormSq
   - New.weylNormSq_nonneg
   - New.GL.weylNormSq_weylEval_permArray
-  - New.GL.exists_tightFrame
-  - New.GL.card_columnFilling_le
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
 ## The Gram matrix and Schur's lemma
 
-This section defines the integer Gram matrix $G$ of the Weyl module and proves its three properties: it is $F^{\mathsf T} F$, it is positive definite, and it is invariant. It then proves Schur's lemma for the unitary group, and uses it to show that $G$ times the matrix of Fock pairings is the hook number times the identity. The section ends with the bound for the hook number and with a tight frame of integral vectors. These are the constants that the later volumes use.
+This section defines the integer Gram matrix $G$ of the Weyl module and proves its three properties: it is $F^{\mathsf T} F$, it is positive definite, and it is invariant. It then proves Schur's lemma for the unitary group, and uses it to show that $G$ times the matrix of Fock pairings is the hook number times the identity. The section ends with the bound for the hook number. These are the constants that the later volumes use.
 
 ### The kernel and the Gram matrix
 
-The idea is the reproducing kernel. In the model case of Section 1, the polynomial $(y_1 x_1 + y_2 x_2)^k$ is a function of $x$ for each fixed $y$, and its coefficients in the monomials of $x$ and $y$ are the binomial coefficients. In general the highest weight vector is the product of leading minors, and the kernel is its translate by $y^{\mathsf T}$.
+The idea is the reproducing kernel. In the model case of Section 1 the kernel is $(y_1 x_1 + y_2 x_2)^k$. In general it is the product of leading minors, translated by $y^{\mathsf T}$.
 
 **Definition.** Let $f = \prod_\tau \prod_{h < |n_\tau|} \Delta_{\{1, \dots, h\}}^{\kappa_\tau(h)}$ be the product of the leading principal minors, one for each column of the diagram. For an array $y$ over $R$, the *kernel* is the polynomial $K_y(x) = f(y^{\mathsf T} x)$, where block $\tau$ of $y$ is read on its first $|n_\tau|$ columns.
 
@@ -54,7 +52,7 @@ The kernel $K_y$ is a semi-invariant of weight $\kappa$ in $x$. If $y$ is also a
 
 Lean: `New.weylGram`, `New.weylGramOver`, `New.toPoly` (Lib/GLn/SchurModule/Basic.lean).
 
-**Remark (Formalization).** Both choices by `Function.invFun` are at points of the range. The first expansion exists because $K_y$ lies in $\nabla(\kappa)$ over the ring $\mathbb Z[y]$, and the second because each coefficient lies in $\nabla(\kappa)$ over $\mathbb Z$. Both are unique by the independence of the $b_i$ over every commutative ring (Section 3). So $G$ is the matrix of the textbook, with no junk entries. The source records this as `New.sum_weylGram_smul_eq_weylKernel_of_exists`, and the next lemma is the identity that later proofs use.
+**Remark (Formalization).** Both choices by `Function.invFun` are at points of the range, and both expansions are unique by the independence of the $b_i$ over every commutative ring (Section 3). So $G$ has no junk entries. The source records this as `New.sum_weylGram_smul_eq_weylKernel_of_exists`.
 
 **Lemma.** For every array $y$ over $R$, $\widehat{\operatorname{ev}_y} = K_y$.
 
@@ -62,7 +60,7 @@ Lean: `New.toPoly_weylEval` (Lib/GLn/SchurModule/WeylKernel.lean).
 
 *Proof.* Specialise the generic expansion $K_Y(x) = \sum_i \big(\sum_j G_{ij} b_j(Y)\big) b_i(x)$ at $Y = y$. The coefficient of $b_i$ is $\sum_j G_{ij}\, b_j(y) = (G \operatorname{ev}_y)_i$. $\square$
 
-So $G$ is the matrix of the map from point evaluations to kernels. Over $\mathbb C$, for every $\hat\xi$, the value $\hat\xi(y)$ is $\operatorname{ev}_y^{\mathsf T} G \xi$ (`New.GL.eval_toPoly`). This is a reproducing property with respect to the bilinear form of $G$.
+So $G$ is the matrix of the map from point evaluations to kernels. Over $\mathbb C$, for every $\hat\xi$, the value $\hat\xi(y)$ is $\operatorname{ev}_y^{\mathsf T} G \xi$ (`New.GL.eval_toPoly`).
 
 ### The Gram matrix is restricted from tensors
 
@@ -77,7 +75,7 @@ Lean: `New.weylKernel_eq_sum_fillingPoly`, `New.fillingMatrix_transpose_mul_self
 
 *Proof.* (1) Each factor of $K_y$ is a leading minor of $y^{\mathsf T} x$. By the Cauchy-Binet formula, the leading $h \times h$ minor of $y^{\mathsf T} x$ is $\sum_I \Delta_I(y) \Delta_I(x)$ over the increasing $h$-tuples $I$ of rows. Multiply out over the columns. A choice of $I$ for every column is a column filling $T$, and the product is $f_T(y) f_T(x)$.
 
-(2) Both sides are matrices over $\mathbb Z$. Apply $\xi \mapsto \sum_i \xi_i b_i$ to the vectors $G \operatorname{ev}_y$ and $F^{\mathsf T} F \operatorname{ev}_y$. The first gives $K_y$ by the lemma. For the second, $F \operatorname{ev}_y = (f_T(y))_T$, and $\sum_i (F^{\mathsf T} v)_i\, b_i = \sum_T v_T f_T$ for every $v$, because row $T$ of $F$ holds the coordinates of $f_T$. So it gives $\sum_T f_T(y) f_T = K_y$ by (1). The evaluation vectors span the Weyl module over an infinite domain (`New.GL.ext_weylEval`), so $G = F^{\mathsf T} F$.
+(2) Apply $\xi \mapsto \sum_i \xi_i b_i$ to $G \operatorname{ev}_y$ and to $F^{\mathsf T} F \operatorname{ev}_y$. The first gives $K_y$ by the lemma. Since row $T$ of $F$ holds the coordinates of $f_T$, the second gives $\sum_T f_T(y) f_T = K_y$ by (1). The evaluation vectors span over an infinite domain (`New.GL.ext_weylEval`), so $G = F^{\mathsf T} F$.
 
 (3) $F$ is real, so $F^{\mathsf T} = F^*$ and $\xi^* G \xi = \|F \xi\|^2$. It is positive for $\xi \ne 0$, because $F$ has the left inverse $Q$ of Section 4.
 
@@ -93,7 +91,7 @@ By (4), for a unitary $g$ over $\mathbb C$ the matrices $S(g)$ and $S(g^{\mathsf
 
 Lean: `New.toPoly_schur`, `New.toPoly_injective`, `New.range_toPoly` (Lib/GLn/SchurModule/WeylKernel.lean).
 
-*Proof.* (1) Both sides are linear in $\xi$, so it is enough to take $\xi = \operatorname{ev}_y$ with $D_d(y) \ne 0$, and these vectors span. Then $D_d(y) S(z) \operatorname{ev}_y = \operatorname{ev}_{zy}$ (Section 4), and the left side becomes $K_{zy}$ up to the factor $D_d(y)$. The right side is $K_y(z^{\mathsf T} x) D_d(z^{\mathsf T} x)$. The two agree, because $(zy)^{\mathsf T} x = y^{\mathsf T}(z^{\mathsf T} x)$ and the leading minors of size $|n_\tau|$ produce the determinant factor. (2) The integer $\det G$ is positive by (3) of the theorem, so it is not zero in $R$, and $\xi \mapsto \sum \xi_i b_i$ is injective. (3) $G$ is invertible over $\mathbb C$, and the image of $\xi \mapsto \sum \xi_i b_i$ is $\nabla(\kappa)$ (Section 3). $\square$
+*Proof.* (1) Both sides are linear in $\xi$, so it is enough to take $\xi = \operatorname{ev}_y$ with $D_d(y) \ne 0$. Then $D_d(y) S(z) \operatorname{ev}_y = \operatorname{ev}_{zy}$ (Section 4), and both sides reduce to $K_{zy}$, because $(zy)^{\mathsf T} x = y^{\mathsf T}(z^{\mathsf T} x)$. (2) The integer $\det G$ is positive, so it is not zero in $R$. (3) $G$ is invertible over $\mathbb C$, and the image of $\xi \mapsto \sum \xi_i b_i$ is $\nabla(\kappa)$ (Section 3). $\square$
 
 ### Schur's lemma for the unitary group
 
@@ -103,7 +101,7 @@ The scalar in the Fock identity of the model case came from a computation. In ge
 
 Lean: `New.GL.zariski_dense_unitary` (Lib/GLn/SchurModule/WeylKernel.lean).
 
-*Proof.* Let $y$ be a family of complex matrices, and write $y = \operatorname{Re} y + i \operatorname{Im} y$ with Hermitian $\operatorname{Re} y$ and $\operatorname{Im} y$. The function $s \mapsto P(\exp(i(-s \operatorname{Re} y + \operatorname{Im} y)))$ is entire in $s \in \mathbb C$. For real $s$ the exponent is skew-Hermitian, so the exponential is unitary and the function vanishes. So it vanishes everywhere. At $s = i$ the exponent is $\operatorname{Re} y + i \operatorname{Im} y = y$. So $P \circ \exp$ vanishes everywhere. The exponential is a local diffeomorphism at $0$, so $P$ vanishes on an open set around $1$, and $P = 0$ because $P$ is analytic. $\square$
+*Proof.* Write $y = \operatorname{Re} y + i \operatorname{Im} y$ with Hermitian parts. The function $s \mapsto P(\exp(i(-s \operatorname{Re} y + \operatorname{Im} y)))$ is entire, and it vanishes for real $s$, where the exponential is unitary. So it vanishes at $s = i$, where the exponent is $y$. So $P \circ \exp = 0$. The exponential is a local diffeomorphism at $0$, so $P$ vanishes near $1$, and $P = 0$. $\square$
 
 **Theorem (Schur's lemma).** Let $T$ be a complex square matrix on the Weyl module with $T\, S(g) = S(g)\, T$ for every family $g$ of unitary matrices. Then $T$ is a scalar matrix.
 
@@ -119,7 +117,7 @@ Step 3. A linear form $\varphi$ on polynomials that sees only basis vectors of h
 
 Step 4. By Step 1, $T S(g) v = S(g) T v = c\, S(g) v$ for all $g$. The vectors $S(g) v = \operatorname{ev}_{g w}$, for $g$ invertible, span the Weyl module (`New.GL.ext_schur_weylEval`). So $T = c \cdot 1$. $\square$
 
-The textbook route is the irreducibility of the Weyl module over $\mathbb C$ (Fulton and Harris, *Representation Theory*, 1991, Theorem 6.3), followed by Schur's lemma (same book, Lemma 1.7). The source proves only the commutant statement for unitary families, which is what it uses. It does not state irreducibility.
+The textbook route is the irreducibility of the Weyl module over $\mathbb C$ (Fulton and Harris, *Representation Theory*, 1991, Theorem 6.3), followed by Schur's lemma (same book, Lemma 1.7). The source proves only the commutant statement for unitary families, which is what it uses.
 
 ### The Fock identity
 
@@ -132,9 +130,9 @@ $$G H = h_\kappa \cdot 1.$$
 
 Lean: `New.weylGram_mul_fockPairing` (Lib/GLn/SchurModule/GramMatrix.lean).
 
-*Proof.* Over $\mathbb C$, let $T = H^{\mathsf T} G$. By the definition of $\hat\xi$, $(T\xi)_k = \langle \hat\xi, b_k \rangle$. We show that $T$ commutes with $S(g)$ for every square $g$. On one side, $(T S(g) \xi)_k = \langle \widehat{S(g)\xi}, b_k \rangle = \langle \hat\xi(g^{\mathsf T} x), b_k \rangle$ by (1) of the last lemma, with $d = 0$. The Fock pairing has the adjoint property $\langle p(g^{\mathsf T} x), q \rangle = \langle p, q(g x) \rangle$ (Section 2, `New.fockPairing_rowSubst`). And $b_k(gx) = \sum_j S(g)_{kj} b_j$. So $(T S(g) \xi)_k = \sum_j S(g)_{kj} \langle \hat\xi, b_j \rangle = (S(g) T \xi)_k$. By Schur's lemma $T = c \cdot 1$.
+*Proof.* Over $\mathbb C$, let $T = H^{\mathsf T} G$, so that $(T\xi)_k = \langle \hat\xi, b_k \rangle$. By (1) of the last lemma, $\widehat{S(g)\xi} = \hat\xi(g^{\mathsf T} x)$. The adjoint property $\langle p(g^{\mathsf T} x), q \rangle = \langle p, q(g x) \rangle$ (`New.fockPairing_rowSubst`) and $b_k(gx) = \sum_j S(g)_{kj} b_j$ give $T S(g) = S(g) T$. By Schur's lemma $T = c \cdot 1$.
 
-To find $c$, use the frame vector $v = \operatorname{ev}_w$ of the proof of Schur's lemma. The kernel $K_w$ is $f$ with the rows renamed by an orthogonal matrix, so $\langle K_w, K_w \rangle = h_\kappa$ (`New.fockPairing_weylKernel_permArray_self`). On the other hand $\langle \hat v, \widehat{v} \rangle = (T v)^{\mathsf T} G v = c\, v^{\mathsf T} G v = c\, K_w(w) = c$, since $K_w(w) = f(1) = 1$. So $c = h_\kappa$. This proves $H^{\mathsf T} G = h_\kappa \cdot 1$ over $\mathbb C$, hence over $\mathbb Z$. Transpose, and use that $G$ and $H$ are symmetric. $\square$
+To find $c$, take $v = \operatorname{ev}_w$ for the frame $w$ of the proof of Schur's lemma. Then $\langle K_w, K_w \rangle = h_\kappa$ (`New.fockPairing_weylKernel_permArray_self`), and $\langle \hat v, \hat v \rangle = c\, v^{\mathsf T} G v = c\, K_w(w) = c$. So $c = h_\kappa$, over $\mathbb C$ and hence over $\mathbb Z$. Transpose, and use that $G$ and $H$ are symmetric. $\square$
 
 **Corollary.** For vectors $\xi, \eta$ over any commutative ring $R$ and every index $k$:
 
@@ -157,13 +155,13 @@ Lean: `New.hookNumber_pos`, `New.hookNumber_le` (Lib/GLn/SchurModule/WeylKernel.
 
 *Proof.* Positivity. The polynomial $f$ is not zero, since $f$ at the identity array is $1$. The Fock pairing of a nonzero integer polynomial with itself is $\sum_\alpha \alpha!\, c_\alpha^2 > 0$ (Section 2).
 
-Upper bound. Let $d = \sum_\tau \sum_h h \kappa_\tau(h) \le L$ be the degree of $f$. Expand each minor over permutations. Then $f$ is a sum of $|S|$ signed monomials of degree $d$, where $S$ is the set of choices of a permutation for each column. A column of height $h$ has $h!$ permutations, and the product of the $h!$ over the columns is at most $d!$, since a product of factorials divides the factorial of the sum. So $|S| \le d!$. The Fock pairing of two monomials with coefficients $\pm 1$ is at most $\alpha! \le d!$. So
+Upper bound. Let $d \le L$ be the degree of $f$. Expand each minor over permutations. Then $f$ is a sum of $|S| \le d!$ signed monomials, since a product of factorials divides the factorial of the sum. The Fock pairing of two such monomials is at most $d!$. So
 $$h_\kappa \le |S| \cdot |S| \cdot d! \le (d!)^3 \le (L^L)^3,$$
 with $d! \le d^d \le L^L$. $\square$
 
-**Remark (Formalization).** The bound $(L^L)^3$ is far from sharp. For one row, one column and the diagram $(2, 1)$, the hook number is the product of the hook lengths (Section 1 and Exercise 1 of Section 8), which is at most $L!$. The source does not prove a formula in general, except for one row at each place. It uses only that the constant depends on $L$ alone and is explicit. In the source this is the only bound for $h_\kappa$. The same form of constant, $(L^L)^3$, appears in the branching bound of Section 7.
+**Remark (Formalization).** The bound $(L^L)^3$ is far from sharp. For one row and for the diagram $(2, 1)$ the hook number is the product of the hook lengths (Section 1 and Exercise 1 of Section 8), which is at most $L!$. The source uses only that the constant is explicit and depends on $L$ alone.
 
-### The norm and the tight frame
+### The norm
 
 **Definition.** The squared norm of a complex vector $\xi$ is $\|\xi\|_G^2 = \operatorname{Re}(\xi^* G \xi)$.
 
@@ -179,15 +177,3 @@ The real part is a formality: $\xi^* G \xi$ is real because $G$ is positive defi
 Lean: `New.weylNormSq_nonneg`, `New.GL.weylNormSq_weylEval_permArray` (Lib/GLn/SchurModule/GramMatrix.lean).
 
 *Proof.* (1) is positive definiteness. (2) The array $y$ is real, so $\overline{\operatorname{ev}_y} = \operatorname{ev}_y$ and $\|\operatorname{ev}_y\|^2_G = \operatorname{ev}_y^{\mathsf T} G \operatorname{ev}_y = K_y(y)$. This is $f$ at the matrix $y^{\mathsf T} y = 1$ in each block, which is $1$. $\square$
-
-**Theorem (tight frame).** There are integer vectors $\eta_T$, one for each column filling $T$, with
-$$\sum_T \langle \eta_T, \xi \rangle_G\, \eta_T = h_\kappa^2\, \xi \quad \text{for all complex } \xi, \qquad \|\eta_T\|_G^2 \le h_\kappa^2,$$
-where $\langle \eta, \xi \rangle_G = \eta^* G \xi$. If all ranks are at most $t \ge 1$ and $\kappa$ has at most $L$ boxes, the number of column fillings is at most $t^L$.
-
-Lean: `New.GL.exists_tightFrame`, `New.GL.card_columnFilling_le` (Lib/GLn/SchurModule/GramMatrix.lean).
-
-*Proof.* By (3) of the corollary, with $v$ the unit tensor at $T$, there is an integer $\eta_T$ with $G \eta_T = h_\kappa\, F^{\mathsf T} e_T$. The vectors $\eta_T$ are chosen by `choose`. Then $\langle \eta_T, \xi \rangle_G = h_\kappa (F\xi)_T$, and
-$$G \sum_T \langle \eta_T, \xi \rangle_G\, \eta_T = h_\kappa^2 \sum_T (F \xi)_T\, F^{\mathsf T} e_T = h_\kappa^2\, F^{\mathsf T} F \xi = h_\kappa^2\, G \xi.$$
-Since $G$ is invertible, this is the frame identity. For the norm, $h_\kappa^{-1} \eta_T$ is the orthogonal projection of $e_T$ to the image of $F$, so its norm is at most $\|e_T\| = 1$. The source proves this as the integer inequality $\eta_T^{\mathsf T} G \eta_T \le h_\kappa^2$, by completing a square. For the count, a column of height $h$ has at most $t^h$ increasing sequences, and the heights add up to at most $L$. $\square$
-
-**Remark (Formalization).** The vectors $\eta_T$ are not unique as chosen, but $G \eta_T = h_\kappa F^{\mathsf T} e_T$ fixes them, because $G$ is invertible. They are not orthogonal and not a basis. The source uses the frame in `New/OneLift/LiftVolumeHeight.lean`.
