@@ -71,7 +71,7 @@ Lean: `New.Selmer.crystalline_bound_le_defectBound` (New/Congruences/LocalLoss/C
 *Proof.* Drop the floors: $\lfloor 2\lambda/(kt) \rfloor \leq 2\lambda/(kx)$, as $x \leq t$, and $\lfloor \rho m/(kx) \rfloor \leq \rho m/(kx)$. So the left side is at most
 $$10^5\Big(\frac{2\rho m \lambda}{kx} + \frac{\rho m \lambda}{kx}\Big) = \frac{3 \cdot 10^5 \rho m \lambda}{kx} \leq \frac{10^6 \rho m (b\,v_\ell(M) + \lambda)}{kx} = \rho \cdot \frac{\mathrm{defectBound}(\ell)}{x}. \qquad \square$$
 
-### The main theorem
+### Proof of the main theorem
 
 The hypotheses of the main theorem are collected in one structure.
 
