@@ -100,7 +100,9 @@ Lean: `New.Patching.map_nsmul_eq_mul_norm` (New/Congruences/FirstOrder/OnePrime.
 
 ### The family of first-order deformations
 
-Let $\mathcal{A}_j$, for $j$ in a finite set $J$, be subrings of $R$ that commute pairwise: $ab = ba$ for $a \in \mathcal{A}_i$, $b \in \mathcal{A}_j$, $i \neq j$. Then a product $\prod_j x_j$ with $x_j \in \mathcal{A}_j$ does not depend on the order (`New.Patching.commutingProd`). Any factor can be written last, and a product of sums expands as a sum of products (`New.Patching.commutingProd_update`, `New.Patching.commutingProd_sum`).
+Let $\mathcal{A}_j$, for $j$ in a finite set $J$, be subrings of $R$ that commute pairwise: $ab = ba$ for $a \in \mathcal{A}_i$, $b \in \mathcal{A}_j$, $i \neq j$. Then a product $\prod_j x_j$ with $x_j \in \mathcal{A}_j$ does not depend on the order. Any factor can be written last, and a product of sums expands as a sum of products.
+
+Lean: `New.Patching.commutingProd`, `New.Patching.commutingProd_update`, `New.Patching.commutingProd_sum` (New/Congruences/FirstOrder/OnePrime.lean).
 
 **Definition (Coefficients of the family).** For $\mathrm{Nm}_j, \partial_j \in \mathcal{A}_j$ and $S \subseteq J$, put
 $$N(S) = \prod_{j \in S} \partial_j \prod_{j \notin S} \mathrm{Nm}_j .$$
@@ -158,7 +160,9 @@ Here $\delta'$ moves to the right of $\delta^e N(S \setminus \{j\})$ because it 
 
 ### The first entry and the determinant
 
-Let $F$ be a finite field and $N \geq 1$. The stabilizer of the line of the first basis vector in $\mathrm{GL}_N(F)$ (`New.Patching.residueLineStabilizer`) consists of the matrices whose first column vanishes below the first entry. The *first entry* $g \mapsto g_{00}$ is a character of it to $F^\times$ (`New.Patching.firstEntry`): the scalar by which $g$ acts on the line.
+Let $F$ be a finite field and $N \geq 1$. The stabilizer of the line of the first basis vector in $\mathrm{GL}_N(F)$ consists of the matrices whose first column vanishes below the first entry. The *first entry* $g \mapsto g_{00}$ is a character of it to $F^\times$: the scalar by which $g$ acts on the line.
+
+Lean: `New.Patching.residueLineStabilizer`, `New.Patching.firstEntry` (New/Congruences/FirstOrder/OnePrime.lean).
 
 **Theorem.** The transfer of the first entry from the line stabilizer to $\mathrm{GL}_N(F)$ is the determinant. So for every homomorphism $l \colon F^\times \to A$ to a commutative group, the transfer of $l \circ \mathrm{firstEntry}$ is $l \circ \det$.
 
@@ -170,19 +174,31 @@ Now let $w$ be a finite place of a number field with residue field $\mathbb{F}_w
 
 Lean: `New.Patching.reduceGL_mem_residueLineStabilizer_iff`, `New.Patching.det_firstEntry_reduceGL_eq_one_of_mem_proIwahori` (New/Congruences/FirstOrder/OnePrime.lean).
 
-If $m$ divides $\#\mathbb{F}_w - 1$ and $z$ generates $\mathbb{F}_w^\times$, there is a homomorphism $\mathbb{F}_w^\times \to \mathbb{Z}/m$ that sends $z$ to $1$ (`New.Patching.exists_residue_log`). It exists because $\mathbb{F}_w^\times$ is cyclic of order divisible by $m$.
+If $m$ divides $\#\mathbb{F}_w - 1$ and $z$ generates $\mathbb{F}_w^\times$, there is a homomorphism $\mathbb{F}_w^\times \to \mathbb{Z}/m$ that sends $z$ to $1$. It exists because $\mathbb{F}_w^\times$ is cyclic of order divisible by $m$.
+
+Lean: `New.Patching.exists_residue_log` (New/Congruences/FirstOrder/OnePrime.lean).
 
 ### Logarithms
 
-From here on, $\sigma \colon R \to S$ is a ring map with $m = 0$ in $S$. An additive map $B$ on weights $f \colon \mathbb{Z}/m \to \mathbb{Z}$ takes weights that agree modulo $m$ to elements with the same image under $\sigma$ (`New.Patching.map_eq_of_weights_modEq`).
+From here on, $\sigma \colon R \to S$ is a ring map with $m = 0$ in $S$. An additive map $B$ on weights $f \colon \mathbb{Z}/m \to \mathbb{Z}$ takes weights that agree modulo $m$ to elements with the same image under $\sigma$.
+
+Lean: `New.Patching.map_eq_of_weights_modEq` (New/Congruences/FirstOrder/OnePrime.lean).
 
 **Definition (Weighted sum).** For a homomorphism $c \colon \Gamma \to \mathbb{Z}/m$ and a weight $f$, put $\mathrm{W}_c(f) = \sum_g f(c(g))\, g$. The weight $1$ gives $\mathrm{Nm}$. The weight $\mathrm{valMinAbs}$, which lifts $x \in \mathbb{Z}/m$ to its representative of least absolute value, gives the *logarithm* $\mathcal{L}_c = \mathrm{W}_c(\mathrm{valMinAbs})$.
 
 Lean: `New.Patching.weightedSum`, `New.Patching.weightedSum_one` (New/Congruences/FirstOrder/OnePrime.lean).
 
-Left or right multiplication by $g$ shifts the weight: $g\,\mathrm{W}_c(f) = \mathrm{W}_c(f(\cdot - c(g)))$, and the same on the right (`New.Patching.mul_weightedSum`, `New.Patching.weightedSum_mul`).
+Left or right multiplication by $g$ shifts the weight: $g\,\mathrm{W}_c(f) = \mathrm{W}_c(f(\cdot - c(g)))$, and the same on the right.
 
-For a subgroup $H$, let $h$ run over fixed representatives of $\Gamma/H$. Put $\mathrm{Nm}_{\Gamma/H} = \sum_h h$ and $\mathrm{Nm}^-_{\Gamma/H} = \sum_h h^{-1}$ (`New.Patching.cosetNorm`, `New.Patching.cosetNormInv`). Then $\mathrm{Nm}_{\Gamma/H} \cdot \sum_{p \in H} p = \mathrm{Nm}$ (`New.Patching.cosetNorm_mul_norm`). The transfer of $a \colon H \to A$ at $g$ is the product over the representatives $h$ of $a(p)$, where $gh = h'p$ with $h'$ a representative (`New.Patching.transfer_eq_prod_cosetComponent`).
+Lean: `New.Patching.mul_weightedSum`, `New.Patching.weightedSum_mul` (New/Congruences/FirstOrder/OnePrime.lean).
+
+For a subgroup $H$, let $h$ run over fixed representatives of $\Gamma/H$. Put $\mathrm{Nm}_{\Gamma/H} = \sum_h h$ and $\mathrm{Nm}^-_{\Gamma/H} = \sum_h h^{-1}$.
+
+Lean: `New.Patching.cosetNorm`, `New.Patching.cosetNormInv` (New/Congruences/FirstOrder/OnePrime.lean).
+
+Then $\mathrm{Nm}_{\Gamma/H} \cdot \sum_{p \in H} p = \mathrm{Nm}$. The transfer of $a \colon H \to A$ at $g$ is the product over the representatives $h$ of $a(p)$, where $gh = h'p$ with $h'$ a representative.
+
+Lean: `New.Patching.cosetNorm_mul_norm`, `New.Patching.transfer_eq_prod_cosetComponent` (New/Congruences/FirstOrder/OnePrime.lean).
 
 **Definition (Coset derivative).** For an additive map $B$ on weights, put $\partial = -\mathrm{Nm}_{\Gamma/H}\, B(\mathrm{valMinAbs})\, \mathrm{Nm}^-_{\Gamma/H}$.
 
