@@ -13,8 +13,6 @@ decls:
   - New.Variety.IsNeat
   - New.Variety.IsSignedFrameFor.eq_one_of_congr_large_norm
   - New.Variety.eventually_isNeat
-  - New.Variety.lift_commutator_iff_weil_pairing
-  - New.Variety.exists_hom_of_hasThetaCoords
   - New.Variety.UniversalFamily.GraphClosure
   - New.Variety.UniversalFamily.smooth_and_isDenseFamily_and_exists_comp_eq_act
   - New.Variety.exists_level_conj_mem
@@ -28,7 +26,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The Hecke tower and the model
 
-Section 6 gives one scheme, the closure of the level points over $R$. A Shimura variety comes with a tower of levels and with Hecke correspondences between them. This section builds the tower from closures of tuples of points, and proves the existence theorem of Section 1. In the textbook, the tower comes from the action of the adelic group on level structures (Kottwitz 1992, §5). In the source, each cover is again a closure, and every map is a lift of a translation of complex points.
+Section 6 gives one scheme over $R$. A Shimura variety comes with a tower of levels and Hecke correspondences. In the textbook, the tower comes from the action of the adelic group on level structures (Kottwitz 1992, §5). In the source, each cover is again a closure of tuples of points, and every map is a lift of a translation of complex points. This section proves the existence theorem of Section 1.
 
 ### The structure of a model
 
@@ -46,7 +44,7 @@ Fix $E$, a finite type $n$, $d_0$, a level $\mathfrak{N} \in \mathcal{O}_E$, a n
 
 Lean: `New.Variety.Model` (Lib/Shimura/HeckeTower/Model.lean).
 
-The field `tangent` says this. Let $g \in s_i$, and let $z$ be an isomorphism from $a \cdot (g, \alpha)$ to $a$ at level $K(\mathfrak{N})$ with separable characteristic polynomial $\chi$. Let the reflection of $a$ be `markedReflection z μ`. Then at $[a]_i$ the polynomial `New.Variety.localTerm α χ μ` is a constant times $\det(1 - X A)$, where $A$ is the linear map with $d(m_\alpha p_g) = d\pi \circ A$ on a tangent space of dimension $\dim$ (`New.Variety.IsTangentPoly`). The field `congruence` says this. Let $w$ be a split place that is safe for $\mathfrak{N}$, with residue field of order $q = p^f$. Let $\mathfrak{p} \subseteq R$ contain the image of $w$. Let the Hecke elements $g_A$ (`New.Variety.invHeckeIsogeny`), for the subspaces $A$ of $k_w^n$, lie in $s_i$. Then for every field $k$ of characteristic $p$ and every point $x$ of $W_i$ over $k$ that kills $\mathfrak{p}$,
+The field `tangent` says: if $g \in s_i$ and $z$ is an isomorphism from $a \cdot (g, \alpha)$ to $a$ at level $K(\mathfrak{N})$ as in the tangent theorem below, then at $[a]_i$ the polynomial `New.Variety.localTerm α χ μ` is a constant times $\det(1 - X A)$, where $d(m_\alpha p_g) = d\pi \circ A$ on a tangent space of dimension $\dim$ (`New.Variety.IsTangentPoly`). The field `congruence` says: Let $w$ be a split place that is safe for $\mathfrak{N}$, with residue field of order $q = p^f$. Let $\mathfrak{p} \subseteq R$ contain the image of $w$. Let the Hecke elements $g_A$ (`New.Variety.invHeckeIsogeny`), for the subspaces $A$ of $k_w^n$, lie in $s_i$. Then for every field $k$ of characteristic $p$ and every point $x$ of $W_i$ over $k$ that kills $\mathfrak{p}$,
 $$\sum_A (-1)^{r_A} q^{\binom{r_A}{2}} \,[\, p_{g_A}(x) \circ F^{(n - r_A) f} \,] = 0, \qquad r_A = \dim A,$$
 as a formal sum of points of $Z$ (`New.Variety.CongruenceRelation`). [Chapter 3](/chapter/congruence-relation/) turns this into the Eichler-Shimura relation.
 
@@ -54,7 +52,7 @@ as a formal sum of points of $Z$ (`New.Variety.CongruenceRelation`). [Chapter 3]
 
 Lean: `New.Variety.IsGaloisCovering` (Lib/Cohomology/Etale/Basic.lean).
 
-**Remark (Formalization).** The textbook covering $\mathrm{Sh}_{K'} \to \mathrm{Sh}_K$ for a normal subgroup $K'$ of a neat $K$ is finite étale with group $K/K'$ (Milne, *Introduction to Shimura varieties*, §5 and Kottwitz 1992, §5). The source asks less. It does not ask $c$ to be finite or étale, and the torsor condition is only on points over fields of characteristic $0$. In characteristic $p$ the fibres may be smaller.
+**Remark (Formalization).** The textbook covering $\mathrm{Sh}_{K'} \to \mathrm{Sh}_K$ for $K'$ normal in a neat $K$ is finite étale with group $K/K'$ (Milne, *Introduction to Shimura varieties*, §5). The source does not ask $c$ to be finite or étale, and asks the torsor condition only in characteristic $0$.
 
 ### Neat levels
 
@@ -66,35 +64,19 @@ Lean: `New.Variety.IsNeat` (Lib/Shimura/HeckeTower/HeckeData.lean).
 
 Lean: `New.Variety.IsSignedFrameFor.eq_one_of_congr_large_norm` (Lib/Shimura/HeckeTower/HeckeData.lean).
 
-*Proof.* The frame conditions say that $y$ preserves the form $\beta$, and that at every infinite place the eigenvalues of $y$ have modulus $1$. So every conjugate of $\operatorname{tr} y - n$ has modulus at most $2n$, and $|N(\operatorname{tr} y - n)| \le (2n)^{[E:\mathbb{Q}]}$. The congruence puts $\operatorname{tr} y - n$ in $I$. A nonzero element of $I$ has norm divisible by $N(I)$. So $\operatorname{tr} y = n$. At a place $w \neq v_0$ the form $\beta$ is positive definite, and $y$ is an isometry of it. An isometry of a positive definite form is diagonalizable with eigenvalues of modulus $1$. Their sum is $n$, so all of them are $1$, and $y = 1$. $\square$
+*Proof.* The frame conditions say that $y$ preserves $\beta$ and has eigenvalues of modulus $1$ at every infinite place. So every conjugate of $\operatorname{tr} y - n$ has modulus at most $2n$, and $|N(\operatorname{tr} y - n)| \le (2n)^{[E:\mathbb{Q}]}$. The congruence puts $\operatorname{tr} y - n$ in $I$. A nonzero element of $I$ has norm divisible by $N(I)$. So $\operatorname{tr} y = n$. At a place $w \neq v_0$ the form $\beta$ is positive definite, and $y$ is an isometry of it. So $y$ is diagonalizable with eigenvalues of modulus $1$ and sum $n$. All of them are $1$, and $y = 1$. $\square$
 
 **Theorem (Neat levels exist).** Let $E$ have a base place and let $n$ be nonempty. For all but finitely many finite places $w$, every nonzero $\mathfrak{N} \in w$ is neat.
 
 Lean: `New.Variety.eventually_isNeat` (Lib/Shimura/HeckeTower/HeckeData.lean).
 
-*Proof.* By Northcott's finiteness, only finitely many places have $q_w \le (2n)^{[E:\mathbb{Q}]}$. For the others take $I = w$, of norm $q_w$. If $\mathfrak{N} \in w$, then $\mathfrak{N}\hat{\mathcal{O}}_E \cap \mathcal{O}_E \subseteq w$, and the lemma applies. $\square$
+*Proof.* Only finitely many places have $q_w \le (2n)^{[E:\mathbb{Q}]}$. For the others take $I = w$; if $\mathfrak{N} \in w$, the lemma applies. $\square$
 
 *Example.* Take $n = 1$. Then $y \in E^\times$ has $|y|_v = 1$ at every infinite place, so $y$ is a root of unity. If $y \equiv 1$ modulo a prime $w$ with $q_w > 2^{[E:\mathbb{Q}]}$, then $|N(y - 1)| \le 2^{[E:\mathbb{Q}]} < q_w$ forces $y = 1$.
 
 ### Extension over an arc
 
-The covers are compared through isogenies between complex tori. To use them on the integral model, one must extend them over the base. The source does this over an *arc*, a valuation ring $O$ of $\mathbb{C}$. Let $A$ be an abelian scheme over $O$ with a uniformization $u$, and let a linear system on $A$ have coordinates that are theta functions of type $(B, \chi)$ (`New.HasThetaCoords`).
-
-**Lemma (Commutators and the Weil pairing).** Let $\Phi$ and $\Psi$ be lifts to $L^m$ of the translations by $u(a)$ and $u(b)$. Then $\Phi\Psi = c\,\Psi\Phi$ on all coordinates if and only if $c = \exp(2\pi i\, m E(a, b))$, with $E$ the Riemann form of $B$.
-
-Lean: `New.Variety.lift_commutator_iff_weil_pairing` (Lib/Shimura/ArcExtension.lean).
-
-This is the commutator pairing $e^L$ of the theta group (Mumford, *Abelian Varieties*, §23).
-
-**Theorem (Extension of homomorphisms).** Let $u$ uniformize the abelian scheme $A$ over the arc $O$. Let $N$ be a projective embedding of $A$ with theta coordinates of type $(B, \chi)$ along $u$, $B$ positive. Let $n$ be a unit of $O$ such that for every $a$ in the dual lattice of $B$, $na$ lies in the lattice of $u$ and translation by $u(a)$ lifts to the sections of $N$. Let $s'$ be a homomorphism from $V$ to the sections of a commutative group scheme $A'$ proper over $O$ that kills the lattice of $u$. Let $M$ be a projective embedding of $A'$ with theta coordinates of type $(\mu B, \chi^\mu)$ along $s'$. Let the classes of $N$ and $M$ satisfy the parallelogram law. Then there is an additive morphism $\psi : A \to A'$ with $\psi \circ u = s'$ and $\psi^*[M] = \mu[N]$.
-
-Lean: `New.Variety.exists_hom_of_hasThetaCoords` (Lib/Shimura/ArcExtension.lean).
-
-*Proof.* The graph of $s' \circ u^{-1}$ is a set of points of $A \times_O A'$. One takes a section of the projection to $A$ through these points (`New.Variety.exists_section_of_hasThetaCoords`). For this one needs finitely many theta functions of type $(\mu B, \chi^\mu)$ in a module stable under the translations by the dual lattice (`New.Variety.exists_sections_of_translation_stable`), and the commutator lemma controls the action. The source uses $N^{\mu+k}$ on $A$ and $M \boxtimes N^{k}$ on $A \times_O A'$, both of type $(\mu + k)B$, with $k \in \{1, 2\}$ such that $\mu + k$ is a unit. One of the two is a unit, because $\mu + 1$ and $\mu + 2$ differ by $1$. The section is additive because it is additive at the complex points, and the identity of classes follows from the parallelogram law. $\square$
-
-The theorem is applied in `New.ThetaObject.TorusModel.exists_isIsogenyOfMatrix`, which gives $\mathcal{O}_E$-linear isogenies over $O$ for matrices $z \in GL_n(E)$. The source uses them in the criterion `New.Variety.UniversalFamily.datumPoint_eq_iff` and in [Chapter 3](/chapter/congruence-relation/).
-
-**Remark (Formalization).** The arc $O$ is any valuation ring of $\mathbb{C}$ and need not be noetherian. The textbook extension theorems are stated over a noetherian normal base (Faltings and Chai, *Degeneration of Abelian Varieties* (1990), Chapter I, 2.7) or use Néron models (Bosch, Lütkebohmert and Raynaud, *Néron Models* (1990), 1.2, Proposition 8). The source uses only the theta coordinates and the properness of $A'$.
+The source extends isogenies of complex tori over an *arc*, a valuation ring $O$ of $\mathbb{C}$, with theta coordinates and properness only. Its main result, `New.Variety.exists_hom_of_hasThetaCoords` (Lib/Shimura/ArcExtension.lean), extends a homomorphism of complex tori to an additive morphism of the schemes over $O$. The proof uses the commutator pairing of the theta group (Mumford, *Abelian Varieties*, §23), in the form `New.Variety.lift_commutator_iff_weil_pairing`. The textbook extension theorems instead need a noetherian normal base (Faltings and Chai, *Degeneration of Abelian Varieties* (1990), Chapter I, 2.7). The source applies the result in `New.ThetaObject.TorusModel.exists_isIsogenyOfMatrix`, and through it in `New.Variety.UniversalFamily.datumPoint_eq_iff` and [Chapter 3](/chapter/congruence-relation/).
 
 ### The covers and the base
 
@@ -134,10 +116,10 @@ Lean: `New.Variety.UniversalFamily.GraphClosure.congruenceRelation` (Lib/Shimura
 
 Lean: `New.Variety.UniversalFamily.GraphClosure.isTangentPoly_localTerm_of_translate` (Lib/Shimura/IntegralModel/TowerExistence.lean).
 
-*Proof.* A ball family through $a$ gives a holomorphic family of points, and $z$ acts on its parameters near $0$ by a linear map $K$ whose determinant formula is `localTerm`. The universal jet of the family embeds the parameter space as a tangent space. It is injective after $c$ because the family is immersed in the base, and $dv = dc \circ K$ by the chain rule. $\square$
+*Proof.* A ball family through $a$ gives a holomorphic family of points, and $z$ acts on its parameters near $0$ by a linear map $K$ with the determinant formula `localTerm`. The jet of the family embeds the parameters as a tangent space, injectively after $c$ since the family is immersed in the base, and $dv = dc \circ K$ by the chain rule. $\square$
 
 ### Proof of the existence theorem
 
-*Proof of `New.Variety.exists_model`.* Choose $M(i)$ for each level $i$ by the lemma on the auxiliary level. Take the base $Z$ and the maps $m_\alpha$ from the theorem on the base. Let $W_i$ be the graph closure of the pairs $(\mathfrak{m}, \kappa g)$, with $\kappa$ in the finite quotient $\Delta_i$ of $K(\mathfrak{N})$ by the normal core of $K(M(i))$, and $(\mathfrak{m}, g)$ in $i \cup \{(1,1), (M(i), 1)\}$. Then $\Delta_i$ acts by permuting the factors. The legs $p_g$ are the maps that translate points by $g$ (`New.Variety.UniversalFamily.GraphClosure.exists_forall_eq_apply_mk_of_translate`), and $s_i$ is the set of $g$ for which such a leg exists. Maps between closures are unique because the complex points are dense, so all identities between legs follow from identities on points. The criterion for $\pi$ is `datumPoint_eq_iff`. Properness of $Z$ and of $W_i$ is found by instance inference. For `covering`, the Galois criterion applies with $R$ as in `New.Variety.injective_of_subalgebra_of_charZero`. Freeness on complex points uses neatness: two deck maps that agree at a point differ by an automorphism of level $\mathfrak{N}$, which is trivial. The fields `tangent` and `congruence` are the two theorems above, with the hypothesis that $D$ is good at every safe place. $\square$
+*Proof of `New.Variety.exists_model`.* Choose $M(i)$ for each level $i$ by the lemma on the auxiliary level. Take the base $Z$ and the maps $m_\alpha$ from the theorem on the base. Let $W_i$ be the graph closure of the pairs $(\mathfrak{m}, \kappa g)$, with $\kappa$ in the finite quotient $\Delta_i$ of $K(\mathfrak{N})$ by the normal core of $K(M(i))$, and $(\mathfrak{m}, g)$ in $i \cup \{(1,1), (M(i), 1)\}$. The legs $p_g$ are the maps that translate points by $g$ (`New.Variety.UniversalFamily.GraphClosure.exists_forall_eq_apply_mk_of_translate`), and $s_i$ is the set of $g$ for which such a leg exists. Identities between legs follow from identities on the dense complex points. Properness comes from instances. For `covering`, the Galois criterion applies with $R$ as in `New.Variety.injective_of_subalgebra_of_charZero`. Freeness on complex points uses neatness: two deck maps that agree at a point differ by an automorphism of level $\mathfrak{N}$, which is trivial. The fields `tangent` and `congruence` are the two theorems above, with the hypothesis that $D$ is good at every safe place. $\square$
 
-**Remark (Formalization).** The deck group, the pairs and $M(i)$ are objects chosen with `choose` in the proof. They are not determined by $i$ in any canonical way, and two levels may have unrelated deck groups. The later chapters use only the fields of the model, so this has no effect on them.
+**Remark (Formalization).** $M(i)$ and the legs are chosen with `choose`, so the deck groups are not canonical. The later chapters use only the fields of the model.
