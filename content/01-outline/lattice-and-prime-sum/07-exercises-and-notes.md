@@ -39,6 +39,6 @@ The slope inequality and its form with a filtration are due to Bost. The source 
 
 The source has no model cases. The head of the compact edition (New/Main.lean of grh-compact, lines 26 to 112) gives the same plan in other names: the main amount is `mainHeight` and the unit of loss is `budget`. It says that the saving $x^{-1/2}$ is $1/m$. Sections 3, 4 and 6 of this chapter are not in the source.
 
-[The data and its sizes](/chapter/data-and-sizes/#the-data-and-its-sizes) says that the lower bound comes from a product formula, "Theorems B and C". In the source, Theorem B gives the family of the upper bound, and only Theorem C is a lower bound (Section 5). Why $m$ has the size $\sqrt x$, and which comparison fails for a larger $m$, is open in the research notes of this book (research note b, §10, question 1).
+Theorem B is not a bound on the covolume. It gives the family of translates of the upper bound, and the dimension that Theorem C must fill. Only Theorem C is a lower bound (Section 5). Why $m$ has the size $\sqrt x$, and which comparison fails for a larger $m$, is open in the research notes of this book (research note b, §10, question 1).
 
 Status: drafted by a model. No person has checked this chapter against the Lean source.
