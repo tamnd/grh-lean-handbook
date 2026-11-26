@@ -29,7 +29,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The Greenberg-Wiles count
 
-This section proves the first step of the descent: the tied Selmer group is no longer than its dual, up to the local terms at the places of $S$ prime to $\ell$. The proof applies the Greenberg-Wiles count of Volume 3 to the module $W_a$ with the local conditions of $T$ and the ties, and it bounds every local term. All results are in [Count.lean](lean:New/Congruences/Selmer/Count.lean#L1).
+This section proves that the tied Selmer group is no longer than its dual plus the local terms at the places of $S$ prime to $\ell$, by the Greenberg-Wiles count of Volume 3. All results are in [Count.lean](lean:New/Congruences/Selmer/Count.lean#L1).
 
 Background used: relation settings, the module of relations off a set $T'$ of primes, avoidable numbers, and the count `New.RelationSetting.exists_card_cocycles_le`, from [relations in place of the dual Selmer group](/chapter/local-duality/#relations-in-place-of-the-dual-selmer-group). A cocycle with values in a module killed by $\ell^M$ that vanishes at the tame generator of a prime $v$ (or of $\bar v$) is unramified at $v$, and if it also vanishes at the Frobenius element it vanishes on the decomposition group (`New.Selmer.exists_conj_side_detects`, in the file TameSelmerCocycles of [Selmer groups and the Greenberg-Wiles formula](/chapter/local-duality/#selmer-groups-and-the-greenberg-wiles-formula)).
 
@@ -113,7 +113,7 @@ Lean: `New.Selmer.SelmerDatum.exists_length_localCocycles_tied_le` (New/Congruen
 
 *Proof.* Write $v = w$ or $v = \bar w$ with $w \in J$. The detection lemma gives a side $b$ and a place $B$ above $v$ such that a cocycle that vanishes at $\iota_b(\gamma_w)$ is unramified at $v$, and one that also vanishes at $\iota_b(\varphi_w)$ is zero on $D_B$. Let $c$ be a global cocycle that obeys the ties, with $c(\iota_b(\varphi_w)) = 0$. The tie gives $c(\iota_b(\gamma_w)) = s_w(i) \cdot 0 = 0$. So $c$ vanishes on $D_B$. Hence the restriction to $D_B$ is determined by the value at $\iota_b(\varphi_w)$, which is a vector of $W_a$. $\square$
 
-The textbook local term at an auxiliary prime with trivial action is $\#Z^1(D_v, W) = \#W^2$. The tie halves it, and this is what cancels the factor $\#W$ that each new prime of $S'$ brings to the left side of the count.
+The textbook local term at an auxiliary prime with trivial action is $\#Z^1(D_v, W) = \#W^2$. The tie halves it, which cancels the factor $\#W$ that each new prime of $S'$ brings to the left side of the count.
 
 **Lemma.** $\sum_{w \mid \ell} \mathrm{len}\, \mathrm{Loc}(\rho, T.\mathrm{localRelations}, A_w, O/a) \leq (\#\{w \mid \ell\} + r_\infty)\, \mathrm{len}\, W_a$.
 

@@ -68,7 +68,7 @@ Lean: `New.Selmer.localTerm`, `New.Selmer.placeTerms`, `New.Selmer.firstPrimeTer
 
 The textbook local term at a place $v \nmid \ell$ is the length of $H^0(E_v, W_a^*)$. By the local Euler characteristic formula and local duality (Neukirch, Schmidt and Wingberg, *Cohomology of Number Fields*, Chapter VII, §§2 and 3), the module $Z^1(D_v, W_a)$ of all local cocycles has length $\mathrm{len}\, W_a + \mathrm{len}\, H^0(E_v, W_a^*)$. The source takes the restrictions of global cocycles instead.
 
-**Remark (Formalization).** The source's $\mathrm{Loc}(\rho, \emptyset, A_v, O/a)$ is a submodule of $Z^1(D_v, W_a)$, so its excess is at most the textbook term. The docstring of `localTerm` states the textbook equality for all local cocycles, but no theorem of the chapter uses it. The subtraction is truncated at $0$ and a supremum of excesses may be $\infty$. The datum below asks for finiteness as a field.
+**Remark (Formalization).** The source's $\mathrm{Loc}(\rho, \emptyset, A_v, O/a)$ is a submodule of $Z^1(D_v, W_a)$, so its excess is at most the textbook term. The subtraction is truncated at $0$ and a supremum of excesses may be $\infty$. The datum below asks for finiteness as a field.
 
 ### Selmer data
 
@@ -138,7 +138,7 @@ where $\mathrm{tie}(J, x, i)$ are the tie relations $z(\iota_b(\gamma_v)) = s_v(
 
 Lean: `New.Selmer.SelmerDatum.tiedSelmer` (New/Congruences/Selmer/SelmerData.lean).
 
-So a member of $\mathrm{Sel}(J)$ is a locally constant cocycle $G \to W_a$ that vanishes at $\gamma_*$, obeys the local conditions above $\ell$, is unramified outside $S \cup J \cup \bar J$, and satisfies the ties at $v$ and $\bar v$ for $v \in J$. The source uses $R = J$, and $R = J \cup \{P\}$ when it adds a prime $P$ with no tie yet.
+The source uses $R = J$, and $R = J \cup \{P\}$ when it adds a prime $P$ with no tie yet.
 
 **Lemma.** Every $z \in \mathrm{Sel}^R_J(x, i, a)$ has $z(\gamma_*) = 0$.
 
@@ -156,8 +156,6 @@ Lean: `New.Selmer.mem_selmerZ1_of_mem_selmerModule` (New/Congruences/Selmer/Selm
 
 *Proof.* The cocycle $z$ is unramified outside $S$, hence outside $P \cup Q$. Since $K \subseteq L$, $z$ obeys $K$, so $z$ is a global cocycle that obeys $K$, and its restriction to $D_{A(v)}$ is a member of $\mathrm{Loc}(\rho, K, A(v), B)$ by definition. $\square$
 
-This lemma is the bridge to the Greenberg-Wiles count of the next section, which is stated for `selmerZ1`.
-
 ### New auxiliary primes
 
 **Definition (New auxiliary prime).** Let $(J, x)$ be tied primes with first prime $P_0$. A place $P$ with auxiliary data $l = (A, \gamma, \varphi, \chi)$ for $\ell^N$ is a *new auxiliary prime* for the datum $i$ if:
@@ -172,7 +170,7 @@ This lemma is the bridge to the Greenberg-Wiles count of the next section, which
 
 Lean: `New.Selmer.IsNewAuxiliaryPrime` (New/Congruences/Selmer/SelmerData.lean).
 
-Condition 4 is called `anticyclotomic` in the source: the character $\chi$ comes from the norm-one torus and kills the decomposition groups at the old primes other than $P_0$ and at the places above $\ell$.
+Condition 4 (`anticyclotomic`) makes $\chi$ kill the decomposition groups at the old primes other than $P_0$ and above $\ell$.
 
 **Lemma.** For tied primes and $v, w \in J$, $\chi_w(\gamma_v) = 1$ if $w = v$ and $\chi_w(\gamma_v) = 0$ otherwise.
 
@@ -236,7 +234,7 @@ Lean: `New.Selmer.SelmerDatum.cocycle_eq_zero_of_sahGroup` (New/Congruences/Selm
 
 *Proof.* By Sah's identity $(1 - \zeta) z(g) = z([g, \gamma_*]) = 0$, and $1 - \zeta$ is a unit. $\square$
 
-The classical Sah's lemma says that if a central element of a group $\Gamma$ acts on $M$ by a scalar $\zeta$, then $\zeta - 1$ kills $H^1(\Gamma, M)$. The source names it as a known result. Here $\gamma_*$ need not be central, and the identity above gives more: a class is detected on $H$.
+The classical Sah's lemma says that if a central element of a group $\Gamma$ acts on $M$ by a scalar $\zeta$, then $\zeta - 1$ kills $H^1(\Gamma, M)$. Here $\gamma_*$ need not be central, and the identity above gives more: a class is detected on $H$.
 
 **Lemma.** Let $O/a \neq 0$, and let $z$ be a cocycle with values in $W_a$ with $z(\gamma_*) = 0$. If some value $z(g)$ has a unit coordinate, then some $z(h)$ with $h \in H$ has a unit coordinate.
 
@@ -250,4 +248,4 @@ Lean: `New.Selmer.SelmerDatum.span_image_sahGroup_eq_top` (New/Congruences/Selme
 
 *Proof.* Let $X$ be the span. For $g \in G$ and $h \in H$, $g h g^{-1} \in H$ and $\rho(h) = 1$, so $\rho(g) z(h) = z(g h g^{-1}) \in X$. So $X$ is stable under all $\rho(g)$, whose span is $M_n(O)$ by condition 4. By the previous lemma $X$ contains a vector with a unit coordinate. So $X = W_a$ by the first lemma of this part. $\square$
 
-On $H$ the cocycle rule reads $z(h h') = z(h) + z(h')$, so $z$ restricted to $H$ is a homomorphism $H \to W_a$, and it is $G$-equivariant for the action by conjugation on $H$. The mirror form of [reciprocity at conjugate primes](/chapter/tied-selmer-groups/#reciprocity-at-conjugate-primes) pairs such homomorphisms.
+On $H$ the cocycle rule reads $z(h h') = z(h) + z(h')$, so $z|_H$ is a homomorphism.

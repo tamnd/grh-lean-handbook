@@ -13,9 +13,9 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The global term
 
-The bound of the descent is $\mathrm{glob}(T) + \mathrm{places}(T)$. This section proves the one bound for the global term that the source has: if a single element $g$ acts on $T$ and on $T^{*c}$ by scalars, then $\mathrm{glob}(T)$ is at most $n$ times the valuation of the difference of the two scalars. The file MainSummands of [Stickelberger systems and the twisting theorem](/chapter/twisting-theorem/) applies it to the main summands. All results are in the last part of [SelmerData.lean](lean:New/Congruences/Selmer/SelmerData.lean#L626).
+This section proves the source's one bound for the global term: if a single element $g$ acts on $T$ and on $T^{*c}$ by scalars, then $\mathrm{glob}(T)$ is at most $n$ times the valuation of the difference of the two scalars. The file MainSummands of [Stickelberger systems and the twisting theorem](/chapter/twisting-theorem/) applies it to the main summands. All results are in the last part of [SelmerData.lean](lean:New/Congruences/Selmer/SelmerData.lean#L626).
 
-Recall from [Selmer data, tied Selmer groups and Sah's lemma](/chapter/tied-selmer-groups/#selmer-data-tied-selmer-groups-and-sahs-lemma) that $\mathrm{glob}(\rho) = \sup_{a \neq 0} \mathrm{len}\, \mathrm{Hom}_G(W_a, W_a^{*c})$. In the Greenberg-Wiles formula the global terms are $H^0(E, W)$ and $H^0(E, W^*)$. In the descent of this chapter the dual Selmer group is compared with $G$-maps $W \to W^{*c}$ instead, by [reciprocity at conjugate primes](/chapter/tied-selmer-groups/#reciprocity-at-conjugate-primes). So the global term is the length of a module of such maps. It is small when $W$ and $W^{*c}$ have no common constituent, that is, when $T$ is far from being conjugate self-dual.
+In the Greenberg-Wiles formula the global terms are $H^0(E, W)$ and $H^0(E, W^*)$. Here the dual Selmer group is compared with $G$-maps $W \to W^{*c}$ instead, by [reciprocity at conjugate primes](/chapter/tied-selmer-groups/#reciprocity-at-conjugate-primes). The global term is small when $W$ and $W^{*c}$ have no common constituent.
 
 ### Torsion
 

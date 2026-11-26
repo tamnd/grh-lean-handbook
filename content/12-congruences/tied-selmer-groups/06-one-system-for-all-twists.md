@@ -34,7 +34,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## One system for all twists
 
-The next chapter twists a lattice by characters $\prod_j \zeta_j^{h_j}$ with roots of unity $\zeta_j$, and it needs the lengths of the Selmer groups of all twists at once. This section shows that one matrix over a polynomial ring computes them all. So each length is the least valuation of a value of a polynomial, taken from one fixed set of polynomials. All results are in [OneSystem.lean](lean:New/Congruences/Selmer/OneSystem.lean#L1).
+The [twisting theorem](/chapter/twisting-theorem/) needs the lengths of the Selmer groups of all twists by characters $\prod_j \zeta_j^{h_j}$ at once. One matrix over a polynomial ring computes them all, so each length is a least valuation of values of fixed polynomials. All results are in [OneSystem.lean](lean:New/Congruences/Selmer/OneSystem.lean#L1).
 
 Background used:
 
@@ -44,7 +44,7 @@ Background used:
 
 ### The textbook form
 
-The textbook fact behind this section is that $H^1$ of a finite quotient is computed by a finite complex of free modules. For a family of representations over a ring $\Lambda$, the cohomology at a point $x : \Lambda \to O'$ is the cohomology of the specialised complex. Its length is then read off from determinantal ideals. The source does not use complexes. It writes the cocycle rule, the unramified conditions and the local relations as one linear system for the values of a cocycle on a finite quotient of $G$, and it reads the length from the maximal minors of that system.
+In the textbook, $H^1$ of a finite quotient is computed by a finite complex of free modules, and the cohomology at a point $x : \Lambda \to O'$ is that of the specialised complex. The source does not use complexes. It writes the cocycle rule, the unramified conditions and the local relations as one linear system on a finite quotient of $G$, and reads the length from its maximal minors.
 
 ### The universal twist
 
@@ -60,7 +60,7 @@ Lean: `New.Selmer.aeval_universalChar`, `New.Selmer.eval_universalChar`, `New.Se
 
 *Proof.* Evaluation is a ring map. The power $\zeta^k$ depends only on $k$ modulo $q$, so the character $\prod_j \zeta_j^{h_j}$ is well defined and equals the value. $\square$
 
-**Remark (Formalization).** For $q = 0$ the ring $\mathbb{Z}/0$ is $\mathbb{Z}$ and the exponent is $|h_j(g)|$. The chapter uses only $q = \ell^N$. At a point $x$ with $(1 + x_j)^q \neq 1$ the function $g \mapsto \psi_x(g)$ is not a homomorphism. All statements below hold for every point, so this does no harm: at such points they are statements about a module of functions that need not come from a representation.
+**Remark (Formalization).** For $q = 0$ the ring $\mathbb{Z}/0$ is $\mathbb{Z}$ and the exponent is $|h_j(g)|$. The chapter uses only $q = \ell^N$. At a point $x$ with $(1 + x_j)^q \neq 1$ the function $g \mapsto \psi_x(g)$ is not a homomorphism. The statements below hold at every point, as statements about a module of functions.
 
 **Lemma.** Let $(J, d)$ be tied primes with $N \neq 0$, and take $\sigma = J$ and $h_w = \chi_w$, the characters of the data. If $\chi_v(g) = 1$ and $\chi_w(g) = 0$ for $w \neq v$, then $\psi_X(\iota_b(g)) = 1 + X_v$ for both $b$. So $\psi_X(\iota_b(\gamma_v)) = 1 + X_v$ for $v \in J$, and $\psi_X(\iota_b(\varphi_v)) = 1 + X_{P_0}$ for $v \in J \setminus \{P_0\}$.
 

@@ -33,17 +33,17 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Reciprocity at conjugate primes
 
-The count of the previous section bounds the tied Selmer group by its dual. This section bounds the dual by the global term $\mathrm{glob}(T) = \sup_{b \neq 0} \mathrm{len}\, \mathrm{Hom}_G(W_b, W_b^{*c})$. The tool is a class $z$ in the tied Selmer group of full order. To each $y$ in the dual group the proof attaches a $G$-map $\eta : W_a \to W_a^{*c}$ with $\eta(z(h)) = y(h^c)$ on $H$. This map determines $y$, so the dual group embeds in $\mathrm{Hom}_G(W_a, W_a^{*c})$. All results are in [Mirror.lean](lean:New/Congruences/Selmer/Mirror.lean#L1).
+This section bounds the dual Selmer group by the global term $\mathrm{glob}(T)$. The tool is a class $z$ in the tied Selmer group of full order. To each $y$ in the dual group the proof attaches a $G$-map $\eta : W_a \to W_a^{*c}$ with $\eta(z(h)) = y(h^c)$ on $H$. This map determines $y$, so the dual group embeds in $\mathrm{Hom}_G(W_a, W_a^{*c})$. All results are in [Mirror.lean](lean:New/Congruences/Selmer/Mirror.lean#L1).
 
 Background used:
 
 - Auxiliary primes with a Frobenius element near a given element of the normal closure of inertia exist by Chebotarev (`New.Selmer.exists_isAuxPrimeDataAt`, [auxiliary primes](/chapter/tied-traces/#auxiliary-primes)).
-- At a split prime $P$ prime to $m$, a locally constant function on inertia that is additive there is determined by its value at a normalised tame generator: $f(\tau) = k\, f(\delta)$ for some $k \in \mathbb{N}$ (`New.IsTameGeneratorFor.exists_apply_eq_nsmul`, from the file SplitPrimeReciprocity of [Selmer groups and the Greenberg-Wiles formula](/chapter/local-duality/#selmer-groups-and-the-greenberg-wiles-formula)).
+- At a split prime $P$ prime to $m$, a locally constant additive function on inertia has $f(\tau) = k\, f(\delta)$, $k \in \mathbb{N}$, for a normalised tame generator $\delta$ (`New.IsTameGeneratorFor.exists_apply_eq_nsmul`, from the file SplitPrimeReciprocity of [Selmer groups and the Greenberg-Wiles formula](/chapter/local-duality/#selmer-groups-and-the-greenberg-wiles-formula)).
 - Normalised tame generators exist at every place (`New.exists_isTameGeneratorFor`, from the file SelmerLevels of the same section).
 
 ### Textbook form and source form
 
-There is no single textbook theorem here. The idea is Sah's: an element $\gamma_*$ that acts by a scalar $\zeta \neq 1$ makes $H^1(G, W)$ small, and the classes are controlled by their values on the commutator group $H$. The source applies this to the dual group and adds a step that uses the conjugate primes $P$ and $\bar P$ of the CM field $E$. The pairing of a class with a member of the dual group at $P$ and at $\bar P$ gives a form on $H \times H$ that the reciprocity law forces to be zero.
+There is no single textbook theorem here. The idea is Sah's: classes are controlled by their values on $H$. The source adds a step at the conjugate primes $P$ and $\bar P$: the pairing of a class with a dual member there gives a form on $H \times H$ that reciprocity forces to be zero.
 
 For $u \in W_a$ and $f \in W_a^* = \mathrm{Hom}(W_a, \mathbb{Q}/\mathbb{Z})$ the source pairs $u$ and $f$ by the character $t \mapsto f(t u)$ of $O$. So all identities below hold for every $t \in O$.
 
@@ -127,7 +127,7 @@ Lean: `New.Selmer.SelmerDatum.mirrorForm` (New/Congruences/Selmer/Mirror.lean).
 
 Lean: `New.Selmer.SelmerDatum.frobInTameImage` (New/Congruences/Selmer/Mirror.lean).
 
-In words: the Frobenius values of $z$ at $P$ and $\bar P$ are the tame values of a class that may ramify at $P$ and $\bar P$. The hypothesis of the three steps below is that $z \in \mathrm{Sel}(J)$ lies in $\mathrm{frobInTameImage}(P, l)$ for every new auxiliary prime $P$ with data $l$ for $i$. Call this hypothesis (F).
+The hypothesis of the three steps below is that $z \in \mathrm{Sel}(J)$ lies in $\mathrm{frobInTameImage}(P, l)$ for every new auxiliary prime $P$ with data $l$ for $i$. Call this hypothesis (F).
 
 **Lemma (First step).** Under (F), $\Psi_t(h, h) = 0$ for all $h \in H$ and $t \in O$.
 
@@ -183,4 +183,4 @@ Lean: `New.Selmer.SelmerDatum.length_dualSelmer_le` (New/Congruences/Selmer/Mirr
 
 *Proof.* The class $z$ vanishes at $\gamma_*$, so by the spanning lemma of [Sah's lemma](/chapter/tied-selmer-groups/#selmer-data-tied-selmer-groups-and-sahs-lemma) $z(H)$ spans $W_a$. For each $y$, the third step gives $\eta_y$, and the last lemma puts it in $\mathrm{Hom}_G(W_a, W_a^{*c})$. Since $z(H)$ spans, $\eta_y$ is unique, so $y \mapsto \eta_y$ is $O$-linear. It is injective: if $\eta_y = 0$, then $y(h) = \eta_y(z(h^c)) = 0$ for $h \in H$, so $y = 0$ by Sah for the dual group. Hence $\mathrm{len}\, \mathrm{Sel}^*(J) \leq \mathrm{len}\, \mathrm{Hom}_G(W_a, W_a^{*c}) \leq \mathrm{glob}(T)$, as $a \neq 0$. $\square$
 
-**Remark (Formalization).** The map $y \mapsto \eta_y$ is built with `choose`. Linearity holds because two linear maps that agree on the spanning set $z(H)$ are equal, so the choice does not matter. Hypothesis (F) quantifies over all new auxiliary primes, with no bound on $R$. The proof uses it only at one prime, chosen near $\gamma_0 h$ and outside $R$. The next sections show how the descent makes (F) true: when (F) fails at some $P$, adding $P$ to $J$ makes the tied Selmer groups shorter.
+**Remark (Formalization).** The map $y \mapsto \eta_y$ is built with `choose`. Two linear maps that agree on the spanning set $z(H)$ are equal, so the choice does not matter. Hypothesis (F) quantifies over all new auxiliary primes, with no bound on $R$. The proof uses it only at one prime, chosen near $\gamma_0 h$ and outside $R$. When (F) fails at $P$, [the descent](/chapter/tied-selmer-groups/#the-descent) adds $P$.
