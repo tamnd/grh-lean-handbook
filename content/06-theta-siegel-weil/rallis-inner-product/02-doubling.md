@@ -49,7 +49,7 @@ The group $U(S) \times U(S)$ embeds in $U(S \oplus S^-)$, and the group $U(T)$ a
 
 **Lemma.** For data $f$, $f'$, points $g$, $g'$ of $U(S)(\mathbb{A})$ and $x$ of $U(T)(\mathbb{A})$,
 $$\theta_{S \oplus S^-}\big(\omega(1, x)\, d\big) = \overline{\theta(\omega(g', x) f')}\;\theta(\omega(g, x) f),$$
-where $d$ is the doubled datum of $\omega(g', 1) f'$ and $\omega(g, 1) f$, and $\omega$ on the left is the untwisted representation `New.splitWeil` of the doubled pair.
+where $d$ is the doubled datum of $\omega(g', 1) f'$ and $\omega(g, 1) f$, and $\omega$ on the left is the untwisted representation `New.SiegelWeil.splitWeil` of the doubled pair.
 
 Lean: `New.SiegelWeil.theta_splitWeil_doubleDatum` (Lib/SiegelWeil/RallisInner/Doubling.lean).
 
