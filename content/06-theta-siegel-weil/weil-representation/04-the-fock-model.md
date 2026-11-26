@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The Fock model at a real place
 
-This section applies the abstract theory of Sections 2 and 3 at one real place of $F$. The group is the unitary group $U(\varepsilon)$ of a diagonal hermitian form of signature $(p, q)$ on $\mathbb{C}^n$. The vacuum is the Gaussian, the model is the Fock model, and the multiplier is the conjugate of the determinant of the negative block. The main result is that the cocycle of this action is $1$, by a Gaussian integral and a factorization of a matrix into three blocks. The section then describes the polynomial vectors, the Fischer inner product, and the derivative of the representation. The next chapter, [local theta in the Fock model](/chapter/local-theta/), uses these objects for the local theta correspondence.
+This section applies the abstract theory of Sections 2 and 3 at one real place of $F$. The group is the unitary group $U(\varepsilon)$ of a diagonal hermitian form of signature $(p, q)$ on $\mathbb{C}^n$. The vacuum is the Gaussian, the model is the Fock model, and the multiplier is the conjugate of the determinant of the negative block. The main result is that the cocycle of this action is $1$. The section then describes the polynomial vectors and the derivative of the representation. The next chapter, [local theta in the Fock model](/chapter/local-theta/), uses these objects for the local theta correspondence.
 
 ### Notation
 
@@ -137,14 +137,12 @@ Lean: `New.Fock.hasDerivAt_realWeil`, `New.Fock.weilDeriv`, `New.Fock.glOp` (Lib
 
 *Proof.* The matrix $Y$ satisfies $Y^*\varepsilon + \varepsilon Y = 0$. Let $D(P)$ be the derivative, and consider the form $B(Q, P) = \langle v_Q, D(P) - v_{Q'}\rangle$ with $Q' = \sum Y_{ab}A_aB_bP$. The form vanishes at $(1, 1)$: by the [vacuum coefficient](/decl/New.Fock.realWeil_vacVector_apply_zero/), both terms are minus the trace of the negative block of $Y$, the derivative of $\det(P_+ + P_-\gamma(t))^{-1}$. The commutation of $A_a$ and $B_b$ with $\omega_\infty(\gamma(t))$ in matrix coefficients moves the multiplication by $X_j$ from one side of $B$ to the derivative $\partial_j$ on the other side. A sesquilinear form on polynomials with these two properties is $0$. So $D(P) - v_{Q'}$ is orthogonal to all $v_Q$, and it is $0$ by density and the definiteness of the inner product. $\square$
 
-In the one coordinate example, $Y = i\theta$ with $\theta$ real. The formula gives $Q = i\theta X\partial P$ for $\varepsilon = 1$, and $Q = -i\theta(\partial X) P$ for $\varepsilon = -1$. On $P = X^k$ these are $i\theta k X^k$ and $-i\theta (k+1) X^k$, the derivatives of $u^k$ and $\bar u^{k+1}$.
-
 ### Products and further material
 
 The Fock space of $T \times \iota$, for a finite set $T$ of real places, contains the product $\prod_{\tau} v_\tau(x_\tau)$ of vectors on $\mathbb{C}^\iota$. The product of polynomial vectors is the polynomial vector of the product, inner products multiply, and a block diagonal element $(u_\tau)_\tau$ acts factor by factor with the multiplier $\prod_\tau \Delta_\infty(u_\tau)$. This is how the source treats all the infinite places of $E$ at once.
 
 Lean: `New.Fock.piTensor`, `New.Fock.piTensor_polyVector`, `New.Fock.fockInner_piTensor`, `New.Fock.blockU`, `New.Fock.realMultiplier_blockU`, `New.Fock.realWeil_piTensor` (Lib/Weil/Fock/Basic.lean).
 
-The file of oscillator pairs computes the matrix coefficients $\langle v_Q, \omega_\infty(u) v_P\rangle$ for harmonic $P$ and $Q$ and block diagonal $u$. It forms the commuting actions of a dual pair $U(\varepsilon) \times U(\varepsilon')$ on the Fock space of matrices, with twists by powers of the determinant. The file of weighted norms gives the moment bounds that justify the integrals at the real places. [Local theta in the Fock model](/chapter/local-theta/) and [theta kernels, theta lifts and the seesaw](/chapter/theta-lifts-seesaw/) use this material.
+The file of oscillator pairs computes the matrix coefficients $\langle v_Q, \omega_\infty(u) v_P\rangle$ for harmonic $P$ and $Q$ and block diagonal $u$. It forms the commuting actions of a dual pair on the Fock space of matrices. [Local theta in the Fock model](/chapter/local-theta/) and [theta kernels, theta lifts and the seesaw](/chapter/theta-lifts-seesaw/) use this material.
 
 Lean: `New.Fock.fockMatrixCoeff_eq_fockInner`, `New.Fock.detTwist`, `New.OscillatorRep`, `New.OscillatorPair`, `New.Fock.oscillatorPair_detTwist` (Lib/Weil/Fock/OscillatorPair.lean).

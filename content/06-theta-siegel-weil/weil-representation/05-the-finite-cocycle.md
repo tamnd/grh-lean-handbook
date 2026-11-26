@@ -44,7 +44,7 @@ Lean: `New.WeilData`, `New.SplittingChar`, `New.WeilData.traceOne` (Lib/Weil/Con
 
 Since $\bar{\jmath} = -\jmath$, we have $c_0 + \bar{c}_0 = 1$. Condition (4) says that $\jmath\alpha\bar{\alpha}$ generates the inverse different locally. So for the character
 $$\psi_0(z) = \psi_f(\jmath \alpha \bar{\alpha} z)$$
-of $\mathbb{A}_{E,f}$, the ring $\hat{\mathcal{O}}$ is its own dual for the pairing $(z, u) \mapsto \psi_0(z u)$. This is the self-duality that the construction uses. Condition (6) is the arithmetic input at the inert places, and condition (1) controls the residue fields there.
+of $\mathbb{A}_{E,f}$, the ring $\hat{\mathcal{O}}$ is its own dual for the pairing $(z, u) \mapsto \psi_0(z u)$. This is the self-duality that the construction uses.
 
 **Remark (Formalization).** The Weil data are a class, so the statements of this section and of the rest of the volume do not show them. The source gives one instance, `New.Parameters.instWeilDataE`, for the field $E$ of the main argument. There $\jmath = -1/\sqrt{-d}$, and the splitting character is picked with `.some` from a proof that one exists. The findings record it as open whether a statement of the main argument depends on this pick (F-043). Condition (6) uses a uniformizer that the source fixes at each place.
 
@@ -61,7 +61,6 @@ Lean: `New.stdLattice.finVac`, `New.stdLattice.finHeisenberg`, `New.stdLattice.s
 
 In terms of $\psi_f$ alone, $e_f(x) = \psi_f(-\tfrac14 y^* y)$ with $y = \alpha x$, for $x \in L$. On the lattice, $e_f(x)^2 = 1$, so $e_f$ takes the values $0$ and $\pm 1$. For $y \in L$ and any $x$,
 $$e_f(x)\, e_f(y)\, \beta(x, y) = e_f(x + y).$$
-This follows from the identity $\psi_0(c_0 \tfrac12 x^*x)\psi_0(c_0 \tfrac12 y^*y)\beta(x,y) = \psi_0(\bar{c}_0 y^* x)\psi_0(c_0\tfrac12 (x+y)^*(x+y))$, in which the factor $\psi_0(\bar c_0 y^* x)$ is $1$ when $x$ and $y$ are integral.
 
 **Lemma (Self-duality of the lattice).** For every $x \in W_f$,
 $$\int_L \psi_0(x^* y)\, d\mu_f(y) = \begin{cases} 1 & \text{if } x \in L, \\ 0 & \text{otherwise.} \end{cases}$$

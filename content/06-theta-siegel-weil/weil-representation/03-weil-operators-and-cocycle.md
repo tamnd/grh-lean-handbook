@@ -40,7 +40,7 @@ If no cocycle is given, then $c = 1$.
 
 Lean: `New.Heisenberg.MultiplierAction` (Lib/Weil/Construction/HeisenbergModel.lean).
 
-The condition (4) does not constrain $\Delta$ much when $c$ is arbitrary: it is then the definition of $c$. The condition with $c = 1$ is a real condition. It says that $\Delta(g)\Delta(h)\Delta((gh)^{-1})$ is the inverse of an explicit double integral. At $h = 1$ the double integral is $\int\!\int e(x) e(g y) \beta(x, y) e(x + y)$, and condition (4) with $c = 1$ forces $\Delta(g) \neq 0$ for every $g$. So for an action with cocycle $1$ the multiplier never vanishes.
+The condition (4) does not constrain $\Delta$ much when $c$ is arbitrary: it is then the definition of $c$. With $c = 1$ it says that $\Delta(g)\Delta(h)\Delta((gh)^{-1})$ is the inverse of an explicit double integral. At $h = 1$ the double integral is $\int\!\int e(x) e(g y) \beta(x, y) e(x + y)$, and condition (4) with $c = 1$ forces $\Delta(g) \neq 0$ for every $g$. So for an action with cocycle $1$ the multiplier never vanishes.
 
 ### The Weil operators
 
@@ -62,7 +62,7 @@ Lean: `New.Heisenberg.IsVacuum.weilOp_inv_mul_weilOp_mul_weilOp` (Lib/Weil/Const
 
 *Proof.* Each Weil operator satisfies $\omega(k)\rho(y) = \rho(k y)\omega(k)$. So the product $P = \omega((gh)^{-1})\omega(g)\omega(h)$ satisfies $P\rho(y) = \rho((gh)^{-1} g h y) P = \rho(y) P$. By [Schur's lemma for the model](/decl/New.Heisenberg.IsVacuum.eq_smul_one_of_commute/), $P$ is the scalar $(P e)(0)$. Write $P_k(w)$ for the operator $v \mapsto \int w(y)\rho(k y) v\,d\mu(y)$. The three integrals that make up $(P e)(0)$ can be put together with the rule $P_k(P_l(w) v)(x) = P_{kl}(w)(P_k(v)(x))$, which is a change of variables. Then $P_1(w) v = v(0) w$ by [the Moyal lemma](/decl/New.Heisenberg.IsVacuum.integrated_eq_smul/). After these steps $(P e)(0)$ is $\Delta(g)\Delta(h)\Delta((gh)^{-1})$ times the double integral of condition (4), and this is $c(g, h)$. $\square$
 
-This is the step in which the source avoids the Schrödinger model. The usual proof that $\omega(g)\omega(h) = \omega(gh)$ on the unitary group compares $\omega$ with a Schrödinger model on a Siegel parabolic subgroup of a split space. It then uses the Iwasawa decomposition and the sum $V \oplus V^-$. Here the scalar is an explicit integral, and Sections 4 and 5 compute it place by place.
+This is the step in which the source avoids the Schrödinger model. The usual proof compares $\omega$ with a Schrödinger model on a Siegel parabolic subgroup. Here the scalar is an explicit integral, and Sections 4 and 5 compute it place by place.
 
 **Corollary.** Assume that $c(g, 1) = 1$ for every $g$. Then $\omega(1) = 1$, and for all $g, h \in G$,
 $$\omega(g)\,\omega(h) = c(g, h)\,\omega(g h).$$
@@ -118,7 +118,7 @@ Lean: `New.Heisenberg.IsVacuum.continuous_weilRep` (Lib/Weil/Construction/WeilOp
 
 *Proof.* The map $v \mapsto \int v(y)\rho(gy)e\,d\mu(y)$ is Lipschitz with the constant $\|e\|$ for every $g$. So it is enough to prove continuity in $g$ for a fixed $v$. This follows from dominated convergence, since $\rho$ is isometric and continuous, the action of $G$ on $W$ is continuous, and $\Delta$ is continuous. $\square$
 
-**Remark (Formalization).** The multiplier $\Delta$ is a datum of the action, not a consequence of it. The classical theory defines $\omega(g)$ up to a scalar and then chooses the scalar, for example by the Weil index or by a splitting of the metaplectic cover. Here the choice is the function $\Delta$, and condition (4) with $c = 1$ is the claim that this choice gives a true representation. The two constructions of Sections 4 and 5 give $\Delta$ by a formula and prove condition (4). The cocycle $c$ in the general structure has the default value $1$, and the source uses a general $c$ only in [the cocycle relation](/decl/New.Heisenberg.IsVacuum.weilOp_inv_mul_weilOp_mul_weilOp/) and the results that follow from it in this section. No metaplectic cover appears anywhere in the source.
+**Remark (Formalization).** The multiplier $\Delta$ is a datum of the action, not a consequence of it. The classical theory defines $\omega(g)$ up to a scalar and then chooses the scalar, for example by the Weil index or by a splitting of the metaplectic cover. Here the choice is the function $\Delta$, and condition (4) with $c = 1$ is the claim that this choice gives a true representation. The cocycle $c$ in the general structure has the default value $1$, and the source uses a general $c$ only in [the cocycle relation](/decl/New.Heisenberg.IsVacuum.weilOp_inv_mul_weilOp_mul_weilOp/) and the results that follow from it in this section.
 
 ### Orthogonal sums
 
@@ -135,6 +135,6 @@ Lean: `New.Heisenberg.OrthogonalSum.weilRep_tmul` (Lib/Weil/Construction/WeilOpe
 
 *Proof.* Evaluate both sides at $\varphi(a, b)$. The integral over $W$ that defines $\omega(g)$ is an integral over $W_1 \times W_2$, since $\varphi$ carries the product measure to $\mu$. The integrand is a product of a function of $y_1$ and a function of $y_2$, so Fubini's theorem splits the integral. $\square$
 
-The file also proves Wiener's bound for sums of coefficients along a lattice, and the transport of the model along an isomorphism that preserves $\beta$ and $e$. Section 6 uses Wiener's bound to prove that a series of inner products $\langle f', \rho(\cdot) f\rangle$ over the translates by the rational vectors converges absolutely. The transport also preserves the measure: an isomorphism $\varphi$ with $e \circ \varphi = e'$ carries $\mu'$ to $\mu$, since both Haar measures give $|e|^2$ the integral $1$.
+The file also proves Wiener's bound for sums of coefficients along a lattice, which Section 6 uses, and the transport of the model along an isomorphism that preserves $\beta$ and $e$.
 
 Lean: `New.Heisenberg.IsVacuum.wiener_bound`, `New.Heisenberg.IsVacuum.transport`, `New.Heisenberg.IsVacuum.measurePreserving_equiv` (Lib/Weil/Construction/WeilOperators.lean).

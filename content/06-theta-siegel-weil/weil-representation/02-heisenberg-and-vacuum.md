@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The Heisenberg datum and its vacuum
 
-This section gives the abstract setting of the chapter. The setting covers the real places, the finite places and the adeles at once. Its data are an abelian group $W$, an alternating bicharacter $\beta$ on $W$, a Haar measure $\mu$, and one function $e$, the vacuum. The vacuum defines a space of functions on $W$ by a reproducing kernel, and $W$ acts on this space by twisted translations. The section proves two results on this model: superposition, which writes every bounded map on the model as an integral over the translates of the vacuum, and Schur's lemma. Section 3 uses both to build the Weil operators and to compute their cocycle.
+This section gives the abstract setting of the chapter. Its data are an abelian group $W$, an alternating bicharacter $\beta$ on $W$, a Haar measure $\mu$, and one function $e$, the vacuum. The vacuum defines a space of functions on $W$, the model, and the section proves two results on it: superposition, which writes every bounded map on the model as an integral over the translates of the vacuum, and Schur's lemma. Section 3 uses both to build the Weil operators and to compute their cocycle.
 
 ### The bicharacter
 
@@ -32,7 +32,7 @@ In the classical theory, a symplectic space $(W, \langle\,,\rangle)$ over a loca
 
 Lean: `New.Heisenberg` (Lib/Weil/Construction/HeisenbergModel.lean).
 
-From these properties, $\beta(x, y)\beta(y, x) = \beta(x + y, x + y)\beta(x,x)^{-1}\beta(y,y)^{-1} = 1$, so $\overline{\beta(x, y)} = \beta(y, x)$ and $\beta(-x, y) = \beta(y, x)$. The source does not ask that $\beta$ is nondegenerate. Nondegeneracy is not a hypothesis of any result of this section. It is replaced by the existence of a vacuum, which is a stronger condition.
+From these properties, $\beta(x, y)\beta(y, x) = \beta(x + y, x + y)\beta(x,x)^{-1}\beta(y,y)^{-1} = 1$, so $\overline{\beta(x, y)} = \beta(y, x)$ and $\beta(-x, y) = \beta(y, x)$. The source does not ask that $\beta$ is nondegenerate. The existence of a vacuum replaces it.
 
 **Definition (Representation of a Heisenberg datum).** Let $X$ be a complex normed space. A representation of $\beta$ on $X$ is a family of bounded operators $\rho(x)$, $x \in W$, such that $\rho(x)\rho(y) = \beta(x, y)\rho(x + y)$, each $\rho(x)$ is an isometry, and $(x, v) \mapsto \rho(x) v$ is continuous on $W \times X$.
 
@@ -122,4 +122,4 @@ Lean: `New.Heisenberg.IsVacuum.form_eq_mul_modelInner`, `New.Heisenberg.IsVacuum
 
 *Proof.* The source proves a version for an integral $\int_Z B_z\,d\nu(z)$ of forms, and gets the theorem with a point mass. Invariance moves a translation from the second variable to the first: $B(f, \rho(x) u) = B(\rho(-x) f, u)$. Expand the first variable by superposition, use this move, and use [the Moyal lemma](/decl/New.Heisenberg.IsVacuum.integrated_eq_smul/). This gives $B(f, e) = B(e, e)\,\overline{f(0)}$. A translation of this identity gives $B(v, \rho(y) e) = B(e, e)\,\overline{v(y)}$, and the [reproducing property](/decl/New.Heisenberg.IsVacuum.modelInner_heisenbergOp_vacElem/) gives $\overline{v(y)} = \langle v, \rho(y)e\rangle$. Both sides are bounded and linear in $w$, so [superposition](/decl/New.Heisenberg.IsVacuum.map_eq_integral/) ends the proof. $\square$
 
-The theorem is the uniqueness half of the Stone-von Neumann theorem in the form that the chapter needs. Section 6 uses the integral form, with a mean over the rational points, to prove that the theta functional is unique up to a scalar. Section 7 uses it for the integral of the inner products of the slices. Section 3 uses Schur's lemma for the cocycle relation of the Weil operators.
+The theorem is the uniqueness half of the Stone-von Neumann theorem in the form that the chapter needs. Sections 3, 6 and 7 use it for the cocycle relation, the uniqueness of the theta functional and the slices.
