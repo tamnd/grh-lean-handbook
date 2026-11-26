@@ -25,19 +25,15 @@ drafted_by: writer@claude-opus-5-5
 
 This section proves the algebraic theorem behind the smoothing statement of Section 8. Let $\Phi$ be a joint harmonic. A space $G$ of polynomials that is stable under the column action, contains $\Phi$, and contains three kinds of images of the row operators, is the space of all polynomials. In Section 8, $G$ is the space of polynomials $P$ such that $\pi(e_\lambda)P$ is a smoothing of $\pi(e_\lambda)\Phi$. The three kinds of images are exactly what $\pi(e_\lambda)$ kills.
 
-The proof is an induction on the degree. If $G$ misses a polynomial of degree $j$, the Fischer orthogonal complement of $G$ in degree $j$ is not zero. It contains a highest vector $Q$ for the columns. The hypotheses on $G$ pass to $Q$ by adjunction, and they make $Q$ a pre-joint harmonic. By the uniqueness theorem of Section 5, $Q$ is a multiple of $\Phi \in G$. So $Q$ is orthogonal to itself, and $Q = 0$, a contradiction.
+The source calls this "Howe's argument" and cites Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. 2 (1989).
 
-The source calls this "Howe's argument" and cites Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. 2 (1989). The induction on the degree with the Fischer inner product is the classical method for harmonic polynomials. The source applies it to one joint harmonic, not to a full decomposition of the Fock space.
-
-Throughout this section, the inner product is the Fischer inner product of Section 5. All the spaces are spaces of complex polynomials in the variables $X_{rc}$.
+The inner product is the Fischer inner product of Section 5.
 
 ### Degree and orthogonal complements
 
 **Definition.** For an integer $j$, let $\mathcal{P}_{\leq j}$ be the space of polynomials of total degree at most $j$. For a subspace $G$, let $G^\perp_j$ be the space of the polynomials of $\mathcal{P}_{\leq j}$ that are orthogonal to $G \cap \mathcal{P}_{\leq j}$.
 
 Lean: `New.Fischer.polyDegreeLE` (Lib/DiscreteSeries/Theta/FockDualPair.lean). The second is `New.Fischer.perpInDegree`.
-
-For $j < 0$ the space $\mathcal{P}_{\leq j}$ is $0$. Each $\mathcal{P}_{\leq j}$ is finite dimensional.
 
 **Lemma.** Let $\eta$ be the signs of the variables. If $P \in \mathcal{P}_{\leq j}$, then $\omega(E_{ab})P \in \mathcal{P}_{\leq i}$ whenever $j + \eta_a \leq i + \eta_b$.
 
@@ -97,8 +93,6 @@ Lean: `New.IsMatch.pderiv_eq_zero_of_lt_centredParam` (Lib/DiscreteSeries/Theta/
 
 ### The theorem
 
-Two more tools are needed.
-
 **Proposition.** Let $W$ be a nonzero finite dimensional space that is stable under the compact matrix units $E_{ab}$, $\varepsilon_a = \varepsilon_b$, of a module of $\mathfrak{gl}_n$. Then $W$ contains a nonzero weight vector that is compact primitive for $l$.
 
 Lean: `New.HCParam.exists_highest_vector` (Lib/DiscreteSeries/Rigidity/HighestVectorsAndFiltration.lean).
@@ -109,7 +103,7 @@ Lean: `New.HCParam.exists_highest_vector` (Lib/DiscreteSeries/Rigidity/HighestVe
 
 Lean: `New.HCParam.rootCone` (Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean).
 
-The source describes the cone by duality. A root $e_a - e_b$ with $l_b < l_a$ pairs with such an $o$ to $o_a - o_b < 0$, so sums of these roots lie in the cone. Pairing with $o = -l$ shows: if $e_a - e_b$ lies in the cone, then $l_b \leq l_a$.
+Sums of roots $e_a - e_b$ with $l_b < l_a$ lie in the cone. Pairing with $o = -l$ shows: if $e_a - e_b$ lies in the cone, then $l_b \leq l_a$.
 
 **Theorem (Howe's argument).** Let $\Phi$ be a joint harmonic for $T$, $l$, $l'$, and let $\Lambda$ be the lowest $K$-type of $l$. Let $G$ be a space of polynomials that is stable under the column action and contains $\Phi$. Suppose that $G$ contains the following.
 1. The polynomials $\rho(Y)P$, for every matrix $Y$ and every $P$ that is $K$-highest of a weight $\nu$ for the row action, with $\nu - \Lambda$ not in the cone of the positive roots of $l$.
@@ -134,8 +128,4 @@ Lean: `New.IsJointHarmonic.howe_argument` (Lib/DiscreteSeries/Theta/LocalCorresp
 
 The proof shows why the source proves uniqueness for pre-joint harmonics. The vector $Q$ is compact primitive for the columns, but its column weight is not known. Termwise harmonicity is not known either. Only the Laplace conditions come out of Fischer's step.
 
-**Remark (Formalization).** The statement uses the Lean form `G ∈ (T.swap.oscRows Y).invtSubmodule` for every matrix $Y$ for the stability of $G$ under the column action. Hypothesis 1 asks for all complex matrices $Y$, not only the matrix units. The weight $\nu$ in hypothesis 1 is an integer vector, and the cone is a set of integer vectors. The theorem is stated for one joint harmonic. It does not decompose the Fock space, and it does not say that $G$ is irreducible or that the column action on a quotient is irreducible.
-
-### Example
-
-For $U(1,1) \times U(1)$ with row 1 matched, $\Phi = X_1^k$ and $\Lambda = (\gamma + k, \gamma - 1)$. The polynomial ring is $\mathbb{C}[X_1, X_2]$. The column action is spanned by $E' = X_2\partial_2 - X_1\partial_1 + \gamma' + 1$, so stability under it means stability under $X_1\partial_1 - X_2\partial_2$. The two rows have opposite signs, so there are no compact matrix units off the diagonal, and hypothesis 2 is empty. Hypothesis 3 puts $(X_1\partial_1 - k)P$ and $(X_2\partial_2)P$ into $G$, up to signs, for every $P$. So $G$ contains every monomial $X_1^iX_2^m$ with $i \neq k$ or $m \neq 0$. Together with $X_1^k \in G$, this gives all polynomials. Here the conclusion follows from hypothesis 3 alone. In the general case the Laplacians and hypothesis 1 are needed, as monomials with the right weight are not unique.
+**Remark (Formalization).** The statement uses the Lean form `G ∈ (T.swap.oscRows Y).invtSubmodule` for every matrix $Y$ for the stability of $G$ under the column action. Hypothesis 1 asks for all complex matrices $Y$, not only the matrix units. The theorem does not decompose the Fock space, and it says nothing about irreducibility.

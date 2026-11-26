@@ -21,7 +21,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section passes from polynomials to the representations of the two groups on the Fock space. It proves three analytic results. Let $\Phi$ be a joint harmonic and $\pi(e_\lambda)$ the operator of the discrete series kernel of the first group. Then $\operatorname{Re}\langle\Phi, \pi(e_\lambda)\Phi\rangle > 0$. The vector $\pi(e_\lambda)\Phi$ is fixed by $\pi'(f)$ for every $f$ of suitable decay that reproduces $e_{\lambda'}$. For every polynomial $P$, the vector $\pi(e_\lambda)P$ is a smoothing of $\pi(e_\lambda)\Phi$ by a bump function on the second group.
 
-The analytic input comes from [discrete series through one matrix coefficient](/chapter/discrete-series/). That chapter works with a representation $\pi$ of $U(\varepsilon)$ on a normed space $X$, a hermitian positive definite invariant form $B$, a polynomial bound on $\|\pi(g)\|$, and a module $\rho$ of $\mathfrak{gl}_n$ that is the derivative of $\pi$ along a linear map $\iota : M \to X$. In this section $X$ is the Fock space, $B$ is the form $\langle\cdot,\cdot\rangle$ of the Fock space, $M$ is the polynomial ring, $\iota$ is $P \mapsto v_P$, and $\rho$ is the row action or the column action.
+The analytic input comes from [discrete series through one matrix coefficient](/chapter/discrete-series/). Its theorems apply to a representation on a normed space with an invariant positive definite form, a polynomial growth bound, and a module of $\mathfrak{gl}_n$ that is the derivative along a linear map. Here the space is the Fock space, the map is $P \mapsto v_P$, and the module is the row action or the column action.
 
 ### Oscillator pairs
 
@@ -36,23 +36,21 @@ Lean: `New.OscillatorRep` (Lib/Weil/Fock/OscillatorPair.lean).
 
 Lean: `New.OscillatorPair` (Lib/Weil/Fock/OscillatorPair.lean).
 
-Condition 1 is the structure `New.IsUnitaryRep` with growth exponent $|I|$, and condition 2 is `New.IsDerivedAction`. The derivative is taken along the map `New.Fock.polyVector`, which sends $P$ to $v_P(x) = P(\zeta(x))e^{-|x|^2/2}$, where $\zeta(x)_i$ is $\bar x_i$ at positive and $x_i$ at negative coordinates.
+Conditions 1 and 2 are `New.IsUnitaryRep` and `New.IsDerivedAction`. The derivative is taken along the map `New.Fock.polyVector`, which sends $P$ to $v_P(x) = P(\zeta(x))e^{-|x|^2/2}$, where $\zeta(x)_i$ is $\bar x_i$ at positive and $x_i$ at negative coordinates.
 
 **Theorem.** Let $R$, $C$ be finite sets with signs $\varepsilon$, $\varepsilon'$, and let $\gamma$, $\gamma'$ be integers. On the Fock space of the $R \times C$ matrices, with sign $\varepsilon_r\varepsilon'_c$ at the entry $(r, c)$, let $\omega$ be the Weil representation. Then $h \mapsto (\det h)^\gamma\,\omega(x \mapsto hx)$ of $U(\varepsilon)$ and $g \mapsto (\det g)^{\gamma'}\,\omega(x \mapsto xg^{-1})$ of $U(\varepsilon')$ form an oscillator pair for the standard data with sign $1$ and integers $\gamma$, $\gamma' + |R|$.
 
 Lean: `New.Fock.oscillatorPair_detTwist` (Lib/Weil/Fock/OscillatorPair.lean).
 
-*Proof.* The construction and the proof of the three conditions are in [the Weil representation from a vacuum](/chapter/weil-representation/). The two actions commute because left and right multiplication of matrices commute. $\square$
+*Proof.* The construction and the proof of the three conditions are in [the Weil representation from a vacuum](/chapter/weil-representation/). $\square$
 
-The docstring of the file says that "the space is the L¹ (Feichtinger) space of vacuum coefficients rather than the Hilbert Fock space". It cites M. G. Davidson, Pacific J. Math. 129 (1987), §1 and Prop. 2.2, G. B. Folland, *Harmonic Analysis in Phase Space* (1989), chapters 1 and 4, and H. Reiter, *Metaplectic Groups and Segal Algebras*, LNM 1382 (1989).
+For this model the source cites M. G. Davidson, Pacific J. Math. 129 (1987), §1 and Prop. 2.2, G. B. Folland, *Harmonic Analysis in Phase Space* (1989), chapters 1 and 4, and H. Reiter, *Metaplectic Groups and Segal Algebras*, LNM 1382 (1989).
 
 **Proposition.** Let $R$ and $C$ be nonempty. If $\pi$, $\pi'$ form an oscillator pair for $T$, then $\pi'$, $\pi$ form an oscillator pair for the swap.
 
 Lean: `New.OscillatorPair.swap` (Lib/DiscreteSeries/Theta/LocalCorrespondence.lean).
 
 *Proof.* The swap of the swap is $T$, and the commutation is symmetric. $\square$
-
-So every statement for the first group has a version for the second group. The source states its results for $\pi(e_\lambda)$ only.
 
 ### The operator of the kernel
 
@@ -64,7 +62,7 @@ For a function $f$ on $U(\varepsilon)$, the operator $\pi(f)$ is $\int f(g)\pi(g
 
 Lean: `New.OscillatorPair.map_integratedRep_dsKernel` (Lib/DiscreteSeries/Theta/LocalCorrespondence.lean). The second part is `New.OscillatorPair.isDerivedAction_integratedRep`.
 
-*Proof.* Matching gives the large gap with $A = |I|$ (`New.IsMatch.hasLargeGap`), so $g \mapsto e_\lambda(g)\|g\|^{|I| + 1}$ is integrable. Then a bounded operator $L$ can be moved under the integral: $L\,\pi(e_\lambda)x = \int e_\lambda(g)L\pi(g)x\,dg$ (`New.map_integratedRep`). For $L = \pi'(g')$ this gives part 1, as $\pi'(g')$ commutes with each $\pi(g)$. For part 2, apply the bounded operator $\pi(e_\lambda)$ to the derivative of $t \mapsto \pi'(\exp tY)v_P$, and use part 1. $\square$
+*Proof.* Matching gives the large gap with $A = |I|$ (`New.IsMatch.hasLargeGap`), so $g \mapsto e_\lambda(g)\|g\|^{|I| + 1}$ is integrable. Then a bounded operator $L$ can be moved under the integral: $L\,\pi(e_\lambda)x = \int e_\lambda(g)L\pi(g)x\,dg$ (`New.map_integratedRep`). Take $L = \pi'(g')$ for part 1. For part 2, apply the bounded operator $\pi(e_\lambda)$ to the derivative of $t \mapsto \pi'(\exp tY)v_P$, and use part 1. $\square$
 
 ### Positivity
 
@@ -95,7 +93,7 @@ The Casimir element of the first group acts on the image of $\pi(e_\lambda)$ by 
 
 Lean: `New.OscillatorPair.integratedRep_oscRows_eq_zero` (Lib/DiscreteSeries/Theta/LocalCorrespondence.lean).
 
-*Proof.* By the theorem of the previous volume on weights off the cone (`New.integratedRep_eq_zero_of_notMem_rootCone`), $\pi(e_\lambda)$ kills every translate $\pi(y)v_Q$. For $Y$ in the Lie algebra of $U(\varepsilon)$, the vector $v_{\rho(Y)Q}$ is the derivative of $t \mapsto \pi(\exp tY)v_Q$ at $0$, and the bounded operator $\pi(e_\lambda)$ kills it. A complex matrix is $Y_1 + iY_2$ with $Y_1$, $Y_2$ in the Lie algebra. $\square$
+*Proof.* By the theorem of the previous volume on weights off the cone (`New.integratedRep_eq_zero_of_notMem_rootCone`), $\pi(e_\lambda)$ kills every translate $\pi(y)v_Q$. For $Y$ in the Lie algebra of $U(\varepsilon)$, the vector $v_{\rho(Y)Q}$ is the derivative of $t \mapsto \pi(\exp tY)v_Q$ at $0$, and the bounded operator $\pi(e_\lambda)$ kills it. Write a complex matrix as $Y_1 + iY_2$. $\square$
 
 ### The smoothing statement
 
@@ -110,7 +108,7 @@ Lean: `New.OscillatorPair.exists_bump_integratedRep_eq` (Lib/DiscreteSeries/Thet
 
 *$G$ is stable under the column action.* Let $p(y) = S(\beta)$. For $Z$ in the Lie algebra of $U(\varepsilon')$, differentiate $t \mapsto \pi'(\exp tZ)p(y)$ at $0$ in two ways. By part 2 of the lemma on the kernel, the derivative is $p(\rho'(Z)y)$. By the rule for the derivative of a smoothing, it is $S(Z\beta)$. So $p(\rho'(Z)y) = S(Z\beta)$. A complex matrix is $Z_1 + iZ_2$.
 
-*$G$ contains $\Phi$.* The large gap gives a bump function $\alpha$ with $\int\alpha(x^{-1})e_{\lambda'}(x^{-1}g)\,dx = e_{\lambda'}(g)$ (`New.HCParam.HasLargeGap.exists_bump_conv_dsKernel`). By the fixed vector theorem, $S(\alpha) = p(\Phi)$.
+*$G$ contains $\Phi$.* The large gap gives a bump function $\alpha$ with $\int\alpha(x^{-1})e_{\lambda'}(x^{-1}g)\,dx = e_{\lambda'}(g)$ (`New.HCParam.HasLargeGap.exists_bump_conv_dsKernel`). The fixed vector theorem gives $S(\alpha) = p(\Phi)$.
 
 *Hypothesis 1.* By the last theorem, $p(\rho(Y)Q) = 0 = S(0)$.
 
@@ -120,13 +118,13 @@ Howe's argument gives that $G$ is the space of all polynomials. $\square$
 
 The docstring of the theorem says that it "is used in place of Howe's duality theorem for real unitary pairs" and that it "is proved by Howe's argument (`New.IsJointHarmonic.howe_argument`) instead of through irreducibility".
 
-The global lift in Lib/Weil/Lift.lean applies `New.Fock.oscillatorPair_detTwist` at each infinite place. It uses the three theorems of this section with the joint harmonic of that place. The correspondence of parameters there is the block rule `New.ParamsCorrespond`.
+Lib/Weil/Lift.lean applies these theorems at each infinite place, to `New.Fock.oscillatorPair_detTwist`.
 
 **Remark (Formalization).** Several points of the formal statements differ from the textbook account.
 1. *Howe duality is replaced, not proved.* No theorem of the source states that the theta correspondence is a bijection, that a theta lift is irreducible, or that the multiplicity of $\pi \otimes \pi'$ in $\omega$ is at most one. The smoothing theorem takes the place of these. The source does prove the uniqueness of the joint harmonic (Section 5), which is a multiplicity one statement for one $K$-type.
-2. *The Fock space is the L¹ space.* The space `New.Fock.fockSpace` is the space of integrable functions $c$ on $\mathbb{C}^I$ that reproduce themselves against the vacuum, with the $L^1$ norm. The form `New.Fock.fockInner` is a bounded hermitian form on it, not the inner product of a Hilbert space. The analytic theorems of the previous volume need only a normed space with an invariant positive definite form.
-3. *The operator $\pi(f)$ can be a junk value.* The operator `New.integratedRep` is `New.strongIntegral`, defined with `Function.invFun`. If no bounded operator agrees with $x \mapsto \int f(g)\pi(g)x\,dg$, it is an unspecified operator. Every theorem here first proves integrability, from the large gap and the growth bound, so the operator is the integral.
-4. *The kernel can be $0$.* The formal degree `New.HCParam.formalDegree` is the inverse of the Bochner integral of $|c_\lambda|^2$. If $c_\lambda$ is not square integrable, the integral is $0$ in Lean, and so is its inverse. Then $e_\lambda = 0$. The large gap hypothesis, which matching gives, excludes this case. The positivity theorem shows that $e_\lambda \neq 0$ under the hypotheses.
+2. *The Fock space is the L¹ space.* The space `New.Fock.fockSpace` is the space of integrable functions $c$ on $\mathbb{C}^I$ that reproduce themselves against the vacuum, with the $L^1$ norm. The docstring says: "the space is the L¹ (Feichtinger) space of vacuum coefficients rather than the Hilbert Fock space". The analytic theorems of the previous volume need only a normed space with an invariant positive definite form.
+3. *The operator $\pi(f)$ can be a junk value.* The operator `New.integratedRep` is `New.strongIntegral`, defined with `Function.invFun`. If no bounded operator agrees with $x \mapsto \int f(g)\pi(g)x\,dg$, it is an unspecified operator. The theorems here prove integrability first.
+4. *The kernel can be $0$.* The formal degree `New.HCParam.formalDegree` is the inverse of the Bochner integral of $|c_\lambda|^2$. If $c_\lambda$ is not square integrable, the integral is $0$ in Lean, and so is its inverse. Then $e_\lambda = 0$. The large gap hypothesis, which matching gives, excludes this case.
 5. *Choices.* The joint harmonic of the global argument is `New.jointHarmonicAt`, chosen by `Classical.epsilon`. It is an arbitrary polynomial if no joint harmonic exists. The existence theorem of Section 4 removes this case when the parameters correspond. Lib/Weil/Lift.lean picks the bump functions of the smoothing theorem with `choose`.
 6. *Signs.* `New.jointHarmonicAt` uses the standard data on $n' \times n$ variables with the integers $\gamma$ and $-\gamma'$ and the parameters $l'$ and $-l$. The source docstring says that the results for $-\lambda$ follow by applying them to $-l$ and $-l'$, since "the kernel `e_{-λ}` is the conjugate of `e_λ`".
 

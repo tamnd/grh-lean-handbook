@@ -30,13 +30,13 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Uniqueness of joint harmonics
 
-This section proves that two joint harmonics for one pair of matching parameters are proportional. The source proves this in a class that is wider than joint harmonics, the *pre-joint harmonics*, because Howe's argument in Section 7 needs it there. The proof has two steps. First, the conditions on a pre-joint harmonic make it an eigenvector of many polarisations. Second, a pre-joint harmonic does not vanish at one point, the 0-1 matrix of the matching. Uniqueness follows at once: if $P$ and $Q$ are pre-joint harmonics, then $P - cQ$ vanishes at that point for one scalar $c$, so it is not a pre-joint harmonic, so it is $0$.
+This section proves that two joint harmonics for one pair of matching parameters are proportional. The source proves this in a class that is wider than joint harmonics, the *pre-joint harmonics*, because Howe's argument in Section 7 needs it there. The proof has two steps. First, the conditions on a pre-joint harmonic make it an eigenvector of many polarisations. Second, a pre-joint harmonic does not vanish at one point, the 0-1 matrix of the matching.
 
-In the textbook, uniqueness is a part of the multiplicity one statement of Howe duality for $(GL_n, GL_{n'})$ on polynomials (Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. 2 (1989)). The source does not use that theorem. It gives the direct argument below. The docstring of the main theorem says that it "proves the case of the multiplicity one part of Howe's (GL, GL)-duality that is used".
+In the textbook, uniqueness is a part of the multiplicity one statement of Howe duality for $(GL_n, GL_{n'})$ on polynomials (Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. 2 (1989)). The source gives a direct argument. The docstring of the main theorem says that it "proves the case of the multiplicity one part of Howe's (GL, GL)-duality that is used".
 
 ### The Fischer inner product
 
-The *Fischer inner product* on complex polynomials is $\langle P, Q\rangle = [\bar P, Q]$, where $[P, Q] = P(\partial)Q(0)$ is the Fock pairing (`New.fockPairing`, in Lib/GLn/SchurModule/Basic.lean) and $\bar P$ has the conjugate coefficients. The monomials are orthogonal, and $\langle X^\alpha, X^\alpha\rangle = \alpha!$. So the form is positive definite.
+The *Fischer inner product* on complex polynomials is $\langle P, Q\rangle = [\bar P, Q]$, where $[P, Q] = P(\partial)Q(0)$ is the Fock pairing (`New.fockPairing`, in Lib/GLn/SchurModule/Basic.lean) and $\bar P$ has the conjugate coefficients. The monomials are orthogonal, and $\langle X^\alpha, X^\alpha\rangle = \alpha!$.
 
 **Lemma.** For the Fischer inner product, multiplication by a variable $X_b$ is adjoint to the partial derivative $\partial_b$:
 $$\langle X_b P, Q\rangle = \langle P, \partial_b Q\rangle, \qquad \langle P, X_b Q\rangle = \langle \partial_b P, Q\rangle.$$
@@ -45,15 +45,11 @@ Lean: `New.Fischer.inner_X_mul` (Lib/DiscreteSeries/Theta/FockDualPair.lean).
 
 *Proof.* Both sides are sesquilinear, so it suffices to take monomials. For monomials it is the identity $\langle X^{\alpha + e_b}, X^{\beta}\rangle = \langle X^\alpha, \partial_b X^\beta\rangle$, which follows from $\langle X^\alpha, X^\alpha\rangle = \alpha!$. $\square$
 
-**Remark (Formalization).** The source makes the Fischer inner product a scoped instance of an inner product space on `MvPolynomial ι ℂ`, in the namespace `New.Fischer`. So the inner product of two polynomials means the Fischer product only where that namespace is open. This is the reason for the namespace of the lemmas of this section and of Section 7.
-
 ### Laplacians and pre-joint harmonics
 
 **Definition (Laplacian).** For rows $a$, $b$ the *Laplacian* is the sum of the operators $\omega(E_{(a,c)(b,c)})$ of the Fock model over the columns $c$ where the variable $(a, c)$ has sign $-1$. For $\varepsilon_a \neq \varepsilon_b$ it is $-\sum_c \partial_{ac}\partial_{bc}$ over those columns. A polynomial is *Laplace harmonic* if all Laplacians with $\varepsilon_a \neq \varepsilon_b$ kill it.
 
 Lean: `New.FockDualPair.fockLaplacian` (Lib/DiscreteSeries/Theta/FockDualPair.lean). The second notion is `New.FockDualPair.IsLaplaceHarmonic`.
-
-Up to the factor $\sigma$, the Laplacian is the part of the noncompact matrix unit $E_{ab}$ of the row action that lowers the degree. If $\varepsilon_a \neq \varepsilon_b$, the variables $(a, c)$ and $(b, c)$ have opposite signs, so the sum is over half of the columns.
 
 **Lemma.** A termwise harmonic polynomial is Laplace harmonic.
 
@@ -70,7 +66,7 @@ Lean: `New.FockDualPair.IsTermwiseHarmonic.isLaplaceHarmonic` (Lib/DiscreteSerie
 
 Lean: `New.FockDualPair.IsPreJointHarmonic` (Lib/DiscreteSeries/Theta/FockDualPair.lean).
 
-The column weight is not fixed. Nothing is said about the weight of $\Phi$ for the column action.
+The weight of $\Phi$ for the column action is not fixed.
 
 **Lemma.** Let $\Phi$ be jointly highest of weights $\Lambda$, $\nu'$, where $\Lambda$ is the lowest $K$-type of $l$ and $\nu'$ is any weight. Then $\Phi$ is a pre-joint harmonic.
 
@@ -115,7 +111,7 @@ Lean: `New.DiscreteSeries.polarisation_self_eq_smul_of_isCompactPrimitive` (Lib/
 
 *Proof.* Put $k = s\,w_a \geq 0$ and $Q = D^{-s}_{aa}P$. The weight equation and the formula for $\rho(E_{aa})$ give $D^{s}_{aa}P = Q + kP$. The theorem on orthogonality, with $a = b$, gives $\langle Q, Q + kP\rangle = 0$, that is, $\|Q\|^2 + k\langle Q, P\rangle = 0$. By adjointness, $\langle Q, P\rangle$ is the sum of $\|\partial_{ac}P\|^2$ over the columns $c$ of sign $-s$, so it is real and $\geq 0$. Both terms are $\geq 0$, so $Q = 0$, and then each $\partial_{ac}P$ is $0$. $\square$
 
-So $P$ is free of the variables of sign $-s$ of row $a$, and it is homogeneous of degree $s\,w_a$ in the variables of sign $s$ of that row. The source collects the corollary and the theorem in `New.DiscreteSeries.polarisation_eq_of_isCompactPrimitive`.
+So $P$ is free of the variables of sign $-s$ of row $a$, and it is homogeneous of degree $s\,w_a$ in the variables of sign $s$ of that row.
 
 ### The value at the matrix of the matching
 
@@ -123,7 +119,7 @@ So $P$ is free of the variables of sign $-s$ of row $a$, and it is homogeneous o
 
 Lean: `New.FockDualPair.matchingPoint` (Lib/DiscreteSeries/Theta/FockJointHarmonics.lean).
 
-The coordinate $x_{rc}$ is not zero exactly when $(r, c)$ is matched (`New.FockDualPair.matchingPoint_ne_zero_iff`). Each row and each column has at most one entry $1$.
+Each row and each column of $x$ has at most one entry $1$.
 
 **Definition (Eigendirection).** A variable $i$ is an *eigendirection* of $F$ at $x$ if there is a linear vector field $V = \sum_{k \in S} X_{a_k}\partial_{b_k}$ and a scalar $\mu$ with $VF = \mu F$, and an index $j \in S$ with $b_j = i$, such that $x_{a_k} \neq 0$ exactly for $k = j$.
 
@@ -185,8 +181,5 @@ Lean: `New.IsJointHarmonic.exists_eq_smul_of_row_weight` (Lib/DiscreteSeries/The
 
 *Proof.* If $P = 0$, take $c = 0$. Otherwise $P$ and $\Phi$ are pre-joint harmonics, so the theorem applies. For part 2, apply part 1 to the swap, where $\Phi$ is a joint harmonic for $l'$, $l$ by Section 3. $\square$
 
-In part 1 the column weight of $P$ is not given. It is forced: $P$ is a multiple of $\Phi$, so its column weight is $\Lambda'$ if $P \neq 0$.
+**Remark (Formalization).** The constant $c = P(x)/Q(x)$ in the proof is a real division in `ℂ`, and $Q(x) \neq 0$ is proved. There is no junk value here. The polynomial `New.jointHarmonicAt` of the global argument is chosen by `Classical.epsilon` (Lib/Weil/Lift.lean). When a joint harmonic exists, the corollary shows that the chosen one is a nonzero multiple of every other one, so the global results do not depend on the choice.
 
-**Remark (Formalization).** The constant $c = P(x)/Q(x)$ in the proof is a real division in `ℂ`, and $Q(x) \neq 0$ is proved. There is no junk value here. The uniqueness theorem holds for every pair of matching parameters, with no further hypothesis on the gap than the one inside matching. The polynomial `New.jointHarmonicAt` of the global argument is chosen by `Classical.epsilon` (Lib/Weil/Lift.lean). When a joint harmonic exists, the corollary shows that the chosen one is a nonzero multiple of every other one, so the global results do not depend on the choice.
-
-**Example.** For $U(1,1) \times U(1)$ with row 1 matched, the matrix of the matching is $x = (1, 0)$. A pre-joint harmonic is $K$-highest of weight $(\gamma + k, \gamma - 1)$ for the rows. By the theorem on $D^s_{aa}$ it is homogeneous of degree $k$ in $X_1$ and free of $X_2$, so it is $cX_1^k$ with $c \neq 0$. Its value at $x$ is $c$, which is not zero.

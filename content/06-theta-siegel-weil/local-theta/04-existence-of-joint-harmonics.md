@@ -18,7 +18,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Existence of joint harmonics
 
-This section builds a joint harmonic for every pair of matching parameters. The joint harmonic is a product of minors of the matrix of variables. Each minor belongs to a *layer*, a set of matched pairs of rows and columns. The layers are chosen so that the product has the right weight and is killed by the compact raising operators. For a compact pair, that is, for all signs equal to $1$, the construction gives the classical highest weight vectors of $(GL_n, GL_{n'})$ duality, which are products of leading minors.
+This section builds a joint harmonic for every pair of matching parameters. The joint harmonic is a product of minors of the matrix of variables. Each minor belongs to a *layer*, a set of matched pairs of rows and columns. The layers are chosen so that the product has the right weight and is killed by the compact raising operators.
 
 Fix data $T$ and matching parameters $l$, $l'$ as in Section 3. Write $w_r$ for the weight of row $r$ relative to the vacuum and $\eta_{rc}$ for the sign of the variable $X_{rc}$.
 
@@ -50,7 +50,7 @@ Lean: `New.derivation_prod_det` (Lib/DiscreteSeries/Theta/LocalCorrespondence.le
 
 Lean: `New.IsLayering` (Lib/DiscreteSeries/Theta/LocalCorrespondence.lean).
 
-The *minor* of a layer $t$ is $\det\bigl(X_{\rho_t(i)\kappa_t(j)}\bigr)_{i,j \in I_t}$. Condition 3 says that a row lies further out in the order of $l$ than a row of the layer, in the direction of the sign of its variable, only if it also lies in the layer.
+The *minor* of a layer $t$ is $\det\bigl(X_{\rho_t(i)\kappa_t(j)}\bigr)_{i,j \in I_t}$.
 
 **Lemma.** Let $(\rho, \kappa)$ be a layering of weight $\nu$, and let $P$ be the product of the minors of its layers. Let $\varepsilon_a = \varepsilon_b$, and let $a = b$ or $s\,l_b < s\,l_a$. Then $D^s_{ab}P = N\,P$, where $N$ is the number of pairs $(t, i)$ with $\rho_t(i) = a = b$ and $\eta_{b\kappa_t(i)} = s$.
 
@@ -72,8 +72,6 @@ Lean: `New.IsLayering.isJointHighest_prod_det` (Lib/DiscreteSeries/Theta/LocalCo
 
 ### The layers of a matching
 
-Two facts about matched rows let one build the layers.
-
 **Lemma.** Let $l$ and $l'$ match. If $w_r \neq 0$, then row $r$ is matched with a column $c$, and $\eta_{rc}$ is the sign of $w_r$.
 
 Lean: `New.IsMatch.exists_isMatchedPair_of_relWeight_ne_zero` (Lib/DiscreteSeries/Theta/LocalCorrespondence.lean).
@@ -90,7 +88,7 @@ Lean: `New.IsMatch.exists_isMatchedPair_of_outer` (Lib/DiscreteSeries/Theta/Loca
 
 Lean: `New.FockDualPair.Layer` (Lib/DiscreteSeries/Theta/LocalCorrespondence.lean). The rows and columns are `New.FockDualPair.layerRow` and `New.FockDualPair.layerCol`.
 
-A layer contains only matched pairs, so its rows are distinct and its columns are distinct. All its variables lie in one quadrant of signs. The layers of one quadrant are nested: the layer of level $m$ contains the layer of level $m + 1$. Their minors are leading minors of that quadrant, in the order given by the heights.
+A layer contains only matched pairs, all in one quadrant of signs. The layers of one quadrant are nested.
 
 **Theorem.** Let $l$ and $l'$ match. Then for every permutation $\tau$ of the pairs of signs, the layers of the matching form a layering of weight $\Lambda$, the lowest $K$-type of $l$.
 
@@ -104,14 +102,10 @@ Lean: `New.IsMatch.exists_isJointHarmonic` (Lib/DiscreteSeries/Theta/LocalCorres
 
 *Proof.* Take the heights of the matching and $\tau = 1$. The layers form a layering of weight $\Lambda$ for the rows. The matching for the swap has the same matched pairs, and the heights agree, because $|w_r| = |w'_c|$ for a matched pair by `New.IsMatch.relWeight_eq_neg`. The swap reads the pair of signs as $(\varepsilon'_c, \varepsilon_r)$, so with $\tau$ the exchange of the two signs, the same layers form a layering of weight $\Lambda'$ for the columns. The product of the minors is jointly highest of weights $\Lambda$ and $\Lambda'$. $\square$
 
-The docstring of the theorem calls it "the existence part of the known correspondence of discrete series by joint harmonics". In the textbook the joint harmonics come from the theory of $K$-types of the oscillator representation (Kashiwara and Vergne, Invent. Math. 44 (1978)), and Li uses them to identify the lowest $K$-type of the lift. The source builds them by hand.
+The docstring of the theorem calls it "the existence part of the known correspondence of discrete series by joint harmonics". The source builds them by hand.
 
-**Remark (Formalization).** The source states the lemma on polarisations of products of minors with the transposed matrices, because the lemma on derivations acts on columns. The existence theorem states only the existence of $\Phi$. The global argument does not use the explicit product of minors. It takes a joint harmonic by `Classical.epsilon` in `New.jointHarmonicAt` (Lib/Weil/Lift.lean), which is an arbitrary polynomial if no joint harmonic exists. The existence theorem and the block rule show that one exists whenever the parameters correspond. By the uniqueness theorem of Section 5, the chosen polynomial is then a nonzero multiple of the product of minors.
+**Remark (Formalization).** The source states the lemma on polarisations of products of minors with the transposed matrices, because the lemma on derivations acts on columns. The existence theorem states only the existence of $\Phi$. The global argument takes a joint harmonic by `Classical.epsilon` in `New.jointHarmonicAt` (Lib/Weil/Lift.lean), an arbitrary polynomial if none exists. By Section 5, the chosen polynomial is a nonzero multiple of the product of minors when the parameters correspond.
 
-### Examples
+### Example
 
-**Example (The pair $U(1,1) \times U(1)$).** Continue the example of Section 3. Row 1 is matched with the column and has height $w_1 = k$. Row 2 is free. So there are $k$ layers, each with the single variable $X_1$, and $\Phi = X_1^k$. One checks the weights directly. The row operators are $E_{11} = X_1\partial_1 + \gamma$ and $E_{22} = -X_2\partial_2 - 1 + \gamma$, so $\Phi$ has row weight $(\gamma + k, \gamma - 1) = \Lambda$. The column operator is $E' = X_2\partial_2 - X_1\partial_1 + \gamma' + 1$, so $\Phi$ has column weight $\gamma' + 1 - k = \Lambda'$. There are no compact raising operators, since the two rows have opposite signs and there is one column. The polynomial has no variable of row 2, so it is termwise harmonic.
-
-**Example (A compact pair).** Let $n = n' = 2$, with all signs $1$ and $\sigma = 1$. Then all roots are compact, and the gap condition asks that the two entries of each parameter be far apart. Let $l_a > l_b$. Then $\Lambda = \lambda - \rho$, $w_r = \Lambda_r - \gamma$, and $\xi_a > \xi_b$. As $n = n'$, both rows are matched, and $\xi_b > 0$, so $w_a \geq w_b \geq 0$ by the sign lemma. Let $a$ be matched with $c_a$ and $b$ with $c_b$. The layers of levels $m < w_b$ contain both pairs, and those of levels $w_b \leq m < w_a$ contain only $(a, c_a)$. So
-$$\Phi = X_{ac_a}^{\,w_a - w_b}\,\bigl(X_{ac_a}X_{bc_b} - X_{ac_b}X_{bc_a}\bigr)^{w_b}.$$
-This is the classical highest weight vector of the representation of $GL_2 \times GL_2$ on the polynomials of degree $w_a + w_b$ with highest weight $(w_a, w_b)$, written in the order of the matching.
+**Example (The pair $U(1,1) \times U(1)$).** Continue the example of Section 3. Row 1 is matched with the column and has height $w_1 = k$. Row 2 is free. So there are $k$ layers, each with the single variable $X_1$, and $\Phi = X_1^k$. The row operators are $E_{11} = X_1\partial_1 + \gamma$ and $E_{22} = -X_2\partial_2 - 1 + \gamma$, so $\Phi$ has row weight $(\gamma + k, \gamma - 1) = \Lambda$. The column operator is $E' = X_2\partial_2 - X_1\partial_1 + \gamma' + 1$, so $\Phi$ has column weight $\gamma' + 1 - k = \Lambda'$. There are no compact raising operators, since the two rows have opposite signs and there is one column. The polynomial has no variable of row 2, so it is termwise harmonic.

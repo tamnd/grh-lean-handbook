@@ -85,7 +85,7 @@ In Lean $\Omega$ is `ρ.casimirK 1`, the operator `New.GlModule.casimirK` for th
 
 Lean: `New.FockDualPair.centre` (Lib/DiscreteSeries/Theta/CasimirComparison.lean).
 
-The centre is the weight of the character of the determinant by which the row action is twisted. Write $x_{rc}$ for the raising operator of the variable $(r, c)$ and $d_{rc}$ for its lowering operator: $x_{rc} = X_{rc}$ and $d_{rc} = \partial_{rc}$ for a positive variable, $x_{rc} = -\partial_{rc}$ and $d_{rc} = X_{rc}$ for a negative one. In Lean these are `New.FockDualPair.raise` and `New.FockDualPair.lower`.
+Write $x_{rc}$ for the raising operator of the variable $(r, c)$ and $d_{rc}$ for its lowering operator: $x_{rc} = X_{rc}$ and $d_{rc} = \partial_{rc}$ for a positive variable, $x_{rc} = -\partial_{rc}$ and $d_{rc} = X_{rc}$ for a negative one. In Lean these are `New.FockDualPair.raise` and `New.FockDualPair.lower`.
 
 **Lemma.** The operators satisfy $d_{rc}x_{r'c'} = x_{r'c'}d_{rc} + \delta_{rr'}\delta_{cc'}$, and the $d_{rc}$ commute.
 
@@ -102,7 +102,7 @@ $$\sum_{a,b}\Bigl(\sum_c x_{ac}d_{bc} + \tfrac{n'}{2}\delta_{ab}\Bigr)\Bigl(\sum
 
 Lean: `New.sum_mul_eq_normal_order` (Lib/DiscreteSeries/Theta/CasimirComparison.lean).
 
-*Proof.* Move $d_{bc}$ past $x_{bc'}$ in the product of the two sums. The commutators give $nD_2$. The scalar $n'/2$ gives $n'D_2$ and the constant $n \cdot n'^2/4$. The source uses the lemma `New.sum_add_scalar_mul_add_scalar` for the scalar terms. $\square$
+*Proof.* Move $d_{bc}$ past $x_{bc'}$ in the product of the two sums. The commutators give $nD_2$. The scalar $n'/2$ gives $n'D_2$ and the constant $n \cdot n'^2/4$. $\square$
 
 **Lemma.** For rows $a$, $b$, let $s_{ab} = 1$ if $\varepsilon_a = \varepsilon_b$ and $s_{ab} = \sigma$ otherwise. Then
 $$\rho(E_{ab}) - c_T\delta_{ab} = s_{ab}\Bigl(\sum_c x_{ac}d_{bc} + \tfrac{n'}{2}\delta_{ab}\Bigr).$$
@@ -145,10 +145,6 @@ Lean: `New.IsMatch.centred_casimirValue_eq` (Lib/DiscreteSeries/Theta/CasimirCom
 
 *Proof.* By the last two results, $12(|u|^2 - |u'|^2) = d_0(d_0^2 - 1)$. What remains is the identity $n^3 - n'^3 - d_0^3 = 3nn'd_0$, with $d_0 = n - n'$. $\square$
 
-### How Section 8 uses this
+Section 8 uses the two theorems to pass from $\kappa_\lambda$ on the rows to $\kappa_{\lambda'}$ on the columns.
 
-Let $v = \pi(e_\lambda)\Phi$. The first group acts on the image of $\pi(e_\lambda)$ through its Casimir value: $\pi(e_\lambda)\,\Omega\Phi = \kappa_\lambda\,\pi(e_\lambda)\Phi$. The polynomial $\Phi$ has row weight $\Lambda$, so the lemma on $\Omega_w$ and the theorem on $\kappa - 2w\sum\Lambda_a + nw^2$ give $\pi(e_\lambda)\Omega_{c_T}\Phi = (|u|^2 - |\rho|^2)\,v$. The comparison of the Casimir elements and of the values gives $\pi(e_\lambda)\Omega'_{c_{T'}}\Phi = (|u'|^2 - |\rho'|^2)\,v$. The column weight of $\Phi$ is $\Lambda'$, so the same two results, read backwards for $l'$, give $\pi(e_\lambda)\,\Omega'\Phi = \kappa_{\lambda'}\,v$.
-
-**Remark (Formalization).** All the identities of this section are equalities of operators on `MvPolynomial ι ℂ` or of complex numbers. The centres are complex numbers. Their values are integers or half integers, by the parity of $n'$ and $n$. The gap enters only through the parity and the distinctness of the entries, and through the lowest $K$-type in part 3 of the lemma on $\rho$.
-
-**Example.** For $U(1,1) \times U(1)$ with row 1 matched, $n = 2$, $n' = 1$ and $d_0 = 1$. The centred parameters are $\xi = (2k, 0)$ and $\xi' = -2k$, so $3(4k^2 - 4k^2) = 0 = d_0(d_0^2 - 1)$. With $c_T = \gamma - \frac12$, one has $u = (k, 0)$, and the left side of the comparison is $k^2 - \frac12 + \frac12 = k^2$. The column integer of the standard data is $\gamma' + 2$, so $c_{T'} = \gamma' + 2 - 1 = \gamma' + 1$. Then $\lambda' = \gamma' + 1 - k$, one has $u' = -k$, and the right side is $k^2$.
+**Remark (Formalization).** All the identities of this section are equalities of operators on `MvPolynomial ι ℂ` or of complex numbers. The centres are complex numbers. Their values are integers or half integers, by the parity of $n'$ and $n$.

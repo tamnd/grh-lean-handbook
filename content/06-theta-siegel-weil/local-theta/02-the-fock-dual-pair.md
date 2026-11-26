@@ -24,7 +24,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The Fock model of a dual pair
 
-This section defines the algebraic data of a dual pair of unitary groups in the Fock model. The data are a polynomial ring with signed variables, two commuting actions of general linear Lie algebras on it, and a few integers that the later sections use. Everything here is algebra on polynomials. The representations of the groups enter only in Section 8.
+This section defines the algebraic data of a dual pair of unitary groups in the Fock model. The data are a polynomial ring with signed variables, two commuting actions of general linear Lie algebras on it, and a few integers that the later sections use.
 
 ### Raising and lowering operators
 
@@ -36,7 +36,7 @@ Here $X_i$ is the operator of multiplication by $X_i$. The operator $A_i$ is the
 
 Lean: `New.Fock.raiseOp` (Lib/Weil/Fock/Basic.lean). The lowering operator is `New.Fock.lowerOp` and $E_{ij}$ is `New.Fock.glOp`.
 
-For a positive variable, $A_i$ raises the degree and $B_i$ lowers it. For a negative variable it is the other way. The names follow the weight for the action defined below, not the degree.
+The names follow the weight, not the degree.
 
 **Theorem (Canonical commutation relations).** For all $i, j \in \iota$,
 $$A_i A_j = A_j A_i, \qquad B_i B_j = B_j B_i, \qquad B_i A_j = A_j B_i + \delta_{ij}.$$
@@ -79,7 +79,7 @@ Lean: `New.FockDualPair.oscRowsUnit_commutator` (Lib/DiscreteSeries/Theta/FockDu
 
 *Proof.* Put $S_{ab} = \sum_c E_{(a,c),(b,c)}$. By the commutation rule of the $E_{ij}$ and $\delta_{(b,c),(c',d)} = \delta_{bc'}\delta_{cd}$, the $S_{ab}$ satisfy the rule of the matrix units. The signs satisfy $s_{ab}s_{bd} = s_{ad}$, because $\sigma^2 = 1$ and the number of sign changes along $a, b, d$ has the parity of $[\varepsilon_a \neq \varepsilon_d]$. The constants $\gamma\delta_{ab}$ are central. $\square$
 
-For $\varepsilon_a = \varepsilon_b$ the operator $\rho(E_{ab})$ keeps the degree: each term is $X\partial$ or $\partial X$ up to sign. These are the operators of the complexified Lie algebra of the maximal compact subgroup $U(p) \times U(q)$. For $\varepsilon_a \neq \varepsilon_b$, the variables $X_{ac}$ and $X_{bc}$ have opposite signs. Then $A_{ac}B_{bc}$ is a product of two multiplications or of two derivatives. So the noncompact part acts by multiplication by quadratic polynomials and by second order operators. This is the usual shape of the oscillator representation of $\mathfrak{u}(p,q)$ in the Fock model (Kashiwara and Vergne, *On the Segal-Shale-Weil representations and harmonic polynomials*, Invent. Math. 44 (1978), at the places 6.3 and 7.2 that the source's list of references records for a related file). For $\sigma = -1$ the noncompact part changes sign.
+For $\varepsilon_a = \varepsilon_b$ the operator $\rho(E_{ab})$ keeps the degree: each term is $X\partial$ or $\partial X$ up to sign. These are the operators of the complexified Lie algebra of the maximal compact subgroup $U(p) \times U(q)$. For $\varepsilon_a \neq \varepsilon_b$, the variables $X_{ac}$ and $X_{bc}$ have opposite signs. Then $A_{ac}B_{bc}$ is a product of two multiplications or of two derivatives. So the noncompact part acts by multiplication by quadratic polynomials and by second order operators.
 
 ### The swap and the column action
 
@@ -95,7 +95,7 @@ Lean: `New.FockDualPair.swap_swap` (Lib/DiscreteSeries/Theta/FockDualPair.lean).
 
 *Proof.* The first statement holds because $-(-\sigma) = \sigma$ and two exchanges of the factors of $R \times C$ give the identity. For the second, the sign of the variable $(c,r)$ for the swap is $(-\sigma)\varepsilon'_c\varepsilon_r = -\eta_{rc}$. $\square$
 
-The global sign $\sigma$ is the reason for this design. The class of data is closed under the exchange of rows and columns. So each theorem about rows gives a theorem about columns by a swap, and the source proves most results once.
+The global sign $\sigma$ makes the class of data closed under the swap. So each theorem about rows gives a theorem about columns.
 
 **Theorem (Column action).** For columns $a, b$ let $s'_{ab} = 1$ if $\varepsilon'_a = \varepsilon'_b$ and $s'_{ab} = \sigma$ if not. Then the column action is
 $$\rho'(E_{ab}) = s'_{ab}\Bigl(-\sum_{r \in R} B_{ra}A_{rb}\Bigr) + \gamma'\,\delta_{ab},$$
@@ -105,7 +105,7 @@ Lean: `New.FockDualPair.swap_oscRows_E` (Lib/DiscreteSeries/Theta/FockDualPair.l
 
 *Proof.* The swap has the signs $-\eta$. By the formula for reversed signs, each term of the sum for the swap is $\mp B_{ra}A_{rb}$, with the minus sign when the variables $(r,a)$ and $(r,b)$ have equal signs, that is, when $\varepsilon'_a = \varepsilon'_b$. The sign of the swap is $-\sigma$. In both cases the factor in front of $-\sum_r B_{ra}A_{rb}$ is $s'_{ab}$. $\square$
 
-The two actions commute. Each operator of the row action is a sum over columns of products $A_{ac}B_{bc}$, and each operator of the column action is a sum over rows of products $B_{ra}A_{rb}$. The commutation of $\sum_c A_{ac}B_{bc}$ with $\sum_r B_{rd}A_{re}$ follows from the canonical relations. The source does not state this commutation as an algebraic lemma. It needs only the commutation of the group representations, which is a field of an oscillator pair (Section 8).
+The two actions commute, by the canonical relations. The source does not state this as an algebraic lemma. It uses only the commutation of the group representations, a field of an oscillator pair (Section 8).
 
 ### The vacuum and the centred parameters
 
@@ -125,4 +125,4 @@ Lean: `New.FockDualPair.std` (Lib/DiscreteSeries/Theta/FockDualPair.lean).
 
 For the standard data, $E_{ab}$ acts on the rows by $\sum_c A_{ac}B_{bc} + \gamma\delta_{ab}$. By the column formula and $B_{ra}A_{rb} = A_{rb}B_{ra} + \delta_{ab}$, it acts on the columns by $-\sum_r A_{rb}B_{ra} + \gamma'\delta_{ab}$. The term $+n$ in the column integer cancels the $n$ constants of the reordering. These are the actions $h \mapsto (\det h)^\gamma\omega(x \mapsto hx)$ and $g \mapsto (\det g)^{\gamma'}\omega(x \mapsto xg^{-1})$ of Section 8.
 
-**Example (One row and one column).** Let $n = n' = 1$, with both signs $1$, and take the standard data. There is one variable $X$, and it is positive. The row action is $E = X\partial + \gamma$ and the column action is $E' = -X\partial + \gamma'$. The monomial $X^k$ has row weight $\gamma + k$ and column weight $\gamma' - k$. So the polynomial ring is the direct sum of the lines $\mathbb{C}X^k$, and the row weight determines the column weight by $\nu + \nu' = \gamma + \gamma'$. This is the theta correspondence for $U(1) \times U(1)$ in its simplest form. Each character of the first group that occurs, occurs once, and it determines the character of the second group.
+**Example (One row and one column).** Let $n = n' = 1$, with both signs $1$, and take the standard data. There is one variable $X$, and it is positive. The row action is $E = X\partial + \gamma$ and the column action is $E' = -X\partial + \gamma'$. The monomial $X^k$ has row weight $\gamma + k$ and column weight $\gamma' - k$. So the row weight determines the column weight by $\nu + \nu' = \gamma + \gamma'$. This is the theta correspondence for $U(1) \times U(1)$.
