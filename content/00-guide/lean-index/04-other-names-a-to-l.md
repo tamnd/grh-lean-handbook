@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 3890 cited names outside the namespace `New.Data`. This section has 1952 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 4188 cited names outside the namespace `New.Data`. This section has 2076 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -151,8 +151,8 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.CMBase`: `Lib/Shimura/Uniformisation/AdelicFrames.lean`, [line 61](lean:Lib/Shimura/Uniformisation/AdelicFrames.lean#L61). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.cmConj`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 69](lean:Lib/GaloisRep/Main/SelmerModules.lean#L69). Cited in [Chapter](/chapter/odd-classes/).
 - `New.CMLattice`: `Lib/CM/Sigma/Basic.lean`, [line 694](lean:Lib/CM/Sigma/Basic.lean#L694). Cited in [Chapter](/chapter/cm-elliptic-curves/).
-- `New.CMLattice.chowla_selberg`: `Lib/CM/ChowlaSelberg.lean`, [line 696](lean:Lib/CM/ChowlaSelberg.lean#L696). Cited in [Chapter](/chapter/cm-elliptic-curves/).
-- `New.CMLattice.complex_multiplication_theta`: `Lib/CM/ChowlaSelberg.lean`, [line 364](lean:Lib/CM/ChowlaSelberg.lean#L364). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.chowla_selberg`: `Lib/CM/ChowlaSelberg.lean`, [line 696](lean:Lib/CM/ChowlaSelberg.lean#L696). Cited in [Chapter](/chapter/cm-elliptic-curves/), [Chapter](/chapter/integral-vacuum/).
+- `New.CMLattice.complex_multiplication_theta`: `Lib/CM/ChowlaSelberg.lean`, [line 364](lean:Lib/CM/ChowlaSelberg.lean#L364). Cited in [Chapter](/chapter/cm-elliptic-curves/), [Chapter](/chapter/integral-vacuum/).
 - `New.CMLattice.deriv_translatedX_sq`: `Lib/CM/Sigma/ThetaSections.lean`, [line 243](lean:Lib/CM/Sigma/ThetaSections.lean#L243). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.deriv_translatedY_eq`: `Lib/CM/Sigma/ThetaSections.lean`, [line 229](lean:Lib/CM/Sigma/ThetaSections.lean#L229). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.derivative_derivative_negLogTheta`: `Lib/CM/Integrality/LogTheta.lean`, [line 197](lean:Lib/CM/Integrality/LogTheta.lean#L197). Cited in [Chapter](/chapter/cm-elliptic-curves/).
@@ -164,6 +164,7 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal`: `Lib/CM/GoodReduction.lean`, [line 230](lean:Lib/CM/GoodReduction.lean#L230). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal_mul`: `Lib/CM/GoodReduction.lean`, [line 249](lean:Lib/CM/GoodReduction.lean#L249). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal_sq`: `Lib/CM/ChowlaSelberg.lean`, [line 257](lean:Lib/CM/ChowlaSelberg.lean#L257). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.exists_norm_twistedTranslate_theta_le`: `Lib/CM/FiniteLattices.lean`, [line 166](lean:Lib/CM/FiniteLattices.lean#L166). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.CMLattice.exists_rescale_theta_eq_theta_pow_mul`: `Lib/CM/Integrality/IsogenyIntegrality.lean`, [line 62](lean:Lib/CM/Integrality/IsogenyIntegrality.lean#L62). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_scaled_formalParam`: `Lib/CM/FormalGroup/FormalParameter.lean`, [line 224](lean:Lib/CM/FormalGroup/FormalParameter.lean#L224). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_taylorVia_eq_theta_pow_mul`: `Lib/CM/Integrality/IntegralSections.lean`, [line 529](lean:Lib/CM/Integrality/IntegralSections.lean#L529). Cited in [Chapter](/chapter/cm-elliptic-curves/).
@@ -173,7 +174,7 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.CMLattice.galConjugate_a₁`: `Lib/CM/ConjugateCurve.lean`, [line 403](lean:Lib/CM/ConjugateCurve.lean#L403). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.g₃_eq`: `Lib/CM/Sigma/ThetaSections.lean`, [line 201](lean:Lib/CM/Sigma/ThetaSections.lean#L201). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.HasIntegralValues`: `Lib/CM/Integrality/TorsionValues.lean`, [line 206](lean:Lib/CM/Integrality/TorsionValues.lean#L206). Cited in [Chapter](/chapter/cm-elliptic-curves/).
-- `New.CMLattice.hasIntegralValues_monomialSection`: `Lib/CM/Integrality/TorsionValues.lean`, [line 430](lean:Lib/CM/Integrality/TorsionValues.lean#L430). Cited in [Chapter](/chapter/cm-elliptic-curves/).
+- `New.CMLattice.hasIntegralValues_monomialSection`: `Lib/CM/Integrality/TorsionValues.lean`, [line 430](lean:Lib/CM/Integrality/TorsionValues.lean#L430). Cited in [Chapter](/chapter/cm-elliptic-curves/), [Chapter](/chapter/integral-vacuum/).
 - `New.CMLattice.insepDegree_le`: `Lib/CM/FormalGroup/InseparableDegree.lean`, [line 334](lean:Lib/CM/FormalGroup/InseparableDegree.lean#L334). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.insepDegree_piPrime_le`: `Lib/CM/FormalGroup/InseparableDegree.lean`, [line 368](lean:Lib/CM/FormalGroup/InseparableDegree.lean#L368). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.integralSeriesRing`: `Lib/CM/FormalGroup/IntegralParameter.lean`, [line 252](lean:Lib/CM/FormalGroup/IntegralParameter.lean#L252). Cited in [Chapter](/chapter/cm-elliptic-curves/).
@@ -784,6 +785,8 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.FinComplexSpace`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 60](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L60). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.finite_cocycles_unramified_outside`: `Lib/ClassField/GreenbergWiles/SelmerLevels.lean`, [line 153](lean:Lib/ClassField/GreenbergWiles/SelmerLevels.lean#L153). Cited in [Chapter](/chapter/local-duality/).
 - `New.finite_levelSpace_smoothFormRep`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 304](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L304). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.finiteImage_add_mem`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 52](lean:New/Derivatives/Vacuum/ShortVectors.lean#L52). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.finiteImage_mul_mem`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 58](lean:New/Derivatives/Vacuum/ShortVectors.lean#L58). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.finiteIndex_idele_subgroup_of_isOpen`: `Lib/ClassField/Places/Ideles.lean`, [line 383](lean:Lib/ClassField/Places/Ideles.lean#L383). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.finMean`: `Lib/General/Groups/CharacterTheory.lean`, [line 52](lean:Lib/General/Groups/CharacterTheory.lean#L52). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/finite-gln/).
 - `New.finMean_ite`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 253](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L253). Cited in [Chapter](/chapter/finite-gln/).
@@ -822,6 +825,7 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.Floors.card_eq_card_pair_sum`: `Lib/SiegelWeil/OneVector/StandardQuadrics.lean`, [line 93](lean:Lib/SiegelWeil/OneVector/StandardQuadrics.lean#L93). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Floors.cartan_decomposition`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 251](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L251). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.cellDensity`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 184](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L184). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Floors.coe_weylRatio`: `New/Spanning/Frames/Lengths.lean`, [line 141](lean:New/Spanning/Frames/Lengths.lean#L141). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.exists_isDisintegration_le_sphereDensity`: `Lib/DiscreteSeries/Bruhat/SphereFibres.lean`, [line 52](lean:Lib/DiscreteSeries/Bruhat/SphereFibres.lean#L52). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.bijOn_mulVec_eStar`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 353](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L353). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.exists_eq_heisenbergElem_of_mem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 339](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L339). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -833,6 +837,54 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.Floors.FloorGroups.mul_heisenbergElem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 129](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L129). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.simpleRootSum_conj_heisenbergElem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 490](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L490). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.weylElem`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 162](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L162). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Floors.Gauge`: `New/Spanning/Frames/Correlations.lean`, [line 123](lean:New/Spanning/Frames/Correlations.lean#L123). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.climbConst`: `New/Spanning/Frames/OneFrame.lean`, [line 387](lean:New/Spanning/Frames/OneFrame.lean#L387). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.closeMass`: `New/Spanning/Frames/OneFrame.lean`, [line 375](lean:New/Spanning/Frames/OneFrame.lean#L375). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.correlation_plancherel`: `New/Spanning/Frames/QuadricPlancherel.lean`, [line 198](lean:New/Spanning/Frames/QuadricPlancherel.lean#L198). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.cutSquare`: `New/Spanning/Frames/OneFrame.lean`, [line 382](lean:New/Spanning/Frames/OneFrame.lean#L382). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.exists_factor_cutSquare_le`: `New/Spanning/Frames/OneFrame.lean`, [line 559](lean:New/Spanning/Frames/OneFrame.lean#L559). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.exists_isSolvedIn`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 97](lean:New/Spanning/Frames/QuadricVolumes.lean#L97). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.exists_unit_mem_stableProducts_of_isHead`: `New/Spanning/Frames/Depth.lean`, [line 851](lean:New/Spanning/Frames/Depth.lean#L851). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.floorConst`: `New/Spanning/Frames/Depth.lean`, [line 485](lean:New/Spanning/Frames/Depth.lean#L485). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.floorMassLe_depth_pow`: `New/Spanning/Frames/Depth.lean`, [line 267](lean:New/Spanning/Frames/Depth.lean#L267). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.floorMassLe_one`: `New/Spanning/Frames/QuadricPlancherel.lean`, [line 113](lean:New/Spanning/Frames/QuadricPlancherel.lean#L113). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.floorsConst`: `New/Spanning/Frames/Depth.lean`, [line 296](lean:New/Spanning/Frames/Depth.lean#L296). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.formIntegrandL1Norm_sq_le_of_char`: `New/Spanning/Frames/Gains.lean`, [line 476](lean:New/Spanning/Frames/Gains.lean#L476). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.formIntegrandL1Norm_sq_le_of_heads`: `New/Spanning/Frames/Gains.lean`, [line 955](lean:New/Spanning/Frames/Gains.lean#L955). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.formMajorant_sq_le_of_floorMassLe`: `New/Spanning/Frames/Gains.lean`, [line 340](lean:New/Spanning/Frames/Gains.lean#L340). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.formMajorant_sq_le_of_hasDeepVector`: `New/Spanning/Frames/Gains.lean`, [line 370](lean:New/Spanning/Frames/Gains.lean#L370). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.fourierSqNormLe_floorQuadricMeasure`: `New/Spanning/Frames/QuadricPlancherel.lean`, [line 127](lean:New/Spanning/Frames/QuadricPlancherel.lean#L127). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.hasMatrixSize_sub_one_of_stableProducts`: `New/Spanning/Frames/Depth.lean`, [line 890](lean:New/Spanning/Frames/Depth.lean#L890). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.headDensity_mul_lintegral_le_mul_pairingNormSq`: `New/Spanning/Frames/OneFrame.lean`, [line 705](lean:New/Spanning/Frames/OneFrame.lean#L705). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.inner_besselOrbitalIntegral`: `New/Spanning/Frames/Densities.lean`, [line 342](lean:New/Spanning/Frames/Densities.lean#L342). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.integral_psi_mul_floorForm_succ`: `New/Spanning/Frames/Densities.lean`, [line 700](lean:New/Spanning/Frames/Densities.lean#L700). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.integral_weight_mul_floorForm_succ`: `New/Spanning/Frames/Densities.lean`, [line 648](lean:New/Spanning/Frames/Densities.lean#L648). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.isBalanced_of_isNear`: `New/Spanning/Frames/Correlations.lean`, [line 379](lean:New/Spanning/Frames/Correlations.lean#L379). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.isPairingKernel_frameCorrelation`: `New/Spanning/Frames/Densities.lean`, [line 388](lean:New/Spanning/Frames/Densities.lean#L388). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.IsShell`: `New/Spanning/Frames/Shells.lean`, [line 50](lean:New/Spanning/Frames/Shells.lean#L50). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.IsShell.setLIntegral_formMajorant_le`: `New/Spanning/Frames/Shells.lean`, [line 143](lean:New/Spanning/Frames/Shells.lean#L143). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.IsShell.setLIntegral_le`: `New/Spanning/Frames/Shells.lean`, [line 92](lean:New/Spanning/Frames/Shells.lean#L92). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.IsShell.setLIntegral_le_inv_height`: `New/Spanning/Frames/Shells.lean`, [line 174](lean:New/Spanning/Frames/Shells.lean#L174). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.leadingMinor_mem_ofSize_of_isNear`: `New/Spanning/Frames/Correlations.lean`, [line 180](lean:New/Spanning/Frames/Correlations.lean#L180). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_cutSquare_le`: `New/Spanning/Frames/OneFrame.lean`, [line 468](lean:New/Spanning/Frames/OneFrame.lean#L468). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_depth_pow_section_le`: `New/Spanning/Frames/Depth.lean`, [line 315](lean:New/Spanning/Frames/Depth.lean#L315). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_depthWeight_le`: `New/Spanning/Frames/Depth.lean`, [line 698](lean:New/Spanning/Frames/Depth.lean#L698). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_heisenbergMeasure_inv_depth_le`: `New/Spanning/Frames/Depth.lean`, [line 597](lean:New/Spanning/Frames/Depth.lean#L597). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_invDepthWeight_descConv_le`: `New/Spanning/Frames/OneFrame.lean`, [line 284](lean:New/Spanning/Frames/OneFrame.lean#L284). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_invDepthWeight_le`: `New/Spanning/Frames/Depth.lean`, [line 412](lean:New/Spanning/Frames/Depth.lean#L412). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_le_of_shells`: `New/Spanning/Frames/Shells.lean`, [line 243](lean:New/Spanning/Frames/Shells.lean#L243). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_section_le`: `New/Spanning/Frames/Gains.lean`, [line 926](lean:New/Spanning/Frames/Gains.lean#L926). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_weightedSquare_le`: `New/Spanning/Frames/OneFrame.lean`, [line 618](lean:New/Spanning/Frames/OneFrame.lean#L618). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.lintegral_weightedSquareIntegral_le`: `New/Spanning/Frames/OneFrame.lean`, [line 665](lean:New/Spanning/Frames/OneFrame.lean#L665). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.parseval_heisenbergMeasure_le`: `New/Spanning/Frames/QuadricPlancherel.lean`, [line 340](lean:New/Spanning/Frames/QuadricPlancherel.lean#L340). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.partialCorrelation_mul_eq_integral_sectionPoint`: `New/Spanning/Frames/Gains.lean`, [line 862](lean:New/Spanning/Frames/Gains.lean#L862). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.partialCorrelation_weylRatio_heisenbergElem`: `New/Spanning/Frames/QuadricPlancherel.lean`, [line 312](lean:New/Spanning/Frames/QuadricPlancherel.lean#L312). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.pivotL1Norm_sq_le_of_deep`: `New/Spanning/Frames/Gains.lean`, [line 296](lean:New/Spanning/Frames/Gains.lean#L296). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.positionsOfSize`: `New/Spanning/Frames/Correlations.lean`, [line 191](lean:New/Spanning/Frames/Correlations.lean#L191). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.setLIntegral_sectionMeasure_le`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 524](lean:New/Spanning/Frames/QuadricVolumes.lean#L524). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.sq_lintegral_le_mul_lintegral`: `New/Spanning/Frames/Gains.lean`, [line 65](lean:New/Spanning/Frames/Gains.lean#L65). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.sq_lintegral_le_weightedSquareProduct`: `New/Spanning/Frames/Gains.lean`, [line 129](lean:New/Spanning/Frames/Gains.lean#L129). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Gauge.weightedSquareProduct`: `New/Spanning/Frames/Densities.lean`, [line 130](lean:New/Spanning/Frames/Densities.lean#L130). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.HyperbolicBasis.isDisintegration_floorVolume`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 923](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L923). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.IntegralPlace.classGaussSum`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 46](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L46). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Floors.IntegralPlace.classGaussSum_one_zero_eq_one`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 178](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L178). Cited in [Chapter](/chapter/siegel-weil/).
@@ -857,10 +909,12 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.Floors.leFibreMeasure_dualVector`: `Lib/DiscreteSeries/Bruhat/FloorFibre.lean`, [line 410](lean:Lib/DiscreteSeries/Bruhat/FloorFibre.lean#L410). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.leFibreMeasure_frameVector`: `Lib/DiscreteSeries/Bruhat/FloorFibre.lean`, [line 219](lean:Lib/DiscreteSeries/Bruhat/FloorFibre.lean#L219). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.lintegral_eq_polar`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 121](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L121). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Floors.lintegral_weightedSquareIntegral_le_of_lintegral_le`: `New/Spanning/Frames/OneFrame.lean`, [line 335](lean:New/Spanning/Frames/OneFrame.lean#L335). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.map_orbitPoint_cellLaw_top`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 403](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L403). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.Place`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 50](lean:Lib/General/Measure/QuadricDisintegration.lean#L50). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.Place.flatChart`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 239](lean:Lib/General/Measure/QuadricDisintegration.lean#L239). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.Floors.Place.form_flatChart`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 386](lean:Lib/General/Measure/QuadricDisintegration.lean#L386). Cited in [Chapter](/chapter/congruence-subgroups/).
+- `New.Floors.Place.IsBessel`: `New/Spanning/Frames/Densities.lean`, [line 71](lean:New/Spanning/Frames/Densities.lean#L71). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.Place.IsDisintegration`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 257](lean:Lib/General/Measure/QuadricDisintegration.lean#L257). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/siegel-weil/).
 - `New.Floors.Place.IsDisintegration.map`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 466](lean:Lib/General/Measure/QuadricDisintegration.lean#L466). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.Floors.Place.IsDisintegration.unique`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 434](lean:Lib/General/Measure/QuadricDisintegration.lean#L434). Cited in [Chapter](/chapter/congruence-subgroups/).
@@ -868,8 +922,72 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.Floors.Place.isDisintegration_quadricMeasure`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 616](lean:Lib/General/Measure/QuadricDisintegration.lean#L616). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.Floors.Place.plancherel_inequality`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 1103](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L1103). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.Place.quadricMeasure`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 249](lean:Lib/General/Measure/QuadricDisintegration.lean#L249). Cited in [Chapter](/chapter/congruence-subgroups/), [Chapter](/chapter/siegel-weil/).
+- `New.Floors.PlaceData`: `New/Spanning/Frames/Levels.lean`, [line 67](lean:New/Spanning/Frames/Levels.lean#L67). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.commonVectors`: `New/Spanning/Frames/Levels.lean`, [line 232](lean:New/Spanning/Frames/Levels.lean#L232). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.deepModulus`: `New/Spanning/Frames/Gains.lean`, [line 155](lean:New/Spanning/Frames/Gains.lean#L155). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.depth`: `New/Spanning/Frames/Levels.lean`, [line 220](lean:New/Spanning/Frames/Levels.lean#L220). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.depth_mul_left`: `New/Spanning/Frames/Depth.lean`, [line 145](lean:New/Spanning/Frames/Depth.lean#L145). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.depthWeight`: `New/Spanning/Frames/Levels.lean`, [line 227](lean:New/Spanning/Frames/Levels.lean#L227). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.descConv_floorMeasure_succ`: `New/Spanning/Frames/Levels.lean`, [line 516](lean:New/Spanning/Frames/Levels.lean#L516). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.enorm_floorForm_le`: `New/Spanning/Frames/Densities.lean`, [line 196](lean:New/Spanning/Frames/Densities.lean#L196). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.floorForm`: `New/Spanning/Frames/Densities.lean`, [line 106](lean:New/Spanning/Frames/Densities.lean#L106). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.floorForm_zero_eq_integral`: `New/Spanning/Frames/Densities.lean`, [line 496](lean:New/Spanning/Frames/Densities.lean#L496). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.FloorMassLe`: `New/Spanning/Frames/Correlations.lean`, [line 57](lean:New/Spanning/Frames/Correlations.lean#L57). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.floorMeasure`: `New/Spanning/Frames/Levels.lean`, [line 149](lean:New/Spanning/Frames/Levels.lean#L149). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.formIntegrand`: `New/Spanning/Frames/Densities.lean`, [line 98](lean:New/Spanning/Frames/Densities.lean#L98). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.formIntegrandL1Norm`: `New/Spanning/Frames/Densities.lean`, [line 114](lean:New/Spanning/Frames/Densities.lean#L114). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.formMajorant`: `New/Spanning/Frames/Densities.lean`, [line 121](lean:New/Spanning/Frames/Densities.lean#L121). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.groupMeasure`: `New/Spanning/Frames/Levels.lean`, [line 168](lean:New/Spanning/Frames/Levels.lean#L168). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.HasDeepVector`: `New/Spanning/Frames/Densities.lean`, [line 147](lean:New/Spanning/Frames/Densities.lean#L147). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.headDensity`: `New/Spanning/Frames/Densities.lean`, [line 63](lean:New/Spanning/Frames/Densities.lean#L63). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.headDensity_sq_mul_eq_modulus`: `New/Spanning/Frames/OneFrame.lean`, [line 677](lean:New/Spanning/Frames/OneFrame.lean#L677). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.integrable_and_integral_succ_eq_mul_floorForm`: `New/Spanning/Frames/Densities.lean`, [line 522](lean:New/Spanning/Frames/Densities.lean#L522). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.invDepthWeight`: `New/Spanning/Frames/Correlations.lean`, [line 89](lean:New/Spanning/Frames/Correlations.lean#L89). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsActive`: `New/Spanning/Frames/Densities.lean`, [line 137](lean:New/Spanning/Frames/Densities.lean#L137). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsCommonBound`: `New/Spanning/Frames/Levels.lean`, [line 245](lean:New/Spanning/Frames/Levels.lean#L245). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsCommonBound.depth_le`: `New/Spanning/Frames/Depth.lean`, [line 169](lean:New/Spanning/Frames/Depth.lean#L169). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsCut`: `New/Spanning/Frames/Densities.lean`, [line 78](lean:New/Spanning/Frames/Densities.lean#L78). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsCut.formIntegrandL1Norm_le_formMajorant`: `New/Spanning/Frames/Densities.lean`, [line 278](lean:New/Spanning/Frames/Densities.lean#L278). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsNear`: `New/Spanning/Frames/Levels.lean`, [line 177](lean:New/Spanning/Frames/Levels.lean#L177). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsPairingKernel`: `New/Spanning/Frames/Correlations.lean`, [line 67](lean:New/Spanning/Frames/Correlations.lean#L67). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsPairingKernel.partialCorrelation_eq_integral_succ`: `New/Spanning/Frames/Correlations.lean`, [line 510](lean:New/Spanning/Frames/Correlations.lean#L510). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsPairingKernel.pivotL1Norm_le_sum_deepModulus`: `New/Spanning/Frames/Gains.lean`, [line 174](lean:New/Spanning/Frames/Gains.lean#L174). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsPairingKernel.pivotL1Norm_sq_le`: `New/Spanning/Frames/OneFrame.lean`, [line 172](lean:New/Spanning/Frames/OneFrame.lean#L172). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsPairingKernel.pivotL1Norm_sq_le_of_floorMassLe_one`: `New/Spanning/Frames/OneFrame.lean`, [line 204](lean:New/Spanning/Frames/OneFrame.lean#L204). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsPairingKernel.weightedSquareIntegral_eq_add_succ`: `New/Spanning/Frames/OneFrame.lean`, [line 214](lean:New/Spanning/Frames/OneFrame.lean#L214). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.IsStable`: `New/Spanning/Frames/Levels.lean`, [line 204](lean:New/Spanning/Frames/Levels.lean#L204). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.lintegral_floorQuadricMeasure_eq`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 371](lean:New/Spanning/Frames/QuadricVolumes.lean#L371). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.lintegral_partialGroupMeasure_weylElem_inv_mul`: `New/Spanning/Frames/Levels.lean`, [line 822](lean:New/Spanning/Frames/Levels.lean#L822). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.lintegral_weylRatio_mul`: `New/Spanning/Frames/Levels.lean`, [line 547](lean:New/Spanning/Frames/Levels.lean#L547). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.pairingNormSq`: `New/Spanning/Frames/Densities.lean`, [line 84](lean:New/Spanning/Frames/Densities.lean#L84). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.partialCorrelation`: `New/Spanning/Frames/Correlations.lean`, [line 63](lean:New/Spanning/Frames/Correlations.lean#L63). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.partialCorrelationProduct`: `New/Spanning/Frames/Densities.lean`, [line 90](lean:New/Spanning/Frames/Densities.lean#L90). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.partialGroupMeasure_mconv_dirac`: `New/Spanning/Frames/Levels.lean`, [line 649](lean:New/Spanning/Frames/Levels.lean#L649). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.pivotL1Norm`: `New/Spanning/Frames/Correlations.lean`, [line 94](lean:New/Spanning/Frames/Correlations.lean#L94). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.quotientMeasureFrom_isNear_le`: `New/Spanning/Frames/Correlations.lean`, [line 264](lean:New/Spanning/Frames/Correlations.lean#L264). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.shellNormalization`: `New/Spanning/Frames/Shells.lean`, [line 44](lean:New/Spanning/Frames/Shells.lean#L44). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.stableProducts`: `New/Spanning/Frames/Levels.lean`, [line 211](lean:New/Spanning/Frames/Levels.lean#L211). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.volumeExponent`: `New/Spanning/Frames/Levels.lean`, [line 223](lean:New/Spanning/Frames/Levels.lean#L223). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.weightedSquare`: `New/Spanning/Frames/Correlations.lean`, [line 99](lean:New/Spanning/Frames/Correlations.lean#L99). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.weightedSquareIntegral`: `New/Spanning/Frames/Correlations.lean`, [line 113](lean:New/Spanning/Frames/Correlations.lean#L113). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.PlaceData.weightedSquareSum`: `New/Spanning/Frames/Correlations.lean`, [line 104](lean:New/Spanning/Frames/Correlations.lean#L104). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.RealPlaceSizes`: `New/Spanning/Frames/RealPlaceGauge.lean`, [line 290](lean:New/Spanning/Frames/RealPlaceGauge.lean#L290). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
 - `New.Floors.RealPlaceSizes.ten_pow_le_varrho`: `New/Spanning/Frames/RealPlaceGauge.lean`, [line 302](lean:New/Spanning/Frames/RealPlaceGauge.lean#L302). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Floors.sectionMeasure`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 346](lean:New/Spanning/Frames/QuadricVolumes.lean#L346). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.sectionPoint`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 341](lean:New/Spanning/Frames/QuadricVolumes.lean#L341). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size`: `New/Spanning/Frames/Lengths.lean`, [line 112](lean:New/Spanning/Frames/Lengths.lean#L112). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.det_mem_ofSize`: `New/Spanning/Frames/Lengths.lean`, [line 569](lean:New/Spanning/Frames/Lengths.lean#L569). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.form_mem_ofSize`: `New/Spanning/Frames/Lengths.lean`, [line 534](lean:New/Spanning/Frames/Lengths.lean#L534). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.GaugesDifferLe`: `New/Spanning/Frames/Lengths.lean`, [line 409](lean:New/Spanning/Frames/Lengths.lean#L409). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.GaugesDifferLe.of_succ`: `New/Spanning/Frames/TwoGauges.lean`, [line 99](lean:New/Spanning/Frames/TwoGauges.lean#L99). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.GaugesDifferLe.on_whole_space_of_hasShortDual`: `New/Spanning/Frames/TwoGauges.lean`, [line 162](lean:New/Spanning/Frames/TwoGauges.lean#L162). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.HasMatrixSize.inv`: `New/Spanning/Frames/Lengths.lean`, [line 628](lean:New/Spanning/Frames/Lengths.lean#L628). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.hasMatrixSize_of_isHead`: `New/Spanning/Frames/TwoGauges.lean`, [line 404](lean:New/Spanning/Frames/TwoGauges.lean#L404). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.HasShortDual`: `New/Spanning/Frames/Lengths.lean`, [line 416](lean:New/Spanning/Frames/Lengths.lean#L416). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.head_prod_mul_dual_mem_ofSize`: `New/Spanning/Frames/TwoGauges.lean`, [line 209](lean:New/Spanning/Frames/TwoGauges.lean#L209). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.IsBalanced`: `New/Spanning/Frames/Lengths.lean`, [line 392](lean:New/Spanning/Frames/Lengths.lean#L392). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.IsHead`: `New/Spanning/Frames/Lengths.lean`, [line 422](lean:New/Spanning/Frames/Lengths.lean#L422). Cited in [Chapter](/chapter/local-frames/).
+- `New.Floors.Size.LengthLeAt`: `New/Spanning/Frames/Lengths.lean`, [line 380](lean:New/Spanning/Frames/Lengths.lean#L380). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.TraceOne`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 31](lean:Lib/General/Measure/QuadricDisintegration.lean#L31). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.Floors.TraceOne.heisenbergElem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 70](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L70). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Fock.beta_mul_realVac`: `Lib/Weil/Fock/Basic.lean`, [line 235](lean:Lib/Weil/Fock/Basic.lean#L235). Cited in [Chapter](/chapter/weil-representation/).
@@ -1726,6 +1844,12 @@ This section and the next have the 3890 cited names outside the namespace `New.D
 - `New.IsTableauBasis`: `Lib/GLn/SchurModule/Basic.lean`, [line 126](lean:Lib/GLn/SchurModule/Basic.lean#L126). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.isTableauBasis_epsilon`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 137](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L137). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.isThetaLift_thetaKernel`: `Lib/Weil/CompactLift/DefiniteThetaLift.lean`, [line 284](lean:Lib/Weil/CompactLift/DefiniteThetaLift.lean#L284). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.IsTightFrame`: `Lib/General/LinearAlgebra/PolarDecomposition.lean`, [line 97](lean:Lib/General/LinearAlgebra/PolarDecomposition.lean#L97). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.IsTightFrame.join_family`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 80](lean:New/Derivatives/Vacuum/ShortVectors.lean#L80). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.IsTightFrame.mul_left`: `New/Derivatives/Vacuum/TightFrames.lean`, [line 147](lean:New/Derivatives/Vacuum/TightFrames.lean#L147). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.IsTightFrame.repeat_vectors`: `Lib/General/LinearAlgebra/PolarDecomposition.lean`, [line 107](lean:Lib/General/LinearAlgebra/PolarDecomposition.lean#L107). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.IsTightFrame.replace_pairs`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 93](lean:New/Derivatives/Vacuum/ShortVectors.lean#L93). Cited in [Chapter](/chapter/integral-vacuum/).
+- `New.IsTightFrame.sumElim`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 72](lean:New/Derivatives/Vacuum/ShortVectors.lean#L72). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.IsTotallyPositive`: `Lib/ClassField/Places/Ideles.lean`, [line 207](lean:Lib/ClassField/Places/Ideles.lean#L207). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.IsTotallyPositive.exists_resH2_cyclicClass_eq_zero`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 111](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L111). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsTraceNondeg`: `Lib/General/LinearAlgebra/MatrixPolynomials.lean`, [line 69](lean:Lib/General/LinearAlgebra/MatrixPolynomials.lean#L69). Cited in [Chapter](/chapter/attached-representations/).
