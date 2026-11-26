@@ -30,7 +30,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The finite Bessel vector
 
-The densities of [local frames](/chapter/local-frames/#densities-as-integrals-over-two-frames) are defined for any cut Bessel function $W$. At a finite place the argument needs one specific $W$, built from a subgroup $Z$ with $K(g) \le Z \le K$. This section constructs it and computes the three numbers that the later sections use: its pointwise norm, its $L^2$ norm on $\mathsf{U}\backslash\mathsf{G}$, and the $L^2$ norm of its pairing. The constructions are elementary; the content is that each computation reduces, by the unfolding theorem of the last section, to a count of cosets of $K(g)$.
+The densities of [local frames](/chapter/local-frames/#densities-as-integrals-over-two-frames) are defined for any cut Bessel function $W$. At a finite place the argument needs one specific $W$, built from a subgroup $Z$ with $K(g) \le Z \le K$. This section constructs it and computes its pointwise norm, its $L^2$ norm on $\mathsf{U}\backslash\mathsf{G}$, and the $L^2$ norm of its pairing. Each computation reduces, by the unfolding theorem of the last section, to a count of cosets of $K(g)$.
 
 Throughout, $F$ is a place datum with modulus $g = $ `F.levelUnit`, $K(g) = $ `F.congruenceSubgroup`, $K = K(1)$, $\psi$ is the character of the place and $\sigma = $ `New.simpleRootSum` is the sum of the entries just above the diagonal of the frame block. From the second subsection on, $F$ is a large lattice datum.
 

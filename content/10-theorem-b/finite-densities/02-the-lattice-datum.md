@@ -26,11 +26,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The lattice datum
 
-The abstract chapter asks a place for place data: a box, close pairs, positions, a level unit and two measures, one on the top floor and one on $H$. At a finite place all of them come from one integral lattice. This section defines these data, proves that they exist, and builds the gauges.
+The abstract chapter asks a place for place data: a box, close pairs, positions, a level unit and two measures. At a finite place all of them come from one integral lattice. This section defines them, proves that they exist, and builds the gauges.
 
 ### The finite place
 
-A finite place in the source is a class `New.Floors.IntegralPlace` on a semilocal field $A$ with involution. It has a ring of integers $R$ (`integers`), a modulus $|\cdot|$ on the units and an additive character $\psi$ ([Siegel-Weil](/chapter/siegel-weil/)). The ring $A$ may be a finite product of local fields, so a finite set of finite places is read as one ring. All statements of this chapter hold for such a product. For a unit $u$, $|u|$ is the factor by which $x \mapsto ux$ scales the volume of $A$, so $|u| \le 1$ when $u \in R$. The volume of $R$ is $1$.
+A finite place in the source is a class `New.Floors.IntegralPlace` on a semilocal field $A$ with involution. It has a ring of integers $R$ (`integers`), a modulus $|\cdot|$ on the units and an additive character $\psi$ ([Siegel-Weil](/chapter/siegel-weil/)). The ring $A$ may be a finite product of local fields, so a finite set of finite places is read as one ring. All statements of this chapter hold for such a product. For a unit $u$, $|u|$ is the factor by which $x \mapsto ux$ scales volume. The volume of $R$ is $1$.
 
 The space has the basis $e_a$, the basis of the middle space and $e^*_a$, as in [local frames](/chapter/local-frames/). The middle space is $X_0 \oplus Az$, where $X_0 = A^\kappa$ has an orthonormal basis $x_i$ and $z$ is orthogonal to $X_0$ with $\langle z, z\rangle = -N$, $N = \pi\bar\pi$. Its Gram matrix in the *lattice basis* $x_i$ ($i \neq k_0$), $v = x_{k_0}/\bar\pi + z/N$, $z$ is `New.latticeMiddleGram` ([the anatomy of a term](/chapter/anatomy-of-a-term/)). The Gram matrix of the whole space is $J$ (`T.splitGram`).
 

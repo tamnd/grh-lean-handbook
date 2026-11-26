@@ -20,13 +20,13 @@ The source is seven files of the folder `New/Spanning/Frames`, with 5016 lines: 
 
 ### Why the finite places are easier and harder
 
-At a finite place every set in sight is a lattice or a coset of a lattice. The box $K$ of the place data is the group of integral isometries, the sizes of the gauge are the fractional ideals $\alpha^{-j}R$, and the depth of a position is the index of an ideal. So the volumes of the abstract chapter become indices, and every inequality between volumes becomes a divisibility. This is the easy part.
+At a finite place every set in sight is a lattice or a coset of a lattice. The box $K$ of the place data is the group of integral isometries, the sizes of the gauge are the fractional ideals $\alpha^{-j}R$, and the depth of a position is the index of an ideal. So volumes become indices, and inequalities between volumes become divisibilities.
 
 The hard part is that the Bessel function is not given. At a real place it is a Bessel function of the discrete series ([Bessel functions at a real place](/chapter/bessel-real-place/)). At the finite places the source builds it: it extends the Bessel character of $\mathsf{U}$ to $\mathsf{U}K(g)$, and it takes the vector of the translates of this extension by the cosets of $K(g)$ in a group $Z$ with $K(g) \le Z \le K$. Its norms, its correlations and the masses of the congruence subgroups must then be computed exactly, because the main term compares a mass with its error.
 
 ### The model case
 
-Take for $A$ the unramified quadratic extension of $\mathbb{Q}_p$, with $R$ its ring of integers and the Galois conjugation as involution, and take the smallest frame, $\varrho = 0$ and $n = 1$. Then there is one floor, the frame is the single vector $z$, and the position $x$ is an integral isometry. The level $g = p^e$ gives the congruence subgroup $K(p^e)$ of the isometries congruent to $1$ modulo $p^e$. The common denominator ideal of the entries of $(x - 1)/g$ is $J = p^{c}R$ with $c \ge 0$, of index $[R : J] = p^{2c}$, and $c = 0$ exactly when $x \in K(p^e)$. The dyadic shell of index $t$ holds the $x$ with $2^{t-1} < [R : J] \le 2^t$. This chapter proves that a large index forces a deep vector, so that the integral over a shell decays like a power of $2^{-t}$, and that the decay pays for the number of ideals in the shell. In the model all of this is a count of cosets of $p^cR$.
+Take for $A$ the unramified quadratic extension of $\mathbb{Q}_p$, with $R$ its ring of integers and the Galois conjugation as involution, and take the smallest frame, $\varrho = 0$ and $n = 1$. Then there is one floor, the frame is the single vector $z$, and the position $x$ is an integral isometry. The level $g = p^e$ gives the congruence subgroup $K(p^e)$ of the isometries congruent to $1$ modulo $p^e$. The common denominator ideal of the entries of $(x - 1)/g$ is $J = p^{c}R$ with $c \ge 0$, of index $[R : J] = p^{2c}$, and $c = 0$ exactly when $x \in K(p^e)$. The dyadic shell of index $t$ holds the $x$ with $2^{t-1} < [R : J] \le 2^t$. A large index forces a deep vector, so the integral over a shell decays like a power of $2^{-t}$, and the decay pays for the number of ideals in the shell.
 
 ### What the chapter uses
 
@@ -43,17 +43,17 @@ No file of this chapter imports a file of a later chapter of this volume. `Stand
 
 ### The plan
 
-1. [The lattice datum](/chapter/finite-densities/#the-lattice-datum). The place data of an integral lattice, their existence, and the gauge of scale $\alpha$, whose loss is $2/|\alpha|$.
-2. [Masses at the standard level](/chapter/finite-densities/#masses-at-the-standard-level). The Heisenberg mass of $K(g)$ is a power of $|g|$; the group measure gives $K$ a mass between $2^{-n}$ and $1 + 2^{-n}$; and $\mathsf{M}$ is a Haar measure.
-3. [The finite Bessel vector](/chapter/finite-densities/#the-finite-bessel-vector). The cut Bessel function $W_Z$ and its norms.
-4. [Depth and heads](/chapter/finite-densities/#depth-and-heads). The stable products form an ideal, the depth is its index, the heads of a nonzero form are integral, and a large denominator forces a deep vector.
-5. [Shells, decay and mass](/chapter/finite-densities/#shells-decay-and-mass). The dyadic shells, the decay of the forms in the frequency, and the bound of the mass integral by a main term plus an error.
-6. [The top floor](/chapter/finite-densities/#the-top-floor). The fibre measures of the top quadric, the density at the last entry, its Fourier transform, and its positivity.
+1. [The lattice datum](/chapter/finite-densities/#the-lattice-datum). Place data from an integral lattice, and the gauge of scale $\alpha$.
+2. [Masses at the standard level](/chapter/finite-densities/#masses-at-the-standard-level). The masses of $K(g)$ and $K$.
+3. [The finite Bessel vector](/chapter/finite-densities/#the-finite-bessel-vector). The vector $W_Z$ and its norms.
+4. [Depth and heads](/chapter/finite-densities/#depth-and-heads). Depth as an index, integral heads, and far means deep.
+5. [Shells, decay and mass](/chapter/finite-densities/#shells-decay-and-mass). Decay in the frequency and the mass integral.
+6. [The top floor](/chapter/finite-densities/#the-top-floor). The density at the last entry, its Fourier transform and its positivity.
 7. [Exercises](/chapter/finite-densities/#exercises).
 
 ### The two results that leave the chapter
 
-The main term ([the main term](/chapter/main-term/)) uses two results of this chapter more than the others. In words they say the following; the exact statements are in the sections named.
+[The main term](/chapter/main-term/) uses two results of this chapter most. The exact statements are in the sections named.
 
 The *decay in the frequency* ([Theorem](/decl/New.Floors.IntegralPlace.IsLargeLatticeData.enorm_floorForm_le/)): the form of floor $j$ with a character weight of frequency $\xi$ is at most the mass ratio times $\sqrt{\iota(\xi)}^{\,t}$, times the inverse sixth power of the denominator index of $\xi$, times $(2/|g|)^{L}$ for a large exponent $L$, times the finite head weights of $p$ and $q$.
 

@@ -19,7 +19,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Masses at the standard level
 
-The main term is a mass minus an error, so the masses of the congruence subgroups must be known exactly, and the mass of $K$ must be known up to a factor close to $1$. This section computes the Heisenberg mass of $K(g)$, unfolds the group measure over a coset of $K(g)$, and bounds $\mathsf{M}(K)$ from both sides. Throughout, $F$ is a large lattice datum and $g$ is a unit with $g \in R$ and $\bar g = g$.
+The main term is a mass minus an error, so the masses of the congruence subgroups must be known exactly, and that of $K$ up to a factor near $1$. This section computes the Heisenberg mass of $K(g)$, unfolds the group measure over a coset of $K(g)$, and bounds $\mathsf{M}(K)$ from both sides. Throughout, $F$ is a large lattice datum and $g$ is a unit with $g \in R$ and $\bar g = g$.
 
 ### The model case
 
@@ -113,7 +113,7 @@ Lean: `New.Floors.IntegralPlace.IsLargeLatticeData.inv_two_pow_le_groupMeasure` 
 
 *Proof.* $\mathrm{vol}(R^\times) \ge \mathrm{vol}(R) - \mathrm{vol}(R \setminus R^\times) \ge 1 - B^{-1} \ge 1/2$. The theorem before with $l = 0$ and $i = \varrho$ gives $\mathsf{M}(K) \ge \mathrm{vol}(R^\times)^{\varrho+1} \ge 2^{-n}$. $\square$
 
-**Example.** For one finite place with residue field of $q$ elements, the non-units are the maximal ideal, of volume $q^{-1}$. So $B = q$ works when $q \ge 2$, which is always true, and $\mathsf{M}(K) \ge (1 - q^{-1})^n$. For a finite set of places the non-units are the elements that are non-units at some place, of volume at most $\sum_v q_v^{-1}$; the hypothesis asks this sum to be at most $1/2$.
+**Example.** For one finite place with residue field of $q$ elements, the non-units are the maximal ideal, of volume $q^{-1}$. So $B = q$ works, and $\mathsf{M}(K) \ge (1 - q^{-1})^n$. For a finite set of places the non-units are the elements that are non-units at some place, of volume at most $\sum_v q_v^{-1}$; the hypothesis asks this sum to be at most $1/2$.
 
 **Remark.** The two bounds give $2^{-n} \le \mathsf{M}(K) \le 1 + 2^{-n}$. The upper bound uses the ideal zeta value and holds for every large lattice datum. The lower bound needs the hypothesis on the non-units, which is why it is a separate theorem. Both are used: the upper bound in the main term, the lower bound in [the chapter on moments](/chapter/moments/).
 

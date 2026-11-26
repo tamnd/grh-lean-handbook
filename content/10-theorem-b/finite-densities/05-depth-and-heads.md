@@ -24,11 +24,11 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Depth and heads
 
-The bounds of [local frames](/chapter/local-frames/#gains-and-shells) take three inputs from a place: what the depth is, which heads can occur, and why a position far from $1$ has a deep vector. At a real place these are statements about discs and lengths. At the finite places all three become statements about fractional ideals $cR$, and the proofs are arithmetic. This section proves them for a large lattice datum $F$, with $R$ the ring of integers, $K$ the integral group and $g = $ `F.levelUnit`.
+The bounds of [local frames](/chapter/local-frames/#gains-and-shells) take three inputs from a place: what the depth is, which heads can occur, and why a position far from $1$ has a deep vector. At the finite places all three are statements about fractional ideals $cR$. This section proves them for a large lattice datum $F$, with $R$ the ring of integers, $K$ the integral group and $g = $ `F.levelUnit`.
 
 ### The model case
 
-Let $A = \mathbb{Q}_p$ (or an unramified quadratic extension), so every fractional ideal is $p^eR$ with $e \in \mathbb{Z}$. A set of numbers that is closed under addition and under multiplication by $R$, and that is bounded and nonzero, is such an ideal. The stable products $\mathfrak{d}_a(x, y)$ have this form, and if $x$ is near they lie in $R$, so $\mathfrak{d}_a = p^eR$ with $e \ge 0$. The depth is $\mathrm{vol}(p^eR)^{-1} = |p^e|^{-1} = [R : p^eR]$. A deep vector is one with $e$ large. The general case replaces "closed under addition" by a lattice argument, because $\mathfrak{d}_a$ is defined as a projection of a lattice.
+Let $A = \mathbb{Q}_p$ (or an unramified quadratic extension), so every fractional ideal is $p^eR$ with $e \in \mathbb{Z}$. A bounded nonzero $R$-submodule of $A$ is such an ideal. The stable products $\mathfrak{d}_a(x, y)$ are of this form, and for $x$ near they lie in $R$, so $\mathfrak{d}_a = p^eR$ with $e \ge 0$. The depth is $\mathrm{vol}(p^eR)^{-1} = |p^e|^{-1} = [R : p^eR]$. A deep vector is one with $e$ large. The general case replaces "closed under addition" by a lattice argument, because $\mathfrak{d}_a$ is defined as a projection of a lattice.
 
 ### Leading coordinates of a lattice
 
