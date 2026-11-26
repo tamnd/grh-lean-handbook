@@ -93,7 +93,9 @@ The lemma that Volume 12 applies is phrased with letters.
 
 **Lemma (No three close $b$-letters).** Let $\ell \leq kt$ be a prime. Let $j \colon \Gamma \to G_\ell$ identify $\Gamma$ with the group of elements of $G_\ell$ that fix $e(E)$, let $F$ in the image of $j$ be a Frobenius for $\ell^f$, and let $\zeta \in O$ be a primitive $(\ell^f - 1)$-th root of unity. Let $h = \Delta/2 = r^8$ be the half gap of the data, and let $1 \leq a, c \leq \lfloor \log_\ell(h^3) \rfloor$. Let $g_0, g_1, g_2 \in G_\ell$ with $g_1\zeta = (g_0\zeta)^{\ell^a}$ and $g_2\zeta = (g_0\zeta)^{\ell^{a+c}}$. If the places of $\sigma_{g_0}$ and $\sigma_{g_2}$ are $b$-places, then the place of $\sigma_{g_1}$ is not.
 
-Lean: `New.Selmer.notMem_bPlaces_of_coefficientEmbedding_eq_pow` (New/Congruences/LocalLoss/CrystallineDefect.lean). Lean names the second gap `b`; here it is $c$, to keep $b$ for the weight.
+Lean: `New.Selmer.notMem_bPlaces_of_coefficientEmbedding_eq_pow` (New/Congruences/LocalLoss/CrystallineDefect.lean).
+
+Lean names the second gap `b`. Here it is $c$, since $b$ is the weight.
 
 *Proof.* Let $\xi$ be the part of $e(\zeta_{q_1})$ of order prime to $\ell$, that is, $e(\zeta_{q_1})^{\ell^{v}}$ with $v = v_\ell(q_1)$. The Frobenius $F$ fixes $e(E)$, so $\xi^{\ell^f - 1} = 1$, and $\xi$ is a power of the letter root. From $g_2\zeta = (g_0\zeta)^{\ell^{a+c}}$ and $g_2 \zeta = (g_1\zeta)^{\ell^c}$ it follows that $g_2 g_0^{-1}$ and $g_2 g_1^{-1}$ raise $\xi$ to the powers $\ell^{a+c}$ and $\ell^c$. The half gap satisfies $h^3 \leq (2^s)^{12}$ in the data, so $\lfloor \log_\ell(h^3) \rfloor \leq 12 s$. Hence $0 < c < a + c \leq 24 s \leq 27 s < l_0$. The lemma on short arcs, with $g = g_0$, $g' = g_2$, $g_1$, $i = c$ and $n = a + c$, gives the claim. $\square$
 
