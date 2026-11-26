@@ -39,13 +39,13 @@ No file of this chapter imports a file that a later chapter of Volume 10 explain
 
 The chapter has six more sections.
 
-[The terms of a block](/chapter/anatomy-of-a-term/#the-terms-of-a-block) sets up the frame $\mathfrak{f} = (e_0, \dots, e_{\varrho-1}, z)$, the matrix $Z(\gamma)$ of the products $h(\mathfrak{f}_a, \gamma\mathfrak{f}_b)$, its leading minors $D_l$ and the discriminant $\mathsf{g}(\gamma)$. The main fact is a norm identity: if a combination $t$ of $\gamma\mathfrak{f}$ is orthogonal to $e_0, \dots, e_{\varrho-1}$, then $N$ times the squared length of its $X_0$-part is $|c'|^2 - N^2|c_\varrho|^2$, in terms of its product $c'$ with $z$ and its last coefficient. With Cramer's rule this shows that $\mathsf{g}(\gamma)$ is totally nonnegative.
+[The terms of a block](/chapter/anatomy-of-a-term/#the-terms-of-a-block) sets up the frame $\mathfrak{f} = (e_0, \dots, e_{\varrho-1}, z)$, the matrix $Z(\gamma)$ of the products $h(\mathfrak{f}_a, \gamma\mathfrak{f}_b)$, its leading minors $D_l$ and the discriminant $\mathsf{g}(\gamma)$. It proves that $\mathsf{g}(\gamma)$ is totally nonnegative.
 
-[The level structure of the Bessel data](/chapter/anatomy-of-a-term/#the-level-structure-of-the-bessel-data) relates the rational points of $\mathsf{U}$ to the finite group $\bar G$. Strong approximation for $\mathsf{U}$ gives every reduction of an integral point of $\mathsf{U}(\mathbb{A}_f)$ by a rational point. The character at infinity of a rational point of $\mathsf{U}$ is the conjugate of the finite character.
+[The level structure of the Bessel data](/chapter/anatomy-of-a-term/#the-level-structure-of-the-bessel-data) relates the rational points of $\mathsf{U}$ to the finite group $\bar G$.
 
-[Cells and the discriminant](/chapter/anatomy-of-a-term/#cells-and-the-discriminant) defines the cell rank. It proves that the leading minors, the discriminant and the cell rank do not change under $\gamma \mapsto u^{-1}\gamma u'$ for $u, u' \in \mathsf{U}$. The proof is a computation with unitriangular matrices. It also proves that a term has at most one cell rank, and that $\mathsf{g}(\gamma) = 0$ exactly when the spans of $\mathfrak{f}$ and $\gamma\mathfrak{f}$ meet.
+[Cells and the discriminant](/chapter/anatomy-of-a-term/#cells-and-the-discriminant) defines the cell rank. It proves that the leading minors, the discriminant and the cell rank do not change under $\gamma \mapsto u^{-1}\gamma u'$ for $u, u' \in \mathsf{U}$. It also proves that a term has at most one cell rank, and that $\mathsf{g}(\gamma) = 0$ exactly when the spans of $\mathfrak{f}$ and $\gamma\mathfrak{f}$ meet.
 
-[The link](/chapter/anatomy-of-a-term/#the-link) defines the link of $\gamma$, a space of dimension $k + 1$ of pairs of middle vectors. The link is the graph of an isometry $\Upsilon_\gamma$ of the positive space $X_0 \perp Ez^+$. The isometry does not change under $\mathsf{U}$, and on the big cell it determines the term.
+[The link](/chapter/anatomy-of-a-term/#the-link) defines the link of $\gamma$, a space of dimension $k + 1$ of pairs of middle vectors. The link is the graph of an isometry $\Upsilon_\gamma$ of the positive space $X_0 \perp Ez^+$.
 
 [The box and the size of a near term](/chapter/anatomy-of-a-term/#the-box-and-the-size-of-a-near-term) defines the boxed points and the near terms. A near term has frame products of size at most $b^{134n}$. Its orbit bound at the top rank is at least $b^{-k^3f}$.
 

@@ -116,7 +116,7 @@ Lean: `New.Filling.submoduleZeta_pi_le` (New/Spanning/RemainingTerms/Discriminan
 
 Lean: `New.Filling.IsLatticeOfRank`, `New.Filling.discriminant` (New/Spanning/RemainingTerms/Discriminants.lean).
 
-**Remark (Formalization).** The basis is chosen by `Classical.choose`. If $L$ is not a lattice of rank $r$, the discriminant is the junk value $0$. The lemmas that use it assume that $L$ is a lattice of rank $r$.
+**Remark (Formalization).** The basis is chosen by `Classical.choose`. If $L$ is not a lattice of rank $r$, the discriminant is the junk value $0$.
 
 **Theorem (Sublattices of a lattice).** Let $L$ be a lattice of rank $r$ and let $\mu \in \mathbb{N}$. Then
 
@@ -127,8 +127,6 @@ the sum over the submodules $M \subseteq L$ of finite index, where $\zeta_{\hat{
 Lean: `New.Filling.IsLatticeOfRank.tsum_submoduleIndex_inv_pow_le` (New/Spanning/RemainingTerms/Discriminants.lean).
 
 *Proof.* The lattice $L$ is the image of a linear map from $\hat{\mathcal{O}}^r$. A submodule of finite index of $L$ pulls back to one of $\hat{\mathcal{O}}^r$ with the same index, and distinct ones pull back to distinct ones. So the sum is at most $\zeta_{\hat{\mathcal{O}}^r}(r + \mu)$. Every ideal of finite index of $\hat{\mathcal{O}}$ contains a nonzero integer, so it comes from a finitely generated ideal of $\mathcal{O}_E$. It is principal since $\hat{\mathcal{O}}$ is a Bézout ring. The last lemma completes the proof. $\square$
-
-Hey's formula gives the sum exactly as a product of zeta values. The source does not use it.
 
 ### The gauges of a term
 
@@ -177,5 +175,3 @@ Lean: `New.Filling.one_le_latticeDisc` (New/Spanning/RemainingTerms/Data.lean).
 The lattice $L_\gamma$ of a term is the set of $v \in \Lambda \cap X_0$ such that some vector of $v + M(\Lambda \cap A)$ is orthogonal to the frame of $\kappa_\gamma$. For two terms, the common lattice $L_{12}$ is the part of $L_\gamma \cap L_{\gamma'}$ in the common link. The corank of two links is $c^+ = k + 1 - \dim(\mathrm{link}\,\gamma \cap \mathrm{link}\,\gamma')$.
 
 Lean: `New.Filling.termLattice`, `New.Filling.pairLattice`, `New.Filling.linkCorank` (New/Spanning/RemainingTerms/Data.lean).
-
-[The chapter on the remaining terms](/chapter/remaining-terms/) uses the two sums of this section to count the near pairs by these lattices.
