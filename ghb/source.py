@@ -132,15 +132,17 @@ def scan_text(text: str, rel: str) -> list[Decl]:
                     continue
         m = _NS.match(ln)
         if m:
-            scopes.append(m.group(1))
+            # Lean 4: `namespace A.B` opens one scope for each component, so `end B` closes only `B`.
+            scopes.extend(m.group(1).split("."))
             continue
         if _SEC.match(ln):
             scopes.append(None)
             continue
         m = _END.match(ln)
         if m:
-            if scopes:
-                scopes.pop()
+            for _ in range(len(m.group(1).split(".")) if m.group(1) else 1):
+                if scopes:
+                    scopes.pop()
             continue
         m = _DECL.match(ln)
         if not m:
