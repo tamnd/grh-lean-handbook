@@ -77,7 +77,7 @@ The ambient module is $W(C^\flat) \otimes L$ (`Ambient`), where $W(C^\flat)$ is 
 
 Lean: `New.Lift.KummerChart.JumpLattice.jumpBound` (Lib/PadicHodge/Kisin/Modules.lean).
 
-**Remark (Formalization).** The jump bound is defined by `sInf` on a set of natural numbers. If the set were empty, `sInf` would give the junk value $0$. The frame theorem has no hypothesis that the set is not empty. So in the statements of the next section, $a$ is this value of `sInf`, and the reader who applies them must know that the jumps are bounded to read $a$ as a true bound. The bound is symmetric: it bounds the jumps from both sides by the same $a$. A lattice with jumps in $[0, h]$ has jump bound at most $h$.
+**Remark (Formalization).** The jump bound is defined by `sInf` on a set of natural numbers. If the set were empty, `sInf` would give the junk value $0$. For a jump lattice the set is not empty. The source proves this (`New.Period.exists_jump_bound`) and uses `Nat.sInf_mem` when it builds the frame. So in the frame theorem the junk value does not occur, and $a$ is a true bound for the jumps. The bound is symmetric: it bounds the jumps from both sides by the same $a$. A lattice with jumps in $[0, h]$ has jump bound at most $h$.
 
 ### Forms
 
