@@ -21,7 +21,7 @@ The twists of the criterion are the characters $\xi\chi_K$, with $\chi_K = (\cdo
 
 Let $m$ be an odd positive integer with prime factorization $m = p_1 \cdots p_r$ (with repetition). The *Jacobi symbol* is $(v/m) = \prod_i (v/p_i)$, a product of Legendre symbols. It is completely multiplicative in $v$ and in $m$, it depends only on $v \bmod m$, and it is $0$ exactly when $\gcd(v, m) > 1$. For odd positive $m$ and $n$ the reciprocity law holds:
 $$\Bigl(\frac nm\Bigr)\Bigl(\frac mn\Bigr) = (-1)^{\frac{m - 1}2\cdot\frac{n - 1}2} \quad (\gcd(m, n) = 1), \qquad \Bigl(\frac{-1}m\Bigr) = (-1)^{\frac{m - 1}2}, \qquad \Bigl(\frac2m\Bigr) = (-1)^{\frac{m^2 - 1}8}.$$
-See Ireland and Rosen, *A Classical Introduction to Modern Number Theory*, Chapter 5, and Davenport, *Multiplicative Number Theory*, Chapter 5, where the real primitive characters are described by Kronecker symbols. Mathlib has the Jacobi symbol (`jacobiSym`) and its reciprocity law (`jacobiSym.quadratic_reciprocity'`).
+See Ireland and Rosen, *A Classical Introduction to Modern Number Theory*, Chapter 5, and Davenport, *Multiplicative Number Theory*, Chapter 5, where the real primitive characters are described by Kronecker symbols. Mathlib has the Jacobi symbol, `jacobiSym` (Mathlib), and its reciprocity law, `jacobiSym.quadratic_reciprocity'` (Mathlib).
 
 The symbol $(\cdot/m)$ is principal exactly when $m$ is a square. If $m$ is a square, every value at a unit is $(\pm1)^2 = 1$. If $m$ is not a square, write $m = c^2 a$ with $a > 1$ squarefree, and take a prime $p \mid a$; the Chinese remainder theorem gives $v$ with $(v/p) = -1$ and $(v/p') = 1$ for the other primes $p' \mid m$.
 

@@ -64,7 +64,7 @@ Step 3: the other terms. For $k \neq 0$, $|\bar\chi(-k)| \leq 1$, $|\tau(\chi)| 
 $$\Bigl|\sum_{v = 1}^X\chi(v)\Bigr| \leq \frac{\sqrt q}{q}\sum_{k_0 = 1}^{q - 1}\frac q2\Bigl(\frac1{k_0} + \frac1{q - k_0}\Bigr) = \sqrt q\,H_{q - 1} \leq \sqrt q\,H_q,$$
 where $H_q = \sum_{n = 1}^q 1/n$ is the harmonic number. The two halves of the sum are equal after $k_0 \mapsto q - k_0$.
 
-Step 4: the harmonic number. $H_q \leq 1 + \log q$, by comparison with $\int_1^q dt/t$ (Mathlib: `harmonic_le_one_add_log`). $\square$
+Step 4: the harmonic number. $H_q \leq 1 + \log q$, by comparison with $\int_1^q dt/t$ (`harmonic_le_one_add_log` (Mathlib)). $\square$
 
 **Remark (Formalization).** In Step 3 the source sums the bound over $n = 0, \dots, q$, not over $k_0 = 1, \dots, q - 1$. The two extra terms contain $1/0$ and $1/(q - q)$, which Lean evaluates to $0$. So the sum over the larger range is exactly $2H_q$, and the inequality is still true. The junk value does no harm here, and the source says so in a comment.
 
