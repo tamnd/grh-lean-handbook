@@ -169,6 +169,6 @@ Lean: `New.Data.targetDim_eq_finrank_goodForms_spaceW` (New/Spanning/Multiplicit
 
 *Proof.* The parameter $l$ has gap $\Delta$ for the signs of $Y_0$ and of $W_j$; these are the instances `New.Data.hasGap_signsY_paramW` and `New.Data.hasGap_paramW`. Apply the theorem on equal traces with $V = Y_0$, $V' = W_j$ and $T = 1$. The trace of the identity is the dimension, and $d_T = \dim \mathcal{G}(Y_0)$ by definition. $\square$
 
-### An example
+### An example: the role of cuspidality
 
 The role of cuspidality shows already for $\mathrm{GL}_2$ in the model case of the opening section. On the definite side the constant function on the class set is a form of weight $2$ with the eigenvalue $\ell + 1$ of $T_\ell$. On the side of $\Gamma_0(p)$ the corresponding form is the Eisenstein series, which is not a cusp form. Eichler's identity $h = \dim S_2(\Gamma_0(p)) + 1$ has the term $1$ for this reason. In the unitary setting the analogous forms are the one-dimensional representations, which factor through the determinant. At a chosen place $x$ such a form transforms under $\mathrm{GL}_r(\mathbb{F}_x)$ by a character $\chi \circ \det$. That is an irreducible constituent of a representation induced from the Borel subgroup, so it is not cuspidal, and $e_c$ with $c_x$ irreducible of degree $r \geq 2$ kills it. So no correction term appears in the theorem on equal dimensions.

@@ -140,6 +140,6 @@ $$f\varepsilon + b^{-9} \leq \frac{b^{-8}}{2}.$$
 
 So the share of the bad types at each level prime is at most $b^{-8}/2$. That chapter also checks that the tensor product of the two idempotents at $p_0$ and at $p_1$ acts as $e_0$ on $\mathcal{A}_M(Y_0)$.
 
-### An example
+### An example: quadratics
 
 Let $r = 2$ and $M = 1$. A monic quadratic $X^2 + uX + v$ over $k$ is allowed when it is squarefree, $v \neq 0$ and $1$ is not a root. The polynomials that are not squarefree are the $q$ squares $(X - a)^2$. Those with $v = 0$ are $q$ more, and those with root $1$ are $q$ more. These sets overlap, so at most $3q$ are not allowed, within the bound $(1 + 1 + 2)q = 4q$. The primitive quadratics are the minimal polynomials of the $\varphi(q^2 - 1)$ generators of $\mathbb{F}_{q^2}^\times$, so there are $\varphi(q^2 - 1)/2$ of them. For $q = 5$ there are $\varphi(24)/2 = 4$ primitive quadratics among $25$, a share of $4/25$. The lemma asks only for the share $1/A = 1/(4(4\log 5 + 1)) \approx 0.033$. With $f$ such fields the share of the tuples without a primitive member is at most $(21/25)^f$, which decays exponentially in $f$.

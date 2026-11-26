@@ -120,7 +120,7 @@ The element $T$ does not depend on $V$, because $T_x$ and the scalars do not. Th
 
 **Remark (Formalization).** The induction is over the Lean type `Finset`, with decidable equality of eigensystems supplied by classical logic. The choice of $x$ with $q(x) \neq e(x)$ is by `Function.ne_iff`. No property of $x$ beyond $q(x) \neq e(x)$ is used. If $x$ is a pair where $T_x = 0$, the factor is still correct: then the $e$-part and the $q$-part can be nonzero only if $e(x) = q(x) = 0$, which is excluded, so one of them is $0$.
 
-### An example
+### An example: three eigensystems
 
 Let $\mathcal{A}_M(V) = \mathbb{C}y_1 \oplus \mathbb{C}y_2 \oplus \mathbb{C}y_3$ with $y_k$ in the part of $d_k$, and suppose $d_1, d_2, d_3$ are distinct and differ at $x_{12}$, $x_{13}$: $d_1(x_{12}) \neq d_2(x_{12})$ and $d_1(x_{13}) \neq d_3(x_{13})$. With $q = d_1$ and $F = \{d_2, d_3\}$ the proof builds, in two steps,
 

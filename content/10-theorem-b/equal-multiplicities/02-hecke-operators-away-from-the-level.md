@@ -163,7 +163,7 @@ Lean: `New.Data.heckeOnGood`, `New.Data.coe_heckeOnGood_apply` (New/Spanning/Mul
 
 The map is also linear in $T$, as restriction is linear, but Lean records only the multiplicative structure, which is what the proofs use.
 
-### An example
+### An example: forms on a finite set
 
 Let $r = 2$ and let $V$ be definite. The forms of principal level are then vectors of functions on the finite set $\Gamma \backslash G_f / J_M$, where $\Gamma$ is the group of rational points; see [automorphic forms](/chapter/automorphic-forms/). Let $w$ be split away from the level, with residue field of $q$ elements. The double coset of $\mathrm{diag}(\varpi_w, 1)$ is the union of the $q + 1$ cosets $g_j\,\mathrm{GL}_2(\mathcal{O}_w)$ with
 
