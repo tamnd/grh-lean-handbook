@@ -40,19 +40,19 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 2 | 3 | Landau's theorem | drafted | 8,820 |
 | 2 | 4 | The prime number theorem in progressions | drafted | 11,927 |
 | 2 | 5 | Primes in windows | drafted | 12,806 |
-| 2 | 6 | Pólya-Vinogradov and quadratic twists | planned | 0 |
+| 2 | 6 | Pólya-Vinogradov and quadratic twists | drafted | 10,652 |
 | 2 | 7 | Sets with no three-term progressions | planned | 0 |
 | 3 | 1 | CM fields, towers and places | drafted | 11,679 |
 | 3 | 2 | Class field theory on finite ideles | drafted | 14,587 |
-| 3 | 3 | Local duality and the Greenberg-Wiles count | planned | 0 |
-| 3 | 4 | Odd classes over cyclotomic fields | planned | 0 |
+| 3 | 3 | Local duality and the Greenberg-Wiles count | drafted | 14,623 |
+| 3 | 4 | Odd classes over cyclotomic fields | drafted | 14,680 |
 | 3 | 5 | CM elliptic curves | planned | 0 |
 | 4 | 1 | Adeles and hermitian spaces | drafted | 12,742 |
 | 4 | 2 | Quotients and reduction theory | planned | 0 |
 | 4 | 3 | Automorphic forms on unitary groups | planned | 0 |
 | 4 | 4 | A simple trace formula | planned | 0 |
 | 4 | 5 | Congruence subgroups and Haar moduli | planned | 0 |
-| 5 | 1 | Discrete series through one matrix coefficient | planned | 0 |
+| 5 | 1 | Discrete series through one matrix coefficient | drafted | 14,653 |
 | 5 | 2 | Laplace's method for discrete series coefficients | planned | 0 |
 | 5 | 3 | Bessel subgroups and Bruhat measures | planned | 0 |
 | 5 | 4 | Integral Weyl modules and branching | planned | 0 |

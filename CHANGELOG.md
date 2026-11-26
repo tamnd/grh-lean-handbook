@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.2.1
+
+New chapters since v0.2.0:
+
+- Volume 2, chapter 6, Pólya-Vinogradov and quadratic twists (#71).
+- Volume 3, chapter 3, Local duality and the Greenberg-Wiles count (#72).
+- Volume 3, chapter 4, Odd classes over cyclotomic fields (#74).
+- Volume 5, chapter 1, Discrete series through one matrix coefficient (#73).
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.0
 
 Milestone G1, The guide and the outline, is done.
