@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.2.6
+
+New chapters since v0.2.5:
+
+- Volume 6, chapter 5, The Siegel-Weil formula (#97), trimmed to the length cap in #98. Volume 6 is now complete. #98 also fixes the Volume 6 plan.
+- Volume 7, chapter 2, Cohomology as Ext on test rings (#96).
+- Volume 7, chapter 3, Period rings (#99).
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.5
 
 New chapters since v0.2.4:

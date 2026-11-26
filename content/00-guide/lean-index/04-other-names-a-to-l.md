@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 2469 cited names outside the namespace `New.Data`. This section has 1476 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 2867 cited names outside the namespace `New.Data`. This section has 1528 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -29,6 +29,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.abelianLift_artinMap_principalIdele_eq_one_iff`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 543](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L543). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.abs_countError_le`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 53](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L53). Cited in [Chapter](/chapter/main-inequality/).
 - `New.abs_lambdaKSum_exp_le`: `New/Reduction/Zeros/PrimeError.lean`, [line 127](lean:New/Reduction/Zeros/PrimeError.lean#L127). Cited in [Chapter](/chapter/weighted-prime-remainder/).
+- `New.abs_log_mass_ratio_sub_le`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 852](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L852). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.abs_norm_eq_prod_norm_sq`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 248](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L248). Cited in [Chapter](/chapter/cm-fields/).
 - `New.abs_primeRemainder_exp_le`: `New/Reduction/Zeros/PrimeError.lean`, [line 178](lean:New/Reduction/Zeros/PrimeError.lean#L178). Cited in [Chapter](/chapter/weighted-prime-remainder/).
 - `New.abs_primeRemainder_exp_sub_le`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 137](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L137). Cited in [Chapter](/chapter/main-inequality/).
@@ -62,11 +63,12 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.atPlace_ofSplitPlace`: `Lib/Adelic/Unitary/Defs.lean`, [line 326](lean:Lib/Adelic/Unitary/Defs.lean#L326). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.AutChar`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 74](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L74). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.AutChar.exists_hasWeight_of_prod_eq_one`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 594](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L594). Cited in [Chapter](/chapter/fields-places-twists/).
-- `New.AutChar.frobValue`: `Lib/Weil/Unramified/HeckeTransfer.lean`, [line 56](lean:Lib/Weil/Unramified/HeckeTransfer.lean#L56). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.AutChar.frobValue`: `Lib/Weil/Unramified/HeckeTransfer.lean`, [line 56](lean:Lib/Weil/Unramified/HeckeTransfer.lean#L56). Cited in [Chapter](/chapter/iwahori-satake/), [Chapter](/chapter/siegel-weil/).
 - `New.AutChar.HasWeight`: `Lib/ClassField/HeckeCharacter/Basic.lean`, [line 126](lean:Lib/ClassField/HeckeCharacter/Basic.lean#L126). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.AutChar.HasWeight.L_ne_zero`: `Lib/ClassField/Avatar/HeckeBaseChange.lean`, [line 120](lean:Lib/ClassField/Avatar/HeckeBaseChange.lean#L120). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.AutChar.spaceChar`: `Lib/Weil/DualPair/Defs.lean`, [line 149](lean:Lib/Weil/DualPair/Defs.lean#L149). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.average_quotMeasure_eq_quotMean`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 829](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L829). Cited in [Chapter](/chapter/reduction-theory/).
-- `New.basicCosetRep`: `Lib/Weil/Unramified/HeckeGL.lean`, [line 380](lean:Lib/Weil/Unramified/HeckeGL.lean#L380). Cited in [Chapter](/chapter/iwahori-satake/).
+- `New.basicCosetRep`: `Lib/Weil/Unramified/HeckeGL.lean`, [line 380](lean:Lib/Weil/Unramified/HeckeGL.lean#L380). Cited in [Chapter](/chapter/iwahori-satake/), [Chapter](/chapter/siegel-weil/).
 - `New.basicDoubleCoset`: `Lib/Adelic/Unitary/Defs.lean`, [line 177](lean:Lib/Adelic/Unitary/Defs.lean#L177). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.BasisTableau`: `Lib/GLn/SchurModule/Basic.lean`, [line 177](lean:Lib/GLn/SchurModule/Basic.lean#L177). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.besselQuotMeasure`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 630](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L630). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -100,12 +102,16 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.classInner_evalGL_prod`: `Lib/LocalGL/Green/HallAlgebra.lean`, [line 1040](lean:Lib/LocalGL/Green/HallAlgebra.lean#L1040). Cited in [Chapter](/chapter/finite-gln/).
 - `New.classIntegral`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 74](lean:Lib/Adelic/Hecke/ClassSums.lean#L74). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.classIntegral_eq_classSum`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 173](lean:Lib/Adelic/Hecke/ClassSums.lean#L173). Cited in [Chapter](/chapter/automorphic-forms/).
-- `New.classSum`: `Lib/Adelic/Hecke/Basic.lean`, [line 132](lean:Lib/Adelic/Hecke/Basic.lean#L132). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/).
+- `New.classSum`: `Lib/Adelic/Hecke/Basic.lean`, [line 132](lean:Lib/Adelic/Hecke/Basic.lean#L132). Cited in [Chapter](/chapter/integral-target-forms/), [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/siegel-weil/).
+- `New.classSum_card_norm_one_eq_mass`: `Lib/SiegelWeil/Mass.lean`, [line 181](lean:Lib/SiegelWeil/Mass.lean#L181). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.classSum_deltaForm`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 280](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L280). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.classSum_eq_finsum_of_rep`: `Lib/Adelic/Hecke/Basic.lean`, [line 149](lean:Lib/Adelic/Hecke/Basic.lean#L149). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.classSum_eq_mul_integral`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 639](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L639). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.classSum_eq_mul_normDensity`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 665](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L665). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.classSum_eq_relIndex_smul`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 265](lean:Lib/Adelic/Hecke/ClassSums.lean#L265). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.classSum_one_of_le`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 328](lean:Lib/Adelic/Hecke/ClassSums.lean#L328). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.classSum_pos`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 225](lean:Lib/Adelic/Hecke/ClassSums.lean#L225). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.classSum_stdRatPoints_eq_mass`: `Lib/SiegelWeil/Mass.lean`, [line 77](lean:Lib/SiegelWeil/Mass.lean#L77). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.cmConj`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 69](lean:Lib/GaloisRep/Main/SelmerModules.lean#L69). Cited in [Chapter](/chapter/odd-classes/).
 - `New.CMType`: `Lib/Adelic/Adeles/Basic.lean`, [line 82](lean:Lib/Adelic/Adeles/Basic.lean#L82). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.CMTypeOver`: `Lib/GaloisRep/BaseChange/CommutingHeckeFamilies.lean`, [line 78](lean:Lib/GaloisRep/BaseChange/CommutingHeckeFamilies.lean#L78). Cited in [Chapter](/chapter/local-duality/).
@@ -133,12 +139,14 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.compactMean_diagGL_compactMean_diagGL`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 494](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L494). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.compactMean_eq_self`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 728](lean:Lib/Adelic/Hecke/ClassSums.lean#L728). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.compactMean_mem_levelSpace`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 726](lean:Lib/Adelic/Hecke/ClassSums.lean#L726). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.conductorIdeal`: `Lib/SiegelWeil/Mass.lean`, [line 291](lean:Lib/SiegelWeil/Mass.lean#L291). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.conjAut`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 103](lean:New/Reduction/Lattices/TwistedLattice.lean#L103). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.conjWeylMatrix`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 63](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L63). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.conjWeylRep`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 72](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L72). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/weyl-modules/).
 - `New.continuous_artinMap`: `Lib/ClassField/Global/ArtinMap.lean`, [line 247](lean:Lib/ClassField/Global/ArtinMap.lean#L247). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.convIndicator`: `Lib/Adelic/TraceFormula/TestFunction.lean`, [line 69](lean:Lib/Adelic/TraceFormula/TestFunction.lean#L69). Cited in [Chapter](/chapter/trace-formula/).
 - `New.convolve`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 648](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L648). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Core.dyadicDiag`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 186](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L186). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Core.encard_le_of_dyadic_box`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 669](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L669). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.exists_eq_zero_of_zpow_mul_mem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 711](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L711). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.exists_form_eq_one`: `Lib/Adelic/Landherr.lean`, [line 269](lean:Lib/Adelic/Landherr.lean#L269). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -149,7 +157,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.Core.frameLattice`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 290](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L290). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.frameLength`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 295](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L295). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Core.minkowski_second_theorem`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 525](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L525). Cited in [Chapter](/chapter/reduction-theory/).
-- `New.Core.numInfPlaces`: `Lib/General/NumberTheory/EmbeddingsAndDifferent.lean`, [line 77](lean:Lib/General/NumberTheory/EmbeddingsAndDifferent.lean#L77). Cited in [Chapter](/chapter/notation/).
+- `New.Core.numInfPlaces`: `Lib/General/NumberTheory/EmbeddingsAndDifferent.lean`, [line 77](lean:Lib/General/NumberTheory/EmbeddingsAndDifferent.lean#L77). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/siegel-weil/).
 - `New.countError`: `New/Reduction/Zeros/PrimeNumberTheorem.lean`, [line 48](lean:New/Reduction/Zeros/PrimeNumberTheorem.lean#L48). Cited in [Chapter](/chapter/main-inequality/).
 - `New.cuspConst`: `Lib/Adelic/AutomorphicForms/Cuspidality.lean`, [line 81](lean:Lib/Adelic/AutomorphicForms/Cuspidality.lean#L81). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.cutLevel`: `Lib/Adelic/TraceFormula/LevelCut.lean`, [line 44](lean:Lib/Adelic/TraceFormula/LevelCut.lean#L44). Cited in [Chapter](/chapter/trace-formula/).
@@ -373,6 +381,8 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.Exchange.exists_planeConstantTerm_eq_thetaLarge_cone`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 861](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L861). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_planeConstantTerm_eq_thetaLarge_dualCone`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 882](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L882). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_straightPoint`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 641](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L641). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.exists_torus_mul_quasiReflection_fixes`: `Lib/SiegelWeil/Formula/StrongApproximation.lean`, [line 64](lean:Lib/SiegelWeil/Formula/StrongApproximation.lean#L64). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Exchange.exists_torus_mul_rational_fixes`: `Lib/SiegelWeil/Formula/StrongApproximation.lean`, [line 115](lean:Lib/SiegelWeil/Formula/StrongApproximation.lean#L115). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Exchange.exists_unfold_constant_term`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 672](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L672). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_zetaIntegral`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 745](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L745). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.finTateIntegrand`: `Lib/SiegelWeil/Tower/FiniteTateIntegral.lean`, [line 203](lean:Lib/SiegelWeil/Tower/FiniteTateIntegral.lean#L203). Cited in [Chapter](/chapter/rallis-inner-product/).
@@ -382,7 +392,8 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.Exchange.integral_kernel_mul_forms_eq_integral_periodPairing`: `Lib/Weil/Seesaw.lean`, [line 581](lean:Lib/Weil/Seesaw.lean#L581). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.integral_thetaIntegral_lineRadical`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 188](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L188). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.invDifferentIdele`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 184](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L184). Cited in [Chapter](/chapter/rallis-inner-product/).
-- `New.Exchange.IsAutFunction`: `Lib/SiegelWeil/SingularForms/CentreCoefficients.lean`, [line 65](lean:Lib/SiegelWeil/SingularForms/CentreCoefficients.lean#L65). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.IsAutFunction`: `Lib/SiegelWeil/SingularForms/CentreCoefficients.lean`, [line 65](lean:Lib/SiegelWeil/SingularForms/CentreCoefficients.lean#L65). Cited in [Chapter](/chapter/siegel-weil/), [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.IsAutFunction.apply_eq_apply_one`: `Lib/SiegelWeil/Formula/StrongApproximation.lean`, [line 158](lean:Lib/SiegelWeil/Formula/StrongApproximation.lean#L158). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Exchange.IsConjKernelPair`: `Lib/Weil/Seesaw.lean`, [line 128](lean:Lib/Weil/Seesaw.lean#L128). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.isConjKernelPair_kernelPair`: `Lib/Weil/Seesaw.lean`, [line 146](lean:Lib/Weil/Seesaw.lean#L146). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.IsEdgeFamily`: `Lib/Weil/Seesaw.lean`, [line 135](lean:Lib/Weil/Seesaw.lean#L135). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
@@ -412,6 +423,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.Exchange.SplitTameChar.L_ne_zero`: `Lib/SiegelWeil/Tower/FiniteTateIntegral.lean`, [line 71](lean:Lib/SiegelWeil/Tower/FiniteTateIntegral.lean#L71). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.SquareCommutes`: `New/Determinant/Chain/TriangleNorms.lean`, [line 141](lean:New/Determinant/Chain/TriangleNorms.lean#L141). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.Exchange.StraightPoint`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 555](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L555). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.thetaIntegral_pairWeil`: `Lib/Weil/DualPair/ThetaIntegrals.lean`, [line 454](lean:Lib/Weil/DualPair/ThetaIntegrals.lean#L454). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Exchange.tsum_lineTerm`: `Lib/SiegelWeil/Tower/LineTerms.lean`, [line 262](lean:Lib/SiegelWeil/Tower/LineTerms.lean#L262). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.exists_abs_gaussianMonomial_le_rpow`: `Lib/Analytic/QuadraticTwist.lean`, [line 389](lean:Lib/Analytic/QuadraticTwist.lean#L389). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_antitone_of_swap`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 134](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L134). Cited in [Chapter](/chapter/iwahori-satake/).
@@ -436,6 +448,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.exists_equiv_schur_one_row_eq_symPowMatrix`: `Lib/GLn/SchurModule/SchurMatrix.lean`, [line 908](lean:Lib/GLn/SchurModule/SchurMatrix.lean#L908). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_fillingMatrix_leftInverse`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 278](lean:Lib/GLn/SchurModule/TensorModel.lean#L278). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_fillingMatrix_mulVec_eq_iff_mem_span`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 323](lean:Lib/GLn/SchurModule/TensorModel.lean#L323). Cited in [Chapter](/chapter/weyl-modules/).
+- `New.exists_fundamentalDomain_real`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 214](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L214). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.exists_hasPrimeDensity_addChar_uniformizer`: `Lib/ClassField/Global/AlbertBrauerHasseNoether.lean`, [line 216](lean:Lib/ClassField/Global/AlbertBrauerHasseNoether.lean#L216). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.exists_heckeSplit_eq_smul`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 506](lean:Lib/Weil/Unramified/SplitHecke.lean#L506). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_hom_of_cover`: `Lib/General/Geometry/LineBundles.lean`, [line 308](lean:Lib/General/Geometry/LineBundles.lean#L308). Cited in [Chapter](/chapter/schemes-through-points/).
@@ -445,6 +458,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.exists_inv_mul_mul_map_eq_diagGL_mul`: `Lib/LocalGL/Iwahori/ParahoricStructure.lean`, [line 776](lean:Lib/LocalGL/Iwahori/ParahoricStructure.lean#L776). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.exists_Ioi_subset_integrableExpSet`: `Lib/Analytic/Landau.lean`, [line 182](lean:Lib/Analytic/Landau.lean#L182). Cited in [Chapter](/chapter/landau-criterion/).
 - `New.exists_Ioi_subset_integrableExpSet_of_analyticAt`: `Lib/Analytic/Landau.lean`, [line 160](lean:Lib/Analytic/Landau.lean#L160). Cited in [Chapter](/chapter/landau-criterion/).
+- `New.exists_isAddFundamentalDomain_realAdele`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 274](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L274). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.exists_isBoundedDualBasis`: `Lib/Adelic/Reduction/FiniteVolume.lean`, [line 277](lean:Lib/Adelic/Reduction/FiniteVolume.lean#L277). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.exists_isChar_descendsTo_labelChar`: `Lib/LocalGL/Shintani/LiftingGreenCharacters.lean`, [line 326](lean:Lib/LocalGL/Shintani/LiftingGreenCharacters.lean#L326). Cited in [Chapter](/chapter/finite-gln/).
 - `New.exists_isCoprime_mul_of_not_irreducible`: `Lib/Adelic/TraceFormula/ReduciblePolynomials.lean`, [line 38](lean:Lib/Adelic/TraceFormula/ReduciblePolynomials.lean#L38). Cited in [Chapter](/chapter/trace-formula/).
@@ -582,6 +596,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.FitsRanks`: `Lib/GLn/SchurModule/Basic.lean`, [line 237](lean:Lib/GLn/SchurModule/Basic.lean#L237). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fixedFieldOf`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 295](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L295). Cited in [Chapter](/chapter/cm-fields/).
 - `New.fixingSubgroup_fixedFieldOf`: `Lib/ClassField/Places/ProfiniteGalois.lean`, [line 251](lean:Lib/ClassField/Places/ProfiniteGalois.lean#L251). Cited in [Chapter](/chapter/cm-fields/).
+- `New.Floors.card_eq_card_pair_sum`: `Lib/SiegelWeil/OneVector/StandardQuadrics.lean`, [line 93](lean:Lib/SiegelWeil/OneVector/StandardQuadrics.lean#L93). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Floors.cartan_decomposition`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 251](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L251). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.cellDensity`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 184](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L184). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.exists_isDisintegration_le_sphereDensity`: `Lib/DiscreteSeries/Bruhat/SphereFibres.lean`, [line 52](lean:Lib/DiscreteSeries/Bruhat/SphereFibres.lean#L52). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -596,12 +611,35 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.Floors.FloorGroups.simpleRootSum_conj_heisenbergElem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 490](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L490). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.FloorGroups.weylElem`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 162](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L162). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.HyperbolicBasis.isDisintegration_floorVolume`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 923](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L923). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Floors.IntegralPlace.classGaussSum`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 46](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L46). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.classGaussSum_one_zero_eq_one`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 178](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L178). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.enorm_classGaussSum_sq_le`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 129](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L129). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.enorm_localDensity_le`: `Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean`, [line 680](lean:Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean#L680). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.exists_hyperbolic_basis`: `Lib/SiegelWeil/OneVector/StandardQuadrics.lean`, [line 98](lean:Lib/SiegelWeil/OneVector/StandardQuadrics.lean#L98). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.exists_kernel_isDisintegration_le`: `Lib/SiegelWeil/OneVector/StandardQuadrics.lean`, [line 143](lean:Lib/SiegelWeil/OneVector/StandardQuadrics.lean#L143). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.exists_unit_sub_mem`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 65](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L65). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.integrable_classGaussSum`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 188](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L188). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.integral_classGaussSum`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 206](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L206). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.integral_skewMeasure_eq_toReal_lintegral`: `Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean`, [line 635](lean:Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean#L635). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.isDisintegration_of_hyperbolic_basis`: `Lib/SiegelWeil/OneVector/StandardQuadrics.lean`, [line 127](lean:Lib/SiegelWeil/OneVector/StandardQuadrics.lean#L127). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.latticeMultiple`: `Lib/SiegelWeil/OneVector/ResidueClasses.lean`, [line 27](lean:Lib/SiegelWeil/OneVector/ResidueClasses.lean#L27). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.lintegral_enorm_classGaussSum_le_idealZeta`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 103](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L103). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.measure_residueClass_le_idealZeta`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 165](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L165). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.measure_residueClass_le_lintegral`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 237](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L237). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.one_add_enorm_measure_intVectors_sub_one_le`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 197](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L197). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.psi_mul_trace`: `Lib/SiegelWeil/OneVector/ClassGaussSums.lean`, [line 51](lean:Lib/SiegelWeil/OneVector/ClassGaussSums.lean#L51). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.residueClass`: `Lib/SiegelWeil/OneVector/ResidueClasses.lean`, [line 53](lean:Lib/SiegelWeil/OneVector/ResidueClasses.lean#L53). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.skewMeasure_setOf_mul_mem_sq_le`: `Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean`, [line 44](lean:Lib/SiegelWeil/OneVector/SemilocalDensityBounds.lean#L44). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.IntegralPlace.volume_residueClass`: `Lib/SiegelWeil/OneVector/ResidueClasses.lean`, [line 85](lean:Lib/SiegelWeil/OneVector/ResidueClasses.lean#L85). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Floors.leFibreMeasure_dualVector`: `Lib/DiscreteSeries/Bruhat/FloorFibre.lean`, [line 410](lean:Lib/DiscreteSeries/Bruhat/FloorFibre.lean#L410). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.leFibreMeasure_frameVector`: `Lib/DiscreteSeries/Bruhat/FloorFibre.lean`, [line 219](lean:Lib/DiscreteSeries/Bruhat/FloorFibre.lean#L219). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.lintegral_eq_polar`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 121](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L121). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.map_orbitPoint_cellLaw_top`: `Lib/DiscreteSeries/Bruhat/ComplexPlace.lean`, [line 403](lean:Lib/DiscreteSeries/Bruhat/ComplexPlace.lean#L403). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Floors.Place`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 50](lean:Lib/General/Measure/QuadricDisintegration.lean#L50). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Floors.Place.IsDisintegration`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 257](lean:Lib/General/Measure/QuadricDisintegration.lean#L257). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Floors.Place.isDisintegration_map_quadricMeasure`: `Lib/SiegelWeil/OneVector/StandardQuadrics.lean`, [line 47](lean:Lib/SiegelWeil/OneVector/StandardQuadrics.lean#L47). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Floors.Place.plancherel_inequality`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 1103](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L1103). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Floors.Place.quadricMeasure`: `Lib/General/Measure/QuadricDisintegration.lean`, [line 249](lean:Lib/General/Measure/QuadricDisintegration.lean#L249). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Floors.RealPlaceSizes`: `New/Spanning/Frames/RealPlaceGauge.lean`, [line 290](lean:New/Spanning/Frames/RealPlaceGauge.lean#L290). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/theorem-b-plan/).
 - `New.Floors.RealPlaceSizes.ten_pow_le_varrho`: `New/Spanning/Frames/RealPlaceGauge.lean`, [line 302](lean:New/Spanning/Frames/RealPlaceGauge.lean#L302). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Floors.TraceOne.heisenbergElem`: `Lib/DiscreteSeries/Bruhat/FloorMeasures.lean`, [line 70](lean:Lib/DiscreteSeries/Bruhat/FloorMeasures.lean#L70). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -730,6 +768,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero`: `Lib/Analytic/ZeroSymmetry.lean`, [line 61](lean:Lib/Analytic/ZeroSymmetry.lean#L61). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/half-plane-to-line/), [Chapter](/chapter/dirichlet-l-functions/).
 - `New.gapThreshold`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 96](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L96). Cited in [Chapter](/chapter/discrete-series/).
 - `New.GaugeLe`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 167](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L167). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.gauss_sum_sq_le`: `Lib/SiegelWeil/Mass.lean`, [line 306](lean:Lib/SiegelWeil/Mass.lean#L306). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.gaussianMellin`: `Lib/Analytic/DirichletTheta.lean`, [line 38](lean:Lib/Analytic/DirichletTheta.lean#L38). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.gaussianMellin_differentiableOn_and_bdd`: `Lib/Analytic/DirichletTheta.lean`, [line 293](lean:Lib/Analytic/DirichletTheta.lean#L293). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.gaussianMellin_eq`: `Lib/Analytic/DirichletTheta.lean`, [line 186](lean:Lib/Analytic/DirichletTheta.lean#L186). Cited in [Chapter](/chapter/dirichlet-l-functions/).
@@ -926,6 +965,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.HasHeckePolynomial`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 384](lean:Lib/Weil/Unramified/SplitHecke.lean#L384). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
 - `New.hasHeckePolynomial_of_heckeSplit`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 406](lean:Lib/Weil/Unramified/SplitHecke.lean#L406). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.hasHeckePolynomial_toAlgForm_iff`: `Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean`, [line 275](lean:Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean#L275). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.HasHodgeTateWeight`: `Lib/PadicHodge/Crystalline/Basic.lean`, [line 170](lean:Lib/PadicHodge/Crystalline/Basic.lean#L170). Cited in [Chapter](/chapter/period-rings/).
 - `New.HasHolGap`: `Lib/DiscreteSeries/FlenstedJensen/Defs.lean`, [line 398](lean:Lib/DiscreteSeries/FlenstedJensen/Defs.lean#L398). Cited in [Chapter](/chapter/discrete-series/).
 - `New.HasLevel`: `Lib/Adelic/Unitary/Defs.lean`, [line 257](lean:Lib/Adelic/Unitary/Defs.lean#L257). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.hasMellin_thetaSeries_char`: `Lib/Analytic/DirichletTheta.lean`, [line 466](lean:Lib/Analytic/DirichletTheta.lean#L466). Cited in [Chapter](/chapter/dirichlet-l-functions/).
@@ -978,7 +1018,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.heckeGL_eq_sum`: `Lib/Weil/Unramified/HeckeGL.lean`, [line 510](lean:Lib/Weil/Unramified/HeckeGL.lean#L510). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.heckePoly`: `Lib/GaloisRep/Main/Defs.lean`, [line 66](lean:Lib/GaloisRep/Main/Defs.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
 - `New.heckePolyEval`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 371](lean:Lib/Weil/Unramified/SplitHecke.lean#L371). Cited in [Chapter](/chapter/iwahori-satake/).
-- `New.heckePolyOp`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 379](lean:Lib/Weil/Unramified/SplitHecke.lean#L379). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
+- `New.heckePolyOp`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 379](lean:Lib/Weil/Unramified/SplitHecke.lean#L379). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/), [Chapter](/chapter/siegel-weil/).
 - `New.heckeSplit`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 66](lean:Lib/Weil/Unramified/SplitHecke.lean#L66). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/iwahori-satake/).
 - `New.heckeSplit_adjoint`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 207](lean:Lib/Weil/Unramified/SplitHecke.lean#L207). Cited in [Chapter](/chapter/iwahori-satake/).
 - `New.heckeSplit_comm`: `Lib/Weil/Unramified/SplitHecke.lean`, [line 250](lean:Lib/Weil/Unramified/SplitHecke.lean#L250). Cited in [Chapter](/chapter/iwahori-satake/).
@@ -1058,17 +1098,21 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.hyperbolicSpace`: `Lib/Weil/MixedModel/IsotropicSplitting.lean`, [line 70](lean:Lib/Weil/MixedModel/IsotropicSplitting.lean#L70). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.hyperplaneSum`: `Lib/LocalGL/Green/TauFunctions.lean`, [line 162](lean:Lib/LocalGL/Green/TauFunctions.lean#L162). Cited in [Chapter](/chapter/finite-gln/).
 - `New.hyperplaneSum_mul_labelIdem`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 399](lean:Lib/LocalGL/Green/LabelCharacters.lean#L399). Cited in [Chapter](/chapter/finite-gln/).
+- `New.idealZeta`: `Lib/SiegelWeil/Mass.lean`, [line 231](lean:Lib/SiegelWeil/Mass.lean#L231). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.idealZeta_intAdeles_pow_le`: `Lib/SiegelWeil/Mass.lean`, [line 424](lean:Lib/SiegelWeil/Mass.lean#L424). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.ideleAbs`: `Lib/Adelic/Adeles/IdeleModulus.lean`, [line 66](lean:Lib/Adelic/Adeles/IdeleModulus.lean#L66). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.ideleAbs_toAdele`: `Lib/Adelic/Adeles/IdeleModulus.lean`, [line 122](lean:Lib/Adelic/Adeles/IdeleModulus.lean#L122). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.ideleAt`: `Lib/ClassField/Places/Ideles.lean`, [line 80](lean:Lib/ClassField/Places/Ideles.lean#L80). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.idelesPowAt`: `Lib/ClassField/Global/ExistenceTheorem.lean`, [line 60](lean:Lib/ClassField/Global/ExistenceTheorem.lean#L60). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.idelesUnitOff`: `Lib/ClassField/Places/Ideles.lean`, [line 83](lean:Lib/ClassField/Places/Ideles.lean#L83). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.identDistrib_orbitMeasure`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 220](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L220). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.image_normOneLatticeVectors_eq_orbit_inter`: `Lib/SiegelWeil/Mass.lean`, [line 141](lean:Lib/SiegelWeil/Mass.lean#L141). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.index_ker_abelianLift_comp_artinMap`: `Lib/ClassField/Global/NormTheorems.lean`, [line 162](lean:Lib/ClassField/Global/NormTheorems.lean#L162). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.induceClassFn`: `Lib/LocalGL/Shintani/CosetRootChoice.lean`, [line 67](lean:Lib/LocalGL/Shintani/CosetRootChoice.lean#L67). Cited in [Chapter](/chapter/finite-gln/).
 - `New.inertiaGroup`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 228](lean:Lib/ClassField/Places/GaloisDefs.lean#L228). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.injOn_Iio_pow_card_pow_of_isPrimitiveRoot`: `Lib/LocalGL/Green/LabelCharacters.lean`, [line 564](lean:Lib/LocalGL/Green/LabelCharacters.lean#L564). Cited in [Chapter](/chapter/finite-gln/).
 - `New.inner_lineRaise`: `Lib/Adelic/TraceFormula/LineStabiliser.lean`, [line 727](lean:Lib/Adelic/TraceFormula/LineStabiliser.lean#L727). Cited in [Chapter](/chapter/trace-formula/).
+- `New.integrable_and_integral_eq_tsum_of_fundamentalDomain`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 351](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L351). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.integrable_quotMeasure_tsum`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 462](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L462). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.integrable_two_div_norm_pow`: `Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean`, [line 509](lean:Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean#L509). Cited in [Chapter](/chapter/discrete-series/).
 - `New.integrableOn_and_integral_gamma_mul_quadratic`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 91](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L91). Cited in [Chapter](/chapter/prime-number-theorem/).
@@ -1078,6 +1122,9 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.integral_conj_weightMinors_lowestKType_mul_dsCoeff`: `Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean`, [line 476](lean:Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean#L476). Cited in [Chapter](/chapter/discrete-series/).
 - `New.integral_conj_weightMinors_mul_dsCoeff_eq_zero`: `Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean`, [line 488](lean:Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean#L488). Cited in [Chapter](/chapter/discrete-series/).
 - `New.integral_cutoff_swap`: `Lib/Adelic/QuotientMeasure/MovingTheQuotient.lean`, [line 46](lean:Lib/Adelic/QuotientMeasure/MovingTheQuotient.lean#L46). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.integral_fourierChar_mul_gaussian_pow`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 584](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L584). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.integral_fourierChar_mul_inv_pow`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 548](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L548). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.integral_gaussian_mul_stdAddChar`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 602](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L602). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.integral_norm_thetaSeries_div`: `Lib/Analytic/DirichletTheta.lean`, [line 491](lean:Lib/Analytic/DirichletTheta.lean#L491). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.integral_primeRemainder`: `New/Reduction/Zeros/PrimeError.lean`, [line 293](lean:New/Reduction/Zeros/PrimeError.lean#L293). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/main-inequality/).
 - `New.integral_quotMeasure_eq_zero_of_mean`: `Lib/Adelic/QuotientMeasure/UnfoldingInStages.lean`, [line 316](lean:Lib/Adelic/QuotientMeasure/UnfoldingInStages.lean#L316). Cited in [Chapter](/chapter/reduction-theory/).
@@ -1333,6 +1380,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.latticeMeasure_stdLattice`: `Lib/Weil/Construction/FiniteMultiplier.lean`, [line 322](lean:Lib/Weil/Construction/FiniteMultiplier.lean#L322). Cited in [Chapter](/chapter/weil-representation/).
 - `New.le_span_isSphericalOff`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 477](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L477). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.le_totient_mul_log`: `Lib/Analytic/Primes.lean`, [line 56](lean:Lib/Analytic/Primes.lean#L56). Cited in [Chapter](/chapter/primes-in-windows/).
+- `New.le_two_of_pow_le_ofReal`: `Lib/SiegelWeil/Mass.lean`, [line 235](lean:Lib/SiegelWeil/Mass.lean#L235). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.LeFibreMeasure`: `Lib/General/Measure/FibreMeasure.lean`, [line 67](lean:Lib/General/Measure/FibreMeasure.lean#L67). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.legendreSym_eq_jacobiSym_ordCompl`: `Lib/Analytic/QuadraticTwist.lean`, [line 628](lean:Lib/Analytic/QuadraticTwist.lean#L628). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.LeGramFibre.mconv_fixerHaar_le`: `Lib/DiscreteSeries/Bessel/FrameFibre.lean`, [line 293](lean:Lib/DiscreteSeries/Bessel/FrameFibre.lean#L293). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -1400,6 +1448,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.Lift.KummerChart.phiInvToBdR_mem_hodgeFil_one_iff`: `Lib/PadicHodge/Kisin/KummerChartDeRham.lean`, [line 291](lean:Lib/PadicHodge/Kisin/KummerChartDeRham.lean#L291). Cited in [Chapter](/chapter/kisin-frames/).
 - `New.Lift.KummerChart.valueField`: `Lib/PadicHodge/Kisin/KummerChartDeRham.lean`, [line 253](lean:Lib/PadicHodge/Kisin/KummerChartDeRham.lean#L253). Cited in [Chapter](/chapter/kisin-frames/).
 - `New.Lift.lift_constOne`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 283](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L283). Cited in [Chapter](/chapter/finite-gln/).
+- `New.Lift.mu_sq_dvd_smul_mu_sub`: `Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean`, [line 76](lean:Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean#L76). Cited in [Chapter](/chapter/period-rings/).
 - `New.Lift.mul`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 384](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L384). Cited in [Chapter](/chapter/finite-gln/).
 - `New.Lift.mulMoebius`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 433](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L433). Cited in [Chapter](/chapter/finite-gln/).
 - `New.Lift.one`: `Lib/LocalGL/Shintani/CosetDescent.lean`, [line 290](lean:Lib/LocalGL/Shintani/CosetDescent.lean#L290). Cited in [Chapter](/chapter/finite-gln/).
@@ -1466,7 +1515,9 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.lineStabilizer`: `Lib/Adelic/TraceFormula/LineStabiliser.lean`, [line 150](lean:Lib/Adelic/TraceFormula/LineStabiliser.lean#L150). Cited in [Chapter](/chapter/trace-formula/).
 - `New.lineTheta`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 808](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L808). Cited in [Chapter](/chapter/weil-representation/).
 - `New.lintegral_encard_rat_points`: `Lib/Adelic/Reduction/MinkowskiTheorems.lean`, [line 60](lean:Lib/Adelic/Reduction/MinkowskiTheorems.lean#L60). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.lintegral_gauss_sum_le_idealZeta`: `Lib/SiegelWeil/Mass.lean`, [line 367](lean:Lib/SiegelWeil/Mass.lean#L367). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.lintegral_iwasawa`: `Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean`, [line 505](lean:Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean#L505). Cited in [Chapter](/chapter/reduction-theory/).
+- `New.lintegral_le_idealZeta_mul`: `Lib/SiegelWeil/Mass.lean`, [line 244](lean:Lib/SiegelWeil/Mass.lean#L244). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.lintegral_orbitMeasure_lintegral`: `Lib/Adelic/QuotientMeasure/Basic.lean`, [line 286](lean:Lib/Adelic/QuotientMeasure/Basic.lean#L286). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.localArtin`: `Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean`, [line 435](lean:Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean#L435). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.LocField`: `Lib/Adelic/Adeles/Basic.lean`, [line 115](lean:Lib/Adelic/Adeles/Basic.lean#L115). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -1480,6 +1531,7 @@ This section and the next have the 2469 cited names outside the namespace `New.D
 - `New.LSeriesHasSum_mul_vonMangoldt`: `Lib/Analytic/EntireLFunction.lean`, [line 143](lean:Lib/Analytic/EntireLFunction.lean#L143). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/polar-functions/).
 - `New.l₀`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 90](lean:New/Reduction/Data/FieldsAndPlaces.lean#L90). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/fields-places-twists/).
 - `New.l₀_le_mul`: `New/Reduction/Data/FieldsAndPlaces.lean`, [line 97](lean:New/Reduction/Data/FieldsAndPlaces.lean#L97). Cited in [Chapter](/chapter/notation/).
+- `Polynomial.exists_dual_eval_mul_eq_coeff_mul`: `Lib/Cohomology/WoodsHole.lean`, [line 85](lean:Lib/Cohomology/WoodsHole.lean#L85). Cited in [Chapter](/chapter/cohomology-ext/).
 - `PrimitiveDirichletLZerosOnLine`: `Statements.lean`, [line 14](lean:Statements.lean#L14). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/half-plane-to-line/).
 - `riemannHypothesis`: `Main.lean`, [line 5](lean:Main.lean#L5). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/half-plane-to-line/).
 - `riemannZeta_eq_zero_re`: `Main.lean`, [line 8](lean:Main.lean#L8). Cited in [Chapter](/chapter/statements/), [Chapter](/chapter/theorem-and-plan/), [Chapter](/chapter/half-plane-to-line/).
