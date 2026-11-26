@@ -44,7 +44,7 @@ So in the identity $Z_j(\vartheta)\,\Delta(\vartheta) = C\rho_j(\vartheta)^d$ th
 
 ### Where the lifts lie
 
-**Lemma (Lifts are not false lifts only by orthogonality).** Let $w$ be a finite place of $E$ with $\bar w \neq w$ and $w$ outside the places of the $j$-th descent pair at $\vartheta$ and their conjugates. Then
+**Lemma (Where the lifts lie).** Let $w$ be a finite place of $E$ with $\bar w \neq w$ and $w$ outside the places of the $j$-th descent pair at $\vartheta$ and their conjugates. Then
 
 $$L_\vartheta \subseteq \mathrm{range}(e_0)\cap\ker H_w(x_w).$$
 
