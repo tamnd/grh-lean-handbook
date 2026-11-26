@@ -39,7 +39,7 @@ Three steps carry the classical proof, and the source follows all three.
 
 The source works with a tower of models of Kuga-Sato type for a unitary similitude group of signature $(1, n - 1)$, over a CM field $E$. The data is a [Model](/decl/New.Variety.Model/), with a base $Z$, level covers $W_i$, and legs $p_g : W_i \to Z$. The chapter [on the integral model](/chapter/integral-model/) constructs it. At a split safe place $w$ with residue field $k_w$ of order $q$, the Hecke elements are indexed by the subspaces $A$ of $k_w^n$. Step 1 becomes the following relation (Section 3): for every geometric point $x$ of the special fibre,
 $$\sum_{A \leq k_w^n} (-1)^{\dim A} q^{\binom{\dim A}{2}} \left[\operatorname{Frob}^{(n - \dim A) f}(p_{g_A}(x))\right] = 0,$$
-where $q = p^f$ and $g_A$ is the Hecke element of $A$. For $n = 2$ the relation reads $[F^2 x] - \sum_L [F u_L x] + q [u_{k^2} x] = 0$, with a sum over the $q + 1$ lines $L$. This is the shape of the classical relation, with the Frobenius moved to the other side.
+where $q = p^f$ and $g_A$ is the Hecke element of $A$. Write $u_A = p_{g_A}$ and $F$ for the $q$-power Frobenius. For $n = 2$ the relation reads $[F^2 u_0(x)] - \sum_L [F u_L(x)] + q\,[u_{k^2}(x)] = 0$, with a sum over the $q + 1$ lines $L$. This has the shape of the classical relation $X^2 - T X + q S = 0$.
 
 Step 2 is the theorem [congruence_relation](/decl/New.Variety.ellAdicCohom.congruence_relation/) of Section 2. Step 3 is Sections 4 and 6. The polynomial that comes out is
 $$P_w(X) = \sum_{j = 0}^{n} (-1)^j q^{\binom{j}{2}} t_j X^{n - j},$$
