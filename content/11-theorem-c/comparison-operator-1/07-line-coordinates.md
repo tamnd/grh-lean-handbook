@@ -31,7 +31,7 @@ drafted_by: writer@claude-opus-5-5
 
 The left side of the comparison is a series $\Upsilon$ of theta kernels on definite spaces. Its polynomial is a product $P_V$ of determinants. This section writes $P_V$ as the polynomial of a vector $\zeta$ in a Weyl module, and bounds the norm, the degree and the denominator of $\zeta$. The Weyl modules, the map `toPoly` from coordinates to polynomials and the squared norm `weylNormSq` for the Gram matrix are in [Weyl modules](/chapter/weyl-modules/). The products of stacked determinants and their coordinates `firstColsCoord` are in [the exchange identity, part 2](/chapter/exchange-identity-2/).
 
-### Notation
+### Notation for this section
 
 Fix admissible data $D$, a tame character $\vartheta$ and $1 \leq j \leq m$. Put $k = D.k$, $m = D.m$, $M = D.M$ and $r_+ = k + j - 1$ (`D.posRank j`). The space $V''$ is on `FirstFactorIndex j`, with $N = \#V''$ rows of variables. The space $W^{\mathrm{add}} = E^{3m-j} \oplus W^\flat \oplus E^{3m}$, with $W^\flat = E^{6m+1}$, is on `AddedIndex j`. The diagram $\mu^+$ has $\kappa(\tau, h)$ columns of height $h$ at the place $\tau$ (`(untwistedDescentPair j).colsPlus`). The set `DetIndex j τ` has one element for each column of $\mu^+$ at $\tau$. Its columns of height $r_+$ number $\Delta' = $ `D.reducedHalfGap`.
 

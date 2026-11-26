@@ -71,7 +71,7 @@ Lean: `New.Rows.DividedSplitting.genResidue_smul_eq_inclMatrix_iff` (New/OneLift
 
 *Proof.* Choose an integral matrix $X$ with $T = \iota_u + X$ modulo $\varpi^2 Q$. Then $\bar\varpi\bar T = \bar\varpi\iota_u$ says $\varpi X \equiv 0$ modulo $\varpi^2$. By the last lemma with $c = 2$ this says that $\varpi^{-1}X$ is integral, that is $X \equiv 0$ modulo $\varpi$. The chosen places are distinct and none is conjugate to another. By the Chinese remainder theorem, $X \equiv 0$ modulo $\varpi$ if and only if every entry of $X$ has valuation $< 1$ at every $w_i$. That is the statement that $T = \iota_u + X$ reduces to $\iota_u$ at every $w_i$. $\square$
 
-### Divided lattices
+### The lattices and their inverses
 
 **Definition (Divided lattice).** A *divided lattice* $L$ of $O$ is a point $\gamma \in G_f$ with two properties:
 
