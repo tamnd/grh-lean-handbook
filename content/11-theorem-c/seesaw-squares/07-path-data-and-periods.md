@@ -45,7 +45,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section puts forms on the paths of the previous section. It defines the moduli, spaces and characters at the nodes, the moves along the edges, the functions of matrices on the edges (the *path data*), and the period of a path. All of it is in [PathData.lean](lean:New/Determinant/AuxiliaryForms/PathData.lean).
 
-### Background
+### Results used
 
 1. `modLift` and `modTransposedLift` are the theta lift and the transposed lift for the characters $a$, the polynomial $P$ and a function $\Psi$ of matrices modulo $\mathfrak{m}$ ([Seesaw.lean](lean:Lib/Weil/Seesaw.lean#L88), [edges and arrows](/chapter/theta-lifts-seesaw/#edges-and-arrows)).
 2. `IsEdgeFamily`: conjugate cuspidal kernel pairs, characters of fixed weights with a common tame part, and the Fock vector of $\Phi$ is an edge ([Seesaw.lean](lean:Lib/Weil/Seesaw.lean#L135)).

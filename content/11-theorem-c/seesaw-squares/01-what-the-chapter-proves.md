@@ -34,7 +34,9 @@ Let $I$ be an index set. For each $i \in I$ let $a_i$ and $b_i$ be families of c
 8. If $|p| + |q| = |n_1| + |n_2|$, then $a_i(p)\, b_i(q) = \operatorname{rankTwist}(\nu_i^{-1}, n_1 \sqcup n_2)$.
 
 For $x$ an $n' \times (n_1 \sqcup n_2)$ matrix over $O_E/\mathfrak{m}_i$ with column blocks $x_1$ and $x_2$, and $y$ an $(n_1 \sqcup n_2) \times n$ matrix with row blocks $y_1$ and $y_2$, put
-$$\Theta_i(x) = \mathcal{L}^{\mathsf{T}}_{U_2 \to A}(b_i, \Phi_2, \delta_{x_2}) \circ \mathcal{L}_{U_1 \to A}(a_i, \Phi_1, \delta_{x_1}), \qquad \Theta'_i(y) = \mathcal{L}_{A' \to U_2}(a_i, \Phi_2', \delta_{y_2}) \circ \mathcal{L}^{\mathsf{T}}_{A' \to U_1}(b_i, \Phi_1', \delta_{y_1}).$$
+$$\Theta_i(x) = \mathcal{L}^{\mathsf{T}}_{U_2 \to A}(b_i, \Phi_2, \delta_{x_2}) \circ \mathcal{L}_{U_1 \to A}(a_i, \Phi_1, \delta_{x_1}),$$
+
+$$\Theta'_i(y) = \mathcal{L}_{A' \to U_2}(a_i, \Phi_2', \delta_{y_2}) \circ \mathcal{L}^{\mathsf{T}}_{A' \to U_1}(b_i, \Phi_1', \delta_{y_1}).$$
 Here $\delta_z$ is the indicator function of $z$, and both maps send forms of type $k_1(\neg d)$ on $U_1$ to forms of type $k_2(\neg d)$ on $U_2$. Then there are $C \in \mathbb{R}$ and $\kappa \in \mathbb{C}$ with this property. For every $i \in I$ there is $c \in \mathbb{C}$ with $c \neq 0$ and $|c|^2 = C\, L_{\mathfrak{m}_i}(\nu_i, t)$, such that for every form $f$ and every linear functional $l$ the functions $x \mapsto l(\Theta_i(x) f)$ and $y \mapsto l(\Theta'_i(y) f)$ satisfy the square law for $\chi_i$ and $\sigma$ with constant $\kappa/c$.
 
 Lean: `New.Exchange.one_square_identity_of_isEdgeFamily` (New/Determinant/Exchange/OneSquare.lean).
