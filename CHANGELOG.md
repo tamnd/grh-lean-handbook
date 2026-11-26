@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.3.8
+
+Four new chapters of the argument volumes, and one fix.
+
+- Volume 9, chapter 12: the archimedean size of the composite lift (#157).
+- Volume 10, chapter 12: the main term (#158).
+- Volume 11, chapter 6: the exchange identity, part 2 (#155).
+- Volume 12, chapter 10: the twisting theorem (#159).
+- Fix: an overfull line in Volume 11, chapter 4 (#156).
+
 ## v0.3.7
 
 Four new chapters of the argument volumes.
