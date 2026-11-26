@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.10
+
+Four new chapters of the argument volumes. Volume 10 is now complete.
+
+- Volume 9, chapter 14: divisibility prime by prime (#168).
+- Volume 10, chapter 14: the proof of Theorem B (#169).
+- Volume 11, chapter 11: deep level Poincaré series and spanning forms (#171).
+- Volume 12, chapter 11: from a congruence to a Selmer class (#170).
+
 ## v0.3.9
 
 Four new chapters of the argument volumes, and two fixes.
