@@ -105,7 +105,7 @@ Lean: `New.CMLattice.prod_norm_eq_one` (Lib/CM/ChowlaSelberg.lean), with `New.CM
 
 *Proof.* A number that maps one CM lattice into another is integral at $\iota_p$ (`New.CMLattice.norm_le_one_of_mapsTo_lattice`). So every element of $u_c\mathfrak{a}_c$ is integral, and so is every element of the product $\bigl(\prod_c u_c\bigr)\prod_c \mathfrak{a}_c$. This product contains $\prod_c u_c$, since $1 \in \prod_c \mathfrak{a}_c$. So $\prod_c |\iota_p(u_c)| \le 1$. The inverses $u_c^{-1}\mathfrak{a}_c^{-1}$ map $\Lambda(B_c)$ onto $\Lambda(A_c)$, and the same argument gives the inequality $\ge 1$. $\square$
 
-### The formula of Chowla and Selberg
+### The Chowla-Selberg formula with a unit
 
 **Lemma (Conjugate products).** Let $C$ be a CM lattice, let $\Lambda(D_{\mathcal{C}}) = \mu_{\mathcal{C}}\mathfrak{c}_{\mathcal{C}}\Lambda(C)$ for CM lattices $D_{\mathcal{C}}$ with $\prod \mathfrak{c}_{\mathcal{C}} = (1)$, and let $u \in \mathbb{C}$ with
 $$u^{12h} = \prod_{\mathcal{C}} \mu_{\mathcal{C}}^{12}\bigl(a_1(D_{\mathcal{C}})^4 - 64\bigr).$$
