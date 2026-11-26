@@ -116,4 +116,4 @@ Lean: `New.Core.exists_eq_zero_of_zpow_mul_mem` (Lib/Adelic/Reduction/MinkowskiT
 
 *Proof.* The set $\Phi$ of $a \in E$ with $a$ in $\mathrm{box} \cdot B$ is finite, since $E$ is discrete in $\mathbb{A}_E$. So some natural number $N$ is not a quotient of two elements of $\Phi$. Take $c = -N$. If $e < -N$ and $a \ne 0$ has $\tau^{-e} a \in B$, then $a$ and $N a$ both lie in $\Phi$, since $2^e \le 1$ and $N 2^e \le 1$. This is a contradiction. $\square$
 
-The second proposition says that a nonzero rational vector cannot be made arbitrarily small at the infinite places while it stays integral. It is the source of the lower bounds on the first minimum in [Section 5](/chapter/reduction-theory/#the-first-minimum-and-the-height).
+The second proposition says that a nonzero rational vector cannot be made arbitrarily small at the infinite places while it stays integral. It is the idea behind the positivity of the first minimum in [Section 5](/chapter/reduction-theory/#the-first-minimum-and-the-height).
