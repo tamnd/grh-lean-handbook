@@ -45,7 +45,7 @@ In terms of valuations, the last line says $v\bigl(\mathrm{vacuumScale}^{12}\, l
 
 ### The plan of the proof
 
-The proof has four steps. Each step is one section of the chapter.
+The proof has four steps. Steps 1 to 3 take one section each, and step 4 takes Sections 5 to 7.
 
 1. **One curve.** On the CM curve $\mathbb{C}/\Omega_0\mathcal{O}_K$ the ring $\mathfrak{o}[[y]]$ of integral power series in the coordinate $y$ is stable under derivatives. The source names the rate $\gamma_p$ after Katz. Here $\gamma_p$ is $0$ for split $p$, $p/(p^2 - 1)$ for inert $p$ and $1/(2p - 2)$ for $p = d$. Section 2 proves that this rate cannot be improved: for every $n$ some $g$ has $v(g^{(n)}(0)) \leq \gamma_p n$.
 2. **Least valuations.** Let $w$ be a tight frame and $\Theta = \prod_i \theta(\mu_iz)^{c_i}$ the theta product along its linear forms. Section 3 defines the relation $\mathrm{val}_n(\nu) \leq r$. It says that some coefficient of degree $\nu$ in a product of $n$ copies of series $H\Theta$ has valuation at most $r$. Section 3 then proves two bounds on six copies: $\mathrm{val}_6(\nu) \leq \gamma_p|\nu| - v(\nu!)$ if one form has unit coefficients, and $\mathrm{val}_6(\nu) \leq 0$ at inert primes.
