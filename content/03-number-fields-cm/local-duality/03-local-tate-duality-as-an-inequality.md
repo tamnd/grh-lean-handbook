@@ -9,7 +9,7 @@ decls:
   - New.DiscreteModule.cartierDual
   - New.DiscreteModule.evalCup
   - New.pairingAnnihilator
-  - New.FiniteKilledFixedInj
+  - New.DiscreteModule.FiniteKilledFixedInj
   - New.Cohomology.char_eq_zero_of_cyclicClass_eq_zero
   - New.eq_zero_of_evalCup_eq_zero_of_trivialOn
   - New.card_dual_cocycles_le_of_trivial
@@ -69,7 +69,7 @@ So "$X$ and $W$ are orthogonal" is written `X ≤ pairingAnnihilator M.evalCup.f
 
 **Definition (Finite, killed, fixed, injective).** For a natural number $n$, a subgroup $Q$, an element $z$ and a natural number $m$, `FiniteKilledFixedInj n Q z m A` says that $A$ is finite, that $n A = 0$, that $Q$ acts trivially on $A$, and that $\rho(z) - m$ is injective on $A$.
 
-Lean: `New.FiniteKilledFixedInj` (Lib/General/Algebra/CartanMap.lean).
+Lean: `New.DiscreteModule.FiniteKilledFixedInj` (Lib/General/Algebra/CartanMap.lean).
 
 The local inequality uses it with $z = 1$ and $m = 0$. Then $\rho(1) - 0$ is the identity, so the last condition is empty.
 
