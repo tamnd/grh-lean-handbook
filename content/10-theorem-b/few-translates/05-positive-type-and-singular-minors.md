@@ -125,7 +125,7 @@ Divide by $q\,\Theta(G)$. The theorem says that the share of the mass on the sin
 
 **Remark (Formalization).** The character $\psi$ is chosen by an existence statement, from the primitive character into $\mathbb{C}$ that Mathlib gives for each finite field. The result does not depend on the choice. If some $v \neq 0$ has $A_0v = 0$, then every $s$ fixes $A_0v$, so the first hypothesis gives $\Theta(G) \leq Y$, and the bound holds trivially, since the left side is at most $q\,\Theta(G) \leq q^{|m|}Y$ when $|m| \geq 1$. If $m$ is empty, the determinant of the empty matrix is $1$, the singular set is empty, and the hypotheses are empty. The index types $n$ and $m$ are arbitrary finite types, so $|n|$ and $|m|$ are their numbers of elements.
 
-### A model case
+### A model case for minors
 
 Take $G = \mathrm{GL}_n(\mathbb{F}_q)$ with $n \geq 3$, $\pi$ the identity, $\Theta = 1$, $m = 1$, and $A_0 = A_1 = e_1$, the first standard basis vector. Then $\det(A_1^{\mathsf T}\pi(s)A_0) = s_{11}$, the upper left entry. The first column of $s$ is a uniformly distributed nonzero vector, so the true share of the $s$ with $s_{11} = 0$ is $(q^{n - 1} - 1)/(q^n - 1)$, which is a little less than $1/q$.
 
