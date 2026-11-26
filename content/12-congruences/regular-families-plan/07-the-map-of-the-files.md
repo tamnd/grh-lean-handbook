@@ -24,9 +24,30 @@ The definitions of Section 3, in `New/Determinant/Twist/FitTwists.lean`, come in
 
 The subfolders depend on each other in one direction. The files of `Lifting` are imported by `LocalLoss` (through `LocalLoss/CrystallineCocycles.lean`). The files of `LocalLoss` are imported by `GaloisRepresentations/SelmerHypotheses.lean`, by `FirstOrder/FittingBlock.lean` and `FirstOrder/TraceRelations.lean`, and by `Selmer/MainSummands.lean`. The three folders `FirstOrder`, `GaloisRepresentations` and `Selmer` meet in the top file.
 
+### The order of the chapters
+
+The chapters of the volume follow the imports of the files: each file of a chapter imports only files of earlier chapters or of other volumes, with the exceptions below. The list gives each chapter with the chapters of this volume that its files import.
+
+```
+ 1 regular-families-plan      <- 5, 10, 11
+ 2 ribet-elements             <- 5, 11
+ 3 first-order-deformations   <- 2, 4, 5
+ 4 tied-traces                <- 2
+ 5 main-summands              <- 4
+ 6 tied-selmer-groups         <- 4
+ 7 exponent-lattices          <- (Vol 5, 7)
+ 8 cup-products               <- 7
+ 9 local-loss                 <- 5, 8
+10 twisting-theorem           <- 4, 5, 6, 9
+11 denominator-bound          <- 2, 3, 4, 5, 9
+12 proof-of-regular-families  <- 1
+```
+
+Chapters 1, 2 and 3 use results of later chapters. This chapter follows the top file, which imports the last steps (chapters 5, 10 and 11). In chapter 2, `FittingBlock.lean` imports `LocalLoss/Basic.lean` (chapter 5), and `RibetElement.lean` imports `TraceRelations.lean` (chapter 11). In chapter 3, `KummerMaps.lean` imports `EvenClasses.lean` and `AuxiliaryPrimeTie.lean` imports `TiedTraces.lean` (chapter 4), and `HeckeStrings.lean` imports `SelmerHypotheses.lean` (chapter 5). A reader of these chapters takes the results of the later chapters as known.
+
 ### FirstOrder: Ribet's method to first order
 
-The folder has 15 files and 10,789 lines. It builds Ribet's element for a conjugate self-dual representation, the first-order deformations at auxiliary places, and the bound for denominators of Section 4. The chapters are [Ribet elements](/chapter/ribet-elements/), [first order deformations](/chapter/first-order-deformations/) and [the bound for denominators](/chapter/denominator-bound/).
+The folder has 15 files and 10,789 lines. It builds Ribet's element for a conjugate self-dual representation, the first-order deformations at auxiliary places, and the bound for denominators of Section 4. The chapters are [Ribet elements](/chapter/ribet-elements/), [first order deformations](/chapter/first-order-deformations/), [tied traces and even classes](/chapter/tied-traces/) (for `OnePrime`, `TiedTraces`, `EvenClasses` and `TateTwistCocycles`) and [the bound for denominators](/chapter/denominator-bound/) (for `TraceRelations` and `DenominatorBound`).
 
 | File | Lines | First heading |
 |---|---|---|
@@ -50,7 +71,7 @@ The constants of Section 5 are in `TraceRelations.lean`, except the twist error,
 
 ### GaloisRepresentations: the main summands
 
-The folder has 5 files and 3,432 lines. It attaches Galois representations to the eigensystems of the lifts, and it proves that they have main summands. The chapter is [main summands](/chapter/main-summands/).
+The folder has 5 files and 3,432 lines. It attaches Galois representations to the eigensystems of the lifts, and it proves that they have main summands. The chapter is [main summands](/chapter/main-summands/), which also treats `LocalLoss/Basic.lean`.
 
 | File | Lines | First heading |
 |---|---|---|
@@ -85,11 +106,11 @@ The folder has 16 files and 8,446 lines. It proves the twisting theorem: first a
 | GeneralTheorem | 456 | Twisting, general form |
 | TwistingTheorem | 451 | The twisting theorem |
 
-The lemma `coprime_prod_q_of_isAuxiliary`, which the top file uses for the coprimality of the modulus, is in `ClassSums.lean`. The volume plan gives the chapter on tied Selmer groups the first half of the folder and the chapter on the twisting theorem the files on Stickelberger systems and the twisting theorem.
+The lemma `coprime_prod_q_of_isAuxiliary`, which the top file uses for the coprimality of the modulus, is in `ClassSums.lean`. The file `AuxiliaryPrimes.lean` is in [tied traces and even classes](/chapter/tied-traces/). The chapter on tied Selmer groups has `SelmerData`, `Count`, `OneSystem`, `Mirror`, `Untied` and `Descent`. The chapter on the twisting theorem has the other nine files. It comes after the local loss, since `MainSummands.lean` imports `LocalLoss/LocalLattices.lean`.
 
 ### LocalLoss: the local loss above ℓ
 
-The folder has 5 files and 2,524 lines. It bounds the defect of the crystalline condition at the places above $\ell$, which gives the term $\mathrm{localDefectBound}$ of Section 5. The chapter is [the local loss](/chapter/local-loss/).
+The folder has 5 files and 2,524 lines. It bounds the defect of the crystalline condition at the places above $\ell$, which gives the term $\mathrm{localDefectBound}$ of Section 5. The chapter is [the local loss](/chapter/local-loss/), for all files but `Basic.lean`, which is in [main summands](/chapter/main-summands/).
 
 | File | Lines | First heading |
 |---|---|---|
@@ -101,7 +122,7 @@ The folder has 5 files and 2,524 lines. It bounds the defect of the crystalline 
 
 ### Lifting: cup products on Kisin modules
 
-The folder has 11 files and 9,085 lines. It is the largest part of the local argument. It bounds cup products of cocycles on the sides of a Kummer chart, with lattices, depths and jumps. The chapter is [cup products](/chapter/cup-products/).
+The folder has 11 files and 9,085 lines. It is the largest part of the local argument. It bounds cup products of cocycles on the sides of a Kummer chart, with lattices, depths and jumps. The chapters are [exponent lattices and Kummer charts](/chapter/exponent-lattices/) (`ExponentLattices`, `HodgeExpansion`, `CupProductBound`, `SidePoints`, `TameCharts`) and [cup products](/chapter/cup-products/) (the other six files).
 
 | File | Lines | First heading |
 |---|---|---|

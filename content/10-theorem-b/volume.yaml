@@ -28,57 +28,124 @@ chapters:
     title: Bessel functions at a real place
     source:
       - New/Spanning/Bessel
-  - id: poincare-series
-    title: Poincaré series and unfolding
+  - id: local-frames
+    title: Frames, depth and gains
     plan: >-
-      Spanning/Unfolding: Setup, PoincareSeries, SeriesPeriod, FillingAdmissible.
+      Lengths, levels and gauges of frames; quadrics and Plancherel; depth, densities, one frame, gains, shells.
     source:
-      - New/Spanning/Unfolding/Setup
-      - New/Spanning/Unfolding/PoincareSeries
-      - New/Spanning/Unfolding/SeriesPeriod
-      - New/Spanning/Unfolding/FillingAdmissible
-      - New/Spanning/Unfolding
-  - id: moments
-    title: Moments of the Poincaré map
-    plan: >-
-      Near isometry and the second moment. Each exchange of a sum and an integral is shown with its convergence.
-    source:
-      - New/Spanning/Unfolding/Moments
-      - New/Spanning/Unfolding/MomentBounds
-      - New/Spanning/Unfolding/AmplitudeSums
-  - id: anatomy-of-a-term
-    title: The anatomy of a term
-    plan: >-
-      Spanning/Unfolding: Terms, Climbing, Link.
-    source:
-      - New/Spanning/Unfolding/Terms
-      - New/Spanning/Unfolding/TermStructure
-      - New/Spanning/Unfolding/Climbing
-      - New/Spanning/Unfolding/Link
-  - id: remaining-terms
-    title: The remaining terms
-    plan: >-
-      Gains mod M, Siegel's lemma, Schur's test.
-    source:
-      - New/Spanning/RemainingTerms
-  - id: main-term
-    title: The main term
-    plan: >-
-      Kloosterman sums as orbital integrals, a one-sided sieve.
-    source:
-      - New/Spanning/MainTerm
+      - New/Spanning/Frames/Lengths
+      - New/Spanning/Frames/Levels
+      - New/Spanning/Frames/TwoGauges
+      - New/Spanning/Frames/Correlations
+      - New/Spanning/Frames/QuadricVolumes
+      - New/Spanning/Frames/QuadricPlancherel
+      - New/Spanning/Frames/Depth
+      - New/Spanning/Frames/Densities
+      - New/Spanning/Frames/OneFrame
+      - New/Spanning/Frames/Gains
+      - New/Spanning/Frames/Shells
   - id: real-densities
     title: Local densities at the real places
     plan: >-
-      Spanning/Frames, the files on the real places.
+      The gauge at the complex place, cut Bessel functions over shells, band limits.
     source:
-      - New/Spanning/Frames/Real
+      - New/Spanning/Frames/RealPlaceGauge
+      - New/Spanning/Frames/RealShells
+      - New/Spanning/Frames/RealBandLimits
+  - id: anatomy-of-a-term
+    title: The anatomy of a term
+    plan: >-
+      The data of the filling theorem, Bessel level structure, the box, Siegel's lemma, near terms, links.
+    source:
+      - New/Spanning/Unfolding/Setup
+      - New/Spanning/Unfolding/BesselLevelStructure
+      - New/Spanning/RemainingTerms/Box
+      - New/Spanning/RemainingTerms/SiegelLemma
+      - New/Spanning/RemainingTerms/Discriminants
+      - New/Spanning/Unfolding/Terms
+      - New/Spanning/RemainingTerms/OrbitSize
+      - New/Spanning/Unfolding/Link
+      - New/Spanning/RemainingTerms/BorderedDeterminant
+      - New/Spanning/RemainingTerms/Data
   - id: finite-densities
     title: Local densities at the finite places
     plan: >-
-      Spanning/Frames, the files on the finite places.
+      Standard level, fiber measures, the Bessel vector, depth and shells at the finite places, the top floor.
     source:
-      - New/Spanning/Frames
+      - New/Spanning/Frames/StandardLevel
+      - New/Spanning/Frames/FiberMeasures
+      - New/Spanning/Frames/BesselVector
+      - New/Spanning/Frames/FiniteDepth
+      - New/Spanning/Frames/TopCorrelation
+      - New/Spanning/Frames/TopFloor
+      - New/Spanning/Frames/FiniteShells
+  - id: frame-counts
+    title: Reduced points and frame counts
+    plan: >-
+      Schur weights at one real place, orthogonal lifts, reduced points, link lattices, packing, frames over a lattice.
+    source:
+      - New/Spanning/RemainingTerms/OneRealPlace
+      - New/Spanning/RemainingTerms/OrthogonalLifts
+      - New/Spanning/Unfolding/ReducedPoints
+      - New/Spanning/RemainingTerms/FrameCount
+      - New/Spanning/RemainingTerms/LinkLattice
+      - New/Spanning/Unfolding/Packing
+      - New/Spanning/RemainingTerms/ColumnLattice
+      - New/Spanning/RemainingTerms/FrameParts
+      - New/Spanning/Unfolding/CutoffIntegral
+      - New/Spanning/RemainingTerms/FramesOverLattice
+  - id: poincare-series
+    title: Poincaré series and unfolding
+    plan: >-
+      Amplitude sums, climbing, Poincaré series, the Bessel formula, reduced groups, term structure, filling data, the series period.
+    source:
+      - New/Spanning/Unfolding/AmplitudeSums
+      - New/Spanning/Unfolding/Climbing
+      - New/Spanning/Unfolding/PoincareSeries
+      - New/Spanning/Unfolding/BesselFormula
+      - New/Spanning/Unfolding/ReducedGroups
+      - New/Spanning/Unfolding/TermStructure
+      - New/Spanning/Unfolding/FrameMass
+      - New/Spanning/Unfolding/FillingAdmissible
+      - New/Spanning/Unfolding/SeriesPeriod
+  - id: remaining-terms
+    title: The remaining terms
+    plan: >-
+      Schur's test, lattices of corank, the orbit bound, the cut, the gain, the sum.
+    source:
+      - New/Spanning/RemainingTerms/SchurTest
+      - New/Spanning/RemainingTerms/LatticesOfCorank
+      - New/Spanning/RemainingTerms/SchurOrbit
+      - New/Spanning/RemainingTerms/Denominators
+      - New/Spanning/RemainingTerms/LinkVectors
+      - New/Spanning/RemainingTerms/Size
+      - New/Spanning/RemainingTerms/Cut
+      - New/Spanning/RemainingTerms/Gain
+      - New/Spanning/RemainingTerms/Count
+      - New/Spanning/RemainingTerms/Sum
+  - id: main-term
+    title: The main term
+    plan: >-
+      Sieve systems, one-sided Poisson summation, Kloosterman sums as orbital integrals, Siegel's bound, fixed lines, the energy estimate.
+    source:
+      - New/Spanning/MainTerm/Frequencies
+      - New/Spanning/MainTerm/SieveSystem
+      - New/Spanning/MainTerm/GlobalSieve
+      - New/Spanning/MainTerm/FillingLevel
+      - New/Spanning/MainTerm/KloostermanSum
+      - New/Spanning/MainTerm/GlobalToLocal
+      - New/Spanning/MainTerm/SiegelTopBound
+      - New/Spanning/Frames/FixedLines
+      - New/Spanning/MainTerm/FiniteSieveSystem
+      - New/Spanning/MainTerm/EnergyEstimate
+  - id: moments
+    title: Moments of the Poincaré map
+    plan: >-
+      The square expansion and the second moment. Each exchange of a sum and an integral is shown with its convergence.
+    source:
+      - New/Spanning/Unfolding/SquareExpansion
+      - New/Spanning/Unfolding/MomentBounds
+      - New/Spanning/Unfolding/Moments
   - id: proof-of-theorem-b
     title: The proof of Theorem B
     plan: >-

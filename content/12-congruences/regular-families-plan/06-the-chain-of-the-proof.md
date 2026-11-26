@@ -174,7 +174,7 @@ Section 3 gives the proof of the theorem on regular families from this result an
 
 The steps above use four deep inputs. Each one is the subject of later chapters.
 
-1. Ribet's method to first order, which gives the operator for one lift generator: [Ribet elements](/chapter/ribet-elements/), [first order deformations](/chapter/first-order-deformations/), and [the bound for denominators](/chapter/denominator-bound/).
+1. Ribet's method to first order, which gives the operator for one lift generator: [Ribet elements](/chapter/ribet-elements/), [first order deformations](/chapter/first-order-deformations/), [tied traces and even classes](/chapter/tied-traces/), and [the bound for denominators](/chapter/denominator-bound/).
 2. The main summands: [main summands](/chapter/main-summands/).
 3. The twisting theorem: [tied Selmer groups](/chapter/tied-selmer-groups/) and [the twisting theorem](/chapter/twisting-theorem/).
-4. The local loss above $\ell$ and the bounds for cup products that it needs: [the local loss](/chapter/local-loss/) and [cup products](/chapter/cup-products/).
+4. The local loss above $\ell$ and the bounds for cup products that it needs: [exponent lattices and Kummer charts](/chapter/exponent-lattices/), [cup products](/chapter/cup-products/) and [the local loss](/chapter/local-loss/).
