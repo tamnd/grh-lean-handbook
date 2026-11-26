@@ -59,7 +59,7 @@ Section 2 builds the finite group $\bar G = \prod_w \mathrm{GL}_r(\mathbb{F}_w)$
 
 ### What this chapter does not prove
 
-This chapter proves no inequality on the dimension. It does not prove that $e_0$ is nonzero, nor that the space of good forms is nonzero, nor that a nonzero chain datum exists. The research notes on the source list these as open points, and the remarks in Sections 2, 7 and 8 return to them. The source claims that the objects of this chapter, with the theorems of the later chapters, give Theorem A. Lean accepts the definitions and lemmas of this chapter, if the reported checks hold.
+This chapter proves no inequality on the dimension. It does not prove that $e_0$ is nonzero, nor that the space of good forms is nonzero; the source proves that the target forms are nonzero in a later volume, and the remark in Section 2 returns to this. It does not prove that the composite lift of a chain datum is nonzero; the remark in Section 7 explains why the definition alone does not give this. The source claims that the objects of this chapter, with the theorems of the later chapters, give Theorem A. Lean accepts the definitions and lemmas of this chapter, if the reported checks hold.
 
 ### Background that this chapter uses
 
