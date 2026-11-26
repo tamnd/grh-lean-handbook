@@ -88,7 +88,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 9 | 11 | The seesaw identity, part 2: assembly | drafted | 14,413 |
 | 9 | 12 | The archimedean size of the composite lift | drafted | 12,936 |
 | 9 | 13 | Elementary divisors of a Hecke operator | planned | 0 |
-| 9 | 14 | Divisibility prime by prime | planned | 0 |
+| 9 | 14 | Divisibility prime by prime | drafted | 14,197 |
 | 9 | 15 | The proof of Theorem A | planned | 0 |
 | 10 | 1 | Theorem B and its plan | drafted | 9,013 |
 | 10 | 2 | Few translates suffice | drafted | 9,650 |
@@ -103,7 +103,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 11 | The remaining terms | drafted | 14,407 |
 | 10 | 12 | The main term | drafted | 14,638 |
 | 10 | 13 | Moments of the Poincaré map | drafted | 12,346 |
-| 10 | 14 | The proof of Theorem B | planned | 0 |
+| 10 | 14 | The proof of Theorem B | drafted | 9,855 |
 | 11 | 1 | Theorem C and the height argument | drafted | 8,914 |
 | 11 | 2 | Twists, critical pairs and regular families | drafted | 11,278 |
 | 11 | 3 | Single theta lifts and their norms | drafted | 12,521 |
@@ -114,7 +114,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 8 | The chain determinant and its factorization | drafted | 14,576 |
 | 11 | 9 | The comparison operator, part 1 | drafted | 13,665 |
 | 11 | 10 | Grids, columns and turns | planned | 0 |
-| 11 | 11 | Deep level Poincaré series and spanning forms | planned | 0 |
+| 11 | 11 | Deep level Poincaré series and spanning forms | drafted | 13,433 |
 | 11 | 12 | False lifts | planned | 0 |
 | 11 | 13 | The divisibility is sharp | planned | 0 |
 | 11 | 14 | The comparison operator, part 2 | planned | 0 |
@@ -131,5 +131,5 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 12 | 8 | Cup products on Kisin modules | drafted | 14,552 |
 | 12 | 9 | The local loss at ℓ | planned | 0 |
 | 12 | 10 | Stickelberger systems and the twisting theorem | drafted | 14,552 |
-| 12 | 11 | From a congruence to a Selmer class | planned | 0 |
+| 12 | 11 | From a congruence to a Selmer class | drafted | 14,353 |
 | 12 | 12 | The proof of the existence of regular families | planned | 0 |
