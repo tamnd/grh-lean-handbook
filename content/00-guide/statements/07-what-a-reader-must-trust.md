@@ -59,18 +59,16 @@ Lean accepts the five theorems, if the reported checks hold. This book does not 
 
 ### The findings on the statements
 
-The register of the book lists, among others, these findings on the statements and on trust ([register of findings](/chapter/register-of-findings/)).
+The entries F-001, F-004 to F-007 and F-010 to F-016 of the [register of findings](/chapter/register-of-findings/) concern the statements and the trust in them. This chapter adds the following points to them, each with the section that gives the argument.
 
-- F-001: the proof has passed machine checks only. No mathematician has read it.
-- F-004 and F-005: the checks with nanoda, con-leche, con-ron and Comparator have no logs in the repository, and Comparator ran with a stand-in sandbox.
-- F-006: the empty list `definition_names` is safe, by the remark above.
-- F-007: the only `sorry` is in Challenge.lean.
-- F-010: `riemannHypothesis` has the type of Mathlib, and the zeta statement of the source is equal to it by definition. The primitive form is proved from the general one, and its hypothesis is not used.
-- F-011: the half-plane form covers every modulus $N \geq 1$ and every character, and it excludes only $\chi = 1$ at $s = 1$.
-- F-012: the forms on the line say nothing for $\operatorname{Re} s \leq 0$, and the strip must be open because of the Euler factors of imprimitive characters.
-- F-013: the two lemmas of New/Main.lean take the half-plane form as a hypothesis, so the passage from the half-plane to the line can be read alone.
-- F-014: that passage uses the convention of Mathlib that $\Gamma_{\mathbb{R}}$ and the gamma factor are $0$ at their poles.
-- F-015: `New.grh` is stated with the constant of Statements.lean, and it fixes $q_0 = 18480q$ and $d_0 = 9240q - 1$.
-- F-016: the reflection $s \mapsto 1 - s$ of zeros for imprimitive characters is a lemma of the source, `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero`, not of Mathlib.
+- The proof has passed machine checks only, and no mathematician has read it (Section 6 and the list above).
+- The reported checks with nanoda, con-leche, con-ron and Comparator have no logs in the repository, and Comparator ran with a stand-in sandbox (Section 6).
+- The empty list `definition_names` is safe, and the only `sorry` is in Challenge.lean (the two remarks above).
+- `riemannHypothesis` has the type of Mathlib, and the zeta statement of the source is equal to it by definition (Section 2).
+- The half-plane form covers every modulus $N \geq 1$ and every character, and it excludes only $\chi = 1$ at $s = 1$ (Section 5).
+- The forms on the line say nothing for $\operatorname{Re} s \leq 0$, and the strip must be open because of the Euler factors of imprimitive characters (Sections 4 and 5).
+- The two lemmas of New/Main.lean take the half-plane form as a hypothesis, so the passage from the half-plane to the line can be read alone (Section 6). That passage uses the convention of Mathlib that $\Gamma_{\mathbb{R}}$ and the gamma factor are $0$ at their poles, and the reflection $s \mapsto 1 - s$ of zeros, which is a lemma of the source, `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero` in Lib/Analytic/ZeroSymmetry.lean, not of Mathlib.
+- `New.grh` is stated with the constant of Statements.lean, and its proof fixes $q_0 = 18480q$ and $d_0 = 9240q - 1$ (Section 6).
+- The primitivity hypothesis of the fifth theorem is not used (Section 6).
 
-This chapter found no gap in the statements beyond these entries. The register gives some line numbers for F-014 and F-015 that are off by one or two lines: the gamma factor is used at New/Main.lean, lines 34 to 37 and 51 to 53, and the case $s = 1$ of `New.grh` is at New/Reduction/OneSidedBound.lean, lines 243 to 245.
+This chapter found no gap in the statements beyond these points. The register gives some line numbers for F-014 and F-015 that do not match the source: the gamma factor is used at New/Main.lean, lines 34 to 37 and 51 to 53, and the case $s = 1$ of `New.grh` is at New/Reduction/OneSidedBound.lean, lines 243 to 245.
