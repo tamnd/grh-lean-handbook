@@ -56,7 +56,7 @@ Section 5 treats the projective line. The class $\eta$ of $\mathcal{O}(1)$ and t
 
 Section 6 defines Hodge cohomology. The test objects are pairs $(A, M)$ of a $k$-algebra and a module. The coefficient is $(A, M) \mapsto \bigwedge_A M$. A space $N$ gives the functor $(A, M) \mapsto N(A \oplus M)$. The section defines the symbol class $[dT/T]$, the classes of points, and the Künneth formula, and it constructs the class of the diagonal.
 
-Section 7 proves the fixed point formula: the pull-back of the diagonal class along a twisted graph is the sum of the point classes of the coincidences, with their Jacobian ratios. It then states the Woods Hole formula. The proof applies the Hodge-Tate map $\lambda_h$, which keeps distinct point classes linearly independent. It then takes the coefficient of $t^h$ in the twist parameter $t$. A model case on $\mathbb{P}^1$ shows the local terms.
+Section 7 proves the fixed point formula: the pull-back of the diagonal class along a twisted graph is the sum of the point classes of the coincidences, with their Jacobian ratios. It then states the Woods Hole formula. The proof applies the Hodge-Tate map $\lambda_d$, which keeps distinct point classes linearly independent. It then takes the coefficient of $t^h$ in the twist parameter $t$. A model case on $\mathbb{P}^1$ shows the local terms.
 
 Section 8 has exercises and notes.
 
