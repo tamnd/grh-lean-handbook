@@ -59,7 +59,7 @@ $$B(X) \leq \sum_\xi C_\xi\,T^{2 - \delta} = \Bigl(\sum_\xi C_\xi\Bigr)N^{1 - \d
 
 **Remark (Formalization).** The name `zero_density_quadTwist` and the phrase "zero density for quadratic twists" in the plan of this handbook suggest a count of zeros. The theorem counts primes, not zeros: a bad prime counts once, however many zeros its twists have in the box. The Lean statement counts all $d \leq X$ that satisfy `IsBadPrime`, and `IsBadPrime` includes primality through `IsPrimeWithTwistZero`. The class hypothesis is stated only for primes; it holds when $8 \mid N$ and $a \equiv 7 \bmod 8$ is prime to $N$, which is the case in the use below. The constant of the $O$ is $(\sum_\xi C_\xi)N^{1 - \delta/2}$, where the $C_\xi$ and the $\psi_\xi$ come from `choose`. It depends on $N$, $\delta$ and $H$, and the source does not compute it. The threshold for $X$ is not explicit either, since it comes from the eventual statement of Section 4.
 
-### One good prime
+### The choice of the prime
 
 **Theorem (Choice of the prime).** Let $N \geq 1$, $H \in \mathbb{R}$ and $\beta > 1/2$. Let $a \in (\mathbb{Z}/N\mathbb{Z})^\times$ be a class such that every prime $d \equiv a \bmod N$ has $d \equiv 7 \bmod 8$ and $\gcd(N, d) = 1$. Then there is a prime $d \equiv a \bmod N$ such that
 $$\tilde L(s, \xi\chi_K) \neq 0$$

@@ -14,15 +14,15 @@ A reader who checks the reduction of GRH to a one-sided bound must know that the
 
 ### The local files
 
-The file Lib/Analytic/QuadraticTwist.lean imports Lib.Analytic.DirichletTheta and Lib.Analytic.EntireLFunction. The transitive closure of its imports, without Mathlib, contains thirteen other files of the source:
+The file Lib/Analytic/QuadraticTwist.lean imports `Lib.Analytic.DirichletTheta` and `Lib.Analytic.EntireLFunction`. The transitive closure of its imports, without Mathlib, contains thirteen other files of the source:
 
-1. Lib.Analytic.DirichletTheta, Lib.Analytic.PolyaVinogradov, Lib.Analytic.ZeroSymmetry and Lib.Analytic.EntireLFunction. These are the theta series of [Dirichlet L-functions](/chapter/dirichlet-l-functions/), Section 2 of this chapter, the symmetry of the zeros, and the entire L-function with the twists.
-2. Lib.General.NumberTheory.ImaginaryQuadraticField, which defines `New.quadTwist` and `New.entireL`, and the files that it needs: Lib.General.NumberTheory.EmbeddingsAndDifferent, Lib.Adelic.Adeles.Basic, Lib.Adelic.Adeles.AdditiveCharacter, Lib.Adelic.QuotientMeasure.Basic, Lib.General.Groups.CongruenceSubgroups and Lib.General.Measure.IdempotentKernel.
-3. Lib.Base and Lib.Speed, which set options and notation.
+1. `Lib.Analytic.DirichletTheta`, `Lib.Analytic.PolyaVinogradov`, `Lib.Analytic.ZeroSymmetry` and `Lib.Analytic.EntireLFunction`. These are the theta series of [Dirichlet L-functions](/chapter/dirichlet-l-functions/), Section 2 of this chapter, the symmetry of the zeros, and the entire L-function with the twists.
+2. `Lib.General.NumberTheory.ImaginaryQuadraticField`, which defines `New.quadTwist` and `New.entireL`, and the files that it needs: `Lib.General.NumberTheory.EmbeddingsAndDifferent`, `Lib.Adelic.Adeles.Basic`, `Lib.Adelic.Adeles.AdditiveCharacter`, `Lib.Adelic.QuotientMeasure.Basic`, `Lib.General.Groups.CongruenceSubgroups` and `Lib.General.Measure.IdempotentKernel`.
+3. `Lib.Base` and `Lib.Speed`, which set options and notation.
 
 No file under New/ is in the closure. In particular the closure contains no file on the prime number theorem, on zero-free regions, on the explicit formula, or on the one-sided bound of the main argument. So the statements of this chapter cannot depend on the hypotheses or the conclusions of the reduction. The import closure is a fact about the source that anyone can recompute from the `import` lines; the list above was computed from them at the pinned commit.
 
-The adelic files enter only because Lib.General.NumberTheory.ImaginaryQuadraticField defines the twist next to other objects of the imaginary quadratic field $K = \mathbb{Q}(\sqrt{-d})$. The proofs of this chapter use only the formula for the values of the twist.
+The adelic files enter only because `Lib.General.NumberTheory.ImaginaryQuadraticField` defines the twist next to other objects of the imaginary quadratic field $K = \mathbb{Q}(\sqrt{-d})$. The proofs of this chapter use only the formula for the values of the twist.
 
 ### The Mathlib inputs
 
