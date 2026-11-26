@@ -28,7 +28,6 @@ decls:
   - New.Parameters.vacuumScale
   - New.Parameters.isVacuumScale_vacuumScale
   - New.Parameters.vacuumScale_ne_zero
-  - New.Parameters.intVacuum
   - New.Parameters.intVacuum_finVec_eq_prod
   - New.Parameters.norm_intVacuum_le_one
   - New.Parameters.norm_gal_intVacuum_le

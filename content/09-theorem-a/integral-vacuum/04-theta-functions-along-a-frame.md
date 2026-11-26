@@ -15,7 +15,6 @@ decls:
   - New.Space.jetSeries_eq_prod
   - New.Space.exists_entireTheta_eq_of_isThetaFunction
   - New.Parameters.cmPeriod_mem_cmCurve_lattice
-  - New.Parameters.norm_map_selfDualAddChar
   - New.Parameters.resolutionShift
   - New.Parameters.resolutionLinearForm
   - New.Parameters.resolutionLinearForm_realImage
