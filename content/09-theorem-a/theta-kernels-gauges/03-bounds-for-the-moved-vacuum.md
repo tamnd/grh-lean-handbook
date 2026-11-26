@@ -29,7 +29,7 @@ Second, a value of $f = \varrho(y)\,\omega(g)\,\mathrm{vac}$ is $\theta(f)$, and
 $$|\theta(f)|^2 = \sum_{\gamma \in E^n} \langle f, \varrho(\gamma) f \rangle.$$
 Each coefficient has the modulus of a value of the vacuum on the moved lattice: a Gaussian $\exp(-\pi|\gamma|^2/\sqrt d)$ on a set of vectors whose squared lengths are integers, and $0$ off it. Points with integer squared distances are $1$-separated, so a packing count bounds the series by a constant that depends only on the dimension. This is the uniformity in $g$: the lattice moves, but its separation does not change.
 
-### The model case
+### The model case of values
 
 Take $E$ replaced by $\mathbb{Q}(i)$ for a moment, rank one, and the lattice $\Lambda = \mathbb{Z}[i] \subset \mathbb{C}$. Then $\sum_{\gamma \in \Lambda} e^{-\pi|\gamma|^2/\sqrt d}$ is at most $\bigl(\sum_{k \in \mathbb{Z}} e^{-\pi k^2/\sqrt d}\bigr)^2 \le (1 + d^{1/4})^2$. For a moved lattice $g\Lambda$ with $g$ unitary over the finite adeles, the set of $\gamma$ changes, but all squared lengths are still integers. The packing bound gives a constant that does not see $g$ at all. In the general case the dimension is $2fn$, and the constant is $e^{O(d\,q_1^2 n^2)}$.
 

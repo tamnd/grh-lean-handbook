@@ -29,7 +29,7 @@ drafted_by: writer@claude-opus-5-5
 
 A jet is a derivative at one point. Derivatives of holomorphic functions are bounded by Cauchy's estimate in terms of values on a circle. In the Fock model the right form of Cauchy's estimate is an integral: a jet is the integral of the function against a conjugated polynomial and a Gaussian. This section uses that formula for the datum $LF$ of Section 2, whose values Section 3 bounds. The result is a bound for $|\sigma(\text{jet})|$, for all automorphisms $\sigma$ of $\mathbb{C}$, first along one polynomial and then for the whole Schur jet matrix in the Gram norm.
 
-### The model case
+### Model case (jets)
 
 Let $G$ be an entire function of one variable with $|G(y)| \le M e^{|y|^2/2}$. Write $dA$ for Lebesgue measure on $\mathbb{C}$. The monomials are orthogonal for the Gaussian weight: $\int_{\mathbb{C}} \bar y^k y^m e^{-|y|^2}\,dA/\pi = k!\,\delta_{km}$. So, expanding $G = \sum_m a_m y^m$,
 $$G^{(k)}(0) = k!\,a_k = \int_{\mathbb{C}} \bar y^{\,k}\,G(y)\,e^{-|y|^2}\,\frac{dA}{\pi}.$$

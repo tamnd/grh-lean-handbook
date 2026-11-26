@@ -23,7 +23,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section turns $p$-adic bounds for single jets into a statement about a whole kernel. The statement is: the kernel maps a vector of gauge $1$ at a point $g$ to a vector of gauge at most $c$ at a point $h$, for all $g$ and $h$ at once. The proof moves both points to the identity, where the claim is an entrywise bound for the jet matrix.
 
-### The model case
+### The model case of gauges
 
 Let $M$ be a matrix with entries in $\mathbb{C}_p$, and let $\xi$ be a vector. Put $\|\xi\| = \max_i |\xi_i|_p$. If every entry of $M$ has $|M_{ij}|_p \le c$ with $c \ge 0$, then $\|M\xi\| \le c\,\|\xi\|$. The reason is the ultrametric inequality: $|\sum_j M_{ij}\xi_j|_p \le \max_j |M_{ij}|_p |\xi_j|_p$. No factor for the number of terms appears. So a matrix of $p$-integral jets maps integral vectors to integral vectors. The rest of the section reduces the kernel to this case. This is the bound `New.norm_mulVec_le_of_nonneg`.
 

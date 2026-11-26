@@ -17,7 +17,7 @@ drafted_by: writer@claude-opus-5-5
 
 A jet of a theta function is a complex number. For the argument we need a bound for $|\sigma(\text{jet})|$ for every automorphism $\sigma$ of $\mathbb{C}$, and $\sigma$ is not continuous. So no analytic bound for the jet itself says anything about $\sigma(\text{jet})$. The way out is to show that $\sigma(\text{jet})$ is again a jet, of another datum, at another scale. Then analysis applies to the new datum. This section builds, for each $\sigma$ over $K$, one $\sigma$-semilinear operator $L$ that does this for all data of the finite part at once.
 
-### The model case
+### The model case of conjugation
 
 Take rank one and the vacuum. The theta function of $\mathrm{vac}$ along the archimedean variable is a theta function of an elliptic curve with complex multiplication by $\mathcal{O}_K$, and its Taylor coefficients at $0$, after the scale $t_0$ is put in, are algebraic. The main theorem of complex multiplication says that $\sigma$ maps the curve with its torsion points to a curve isogenous to it, and so maps the scaled Taylor coefficients of the theta function of one translate to the scaled Taylor coefficients of the theta function of another translate. This is the content of the theorem on conjugate jets of translates of [the integral vacuum and tight frames](/chapter/integral-vacuum/). This section changes nothing in the analysis. It only packs that theorem into a linear operator, and it reads off the consequences for characters, for values and for the vacuum.
 
