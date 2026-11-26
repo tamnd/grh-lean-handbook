@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 6247 cited names outside the namespace `New.Data`. This section has 3433 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 6558 cited names outside the namespace `New.Data`. This section has 3585 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -73,6 +73,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.AreMatched.apply_invLastRows_eq_of_isPrimitiveMatrix`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 507](lean:New/Determinant/Exchange/MatchingPartners.lean#L507). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.AreMatched.isLocallyConstant_comp_transpose`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 556](lean:New/Determinant/Exchange/MatchingPartners.lean#L556). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.AreMatched.mem_sameSectionPairs`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 602](lean:New/Determinant/Exchange/MatchingPartners.lean#L602). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.AreMatched.right_eq_pow_mul_apply_smul`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 134](lean:New/Determinant/Exchange/TheoremForPartners.lean#L134). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.areMatched_stdRowDatum_stdColDatum`: `Lib/SiegelWeil/Tower/LineGaussSums.lean`, [line 153](lean:Lib/SiegelWeil/Tower/LineGaussSums.lean#L153). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.artin_reciprocity`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 453](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L453). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.artin_reciprocity_cyclotomic`: `Lib/ClassField/Global/ArtinReciprocity.lean`, [line 179](lean:Lib/ClassField/Global/ArtinReciprocity.lean#L179). Cited in [Chapter](/chapter/class-field-theory/).
@@ -374,7 +375,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.cyclotomicPowDirichlet`: `Lib/GaloisRep/Main/SelmerModules.lean`, [line 229](lean:Lib/GaloisRep/Main/SelmerModules.lean#L229). Cited in [Chapter](/chapter/odd-classes/).
 - `New.dagger`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 53](lean:New/Derivatives/FormalGroup/Resolution.lean#L53). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.daggerForms`: `New/Derivatives/FormalGroup/Resolution.lean`, [line 128](lean:New/Derivatives/FormalGroup/Resolution.lean#L128). Cited in [Chapter](/chapter/cm-formal-group/).
-- `New.dampedPower`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 36](lean:New/Spanning/MainTerm/SieveSystem.lean#L36). Cited in [Chapter](/chapter/real-densities/).
+- `New.dampedPower`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 36](lean:New/Spanning/MainTerm/SieveSystem.lean#L36). Cited in [Chapter](/chapter/real-densities/), [Chapter](/chapter/main-term/).
 - `New.Data`: `New/Reduction/Data/AdmissibleData.lean`, [line 77](lean:New/Reduction/Data/AdmissibleData.lean#L77). Cited in [Chapter](/chapter/notation/).
 - `New.decompGroup`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 80](lean:Lib/ClassField/Places/GaloisDefs.lean#L80). Cited in [Chapter](/chapter/cm-fields/).
 - `New.decreasingPosition`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 78](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L78). Cited in [Chapter](/chapter/weyl-modules/).
@@ -384,6 +385,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.deductionTerm_eraseHeightOne`: `New/Derivatives/Divisibility/Count.lean`, [line 458](lean:New/Derivatives/Divisibility/Count.lean#L458). Cited in [Chapter](/chapter/normal-forms/).
 - `New.deltaForm`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 206](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L206). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.deltaForm_apply`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 217](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L217). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.denominator`: `New/Spanning/MainTerm/Frequencies.lean`, [line 28](lean:New/Spanning/MainTerm/Frequencies.lean#L28). Cited in [Chapter](/chapter/main-term/).
 - `New.dense_of_mostFrobenii`: `Lib/GaloisRep/Main/Defs.lean`, [line 295](lean:Lib/GaloisRep/Main/Defs.lean#L295). Cited in [Chapter](/chapter/attached-representations/).
 - `New.denseRange_algebraMap_finAdele`: `Lib/Adelic/Adeles/Basic.lean`, [line 770](lean:Lib/Adelic/Adeles/Basic.lean#L770). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.denseRange_algebraMap_Ô`: `Lib/Adelic/Adeles/Basic.lean`, [line 757](lean:Lib/Adelic/Adeles/Basic.lean#L757). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -723,6 +725,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.eventually_rpow_lt_thetaTailIntegral`: `Lib/Analytic/QuadraticTwist.lean`, [line 275](lean:Lib/Analytic/QuadraticTwist.lean#L275). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.eventually_unramified`: `Lib/ClassField/Places/Ideles.lean`, [line 192](lean:Lib/ClassField/Places/Ideles.lean#L192). Cited in [Chapter](/chapter/cm-fields/).
 - `New.eventuallyEq_of_eq_far_right`: `Lib/Analytic/Landau.lean`, [line 143](lean:Lib/Analytic/Landau.lean#L143). Cited in [Chapter](/chapter/landau-theorem/).
+- `New.Exchange.adjointDatum`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 98](lean:New/Determinant/Exchange/TheoremForPartners.lean#L98). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.apply_eq_zero_of_forall_fixed_eq_zero`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 231](lean:New/Determinant/Exchange/NegativeIndices.lean#L231). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.centreCoeff_eq_zero_of_not_representedBy`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 451](lean:New/Determinant/Exchange/NegativeIndices.lean#L451). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.centreCoeff_eq_zero_of_unimodular`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 812](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L812). Cited in [Chapter](/chapter/rallis-inner-product/).
@@ -733,30 +736,59 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Exchange.constTermAt`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 72](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L72). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.dualCone`: `Lib/SiegelWeil/Tower/RealConeIntegral.lean`, [line 72](lean:Lib/SiegelWeil/Tower/RealConeIntegral.lean#L72). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.dualIndex`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 286](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L286). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.eq_mul_of_integral_pairTheta`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 568](lean:New/Determinant/Exchange/TheoremForPartners.lean#L568). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.eq_zero_of_stabilizer_fixes_polyVector`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 255](lean:New/Determinant/Exchange/NegativeIndices.lean#L255). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.equalRankThetaRatio`: `New/Determinant/Exchange/LargeTriple.lean`, [line 432](lean:New/Determinant/Exchange/LargeTriple.lean#L432). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.equalRankThetaRatio_eq_of_signs_eq`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 792](lean:New/Determinant/Exchange/TheoremForPartners.lean#L792). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.eval_eq_zero_of_rotation_fixed`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 191](lean:New/Determinant/Exchange/NegativeIndices.lean#L191). Cited in [Chapter](/chapter/exchange-identity-1/).
-- `New.Exchange.exchange_identity`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 1051](lean:New/Determinant/Exchange/TheoremForPartners.lean#L1051). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Exchange.exchange_identity`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 1051](lean:New/Determinant/Exchange/TheoremForPartners.lean#L1051). Cited in [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exchange_of_matches`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 321](lean:New/Determinant/Exchange/TheoremForPartners.lean#L321). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exchange_theorem`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 975](lean:New/Determinant/Exchange/TheoremForPartners.lean#L975). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exchangeSection`: `New/Determinant/Exchange/RealVectors.lean`, [line 356](lean:New/Determinant/Exchange/RealVectors.lean#L356). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_analytic_extension_functional_equation`: `Lib/SiegelWeil/Tower/FunctionalEquation.lean`, [line 368](lean:Lib/SiegelWeil/Tower/FunctionalEquation.lean#L368). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_analytic_extension_ne_zero`: `Lib/SiegelWeil/Tower/FunctionalEquation.lean`, [line 424](lean:Lib/SiegelWeil/Tower/FunctionalEquation.lean#L424). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.exists_areMatched_modDatum_eq`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 884](lean:New/Determinant/Exchange/TheoremForPartners.lean#L884). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_centreCoeff_eq_mul_of_isPeriodIdentity`: `New/Determinant/Exchange/LargeTriple.lean`, [line 1013](lean:New/Determinant/Exchange/LargeTriple.lean#L1013). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_coneIntegrand_eq_smul`: `New/Determinant/Exchange/ConeImage.lean`, [line 330](lean:New/Determinant/Exchange/ConeImage.lean#L330). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_contDiff_eventuallyEq_inv`: `New/Determinant/Exchange/RealVectors.lean`, [line 210](lean:New/Determinant/Exchange/RealVectors.lean#L210). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_contDiff_witt`: `New/Determinant/Exchange/RealVectors.lean`, [line 137](lean:New/Determinant/Exchange/RealVectors.lean#L137). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_contDiff_witt_and_bump`: `New/Determinant/Exchange/RealVectors.lean`, [line 271](lean:New/Determinant/Exchange/RealVectors.lean#L271). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_equalRankThetaRatio_add_plane`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 745](lean:New/Determinant/Exchange/TheoremForPartners.lean#L745). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_equalRankThetaRatio_const_ne_zero`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 719](lean:New/Determinant/Exchange/TheoremForPartners.lean#L719). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_equalRankThetaRatio_eq_const`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 812](lean:New/Determinant/Exchange/TheoremForPartners.lean#L812). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_equalRankThetaRatio_ne_zero`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 542](lean:New/Determinant/Exchange/TheoremForPartners.lean#L542). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_equalRankThetaRatio_sq_eq`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 686](lean:New/Determinant/Exchange/TheoremForPartners.lean#L686). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_hasPosMellinTransform_mulVec_eq_smul`: `New/Determinant/Exchange/ConeImage.lean`, [line 225](lean:New/Determinant/Exchange/ConeImage.lean#L225). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_isBaseAdapted`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 245](lean:New/Determinant/Exchange/RemovingPlanes.lean#L245). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_isEquivariantLift_eq_thetaLarge_sub_smul`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 281](lean:New/Determinant/Exchange/EquivariantDifference.lean#L281). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_isometry_fock_functional_eq_zero`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 297](lean:New/Determinant/Exchange/NegativeIndices.lean#L297). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_isSchwartzVector_exchangeSection`: `New/Determinant/Exchange/RealVectors.lean`, [line 407](lean:New/Determinant/Exchange/RealVectors.lean#L407). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_isSchwartzVector_realSlice_bump`: `New/Determinant/Exchange/RealVectors.lean`, [line 372](lean:New/Determinant/Exchange/RealVectors.lean#L372). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_isSchwartzVector_realSlice_eq`: `New/Determinant/Exchange/RealVectors.lean`, [line 54](lean:New/Determinant/Exchange/RealVectors.lean#L54). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_isSchwartzVector_realSlice_zero_eq`: `New/Determinant/Exchange/RealVectors.lean`, [line 120](lean:New/Determinant/Exchange/RealVectors.lean#L120). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_linear_thetaLarge`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 235](lean:New/Determinant/Exchange/EquivariantDifference.lean#L235). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_linear_thetaSmall`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 215](lean:New/Determinant/Exchange/EquivariantDifference.lean#L215). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_lineTerm_localDatum`: `Lib/SiegelWeil/Tower/LineGaussSums.lean`, [line 444](lean:Lib/SiegelWeil/Tower/LineGaussSums.lean#L444). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_local_gauss_sum`: `Lib/Weil/TameGaussSum.lean`, [line 154](lean:Lib/Weil/TameGaussSum.lean#L154). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.exists_localDatum_adjointDatum_eq_smul`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 153](lean:New/Determinant/Exchange/TheoremForPartners.lean#L153). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_mem_maxCompactU_eq_rotation`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 110](lean:New/Determinant/Exchange/NegativeIndices.lean#L110). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_mul_thetaSmall_adjointDatum_eq_mul_integral`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 204](lean:New/Determinant/Exchange/TheoremForPartners.lean#L204). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_planeConstantTerm_eq_thetaLarge_cone`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 861](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L861). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_planeConstantTerm_eq_thetaLarge_dualCone`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 882](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L882). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_pow_smul_add_eq`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 85](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L85). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_quotMeasure_mul_eq_mul_integral_pairTheta`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 642](lean:New/Determinant/Exchange/TheoremForPartners.lean#L642). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_rowColExchangeIdentity_of_even_rank`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 284](lean:New/Determinant/Exchange/TheoremForPartners.lean#L284). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_rowColExchangeIdentity_removing_plane`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 621](lean:New/Determinant/Exchange/RemovingPlanes.lean#L621). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_rowColExchangeIdentity_removing_planes`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 646](lean:New/Determinant/Exchange/RemovingPlanes.lean#L646). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_rowColExchangeIdentity_sum`: `New/Determinant/Exchange/RealVectors.lean`, [line 748](lean:New/Determinant/Exchange/RealVectors.lean#L748). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_slice_eq_smul_realPairWeil`: `New/Determinant/Exchange/ConeImage.lean`, [line 289](lean:New/Determinant/Exchange/ConeImage.lean#L289). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_straightPoint`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 641](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L641). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.exists_thetaLarge_cone_eq`: `New/Determinant/Exchange/ConeImage.lean`, [line 453](lean:New/Determinant/Exchange/ConeImage.lean#L453). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_thetaLarge_cone_eq_mul`: `New/Determinant/Exchange/ConeImage.lean`, [line 404](lean:New/Determinant/Exchange/ConeImage.lean#L404). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_thetaLarge_eq_mul_quotMeasure`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 598](lean:New/Determinant/Exchange/TheoremForPartners.lean#L598). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.exists_thetaLarge_eq_mul_thetaLarge`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 187](lean:New/Determinant/Exchange/RemovingPlanes.lean#L187). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_thetaLarge_eq_smul_of_isPeriodIdentity`: `New/Determinant/Exchange/LargeTriple.lean`, [line 1101](lean:New/Determinant/Exchange/LargeTriple.lean#L1101). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.exists_thetaLarge_thetaSmall_eq_circle_mul`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 202](lean:New/Determinant/Exchange/RemovingPlanes.lean#L202). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.exists_torus_mul_quasiReflection_fixes`: `Lib/SiegelWeil/Formula/StrongApproximation.lean`, [line 64](lean:Lib/SiegelWeil/Formula/StrongApproximation.lean#L64). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Exchange.exists_torus_mul_rational_fixes`: `Lib/SiegelWeil/Formula/StrongApproximation.lean`, [line 115](lean:Lib/SiegelWeil/Formula/StrongApproximation.lean#L115). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Exchange.exists_unfold_constant_term`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 672](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L672). Cited in [Chapter](/chapter/rallis-inner-product/).
@@ -764,15 +796,19 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Exchange.exists_unitary_mulVec_eq_single`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 50](lean:New/Determinant/Exchange/NegativeIndices.lean#L50). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.exists_zetaIntegral`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 745](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L745). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.finTateIntegrand`: `Lib/SiegelWeil/Tower/FiniteTateIntegral.lean`, [line 203](lean:Lib/SiegelWeil/Tower/FiniteTateIntegral.lean#L203). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.frameProjection`: `New/Determinant/Exchange/RealVectors.lean`, [line 338](lean:New/Determinant/Exchange/RealVectors.lean#L338). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.haar_map_mul_right_of_isCompact`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 345](lean:New/Determinant/Exchange/NegativeIndices.lean#L345). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.HasPosMellinTransform`: `New/Determinant/Exchange/ConeImage.lean`, [line 167](lean:New/Determinant/Exchange/ConeImage.lean#L167). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.hasSum_constTermAt`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 114](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L114). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.homSlice_localDatum_stdColDatum`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 321](lean:New/Determinant/Exchange/RemovingPlanes.lean#L321). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.homSlice_pairWeil_stabilizer_mul`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 428](lean:New/Determinant/Exchange/NegativeIndices.lean#L428). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.idemAdele`: `Lib/Adelic/Adeles/StrongApproximation.lean`, [line 437](lean:Lib/Adelic/Adeles/StrongApproximation.lean#L437). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.Exchange.integral_finTateIntegrand`: `Lib/SiegelWeil/Tower/FiniteTateIntegral.lean`, [line 215](lean:Lib/SiegelWeil/Tower/FiniteTateIntegral.lean#L215). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.integral_kernel_mul_forms_eq_integral_periodPairing`: `Lib/Weil/Seesaw.lean`, [line 581](lean:Lib/Weil/Seesaw.lean#L581). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.integral_theta_pairWeil_stabilizer_eq_zero`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 369](lean:New/Determinant/Exchange/NegativeIndices.lean#L369). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.integral_thetaIntegral_lineRadical`: `Lib/SiegelWeil/Tower/ConstantTerm.lean`, [line 188](lean:Lib/SiegelWeil/Tower/ConstantTerm.lean#L188). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.integral_thetaOnRealData_eq_zero`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 417](lean:New/Determinant/Exchange/TheoremForPartners.lean#L417). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.integral_thetaSmall_lineRadical_eq_mul_thetaSmall`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 413](lean:New/Determinant/Exchange/RemovingPlanes.lean#L413). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.IntegralFrame.match_mem_of_isPrimitiveMatrix_vanishing`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 302](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L302). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.IntegralFrame.stdColDatum_mul_sub_smul`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 265](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L265). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.IntegralFrame.stdColDatum_shear_of_isIntMatrix`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 213](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L213). Cited in [Chapter](/chapter/exchange-identity-1/).
@@ -791,12 +827,20 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Exchange.IsEquivariantLift.exists_linear_partialMean`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 634](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L634). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.IsEquivariantLift.partialMean_shear`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 606](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L606). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.IsEquivariantLift.shearInvariant_stdColDatum`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 686](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L686). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.isForm_neg_iff_and_integral_neg`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 70](lean:New/Determinant/Exchange/RemovingPlanes.lean#L70). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.IsPeriodIdentity`: `New/Determinant/Exchange/LargeTriple.lean`, [line 774](lean:New/Determinant/Exchange/LargeTriple.lean#L774). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.IsSchwartzVector`: `Lib/Weil/Fock/WeightedNorms.lean`, [line 107](lean:Lib/Weil/Fock/WeightedNorms.lean#L107). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.IsSchwartzVector.adjointDatum`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 103](lean:New/Determinant/Exchange/TheoremForPartners.lean#L103). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.isSchwartzVector_realBoxProd`: `New/Determinant/Exchange/RealVectors.lean`, [line 181](lean:New/Determinant/Exchange/RealVectors.lean#L181). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.isSchwartzVector_realPairWeil`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 480](lean:New/Determinant/Exchange/TheoremForPartners.lean#L480). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.IsSeesawMatched`: `Lib/Weil/Seesaw.lean`, [line 620](lean:Lib/Weil/Seesaw.lean#L620). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.IsSelfDualTestPair`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 518](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L518). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.IsTriangle.eq_zero_of_weightedChain_eq_zero`: `New/Determinant/Chain/TriangleNorms.lean`, [line 349](lean:New/Determinant/Chain/TriangleNorms.lean#L349). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.Exchange.IsTriangle.ne_zero_of_squareCommutes`: `New/Determinant/Chain/TriangleNorms.lean`, [line 390](lean:New/Determinant/Chain/TriangleNorms.lean#L390). Cited in [Chapter](/chapter/theorem-c-plan/).
+- `New.Exchange.IsWittBump`: `New/Determinant/Exchange/RealVectors.lean`, [line 241](lean:New/Determinant/Exchange/RealVectors.lean#L241). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.IsWittBump.eventually_bump_frameProjection_ne_zero`: `New/Determinant/Exchange/RealVectors.lean`, [line 630](lean:New/Determinant/Exchange/RealVectors.lean#L630). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.IsWittBump.exists_mul_fromRows_mul_eq_of_ne_zero`: `New/Determinant/Exchange/RealVectors.lean`, [line 608](lean:New/Determinant/Exchange/RealVectors.lean#L608). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.IsWittBump.isPeriodIdentity`: `New/Determinant/Exchange/RealVectors.lean`, [line 668](lean:New/Determinant/Exchange/RealVectors.lean#L668). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.kernelPair`: `Lib/Weil/Seesaw.lean`, [line 78](lean:Lib/Weil/Seesaw.lean#L78). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.lineTerm`: `Lib/SiegelWeil/Tower/LineTerms.lean`, [line 92](lean:Lib/SiegelWeil/Tower/LineTerms.lean#L92). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.localChar`: `Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean`, [line 254](lean:Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean#L254). Cited in [Chapter](/chapter/exchange-identity-1/).
@@ -812,29 +856,49 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Exchange.matrixFourier`: `Lib/General/Analysis/FiniteFourier.lean`, [line 86](lean:Lib/General/Analysis/FiniteFourier.lean#L86). Cited in [Chapter](/chapter/notation/).
 - `New.Exchange.modLift`: `Lib/Weil/Seesaw.lean`, [line 88](lean:Lib/Weil/Seesaw.lean#L88). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.modTransposedLift`: `Lib/Weil/Seesaw.lean`, [line 94](lean:Lib/Weil/Seesaw.lean#L94). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
+- `New.Exchange.mul_gram_inv_mul_of_isUnit_det`: `New/Determinant/Exchange/RealVectors.lean`, [line 296](lean:New/Determinant/Exchange/RealVectors.lean#L296). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.neg_mem_flipSpace_Gamma_iff`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 127](lean:New/Determinant/Exchange/TheoremForPartners.lean#L127). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.neg_mem_neg_Gamma_iff`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 61](lean:New/Determinant/Exchange/RemovingPlanes.lean#L61). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.negCount_sumElim_hyperbolicSigns_unit`: `New/Determinant/Exchange/VanishingDescends.lean`, [line 67](lean:New/Determinant/Exchange/VanishingDescends.lean#L67). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.one_square_identity_of_isEdgeFamily`: `New/Determinant/Exchange/OneSquare.lean`, [line 965](lean:New/Determinant/Exchange/OneSquare.lean#L965). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.Exchange.pairWeil_inv_localDatum`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 104](lean:New/Determinant/Exchange/EquivariantDifference.lean#L104). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.planeConstantTerm`: `Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean`, [line 131](lean:Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean#L131). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.prod_conj_pow_eq_norm_div`: `New/Determinant/Exchange/RealVectors.lean`, [line 528](lean:New/Determinant/Exchange/RealVectors.lean#L528). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.ReadsAt.pairWeil_localDatum_of_mem_supportedOn`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 81](lean:New/Determinant/Exchange/EquivariantDifference.lean#L81). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.realPairWeil_exchangeSection`: `New/Determinant/Exchange/RealVectors.lean`, [line 561](lean:New/Determinant/Exchange/RealVectors.lean#L561). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.realPairWeil_mulSingle_mem_map_homogeneousSubmodule`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 277](lean:New/Determinant/Exchange/NegativeIndices.lean#L277). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.realPairWeil_rotation_polyVector`: `New/Determinant/Exchange/NegativeIndices.lean`, [line 146](lean:New/Determinant/Exchange/NegativeIndices.lean#L146). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.realSlice_zero_comp`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 279](lean:New/Determinant/Exchange/RemovingPlanes.lean#L279). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.realSlice_zero_congr`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 263](lean:New/Determinant/Exchange/RemovingPlanes.lean#L263). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.RepresentedBy.of_conjTranspose_mul_mul`: `New/Determinant/Exchange/LargeTriple.lean`, [line 84](lean:New/Determinant/Exchange/LargeTriple.lean#L84). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.RowColExchangeIdentity`: `New/Determinant/Exchange/LargeTriple.lean`, [line 446](lean:New/Determinant/Exchange/LargeTriple.lean#L446). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.RowColExchangeIdentity.cone`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 562](lean:New/Determinant/Exchange/RemovingPlanes.lean#L562). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.RowColExchangeIdentity.congr_second_space`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 473](lean:New/Determinant/Exchange/RemovingPlanes.lean#L473). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.RowColExchangeIdentity.dualCone`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 590](lean:New/Determinant/Exchange/RemovingPlanes.lean#L590). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.RowColExchangeIdentity.of_planeConstantTerm_eq`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 508](lean:New/Determinant/Exchange/RemovingPlanes.lean#L508). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.rowColExchangeIdentity_of_periods`: `New/Determinant/Exchange/LargeTriple.lean`, [line 1164](lean:New/Determinant/Exchange/LargeTriple.lean#L1164). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.seesaw_periods`: `Lib/Weil/Seesaw.lean`, [line 653](lean:Lib/Weil/Seesaw.lean#L653). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.Exchange.siegelBracket`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 193](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L193). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.SlicesVanishOutside`: `New/Determinant/Exchange/LargeTriple.lean`, [line 104](lean:New/Determinant/Exchange/LargeTriple.lean#L104). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.spaceChar_mul_spaceChar_eq_iff`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 862](lean:New/Determinant/Exchange/TheoremForPartners.lean#L862). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.SplitTameChar.L_ne_zero`: `Lib/SiegelWeil/Tower/FiniteTateIntegral.lean`, [line 71](lean:Lib/SiegelWeil/Tower/FiniteTateIntegral.lean#L71). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.SplitTameChar.semilocalChar`: `Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean`, [line 350](lean:Lib/ClassField/HeckeCharacter/SplitTameCharacters.lean#L350). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.SquareCommutes`: `New/Determinant/Chain/TriangleNorms.lean`, [line 141](lean:New/Determinant/Chain/TriangleNorms.lean#L141). Cited in [Chapter](/chapter/theorem-c-plan/).
 - `New.Exchange.StraightPoint`: `Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean`, [line 555](lean:Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean#L555). Cited in [Chapter](/chapter/rallis-inner-product/).
 - `New.Exchange.sum_mul_addChar_lift_eq_zero`: `New/Determinant/Exchange/StableSpacesStandardData.lean`, [line 235](lean:New/Determinant/Exchange/StableSpacesStandardData.lean#L235). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.theta_zeroTerm_stdColDatum_eq_zero`: `New/Determinant/Exchange/RemovingPlanes.lean`, [line 361](lean:New/Determinant/Exchange/RemovingPlanes.lean#L361). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.thetaIntegral_pairWeil`: `Lib/Weil/DualPair/ThetaIntegrals.lean`, [line 454](lean:Lib/Weil/DualPair/ThetaIntegrals.lean#L454). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Exchange.thetaLarge`: `Lib/Weil/DualPair/ThetaIntegrals.lean`, [line 395](lean:Lib/Weil/DualPair/ThetaIntegrals.lean#L395). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.thetaLarge_eq_apply_one_of_even_rank`: `New/Determinant/Exchange/LargeTriple.lean`, [line 387](lean:New/Determinant/Exchange/LargeTriple.lean#L387). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.thetaLarge_eq_smul_of_areMatched`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 241](lean:New/Determinant/Exchange/TheoremForPartners.lean#L241). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.thetaLarge_mul_of_mem_stdLevel`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 187](lean:New/Determinant/Exchange/EquivariantDifference.lean#L187). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.thetaLarge_realPairWeil`: `New/Determinant/Exchange/ConeImage.lean`, [line 386](lean:New/Determinant/Exchange/ConeImage.lean#L386). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.thetaLarge_translate_mul`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 126](lean:New/Determinant/Exchange/EquivariantDifference.lean#L126). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Exchange.ThetaLargeVanishes`: `New/Determinant/Exchange/VanishingDescends.lean`, [line 46](lean:New/Determinant/Exchange/VanishingDescends.lean#L46). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.ThetaLargeVanishes.congr_spaces`: `New/Determinant/Exchange/VanishingDescends.lean`, [line 56](lean:New/Determinant/Exchange/VanishingDescends.lean#L56). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.ThetaLargeVanishes.of_add_plane`: `New/Determinant/Exchange/VanishingDescends.lean`, [line 83](lean:New/Determinant/Exchange/VanishingDescends.lean#L83). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.ThetaLargeVanishes.of_add_planes`: `New/Determinant/Exchange/VanishingDescends.lean`, [line 153](lean:New/Determinant/Exchange/VanishingDescends.lean#L153). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Exchange.thetaLargeVanishes_of_equalRankThetaRatio_eq_zero`: `New/Determinant/Exchange/TheoremForPartners.lean`, [line 501](lean:New/Determinant/Exchange/TheoremForPartners.lean#L501). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Exchange.thetaOnRealData`: `New/Determinant/Exchange/LargeTriple.lean`, [line 75](lean:New/Determinant/Exchange/LargeTriple.lean#L75). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.thetaOnRealData_boxProd_eq_mul`: `New/Determinant/Exchange/LargeTriple.lean`, [line 337](lean:New/Determinant/Exchange/LargeTriple.lean#L337). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.thetaSmall`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 47](lean:New/Determinant/Exchange/EquivariantDifference.lean#L47). Cited in [Chapter](/chapter/exchange-identity-1/).
@@ -842,6 +906,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Exchange.thetaSmall_translate_mul`: `New/Determinant/Exchange/EquivariantDifference.lean`, [line 161](lean:New/Determinant/Exchange/EquivariantDifference.lean#L161). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.thetaTerm_eq_and_centreCoeff_eq_zero`: `New/Determinant/Exchange/LargeTriple.lean`, [line 293](lean:New/Determinant/Exchange/LargeTriple.lean#L293). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Exchange.tsum_lineTerm`: `Lib/SiegelWeil/Tower/LineTerms.lean`, [line 262](lean:Lib/SiegelWeil/Tower/LineTerms.lean#L262). Cited in [Chapter](/chapter/rallis-inner-product/).
+- `New.Exchange.unitaryMovedFrame`: `New/Determinant/Exchange/RealVectors.lean`, [line 343](lean:New/Determinant/Exchange/RealVectors.lean#L343). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.exists_abs_gaussianMonomial_le_rpow`: `Lib/Analytic/QuadraticTwist.lean`, [line 389](lean:Lib/Analytic/QuadraticTwist.lean#L389). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_adjugate_of_charpoly_mem`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 628](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L628). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.exists_analyticAt_double_eq`: `Lib/Shimura/Uniformisation/AppellHumbert.lean`, [line 54](lean:Lib/Shimura/Uniformisation/AppellHumbert.lean#L54). Cited in [Chapter](/chapter/complex-abelian-varieties/).
@@ -862,6 +927,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.exists_derivative_kernels`: `New/Spanning/Bessel/SchurBound.lean`, [line 160](lean:New/Spanning/Bessel/SchurBound.lean#L160). Cited in [Chapter](/chapter/bessel-real-place/).
 - `New.exists_det_dvd_and_dvd_mulVec`: `New/Derivatives/Divisibility/NullFrames.lean`, [line 41](lean:New/Derivatives/Divisibility/NullFrames.lean#L41). Cited in [Chapter](/chapter/normal-forms/).
 - `New.exists_det_dvd_prod_and_dvd_mulVec`: `New/Derivatives/Divisibility/NullFrames.lean`, [line 68](lean:New/Derivatives/Divisibility/NullFrames.lean#L68). Cited in [Chapter](/chapter/normal-forms/).
+- `New.exists_det_fromCols_eq_mul_det`: `New/OneLift/ComparisonOperator/DeterminantProducts.lean`, [line 39](lean:New/OneLift/ComparisonOperator/DeterminantProducts.lean#L39). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.exists_dirichletCharacter_eq_jacobiSym`: `Lib/Analytic/QuadraticTwist.lean`, [line 309](lean:Lib/Analytic/QuadraticTwist.lean#L309). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.exists_dual_isometry`: `Lib/GLn/Dual.lean`, [line 467](lean:Lib/GLn/Dual.lean#L467). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.exists_eigenvector_of_functional`: `Lib/General/LinearAlgebra/Eigenvalues.lean`, [line 193](lean:Lib/General/LinearAlgebra/Eigenvalues.lean#L193). Cited in [Chapter](/chapter/iwahori-satake/).
@@ -1001,6 +1067,9 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.besselU_mul_apply_eq_add`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 123](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L123). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.big_cell_factors_mem_intGL`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 386](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L386). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.big_cell_factors_unique`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 340](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L340). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Filling.boundedNonzeroIntegers`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 62](lean:New/Spanning/MainTerm/FillingLevel.lean#L62). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.BoundsDecay`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 514](lean:New/Spanning/MainTerm/GlobalSieve.lean#L514). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.boundsDecay_prod`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 818](lean:New/Spanning/MainTerm/GlobalSieve.lean#L818). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.boxCutoff`: `New/Spanning/RemainingTerms/SchurTest.lean`, [line 37](lean:New/Spanning/RemainingTerms/SchurTest.lean#L37). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.boxedPoints`: `New/Spanning/RemainingTerms/Box.lean`, [line 200](lean:New/Spanning/RemainingTerms/Box.lean#L200). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.card_reducedImage_besselS`: `New/Spanning/Unfolding/ReducedGroups.lean`, [line 614](lean:New/Spanning/Unfolding/ReducedGroups.lean#L614). Cited in [Chapter](/chapter/poincare-series/).
@@ -1009,6 +1078,8 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.card_residueGL_mul_b_pow_le`: `New/Spanning/RemainingTerms/Size.lean`, [line 155](lean:New/Spanning/RemainingTerms/Size.lean#L155). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.cellRank`: `New/Spanning/RemainingTerms/Data.lean`, [line 83](lean:New/Spanning/RemainingTerms/Data.lean#L83). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.cellRankSecondMoment`: `New/Spanning/RemainingTerms/OrbitSize.lean`, [line 50](lean:New/Spanning/RemainingTerms/OrbitSize.lean#L50). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.charOnPlaces`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 73](lean:New/Spanning/MainTerm/GlobalSieve.lean#L73). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.charOnPlaces_add_star`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 515](lean:New/Spanning/MainTerm/FillingLevel.lean#L515). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.CharsAgree`: `New/Spanning/Unfolding/Terms.lean`, [line 135](lean:New/Spanning/Unfolding/Terms.lean#L135). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.CharsAgree.add_finrank_commonIsotropic_eq`: `New/Spanning/Unfolding/TermStructure.lean`, [line 710](lean:New/Spanning/Unfolding/TermStructure.lean#L710). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.CharsAgree.disjoint_flagSpan_coe_commonIsotropic`: `New/Spanning/Unfolding/TermStructure.lean`, [line 699](lean:New/Spanning/Unfolding/TermStructure.lean#L699). Cited in [Chapter](/chapter/poincare-series/).
@@ -1038,7 +1109,13 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.conjTranspose_eichler_mul_mul`: `New/Spanning/Unfolding/ReducedPoints.lean`, [line 60](lean:New/Spanning/Unfolding/ReducedPoints.lean#L60). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.conjTranspose_skewSolution`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 476](lean:New/Spanning/RemainingTerms/FrameCount.lean#L476). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.continuous_besselKernel`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 66](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L66). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.cosetAmplitude`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 54](lean:New/Spanning/MainTerm/FillingLevel.lean#L54). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.cut_exponent_le`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 417](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L417). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Filling.decayConst`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 800](lean:New/Spanning/MainTerm/GlobalSieve.lean#L800). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.densitySum`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 549](lean:New/Spanning/MainTerm/GlobalSieve.lean#L549). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.densitySum_le`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 748](lean:New/Spanning/MainTerm/GlobalSieve.lean#L748). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.densitySum_succ_le`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 620](lean:New/Spanning/MainTerm/GlobalSieve.lean#L620). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.densitySum_succ_le_mul_densitySum_add`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 731](lean:New/Spanning/MainTerm/GlobalSieve.lean#L731). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.discriminant`: `New/Spanning/RemainingTerms/Discriminants.lean`, [line 302](lean:New/Spanning/RemainingTerms/Discriminants.lean#L302). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.discWeightIfRowVanishes`: `New/Spanning/RemainingTerms/LatticesOfCorank.lean`, [line 155](lean:New/Spanning/RemainingTerms/LatticesOfCorank.lean#L155). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.disjoint_reducedImage_besselU_besselH`: `New/Spanning/Unfolding/ReducedGroups.lean`, [line 573](lean:New/Spanning/Unfolding/ReducedGroups.lean#L573). Cited in [Chapter](/chapter/poincare-series/).
@@ -1061,8 +1138,11 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.enorm_besselKernel`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 71](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L71). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.enorm_besselKernel_sub_cut_le`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 380](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L380). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.enorm_integral_besselKernel_le`: `New/Spanning/RemainingTerms/Size.lean`, [line 322](lean:New/Spanning/RemainingTerms/Size.lean#L322). Cited in [Chapter](/chapter/remaining-terms/).
+- `New.Filling.entryDensity`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 540](lean:New/Spanning/MainTerm/GlobalSieve.lean#L540). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.entrySet`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 81](lean:New/Spanning/MainTerm/FillingLevel.lean#L81). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.eq_and_mem_classUnipotent_of_besselS`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 831](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L831). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.eq_one_of_mul_eq_mul_of_termDisc_ne_zero`: `New/Spanning/RemainingTerms/Size.lean`, [line 240](lean:New/Spanning/RemainingTerms/Size.lean#L240). Cited in [Chapter](/chapter/remaining-terms/).
+- `New.Filling.exists_amplitudeSum_eq_sum_cosetAmplitude`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 383](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L383). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.exists_basis_mulVec_mem_ideleM_smul`: `New/Spanning/RemainingTerms/LinkLattice.lean`, [line 751](lean:New/Spanning/RemainingTerms/LinkLattice.lean#L751). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.exists_besselS_mem_termsOver`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 895](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L895). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.exists_besselU_approx`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 745](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L745). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1086,8 +1166,11 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.exists_hasLevelLifts_linkDiscSq_le`: `New/Spanning/RemainingTerms/LinkLattice.lean`, [line 795](lean:New/Spanning/RemainingTerms/LinkLattice.lean#L795). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.exists_int_eq_sum_re`: `New/Spanning/RemainingTerms/ColumnLattice.lean`, [line 184](lean:New/Spanning/RemainingTerms/ColumnLattice.lean#L184). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.exists_integral_big_cell_decomp`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 243](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L243). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Filling.exists_integralPlace`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 400](lean:New/Spanning/MainTerm/FillingLevel.lean#L400). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.exists_inv_sublatticeDiscriminant_pow_le_prod`: `New/Spanning/RemainingTerms/SiegelLemma.lean`, [line 590](lean:New/Spanning/RemainingTerms/SiegelLemma.lean#L590). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.exists_isAddFundamentalDomain_columnLattice`: `New/Spanning/RemainingTerms/ColumnLattice.lean`, [line 245](lean:New/Spanning/RemainingTerms/ColumnLattice.lean#L245). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.exists_isFillingData`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 532](lean:New/Spanning/MainTerm/FillingLevel.lean#L532). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.exists_isIntegralOff_toPlaces_eq`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 175](lean:New/Spanning/MainTerm/FillingLevel.lean#L175). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.exists_isLabelledPair_of_isNearPairOverAgreeingBlock`: `New/Spanning/RemainingTerms/Count.lean`, [line 84](lean:New/Spanning/RemainingTerms/Count.lean#L84). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.exists_isLift`: `New/Spanning/RemainingTerms/FrameParts.lean`, [line 368](lean:New/Spanning/RemainingTerms/FrameParts.lean#L368). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.exists_isResidueDomain`: `New/Spanning/RemainingTerms/Box.lean`, [line 145](lean:New/Spanning/RemainingTerms/Box.lean#L145). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1100,6 +1183,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.exists_orthogonal_lift`: `New/Spanning/RemainingTerms/OrthogonalLifts.lean`, [line 100](lean:New/Spanning/RemainingTerms/OrthogonalLifts.lean#L100). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.exists_pairOccursInColumnsAt_top_of_meetsAt`: `New/Spanning/Unfolding/Climbing.lean`, [line 1044](lean:New/Spanning/Unfolding/Climbing.lean#L1044). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.exists_pivot_mul_eq_one`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 166](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L166). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Filling.exists_places_integralOff`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 117](lean:New/Spanning/MainTerm/FillingLevel.lean#L117). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.exists_rat_approx_unipotentChar_eq`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 860](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L860). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.exists_rowCoords_fst_eq`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 560](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L560). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.exists_rowCoords_snd_eq`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 616](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L616). Cited in [Chapter](/chapter/frame-counts/).
@@ -1108,6 +1192,8 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.exists_tsum_classCutoff_mul_prod_enorm_le`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 542](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L542). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.exists_tsum_schurWeight_le`: `New/Spanning/RemainingTerms/SchurOrbit.lean`, [line 583](lean:New/Spanning/RemainingTerms/SchurOrbit.lean#L583). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.existsUnique_mul_unitriangular_mem`: `New/Spanning/Unfolding/ReducedPoints.lean`, [line 470](lean:New/Spanning/Unfolding/ReducedPoints.lean#L470). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.extendToAdeles`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 299](lean:New/Spanning/MainTerm/GlobalSieve.lean#L299). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.finite_boundedNonzeroIntegers`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 67](lean:New/Spanning/MainTerm/FillingLevel.lean#L67). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.finrank_commonIsotropic_besselU_mul`: `New/Spanning/Unfolding/TermStructure.lean`, [line 767](lean:New/Spanning/Unfolding/TermStructure.lean#L767). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.finrank_link`: `New/Spanning/Unfolding/Link.lean`, [line 616](lean:New/Spanning/Unfolding/Link.lean#L616). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.finrank_link_add_finrank_commonIsotropic`: `New/Spanning/Unfolding/Link.lean`, [line 605](lean:New/Spanning/Unfolding/Link.lean#L605). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1140,6 +1226,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.Fits.realConv_tsum_cutBessel_classUnipotent`: `New/Spanning/Unfolding/PoincareSeries.lean`, [line 493](lean:New/Spanning/Unfolding/PoincareSeries.lean#L493). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.Fits.reduction_finiteEquiv_iff`: `New/Spanning/Unfolding/PoincareSeries.lean`, [line 220](lean:New/Spanning/Unfolding/PoincareSeries.lean#L220). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.Fits.tsum_cutBessel_classUnipotent`: `New/Spanning/Unfolding/PoincareSeries.lean`, [line 325](lean:New/Spanning/Unfolding/PoincareSeries.lean#L325). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Filling.fixer`: `New/Spanning/Unfolding/Climbing.lean`, [line 240](lean:New/Spanning/Unfolding/Climbing.lean#L240). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.form_frameImage_mulVec`: `New/Spanning/Unfolding/Terms.lean`, [line 177](lean:New/Spanning/Unfolding/Terms.lean#L177). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.form_linkSource_eq_form_linkTarget`: `New/Spanning/Unfolding/Link.lean`, [line 494](lean:New/Spanning/Unfolding/Link.lean#L494). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.frameBoxRadius`: `New/Spanning/Unfolding/Setup.lean`, [line 396](lean:New/Spanning/Unfolding/Setup.lean#L396). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1159,9 +1246,13 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.frameProducts_mulVec_of_frameImage_eq`: `New/Spanning/Unfolding/Terms.lean`, [line 201](lean:New/Spanning/Unfolding/Terms.lean#L201). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.frameVector_sub_eq_sum`: `New/Spanning/Unfolding/Packing.lean`, [line 46](lean:New/Spanning/Unfolding/Packing.lean#L46). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.freeLattice`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 515](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L515). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.frequencyDecay`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 102](lean:New/Spanning/MainTerm/GlobalSieve.lean#L102). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.genIndex_algebraMap_le_pow_of_norm_sq_le`: `New/Spanning/RemainingTerms/FrameParts.lean`, [line 627](lean:New/Spanning/RemainingTerms/FrameParts.lean#L627). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.globalChar`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 93](lean:New/Spanning/MainTerm/GlobalSieve.lean#L93). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.globalWeight`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 927](lean:New/Spanning/MainTerm/GlobalSieve.lean#L927). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.gram_linkVectors`: `New/Spanning/RemainingTerms/LinkVectors.lean`, [line 303](lean:New/Spanning/RemainingTerms/LinkVectors.lean#L303). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.gramDiscReal_realFrameGram_ratToInf`: `New/Spanning/Unfolding/Terms.lean`, [line 352](lean:New/Spanning/Unfolding/Terms.lean#L352). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.gramScalar_mul_headDensity`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 368](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L368). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.HasAmplitudeBlocks`: `New/Spanning/Unfolding/Moments.lean`, [line 92](lean:New/Spanning/Unfolding/Moments.lean#L92). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.HasAmplitudeBlocks.hilbertSchmidtNorm_sub_one_sq_le`: `New/Spanning/Unfolding/Moments.lean`, [line 480](lean:New/Spanning/Unfolding/Moments.lean#L480). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.HasAmplitudeBlocks.isNearIsometry_piTensorElem_comp`: `New/Spanning/Unfolding/Moments.lean`, [line 1230](lean:New/Spanning/Unfolding/Moments.lean#L1230). Cited in [Chapter](/chapter/theorem-b-plan/).
@@ -1200,6 +1291,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.HasLevelLifts.submatrix`: `New/Spanning/RemainingTerms/LinkLattice.lean`, [line 535](lean:New/Spanning/RemainingTerms/LinkLattice.lean#L535). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.hasLevelLifts_of_col_mem`: `New/Spanning/RemainingTerms/LinkLattice.lean`, [line 689](lean:New/Spanning/RemainingTerms/LinkLattice.lean#L689). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.hasSum_amplitudeSum_of_cutoff`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 717](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L717). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Filling.hasSum_besselOrbitalIntegral_cosetAmplitude`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 638](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L638). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.inclHFin_mem_latticeStabilizer_iff`: `New/Spanning/Unfolding/Climbing.lean`, [line 453](lean:New/Spanning/Unfolding/Climbing.lean#L453). Cited in [Chapter](/chapter/bessel-real-place/), [Chapter](/chapter/poincare-series/).
 - `New.Filling.inCut_of_besselKernel_ne_zero`: `New/Spanning/RemainingTerms/SchurTest.lean`, [line 71](lean:New/Spanning/RemainingTerms/SchurTest.lean#L71). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.integral_besselKernel_eq_zero_of_not_charsAgree`: `New/Spanning/Unfolding/Climbing.lean`, [line 549](lean:New/Spanning/Unfolding/Climbing.lean#L549). Cited in [Chapter](/chapter/poincare-series/).
@@ -1210,6 +1302,30 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.IsBoxPartitionOfUnity.mem_frameBox`: `New/Spanning/Unfolding/Packing.lean`, [line 97](lean:New/Spanning/Unfolding/Packing.lean#L97). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.isBoxPartitionOfUnity_reducedIndicator`: `New/Spanning/Unfolding/Packing.lean`, [line 86](lean:New/Spanning/Unfolding/Packing.lean#L86). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsDiscreteSeriesBessel`: `New/Spanning/Bessel/LargeFunction.lean`, [line 60](lean:New/Spanning/Bessel/LargeFunction.lean#L60). Cited in [Chapter](/chapter/bessel-real-place/).
+- `New.Filling.IsFillingData`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 94](lean:New/Spanning/MainTerm/FillingLevel.lean#L94). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.cosetAmplitude_eq_kloostermanSum_smul`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 845](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L845). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.enorm_floorForm_zero_mul_le`: `New/Spanning/MainTerm/FiniteSieveSystem.lean`, [line 147](lean:New/Spanning/MainTerm/FiniteSieveSystem.lean#L147). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.enorm_normDensity_le_mul_lintegral_normFiberMeasure`: `New/Spanning/MainTerm/SiegelTopBound.lean`, [line 423](lean:New/Spanning/MainTerm/SiegelTopBound.lean#L423). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.exists_intermediateGroup_norm_floorForm_div_le`: `New/Spanning/MainTerm/FiniteSieveSystem.lean`, [line 215](lean:New/Spanning/MainTerm/FiniteSieveSystem.lean#L215). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.exists_intermediateGroup_one_place`: `New/Spanning/Frames/FixedLines.lean`, [line 383](lean:New/Spanning/Frames/FixedLines.lean#L383). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.exists_intermediateGroup_places`: `New/Spanning/Frames/FixedLines.lean`, [line 827](lean:New/Spanning/Frames/FixedLines.lean#L827). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.exists_intermediateGroup_sieveSystem`: `New/Spanning/MainTerm/FiniteSieveSystem.lean`, [line 280](lean:New/Spanning/MainTerm/FiniteSieveSystem.lean#L280). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.exists_scaledSiegelConst_eq_and_massRatio_le`: `New/Spanning/MainTerm/SiegelTopBound.lean`, [line 249](lean:New/Spanning/MainTerm/SiegelTopBound.lean#L249). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.massIntegral_full_le`: `New/Spanning/MainTerm/FiniteSieveSystem.lean`, [line 64](lean:New/Spanning/MainTerm/FiniteSieveSystem.lean#L64). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.massIntegral_mul_le_of_relIndex_eq`: `New/Spanning/Frames/FixedLines.lean`, [line 309](lean:New/Spanning/Frames/FixedLines.lean#L309). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.mem_principalLevel_iff`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 512](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L512). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.modulus_levelUnit`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 548](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L548). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.mul_sum_norm_sum_cosetAmplitude_sq_le`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 479](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L479). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.mul_sum_norm_sum_cosetAmplitude_sq_le_fiberPairing`: `New/Spanning/MainTerm/SiegelTopBound.lean`, [line 637](lean:New/Spanning/MainTerm/SiegelTopBound.lean#L637). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.norm_floorForm_zero_div_massRatio_le`: `New/Spanning/MainTerm/FiniteSieveSystem.lean`, [line 172](lean:New/Spanning/MainTerm/FiniteSieveSystem.lean#L172). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.posSemidef_lastEntryDensity`: `New/Spanning/MainTerm/FiniteSieveSystem.lean`, [line 244](lean:New/Spanning/MainTerm/FiniteSieveSystem.lean#L244). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.psi_simpleRootSum_eq_unipotentChar`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 534](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L534). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.reduction_eq_iff`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 522](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L522). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.scaledOrbitalIntegral_smul_eq_cosetAmplitude`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 922](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L922). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.siegel_sum_le_lintegral_sphere`: `New/Spanning/MainTerm/SiegelTopBound.lean`, [line 738](lean:New/Spanning/MainTerm/SiegelTopBound.lean#L738). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.sum_mul_norm_sum_cosetAmplitude_sq_le_lastEntryDensity`: `New/Spanning/MainTerm/SiegelTopBound.lean`, [line 846](lean:New/Spanning/MainTerm/SiegelTopBound.lean#L846). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.sum_sq_norm_sum_cosetAmplitude_le_headSumNormSq`: `New/Spanning/MainTerm/SiegelTopBound.lean`, [line 551](lean:New/Spanning/MainTerm/SiegelTopBound.lean#L551). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsFillingData.unipotentOrder_mul_unipotentMass_eq_one`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 563](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L563). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.IsFrameSet`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 108](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L108). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsFrameSet.encard_le`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 528](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L528). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsFrameSet.encard_le_of_conjTranspose_mul_eq`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 360](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L360). Cited in [Chapter](/chapter/frame-counts/).
@@ -1220,9 +1336,11 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.IsFrameSet.encard_range_sharedVectors_le`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 201](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L201). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsFrameSet.isIntegral_frameProducts`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 128](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L128). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsFrameSet.mono`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 118](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L118). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.IsGlobalSieveSystem`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 502](lean:New/Spanning/MainTerm/GlobalSieve.lean#L502). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.isIntegral_conjTranspose_mul`: `New/Spanning/RemainingTerms/ColumnLattice.lean`, [line 104](lean:New/Spanning/RemainingTerms/ColumnLattice.lean#L104). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.isIntegral_frameProducts`: `New/Spanning/Unfolding/Terms.lean`, [line 618](lean:New/Spanning/Unfolding/Terms.lean#L618). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.isIntegral_sharedVectors`: `New/Spanning/RemainingTerms/FramesOverLattice.lean`, [line 178](lean:New/Spanning/RemainingTerms/FramesOverLattice.lean#L178). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.IsIntegralOff`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 49](lean:New/Spanning/MainTerm/FillingLevel.lean#L49). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.isIntMatrix_skewSolution`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 496](lean:New/Spanning/RemainingTerms/FrameCount.lean#L496). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsLatticeOfRank`: `New/Spanning/RemainingTerms/Discriminants.lean`, [line 293](lean:New/Spanning/RemainingTerms/Discriminants.lean#L293). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.IsLatticeOfRank.tsum_submoduleIndex_inv_pow_le`: `New/Spanning/RemainingTerms/Discriminants.lean`, [line 725](lean:New/Spanning/RemainingTerms/Discriminants.lean#L725). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1230,6 +1348,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.IsLatticeTranslate`: `New/Spanning/RemainingTerms/SchurOrbit.lean`, [line 223](lean:New/Spanning/RemainingTerms/SchurOrbit.lean#L223). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.IsLift`: `New/Spanning/RemainingTerms/FrameParts.lean`, [line 356](lean:New/Spanning/RemainingTerms/FrameParts.lean#L356). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsLift.exists_conjTranspose_framePartX₀_mul_eq_neg`: `New/Spanning/RemainingTerms/FrameParts.lean`, [line 456](lean:New/Spanning/RemainingTerms/FrameParts.lean#L456). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.isMulLeftInvariant_haar_inv`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 461](lean:New/Spanning/MainTerm/FillingLevel.lean#L461). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.IsNear`: `New/Spanning/Unfolding/Terms.lean`, [line 130](lean:New/Spanning/Unfolding/Terms.lean#L130). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.IsNear.genIndex_frameModulus_le`: `New/Spanning/RemainingTerms/FrameParts.lean`, [line 674](lean:New/Spanning/RemainingTerms/FrameParts.lean#L674). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsNear.genIndex_M_mul_leadingMinor_le`: `New/Spanning/RemainingTerms/FrameParts.lean`, [line 640](lean:New/Spanning/RemainingTerms/FrameParts.lean#L640). Cited in [Chapter](/chapter/frame-counts/).
@@ -1245,6 +1364,8 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.IsNearPairOverAgreeingBlock.ofReal_termSize_mul_le`: `New/Spanning/RemainingTerms/Sum.lean`, [line 208](lean:New/Spanning/RemainingTerms/Sum.lean#L208). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.IsNearRepresentative`: `New/Spanning/RemainingTerms/BorderedDeterminant.lean`, [line 455](lean:New/Spanning/RemainingTerms/BorderedDeterminant.lean#L455). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.IsNearTermAt.eq_of_frameImage_eq`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 121](lean:New/Spanning/RemainingTerms/FrameCount.lean#L121). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.IsOpenElement`: `New/Spanning/Unfolding/Climbing.lean`, [line 273](lean:New/Spanning/Unfolding/Climbing.lean#L273). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.IsOpenElement.leadingMinor_ne_zero`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 90](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L90). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.IsOrthogonalLift`: `New/Spanning/RemainingTerms/OrthogonalLifts.lean`, [line 63](lean:New/Spanning/RemainingTerms/OrthogonalLifts.lean#L63). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsOrthogonalLift.gram_add_border`: `New/Spanning/RemainingTerms/OrthogonalLifts.lean`, [line 235](lean:New/Spanning/RemainingTerms/OrthogonalLifts.lean#L235). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.IsOrthogonalLift.linkDiscSq_mul_sq_eq`: `New/Spanning/RemainingTerms/LinkLattice.lean`, [line 242](lean:New/Spanning/RemainingTerms/LinkLattice.lean#L242). Cited in [Chapter](/chapter/frame-counts/).
@@ -1269,6 +1390,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.le_finrank_commonLink_add`: `New/Spanning/RemainingTerms/Gain.lean`, [line 74](lean:New/Spanning/RemainingTerms/Gain.lean#L74). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.le_scaledBesselLengthProd_mul`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 280](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L280). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.leadingMinor_frameGram_besselU_mul`: `Lib/DiscreteSeries/Bruhat/FloorGroups.lean`, [line 702](lean:Lib/DiscreteSeries/Bruhat/FloorGroups.lean#L702). Cited in [Chapter](/chapter/bessel-bruhat/).
+- `New.Filling.leadingMinor_mem_boundedNonzeroIntegers`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 173](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L173). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.leadingMinor_weylElem_mul`: `Lib/DiscreteSeries/Bruhat/BigCell.lean`, [line 77](lean:Lib/DiscreteSeries/Bruhat/BigCell.lean#L77). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.levelGauge`: `New/Spanning/RemainingTerms/Data.lean`, [line 74](lean:New/Spanning/RemainingTerms/Data.lean#L74). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.levelMultiples`: `New/Spanning/Unfolding/Setup.lean`, [line 400](lean:New/Spanning/Unfolding/Setup.lean#L400). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1281,8 +1403,8 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.linkIsometry_eq_iff`: `New/Spanning/Unfolding/Link.lean`, [line 744](lean:New/Spanning/Unfolding/Link.lean#L744). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.linkIsometry_frameImage_mulVec`: `New/Spanning/Unfolding/Link.lean`, [line 805](lean:New/Spanning/Unfolding/Link.lean#L805). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.linkIsometry_inv_mul_mul_of_mem_besselU`: `New/Spanning/Unfolding/Link.lean`, [line 753](lean:New/Spanning/Unfolding/Link.lean#L753). Cited in [Chapter](/chapter/anatomy-of-a-term/).
-- `New.Filling.linkSecondMoment`: `New/Spanning/RemainingTerms/Size.lean`, [line 80](lean:New/Spanning/RemainingTerms/Size.lean#L80). Cited in [Chapter](/chapter/remaining-terms/).
-- `New.Filling.linkSecondMoment_isOpenElement_le`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 631](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L631). Cited in [Chapter](/chapter/theorem-b-plan/).
+- `New.Filling.linkSecondMoment`: `New/Spanning/RemainingTerms/Size.lean`, [line 80](lean:New/Spanning/RemainingTerms/Size.lean#L80). Cited in [Chapter](/chapter/remaining-terms/), [Chapter](/chapter/main-term/).
+- `New.Filling.linkSecondMoment_isOpenElement_le`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 631](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L631). Cited in [Chapter](/chapter/theorem-b-plan/), [Chapter](/chapter/main-term/).
 - `New.Filling.linkSecondMoment_le_of_le_meetNorm`: `New/Spanning/RemainingTerms/Sum.lean`, [line 759](lean:New/Spanning/RemainingTerms/Sum.lean#L759). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.linkSource`: `New/Spanning/Unfolding/Link.lean`, [line 397](lean:New/Spanning/Unfolding/Link.lean#L397). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.LinkSplitting`: `New/Spanning/RemainingTerms/Cut.lean`, [line 452](lean:New/Spanning/RemainingTerms/Cut.lean#L452). Cited in [Chapter](/chapter/remaining-terms/).
@@ -1297,6 +1419,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.lintegral_classCutoff_mul_prod`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 155](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L155). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.lintegral_cutoff_mul_le_of_average`: `New/Spanning/RemainingTerms/SchurTest.lean`, [line 174](lean:New/Spanning/RemainingTerms/SchurTest.lean#L174). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.lintegral_mul_eq_of_isCutoff`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 697](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L697). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Filling.mainSecondMoment`: `New/Spanning/Unfolding/Setup.lean`, [line 477](lean:New/Spanning/Unfolding/Setup.lean#L477). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.map_commonPart_le`: `New/Spanning/RemainingTerms/Gain.lean`, [line 629](lean:New/Spanning/RemainingTerms/Gain.lean#L629). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.map_le_and_rowVanishesModPiN_of_out_eq`: `New/Spanning/RemainingTerms/LatticesOfCorank.lean`, [line 174](lean:New/Spanning/RemainingTerms/LatticesOfCorank.lean#L174). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.map_termDisc_eq_norm`: `New/Spanning/Unfolding/Terms.lean`, [line 302](lean:New/Spanning/Unfolding/Terms.lean#L302). Cited in [Chapter](/chapter/anatomy-of-a-term/).
@@ -1312,6 +1435,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.mem_boxedPoints_of_classCutoff_ne_zero`: `New/Spanning/Unfolding/Packing.lean`, [line 126](lean:New/Spanning/Unfolding/Packing.lean#L126). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.mem_frameBox_of_classCutoff_ne_zero`: `New/Spanning/Unfolding/Packing.lean`, [line 115](lean:New/Spanning/Unfolding/Packing.lean#L115). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.mem_frameBox_of_mem_boxedPoints`: `New/Spanning/RemainingTerms/Box.lean`, [line 320](lean:New/Spanning/RemainingTerms/Box.lean#L320). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.mem_latticeStabilizer_iff`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 265](lean:New/Spanning/MainTerm/FillingLevel.lean#L265). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.mem_link_iff_linkIsometry`: `New/Spanning/Unfolding/Link.lean`, [line 735](lean:New/Spanning/Unfolding/Link.lean#L735). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.mem_link_weylElem_mul_iff`: `New/Spanning/Unfolding/Link.lean`, [line 297](lean:New/Spanning/Unfolding/Link.lean#L297). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.mem_reducedImage_besselS`: `New/Spanning/Unfolding/ReducedGroups.lean`, [line 587](lean:New/Spanning/Unfolding/ReducedGroups.lean#L587). Cited in [Chapter](/chapter/poincare-series/).
@@ -1320,6 +1444,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.mem_reducedImage_iff_forall_place`: `New/Spanning/Unfolding/ReducedGroups.lean`, [line 362](lean:New/Spanning/Unfolding/ReducedGroups.lean#L362). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.mem_termsOver_iff_mul_mul_inv_mem`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 642](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L642). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.mem_termsOver_reduction_iff`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 802](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L802). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.mem_unitaryLevel_iff`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 239](lean:New/Spanning/MainTerm/FillingLevel.lean#L239). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.minorGauge`: `New/Spanning/RemainingTerms/BorderedDeterminant.lean`, [line 438](lean:New/Spanning/RemainingTerms/BorderedDeterminant.lean#L438). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.minorNorm`: `New/Spanning/RemainingTerms/BorderedDeterminant.lean`, [line 419](lean:New/Spanning/RemainingTerms/BorderedDeterminant.lean#L419). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.minorNorm_sq_le_linkDiscSq_mul`: `New/Spanning/RemainingTerms/Cut.lean`, [line 255](lean:New/Spanning/RemainingTerms/Cut.lean#L255). Cited in [Chapter](/chapter/remaining-terms/).
@@ -1328,6 +1453,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.mul_mem_boxedPoints_iff`: `New/Spanning/RemainingTerms/Box.lean`, [line 221](lean:New/Spanning/RemainingTerms/Box.lean#L221). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.mul_mul_inv_mem_inter_termsOver`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 685](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L685). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.mul_rootDiscr_pow_le_tailScale_pow_div`: `New/Spanning/RemainingTerms/LatticesOfCorank.lean`, [line 742](lean:New/Spanning/RemainingTerms/LatticesOfCorank.lean#L742). Cited in [Chapter](/chapter/remaining-terms/).
+- `New.Filling.NamesLink`: `New/Spanning/MainTerm/GlobalToLocal.lean`, [line 275](lean:New/Spanning/MainTerm/GlobalToLocal.lean#L275). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.nonempty_linkSplitting`: `New/Spanning/RemainingTerms/Cut.lean`, [line 543](lean:New/Spanning/RemainingTerms/Cut.lean#L543). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.norm_adjugate_le`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 164](lean:New/Spanning/RemainingTerms/FrameCount.lean#L164). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.norm_adjugate_le_pow`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 181](lean:New/Spanning/RemainingTerms/FrameCount.lean#L181). Cited in [Chapter](/chapter/frame-counts/).
@@ -1336,6 +1462,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.norm_sq_middle_part_eq`: `New/Spanning/Unfolding/Terms.lean`, [line 284](lean:New/Spanning/Unfolding/Terms.lean#L284). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.norm_Φ_frameProducts_sub_le`: `New/Spanning/Unfolding/Packing.lean`, [line 190](lean:New/Spanning/Unfolding/Packing.lean#L190). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.norm_Φ_sub_mul_norm_basisScale_div_le`: `New/Spanning/Unfolding/Packing.lean`, [line 252](lean:New/Spanning/Unfolding/Packing.lean#L252). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.normalizingConst`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 140](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L140). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.one_le_latticeDisc`: `New/Spanning/RemainingTerms/Data.lean`, [line 147](lean:New/Spanning/RemainingTerms/Data.lean#L147). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.one_le_meetNorm`: `New/Spanning/Unfolding/Climbing.lean`, [line 234](lean:New/Spanning/Unfolding/Climbing.lean#L234). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.one_le_mul_linkDiscSq`: `New/Spanning/RemainingTerms/Gain.lean`, [line 212](lean:New/Spanning/RemainingTerms/Gain.lean#L212). Cited in [Chapter](/chapter/remaining-terms/).
@@ -1349,10 +1476,12 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.pairLattice`: `New/Spanning/RemainingTerms/Data.lean`, [line 60](lean:New/Spanning/RemainingTerms/Data.lean#L60). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.pairOccursAt_succ`: `New/Spanning/Unfolding/Climbing.lean`, [line 737](lean:New/Spanning/Unfolding/Climbing.lean#L737). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.pairOccursInColumnsAt_succ_of_agree`: `New/Spanning/Unfolding/Climbing.lean`, [line 1024](lean:New/Spanning/Unfolding/Climbing.lean#L1024). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Filling.poissonConst`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 531](lean:New/Spanning/MainTerm/GlobalSieve.lean#L531). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.positiveGram`: `New/Spanning/Unfolding/Link.lean`, [line 393](lean:New/Spanning/Unfolding/Link.lean#L393). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.pow_le_tailScale`: `New/Spanning/Unfolding/Terms.lean`, [line 484](lean:New/Spanning/Unfolding/Terms.lean#L484). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.pow_mul_mainSecondMoment_div_le`: `New/Spanning/RemainingTerms/Sum.lean`, [line 335](lean:New/Spanning/RemainingTerms/Sum.lean#L335). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.principalLevel`: `New/Spanning/Unfolding/Setup.lean`, [line 211](lean:New/Spanning/Unfolding/Setup.lean#L211). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.prod_bandLimit_eq_gram`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 422](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L422). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.prod_kernelBound_le`: `New/Spanning/RemainingTerms/SchurOrbit.lean`, [line 728](lean:New/Spanning/RemainingTerms/SchurOrbit.lean#L728). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.prod_le_meetNorm`: `New/Spanning/Unfolding/Climbing.lean`, [line 228](lean:New/Spanning/Unfolding/Climbing.lean#L228). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.prod_norm_det_gram_linkVectors`: `New/Spanning/RemainingTerms/LinkVectors.lean`, [line 364](lean:New/Spanning/RemainingTerms/LinkVectors.lean#L364). Cited in [Chapter](/chapter/remaining-terms/).
@@ -1361,8 +1490,11 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.prod_wave_eq_star_unipotentChar`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 818](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L818). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.prod_wave_simpleRootSum_adelicToInf`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 263](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L263). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.prod_wave_simpleRootSum_ratToInf`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 291](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L291). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.ratPoint`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 107](lean:New/Spanning/MainTerm/GlobalSieve.lean#L107). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.ratTriangle`: `New/Spanning/Unfolding/Setup.lean`, [line 416](lean:New/Spanning/Unfolding/Setup.lean#L416). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.ratTriangle_eq_sum`: `New/Spanning/Unfolding/ReducedPoints.lean`, [line 535](lean:New/Spanning/Unfolding/ReducedPoints.lean#L535). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.re_le_of_last_entries_ne`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 653](lean:New/Spanning/MainTerm/GlobalSieve.lean#L653). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.re_sum_sum_le_densitySum_add`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 693](lean:New/Spanning/MainTerm/GlobalSieve.lean#L693). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.reduceAboveM_det_eq_zero_of_meetsAt`: `New/Spanning/Unfolding/Climbing.lean`, [line 1102](lean:New/Spanning/Unfolding/Climbing.lean#L1102). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.reducedImage`: `New/Spanning/Unfolding/Setup.lean`, [line 215](lean:New/Spanning/Unfolding/Setup.lean#L215). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.reducedImage_besselH_le_fixer`: `New/Spanning/Unfolding/Climbing.lean`, [line 253](lean:New/Spanning/Unfolding/Climbing.lean#L253). Cited in [Chapter](/chapter/poincare-series/).
@@ -1377,6 +1509,8 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.rowCoords_snd_mem_imSkewLattice`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 595](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L595). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.RowVanishesModPiN`: `New/Spanning/RemainingTerms/LatticesOfCorank.lean`, [line 147](lean:New/Spanning/RemainingTerms/LatticesOfCorank.lean#L147). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.scaledBesselLengthProd`: `New/Spanning/Unfolding/AmplitudeSums.lean`, [line 206](lean:New/Spanning/Unfolding/AmplitudeSums.lean#L206). Cited in [Chapter](/chapter/poincare-series/).
+- `New.Filling.scaledEntry`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 521](lean:New/Spanning/MainTerm/GlobalSieve.lean#L521). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.scaledHead`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 526](lean:New/Spanning/MainTerm/GlobalSieve.lean#L526). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.schurIntegral`: `New/Spanning/RemainingTerms/SchurTest.lean`, [line 59](lean:New/Spanning/RemainingTerms/SchurTest.lean#L59). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.schurWeight`: `New/Spanning/RemainingTerms/SchurTest.lean`, [line 50](lean:New/Spanning/RemainingTerms/SchurTest.lean#L50). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.secondMoment`: `New/Spanning/RemainingTerms/Size.lean`, [line 71](lean:New/Spanning/RemainingTerms/Size.lean#L71). Cited in [Chapter](/chapter/remaining-terms/).
@@ -1386,14 +1520,17 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.selfDualChar_eq_one_of_mem`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 591](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L591). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.sharedVectors`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 329](lean:New/Spanning/RemainingTerms/FrameCount.lean#L329). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.siegel_lemma`: `New/Spanning/RemainingTerms/SiegelLemma.lean`, [line 520](lean:New/Spanning/RemainingTerms/SiegelLemma.lean#L520). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.sieve`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 1145](lean:New/Spanning/MainTerm/GlobalSieve.lean#L1145). Cited in [Chapter](/chapter/main-term/).
+- `New.Filling.sieve_constant_le`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 273](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L273). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.simpleRootSum_inv`: `Lib/DiscreteSeries/Bessel/SchurBound.lean`, [line 86](lean:Lib/DiscreteSeries/Bessel/SchurBound.lean#L86). Cited in [Chapter](/chapter/bessel-bruhat/).
 - `New.Filling.skewSolution`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 470](lean:New/Spanning/RemainingTerms/FrameCount.lean#L470). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.skewSolution_mul`: `New/Spanning/RemainingTerms/FrameCount.lean`, [line 486](lean:New/Spanning/RemainingTerms/FrameCount.lean#L486). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.span_columnLattice`: `New/Spanning/RemainingTerms/ColumnLattice.lean`, [line 152](lean:New/Spanning/RemainingTerms/ColumnLattice.lean#L152). Cited in [Chapter](/chapter/frame-counts/).
+- `New.Filling.sq_sum_globalWeight_le`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 1103](lean:New/Spanning/MainTerm/GlobalSieve.lean#L1103). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.sq_tsum_amplitudeMajorant_doubleCoset_le`: `New/Spanning/RemainingTerms/SchurOrbit.lean`, [line 876](lean:New/Spanning/RemainingTerms/SchurOrbit.lean#L876). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.sqrt_secondMoment_add_le`: `New/Spanning/RemainingTerms/Size.lean`, [line 104](lean:New/Spanning/RemainingTerms/Size.lean#L104). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.sqrt_secondMoment_compl_besselS_le`: `New/Spanning/Unfolding/SquareExpansion.lean`, [line 559](lean:New/Spanning/Unfolding/SquareExpansion.lean#L559). Cited in [Chapter](/chapter/theorem-b-plan/).
-- `New.Filling.stdAddChar_div_deltaE`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 242](lean:New/Spanning/MainTerm/GlobalSieve.lean#L242). Cited in [Chapter](/chapter/discrete-series/).
+- `New.Filling.stdAddChar_div_deltaE`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 242](lean:New/Spanning/MainTerm/GlobalSieve.lean#L242). Cited in [Chapter](/chapter/discrete-series/), [Chapter](/chapter/main-term/).
 - `New.Filling.subframeMinor`: `New/Spanning/RemainingTerms/BorderedDeterminant.lean`, [line 431](lean:New/Spanning/RemainingTerms/BorderedDeterminant.lean#L431). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.sublatticeDiscriminant`: `New/Spanning/RemainingTerms/SiegelLemma.lean`, [line 183](lean:New/Spanning/RemainingTerms/SiegelLemma.lean#L183). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.submoduleIndex_colLattice_dvd_preimageLattice`: `New/Spanning/RemainingTerms/OrthogonalLifts.lean`, [line 332](lean:New/Spanning/RemainingTerms/OrthogonalLifts.lean#L332). Cited in [Chapter](/chapter/frame-counts/).
@@ -1411,9 +1548,12 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.submoduleZeta_prod_le`: `New/Spanning/RemainingTerms/Discriminants.lean`, [line 124](lean:New/Spanning/RemainingTerms/Discriminants.lean#L124). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.sum_classes_le_of_sum_translates_le`: `New/Spanning/RemainingTerms/LatticesOfCorank.lean`, [line 40](lean:New/Spanning/RemainingTerms/LatticesOfCorank.lean#L40). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.sum_discriminant_inv_le`: `New/Spanning/RemainingTerms/LatticesOfCorank.lean`, [line 774](lean:New/Spanning/RemainingTerms/LatticesOfCorank.lean#L774). Cited in [Chapter](/chapter/remaining-terms/).
+- `New.Filling.sum_frequencies_le`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 177](lean:New/Spanning/MainTerm/GlobalSieve.lean#L177). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.sum_norm_amplitudeSum_sub_cut_le`: `New/Spanning/RemainingTerms/Size.lean`, [line 125](lean:New/Spanning/RemainingTerms/Size.lean#L125). Cited in [Chapter](/chapter/remaining-terms/).
+- `New.Filling.sum_norm_sum_cosetAmplitude_sq_le`: `New/Spanning/MainTerm/EnergyEstimate.lean`, [line 561](lean:New/Spanning/MainTerm/EnergyEstimate.lean#L561). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.sum_pairDiscriminant_inv_le`: `New/Spanning/RemainingTerms/Count.lean`, [line 187](lean:New/Spanning/RemainingTerms/Count.lean#L187). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.sum_pairDiscriminant_inv_le_tsum`: `New/Spanning/RemainingTerms/Count.lean`, [line 125](lean:New/Spanning/RemainingTerms/Count.lean#L125). Cited in [Chapter](/chapter/remaining-terms/).
+- `New.Filling.sum_ratPoint_le_mul_add_integral_of_fourier_le`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 416](lean:New/Spanning/MainTerm/GlobalSieve.lean#L416). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.sum_secondMoment_le`: `New/Spanning/Unfolding/MomentBounds.lean`, [line 441](lean:New/Spanning/Unfolding/MomentBounds.lean#L441). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Filling.sum_termSize_mul_inSameLinkClass_le`: `New/Spanning/RemainingTerms/Sum.lean`, [line 454](lean:New/Spanning/RemainingTerms/Sum.lean#L454). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.sum_termSize_mul_le`: `New/Spanning/RemainingTerms/Sum.lean`, [line 248](lean:New/Spanning/RemainingTerms/Sum.lean#L248). Cited in [Chapter](/chapter/remaining-terms/).
@@ -1435,6 +1575,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.termsOver.inv_mul_mem_reducedImage`: `New/Spanning/Unfolding/Terms.lean`, [line 586](lean:New/Spanning/Unfolding/Terms.lean#L586). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.termsOver.isIntegral_inl_besselFrame`: `New/Spanning/Unfolding/Packing.lean`, [line 216](lean:New/Spanning/Unfolding/Packing.lean#L216). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.termsOver.mul`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 187](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L187). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.toPlaces`: `New/Spanning/MainTerm/FillingLevel.lean`, [line 85](lean:New/Spanning/MainTerm/FillingLevel.lean#L85). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.torsionIndex_dvd_submoduleIndex`: `New/Spanning/RemainingTerms/OrthogonalLifts.lean`, [line 381](lean:New/Spanning/RemainingTerms/OrthogonalLifts.lean#L381). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.torsionIndex_mul_discriminant_commonPart_le`: `New/Spanning/RemainingTerms/Gain.lean`, [line 373](lean:New/Spanning/RemainingTerms/Gain.lean#L373). Cited in [Chapter](/chapter/remaining-terms/).
 - `New.Filling.torsionIndex_pos`: `New/Spanning/RemainingTerms/LinkLattice.lean`, [line 471](lean:New/Spanning/RemainingTerms/LinkLattice.lean#L471). Cited in [Chapter](/chapter/frame-counts/).
@@ -1462,10 +1603,11 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Filling.two_pow_mul_pairCountScale_mul_le`: `New/Spanning/RemainingTerms/OrbitSize.lean`, [line 274](lean:New/Spanning/RemainingTerms/OrbitSize.lean#L274). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.unipotentChar`: `New/Spanning/Unfolding/Setup.lean`, [line 737](lean:New/Spanning/Unfolding/Setup.lean#L737). Cited in [Chapter](/chapter/anatomy-of-a-term/).
 - `New.Filling.unipotentChar_eq_of_mem_principalLevel`: `New/Spanning/Unfolding/BesselLevelStructure.lean`, [line 775](lean:New/Spanning/Unfolding/BesselLevelStructure.lean#L775). Cited in [Chapter](/chapter/anatomy-of-a-term/).
+- `New.Filling.unipotentCovolume`: `New/Spanning/Unfolding/Setup.lean`, [line 260](lean:New/Spanning/Unfolding/Setup.lean#L260). Cited in [Chapter](/chapter/main-term/).
 - `New.Filling.unipotentCovolume_eq_prod`: `New/Spanning/Unfolding/CutoffIntegral.lean`, [line 409](lean:New/Spanning/Unfolding/CutoffIntegral.lean#L409). Cited in [Chapter](/chapter/frame-counts/).
 - `New.Filling.vecMul_frameImage_dotProduct_cons_init_eq_of_agrees`: `New/Spanning/Unfolding/Climbing.lean`, [line 950](lean:New/Spanning/Unfolding/Climbing.lean#L950). Cited in [Chapter](/chapter/poincare-series/).
 - `New.Filling.vectorFixer`: `New/Spanning/Unfolding/Climbing.lean`, [line 145](lean:New/Spanning/Unfolding/Climbing.lean#L145). Cited in [Chapter](/chapter/poincare-series/).
-- `New.Filling.wave_two_pi_I_mul`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 233](lean:New/Spanning/MainTerm/GlobalSieve.lean#L233). Cited in [Chapter](/chapter/discrete-series/).
+- `New.Filling.wave_two_pi_I_mul`: `New/Spanning/MainTerm/GlobalSieve.lean`, [line 233](lean:New/Spanning/MainTerm/GlobalSieve.lean#L233). Cited in [Chapter](/chapter/discrete-series/), [Chapter](/chapter/main-term/).
 - `New.fillingMatrix`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 183](lean:Lib/GLn/SchurModule/TensorModel.lean#L183). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fillingMatrix_transpose_mul_self`: `Lib/GLn/SchurModule/WeylKernel.lean`, [line 403](lean:Lib/GLn/SchurModule/WeylKernel.lean#L403). Cited in [Chapter](/chapter/weyl-modules/).
 - `New.fillingMatrixOver_mul_schur`: `Lib/GLn/SchurModule/TensorModel.lean`, [line 240](lean:Lib/GLn/SchurModule/TensorModel.lean#L240). Cited in [Chapter](/chapter/weyl-modules/).
@@ -1617,6 +1759,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Floors.IntegralPlace.IsLargeLatticeData`: `New/Spanning/Frames/StandardLevel.lean`, [line 171](lean:New/Spanning/Frames/StandardLevel.lean#L171). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.IntegralPlace.IsLargeLatticeData.ascConv_mconv_unitaryLevel_coset`: `New/Spanning/Frames/StandardLevel.lean`, [line 876](lean:New/Spanning/Frames/StandardLevel.lean#L876). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.IntegralPlace.IsLargeLatticeData.ascConv_unitaryLevel`: `New/Spanning/Frames/StandardLevel.lean`, [line 858](lean:New/Spanning/Frames/StandardLevel.lean#L858). Cited in [Chapter](/chapter/finite-densities/).
+- `New.Floors.IntegralPlace.IsLargeLatticeData.besselOrbitalIntegral_besselVector_apply`: `New/Spanning/MainTerm/KloostermanSum.lean`, [line 216](lean:New/Spanning/MainTerm/KloostermanSum.lean#L216). Cited in [Chapter](/chapter/main-term/).
 - `New.Floors.IntegralPlace.IsLargeLatticeData.card_cosets_mul_groupMeasure`: `New/Spanning/Frames/BesselVector.lean`, [line 491](lean:New/Spanning/Frames/BesselVector.lean#L491). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.IntegralPlace.IsLargeLatticeData.continuous_lastEntryDensity`: `New/Spanning/Frames/TopFloor.lean`, [line 595](lean:New/Spanning/Frames/TopFloor.lean#L595). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.IntegralPlace.IsLargeLatticeData.enorm_floorForm_le`: `New/Spanning/Frames/FiniteShells.lean`, [line 477](lean:New/Spanning/Frames/FiniteShells.lean#L477). Cited in [Chapter](/chapter/finite-densities/).
@@ -1815,6 +1958,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Floors.PlaceData.IsPairingKernel.weightedSquareIntegral_eq_add_succ`: `New/Spanning/Frames/OneFrame.lean`, [line 214](lean:New/Spanning/Frames/OneFrame.lean#L214). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.PlaceData.IsShortFrom`: `New/Spanning/Frames/Levels.lean`, [line 198](lean:New/Spanning/Frames/Levels.lean#L198). Cited in [Chapter](/chapter/real-densities/).
 - `New.Floors.PlaceData.IsStable`: `New/Spanning/Frames/Levels.lean`, [line 204](lean:New/Spanning/Frames/Levels.lean#L204). Cited in [Chapter](/chapter/local-frames/), [Chapter](/chapter/real-densities/).
+- `New.Floors.PlaceData.kloostermanSum`: `New/Spanning/MainTerm/KloostermanSum.lean`, [line 89](lean:New/Spanning/MainTerm/KloostermanSum.lean#L89). Cited in [Chapter](/chapter/main-term/).
 - `New.Floors.PlaceData.lastEntryDensity`: `New/Spanning/Frames/TopFloor.lean`, [line 525](lean:New/Spanning/Frames/TopFloor.lean#L525). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.PlaceData.lintegral_floorQuadricMeasure_eq`: `New/Spanning/Frames/QuadricVolumes.lean`, [line 371](lean:New/Spanning/Frames/QuadricVolumes.lean#L371). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.PlaceData.lintegral_partialGroupMeasure_weylElem_inv_mul`: `New/Spanning/Frames/Levels.lean`, [line 822](lean:New/Spanning/Frames/Levels.lean#L822). Cited in [Chapter](/chapter/local-frames/).
@@ -1829,6 +1973,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.Floors.PlaceData.scaledOrbitalIntegral`: `New/Spanning/Frames/TopCorrelation.lean`, [line 259](lean:New/Spanning/Frames/TopCorrelation.lean#L259). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.PlaceData.shellNormalization`: `New/Spanning/Frames/Shells.lean`, [line 44](lean:New/Spanning/Frames/Shells.lean#L44). Cited in [Chapter](/chapter/local-frames/).
 - `New.Floors.PlaceData.stableProducts`: `New/Spanning/Frames/Levels.lean`, [line 211](lean:New/Spanning/Frames/Levels.lean#L211). Cited in [Chapter](/chapter/local-frames/), [Chapter](/chapter/real-densities/).
+- `New.Floors.PlaceData.tsum_extendedBesselChar_mul_star_extendedBesselChar`: `New/Spanning/MainTerm/KloostermanSum.lean`, [line 155](lean:New/Spanning/MainTerm/KloostermanSum.lean#L155). Cited in [Chapter](/chapter/main-term/).
 - `New.Floors.PlaceData.unfoldedPairing`: `New/Spanning/Frames/TopCorrelation.lean`, [line 313](lean:New/Spanning/Frames/TopCorrelation.lean#L313). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.PlaceData.unipotentMass`: `New/Spanning/Frames/BesselVector.lean`, [line 189](lean:New/Spanning/Frames/BesselVector.lean#L189). Cited in [Chapter](/chapter/finite-densities/).
 - `New.Floors.PlaceData.volumeExponent`: `New/Spanning/Frames/Levels.lean`, [line 223](lean:New/Spanning/Frames/Levels.lean#L223). Cited in [Chapter](/chapter/local-frames/).
@@ -2363,7 +2508,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.HCParam.rootCone`: `Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean`, [line 119](lean:Lib/DiscreteSeries/Rigidity/RepresentationsAndCasimirs.lean#L119). Cited in [Chapter](/chapter/local-theta/).
 - `New.HCParam.splitCoeff`: `Lib/DiscreteSeries/FlenstedJensen/CasimirEigenfunction.lean`, [line 507](lean:Lib/DiscreteSeries/FlenstedJensen/CasimirEigenfunction.lean#L507). Cited in [Chapter](/chapter/discrete-series/).
 - `New.hcParameter`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 88](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L88). Cited in [Chapter](/chapter/weyl-modules/).
-- `New.headWeight`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 41](lean:New/Spanning/MainTerm/SieveSystem.lean#L41). Cited in [Chapter](/chapter/real-densities/).
+- `New.headWeight`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 41](lean:New/Spanning/MainTerm/SieveSystem.lean#L41). Cited in [Chapter](/chapter/real-densities/), [Chapter](/chapter/main-term/).
 - `New.heckeCoeff`: `Lib/ClassField/HeckeL/EulerProduct.lean`, [line 63](lean:Lib/ClassField/HeckeL/EulerProduct.lean#L63). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.heckeCoset`: `Lib/Adelic/Hecke/Basic.lean`, [line 77](lean:Lib/Adelic/Hecke/Basic.lean#L77). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.heckeCoset_mulSingle_zero_eq`: `Lib/LocalGL/Iwahori/HeckeDegrees.lean`, [line 245](lean:Lib/LocalGL/Iwahori/HeckeDegrees.lean#L245). Cited in [Chapter](/chapter/iwahori-satake/).
@@ -2498,6 +2643,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.integrableOn_and_integral_pow_mul_exp_neg_mul`: `Lib/Analytic/PrimeNumberTheorem/Tauberian.lean`, [line 81](lean:Lib/Analytic/PrimeNumberTheorem/Tauberian.lean#L81). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.integrableOn_laplace_of_abs_le`: `Lib/Analytic/EntireLFunction.lean`, [line 91](lean:Lib/Analytic/EntireLFunction.lean#L91). Cited in [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/polar-functions/).
 - `New.integrableOn_mul_cpow_of_bounded`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 43](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L43). Cited in [Chapter](/chapter/prime-number-theorem/).
+- `New.integral_comp_quotientMk`: `New/Spanning/MainTerm/KloostermanSum.lean`, [line 41](lean:New/Spanning/MainTerm/KloostermanSum.lean#L41). Cited in [Chapter](/chapter/main-term/).
 - `New.integral_conj_weightMinors_lowestKType_mul_dsCoeff`: `Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean`, [line 476](lean:Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean#L476). Cited in [Chapter](/chapter/discrete-series/).
 - `New.integral_conj_weightMinors_mul_dsCoeff_eq_zero`: `Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean`, [line 488](lean:Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean#L488). Cited in [Chapter](/chapter/discrete-series/).
 - `New.integral_cutoff_swap`: `Lib/Adelic/QuotientMeasure/MovingTheQuotient.lean`, [line 46](lean:Lib/Adelic/QuotientMeasure/MovingTheQuotient.lean#L46). Cited in [Chapter](/chapter/reduction-theory/).
@@ -2551,6 +2697,7 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.IsArrow.formRep_formLift`: `Lib/Weil/Lift.lean`, [line 933](lean:Lib/Weil/Lift.lean#L933). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsArrow.inner_formLift_adjoint`: `Lib/Weil/Lift.lean`, [line 960](lean:Lib/Weil/Lift.lean#L960). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsAuxiliary`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 96](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L96). Cited in [Chapter](/chapter/tied-traces/).
+- `New.IsAuxiliary.mono`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 90](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L90). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.IsAuxPrimeDataAt`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 71](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L71). Cited in [Chapter](/chapter/tied-traces/).
 - `New.IsBadPrime`: `Lib/Analytic/QuadraticTwist.lean`, [line 724](lean:Lib/Analytic/QuadraticTwist.lean#L724). Cited in [Chapter](/chapter/reading-the-lean/), [Chapter](/chapter/landau-criterion/), [Chapter](/chapter/polya-vinogradov/).
 - `New.IsBesselFunction`: `Lib/DiscreteSeries/Bessel/Basic.lean`, [line 662](lean:Lib/DiscreteSeries/Bessel/Basic.lean#L662). Cited in [Chapter](/chapter/bessel-bruhat/).
@@ -2649,6 +2796,11 @@ This section and the next have the 6247 cited names outside the namespace `New.D
 - `New.IsFrob.cyclotomicCharMod_eq`: `Lib/ClassField/Places/DecompositionCyclotomic.lean`, [line 210](lean:Lib/ClassField/Places/DecompositionCyclotomic.lean#L210). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsFrob.inv_mul_mem_inertiaGroup`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 238](lean:Lib/ClassField/Places/GaloisDefs.lean#L238). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsFrob.mem_ker_cyclotomicCharMod_iff`: `Lib/ClassField/Places/DecompositionCyclotomic.lean`, [line 221](lean:Lib/ClassField/Places/DecompositionCyclotomic.lean#L221). Cited in [Chapter](/chapter/cm-fields/).
+- `New.IsFromU1.apply_galoisLift`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 144](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L144). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.IsFromU1.map`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 64](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L64). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.IsFromU1.mono`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 55](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L55). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.IsFromU1.mul`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 78](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L78). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.IsFromU1.one`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 71](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L71). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.IsHalfEdge`: `Lib/Weil/Lift.lean`, [line 351](lean:Lib/Weil/Lift.lean#L351). Cited in [Chapter](/chapter/theta-lifts-seesaw/).
 - `New.IsHCParam`: `Lib/GLn/SchurModule/SchurOrthogonality.lean`, [line 95](lean:Lib/GLn/SchurModule/SchurOrthogonality.lean#L95). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/weyl-modules/).
 - `New.IsHCParam.paramsCorrespond_iff`: `Lib/Weil/CompactLift/DefiniteThetaLift.lean`, [line 71](lean:Lib/Weil/CompactLift/DefiniteThetaLift.lean#L71). Cited in [Chapter](/chapter/theta-lifts-seesaw/).

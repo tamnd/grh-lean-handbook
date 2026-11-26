@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, M to Z
 
-This section has the 2814 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
+This section has the 2973 cited names `New.X` outside the namespace `New.Data` with `X` from M to Z, and the names whose first letter after `New.` is not a Latin letter. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. 
 
 - `New.map_const_smul_eq_inv_distribHaarChar_smul`: `Lib/General/Measure/HaarModulus.lean`, [line 235](lean:Lib/General/Measure/HaarModulus.lean#L235). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.map_reducePiPrime_eq_primePowerSeries`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 522](lean:New/Derivatives/FormalGroup/Exponent.lean#L522). Cited in [Chapter](/chapter/cm-formal-group/).
@@ -140,6 +140,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.norm_piPrime_pow_div_le`: `New/Derivatives/FormalGroup/Exponent.lean`, [line 168](lean:New/Derivatives/FormalGroup/Exponent.lean#L168). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.norm_primeNorm`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 74](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L74). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.norm_prod_factorial_le`: `New/Derivatives/Divisibility/Count.lean`, [line 68](lean:New/Derivatives/Divisibility/Count.lean#L68). Cited in [Chapter](/chapter/normal-forms/).
+- `New.norm_prod_mul_le_prod_mul`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 92](lean:New/Spanning/MainTerm/SieveSystem.lean#L92). Cited in [Chapter](/chapter/main-term/).
 - `New.norm_realVac`: `New/UpperBound/Kernels/JetConjugatesAndBounds.lean`, [line 561](lean:New/UpperBound/Kernels/JetConjugatesAndBounds.lean#L561). Cited in [Chapter](/chapter/theta-kernels-gauges/).
 - `New.norm_regularL_le_linear`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 213](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L213). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.norm_regularL_le_sq`: `Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean`, [line 297](lean:Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean#L297). Cited in [Chapter](/chapter/prime-number-theorem/).
@@ -894,6 +895,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.PointFn.point_eq_of_ofSection_eq`: `Lib/General/Geometry/LineBundles.lean`, [line 411](lean:Lib/General/Geometry/LineBundles.lean#L411). Cited in [Chapter](/chapter/schemes-through-points/).
 - `New.poisson_summation_gaussianMonomial`: `Lib/Analytic/DirichletTheta.lean`, [line 267](lean:Lib/Analytic/DirichletTheta.lean#L267). Cited in [Chapter](/chapter/dirichlet-l-functions/).
 - `New.polya_vinogradov`: `Lib/Analytic/PolyaVinogradov.lean`, [line 182](lean:Lib/Analytic/PolyaVinogradov.lean#L182). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.posSemidef_prod_mul`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 98](lean:New/Spanning/MainTerm/SieveSystem.lean#L98). Cited in [Chapter](/chapter/main-term/).
 - `New.pow_classNumber_mem_principal_sup`: `Lib/ClassField/Places/Ideles.lean`, [line 319](lean:Lib/ClassField/Places/Ideles.lean#L319). Cited in [Chapter](/chapter/cm-fields/).
 - `New.pow_three_le_mul_norm_regularL_pow`: `Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean`, [line 43](lean:Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean#L43). Cited in [Chapter](/chapter/prime-number-theorem/).
 - `New.powerIdele`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 70](lean:New/UpperBound/Seesaw/StandardLines.lean#L70). Cited in [Chapter](/chapter/seesaw-identity-1/).
@@ -1077,19 +1079,42 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.rightStabilizer`: `Lib/Adelic/Hecke/ClassSums.lean`, [line 59](lean:Lib/Adelic/Hecke/ClassSums.lean#L59). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.rootDiscr_mem_Icc`: `New/Reduction/Data/AdmissibleData.lean`, [line 284](lean:New/Reduction/Data/AdmissibleData.lean#L284). Cited in [Chapter](/chapter/fields-places-twists/), [Chapter](/chapter/cm-fields/).
 - `New.Rows.areMatched_block`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 74](lean:New/Determinant/Exchange/MatchingPartners.lean#L74). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Rows.areMatched_det_mul`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 192](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L192). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.areMatched_det_one`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 857](lean:New/Determinant/Exchange/ExplicitMatching.lean#L857). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.blockColDatum`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 64](lean:New/Determinant/Exchange/MatchingPartners.lean#L64). Cited in [Chapter](/chapter/exchange-identity-1/).
 - `New.Rows.blockRowDatum`: `New/Determinant/Exchange/MatchingPartners.lean`, [line 57](lean:New/Determinant/Exchange/MatchingPartners.lean#L57). Cited in [Chapter](/chapter/exchange-identity-1/).
+- `New.Rows.carrierCoeff`: `New/OneLift/ComparisonOperator/ExchangeData.lean`, [line 134](lean:New/OneLift/ComparisonOperator/ExchangeData.lean#L134). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.carrierForm`: `New/OneLift/ComparisonOperator/ExchangeData.lean`, [line 120](lean:New/OneLift/ComparisonOperator/ExchangeData.lean#L120). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.classForm`: `New/OneLift/TestedForms.lean`, [line 124](lean:New/OneLift/TestedForms.lean#L124). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.columnDatum`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 93](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L93). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.columnDatum_mul_ite_eq_ite_mem_rowStabilizer`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 102](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L102). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_clm_eq_thetaIntegral_modDatum`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 513](lean:New/Determinant/Exchange/ExplicitMatching.lean#L513). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_int_weylRep_invariant_fockPoly_eq_smul_monomial`: `New/OneLift/ComparisonOperator/ExchangeData.lean`, [line 766](lean:New/OneLift/ComparisonOperator/ExchangeData.lean#L766). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.exists_isPointLift`: `New/OneLift/TestedForms.lean`, [line 93](lean:New/OneLift/TestedForms.lean#L93). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.exists_linearMap_eq_integral_modKernel`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 536](lean:New/Determinant/Exchange/ExplicitMatching.lean#L536). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_mul_apply_eq_apply_matchedPoly`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 422](lean:New/Determinant/Exchange/ExplicitMatching.lean#L422). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_mul_eq_circle_mean`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 275](lean:New/Determinant/Exchange/ExplicitMatching.lean#L275). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_mul_stdClassSum_eq_integral_modKernel`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 788](lean:New/Determinant/Exchange/ExplicitMatching.lean#L788). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_stackedDetProd_eq_sum_unitary`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 384](lean:New/Determinant/Exchange/ExplicitMatching.lean#L384). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_stdClassSum_eq_mul_integral_modKernel`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 697](lean:New/Determinant/Exchange/ExplicitMatching.lean#L697). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.exists_stdClassSum_eq_of_exchange`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 622](lean:New/Determinant/Exchange/ExplicitMatching.lean#L622). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.fixesLeft_modKernelStdSpace`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 466](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L466). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.inf_le_firstMinimum_sum`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 933](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L933). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Rows.inner_classForm`: `New/OneLift/TestedForms.lean`, [line 138](lean:New/OneLift/TestedForms.lean#L138). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.inner_eq_stdClassSum_gramForm`: `New/OneLift/TestedForms.lean`, [line 131](lean:New/OneLift/TestedForms.lean#L131). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.inner_pointForm`: `New/OneLift/TestedForms.lean`, [line 209](lean:New/OneLift/TestedForms.lean#L209). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.integrable_and_mul_stdClassSum_eq_integral_mul`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 223](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L223). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.integral_modKernel_matchedPoly_of_isEmpty`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 921](lean:New/Determinant/Exchange/ExplicitMatching.lean#L921). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.integral_modKernel_stackedDetProd`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 564](lean:New/Determinant/Exchange/ExplicitMatching.lean#L564). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.integral_mul_modKernel_sum_translates`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 316](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L316). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.IsPeak.le_firstMinimum`: `Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean`, [line 556](lean:Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean#L556). Cited in [Chapter](/chapter/discrete-series/).
 - `New.Rows.IsPointLift`: `New/OneLift/TestedForms.lean`, [line 74](lean:New/OneLift/TestedForms.lean#L74). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.isPointLift_pointLift`: `New/OneLift/TestedForms.lean`, [line 191](lean:New/OneLift/TestedForms.lean#L191). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.isRapid_modKernel`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 168](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L168). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.letterPoly_highestVector_mem_holomorphicData`: `Lib/SiegelWeil/Reproduction.lean`, [line 253](lean:Lib/SiegelWeil/Reproduction.lean#L253). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.lift_modDatum_eq_zero_of_mem_span`: `Lib/SiegelWeil/Reproduction.lean`, [line 343](lean:Lib/SiegelWeil/Reproduction.lean#L343). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Rows.matchedPoly`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 136](lean:New/Determinant/Exchange/ExplicitMatching.lean#L136). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.mul_stdClassSum_eq_integral_mul_modKernel`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 268](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L268). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.normalizedDescent_classForm`: `New/OneLift/TestedForms.lean`, [line 171](lean:New/OneLift/TestedForms.lean#L171). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.normalizedDescent_pointForm`: `New/OneLift/TestedForms.lean`, [line 277](lean:New/OneLift/TestedForms.lean#L277). Cited in [Chapter](/chapter/character-lifts/).
 - `New.Rows.places_levelModulus`: `Lib/General/Algebra/LevelModulus.lean`, [line 103](lean:Lib/General/Algebra/LevelModulus.lean#L103). Cited in [Chapter](/chapter/fitting-ideals/).
@@ -1099,9 +1124,16 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Rows.polyMatrixCoeff_eq_holMinorsPi_mul_conj`: `Lib/SiegelWeil/Reproduction.lean`, [line 115](lean:Lib/SiegelWeil/Reproduction.lean#L115). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.prod_variableMinor_mem_holomorphicData`: `Lib/SiegelWeil/Reproduction.lean`, [line 170](lean:Lib/SiegelWeil/Reproduction.lean#L170). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.realConv_holMinorsPi_eq_zero_of_lift_eq_zero`: `Lib/SiegelWeil/Reproduction.lean`, [line 295](lean:Lib/SiegelWeil/Reproduction.lean#L295). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Rows.realPairWeil_matchedPoly`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 210](lean:New/Determinant/Exchange/ExplicitMatching.lean#L210). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.realPairWeil_mem_span_pairedDetProd`: `Lib/SiegelWeil/Reproduction.lean`, [line 201](lean:Lib/SiegelWeil/Reproduction.lean#L201). Cited in [Chapter](/chapter/siegel-weil/).
+- `New.Rows.realPairWeil_stackedDetProd`: `New/Determinant/Exchange/ExplicitMatching.lean`, [line 180](lean:New/Determinant/Exchange/ExplicitMatching.lean#L180). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.reproducing_formula_modKernel`: `Lib/SiegelWeil/Reproduction.lean`, [line 401](lean:Lib/SiegelWeil/Reproduction.lean#L401). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.Rows.residueBlockDatum_inv_pointLift_mul`: `New/OneLift/TestedForms.lean`, [line 238](lean:New/OneLift/TestedForms.lean#L238). Cited in [Chapter](/chapter/character-lifts/).
+- `New.Rows.rowStabilizer`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 82](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L82). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.stdClassSum_rowStabilizer_eq`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 499](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L499). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.stdClassSum_tower`: `New/OneLift/ComparisonOperator/OneExchange.lean`, [line 359](lean:New/OneLift/ComparisonOperator/OneExchange.lean#L359). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.twoSidedSubst_firstColsCoord`: `New/OneLift/ComparisonOperator/DeterminantProducts.lean`, [line 136](lean:New/OneLift/ComparisonOperator/DeterminantProducts.lean#L136). Cited in [Chapter](/chapter/exchange-identity-2/).
+- `New.Rows.twoSidedSubst_stackedDetProd`: `New/OneLift/ComparisonOperator/DeterminantProducts.lean`, [line 91](lean:New/OneLift/ComparisonOperator/DeterminantProducts.lean#L91). Cited in [Chapter](/chapter/exchange-identity-2/).
 - `New.Rows.weylGauge_add_le_max`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 848](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L848). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Rows.weylGauge_classSum_le_one`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 856](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L856). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Rows.weylGauge_deltaForm_le`: `Lib/Adelic/AutomorphicForms/PAdicGauge.lean`, [line 252](lean:Lib/Adelic/AutomorphicForms/PAdicGauge.lean#L252). Cited in [Chapter](/chapter/automorphic-forms/).
@@ -1268,6 +1300,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.affineAction_pow_apply`: `New/Congruences/Selmer/Untied.lean`, [line 63](lean:New/Congruences/Selmer/Untied.lean#L63). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.affineAction_pow_eq_one`: `New/Congruences/Selmer/Untied.lean`, [line 76](lean:New/Congruences/Selmer/Untied.lean#L76). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.apply_eq_zero_of_mem_obeying_crysRelations`: `New/Congruences/FirstOrder/TateTwistCocycles.lean`, [line 122](lean:New/Congruences/FirstOrder/TateTwistCocycles.lean#L122). Cited in [Chapter](/chapter/tied-traces/).
+- `New.Selmer.apply_insert_eq_mul_eulerFactor`: `New/Congruences/Selmer/LValueSystems.lean`, [line 255](lean:New/Congruences/Selmer/LValueSystems.lean#L255). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.apply_withConjInv_false_eq_neg`: `New/Congruences/FirstOrder/TateTwistCocycles.lean`, [line 97](lean:New/Congruences/FirstOrder/TateTwistCocycles.lean#L97). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.AreCoordinates`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 253](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L253). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.augmentationIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 171](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L171). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1275,17 +1308,23 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.avatar_conjGal_mul_avatar`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 183](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L183). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.avatar_conjGal_mul_frob`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 143](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L143). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.badPlaces`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 80](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L80). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.BoundsSelmer`: `New/Congruences/Selmer/Line.lean`, [line 172](lean:New/Congruences/Selmer/Line.lean#L172). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.C_algebraMap_trace`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 242](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L242). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.C_det_linearCombination_mem`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 171](lean:New/Congruences/FirstOrder/RibetLemma.lean#L171). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.characterModule_eq_zero_of_span`: `New/Congruences/Selmer/Mirror.lean`, [line 75](lean:New/Congruences/Selmer/Mirror.lean#L75). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.CharacterRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 811](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L811). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.CharacterRows.addVal_constantCoeff_prod_le`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 379](lean:New/Congruences/FirstOrder/RibetLemma.lean#L379). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.CharacterRows.sum_prod_coeff_mul_prod_det_tiedMatrix`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 356](lean:New/Congruences/FirstOrder/RibetLemma.lean#L356). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.charUnramifiedAt_zpow_neg_of_notMem_badPlaces`: `New/Congruences/Selmer/LValueSystems.lean`, [line 67](lean:New/Congruences/Selmer/LValueSystems.lean#L67). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.chosenGroupOrder_nsmul_typeProjection_mem_ellIntegralForms`: `New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean`, [line 185](lean:New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean#L185). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.clearingBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 128](lean:New/Congruences/FirstOrder/TraceRelations.lean#L128). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.cmSign`: `New/Congruences/LocalLoss/Basic.lean`, [line 73](lean:New/Congruences/LocalLoss/Basic.lean#L73). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.cmSign_eq_of_mem_bPlaces`: `New/Congruences/LocalLoss/Basic.lean`, [line 285](lean:New/Congruences/LocalLoss/Basic.lean#L285). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.coboundary_eq_zero_of_apply_eq_zero`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 523](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L523). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coe_eval_groupRingEval_lineChar`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 317](lean:New/Congruences/Selmer/StickelbergerLine.lean#L317). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.coe_eval_groupRingEval_universalChar`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 65](lean:New/Congruences/Selmer/StickelbergerLine.lean#L65). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.coe_eval_zero_groupRingEval_lineChar`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 327](lean:New/Congruences/Selmer/StickelbergerLine.lean#L327). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.coe_twistRep_pointChar`: `New/Congruences/Selmer/Line.lean`, [line 219](lean:New/Congruences/Selmer/Line.lean#L219). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.coeff_charpoly_map_polyAction_single`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 156](lean:New/Congruences/FirstOrder/RibetLemma.lean#L156). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.coeff_mul_prod_of_mem_colon`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 537](lean:New/Congruences/FirstOrder/FittingBlock.lean#L537). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.coeff_shiftedDet_card`: `New/Congruences/Selmer/Untied.lean`, [line 194](lean:New/Congruences/Selmer/Untied.lean#L194). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1305,6 +1344,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.coordRows_gen_sub_single_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 317](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L317). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.coordRows_linearCombination_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 327](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L327). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.coordRows_tau_sub_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 357](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L357). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.coprime_prod_q_of_isAuxiliary`: `New/Congruences/Selmer/ClassSums.lean`, [line 390](lean:New/Congruences/Selmer/ClassSums.lean#L390). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.count_jumps_comp_star`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 445](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L445). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.crysCocyclesAt`: `New/Congruences/LocalLoss/Basic.lean`, [line 511](lean:New/Congruences/LocalLoss/Basic.lean#L511). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.crysRelations`: `New/Congruences/LocalLoss/Basic.lean`, [line 518](lean:New/Congruences/LocalLoss/Basic.lean#L518). Cited in [Chapter](/chapter/tied-traces/), [Chapter](/chapter/main-summands/).
@@ -1327,19 +1367,33 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.det_mem_of_coeff_mem`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 342](lean:New/Congruences/FirstOrder/RibetMethod.lean#L342). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.det_polyAction_rowValue`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 87](lean:New/Congruences/FirstOrder/RibetLemma.lean#L87). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.DivisibleQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 90](lean:Lib/General/Algebra/BlockFittingBound.lean#L90). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.divisibleSelmerLength_le_divisibleLength`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 153](lean:New/Congruences/Selmer/TwistingTheorem.lean#L153). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.divQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 93](lean:Lib/General/Algebra/BlockFittingBound.lean#L93). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.divQuot_injective`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 105](lean:Lib/General/Algebra/BlockFittingBound.lean#L105). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.divStarClass`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 112](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L112). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.divStarClass_surjective`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 117](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L117). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.dvd_eval_universalChar_sub_one`: `New/Congruences/Selmer/Untied.lean`, [line 246](lean:New/Congruences/Selmer/Untied.lean#L246). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.ellVal_add_le_of_addVal_le`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 116](lean:New/Congruences/FirstOrder/RibetElement.lean#L116). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.ellVal_det_sub_one_le_card_mul`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 81](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L81). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.ellVal_eulerFactor_le`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 148](lean:New/Congruences/Selmer/StickelbergerLine.lean#L148). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.ellVal_eval_add_card_mul`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 146](lean:New/Congruences/Selmer/RootsOfUnity.lean#L146). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.ellVal_le_of_norm_eq_mul_pow`: `New/Congruences/Selmer/LValueSystems.lean`, [line 369](lean:New/Congruences/Selmer/LValueSystems.lean#L369). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.ellVal_one_sub_mul_one_sub_inv_le`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 128](lean:New/Congruences/Selmer/StickelbergerLine.lean#L128). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.ellVal_stickelbergerChar_tameGenerator_sub_one_le`: `New/Congruences/Selmer/LValueSystems.lean`, [line 236](lean:New/Congruences/Selmer/LValueSystems.lean#L236). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.ellVal_sub_one_eq_rootRadius`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 58](lean:New/Congruences/Selmer/RootsOfUnity.lean#L58). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.eq_of_complexEmbeddingOf_localChart_eq`: `New/Congruences/LocalLoss/Basic.lean`, [line 613](lean:New/Congruences/LocalLoss/Basic.lean#L613). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.eq_top_of_stable_of_isUnit`: `New/Congruences/Selmer/SelmerData.lean`, [line 420](lean:New/Congruences/Selmer/SelmerData.lean#L420). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.eq_zero_of_forall_hom_zmod_eq_zero`: `New/Congruences/Selmer/OneSystem.lean`, [line 235](lean:New/Congruences/Selmer/OneSystem.lean#L235). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.eq_zero_of_forall_mem_Z1_of_mem_evenClasses`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 234](lean:New/Congruences/FirstOrder/EvenClasses.lean#L234). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.eulerFactor`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 198](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L198). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.eulerFactor_cons`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 203](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L203). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.eulerFactor_zpow_units`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 208](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L208). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.eval_single_groupRingEval_universalChar`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 290](lean:New/Congruences/Selmer/StickelbergerLine.lean#L290). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.eval_universalChar`: `New/Congruences/Selmer/OneSystem.lean`, [line 72](lean:New/Congruences/Selmer/OneSystem.lean#L72). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.evalConjPair`: `New/Congruences/Selmer/SelmerData.lean`, [line 269](lean:New/Congruences/Selmer/SelmerData.lean#L269). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.evalRowAtChar`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 145](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L145). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.evalRowAtChar_apply`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 150](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L150). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.eval₂_restrictToLine`: `New/Congruences/Selmer/Line.lean`, [line 185](lean:New/Congruences/Selmer/Line.lean#L185). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.eval₂_shiftedDet`: `New/Congruences/Selmer/Untied.lean`, [line 187](lean:New/Congruences/Selmer/Untied.lean#L187). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.evenClasses`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 56](lean:New/Congruences/FirstOrder/EvenClasses.lean#L56). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.evenClasses_eventually_eq_two_nsmul`: `New/Congruences/FirstOrder/TrianglePrimes.lean`, [line 291](lean:New/Congruences/FirstOrder/TrianglePrimes.lean#L291). Cited in [Chapter](/chapter/first-order-deformations/).
@@ -1351,6 +1405,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.eventually_span_eq_top_and_exists_scalar_of_tame_pair`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 510](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L510). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.eventually_trace_frob_eq_of_hasLiftHeckePolynomial`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 340](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L340). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.exists_adjugate_polynomial`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 91](lean:New/Congruences/FirstOrder/RibetMethod.lean#L91). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_anticyclotomic_twist`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 392](lean:New/Congruences/Selmer/GeneralTheorem.lean#L392). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_anticyclotomicChar_of_frob_fixes_roots`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 228](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L228). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.exists_apply_eq_ite_of_prod_dvd`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 467](lean:New/Congruences/FirstOrder/FittingBlock.lean#L467). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_apply_eq_nsmul_of_mem_evenClasses`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 657](lean:New/Congruences/FirstOrder/KummerMaps.lean#L657). Cited in [Chapter](/chapter/first-order-deformations/).
@@ -1359,14 +1414,20 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.exists_baseLevel`: `New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean`, [line 589](lean:New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean#L589). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.exists_block_rows`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 619](lean:New/Congruences/FirstOrder/FittingBlock.lean#L619). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_card_lt_finrank_kummerReductions`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 825](lean:New/Congruences/FirstOrder/KummerMaps.lean#L825). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.exists_card_rootsOfValuation_mul_le`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 207](lean:New/Congruences/Selmer/RootsOfUnity.lean#L207). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_character_projector`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 296](lean:New/Congruences/FirstOrder/RibetLemma.lean#L296). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_common_unit_row`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 326](lean:New/Congruences/FirstOrder/FittingBlock.lean#L326). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_diagonal_mem_norm_ge`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 80](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L80). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.exists_discreteLog`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 117](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L117). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.exists_divQuot_eq`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 114](lean:Lib/General/Algebra/BlockFittingBound.lean#L114). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.exists_ellVal_eval_le_gaussVal`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 252](lean:New/Congruences/Selmer/StickelbergerLine.lean#L252). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_ellVal_eval_piecewise_le_add`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 427](lean:New/Congruences/Selmer/RootsOfUnity.lean#L427). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_ellVal_eval_update_le_add`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 376](lean:New/Congruences/Selmer/RootsOfUnity.lean#L376). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_eventually_one_le_norm_eval_charpoly`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 224](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L224). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.exists_finPart_baseChange_eq`: `New/Congruences/Selmer/LValueSystems.lean`, [line 155](lean:New/Congruences/Selmer/LValueSystems.lean#L155). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_forall_eq_one_and_forall_eq_zero`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 450](lean:New/Congruences/FirstOrder/FittingBlock.lean#L450). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_forall_of_wellFoundedLT`: `New/Congruences/FirstOrder/TrianglePrimes.lean`, [line 327](lean:New/Congruences/FirstOrder/TrianglePrimes.lean#L327). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.exists_groupRingEval_eq_of_isIntegralMeasure`: `New/Congruences/Selmer/LValueSystems.lean`, [line 185](lean:New/Congruences/Selmer/LValueSystems.lean#L185). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_ideleClassChar_of_local`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 188](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L188). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.exists_inertiaGroup_isInertiaSpectrum`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 253](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L253). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.exists_injective_quotSpan_onto_torsion`: `New/Congruences/Selmer/Descent.lean`, [line 137](lean:New/Congruences/Selmer/Descent.lean#L137). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1387,6 +1448,8 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.exists_isTiedPrimes_singleton`: `New/Congruences/Selmer/Descent.lean`, [line 247](lean:New/Congruences/Selmer/Descent.lean#L247). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_length_le_loss_add_crystallineSelmerLength`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 214](lean:New/Congruences/FirstOrder/RibetElement.lean#L214). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_length_selmerModule_pow_le`: `New/Congruences/Selmer/Descent.lean`, [line 172](lean:New/Congruences/Selmer/Descent.lean#L172). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.exists_lt_mul_sum_radiusExponents`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 97](lean:New/Congruences/Selmer/RootsOfUnity.lean#L97). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_map_eq_map_pow_of_isTameGenerator`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 106](lean:New/Congruences/Selmer/GeneralTheorem.lean#L106). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_matrix_selmerAtPoint_equiv`: `New/Congruences/Selmer/OneSystem.lean`, [line 407](lean:New/Congruences/Selmer/OneSystem.lean#L407). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_matrix_selmerModule_equiv`: `New/Congruences/Selmer/OneSystem.lean`, [line 306](lean:New/Congruences/Selmer/OneSystem.lean#L306). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_mem_fittingIdeal_addVal_constantCoeff_le`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 65](lean:New/Congruences/FirstOrder/FittingBlock.lean#L65). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1394,7 +1457,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.exists_mem_span_add_mul_eq_add_mul`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 572](lean:New/Congruences/FirstOrder/FittingBlock.lean#L572). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_mem_tiedRows_polyActionAtZero_eq`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 506](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L506). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_mFoldTwist_hasDenominatorsLe`: `New/Congruences/FitTwistsExist.lean`, [line 475](lean:New/Congruences/FitTwistsExist.lean#L475). Cited in [Chapter](/chapter/regular-families-plan/).
-- `New.Selmer.exists_mFoldTwist_hasDivisibleSelmerLengthLe`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 370](lean:New/Congruences/Selmer/TwistingTheorem.lean#L370). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.exists_mFoldTwist_hasDivisibleSelmerLengthLe`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 370](lean:New/Congruences/Selmer/TwistingTheorem.lean#L370). Cited in [Chapter](/chapter/regular-families-plan/), [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_mFoldTwist_selmerLengthLe_inv_ratio_le`: `New/Congruences/FitTwistsExist.lean`, [line 377](lean:New/Congruences/FitTwistsExist.lean#L377). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_monoidHom_smul_eq_pointTwist_smul`: `New/Congruences/Selmer/Untied.lean`, [line 259](lean:New/Congruences/Selmer/Untied.lean#L259). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_mul_eq_algebraMap_det`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 424](lean:New/Congruences/FirstOrder/RibetMethod.lean#L424). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1406,24 +1469,35 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.exists_operator_det_clearingBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1246](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1246). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_operator_ellVal_le_liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 1156](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L1156). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.exists_perfect_pairing`: `Lib/ClassField/LocalDuality/CrystallineDuality.lean`, [line 419](lean:Lib/ClassField/LocalDuality/CrystallineDuality.lean#L419). Cited in [Chapter](/chapter/local-duality/).
+- `New.Selmer.exists_polynomial_eulerFactor`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 199](lean:New/Congruences/Selmer/StickelbergerLine.lean#L199). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_relations_det_eq_pow_mul_det`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 395](lean:New/Congruences/FirstOrder/FittingBlock.lean#L395). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_ribet_element_of_tied_rows`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 480](lean:New/Congruences/FirstOrder/RibetMethod.lean#L480). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_ribet_polynomial`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 216](lean:New/Congruences/FirstOrder/RibetMethod.lean#L216). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_ringHom_comp_eq_algebraMap`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 144](lean:New/Congruences/FirstOrder/RibetLemma.lean#L144). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_rootOfUnity_eval_le_gaussVal_add`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 300](lean:New/Congruences/Selmer/RootsOfUnity.lean#L300). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_rootsOfUnity_ellVal_eval_le`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 325](lean:New/Congruences/Selmer/GeneralTheorem.lean#L325). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_rootsOfUnity_ellVal_eval_le_add`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 474](lean:New/Congruences/Selmer/RootsOfUnity.lean#L474). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_row_apply_eq_zero`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 743](lean:New/Congruences/FirstOrder/FittingBlock.lean#L743). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_rows_addVal_det_le`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 36](lean:Lib/General/Algebra/BlockFittingBound.lean#L36). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.exists_rows_addVal_det_le_of_divisible`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 157](lean:Lib/General/Algebra/BlockFittingBound.lean#L157). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.exists_rows_det_eq_pow_mul_det`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 351](lean:New/Congruences/FirstOrder/FittingBlock.lean#L351). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_selmerData_isTorsionLevel`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 304](lean:New/Congruences/Selmer/TwistingTheorem.lean#L304). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_separating_element`: `New/Congruences/FirstOrder/TrianglePrimes.lean`, [line 206](lean:New/Congruences/FirstOrder/TrianglePrimes.lean#L206). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.exists_sharp_polynomial`: `New/Congruences/Selmer/OneSystem.lean`, [line 459](lean:New/Congruences/Selmer/OneSystem.lean#L459). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_slope_totalTiedLength_lt`: `New/Congruences/Selmer/Descent.lean`, [line 527](lean:New/Congruences/Selmer/Descent.lean#L527). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_smul_eq_zero_divisibleQuot`: `Lib/General/Algebra/BlockFittingBound.lean`, [line 121](lean:Lib/General/Algebra/BlockFittingBound.lean#L121). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.exists_smul_eq_zero_of_mem_ribetCocyclesIn`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 433](lean:New/Congruences/FirstOrder/RibetLemma.lean#L433). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_smul_eq_zero_of_mem_selmerModule`: `New/Congruences/Selmer/Line.lean`, [line 65](lean:New/Congruences/Selmer/Line.lean#L65). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_stickelbergerSystem_ellVal_ratio_le`: `New/Congruences/Selmer/LValueSystems.lean`, [line 396](lean:New/Congruences/Selmer/LValueSystems.lean#L396). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_stickelbergerSystem_β_le_and_norm_eq`: `New/Congruences/Selmer/LValueSystems.lean`, [line 312](lean:New/Congruences/Selmer/LValueSystems.lean#L312). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.exists_sum_min_ellVal_sub_le`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 264](lean:New/Congruences/Selmer/RootsOfUnity.lean#L264). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_sum_mul_det_of_mem_fittingIdeal_evalRowAtChar`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 890](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L890). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_sum_mul_det_of_mem_fittingIdeal_map`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 484](lean:New/Congruences/FirstOrder/FittingBlock.lean#L484). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_tameChar_invAvatar_eq`: `New/Congruences/Selmer/ClassSums.lean`, [line 437](lean:New/Congruences/Selmer/ClassSums.lean#L437). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_tiedRows_addVal_det_le`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 539](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L539). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_totalTiedLength_le`: `New/Congruences/Selmer/Descent.lean`, [line 623](lean:New/Congruences/Selmer/Descent.lean#L623). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_traceIdeal_multiplier_eq_sum_det`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 218](lean:New/Congruences/FirstOrder/RibetLemma.lean#L218). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.exists_twistPolynomials`: `New/Congruences/Selmer/Line.lean`, [line 646](lean:New/Congruences/Selmer/Line.lean#L646). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.exists_unit_residue_notMem`: `New/Congruences/Selmer/Descent.lean`, [line 212](lean:New/Congruences/Selmer/Descent.lean#L212). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.exists_unit_row`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 706](lean:New/Congruences/FirstOrder/FittingBlock.lean#L706). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.exists_unit_rows_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 855](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L855). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1439,10 +1513,15 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.formsMod`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 591](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L591). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.formsMod_anti`: `Lib/General/Algebra/FittingIdealsAndLengths.lean`, [line 608](lean:Lib/General/Algebra/FittingIdealsAndLengths.lean#L608). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.four_dvd_cyclotomicChar_sub_one`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 140](lean:New/Congruences/FirstOrder/EvenClasses.lean#L140). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.four_mul_ellVal_levelPrime_sub_one_add_le_twistError`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 243](lean:New/Congruences/Selmer/TwistingTheorem.lean#L243). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.frequently_isSplit_notMem_places`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 727](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L727). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.frequently_lt_card_residueField`: `Lib/General/NumberTheory/LargeResidueField.lean`, [line 125](lean:Lib/General/NumberTheory/LargeResidueField.lean#L125). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.galoisLift`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 135](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L135). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.gaussVal`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 167](lean:Lib/General/NumberTheory/GaussValuation.lean#L167). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.gaussVal_mul`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 269](lean:Lib/General/NumberTheory/GaussValuation.lean#L269). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.gaussVal_tiePolynomial_le`: `New/Congruences/Selmer/Line.lean`, [line 195](lean:New/Congruences/Selmer/Line.lean#L195). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.groupRingEval`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 173](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L173). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.groupRingEval_sum_single`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 185](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L185). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.HasDivisibleSelmerLengthLe`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 369](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L369). Cited in [Chapter](/chapter/regular-families-plan/), [Chapter](/chapter/main-summands/).
 - `New.Selmer.HasDivisibleSelmerLengthLe.hasTwistedLattice`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 401](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L401). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.HasDivisibleSelmerLengthLe.mono`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 409](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L409). Cited in [Chapter](/chapter/main-summands/).
@@ -1456,7 +1535,9 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.idOrConjInv_mem_inertiaAbove`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 484](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L484). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.inertiaGroup_le_range_toGalPlus`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 184](lean:New/Congruences/FirstOrder/KummerMaps.lean#L184). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.inv_sub_one_smul_eq`: `New/Congruences/Selmer/Untied.lean`, [line 117](lean:New/Congruences/Selmer/Untied.lean#L117). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.invAvatar_eq_of_artinMap_eq`: `New/Congruences/Selmer/ClassSums.lean`, [line 423](lean:New/Congruences/Selmer/ClassSums.lean#L423). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.invAvatar_eq_of_isTameExponent`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 620](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L620). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.invAvatar_pow`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 260](lean:New/Congruences/Selmer/TwistingTheorem.lean#L260). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.IsAuxTwist`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 130](lean:New/Congruences/FirstOrder/EvenClasses.lean#L130). Cited in [Chapter](/chapter/regular-families-plan/), [Chapter](/chapter/tied-traces/).
 - `New.Selmer.IsCharacterCocycle`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 279](lean:New/Congruences/FirstOrder/FittingBlock.lean#L279). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.isCharacterCocycle_of_mem_formsMod`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 675](lean:New/Congruences/FirstOrder/FittingBlock.lean#L675). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1474,6 +1555,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.isFiniteTypeAt_and_polyKillsAt_of_mem_conjClosure`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 674](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L674). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsFormOfType`: `New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean`, [line 517](lean:New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean#L517). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsFormOfType.isRepOfType_normalisedRep`: `New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean`, [line 542](lean:New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean#L542). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.isFromU1_pointChar`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 45](lean:New/Congruences/Selmer/StickelbergerLine.lean#L45). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.IsInertiaSpectrum`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 145](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L145). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsInertiaSpectrum.of_conjPlace`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 168](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L168). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsKummerMap`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 413](lean:New/Congruences/FirstOrder/KummerMaps.lean#L413). Cited in [Chapter](/chapter/first-order-deformations/).
@@ -1502,7 +1584,13 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.isLiftSetting_mainPair`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 123](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L123). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsMainSummand`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 621](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L621). Cited in [Chapter](/chapter/regular-families-plan/), [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsMainSummandLike`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 434](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L434). Cited in [Chapter](/chapter/regular-families-plan/), [Chapter](/chapter/main-summands/).
+- `New.Selmer.IsMainSummandLike.conjGal_inv_eq_smul_one`: `New/Congruences/Selmer/MainSummands.lean`, [line 73](lean:New/Congruences/Selmer/MainSummands.lean#L73). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.IsMainSummandLike.eventually_exists_selmerDatum`: `New/Congruences/Selmer/MainSummands.lean`, [line 294](lean:New/Congruences/Selmer/MainSummands.lean#L294). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.IsMainSummandLike.eventually_span_eq_top_and_exists_eq_smul_one`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 468](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L468). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.IsMainSummandLike.normLength_congruenceTerm_le`: `New/Congruences/Selmer/MainSummands.lean`, [line 155](lean:New/Congruences/Selmer/MainSummands.lean#L155). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.IsMainSummandLike.normLength_firstPrimeTerms_le`: `New/Congruences/Selmer/MainSummands.lean`, [line 219](lean:New/Congruences/Selmer/MainSummands.lean#L219). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.IsMainSummandLike.normLength_localTerm_le`: `New/Congruences/Selmer/MainSummands.lean`, [line 193](lean:New/Congruences/Selmer/MainSummands.lean#L193). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.IsMainSummandLike.normLength_placeTerms_add_firstPrimeTerms_le`: `New/Congruences/Selmer/MainSummands.lean`, [line 237](lean:New/Congruences/Selmer/MainSummands.lean#L237). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.IsMainSummandWeights`: `New/Congruences/LocalLoss/Basic.lean`, [line 85](lean:New/Congruences/LocalLoss/Basic.lean#L85). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.isMainSummandWeights_descentPair`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 149](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L149). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.isMainSummandWeights_mainPair`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 202](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L202). Cited in [Chapter](/chapter/main-summands/).
@@ -1522,6 +1610,9 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.IsRepOfType.twist_avatar`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 562](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L562). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.isRepOfType_of_hasProductLabel`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 641](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L641). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.isRoot_hecke_chain`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 286](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L286). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.IsSmallTwist`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 55](lean:New/Congruences/Selmer/GeneralTheorem.lean#L55). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.IsSmallTwist.isAuxTwist`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 123](lean:New/Congruences/Selmer/TwistingTheorem.lean#L123). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.IsSmallTwist.mono`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 80](lean:New/Congruences/Selmer/GeneralTheorem.lean#L80). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.isSplit_twistPlace`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 639](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L639). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsTameGeneratorFamily`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 65](lean:New/Congruences/FirstOrder/EvenClasses.lean#L65). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.IsTameGeneratorFamily.cyclotomicInv_withConjInv_eq_one_and_dvd`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 166](lean:New/Congruences/FirstOrder/EvenClasses.lean#L166). Cited in [Chapter](/chapter/tied-traces/).
@@ -1540,6 +1631,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.IsTiedPrimes.universalChar_eq_one_add_X`: `New/Congruences/Selmer/OneSystem.lean`, [line 96](lean:New/Congruences/Selmer/OneSystem.lean#L96). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.IsTiedPrimes.universalChar_frob`: `New/Congruences/Selmer/OneSystem.lean`, [line 116](lean:New/Congruences/Selmer/OneSystem.lean#L116). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.IsTiedPrimes.universalChar_tame_gen`: `New/Congruences/Selmer/OneSystem.lean`, [line 129](lean:New/Congruences/Selmer/OneSystem.lean#L129). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.IsTorsionLevel`: `New/Congruences/Selmer/Line.lean`, [line 491](lean:New/Congruences/Selmer/Line.lean#L491). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.IsTraceIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 232](lean:New/Congruences/FirstOrder/FittingBlock.lean#L232). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.isTraceNondeg_transpose_inv`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 433](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L433). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.IsTwistedLattice`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 325](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L325). Cited in [Chapter](/chapter/main-summands/).
@@ -1549,21 +1641,25 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.kummerReductions`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 727](lean:New/Congruences/FirstOrder/KummerMaps.lean#L727). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.kummerSetting`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 372](lean:New/Congruences/FirstOrder/KummerMaps.lean#L372). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.le_ellVal_geom_sum`: `Lib/General/NumberTheory/GaussValuation.lean`, [line 424](lean:Lib/General/NumberTheory/GaussValuation.lean#L424). Cited in [Chapter](/chapter/fitting-ideals/).
+- `New.Selmer.le_ellVal_one_add_pow_sub_one`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 242](lean:New/Congruences/Selmer/StickelbergerLine.lean#L242). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.le_of_isotypic_mem`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 456](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L456). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.length_linearMap_quotSpan`: `Lib/General/Algebra/SharpMinors.lean`, [line 136](lean:Lib/General/Algebra/SharpMinors.lean#L136). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.length_linearMap_quotSpan_of_dvd`: `Lib/General/Algebra/SharpMinors.lean`, [line 104](lean:Lib/General/Algebra/SharpMinors.lean#L104). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.length_quotient_span_row`: `Lib/General/Algebra/SharpMinors.lean`, [line 177](lean:Lib/General/Algebra/SharpMinors.lean#L177). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.length_ribetCocyclesVanishingOn_divisibleQuot_le`: `New/Congruences/FirstOrder/RibetLemma.lean`, [line 470](lean:New/Congruences/FirstOrder/RibetLemma.lean#L470). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.length_selmerCocycles_le_crystallineSelmerLength`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 384](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L384). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.length_selmerModule_divisibleQuot_le`: `New/Congruences/Selmer/Line.lean`, [line 86](lean:New/Congruences/Selmer/Line.lean#L86). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.length_torsionBy_characterModule_le`: `New/Congruences/Selmer/SelmerData.lean`, [line 654](lean:New/Congruences/Selmer/SelmerData.lean#L654). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.length_torsionBy_pi_quot_le`: `New/Congruences/Selmer/SelmerData.lean`, [line 632](lean:New/Congruences/Selmer/SelmerData.lean#L632). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.liftValuationBound`: `New/Congruences/FirstOrder/DenominatorBound.lean`, [line 179](lean:New/Congruences/FirstOrder/DenominatorBound.lean#L179). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.lineChar`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 282](lean:New/Congruences/Selmer/StickelbergerLine.lean#L282). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.lineDirection`: `New/Congruences/Selmer/Untied.lean`, [line 166](lean:New/Congruences/Selmer/Untied.lean#L166). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.localChart`: `New/Congruences/LocalLoss/Basic.lean`, [line 491](lean:New/Congruences/LocalLoss/Basic.lean#L491). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.localDefectBound`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 99](lean:New/Congruences/FirstOrder/TraceRelations.lean#L99). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.localTerm`: `New/Congruences/Selmer/SelmerData.lean`, [line 84](lean:New/Congruences/Selmer/SelmerData.lean#L84). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.lt_natAbs_of_abs_add_liftWeight_le`: `New/Congruences/LocalLoss/Basic.lean`, [line 106](lean:New/Congruences/LocalLoss/Basic.lean#L106). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.map_augmentationIdeal_le_tieIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 194](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L194). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.map_groupRingEval`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 178](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L178). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.map_jumps_sub_eq_map_targetParameter`: `New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean`, [line 443](lean:New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean#L443). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.map_mem_span_range`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 441](lean:New/Congruences/FirstOrder/RibetMethod.lean#L441). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.map_mk_smul`: `New/Congruences/Selmer/OneSystem.lean`, [line 50](lean:New/Congruences/Selmer/OneSystem.lean#L50). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1598,6 +1694,8 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.natCast_notMem_of_mem_conjClosure`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 659](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L659). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.nonDivisorIdeal`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 503](lean:New/Congruences/FirstOrder/FittingBlock.lean#L503). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.nonempty_characterRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 933](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L933). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.nonempty_twistPolynomials_of_isTiedPrimes`: `New/Congruences/Selmer/Line.lean`, [line 572](lean:New/Congruences/Selmer/Line.lean#L572). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.norm_apply_twist`: `New/Congruences/Selmer/LValueSystems.lean`, [line 281](lean:New/Congruences/Selmer/LValueSystems.lean#L281). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.norm_pow_sub_pow_eq_one`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 61](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L61). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.normalisedJumps`: `New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean`, [line 255](lean:New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean#L255). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.normalisedJumps_eq_range_add_map`: `New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean`, [line 337](lean:New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean#L337). Cited in [Chapter](/chapter/main-summands/).
@@ -1608,6 +1706,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.normalizingAvatar_eq_of_isFrob`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 268](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L268). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.normalizingAvatar_eq_of_isFrob_inv`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 541](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L541). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.normLength_addVal_pow`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 101](lean:New/Congruences/FirstOrder/RibetElement.lean#L101). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.not_isChosen_of_notMem_badPlaces`: `New/Congruences/Selmer/LValueSystems.lean`, [line 48](lean:New/Congruences/Selmer/LValueSystems.lean#L48). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.not_isRoot_one_scaleRoots_inv`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 67](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L67). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.not_q₂_dvd_mul_pow_mul`: `New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean`, [line 110](lean:New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean#L110). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.notMem_bPlaces_of_coefficientEmbedding_eq_pow`: `New/Congruences/LocalLoss/CrystallineDefect.lean`, [line 174](lean:New/Congruences/LocalLoss/CrystallineDefect.lean#L174). Cited in [Chapter](/chapter/progression-free-sets/).
@@ -1617,6 +1716,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.oddClassBound_le`: `New/Congruences/FirstOrder/TraceRelations.lean`, [line 82](lean:New/Congruences/FirstOrder/TraceRelations.lean#L82). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.ofGalPlus`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 126](lean:New/Congruences/FirstOrder/KummerMaps.lean#L126). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.ofGalPlus_mul_eq_or`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 163](lean:New/Congruences/FirstOrder/KummerMaps.lean#L163). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.one_add_X_pow_sub_one_dvd`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 221](lean:New/Congruences/Selmer/StickelbergerLine.lean#L221). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.orthogonal_mem_invtSubmodule_heckePolyOnForms`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 433](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L433). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.placeClass_eq_cmSign_mul_pow`: `New/Congruences/LocalLoss/Basic.lean`, [line 196](lean:New/Congruences/LocalLoss/Basic.lean#L196). Cited in [Chapter](/chapter/progression-free-sets/), [Chapter](/chapter/main-summands/).
 - `New.Selmer.placesAboveM`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 75](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L75). Cited in [Chapter](/chapter/main-summands/).
@@ -1643,18 +1743,22 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.pow_finrank_le_nnnorm_det`: `New/Congruences/FirstOrder/HeckeStrings.lean`, [line 105](lean:New/Congruences/FirstOrder/HeckeStrings.lean#L105). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.prod_aroots_dvd_prod_aroots_scaleRoots_comp`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 534](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L534). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.prod_Ioc_natB_le_pow`: `New/Congruences/FitTwistsExist.lean`, [line 90](lean:New/Congruences/FitTwistsExist.lean#L90). Cited in [Chapter](/chapter/regular-families-plan/).
+- `New.Selmer.radiusExponents`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 87](lean:New/Congruences/Selmer/RootsOfUnity.lean#L87). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.range_goodLift_le_span_hasLiftHeckePolynomial`: `New/Congruences/FitTwistsExist.lean`, [line 326](lean:New/Congruences/FitTwistsExist.lean#L326). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.rankOneRep`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 273](lean:New/Congruences/FirstOrder/FittingBlock.lean#L273). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.reduceModPow`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 418](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L418). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.relationMatrix`: `New/Congruences/Selmer/OneSystem.lean`, [line 193](lean:New/Congruences/Selmer/OneSystem.lean#L193). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.relationMatrix_apply`: `New/Congruences/Selmer/OneSystem.lean`, [line 196](lean:New/Congruences/Selmer/OneSystem.lean#L196). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.relLength_torsionBy_le_length_shaOdd`: `New/Congruences/FirstOrder/TateTwistCocycles.lean`, [line 166](lean:New/Congruences/FirstOrder/TateTwistCocycles.lean#L166). Cited in [Chapter](/chapter/tied-traces/).
+- `New.Selmer.restrictToLine`: `New/Congruences/Selmer/Line.lean`, [line 180](lean:New/Congruences/Selmer/Line.lean#L180). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.ribet_columns`: `New/Congruences/FirstOrder/RibetElement.lean`, [line 289](lean:New/Congruences/FirstOrder/RibetElement.lean#L289). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.ribetCocycles`: `New/Congruences/LocalLoss/Basic.lean`, [line 374](lean:New/Congruences/LocalLoss/Basic.lean#L374). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.ribetCocycles.exists_graph_subrepresentation`: `New/Congruences/LocalLoss/Basic.lean`, [line 394](lean:New/Congruences/LocalLoss/Basic.lean#L394). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.ribetCocyclesIn`: `New/Congruences/LocalLoss/Basic.lean`, [line 359](lean:New/Congruences/LocalLoss/Basic.lean#L359). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.ribetCocyclesVanishingOn`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 257](lean:New/Congruences/FirstOrder/FittingBlock.lean#L257). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.ribetGenerators`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 248](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L248). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.rootRadius`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 46](lean:New/Congruences/Selmer/RootsOfUnity.lean#L46). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.rootsOfValuation`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 119](lean:New/Congruences/Selmer/RootsOfUnity.lean#L119). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.rowLattice`: `Lib/General/Algebra/SharpMinors.lean`, [line 49](lean:Lib/General/Algebra/SharpMinors.lean#L49). Cited in [Chapter](/chapter/fitting-ideals/).
 - `New.Selmer.rowValue`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 136](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L136). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.rowValue_apply`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 140](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L140). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1676,10 +1780,16 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.SelmerDatum.cocycle_commutator_γ`: `New/Congruences/Selmer/SelmerData.lean`, [line 551](lean:New/Congruences/Selmer/SelmerData.lean#L551). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.cocycle_conj_of_fixed`: `New/Congruences/Selmer/SelmerData.lean`, [line 543](lean:New/Congruences/Selmer/SelmerData.lean#L543). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.cocycle_eq_zero_of_sahGroup`: `New/Congruences/Selmer/SelmerData.lean`, [line 561](lean:New/Congruences/Selmer/SelmerData.lean#L561). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.SelmerDatum.divisibleLength`: `New/Congruences/Selmer/Line.lean`, [line 131](lean:New/Congruences/Selmer/Line.lean#L131). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.divisibleLength_pointChar_le`: `New/Congruences/Selmer/Line.lean`, [line 355](lean:New/Congruences/Selmer/Line.lean#L355). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.divisibleSelmer`: `New/Congruences/Selmer/Line.lean`, [line 124](lean:New/Congruences/Selmer/Line.lean#L124). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.SelmerDatum.dualSelmer`: `New/Congruences/Selmer/Count.lean`, [line 275](lean:New/Congruences/Selmer/Count.lean#L275). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.dualSelmer_frob_add_conj_frob_eq_zero`: `New/Congruences/Selmer/Mirror.lean`, [line 351](lean:New/Congruences/Selmer/Mirror.lean#L351). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.eq_zero_of_mem_dualSelmer_of_forall_sahGroup`: `New/Congruences/Selmer/Mirror.lean`, [line 311](lean:New/Congruences/Selmer/Mirror.lean#L311). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.SelmerDatum.eventually_reduceModPow_idOrConjInv_eq`: `New/Congruences/Selmer/Line.lean`, [line 476](lean:New/Congruences/Selmer/Line.lean#L476). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.SelmerDatum.exists_apply_pair_eq_nsmul`: `New/Congruences/Selmer/Mirror.lean`, [line 230](lean:New/Congruences/Selmer/Mirror.lean#L230). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.SelmerDatum.exists_boundsSelmer_and_eval_dvd`: `New/Congruences/Selmer/Line.lean`, [line 291](lean:New/Congruences/Selmer/Line.lean#L291). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.exists_boundsSelmer_ellVal_eval_le`: `New/Congruences/Selmer/Line.lean`, [line 387](lean:New/Congruences/Selmer/Line.lean#L387). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.SelmerDatum.exists_isNewAuxiliaryPrime`: `New/Congruences/Selmer/Mirror.lean`, [line 175](lean:New/Congruences/Selmer/Mirror.lean#L175). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.exists_length_cocycles_le`: `New/Congruences/Selmer/Count.lean`, [line 362](lean:New/Congruences/Selmer/Count.lean#L362). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.exists_length_localCocycles_tied_le`: `New/Congruences/Selmer/Count.lean`, [line 285](lean:New/Congruences/Selmer/Count.lean#L285). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1695,6 +1805,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.SelmerDatum.length_add_length_tiedSelmer_le`: `New/Congruences/Selmer/Count.lean`, [line 327](lean:New/Congruences/Selmer/Count.lean#L327). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.length_dualSelmer_le`: `New/Congruences/Selmer/Mirror.lean`, [line 667](lean:New/Congruences/Selmer/Mirror.lean#L667). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.length_localCocycles_le_finrank_mul`: `New/Congruences/Selmer/SelmerData.lean`, [line 221](lean:New/Congruences/Selmer/SelmerData.lean#L221). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.SelmerDatum.length_tiedSelmer_erase_le`: `New/Congruences/Selmer/Line.lean`, [line 247](lean:New/Congruences/Selmer/Line.lean#L247). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.SelmerDatum.length_tiedSelmer_le_of_isUnit`: `New/Congruences/Selmer/Descent.lean`, [line 454](lean:New/Congruences/Selmer/Descent.lean#L454). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.length_tiedSelmer_pow_le`: `New/Congruences/Selmer/Descent.lean`, [line 481](lean:New/Congruences/Selmer/Descent.lean#L481). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.localRelations`: `New/Congruences/Selmer/SelmerData.lean`, [line 188](lean:New/Congruences/Selmer/SelmerData.lean#L188). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1714,6 +1825,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.SelmerDatum.mirrorForm_conj_γ_right`: `New/Congruences/Selmer/Mirror.lean`, [line 517](lean:New/Congruences/Selmer/Mirror.lean#L517). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.mirrorForm_eq_zero`: `New/Congruences/Selmer/Mirror.lean`, [line 551](lean:New/Congruences/Selmer/Mirror.lean#L551). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.mirrorForm_self_eq_zero`: `New/Congruences/Selmer/Mirror.lean`, [line 401](lean:New/Congruences/Selmer/Mirror.lean#L401). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.SelmerDatum.reduceModPow_eq_one`: `New/Congruences/Selmer/Line.lean`, [line 233](lean:New/Congruences/Selmer/Line.lean#L233). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.SelmerDatum.reductionKer`: `New/Congruences/Selmer/Count.lean`, [line 75](lean:New/Congruences/Selmer/Count.lean#L75). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.reductionKerInfConj`: `New/Congruences/Selmer/Mirror.lean`, [line 97](lean:New/Congruences/Selmer/Mirror.lean#L97). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.reductionModule`: `New/Congruences/Selmer/Count.lean`, [line 68](lean:New/Congruences/Selmer/Count.lean#L68). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1731,6 +1843,11 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.SelmerDatum.tiedSelmer_update_le`: `New/Congruences/Selmer/Descent.lean`, [line 392](lean:New/Congruences/Selmer/Descent.lean#L392). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.tiedSetting`: `New/Congruences/Selmer/Count.lean`, [line 205](lean:New/Congruences/Selmer/Count.lean#L205). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.tiedSetting_avoids`: `New/Congruences/Selmer/Count.lean`, [line 253](lean:New/Congruences/Selmer/Count.lean#L253). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.SelmerDatum.TwistedLengthLe`: `New/Congruences/Selmer/Line.lean`, [line 139](lean:New/Congruences/Selmer/Line.lean#L139). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.TwistedLengthLe.hasDivisibleSelmerLengthLe`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 196](lean:New/Congruences/Selmer/TwistingTheorem.lean#L196). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.TwistedLengthLe.mono`: `New/Congruences/Selmer/Line.lean`, [line 147](lean:New/Congruences/Selmer/Line.lean#L147). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.twistedLengthLe_pointChar`: `New/Congruences/Selmer/Line.lean`, [line 441](lean:New/Congruences/Selmer/Line.lean#L441). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.SelmerDatum.twistedSelmer`: `New/Congruences/Selmer/Line.lean`, [line 114](lean:New/Congruences/Selmer/Line.lean#L114). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.SelmerDatum.β`: `New/Congruences/Selmer/SelmerData.lean`, [line 177](lean:New/Congruences/Selmer/SelmerData.lean#L177). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.β_ne_top`: `New/Congruences/Selmer/SelmerData.lean`, [line 179](lean:New/Congruences/Selmer/SelmerData.lean#L179). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.SelmerDatum.γ₀_mem_reductionKerInfConj`: `New/Congruences/Selmer/Mirror.lean`, [line 131](lean:New/Congruences/Selmer/Mirror.lean#L131). Cited in [Chapter](/chapter/tied-selmer-groups/).
@@ -1747,10 +1864,25 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.smul_one_mem_traceLeftIdeal`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 429](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L429). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.smul_X_smul_mem_of_forall_form`: `New/Congruences/FirstOrder/FittingBlock.lean`, [line 107](lean:New/Congruences/FirstOrder/FittingBlock.lean#L107). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.span_range_smul_single_eq_top`: `New/Congruences/Selmer/SelmerData.lean`, [line 640](lean:New/Congruences/Selmer/SelmerData.lean#L640). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.stickelbergerChar_eq_one_of_mem_inertiaAbove`: `New/Congruences/Selmer/LValueSystems.lean`, [line 79](lean:New/Congruences/Selmer/LValueSystems.lean#L79). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.stickelbergerChar_mul_invAvatar_frob`: `New/Congruences/Selmer/LValueSystems.lean`, [line 130](lean:New/Congruences/Selmer/LValueSystems.lean#L130). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.stickelbergerChar_tameGenerator_ne_one_and_pow_eq_one`: `New/Congruences/Selmer/LValueSystems.lean`, [line 98](lean:New/Congruences/Selmer/LValueSystems.lean#L98). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 222](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L222). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.ellVal_one_element_singleton_le`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 452](lean:New/Congruences/Selmer/StickelbergerLine.lean#L452). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.eventually_le_ellVal_sub`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 356](lean:New/Congruences/Selmer/StickelbergerLine.lean#L356). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.exists_congruence_lineChar_element`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 407](lean:New/Congruences/Selmer/StickelbergerLine.lean#L407). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.exists_point_ellVal_universalChar_le`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 483](lean:New/Congruences/Selmer/StickelbergerLine.lean#L483). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.groupRingEval_element_eq_mul_prod_eulerFactor`: `New/Congruences/Selmer/StickelbergerLine.lean`, [line 372](lean:New/Congruences/Selmer/StickelbergerLine.lean#L372). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.groupRingEval_element_union`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 296](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L296). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.norm_groupRingEval_one_element_le_one`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 268](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L268). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.norm_twistChar`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 262](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L262). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.β`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 256](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L256). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.StickelbergerSystem.β_ne_top`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 281](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L281). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.sub_one_smul_eq_of_commute`: `New/Congruences/Selmer/Untied.lean`, [line 107](lean:New/Congruences/Selmer/Untied.lean#L107). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.sub_one_smul_eq_of_isAuxPrimeDataAt`: `New/Congruences/Selmer/Untied.lean`, [line 288](lean:New/Congruences/Selmer/Untied.lean#L288). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.sub_one_smul_eq_of_tame`: `New/Congruences/Selmer/Untied.lean`, [line 133](lean:New/Congruences/Selmer/Untied.lean#L133). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.sub_one_smul_normaliserRow_mem_tiedRows`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 394](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L394). Cited in [Chapter](/chapter/ribet-elements/).
+- `New.Selmer.sum_card_rootsOfValuation_mul_le`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 188](lean:New/Congruences/Selmer/RootsOfUnity.lean#L188). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.sum_clearingBound_add_padicValNat_le`: `New/Congruences/FitTwistsExist.lean`, [line 232](lean:New/Congruences/FitTwistsExist.lean#L232). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_complexEmbeddingOf_le`: `New/Congruences/LocalLoss/Basic.lean`, [line 641](lean:New/Congruences/LocalLoss/Basic.lean#L641). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.sum_defectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 109](lean:New/Congruences/FitTwistsExist.lean#L109). Cited in [Chapter](/chapter/regular-families-plan/).
@@ -1758,10 +1890,13 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.sum_localDefectBound_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 137](lean:New/Congruences/FitTwistsExist.lean#L137). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.sum_lt_sum_of_ne_top`: `New/Congruences/Selmer/Descent.lean`, [line 226](lean:New/Congruences/Selmer/Descent.lean#L226). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.sum_mapDomain_smul_eq_relEval`: `New/Congruences/Selmer/OneSystem.lean`, [line 203](lean:New/Congruences/Selmer/OneSystem.lean#L203). Cited in [Chapter](/chapter/tied-selmer-groups/).
+- `New.Selmer.sum_min_ellVal_sub_le`: `New/Congruences/Selmer/RootsOfUnity.lean`, [line 222](lean:New/Congruences/Selmer/RootsOfUnity.lean#L222). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.sum_padicValNat_mul_log_le`: `New/Congruences/FitTwistsExist.lean`, [line 65](lean:New/Congruences/FitTwistsExist.lean#L65). Cited in [Chapter](/chapter/regular-families-plan/).
 - `New.Selmer.SummandCoordIndex`: `New/Congruences/LocalLoss/Basic.lean`, [line 443](lean:New/Congruences/LocalLoss/Basic.lean#L443). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.summandRep`: `New/Congruences/LocalLoss/Basic.lean`, [line 464](lean:New/Congruences/LocalLoss/Basic.lean#L464). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.surjective_of_linearIndependent_cast`: `New/Congruences/FirstOrder/TrianglePrimes.lean`, [line 112](lean:New/Congruences/FirstOrder/TrianglePrimes.lean#L112). Cited in [Chapter](/chapter/first-order-deformations/).
+- `New.Selmer.tameCharOfAuxiliary`: `New/Congruences/Selmer/ClassSums.lean`, [line 406](lean:New/Congruences/Selmer/ClassSums.lean#L406). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.tamePart_ne_one_of_invAvatar_ne_one`: `New/Congruences/Selmer/TwistingTheorem.lean`, [line 273](lean:New/Congruences/Selmer/TwistingTheorem.lean#L273). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.tateTwist_eq_one_of_cyclotomicChar_eq_one`: `New/Congruences/FirstOrder/EvenClasses.lean`, [line 157](lean:New/Congruences/FirstOrder/EvenClasses.lean#L157). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.tateTwist_smul`: `New/Congruences/LocalLoss/Basic.lean`, [line 579](lean:New/Congruences/LocalLoss/Basic.lean#L579). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.tateTwistPlus`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 279](lean:New/Congruences/FirstOrder/KummerMaps.lean#L279). Cited in [Chapter](/chapter/first-order-deformations/).
@@ -1774,6 +1909,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.tieIdeal_le`: `New/Congruences/FirstOrder/RibetMatrices.lean`, [line 475](lean:New/Congruences/FirstOrder/RibetMatrices.lean#L475). Cited in [Chapter](/chapter/ribet-elements/).
 - `New.Selmer.tiePolynomial`: `New/Congruences/Selmer/Untied.lean`, [line 204](lean:New/Congruences/Selmer/Untied.lean#L204). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.tieRelations`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 474](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L474). Cited in [Chapter](/chapter/tied-traces/).
+- `New.Selmer.tieRelations_union`: `New/Congruences/Selmer/Line.lean`, [line 161](lean:New/Congruences/Selmer/Line.lean#L161). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.tilting`: `New/Congruences/Selmer/Descent.lean`, [line 67](lean:New/Congruences/Selmer/Descent.lean#L67). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.totalTiedLength`: `New/Congruences/Selmer/Descent.lean`, [line 507](lean:New/Congruences/Selmer/Descent.lean#L507). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.trace_mul_aeval_apply`: `New/Congruences/FirstOrder/RibetMethod.lean`, [line 407](lean:New/Congruences/FirstOrder/RibetMethod.lean#L407). Cited in [Chapter](/chapter/ribet-elements/).
@@ -1787,8 +1923,18 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Selmer.TriangleEntry.nsmul_tameGenerator_eq_zero_of_mayFollow`: `New/Congruences/FirstOrder/TrianglePrimes.lean`, [line 551](lean:New/Congruences/FirstOrder/TrianglePrimes.lean#L551). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.trivialLift_mem_range_typeProjection`: `New/Congruences/GaloisRepresentations/AttachedRepresentations.lean`, [line 151](lean:New/Congruences/GaloisRepresentations/AttachedRepresentations.lean#L151). Cited in [Chapter](/chapter/main-summands/).
 - `New.Selmer.twistError`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 307](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L307). Cited in [Chapter](/chapter/regular-families-plan/), [Chapter](/chapter/main-summands/).
+- `New.Selmer.TwistPolynomials`: `New/Congruences/Selmer/Line.lean`, [line 503](lean:New/Congruences/Selmer/Line.lean#L503). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.ellVal_twist_tameGenerator_sub_one_le`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 228](lean:New/Congruences/Selmer/GeneralTheorem.lean#L228). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.exists_mem_inertiaAbove_twist_eq`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 197](lean:New/Congruences/Selmer/GeneralTheorem.lean#L197). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.isFromU1_twist`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 186](lean:New/Congruences/Selmer/GeneralTheorem.lean#L186). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.isSmallTwist_twist`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 292](lean:New/Congruences/Selmer/GeneralTheorem.lean#L292). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.sum_ellVal_twist_tameGenerator_sub_one_le`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 260](lean:New/Congruences/Selmer/GeneralTheorem.lean#L260). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.twist`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 154](lean:New/Congruences/Selmer/GeneralTheorem.lean#L154). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.twist_pow`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 170](lean:New/Congruences/Selmer/GeneralTheorem.lean#L170). Cited in [Chapter](/chapter/twisting-theorem/).
+- `New.Selmer.TwistPolynomials.twist_pow_eq_one`: `New/Congruences/Selmer/GeneralTheorem.lean`, [line 176](lean:New/Congruences/Selmer/GeneralTheorem.lean#L176). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.two_nsmul_comp_ofGalPlus_mem_cocycles`: `New/Congruences/FirstOrder/KummerMaps.lean`, [line 514](lean:New/Congruences/FirstOrder/KummerMaps.lean#L514). Cited in [Chapter](/chapter/first-order-deformations/).
 - `New.Selmer.typeProjection`: `New/Congruences/GaloisRepresentations/SelmerHypotheses.lean`, [line 607](lean:New/Congruences/GaloisRepresentations/SelmerHypotheses.lean#L607). Cited in [Chapter](/chapter/main-summands/).
+- `New.Selmer.U1ClassGroup`: `New/Congruences/Selmer/StickelbergerSystems.lean`, [line 106](lean:New/Congruences/Selmer/StickelbergerSystems.lean#L106). Cited in [Chapter](/chapter/twisting-theorem/).
 - `New.Selmer.unionWithConj`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 404](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L404). Cited in [Chapter](/chapter/tied-traces/).
 - `New.Selmer.universalChar`: `New/Congruences/Selmer/OneSystem.lean`, [line 65](lean:New/Congruences/Selmer/OneSystem.lean#L65). Cited in [Chapter](/chapter/tied-selmer-groups/).
 - `New.Selmer.valuation_pow_sub_one_lt_one_of_isFrob`: `New/Congruences/Selmer/AuxiliaryPrimes.lean`, [line 169](lean:New/Congruences/Selmer/AuxiliaryPrimes.lean#L169). Cited in [Chapter](/chapter/tied-traces/).
@@ -1959,7 +2105,12 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.SiegelWeil.zeroTerm_lagrangian_eq_theta`: `Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean`, [line 199](lean:Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean#L199). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.SiegelWeil.zeroTerm_lagrangian_isometrySplitting_comp`: `Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean`, [line 233](lean:Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean#L233). Cited in [Chapter](/chapter/siegel-weil/).
 - `New.SiegelWeil.zeroTerm_shearSplitting`: `Lib/SiegelWeil/OneVector/SiegelClassSum.lean`, [line 118](lean:Lib/SiegelWeil/OneVector/SiegelClassSum.lean#L118). Cited in [Chapter](/chapter/siegel-weil/).
-- `New.SieveSystem`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 59](lean:New/Spanning/MainTerm/SieveSystem.lean#L59). Cited in [Chapter](/chapter/bessel-real-place/), [Chapter](/chapter/real-densities/).
+- `New.SieveSystem`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 59](lean:New/Spanning/MainTerm/SieveSystem.lean#L59). Cited in [Chapter](/chapter/bessel-real-place/), [Chapter](/chapter/real-densities/), [Chapter](/chapter/main-term/).
+- `New.SieveSystem.integral_sum_update`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 222](lean:New/Spanning/MainTerm/SieveSystem.lean#L222). Cited in [Chapter](/chapter/main-term/).
+- `New.SieveSystem.lowerSemicontinuousAt_sum`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 281](lean:New/Spanning/MainTerm/SieveSystem.lean#L281). Cited in [Chapter](/chapter/main-term/).
+- `New.SieveSystem.norm_integral_mul_sum_update_le`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 232](lean:New/Spanning/MainTerm/SieveSystem.lean#L232). Cited in [Chapter](/chapter/main-term/).
+- `New.SieveSystem.pi`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 147](lean:New/Spanning/MainTerm/SieveSystem.lean#L147). Cited in [Chapter](/chapter/main-term/).
+- `New.SieveSystem.sum_nonneg`: `New/Spanning/MainTerm/SieveSystem.lean`, [line 263](lean:New/Spanning/MainTerm/SieveSystem.lean#L263). Cited in [Chapter](/chapter/main-term/).
 - `New.sigma_add_mul_sigma_sub`: `Lib/CM/Sigma/Basic.lean`, [line 537](lean:Lib/CM/Sigma/Basic.lean#L537). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.signedClasses`: `Lib/Adelic/TraceFormula/OrbitalUnfolding.lean`, [line 134](lean:Lib/Adelic/TraceFormula/OrbitalUnfolding.lean#L134). Cited in [Chapter](/chapter/trace-formula/).
 - `New.signedSpace`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 524](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L524). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
@@ -1983,6 +2134,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Space.archCoords`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 273](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L273). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Space.baseLattice`: `Lib/Adelic/Unitary/Defs.lean`, [line 537](lean:Lib/Adelic/Unitary/Defs.lean#L537). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.Space.boxProd`: `Lib/Weil/Construction/ProductsAndTransport.lean`, [line 126](lean:Lib/Weil/Construction/ProductsAndTransport.lean#L126). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Space.card_stdClasses_le`: `New/UpperBound/Size/ClassCount.lean`, [line 122](lean:New/UpperBound/Size/ClassCount.lean#L122). Cited in [Chapter](/chapter/archimedean-size/).
 - `New.Space.classIntegral`: `Lib/Adelic/TraceFormula/OrbitalUnfolding.lean`, [line 154](lean:Lib/Adelic/TraceFormula/OrbitalUnfolding.lean#L154). Cited in [Chapter](/chapter/trace-formula/).
 - `New.Space.classIntegral_eq_integral`: `Lib/Adelic/Reduction/DefiniteClassSums.lean`, [line 368](lean:Lib/Adelic/Reduction/DefiniteClassSums.lean#L368). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Space.classSum_gramForm_eq_mul_petersson`: `Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean`, [line 385](lean:Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean#L385). Cited in [Chapter](/chapter/automorphic-forms/), [Chapter](/chapter/character-lifts/).
@@ -2069,6 +2221,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Space.isForm_ofAlgForm`: `Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean`, [line 194](lean:Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean#L194). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Space.isForm_realConv`: `Lib/Adelic/AutomorphicForms/Cuspidality.lean`, [line 914](lean:Lib/Adelic/AutomorphicForms/Cuspidality.lean#L914). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Space.isHermitian_J`: `Lib/Adelic/Unitary/GramMatrix.lean`, [line 98](lean:Lib/Adelic/Unitary/GramMatrix.lean#L98). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.isIntegral_conjTranspose_mul_apply`: `New/UpperBound/Size/ClassCount.lean`, [line 86](lean:New/UpperBound/Size/ClassCount.lean#L86). Cited in [Chapter](/chapter/archimedean-size/).
 - `New.Space.IsJetConjugate`: `Lib/Weil/Construction/ThetaJets.lean`, [line 140](lean:Lib/Weil/Construction/ThetaJets.lean#L140). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Space.IsModerate`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 293](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L293). Cited in [Chapter](/chapter/reduction-theory/).
 - `New.Space.IsRapid`: `Lib/Adelic/Reduction/FirstMinimumShortBases.lean`, [line 298](lean:Lib/Adelic/Reduction/FirstMinimumShortBases.lean#L298). Cited in [Chapter](/chapter/reduction-theory/).
@@ -2102,6 +2255,8 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Space.move`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 568](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L568). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.Space.mul_orbitalIntegral_eq_zero`: `Lib/Adelic/TraceFormula/TraceComparison.lean`, [line 113](lean:Lib/Adelic/TraceFormula/TraceComparison.lean#L113). Cited in [Chapter](/chapter/trace-formula/).
 - `New.Space.neg`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 558](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L558). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
+- `New.Space.norm_gram_apply_le_cube`: `New/UpperBound/Size/ClassCount.lean`, [line 53](lean:New/UpperBound/Size/ClassCount.lean#L53). Cited in [Chapter](/chapter/archimedean-size/).
+- `New.Space.norm_map_mul_apply_le`: `New/UpperBound/Size/ClassCount.lean`, [line 40](lean:New/UpperBound/Size/ClassCount.lean#L40). Cited in [Chapter](/chapter/archimedean-size/).
 - `New.Space.norm_mul_vacElem_le_one_of_eq_sum`: `Lib/Weil/Construction/FourierInversion.lean`, [line 478](lean:Lib/Weil/Construction/FourierInversion.lean#L478). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Space.ofAlgForm_toAlgForm`: `Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean`, [line 227](lean:Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean#L227). Cited in [Chapter](/chapter/automorphic-forms/).
 - `New.Space.omega_ratEmbed_apply`: `Lib/Weil/MixedModel/ThetaInvariance.lean`, [line 633](lean:Lib/Weil/MixedModel/ThetaInvariance.lean#L633). Cited in [Chapter](/chapter/weil-representation/).
@@ -2182,6 +2337,7 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.Space.Splitting.zeroTerm_ne_zero`: `Lib/Weil/MixedModel/ZeroTerm.lean`, [line 751](lean:Lib/Weil/MixedModel/ZeroTerm.lean#L751). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Space.Splitting.zeroTerm_omega`: `Lib/Weil/MixedModel/ThetaInvariance.lean`, [line 413](lean:Lib/Weil/MixedModel/ThetaInvariance.lean#L413). Cited in [Chapter](/chapter/weil-representation/).
 - `New.Space.Splitting.zeroTerm_omega_levi`: `Lib/Weil/MixedModel/ThetaInvariance.lean`, [line 328](lean:Lib/Weil/MixedModel/ThetaInvariance.lean#L328). Cited in [Chapter](/chapter/weil-representation/).
+- `New.Space.stdClasses_eq_of_gram_eq`: `New/UpperBound/Size/ClassCount.lean`, [line 102](lean:New/UpperBound/Size/ClassCount.lean#L102). Cited in [Chapter](/chapter/archimedean-size/).
 - `New.Space.sum`: `Lib/Adelic/Unitary/ComponentsAndBlockSums.lean`, [line 540](lean:Lib/Adelic/Unitary/ComponentsAndBlockSums.lean#L540). Cited in [Chapter](/chapter/adeles-hermitian-spaces/).
 - `New.Space.sum_prod_integral_dsKernel`: `Lib/Adelic/TraceFormula/TraceComparison.lean`, [line 581](lean:Lib/Adelic/TraceFormula/TraceComparison.lean#L581). Cited in [Chapter](/chapter/trace-formula/).
 - `New.Space.summable_modelInner`: `Lib/Weil/Construction/AdelicRepresentation.lean`, [line 559](lean:Lib/Weil/Construction/AdelicRepresentation.lean#L559). Cited in [Chapter](/chapter/weil-representation/).
@@ -2266,8 +2422,11 @@ This section has the 2814 cited names `New.X` outside the namespace `New.Data` w
 - `New.submoduleIndex_colLattice_intVectors`: `Lib/General/Measure/HaarModulus.lean`, [line 481](lean:Lib/General/Measure/HaarModulus.lean#L481). Cited in [Chapter](/chapter/congruence-subgroups/).
 - `New.subst_coupling`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 67](lean:New/Derivatives/Divisibility/NormalForm.lean#L67). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.subst_expSubst`: `New/Derivatives/Divisibility/NormalForm.lean`, [line 61](lean:New/Derivatives/Divisibility/NormalForm.lean#L61). Cited in [Chapter](/chapter/cm-formal-group/).
+- `New.sum_absNorm_inv_sq_le`: `New/Spanning/MainTerm/Frequencies.lean`, [line 102](lean:New/Spanning/MainTerm/Frequencies.lean#L102). Cited in [Chapter](/chapter/main-term/).
 - `New.sum_classPoints_succ`: `New/UpperBound/Objects/LiftChains.lean`, [line 205](lean:New/UpperBound/Objects/LiftChains.lean#L205). Cited in [Chapter](/chapter/chain-valuation/).
+- `New.sum_coset_weight_le`: `New/Spanning/MainTerm/Frequencies.lean`, [line 198](lean:New/Spanning/MainTerm/Frequencies.lean#L198). Cited in [Chapter](/chapter/main-term/).
 - `New.sum_eq_sum_divisors_of_changeLevel_eq`: `Lib/Analytic/PolyaVinogradov.lean`, [line 163](lean:Lib/Analytic/PolyaVinogradov.lean#L163). Cited in [Chapter](/chapter/polya-vinogradov/).
+- `New.sum_height_inv_cube_le`: `New/Spanning/MainTerm/Frequencies.lean`, [line 253](lean:New/Spanning/MainTerm/Frequencies.lean#L253). Cited in [Chapter](/chapter/main-term/).
 - `New.sum_integral_norm_thetaSeries_div_le`: `Lib/Analytic/QuadraticTwist.lean`, [line 578](lean:Lib/Analytic/QuadraticTwist.lean#L578). Cited in [Chapter](/chapter/polya-vinogradov/).
 - `New.sum_lambdaKResidueClass_mul_posPart`: `New/Reduction/PrimeSums.lean`, [line 45](lean:New/Reduction/PrimeSums.lean#L45). Cited in [Chapter](/chapter/prime-sums/).
 - `New.sum_mul_eq_normal_order`: `Lib/DiscreteSeries/Theta/CasimirComparison.lean`, [line 229](lean:Lib/DiscreteSeries/Theta/CasimirComparison.lean#L229). Cited in [Chapter](/chapter/local-theta/).
