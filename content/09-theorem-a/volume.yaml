@@ -37,7 +37,7 @@ chapters:
   - id: seesaw-identity-2
     title: The seesaw identity, part 2
     plan: >-
-      Cuts and the assembly; the constant, which is allowed to be 0, and why the argument does not need it nonzero.
+      Cuts and the assembly; the constant `seesawConst` is a unit of its type, but the factor c₀C/d may be 0, and then both sides of the identity are 0; nonvanishing comes back on the determinant side.
     research: c §4 q1
     source:
       - New/UpperBound/Seesaw
