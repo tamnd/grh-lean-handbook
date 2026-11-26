@@ -20,7 +20,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 0 | 5 | Notation and conventions | drafted | 10,046 |
 | 0 | 6 | The table of sizes | drafted | 12,911 |
 | 0 | 7 | Reading the Lean | drafted | 14,522 |
-| 0 | 8 | The register of findings | planned | 0 |
+| 0 | 8 | The register of findings | drafted | 14,559 |
 | 0 | 9 | The two editions | drafted | 7,411 |
 | 1 | 1 | The theorem and the plan | drafted | 6,913 |
 | 1 | 2 | From the half-plane to the line | drafted | 7,838 |
@@ -39,11 +39,11 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 2 | 2 | Polar functions and the explicit formula | drafted | 8,378 |
 | 2 | 3 | Landau's theorem | drafted | 8,820 |
 | 2 | 4 | The prime number theorem in progressions | drafted | 11,927 |
-| 2 | 5 | Primes in windows | planned | 0 |
+| 2 | 5 | Primes in windows | drafted | 12,806 |
 | 2 | 6 | Pólya-Vinogradov and quadratic twists | planned | 0 |
 | 2 | 7 | Sets with no three-term progressions | planned | 0 |
 | 3 | 1 | CM fields, towers and places | drafted | 11,679 |
-| 3 | 2 | Class field theory on finite ideles | planned | 0 |
+| 3 | 2 | Class field theory on finite ideles | drafted | 14,587 |
 | 3 | 3 | Local duality and the Greenberg-Wiles count | planned | 0 |
 | 3 | 4 | Odd classes over cyclotomic fields | planned | 0 |
 | 3 | 5 | CM elliptic curves | planned | 0 |

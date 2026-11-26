@@ -2,6 +2,23 @@
 
 ## Unreleased
 
+## v0.2.0
+
+Milestone G1, The guide and the outline, is done.
+
+- Volume 0, The guide, has all 10 chapters. The last one is chapter 8, The register of findings (#69): 126 points that a careful reader of the source must know, each checked against the pinned source.
+- Volume 1, The proof in outline, has all 13 chapters. It gives the whole proof modulo Theorems A, B and C, which are stated in full.
+- Volumes 9 to 12 each have their opening chapter, with the plan of the volume.
+
+Since v0.1.8:
+
+- Volume 2, chapter 5, Primes in windows (#68).
+- Volume 3, chapter 2, Class field theory on finite ideles (#67).
+
+Background chapters of Volumes 2, 3 and 4 have started for the next milestones.
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.1.8
 
 New chapters:
