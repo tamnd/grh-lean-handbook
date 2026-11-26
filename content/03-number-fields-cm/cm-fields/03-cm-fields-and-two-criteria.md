@@ -71,7 +71,7 @@ Lean: `New.isCMField_fixedField_zpowers` (Lib/GaloisRep/BaseChange/GlobalRoot.le
 
 The second criterion builds a CM field by adjoining a root of a polynomial. The source uses it in the base change step and in the trace formula, where $P$ is the characteristic polynomial of a unitary element and its roots have absolute value $1$ under every embedding.
 
-**Theorem.** Let $E$ be a CM field, let $P \in E[X]$ be irreducible, and let $L = E[X]/(P)$. Suppose there is $\nu \in \mathbb{Q}$ such that for every embedding $\sigma : E \to \mathbb{C}$ and every complex root $r$ of $P^\sigma$, $r \bar r = \nu$. Then $L$ is a CM field. If moreover $L$ is given its CM structure, then the class $\alpha$ of $X$ in $L$ satisfies $\alpha \bar \alpha = \nu$.
+**Theorem.** Let $E$ be a CM field, let $P \in E[X]$ be irreducible, and let $L = E[X]/(P)$. Suppose there is $\nu \in \mathbb{Q}$ such that for every embedding $\sigma : E \to \mathbb{C}$ and every complex root $r$ of $P^\sigma$, $r \bar r = \nu$. Then $L$ is a CM field. If $L$ is given its CM structure, then the class $\alpha$ of $X$ in $L$ satisfies $\alpha \bar \alpha = \nu$.
 
 Lean: `New.isCMField_adjoinRoot_of_forall_root_mul_star_eq`, `New.adjoinRoot_root_mul_star` (Lib/General/NumberTheory/CMFields.lean).
 
