@@ -27,11 +27,15 @@ drafted_by: writer@claude-opus-5-5
 
 *Hint.* Take $Y = L$, $t = \tau$ and $a = c$; $\tau$ is equivariant and $L \in \mathcal{Q}$.
 
+**Exercise 6.** Compute the tame exponent $3r^2((r + t)r + 1)^2 + 150(h_2^2 + 1 + 4t + 1)$ of [Section 6](/chapter/local-loss/#the-defect-at-a-place-above) for $r = 1$, $t = 5$, $h_2 = 1$. Which term dominates for large $r$?
+
+*Hint.* $3 \cdot 49 + 150 \cdot 23 = 3597$. For large $r$ the term $150h_2^2 = 150r^{16}$ dominates, and it is still far below $b$.
+
 ## Notes and references
 
 Crystalline cocycles $Z_f$ and their rank are as in S. Bloch and K. Kato, *L-functions and Tamagawa numbers of motives*, Grothendieck Festschrift I (1990), Section 3, which the source cites for the rank formula. The heuristic for large $\ell$ in [Section 1](/chapter/local-loss/#what-the-chapter-proves) is the theory of J.-M. Fontaine and G. Laffaille, *Construction de représentations $p$-adiques*, Ann. Sci. ENS 15 (1982). The source does not use that theory; it proves the bounds it needs from the cup product estimates of [cup products](/chapter/cup-products/). This chapter does not compare the statements of the source with these texts.
 
-The status. All four files of the chapter have full proofs in the source, with no `sorry` and no axiom. No file of the chapter imports a file of a later chapter of Volume 12. Two results of [the denominator bound](/chapter/denominator-bound/) use the chapter; they are stated once in Section 8.
+The status. All four files of the chapter have full proofs in the source, with no `sorry` and no axiom. No file of the chapter imports a file of a later chapter of Volume 12. Two results of [the denominator bound](/chapter/denominator-bound/) use the chapter; they are stated once in Section 8. The first applies the Ribet cocycle bound at each place above $\ell$. The second applies the defect at a place of Section 6 to the local lattices of Section 7, and sums over the summands and the places. Both live in FirstOrder/TraceRelations, in the namespace of this chapter.
 
 Findings of the notes (`05-findings.md`):
 
@@ -40,6 +44,8 @@ Findings of the notes (`05-findings.md`):
 - F-031 says that the crystalline loss is an opaque definition. In the source only the three lemmas of [Section 3](/chapter/local-loss/#the-crystalline-loss-and-the-sizes) read its value.
 
 The notes have small errors. Research note f-congr, Section 6, names the defect sum over the places above $\ell$ as the main output of the LocalLoss files. That result lives in FirstOrder/TraceRelations, in [the denominator bound](/chapter/denominator-bound/). The main output here is the defect at a place. The same note suggests about 3500 words for the chapter, which is too few for complete proofs of the three regimes.
+
+The plan of the volume lists the three topics of the chapter correctly. The split of CrystallineDefect into Sections 5 and 6 is a choice of this chapter, made to keep each section below the word limit.
 
 The chapter does not check that the source builds. It reports what the declarations state. Nothing in this chapter claims that the proof is correct or that the generalized Riemann hypothesis is proved.
 
