@@ -57,6 +57,8 @@ So the heights in use are $1$, $k$ and $n_1, n_2, \dots$, since $n_i - k = i(t+1
 
 The source defines the weights through doubled Harish-Chandra parameters, as the theta correspondence of discrete series acts on parameters. For a rank $n$, write $[n]$ for the block $((n-1)/2, (n-3)/2, \dots, (1-n)/2)$. Its doubled entries are $2[n]_p = n - 1 - 2p$ (`New.twiceBlockEntry`), and they sum to $0$.
 
+Lean: `New.twiceBlockEntry` (New/UpperBound/Objects/Weights.lean).
+
 **Definition (Parameters and weights of $X_j$).** The doubled parameter sequence at $\tau$ is
 $$2\lambda_p = \begin{cases} 2[k]_p + 2a_\tau[p = 0] & p < k,\\ 2[t+1]_b - 2\kappa_{i+1}(\tau) & p = k + i(t+1) + b,\ b < t+1. \end{cases}$$
 The parameter of $X_j$ is its first $n_j$ entries. The weight of $X_j$ is $\mu(X_j)_p = (2\lambda_p - 2[n_j]_p)/2$. The diagram of lift $j + 1$ is $\mu^+_{j+1,p} = \mu(X_j)_p + \kappa_{j+1}(\tau) - n_{j+1}/2$ for $p < n_j$, and $0$ for $p \ge n_j$.
