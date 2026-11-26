@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.1.3
+
+Three new chapters and one fix:
+
+- Volume 1, chapter 1, The theorem and the plan (#33).
+- Volume 1, chapter 5, Why a lattice can bound a prime sum (#35).
+- Volume 11, chapter 1, Theorem C and the height argument (#34). This is the first chapter of Volume 11 in a release.
+- Fix: in the outline, Theorem B gives the count of translates and the dimension that Theorem C must fill; it is not a lower bound (#36).
+
+Volume 1 now has 11 of its 13 chapters. Each chapter has the status `drafted`. No person has checked it yet.
+
 ## v0.1.2
 
 Four more chapters of Volume 1, The proof in outline:
