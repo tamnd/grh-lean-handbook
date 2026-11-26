@@ -7,9 +7,7 @@ decls:
   - New.Exchange.pointDatum
   - New.Exchange.nextDatum
   - New.Exchange.swapFirstTwo
-  - New.Exchange.inclMatrix_inl
   - New.Exchange.sum_nextDatum_mul
-  - New.Exchange.star_nextDatum
   - New.Exchange.sum_inv_det_mul_eq_card_mul
   - New.Exchange.SquareLaw.card_mul_apply_fromRows_eq
   - New.Exchange.SquareLaw.sum_eq_nextDatum
