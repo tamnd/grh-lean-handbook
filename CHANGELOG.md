@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## v0.3.2
+
+Four new chapters of the argument volumes.
+
+- Volume 9, chapter 4: the field E at the primes (#121).
+- Volume 9, chapter 5: the integral vacuum and tight frames (#124).
+- Volume 10, chapter 5: frames, depth and gains (#125).
+- Volume 12, chapter 3: auxiliary primes and first-order deformations (#123).
+
 ## v0.3.1
 
 Four new chapters of the argument volumes.

@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Names of the data
 
-The index lists 4402 Lean names that the 69 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 512 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
+The index lists 4705 Lean names that the 72 written chapters cite, on a `Lean:` line or in the list of declarations of a section. For each name it gives the file and the line of the declaration, and the chapters that cite it. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. This section has the 517 names in the namespace `New.Data`, the namespace of the admissible data. The next section has the other names.
 
 - `New.Data.a`: `New/Reduction/Data/AdmissibleData.lean`, [line 215](lean:New/Reduction/Data/AdmissibleData.lean#L215). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.a_div_x₁_mem_Icc`: `New/Reduction/Data/Sizes.lean`, [line 182](lean:New/Reduction/Data/Sizes.lean#L182). Cited in [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
@@ -144,6 +144,7 @@ The index lists 4402 Lean names that the 69 written chapters cite, on a `Lean:` 
 - `New.Data.exists_heckeAlgebra_eq_mul_inner_of_hasSum_rallisTerm`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 153](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L153). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.exists_heckeAlgebra_inner_eq_inner_translate`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 69](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L69). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.exists_isPrimitivePolynomial`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 57](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L57). Cited in [Chapter](/chapter/equal-multiplicities/).
+- `New.Data.exists_isTightFrame`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 787](lean:New/Derivatives/Vacuum/ShortVectors.lean#L787). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Data.exists_le_finrank_iSup_range_normalizedPoincare`: `New/Reduction/ShortAndEnough.lean`, [line 410](lean:New/Reduction/ShortAndEnough.lean#L410). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.exists_levelPrime_mem_of_isChosen`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 107](lean:New/Derivatives/Field/ChosenPlaces.lean#L107). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.exists_lowerChain_poincare_eq`: `New/Reduction/ShortAndEnough.lean`, [line 217](lean:New/Reduction/ShortAndEnough.lean#L217). Cited in [Chapter](/chapter/theorem-a-plan/).
@@ -154,6 +155,7 @@ The index lists 4402 Lean names that the 69 written chapters cite, on a `Lean:` 
 - `New.Data.exists_principalForms_eq_liftSeries`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 747](lean:New/Determinant/Norms/AdjointThetaLift.lean#L747). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.exists_r_eq_three_pow`: `New/Reduction/Data/AdmissibleData.lean`, [line 120](lean:New/Reduction/Data/AdmissibleData.lean#L120). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.exists_rallisTerm_eq_inner`: `New/Spanning/Multiplicities/EqualMultiplicities.lean`, [line 125](lean:New/Spanning/Multiplicities/EqualMultiplicities.lean#L125). Cited in [Chapter](/chapter/equal-multiplicities/).
+- `New.Data.exists_short_isTightFrame_coprime`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 754](lean:New/Derivatives/Vacuum/ShortVectors.lean#L754). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Data.exists_span_isAuxiliaryForm_eq_top`: `New/Determinant/Twist/LongForms.lean`, [line 59](lean:New/Determinant/Twist/LongForms.lean#L59). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/).
 - `New.Data.exists_zeta_pow_eq_of_isIntegral`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 201](lean:New/Derivatives/Field/ChosenPlaces.lean#L201). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Data.exp_logB`: `New/Reduction/Data/AdmissibleData.lean`, [line 95](lean:New/Reduction/Data/AdmissibleData.lean#L95). Cited in [Chapter](/chapter/data-and-sizes/).
@@ -201,6 +203,7 @@ The index lists 4402 Lean names that the 69 written chapters cite, on a `Lean:` 
 - `New.Data.hasLogBound_rootDisc`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 449](lean:New/Derivatives/Field/ChosenPlaces.lean#L449). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.HasLogLower`: `New/Reduction/Data/Magnitudes.lean`, [line 172](lean:New/Reduction/Data/Magnitudes.lean#L172). Cited in [Chapter](/chapter/data-and-sizes/).
 - `New.Data.HasLogUpper`: `New/Reduction/Data/Magnitudes.lean`, [line 169](lean:New/Reduction/Data/Magnitudes.lean#L169). Cited in [Chapter](/chapter/data-and-sizes/).
+- `New.Data.hasLogUpper_pow_ceilLogQ₁`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 708](lean:New/Derivatives/Vacuum/ShortVectors.lean#L708). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Data.HasSmallRatios`: `New/Determinant/Twist/FitTwists.lean`, [line 218](lean:New/Determinant/Twist/FitTwists.lean#L218). Cited in [Chapter](/chapter/theorems-a-b-c/), [Chapter](/chapter/theorem-c-plan/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.Data.HasSmallRatios.heightLe_inv_rpow_mul_prod`: `New/Determinant/Chain/Moduli.lean`, [line 227](lean:New/Determinant/Chain/Moduli.lean#L227). Cited in [Chapter](/chapter/twists-critical-pairs/).
 - `New.Data.HasSmallRatios.heightLe_inv_rpow_mul_prod_quotientRatio`: `New/Determinant/Chain/NormOfChain.lean`, [line 436](lean:New/Determinant/Chain/NormOfChain.lean#L436). Cited in [Chapter](/chapter/integral-target-forms/).
@@ -273,6 +276,7 @@ The index lists 4402 Lean names that the 69 written chapters cite, on a `Lean:` 
 - `New.Data.lastLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 167](lean:New/UpperBound/Objects/RowChain.lean#L167). Cited in [Chapter](/chapter/upper-bound-objects/).
 - `New.Data.lastLevelChar`: `New/UpperBound/Objects/RowChain.lean`, [line 357](lean:New/UpperBound/Objects/RowChain.lean#L357). Cited in [Chapter](/chapter/integral-target-forms/).
 - `New.Data.lastResidueLevel`: `New/UpperBound/Objects/RowChain.lean`, [line 128](lean:New/UpperBound/Objects/RowChain.lean#L128). Cited in [Chapter](/chapter/integral-target-forms/).
+- `New.Data.le_b_of_eq_dualResolutionFactor`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 726](lean:New/Derivatives/Vacuum/ShortVectors.lean#L726). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Data.le_constantBound`: `New/Reduction/Data/Magnitudes.lean`, [line 56](lean:New/Reduction/Data/Magnitudes.lean#L56). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/sizes/), [Chapter](/chapter/data-and-sizes/).
 - `New.Data.le_finrank_ramifiedSourceForms`: `New/UpperBound/Size/ShortColumns.lean`, [line 944](lean:New/UpperBound/Size/ShortColumns.lean#L944). Cited in [Chapter](/chapter/theorem-b-plan/).
 - `New.Data.le_mainAmount`: `New/Reduction/PrimeSums.lean`, [line 289](lean:New/Reduction/PrimeSums.lean#L289). Cited in [Chapter](/chapter/prime-sums/), [Chapter](/chapter/main-inequality/).
@@ -380,6 +384,7 @@ The index lists 4402 Lean names that the 69 written chapters cite, on a `Lean:` 
 - `New.Data.ofAlgForm_singleLift`: `New/Determinant/Norms/AdjointThetaLift.lean`, [line 896](lean:New/Determinant/Norms/AdjointThetaLift.lean#L896). Cited in [Chapter](/chapter/single-theta-lifts/).
 - `New.Data.offLevelGroup`: `New/Spanning/Multiplicities/HeckeEigensystems.lean`, [line 121](lean:New/Spanning/Multiplicities/HeckeEigensystems.lean#L121). Cited in [Chapter](/chapter/equal-multiplicities/).
 - `New.Data.offWeight`: `New/Reduction/Data/AdmissibleData.lean`, [line 218](lean:New/Reduction/Data/AdmissibleData.lean#L218). Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/data-and-sizes/).
+- `New.Data.one_le_norm_phi_relDifferentGen`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 697](lean:New/Derivatives/Vacuum/ShortVectors.lean#L697). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.Data.orderOf_chiMLocal`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 164](lean:New/Derivatives/Field/ChosenPlaces.lean#L164). Cited in [Chapter](/chapter/fields-places-twists/).
 - `New.Data.orderOf_chiMLocalRoot`: `New/Derivatives/Field/ChosenPlaces.lean`, [line 149](lean:New/Derivatives/Field/ChosenPlaces.lean#L149). Cited in [Chapter](/chapter/field-at-primes/).
 - `New.Data.paramsCorrespond_descentPair`: `New/UpperBound/Objects/Rows.lean`, [line 810](lean:New/UpperBound/Objects/Rows.lean#L810). Cited in [Chapter](/chapter/upper-bound-objects/).
