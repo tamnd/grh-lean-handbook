@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## v0.2.8
+
+New chapters since v0.2.7:
+
+- Volume 3, chapter 5, CM elliptic curves (#107). Volume 3 is now complete.
+- Volume 4, chapter 5, Congruence subgroups and Haar moduli (#108). Volume 4 is now complete.
+- Volume 10, chapter 2, Few translates (#109). This is the first chapter of the proof of Theorem B.
+
+Plan change (#106): Volume 9 is reordered by the imports of the source files, so each chapter needs only earlier chapters, with three stated exceptions in chapter 2. Two chapters are new: short columns and chain valuation.
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.7
 
 New chapters since v0.2.6:

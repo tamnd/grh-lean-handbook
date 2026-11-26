@@ -46,12 +46,12 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 3 | 2 | Class field theory on finite ideles | drafted | 14,587 |
 | 3 | 3 | Local duality and the Greenberg-Wiles count | drafted | 14,623 |
 | 3 | 4 | Odd classes over cyclotomic fields | drafted | 14,680 |
-| 3 | 5 | CM elliptic curves | planned | 0 |
+| 3 | 5 | CM elliptic curves | drafted | 14,695 |
 | 4 | 1 | Adeles and hermitian spaces | drafted | 12,742 |
 | 4 | 2 | Quotients and reduction theory | drafted | 14,726 |
 | 4 | 3 | Automorphic forms on unitary groups | drafted | 13,860 |
 | 4 | 4 | A simple trace formula | drafted | 14,711 |
-| 4 | 5 | Congruence subgroups and Haar moduli | planned | 0 |
+| 4 | 5 | Congruence subgroups and Haar moduli | drafted | 14,419 |
 | 5 | 1 | Discrete series through one matrix coefficient | drafted | 14,653 |
 | 5 | 2 | Laplace's method for discrete series coefficients | drafted | 14,688 |
 | 5 | 3 | Bessel subgroups and Bruhat measures | drafted | 14,677 |
@@ -71,25 +71,27 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 7 | 5 | The comparison theorems on test objects | drafted | 14,654 |
 | 7 | 6 | Fitting ideals, lengths and coefficient rings | drafted | 14,491 |
 | 8 | 1 | Complex abelian varieties through theta functions | drafted | 14,604 |
-| 8 | 2 | An integral model without a moduli problem | planned | 0 |
+| 8 | 2 | An integral model without a moduli problem | drafted | 14,661 |
 | 8 | 3 | The congruence relation | drafted | 14,017 |
 | 8 | 4 | What attached means | planned | 0 |
 | 8 | 5 | Building the representations | planned | 0 |
-| 9 | 1 | Theorem A and its plan | drafted | 8,818 |
+| 9 | 1 | Theorem A and its plan | drafted | 9,018 |
 | 9 | 2 | The objects of the upper bound | planned | 0 |
-| 9 | 3 | Theta kernels and gauges | planned | 0 |
-| 9 | 4 | The seesaw identity, part 1 | planned | 0 |
-| 9 | 5 | The seesaw identity, part 2 | planned | 0 |
-| 9 | 6 | The archimedean size of the composite lift | planned | 0 |
-| 9 | 7 | The field E at the primes | planned | 0 |
-| 9 | 8 | The CM curve and its formal group | planned | 0 |
-| 9 | 9 | Normal forms and the count | planned | 0 |
-| 9 | 10 | The integral vacuum and tight frames | planned | 0 |
-| 9 | 11 | Elementary divisors of a Hecke operator | planned | 0 |
-| 9 | 12 | Divisibility prime by prime | planned | 0 |
-| 9 | 13 | The proof of Theorem A | planned | 0 |
+| 9 | 3 | The seesaw identity, part 1: unfolding | planned | 0 |
+| 9 | 4 | The field E at the primes | planned | 0 |
+| 9 | 5 | The integral vacuum and tight frames | planned | 0 |
+| 9 | 6 | The CM curve, its formal group and the normal form | planned | 0 |
+| 9 | 7 | The count and the divisibility of standard data | planned | 0 |
+| 9 | 8 | Theta kernels and gauges | planned | 0 |
+| 9 | 9 | Short columns and the gain | planned | 0 |
+| 9 | 10 | Marked primes and the valuation of a chain | planned | 0 |
+| 9 | 11 | The seesaw identity, part 2: assembly | planned | 0 |
+| 9 | 12 | The archimedean size of the composite lift | planned | 0 |
+| 9 | 13 | Elementary divisors of a Hecke operator | planned | 0 |
+| 9 | 14 | Divisibility prime by prime | planned | 0 |
+| 9 | 15 | The proof of Theorem A | planned | 0 |
 | 10 | 1 | Theorem B and its plan | drafted | 8,769 |
-| 10 | 2 | Few translates suffice | planned | 0 |
+| 10 | 2 | Few translates suffice | drafted | 9,650 |
 | 10 | 3 | Equal multiplicities by the trace formula | planned | 0 |
 | 10 | 4 | Bessel functions at a real place | planned | 0 |
 | 10 | 5 | Poincaré series and unfolding | planned | 0 |
