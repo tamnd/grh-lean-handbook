@@ -129,7 +129,7 @@ Lean: `New.DiscreteSeries.IsEigenDirection` (Lib/DiscreteSeries/Theta/FockJointH
 
 Lean: `New.DiscreteSeries.exists_not_isEigenDirection` (Lib/DiscreteSeries/Theta/FockJointHarmonics.lean).
 
-*Proof.* Let $H(X) = F(X + x)$, the Taylor series of $F$ at $x$. It is not zero. Its constant term is $F(x) = 0$. Take a monomial $X^n$ of $H$ of least degree. Then $n \neq 0$, so $n = t + e_i$ for some variable $i$ and some $t$. The coefficient of $X^t$ in $\partial_i H$ is not zero, so $\partial_i F \neq 0$. Suppose that $i$ is an eigendirection, with a field $V$ and an index $j$. Translate $VF = \mu F$ by $x$: the field becomes $\sum_k (X_{a_k} + x_{a_k})\partial_{b_k}$. Compare the coefficients of $X^t$. On the right, $\mu$ times a coefficient of $H$ in degree $|t| < |n|$, which is $0$. On the left, the terms $X_{a_k}\partial_{b_k}H$ keep the degree, so they have no part in degree $|t|$. The constant terms leave only $x_{a_j}$ times the coefficient of $X^t$ in $\partial_i H$, which is not zero. This is a contradiction. $\square$
+*Proof.* Let $H(X) = F(X + x)$, the Taylor series of $F$ at $x$. It is not zero, and its constant term is $F(x) = 0$. Take a monomial $X^n$ of $H$ of least degree. Then $n \neq 0$, so $n = t + e_i$ for some variable $i$ and some $t$. The coefficient of $X^t$ in $\partial_i H$ is not zero, so $\partial_i F \neq 0$. Suppose that $i$ is an eigendirection, with a field $V$ and an index $j$. Translate $VF = \mu F$ by $x$: the field becomes $\sum_k (X_{a_k} + x_{a_k})\partial_{b_k}$. Compare the coefficients of $X^t$. On the right, $\mu$ times a coefficient of $H$ in degree $|t| < |n|$, which is $0$. On the left, the terms $X_{a_k}\partial_{b_k}H$ keep the degree, so they have no part in degree $|t|$. The constant terms leave only $x_{a_j}$ times the coefficient of $X^t$ in $\partial_i H$, which is not zero. This is a contradiction. $\square$
 
 **Lemma.** Let $l$ and $l'$ match, let $s = \eta_{rc}$ be the sign of the variable $(r, c)$. Then one of the following holds.
 1. $n' - n < -s\,\xi_r$.
@@ -181,5 +181,5 @@ Lean: `New.IsJointHarmonic.exists_eq_smul_of_row_weight` (Lib/DiscreteSeries/The
 
 *Proof.* If $P = 0$, take $c = 0$. Otherwise $P$ and $\Phi$ are pre-joint harmonics, so the theorem applies. For part 2, apply part 1 to the swap, where $\Phi$ is a joint harmonic for $l'$, $l$ by Section 3. $\square$
 
-**Remark (Formalization).** The constant $c = P(x)/Q(x)$ in the proof is a real division in `ℂ`, and $Q(x) \neq 0$ is proved. There is no junk value here. The polynomial `New.jointHarmonicAt` of the global argument is chosen by `Classical.epsilon` (Lib/Weil/Lift.lean). When a joint harmonic exists, the corollary shows that the chosen one is a nonzero multiple of every other one, so the global results do not depend on the choice.
+**Remark (Formalization).** The constant $c = P(x)/Q(x)$ in the proof is a real division in `ℂ`, and $Q(x) \neq 0$ is proved. There is no junk value here. When a joint harmonic exists, the corollary makes the choice of `New.jointHarmonicAt` (Lib/Weil/Lift.lean) unique up to a nonzero scalar.
 
