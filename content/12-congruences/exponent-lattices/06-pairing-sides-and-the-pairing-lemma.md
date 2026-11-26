@@ -92,7 +92,7 @@ $$f(n) = B(nx)(n\,\mathrm{fst}\,x') - n\bigl(B(x)(\mathrm{fst}\,x') - y\bigr) - 
 Lean: `New.Lift.Pairing.phi_smul_sub_mem_smallPart` (New/Congruences/Lifting/CupProductBound.lean).
 
 *Proof.* The element $g$ commutes with $\varphi$. Insert the equation for $y$. By the two rules and bilinearity, $\varphi f(g) - f(g)$ equals
-$$B(gw - w)(\mathrm{fst}\,g(\varphi x' - w')) - B(\varphi x - w)(\mathrm{fst}(g\varphi x' - \varphi x')) - B(w - x)(\mathrm{fst}(gw' - w')) + B(gx - x)(\mathrm{fst}\,g(w' - x')).$$
+$$\begin{aligned} &B(gw - w)(\mathrm{fst}\,g(\varphi x' - w')) - B(\varphi x - w)(\mathrm{fst}(g\varphi x' - \varphi x')) \\ &\quad - B(w - x)(\mathrm{fst}(gw' - w')) + B(gx - x)(\mathrm{fst}\,g(w' - x')).\end{aligned}$$
 The four terms are the four safe moves of the path, in this order: the second side from $\varphi x'$ to $w'$, the first side from $\varphi x$ to $w$, the first side from $w$ to $x$, and the second side from $w'$ to $x'$. Each term is small, and the small part is a submodule. $\square$
 
 **Lemma (Step two).** Let $p^e = p^{e_1+e_2+e_3}r$. Assume hypothesis (1) of the theorem. Let $\kappa : \Gamma' \to \mathbb{Z}/p^m$ satisfy: $f(g) - 1 \otimes \kappa(g)$ is small for all $g \in \Gamma'$. Then for $g, h \in \Gamma'$,

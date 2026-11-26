@@ -116,6 +116,6 @@ If $p^a \mid m$, write $m = p^a n$. Then $z^m = \varphi^a(z)^n$ and $y_m = \thet
 
 If $p^a \nmid m$, the average is $\bigl(\sum_{l < N}(\zeta^m)^l\bigr) y_m$. By the first lemma $\zeta$ is a primitive $p^a$-th root of unity. Also $a \leq d + 3a = c_a(0)$, so $p^a \mid N$. By the second lemma the sum is $0$. So the average is $0$, and $g$ fixes it. $\square$
 
-### The model case
+### The model case of costs
 
 Let the chart be unramified with $f = 1$ and $a = 0$. Then $c_0(n) = v_p(n)$, and the step $n = 0$ uses $N = 1$ element, $t_0 = 1$: no average is needed, since $\theta(z)$ is fixed by $\Gamma'$ and every $s$ is a constant modulo $E$. For $n$ prime to $p$ and $\omega_0 - 1 = \delta X_1$, the quotient $X = (\omega_0^n - 1)/\delta$ is $X_1 (1 + \omega_0 + \cdots + \omega_0^{n-1})$, and $\theta(\omega_0) \equiv 1$ modulo the maximal ideal, as $\theta(\delta)$ divides $p^2$. So $\theta$ of the sum is congruent to $n$, a unit. The step is free, as the cost says. A step $n = p$ costs one factor $p$, by the lifting of the exponent.
