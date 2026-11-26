@@ -145,6 +145,6 @@ since $m \le 2\sqrt x$, $a = xb$, and the bracket is at most $3b$: indeed $\lflo
 
 The first row is the long one: it has $a$ boxes at an $a$-place, and its excess over $a$ is at most about $b$. The cost of this excess is $25\log b$ per box, so at most about $25b\log b$ per lift and place. Over the $m$ lifts and $f$ places this is about $50\sqrt x\,fb\log b$, while the error term is $\tfrac12 xfb\log^3 b$. So the slack is cheap.
 
-### An example
+### An example with one place
 
 Take one place $\tau \in \Phi_a$, so $a_\tau = a$, and look at the first lift, $j = 0$. The main lengths are $a$, then $k - 1$ times $\kappa(\tau)$, then $0$. The row sizes add up to about $s_\infty(a) + (k - 1)s_\infty(\kappa(\tau))$. By the bounds $s_\infty(l) \approx 20l\log b$ to $25l\log b$, this is about $20(a + (k - 1)\kappa(\tau))\log b$. The theorem on one kernel then gives a factor of about $\exp(10(a + k\kappa(\tau))\log b)$ on the Weyl norm. The prime sums of the next section remove the main part of this factor.

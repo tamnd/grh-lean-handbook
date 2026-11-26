@@ -151,7 +151,7 @@ since $16\log x_1(1 + \log x_1) \le 32\log^2 x_1 \le 32(\log b)^{1/3} \le \log b
 
 **Remark (Formalization).** The four served numbers are the list $[N, mc - 1, c, mc + 1]$, read with `List.get!`, and $mc - 1$ is truncated subtraction. Both are harmless: the index is always below $4$, and $mc \ge 1$. A number may be served twice, for example $N = c$. This only makes the right side larger. The last two inequalities of the proof are proved by `le_of_hasLogBound` of [the data and their sizes](/chapter/data-and-sizes/#the-table-of-sizes).
 
-### An example
+### An example of an allowed loss
 
 Take a prime $p \in \mathcal S$ with $p \equiv -1 \bmod m$, say $p = 2m - 1$ if it is prime. Then $c = 2$, and the loss is $f\log^2 b\cdot(a/p)\cdot m$. The factor $m/p$ is about $\tfrac12 = 1/c$. So the loss at $p$ is about $\tfrac12 fa\log^2 b$, much more than the loss $fa\log^2 b/p$ of a prime not of this form. Such primes are rare: for each $c$ there are at most two of them. This is why the harmonic sum over $c$ appears, and not a sum over primes.
 

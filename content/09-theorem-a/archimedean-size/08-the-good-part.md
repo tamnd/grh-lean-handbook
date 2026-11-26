@@ -99,7 +99,7 @@ which is far below $x^{98}$ by the table of sizes. Hence $x^{30} + 4\log O < x^{
 - The divisibility $h \mid O$ gives $h \le O$ only because $O \ne 0$. The source uses `Fin.pos'` with the instance `NeZero` that the definition of `chosenGroupOrder` derives. The hypothesis $r \le rt$ of `card_GL_dvd_chosenGroupOrder` comes from the size automation (`nat_le_of_hasLogBound`), and the final inequality $x^{30} + 4\log O < x^{99}$ comes from `le_of_hasLogBound` and `lt_of_hasLogBound`.
 - The size bound is stated for the trivial twist only. The size bound of Section 7 has the same restriction, so this costs nothing.
 
-### Example
+### An example of the good part
 
 Take $\mathsf G = \mathrm{GL}_1(\mathbb F_3) = \{\pm1\}$, so $h = 2$. Let $e_0 = \tfrac12(1 - (-1))$, the projection onto the sign part. Then $h\,e_0(1) = 1$ and $h\,e_0(-1) = -1$. For a form $z$ the good part of $sz$, with $s = 1$, is $z - (-1)z$. Its lift has the value
 $$\iota(z)(g) - \iota(z)(g\,\widetilde{-1})$$

@@ -83,7 +83,7 @@ is a sum of two integral matrices. The lemma on equal Gram matrices gives $g' = 
 
 **Remark (Formalization).** The representatives $g_\circ$, the short bases $Y_g$ and the approximations are taken by `choose`, and the representatives are the values of `Quotient.out`. The proof does not depend on these choices. The theorem has the instance hypothesis that $N \neq 0$; the bounded approximation needs $N \neq 0$, since $0$ lies in every ideal. The count of the packing lemma is a bound on `Set.encard` in $\mathbb N\cup\{\infty\}$, and the proof turns it into a bound on `Nat.card`. A set with infinitely many classes would have `Nat.card` equal to $0$, a junk value, but the packing lemma shows that the set is finite, so the bound is the true one.
 
-### An example
+### An example with one variable
 
 Take $E = \mathbb Q(i)$, so $f = 1$, and $n$ with one element. Then $G_f$ is the group of finite ideles $u$ of $E$ with $u\bar u = 1$, and the classes are the classes of the norm one ideles modulo the rational norm one elements and the units of $\hat{\mathcal O}$. The different of $\mathbb Z[i]$ is $(2)$, so $N = 2$ is allowed. Then $c = 6\cdot 2\cdot 1 = 12$ and the bound is $(1 + 2\cdot 12^3)^4 = 3457^4$. The bound is far from sharp: it counts all pairs of small algebraic integers, and most of these pairs are not the Gram data of a class. Only its logarithm matters in the argument, and the logarithm is $4\log 3457 \approx 32.6$.
 
