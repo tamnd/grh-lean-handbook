@@ -64,7 +64,7 @@ The class is at Setup.lean:501. The instance for the data is at Spanning/Unfoldi
 - Field 3: $2^\varrho \geq b^{10}$ is an instance of FillingData.lean:448, from $\varrho \log 2 \geq 10 \log b$. Here $\varrho \approx \sqrt{x}/2$ and $\log b \leq x^{1/100}$ by (S2).
 - Field 5: $(2\varrho + 2)^9 = m^9 \leq 2^9 x^{9/2}$, against $k \geq e^{-2} x^5$.
 - Field 6: $k \leq e^3 x^5$, against $f \geq m^{22} \geq x^{11}$.
-- Field 7: $f \leq x^{12}$, $k \leq e^3 x^5$ and $\mathrm{rd} \leq x^{12}$, so $200 f k\,\mathrm{rd} \leq 200 e^3 x^{29}$, so its $1000$-th power is about $x^{29000}$, against $b \geq x^{10^{12}}$.
+- Field 7: $f \leq x^{12}$, $k \leq e^3 x^5$ and $\mathrm{rd} \leq x^{12}$, so $200 f k\,\mathrm{rd} \leq 200 e^3 x^{29}$, and its $1000$-th power is about $x^{29000}$, against $b \geq x^{10^{12}}$.
 - Field 9: $M \in [b^{20}, b^{22}]$, inside $[b^{19}, b^{23}]$.
 - Field 11: $n^7 \approx 2^{-7} x^{7/2}$, against $k \geq e^{-2} x^5$.
 
