@@ -63,7 +63,7 @@ drafted_by: writer@claude-opus-5-5
 
 Section 5 moved the scaled Hecke operators $Y_{\mathfrak l} = p^{A_{\mathfrak l}}T_{\mathfrak l,r}$ through the chain. So the divisibility holds on the image of their product. This section shows that the image of one $Y_{\mathfrak l}$ is large. The bound comes from the theorem on elementary divisors of [elementary divisors of a Hecke operator](/chapter/elementary-divisors/). The work here is to write $Y_{\mathfrak l}$ in the coordinates of that theorem.
 
-Recall that $\mathrm{IsOntoUpToColength}(p, M, j, y, c)$ says: $y(M) \subseteq M$, and there is a natural number $i \le c$ with $\mathrm{ColengthDvd}(M, y(M) + p^jM, p^i)$ ([colength](/chapter/twisted-lattices/)). Write $\dim = \dim_{\mathbb C}$ of the space of source forms, and $r = r_p$.
+Recall that $\mathrm{IsOntoUpToColength}(p, M, j, y, c)$ says: $y(M) \subseteq M$, and there is a natural number $i \le c$ with $\mathrm{ColengthDvd}(M, y(M) + p^jM, p^i)$ ([colength](/chapter/twisted-lattices/)). Write $D_X$ for the complex dimension of the space of source forms, and $r = r_p$.
 
 ### The theorem on elementary divisors
 
@@ -139,11 +139,11 @@ Lean: `New.Columns.range_sourceFormOfValues`, `New.Columns.sourceFormOfValues` (
 
 **Theorem.** Let $\mathfrak l \in \Lambda$ and let $T$ be a Frobenius cycle on $W$ with values in $\mathcal O_\iota$, with prime $p$ not a unit. Let $t : \mathbb Z/N \cong Q$, let $\iota_s = \Phi_{t(s)}$ on even letters and $\Phi_{t(s)}\circ c$ on odd letters, let $A_{\mathfrak l} = a\,\#\{s \text{ even}\}$, and let $\mathrm{IsLargeDegree}(k, a, r, \theta)$ hold. Then for every $j_0$,
 
-$$\mathrm{IsOntoUpToColength}\big(p, \mathcal A_\iota, j_0, Y_{\mathfrak l}, (3c_{\mathrm{div}} + \theta j_0)\dim\big).$$
+$$\mathrm{IsOntoUpToColength}\big(p, \mathcal A_\iota, j_0, Y_{\mathfrak l}, (3c_{\mathrm{div}} + \theta j_0)D_X\big).$$
 
 Lean: `New.Columns.isOntoUpToColength_scaledHeckeOperator_of_frobeniusCycle`, `New.Columns.HeckeEdges.localGL_rationalPart_mem_localIntGL` (New/UpperBound/Divisibility/HeckeEdges.lean).
 
-*Proof.* Take Hecke edges. For an a-place $\tau \notin Q$, the prime $\bar w_\tau$ is neither $\mathfrak l$ nor $\bar{\mathfrak l}$, and $\gamma_e$ is integral there: at such a place $\delta = 1$, so $\gamma_e = \rho(x)\,u_e^{-1}\rho(o(e))^{-1}$ is a product of integral matrices. By the last lemma but one, the Schur matrix of $\gamma_e$ outside $Q$ is an invertible matrix $m_e$ over $\mathcal O_\iota$. The edge coordinates are $o$, $g$, $h(b) = \beta_b^{-1}$ and $m$. The edges are free by the lemma above. Since $p^{A_{\mathfrak l}} = \prod_s (p^{[s\text{ even}]})^a$, the splitting and the lemma on letters give, entry by entry, that $p^{A_{\mathfrak l}}$ times the Schur matrix of $\gamma_e$ is the term of $e$ in $A$. With $f$ the map of the last lemma, the sum over edges gives $Y_{\mathfrak l}\circ f = f\circ A$. The action is free, so $\dim = |X|\,|I|$, and $f$ has image $\mathcal A_\iota$. Apply the theorem on elementary divisors. $\square$
+*Proof.* Take Hecke edges. For an a-place $\tau \notin Q$, the prime $\bar w_\tau$ is neither $\mathfrak l$ nor $\bar{\mathfrak l}$, and $\gamma_e$ is integral there: at such a place $\delta = 1$, so $\gamma_e = \rho(x)\,u_e^{-1}\rho(o(e))^{-1}$ is a product of integral matrices. By the last lemma but one, the Schur matrix of $\gamma_e$ outside $Q$ is an invertible matrix $m_e$ over $\mathcal O_\iota$. The edge coordinates are $o$, $g$, $h(b) = \beta_b^{-1}$ and $m$. The edges are free by the lemma above. Since $p^{A_{\mathfrak l}} = \prod_s (p^{[s\text{ even}]})^a$, the splitting and the lemma on letters give, entry by entry, that $p^{A_{\mathfrak l}}$ times the Schur matrix of $\gamma_e$ is the term of $e$ in $A$. With $f$ the map of the last lemma, the sum over edges gives $Y_{\mathfrak l}\circ f = f\circ A$. The action is free, so $D_X = |X|\,|I|$, and $f$ has image $\mathcal A_\iota$. Apply the theorem on elementary divisors. $\square$
 
 ### The Frobenius cycle of a marked prime
 
@@ -179,7 +179,7 @@ Lean: `New.Data.isLargeDegree_of_le_card`, `New.Data.three_mul_divisorConstant_l
 
 **Theorem (The mark operator).** Let $\Lambda$ be marked, $\mathfrak l \in \Lambda$ and $j_0 \in \mathbb N$. Then
 
-$$\mathrm{IsOntoUpToColength}\Big(p, \mathcal A_\iota, j_0, Y_{\mathfrak l}, \Big(\frac{12A_{\mathfrak l}}{mp} + \frac{j_0}{m^2f}\Big)\dim\Big).$$
+$$\mathrm{IsOntoUpToColength}\Big(p, \mathcal A_\iota, j_0, Y_{\mathfrak l}, \Big(\frac{12A_{\mathfrak l}}{mp} + \frac{j_0}{m^2f}\Big)D_X\Big).$$
 
 Lean: `New.Data.IsMarked.isOntoUpToColength_scaledHeckeOperator` (New/UpperBound/Divisibility/MarkOperator.lean).
 
