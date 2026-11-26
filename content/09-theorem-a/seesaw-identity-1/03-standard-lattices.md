@@ -12,7 +12,6 @@ decls:
   - New.Seesaw.gram_gradedLatticeBasis_eq_gluedGram
   - New.Seesaw.gluedGram_mul_eq_one
   - New.Seesaw.isUnimodular_gradedLatticeBasis_gram
-  - New.Seesaw.exists_conjTranspose_mul_gradedGram_mul_eq_signMatrix
   - New.powerIdele
   - New.Grading.SpansLattice.mem_lattice_iff
   - New.Grading.SpansLattice.isGraded
@@ -28,7 +27,6 @@ decls:
   - New.Grading.inclXFin_mem_levelOf
   - New.Data.v_gradingY_genericConst_eq_ideleA_mul_star
   - New.Data.spansLattice_gradingY
-  - New.Data.chosenLevel_inf_trivialOn_le
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
@@ -66,14 +64,6 @@ Lean: `New.Seesaw.gram_gradedLatticeBasis_eq_gluedGram`, `New.Seesaw.gluedGram_m
 $$\langle y', y'\rangle = \frac{1}{\pi\bar\pi} + \frac{\bar u u\,\langle z, z\rangle}{N^2} = \frac1N - \frac{N}{N^2} = 0, \qquad \langle y', u z\rangle = \frac{\bar u}{N}\, u\,(-N) = -1,$$
 
 the cross term $\langle y, z\rangle$ being $0$. The string vectors $u e_b$ keep their products, because $\bar u u = 1$. Let $s$ be even. For $2b < s$ and $c = s - 1 - b$, $\langle u a^{-1} e_b, u \bar a e_c\rangle = \bar u\, \bar a^{-1} u \bar a = 1$. This gives the first claim. For the second, multiply the two glued matrices block by block; the only nontrivial block is the $2\times 2$ block on $(y, z)$ for odd $s$, where $\begin{pmatrix} 0 & -1 \\ -1 & -N\end{pmatrix}\begin{pmatrix} N & -1\\ -1 & 0\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & 1\end{pmatrix}$. All entries of both matrices lie in the image of $\mathbb{Z}[N]$, so both lie in every subring. $\square$
-
-At the archimedean places the same Gram matrix has a known signature.
-
-**Proposition (Signature).** Let $N > 0$ and let $\varepsilon$ be a family of signs with exactly $\lfloor (s+1)/2\rfloor$ signs $-1$. Then $y^\dagger J y = \mathrm{diag}(\varepsilon)$ for some complex matrix $y$, which is unitary if $N = 1$.
-
-Lean: `New.Seesaw.exists_conjTranspose_mul_gradedGram_mul_eq_signMatrix`.
-
-*Proof.* On the string use the frame with columns $(\sigma_b e_b + e_{s-1-b})/\sqrt 2$, where $\sigma_b = -1$ for $b < \lfloor (s+1)/2\rfloor$ and $1$ otherwise, and $e_b/\sqrt N$ at the middle (Lean: `New.Seesaw.stringFrame`). A pair $\{e_b, e_{s-1-b}\}$ with Gram matrix $\begin{pmatrix} 0&1\\1&0\end{pmatrix}$ gives the signs $-1$ and $+1$, and the middle vector gives $-1$. So the string has $\lfloor (s+1)/2\rfloor$ negative signs. Reorder to match $\varepsilon$. $\square$
 
 ### The lattice of a glued basis
 
@@ -155,8 +145,6 @@ Lean: `New.Data.v_gradingY_genericConst_eq_ideleA_mul_star`, `New.Data.spansLatt
 
 So the theorems of this section apply to each pair $\mathsf{Y}_k$, $\mathsf{Y}_{k+1}$, with the same constant $c$, and $\mathrm{sh}(\Lambda_k^+) = a\Lambda_{k+1}^-$.
 
-**Remark (Formalization).** The source docstring of `New.Data.ideleA` and of the file speaks of the idele $a$; the source does not cite a reference for these facts. The scale is written $\lceil (2\varrho+2-k)/2\rceil$ in the data and $\lfloor (s+2)/2\rfloor$ in the general theorems. They agree for $s = 2\varrho + 1 - k$, and the source proves the conversion inside `New.Data.spansLattice_gradingY`.
-
 ### The glued level
 
 The definite part $X_k$ of $\mathsf{Y}_k$ has its own unitary group, embedded in $G_k$ by the grading (Lean: `New.Grading.inclXFin`). Which finite points $h$ of $U(X)$ preserve the glued lattice? For even $s$ every integral $h$ does. For odd $s$ the gluing imposes a congruence on the last row.
@@ -174,13 +162,3 @@ Lean: `New.Grading.exists_inclXFin_sub_one_eq`, `New.Grading.inclXFin_mem_stdLev
 (2) We must show that $M_h$ is integral. Its entries off the last row and column are those of $h - 1$. The last row: $(h-1)_{y,x}/\pi$ is integral because of the congruence. The last column: $h$ is unitary, so $h^{-1} = h^\dagger$, and $h^{-1}$ satisfies the same congruence, since the congruence group modulo $\pi$ on the last row is a group. So $(h-1)_{x,y} = \overline{(h^{-1}-1)_{y,x}} \in \bar\pi\hat{\mathcal{O}}$. The corner: $(h-1)_{y,y}$ lies in $\pi\hat{\mathcal{O}}$, and, by the same argument for $h^{-1}$, in $\bar\pi\hat{\mathcal{O}}$. Since no place of $P$ has its conjugate in $P$, the ideals $\pi\hat{\mathcal{O}}$ and $\bar\pi\hat{\mathcal{O}}$ are coprime, so $(h-1)_{y,y} \in \pi\bar\pi\hat{\mathcal{O}}$, as required by the two scalings. By (1), $\iota(h) - 1$ is integral, so $\iota(h)$ preserves $\hat{\mathcal{O}}^\iota$ and lies in $J^\circ$.
 
 (3) At a place $w_i$ outside $P$ and its conjugate, $\pi$ is a unit, so $M_h \equiv 0$ at $w_i$ if $h \equiv 1$ there, and then $\iota(h) - 1 = R^\dagger M_h R \equiv 0$. An element of $J^\circ$ lies in the level at the $w_i$ if and only if every entry of $g - 1$ has valuation less than $1$ there (Lean: `New.mem_levelOf_bot`). $\square$
-
-The source relates part 2 to Nikulin's criterion for extending isometries to an overlattice: the congruence on $h$ is the condition that $h$ preserve the gluing. This book has not compared this with Nikulin's statement.
-
-The last fact of this section compares two levels on the tower.
-
-**Lemma.** Let $\vartheta$ be a tame character: an automorphic character of $U(1)$ of weight $0$ whose tame part is trivial outside a finite set $\vartheta.Q$ of places. Let $g$ be a finite adelic unitary matrix that is integral with reduction $1$ at the chosen places (the level $J_M$, Lean: `New.Data.chosenLevel`) and has component $1$ at the places of $\vartheta.Q$. Then $g$ is integral with reduction $1$ at all places of the level of $\vartheta$, which are the chosen places and those of $\vartheta.Q$.
-
-Lean: `New.Data.chosenLevel_inf_trivialOn_le`.
-
-*Proof.* At a chosen place the reduction is $1$ by hypothesis. At a place of $\vartheta.Q$ the component is $1$, so it is integral and its reduction is $1$. $\square$
