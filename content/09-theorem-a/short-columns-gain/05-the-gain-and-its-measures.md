@@ -31,7 +31,7 @@ drafted_by: writer@claude-opus-5-5
 
 The arithmetic half of the chapter starts here. This section fixes the numbers attached to a prime $p$, restates the gain of [Theorem A and its plan](/chapter/theorem-a-plan/), and defines the loss and the collisions. It ends with the bound $m\,\mathrm{coll}_p(\emptyset) \le \mathrm{loss}_p$ for every prime $p < x_1$ that does not split and is not exceptional.
 
-### The background
+### Background for the gain
 
 1. The infinite places of $E$ form a group $\Phi \cong (\mathbb{Z}/q_1)^\times$. For an integer $\nu$ the place $u(\nu)$ is the place of $\nu \bmod q_1$ if $\nu$ is prime to $q_1$, and the identity place otherwise. For $m \mid q_1$ the class of a place modulo $m$ is its image in $(\mathbb{Z}/m)^\times$, the class of $u(\nu)$ modulo $q_0$ is $\nu \bmod q_0$ for $\nu$ prime to $q_0$, and $u(\nu)^e = u(\nu^e)$ ([fields, places and twists](/chapter/fields-places-twists/), Section 4).
 2. The $a$-places are the places of class $1$ modulo $q_0$, the $b$-places $\Phi_b$ are a set of places of class $-1$, and the weight is $\kappa = b$ on $\Phi_b$ and $\kappa = a/x_1$ elsewhere, with $a/x_1 \le \kappa \le b$ ([the data and its sizes](/chapter/data-and-sizes/), Section 4).
@@ -164,7 +164,7 @@ $$m\,\mathrm{coll}_p(\emptyset) \le p^{\mathfrak r_p}\cdot\frac{2fa}{p^{\mathfra
 
 In both cases the bound is at most $\mathrm{loss}_p$. $\square$
 
-### An example
+### An example of the gain
 
 As a model, take $d = 7$. The parameters of the data need a much larger $d$, but the arithmetic at one prime is the same. Let $p = 3$, which is inert since $3$ is not a square modulo $7$. Then $v(\pi_3) = 1$, $\rho_3 = 1/8$, $\gamma_3 = 1/2 - 1/8 = 3/8$, and $I_3 = \{1, 3, 5, \dots\}$. The series of the lemma on the full gain is $3^{-1} + 3^{-3} + \cdots = (1/3)/(1 - 1/9) = 3/8$.
 

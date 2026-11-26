@@ -40,7 +40,7 @@ The second part of the gain is $kF(p)$, where $F(p) = \sum_\sigma s_p(\kappa(\si
 
 These results are used in Volume 11, in [the divisibility is sharp](/chapter/sharpness/). Theorem A does not use them. They sit in this chapter because their file is in this volume and they use the notions of Section 5.
 
-### The background
+### Background for near pairs
 
 1. The $b$-places are sparse for the primes up to $kt$: for a prime $\ell \le kt$, with $q_1'$ the part of $q_1$ prime to $\ell$ and $0 < i < j < l_0$, there are no $\sigma, \tau, \rho \in \Phi_b$ and signs $\omega, \omega'$ with $\tau/\sigma \equiv \omega\ell^i$ and $\rho/\sigma \equiv \omega'\ell^j$ modulo $q_1'$ ([the data and its sizes](/chapter/data-and-sizes/), Section 4).
 2. The numbers $q_0$ and $q_1$ have the same prime factors, so a prime $p \nmid q_1$ is prime to $q_0$ ([fields, places and twists](/chapter/fields-places-twists/), Section 4).
@@ -185,6 +185,6 @@ By 1 and 3 the left side is at most $(l_0 + 1)a/x_1 + 2b/(kp) \le 3b/(kp)$. By 2
 
 **Remark (Formalization).** The four size facts are calls to `le_of_hasLogBound` against the table in [the data and its sizes](/chapter/data-and-sizes/), Section 6. The bound $k \le 2^s$ in the tail lemma is one more call. The sums $R_\tau$ are `tsum`; they are summable by `New.Data.summable_partnerMinTerm`, so the junk value $0$ does not occur.
 
-### An example
+### An example of a partner sum
 
 Let $p$ be inert with $p \le k$, and let $\tau \in \Phi_b$. The terms of $R_\tau$ are $\min(b/p^e, \kappa(u(-p^e)\tau))$ for odd $e$. At an odd $e < l_0/2$ whose partner is not a $b$-place, the term is at most $a/x_1$, which is tiny next to $b$. At the one exponent $e_0$ of a near pair, if there is one, the term is $\min(b/p^{e_0}, b) = b/p^{e_0}$, which can be large. This is the term that Volume 11 must pay for. Past $l_0/2$ all terms together are at most $2b/(kp)$, since $p^{l_0/2} \ge 2^{s} \ge k$. Without sparseness, a $b$-place could have many $b$-partners at small $e$, and each would add a term close to $b/p^e$.

@@ -33,12 +33,12 @@ drafted_by: writer@claude-opus-5-5
 
 This section defines the divisibility bound of stage $j$ at a prime $p$ and proves the theorem that only collisions lose (Section 1). The bound is the predicted divisibility of the diagrams of the source weight, read at the heights below the rank $n_{j+1}$. The gain is the same kind of sum, with the weights in place of the column counts. The proof compares the two sums term by term.
 
-### The background
+### Background for the divisibility bound
 
 1. The column counts are $c_\tau(1) = a$ at the $a$-places and $0$ elsewhere, $c_\tau(k) = \kappa_1(\tau) - \lfloor(k + t + 1)/2\rfloor$, $c_\tau(h) = \Delta - (t + 1)$ for $h > k$ with $t + 1 \mid h - k$, and $c_\tau(h) = 0$ otherwise. So for $h \ne 1$, $c_\tau(h) \le [h = k]\,\kappa_1(\tau) + \Delta$ ([the objects of the upper bound](/chapter/upper-bound-objects/), Section 3).
 2. The lift weight satisfies $\kappa(\tau) \le \kappa_1(\tau) - \Delta/2$ and $\kappa_1(\tau) \le \kappa(\tau) + x^{42}$, and $a/x_1 \le \kappa(\tau) \le b \le a$ ([the data and its sizes](/chapter/data-and-sizes/), Section 4).
 3. For column counts $\kappa_\tau(h)$, a height bound $N$ and a partner map $\mathrm{pr}$, put $a_\tau = \kappa_\tau(1)$, $a'_\tau = \sum_{h<N, h\ne1}\kappa_\tau(h)$ and $l_\tau = \sum_{h<N, h\ne1}h\,\kappa_\tau(h)$. The predicted divisibility at $p$ is
-$$v(\pi_p)\sum_{e\in I_p}\sum_\tau\Bigl[\Bigl(\frac{a_\tau}{p^e} - a_{\tau'} - a'_{\tau'}\Bigr)_+ + \Bigl(\frac{l_\tau}{p^e} - l_{\tau'}\Bigr)_+ - \frac{a'_\tau}{p^e}\Bigr] - [p = d]\,\frac12\sum_\tau\bigl(\min(a_\tau, a_{\tau''} + a'_{\tau''}) + a'_\tau + \min(l_\tau, l_{\tau''})\bigr),$$
+$$\begin{aligned}&v(\pi_p)\sum_{e\in I_p}\sum_\tau\Bigl[\Bigl(\frac{a_\tau}{p^e} - a_{\tau'} - a'_{\tau'}\Bigr)_+ + \Bigl(\frac{l_\tau}{p^e} - l_{\tau'}\Bigr)_+ - \frac{a'_\tau}{p^e}\Bigr]\\ &\quad - [p = d]\,\frac12\sum_\tau\bigl(\min(a_\tau, a_{\tau''} + a'_{\tau''}) + a'_\tau + \min(l_\tau, l_{\tau''})\bigr),\end{aligned}$$
 with $\tau' = \mathrm{pr}_e\tau$ and $\tau'' = \mathrm{pr}_0\tau$. Erasing the columns of height one at the places of a set $S$ sets $\kappa_\tau(1) = 0$ for $\tau \in S$. The number of boxes below $N$ is $\mathrm{boxes}(\kappa, N) = \sum_\tau(a_\tau + l_\tau)$ ([the count and the divisibility of standard data](/chapter/normal-forms/)).
 4. $0 < v(\pi_p) \le 1$, and $\gamma_p \le 1/(p-1)$ (Section 5).
 5. The sizes of [the data and its sizes](/chapter/data-and-sizes/), Section 6, among them $k \ge 100m$, $x^{42} \le b$, and the bounds on $n_m$, $\Delta$ and $m$ in terms of $x$.
@@ -125,7 +125,7 @@ Lean: `New.Data.min_longRow_add_lowColumns_add_min_lowBoxes_le` (New/UpperBound/
 The next two lemmas compare one term of the gain with one partner term. Let $p$ be a small nonsplit prime, $e \in I_p$ and $\tau' = u(-p^e)\tau$.
 
 **Lemma (Long rows).** If $\tau \in \Phi_a$, then
-$$\Bigl(\frac{a}{p^e} - \kappa(\tau')\Bigr)_+ + [e = 1,\ \tau \in S]\,\frac{a}{x_1} \le \Bigl(\frac{L^S_\tau}{p^e} - L^S_{\tau'} - c^{\mathrm{low}}_{\tau'}\Bigr)_+ + [\tau \in S]\,\frac{a}{p^e} + [(\tau, e) \text{ is a collision outside } S]\,\frac{a}{p^e} + x^{60}.$$
+$$\begin{aligned}&\Bigl(\frac{a}{p^e} - \kappa(\tau')\Bigr)_+ + [e = 1,\ \tau \in S]\,\frac{a}{x_1}\\ &\quad\le \Bigl(\frac{L^S_\tau}{p^e} - L^S_{\tau'} - c^{\mathrm{low}}_{\tau'}\Bigr)_+ + [\tau \in S]\,\frac{a}{p^e} + [(\tau, e) \text{ is a collision outside } S]\,\frac{a}{p^e} + x^{60}.\end{aligned}$$
 If $\tau \notin \Phi_a$, the left side is replaced by $0$ and the bound holds.
 
 Lean: `New.Data.posPart_sub_weight_le_posPart_longRow` (New/UpperBound/Divisibility/JetExponent.lean).
@@ -154,11 +154,13 @@ Lean: `New.Data.gammaPrime_mul_lowColumns_le` (New/UpperBound/Divisibility/JetEx
 ### One place
 
 **Theorem (The gain at one place).** Let $p$ be a small nonsplit prime and $\tau$ a place. Put $v = v(\pi_p)$ and $E_\tau = \sum_e[(\tau, e) \text{ is a collision outside } S]\,a/p^e$. Then
-$$[\tau\in\Phi_a]\,s_p(a, \tau) + k\,s_p(\kappa(\tau), \tau) + v[\tau \in \Phi_a\cap S]\frac{a}{x_1} \le v\Bigl(\sum_eT^S_\tau(e) + E_\tau + 2\lceil\log_p\lceil x_1\rceil\rceil x^{60}\Bigr) + \gamma_p\bigl(c^{\mathrm{low}}_\tau + [\tau\in\Phi_a\cap S]\,a\bigr).$$
+$$G_\tau \le v\Bigl(\sum_eT^S_\tau(e) + E_\tau + 2Kx^{60}\Bigr) + \gamma_p\bigl(c^{\mathrm{low}}_\tau + [\tau\in\Phi_a\cap S]\,a\bigr),$$
+where $K = \lceil\log_p\lceil x_1\rceil\rceil$ and
+$$G_\tau = [\tau\in\Phi_a]\,s_p(a, \tau) + k\,s_p(\kappa(\tau), \tau) + v[\tau \in \Phi_a\cap S]\,\frac{a}{x_1}.$$
 
 Lean: `New.Data.localPrimeSum_add_le_mul_tsum_partnerTerm_add` (New/UpperBound/Divisibility/JetExponent.lean).
 
-*Proof.* Divide by $v > 0$. Write $K = \lceil\log_p\lceil x_1\rceil\rceil$. Each term is now the sum of a series in $e$, as follows.
+*Proof.* Divide by $v > 0$. Each term is now the sum of a series in $e$, as follows.
 
 1. $s_p(y, \tau)/v = \sum_{e\in I_p}(y/p^e - \kappa(\tau'))_+$, for $y = a$ and $y = \kappa(\tau)$.
 2. $[\tau\in\Phi_a\cap S]\,a/x_1$ is a series with one term, at $e = 1$.
@@ -175,7 +177,7 @@ Case $e \in I_p$ and $e \ge K$. Then $p^e \ge p^K \ge \lceil x_1\rceil \ge x_1$.
 
 The comparison of the terms gives the comparison of the sums. Multiply back by $v$. $\square$
 
-### The theorem
+### The theorem on collisions
 
 **Theorem (Only collisions lose).** Let $p$ be a small nonsplit prime, let $j < m$, and let $S$ be a set of places. Then
 $$\frac{\mathrm{gain}_p}{m} - \mathrm{coll}_p(S) + v(\pi_p)\,\#(\Phi_a\cap S)\frac{a}{x_1} - \frac{f(\log b)^2a}{pm} \le \mathrm{div}_p(j, S).$$
@@ -203,6 +205,6 @@ Combine the two inequalities. The total error is $5fu$, and $5fu \le f(\log b)^2
 
 The theorem is used in [divisibility prime by prime](/chapter/divisibility/). There $S$ is the set of places whose long rows a chain has spent. For a prime that is not exceptional, the theorem on collisions (Section 5) gives $m\,\mathrm{coll}_p(\emptyset) \le \mathrm{loss}_p$, and the lemma $f(\log b)^2a/p \le \mathrm{loss}_p$ bounds the last error. So, for $S = \emptyset$ and such a prime, the theorem gives $\mathrm{div}_p(j, \emptyset) \ge \mathrm{gain}_p/m - 2\,\mathrm{loss}_p/m$.
 
-### An example
+### An example of a collision
 
 Take $S = \emptyset$, an inert $p$ and an $a$-place $\tau$ whose partners $u(-p^e)\tau$ for odd $e$ are not $a$-places. Then $L_\tau = a$ and $L_{\tau'} = 0$. The first part of $T_\tau(e)$ is $(a/p^e - c^{\mathrm{low}}_{\tau'})_+$, while the gain has $(a/p^e - \kappa(\tau'))_+$. These differ by at most $x^{60}$, since $c^{\mathrm{low}}_{\tau'}$ is $\kappa(\tau')$ up to $x^{60}$. Now suppose instead that $u(-p^e)\tau$ is also an $a$-place for one odd $e$. Then the partner term has $(a/p^e - a - c^{\mathrm{low}}_{\tau'})_+ = 0$, but the gain has $(a/p^e - a/x_1)_+$, which is close to $a/p^e$. This gap is the collision term $a/p^e$. It is why the theorem subtracts $\mathrm{coll}_p(S)$, and why Section 5 needs $o_0(p)$ to be large when $p$ is not $\pm1$ modulo the lifts.

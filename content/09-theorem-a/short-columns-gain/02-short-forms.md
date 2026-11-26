@@ -18,7 +18,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section works on one unitary group, with no data. It defines short forms, shows that a difference of a form and its translate stays short, and proves that short forms span the forms of a free level. Section 4 applies the result to the source forms.
 
-### The background
+### Background for short forms
 
 Let $E$ be a CM field with $f$ infinite places, let $n$ be a finite index set, and let $G_f$ be the unitary group of the standard form $\sum_i x_i\bar x_i$ over the finite adeles of $E$. A weight $(\kappa, e)$ gives at each infinite place $\tau$ a Young diagram with $\kappa_\tau(h)$ columns of height $h$, and a power $e_\tau \in \mathbb{Z}$ of the determinant. The following facts come from earlier volumes. Each is stated in one line.
 

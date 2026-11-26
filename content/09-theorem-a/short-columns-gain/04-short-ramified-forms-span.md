@@ -15,7 +15,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section joins Sections 2 and 3. First the general theorem of Section 2 is applied to the source forms, with the bound $B = \exp(\mathrm{err}_0)/4^f$. Then the operator $R_{\Pi_N} = \prod_w(1 - z_w)$ carries these short forms onto a spanning set of $\mathrm{src}$, and it multiplies the bound by at most $4^f$. Here $\mathrm{err}_0 = f a \log^3 b$ is the error unit of [the data and its sizes](/chapter/data-and-sizes/), Section 6.
 
-### The background
+### Background for the spanning theorem
 
 1. The rank of $X_0$ is $n_0 = k$ ([the data and its sizes](/chapter/data-and-sizes/), Section 3).
 2. The column counts of the source weight are $c_\tau(1) = a$ at the $a$-places and $0$ elsewhere, $c_\tau(h) = 0$ for $1 < h < k$, and the other counts are at heights $h \ge k$ ([the objects of the upper bound](/chapter/upper-bound-objects/), Section 3).
@@ -68,7 +68,7 @@ Lean: `New.Data.isShort_ramifyingOp` (New/UpperBound/Size/ShortColumns.lean).
 
 *Proof.* Induction on $s$. For $s = \emptyset$, $R_\emptyset\varphi = \varphi$. For $w \notin s$, $R_{s\cup\{w\}}\varphi = \psi - z_w\psi$ with $\psi = R_s\varphi$, and $\psi$ is $4^{|s|}B$-short by induction. The operator $z_w$ is right translation by the scalar matrix $z_w1$. That matrix lies in the maximal compact subgroup at $w$ (Section 3), so it has integral entries. The lemma on translates (Section 2) shows that $\psi - z_w\psi$ is $4\cdot 4^{|s|}B$-short. $\square$
 
-### The theorem
+### The theorem on ramified forms
 
 **Theorem (Short ramified source forms).** The ramified source forms that are $\exp(\mathrm{err}_0)$-short span $\mathrm{src}$.
 

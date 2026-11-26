@@ -35,7 +35,7 @@ drafted_by: writer@claude-opus-5-5
 
 The lifts of the chain kill a source form of the shape $\psi - z_w\psi$, where $z_w$ is a scaling at a prime $w \mid \pi$ (see [the objects of the upper bound](/chapter/upper-bound-objects/), Section 8). This section defines the scalings and the ramified source forms, shows that the ramified forms are exactly the image of $\prod_w(1 - z_w)$, and proves that they fill all but a fraction $f/(N-1) \le b^{-8}$ of the source forms. Section 4 then shows that they are spanned by short forms.
 
-### The background
+### Background for the scalings
 
 The following facts come from earlier chapters. Each is stated in one line.
 
