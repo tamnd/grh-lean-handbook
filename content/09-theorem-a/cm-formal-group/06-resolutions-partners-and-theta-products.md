@@ -69,7 +69,7 @@ Lean: `New.Parameters.partner` (New/Derivatives/FormalGroup/ThetaProducts.lean).
 
 The place $u(-p^e)$ is the class of $-p^e$ in $(\mathbb{Z}/q_1)^\times$ when this class is a unit. The source sets it to the identity otherwise. For nonsplit $p$ this junk value does not occur: every prime that divides $q_1$ splits in $K$ (`New.Parameters.chiK_eq_one_of_dvd`), so $p \nmid q_1$ and $-p^e$ is a unit modulo $q_1$.
 
-**Example.** For illustration let $d = 7$, $p = 3$ and $q_1 = 11$. The prime $11$ splits in $K$, since $11 \equiv 4$ is a square modulo $7$. Then $-3 \equiv 8$ and $-27 \equiv 6$ modulo $11$. So the partner of the place $a \in (\mathbb{Z}/11)^\times$ is $8a$ for $e = 1$ and $6a$ for $e = 3$. For $p = d = 7$ and $e = 0$, the partner is $u(-1)\tau$, the complex conjugate place.
+**Example.** Take the model of [the field E at the primes](/chapter/field-at-primes/): $d = 23$ and $q_1 = 12$. It is not an instance of the parameters, but its primes $2$ and $3$ split in $K$. Let $p = 5$, which is inert, since $(5/23) = -1$. For odd $e$, $5^e \equiv 5$ modulo $12$, so $-5^e \equiv 7$. The partner of the place $a \in (\mathbb{Z}/12)^\times$ is $7a$ for every $e \in I_5^\circ$, and the partner rule does not depend on $e$. Let $p = d = 23$. Then $23 \equiv -1$ modulo $12$, so $-23^e \equiv -(-1)^e$. For even $e$, including $e = 0$, the partner is $-a$. Its embedding sends $\zeta$ to $\overline{\tau(\zeta)}$, but it agrees with $\tau$ on $K$. For odd $e$, the partner of each place is the place itself.
 
 **Lemma (Partner congruence).** Let $p$ be a prime, $e \in I_p^\circ$ and $\tau \in \Phi$.
 
@@ -141,7 +141,7 @@ Now let $(u_j, m_j)$ and $H$ be given. By part 2 of the lemma on Parseval, the d
 $$\Bigl(\prod_j\theta(\mu_j\varpi z)^{m_j}\Bigr)H(\varpi z) = \Bigl(\prod_j W(\mu_jz)^{m_j}\cdot V_H\Bigr)\exp\Bigl(c_\varpi\sum_j m_j\,\Xi(\mu_jz)\Bigr),$$
 with $V_H = H(\varpi z)$ integral. By the coupling congruence, the hypothesis of the lemma on exponents adds holds with $\pi = \pi_p$, $S = I_p^\circ$ and $L_j = \mu_jz$, since $\pi_p \mid p$. So $\sum_j m_j\Xi(\mu_jz) \equiv \Xi_{S,\lambda}$ modulo $\pi_p$. This series has the constant term $0$. By part 3 of the lemma on products, $|c_\varpi\pi_p| \le p^{-1/(p-1)}$. The proposition on the exponent modulo $\pi$ of Section 5 now gives the normal form. $\square$
 
-**Example.** Let $p = d$. Then $I_p^\circ = \mathbb{N}$, and the exponent contains $\lambda_{00}\Gamma_0$ with $\Gamma_0 = \sum_{(\tau, c)}z_{(\tau, c)}z_{(u(-1)\tau, c)}$. This term pairs each place with its conjugate place. Its source is the coupling congruence for $e = 0$: $\sum_j m_j(\mu_jz)^2 \equiv \Gamma_0$ modulo $\sqrt{-d}$. For inert $p$ the smallest coupling is $\Gamma_1 = \sum z_{(\tau, c)}^pz_{(u(-p)\tau, c)}$, of degree $p + 1$, with a unit coefficient $\lambda_{10}$.
+**Example.** Let $p = d$. Then $I_p^\circ = \mathbb{N}$, and the exponent contains $\lambda_{00}\Gamma_0$ with $\Gamma_0 = \sum_{(\tau, c)}z_{(\tau, c)}z_{(u(-1)\tau, c)}$. This term pairs each place $\tau$ with the place $u(-1)\tau$, which acts on $\zeta$ as the complex conjugate of $\tau$. Its source is the coupling congruence for $e = 0$: $\sum_j m_j(\mu_jz)^2 \equiv \Gamma_0$ modulo $\sqrt{-d}$. For inert $p$ the smallest coupling is $\Gamma_1 = \sum z_{(\tau, c)}^pz_{(u(-p)\tau, c)}$, of degree $p + 1$, with a unit coefficient $\lambda_{10}$.
 
 **Remark (Formalization).**
 
