@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v0.2.5
+
+New chapters since v0.2.4:
+
+- Volume 6, chapter 4, Bessel periods and one step of unfolding (#93).
+- Volume 6, chapter 6, Doubling and the Rallis inner product formula (#92).
+- Volume 7, chapter 1, Schemes through their points (#91). This opens Volume 7.
+- Volume 7, chapter 4, Kisin frames and limits of crystalline representations (#94).
+
+Each chapter has the status `drafted`. No person has checked it yet. The book does not claim that the proof is correct.
+
 ## v0.2.4
 
 New chapters since v0.2.3:
