@@ -60,7 +60,7 @@ For a unitary group the proper parabolic subgroups defined over $F$ are the stab
 
 Lean: the source proves a special case, `New.Space.finite_levelSpace` (Lib/Adelic/AutomorphicForms/Cuspidality.lean).
 
-This is Harish-Chandra, *Automorphic Forms on Semisimple Lie Groups*, Lecture Notes in Math. 62 (1968), Theorem 1 There it is stated for a semisimple group and an arithmetic subgroup. The proof has two parts. The first part shows that a cusp form of the given type decays rapidly at the cusps. The second part uses the decay and the compactness of the set of points of bounded height (Mahler's criterion) to show that the unit ball of the space is compact. The source follows this pattern for its forms of type $e$. Section 5 gives the details. In the source, a form of type $e$ is cuspidal at once, since the discrete series coefficients have vanishing constant terms. This removes the need to separate cusp forms from Eisenstein series.
+This is Harish-Chandra, *Automorphic Forms on Semisimple Lie Groups*, Lecture Notes in Math. 62 (1968), Theorem 1. There it is stated for a semisimple group and an arithmetic subgroup. The proof has two parts. The first part shows that a cusp form of the given type decays rapidly at the cusps. The second part uses the decay and the compactness of the set of points of bounded height (Mahler's criterion) to show that the unit ball of the space is compact. The source follows this pattern for its forms of type $e$. Section 5 gives the details. In the source, a form of type $e$ is cuspidal at once, since the discrete series coefficients have vanishing constant terms. This removes the need to separate cusp forms from Eisenstein series.
 
 ### Groups compact at infinity
 
