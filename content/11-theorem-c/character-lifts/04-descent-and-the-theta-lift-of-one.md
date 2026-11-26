@@ -117,7 +117,9 @@ Lean: `New.LValueData.trivialLift_eq_smul_thetaLift` (New/OneLift/HeckeValues/Ch
 
 Step 1. By the theorem on inner products with the lift at $z = 1$ and the descent lemma, $\langle\varphi_X, y\rangle$ is the class sum of $f$ at $K_M$.
 
-Step 2. The previous chapter writes $\Theta_W(1)$ as the integral $\int_{U(1)(E)\backslash U(1)(\mathbb{A})} \mathrm{vectorKernelForm}(g)\, dg$ (`thetaLift_eq_integral`). The integrand is integrable (`integrable_smul_vectorKernelForm`), so the inner product with $y$ moves inside the integral. With the conjugate symmetry of the inner product, $\langle\Theta_W(1), y\rangle = \int \theta^*(y)(g)\, dg$.
+Step 2. The previous chapter writes $\Theta_W(1)$ as an integral (`thetaLift_eq_integral`):
+$$\Theta_W(1) = \int_{U(1)(E)\backslash U(1)(\mathbb{A})} \mathrm{vectorKernelForm}(g)\, dg.$$
+The integrand is integrable (`integrable_smul_vectorKernelForm`), so the inner product with $y$ moves inside the integral. With the conjugate symmetry of the inner product, $\langle\Theta_W(1), y\rangle = \int \theta^*(y)(g)\, dg$.
 
 Step 3. The descent $\theta^*(y)$ is a form on the line (`isForm_normalizedDescent`), so it is continuous and left invariant. Its average over the real points at $g$ is $f(g)$, since it does not depend on the real point. The function $f$ is right invariant under $K_M$, by the invariance of the kernel. So the integral over $U(1)(E)\backslash U(1)(\mathbb{A})$ is $[K_0(U(1)) : K_M]^{-1}$ times the class sum of $f$ at $K_M$ (`integral_quotMeasure_eq_classSum`, in [reduction theory for definite unitary groups](/chapter/reduction-theory/)).
 
