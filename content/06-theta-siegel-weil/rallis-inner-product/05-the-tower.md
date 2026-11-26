@@ -162,7 +162,8 @@ At the real places the source uses a *cone integral*. For a Fock vector $v'$ and
 Lean: `New.Exchange.coneIntegrand`, `New.Exchange.cone`, `New.Exchange.dualCone` (Lib/SiegelWeil/Tower/RealConeIntegral.lean), `New.Exchange.IsSchwartzVector` (Lib/Weil/Fock/WeightedNorms.lean).
 
 **Proposition (The zeta integral).** There are constants $C_\beta > 0$, for $\beta \in \{\text{true}, \text{false}\}$, such that for every split tame character there are $\varepsilon_\beta$ with $|\varepsilon_\beta| = C_\beta$ and the following property. Let $v'$ be a Schwartz vector, $y$ integral, and $(u, g)$ a Levi point with $u = 1$ or $\operatorname{rk} V = \operatorname{rk} W$. Then there is a function $\mathcal{Z}$, analytic on $\mathbb{R}$, with $\Theta'_A(u, g) = \mathcal{Z}(e + 1)$. For $x \ge 1$,
-$$\mathcal{Z}(x) = \varepsilon_{\text{true}}\, |\alpha_0|^x \prod_{w \in S} q_w^{x - 1/2}\, L^S(x, \nu)\, I_{\text{true}}(x), \qquad \mathcal{Z}(1 - x) = \varepsilon_{\text{false}}\, |\alpha_0|^x \prod_{w \in S} q_w^{x - 1/2}\, L^S(x, \nu)\, I_{\text{false}}(x),$$
+$$\mathcal{Z}(x) = \varepsilon_{\text{true}}\, |\alpha_0|^x \prod_{w \in S} q_w^{x - 1/2}\, L^S(x, \nu)\, I_{\text{true}}(x),$$
+$$\mathcal{Z}(1 - x) = \varepsilon_{\text{false}}\, |\alpha_0|^x \prod_{w \in S} q_w^{x - 1/2}\, L^S(x, \nu)\, I_{\text{false}}(x),$$
 where $I_\beta(x)$ is the theta integral of $(W, V)$ at $g$ of the datum with the cone integral of side $\beta$ and exponent $x$ at the real places and the standard datum of $y$ at $S$.
 
 Lean: `New.Exchange.exists_zetaIntegral` (Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean).
