@@ -32,18 +32,18 @@ The order of the chapters is the order of the Lean files: each file of a chapter
 14 comparison-operator-2   <- 6, 8, 9, 12
 15 hecke-values            <- 2, 4, 9, 12, 13, 14
 16 lift-volume-height      <- 14, 15
-17 proof-of-theorem-c      <- 11, 16
+17 proof-of-theorem-c      <- 11, 16 (Vol 1, 9, 12)
 ```
 
 Chapters 2 and 3 use results of chapter 4. In chapter 2, `Twist/FitTwists.lean` imports `HeckeValues/CharacterLiftNorm.lean` and `TestedForms.lean`. In chapter 3, `Norms/AdjointThetaLift.lean` imports `HeckeValues/CharacterLift.lean`. A reader of chapters 2 and 3 takes the norm of a character lift and the tested forms as known; chapter 4 proves them.
 
-The volume has two branches. The chain branch, chapters 5 to 8, 10 and 11, treats the chain of $m$ lifts: the exchange, the squares, the chain determinant and the auxiliary forms. The branch of one lift, chapters 9 and 12 to 16, treats one lift at a time: the comparison operator, its Hecke values and its denominators. The branches cross: the files of the comparison operator use the exchange data of chapter 6, and the grids use the glued lattices and the first factors of chapter 9. Chapter 17 joins the branches, and it also uses the existence theorem of Volume 12.
+The volume has two branches. The chain branch, chapters 5 to 8, 10 and 11, treats the chain of $m$ lifts: the exchange, the squares, the chain determinant and the auxiliary forms. The branch of one lift, chapters 9 and 12 to 16, treats one lift at a time: the comparison operator, its Hecke values and its denominators. The branches cross: the files of the comparison operator use the exchange data of chapter 6, and the grids use the glued lattices and the first factors of chapter 9. Chapter 17 joins the branches. Its file `Twist/LongForms.lean` imports chapters 11 and 16, and also Volume 1 (`IntegralTargetForms.lean`), Volume 9 (`Size/ArchimedeanSize.lean`) and Volume 12 (`FitTwistsExist.lean`, the existence theorem). Its proof also uses results of chapters 2, 8 and 10 directly: small ratios and regular families, the ratios and the factorization with the heights of products, and the turn ratios.
 
 ### One paragraph on each chapter
 
 1. [Theorem C and the height argument](/chapter/theorem-c-plan/). This chapter.
 
-2. [Twists, critical pairs and regular families](/chapter/twists-critical-pairs/). This chapter defines the $m$-fold twists $\vartheta$ and their sets $Q$, the critical pairs $(\nu, z)$, the ratio of a pair, and the regular families of Section 4. It states the existence of regular families, which Volume 12 proves, and proves that the ratio is not zero.
+2. [Twists, critical pairs and regular families](/chapter/twists-critical-pairs/). This chapter defines the $m$-fold twists $\vartheta$ and their sets $Q$, the critical pairs $(\nu, z)$, the ratio of a pair, and the regular families of Section 4. It states the existence of regular families, which Volume 12 proves, and proves that the ratio is not zero. It also proves that the algebraic part of a critical pair is positive (`New.Data.CriticalPair.algPart_pos`).
 
 3. [Single theta lifts and their norms](/chapter/single-theta-lifts/). This chapter defines the $j$-th single lift from forms on $W_j$ to forms on a definite space of rank $r + t$. It proves that the lift is injective, by Rallis' inner product formula for a sharp block datum.
 
@@ -61,19 +61,19 @@ The volume has two branches. The chain branch, chapters 5 to 8, 10 and 11, treat
 
 10. [Grids, columns and turns](/chapter/grids-paths-turns/). Paths through a grid of squares give the auxiliary forms, and each turn of a path costs a turn ratio of Hecke values. The grid gives the scalar $\gamma(\vartheta)$ of the auxiliary forms.
 
-11. [Deep level Poincaré series and spanning forms](/chapter/deep-level-poincare/). This chapter shows that forms of deep level with short lifts span, by Poincaré series and their periods. With chapter 10 it proves the theorem on auxiliary forms.
+11. [Deep level Poincaré series and spanning forms](/chapter/deep-level-poincare/). This chapter shows that forms of deep level with short lifts span, by Poincaré series and their periods. With chapter 10 it gives spanning forms of principal level on $Y_0$ (`New.Data.exists_span_short_lifts_eq_top`), not target forms. The step to the target is in chapter 17 (`Twist/LongForms.lean`): it applies the good part of Volume 9 at the cost $x^{99}$ in the logarithm of the squared norm, and it computes $|\gamma|$ exactly with the results of chapter 8.
 
-12. [False lifts](/chapter/false-lifts/). This chapter defines point forms and the false lifts: forms in the complement of the lifts that satisfy the conditions on a lift. It proves that the projection to the lifts does not increase norms on forms orthogonal to the false lifts.
+12. [False lifts](/chapter/false-lifts/). This chapter proves that a false lift has zero periods, by a tower of theta descents: the bottom of the tower, the step that removes a hyperbolic plane, and the periods of false lifts. This is the fact behind property 3 of the comparison operator. The point forms, the definition of the false lifts and the projection bound (the projection to the lifts does not increase norms on forms orthogonal to the false lifts) are in Section 8 of [character lifts and tested forms](/chapter/character-lifts/), chapter 4.
 
 13. [The divisibility is sharp](/chapter/sharpness/). This chapter shows that the divisibility bound of the Taylor coefficients is attained: at every prime $p$, some Taylor coefficient of an indicator datum has valuation at most $S_p + v(t)$, for one number $t \neq 0$ with small conjugates. This gives the term $-\mathrm{directionAmount}$ its full size.
 
 14. [The comparison operator, part 2](/chapter/comparison-operator-2/). This chapter computes the adjoint of the gluing map by three exchanges, proves that the products span, and builds the gluing maps. This gives the algebraic properties of the comparison operator and the archimedean bound for $U_1$, property 5 of Section 4.
 
-15. [Hecke values of character lifts](/chapter/hecke-values/). This chapter relates the Hecke values of a twist to $L$-values. It proves that the algebraic part of a critical pair is positive, and it bounds the height of the inverse ratios of Hecke values by $10 m x_1 + k(6\cdot\mathrm{denominatorBudget} - \mathrm{directionAmount})$. It uses the false lifts, the three exchanges of chapter 14 and the sharpness of chapter 13.
+15. [Hecke values of character lifts](/chapter/hecke-values/). This chapter relates the Hecke values of a twist to $L$-values. It proves that the algebraic part is integral and bounds its size, and it bounds the height of the inverse ratios of Hecke values by $10 m x_1 + k(6\cdot\mathrm{denominatorBudget} - \mathrm{directionAmount})$. It uses the false lifts, the three exchanges of chapter 14 and the sharpness of chapter 13.
 
 16. [The height of one lift determinant](/chapter/lift-volume-height/). This chapter proves that the operators $U_\vartheta$ are comparison operators, and proves the height bound $d\,k(\log b\cdot\mathrm{denominatorBudget} - \mathrm{directionAmount})$ for $Z_j(1)/Z_j(\theta(\iota))$.
 
-17. [The proof of Theorem C](/chapter/proof-of-theorem-c/). This chapter gives the proof of Section 3 in full: the theorem on a twist for each prime, the cost of completion, and the inverse ratio lemma. Its file, `Twist/LongForms.lean`, is also the file of [Theorems A, B and C](/chapter/theorems-a-b-c/).
+17. [The proof of Theorem C](/chapter/proof-of-theorem-c/). This chapter gives the proof of Section 3 in full: the step from spanning forms on $Y_0$ to the auxiliary forms on the target, the cost of completion, and the inverse ratio lemma. It applies the theorem on a twist for each prime, `New.TwistedLattice.covolume_add_index_nonneg`, which is proved in Volume 1 ([twisted lattices](/chapter/twisted-lattices/)), not in `Twist/LongForms.lean`. That file is also the file of Theorem C in [Theorems A, B and C](/chapter/theorems-a-b-c/); Theorems A and B have other files.
 
 ### Prerequisites from other volumes
 

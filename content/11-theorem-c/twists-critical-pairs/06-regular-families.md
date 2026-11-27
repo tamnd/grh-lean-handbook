@@ -95,7 +95,7 @@ The size $x_1$ is the second cut-off of the data: $x^{10^6} \leq x_1$ and $x_1^{
 
 Lean: `New.Data.IsNegligible` (New/Determinant/Twist/FitTwists.lean)
 
-The proof of Theorem C does not use this notion. It is used in the proof of the existence of regular families in Volume 12, for the error of the twisting theorem, for an error of the denominators and for the valuations of a bound for class numbers, with the exponents $999$, $4000$ and $2000$.
+The proof of Theorem C does not use this notion. It is used in the proof of the existence of regular families in Volume 12, for the error of the twisting theorem, for an error of the denominators, for the valuations of a bound for class numbers and for the valuations of the number of standard classes, with the exponents $999$, $4000$, $2000$ and $30$.
 
 ### Regular families
 

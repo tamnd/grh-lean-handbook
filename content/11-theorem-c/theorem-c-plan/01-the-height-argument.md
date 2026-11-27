@@ -32,7 +32,7 @@ The proof has one frame and four inputs. The frame is [the theorem on a twist fo
 
 $$0 \leq c + 2\delta + n'(b_{\mathrm{short}} + b_{\mathrm{denom}}) + b_{\mathrm{volume}},$$
 
-where $b_{\mathrm{short}}$ bounds the length of the $z_i$, $b_{\mathrm{denom}}$ bounds the height of the factors that make the twisted lifts of the $z_i$ integral, and $b_{\mathrm{volume}}$ bounds the height of the volumes $Z(1)/Z(\xi_\iota)$. The four inputs supply these numbers.
+where $b_{\mathrm{short}}$ bounds the length of the $z_i$, $b_{\mathrm{denom}}$ bounds the height of the family $|\gamma(\xi_\iota)|^{-2}$, the inverse of the squared absolute value of the factors $\gamma$ that make the twisted lifts of the $z_i$ integral, and $b_{\mathrm{volume}}$ bounds the height of the volumes $Z(1)/Z(\xi_\iota)$. The four inputs supply these numbers.
 
 1. The auxiliary forms. These are the $z_i$. They are short, and after a known scalar $\gamma(\vartheta)$ their twisted lifts are integral. They span the target, so any family extends by them to a basis.
 2. The regular twists. These are the $\xi_\iota$. Their ratios of $L$-values have small height, and their denominators stay within a fixed budget. Volume 12 constructs them.

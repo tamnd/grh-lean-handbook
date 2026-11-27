@@ -75,7 +75,7 @@ The power $(\mathrm{Nm}\, Q)^{2z - 1}$ is the analogue of the conductor in the m
 
 ### The norm of the lift
 
-The analytic input is the Rallis inner product formula for the dual pair $(U(1), U(2z))$, in the form of Volume 6 ([the Rallis inner product formula](/chapter/rallis-inner-product/)). Chapter 10 of this volume evaluates it for the lift of a character. We state the result in full.
+The analytic input is the Rallis inner product formula for the dual pair $(U(1), U(2z))$, in the form of Volume 6 ([the Rallis inner product formula](/chapter/rallis-inner-product/)). [Character lifts and tested forms](/chapter/character-lifts/) (Chapter 4 of this volume, Section 6) evaluates it for the lift of a character. We state the result in full.
 
 **Theorem (Norm of the lift of a character).** Let $X$ be lift data with rank $|n| = 2k$ and $1 < k$, whose character $\mu$ has weight $-(\text{row length}(\tau) + k)$ at every $\tau$ and tame part trivial off the places of $X$. Let
 
@@ -89,7 +89,7 @@ where $h(\kappa)$ is the hook number and $\dim(\kappa)$ the number of Weyl indic
 
 Lean: `New.LValueData.inner_trivialLift_self_eq_L` (New/OneLift/HeckeValues/CharacterLiftNorm.lean)
 
-The proof is in [Hecke values of character lifts](/chapter/hecke-values/). Its idea: the inner product formula writes the squared norm of the theta lift of $1$ as a sum of coefficients of the vacuum. This sum is the Euler product $L^X(k, \mu^{-1})/\zeta_F(2k)$ without the places of $X$, and the missing factors of $\zeta_F(2k)$ at the places of $Q$ combine with the index of the level and the mean square of the block datum into $(\mathrm{Nm}\, Q)^{2k-1}$.
+The proof is in Section 6 of [character lifts and tested forms](/chapter/character-lifts/). Its idea: the inner product formula writes the squared norm of the theta lift of $1$ as a sum of coefficients of the vacuum. This sum is the Euler product $L^X(k, \mu^{-1})/\zeta_F(2k)$ without the places of $X$, and the missing factors of $\zeta_F(2k)$ at the places of $Q$ combine with the index of the level and the mean square of the block datum into $(\mathrm{Nm}\, Q)^{2k-1}$.
 
 For a critical pair the character $\nu\vartheta$ has weight $-c = -((c - z) + z)$. So the theorem applies with $k = z$, and only the $L$-value and the power of $\mathrm{Nm}\,Q$ depend on $\vartheta$.
 
@@ -173,13 +173,13 @@ So under `HasLiftRank` the quotient of the two $L$-values is already a positive 
 
 ### The lift is a theta lift of the constant function
 
-Two more facts about the lift are used in [false lifts](/chapter/false-lifts/), where the test forms are built from it.
+Two more facts about the lift complete the file `TwistedRatio.lean`. The chapter on [false lifts](/chapter/false-lifts/) uses neither of them. The invariance of the unscaled lift is used in Volume 12, in [main summands](/chapter/main-summands/); no other file uses the first proposition.
 
 **Proposition (The lift as a theta lift).** Assume `HasLiftRank`, and let $O$ be the descent pair of the lift data of $(p, \vartheta)$. The function on $U(2z)(\mathbb{A})$ that `ofAlgForm` attaches to $\varphi_\vartheta$ (its matrix coefficient against the highest vector of the parameter of $O$) is $c$ times the theta lift by the theta kernel of $O$, at the Schwartz function made from the highest vector, of the constant function $1$ on $U(1)(\mathbb{A})$, for some $c \neq 0$.
 
 Lean: `New.Data.CriticalPair.exists_ofAlgForm_trivialLift_eq_smul_lift` (New/OneLift/HeckeValues/TwistedRatio.lean)
 
-*Proof.* The unscaled lift is the theta lift of $1$ times the index of the chosen level (Chapter 10). Take $c$ to be the scale of the lift times this index. Both are nonzero. $\square$
+*Proof.* The unscaled lift is the theta lift of $1$ times the index of the chosen level (Chapter 4). Take $c$ to be the scale of the lift times this index. Both are nonzero. $\square$
 
 **Proposition (Invariance).** The product of the groups $GL_1(k_w)$ over the chosen places acts on algebraic forms, and it fixes the unscaled lift $\Theta$ of any lift data and the lift $\varphi_\vartheta$ of $(p, \vartheta)$.
 

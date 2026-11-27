@@ -43,7 +43,7 @@ drafted_by: writer@claude-opus-5-5
 
 The seesaw principle is due to Kudla, *Seesaw dual reductive pairs*, in Automorphic Forms of Several Variables, Progr. Math. 46 (1984) 244-268. The one square identity of Section 5 is a seesaw identity of this kind: the lifts through $A$ and through $A'$ agree on matched data, up to the exchange constant and a factor $\kappa$ free of the twist.
 
-The docstring of [OneSquare.lean](lean:New/Determinant/Exchange/OneSquare.lean#L44) also names, as related work, a paper of Chan on period identities of CM forms on quaternion algebras (2020) and a paper of He on compositions of theta correspondences (2005). We give only the names and years that the source gives. The book does not compare them with this chapter.
+The docstring of [OneSquare.lean](lean:New/Determinant/Exchange/OneSquare.lean#L44) also names, as related work, a paper of Chan on period identities of CM forms on quaternion algebras (2020) and a paper of He on compositions of theta correspondences (2005). We give only what the source gives.
 
 The Fourier analysis of Section 3 is the standard Fourier analysis on a finite abelian group, here the additive group of matrices modulo $\mathfrak{m}$. Section 3 proves the Gauss sums of matrices that it uses.
 
@@ -54,8 +54,8 @@ The findings of the register that concern this chapter are these.
 1. F-069: the constant $\kappa$ of the one square identity is not shown to be nonzero. So the square law may be the trivial law. See [constants that may vanish](/chapter/register-of-findings/#constants-that-may-vanish).
 2. F-121: the lemma `ne_zero_of_squareCommutes` is never applied in the source. The argument applies only `ne_zero_of_chainCommutes`.
 3. Q-06, whether the nonvanishing of $\kappa$ is recovered in every use, is open.
-4. [The plan](/chapter/theorem-c-plan/#constants-that-may-vanish) says that the source uses the identity only to show that the squares of a triangle commute. The source also applies it in [Turns.lean](lean:New/Determinant/AuxiliaryForms/Turns.lean#L769), for a square of the grids.
-5. The constant $\beta$ of the relation $\Psi \propto \Xi$ may be $0$, as Exercise 7 shows.
+4. The source applies the identity to the squares of a triangle and, in [Turns.lean](lean:New/Determinant/AuxiliaryForms/Turns.lean#L769), to a square of the grids.
+5. The constant $\beta$ of $\Psi \propto \Xi$ may be $0$ (Exercise 7).
 
 This chapter does not prove that the constants are nonzero.
 
