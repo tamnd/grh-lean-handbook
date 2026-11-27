@@ -55,7 +55,7 @@ The argument is a comparison of a nonzero algebraic number with its conjugates. 
 
 1. *The Gram determinant.* In the proof of a twist for each prime, $\operatorname{Gram}(1) \neq 0$ because $(y, z)$ is a basis and $\Theta_1$ is injective. The injectivity is `New.Data.injective_lift_targetLattice`: the lower chain at the level is injective.
 2. *The volume.* $Z(\xi) \neq 0$ for every twist, by `New.TwistedLattice.volume_ne_zero`, from the same injectivity.
-3. *The squares of the chain.* The scalars of the squares in a triangle of lifts do not vanish (`New.Exchange.IsTriangle.ne_zero_of_squareCommutes`), which the factorization of the chain determinant uses.
+3. *The squares of the chain.* The scalars of a commuting chain in a triangle of lifts do not vanish (`New.Exchange.IsTriangle.ne_zero_of_chainCommutes`), which the factorization of the chain determinant uses.
 4. *The Hecke values.* The ratios of Hecke $L$-values are nonzero (`New.Data.CriticalPair.ratio_ne_zero`), as the characters have nonzero weight. So the numbers $\gamma(\vartheta)$ and the turn ratios are nonzero.
 5. *The scalars of $\mathfrak{p}$.* The gain factor is positive (`New.Data.invGainFactor_pos`), so $\mathfrak{p}$ and the good Poincaré maps have the same ranges.
 
