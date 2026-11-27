@@ -924,7 +924,7 @@ This section has the 3333 cited names `New.X` outside the namespace `New.Data` w
 - `New.powerDegree`: `New/Derivatives/Sharpness/Couplings.lean`, [line 61](lean:New/Derivatives/Sharpness/Couplings.lean#L61). Cited in [Chapter](/chapter/sharpness/).
 - `New.powerIdele`: `New/UpperBound/Seesaw/StandardLines.lean`, [line 70](lean:New/UpperBound/Seesaw/StandardLines.lean#L70). Cited in [Chapter](/chapter/seesaw-identity-1/).
 - `New.predictedDivisibility`: `New/Derivatives/Divisibility/Count.lean`, [line 422](lean:New/Derivatives/Divisibility/Count.lean#L422). Cited in [Chapter](/chapter/normal-forms/).
-- `New.PrimePadicIso`: `New/Reduction/Lattices/Heights.lean`, [line 30](lean:New/Reduction/Lattices/Heights.lean#L30). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
+- `New.PrimePadicIso`: `New/Reduction/Lattices/Heights.lean`, [line 30](lean:New/Reduction/Lattices/Heights.lean#L30). Cited in [Chapter](/chapter/twisted-lattices/), [Chapter](/chapter/theorem-a-plan/), [Chapter](/chapter/twists-critical-pairs/), [Chapter](/chapter/regular-families-plan/).
 - `New.PrimePadicIso.Carries`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 75](lean:New/Reduction/Lattices/TwistedLattice.lean#L75). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.PrimePadicIso.Carries.fromBlocks`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 86](lean:New/Reduction/Lattices/TwistedLattice.lean#L86). Cited in [Chapter](/chapter/twisted-lattices/).
 - `New.PrimePadicIso.conj`: `New/Reduction/Lattices/TwistedLattice.lean`, [line 52](lean:New/Reduction/Lattices/TwistedLattice.lean#L52). Cited in [Chapter](/chapter/twisted-lattices/).

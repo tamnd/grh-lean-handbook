@@ -30,10 +30,10 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 1 | 6 | Fields, places and twists | drafted | 8,765 |
 | 1 | 7 | The data and its sizes | drafted | 9,847 |
 | 1 | 8 | The data exist | drafted | 13,067 |
-| 1 | 9 | Prime sums and the total remainder | drafted | 8,874 |
+| 1 | 9 | Prime sums and the total remainder | drafted | 8,892 |
 | 1 | 10 | Twisted lattices | drafted | 9,751 |
 | 1 | 11 | The lattice of integral target forms | drafted | 8,886 |
-| 1 | 12 | Theorems A, B and C | drafted | 9,847 |
+| 1 | 12 | Theorems A, B and C | drafted | 9,858 |
 | 1 | 13 | The main inequality and the end of the proof | drafted | 10,056 |
 | 2 | 1 | Dirichlet L-functions and zero symmetry | drafted | 9,245 |
 | 2 | 2 | Polar functions and the explicit formula | drafted | 8,378 |
@@ -75,9 +75,9 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 8 | 3 | The congruence relation | drafted | 14,017 |
 | 8 | 4 | What attached means | drafted | 14,374 |
 | 8 | 5 | Building the representations | drafted | 12,699 |
-| 9 | 1 | Theorem A and its plan | drafted | 9,055 |
+| 9 | 1 | Theorem A and its plan | drafted | 9,575 |
 | 9 | 2 | The objects of the upper bound | drafted | 14,612 |
-| 9 | 3 | The seesaw identity, part 1: unfolding | drafted | 14,668 |
+| 9 | 3 | The seesaw identity, part 1: unfolding | drafted | 14,678 |
 | 9 | 4 | The field E at the primes | drafted | 12,475 |
 | 9 | 5 | The integral vacuum and tight frames | drafted | 13,453 |
 | 9 | 6 | The CM curve, its formal group and the normal form | drafted | 12,735 |
