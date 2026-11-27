@@ -88,7 +88,7 @@ Lean: `New.FrobeniusCycle.exists_colengthDvd_range_pairingMap_mul_edgeRestrictio
 
 *Proof.* Let $\Delta = \lfloor c_{\mathrm{div}}|\mathrm{Exp}|\rfloor$. Section 4 gives $Q, R, d$ for $(\mathrm{src}, g)$ and $Q', R', d'$ for $(\mathrm{src}', g')$, with $Qd = \mathrm{edgeRestriction}(\mathrm{src}, g)$ and $\det d \mid w^{|V|\Delta}$, and the same for $d'$. So $\det d'^{\mathsf T}\det d \mid p^{|V|\Delta}$. The images of $Q$, $Q'$ are origin functions, so their values lie in $\mathrm{allEdgesForms}$ (Section 3). Section 6 gives an edge condition, and the previous theorem gives $s$. Since $\mathrm{pairingMap}(u, b, Q'd') = d'^{\mathsf T}\mathrm{pairingMap}(u, b, Q')$, the matrix is $d'^{\mathsf T}\,(\mathrm{pairingMap}(u, b, Q')Q)\,d$. The chain lemma with $z = p^m$ gives the divisor $p^l$ with $l = |V|\Delta + c_2|V||\mathrm{Exp}| + m|s|$. Finally $\Delta \le c_{\mathrm{div}}|\mathrm{Exp}|$, $c_2 \le 2c_{\mathrm{div}}$ (Section 2) and $|s| \le \theta|V||\mathrm{Exp}|$. $\square$
 
-### The theorem
+### Assembly of the proof
 
 **Lemma.** For edge coordinates on finite sets, $e \mapsto (\mathrm{origin}\,e, (\mathrm{originBasisChange}(e)^{\mathsf T})^{-1}P_r)$ is onto $X \times \mathcal C$.
 

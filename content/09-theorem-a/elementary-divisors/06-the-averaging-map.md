@@ -45,7 +45,7 @@ The source cites Green (Polynomial Representations of $\mathrm{GL}_n$, Lecture N
 
 **Remark (Formalization).** The average is chosen, and only its properties are used. The bound $D < p^f$ keeps $\eta$ away from its junk value $0$ (Section 3), so the scaled trace is $p^{k^2f}\psi(1)$ in every degree used.
 
-### The averaging map
+### Construction of the averaging map
 
 Substitute $N$ generic matrices, one copy for each letter, in a form $h$, with the Frobenius twists of the twisted action (`New.FrobeniusCycle.substitutionOperator`). The result is a polynomial in the $N$ copies whose value at the identity in all copies is $h$.
 
