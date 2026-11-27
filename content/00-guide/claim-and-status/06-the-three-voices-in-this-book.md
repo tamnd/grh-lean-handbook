@@ -44,7 +44,7 @@ Some questions about the claim can be settled only by a person with access to a 
 1. Rerun `lake build` and `scripts/PrintAxioms.lean` at the pin, and attach the log to a release of this book ([issue 15](https://github.com/tamnd/grh-lean-handbook/issues/15)).
 2. Ask the authors for the logs of the three independent checkers and of Comparator, and for a description of the stand-in for the sandbox ([issue 16](https://github.com/tamnd/grh-lean-handbook/issues/16)).
 3. Check whether the settings file `Lib/Speed` can be emptied on Lean 4.35.0. The README says that "everything still compiled on Lean 4.33.1" (`grh/README.md`, line 36), which is not the pinned toolchain ([issue 17](https://github.com/tamnd/grh-lean-handbook/issues/17)).
-4. Find the public form of Alpöge's original proof and of the document at `https://alpo.ge/remark.pdf`, and say what the method of the original is ([issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18)).
+4. Compare the algebraic part of the readable edition with the original proof of Alpöge, file by file. Section 3 gives what is public, the method of the original, and the differences at the analytic end. The search for the public form is recorded in [issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18).
 5. Raise the status of the chapters. Each chapter needs a person to check it against the Lean source, and the main chapters need a person in the field to review them.
 
 The first two items concern condition 1 of Section 5. The third concerns only the reading of inner statements, since the settings cannot change the five types. The fourth concerns the history of the method, not the truth of the theorems. The fifth is the purpose of the book.
