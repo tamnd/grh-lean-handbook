@@ -5,7 +5,7 @@ description = "The builder of The GRH Lean Handbook: the volumes as PDF and EPUB
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
-dependencies = ["PyYAML>=6", "Pillow>=10", "fonttools>=4.40"]
+dependencies = ["PyYAML>=6", "Pillow>=10", "fonttools>=4.40", "pypdf>=5"]
 
 [project.scripts]
 ghb = "ghb.__main__:main"

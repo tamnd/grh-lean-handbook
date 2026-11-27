@@ -4,6 +4,7 @@
     python3 -m ghb [--source ../grh-lean] check  [--volume N|N,M|all]
     python3 -m ghb [--source ../grh-lean] build  [--volume N|N,M|all|front] [--formats tex,pdf,epub] [--out DIR]
     python3 -m ghb [--source ../grh-lean] ledger [--write] [--diff A B]
+    python3 -m ghb join --in DIR [--out FILE]
 
 The source is a clone of lsernau/grh-lean. The pin is the line "grh <commit>" of EDITION. The builder reads the
 source as text and does not build Lean.
@@ -166,6 +167,15 @@ def cmd_ledger(args):
     return ledger.run(load(args), args)
 
 
+def cmd_join(args):
+    from . import join
+    version = edition()["version"]
+    out = args.out or os.path.join(args.inp, f"{NAME}-{version}.pdf")
+    info = join.join(args.inp, out, version, os.path.join(ROOT, "content"))
+    print(f"{out}: " + json.dumps(info), file=sys.stderr)
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="ghb", description="Build The GRH Lean Handbook.")
     ap.add_argument("--source", default=os.path.join(ROOT, "..", "grh-lean"),
@@ -183,8 +193,12 @@ def main(argv=None):
     lg = sub.add_parser("ledger", help="ledger/files.yaml, decls.yaml and coverage.md")
     lg.add_argument("--write", action="store_true")
     lg.add_argument("--diff", nargs=2, metavar=("A", "B"))
+    j = sub.add_parser("join", help="the PDF of all volumes, from the volume PDFs of the version in EDITION")
+    j.add_argument("--in", dest="inp", required=True, help="the folder of the volume PDFs")
+    j.add_argument("--out", default="", help="default DIR/grh-lean-handbook-<version>.pdf")
     args = ap.parse_args(argv)
-    return {"survey": cmd_survey, "check": cmd_check, "build": cmd_build, "ledger": cmd_ledger}[args.cmd](args)
+    return {"survey": cmd_survey, "check": cmd_check, "build": cmd_build, "ledger": cmd_ledger,
+            "join": cmd_join}[args.cmd](args)
 
 
 if __name__ == "__main__":
