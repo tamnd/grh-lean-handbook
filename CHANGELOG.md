@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## v1.0.0
+
+The first complete edition of The GRH Lean Handbook, at the pin 72fead1 of lsernau/grh-lean.
+
+- All thirteen volumes are written: Volume 0 (the guide) and Volumes 1 to 12.
+- The checks of milestone G7 are closed. The book reports its own build at the pin (Lean v4.35.0: the build succeeds and the five theorems use only `propext`, `Classical.choice` and `Quot.sound`), the failed test of the `Lib/Speed` claim, and the third-party runs of the independent kernels and of Comparator.
+- One gap is stated in the book: the authors' own logs and the stand-in for the Comparator sandbox are not public.
+- Each chapter has the status `drafted`. `checked` and `reviewed` need a named reader.
+
+This book explains a formal proof. It does not claim that GRH is proved.
+
 ## v0.4.2
 
 The book now reports its own Lean runs at the pin 72fead1 (#201).
