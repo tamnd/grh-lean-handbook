@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.4.1
+
+Two updates on the source and its checks.
+
+- Volume 0, chapter 2 now describes the original Lean proof of Alpöge, which is public, and how the readable edition differs from it (#198).
+- The book now reports the third-party checks of the source at the pin 72fead1 (build, axioms, independent kernels, Comparator), from Sutherland's page (#199).
+
 ## v0.4.0
 
 All twelve argument volumes are complete, and the milestones G5 (Theorems A and B) and G6 (Theorem C and congruences) are closed.

@@ -13,16 +13,16 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 
 | Vol. | Ch. | Title | Status | Words |
 |---|---|---|---|---|
-| 0 | 1 | Preface | drafted | 3,917 |
-| 0 | 2 | The claim and its status | drafted | 9,449 |
-| 0 | 3 | The statements | drafted | 11,079 |
-| 0 | 4 | How to read this book | drafted | 9,402 |
+| 0 | 1 | Preface | drafted | 4,017 |
+| 0 | 2 | The claim and its status | drafted | 12,125 |
+| 0 | 3 | The statements | drafted | 11,158 |
+| 0 | 4 | How to read this book | drafted | 9,414 |
 | 0 | 5 | Notation and conventions | drafted | 10,046 |
 | 0 | 6 | The table of sizes | drafted | 12,911 |
 | 0 | 7 | Reading the Lean | drafted | 14,522 |
-| 0 | 8 | The register of findings | drafted | 14,559 |
-| 0 | 9 | The two editions | drafted | 7,411 |
-| 1 | 1 | The theorem and the plan | drafted | 6,913 |
+| 0 | 8 | The register of findings | drafted | 14,804 |
+| 0 | 9 | The two editions | drafted | 7,431 |
+| 1 | 1 | The theorem and the plan | drafted | 6,932 |
 | 1 | 2 | From the half-plane to the line | drafted | 7,838 |
 | 1 | 3 | The weighted prime remainder | drafted | 8,837 |
 | 1 | 4 | Landau's criterion | drafted | 8,962 |
