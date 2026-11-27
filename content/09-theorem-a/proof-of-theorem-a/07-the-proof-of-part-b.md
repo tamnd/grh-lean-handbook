@@ -38,7 +38,7 @@ $$\mathrm{GaugeLe}\bigl(1,\ 1,\ \ell^{-g_\ell}\,B_{\vartheta,\Psi}\varphi\bigr).
 
 The proof uses the seesaw identity for each $m$-fold twist, with a chain datum that depends on the twist. The hypothesis is asked for every chain datum, so the choice does not matter. The lemma does not use the size of $\varphi$ and does not use the integrality of $\varphi$ either: the integrality of the image comes from the hypothesis on the composite lifts.
 
-### The dimension of the source
+### Half the source forms
 
 **Lemma (Half the source forms are ramified).** $D_X \leq 2\dim_{\mathbb{C}}\mathrm{src}$.
 

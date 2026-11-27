@@ -11,7 +11,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section proves part (a) of Theorem A. The proof uses the spanning by short forms, the seesaw identity for the trivial twist, the size of the composite lift, the size of the good part, the factor $c_B$ at infinity and the bound for $\log c_B$. At the end, one inequality between the sizes of the data absorbs all the errors. The section tracks each term of the exponent.
 
-### The statement
+### The statement of part (a)
 
 **Theorem (Theorem A (a), short forms).** The span over $\mathbb{C}$ of the set of $\varphi \in \mathrm{src}_{\mathrm{int}}$ such that
 
