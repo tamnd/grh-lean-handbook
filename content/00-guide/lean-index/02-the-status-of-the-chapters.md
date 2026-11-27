@@ -14,12 +14,12 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | Vol. | Ch. | Title | Status | Words |
 |---|---|---|---|---|
 | 0 | 1 | Preface | drafted | 4,017 |
-| 0 | 2 | The claim and its status | drafted | 12,125 |
+| 0 | 2 | The claim and its status | drafted | 12,201 |
 | 0 | 3 | The statements | drafted | 11,158 |
 | 0 | 4 | How to read this book | drafted | 9,414 |
 | 0 | 5 | Notation and conventions | drafted | 10,046 |
 | 0 | 6 | The table of sizes | drafted | 12,911 |
-| 0 | 7 | Reading the Lean | drafted | 14,522 |
+| 0 | 7 | Reading the Lean | drafted | 14,602 |
 | 0 | 8 | The register of findings | drafted | 14,804 |
 | 0 | 9 | The two editions | drafted | 7,431 |
 | 1 | 1 | The theorem and the plan | drafted | 6,932 |

@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.4.2
+
+The book now reports its own Lean runs at the pin 72fead1 (#201).
+
+- `lake build` succeeds on Lean v4.35.0, and the five theorems depend only on `propext`, `Classical.choice` and `Quot.sound`.
+- With the settings of `Lib/Speed` removed, the build fails in three files, so the README claim that the file can be emptied does not hold on the pinned toolchain.
+- The logs are attached to release v0.4.1.
+
 ## v0.4.1
 
 Two updates on the source and its checks.
