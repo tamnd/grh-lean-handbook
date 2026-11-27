@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.4.0
+
+All twelve argument volumes are complete, and the milestones G5 (Theorems A and B) and G6 (Theorem C and congruences) are closed.
+
+- The release now has one PDF of all volumes, `grh-lean-handbook-0.4.0.pdf`, with one bookmark per volume (#194).
+- Fixes from the check list in the plan of Volume 9 and in Volume 1 (#195), and in the seesaw identity of Volume 9 (#196).
+
 ## v0.3.13
 
 Four new chapters and four fixes. All twelve argument volumes are now complete.
