@@ -29,7 +29,7 @@ The claim has four parts, and the chapter takes them in order.
 
 The first part is the statements. The five theorems are about the zeta function of Mathlib and the Dirichlet L-functions of Mathlib. Section 2 states the classical conjectures, then gives the five theorems of the source in words, and says what they do not say. For example, they say nothing about Dedekind zeta functions, Hecke L-functions or the L-functions of modular forms. "GRH" in the title of the source means the generalized Riemann hypothesis for Dirichlet L-functions only.
 
-The second part is the origin. Section 3 gives what the documents say about the authors: the proof is "Levent Alpöge's, with Claude"; the readable edition is a shorter rewriting of an earlier Lean proof by Alpöge; the only pointer to that proof is a URL. The section also says what this book could not find.
+The second part is the origin. Section 3 gives what the documents say about the authors: the proof is "Levent Alpöge's, with Claude"; the readable edition is a shorter rewriting of an earlier Lean proof by Alpöge; the only pointer to that proof is a URL. The section then says what is public at that URL, what the method of the earlier proof is, and which steps the readable edition proves by other arguments. It also says what this book could not find.
 
 The third part is the evidence. Section 4 lists each check that the documents report: the build, the list of axioms, an export that three independent checkers accept, and a run of the tool Comparator "with a stand-in for its sandbox". For each check it says what the check would show, what the repository holds, and how a reader can run the check again.
 
