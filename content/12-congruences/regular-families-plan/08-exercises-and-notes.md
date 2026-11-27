@@ -7,9 +7,9 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Exercises
 
-**Exercise 1.** Show that $\sum_{l \geq 0} l z^{l} = z/(1 - z)^2$ for $|z| < 1$. Deduce that $\sum_{l \in T} (1/2)^{l} \log l \leq 2$ for every finite set $T$ of natural numbers, as in the lemma on the small terms of Section 5. Is the constant $2$ close to the truth when $T$ is the set of all primes below a large bound?
+**Exercise 1.** Show that $\sum_{l \geq 0} l z^{l} = z/(1 - z)^2$ for $|z| < 1$. Deduce that $\sum_{l \in T} (1/2)^{l} \log l \leq 2$ for every finite set $T$ of natural numbers, as in the lemma on the small terms of Section 5.
 
-*Hint.* Differentiate the geometric series and multiply by $z$. Use $\log l \leq l$ and the convention $\log 0 = 0$. For the last question, compute the first terms: $(1/4)\log 2 + (1/8)\log 3 + (1/32)\log 5 + \dots$ is about $0.38$, so the constant $2$ is generous.
+*Hint.* Differentiate the geometric series and multiply by $z$. Use $\log l \leq l$ and the convention $\log 0 = 0$.
 
 **Exercise 2.** Prove the lemma on the clearing bound per row of Section 5 in the case $r' = 1$, $t' = t$ and $\mathrm{sel} = \mathrm{ram} = e'_\ell$, and show that it is then an equality. For which values of $r'$ is the lemma an equality when $\mathrm{sel} = \mathrm{ram} = e'_\ell$ and $t' = t$?
 
@@ -35,7 +35,7 @@ drafted_by: writer@claude-opus-5-5
 
 The theorem of this volume is `New.exists_isRegularFamily` in [FitTwistsExist.lean](lean:New/Congruences/FitTwistsExist.lean#L517). The definitions of Section 3 are in `New/Determinant/Twist/FitTwists.lean`, except `New.Selmer.DenominatorLe`, which is in `New/OneLift/TestedForms.lean`. All the bookkeeping of Section 5 is in the top file, and this chapter follows it in full. The deep steps of Section 6 are stated, not proved, here.
 
-The link between congruences and Selmer classes in Section 4 is the method of Ribet, K. A. Ribet, *A modular construction of unramified p-extensions of $\mathbb{Q}(\mu_p)$*, Invent. Math. 34 (1976), 151 to 162. The theorem of Ribet in Section 4 is the main result of that paper. Its converse direction, that a nonzero $\omega^{1-k}$-part forces $p \mid B_k$, is the earlier theorem of Herbrand. The proposition on projections of a unimodular lattice is a standard fact of the theory of lattices, and its proof in Section 4 is complete. The heuristic in Section 4, that a congruence of depth $e$ gives a Selmer class of order $\ell^{e}$, explains the form of the bound. It is not a statement of the source.
+The link between congruences and Selmer classes in Section 4 is the method of Ribet, K. A. Ribet, *A modular construction of unramified p-extensions of $\mathbb{Q}(\mu_p)$*, Invent. Math. 34 (1976), 151 to 162. The theorem of Ribet in Section 4 is the main result of that paper. Its converse direction, that a nonzero $\omega^{1-k}$-part forces $p \mid B_k$, is the earlier theorem of Herbrand. The proposition on projections of a unimodular lattice is a standard fact of the theory of lattices, and its proof in Section 4 is complete.
 
 For the twisting theorem, the source names three related works in `New/Congruences/Selmer/TwistingTheorem.lean`: Mazur and Rubin, *Diophantine stability* (2018); Kriz and Nordentoft, *Horizontal p-adic L-functions* (2023); and Hida, *Non-vanishing modulo p of Hecke L-values* (2004). The source says that twists of $\ell$-power order at new primes that kill a Selmer group or keep $L$-values barely divisible are known in the literature. This chapter does not compare the statements of these works with the statement of the source.
 

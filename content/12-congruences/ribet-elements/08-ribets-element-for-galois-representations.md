@@ -24,7 +24,7 @@ This section applies the main lemma to Galois representations. The group is the 
 The hypotheses come from other chapters. Each is stated here in one line.
 
 - A lift setting is a descent pair $V$ with type polynomials at its chosen places above $p_0$ and $p_1$; $t' = \operatorname{rankDiff} V$ is the difference of its ranks, and $r' = \#r$ ([The main summands](/chapter/main-summands/)).
-- An auxiliary twist $\psi$ has modulus $Q$ and ramification at most $\mathrm{ram}$ ([The main summands](/chapter/main-summands/)).
+- An auxiliary twist $\psi$ has modulus $Q$ and ramification at most $\mathrm{ram}$ ([Tied traces](/chapter/tied-traces/#even-classes-and-cocycles-of-tate-twists)).
 - A triangle of primes for $g_0$ is a family of places $w_j$ with tame generators $\tau_j$, elements $\varphi_j$ and types $0 < \mathrm{ty}(j) < t'$, up to $\ell^{\mathrm{halfGap}\,h}$ with bound $\mathrm{halfGap}^{22} h$ ([Tied traces and even classes](/chapter/tied-traces/)).
 - A representation of type $V$ has inertia at the chosen places acting through the roots of the rescaled type polynomials and $1$ ([The main summands](/chapter/main-summands/)).
 - The crystalline Selmer length of $T$ is the length of its Selmer group with coefficients in $K/O$, of cocycles zero at $\gamma$. The crystalline colength of $T$ modulo $\ell^m$ is the length of $\mathrm{Coc}(T, \ell^m)$ modulo the cocycles that obey the crystalline relations above $\ell$ ([The main summands](/chapter/main-summands/)).

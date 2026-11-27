@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The map of the files
 
-The folder `New/Congruences` has 53 Lean files with 34,811 lines in total, counted with `wc -l`. It has one top file and five subfolders. This section lists the files of each subfolder with their line counts and the first heading of their module docstrings, and it gives the chapter of this volume that treats each part.
+The folder `New/Congruences` has 53 Lean files with 34,811 lines in total. It has one top file and five subfolders. This section lists the files of each subfolder and the chapter that treats each part.
 
 ### The top file and the imports
 
@@ -19,8 +19,6 @@ The top file is [FitTwistsExist.lean](lean:New/Congruences/FitTwistsExist.lean#L
 3. `New.Congruences.Selmer.TwistingTheorem`, for the twisting theorem;
 4. `New.Determinant.Chain.NormOfChain`, a file on chain determinants from outside the folder;
 5. `New.OneLift.HeckeValues.CentralAction`, from Volume 11, for the bound on the line of a main pair.
-
-The definitions of Section 3, in `New/Determinant/Twist/FitTwists.lean`, come in through these imports, not directly.
 
 The subfolders depend on each other in one direction. The files of `Lifting` are imported by `LocalLoss` (through `LocalLoss/CrystallineCocycles.lean`). The files of `LocalLoss` are imported by `GaloisRepresentations/SelmerHypotheses.lean`, by `FirstOrder/FittingBlock.lean` and `FirstOrder/TraceRelations.lean`, and by `Selmer/MainSummands.lean`. The three folders `FirstOrder`, `GaloisRepresentations` and `Selmer` meet in the top file.
 
@@ -43,7 +41,7 @@ The chapters of the volume follow the imports of the files: each file of a chapt
 12 proof-of-regular-families  <- 1
 ```
 
-Chapters 1, 2 and 3 use results of later chapters. This chapter follows the top file, which imports the last steps (chapters 5, 10 and 11). In chapter 2, `FittingBlock.lean` imports `LocalLoss/Basic.lean` (chapter 5), and `RibetElement.lean` imports `TraceRelations.lean` (chapter 11). In chapter 3, `KummerMaps.lean` imports `EvenClasses.lean` and `AuxiliaryPrimeTie.lean` imports `TiedTraces.lean` (chapter 4), and `HeckeStrings.lean` imports `SelmerHypotheses.lean` (chapter 5). A reader of these chapters takes the results of the later chapters as known.
+Chapters 1, 2 and 3 use results of later chapters. This chapter follows the top file, which imports the last steps (chapters 5, 10 and 11). In chapter 2, `FittingBlock.lean` imports `LocalLoss/Basic.lean` (chapter 5), and `RibetElement.lean` imports `TraceRelations.lean` (chapter 11). In chapter 3, `KummerMaps.lean` imports `EvenClasses.lean` and `AuxiliaryPrimeTie.lean` imports `TiedTraces.lean` (chapter 4), and `HeckeStrings.lean` imports `SelmerHypotheses.lean` (chapter 5).
 
 ### FirstOrder: Ribet's method to first order
 

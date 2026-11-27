@@ -27,7 +27,7 @@ Let $\varphi$ be a source form and let $z = \mathcal{P}\varphi$ be its Poincaré
 
 ### The divisibility errors
 
-The gain $\mathrm{gain}_p$ at a prime $p$ is a weighted local prime sum, defined in [the archimedean size](/chapter/archimedean-size/). It is $0$ if $\chi_K(p) = 1$ or $p \geq x_1$. Let $\mathcal{S} = \{p < x_1 : p \text{ prime}, \chi_K(p) \neq 1\}$ be the set of small nonsplit primes. For a twist $\vartheta$ and a chain datum $\Psi$ of $\vartheta$, the *composite lift* $B_\vartheta\varphi$ of a source form $\varphi$ is the upper chain of $m$ theta lifts with the glued tensor of $\Psi$ as its Schwartz data ([the objects of the upper bound](/chapter/upper-bound-objects/)).
+The gain $\mathrm{gain}_p$ at a prime $p$ is a weighted local prime sum, defined in [the gain and its measures](/chapter/short-columns-gain/#the-gain-and-its-measures). It is $0$ if $\chi_K(p) = 1$ or $p \geq x_1$. Let $\mathcal{S} = \{p < x_1 : p \text{ prime}, \chi_K(p) \neq 1\}$ be the set of small nonsplit primes. For a twist $\vartheta$ and a chain datum $\Psi$ of $\vartheta$, the *composite lift* $B_\vartheta\varphi$ of a source form $\varphi$ is the upper chain of $m$ theta lifts with the glued tensor of $\Psi$ as its Schwartz data ([the objects of the upper bound](/chapter/upper-bound-objects/)).
 
 **Theorem (Divisibility of the composite lift).** There are real numbers $\mathrm{err}(p)$, one for each natural number $p$, with these properties.
 

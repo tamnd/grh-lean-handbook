@@ -49,7 +49,9 @@ The source bounds the congruences by Galois cohomology. The model for this is th
 
 This is the main theorem of [Ribet 1976]. The proof has two steps. First, the divisibility $p \mid B_k$ gives a congruence modulo $p$ between an Eisenstein series and a cusp form. Second, the $p$-adic Galois representation of the cusp form is irreducible, but its reduction has the characters of the Eisenstein series as its factors. A suitable lattice in the representation gives a nonsplit extension of these characters, and this extension is a nonzero unramified class.
 
-The source uses the same link in the other direction, and as a bound. A congruence modulo $\ell^{e}$ between a lift and a form orthogonal to the lifts gives, by the same construction, a class of order $\ell^{e}$ in a Selmer group of the main summand attached to the lift, twisted by the $\ell$-adic avatar of $\vartheta^{-1}$. If the Selmer group has length at most $e'$, then the congruences have depth at most $e'$, up to explicit losses. The losses come from the local conditions above $\ell$, from the places of the twist, and from the class groups and automorphisms of the data. This heuristic explains the form of the bound below. It is not a statement of the source.
+The source uses the same link in the other direction, and as a bound. A congruence modulo $\ell^{e}$ between a lift and a form orthogonal to the lifts gives, by the same construction, a class of order $\ell^{e}$ in a Selmer group of the main summand attached to the lift, twisted by the $\ell$-adic avatar of $\vartheta^{-1}$. If the Selmer group has length at most $e'$, then the congruences have depth at most $e'$, up to explicit losses. The losses come from the local conditions above $\ell$, from the places of the twist, and from the class groups and automorphisms of the data. This heuristic explains the form of the bound below.
+
+**Remark (Formalization).** The model case is not in the source: it states neither the proposition on projections of a unimodular lattice nor Ribet's theorem, nor the heuristic. They only motivate the bound below.
 
 ### The lift generators
 

@@ -38,11 +38,13 @@ The map $\mathfrak{p}$ is built in steps. Let $\mathcal{P}$ be the Poincaré map
 
 Lean: `New.Data.goodPoincare` (New/Spanning/SecondMoment/SpanningTheorem.lean).
 
-**Definition (Normalized Poincare maps).** For $s \in \bar G$, the map $s\mathfrak{p} : \mathrm{src} \to \mathrm{target}$ is $c\,\mathfrak{g}_s \circ \iota$. Here $\iota$ is the inclusion of the ramified source forms into all source forms, scaled by a positive number, and $c$ is a positive number, the inverse of a gain factor.
+**Definition (Normalized Poincare maps).** For $s \in \bar G$, the map $s\mathfrak{p} : \mathrm{src} \to \mathrm{target}$ is $c\,\mathfrak{g}_s \circ \iota$. Here $\iota$ is the inclusion of the ramified source forms into all source forms, times $c_{ss}^{-1}$, and $c = c_B$ is a positive rational number, the inverse of a gain factor. The number $c_{ss}$ is a nonzero complex number, the constant of the seesaw identity.
 
 Lean: `New.Data.normalizedPoincare` (New/Reduction/ShortAndEnough.lean).
 
 The two scalars come from Theorem A. There the factor $c_B c_{ss}^{-1}$ makes the forms integral with a controlled index. For Theorem B they do not matter, because a nonzero scalar does not change a range.
+
+**Remark (Formalization).** The constant $c_{ss}$ is `New.Data.seesawConst`, a unit of $\mathbb{C}$ chosen by `choose` from the existence statement of the seesaw identity. Lean does not say that it is positive or real, only that it is nonzero. Theorem B needs only that.
 
 ### The statement
 
@@ -102,7 +104,7 @@ Lean: `New.Data.f_div_N_sub_one_le` (New/UpperBound/Size/ShortColumns.lean).
 
 *Proof.* The data give $f \leq b$ and $b^9 + 1 \leq N$. So $f/(N - 1) \leq b/b^9$. $\square$
 
-*Proof of Theorem B.* First, $d_T > 0$ by [Theorem](/decl/New.Data.finrank_targetForms_ne_zero/): the composite $e_0\mathcal{P}$ is almost an isometry, so its range is not zero. Put $\varepsilon = (8b^2)^{-1}$. Since $b^2 \geq 2$, we have $0 < \varepsilon < 1/16$. The space $X$ is not zero, because it has coordinates indexed by a nonempty set.
+*Proof of Theorem B.* First, $d_T > 0$ by [Theorem](/decl/New.Data.finrank_targetForms_ne_zero/): the composite $e_0\mathcal{P}$ is almost an isometry, so its range is not zero. Put $\varepsilon = (8b^2)^{-1}$. Since $b^2 \geq 2$, we have $0 < \varepsilon \leq 1/16$. The cover theorem asks for the strict bound $\varepsilon < 1/16$; the source gets it from the logarithmic size bounds of the data, through `New.Data.lt_of_hasLogBound`. The space $X$ is not zero, because it has coordinates indexed by a nonempty set.
 
 Apply the cover theorem to the maps $\mathfrak{g}_s$ on $X$, with the spread of [Theorem](/decl/New.Data.isSpread_goodPoincare/). It gives a finite set $t \subseteq \bar G$ with
 
@@ -114,8 +116,8 @@ For the second inequality, restrict to $\mathrm{src}$. By the two lemmas on rami
 
 $$\#t\,(\dim X - \dim\mathrm{src}) \leq b^{-8}\,\#t\dim X \leq b^{-8} \cdot 5\log(1 + 2b^2)\, d_T \leq \frac{2}{b^2}\, d_T.$$
 
-The last step is a size inequality of the data: $5 b^{-8}\log(1 + 2b^2) \leq 2b^{-2}$, which holds with room since $b \geq 1000$. So $\dim\sum_{s \in t}\mathfrak{g}_s(\mathrm{src}) \geq (1 - 2/b^2 - 2/b^2)\, d_T = (1 - 4/b^2)\, d_T$. Finally, the range of $s\mathfrak{p}$ is $\mathfrak{g}_s(\mathrm{src})$, since the two scalars in $s\mathfrak{p}$ are positive. $\square$
+The last step is a size inequality of the data: $5 b^{-8}\log(1 + 2b^2) \leq 2b^{-2}$, which holds with room since $b \geq 1000$. So $\dim\sum_{s \in t}\mathfrak{g}_s(\mathrm{src}) \geq (1 - 2/b^2 - 2/b^2)\, d_T = (1 - 4/b^2)\, d_T$. Finally, the range of $s\mathfrak{p}$ is $\mathfrak{g}_s(\mathrm{src})$, since the two scalars in $s\mathfrak{p}$ are nonzero. $\square$
 
 The share $4/b^2$ has two halves. One is the share $16\varepsilon = 2/b^2$ that the greedy cover leaves. The other pays for the passage to the ramified forms, where the true loss is only $5b^{-8}\log(1 + 2b^2)\, d_T$.
 
-**Remark (Formalization).** The cover theorem is applied with $V = X$ in the coordinates of the source forms, which are indexed by pairs of a class and a Bessel coordinate. The spread statement is proved in those coordinates and then moved to the forms; a linear equivalence does not change the dimension of a preimage. The ramified forms enter only in this last proof, through the codimension. The spread theorem itself never sees them. The positivity $d_T > 0$ is a consequence of the near isometry, not a separate hypothesis.
+**Remark (Formalization).** The cover theorem is applied to the maps `New.Data.goodPoincare` $s$ on $V = X$, the type `SourceForm` of the source forms itself, not to their coordinates. The coordinates are indexed by pairs of a class and a Bessel coordinate. Only the proof of the spread statement uses them: it works with the scaled Poincaré map in those coordinates and then moves the result to the forms; a linear equivalence does not change the dimension of a preimage. The ramified forms enter only in this last proof, through the codimension. The spread theorem itself never sees them. The positivity $d_T > 0$ is a consequence of the near isometry, not a separate hypothesis.

@@ -24,7 +24,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The adelic representation and the theta functional
 
-This section puts the real and the finite constructions together. The result is a unitary representation $\omega$ of the adelic unitary group $G$ on a Banach space $\mathcal{S}(V)$. For a hermitian space $V$ with a point, the section then constructs the theta functional $\theta_V$: a bounded functional on $\mathcal{S}(V)$ that is invariant under the rational Heisenberg operators. It is unique up to a scalar, and the section fixes the scalar.
+This section puts the real and the finite constructions together. The result is a unitary representation $\omega$ of the adelic unitary group $G$ on a Banach space $\mathcal{S}(V)$. For a hermitian space $V$ with a point, the section then constructs the theta functional $\theta_V$: a bounded functional on $\mathcal{S}(V)$ that is invariant under the rational Heisenberg operators. It is unique up to a scalar.
 
 Throughout, $E$ is a CM field with [Weil data](/decl/New.WeilData/), $\mathbb{A} = \mathbb{A}_E$ is its ring of adeles, $\psi$ is the standard additive character of $\mathbb{A}$, trivial on $E$, and $s \colon \{1, \dots, n\} \to \{\pm 1\}$ is a sign vector. The group $G = G(E, s)$ is the [adelic unitary group](/decl/New.G/) of the form $h$ with matrix $\mathrm{diag}(s)$, the [standard form](/decl/New.stdForm/).
 
@@ -116,7 +116,7 @@ The same argument shows that a vector $f$ is determined by its theta function $x
 
 ### The theta functional of a space
 
-The uniqueness leaves a scalar of modulus one. The source fixes it with the standard space.
+The uniqueness leaves a scalar of modulus one. The source does not fix it: it picks the functionals of the standard lines by `choose`.
 
 For each sign $c \in \{\pm 1\}$, let $\theta_c$ be a theta functional of the standard line of sign $c$. The [standard space](/decl/New.signedSpace/) of signs $s$ is the orthogonal sum of these lines. It has a theta functional $\theta_s$ with
 $$\theta_s(\varrho(x)\mathrm{vac}) = \prod_{i} \theta_{s_i}(\varrho(x_i)\mathrm{vac})$$
