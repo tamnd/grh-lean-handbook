@@ -101,7 +101,7 @@ The proof is in [the chapter on the main term](/chapter/main-term/). It writes e
 
 Lean: `New.Filling.secondMoment_remainingTerms_le` (New/Spanning/RemainingTerms/Sum.lean).
 
-The proof is in [the chapter on the remaining terms](/chapter/remaining-terms/). It bounds each term by its size, counts the terms by lattice points with Siegel's lemma, and gains a power of $b$ from the congruences modulo $M = p_0p_1$. Schur's test controls the sum over pairs.
+The proof is in [the chapter on the remaining terms](/chapter/remaining-terms/). It bounds each term by its size, counts the terms through the height zeta function and the frame counts, the two places where Siegel's lemma enters, and gains a power of $b$ from the congruences modulo $M = p_0p_1$. Schur's test controls the sum over pairs.
 
 ### Assembly of the input theorem
 
