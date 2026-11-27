@@ -14,7 +14,7 @@ chapters:
   - id: claim-and-status
     title: The claim and its status
     plan: >-
-      The five theorems. The checks the authors report, and what the repository does and does not contain (no logs, no CI, a stand-in sandbox for Comparator). The origin of the proof (Alpöge, remark.pdf; the shorter rewriting by Claude). "No mathematician has read it through." What the kernel check guarantees and what it does not.
+      The five theorems. The checks the authors report, and what the repository does and does not contain (no logs, no CI, a stand-in sandbox for Comparator), and the logs of a third party at the pin. The origin of the proof (Alpöge, remark.pdf; the shorter rewriting by Claude). "No mathematician has read it through." What the kernel check guarantees and what it does not.
     research: a §2, §6
   - id: statements
     title: The statements

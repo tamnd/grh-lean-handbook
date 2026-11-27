@@ -25,7 +25,7 @@ The book is an explanation of mathematics. Each chapter takes one part of the so
 
 ### What the book is not
 
-The book is not a check of the proof. It does not say that the proof is correct, and it does not say that GRH is proved. It says what the source claims, what Lean accepts if the reported checks hold, and what each chapter explains. [The claim and its status](/chapter/claim-and-status/) gives the evidence for the claim and its limits. In short: the repository has no logs of its machine checks, this book did not run them again, and the source says that no mathematician has read the proof through.
+The book is not a check of the proof. It does not say that the proof is correct, and it does not say that GRH is proved. It says what the source claims, what Lean accepts if the reported checks hold, and what each chapter explains. [The claim and its status](/chapter/claim-and-status/) gives the evidence for the claim and its limits. In short: the repository has no logs of its machine checks, a third party has published logs of them at the pin (`https://math.mit.edu/~drew/shortgrh/`), this book did not run them again, and the source says that no mathematician has read the proof through.
 
 The book is also not a list of declarations. The readable edition has many thousands of them. A chapter states the 10 to 40 results that carry its argument, and it puts the small lemmas, the second names and the wrappers into the `Lean:` lines and into the proofs. A reader who wants every name uses [the index of Lean names](/chapter/lean-index/).
 

@@ -38,14 +38,14 @@ A row has one of two statuses.
 - **explained.** The source shows the point as the row states it. The chapter in the last column explains it, or will explain it when it is written. A reader needs nothing more than that chapter.
 - **open.** A person must still verify or decide the point. The row states what the source shows and what is not known. A chapter of the book may cite an open row, but it must not state the open part as a fact.
 
-Four of the open questions are checks that need a person with a machine, or a person who can ask the authors of the source. They are open as issues of the repository of this book.
+Four of the questions are checks that need a person with a machine, or a person who can ask the authors of the source. They are issues of the repository of this book. Issue 18 is closed. For issues 15 and 16, a third party has published logs of the checks at the pin (`https://math.mit.edu/~drew/shortgrh/`), and the issues stay open for what those logs do not give.
 
 | Issue | What a person must do | Rows |
 |---|---|---|
 | [issue 15](https://github.com/tamnd/grh-lean-handbook/issues/15) | Rerun the build and the axiom check at the pin. | F-004 |
 | [issue 16](https://github.com/tamnd/grh-lean-handbook/issues/16) | Get the logs of the independent kernels and of Comparator, and the stand-in sandbox. | F-004, F-005 |
 | [issue 17](https://github.com/tamnd/grh-lean-handbook/issues/17) | Check that `Lib/Speed` can be emptied on Lean 4.35.0. | F-019 |
-| [issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18) | Find the public form of the original proof. | F-003 |
+| [issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18) | Find the public form of the original proof. Closed: the chapter on the claim answers it. | F-003 |
 
 The other open rows have no issue of their own yet. A person who takes one of them opens an issue and writes its number into the row. Section 9 lists the open questions of the notes, each with the findings it concerns.
 

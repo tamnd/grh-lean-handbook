@@ -24,7 +24,7 @@ The book does not assume that the reader knows Lean. The text is mathematics. Th
 
 ### What the book does not do
 
-The book is not a check of the proof. It does not rerun the machine checks that the source reports, and it does not certify that the Lean files build. A person who wants that evidence can run the build and the script of axioms at the pinned commit. An issue of this book asks a person to do so and to attach the log to a release.
+The book is not a check of the proof. It does not rerun the machine checks that the source reports, and it does not certify that the Lean files build. A person who wants that evidence can run the build and the script of axioms at the pinned commit. A third party has published its logs of these checks at the pin (`https://math.mit.edu/~drew/shortgrh/`), and [the reported checks](/chapter/claim-and-status/#the-reported-checks) says what they show. An issue of this book asks a person to run the checks for this book and to attach the log to a release.
 
 The book is not a review. It gives no verdict on the claim, either way. A chapter of this book can have the status `reviewed`, but that status says that a person in the field has read the chapter as mathematics. It says nothing about the proof as a whole.
 
@@ -34,7 +34,7 @@ The book is not a paraphrase of the comments of the source. The source has a com
 
 The book does not treat other L-functions, and it does not draw the classical consequences of the generalized Riemann hypothesis. The source does not state them, and the book stays with what the source states.
 
-The book does not compare the proof with Alpöge's earlier Lean proof. The documents of the source point to that proof only through the URL `https://alpo.ge/remark.pdf`. This book has not read the document at that address, and it does not know which steps of the method go back to the earlier proof and which are new in the rewriting. When a chapter says "the method of the source", it means the method that the Lean files of the readable edition carry out, as this book reads them.
+The book does not compare the proof with Alpöge's earlier Lean proof file by file. The documents of the source point to that proof only through the URL `https://alpo.ge/remark.pdf`, a note of four pages. [The origin of the proof](/chapter/claim-and-status/#the-origin-of-the-proof) reads that note and the public guide to the original, and lists the differences that they show at the analytic end of the argument. For the rest, the book does not know which steps of the method go back to the earlier proof and which are new in the rewriting. When a chapter says "the method of the source", it means the method that the Lean files of the readable edition carry out, as this book reads them.
 
 The book does not follow the compact edition. A claim about "the source" in this book is a claim about the readable edition at the pin. [The two editions](/chapter/two-editions/) is the only chapter that reads the compact edition, and it compares the two at the top of the argument only.
 

@@ -35,14 +35,14 @@ The status is about the chapter, not about the source. A chapter can be `reviewe
 
 The book can add three things to the claim of the source. It can make the five statements and their conditions plain, so that a reader can test condition 4 of Section 5. It can explain each step of the proof in mathematical words, so that a person can read the proof as mathematics. And it can collect, in [the register of findings](/chapter/register-of-findings/), every point where the source's documents and its Lean text differ, where a definition is weaker than its name, or where a question is open.
 
-The book cannot add evidence to the machine checks. It did not run them. It also cannot add the reading that the source says is missing. A model drafts the chapters, so a drafted chapter is one more text by a model about the proof. Only the status `checked` or `reviewed`, with a person's name, adds a person's reading.
+The book cannot add evidence to the machine checks. It did not run them. It reports the logs that a third party published (Section 4). It also cannot add the reading that the source says is missing. A model drafts the chapters, so a drafted chapter is one more text by a model about the proof. Only the status `checked` or `reviewed`, with a person's name, adds a person's reading.
 
 ### Work for a person
 
 Some questions about the claim can be settled only by a person with access to a machine, to the authors, or to the literature. The book has an issue for each, and it will report the answer when there is one.
 
-1. Rerun `lake build` and `scripts/PrintAxioms.lean` at the pin, and attach the log to a release of this book ([issue 15](https://github.com/tamnd/grh-lean-handbook/issues/15)).
-2. Ask the authors for the logs of the three independent checkers and of Comparator, and for a description of the stand-in for the sandbox ([issue 16](https://github.com/tamnd/grh-lean-handbook/issues/16)).
+1. Rerun `lake build` and `scripts/PrintAxioms.lean` at the pin, and attach the log to a release of this book ([issue 15](https://github.com/tamnd/grh-lean-handbook/issues/15)). A third party has published logs of both at the pin (`https://math.mit.edu/~drew/shortgrh/`). A run for this book is still open.
+2. Ask the authors for the logs of the three independent checkers and of Comparator, and for a description of the stand-in for the sandbox ([issue 16](https://github.com/tamnd/grh-lean-handbook/issues/16)). A third party has published its own logs of these checkers and of Comparator at the pin, with the sandbox of Comparator. The logs of the authors and the stand-in are still not public.
 3. Check whether the settings file `Lib/Speed` can be emptied on Lean 4.35.0. The README says that "everything still compiled on Lean 4.33.1" (`grh/README.md`, line 36), which is not the pinned toolchain ([issue 17](https://github.com/tamnd/grh-lean-handbook/issues/17)).
 4. Compare the algebraic part of the readable edition with the original proof of Alpöge, file by file. Section 3 gives what is public, the method of the original, and the differences at the analytic end. The search for the public form is recorded in [issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18).
 5. Raise the status of the chapters. Each chapter needs a person to check it against the Lean source, and the main chapters need a person in the field to review them.

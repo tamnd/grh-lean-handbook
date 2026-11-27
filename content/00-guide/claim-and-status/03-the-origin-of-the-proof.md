@@ -35,7 +35,7 @@ The original Lean proof is also public. Footnote 1 of the note points to one arc
 Three more documents are public. All three are by third parties, and this book reports what they say without making their claims its own.
 
 1. A joint statement of the Lean FRO and the Mathlib Initiative, dated 21 November 2026, at `https://leanprover-community.github.io/blog/posts/riemann-hypothesis/`. It concerns the original proof and the statement `RiemannHypothesis` of Mathlib. It reports the checks that the Lean community ran on that proof.
-2. Two pages of checks by Andrew Sutherland (MIT): `https://math.mit.edu/~drew/grh/` for the original proof, and `https://math.mit.edu/~drew/shortgrh/` for the source of this book at the pinned commit. Section 4 describes only the checks that the source itself reports.
+2. Two pages of checks by Andrew Sutherland (MIT): `https://math.mit.edu/~drew/grh/` for the original proof, and `https://math.mit.edu/~drew/shortgrh/` for the source of this book at the pinned commit. Section 4 describes the checks that the source reports, and then what the second page reports for the pin.
 3. A working draft of 164 pages, *The Alpöge-Claude proof of the Riemann hypothesis explained for the Riemann zeta function*, dated 21 November 2026, at `https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf`. Its title page says that three AI models wrote it "at the behest of Michael O. Rubinstein". It reads the Lean files of the original for the case of $\zeta$. Its abstract says that the main inequality of the argument "is not proved here". This book calls it the Waterloo guide.
 
 The author of the original has no paper on the proof on arXiv at the date of this section, and this book found no talk or blog post by him on the method.
