@@ -17,13 +17,13 @@ This section says what follows from the machine checks of Section 4, if they hol
 Suppose that these four things hold.
 
 1. The build of Section 4 succeeds at the pin, and the list of axioms of the five theorems is `propext`, `Classical.choice` and `Quot.sound`.
-2. The kernel that accepted the proofs is correct: it accepts a term of a type only if the term has that type in the type theory of Lean. The independent checkers make this more likely, if their runs are confirmed.
+2. The kernel that accepted the proofs is correct: it accepts a term of a type only if the term has that type in the type theory of Lean. The independent checkers make this more likely. A third party reports that they accept an export at the pin (Section 4).
 3. The type theory of Lean with the three axioms is consistent.
 4. The five Lean propositions mean the classical statements: Mathlib's `riemannZeta` is the Riemann zeta function, Mathlib's `DirichletCharacter.LFunction` is the Dirichlet L-function, the principal character and primitivity are the classical ones, and the 16 lines of the file of statements say what they appear to say.
 
 Then the Riemann hypothesis and the generalized Riemann hypothesis for Dirichlet L-functions hold, in the forms of Section 2. Conditions 1 to 3 are about the machine and the foundations. Condition 4 is about mathematics and can only be settled by reading.
 
-This book does not assert the conclusion. It does not assert condition 1, because it has not seen the output of the checks. It explains why each condition matters, and where a reader can test it.
+This book does not assert the conclusion. It does not assert condition 1. It has read the logs of a third party, which report that condition 1 holds at the pin (Section 4), but it did not rerun the checks. It explains why each condition matters, and where a reader can test it.
 
 **Remark.** Condition 3 is the usual assumption of all of formal mathematics in Lean, and of Mathlib. Carneiro, *The Type Theory of Lean* (master's thesis, Carnegie Mellon University, 2019), gives a model of the type theory of Lean in set theory with inaccessible cardinals. This book takes condition 3 as given, as every user of Mathlib does. It is not a special doubt about this source.
 
@@ -67,4 +67,4 @@ A kernel check is a check of types. Here is a list of things that it does not ch
 
 A kernel check, if it holds, is strong evidence of a narrow kind. It is not a refereed paper, and it does not replace one. It does not say that the method is understood, that the steps are new, or that the argument can be told in a form that a person can follow. These are the questions that a reading by a person answers, and the source says that no such reading has taken place.
 
-So the honest summary of the status, at the pinned commit, is this. The source claims Lean proofs of five theorems, among them the Riemann hypothesis and the generalized Riemann hypothesis for Dirichlet L-functions, in the forms of Mathlib. The source reports machine checks that, if they hold, show that Lean accepts these proofs with three standard axioms. The repository holds no record of these checks. No mathematician has read the proof through, by the account of the source. This book explains the proof as the Lean files carry it out. It does not check it.
+So the honest summary of the status, at the pinned commit, is this. The source claims Lean proofs of five theorems, among them the Riemann hypothesis and the generalized Riemann hypothesis for Dirichlet L-functions, in the forms of Mathlib. The source reports machine checks that, if they hold, show that Lean accepts these proofs with three standard axioms. The repository holds no record of these checks. A third party has published logs of them at the pin (`https://math.mit.edu/~drew/shortgrh/`). No mathematician has read the proof through, by the account of the source. This book explains the proof as the Lean files carry it out. It does not check it.

@@ -51,8 +51,8 @@ The theorems of Mathlib that this chapter uses are these: `zeta_eq_tsum_one_div_
 The checks that the source reports (Section 6) cover the question "does Lean accept these five terms at these five types, with these three axioms?". They do not cover the following.
 
 - Whether the five types express the classical statements. That is the reading of this chapter, and the reader must do it or accept it.
-- Whether the checks were run as the README says. The repository has no logs of the runs and no CI configuration. This book did not rerun them. [The claim and its status](/chapter/claim-and-status/) gives the state of the checks.
-- Whether the sandbox of Comparator worked as its design intends. The source ran it with a stand-in for the sandbox and does not say what the stand-in was.
+- Whether the checks were run as the README says. The repository has no logs of the runs and no CI configuration. A third party has published logs of its own runs of the same checks at the pin (`https://math.mit.edu/~drew/shortgrh/`). This book did not rerun them. [The claim and its status](/chapter/claim-and-status/) gives the state of the checks.
+- Whether the sandbox of Comparator worked as its design intends. The source ran it with a stand-in for the sandbox and does not say what the stand-in was. The third party ran `lake comparator --paranoid` with the sandbox of Comparator itself, and reports "Your solution is okay!".
 - Whether a mathematician can follow the argument. No person has read the proof, and no paper comes with it. The rest of this book explains the argument. Explaining it is not the same as checking it.
 
 Lean accepts the five theorems, if the reported checks hold. This book does not claim more.
@@ -62,7 +62,7 @@ Lean accepts the five theorems, if the reported checks hold. This book does not 
 The entries F-001, F-004 to F-007 and F-010 to F-016 of the [register of findings](/chapter/register-of-findings/) concern the statements and the trust in them. This chapter adds the following points to them, each with the section that gives the argument.
 
 - The proof has passed machine checks only, and no mathematician has read it (Section 6 and the list above).
-- The reported checks with nanoda, con-leche, con-ron and Comparator have no logs in the repository, and Comparator ran with a stand-in sandbox (Section 6).
+- The reported checks with nanoda, con-leche, con-ron and Comparator have no logs in the repository, and Comparator ran with a stand-in sandbox (Section 6). A third party has published logs of these checkers and of Comparator, with its own sandbox, at the pin (`https://math.mit.edu/~drew/shortgrh/`).
 - The empty list `definition_names` is safe, and the only `sorry` is in Challenge.lean (the two remarks above).
 - `riemannHypothesis` has the type of Mathlib, and the zeta statement of the source is equal to it by definition (Section 2).
 - The half-plane form covers every modulus $N \geq 1$ and every character, and it excludes only $\chi = 1$ at $s = 1$ (Section 5).

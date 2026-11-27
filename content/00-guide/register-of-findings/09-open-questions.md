@@ -10,14 +10,14 @@ drafted_by: writer@claude-opus-5-5
 
 The research notes of this book asked 85 questions about the source. Many of them overlap. The plan of the book merged them into the 69 questions below. Each question names the findings that it concerns, so a reader can go from a question to the rows of the earlier sections, and back.
 
-A question is open until a person writes an answer in an issue of the repository, or until a chapter of the book answers it from the source and cites the lines. Three questions are open as issues now: Q-01, Q-02 and Q-04. Together they use the four issues 15 to 18. The answer to a question changes the status of its findings, not the other way round.
+A question is open until a person writes an answer in an issue of the repository, or until a chapter of the book answers it from the source and cites the lines. Two questions are open as issues now: Q-02 and Q-04. Together they use the three issues 15 to 17. Q-01 is answered in [the origin of the proof](/chapter/claim-and-status/#the-origin-of-the-proof), and its issue 18 is closed. The answer to a question changes the status of its findings, not the other way round.
 
 ### The table
 
 | Q | Question | Findings | Status |
 |---|---|---|---|
-| Q-01 | Is the original Lean proof of Alpöge public? What does `remark.pdf` contain? Which steps use other arguments? | F-003 | open, [issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18) |
-| Q-02 | Can we get the logs of `#print axioms`, of the export, of the three checkers and of Comparator? What was the stand-in sandbox? | F-004, F-005 | open, [issue 15](https://github.com/tamnd/grh-lean-handbook/issues/15), [issue 16](https://github.com/tamnd/grh-lean-handbook/issues/16) |
+| Q-01 | Is the original Lean proof of Alpöge public? What does `remark.pdf` contain? Which steps use other arguments? | F-003 | answered in [the origin of the proof](/chapter/claim-and-status/#the-origin-of-the-proof), [issue 18](https://github.com/tamnd/grh-lean-handbook/issues/18) closed |
+| Q-02 | Can we get the logs of `#print axioms`, of the export, of the three checkers and of Comparator? What was the stand-in sandbox? A third party has published its own logs of all of these at the pin (`https://math.mit.edu/~drew/shortgrh/`). The logs of the authors and the stand-in are still open. | F-004, F-005 | open, [issue 15](https://github.com/tamnd/grh-lean-handbook/issues/15), [issue 16](https://github.com/tamnd/grh-lean-handbook/issues/16) |
 | Q-03 | How does Comparator check the definitions when `definition_names` is empty? Confirm with its documents. | F-006 | open |
 | Q-04 | Was the claim that `Lib/Speed` can be emptied checked on v4.35.0? | F-019 | open, [issue 17](https://github.com/tamnd/grh-lean-handbook/issues/17) |
 | Q-05 | Which declarations do the five theorems not use? A dependency closure would answer it. | F-008 | open |
