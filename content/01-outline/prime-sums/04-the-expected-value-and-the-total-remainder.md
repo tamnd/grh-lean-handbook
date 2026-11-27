@@ -81,7 +81,7 @@ Lean: `New.Data.totalRemainder` (New/Reduction/PrimeSums.lean).
 
 The rest of this section states forward results from [the archimedean size](/chapter/archimedean-size/) (Volume 9). They explain why the expected value has this form, and why the sum runs over $\Phi_a$. This chapter does not use them.
 
-In Theorem A, a chain of $m$ theta lifts is asked to be divisible by $p^{\mathrm{gain}_p}$ at each small prime $p < x_1$ that does not split in $K$. The gains add up to the prime sums.
+In Theorem A, a chain of $m$ theta lifts is asked to be divisible by $p^{\mathrm{gain}_p}$ at each small prime $p < x_1$ that does not split in $K$. The gain $\mathrm{gain}_p$ is defined in [short columns and the gain](/chapter/short-columns-gain/#the-gain-and-its-measures) (Volume 9), not in the archimedean size. The gains add up to the prime sums.
 
 **Proposition (Gains and prime sums).** Let $U$ be the set of primes $p < x_1$ with $\chi_K(p) \neq 1$. Then
 
