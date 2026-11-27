@@ -80,7 +80,9 @@ _TT = re.compile(r"\\texttt\{((?:[^{}]|\{\})*)\}")
 
 def _breaks(t: str) -> str:
     t = re.sub(r"(\\_|\.|/)(?=.)", r"\1\\allowbreak{}", t)
-    return re.sub(r"(?<=[a-z0-9])(?=[A-Z])", r"\\allowbreak{}", t)   # CamelCase file names
+    t = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", r"\\allowbreak{}", t)   # CamelCase file names
+    # a long lowercase run (Pseudorepresentations): a costly break after every 8 letters, never inside a TeX command
+    return re.sub(r"(?<![\\a-z])[a-z]{14,}", lambda m: "\\penalty5000{}".join(m[0][i:i + 8] for i in range(0, len(m[0]), 8)), t)
 
 
 _HREF = re.compile(r"(\\href\{(?:[^{}]|\\[{}])*\})\{((?:[^{}\\]|\\[#_&%])*)\}")
