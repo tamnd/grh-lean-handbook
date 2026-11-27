@@ -19,7 +19,7 @@ This chapter and [the seesaw identity, part 2](/chapter/seesaw-identity-2/) prov
 
 [The plan](/chapter/theorem-and-plan/) of Volume 1 reduces the source to the main inequality, and Theorem A gives its upper bound. [Theorem A and its plan](/chapter/theorem-a-plan/) states the seesaw identity:
 
-**Theorem (Seesaw identity).** Let $t$ be a linear form on the values of source forms and let $g$ be an archimedean point of $U(Y_0)$. There is $c \in \mathbb{C}^\times$ such that every tame character $\vartheta$ has a chain datum $\Psi$ with $\iota_\vartheta(\mathcal{P}\varphi) = c \cdot B_{\vartheta,\Psi}\varphi$ for every ramified source form $\varphi$.
+**Theorem (Seesaw identity).** Let $t$ be a linear form on the values of source forms and let $g$ be an archimedean point of $U(Y_0)$. There is $c \in \mathbb{C}^\times$ such that every twist $\vartheta$ (a tame character with a nontrivial tame part, the type `D.Twist`) has a chain datum $\Psi$ with $\iota_\vartheta(\mathcal{P}\varphi) = c \cdot B_{\vartheta,\Psi}\varphi$ for every ramified source form $\varphi$.
 
 Lean: `New.Data.seesaw_identity` (New/UpperBound/Seesaw/SeesawIdentity.lean).
 
