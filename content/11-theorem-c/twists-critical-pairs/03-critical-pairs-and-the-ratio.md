@@ -127,7 +127,7 @@ Lean: `New.Data.CriticalPair.IsRamified` (New/Determinant/Twist/FitTwists.lean)
 
 Lean: `New.Data.RankOneIndex` (New/Determinant/Twist/FitTwists.lean)
 
-The four blocks are the basis of the definite space $E^{2z}$ to which the character of a main pair is lifted. The block sizes come from the construction of the test forms in [false lifts](/chapter/false-lifts/).
+The four blocks are the basis of the definite space $E^{2z}$ to which the character of a main pair is lifted. The block sizes come from the construction of the test form in [Hecke values of character lifts](/chapter/hecke-values/).
 
 **Definition (Main pair).** Let $\omega = (\omega_w)$ be the fixed family of residue characters of the data (`New.Data.chiMLocal`), and let $w_j(v)$ be the weight of the character of the $j$-th lift. A critical pair $p = (\nu, z)$ with weight $-c$ is a main pair for $j$ if
 
