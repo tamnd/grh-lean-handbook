@@ -16,7 +16,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 0 | 1 | Preface | drafted | 3,917 |
 | 0 | 2 | The claim and its status | drafted | 9,449 |
 | 0 | 3 | The statements | drafted | 11,079 |
-| 0 | 4 | How to read this book | drafted | 9,392 |
+| 0 | 4 | How to read this book | drafted | 9,402 |
 | 0 | 5 | Notation and conventions | drafted | 10,046 |
 | 0 | 6 | The table of sizes | drafted | 12,911 |
 | 0 | 7 | Reading the Lean | drafted | 14,522 |
@@ -33,7 +33,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 1 | 9 | Prime sums and the total remainder | drafted | 8,874 |
 | 1 | 10 | Twisted lattices | drafted | 9,751 |
 | 1 | 11 | The lattice of integral target forms | drafted | 8,886 |
-| 1 | 12 | Theorems A, B and C | drafted | 9,793 |
+| 1 | 12 | Theorems A, B and C | drafted | 9,847 |
 | 1 | 13 | The main inequality and the end of the proof | drafted | 10,056 |
 | 2 | 1 | Dirichlet L-functions and zero symmetry | drafted | 9,245 |
 | 2 | 2 | Polar functions and the explicit formula | drafted | 8,378 |
@@ -49,7 +49,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 3 | 5 | CM elliptic curves | drafted | 14,695 |
 | 4 | 1 | Adeles and hermitian spaces | drafted | 12,742 |
 | 4 | 2 | Quotients and reduction theory | drafted | 14,726 |
-| 4 | 3 | Automorphic forms on unitary groups | drafted | 13,860 |
+| 4 | 3 | Automorphic forms on unitary groups | drafted | 13,871 |
 | 4 | 4 | A simple trace formula | drafted | 14,711 |
 | 4 | 5 | Congruence subgroups and Haar moduli | drafted | 14,419 |
 | 5 | 1 | Discrete series through one matrix coefficient | drafted | 14,653 |
@@ -58,7 +58,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 5 | 4 | Integral Weyl modules and branching | drafted | 14,531 |
 | 5 | 5 | Characters of GL_n over a finite field | drafted | 14,383 |
 | 5 | 6 | Iwahori exponents, Satake and the chain lemma | drafted | 14,425 |
-| 6 | 1 | The Weil representation from a vacuum | drafted | 14,692 |
+| 6 | 1 | The Weil representation from a vacuum | drafted | 14,694 |
 | 6 | 2 | Local theta in the Fock model | drafted | 14,620 |
 | 6 | 3 | Theta kernels, theta lifts and the seesaw | drafted | 13,549 |
 | 6 | 4 | Bessel periods and one step of unfolding | drafted | 14,628 |
@@ -75,7 +75,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 8 | 3 | The congruence relation | drafted | 14,017 |
 | 8 | 4 | What attached means | drafted | 14,374 |
 | 8 | 5 | Building the representations | drafted | 12,699 |
-| 9 | 1 | Theorem A and its plan | drafted | 9,043 |
+| 9 | 1 | Theorem A and its plan | drafted | 9,055 |
 | 9 | 2 | The objects of the upper bound | drafted | 14,612 |
 | 9 | 3 | The seesaw identity, part 1: unfolding | drafted | 14,668 |
 | 9 | 4 | The field E at the primes | drafted | 12,475 |
@@ -87,10 +87,10 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 9 | 10 | Marked primes and the valuation of a chain | drafted | 13,685 |
 | 9 | 11 | The seesaw identity, part 2: assembly | drafted | 14,413 |
 | 9 | 12 | The archimedean size of the composite lift | drafted | 12,936 |
-| 9 | 13 | Elementary divisors of a Hecke operator | planned | 0 |
+| 9 | 13 | Elementary divisors of a Hecke operator | drafted | 14,548 |
 | 9 | 14 | Divisibility prime by prime | drafted | 14,197 |
-| 9 | 15 | The proof of Theorem A | planned | 0 |
-| 10 | 1 | Theorem B and its plan | drafted | 9,013 |
+| 9 | 15 | The proof of Theorem A | drafted | 12,211 |
+| 10 | 1 | Theorem B and its plan | drafted | 9,128 |
 | 10 | 2 | Few translates suffice | drafted | 9,650 |
 | 10 | 3 | Equal multiplicities by the trace formula | drafted | 11,885 |
 | 10 | 4 | Bessel functions at a real place | drafted | 14,536 |
@@ -104,16 +104,16 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 12 | The main term | drafted | 14,638 |
 | 10 | 13 | Moments of the Poincaré map | drafted | 12,346 |
 | 10 | 14 | The proof of Theorem B | drafted | 9,855 |
-| 11 | 1 | Theorem C and the height argument | drafted | 8,914 |
-| 11 | 2 | Twists, critical pairs and regular families | drafted | 11,278 |
+| 11 | 1 | Theorem C and the height argument | drafted | 9,162 |
+| 11 | 2 | Twists, critical pairs and regular families | drafted | 11,323 |
 | 11 | 3 | Single theta lifts and their norms | drafted | 12,521 |
 | 11 | 4 | Character lifts and tested forms | drafted | 13,710 |
 | 11 | 5 | The exchange identity, part 1 | drafted | 14,598 |
 | 11 | 6 | The exchange identity, part 2 | drafted | 14,434 |
-| 11 | 7 | Seesaw squares and grid paths | drafted | 14,626 |
+| 11 | 7 | Seesaw squares and grid paths | drafted | 14,628 |
 | 11 | 8 | The chain determinant and its factorization | drafted | 14,576 |
 | 11 | 9 | The comparison operator, part 1 | drafted | 13,665 |
-| 11 | 10 | Grids, columns and turns | drafted | 14,489 |
+| 11 | 10 | Grids, columns and turns | drafted | 14,492 |
 | 11 | 11 | Deep level Poincaré series and spanning forms | drafted | 13,433 |
 | 11 | 12 | False lifts | drafted | 14,625 |
 | 11 | 13 | The divisibility is sharp | drafted | 11,804 |
@@ -121,15 +121,15 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 15 | Hecke values of character lifts | drafted | 12,609 |
 | 11 | 16 | The height of one lift determinant | drafted | 10,947 |
 | 11 | 17 | The proof of Theorem C | drafted | 10,336 |
-| 12 | 1 | Regular families: the plan | drafted | 14,812 |
-| 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,594 |
+| 12 | 1 | Regular families: the plan | drafted | 14,709 |
+| 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,593 |
 | 12 | 3 | Auxiliary primes and first-order deformations | drafted | 14,485 |
 | 12 | 4 | Tied traces and even classes | drafted | 11,921 |
 | 12 | 5 | The main summands of the attached Galois representations | drafted | 14,570 |
 | 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | drafted | 14,549 |
 | 12 | 7 | Exponent lattices and Kummer charts | drafted | 14,635 |
 | 12 | 8 | Cup products on Kisin modules | drafted | 14,552 |
-| 12 | 9 | The local loss at ℓ | planned | 0 |
+| 12 | 9 | The local loss at ℓ | drafted | 14,486 |
 | 12 | 10 | Stickelberger systems and the twisting theorem | drafted | 14,552 |
 | 12 | 11 | From a congruence to a Selmer class | drafted | 14,353 |
-| 12 | 12 | The proof of the existence of regular families | planned | 0 |
+| 12 | 12 | The proof of the existence of regular families | drafted | 13,341 |

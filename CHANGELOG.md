@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v0.3.13
+
+Four new chapters and four fixes. All twelve argument volumes are now complete.
+
+- Volume 9, chapter 13: elementary divisors of a Hecke operator (#186).
+- Volume 9, chapter 15: the proof of Theorem A (#192).
+- Volume 12, chapter 9: the local loss at ℓ (#184).
+- Volume 12, chapter 12: the proof of the existence of regular families (#185).
+- Fixes from the check list (#188, #189, #190), and a break rule for long names in the PDF (#191).
+
 ## v0.3.12
 
 Four new chapters. Volume 11 is now complete.
