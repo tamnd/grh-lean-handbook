@@ -34,7 +34,7 @@ The words are targets. The total is about 545,000 words. Each volume has a plan 
 
 ## How to build
 
-The builder is the Python package `ghb`. It needs Python 3.11 or later, PyYAML, Pillow and fontTools. A PDF needs pandoc 3.12 and tectonic. An EPUB needs pandoc. The builder reads the source as text and does not build Lean.
+The builder is the Python package `ghb`. It needs Python 3.11 or later, PyYAML, Pillow, fontTools and pypdf. A PDF needs pandoc 3.12 and tectonic. An EPUB needs pandoc. The builder reads the source as text and does not build Lean.
 
 ```sh
 git clone https://github.com/lsernau/grh-lean ../grh-lean
@@ -42,12 +42,14 @@ git -C ../grh-lean checkout "$(awk '/^grh /{print $2}' EDITION)"
 pip install .
 python3 -m ghb check --volume all
 python3 -m ghb build --volume 1 --formats pdf,epub --out /tmp/ghb-out
+python3 -m ghb join --in /tmp/ghb-out
 python3 -m ghb ledger --write
 python3 -m ghb survey
 ```
 
 - `check` tests the names, the paths, the links, the front matter and the style of each section. It fails on a problem and reports a warning for a link to a chapter that is not written yet.
 - `build` makes the PDF and the EPUB of each volume. `--volume` takes a number, a list such as `1,9`, `all`, or `front` for the front pages alone.
+- `join --in DIR` joins the volume PDFs of the edition in `DIR`, the front pages then volumes 0 to 12, into `DIR/grh-lean-handbook-<version>.pdf`. Each volume keeps its outline under a bookmark with its title, its links, and its page labels with the prefix `N:`.
 - `ledger --write` writes `ledger/files.yaml`, `ledger/decls.yaml` and `ledger/coverage.md`. `ledger --diff A B` lists what changed in the source between two commits.
 - `survey` gives the words and the source files of each volume.
 
