@@ -8,7 +8,9 @@ lean:
   - New/UpperBound/Seesaw/SeesawIdentity.lean
   - New/UpperBound/Size/ArchimedeanSize.lean
   - New/Reduction/ShortAndEnough.lean
+  - New/Reduction/Data/LevelAndTwists.lean
 decls:
+  - New.Data.Twist
   - New.Data.IsChainDatum
   - New.Data.compositeLift
   - New.Data.localPrimeSum
@@ -34,6 +36,10 @@ The form $\Theta_1(\mathcal{P}\varphi)$ has no direct formula, as $\mathcal{P}\v
 ### The composite lift
 
 The composite lift goes along the *upper chain* of hermitian spaces $X_0, \dots, X_m$ over $E$, where $X_0$ carries the source forms and $m = 2\varrho + 2$. Each step is a theta lift, the kernels are taken in pairs, and the data of the chain is one tensor of Schwartz functions. At the end, the forms on $X_m$ are restricted to the subspace $Y_m$, the last space of the *lower chain* $Y_0, \dots, Y_m$ on which the target forms live.
+
+The lifts are twisted by characters. A *tame character* is a character $\vartheta$ of $U(1)(\mathbb{A})$ of weight $0$ whose tame part is trivial outside a finite set $Q(\vartheta)$ of finite places of $E$, of norms prime to $MN$ and disjoint from its complex conjugate. A *twist* is a tame character whose tame part is nontrivial at every place of $Q(\vartheta)$. The trivial twist $1$ has $Q = \emptyset$. In this section and the next, "every twist" means every element of the type of twists. The composite lift and the lower chain of a twist are taken for its underlying tame character.
+
+Lean: `New.Data.Twist` (New/Reduction/Data/LevelAndTwists.lean).
 
 The data of the upper chain come from a finitely supported function $\Psi$ on the set of *translations*: tuples of finite adelic matrices, one for each lift. The *glued tensor* of $\Psi$ is the sum over $x$ of $\Psi(x)$ times the vacuum data translated by $x$. For a twist $\vartheta$, the *composite lift* $B_\vartheta\varphi$ of a source form $\varphi$ is the chain of $m$ lifts from $X_0$ to $X_m$, with the twisting character of $\vartheta$ and the glued tensor of $\Psi$ as data, followed by the restriction to $Y_m$. When $\Psi$ matters, this text writes $B_{\vartheta, \Psi}$.
 
@@ -109,7 +115,7 @@ Lean: `New.Data.allowedLoss` (New/UpperBound/Size/Estimates.lean).
 
 Property 3 for this witness is a bound for a harmonic sum. The loss at $N$ comes from the lift at the level, where the source uses the operator $U_p^{m/2}$ ([divisibility prime by prime](/chapter/divisibility/)).
 
-**Remark (Formalization).** Theorem A uses the function $\mathrm{err} = $ `New.Data.divisibilityError`, chosen from this theorem by `choose`. As Section 1 notes, nothing about $\mathrm{err}$ is used except the four properties. The witness $\mathrm{allowedLoss}$ is visible only inside the proof of the theorem.
+**Remark (Formalization).** Theorem A uses the function $\mathrm{err} = $ `New.Data.divisibilityError`, chosen from this theorem by `choose`. As Section 1 notes, nothing about $\mathrm{err}$ is used except the four properties. The lemma `New.Data.exists_colengthDvd_gaugeLe_divisibilityError` of New/Reduction/ShortAndEnough.lean restates property 4 for this choice, and it drops the conjunct $S \subseteq L$. The proof of part (b) in Section 4 uses only the colength and the gauge bound. The witness $\mathrm{allowedLoss}$ is visible only inside the proof of the theorem.
 
 ### Input 2: the seesaw identity
 

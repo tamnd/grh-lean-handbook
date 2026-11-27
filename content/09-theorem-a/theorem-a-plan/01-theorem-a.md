@@ -3,18 +3,20 @@ title: Theorem A
 lean:
   - New/Reduction/ShortAndEnough.lean
   - New/UpperBound/Size/ShortColumns.lean
+  - New/Reduction/Lattices/Heights.lean
 decls:
   - New.Data.integralRamified
   - New.Data.normalizedPoincare
   - New.Data.span_short_integralRamified_eq_top
   - New.Data.indexLe_normalizedPoincare
   - New.Data.divisibilityError
+  - New.PrimePadicIso
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
 ## Theorem A
 
-This volume proves Theorem A, the upper bound of the argument. Theorem A says two things about one linear map from a space of source forms to a space of target forms. Part (a) says that the source is spanned by integral forms whose images are short at every archimedean conjugate. Part (b) says that the images of integral forms have small index in the target lattice. This chapter states Theorem A exactly, with all its sizes. It states the three inputs of the proof: the divisibility of a chain of theta lifts prime by prime, the seesaw identity, and the archimedean size of the chain. It shows how the three inputs meet, and it proves Theorem A from them. The last sections give a map of the fourteen later chapters of the volume, the prerequisites from the earlier volumes, exercises, and notes.
+This volume proves Theorem A, the upper bound of the argument. Theorem A says two things about a family of linear maps $s\mathfrak{p}$, one for each $s$ in a finite group $\bar G$, from a space of source forms to a space of target forms. Each map $s\mathfrak{p}$ is the translate by $s$ of the map $1\mathfrak{p}$. Part (a) says that the source is spanned by integral forms whose images are short at every archimedean conjugate. Part (b) says that the images of integral forms have small index in the target lattice. This chapter states Theorem A exactly, with all its sizes. It states the three inputs of the proof: the divisibility of a chain of theta lifts prime by prime, the seesaw identity, and the archimedean size of the chain. It shows how the three inputs meet, and it proves Theorem A from them. The last sections give a map of the fourteen later chapters of the volume, the prerequisites from the earlier volumes, exercises, and notes.
 
 ### Where Theorem A sits
 
@@ -33,7 +35,9 @@ Theorem A speaks about the following objects. [The objects of the upper bound](/
 3. The *target* $T$ is a space of good forms on the unitary group of a hermitian space $Y_0$. The finite group $\bar G$, a product of groups $\mathrm{GL}_r(\mathbb{F}_w)$, acts on the forms on $Y_0$, and $e_0$ is a central idempotent of $\mathbb{C}[\bar G]$ that cuts out the good part.
 4. The *Poincaré map* $\mathcal{P}$ sends a source form to the form on $Y_0$ that represents its Bessel period in the Petersson inner product.
 5. For each $m$-fold twist $\vartheta$ there is an injective linear map $\Theta_\vartheta$ from $T$ to forms on the unitary group of a space $Y_m$: the chain of $m$ theta lifts for the twist $\vartheta$, from $Y_0$ to $Y_m$. The trivial twist is $1$, and $\Theta_1$ is its chain. For an automorphism $\sigma$ of $\mathbb{C}$, $\|\Theta_1 y\|_\sigma^2$ is the squared norm of the $\sigma$-conjugate of $\Theta_1 y$ ([twisted lattices](/chapter/twisted-lattices/)).
-6. The letter $\iota$ runs over the pairs of a prime $\ell$ and an $\ell$-adic place of $\mathbb{C}$, that is, a field isomorphism $\mathbb{C} \cong \mathbb{C}_\ell$.
+6. The letter $\iota$ runs over the pairs of a prime $\ell$ and a ring isomorphism $\mathbb{C} \cong \overline{\mathbb{Q}}_\ell$ onto an algebraic closure of $\mathbb{Q}_\ell$. The place of $\iota$ is the embedding $\mathbb{C} \to \mathbb{C}_\ell$ that it induces.
+
+Lean: `New.PrimePadicIso` (New/Reduction/Lattices/Heights.lean).
 
 **Definition (Integral ramified forms).** A ramified source form $\varphi$ is *integral* if for every $\iota$ its values are integral at $\iota$ for the Weyl lattice at every finite adelic point. The set of these forms is $\mathrm{src}_{\mathrm{int}}$.
 
