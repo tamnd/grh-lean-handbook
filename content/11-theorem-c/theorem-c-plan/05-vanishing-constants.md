@@ -38,7 +38,7 @@ Lean: `New.Exchange.one_square_identity_of_isEdgeFamily` (New/Determinant/Exchan
 
 The square law with constant $\kappa/c$ says that $\sum_y \Psi(y)L'(y) = (\kappa/c)\sum_x \Phi(x)L(x)$ for all matched functions $\Phi$, $\Psi$ modulo $\mathfrak{m}_i$, where $L$ and $L'$ are the values of the two composites.
 
-**Remark (Formalization).** Nothing in the statement says $\kappa \neq 0$. If $\kappa = 0$, the law says that the sums of the second composite vanish, and it gives no comparison of the two composites. The constant $C$ has no sign condition in the statement. For $i$ in the index set, $c \neq 0$ forces $C\cdot L_{\mathfrak{m}_i}(\nu_i, t) > 0$. If the index set is empty, $C$ and $\kappa$ are arbitrary. The source uses the identity only to show that the squares of a triangle commute up to some scalar. The nonvanishing of that scalar comes back from injectivity, as below.
+**Remark (Formalization).** Nothing in the statement says $\kappa \neq 0$. If $\kappa = 0$, the law says that the sums of the second composite vanish, and it gives no comparison of the two composites. The constant $C$ has no sign condition in the statement. For $i$ in the index set, $c \neq 0$ forces $C\cdot L_{\mathfrak{m}_i}(\nu_i, t) > 0$. If the index set is empty, $C$ and $\kappa$ are arbitrary. The source uses the identity in two places. It shows that the squares of a triangle commute up to some scalar, and it gives the square law for a square of the grid ([line 769](lean:New/Determinant/AuxiliaryForms/Turns.lean#L769), in [grids, columns and turns](/chapter/grids-paths-turns/)). For the triangle, the nonvanishing of the scalar comes back from injectivity, as below.
 
 The same pattern appears in the exchange identity.
 

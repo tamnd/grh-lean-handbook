@@ -93,8 +93,8 @@ The error $3 f a\log^4 b$ per dimension has three parts, one for each term above
 |---|---|---|
 | Denominators | $m$ single lifts, each with budget $f a\log^4 b/m$ | $f a\log^4 b$ |
 | Quotient ratios | the scalar of the chain factorization | $b$ |
-| Completion | $n' \leq 4d/b^2$ auxiliary forms of length $e^{x_1^2b^2}$ | $b$ |
+| Completion | $n' \leq 4d/b^2$ auxiliary forms, each with two costs: squared length $b_{\mathrm{short}} = 2x_1^2b^2$ in logarithm, and denominators $b_{\mathrm{denom}} = b$ | $b$ |
 
-The completion is cheap although an auxiliary form is very long: there are few of them. The factor $b^2$ in their squared length cancels the factor $4/b^2$ in their number, and the constant $4(2x_1^2 + b^{-1})$ is at most $b$ by the sizes.
+The completion is cheap although an auxiliary form is very long: there are few of them. The completion costs $n'(b_{\mathrm{short}} + b_{\mathrm{denom}}) = n'(2x_1^2b^2 + b)$. The factor $b^2$ in their squared length cancels the factor $4/b^2$ in their number, and the constant $4(2x_1^2 + b^{-1})$ is at most $b$ by the sizes.
 
 **Remark (Formalization).** The family $\theta$ is a function on all pairs $\iota$, and $\theta$ is produced by `choose` in the proof of the existence of regular families (Section 4). So the twist at a prime is not given by a formula. The theorem does not need one. The height of a family uses one multiplier for all $\iota$, so the bounds at the different primes are added in one sum, whatever the twists are.
