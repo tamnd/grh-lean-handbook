@@ -104,7 +104,7 @@ The second equality is additivity of the integral of a nonnegative function over
 
 Lean: `New.Filling.inv_ideleM_mem_integralOff` (New/Spanning/Unfolding/Moments.lean).
 
-*Proof.* Let $r$ be the idele that is $1$ off $T$ and $0$ on $T$. Then $M^{-1}r$ is integral if $r$ vanishes modulo each chosen place and each conjugate ([Lemma](/decl/New.Filling.inv_ideleM_smul_mem_iff/)), which holds. $\square$
+*Proof.* Let $r$ be the idele that is $1$ off $T$ and $0$ on $T$. Then $M^{-1}r$ is integral if $r$ vanishes modulo each chosen place and each conjugate (`New.Filling.inv_ideleM_smul_mem_iff`), which holds. $\square$
 
 The lemma uses neither admissibility nor Weil data.
 

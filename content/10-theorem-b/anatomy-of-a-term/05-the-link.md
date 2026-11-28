@@ -32,7 +32,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The link
 
-The frame products see only the part of $\gamma$ on the frame. The link sees the part of $\gamma$ on the middle space. Let $A$ be the span of $e_0, \dots, e_{\varrho-1}$. It is totally isotropic, and $A^\perp/A$ is the middle space $X_0 \perp Ez$. A vector $t$ orthogonal to $A$ and to $\gamma A$ has a class $[t]$ in $A^\perp/A$, and so does $\gamma^{-1}t$. The link of $\gamma$ is the space of the pairs $([t], [\gamma^{-1}t])$. On the big cell it is the graph of the middle part of $\gamma$. In general it is the graph of an isometry $\Upsilon_\gamma$ of a positive definite space. [The chapter on Bessel functions at a real place](/chapter/bessel-real-place/) defines the link ([Definition](/decl/New.link/)) and uses it at the real places. This section proves its algebraic properties over $E$.
+The frame products see only the part of $\gamma$ on the frame. The link sees the part of $\gamma$ on the middle space. Let $A$ be the span of $e_0, \dots, e_{\varrho-1}$. It is totally isotropic, and $A^\perp/A$ is the middle space $X_0 \perp Ez$. A vector $t$ orthogonal to $A$ and to $\gamma A$ has a class $[t]$ in $A^\perp/A$, and so does $\gamma^{-1}t$. The link of $\gamma$ is the space of the pairs $([t], [\gamma^{-1}t])$. On the big cell it is the graph of the middle part of $\gamma$. In general it is the graph of an isometry $\Upsilon_\gamma$ of a positive definite space. [The chapter on Bessel functions at a real place](/chapter/bessel-real-place/) defines the link (`New.link`) and uses it at the real places. This section proves its algebraic properties over $E$.
 
 ### The link in coordinates
 

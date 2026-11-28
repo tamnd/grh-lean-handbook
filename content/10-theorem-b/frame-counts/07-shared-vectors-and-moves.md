@@ -68,6 +68,8 @@ Lean: `New.Filling.norm_coeff_le_norm_sum_frameVector` (New/Spanning/RemainingTe
 
 **Definition.** The *shared vectors* (`S.sharedVectors j γ`) are the coordinates along $e_0, \dots, e_{\varrho-1}$ of the columns $k \geq j$ of $\gamma f\cdot\operatorname{adj}Y$. The columns $k < j$ are set to $0$.
 
+Lean: `New.Filling.sharedVectors` (New/Spanning/RemainingTerms/FrameCount.lean).
+
 For $\gamma$ of cell rank $j$ and $k \geq j$, the column $k$ of $\gamma f\cdot\operatorname{adj}Y$ lies in the span of $f$ (`HasCellRank.exists_frameImage_one_mulVec_eq`). So it lies in the spans of both $f$ and $\gamma f$.
 
 **Lemma.** Let $\gamma$ have cell rank $j$ and $u \in \mathsf U^0$. Then $u\gamma$ and $\gamma$ have the same products and the same shared vectors.
@@ -112,7 +114,7 @@ The map `conjColumnsAtInfinity` sends a matrix $q$ over $E$ with columns in $X_0
 
 **Lemma.** (1) The hermitian products of two tuples of vectors of $\Lambda \cap X_0$ are algebraic integers. (2) The lattice of columns spans the product over $\mathbb R$. (3) For an algebraic integer $x$, $\sum_v\operatorname{Re}\Phi_v(x)$ is an integer.
 
-Lean: `New.Filling.isIntegral_conjTranspose_mul`, `New.Filling.span_columnLattice`, `New.Filling.exists_int_eq_sum_re` (New/Spanning/RemainingTerms/ColumnLattice.lean).
+Lean: `New.Filling.columnLattice`, `New.Filling.isIntegral_conjTranspose_mul`, `New.Filling.span_columnLattice`, `New.Filling.exists_int_eq_sum_re` (New/Spanning/RemainingTerms/ColumnLattice.lean).
 
 *Proof.* (1) The form is unimodular on the lattice of $c$. (2) Every tuple has a nonzero integer multiple in $\Lambda \cap X_0$, by a common denominator. So the span contains the dense image of all tuples, and a subspace is closed. (3) $E$ contains $i$ with $i^2 = -1$ and $\bar i = -i$, by the root of unity of order $5040$. Let $p$ be the trace of $x$ and $q$ that of $ix$. The sum $s = \sum_v\Phi_v(x)$ over the embeddings with $\Phi_v(i) = \sqrt{-1}$ is an algebraic integer with $s = (p - q\sqrt{-1})/2$. So $|s|^2 = (p^2 + q^2)/4$ is an algebraic integer in $\mathbb Q$, hence in $\mathbb Z$. Then $p^2 + q^2 \equiv 0 \pmod 4$, so $p$ is even and the sum $p/2$ is an integer. $\square$
 

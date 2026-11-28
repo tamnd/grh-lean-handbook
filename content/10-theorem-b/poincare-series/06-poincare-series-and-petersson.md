@@ -32,9 +32,9 @@ This section builds the Poincaré map $\mathcal{P}$ of [Theorem B and its plan](
 
 ### The fit
 
-The series live on a hermitian space $V$ with its own group $G = \mathrm{U}(V)$, its discrete group $\Gamma$ of rational points and its adelic group $G(\mathbb{A}) = G_\infty \times G_f$. The space $V$ *fits* $S$ if the Bessel system of $S$ at each infinite place has the type of $V$, the grading of $V$ is standard, the type kernel is idempotent, and the finite part of the point of $V$ is a finite idele times the image of a central $\eta$ times the lattice basis of $S$ times an integral matrix that reduces to $1$ at the chosen places ([Definition](/decl/New.Filling.Fits/)).
+The series live on a hermitian space $V$ with its own group $G = \mathrm{U}(V)$, its discrete group $\Gamma$ of rational points and its adelic group $G(\mathbb{A}) = G_\infty \times G_f$. The space $V$ *fits* $S$ if the Bessel system of $S$ at each infinite place has the type of $V$, the grading of $V$ is standard, the type kernel is idempotent, and the finite part of the point of $V$ is a finite idele times the image of a central $\eta$ times the lattice basis of $S$ times an integral matrix that reduces to $1$ at the chosen places (`New.Filling.Fits`).
 
-A fit gives three maps: an isomorphism $\gamma \mapsto \gamma$ of the rational points of $S$ onto $\Gamma$, a homeomorphism $y(\cdot)$ of $G_\infty$ onto $\prod_v G_1$ that turns left translation by $g$ into left translation by the infinite part of $g$ ([Definition](/decl/New.Filling.Fits.realHomeomorph/)), and an isomorphism $\psi$ of the finite adelic group of $V$ onto that of $S$ ([Definition](/decl/New.Filling.Fits.finiteEquiv/)).
+A fit gives three maps: an isomorphism $\gamma \mapsto \gamma$ of the rational points of $S$ onto $\Gamma$, a homeomorphism $y(\cdot)$ of $G_\infty$ onto $\prod_v G_1$ that turns left translation by $g$ into left translation by the infinite part of $g$ (`New.Filling.Fits.realHomeomorph`), and an isomorphism $\psi$ of the finite adelic group of $V$ onto that of $S$ (`New.Filling.Fits.finiteEquiv`).
 
 **Lemma (The finite isomorphism).** $\psi$ is conjugation by an integral matrix that reduces to $1$ at the chosen places. So $\psi(k)$ lies in $K$ with reduction $s$ if and only if $k$ is integral with reduction $s$. The map $y(\cdot)$ preserves the Haar measures.
 
@@ -48,7 +48,7 @@ For $a = (c, i)$, with $c$ a class and $i$ a Bessel coordinate, the *cut Bessel 
 
 $$\phi_a(g) = \begin{cases}\beta_c(y(g_\infty))\,W_i(y(g_\infty)) & \text{if } \psi^{-1}(h_c^{-1}\iota(\eta))\,g_f \in J,\\ 0 & \text{otherwise,}\end{cases}$$
 
-where $J$ is the principal level at the chosen places in the orthonormal bases of $V$ ([Definition](/decl/New.Filling.Fits.cutBessel/), [Definition](/decl/New.Filling.stdPrincipalLevel/)). The *Poincaré series* of $\varphi \in \mathbb{C}^{\mathrm{Classes}\times I}$ is $\mathcal{P}\varphi(g) = \sum_a\varphi_a\sum_{\gamma \in \Gamma}\phi_a(\gamma g)$ (the definition `New.Filling.Fits.poincareSeries` in [PoincareSeries.lean](lean:New/Spanning/Unfolding/PoincareSeries.lean#L307)).
+where $J$ is the principal level at the chosen places in the orthonormal bases of $V$ (`New.Filling.Fits.cutBessel`, `New.Filling.stdPrincipalLevel`). The *Poincaré series* of $\varphi \in \mathbb{C}^{\mathrm{Classes}\times I}$ is $\mathcal{P}\varphi(g) = \sum_a\varphi_a\sum_{\gamma \in \Gamma}\phi_a(\gamma g)$ (the definition `New.Filling.Fits.poincareSeries` in [PoincareSeries.lean](lean:New/Spanning/Unfolding/PoincareSeries.lean#L307)).
 
 **Lemma (Translates of a cut function).** For rational $\gamma$, $\phi_a(\gamma g) = \beta_c(y)W_i(y)$ with $y = \gamma_\infty y(g_\infty)$ if $h_c^{-1}\gamma_f\iota(\eta)\psi(g_f) \in K(M)$, and $0$ otherwise. So $\|\phi_a(\gamma g)\| \leq \beta_c(y)\prod_v\|W_v(y_v)\|$. The sum of $\phi_a(ug)$ over $u \in \mathsf{U}_c(M)$ is $W_i(y(g_\infty))$ or $0$, by the same condition.
 
@@ -80,7 +80,7 @@ Lean: `New.Filling.Fits.integral_typeKernel_mul_besselFn`, `New.Filling.Fits.rea
 
 ### Folding and the Petersson formula
 
-For a class $c$, the *class point* is $x_c = \psi^{-1}(\iota(\eta)^{-1}h_c)$ ([Definition](/decl/New.Filling.Fits.classPoint/)).
+For a class $c$, the *class point* is $x_c = \psi^{-1}(\iota(\eta)^{-1}h_c)$ (`New.Filling.Fits.classPoint`).
 
 **Theorem (Folding).** Let $z$ be a form of level $J$. Then
 

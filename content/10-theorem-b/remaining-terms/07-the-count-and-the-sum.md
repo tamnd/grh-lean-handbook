@@ -47,7 +47,7 @@ Lean: `New.Filling.exists_isLabelledPair_of_isNearPairOverAgreeingBlock` (New/Sp
 
 *Proof.* Take for $t$ the image of $s$ in the quotient that defines the labels. Both terms lie over $(c, s, c')$, so both have this label. The common lattice is by definition $\Lambda_{\operatorname{commonLink}} \cap L_\gamma \cap L_{\gamma'}$, and $L_\gamma \subset \Lambda_c \cap X_0$. The rank is [Lemma (The common lattice)](/chapter/remaining-terms/#the-gain). $\square$
 
-The near pairs of corank $l$ and discriminant at most $H$ over $c, c'$ form the set $P_l(c, c')$ ([Definition](/decl/New.Filling.boundedDiscNearPairs/)).
+The near pairs of corank $l$ and discriminant at most $H$ over $c, c'$ form the set $P_l(c, c')$ (`New.Filling.boundedDiscNearPairs`).
 
 **Lemma (Pairs over one class).** Let $l \leq n^3$ and $r + l = k$. For every class $c$,
 
@@ -57,7 +57,7 @@ where $L$ runs over the lattices $L \subset \Lambda_c \cap X_0$ of rank $r$ with
 
 Lean: `New.Filling.sum_pairDiscriminant_inv_le_tsum` (New/Spanning/RemainingTerms/Count.lean).
 
-*Proof.* Apply the lemma on fibres. Let $I$ be the set of triples $(c', \gamma, \gamma')$ with $(\gamma, \gamma') \in P_l(c, c')$, and let $Y$ be the set of pairs $(t, L)$ of a label and a lattice as above, with the weight $(\operatorname{disc}_rL)^{-k}$. Relate $(c', \gamma, \gamma')$ to $(t, L)$ if both $(c', \gamma)$ and $(c', \gamma')$ lie in the set $B(t, L)$ of near terms of label $t$ with $L \subset L_\gamma$. By the previous lemma each triple is related to $(t, L_{12})$, and the rank of $L_{12}$ is $k - l = r$, so the weights agree. The map $(c', \gamma, \gamma') \mapsto ((c', \gamma), (c', \gamma'))$ is injective, so the fibre over $(t, L)$ has at most $\#B(t, L)^2$ elements. [The chapter on frame counts](/chapter/frame-counts/) proves $\#B(t, L) \leq b^{2000n^6(l+1)f}$ ([Theorem](/decl/New.Filling.encard_setOf_isNearTermAt_and_le_termLattice_le/)). For $l \leq n^3$ we have $2\cdot2000n^6(l+1) \leq 4000n^6(n^3 + 1) \leq 10^5n^9$ ([Lemma](/decl/New.Filling.two_mul_count_exponent_le/)), so the square is at most $\tau$ by [Lemma](/decl/New.Filling.pow_le_tailScale/). The sum over $Y$ is $\#\bar R_0$ times the sum over $L$. $\square$
+*Proof.* Apply the lemma on fibres. Let $I$ be the set of triples $(c', \gamma, \gamma')$ with $(\gamma, \gamma') \in P_l(c, c')$, and let $Y$ be the set of pairs $(t, L)$ of a label and a lattice as above, with the weight $(\operatorname{disc}_rL)^{-k}$. Relate $(c', \gamma, \gamma')$ to $(t, L)$ if both $(c', \gamma)$ and $(c', \gamma')$ lie in the set $B(t, L)$ of near terms of label $t$ with $L \subset L_\gamma$. By the previous lemma each triple is related to $(t, L_{12})$, and the rank of $L_{12}$ is $k - l = r$, so the weights agree. The map $(c', \gamma, \gamma') \mapsto ((c', \gamma), (c', \gamma'))$ is injective, so the fibre over $(t, L)$ has at most $\#B(t, L)^2$ elements. [The chapter on frame counts](/chapter/frame-counts/) proves $\#B(t, L) \leq b^{2000n^6(l+1)f}$ ([Theorem](/decl/New.Filling.encard_setOf_isNearTermAt_and_le_termLattice_le/)). For $l \leq n^3$ we have $2\cdot2000n^6(l+1) \leq 4000n^6(n^3 + 1) \leq 10^5n^9$ (`New.Filling.two_mul_count_exponent_le`), so the square is at most $\tau$ by [Lemma](/decl/New.Filling.pow_le_tailScale/). The sum over $Y$ is $\#\bar R_0$ times the sum over $L$. $\square$
 
 **Theorem (Count).** Let $l \leq n^3$. Then
 
@@ -83,7 +83,7 @@ $$\operatorname{termSize}(c, c', \gamma)\operatorname{termSize}(c, c', \gamma') 
 
 Lean: `New.Filling.IsNearPairOverAgreeingBlock.ofReal_termSize_mul_le` (New/Spanning/RemainingTerms/Sum.lean).
 
-*Proof.* Both gauges are positive ([Lemma](/decl/New.Filling.levelGauge_pos/)). By the definition, $\operatorname{termSize}^2 \leq \tau^4D/(n_p\mathsf{g}^{*k})$ for each term ([Lemma](/decl/New.Filling.termSize_sq_le/)). Multiply the two bounds and take the square root:
+*Proof.* Both gauges are positive (`New.Filling.levelGauge_pos`). By the definition, $\operatorname{termSize}^2 \leq \tau^4D/(n_p\mathsf{g}^{*k})$ for each term (`New.Filling.termSize_sq_le`). Multiply the two bounds and take the square root:
 
 $$\operatorname{termSize}\cdot\operatorname{termSize}' \leq \frac{\tau^4D}{n_p(\mathsf{g}^*\mathsf{g}^{*\prime})^{k/2}} \leq \frac{\tau^4D}{n_p(d_{12}\eta)^k}.$$
 
@@ -95,13 +95,13 @@ $$\sum_{c, c'}\ \sum_{(\gamma, \gamma') \in P(c, c')} \operatorname{termSize}(c,
 
 Lean: `New.Filling.sum_termSize_mul_le` (New/Spanning/RemainingTerms/Sum.lean).
 
-*Proof.* Sort the pairs by the corank $l$, which is at most $n^3$ by the lemma on near pairs. A pair of corank $l$ lies in $P_l(c, c')$, and its product of sizes is at most $B\,d_{12}^{-k}/(\tau^{l+2}n_p)$. Extend the sum from $P(c, c')$ to all of $P_l(c, c')$; the terms are nonnegative. By the Count theorem, the pairs of corank $l$ contribute at most $B\tau^{l+2}n_p/(\tau^{l+2}n_p) = B$. There are $n^3 + 1$ values of $l$, and $n^3 + 1 \leq 2b^3 \leq b^4 \leq \tau$ ([Lemma](/decl/New.Filling.cube_add_one_le_tailScale/)). $\square$
+*Proof.* Sort the pairs by the corank $l$, which is at most $n^3$ by the lemma on near pairs. A pair of corank $l$ lies in $P_l(c, c')$, and its product of sizes is at most $B\,d_{12}^{-k}/(\tau^{l+2}n_p)$. Extend the sum from $P(c, c')$ to all of $P_l(c, c')$; the terms are nonnegative. By the Count theorem, the pairs of corank $l$ contribute at most $B\tau^{l+2}n_p/(\tau^{l+2}n_p) = B$. There are $n^3 + 1$ values of $l$, and $n^3 + 1 \leq 2b^3 \leq b^4 \leq \tau$ (`New.Filling.cube_add_one_le_tailScale`). $\square$
 
 The factor $\tau^{l+6}$ in the hypothesis pays for all the losses: $\tau^4$ from the two sizes, $\tau^{l+2}$ from the count, and $\tau$ from the number of coranks is paid by the conclusion.
 
 ### Pairs with different links
 
-Two terms lie in the same link class if $\mathsf{g}(\gamma) \neq 0$, $\mathsf{g}(\gamma') \neq 0$ and $\operatorname{link}\gamma = \operatorname{link}\gamma'$ ([Definition](/decl/New.Filling.InSameLinkClass/)). All other pairs are small. The gain for them is $(M/2)^{c^+f}$ when $c^+ \geq 1$; it must pay for $\mathcal{D}_{\mathrm{main}}$, which is larger than $\mathcal{D}_{\mathrm{id}}$. Since $\mathcal{D}_{\mathrm{main}} \geq \tau^{44}\mathcal{D}_{\mathrm{id}}$, every $\mathcal{D}_j$ is at most $\mathcal{D}_{\mathrm{main}}$ ([Lemma](/decl/New.Filling.cellRankSecondMoment_le_mainSecondMoment/)).
+Two terms lie in the same link class if $\mathsf{g}(\gamma) \neq 0$, $\mathsf{g}(\gamma') \neq 0$ and $\operatorname{link}\gamma = \operatorname{link}\gamma'$ (`New.Filling.InSameLinkClass`). All other pairs are small. The gain for them is $(M/2)^{c^+f}$ when $c^+ \geq 1$; it must pay for $\mathcal{D}_{\mathrm{main}}$, which is larger than $\mathcal{D}_{\mathrm{id}}$. Since $\mathcal{D}_{\mathrm{main}} \geq \tau^{44}\mathcal{D}_{\mathrm{id}}$, every $\mathcal{D}_j$ is at most $\mathcal{D}_{\mathrm{main}}$ (`New.Filling.cellRankSecondMoment_le_mainSecondMoment`).
 
 **Lemma (One unit of gain pays).** Let $i \geq 1$ and $l \leq i + 1$. Then
 
@@ -137,11 +137,11 @@ $$\sum_{c, c'}\ \sum_{(\gamma, \gamma') \in C(c, c')} \operatorname{termSize}(c,
 
 Lean: `New.Filling.sum_termSize_mul_inSameLinkClass_le` (New/Spanning/RemainingTerms/Sum.lean).
 
-*Proof.* Apply the theorem on the sum of sizes with $B = \tau^7\mathcal{D}_{\mathrm{main}}/z^k$. Then $\tau B = \tau^8\mathcal{D}_{\mathrm{main}}/z^k = (b^{2f}/z)^k\mathcal{D}_{\mathrm{main}}$, since $\tau^8 = b^{2kf}$. Let $(\gamma, \gamma') \in C(c, c')$. The pair lies over a block $(c, s, c')$ with $s$ agreeing. A term determines the reduction of its block ([Lemma](/decl/New.Filling.eq_of_mem_termsOver/)), so this $s$ is the one with $z \leq \operatorname{meetNorm}(s)$. The links are equal, so $c^+ = 0$, and $\mathsf{g}(\gamma) \neq 0$, so $\gamma$ lies in the top cell $j = \varrho + 1$. So the Gain theorem with $x = z$ gives $x^\flat = z$ and $(d_{12}z)^2 \leq \mathsf{g}^*\mathsf{g}^{*\prime}$. Take $\eta = z$ and $D = \mathcal{D}_{\mathrm{main}}$. By Lemma (Coranks), $k \leq \dim\operatorname{commonLink} + 0 + 1$, so $l \leq 1$ and $\tau^{l+6}D/z^k \leq \tau^7\mathcal{D}_{\mathrm{main}}/z^k = B$. $\square$
+*Proof.* Apply the theorem on the sum of sizes with $B = \tau^7\mathcal{D}_{\mathrm{main}}/z^k$. Then $\tau B = \tau^8\mathcal{D}_{\mathrm{main}}/z^k = (b^{2f}/z)^k\mathcal{D}_{\mathrm{main}}$, since $\tau^8 = b^{2kf}$. Let $(\gamma, \gamma') \in C(c, c')$. The pair lies over a block $(c, s, c')$ with $s$ agreeing. A term determines the reduction of its block (`New.Filling.eq_of_mem_termsOver`), so this $s$ is the one with $z \leq \operatorname{meetNorm}(s)$. The links are equal, so $c^+ = 0$, and $\mathsf{g}(\gamma) \neq 0$, so $\gamma$ lies in the top cell $j = \varrho + 1$. So the Gain theorem with $x = z$ gives $x^\flat = z$ and $(d_{12}z)^2 \leq \mathsf{g}^*\mathsf{g}^{*\prime}$. Take $\eta = z$ and $D = \mathcal{D}_{\mathrm{main}}$. By Lemma (Coranks), $k \leq \dim\operatorname{commonLink} + 0 + 1$, so $l \leq 1$ and $\tau^{l+6}D/z^k \leq \tau^7\mathcal{D}_{\mathrm{main}}/z^k = B$. $\square$
 
 ### Proof of the two theorems
 
-A block is split into pieces: one piece for each link $\Lambda$, which contains the terms with $\mathsf{g} \neq 0$ and link $\Lambda$, and one more piece for the terms with $\mathsf{g} = 0$ ([Definition](/decl/New.Filling.piece/)). The piece of a term is invariant under the rational unipotent elements on both sides, so the part of a stable set in one piece is stable ([Lemma](/decl/New.Filling.IsStable.inter_piece/)).
+A block is split into pieces: one piece for each link $\Lambda$, which contains the terms with $\mathsf{g} \neq 0$ and link $\Lambda$, and one more piece for the terms with $\mathsf{g} = 0$ (`New.Filling.piece`). The piece of a term is invariant under the rational unipotent elements on both sides, so the part of a stable set in one piece is stable (`New.Filling.IsStable.inter_piece`).
 
 **Lemma (Product of two blocks).** Let $T, T' \subset \Gamma^*$ be stable. Then
 
@@ -173,7 +173,7 @@ Lean: `New.Filling.secondMoment_remainingTerms_le` (New/Spanning/RemainingTerms/
 
 *Proof.* Multiply by $\nu^2 > 0$; it suffices to show $\sum_{c, c'}\sum_{s \in \Omega}\|\mathcal{A}^\flat_{\Gamma^*}(c, s, c')\|^2 \leq (w + b^{-kf}\mathcal{D}_{\mathrm{id}})\nu^2$. The set $\Gamma^*$ is stable ([Lemma](/decl/New.Filling.isStable_remainingTerms/)). Apply the square of a block to each $(c, s, c')$ with $T = \Gamma^*$. Every $\gamma$ with $\mathsf{g}(\gamma) \neq 0$ lies in $\Gamma^*$, so $\Gamma^* \cap \{\mathsf{g} \neq 0\} = \{\mathsf{g} \neq 0\}$. So the first sums, added over $c, c'$ and $s \in \Omega$, give $\mathsf{L}(\{\mathsf{g} \neq 0\}, \Omega) \leq w\nu^2$.
 
-The second sums are over pairs of near representatives over $(c, s, c')$. Two near representatives over one block form a near pair ([Lemma](/decl/New.Filling.isNearPairOverAgreeingBlock_of_mem_nearRepresentativesOver/)). A term determines the reduction $s$ of its block, so for fixed $c, c'$ a pair occurs for at most one $s$. So, for fixed $c, c'$, the sum over $s \in \Omega$ of the second sums is at most the sum over all near pairs over $c, c'$ not in one link class. By the theorem on pairs not in one link class, the total over $c, c'$ is at most $b^{-kf}\mathcal{D}_{\mathrm{id}}$. Together the sum is at most $w\nu^2 + \nu^2b^{-kf}\mathcal{D}_{\mathrm{id}}$. $\square$
+The second sums are over pairs of near representatives over $(c, s, c')$. Two near representatives over one block form a near pair (`New.Filling.isNearPairOverAgreeingBlock_of_mem_nearRepresentativesOver`). A term determines the reduction $s$ of its block, so for fixed $c, c'$ a pair occurs for at most one $s$. So, for fixed $c, c'$, the sum over $s \in \Omega$ of the second sums is at most the sum over all near pairs over $c, c'$ not in one link class. By the theorem on pairs not in one link class, the total over $c, c'$ is at most $b^{-kf}\mathcal{D}_{\mathrm{id}}$. Together the sum is at most $w\nu^2 + \nu^2b^{-kf}\mathcal{D}_{\mathrm{id}}$. $\square$
 
 **Theorem (Remaining terms, one link at a time).** Let $\Omega \subset \bar G$, and let $z \neq 0$ be a natural number with $z \leq \operatorname{meetNorm}(s)$ for every $s \in \Omega$. Then
 

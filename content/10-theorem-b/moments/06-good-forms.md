@@ -33,7 +33,7 @@ Lean: `New.Filling.sum_norm_sq_coeff_of_isCentralProj` (New/Spanning/Unfolding/M
 
 Lean: `New.IsCentralProj.isSymmetricProjection` (New/Spanning/Unfolding/Moments.lean).
 
-*Proof.* The map $x \mapsto \rho(x)$ is an algebra map, so it keeps idempotents. Self-adjointness is [the Volume 4 result](/decl/New.IsCentralProj.self_adjoint/). $\square$
+*Proof.* The map $x \mapsto \rho(x)$ is an algebra map, so it keeps idempotents. Self-adjointness is the Volume 4 result `New.IsCentralProj.self_adjoint` on [central projections](/decl/New.IsCentralProj/). $\square$
 
 ### One prime
 

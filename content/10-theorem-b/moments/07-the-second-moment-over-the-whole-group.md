@@ -163,7 +163,7 @@ It suffices to show $\mathrm{mass}(A, d) \leq (1 + 9b^{-4})\tau_{\#A}$.
 
 If $A$ is the set of all $f$ places, then $\beta(s) \leq \beta(1) \leq 2D_X$ by positive type, and the lemma on the fixer of all places gives $\mathrm{mass} \leq \tau_f$.
 
-Otherwise take $w \notin A$. For a frame vector $d'$ at $w$, the fixer of $A\cup\{w\}$ with $d$ updated at $w$ is the set of elements of the fixer $\Gamma$ of $(A, d)$ that fix $d'$ ([Lemma](/decl/New.Filling.mem_fixer_insert/)). Maximality gives $b^{6k(\#A + 1)}\sum_{\Gamma\cap\mathrm{Fix}(d')}\beta \leq b^{6k\#A}\mathrm{mass}(A, d)$. This is the hypothesis of the lemma on elements that are not open. So
+Otherwise take $w \notin A$. For a frame vector $d'$ at $w$, the fixer of $A\cup\{w\}$ with $d$ updated at $w$ is the set of elements of the fixer $\Gamma$ of $(A, d)$ that fix $d'$ (`New.Filling.mem_fixer_insert`). Maximality gives $b^{6k(\#A + 1)}\sum_{\Gamma\cap\mathrm{Fix}(d')}\beta \leq b^{6k\#A}\mathrm{mass}(A, d)$. This is the hypothesis of the lemma on elements that are not open. So
 
 $$\mathrm{mass}(A, d) = \sum_{\Gamma,\text{ open}}\beta + \sum_{\Gamma,\text{ not open}}\beta \leq (1 + 4b^{-4})\tau_{\#A} + b^{-4}\mathrm{mass}(A, d).$$
 

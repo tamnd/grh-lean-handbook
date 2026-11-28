@@ -34,7 +34,7 @@ Lean: `New.Filling.isStable_besselS` (New/Spanning/Unfolding/AmplitudeSums.lean)
 
 *Proof.* $R_0$ is a group that contains $\mathsf{U}$. $\square$
 
-[The anatomy of a term](/chapter/anatomy-of-a-term/#the-level-structure-of-the-bessel-data) proves that for a rational $u \in \mathsf{U}$, $W(\iota_\infty(u)y) = \chi(u)^{-1}W(y)$ ([Lemma](/decl/New.Filling.besselFn_ratToInf_mul/)), and that $\chi(u) = 1$ when $h_c^{-1}uh_c \in K(M)$.
+[The anatomy of a term](/chapter/anatomy-of-a-term/#the-level-structure-of-the-bessel-data) proves that for a rational $u \in \mathsf{U}$, $W(\iota_\infty(u)y) = \chi(u)^{-1}W(y)$ (`New.Filling.besselFn_ratToInf_mul`), and that $\chi(u) = 1$ when $h_c^{-1}uh_c \in K(M)$.
 
 **Lemma (Invariance under the group of a class).** For $u \in \mathsf{U}_c(M)$, $W(\iota_\infty(u)y) = W(y)$, for both sides.
 
