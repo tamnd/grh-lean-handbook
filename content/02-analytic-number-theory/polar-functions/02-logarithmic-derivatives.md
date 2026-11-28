@@ -27,9 +27,11 @@ The logarithmic derivative $f'/f$ of a meromorphic function $f$ that is not iden
 $$\frac{L'}{L}(s, \chi) = -\frac{1}{2}\log\frac{N}{\pi} - \frac{1}{2}\frac{\Gamma'}{\Gamma}\Bigl(\frac{s + \mathfrak a}{2}\Bigr) + B(\chi) + \sum_\rho \Bigl(\frac{1}{s - \rho} + \frac{1}{\rho}\Bigr),$$
 where $\rho$ runs over the zeros of $L(s, \chi)$ in $0 < \operatorname{Re} s < 1$, with multiplicity. The sum converges absolutely and uniformly on compact sets that contain no zero.
 
+Not in the source. The source does not prove it and does not use it: it needs only the residue of $\tilde L'/\tilde L$ at one point, [Lemma](/decl/New.tendsto_sub_mul_logDeriv_entireL_analyticOrderNatAt/).
+
 This is Davenport, Chapter 12. Its proof needs the functional equation (Chapter 9), the theory of entire functions of order $1$ (Chapter 11), and the Hadamard product of the completed function $\xi(s, \chi)$. The trivial zeros, at $s = -\mathfrak a, -\mathfrak a - 2, \ldots$, are the poles of the term with $\Gamma'/\Gamma$. The formula for $\zeta$ is of the same kind, with an extra term $-1/(s - 1)$ (Davenport, Chapter 12). Iwaniec and Kowalski, *Analytic Number Theory*, Chapter 5, give the same theory for a general L-function with a functional equation.
 
-The partial fraction formula is the input of the classical explicit formula of Section 3. The source does not prove it and does not use it.
+The partial fraction formula is the input of the classical explicit formula of Section 3.
 
 ### The series of χΛ in the form of the source
 
