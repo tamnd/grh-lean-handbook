@@ -86,7 +86,7 @@ The book writes $C_d$, and so does Volume 1.
 **Definition (The remainder $R_q$).** For $q \geq 1$ and real $y$,
 $$R_q(y) = \sum_{n \leq y} \lambda_q(n)\Bigl(\frac1n - \frac1y\Bigr) - \frac{\log y}{\varphi(q)} - c_q.$$
 
-Lean: `New.primeRemainder` (New/Reduction/Zeros/PrimeError.lean).
+Lean: `New.primeRemainder`, `New.primeRemainder_eq_sum_posPart` (New/Reduction/Zeros/PrimeError.lean).
 
 Lean defines `primeRemainder d q y` as $S_0(y) - S_1(y) - \log y/\varphi(q) - c_q$, which is the formula above for $y > 0$. For $y > 0$ and every integer $A \geq \lfloor y \rfloor$, the sum is also $\sum_{n \leq A} \lambda_q(n)(1/n - 1/y)_+$, by `New.primeRemainder_eq_sum_posPart`. The letter $R_q$ always has its subscript, and it always depends on $d$; the book writes $R_q^{(d)}$ only where two primes $d$ occur.
 

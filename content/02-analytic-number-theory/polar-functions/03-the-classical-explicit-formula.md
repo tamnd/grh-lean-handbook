@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The classical explicit formula
 
-This section states the explicit formula in its classical form, and reads it as a statement about the poles of a transform. It has no Lean statements. Its purpose is to show what the source keeps from the classical theory and what it leaves out. The model case with the weight $1/n - 1/x$ is in [the weighted prime remainder](/chapter/weighted-prime-remainder/#the-model-case), and this section links to it in place of a second proof.
+This section states the explicit formula in its classical form, and reads it as a statement about the poles of a transform. The source proves none of its statements. Its purpose is to show what the source keeps from the classical theory and what it leaves out. The model case with the weight $1/n - 1/x$ is in [the weighted prime remainder](/chapter/weighted-prime-remainder/#the-model-case), and this section links to it in place of a second proof.
 
 ### Perron's formula and the residues
 
@@ -23,6 +23,8 @@ where the integral is the limit of the integrals over $[c - iT, c + iT]$ as $T \
 **Theorem (The explicit formula for ψ).** For $x > 1$,
 $$\psi_0(x) = x - \sum_\rho \frac{x^\rho}{\rho} - \log 2\pi - \frac{1}{2}\log\bigl(1 - x^{-2}\bigr),$$
 where $\rho$ runs over the zeros of $\zeta$ in $0 < \operatorname{Re} s < 1$ with multiplicity, and the sum is the limit as $T \to \infty$ of the sum over $|\operatorname{Im} \rho| < T$.
+
+Not in the source. The source uses no explicit formula: it reads the zeros from the poles of the transform of its remainder, by `New.isPolar_primeRemainder` (New/Reduction/Zeros/PrimeError.lean).
 
 This is Davenport, Chapter 17. The proof is not the formal computation above. It needs the partial fraction formula of Section 2, the count $N(T + 1) - N(T) = O(\log T)$ of the zeros (Chapter 15), and a bound for $\zeta'/\zeta$ on horizontal lines that avoid the zeros, so that the integrals over the horizontal sides of the contour tend to $0$. Davenport proves a truncated form with an explicit error, and the formula is its limit. The analogue for $\psi(x, \chi) = \sum_{n \leq x}\chi(n)\Lambda(n)$ with $\chi$ primitive is Davenport, Chapter 19. Montgomery and Vaughan, *Multiplicative Number Theory I*, Chapter 12, treat the classical explicit formulae and the explicit formula of Weil. Iwaniec and Kowalski, *Analytic Number Theory*, Section 5.5, prove an explicit formula for a general L-function, with a smooth test function in place of the sharp cut-off.
 
@@ -47,6 +49,8 @@ $$E(v) = \sum_{j = 1}^J c_j\, e^{(\rho_j - 1)v} + F(v), \qquad v \geq 0,$$
 with distinct $\rho_j \in \mathbb{C}$, $c_j \in \mathbb{C}$, and $|F(v)| \leq C e^{(\beta - 1)v}$ for $v \geq 0$. Let $\sigma_0 = \max(\beta, \operatorname{Re}\rho_1, \ldots, \operatorname{Re}\rho_J)$. Then for $\operatorname{Re} s > \sigma_0$ the integral $\Phi(s) = \int_0^\infty E(v) e^{(1 - s)v}\, dv$ converges absolutely, and
 $$\Phi(s) = \sum_{j = 1}^J \frac{c_j}{s - \rho_j} + \Phi_F(s),$$
 where $\Phi_F(s) = \int_0^\infty F(v) e^{(1 - s)v}\, dv$ is analytic on $\operatorname{Re} s > \beta$. So $\Phi$ continues to a meromorphic function on $\operatorname{Re} s > \beta$. Its poles there are the $\rho_j$ with $\operatorname{Re}\rho_j > \beta$ and $c_j \neq 0$. They are simple, and the residue at $\rho_j$ is $c_j$.
+
+Not in the source. The source gets the poles of its one transform from the logarithmic derivatives of L-functions, in `New.isPolar_primeRemainder` (New/Reduction/Zeros/PrimeError.lean), not from an expansion.
 
 *Proof.* For $\operatorname{Re} s > \operatorname{Re}\rho_j$, $\int_0^\infty e^{(\rho_j - s)v}\, dv = 1/(s - \rho_j)$, and the integral converges absolutely. The integrand of $\Phi_F$ is at most $C e^{(\beta - \operatorname{Re} s)v}$ in absolute value. So $\Phi_F$ converges absolutely and locally uniformly on $\operatorname{Re} s > \beta$, and it is analytic there by Morera's theorem and Fubini's theorem. Add the $J + 1$ integrals. $\square$
 

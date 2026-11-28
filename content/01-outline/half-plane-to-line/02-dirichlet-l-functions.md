@@ -26,6 +26,8 @@ Each $\chi$ modulo $q$ is induced by exactly one primitive character $\chi^*$ mo
 
 **Definition (Parity).** Since $\chi(-1)^2 = \chi(1) = 1$, the value $\chi(-1)$ is $1$ or $-1$. The character is *even* if $\chi(-1) = 1$ and *odd* if $\chi(-1) = -1$. Put $a(\chi) = 0$ if $\chi$ is even and $a(\chi) = 1$ if $\chi$ is odd.
 
+Mathlib: `DirichletCharacter.Even`, `DirichletCharacter.Odd`; the number $a(\chi)$ is the case split `if χ.Even` in `DirichletCharacter.gammaFactor`.
+
 A character and the character that it induces have the same parity, because $-1$ is prime to every modulus.
 
 **Example (Characters modulo 4).** There are two characters modulo $4$: the principal character, and $\chi_4$ with $\chi_4(1) = 1$ and $\chi_4(3) = -1$. The character $\chi_4$ is odd. It is primitive: the characters modulo $1$ and modulo $2$ are principal, and they induce the principal character modulo $4$. It is real, so $\bar\chi_4 = \chi_4$.
@@ -85,6 +87,8 @@ The last step uses one consequence only. Since $q^{s - 1/2} w(\chi) \neq 0$, for
 ### The conjugate symmetry
 
 **Proposition (Conjugate symmetry).** Let $\chi$ be a Dirichlet character modulo $q$ and let $s \neq 1$. Then $L(\bar s, \bar\chi) = \overline{L(s, \chi)}$.
+
+Not in the source. The source applies the half-plane statement to $\bar\chi = \chi^{-1}$ at $1 - s$ directly, in the proof of `New.zeros_on_line` (New/Main.lean), so it needs no conjugation of $L$.
 
 The source does not state this proposition, and the last step does not use it. It is here because it gives the classical form of the symmetry (Section 5).
 

@@ -11,7 +11,6 @@ decls:
   - New.CMLattice.sum_kronecker_terms
   - New.chowlaSelbergConst
   - New.QuadField.exists_mk_eq_and_prod_eq_one
-  - New.CMLattice.exists_latticeModule_eq_scaledIdeal_mul
   - New.CMLattice.norm_prod_le_one
   - New.CMLattice.prod_norm_eq_one
   - New.CMLattice.prod_area_mul_norm_disc_galConjugate

@@ -16,6 +16,8 @@ Volume 1 proves Landau's theorem with a loss: from a disc of radius $\varepsilon
 
 **Theorem (Landau, local form).** Let $\mu$ be a positive Borel measure on $[0, \infty)$, and let $a$ be real with $F(\sigma) < \infty$ for every $\sigma > a$. Let $\varepsilon > 0$, and let $g$ be analytic on the disc $D = \{s : |s - a| < \varepsilon\}$ with $g(s) = F(s)$ for $s \in D$ with $\operatorname{Re} s > a$. Then $F(\sigma) < \infty$ for every $\sigma > a - \varepsilon$.
 
+Not in the source. The source proves a local form for the moment generating function of a measurable $X \leq 0$, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet_of_analyticAt/), which gives some $b < a$ in place of $a - \varepsilon$.
+
 *Proof.* Step 1: one analytic function. Let $H = \{s : \operatorname{Re} s > a\}$. By the proposition on [the analyticity of the transform](/chapter/landau-theorem/#abscissae-of-convergence) in Section 2, $F$ is analytic on $H$. The set $D \cap H$ is convex, so connected, and $g = F$ on it. So the function $h$ equal to $g$ on $D$ and to $F$ on $H$ is well defined and analytic on the open set $D \cup H$.
 
 Step 2: a large disc at a point to the right. Fix $\delta$ with $0 < \delta < \varepsilon$, and put $z = a + \delta$. We claim that the disc $D' = \{s : |s - z| < \varepsilon\}$ lies in $D \cup H$. Let $s = z + w$ with $|w| < \varepsilon$ and $\operatorname{Re} s \leq a$, so $\operatorname{Re} w \leq -\delta$. Then
@@ -34,17 +36,23 @@ The positivity of $\mu$ is used once, in Step 3, for the change of the sum and t
 
 **Theorem (Landau).** Let $\mu$ be a positive Borel measure on $[0, \infty)$ whose abscissa of convergence $\sigma_c$ is finite. Then $F$ is not analytic at $\sigma_c$: there is no function analytic on a disc about $\sigma_c$ that is equal to $F$ on the part of the disc with $\operatorname{Re} s > \sigma_c$. Also, if $F$ continues analytically to the disc $|s - a| < \varepsilon$ about a real point $a \geq \sigma_c$, in this sense, then $\sigma_c \leq a - \varepsilon$.
 
+Not in the source. Section 5 derives it from the lemma of the source, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet_of_analyticAt/).
+
 *Proof.* The second statement is the local theorem, applied at $a$: it gives $F(\sigma) < \infty$ for $\sigma > a - \varepsilon$, so $\sigma_c \leq a - \varepsilon$. With $a = \sigma_c$ it gives $\sigma_c \leq \sigma_c - \varepsilon$, which is false. $\square$
 
 So the distance from a real point $a > \sigma_c$ to the nearest singularity of $F$ is exactly $a - \sigma_c$, and the nearest singularity is the real point $\sigma_c$. This is the strongest sense in which the real axis decides.
 
 **Corollary (Landau's theorem for Dirichlet series).** Let $a_n \geq 0$ for every $n$, and let the series $\alpha(s) = \sum_n a_n n^{-s}$ have a finite abscissa of convergence $\sigma_c$. Then $\alpha$ is not analytic at $s = \sigma_c$.
 
+Not in the source. The source needs no Dirichlet series form, since it applies the lemma to one measure on $\mathbb{R}$.
+
 *Proof.* Apply the theorem to $\mu = \sum_n a_n \delta_{\log n}$. Its transform is $\alpha$, and its abscissa of convergence is $\sigma_c$. $\square$
 
 This is Montgomery and Vaughan, *Multiplicative Number Theory I*, Theorem 1.7. The same proof works if $a_n \geq 0$ only for $n \geq n_0$, since a finite Dirichlet series is entire.
 
 **Corollary (Landau's theorem for Mellin integrals).** Let $A : [1, \infty) \to \mathbb{R}$ be bounded and measurable on each interval $[1, X]$, and let $X_0 \geq 1$ be such that $A(x) \geq 0$ for $x > X_0$. Let $\sigma_c$ be the infimum of the real $\sigma$ with $\int_{X_0}^\infty A(x) x^{-\sigma}\, dx < \infty$, and suppose that $\sigma_c$ is finite. Then $F(s) = \int_1^\infty A(x) x^{-s}\, dx$ is analytic on $\operatorname{Re} s > \sigma_c$, and it is not analytic at $s = \sigma_c$.
+
+Not in the source. The source cites this lemma of Montgomery and Vaughan, and it proves in its place the form for polar functions, [Theorem](/decl/New.IsPolar.landau/).
 
 *Proof.* Write $F = F_1 + F_2$, with $F_1(s) = \int_1^{X_0} A(x) x^{-s}\, dx$ and $F_2(s) = \int_{X_0}^\infty A(x) x^{-s}\, dx$. The function $F_1$ is entire, since its integrand is bounded and analytic in $s$ on a bounded interval. The substitution $x = e^v$ gives $F_2(s) = \int_0^\infty e^{-sv}\, d\mu(v)$ with $d\mu(v) = A(e^v) e^v\, dv$ on $v > \log X_0$, a positive measure with abscissa $\sigma_c$. Section 2 gives the analyticity of $F_2$ on $\operatorname{Re} s > \sigma_c$, and the theorem says that $F_2$, and so $F = F_1 + F_2$, is not analytic at $\sigma_c$. $\square$
 
@@ -57,6 +65,8 @@ This is Lemma 15.1 of Montgomery and Vaughan, which the source cites. Montgomery
 The applications do not know the abscissa in advance. They know a continuation of the transform with poles, and they know that no pole is real. The next corollary turns this into convergence.
 
 **Corollary (Continuation along the real axis).** Let $\mu$ be a positive Borel measure on $[0, \infty)$ with $F(\sigma_1) < \infty$ for some real $\sigma_1$. Let $\beta < \sigma_1$, and let $G$ be meromorphic on the half-plane $\operatorname{Re} s > \beta$, with $G(s) = F(s)$ for $\operatorname{Re} s > \sigma_1$. Suppose that $G$ has no pole on the real half-line $(\beta, \infty)$. Then $\sigma_c \leq \beta$, and every pole of $G$ in $\operatorname{Re} s > \beta$ is removable: $G = F$ off the poles, and $F$ is analytic on $\operatorname{Re} s > \beta$.
+
+Not in the source. The source allows real poles with a sign condition on their residues, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet/).
 
 *Proof.* Let $P$ be the set of poles of $G$. It is closed and discrete in the half-plane $\operatorname{Re} s > \beta$. Suppose that $\sigma_c > \beta$. The set $\Omega = \{s : \operatorname{Re} s > \sigma_c\} \setminus P$ is open and connected, since the complement of a closed discrete set in a connected open subset of $\mathbb{C}$ is connected. The functions $G$ and $F$ are analytic on $\Omega$ and equal on $\operatorname{Re} s > \sigma_1$, so they are equal on $\Omega$ by the identity theorem. The point $\sigma_c$ is real and $> \beta$, so it is not a pole, and $G$ is analytic on a disc $D$ about $\sigma_c$ that does not meet $P$. On $D \cap \{\operatorname{Re} s > \sigma_c\}$, a subset of $\Omega$, we have $G = F$. So $F$ is analytic at $\sigma_c$ in the sense of the theorem, which is false. So $\sigma_c \leq \beta$. Then $F$ is analytic on $\operatorname{Re} s > \beta$, and the same use of the identity theorem gives $G = F$ off $P$. A meromorphic function that is equal to an analytic function off a discrete set has only removable singularities. $\square$
 

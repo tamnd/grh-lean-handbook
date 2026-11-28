@@ -18,6 +18,8 @@ The set of $\sigma$ with $F(\sigma) < \infty$ is a half-line, since $e^{-\sigma 
 
 **Theorem (Landau).** Let $\mu$ be a positive Borel measure on $[0, \infty)$ whose abscissa of convergence $\sigma_c$ is finite. Then $F$ is not analytic at $\sigma_c$: there is no function analytic on a disc about $\sigma_c$ that is equal to $F$ on the part of the disc with $\operatorname{Re} s > \sigma_c$.
 
+Not in the source. The source proves the local form for the moment generating function of a measurable $X \leq 0$, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet_of_analyticAt/), and the abscissa form follows from it.
+
 *Proof.* Suppose that $g$ is analytic on the disc $|s - \sigma_c| < \varepsilon$ and equal to $F$ where both are defined. Let $a = \sigma_c + \varepsilon/3$. The disc $|s - a| < 2\varepsilon/3$ lies in the disc of $g$, and $F = g$ on its right part. So the Taylor series of $F$ at $a$ converges in $|s - a| < 2\varepsilon/3$. Let $\sigma = a - \varepsilon/2 = \sigma_c - \varepsilon/6$. Then
 $$g(\sigma) = \sum_{k \geq 0} \frac{(\sigma - a)^k}{k!} F^{(k)}(a) = \sum_{k \geq 0} \frac{(a - \sigma)^k}{k!} \int_0^\infty v^k e^{-av}\, d\mu(v),$$
 and the series converges. Each term is a nonnegative real number, since $a - \sigma > 0$ and $\mu \geq 0$. By the theorem of Tonelli the sum is
@@ -32,6 +34,8 @@ We need the theorem in a form with a pole.
 
 **Corollary (The residue at the abscissa).** Let $\mu$ and $\sigma_c$ be as in the theorem. Let $\Psi$ be meromorphic on a disc about $\sigma_c$ and equal to $F$ on the part of the disc with $\operatorname{Re} s > \sigma_c$. Suppose that $\Psi$ has at most a simple pole at $\sigma_c$, with residue $c$. Then $c$ is a positive real number.
 
+Not in the source. The source proves the form with $\operatorname{Re} c \leq 0$ that extends the convergence, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet/).
+
 *Proof.* For real $x > \sigma_c$ near $\sigma_c$, the number $(x - \sigma_c)\Psi(x) = (x - \sigma_c)F(x)$ is real and $\geq 0$. It tends to $c$ as $x \to \sigma_c^+$. So $c$ is real and $c \geq 0$. If $c = 0$, then $\Psi$ has a removable singularity at $\sigma_c$, and the theorem gives a contradiction. So $c > 0$. $\square$
 
 The source uses the contrapositive: if the continuation has, at each real point, at most a simple pole with residue of real part $\leq 0$, then the transform converges further to the left.
@@ -45,6 +49,8 @@ $$\sum_{n \leq x} \Lambda(n)\Bigl(\frac{1}{n} - \frac{1}{x}\Bigr) = \int_1^x \fr
 for $x$ not a prime power. So $R$ is an average of $\psi(t) - t$, weighted by $t^{-2}$.
 
 **Proposition (The model criterion).** Let $0 < \beta < 1$. Suppose that $R(x) \leq x^{\beta - 1}$ for all large $x$. Then $\zeta(s) \neq 0$ for every $s$ with $\operatorname{Re} s > \beta$.
+
+Not in the source. The source proves the criterion only for its remainder $R_{q_0}$ and the L-functions modulo $q_0$, as `New.LFunction_ne_zero_of_primeRemainder_le` (New/Reduction/Zeros/Criterion.lean).
 
 *Proof.* Let $Z(s) = (s - 1)\zeta(s)$. It is an entire function with $Z(1) = 1$ and $Z'(1)/Z(1) = \gamma$, from the Laurent expansion $\zeta(s) = 1/(s - 1) + \gamma + O(s - 1)$. For $\operatorname{Re} \rho > 0$ and $\rho \neq 1$, its zeros are those of $\zeta$, with the same orders.
 

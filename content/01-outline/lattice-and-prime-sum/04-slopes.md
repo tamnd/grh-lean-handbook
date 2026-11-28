@@ -16,6 +16,8 @@ This section gives the model case in rank $n$. It defines the degree and the slo
 $$\operatorname{covol}(\bar{\mathcal{E}}) = \|e_1 \wedge \dots \wedge e_n\| = \bigl(\det \operatorname{Gram}(e_1, \dots, e_n)\bigr)^{1/2}$$
 for a $\mathbb{Z}$-basis $e_1, \dots, e_n$ of $\mathcal{E}$. It does not depend on the basis. Its *degree* is $\widehat{\deg}\,\bar{\mathcal{E}} = -\log \operatorname{covol}(\bar{\mathcal{E}})$, and for $n \geq 1$ its *slope* is $\hat\mu(\bar{\mathcal{E}}) = \widehat{\deg}\,\bar{\mathcal{E}} / n$.
 
+Not in the source. The source works with twisted lattices, `New.TwistedLattice` (New/Reduction/Lattices/TwistedLattice.lean), and the predicates `New.TwistedLattice.CovolumeLe` and `New.TwistedLattice.IndexLe`.
+
 A sublattice $F' \subset F$ is *saturated* if $F/F'$ has no torsion. It carries the restricted norm. The *maximal slope* of $\bar F$ is
 $$\hat\mu_{\max}(\bar F) = \max \{ \hat\mu(\bar F') : F' \subset F, \ F' \neq 0 \}.$$
 The maximum exists, because saturated sublattices of rank $r$ give primitive vectors of $\bigwedge^r F$, and a lattice has only finitely many vectors of bounded norm.
@@ -34,6 +36,8 @@ If $\varphi(\mathcal{E}) \subset F$, the finite terms are $\leq 0$, and $h(\varp
 
 **Theorem (Slope inequality).** Let $\bar{\mathcal{E}}$ and $\bar F$ be Euclidean lattices, with $\mathcal{E}$ of rank $n \geq 1$, and let $\varphi\colon \mathcal{E}_{\mathbb{Q}} \to F_{\mathbb{Q}}$ be injective. Then
 $$\widehat{\deg}\,\bar{\mathcal{E}} \leq n \bigl( \hat\mu_{\max}(\bar F) + h(\varphi) \bigr).$$
+
+Not in the source. The source gets its lower bound from the covolume and the index of a family, [Theorem](/decl/New.TwistedLattice.covolume_add_index_nonneg/), with no slopes.
 
 *Proof.* Let $F' = F \cap \varphi(\mathcal{E}_{\mathbb{Q}})$. It is a saturated sublattice of rank $n$, with the norm of $F$. Let $e = e_1 \wedge \dots \wedge e_n$ for a basis of $\mathcal{E}$ and let $f$ be a generator of $\bigwedge^n F'$. The map $\bigwedge^n \varphi$ sends $e$ to $c f$ for a number $c \in \mathbb{Q}^\times$, since $\varphi$ is injective.
 

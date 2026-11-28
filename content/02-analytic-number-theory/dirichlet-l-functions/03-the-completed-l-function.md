@@ -85,7 +85,7 @@ These are finite products of entire functions. By the lemma on the finite Euler 
 **Proposition (Functional equation for every character).** With this notation, as an identity of meromorphic functions,
 $$\Lambda(1 - s, \chi)\, \bar E(s) = (q^*)^{s - 1/2}\, w(\chi^*)\, \Lambda(s, \bar\chi)\, E(1 - s).$$
 
-This proposition has no Lean line: the source does not state it. Section 5 proves in Lean the part of it that the argument needs.
+Not in the source. The source keeps only its consequence for the zeros, [Theorem](/decl/New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero/) of Section 5.
 
 *Proof.* By the change of level of Section 2, $L(s, \chi) = L(s, \chi^*)E(s)$. The character $\bar\chi^*$ induces $\bar\chi$, so also $L(s, \bar\chi) = L(s, \bar\chi^*)\bar E(s)$. By the lemma on gamma factors above, $G_\chi = G_{\chi^*}$ and $G_{\bar\chi} = G_{\bar\chi^*}$. Hence
 $$\Lambda(s, \chi) = \Lambda(s, \chi^*)E(s), \qquad \Lambda(s, \bar\chi) = \Lambda(s, \bar\chi^*)\bar E(s).$$

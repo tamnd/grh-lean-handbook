@@ -24,6 +24,8 @@ Write $e(x) = e^{2\pi i x}$. For a character $\chi$ modulo $q$, the Gauss sums $
 $$\Bigl|\sum_{M < n \leq M + N} \chi(n)\Bigr| \ll \sqrt q \log q,$$
 with an absolute implied constant.
 
+Not in the source. The source proves the form for initial intervals $[1, X]$ with the constant $2$, [Theorem](/decl/New.polya_vinogradov/).
+
 This is Davenport, *Multiplicative Number Theory*, Chapter 23, and Montgomery and Vaughan, *Multiplicative Number Theory I*, Theorem 9.18. Iwaniec and Kowalski, *Analytic Number Theory*, Chapter 12, treat it with the other bounds for character sums.
 
 The proof for a primitive $\chi$ is a finite Fourier expansion. By the proposition on Gauss sums, $\chi(n) = \tau(\bar\chi)^{-1}\sum_{k \bmod q} \bar\chi(k) e(kn/q)$, up to a sign convention. Sum over the interval: each $k \neq 0$ gives a geometric series of size at most $\|k/q\|^{-1}/2$, where $\|x\|$ is the distance to the nearest integer, and the term $k = 0$ vanishes. With $|\tau(\bar\chi)| = \sqrt q$ the total is at most $q^{-1/2}\sum_{0 < k < q}\|k/q\|^{-1}/2 \ll \sqrt q \log q$. An imprimitive $\chi$ is reduced to the primitive character that induces it by a Möbius sum over the divisors of $q/q^*$.

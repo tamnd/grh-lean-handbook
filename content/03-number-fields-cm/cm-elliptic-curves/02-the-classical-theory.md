@@ -26,9 +26,13 @@ A lattice $\Lambda$ has complex multiplication by $\mathcal{O}_K$ if $\alpha \La
 
 **Theorem (Lattices with CM).** A lattice $\Lambda \subset \mathbb{C}$ is an $\mathcal{O}_K$-module if and only if $\Lambda = c\,\mathfrak{a}$ for a number $c \in \mathbb{C}^\times$ and a nonzero fractional ideal $\mathfrak{a}$ of $K$. Two such lattices $c\,\mathfrak{a}$ and $c'\mathfrak{a}'$ are homothetic if and only if $\mathfrak{a}$ and $\mathfrak{a}'$ have the same class. So the elliptic curves over $\mathbb{C}$ with endomorphism ring $\mathcal{O}_K$, up to isomorphism, are in bijection with the class group of $K$.
 
+Not in the source. The source proves the first part for its CM lattices, [Theorem](/decl/New.CMLattice.exists_latticeModule_eq_scaledIdeal/), and does not use the bijection with the class group.
+
 This is *Advanced Topics*, Chapter II, §1. The class group acts on these curves by $\mathfrak{b} \ast (\mathbb{C}/\mathfrak{a}) = \mathbb{C}/\mathfrak{b}^{-1}\mathfrak{a}$. For an integral ideal $\mathfrak{b}$, the map $\mathbb{C}/\mathfrak{a} \to \mathbb{C}/\mathfrak{b}^{-1}\mathfrak{a}$ induced by the identity of $\mathbb{C}$ is an isogeny of degree $N(\mathfrak{b})$.
 
 **Theorem (Algebraicity and integrality).** Let $E$ have endomorphism ring $\mathcal{O}_K$. Then $j(E)$ is an algebraic integer, $K(j(E))$ is the Hilbert class field $H$ of $K$, and $[K(j(E)) : K] = [\mathbb{Q}(j(E)) : \mathbb{Q}] = h_K$. The $h_K$ numbers $j(\mathfrak{a})$, one for each class, are conjugate over $K$.
+
+Not in the source. The source does not use $j(E)$ or the Hilbert class field. It proves that its normalised curves have a unit discriminant at every prime, [Theorem](/decl/New.CMLattice.norm_disc_eq_one/).
 
 See *Advanced Topics*, Chapter II, Theorem 4.3 for the Hilbert class field, and Chapter II, §6 for integrality. Since $j(E)$ is integral, $E$ has potentially good reduction at every prime (*AEC*, Chapter VII, Proposition 5.5). So over a suitable number field, $E$ has good reduction at each finite place. The source proves a statement of this kind for its normalised curves (Section 4).
 
@@ -37,6 +41,8 @@ See *Advanced Topics*, Chapter II, Theorem 4.3 for the Hilbert class field, and 
 Let $\mathbb{A}_{K,f}^\times$ be the finite ideles of $K$ and let $[\,\cdot\,, K] : \mathbb{A}_K^\times \to \mathrm{Gal}(K^{\mathrm{ab}}/K)$ be the Artin map. For an idele $s$ and a fractional ideal $\mathfrak{a}$, $s\mathfrak{a}$ is the fractional ideal with the local components $s_v \mathfrak{a}_v$, and multiplication by $s$ gives an isomorphism $K/\mathfrak{a} \to K/s\mathfrak{a}$, componentwise on $\bigoplus_v K_v/\mathfrak{a}_v$.
 
 **Theorem (Main theorem of complex multiplication).** Let $E/\mathbb{C}$ have complex multiplication by $\mathcal{O}_K$, let $\sigma \in \mathrm{Aut}(\mathbb{C}/K)$, and let $s \in \mathbb{A}_K^\times$ with $[s, K] = \sigma|_{K^{\mathrm{ab}}}$. Fix a complex analytic isomorphism $f : \mathbb{C}/\mathfrak{a} \to E(\mathbb{C})$. Then there is a unique complex analytic isomorphism $f' : \mathbb{C}/s^{-1}\mathfrak{a} \to E^\sigma(\mathbb{C})$ such that $f(x)^\sigma = f'(s^{-1}x)$ for every $x \in K/\mathfrak{a}$.
+
+Not in the source. The source proves a soft form with some finite adele, [Theorem](/decl/New.CMLattice.complex_multiplication_theta/).
 
 This is *Advanced Topics*, Chapter II, Theorem 8.2, and G. Shimura, *Introduction to the Arithmetic Theory of Automorphic Functions*, Princeton, 1971, Theorem 5.4. The theorem has two parts. The first says that $E^\sigma$ has the lattice class of $s^{-1}\mathfrak{a}$. The second says that the action of $\sigma$ on torsion points is multiplication by the idele $s^{-1}$, and the reciprocity law of class field theory identifies $s$ through the Artin map. Section 6 gives the form that the source proves: the first part with an explicit lattice, and the second part with some finite adele that the source does not relate to the Artin map.
 
@@ -55,6 +61,8 @@ For $\tau = x + iy$ in the upper half plane let $E(\tau, s) = \sum_{(m, n) \ne (
 **Theorem (Kronecker's first limit formula).** As $s \to 1$,
 $$E(\tau, s) = \frac{\pi}{s - 1} + 2\pi\bigl(\gamma - \log 2 - \log(\sqrt{y}\, |\eta(\tau)|^2)\bigr) + O(s - 1).$$
 
+Not in the source. The source proves the form for every lattice, with real $s \to 1$, [Theorem](/decl/New.kronecker_limit/).
+
 See C. L. Siegel, *Lectures on Advanced Analytic Number Theory*, Tata Institute, Bombay, 1961, Chapter I, Theorem 1. The lattice $\Lambda = \mathbb{Z}\tau + \mathbb{Z}$ has the area $A = y$ and the discriminant $\Delta(\tau) = (2\pi)^{12} \eta(\tau)^{24}$. So $\log(A |\Delta|^{1/6} / \pi^2) = \log y + 2\log 2 + 4 \log|\eta(\tau)|$, and the formula reads
 $$\sum_{l \in \Lambda,\ l \ne 0} \Bigl(\frac{|l|^2}{A}\Bigr)^{-s} = \frac{\pi}{s - 1} + \pi\Bigl(2\gamma - \log\frac{A\,|\Delta|^{1/6}}{\pi^2}\Bigr) + O(s - 1).$$
 Both sides are invariant under $\Lambda \mapsto c\Lambda$, since $A$ scales by $|c|^2$ and $|\Delta|^{1/6}$ by $|c|^{-2}$. So this form holds for every lattice. It is the form that the source proves (Section 7).
@@ -68,6 +76,8 @@ with $w_K = \#\mathcal{O}_K^\times$. The sum of these over the classes is $w_K \
 **Theorem (Chowla and Selberg).** Let $d > 3$ be a prime with $d \equiv 3 \pmod 4$, let $K = \mathbb{Q}(\sqrt{-d})$, and let $\Lambda_{\mathcal{C}}$ be a lattice homothetic to an ideal of the class $\mathcal{C}$, for each class $\mathcal{C}$. Then
 $$\prod_{\mathcal{C}} \bigl(A(\Lambda_{\mathcal{C}})\, |\Delta(\Lambda_{\mathcal{C}})|^{1/6}\bigr)^{1/h} = \pi e^{C_d} \cdot \frac{2\pi}{\sqrt d} = \frac{\pi}{\sqrt d} \prod_{a = 1}^{d - 1} \Gamma\Bigl(\frac{a}{d}\Bigr)^{\chi_K(a)/h},$$
 where $C_d = \gamma - L'/L(1, \chi_K)$.
+
+Not in the source. The source proves the first equality in a form with a unit and without the Gamma values, [Theorem](/decl/New.CMLattice.chowla_selberg/).
 
 The original is A. Selberg and S. Chowla, *On Epstein's zeta-function*, J. reine angew. Math. 227 (1967), 86 to 110. The first equality is the sum of Kronecker's formula over the classes; Section 7 gives its proof in the form of the source. The second equality is the computation of [the Chowla-Selberg constant](/chapter/weighted-prime-remainder/) in Volume 1, which uses Lerch's formula. For $d = 7$, with $h = 1$ and $\Lambda = \mathcal{O}_K$, both sides are $13.08193$ to seven digits. For $d = 23$, with $h = 3$ and the forms $(1, 1, 6)$, $(2, 1, 3)$ and $(2, -1, 3)$, both sides are $11.18078$.
 

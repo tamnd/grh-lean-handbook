@@ -20,6 +20,8 @@ It is a sum of positive terms. The prime number theorem says $S(n) \sim n$. The 
 **Proposition (Chebyshev).** For every $n \geq 1$,
 $$S(n) \leq \log \binom{2n}{n} < 2n \log 2 .$$
 
+Not in the source. The source uses the same two bounds for a Gram determinant in place of $\binom{2n}{n}$; Mathlib has the size bound as `Nat.centralBinom_lt_four_pow`.
+
 *Proof.* Let $B = \binom{2n}{n} = (2n)!/(n!)^2$. Each prime $p$ with $n < p \leq 2n$ divides $(2n)!$ and does not divide $n!$. So $p$ divides $B$, and the product $P = \prod_{n < p \leq 2n} p$ divides $B$. The quotient $Q = B/P$ is a positive integer, so
 $$\log Q = \log B - S(n) \geq 0 .$$
 This is the lower bound. The upper bound is $B < \sum_{j=0}^{2n} \binom{2n}{j} = 4^n$, the size of the number. Together, $S(n) \leq \log B < 2n\log 2$. $\square$

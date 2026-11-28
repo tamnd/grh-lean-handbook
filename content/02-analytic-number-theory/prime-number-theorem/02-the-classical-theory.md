@@ -31,11 +31,15 @@ This is the starting point of Hadamard and de la Vallée Poussin. A zero of $L(s
 $$\sigma \geq 1 - \frac{c}{\log(q(|t| + 2))},$$
 except for at most one zero. If the exceptional zero exists, then $\chi$ is a real nonprincipal character, and the zero is real and simple. For each $q$ at most one real character modulo $q$ has an exceptional zero.
 
+Not in the source. The source proves a weaker region of width $l^{-25}$ with no exceptional zero for each fixed character, [Theorem](/decl/New.eventually_norm_logDeriv_entireL_le/).
+
 This is the theorem of Davenport, Chapter 14, for $L(s, \chi)$; Chapter 13 has the case $q = 1$ of $\zeta(s)$. Montgomery and Vaughan, *Multiplicative Number Theory I*, Chapter 11, prove it in the same form, and Iwaniec and Kowalski, *Analytic Number Theory*, Chapter 5, prove it for general L-functions. The classical proof does not use (2.1) directly. It uses the same inequality for $-\operatorname{Re} L'/L$, and it bounds $-\operatorname{Re} L'/L(s, \chi)$ from above by the partial fraction expansion that the Hadamard product gives. The zeros enter through the terms $\operatorname{Re} 1/(s - \rho) > 0$. The width $c/\log(q|t|)$ comes from the bound $O(\log(q|t|))$ for the number of zeros in a disc of radius $1$.
 
 The exceptional zero $\beta_1$ is the Siegel zero. Its existence is not excluded. What is known is Siegel's theorem.
 
 **Theorem (Siegel).** For every $\varepsilon > 0$ there is a number $C(\varepsilon) > 0$ such that $L(1, \chi) > C(\varepsilon) q^{-\varepsilon}$ for every real primitive character $\chi$ modulo $q$. Equivalently, an exceptional zero satisfies $\beta_1 < 1 - C'(\varepsilon) q^{-\varepsilon}$.
+
+Not in the source. The source treats only fixed moduli, where no Siegel zero can arise.
 
 This is Davenport, Chapter 21. The constant $C(\varepsilon)$ is not effective: the proof does not give a way to compute it.
 
@@ -47,10 +51,14 @@ The explicit formula for $\psi(x, \chi)$, a sum over the zeros of $L(s, \chi)$ w
 $$\psi(x; q, a) = \frac{x}{\varphi(q)} - \frac{\chi_1(a) x^{\beta_1}}{\varphi(q) \beta_1} + O\big(x \exp(-c\sqrt{\log x})\big),$$
 where the second term is present only if some real character $\chi_1$ modulo $q$ has an exceptional zero $\beta_1$.
 
+Not in the source. The source proves the weaker form for its fixed moduli, $|R_q(y)| \leq (\log y)^{-B}$, [Theorem](/decl/New.eventually_abs_primeRemainder_le/).
+
 This is Davenport, Chapter 20. The explicit formula is in Chapters 17 and 19. The second term is the trace of the Siegel zero. Siegel's theorem bounds it, and gives:
 
 **Theorem (Siegel and Walfisz).** For every $A > 0$ there is a number $c(A) > 0$ with the following property. For $q \leq (\log x)^A$ and $(a, q) = 1$,
 $$\psi(x; q, a) = \frac{x}{\varphi(q)} + O_A\big(x \exp(-c(A)\sqrt{\log x})\big).$$
+
+Not in the source. The source cites Montgomery and Vaughan, Corollary 11.19, and proves in its place the special case for primes in windows, [Theorem](/decl/New.exists_prime_modEq_one_log_mem/).
 
 This is Davenport, Chapter 22. Montgomery and Vaughan, Corollary 11.19, give the theorem in this form, and the source cites that corollary for the form that it proves. The implied constants are not effective, through Siegel's theorem.
 

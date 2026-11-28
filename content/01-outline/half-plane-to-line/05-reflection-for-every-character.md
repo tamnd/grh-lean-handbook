@@ -86,6 +86,8 @@ The textbook states the symmetry for one character, as a symmetry about the crit
 
 **Corollary (Symmetry about the critical line).** Let $q \geq 1$, let $\chi$ be a Dirichlet character modulo $q$, and let $\rho \in \mathbb{C}$ with $0 < \operatorname{Re} \rho < 1$ and $L(\rho, \chi) = 0$. Then $L(1 - \bar\rho, \chi) = 0$.
 
+Not in the source. The proof of `New.zeros_on_line` (New/Main.lean) uses the zero $1 - \rho$ of $L(s, \bar\chi)$ from [Theorem](/decl/New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero/) and never conjugates.
+
 *Proof.* We have $\operatorname{Re} \rho \neq 0$ and $\rho \neq 1$. Also $G_\chi(\rho) = \Gamma_{\mathbb{R}}(\rho + a(\chi)) \neq 0$, since $\operatorname{Re}(\rho + a(\chi)) > 0$. So [Theorem](/decl/New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero/) gives $L(1 - \rho, \bar\chi) = 0$. Since $1 - \rho \neq 1$, the conjugate symmetry gives $L(1 - \bar\rho, \chi) = \overline{L(1 - \rho, \bar\chi)} = 0$. $\square$
 
 So the zeros of $L(s, \chi)$ in the open strip are symmetric under the reflection $s \mapsto 1 - \bar s$ in the critical line, for every Dirichlet character, primitive or not.

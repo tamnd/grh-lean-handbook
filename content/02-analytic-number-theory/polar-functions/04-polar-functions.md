@@ -48,11 +48,15 @@ Lean: `New.laplace_pow` (Lib/Analytic/EntireLFunction.lean).
 
 **Lemma (The residues are unique).** Let $E$ be polar with residues $r$ and with residues $r'$. Then $r(\rho) = r'(\rho)$ for every $\rho$ with $\operatorname{Re}\rho > 0$.
 
+Not in the source. The source uses one polar function only, the remainder of `New.isPolar_primeRemainder` (New/Reduction/Zeros/PrimeError.lean), with one residue function.
+
 *Proof.* Let $\Phi$ and $\Phi'$ be the functions of the definition for $r$ and for $r'$. They are equal on $\operatorname{Re} s > 2$ by property 3. Let $P$ be the union of the sets of poles of $\Phi$ and $\Phi'$. It is discrete and closed, so $\mathbb{C} \setminus P$ is open and connected, and $\Phi = \Phi'$ on it by the identity theorem. So $(z - \rho)\Phi(z) = (z - \rho)\Phi'(z)$ on a punctured neighbourhood of every $\rho$, and the limits $r(\rho)$ and $r'(\rho)$ of property 4 are equal. $\square$
 
 So the residue function of a polar function is a function of $E$ on $\operatorname{Re} s > 0$. This is why the source can state a residue formula that is a junk value at one point, as long as it is the true residue (Section 5).
 
 **Lemma (Linearity).** Let $E$ be polar with residues $r$, let $E'$ be polar with residues $r'$, and let $a, b$ be real. Then $aE + bE'$ is polar with residues $ar + br'$.
+
+Not in the source. The source proves the polar property of its one remainder directly, in `New.isPolar_primeRemainder` (New/Reduction/Zeros/PrimeError.lean), and never adds two polar functions.
 
 *Proof.* Take $|a|C + |b|C'$ and $a\Phi + b\Phi'$. A linear combination of meromorphic functions is meromorphic. For $\operatorname{Re} s > 2$ both integrands are integrable by the lemma on convergence, so the integral of the combination is the combination of the integrals. Limits add. $\square$
 
@@ -68,9 +72,9 @@ Then $E$ is real, $|E(v)| \leq 2|c|e^v$, and its transform is $c/(s - \rho_0) + 
 
 **Lemma (A two-sided bound kills the poles).** Let $E$ be polar with residues $r$, and let $\beta > 0$. Suppose that there are $Y \geq 0$ and $C_1$ with $|E(v)| \leq C_1 e^{(\beta - 1)v}$ for $v \geq Y$. Then $r(\rho) = 0$ for every $\rho$ with $\operatorname{Re}\rho > \beta$.
 
-*Proof.* Let $C$ and $\Phi$ be as in the definition. For $\operatorname{Re} s > \beta$ split the integral $A(s) = \int_0^\infty E(v)e^{(1 - s)v}\, dv$ at $Y$. On $(0, Y)$ the integrand is bounded by $|C|e^{(2 + |s|)Y}$, so this part is an entire function of $s$. On $(Y, \infty)$ the integrand is at most $C_1 e^{(\beta - \operatorname{Re} s)v}$, so this part converges absolutely and locally uniformly on $\operatorname{Re} s > \beta$, and it is analytic there. So $A$ is analytic on $\operatorname{Re} s > \beta$, and $A = \Phi$ on $\operatorname{Re} s > \max(\beta, 2)$. Let $P$ be the set of poles of $\Phi$. The set $\{\operatorname{Re} s > \beta\} \setminus P$ is open and connected, and $A = \Phi$ on it by the identity theorem. Let $\operatorname{Re}\rho > \beta$. Then $\operatorname{Re}\rho > 0$, and $(z - \rho)\Phi(z) = (z - \rho)A(z)$ on a punctured neighbourhood of $\rho$. The right side tends to $0$ by [Lemma](/decl/New.tendsto_sub_mul_of_continuousAt/). By property 4, $r(\rho) = 0$. $\square$
+Not in the source. The source proves a form with an upper bound only, which needs in exchange a hypothesis on the sign of the residues at real points: [Theorem](/decl/New.IsPolar.landau/).
 
-The source does not state this lemma. It proves a stronger form, with an upper bound only, and with a hypothesis on the sign of the residues at real points.
+*Proof.* Let $C$ and $\Phi$ be as in the definition. For $\operatorname{Re} s > \beta$ split the integral $A(s) = \int_0^\infty E(v)e^{(1 - s)v}\, dv$ at $Y$. On $(0, Y)$ the integrand is bounded by $|C|e^{(2 + |s|)Y}$, so this part is an entire function of $s$. On $(Y, \infty)$ the integrand is at most $C_1 e^{(\beta - \operatorname{Re} s)v}$, so this part converges absolutely and locally uniformly on $\operatorname{Re} s > \beta$, and it is analytic there. So $A$ is analytic on $\operatorname{Re} s > \beta$, and $A = \Phi$ on $\operatorname{Re} s > \max(\beta, 2)$. Let $P$ be the set of poles of $\Phi$. The set $\{\operatorname{Re} s > \beta\} \setminus P$ is open and connected, and $A = \Phi$ on it by the identity theorem. Let $\operatorname{Re}\rho > \beta$. Then $\operatorname{Re}\rho > 0$, and $(z - \rho)\Phi(z) = (z - \rho)A(z)$ on a punctured neighbourhood of $\rho$. The right side tends to $0$ by [Lemma](/decl/New.tendsto_sub_mul_of_continuousAt/). By property 4, $r(\rho) = 0$. $\square$
 
 **Theorem (Landau's lemma for polar functions).** Let $E$ be polar with residues $r$, and let $\beta > 0$. Suppose that $\operatorname{Re} r(x) \geq 0$ for every real $x > \beta$, and that $E(v) \leq e^{(\beta - 1)v}$ for all large $v$. Then $r(\rho) = 0$ for every $\rho$ with $\operatorname{Re}\rho > \beta$.
 

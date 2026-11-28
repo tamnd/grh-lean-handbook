@@ -17,6 +17,8 @@ Let $\chi$ be a real nonprincipal Dirichlet character modulo $q$, so that $\chi(
 
 **Proposition (Landau).** Let $\chi$ be a real nonprincipal Dirichlet character. Then $L(1, \chi) \neq 0$.
 
+Not in the source. The source takes the non-vanishing of $L(s, \chi)$ on $\operatorname{Re} s \geq 1$ from Mathlib, `DirichletCharacter.LFunction_ne_zero_of_one_le_re` (Mathlib).
+
 *Proof.* Step 1: the coefficients. For $\operatorname{Re} s > 1$ both series converge absolutely, and
 $$\zeta(s) L(s, \chi) = \sum_{n \geq 1} a_n n^{-s}, \qquad a_n = \sum_{d \mid n} \chi(d).$$
 The function $a$ is multiplicative, as the convolution of two multiplicative functions. At a prime power, $a_{p^k} = \sum_{j = 0}^k \chi(p)^j$. This is $k + 1$ if $\chi(p) = 1$, it is $1$ if $\chi(p) = 0$, and if $\chi(p) = -1$ it is $1$ for $k$ even and $0$ for $k$ odd. So $a_n \geq 0$ for every $n$, and $a_{m^2} \geq 1$ for every $m \geq 1$.
@@ -37,9 +39,13 @@ The second application is a principle that goes back to Landau and that Montgome
 
 **Theorem (A one-sided bound excludes the poles).** Let $A : [1, \infty) \to \mathbb{R}$ be measurable and bounded on each interval $[1, X]$, and suppose that $\int_1^\infty |A(x)|\, x^{-\sigma_1}\, dx < \infty$ for some real $\sigma_1$. Let $\beta < \sigma_1$, and suppose that $F(s) = \int_1^\infty A(x) x^{-s}\, dx$, defined for $\operatorname{Re} s > \sigma_1$, continues to a meromorphic function $G$ on $\operatorname{Re} s > \beta$ with no pole on the real half-line $(\beta, \infty)$. If $A(x) \geq 0$ for all large $x$, or $A(x) \leq 0$ for all large $x$, then $G$ has no pole in $\operatorname{Re} s > \beta$.
 
+Not in the source. The source proves the form for polar functions, with real poles allowed if their residues have nonnegative real part, [Theorem](/decl/New.IsPolar.landau/).
+
 *Proof.* Replacing $A$ by $-A$, we can suppose that $A(x) \geq 0$ for $x > X_0$. Write $F = F_1 + F_2$ as in the proof of [Corollary](/chapter/landau-theorem/#landaus-theorem) (Landau's theorem for Mellin integrals), with $F_1$ the integral over $[1, X_0]$, an entire function. Then $F_2$ is the transform of the positive measure $d\mu(v) = A(e^v)e^v\, dv$ on $v > \log X_0$, it converges at $\sigma_1$ by the hypothesis, and $G - F_1$ is a meromorphic continuation of $F_2$ to $\operatorname{Re} s > \beta$ with no real pole. By the corollary on continuation along the real axis, every pole of $G - F_1$ is removable. Since $F_1$ is entire, the same holds for $G$. $\square$
 
 **Corollary (Oscillation).** Let $A$, $\sigma_1$, $\beta$ and $G$ be as in the theorem, and suppose that $G$ has a pole at a point $\rho$ with $\operatorname{Re} \rho > \beta$. Let $\beta'$ be real with $\beta \leq \beta' < \operatorname{Re} \rho$. Then $A(x) > x^{\beta' - 1}$ for arbitrarily large $x$, and $A(x) < -x^{\beta' - 1}$ for arbitrarily large $x$.
+
+Not in the source. The source uses only one side of the bound, in [Theorem](/decl/New.IsPolar.landau/), and needs no oscillation.
 
 *Proof.* Let $A_\pm(x) = x^{\beta' - 1} \mp A(x)$, and let $\sigma_1' > \max(\sigma_1, \beta')$. Then $\int_1^\infty |A_\pm(x)|\, x^{-\sigma_1'}\, dx < \infty$, and for $\operatorname{Re} s > \sigma_1'$ the transform of $A_\pm$ is $1/(s - \beta') \mp F(s)$. It continues to the meromorphic function $1/(s - \beta') \mp G(s)$ on $\operatorname{Re} s > \beta'$. This function has no pole on $(\beta', \infty)$, and it has a pole at $\rho$, since $\rho \neq \beta'$. If $A(x) \leq x^{\beta' - 1}$ for all large $x$, then $A_+ \geq 0$ for all large $x$, and the theorem, with $\beta'$ in place of $\beta$, says that there is no pole in $\operatorname{Re} s > \beta'$. This is false. So $A(x) > x^{\beta' - 1}$ for arbitrarily large $x$. The function $A_-$ gives the other inequality. $\square$
 

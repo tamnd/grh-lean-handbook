@@ -47,6 +47,8 @@ The lemma is Step 3 of the local theorem of Section 3, in the language of the so
 
 **Proposition (The classical theorem from the lemma of the source).** Landau's theorem of Section 3, in the first form (no analytic continuation at $\sigma_c$), follows from [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet_of_analyticAt/).
 
+Not in the source. The source proves only the lemma; the deduction is the dictionary of this section.
+
 *Proof.* Let $\mu$ be a positive Borel measure on $[0, \infty)$ with finite abscissa $\sigma_c$, and suppose that $g$ is analytic on a disc $D$ about $\sigma_c$ and equal to $F$ on $D \cap \{\operatorname{Re} s > \sigma_c\}$. Use the dictionary with $X(v) = -|v|$ and $a = \sigma_c$. Every $t > \sigma_c$ lies in $S$, and $(\sigma_c, \infty)$ is open, so it lies in the interior of $S$. For real $x > \sigma_c$ in $D$, the set $D \cap \{\operatorname{Re} s > \sigma_c\}$ is a neighbourhood of $x$ on which $g = F = M$. So the lemma applies, and gives $b < \sigma_c$ with $(b, \infty) \subset S$. This contradicts the definition of $\sigma_c$. $\square$
 
 Conversely, the lemma of the source follows from the classical theorem, by the pushforward of $\mu$ under $-X$ (Exercise 5). So the two are the same theorem.

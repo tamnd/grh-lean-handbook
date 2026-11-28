@@ -64,7 +64,7 @@ The source states the reflection from $\chi$ to $\bar\chi$. The symmetry for one
 
 *Proof.* We have $\operatorname{Re}\rho \neq 0$ and $\rho \neq 1$. Also $G_\chi(\rho) \neq 0$, since $\operatorname{Re}(\rho + a(\chi)) > 0$. So the theorem gives $L(1 - \rho, \bar\chi) = 0$. Since $1 - \rho \neq 1$, the conjugate symmetry gives $L(1 - \bar\rho, \chi) = \overline{L(1 - \rho, \bar\chi)} = 0$. $\square$
 
-The corollary has no Lean line. The source does not state it, and Mathlib does not have the conjugate symmetry $L(\bar s, \bar\chi) = \overline{L(s, \chi)}$ for Dirichlet L-functions. The argument of the source does not need it: the reflection from $\chi$ to $\bar\chi$ is enough, since the statements of the source quantify over all characters.
+Not in the source. Mathlib does not have the conjugate symmetry $L(\bar s, \bar\chi) = \overline{L(s, \chi)}$ for Dirichlet L-functions, and the source does not need it: the reflection from $\chi$ to $\bar\chi$ is enough, since the statements of the source quantify over all characters.
 
 ### Trivial zeros of every character
 

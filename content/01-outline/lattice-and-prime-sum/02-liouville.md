@@ -18,6 +18,8 @@ Let $K$ be a number field of degree $n_K = [K : \mathbb{Q}]$. For a place $v$ of
 $$\sum_v n_v \log |\alpha|_v = 0,$$
 where the sum runs over all places of $K$ and has only finitely many nonzero terms.
 
+Not in the source. The source proves the product formula for $\mathbb{Q}$ only, as `New.log_product_formula` (New/Reduction/Lattices/Heights.lean), and it reaches algebraic numbers through the norm to $\mathbb{Q}$.
+
 This is in Neukirch, *Algebraic Number Theory*, Chapter III, §1. It follows from the case $K = \mathbb{Q}$, which is unique factorization, because $\prod_{v \mid p} |\alpha|_v^{n_v} = |N_{K/\mathbb{Q}}(\alpha)|_p$ for each $p \leq \infty$.
 
 The archimedean places of $K$ correspond to the embeddings $\sigma\colon K \to \mathbb{C}$ up to complex conjugation, and $\sum_{v \mid \infty} n_v \log|\alpha|_v = \sum_\sigma \log|\sigma \alpha|$. So the product formula splits into a part at infinity and a part at the primes:
@@ -30,6 +32,8 @@ The left side measures the size of $\alpha$. The right side measures its denomin
 $$\max_{\sigma\colon K \to \mathbb{C}} \log |\sigma\alpha| \geq \frac{1}{n_K} \sum_\sigma \log|\sigma \alpha| \geq - \frac{1}{n_K}\sum_{v \nmid \infty} n_v \log^+ |\alpha|_v ,$$
 where $\log^+ t = \max(0, \log t)$. If $\alpha$ is an algebraic integer, the right side is $0$, and $\prod_\sigma |\sigma\alpha| = |N_{K/\mathbb{Q}}(\alpha)| \geq 1$.
 
+Not in the source. The source uses its rank-one form for heights over the isomorphisms $\mathbb{C} \cong \bar{\mathbb{Q}}_\ell$, `New.HeightLe.neg_le_of_norm_map_le` (New/Reduction/Lattices/Heights.lean).
+
 *Proof.* The first inequality says that the maximum is at least the mean. The second is the split product formula with $\log|\alpha|_v \leq \log^+|\alpha|_v$. For an algebraic integer, $N_{K/\mathbb{Q}}(\alpha)$ is a nonzero rational integer, so its absolute value is at least $1$. $\square$
 
 The bound is for the largest conjugate, not for $\alpha$ itself: $\sqrt 2 - 1 \approx 0.414$ is small, but its conjugate has absolute value about $2.414$. Integrality at every prime is used. If $D\alpha$ is an algebraic integer for an integer $D \geq 1$, the bound becomes $\prod_\sigma |\sigma\alpha| \geq D^{-n_K}$. A denominator costs exactly its logarithm. In the source the denominators are the index of a family in a lattice (Section 5), and they enter the inequality with this cost.
@@ -40,6 +44,8 @@ The bound is for the largest conjugate, not for $\alpha$ itself: $\sqrt 2 - 1 \a
 $$\Bigl|\alpha - \frac{p}{q}\Bigr| \geq \frac{c(\alpha)}{q^n}$$
 for all integers $p$ and $q \geq 1$.
 
+
+Not in the source. The source has no rational approximation; this theorem only shows the lower bound of the method in its oldest form.
 *Proof.* Let $F \in \mathbb{Z}[X]$ be the minimal polynomial of $\alpha$ with coprime integer coefficients and leading coefficient $c_n > 0$. It is irreducible of degree $n \geq 2$, so it has no rational root, and $q^n F(p/q)$ is a nonzero integer. So $|F(p/q)| \geq q^{-n}$. If $|\alpha - p/q| \geq 1$, any $c(\alpha) \leq 1$ works. Otherwise the mean value theorem gives $\xi$ between $\alpha$ and $p/q$ with
 $$|F(p/q)| = |F(p/q) - F(\alpha)| = |F'(\xi)|\,|\alpha - p/q| \leq M |\alpha - p/q|, \qquad M = \max_{|t - \alpha| \leq 1} |F'(t)|.$$
 So $|\alpha - p/q| \geq 1/(M q^n)$. Take $c(\alpha) = \min(1, 1/M)$. $\square$

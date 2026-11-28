@@ -21,6 +21,8 @@ Newman found a short proof of the prime number theorem. Its analytic core is the
 
 **Theorem (Newman).** Let $f \colon [0, \infty) \to \mathbb{C}$ be bounded and locally integrable. Suppose that the function $g(z) = \int_0^\infty f(t)e^{-zt}\,dt$, which is holomorphic on $\operatorname{Re} z > 0$, extends holomorphically to an open set that contains $\operatorname{Re} z \geq 0$. Then $\int_0^\infty f(t)\,dt$ exists and equals $g(0)$.
 
+Not in the source. The source uses a finite form with one circle and a Gaussian kernel, [Proposition](/decl/New.norm_sub_mul_sum_term_le/), and needs no limit.
+
 The proof applies Cauchy's formula to $g(z)e^{zT}(1 + z^2/R^2)/z$ on a contour about $0$, and compares $g$ with the truncated transform $g_T(z) = \int_0^T f(t)e^{-zt}\,dt$. The factor $e^{zT}$ makes the truncation small on the right half of the contour. The factor $1 + z^2/R^2$ cancels the denominator on the circle $|z| = R$. The application to primes takes $f(t) = \psi(e^t)e^{-t} - 1$, or the same with $\theta$.
 
 The source uses this idea in a finite form. It needs no limit. Its contour is one circle, its kernel is a Gaussian, and its conclusion is the existence of one prime in a window. The finite form makes the dependence on the modulus explicit.
