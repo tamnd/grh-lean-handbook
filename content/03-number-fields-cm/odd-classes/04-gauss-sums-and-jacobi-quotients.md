@@ -53,7 +53,7 @@ Lean: `New.OddPart.exists_galUnitsRep_gaussSum_eq` (Lib/Cyclotomic/Stickelberger
 
 **Theorem (Stickelberger's factorization; Washington, §6.2).** Let $p$ be a prime, $\mathfrak{P}$ a prime above $p$ in $\mathbb{Q}(\mu_{p(p-1)})$, and $\omega_{\mathfrak{P}}$ the Teichmüller character of $\mathfrak{P}$, the character of $\mathbb{F}_p^\times$ with $\omega_{\mathfrak{P}}(a) \equiv a \bmod \mathfrak{P}$. Then for $0 \le k < p - 1$, $\mathrm{ord}_{\mathfrak{P}}\, g(\omega_{\mathfrak{P}}^{-k}) = k/(p-1)$, normalized by $\mathrm{ord}(p) = 1$.
 
-The source proves less. It does not compute the orders. It shows only that they are the representatives of the values of an injective homomorphism into $\mathbb{Q}/\mathbb{Z}$.
+Not in the source. The source proves less. It does not compute the orders. It shows only that they are the representatives of the values of an injective homomorphism into $\mathbb{Q}/\mathbb{Z}$.
 
 **Theorem (weak Stickelberger).** Let $B$ be a place of $\Omega$ above $p$, let $r \ge 1$ be prime to $p$, let $\psi$ be a primitive additive character of $\mathbb{F}_p$, and let $t \mapsto \chi_t$ be a primitive (so injective) homomorphism from $\mathbb{Z}/r$ to the multiplicative characters of $\mathbb{F}_p$. Let $g(t) = g(\chi_t)$. Then there is an injective homomorphism $S : \mathbb{Z}/r \to \mathbb{Q}/\mathbb{Z}$ with
 $$\langle S(t) \rangle = \mathrm{ord}_B\, g(t) \quad \text{for every } t.$$
