@@ -143,7 +143,7 @@ Lean: `New.Filling.sum_not_isOpenElement_le` (New/Spanning/Unfolding/MomentBound
 
 *Proof.* An element that is not open has $\delta_l(s) = 0$ at $w$ for some $l < n$. Sum the previous lemma over the $n$ values of $l$: the bound is $3nb^{-10}\sum_\Gamma\beta$. As $n \leq b$ and $3 \leq b^5$, $3nb^{-10} \leq b^{-4}$. $\square$
 
-### The bound
+### The bound over the whole group
 
 **Lemma (A linear inequality).** If $0 \leq x \leq 1/10$, $C \geq 0$ and $m \leq (1 + 4x)C + xm$, then $m \leq (1 + 9x)C$.
 
