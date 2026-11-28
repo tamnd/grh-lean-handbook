@@ -116,7 +116,7 @@ Lean: `New.DiscreteSeries.IsLaplaceDatum.norm_laplaceIntegrand_le_two_mul_re_add
 **Lemma (Lower bound on a small ball).** Let $\#n + \#m + L \leq \beta$. If $\|g \oplus g' - 1\| \leq (200\beta^5)^{-1}$, then $|\theta(s)| \geq 1/4$.
 Lean: `New.DiscreteSeries.IsLaplaceDatum.one_div_four_le_norm_laplaceIntegrand` (New/Appendix/DiscreteSeries/Periods.lean).
 
-*Proof.* Both $\|g - 1\|$ and $\|g' - 1\|$ are at most $(200\beta^5)^{-1}$, and $\#n + L + 1 \leq \beta$. By [the lower bound near one](/decl/New.half_le_norm_dsCoeff/), both coefficients have modulus at least $1/2$. $\square$
+*Proof.* Both $\|g - 1\|$ and $\|g' - 1\|$ are at most $(200\beta^5)^{-1}$, and $\#n + L + 1 \leq \beta$. By the lower bound near one (`New.half_le_norm_dsCoeff`), both coefficients have modulus at least $1/2$. $\square$
 
 **Lemma (Integration).** Let $|f| \leq 2\operatorname{Re}f + cG$ everywhere, with $f$ and $G$ integrable, and $|f| \geq 1/4$ on a set $A$. Then $\nu(A)/4 \leq 2|\int f| + c\int G$.
 Lean: `New.DiscreteSeries.measureReal_div_four_le` (New/Appendix/DiscreteSeries/Periods.lean).
@@ -129,7 +129,7 @@ Let $\nu$ be a right invariant measure on $S$. For a homomorphism $J$ from $S$ t
 $$ \nu\{\|J(s)\| \leq \beta + 1\} \leq \beta^{16 d^2}\,\nu\{\|J(s) - 1\| \leq (200\beta^5)^{-1}\}. $$
 Lean: `New.DiscreteSeries.measure_large_ball_le_pow_mul_small_ball` (New/Appendix/DiscreteSeries/Periods.lean).
 
-The proof takes a maximal separated family in the large set; the right translates of the small ball by its points cover the large set, and a packing bound counts the family. The constant is $K^{2d^2}$ with $K = \beta^8 \geq 3\cdot 200\beta^5(\beta + 1)^2$. The general statement is [the covering bound](/decl/New.DiscreteSeries.measure_ball_le_covering/). The same chapter shows that $\int(2/\|J(s)\|)^c\,d\nu \leq 16^c\,\nu\{\|J(s) - 1\| \leq 1\}$ for $c > 8d^2$ and $J$ proper; see [the decay integral](/decl/New.DiscreteSeries.integral_decay_le/).
+The proof takes a maximal separated family in the large set; the right translates of the small ball by its points cover the large set, and a packing bound counts the family. The constant is $K^{2d^2}$ with $K = \beta^8 \geq 3\cdot 200\beta^5(\beta + 1)^2$. The general statement is the covering bound (`New.DiscreteSeries.measure_ball_le_covering`). The same chapter shows that $\int(2/\|J(s)\|)^c\,d\nu \leq 16^c\,\nu\{\|J(s) - 1\| \leq 1\}$ for $c > 8d^2$ and $J$ proper; see [the decay integral](/decl/New.DiscreteSeries.integral_decay_le/).
 
 **Lemma (Unit ball).** If $\|A - 1\| \leq 1$ and $r \geq 1$, then $\|A\| \leq r + 1$.
 Lean: `New.DiscreteSeries.norm_le_add_one_of_norm_sub_one_le` (New/Appendix/DiscreteSeries/Periods.lean).

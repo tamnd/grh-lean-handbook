@@ -38,7 +38,7 @@ From now on $F = E_w$ is the completion of a number field at a finite place $w$,
 $$T_j = \sum_{gK \subseteq D_j} \rho(g),$$
 the sum over representatives of the cosets $gK$ in $D_j$.
 
-Lean: `New.basicDoubleCoset`, `New.heckeGL` (Lib/Adelic/Unitary/Defs.lean).
+Lean: `New.basicDoubleCoset`, `New.heckeGL`, `New.heckeFun` (Lib/Adelic/Unitary/Defs.lean, Lib/Adelic/Hecke/Basic.lean).
 
 For $j \leq N$ the set $D_j$ is the double coset $K \operatorname{diag}(\varpi 1_j, 1_{N-j}) K$. For $j > N$ it is empty, since $\det g$ has valuation at least that of $\varpi^N$ when $\varpi g^{-1}$ is integral. The coset $gK$ is determined by the lattice $L = g\mathcal{O}^N$. The conditions say $\varpi\mathcal{O}^N \subseteq L \subseteq \mathcal{O}^N$ and $[\mathcal{O}^N : L] = q^j$. So $T_j x$ is a sum over the subspaces $L/\varpi\mathcal{O}^N$ of $k^N$ of codimension $j$.
 
@@ -46,7 +46,7 @@ For $j \leq N$ the set $D_j$ is the double coset $K \operatorname{diag}(\varpi 1
 $$T_j x = \sum_{U} \rho(\gamma_U^{\mathsf{T}})\, x,$$
 where $U$ runs over the subspaces of $k^N$ of dimension $j$, and $\gamma_U \in D_j$ is a chosen element whose reduction modulo $\varpi$ has kernel $U$.
 
-Lean: `New.heckeGL_eq_sum` (Lib/Weil/Unramified/HeckeGL.lean).
+Lean: `New.heckeGL_eq_sum`, `New.basicCosetRep` (Lib/Weil/Unramified/HeckeGL.lean).
 
 *Proof.* The cosets $Kg$ in $D_j$ correspond to the kernels of the reductions of $g$, which are the subspaces of dimension $j$ of $k^N$. Twist $\rho$ by the inverse transpose, which keeps $K$ and $D_j$, to pass from the cosets $Kg$ to the cosets $gK$. On a $K$-fixed vector the choice of representatives does not matter. $\square$
 
@@ -100,7 +100,7 @@ The library also has the form `New.partialHecke_hyperplane_count`, with the inva
 $$l(T_{r,j}\,x) = \frac{e_j(y_r, y_{r+1}, \ldots, y_{N-1})}{q^{j(j-1)/2}}\; l(x).$$
 For $r = 0$ this is $l(T_j x) = e_j(y_0, \ldots, y_{N-1})\, q^{-j(j-1)/2}\, l(x)$.
 
-Lean: `New.IsExponent.apply_partialHecke` (Lib/LocalGL/Iwahori/HeckeDegrees.lean).
+Lean: `New.IsExponent.apply_partialHecke`, `New.partialHecke_zero_eq_heckeGL`, `New.partialHecke_mem_levelSpace` (Lib/LocalGL/Iwahori/HeckeDegrees.lean).
 
 *Proof.* Descending induction on $r$, from $r = N$. For $r = N$ both sides are $l(x)$ if $j = 0$, by item 2, and $0$ if $j > 0$, by item 3 and $e_j(\varnothing) = 0$. Let $r < N$ and assume the formula for $r + 1$ and all $j$. For $j = 0$ both sides are $l(x)$.
 
@@ -116,7 +116,7 @@ Since $(j+1)j/2 = j(j-1)/2 + j$ and $e_{j+1}(y_r, y_{r+1}, \ldots) = e_{j+1}(y_{
 
 Suppose now that $x$ is a spherical eigenvector, $T_j x = t_j x$, and that $l(x) \neq 0$. Then $t_j = e_j(y)\,q^{-j(j-1)/2}$ for every $j$. So the Hecke polynomial is
 $$P(X) = \sum_{j=0}^{N} (-1)^j e_j(y)\, X^{N-j} = \prod_{i=0}^{N-1} (X - \theta_i(\varpi)).$$
-The roots of $P$ are the numbers $\theta_i(\varpi)$. The source uses this in the comparison with Galois representations: [Theorem](/decl/New.IsIwahoriEigen.exists_hasHeckePolyAt/) passes from an Iwahori eigenform with unramified sorted $\theta$ to a spherical eigenform with Hecke polynomial $\prod_i (X - \theta_i(\varpi))$, with the results of this section and the next.
+The roots of $P$ are the numbers $\theta_i(\varpi)$. The source uses this in the comparison with Galois representations: the theorem `New.IsIwahoriEigen.exists_hasHeckePolyAt` passes from an Iwahori eigenform with unramified sorted $\theta$ to a spherical eigenform with Hecke polynomial $\prod_i (X - \theta_i(\varpi))$, with the results of this section and the next.
 
 **Example.** Let $\rho$ be trivial. Section 2 found the exponent $l = \mathrm{id}$ with $y_i = q^{N-1-i}$. The formula gives
 $$t_j = \frac{e_j(1, q, \ldots, q^{N-1})}{q^{j(j-1)/2}}.$$
@@ -130,7 +130,7 @@ The operators $U_t$ of section 2 are means, not sums over cosets. The Hecke oper
 $$\deg(t)\, \bar m\bigl(\rho(t)x\bigr), \qquad \deg(t) = \prod_{i<j} \left|\frac{t_j}{t_i}\right|.$$
 The number $\deg(t)$ is the number of cosets in $I_1 t I_1 / I_1$.
 
-Lean: `New.iwahoriDegree`, `New.heckeFun_iwahoriDoubleCoset_eq_iwahoriDegree_smul` (Lib/LocalGL/Iwahori/HeckeDegrees.lean).
+Lean: `New.iwahoriDegree`, `New.heckeFun_iwahoriDoubleCoset_eq_iwahoriDegree_smul`, `New.heckeCoset_mulSingle_zero_eq` (Lib/LocalGL/Iwahori/HeckeDegrees.lean).
 
 *Proof.* The cosets in $I_1 t I_1 / I_1$ are those of $r t$, where $r$ runs over the upper unitriangular matrices whose entry $(i, j)$, for $i < j$, runs over representatives of $\mathcal{O} / (t_i/t_j)\mathcal{O}$. There are $|t_j / t_i|$ choices for the entry $(i, j)$. Each $\rho(rt)x$ has the same mean over $I_1$ as $\rho(t)x$, and the sum of the means is the mean of the sum. $\square$
 

@@ -116,7 +116,7 @@ $$\sum_{s \in H} \Big\| \sum_{t \in G} e(t) \, f(\varphi(t)^{-1} s) \Big\|^2 \le
 
 Lean: `New.IsCentralProj.sum_norm_sq_conv_le` (Lib/General/Groups/CharacterTheory.lean).
 
-*Proof.* The group $G$ acts unitarily on $\ell^2(H, V)$ by left translation through $\varphi$. The left side is $\| e f \|^2$ for this action. A central projection is [self adjoint](/decl/New.IsCentralProj.self_adjoint/) for every invariant hermitian form. So $e$ acts as an orthogonal projection, and $\| ef \| \leq \| f \|$. $\square$
+*Proof.* The group $G$ acts unitarily on $\ell^2(H, V)$ by left translation through $\varphi$. The left side is $\| e f \|^2$ for this action. A central projection is self adjoint (`New.IsCentralProj.self_adjoint`) for every invariant hermitian form. So $e$ acts as an orthogonal projection, and $\| ef \| \leq \| f \|$. $\square$
 
 For $e = e_\chi$ the self adjointness is the identity $\overline{\chi(g)} = \chi(g^{-1})$. The source proves the self adjointness in a more general form: for forms that are semilinear for $\sigma^{-1} \circ \bar{\ } \circ \sigma$, with $\sigma$ an automorphism of $\mathbb{C}$. So the result holds for the Galois conjugates of $e$ too.
 

@@ -4,11 +4,7 @@ lean:
   - Lib/LocalGL/Iwahori/ParahoricStructure.lean
   - Lib/LocalGL/Iwahori/HeckeDegrees.lean
   - Lib/LocalGL/SphericalChainLemma.lean
-decls:
-  - New.IsExponent
-  - New.IsExponent.apply_partialHecke
-  - New.Patching.chain_lemma
-  - New.Patching.isRoot_chain_of_norm
+decls: []
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---

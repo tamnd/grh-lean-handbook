@@ -56,7 +56,7 @@ Then $\iota$ is multiplicative.
 
 Lean: `New.genIndex` (Lib/General/Measure/HaarModulus.lean).
 
-The value at a unit is positive. The function $\iota$ is a multiplicative character of the monoid $R$. For a unit, the theorem above gives $\iota$ as [a ratio of indices](/decl/New.genIndex_eq_relIndex_div/).
+The value at a unit is positive. The function $\iota$ is a multiplicative character of the monoid $R$. For a unit, the theorem above gives $\iota$ as a ratio of indices (`New.genIndex_eq_relIndex_div`).
 
 **Remark (Formalization).** The value $0$ at a non-unit is a convention. It comes from the way Mathlib extends a homomorphism on the units to a multiplicative character of the ring. For a non-discrete field, the only non-unit is $0$, and multiplication by $0$ sends every set to a set of measure $0$. So the convention agrees with the scaling in this case. For the finite adeles, an element with one component $0$ is a non-unit, and the convention again gives $0$. The source proves no statement about $\iota$ at a non-unit except through the character laws. Each theorem below that uses $\iota$ at a determinant has the determinant of an invertible matrix, which is a unit. So no theorem below depends on the convention.
 
@@ -106,7 +106,7 @@ For a field with $O$ the valuation ring, this is the classical formula $\Delta_{
 
 ### Lattices
 
-Now let $A$ be a commutative ring with an involution, and let $R \subseteq A$ be a subring. The source collects the properties of $\widehat{\mathbb{Z}} \subseteq \mathbb{A}_f$, or of $\widehat{\mathcal{O}}_E \subseteq \mathbb{A}_{E,f}$ for an imaginary quadratic field $E$, in the class of [adelic pairs](/decl/New.IsAdelic/). Its fields say: $R$ is open, compact and stable under the involution; $R$ is a valuation pair; some $i \in R$ has $-i^2 = 1$ and $\bar\imath = -i$, and some $\tau \in R$ has $\tau + \bar\tau = 1$; and $-1 = \bar c c$ for some $c \in R$. This section uses only that $R$ is open, compact, stable under the involution and a valuation pair.
+Now let $A$ be a commutative ring with an involution, and let $R \subseteq A$ be a subring. The source collects the properties of $\widehat{\mathbb{Z}} \subseteq \mathbb{A}_f$, or of $\widehat{\mathcal{O}}_E \subseteq \mathbb{A}_{E,f}$ for an imaginary quadratic field $E$, in the class of adelic pairs (`New.IsAdelic`). Its fields say: $R$ is open, compact and stable under the involution; $R$ is a valuation pair; some $i \in R$ has $-i^2 = 1$ and $\bar\imath = -i$, and some $\tau \in R$ has $\tau + \bar\tau = 1$; and $-1 = \bar c c$ for some $c \in R$. This section uses only that $R$ is open, compact, stable under the involution and a valuation pair.
 
 **Proposition.** Assume that $R \subseteq A$ has these properties. Then $\iota(u) \geq 1$ for every $u \in R$ that is a unit of $A$. Also $\iota(\bar a) = \iota(a)$ for every $a \in A$.
 

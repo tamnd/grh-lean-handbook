@@ -66,7 +66,7 @@ For $x \in V^{I_1}$ and $\varphi = \bar m$ the relation says $q\,\bar m \rho(s) 
 
 **Theorem.** Let $\varpi$ be a uniformiser and $\rho$ smooth. There is a diagonal $t$ with $v(t_i)$ strictly increasing in $i$ such that $U_t$ is injective on $V^{I_1}$.
 
-Lean: `New.exists_iwahoriHeckeHom_injective` (Lib/LocalGL/Iwahori/QuadraticRelation.lean).
+Lean: `New.exists_iwahoriHeckeHom_injective`, `New.exists_antitone_of_swap` (Lib/LocalGL/Iwahori/QuadraticRelation.lean, Lib/General/LinearAlgebra/Eigenvalues.lean).
 
 *Proof.* For each index $a$ let $s_a$ be the diagonal element with $\varpi^{-1}$ at the indices $i \geq a$ and $1$ before. It is dominant. The product $t = \prod_a s_a$ has $t_i = \varpi^{-(i+1)}$, so its valuations strictly increase. The operators $U$ with zero kernel are closed under products, and $U_t = \prod_a U_{s_a}$ by the product formula of section 2. So it is enough to show that $U_{s_a} x = 0$ implies $x = 0$ for $x \in V^{I_1}$.
 
@@ -105,6 +105,6 @@ The fourth lemma is the one that section 4 applies to partial Hecke sums. It dro
 **Lemma (Monomial translates).** Let $y$ be fixed by every $g$ in the parahoric $P_c$ whose diagonal entries are congruent to $1$. Let $\sigma$ be a permutation and $t$ diagonal, and suppose that for $\sigma(b) < \sigma(a)$ either $v(t_{\sigma(b)}) \leq v(t_{\sigma(a)})$, or $c(a) \leq c(b)$ and $v(t_{\sigma(b)}) \leq v(t_{\sigma(a)})\exp(1)$. Then
 $$l\bigl(\rho(t)\rho(\sigma)y\bigr) = \xi(t)\,l\bigl(\rho(\sigma)y\bigr).$$
 
-Lean: `New.IsExponent.apply_monomial_translate` (Lib/LocalGL/Iwahori/QuadraticRelation.lean).
+Lean: `New.IsExponent.apply_monomial_translate`, `New.eventually_pow_mul_mem_dominantTorus` (Lib/LocalGL/Iwahori/QuadraticRelation.lean, Lib/LocalGL/Iwahori/ParahoricStructure.lean).
 
 *Proof.* Here $t$ need not be dominant. Let $t_0 = \operatorname{diag}(1, \varpi^{-1}, \varpi^{-2}, \ldots)$, which is strictly dominant. For large $k$ the product $t_0^k t$ is dominant (Lean: `New.eventually_pow_mul_mem_dominantTorus`). For a dominant $d$ and a vector of the form $\rho(t\sigma)y$, the hypotheses let one drop the mean: for $g \in I_1$, write $g = u(u^{-1}g)$ with $u$ upper unitriangular in $I_1$ and $u^{-1}g$ lower triangular. The conjugate of $u^{-1}g$ by $t\sigma$ lies in the group that fixes $y$, by the hypothesis on valuations, and $dud^{-1} \in I_1$. Apply this twice: to $d = t_0^k$ with the vector $\rho(t\sigma)y$, and to $d = t_0^k t$ with the vector $\rho(\sigma)y$. Both compute $l(\rho(t_0^k t \sigma)y)$. So $\xi(t_0^k)\, l(\rho(t)\rho(\sigma)y) = \xi(t_0^k)\,\xi(t)\, l(\rho(\sigma)y)$. Cancel the factor $\xi(t_0^k)$. $\square$

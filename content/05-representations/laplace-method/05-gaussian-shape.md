@@ -37,7 +37,7 @@ By Schur orthogonality, $\|m_\mu\|^2$ is the inverse of the dimension of the rep
 $$ 1 \leq \left(2000(N + L + 1)^6\right)^{2N^2} \cdot 4\|m_\mu\|^2. $$
 Lean: `New.DiscreteSeries.one_le_pow_mul_kTypeNormSq` (New/Appendix/DiscreteSeries/GaussianShape.lean).
 
-*Proof.* Apply [the volume bound](/decl/New.measure_ball_le_integral_dsCoeff/) of the previous chapter to the group $K$ with $j$ the inclusion and radius $r = 1$. In the operator norm, all of $K$ lies in the ball of radius $1$, and $K$ has mass $1$. On $K$, $c_l = m_\mu$. So $1 \leq (2000(N+L+1)^6)^{2N^2}\int_K 4|m_\mu|^2$. $\square$
+*Proof.* Apply the volume bound (`New.measure_ball_le_integral_dsCoeff`) of the previous chapter to the group $K$ with $j$ the inclusion and radius $r = 1$. In the operator norm, all of $K$ lies in the ball of radius $1$, and $K$ has mass $1$. On $K$, $c_l = m_\mu$. So $1 \leq (2000(N+L+1)^6)^{2N^2}\int_K 4|m_\mu|^2$. $\square$
 
 **Lemma (Exponential form).** Let $l$ be as above, and let $T \geq 1$ with $N^2 \leq T$ and $N^2\log(N + L + 1) \leq T$. Then $\|m_\mu\|^2 \geq e^{-5000T}$.
 Lean: `New.DiscreteSeries.exp_neg_le_kTypeNormSq` (New/Appendix/DiscreteSeries/GaussianShape.lean).

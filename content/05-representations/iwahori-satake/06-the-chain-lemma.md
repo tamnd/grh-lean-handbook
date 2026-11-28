@@ -29,7 +29,7 @@ Throughout, $F = E_w$, $q$ is the norm of $w$, $\varpi$ is a uniformiser, $N = n
 
 **Definition.** A sesquilinear form $B$ on $V$ makes $\rho$ unitary if $B(x, x)$ is a positive real number for each $x \neq 0$, and $B(\rho(g)x, \rho(g)y) = B(x, y)$ for all $g$, $x$, $y$.
 
-Lean: `New.IsUnitary` (Lib/Adelic/Hecke/ClassSums.lean).
+Lean: `New.IsUnitary`, `New.IsUnitary.adjoint_eq_inv` (Lib/Adelic/Hecke/ClassSums.lean).
 
 Then the adjoint of $\rho(g)$ is $\rho(g^{-1})$ (Lean: `New.IsUnitary.adjoint_eq_inv`), and the adjoint of the mean over a compact open subgroup is the same mean.
 
@@ -95,7 +95,7 @@ Lean: `New.Patching.aeval_cofactor_eq_zero` (Lib/LocalGL/SphericalChainLemma.lea
 
 **Lemma (Conjugation).** Let $R(U)$ kill every $T_j$, and let $U'$ keep the span of $T_0, \ldots, T_n$ by the relations above. Then $\bar R(U')\,T_0 = 0$.
 
-Lean: `New.Patching.aeval_conj_eq_zero` (Lib/LocalGL/SphericalChainLemma.lean).
+Lean: `New.Patching.aeval_conj_eq_zero`, `New.Patching.adjoint_aeval_map_starRingEnd` (Lib/LocalGL/SphericalChainLemma.lean).
 
 *Proof.* By the relations, $G(U')\,T_j$ lies in the span of $T_0, \ldots, T_n$ for every polynomial $G$, so $R(U)$ kills it. The adjoint of $R(U)$ is $\bar R(U')$ (Lean: `New.Patching.adjoint_aeval_map_starRingEnd`). So the vector $v = \bar R(U')T_0$ has $B(v, v) = B(T_0, R(U)\,G(U')T_0) = 0$ for $G = \bar R$, and $v = 0$. $\square$
 
@@ -142,6 +142,8 @@ Lean: `New.Patching.isRoot_chain_of_norm` (Lib/LocalGL/SphericalChainLemma.lean)
 The proof uses a symmetry of the roots.
 
 **Lemma (Symmetry).** If $y'$ is a root of $P$ and $\bar y\, y'\, q = q^N$, then $y$ is a root of $P$. So the roots are stable under $y \mapsto q^{N-1}/\bar y$.
+
+Lean: a step in the proof of `New.Patching.isRoot_chain_of_norm` (Lib/LocalGL/SphericalChainLemma.lean).
 
 *Proof.* Let $\zeta = B(\rho(\varpi)x, x)$, where $\varpi$ acts as a scalar matrix. For $d + b = N$, the adjoint of $T_d$ is the Hecke operator of the inverse double coset, which is $\rho(\varpi)^{-1} T_b$ (Lean: `New.heckeGL_dual`). So
 $$\overline{t_d}\, B(x, x) = B(T_d x, x) = B(\rho(\varpi)x, T_b x) = t_b\,\zeta.$$

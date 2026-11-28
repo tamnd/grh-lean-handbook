@@ -55,7 +55,7 @@ Here the norm is the operator norm. Section 6 proves this theorem.
 
 From the previous chapter we use five facts about $c_l$. First, $c_l(1) = 1$. Second, $c_{-l} = \overline{c_l}$ if $l$ has a gap. Third, on $K$ the coefficient is an explicit product of principal minors, raised to powers given by the weight $\mu$. Fourth, if $l$ has gap $h$ and $c \leq h$, then
 $$ |c_l(g)|^2\, |\det a|^c \leq 1, $$
-where $a$ is the block diagonal part of $g$. Fifth, $c_l$ is at least $1/2$ in a small ball about $1$, and the volume of a ball is bounded by the integral of $|c_l|^2$ over it. The exact statements are in [/chapter/discrete-series/](/chapter/discrete-series/), at [the value at one](/decl/New.dsCoeff_one/), [the conjugate](/decl/New.dsCoeff_neg/), [the restriction to K](/decl/New.dsCoeff_of_mem_maxCompactU/), [the decay](/decl/New.norm_dsCoeff_sq_mul_det_pow_le_one/), [the lower bound near one](/decl/New.half_le_norm_dsCoeff/) and [the volume bound](/decl/New.measure_ball_le_integral_dsCoeff/).
+where $a$ is the block diagonal part of $g$. Fifth, $c_l$ is at least $1/2$ in a small ball about $1$, and the volume of a ball is bounded by the integral of $|c_l|^2$ over it. The exact statements are in [/chapter/discrete-series/](/chapter/discrete-series/), at [the value at one](/decl/New.dsCoeff_one/), [the conjugate](/decl/New.dsCoeff_neg/), [the restriction to K](/decl/New.dsCoeff_of_mem_maxCompactU/), [the decay](/decl/New.norm_dsCoeff_sq_mul_det_pow_le_one/), the lower bound near one (`New.half_le_norm_dsCoeff`) and the volume bound (`New.measure_ball_le_integral_dsCoeff`).
 
 We also use elementary matrix analysis: the polar decomposition, the power series of the logarithm, and Schwarz's lemma for holomorphic functions of one variable.
 

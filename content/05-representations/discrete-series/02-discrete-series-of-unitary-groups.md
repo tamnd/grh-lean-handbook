@@ -37,6 +37,8 @@ Fix $\lambda$. The roots $e_i - e_j$ with $\lambda_i > \lambda_j$ form a positiv
 
 **Theorem (Harish-Chandra).** For each Harish-Chandra parameter $\lambda$ there is a discrete series representation $\pi_\lambda$ of $U(p,q)$. Every discrete series representation is some $\pi_\lambda$. Two of them, $\pi_\lambda$ and $\pi_\mu$, are equivalent if and only if $\mu = w\lambda$ for some $w \in W_K$. The Casimir operator $\Omega = \sum_{a,b} E_{ab}E_{ba}$ of $\mathfrak{gl}_n$ acts on $\pi_\lambda$ by the scalar $|\lambda|^2 - |\rho|^2$.
 
+Not in the source. The source does not construct $\pi_\lambda$; it defines the function $c_\lambda$ directly by Flensted-Jensen's integral over $K$ ([Definition](/decl/New.HCParam.dsCoeff/)) and proves the Casimir eigenvalue for this function ([Theorem](/decl/New.casimir_dsCoeffSmooth/)).
+
 So the discrete series with a given infinitesimal character $\lambda$ are counted by $W / W_K$, a set with $\binom{n}{p}$ elements. Each of them corresponds to a choice of which entries of $\lambda$ have sign $+1$. (Harish-Chandra, *Discrete series for semisimple Lie groups II*, Acta Math. 116 (1966); Knapp, Chapters IX and XII.)
 
 ### The lowest $K$-type
@@ -44,6 +46,8 @@ So the discrete series with a given infinitesimal character $\lambda$ are counte
 The representation $\pi_\lambda$ restricted to $K$ is a direct sum of irreducible representations of $K$, each with finite multiplicity. Irreducible representations of $K$ are labelled by their highest weights, for the positive compact roots.
 
 **Theorem (Schmid; Hecht and Schmid).** Let $\Lambda = \lambda + \rho_n - \rho_c$. The representation of $K$ with highest weight $\Lambda$ occurs in $\pi_\lambda$ with multiplicity one. Every $K$-type of $\pi_\lambda$ has a highest weight of the form $\Lambda + \beta$, where $\beta$ is a sum of positive noncompact roots.
+
+Not in the source. The source uses only the lowest $K$-type of $c_\lambda$ itself, through the integrals of $c_\lambda$ against the minors of weight $\Lambda$ ([Theorem](/decl/New.integral_conj_weightMinors_lowestKType_mul_dsCoeff/)).
 
 The weight $\Lambda$ is the *lowest $K$-type*, also called the Blattner parameter. Blattner's formula gives the multiplicities of all $K$-types; it was proved by Hecht and Schmid. (W. Schmid, *Some properties of square-integrable representations of semisimple Lie groups*, Ann. of Math. 102 (1975) 535-564; H. Hecht and W. Schmid, *A proof of Blattner's conjecture*, Invent. Math. 31 (1975) 129-154.)
 
@@ -57,6 +61,8 @@ The Lie algebra of $G$ is $\mathfrak k \oplus \mathfrak p$, with $\mathfrak p$ t
 
 $$d_\lambda = \prod_{\lambda_j < \lambda_i} (\lambda_i - \lambda_j) \Big/ \prod_{k=0}^{n-1} k!.$$
 
+Not in the source. The source proves the formula only for its function $c_\lambda$, with $d_\lambda = (\int_G |c_\lambda|^2)^{-1}$ and a gap of $500n^3 + 10n^5$ ([Theorem](/decl/New.Orbital.harish_chandra_degree_and_orbital/), Part 1).
+
 The right side is Weyl's formula for the dimension of the representation of $U(n)$ with highest weight $\lambda - \rho$, since $\prod_{i<j}(j - i) = \prod_{k=0}^{n-1} k!$. So with compatible measures the formal degree of $\pi_\lambda$ is the dimension of a representation of the compact dual. (Harish-Chandra, Acta Math. 116 (1966); the source cites Theorem 16 there, with Theorem 3 of part I, Acta Math. 113 (1965), and Knapp, Theorem 12.7.)
 
 The global character $\Theta_\lambda$ of $\pi_\lambda$ is a locally integrable function on $G$. On the regular elements of the compact torus it is given by a formula like Weyl's.
@@ -64,6 +70,8 @@ The global character $\Theta_\lambda$ of $\pi_\lambda$ is a locally integrable f
 **Theorem (Harish-Chandra's character formula).** For $t = \operatorname{diag}(t_1, \dots, t_n)$ in $T$ with distinct entries,
 
 $$\Theta_\lambda(t) = (-1)^{pq}\,\frac{\sum_{w \in W_K} \operatorname{sgn}(w)\, t^{w\lambda}}{t^{\rho}\prod_{\lambda_i > \lambda_j}(1 - t_j/t_i)}.$$
+
+Not in the source. The source does not define the global character; it uses the stable sum of the orbital integrals of $e_\lambda = d_\lambda\overline{c_\lambda}$ on the compact torus in its place ([Theorem](/decl/New.Orbital.harish_chandra_degree_and_orbital/), Part 2).
 
 Here $t^\mu = \prod t_i^{\mu_i}$, and the expression is a well defined function of $t$ although $\lambda$ and $\rho$ may have half integral entries. The sign is $(-1)^{\dim(G/K)/2}$, and $\dim G/K = 2pq$. If the sum ran over all of $S_n$, the right side would be $(-1)^{pq}$ times Weyl's character of $U(n)$ with highest weight $\lambda - \rho$. The source proves a form of this formula through orbital integrals: the orbital integrals of $\overline{c_\lambda}$ summed over all $\sigma \in S_n$ give the conjugate of Weyl's character ([Theorem](/decl/New.Orbital.harish_chandra_degree_and_orbital/)).
 

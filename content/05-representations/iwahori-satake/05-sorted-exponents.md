@@ -77,7 +77,7 @@ At $m = N$ this says that $l$ vanishes on the means over $I$. Since $l$ is invar
 
 **Example.** The case that the descent step excludes is $\theta_j(\varpi) = q\,\theta_m(\varpi)$ with $m < j$. For $\mathrm{GL}_2$ it is the case $y_1 = q\,y_0$, the roots of the trivial representation in the wrong order. The standard theory says that the Steinberg representation of $\mathrm{GL}_2$, which has no spherical vector, has a normalised Jacquet module equal to $\delta_B^{1/2}$. In the normalisation of this chapter its exponent has $(y_0, y_1) = (1, q)$, which is not sorted. So the hypothesis of the theorem cannot be removed.
 
-The source uses the theorem with Satake's formula in [Theorem](/decl/New.IsIwahoriEigen.exists_hasHeckePolyAt/). Let $f$ be an automorphic eigenform of the unitary group that is an Iwahori eigenvector at a split place $w$ with character $\xi_\theta$, where the $\theta_i$ are unramified and $|\theta_i(\varpi)|$ does not increase. Then there is an eigenform $g$ for the same Hecke eigenvalues away from $w$ that is spherical at $w$, with Hecke polynomial $\prod_i (X - \theta_i(\varpi))$ at $w$. The form $g$ is the mean over $K$ of a vector $u$ for which $B(u, \cdot)$ is an exponent. It is not zero by the theorem above, and its eigenvalues come from section 4.
+The source uses the theorem with Satake's formula in the result `New.IsIwahoriEigen.exists_hasHeckePolyAt`. Let $f$ be an automorphic eigenform of the unitary group that is an Iwahori eigenvector at a split place $w$ with character $\xi_\theta$, where the $\theta_i$ are unramified and $|\theta_i(\varpi)|$ does not increase. Then there is an eigenform $g$ for the same Hecke eigenvalues away from $w$ that is spherical at $w$, with Hecke polynomial $\prod_i (X - \theta_i(\varpi))$ at $w$. The form $g$ is the mean over $K$ of a vector $u$ for which $B(u, \cdot)$ is an exponent. It is not zero by the theorem above, and its eigenvalues come from section 4.
 
 ### Sorting an exponent
 
@@ -100,7 +100,7 @@ An Iwahori eigenvector is a nonzero $y \in V^{I_1}$ with $U_t\,y = \xi(t)\,y$ fo
 
 **Theorem.** Let $B$ be a positive definite invariant Hermitian form on $V$. Let $x \in V$, and assume that the $I_1$-fixed vectors in the span of the translates $\rho(g)x$ form a space of finite dimension. If this span contains an Iwahori eigenvector $y$ for $\xi$, then it contains a $w \neq 0$ such that $B(w, \cdot)$ is an exponent for $\xi$.
 
-Lean: `New.IsIwahoriEigen.exists_isExponent` (Lib/LocalGL/Iwahori/SortedExponents.lean).
+Lean: `New.IsIwahoriEigen.exists_isExponent`, `New.exists_eigenvector_of_functional` (Lib/LocalGL/Iwahori/SortedExponents.lean, Lib/General/LinearAlgebra/Eigenvalues.lean).
 
 *Proof.* Let $W = V^{I_1}$ and let $S$ be the space of the forms $B(w, \cdot)$ on $W$, for $w$ in the $I_1$-fixed part of the span. It has finite dimension. The adjoint of $U_t$ for $B$ is the mean over $I_1$ after $\rho(t^{-1})$, and it keeps the span. So $S$ is stable under the duals of the operators $U_t$, and these duals commute, by the product formula. Evaluation at $y$ is a linear form on $S$. It is not zero on $S$, since $B(y, y) > 0$, and it is an eigenform for the duals with the character $\xi$. A linear algebra lemma (Lean: `New.exists_eigenvector_of_functional`) gives a common eigenvector $B(w, \cdot)$ in $S$ for the character $\xi$. This is the claim. $\square$
 
