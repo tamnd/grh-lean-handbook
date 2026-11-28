@@ -2,8 +2,7 @@
 title: Exercises and notes
 lean:
   - New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean
-decls:
-  - New.FrobeniusCycle.elementary_divisors
+decls: []
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
