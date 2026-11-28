@@ -27,6 +27,8 @@ The next lemma is a step of the proof of the theorem below. The source does not 
 
 **Lemma (Reflection for zeta).** Let $s \in \mathbb{C}$ with $\zeta(s) = 0$, $s \neq 1$, and $s \neq -2(n+1)$ for every $n \in \mathbb{N}$. Then $s \neq 0$ and $\zeta(1 - s) = 0$.
 
+Lean: the first four steps of the proof of `New.zeta_zeros_on_line` (New/Main.lean).
+
 *Proof.* Since $\zeta(0) = -1/2 \neq 0$, we have $s \neq 0$.
 
 Next, $\Gamma_{\mathbb{R}}(s) \neq 0$. Suppose $\Gamma_{\mathbb{R}}(s) = 0$. By the convention, $s = -2n$ for some $n \in \mathbb{N}$. If $n = 0$, then $s = 0$, which we excluded. If $n = m + 1$ with $m \in \mathbb{N}$, then $s = -2(m+1)$, which the hypothesis excludes.

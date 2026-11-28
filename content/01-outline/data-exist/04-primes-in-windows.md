@@ -22,6 +22,8 @@ Let $\psi(x; q, a) = \sum_{n \leq x,\ n \equiv a \ (q)} \Lambda(n)$, where $\Lam
 $$\psi(x; q, a) = \frac{x}{\varphi(q)} + O_A\Bigl(x \exp\bigl(-c\sqrt{\log x}\bigr)\Bigr)$$
 for all $x \geq 2$, all $q \leq (\log x)^A$, and all $a$ prime to $q$. The implied constant depends on $A$, and it is not effective.
 
+Not in the source. The source proves only the special case `New.exists_prime_modEq_one_log_mem` (Lib/Analytic/Primes.lean), for moduli $Q^k$, where the real characters come from the fixed modulus $Q^2$ and no Siegel zero occurs.
+
 This is the form of Montgomery and Vaughan, *Multiplicative Number Theory I*, Corollary 11.19, which the source cites. The ineffective constant comes from Siegel's theorem on exceptional zeros. For a fixed modulus the theorem is the prime number theorem for progressions, with the classical error term.
 
 ### The source form

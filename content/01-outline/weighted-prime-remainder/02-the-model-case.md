@@ -26,6 +26,8 @@ The weight $1/n - 1/x$ is continuous in $x$ and vanishes at $x = n$, so $S$ is c
 $$\int_1^\infty S_a(y)\, y^{-s}\, dy = \frac{A(s)}{s(s - 1)}.$$
 Also $\int_1^\infty \bigl(\sum_{n \leq y} a(n)/n\bigr) y^{-s}\, dy = A(s)/(s - 1)$ and $\int_1^\infty \bigl(y^{-1}\sum_{n \leq y} a(n)\bigr) y^{-s}\, dy = A(s)/s$.
 
+Not in the source. The source proves only the two simple identities, for its weight $\lambda_q$, in the variable $v = \log y$ and for $\operatorname{Re} s > 2$: `New.LSeries_lambdaKResidueClass` (New/Reduction/Zeros/PrimeError.lean).
+
 *Proof.* For $n \geq 1$ and $\operatorname{Re} s > 1$,
 $$\int_n^\infty \frac{y^{-s}}{n}\, dy = \frac{n^{-s}}{s - 1}, \qquad \int_n^\infty y^{-1-s}\, dy = \frac{n^{-s}}{s}, \qquad \int_n^\infty \Bigl(\frac{1}{n} - \frac{1}{y}\Bigr) y^{-s}\, dy = \frac{n^{-s}}{s - 1} - \frac{n^{-s}}{s} = \frac{n^{-s}}{s(s - 1)}.$$
 Write $S_a(y) = \sum_n a(n)(1/n - 1/y)\mathbf{1}_{y \geq n}$ and exchange the sum and the integral. The exchange is allowed by Tonelli's theorem, since $1/n - 1/y \geq 0$ for $y \geq n$ and the computation with $|a(n)|$ and $\sigma$ in place of $a(n)$ and $s$ gives $\sum |a(n)| n^{-\sigma}/(\sigma(\sigma - 1)) < \infty$. The other two identities are the first two integrals, summed in the same way. $\square$
@@ -55,6 +57,8 @@ So a term $r\, x^{\rho - 1}$ of $R(x)$ is a simple pole $r/(s - \rho)$ of the tr
 **Proposition (The explicit formula for the weighted sum).** For $x \geq 1$,
 $$S(x) = \log x - 1 - \gamma + \sum_\rho \frac{x^{\rho - 1}}{\rho(1 - \rho)} + \frac{\log 2\pi}{x} - \sum_{k \geq 1} \frac{x^{-2k-1}}{2k(2k + 1)},$$
 where $\rho$ runs over the zeros of $\zeta$ in $0 < \operatorname{Re} s < 1$ with multiplicity. The sum over $\rho$ converges absolutely and uniformly in $x \geq 1$.
+
+Not in the source. The source uses no explicit formula: it reads the zeros from the poles of the transform of $R_q$, by `New.isPolar_primeRemainder` (New/Reduction/Zeros/PrimeError.lean).
 
 *Sketch.* Integrate the explicit formula for $\psi_0$ against $t^{-2}$ from $1$ to $x$, with the truncated form of the explicit formula in Davenport, Chapter 17, to justify the integration term by term. The main term gives $\log x$. A zero gives $-\int_1^x t^{\rho - 2} dt/\rho = (x^{\rho - 1} - 1)/(\rho(1 - \rho))$. The term $-\log 2\pi$ gives $-(1 - 1/x)\log 2\pi$. The last term is $\frac{1}{2}\sum_{k \geq 1} t^{-2k}/k$, and it gives $\sum_k (1 - x^{-2k-1})/(2k(2k + 1))$. The constants add up to
 $$-\sum_\rho \frac{1}{\rho(1 - \rho)} - \log 2\pi + \sum_{k \geq 1}\frac{1}{2k(2k+1)} = -(2 + \gamma - \log 4\pi) - \log 2\pi + (1 - \log 2) = -1 - \gamma,$$
