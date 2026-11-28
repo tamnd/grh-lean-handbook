@@ -6,12 +6,7 @@ lean:
   - Lib/Shimura/HeckeTower/Model.lean
   - Lib/GaloisRep/Main/Defs.lean
   - Lib/GaloisRep/Main/SeedRepresentation.lean
-decls:
-  - New.Variety.Model.exists_galois_rep
-  - New.Variety.ellAdicCohom.congruence_relation
-  - New.Variety.Model
-  - New.heckePoly
-  - New.GaloisRep.exists_rep_of_cuspidal_type
+decls: []
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---

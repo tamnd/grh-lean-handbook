@@ -120,7 +120,7 @@ The geometric step is the analogue of the classical fact that the $p + 1$ quotie
 $$A \longmapsto \alpha(A) \circ \operatorname{Spec}\left(\operatorname{Frob}^{m(A)} \circ \pi\right)$$
 depends only on $A + W$.
 
-Lean: `New.Variety.UniversalFamily.exists_ne_bot_factorsThrough_sup` (Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean).
+Lean: `New.Variety.UniversalFamily.exists_ne_bot_factorsThrough_sup` (Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean). The steps of the proof use `New.Variety.exists_residue_torsion_emb` and `New.Variety.IsTwistedReduction.exists_comp_eq_smul` (same file), and `New.Variety.exists_param_pow_card_eq_zero`, `New.Variety.exists_isLieLine`, `New.Variety.cartier` and `New.Variety.ker_factors_of_torsionPoint` (Lib/Shimura/CongruenceRelation/KernelReduction.lean).
 
 The idea is as follows. Each Hecke neighbour comes with an isogeny $\psi_A$ from the abelian variety $y$ of $z$ to the abelian variety $y'_A$ of $z \cdot g_A$. Its kernel on torsion has $w$-part $A$, and its degree is a power of $q$. Reduce modulo $\pi$ and twist by Frobenius. The twisted reduction $g_A$ of $\psi_A$ has the same degree $q^n$ for every $A$: a factor $q^{\dim A}$ from $\psi_A$ and $q^{n - \dim A}$ from Frobenius. Now one nonzero $w$-torsion section $t$ reduces to $0$. Adding $t$ to $A$ changes the kernel of $\psi_A$ only by a section that the reduction does not see. So the kernels of $g_A$ and $g_{A'}$ agree when $A + kt = A' + kt$, and rigidity makes the targets equal. So $W = kt$.
 

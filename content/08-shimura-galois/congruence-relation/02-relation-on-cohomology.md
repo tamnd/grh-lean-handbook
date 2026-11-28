@@ -92,7 +92,7 @@ Let $\Omega$ be an algebraic closure of $\mathbb{Q}$, with an action of $\Gamma$
 Then for every $x \in V^n(Y)$,
 $$\sum_{i \in I} m_i \, u_i^*\big(g^{-e_i} x\big) = 0 \quad \text{in } V^n(W).$$
 
-Lean: `New.Variety.ellAdicCohom.congruence_relation` (Lib/Shimura/CongruenceRelation/EichlerShimura.lean).
+Lean: `New.Variety.ellAdicCohom.congruence_relation` (Lib/Shimura/CongruenceRelation/EichlerShimura.lean). Smooth base change, used in the proof, is `New.Variety.isTestCohomEquiv_baseChangeTransition` (Lib/Cohomology/SmoothBaseChange.lean).
 
 The Galois element in the conclusion is $g^{-1}$, a geometric Frobenius. The sign is forced: on the special fibre the arithmetic Frobenius $g$ acts on coefficients as $t \mapsto t^{p^f}$, and moving points forward by Frobenius is the inverse operation on cohomology.
 
