@@ -17,47 +17,47 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 0 | 2 | The claim and its status | drafted | 12,201 |
 | 0 | 3 | The statements | drafted | 11,158 |
 | 0 | 4 | How to read this book | drafted | 9,414 |
-| 0 | 5 | Notation and conventions | drafted | 10,046 |
+| 0 | 5 | Notation and conventions | drafted | 10,047 |
 | 0 | 6 | The table of sizes | drafted | 12,911 |
 | 0 | 7 | Reading the Lean | drafted | 14,602 |
 | 0 | 8 | The register of findings | drafted | 14,804 |
 | 0 | 9 | The two editions | drafted | 7,431 |
 | 1 | 1 | The theorem and the plan | drafted | 6,932 |
-| 1 | 2 | From the half-plane to the line | drafted | 7,838 |
-| 1 | 3 | The weighted prime remainder | drafted | 8,837 |
-| 1 | 4 | Landau's criterion | drafted | 8,962 |
-| 1 | 5 | Why a lattice can bound a prime sum | drafted | 7,911 |
+| 1 | 2 | From the half-plane to the line | drafted | 7,918 |
+| 1 | 3 | The weighted prime remainder | drafted | 8,893 |
+| 1 | 4 | Landau's criterion | drafted | 9,032 |
+| 1 | 5 | Why a lattice can bound a prime sum | drafted | 8,048 |
 | 1 | 6 | Fields, places and twists | drafted | 8,765 |
 | 1 | 7 | The data and its sizes | drafted | 9,847 |
-| 1 | 8 | The data exist | drafted | 13,067 |
+| 1 | 8 | The data exist | drafted | 13,098 |
 | 1 | 9 | Prime sums and the total remainder | drafted | 8,892 |
 | 1 | 10 | Twisted lattices | drafted | 9,751 |
 | 1 | 11 | The lattice of integral target forms | drafted | 8,886 |
 | 1 | 12 | Theorems A, B and C | drafted | 9,858 |
 | 1 | 13 | The main inequality and the end of the proof | drafted | 10,056 |
-| 2 | 1 | Dirichlet L-functions and zero symmetry | drafted | 9,245 |
-| 2 | 2 | Polar functions and the explicit formula | drafted | 8,378 |
-| 2 | 3 | Landau's theorem | drafted | 8,820 |
-| 2 | 4 | The prime number theorem in progressions | drafted | 11,927 |
-| 2 | 5 | Primes in windows | drafted | 12,806 |
-| 2 | 6 | Pólya-Vinogradov and quadratic twists | drafted | 10,652 |
-| 2 | 7 | Sets with no three-term progressions | drafted | 12,691 |
-| 3 | 1 | CM fields, towers and places | drafted | 11,679 |
-| 3 | 2 | Class field theory on finite ideles | drafted | 14,587 |
+| 2 | 1 | Dirichlet L-functions and zero symmetry | drafted | 9,226 |
+| 2 | 2 | Polar functions and the explicit formula | drafted | 8,493 |
+| 2 | 3 | Landau's theorem | drafted | 9,064 |
+| 2 | 4 | The prime number theorem in progressions | drafted | 12,009 |
+| 2 | 5 | Primes in windows | drafted | 12,911 |
+| 2 | 6 | Pólya-Vinogradov and quadratic twists | drafted | 10,671 |
+| 2 | 7 | Sets with no three-term progressions | drafted | 12,764 |
+| 3 | 1 | CM fields, towers and places | drafted | 11,678 |
+| 3 | 2 | Class field theory on finite ideles | drafted | 14,725 |
 | 3 | 3 | Local duality and the Greenberg-Wiles count | drafted | 14,623 |
-| 3 | 4 | Odd classes over cyclotomic fields | drafted | 14,680 |
-| 3 | 5 | CM elliptic curves | drafted | 14,695 |
+| 3 | 4 | Odd classes over cyclotomic fields | drafted | 14,684 |
+| 3 | 5 | CM elliptic curves | drafted | 14,804 |
 | 4 | 1 | Adeles and hermitian spaces | drafted | 12,742 |
 | 4 | 2 | Quotients and reduction theory | drafted | 14,726 |
 | 4 | 3 | Automorphic forms on unitary groups | drafted | 13,871 |
 | 4 | 4 | A simple trace formula | drafted | 14,711 |
-| 4 | 5 | Congruence subgroups and Haar moduli | drafted | 14,419 |
-| 5 | 1 | Discrete series through one matrix coefficient | drafted | 14,653 |
-| 5 | 2 | Laplace's method for discrete series coefficients | drafted | 14,688 |
+| 4 | 5 | Congruence subgroups and Haar moduli | drafted | 14,429 |
+| 5 | 1 | Discrete series through one matrix coefficient | drafted | 14,777 |
+| 5 | 2 | Laplace's method for discrete series coefficients | drafted | 14,693 |
 | 5 | 3 | Bessel subgroups and Bruhat measures | drafted | 14,677 |
 | 5 | 4 | Integral Weyl modules and branching | drafted | 14,531 |
 | 5 | 5 | Characters of GL_n over a finite field | drafted | 14,383 |
-| 5 | 6 | Iwahori exponents, Satake and the chain lemma | drafted | 14,425 |
+| 5 | 6 | Iwahori exponents, Satake and the chain lemma | drafted | 14,459 |
 | 6 | 1 | The Weil representation from a vacuum | drafted | 14,694 |
 | 6 | 2 | Local theta in the Fock model | drafted | 14,620 |
 | 6 | 3 | Theta kernels, theta lifts and the seesaw | drafted | 13,549 |
@@ -72,7 +72,7 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 7 | 6 | Fitting ideals, lengths and coefficient rings | drafted | 14,491 |
 | 8 | 1 | Complex abelian varieties through theta functions | drafted | 14,604 |
 | 8 | 2 | An integral model without a moduli problem | drafted | 14,661 |
-| 8 | 3 | The congruence relation | drafted | 14,017 |
+| 8 | 3 | The congruence relation | drafted | 14,072 |
 | 8 | 4 | What attached means | drafted | 14,374 |
 | 8 | 5 | Building the representations | drafted | 12,699 |
 | 9 | 1 | Theorem A and its plan | drafted | 9,575 |
@@ -83,11 +83,11 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 9 | 6 | The CM curve, its formal group and the normal form | drafted | 12,735 |
 | 9 | 7 | The count and the divisibility of standard data | drafted | 13,326 |
 | 9 | 8 | Theta kernels and gauges | drafted | 13,819 |
-| 9 | 9 | Short columns and the gain | drafted | 14,131 |
+| 9 | 9 | Short columns and the gain | drafted | 14,143 |
 | 9 | 10 | Marked primes and the valuation of a chain | drafted | 13,685 |
 | 9 | 11 | The seesaw identity, part 2: assembly | drafted | 14,413 |
 | 9 | 12 | The archimedean size of the composite lift | drafted | 12,936 |
-| 9 | 13 | Elementary divisors of a Hecke operator | drafted | 14,548 |
+| 9 | 13 | Elementary divisors of a Hecke operator | drafted | 14,609 |
 | 9 | 14 | Divisibility prime by prime | drafted | 14,197 |
 | 9 | 15 | The proof of Theorem A | drafted | 12,211 |
 | 10 | 1 | Theorem B and its plan | drafted | 9,128 |
@@ -96,20 +96,20 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 10 | 4 | Bessel functions at a real place | drafted | 14,536 |
 | 10 | 5 | Frames, depth and gains | drafted | 14,347 |
 | 10 | 6 | Local densities at the real places | drafted | 14,567 |
-| 10 | 7 | The anatomy of a term | drafted | 14,539 |
-| 10 | 8 | Local densities at the finite places | drafted | 14,633 |
-| 10 | 9 | Reduced points and frame counts | drafted | 14,403 |
-| 10 | 10 | Poincaré series and unfolding | drafted | 14,423 |
+| 10 | 7 | The anatomy of a term | drafted | 14,545 |
+| 10 | 8 | Local densities at the finite places | drafted | 14,651 |
+| 10 | 9 | Reduced points and frame counts | drafted | 14,408 |
+| 10 | 10 | Poincaré series and unfolding | drafted | 14,425 |
 | 10 | 11 | The remaining terms | drafted | 14,407 |
 | 10 | 12 | The main term | drafted | 14,638 |
-| 10 | 13 | Moments of the Poincaré map | drafted | 12,346 |
+| 10 | 13 | Moments of the Poincaré map | drafted | 12,359 |
 | 10 | 14 | The proof of Theorem B | drafted | 9,855 |
 | 11 | 1 | Theorem C and the height argument | drafted | 9,162 |
 | 11 | 2 | Twists, critical pairs and regular families | drafted | 11,323 |
 | 11 | 3 | Single theta lifts and their norms | drafted | 12,521 |
 | 11 | 4 | Character lifts and tested forms | drafted | 13,710 |
 | 11 | 5 | The exchange identity, part 1 | drafted | 14,598 |
-| 11 | 6 | The exchange identity, part 2 | drafted | 14,434 |
+| 11 | 6 | The exchange identity, part 2 | drafted | 14,474 |
 | 11 | 7 | Seesaw squares and grid paths | drafted | 14,628 |
 | 11 | 8 | The chain determinant and its factorization | drafted | 14,576 |
 | 11 | 9 | The comparison operator, part 1 | drafted | 13,665 |
@@ -121,10 +121,10 @@ This table gives each chapter of the plan with its status and its words, as `wc 
 | 11 | 15 | Hecke values of character lifts | drafted | 12,609 |
 | 11 | 16 | The height of one lift determinant | drafted | 10,947 |
 | 11 | 17 | The proof of Theorem C | drafted | 10,336 |
-| 12 | 1 | Regular families: the plan | drafted | 14,709 |
+| 12 | 1 | Regular families: the plan | drafted | 14,778 |
 | 12 | 2 | Pseudocharacters, Fitting ideals and Ribet elements | drafted | 14,593 |
 | 12 | 3 | Auxiliary primes and first-order deformations | drafted | 14,485 |
-| 12 | 4 | Tied traces and even classes | drafted | 11,921 |
+| 12 | 4 | Tied traces and even classes | drafted | 11,936 |
 | 12 | 5 | The main summands of the attached Galois representations | drafted | 14,570 |
 | 12 | 6 | Tied Selmer groups and the Greenberg-Wiles count | drafted | 14,549 |
 | 12 | 7 | Exponent lattices and Kummer charts | drafted | 14,635 |

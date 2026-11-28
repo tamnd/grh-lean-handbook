@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## v1.0.1
+
+Polish after v1.0.0 (#204). `ghb check` now gives 0 problems and 0 warnings in all 13 volumes, down from 192 warnings.
+
+- Missing `Lean:` lines added, and names in `decls:` placed in the `Lean:` line of the statement they support (#206 to #209).
+- Classical statements that the source does not formalize now say so, with the line `Not in the source.` and one sentence on what the source uses instead (#205).
+- Links to names that no chapter states now go to a related statement or are code.
+- Volume 2, polar functions: the book called the source's lemma "a stronger form" of the two-sided bound. It is an upper bound only, under a sign condition on the residues. The text is corrected.
+- Volume 10: repeated headings renamed, so the EPUB has no duplicate identifiers.
+
 ## v1.0.0
 
 The first complete edition of The GRH Lean Handbook, at the pin 72fead1 of lsernau/grh-lean.

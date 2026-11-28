@@ -9,7 +9,7 @@ generated_by: scripts/lean_index.py
 
 ## Other names, A to L
 
-This section and the next have the 7381 cited names outside the namespace `New.Data`. This section has 4048 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
+This section and the next have the 7383 cited names outside the namespace `New.Data`. This section has 4050 of them: the names outside the namespace `New`, which are the statements of the source and the names of Mathlib that the chapters cite, and the names `New.X` with `X` from A to L. The lines are those of the readable edition `grh/src` at the commit `72fead102f66`. A link on a line number opens the file at that line on GitHub. A name of Mathlib has no file of the source.
 
 - `ArithmeticFunction.vonMangoldt.residueClass`: a name of Mathlib. Cited in [Chapter](/chapter/notation/), [Chapter](/chapter/weighted-prime-remainder/), [Chapter](/chapter/primes-in-windows/).
 - `Behrend.exists_large_sphere`: a name of Mathlib. Cited in [Chapter](/chapter/data-exist/).
@@ -221,7 +221,6 @@ This section and the next have the 7381 cited names outside the namespace `New.D
 - `New.CMLattice.exists_galConjugate_of_g₂_g₃`: `Lib/CM/ConjugateCurve.lean`, [line 354](lean:Lib/CM/ConjugateCurve.lean#L354). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_isGreatest_norm_deriv`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 165](lean:New/Derivatives/Sharpness/OneCurve.lean#L165). Cited in [Chapter](/chapter/sharpness/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal`: `Lib/CM/GoodReduction.lean`, [line 230](lean:Lib/CM/GoodReduction.lean#L230). Cited in [Chapter](/chapter/cm-elliptic-curves/).
-- `New.CMLattice.exists_latticeModule_eq_scaledIdeal_mul`: `Lib/CM/GoodReduction.lean`, [line 249](lean:Lib/CM/GoodReduction.lean#L249). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_latticeModule_eq_scaledIdeal_sq`: `Lib/CM/ChowlaSelberg.lean`, [line 257](lean:Lib/CM/ChowlaSelberg.lean#L257). Cited in [Chapter](/chapter/cm-elliptic-curves/).
 - `New.CMLattice.exists_negLogTheta_frobenius_congruence`: `New/Derivatives/FormalGroup/FrobeniusCongruence.lean`, [line 257](lean:New/Derivatives/FormalGroup/FrobeniusCongruence.lean#L257). Cited in [Chapter](/chapter/cm-formal-group/).
 - `New.CMLattice.exists_norm_coeff_le_norm_coeff_prod_pow`: `New/Derivatives/Sharpness/OneCurve.lean`, [line 227](lean:New/Derivatives/Sharpness/OneCurve.lean#L227). Cited in [Chapter](/chapter/sharpness/).
@@ -1936,6 +1935,7 @@ This section and the next have the 7381 cited names outside the namespace `New.D
 - `New.FinComplexSpace`: `Lib/Shimura/ComplexTheta/AppellHumbertData.lean`, [line 60](lean:Lib/Shimura/ComplexTheta/AppellHumbertData.lean#L60). Cited in [Chapter](/chapter/complex-abelian-varieties/).
 - `New.finite_cocycles_unramified_outside`: `Lib/ClassField/GreenbergWiles/SelmerLevels.lean`, [line 153](lean:Lib/ClassField/GreenbergWiles/SelmerLevels.lean#L153). Cited in [Chapter](/chapter/local-duality/).
 - `New.finite_levelSpace_smoothFormRep`: `Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean`, [line 304](lean:Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean#L304). Cited in [Chapter](/chapter/automorphic-forms/).
+- `New.finite_ramified`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 290](lean:Lib/ClassField/Places/ValuationSubrings.lean#L290). Cited in [Chapter](/chapter/cm-fields/).
 - `New.finiteImage_add_mem`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 52](lean:New/Derivatives/Vacuum/ShortVectors.lean#L52). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.finiteImage_mul_mem`: `New/Derivatives/Vacuum/ShortVectors.lean`, [line 58](lean:New/Derivatives/Vacuum/ShortVectors.lean#L58). Cited in [Chapter](/chapter/integral-vacuum/).
 - `New.finiteIndex_idele_subgroup_of_isOpen`: `Lib/ClassField/Places/Ideles.lean`, [line 383](lean:Lib/ClassField/Places/Ideles.lean#L383). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
@@ -2558,7 +2558,7 @@ This section and the next have the 7381 cited names outside the namespace `New.D
 - `New.GaloisRep.exists_isStep_hasQuadSubfield`: `Lib/GaloisRep/Main/QuadraticStep.lean`, [line 547](lean:Lib/GaloisRep/Main/QuadraticStep.lean#L547). Cited in [Chapter](/chapter/building-representations/).
 - `New.GaloisRep.exists_isStepOfLocalChar`: `Lib/ClassField/Grunwald.lean`, [line 859](lean:Lib/ClassField/Grunwald.lean#L859). Cited in [Chapter](/chapter/local-duality/).
 - `New.GaloisRep.exists_padicModel_hecke_contraction`: `Lib/GaloisRep/WeightCongruence.lean`, [line 487](lean:Lib/GaloisRep/WeightCongruence.lean#L487). Cited in [Chapter](/chapter/building-representations/).
-- `New.GaloisRep.exists_rep_of_cuspidal_type`: `Lib/GaloisRep/Main/SeedRepresentation.lean`, [line 822](lean:Lib/GaloisRep/Main/SeedRepresentation.lean#L822). Cited in [Chapter](/chapter/congruence-relation/), [Chapter](/chapter/building-representations/).
+- `New.GaloisRep.exists_rep_of_cuspidal_type`: `Lib/GaloisRep/Main/SeedRepresentation.lean`, [line 822](lean:Lib/GaloisRep/Main/SeedRepresentation.lean#L822). Cited in [Chapter](/chapter/building-representations/).
 - `New.GaloisRep.exists_step_of_local_char`: `Lib/ClassField/Grunwald.lean`, [line 928](lean:Lib/ClassField/Grunwald.lean#L928). Cited in [Chapter](/chapter/local-duality/).
 - `New.GaloisRep.exists_weak_baseChange`: `Lib/GaloisRep/Main/OddRank.lean`, [line 272](lean:Lib/GaloisRep/Main/OddRank.lean#L272). Cited in [Chapter](/chapter/building-representations/).
 - `New.GaloisRep.HasJumpsAt`: `Lib/GaloisRep/Main/LocalConditions.lean`, [line 134](lean:Lib/GaloisRep/Main/LocalConditions.lean#L134). Cited in [Chapter](/chapter/attached-representations/).
@@ -3345,7 +3345,9 @@ This section and the next have the 7381 cited names outside the namespace `New.D
 - `New.IsPlaceOver`: `Lib/ClassField/Places/GaloisDefs.lean`, [line 118](lean:Lib/ClassField/Places/GaloisDefs.lean#L118). Cited in [Chapter](/chapter/cm-fields/), [Chapter](/chapter/class-field-theory/).
 - `New.IsPlaceOver.abelianLift_artinAt_of_inertiaGroup_le_ker`: `Lib/ClassField/Global/ArtinMap.lean`, [line 163](lean:Lib/ClassField/Global/ArtinMap.lean#L163). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsPlaceOver.abelianLift_artinAt_principal`: `Lib/ClassField/Local/ArtinMap.lean`, [line 783](lean:Lib/ClassField/Local/ArtinMap.lean#L783). Cited in [Chapter](/chapter/class-field-theory/).
+- `New.IsPlaceOver.exists_above`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 328](lean:Lib/ClassField/Places/ValuationSubrings.lean#L328). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsPlaceOver.exists_isFrob`: `Lib/ClassField/Places/DecompositionCompletion.lean`, [line 637](lean:Lib/ClassField/Places/DecompositionCompletion.lean#L637). Cited in [Chapter](/chapter/cm-fields/).
+- `New.IsPlaceOver.exists_smul`: `Lib/ClassField/Places/ValuationSubrings.lean`, [line 342](lean:Lib/ClassField/Places/ValuationSubrings.lean#L342). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsPlaceOver.isLocalArtin_localArtin`: `Lib/ClassField/Local/ArtinMap.lean`, [line 308](lean:Lib/ClassField/Local/ArtinMap.lean#L308). Cited in [Chapter](/chapter/class-field-theory/).
 - `New.IsPlaceOver.isLocalGalois_and_residueCard_eq_and_isUniformiser`: `Lib/ClassField/Places/DecompositionCompletion.lean`, [line 525](lean:Lib/ClassField/Places/DecompositionCompletion.lean#L525). Cited in [Chapter](/chapter/cm-fields/).
 - `New.IsPlaceOver.ramification_in_tower`: `Lib/ClassField/Places/DecompositionCompletion.lean`, [line 741](lean:Lib/ClassField/Places/DecompositionCompletion.lean#L741). Cited in [Chapter](/chapter/cm-fields/).
