@@ -138,7 +138,7 @@ The terms satisfy $0 \le \mathrm{pm}_\tau(e) \le \kappa(\tau)/p^e$ (`New.Data.pa
 **Theorem (The partner identity).** For every prime $p$,
 $$\gamma_p\sum_{\tau\in\Phi}\kappa(\tau) - F(p) = v(\pi_p)\sum_{\tau\in\Phi}R_\tau.$$
 
-Lean: `New.Data.mul_sum_weight_sub_localPrimeSumTotal` (New/Derivatives/Sharpness/NearPairs.lean).
+Lean: `New.Data.mul_sum_weight_sub_localPrimeSumTotal` (New/Derivatives/Sharpness/NearPairs.lean). The convergence of the series of positive parts is `New.Data.summable_posPart_sub_weight` (same file).
 
 *Proof.* Fix $\tau$, write $y = \kappa(\tau)$ and $z_e = \kappa(u(-p^e)\tau)$. By the lemma on the full gain (Section 5), $\sum_{e\in I_p}y/p^e = y\gamma_p/v(\pi_p)$. For real numbers, $y/p^e - (y/p^e - z_e)_+ = \min(y/p^e, z_e)$. Both series converge, so subtract them term by term:
 $$R_\tau = \frac{y\gamma_p}{v(\pi_p)} - \sum_{e\in I_p}\Bigl(\frac{y}{p^e} - z_e\Bigr)_+ = \frac{y\gamma_p - s_p(y, \tau)}{v(\pi_p)}.$$

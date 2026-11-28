@@ -70,7 +70,7 @@ Lean: `New.Exchange.realSlice_zero_congr`, `New.Exchange.realSlice_zero_comp` (N
 
 **Lemma.** Let $A$ split one plane off $W'$ over $W$ and be adapted, let $y$ be a Schwartz vector for $(W', U)$, and let $z$ be integral at the ramified places. Let $\pi_W$ be the projection to $W$ in the frame of $A$. The integral over the radical of the line, at the Levi point $(1, g)$, of $\theta_{\mathrm{small}}(W', U; y, \phi_{\mathrm{col}}(z\pi_W))$ is $\kappa_A\,\theta_{\mathrm{small}}(W, U; y_0, \phi_{\mathrm{col}}(z))(g)$. Here $y_0$ is the zero term of $y$ along $A$ and $\kappa_A \neq 0$ is the factor by which slices of $A$ multiply the vacuum.
 
-Lean: `New.Exchange.integral_thetaSmall_lineRadical_eq_mul_thetaSmall` (New/Determinant/Exchange/RemovingPlanes.lean).
+Lean: `New.Exchange.integral_thetaSmall_lineRadical_eq_mul_thetaSmall` (New/Determinant/Exchange/RemovingPlanes.lean). The proof uses `New.Exchange.homSlice_localDatum_stdColDatum` and `New.Exchange.theta_zeroTerm_stdColDatum_eq_zero` (same file).
 
 *Proof.* Step 1, the slices. The slice along $A$ of the datum with real part $y$ and finite part $\phi_{\mathrm{col}}(z\pi_W)$ at $x$ is $0$ unless the finite part of $x$ is integral. Then it is $\kappa_A$ times the datum with real part the slice of $y$ at $x$ and finite part $\phi_{\mathrm{col}}(z)$ (`New.Exchange.homSlice_localDatum_stdColDatum`). This holds because $\pi_W$ read at the ramified places is the transpose of the inclusion of $W$ at the conjugate places. So the datum reads only the block of columns along $W$.
 

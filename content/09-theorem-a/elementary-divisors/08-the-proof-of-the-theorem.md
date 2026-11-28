@@ -50,7 +50,7 @@ Lean: `New.smul_top_le_of_le_sup_smul_top` (New/UpperBound/ElementaryDivisors/El
 
 **Theorem (Few generators).** Let $RQ = 1$, $w \in \mathfrak m$, $aw \mid u$, and $u \mid (AB - a\cdot 1)_{ij}$ for all $i, j$. Let the images of $Q$ and $B$ lie in $\mathrm{valuedIn}(X, C)$, and let $u h \in C$ imply that the reduction of $h$ lies in $S$. Then there is a finite set $s$ with $|E| + |s| \le |X|\dim S$ and $a\,O^E \subseteq \mathrm{im}(AQ) + \mathrm{span}\,s$.
 
-Lean: `New.exists_finset_card_le_smul_top_le_sup_span` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean).
+Lean: `New.exists_finset_card_le_smul_top_le_sup_span` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean). The module $\mathrm{valuedIn}(X, C)$ is `New.valuedIn` (same file).
 
 *Proof.* Apply the first lemma to $Q$ and $B$. Let $J = \{j : t_j \ne 0,\ t_j \mid u\}$ and $s = \{AU_{\cdot j} : j \in J\}$. In a valuation ring $u \mid t_j$ for $j \notin J$.
 
@@ -104,6 +104,6 @@ Let $\pi = f \circ \mathrm{regroup}(J)$. As $\mathrm{regroup}(J)$ is onto, $\pi(
 
 **Corollary (Lengths).** Let $O$ be a discrete valuation ring of characteristic zero, with the other hypotheses of the theorem. Then $Y(L) \subseteq L$, and there is $l \le (3c_{\mathrm{div}} + \theta m)|X||I|$ with $\mathrm{length}\,L/(Y(L) + p^mL) \le l \cdot \mathrm{length}(O/p)$.
 
-Lean: `New.FrobeniusCycle.elementary_divisors_length` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean).
+Lean: `New.FrobeniusCycle.elementary_divisors_length` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean). It follows from `New.FrobeniusCycle.elementary_divisors` (same file), the theorem of Section 1, which this section proves.
 
 *Proof.* $L$ is finitely generated. Over a discrete valuation ring a colength dividing $p^l$ gives this length bound (`New.IsOntoUpToColength.exists_relLength_le`). $\square$

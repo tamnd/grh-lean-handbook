@@ -49,7 +49,7 @@ Write $o(e) = \mathrm{origin}(e)$, $g_e = \mathrm{originBasisChange}(e)$, $\gamm
 
 $$(AF)(x) = \sum_{b \in \mathcal C} \Big(\big(\rho(g_{(x,b)})\,D^2\,\rho(\gamma_b)\big)^{\mathsf T} \otimes t_{(x,b)}\Big)_{J,J}\, F(o(x,b)).$$
 
-Lean: `New.FrobeniusCycle.edgeHeckeOperator` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean).
+Lean: `New.FrobeniusCycle.edgeHeckeOperator` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean). Its entries are `New.FrobeniusCycle.edgeHeckeOperator_apply` (same file).
 
 The subscript $J, J$ reindexes the Kronecker product by $I$. Entry by entry, $(AF)(x)_i = \sum_b\sum_j t_{(x,b)}{}_{(Ji)_2,(Jj)_2}\,M_b{}_{(Jj)_1,(Ji)_1}\,F(o(x,b))_j$, where $M_b$ is the product of three matrices in the definition (`New.FrobeniusCycle.edgeHeckeOperator_apply`). The values of $F$ are coefficients in the basis $(n!^N/\beta!)z^\beta$. In this basis the substitution $h \mapsto h \circ g$ has matrix $\rho(g)^{\mathsf T}$. So, in terms of forms, $A$ is $p^{Nn/2}$ times the sum over the edges into $x$ of the values at the origins, each carried to $x$ by the $\delta$ of its edge.
 
@@ -65,7 +65,7 @@ $$\mathrm{pairingMap}(u, b, Q') = Q'^{\mathsf T}\,\mathrm{edgewise}(u, \mathrm{d
 
 $$\mathrm{nearInverse}(u, \mathrm{Av}, b', R') = \mathrm{edgewise}(u^{-1}, \mathrm{Av}\,\mathrm{diag}\,b')\,R'^{\mathsf T}.$$
 
-Lean: `New.pairingMap`, `New.nearInverse` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean).
+Lean: `New.pairingMap`, `New.nearInverse` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean). They are built from `New.edgewise`, with its values `New.edgewise_mulVec` (same file).
 
 So the pairing map sends a function on edges to its pairings with the columns of $Q'$: by $u(e)$ on $O^H$, and by $\langle h, h'\rangle_b = h' \cdot (b \ast h)$ on forms.
 
@@ -97,7 +97,7 @@ $$A\big(\mathrm{regroup}(J)(b \ast F)\big) = \mathrm{regroup}(J)\big(\mathrm{pai
 
 where $(b \ast F)(y) = b_{y_2}F(y)$.
 
-Lean: `New.FrobeniusCycle.IsEdgePairing.edgeHeckeOperator_regroup` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean).
+Lean: `New.FrobeniusCycle.IsEdgePairing.edgeHeckeOperator_regroup` (New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean). The map is `New.regroup`, onto by `New.regroup_surjective` (same file).
 
 *Proof.* Fix $x$ and $i$. Let $\psi = \mathcal R F$ and $\varphi = \mathrm{edgewise}(\mathrm{transition}, \mathrm{diag}\,b)\psi$. Write $M_q = \rho(g_{(x,q)})D^2\rho(\gamma_q)$.
 

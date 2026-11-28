@@ -68,7 +68,7 @@ Lean: `New.FrobeniusCycle.lt_weight_and_lt_defect_of_not_dvd_coeff_contractOther
 1. for all $h$, $\mathrm{Av}\,h \in \mathrm{defectConditions}(n, a, r, (w^c), 3c^*)$;
 2. for all $h$ and all $h' \in \mathrm{allEdgesForms}(k, n, r)$, $w^c$ divides $h'\cdot(b \ast \mathrm{Av}\,h) - p^{Nc_0}\,h'\cdot(b \ast h)$.
 
-Lean: `New.FrobeniusCycle.exists_average_mem_defectConditions_and_dvd_sub` (New/UpperBound/ElementaryDivisors/AveragingMap.lean).
+Lean: `New.FrobeniusCycle.exists_average_mem_defectConditions_and_dvd_sub` (New/UpperBound/ElementaryDivisors/AveragingMap.lean). The two steps of the proof are `New.FrobeniusCycle.partialAverage_univ_mulVec_mem_defectConditions` and `New.FrobeniusCycle.pow_dvd_pairing_partialAverage_insert_sub` (same file).
 
 *Proof.* Put $D = Nnk(\ell+2)P^\ell$. Then $D + k < D + P^\ell = (Nk(\ell+2)n + 1)P^\ell \le P^{2\ell} = P^N = q$, so $D + k \le |k_W|$ and $D < p^{fN}$. For each copy $j$ choose an average $I_j$ for the Levi group of $\mathrm{twoBlock}(k, r)$, the embedding $\iota_j$, $\rho = \mathrm{rootVector}(a, r)$, $t = 2c^*P^\ell$, the constant $p^{k^2fN} = p^{c_0}$ and the degree $D$. Let $\mathrm{Av} = \mathrm{Av}_{\mathrm{all}}$.
 

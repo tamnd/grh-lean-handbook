@@ -35,6 +35,8 @@ The Gram determinant of the lifts measures all denominators at once. Let $L_Z = 
 
 **Proposition (Projections of a unimodular lattice).** Let $O$ be the ring of integers of an imaginary quadratic field with class number $1$, and let $L$ be a free $O$-lattice in a hermitian space $V$ with $\langle L, L\rangle \subseteq O$ and $L^{\#} = L$. For every subspace $Z$ of $V$, we have $\mathrm{pr}_Z(L) = L_Z^{\#}$. Thus the index of $L_Z$ in $\mathrm{pr}_Z(L)$ is the absolute norm of the Gram determinant of a basis of $L_Z$.
 
+Not in the source. The source bounds the denominator of the projection directly, by an operator on $Z$ (the theorem on the bound for denominators below).
+
 *Proof.* For $y \in L$ and $z \in L_Z$, we have $\langle \mathrm{pr}_Z\, y, z\rangle = \langle y, z\rangle \in O$, so $\mathrm{pr}_Z(L) \subseteq L_Z^{\#}$. Conversely, let $\varphi \in L_Z^{\#}$. The quotient $L/L_Z$ embeds in $V/Z$, so it has no torsion. Since $O$ is a principal ideal domain, $L_Z$ is a direct summand of $L$, and the $O$-linear map $z \mapsto \langle z, \varphi\rangle$ from $L_Z$ to $O$ extends to an $O$-linear map $\lambda : L \to O$. Since $L$ is unimodular, $\lambda = \langle \cdot, y\rangle$ for some $y \in L$. Then $\mathrm{pr}_Z\, y$ and $\varphi$ have the same inner products with $L_Z$. Since $L_Z$ spans $Z$, $\mathrm{pr}_Z\, y = \varphi$. For the index, the quotient $L_Z^{\#}/L_Z$ is isomorphic to $O/(\det G)$, where $G$ is the Gram matrix of a basis of $L_Z$, and this quotient has $|\mathrm{Nm}(\det G)|$ elements. $\square$
 
 In the example, $L_Z = O u$, the Gram matrix is $(N)$, and the index is $N^2$, the norm of $N$ from $\mathbb{Q}(i)$ to $\mathbb{Q}$. The projected lattice $\mathrm{pr}_Z(L) = O u/N$ has the basis $u/N$, and an operator $\Lambda = N$ on $Z$ takes it into $L_Z$. Then $\det \Lambda = N$ on the line $Z$, which is the form of the condition in the definition of `ClearsProjection`. In general, an operator $\Lambda$ on $Z$ with $\Lambda(\mathrm{pr}_Z\, L) \subseteq L_Z$ has $\det \Lambda \in O$ divisible by the index, and the $\ell$-adic part of $\det \Lambda$ bounds the $\ell$-adic part of the Gram determinant.
@@ -46,6 +48,8 @@ The lattices of the source are not unimodular, and the forms are tested only aga
 The source bounds the congruences by Galois cohomology. The model for this is the theorem of Ribet.
 
 **Theorem (Ribet).** Let $p$ be a prime and $k$ an even integer with $2 \leq k \leq p - 3$. If $p$ divides the Bernoulli number $B_k$, then the $\omega^{1-k}$-part of the $p$-part of the class group of $\mathbb{Q}(\mu_p)$ is not zero. Here $\omega$ is the Teichmüller character.
+
+Not in the source. The source uses no Bernoulli numbers and no class groups of $\mathbb{Q}(\mu_p)$; it uses an algebraic form of Ribet's method (`New.Selmer.exists_isCommonRibetElement_addVal_le`, applied to Galois representations in `New.Selmer.ribet_columns`), which gives the bound for denominators below in terms of Selmer groups.
 
 This is the main theorem of [Ribet 1976]. The proof has two steps. First, the divisibility $p \mid B_k$ gives a congruence modulo $p$ between an Eisenstein series and a cusp form. Second, the $p$-adic Galois representation of the cusp form is irreducible, but its reduction has the characters of the Eisenstein series as its factors. A suitable lattice in the representation gives a nonsplit extension of these characters, and this extension is a nonzero unramified class.
 

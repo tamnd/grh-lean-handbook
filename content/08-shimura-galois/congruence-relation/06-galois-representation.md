@@ -52,7 +52,7 @@ The elements $s$ in clause 3 are the *geometric* Frobenius elements: $s^{-1}$ ra
 **Theorem.** Let $X$ be a model over $R$ for $\mathrm{GU}$ of rank $a \geq 1$, at a neat level $\mathfrak{N}$, with $\nu$ extra points. Let $\ell$ be a prime. Let $R$ be the localization of $\mathcal{O}_E$ at a submonoid $M$ that meets no safe place. Let $\theta(w, j) \in \mathbb{C}$ for safe $w$ and $j \in \mathbb{N}$. Let $J$ be a multiset of integers $h \geq 0$, and assume that $\theta$ occurs in weight $h$ (with parameter $\nu$) for every $h \in J$. Then there is a continuous representation $\rho : \operatorname{Gal}(\Omega/E) \to \mathrm{GL}_m(\bar{\mathbb{Q}}_\ell)$ such that at every safe place $w$, $\rho$ is spherical above $w$, with the multiset $J$ at the embedding $E \to \mathbb{C}$ given with $E$ and $0$ at the other embeddings, and with the polynomial
 $$P_w(X) = \sum_{j = 0}^{a} (-1)^j q^{\binom{j}{2}} \iota_\ell(\theta(w, j)) X^{a - j}, \qquad q = |k_w|.$$
 
-Lean: `New.Variety.Model.exists_galois_rep` (Lib/Shimura/Eigenspace.lean).
+Lean: `New.Variety.Model.exists_galois_rep` (Lib/Shimura/Eigenspace.lean). The polynomial is `New.heckePoly` (Lib/GaloisRep/Main/Defs.lean). The proof uses `New.Variety.algebraMap_mem_of_isLocalization` (same file) and `New.Variety.ellAdicCohom.transfer` (Lib/Cohomology/Etale/ProperFunctors.lean).
 
 Here $\iota_\ell : \mathbb{C} \cong \bar{\mathbb{Q}}_\ell$ is the isomorphism that the source fixes once and for all, and $P_w$ is `New.heckePoly`. The textbook form of the classical case is Deligne, *Formes modulaires et représentations l-adiques*, Séminaire Bourbaki 355 (1969), Théorème 4.9, and for unitary Shimura varieties Harris and Taylor (2001), Chapter VII. Both attach a representation of the correct dimension, cut out as an isotypic part. The source states less, as the remarks below explain.
 
@@ -96,7 +96,7 @@ The proof uses the theorem of Section 2 with exponents $e_A = a - \dim A$ and Fr
 
 **Proposition.** In the same setting, let the cohomology be crystalline at $A$, let $s$ be a geometric Frobenius at $A$ in the decomposition group, and let $(s, k)$ be a Weil pair for a local datum at $A$. Then $P_w$ kills $(s, k)$ for $r$ on the decomposition group.
 
-Lean: `New.Variety.Model.isKilledBy_heckePoly_of_isEigenQuotient` (Lib/Shimura/Eigenspace.lean).
+Lean: `New.Variety.Model.isKilledBy_heckePoly_of_isEigenQuotient` (Lib/Shimura/Eigenspace.lean). The proof uses `New.Variety.ellAdicCohom.isCrystalline_and_linearFrob_rel` (Lib/PadicComparison/CrystallineFrobenius.lean).
 
 *Proof.* The Weil pair forces $q = \ell^k$, so $w$ lies above $\ell$. The crystalline comparison of [the comparison theorems](/chapter/comparison-theorems/), in the form `isCrystalline_and_linearFrob_rel`, turns the same relation on points into the relation
 $$\sum_A (-1)^{\dim A} q^{\binom{\dim A}{2}} \, u_A^* \circ \beta_{s^{a - \dim A}, (a - \dim A) k} = 0 \quad \text{on } B \otimes V^n,$$
@@ -108,7 +108,7 @@ with $\beta$ the linear Frobenius of Section 4. After $u_1^*$, which stays injec
 
 **Lemma (Killing a weight gives null elements).** Let $c$ be a combination of words in the safe Hecke indices, with coefficients in $\bar{\mathbb{Q}}_\ell$, such that $c(T)$ kills every vector of Hodge-Tate weight $h$ in every $\mathbb{C}_\ell \otimes V^n$. Let $\varepsilon : \mathbb{C} \cong \bar{\mathbb{Q}}_\ell$ be compatible with the place. Then for every Hecke element $b$, the element $b \cdot \sum_L \varepsilon^{-1}(c_L) \tau_L$ is $h$-null.
 
-Lean: `New.Variety.Model.isNullHecke_mul_of_kills_weight` (Lib/Shimura/Eigenspace.lean).
+Lean: `New.Variety.Model.isNullHecke_mul_of_kills_weight` (Lib/Shimura/Eigenspace.lean). The proof uses `New.Variety.ellAdicCohom.woods_hole` (Lib/Cohomology/WoodsHole.lean) and `New.Variety.exists_hasHodgeTateWeight` (Lib/PadicComparison/HodgeTate/PeriodMap.lean).
 
 *Proof.* By the Lefschetz lemma of Section 5, it is enough to show that the family of legs over $b \, c(\tau)$, composed with $m_\alpha$, is null in weight $h$ on deep levels. The vanishing half of the Atiyah-Bott formula in the source (`New.Variety.ellAdicCohom.woods_hole`) reduces this to the vanishing of
 $$\sum_g (b\, c(\tau))_g \, \lambda_h\big(u_g^* m_\alpha^* x\big)$$

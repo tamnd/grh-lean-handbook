@@ -167,7 +167,7 @@ $$\mathrm{tr}[(\gamma_j - 1)g\,p(\varphi_j)](x)\cdot y = \mathrm{tr}[p(\varphi_j
 
 Lean: `New.Patching.BaseLevel.tameTrace_smul_eq_diamond_sub_one` (New/Congruences/FirstOrder/TiedTraces.lean).
 
-*Proof.* Assume $y \neq 0$. By item 5 of the lemma on the groups, the maximal compact subgroup acts on $y$ by $k \mapsto \psi(\mathrm{ind}(\overline{\det k}))$. Local-global compatibility at Iwahori level ([`isParahoricCompatible_galRep`](/decl/New.Patching.isParahoricCompatible_galRep/)) then says that $\rho_x(\gamma_j)$ is killed by $X - \psi(\mathrm{ind}(\bar u)) = X - \psi(1)$. So $N_x(\gamma_j) = \rho_x(\gamma_j) = \psi(1)$ is a scalar, and the tame trace at $x$ is $(\psi(1) - 1)\,\mathrm{tr}[p(\varphi_j)g](x)$. On the other side, $\langle\gamma\rangle y = \psi(\mathrm{ind}_{\det}\langle\gamma\rangle)y = \psi(1)y$. $\square$
+*Proof.* Assume $y \neq 0$. By item 5 of the lemma on the groups, the maximal compact subgroup acts on $y$ by $k \mapsto \psi(\mathrm{ind}(\overline{\det k}))$. Local-global compatibility at Iwahori level (`New.Patching.isParahoricCompatible_galRep`, which the source proves from [Theorem](/decl/New.GaloisRep.Attached.local_global_of_eigencharacter/)) then says that $\rho_x(\gamma_j)$ is killed by $X - \psi(\mathrm{ind}(\bar u)) = X - \psi(1)$. So $N_x(\gamma_j) = \rho_x(\gamma_j) = \psi(1)$ is a scalar, and the tame trace at $x$ is $(\psi(1) - 1)\,\mathrm{tr}[p(\varphi_j)g](x)$. On the other side, $\langle\gamma\rangle y = \psi(\mathrm{ind}_{\det}\langle\gamma\rangle)y = \psi(1)y$. $\square$
 
 **Corollary.** In the same setting, for every weight $f$,
 $$\mathrm{W}_{\mathrm{ind}_{\det}}(f) \cdot \mathrm{tr}[(\gamma_j - 1)g\,p(\varphi_j)] = (\langle\gamma\rangle - 1)\,\mathrm{W}_{\mathrm{ind}_{\det}}(f)\cdot\mathrm{tr}[p(\varphi_j)g]$$
@@ -192,7 +192,7 @@ $$\mathrm{tr}[(\gamma_j - 1)g\,p(\varphi_j)](x)\cdot y = \mathrm{tr}[(\gamma_j -
 
 Lean: `New.Patching.BaseLevel.tameTrace_smul_eq_aevalHecke` (New/Congruences/FirstOrder/TiedTraces.lean).
 
-*Proof.* By item 4 of the lemma on the groups, $y$ lies in the eigenspace of the line parahoric for the character $k \mapsto \psi(\mathrm{ind}(\overline{k_{00}}))$. The value $\psi(\mathrm{ind}(\bar u))^{n!} = \psi(n!)$ is not $1$. Under this condition, [`hecke_eq_frob_on_parahoricEigenspace`](/decl/New.Patching.hecke_eq_frob_on_parahoricEigenspace/) says that, against $T = \rho_x(\gamma_j) - 1$ inside a trace, a polynomial in $U$ acting on $y$ equals the same polynomial in $\rho_x(\varphi_j)$. Apply it to $p(a(\varphi_j)X)$, and use $N_x(\gamma_j) = T + 1$ and $N_x(\varphi_j) = a(\varphi_j)\rho_x(\varphi_j)$. $\square$
+*Proof.* By item 4 of the lemma on the groups, $y$ lies in the eigenspace of the line parahoric for the character $k \mapsto \psi(\mathrm{ind}(\overline{k_{00}}))$. The value $\psi(\mathrm{ind}(\bar u))^{n!} = \psi(n!)$ is not $1$. Under this condition, `New.Patching.hecke_eq_frob_on_parahoricEigenspace` (proved in the source from the same compatibility, [Theorem](/decl/New.GaloisRep.Attached.local_global_of_eigencharacter/)) says that, against $T = \rho_x(\gamma_j) - 1$ inside a trace, a polynomial in $U$ acting on $y$ equals the same polynomial in $\rho_x(\varphi_j)$. Apply it to $p(a(\varphi_j)X)$, and use $N_x(\gamma_j) = T + 1$ and $N_x(\varphi_j) = a(\varphi_j)\rho_x(\varphi_j)$. $\square$
 
 The condition $\psi(n!) \neq 1$ fails for some characters, so the theorem does not give an identity of operators at once. The weight lemma and the shift lemma of [the last section](/chapter/tied-traces/#norms-at-one-prime) handle this.
 
