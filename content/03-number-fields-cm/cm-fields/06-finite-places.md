@@ -22,6 +22,9 @@ decls:
   - New.IsFrob
   - New.inertiaGroup
   - New.IsFrob.inv_mul_mem_inertiaGroup
+  - New.IsPlaceOver.exists_above
+  - New.IsPlaceOver.exists_smul
+  - New.finite_ramified
   - New.IsPlaceOver.isLocalGalois_and_residueCard_eq_and_isUniformiser
   - New.IsPlaceOver.exists_isFrob
   - New.IsPlaceOver.ramification_in_tower
@@ -104,7 +107,7 @@ The proof that $\bar v$ lies over $v$ is `New.FinPlace.isPlaceOver_placeOver` ([
 1. For a field $K \subset L \subset \Omega$ with $\Omega/L$ algebraic, $A$ lies over a prime $u$ of $L$ with $u$ over $v$.
 2. If $A'$ also lies over $v$, then $g A = A'$ for some $g \in \Gamma$.
 
-In the source, 1 is `New.IsPlaceOver.exists_above` ([ValuationSubrings.lean](lean:Lib/ClassField/Places/ValuationSubrings.lean#L328)) and 2 is `New.IsPlaceOver.exists_smul` ([ValuationSubrings.lean](lean:Lib/ClassField/Places/ValuationSubrings.lean#L342)).
+Lean: `New.IsPlaceOver.exists_above`, `New.IsPlaceOver.exists_smul` (Lib/ClassField/Places/ValuationSubrings.lean). The first is part 1 and the second is part 2.
 
 The second statement is the transitivity of the Galois action on the primes over $v$ (Neukirch, Ch. I, Prop. 9.1), for the infinite extension $\Omega/K$. The source proves it with a compactness argument on $\Gamma$.
 
@@ -143,7 +146,7 @@ Lean: `New.IsPlaceOver.ramification_in_tower` (Lib/ClassField/Places/Decompositi
 
 **Theorem.** Let $U \subset \Gamma$ be open. Then for all but finitely many finite places $v$ of $K$, $I_A \subset U$ for every $A$ over $v$.
 
-In the source this is `New.finite_ramified` ([ValuationSubrings.lean](lean:Lib/ClassField/Places/ValuationSubrings.lean#L290)).
+Lean: `New.finite_ramified` (Lib/ClassField/Places/ValuationSubrings.lean).
 
 Classically these are the statements $|D| = ef$, $|I| = e$ for the finite extension $L/K$, with $L$ the fixed field of $U$, and the finiteness of the ramified primes (Neukirch, Ch. I, §9, and Ch. III, §2). The source proves `New.finite_ramified` by compactness of $\Gamma$: the inertia groups over $v$ tend to $1$ as $v$ leaves every finite set.
 

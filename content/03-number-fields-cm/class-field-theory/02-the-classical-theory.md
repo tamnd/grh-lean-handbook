@@ -15,11 +15,15 @@ Let $K$ be a number field. For each place $v$ of $K$ let $K_v$ be the completion
 
 **Definition (Idele group).** The *idele group* $J_K$ is the restricted product of the groups $K_v^\times$ over all places $v$ of $K$, with respect to the subgroups $\mathcal{O}_v^\times$ at the finite places. So an idele is a family $(a_v)_v$ with $a_v \in K_v^\times$ for every $v$ and $a_v \in \mathcal{O}_v^\times$ for almost all $v$. The topology has a base of neighbourhoods of $1$ formed by the sets $\prod_{v \in S} U_v \times \prod_{v \notin S} \mathcal{O}_v^\times$, with $S$ finite and containing the infinite places, and $U_v$ open in $K_v^\times$. The *finite ideles* $J_{K,f}$ are the same restricted product over the finite places only. The *idele class group* is $C_K = J_K / K^\times$, where $K^\times$ is embedded diagonally.
 
+Not in the source. The source uses only the finite ideles, the units of the finite adele ring of Mathlib, [Section 3](/chapter/class-field-theory/#finite-ideles-and-galois-groups).
+
 Neukirch defines these groups in Chapter VI, §1. There is a product decomposition $J_K = J_{K,f} \times K_\infty^\times$ with $K_\infty^\times = \prod_{v \mid \infty} K_v^\times$. The map that sends an idele to its ideal, $(a_v) \mapsto \prod_{v \nmid \infty} \mathfrak{p}_v^{v(a_v)}$, is surjective onto the group of fractional ideals. It induces an isomorphism from $J_K / K^\times (K_\infty^\times \times \prod_{v \nmid \infty} \mathcal{O}_v^\times)$ to the class group $\operatorname{Cl}_K$.
 
 ### The local Artin map
 
 **Theorem (Local reciprocity).** Let $k$ be a finite extension of $\mathbb{Q}_p$. There is a unique homomorphism $\theta_k : k^\times \to \operatorname{Gal}(k^{\mathrm{ab}}/k)$ with two properties. First, for every uniformiser $\pi$ of $k$, $\theta_k(\pi)$ acts on the maximal unramified extension as the arithmetic Frobenius $x \mapsto x^{q}$ on residue fields, with $q$ the order of the residue field. Second, for every finite abelian extension $l/k$, $\theta_k$ induces an isomorphism $k^\times / N_{l/k} l^\times \cong \operatorname{Gal}(l/k)$.
+
+Not in the source. The source does not prove the uniqueness or the norm isomorphism. It constructs a local Artin map with the geometric convention, [Theorem](/decl/New.IsPlaceOver.isLocalArtin_localArtin/).
 
 This is Neukirch, Chapter V, §1 (the local reciprocity law) and Milne, Chapter I, Theorem 1.1. The cohomological construction is in Serre, *Local Fields* (Springer, 1979), Chapters XII to XIV, and in Milne, Chapter III. It goes in two steps.
 
@@ -34,11 +38,15 @@ The sign conventions vary between authors. With the convention above, a uniformi
 $$\theta_K : J_K \to \operatorname{Gal}(K^{\mathrm{ab}}/K), \qquad \theta_K((a_v)_v) = \prod_v \theta_{K_v}(a_v),$$
 is a continuous homomorphism, and it is trivial on $K^\times$. For every finite abelian extension $L/K$ it induces an isomorphism $J_K / K^\times N_{L/K} J_L \cong \operatorname{Gal}(L/K)$.
 
+Not in the source. The source uses an Artin map on the finite ideles and proves that it is trivial on $K^\times$ in the form of [Theorem](/decl/New.artin_reciprocity/).
+
 The product is finite on each finite quotient, since almost all components are units at unramified places. Here $\theta_{K_v}$ for an infinite place $v$ is the sign map at a real place and trivial at a complex place. Neukirch proves the theorem in Chapter VI, §5. Milne states it in Chapter V and proves it in Chapter VII. The proof has two inequalities. The *first inequality* is $[J_K : K^\times N J_L] \geq [L : K]$ for cyclic $L/K$. The *second inequality* is $[J_K : K^\times N J_L] \leq [L : K]$ for every Galois $L/K$. Milne proves the second inequality by analysis in Chapter VI, and by algebra in Chapter VII. The source proves only the analytic form (Section 5).
 
 ### The existence theorem
 
 **Theorem (Existence).** Every open subgroup of finite index of $C_K$ is the norm group $K^\times N_{L/K} J_L / K^\times$ of a unique finite abelian extension $L/K$.
+
+Not in the source. The source proves a form for totally complex $K$ as a factorisation through the Artin map, [Theorem](/decl/New.exists_comp_artinMap/).
 
 Neukirch proves this in Chapter VI, §6, and Milne in Chapter VII. With reciprocity, it gives the main theorem: the map $L \mapsto N_{L/K} C_L$ is an inclusion reversing bijection from the finite abelian extensions of $K$ to the open subgroups of finite index of $C_K$. The map $\theta_K$ is surjective, and its kernel is the closure of $K^\times K_\infty^{\times,0}$, where $K_\infty^{\times,0}$ is the connected component of $1$ in $K_\infty^\times$. Milne states the theorems in this idelic form in Chapter V. The last statement comes from the existence theorem.
 
@@ -56,6 +64,8 @@ The source works with $J_{K,f}$ in place of $J_K$. The classical theory gives a 
 
 **Proposition (Finite idele form).** The restriction of $\theta_K$ to $J_{K,f}$ is surjective onto $\operatorname{Gal}(K^{\mathrm{ab}}/K)$. Its kernel is the closure of $K^\times_+$ in $J_{K,f}$. For a finite abelian $L/K$, it induces $J_{K,f}/K^\times_+ N_{L/K} J_{L,f} \cong \operatorname{Gal}(L/K)$.
 
+Not in the source. The source proves the surjectivity on the finite ideles, [Theorem](/decl/New.artinMap_surjective/), and uses the kernel only for totally complex $K$, [Theorem](/decl/New.exists_comp_artinMap/).
+
 *Proof.* The group $K_\infty^{\times,0}$ is $\prod_{\text{real}} \mathbb{R}_{>0} \times \prod_{\text{complex}} \mathbb{C}^\times$, and $\theta_K$ is trivial on it. So $\theta_K$ factors through $J_K / K_\infty^{\times,0} = J_{K,f} \times \{\pm 1\}^{r_1}$. By weak approximation every sign vector is the sign vector of some $x \in K^\times$. So every class in $J_K / K^\times K_\infty^{\times,0}$ has a representative in $J_{K,f}$, and $\theta_K(J_{K,f}) = \theta_K(J_K)$, which is the full group. A finite idele $a$ lies in $K^\times K_\infty^{\times,0}$ exactly when $a = x$ in $J_{K,f}$ for some $x \in K^\times$ that is positive at each real place, that is, $x \in K^\times_+$. Pass to closures for the kernel, and to the norm group of $L$ for the last claim. $\square$
 
 For a totally complex field, $K^\times_+ = K^\times$, and the proposition says that $J_{K,f}/K^\times$ has the abelianised Galois group as its profinite completion. This is the case of the existence theorem that the source proves (Section 8).
@@ -65,6 +75,8 @@ For a totally complex field, $K^\times_+ = K^\times$, and the proposition says t
 ### Chebotarev and Hecke $L$-functions
 
 **Theorem (Chebotarev density).** Let $L/K$ be a finite Galois extension with group $G$ and let $C \subseteq G$ be a conjugacy class. The set of primes $v$ of $K$, unramified in $L$, with Frobenius class $C$, has Dirichlet density $\#C / \#G$.
+
+Not in the source. The source proves an existence form for Frobenius elements in an open set, [Theorem](/decl/New.chebotarev/).
 
 Neukirch proves this in Chapter VII, §13. Milne proves it in Chapter VIII, §7. The proof reduces to the cyclic case and then uses the nonvanishing at $s = 1$ of the $L$-functions of the characters of ray class groups. For a character $\psi$ of $J_K / K^\times$ of finite order and a finite set $S$ of places with $\psi$ unramified outside $S$, the partial $L$-function is
 $$L_S(s, \psi) = \prod_{v \notin S} (1 - \psi(\pi_v) q_v^{-s})^{-1}, \qquad \operatorname{Re} s > 1,$$
