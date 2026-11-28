@@ -26,6 +26,8 @@ Dirichlet proved that every class $a$ prime to $q$ holds infinitely many primes.
 $$\psi(x; q, a) = \frac{x}{\varphi(q)} + O_q\Bigl(x \exp\bigl(-c\sqrt{\log x}\bigr)\Bigr)$$
 for all $x \geq 2$ and all $a$ prime to $q$.
 
+Not in the source. The source proves the weaker form $|R_q(y)| \leq (\log y)^{-B}$ for fixed $q$, [Theorem](/decl/New.eventually_abs_primeRemainder_le/), and finds primes in windows by Newman's method.
+
 This is the classical theorem of de la Vallée Poussin. Davenport, Chapter 20, proves it in a form that is uniform in $q$ and keeps one extra term for a possible exceptional zero. The chapter [the prime number theorem in progressions](/chapter/prime-number-theorem/) of this volume proves the form that the source uses for a fixed modulus. That chapter also proves the zero-free region that Section 3 uses. This chapter does not repeat its proofs.
 
 For a fixed $q$ the theorem gives primes in every window of a fixed length. Let $W > 0$ be fixed and $x = e^U$. Then
@@ -38,11 +40,15 @@ The data need moduli that grow. The classical proofs of uniform results meet one
 
 **Theorem (Siegel).** For every $\eta > 0$ there is $c(\eta) > 0$ such that $L(\sigma, \chi) \neq 0$ for every real character $\chi$ modulo $q$ and every real $\sigma > 1 - c(\eta)\, q^{-\eta}$.
 
+Not in the source. The source avoids it: for the moduli $Q^k$ every real character comes from the fixed modulus $Q^2$, [Lemma](/decl/New.factorsThrough_sq_of_sq_eq_one/).
+
 Davenport, Chapter 21, proves it. The constant $c(\eta)$ is not effective: the proof shows that it exists, but it gives no way to compute it. Siegel's theorem gives the theorem of Siegel and Walfisz.
 
 **Theorem (Siegel-Walfisz).** Let $A > 0$. There is a constant $c > 0$ such that
 $$\psi(x; q, a) = \frac{x}{\varphi(q)} + O_A\Bigl(x \exp\bigl(-c\sqrt{\log x}\bigr)\Bigr)$$
 for all $x \geq 2$, all $q \leq (\log x)^A$ and all $a$ prime to $q$. The implied constant depends on $A$ and is not effective.
+
+Not in the source. The source cites it and proves in its place the special case [Theorem](/decl/New.exists_prime_modEq_one_log_mem/).
 
 This is Montgomery and Vaughan, *Multiplicative Number Theory I*, Corollary 11.19, which the source cites. Davenport, Chapter 22, proves the same theorem. The chapter [the data exist](/chapter/data-exist/#primes-in-windows) of Volume 1 states it in the same form.
 
@@ -83,6 +89,8 @@ On GRH, the explicit formula gives $\psi(x; q, a) = x/\varphi(q) + O(\sqrt{x}\lo
 The file of the source that proves the theorem on windows also proves a lower bound for $\varphi(n)$. It plays no role in the proof of that theorem, where only the trivial bound $\varphi(q) \leq q$ is used. The classical result is sharp.
 
 **Theorem (Landau).** $\displaystyle\liminf_{n \to \infty} \frac{\varphi(n) \log\log n}{n} = e^{-\gamma}$, where $\gamma$ is Euler's constant.
+
+Not in the source. The source proves only the weaker bound with explicit constants for every $n$, [Lemma](/decl/New.le_totient_mul_log/).
 
 This is Hardy and Wright, *An Introduction to the Theory of Numbers*, Theorem 328. It gives $n/\varphi(n) \leq (e^{\gamma} + o(1))\log\log n$. The source needs only a weak bound with a logarithm, but with explicit constants and for every $n$. It comes from a lemma on products.
 

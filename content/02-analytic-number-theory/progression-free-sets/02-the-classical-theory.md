@@ -26,6 +26,8 @@ Erdős and Turán introduced the problem in 1936. Their example is the set of in
 
 **Proposition (Erdős and Turán).** Let $n \geq 0$, and let $S_n$ be the set of integers $a = \sum_{i < n} a_i 3^i$ with all $a_i \in \{0, 1\}$. Then $S_n \subseteq \{0, \dots, 3^n - 1\}$ is 3AP-free and $\# S_n = 2^n$. So $r_3(3^n) \geq 2^n$, and $r_3(N) \geq \tfrac12 N^{\log 2/\log 3}$ for all $N \geq 1$.
 
+Not in the source. The source does not use base $3$. It uses the sets of Behrend with weights, [Behrend's sets](/decl/New.exists_three_term_free/).
+
 *Proof.* Let $a, b, c \in S_n$ with $a + c = 2b$. The digits $a_i + c_i$ and $2 b_i$ lie in $\{0, 1, 2\}$, so both sums are written in base $3$ without carries. The expansion in base $3$ is unique, so $a_i + c_i = 2 b_i$ for each $i$. If $b_i = 0$ this gives $a_i = c_i = 0$, and if $b_i = 1$ it gives $a_i = c_i = 1$. So $a = b = c$. For $3^n \leq N < 3^{n+1}$ the monotonicity of $r_3$ gives $r_3(N) \geq 2^n = (3^n)^{\log 2/\log 3} > (N/3)^{\log 2/\log 3} \geq \tfrac12 N^{\log 2/\log 3}$. $\square$
 
 The density of $S_n$ in $[0, 3^n)$ is $(3^n)^{-(1 - \log 2/\log 3)} = (3^n)^{-0.369\ldots}$. Erdős and Turán asked whether $r_3(N)$ is of the order $N^{\log 2/\log 3}$. Salem and Spencer answered this in 1942. They took integers whose digits in a large base $B$ lie below $B/2$, so that addition has no carries, and that use each digit value the same number of times. Their bound is $r_3(N) \geq N^{1 - c/\log\log N}$ for a constant $c > 0$. So $r_3(N) \geq N^{1 - \delta}$ for every $\delta > 0$ and all large $N$. Behrend replaced the condition on the digit counts by a condition on the sum of the squares of the digits, and this gave a much better bound with a shorter proof.
@@ -41,6 +43,8 @@ The idea of Behrend is geometric. A sphere in $\mathbb{R}^n$ contains no three d
 Mathlib: `Behrend.threeAPFree_sphere` (Mathlib). For $n, d, k \in \mathbb{N}$, Mathlib writes `Behrend.box n d` for the vectors $x \in \mathbb{N}^n$ with $x_i < d$ for all $i$, and `Behrend.sphere n d k` for the $x$ in the box with $\sum_i x_i^2 = k$. The lemma says that `sphere n d k` is 3AP-free as a subset of $\mathbb{N}^n$.
 
 **Lemma (Digits without carries).** Let $n \geq 0$ and $d \geq 1$, and let $\varphi(x) = \sum_{i < n} x_i (2d - 1)^i$ for $x$ in the box $\{0, \dots, d - 1\}^n$. Then $\varphi$ is injective, its values lie in $\{0, \dots, (2d - 1)^n - 1\}$, and for $x, y, z$ in the box, $\varphi(x) + \varphi(z) = 2\varphi(y)$ holds if and only if $x + z = 2y$.
+
+Mathlib: `Behrend.map_injOn` (Mathlib) and `Behrend.map_le_of_mem_box` (Mathlib). The first gives the injectivity and the second gives the bound on the values. The equivalence is a step in the proof of `Behrend.threeAPFree_image_sphere` (Mathlib).
 
 *Proof.* The integers $x_i$, $x_i + z_i$ and $2 y_i$ lie in $\{0, \dots, 2d - 2\}$. So $\varphi(x)$, $\varphi(x) + \varphi(z) = \sum (x_i + z_i)(2d-1)^i$ and $2\varphi(y) = \sum 2 y_i (2d-1)^i$ are expansions in base $2d - 1$ with digits below the base. The uniqueness of such expansions gives the injectivity and the equivalence. The largest value is $\sum_{i<n} (d - 1)(2d - 1)^i < (2d - 1)^n$. $\square$
 
@@ -58,6 +62,8 @@ The choice of $n$ and $d$ gives the asymptotic bound.
 
 **Corollary (Behrend).** As $N \to \infty$,
 $$r_3(N) \geq N \exp\Bigl(-\bigl(2\sqrt{2 \log 2} + o(1)\bigr)\sqrt{\log N}\Bigr).$$
+
+Not in the source. The source keeps the number $n$ of digits fixed and needs only a density $N^{-\delta}$, [Behrend's sets](/decl/New.exists_three_term_free/).
 
 *Proof.* Let $N \geq 3$ and $n \geq 3$, put $M = N^{1/n}$, and let $d = \lfloor (M + 1)/2 \rfloor$. Suppose $M \geq 3$, so that $d \geq 1$. Then $2d - 1 \leq M$, so $(2d - 1)^n \leq N$, and $d \geq (M - 1)/2$. The theorem and the monotonicity of $r_3$ give
 $$r_3(N) \geq \frac{d^{n - 2}}{n} \geq \frac{1}{n} \Bigl(\frac{M - 1}{2}\Bigr)^{n - 2} = \frac{4}{n}\, \frac{N}{M^2\, 2^n} \Bigl(1 - \frac1M\Bigr)^{n-2}.$$
