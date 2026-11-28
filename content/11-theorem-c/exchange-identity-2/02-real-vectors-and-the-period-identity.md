@@ -80,14 +80,14 @@ Write $\operatorname{pr}_\gamma(x) = x\,\gamma(x^*Jx)\,x^*Jx_0$. Where $\gamma$ 
 $$S(y, x) = \sigma(y)\,\sigma(x')\,\kappa \prod_w \overline{\det (x'_w)_1}^{\,2M_w}\cdot \omega\bigl(1, k(y)\bigr)(v \boxtimes v_1),$$
 where $\omega$ is the real Weil representation twisted by $\det^{\,j - M}$ on the unitary group of $\operatorname{diag}(t', s)$.
 
-Lean: `New.Exchange.frameProjection`, `New.Exchange.unitaryMovedFrame`, `New.Exchange.exchangeSection` (New/Determinant/Exchange/RealVectors.lean).
+Lean: `New.Exchange.frameProjection`, `New.Exchange.unitaryMovedFrame`, `New.Exchange.exchangeSection` (New/Determinant/Exchange/RealVectors.lean). The invariance of the projection under $x \mapsto xC$ is `New.Exchange.mul_gram_inv_mul_of_isUnit_det` (same file).
 
 **Lemma.** Let $(\gamma, k, \sigma)$ be smooth Witt data near $x_0$ for $J = \operatorname{diag}(t', s)$, let $N$ and $M$ be families of natural numbers, and let $v$, $v_1$ be Schwartz vectors.
 
 1. There are $\kappa$ and a Schwartz vector $\Lambda$ for $(X, V')$ whose slice at $0$ along $D^{\mathrm{sym}}$ is $v$, and whose slice along $D$ at an adelic $b \times b$ matrix $x$ is $\sigma(x_0 x_w)_w \,\bigl|\prod_w \det(x_w)^{N_w}\bigr|^2 \kappa\, v$.
 2. For every smooth map $z$ on frames and every $\kappa$ there is a Schwartz vector $\Phi$ for $(X, V' \oplus W_1)$ whose slice along $D$ at $x$ is $S(z \circ x, x)$.
 
-Lean: `New.Exchange.exists_isSchwartzVector_realSlice_bump`, `New.Exchange.exists_isSchwartzVector_exchangeSection` (New/Determinant/Exchange/RealVectors.lean).
+Lean: `New.Exchange.exists_isSchwartzVector_realSlice_bump`, `New.Exchange.exists_isSchwartzVector_exchangeSection` (New/Determinant/Exchange/RealVectors.lean). The proof uses `New.Exchange.isSchwartzVector_realBoxProd` (same file).
 
 *Proof.* Part 1. The function $\tau(x) = \sigma(x_0 x)\,|\prod_w \det x_w^{N_w}|^2$ is smooth and $\geq 0$. It has compact support, as $x$ is recovered from the frame $x_0 x = \binom{x}{0}$, which lies in the support of $\sigma$. At $x = 1$ it is $\sigma(x_0) = 1$. Apply the lemma on prescribed slices. Part 2. The section is a scalar $\tau(x)$ times $\omega_0(u(x))(v \boxtimes v_1)$, where $\omega_0$ is the plain Weil representation and $u(x)$ is the block matrix of the $k(z(x_w))$; the twist by $\det^{\,j - M}$ goes into $\tau$. The scalar is $\sigma(z \circ x)\,\sigma(x')$ times a polynomial in the entries of $x$, of $k(z(x))$ and of their conjugates, since $k(y)^{-1} = J k(y)^* J$. So it is smooth. On its support $x_w = k(y_w)\, x'_w$ with $y$ and $x'$ in the support of $\sigma$, so the support is compact. The background fact gives $\Phi$. $\square$
 
@@ -103,7 +103,7 @@ Lean: `New.Exchange.IsWittBump.exists_mul_fromRows_mul_eq_of_ne_zero`, `New.Exch
 $$I_0 = \theta_{\mathrm{large}}\bigl(W_1, W_1;\, v_1,\, \phi_{\mathrm{col}}\bigr)(1),$$
 the theta integral over $U(W_1)$ at $1$ with real part $v_1$ and, at the ramified places of $\mathfrak{c}$, the standard column datum $\phi_{\mathrm{col}}$ of the character $\chi$ of $\mathfrak{c}$ at $z = 1$.
 
-Lean: `New.Exchange.IsWittBump.isPeriodIdentity` (New/Determinant/Exchange/RealVectors.lean).
+Lean: `New.Exchange.IsWittBump.isPeriodIdentity` (New/Determinant/Exchange/RealVectors.lean). The proof uses `New.Exchange.realPairWeil_exchangeSection` and `New.Exchange.prod_conj_pow_eq_norm_div` (same file).
 
 *Proof.* Fix a real point $h$ and put $x_{1,w} = h_w^{-1}x_0$ and $y = \operatorname{pr}_\gamma \circ x_1$. The Gram matrix of $x_{1,w}$ is $\operatorname{diag}(t')$, so $\gamma$ inverts it. If $\sigma(y) = 0$, both sides of the identity are $0$. Otherwise the lemma gives $c$ with $k(y_w)x_0 c = x_{1,w}$ and $c^*\operatorname{diag}(t')c = \operatorname{diag}(t')$, so $c = u_w$ is unitary for $t'$. Then $h_w k(y_w)$ keeps the span of $x_0$, and a unitary element that keeps this span is block diagonal: $\operatorname{diag}(u_w, q_w^{-1})\, h_w\, k(y_w) = 1$ with $q_w$ unitary for $s$ (`New.Exchange.exists_unitary_pair_of_frame`). Take $p = (u, q^{-1})$ in $U(V') \times U(W_1)$.
 
