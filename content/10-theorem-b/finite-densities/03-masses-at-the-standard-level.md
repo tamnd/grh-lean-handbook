@@ -21,7 +21,7 @@ drafted_by: writer@claude-opus-5-5
 
 The main term is a mass minus an error, so the masses of the congruence subgroups must be known exactly, and that of $K$ up to a factor near $1$. This section computes the Heisenberg mass of $K(g)$, unfolds the group measure over a coset of $K(g)$, and bounds $\mathsf{M}(K)$ from both sides. Throughout, $F$ is a large lattice datum and $g$ is a unit with $g \in R$ and $\bar g = g$.
 
-### The model case
+### The model case of the masses
 
 Let $\varrho = 1$, so there is one Heisenberg group, of floor $0$. Its elements are pairs $(v, \beta)$, with $v$ a vector of the $r_0 = k + 1$ basis vectors of floor above $0$ and $\beta$ skew. The chart is a group isomorphism up to the term $\tau h(v, v)$, and the Heisenberg measure $\eta_0$ is the image of $dv\,d\beta$. The condition that some $u \in \mathsf{U}$ moves the point into $K(g)$ is the condition that $g^{-1}v$ and $g^{-1}\beta$ are integral. So the mass is $|g|^{r_0}$ from $v$ times the skew volume of $gR$, which is $|g|^{1/2}$ because the skew elements are a line over the fixed field. The general case is the same computation on each floor.
 

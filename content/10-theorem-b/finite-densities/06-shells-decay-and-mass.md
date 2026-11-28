@@ -34,7 +34,7 @@ The sum over the shells of [local frames](/chapter/local-frames/#gains-and-shell
 
 Throughout, $F$ is a large lattice datum with level unit $g$, $n = \varrho + 1$, $k$ is the rank, $[R : J]$ is the index of an ideal (`Ideal.cardQuot`, $0$ if infinite), and $\Lambda$ is the loss of the gauge $\Gamma$.
 
-### The model case
+### The model case of the shells
 
 Let $R = \mathbb{Z}_p$. The $\varepsilon \in \mathbb{Z}_p$ that clear the denominators of $g^{-1}(x - 1)$ form an ideal $p^e\mathbb{Z}_p$. Group the positions by the least $2^t \ge p^e$. Each group lies in the integral ball of the gauge of scale $p^{2e}$, and a large $e$ forces a deep vector. Over a semilocal ring there are many ideals of one index, and the ideal zeta value counts them.
 

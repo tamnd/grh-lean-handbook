@@ -108,7 +108,7 @@ Lean: `New.Filling.inv_ideleM_mem_integralOff` (New/Spanning/Unfolding/Moments.l
 
 The lemma uses neither admissibility nor Weil data.
 
-### The bound
+### The bound for the induced character
 
 **Theorem (The induced character).** $\sum_{s \in \bar G}|\psi_U^\natural(s)|^2 \leq 2$.
 

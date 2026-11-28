@@ -34,7 +34,7 @@ The densities of [local frames](/chapter/local-frames/#densities-as-integrals-ov
 
 Throughout, $F$ is a place datum with modulus $g = $ `F.levelUnit`, $K(g) = $ `F.congruenceSubgroup`, $K = K(1)$, $\psi$ is the character of the place and $\sigma = $ `New.simpleRootSum` is the sum of the entries just above the diagonal of the frame block. From the second subsection on, $F$ is a large lattice datum.
 
-### The model case
+### The model case of the Bessel vector
 
 Let $\varrho = 1$ and $Z = K$. The Bessel character $u \mapsto \psi(\sigma(u)/g)$ of $\mathsf{U}$ is trivial on $\mathsf{U}\cap K(g)$, because $\sigma(u)/g$ is integral there and $R$ is self-dual. So the character extends to a function on $\mathsf{U}K(g)$ that is right invariant under $K(g)$, and it is extended by $0$ to $\mathsf{G}$. The function $\chi_g$ is not invariant under $K$, so one takes all its right translates by representatives $c$ of $K(g)\backslash K$. The vector $W(y) = (\chi_g(yc^{-1}))_c$ is then a Bessel function with values in $\mathbb{C}^{[K:K(g)]}$. Each point $y$ meets at most one coset in each coordinate, and the norm of $W(y)$ counts the cosets that $y$ meets.
 

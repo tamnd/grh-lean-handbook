@@ -66,7 +66,7 @@ Lean: `New.Floors.IntegralPlace.isOpen_congruentPairs_and_isCompact_closure` (Ne
 
 *Proof.* The integral vectors form an open compact set, and the set is the intersection of two preimages of it under continuous maps. It lies in the image of the compact set of pairs of integral vectors under $(\omega, \delta) \mapsto (\omega, \omega - g\delta)$, so its closure is compact. $\square$
 
-### The lattice datum
+### Lattice data
 
 **Definition (Lattice datum).** Place data $F$ are a *lattice datum* (`P.IsLatticeData F`) if:
 
