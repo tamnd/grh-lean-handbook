@@ -177,6 +177,9 @@ def check_section(rel: str, s: Section, source) -> tuple[list[str], list[str]]:
             if sm and sm.group(1) not in ("Remark", "Example", "Conjecture"):
                 stmt_open = sm.group(1) + (sm.group(3) or "")
             continue
+        if re.match(r"^\*?Not in the source\.\*?( |$)", ln):   # a classical result that the source does not formalize
+            stmt_open = None
+            continue
         if re.match(r"^\*?Mathlib:\*? ", ln):   # the statement is a definition or theorem of Mathlib
             stmt_open = None
             continue
