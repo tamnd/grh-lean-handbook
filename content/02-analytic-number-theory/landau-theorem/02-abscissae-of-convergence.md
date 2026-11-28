@@ -20,6 +20,8 @@ A *Dirichlet series* is a series $\alpha(s) = \sum_{n \geq 1} a_n n^{-s}$ with c
 2. The sum $\alpha(s)$ is analytic on $\operatorname{Re} s > \sigma_c$, and $\alpha^{(k)}(s) = \sum_n a_n (-\log n)^k n^{-s}$ there, for every $k \geq 0$.
 3. $|\alpha(\sigma + it)| \leq \alpha(\sigma)$ for every real $\sigma > \sigma_c$ and real $t$.
 
+Not in the source. The source applies Landau's lemma to a measure only, the measure of [Lemma](/decl/New.exists_measure_laplace_eq/), and never to a Dirichlet series.
+
 *Proof.* For $\operatorname{Re} s = \sigma$ we have $|a_n n^{-s}| = a_n n^{-\sigma}$. If $\sigma > \sigma_c$, there is $\sigma'$ with $\sigma_c < \sigma' < \sigma$ and $\sum a_n n^{-\sigma'} < \infty$, and $a_n n^{-\sigma} \leq a_n n^{-\sigma'}$. This gives 1 and 3. For 2, fix $\delta > 0$. On the half-plane $\operatorname{Re} s \geq \sigma_c + \delta$ the terms are bounded by $a_n n^{-\sigma_c - \delta}$, a convergent series of constants. So the series converges uniformly there, by the Weierstrass test. A uniform limit of analytic functions is analytic, and the derivatives converge uniformly on compact sets to the derivative of the limit. $\square$
 
 So for nonnegative coefficients there is one abscissa, and it is read off the real axis.
@@ -41,6 +43,8 @@ So let $\mu$ be a positive Borel measure on $[0, \infty)$, and let $F(\sigma) = 
 **Proposition (Analyticity of the transform).** Let $\mu$ be a positive Borel measure on $[0, \infty)$ with abscissa of convergence $\sigma_c < \infty$. Then $F$ is analytic on $\operatorname{Re} s > \sigma_c$. For every $k \geq 0$ and every such $s$, the function $v^k e^{-\sigma v}$ is $\mu$-integrable and
 $$F^{(k)}(s) = \int_0^\infty (-v)^k e^{-sv}\, d\mu(v).$$
 For real $\sigma > \sigma_c$ the sign of $F^{(k)}(\sigma)$ is $(-1)^k$ (or $F^{(k)}(\sigma) = 0$), and $|F(\sigma + it)| \leq F(\sigma)$.
+
+Mathlib: `ProbabilityTheory.analyticOn_complexMGF` and `ProbabilityTheory.iteratedDeriv_complexMGF`, for the moment generating function $s \mapsto \int e^{sX}\, d\mu$ on the strip where it converges; the source uses them in this form.
 
 *Proof.* Fix $\delta > 0$ and put $\sigma_0 = \sigma_c + \delta$. Since $v^k e^{-\delta v/2} \leq (2k/(e\delta))^k$ for $v \geq 0$, we have $v^k e^{-\sigma v} \leq (2k/(e\delta))^k e^{-(\sigma_c + \delta/2)v}$ for $\sigma \geq \sigma_0$, and the right side is $\mu$-integrable. So the integrand $(-v)^k e^{-sv}$ has an integrable bound that does not depend on $s$ in the half-plane $\operatorname{Re} s \geq \sigma_0$. By the theorem on differentiation under the integral sign (dominated convergence applied to the difference quotients, with the bound for $k + 1$), $F$ is complex differentiable at each $s$ with $\operatorname{Re} s > \sigma_0$, with the derivative $\int (-v) e^{-sv}\, d\mu$. Induction on $k$ gives the formula for $F^{(k)}$. Since $\delta$ is arbitrary, this holds on $\operatorname{Re} s > \sigma_c$. At real $\sigma$ the integrand $(-v)^k e^{-\sigma v}$ has the sign $(-1)^k$, and $|\int e^{-(\sigma + it)v}\, d\mu| \leq \int e^{-\sigma v}\, d\mu$. $\square$
 

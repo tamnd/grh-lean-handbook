@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The model case
 
-This section proves Landau's theorem for Laplace transforms of positive measures, and applies it to the Riemann zeta function. The application is the model of the whole chapter: a one-sided bound for a remainder of the primes, weighted by $1/n - 1/x$, excludes the zeros of $\zeta$ to the right of the exponent of the bound. The source proves Landau's theorem only in the form of Section 3, and it uses it only for the remainder $R_{q_0}$.
+This section proves Landau's theorem for Laplace transforms of positive measures, and applies it to the Riemann zeta function. The application is the model of the whole chapter: a one-sided bound for a remainder of the primes, weighted by $1/n - 1/x$, excludes the zeros of $\zeta$ to the right of the exponent of the bound. The section has no Lean statements. The source proves the general form of Section 3 and uses it only for the remainder $R_{q_0}$.
 
 ### Landau's theorem
 
@@ -18,7 +18,7 @@ The set of $\sigma$ with $F(\sigma) < \infty$ is a half-line, since $e^{-\sigma 
 
 **Theorem (Landau).** Let $\mu$ be a positive Borel measure on $[0, \infty)$ whose abscissa of convergence $\sigma_c$ is finite. Then $F$ is not analytic at $\sigma_c$: there is no function analytic on a disc about $\sigma_c$ that is equal to $F$ on the part of the disc with $\operatorname{Re} s > \sigma_c$.
 
-Lean: `New.exists_Ioi_subset_integrableExpSet_of_analyticAt` (Lib/Analytic/Landau.lean), in the form of [Section 3](/chapter/landau-criterion/#polar-pairs-and-landaus-lemma), for the moment generating function of a measurable $X \leq 0$.
+Not in the source. The source proves the local form for the moment generating function of a measurable $X \leq 0$, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet_of_analyticAt/), and the abscissa form follows from it.
 
 *Proof.* Suppose that $g$ is analytic on the disc $|s - \sigma_c| < \varepsilon$ and equal to $F$ where both are defined. Let $a = \sigma_c + \varepsilon/3$. The disc $|s - a| < 2\varepsilon/3$ lies in the disc of $g$, and $F = g$ on its right part. So the Taylor series of $F$ at $a$ converges in $|s - a| < 2\varepsilon/3$. Let $\sigma = a - \varepsilon/2 = \sigma_c - \varepsilon/6$. Then
 $$g(\sigma) = \sum_{k \geq 0} \frac{(\sigma - a)^k}{k!} F^{(k)}(a) = \sum_{k \geq 0} \frac{(a - \sigma)^k}{k!} \int_0^\infty v^k e^{-av}\, d\mu(v),$$
@@ -34,7 +34,7 @@ We need the theorem in a form with a pole.
 
 **Corollary (The residue at the abscissa).** Let $\mu$ and $\sigma_c$ be as in the theorem. Let $\Psi$ be meromorphic on a disc about $\sigma_c$ and equal to $F$ on the part of the disc with $\operatorname{Re} s > \sigma_c$. Suppose that $\Psi$ has at most a simple pole at $\sigma_c$, with residue $c$. Then $c$ is a positive real number.
 
-Lean: `New.exists_Ioi_subset_integrableExpSet` (Lib/Analytic/Landau.lean), in the same form. It gives $\operatorname{Re} c > 0$ in the contrapositive.
+Not in the source. The source proves the form with $\operatorname{Re} c \leq 0$ that extends the convergence, [Lemma](/decl/New.exists_Ioi_subset_integrableExpSet/).
 
 *Proof.* For real $x > \sigma_c$ near $\sigma_c$, the number $(x - \sigma_c)\Psi(x) = (x - \sigma_c)F(x)$ is real and $\geq 0$. It tends to $c$ as $x \to \sigma_c^+$. So $c$ is real and $c \geq 0$. If $c = 0$, then $\Psi$ has a removable singularity at $\sigma_c$, and the theorem gives a contradiction. So $c > 0$. $\square$
 
