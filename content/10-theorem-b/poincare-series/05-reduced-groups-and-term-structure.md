@@ -41,7 +41,7 @@ For a subgroup $B$ of the finite adelic group, $\bar B$ is the image of $B \cap 
 
 Lean: `New.Filling.mem_reducedImage_iff_forall_place`, `New.Filling.mem_reducedImage_besselU` (New/Spanning/Unfolding/ReducedGroups.lean).
 
-*Proof.* It suffices to treat an element with one component $s_{i,w}$ and $1$ elsewhere. This component is the reduction of some $k \in B$, the image of a unitary $g$ over $\hat{\mathcal{O}}$. Replace $g$ by $1$ away from $w$ and its conjugate. The result is still unitary and lies in $B$, since the set of entries is fixed. For $\mathsf{U}$, lift the free entries of each $s_{i,w}$ to $\hat{\mathcal{O}}$, and complete the lift $u$ by its inverse adjoint at the conjugate place. Residues may be prescribed at all places above $M$ at once ([Lemma](/decl/New.Filling.exists_reduceAboveM_eq/)), so some integral $k \in \mathsf{U}$ reduces to $s$. $\square$
+*Proof.* It suffices to treat an element with one component $s_{i,w}$ and $1$ elsewhere. This component is the reduction of some $k \in B$, the image of a unitary $g$ over $\hat{\mathcal{O}}$. Replace $g$ by $1$ away from $w$ and its conjugate. The result is still unitary and lies in $B$, since the set of entries is fixed. For $\mathsf{U}$, lift the free entries of each $s_{i,w}$ to $\hat{\mathcal{O}}$, and complete the lift $u$ by its inverse adjoint at the conjugate place. Residues may be prescribed at all places above $M$ at once (`New.Filling.exists_reduceAboveM_eq`), so some integral $k \in \mathsf{U}$ reduces to $s$. $\square$
 
 **Theorem (The order of the unipotent reduction).** $|\bar{\mathsf{U}}| = M^{f\varrho(2k + 2\varrho + 1)}$, where $k = \dim X_0$ and $f$ is the number of infinite places.
 
@@ -53,13 +53,13 @@ Lean: `New.Filling.card_reducedImage_besselU` (New/Spanning/Unfolding/ReducedGro
 
 Lean: `New.Filling.exists_mulEquiv_reducedImage_besselH`, `New.Filling.relIndex_comap_principalLevel`, `New.Filling.relIndex_sourceLevel` (New/Spanning/Unfolding/ReducedGroups.lean).
 
-*Proof.* The reduction of $\iota(k)$ and the entrywise reduction of $k$ are two surjective maps with the same kernel, by [the lemma on the image of the small group](/chapter/poincare-series/#climbing-the-flags). So their targets are isomorphic. The subgroup of the principal level is the kernel of the reduction, whose image is $\bar{\mathsf{H}}$. So its index is $|\bar{\mathsf{H}}|$. For admissible $S$, the source level is this kernel by a field of `IsAdmissible` ([Lemma](/decl/New.Filling.IsAdmissible.sourceLevel_eq/)). $\square$
+*Proof.* The reduction of $\iota(k)$ and the entrywise reduction of $k$ are two surjective maps with the same kernel, by [the lemma on the image of the small group](/chapter/poincare-series/#climbing-the-flags). So their targets are isomorphic. The subgroup of the principal level is the kernel of the reduction, whose image is $\bar{\mathsf{H}}$. So its index is $|\bar{\mathsf{H}}|$. For admissible $S$, the source level is this kernel by a field of `IsAdmissible` (`New.Filling.IsAdmissible.sourceLevel_eq`). $\square$
 
 **Theorem (The Bessel reduction).** $\bar{\mathsf{U}} \cap \bar{\mathsf{H}} = 1$. Every $s \in \bar R$ is $uh$ with $u \in \bar{\mathsf{U}}$ and $h \in \bar{\mathsf{H}}$. $\bar R$ normalizes $\bar{\mathsf{U}}$. So $|\bar R| = |\bar{\mathsf{H}}|\cdot|\bar{\mathsf{U}}|$.
 
 Lean: `New.Filling.disjoint_reducedImage_besselU_besselH`, `New.Filling.mem_reducedImage_besselS`, `New.Filling.reducedImage_besselS_le_normalizer`, `New.Filling.card_reducedImage_besselS` (New/Spanning/Unfolding/ReducedGroups.lean).
 
-*Proof.* If $\bar u = \bar h$, then $u^{-1}h$ is congruent to $1$. If $uh$ lies in a level of the unitary group with $u \in \mathsf{U}$ and $h \in \mathsf{H}$, then so does $h$, because $h$ is the block diagonal part of $uh$ ([Lemma](/decl/New.mem_unitaryLevel_of_besselU_mul/)). So $h$ is congruent to $1$. With the level of integral points, the same lemma shows that an integral element $uh$ of $R_0$ has integral factors. $R_0$ normalizes $\mathsf{U}$ ([Lemma](/decl/New.besselS_le_normalizer_besselU/)), and reduction is a homomorphism. Multiplication is then a bijection from $\bar{\mathsf{U}}\times\bar{\mathsf{H}}$ onto $\bar R$. $\square$
+*Proof.* If $\bar u = \bar h$, then $u^{-1}h$ is congruent to $1$. If $uh$ lies in a level of the unitary group with $u \in \mathsf{U}$ and $h \in \mathsf{H}$, then so does $h$, because $h$ is the block diagonal part of $uh$ (`New.mem_unitaryLevel_of_besselU_mul`). So $h$ is congruent to $1$. With the level of integral points, the same lemma shows that an integral element $uh$ of $R_0$ has integral factors. $R_0$ normalizes $\mathsf{U}$ ([Lemma](/decl/New.besselS_le_normalizer_besselU/)), and reduction is a homomorphism. Multiplication is then a bijection from $\bar{\mathsf{U}}\times\bar{\mathsf{H}}$ onto $\bar R$. $\square$
 
 ### The cell rank and the common isotropic space
 
@@ -88,11 +88,11 @@ So the cell rank of such a term is unique, and depends only on $I_\gamma$.
 
 Lean: `New.Filling.commonIsotropic_besselU_mul`, `New.Filling.finrank_commonIsotropic_besselU_mul`, `New.Filling.charsAgree_mul_mul_iff_of_mem_besselU` (New/Spanning/Unfolding/TermStructure.lean).
 
-*Proof.* $\mathsf{U}$ maps $A$ onto itself. So $A \cap u\gamma u'A = uA \cap u\gamma A = u(A \cap \gamma A)$. On rational points of $\mathsf{U}$ the character $\chi$ is multiplicative and invariant under conjugation ([Lemma](/decl/New.Filling.unipotentChar_ratToFin_mul/), [Lemma](/decl/New.Filling.unipotentChar_ratToFin_conj/)). If $v(u\gamma u') = (u\gamma u')v'$, then $(u^{-1}vu)\gamma = \gamma(u'v'u'^{-1})$, and the two pairs have the same character values. $\square$
+*Proof.* $\mathsf{U}$ maps $A$ onto itself. So $A \cap u\gamma u'A = uA \cap u\gamma A = u(A \cap \gamma A)$. On rational points of $\mathsf{U}$ the character $\chi$ is multiplicative and invariant under conjugation (`New.Filling.unipotentChar_ratToFin_mul`, `New.Filling.unipotentChar_ratToFin_conj`). If $v(u\gamma u') = (u\gamma u')v'$, then $(u^{-1}vu)\gamma = \gamma(u'v'u'^{-1})$, and the two pairs have the same character values. $\square$
 
 ### The remaining terms
 
-The set $\Gamma^*$ of *remaining terms* consists of the rational $\gamma$ with nonzero discriminant, or with agreeing characters, zero discriminant and $A \neq \gamma A$ ([Definition](/decl/New.Filling.remainingTerms/)).
+The set $\Gamma^*$ of *remaining terms* consists of the rational $\gamma$ with nonzero discriminant, or with agreeing characters, zero discriminant and $A \neq \gamma A$ (`New.Filling.remainingTerms`).
 
 **Theorem (The remaining terms).**
 

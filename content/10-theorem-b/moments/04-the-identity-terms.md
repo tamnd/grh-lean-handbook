@@ -148,4 +148,4 @@ $$\#\bar R_0\,\|P'_x\|^2 \leq \sum_{s \in \Omega_{i+1}}\|P_s - r_\psi(s)\|^2 \le
 
 by the theorem on the identity terms. Divide by $\#\bar R_0$. $\square$
 
-**Remark (Formalization).** The theorem carries the hypotheses $S$ admissible and $\rho$ unitary as explicit arguments, not as section variables. Its statement is the same as with section variables. The idempotent $x$ is not assumed to be self-adjoint. A central idempotent is [self-adjoint](/decl/New.IsCentralProj.self_adjoint/) for every invariant hermitian form, and the contraction property uses this inside its proof.
+**Remark (Formalization).** The theorem carries the hypotheses $S$ admissible and $\rho$ unitary as explicit arguments, not as section variables. Its statement is the same as with section variables. The idempotent $x$ is not assumed to be self-adjoint. A [central idempotent](/decl/New.IsCentralProj/) is self-adjoint (`New.IsCentralProj.self_adjoint`) for every invariant hermitian form, and the contraction property uses this inside its proof.

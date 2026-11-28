@@ -119,7 +119,7 @@ So inside one block of reduction $s$, the archimedean phase of a unipotent term 
 
 Lean: `New.Filling.eq_and_mem_classUnipotent_of_besselS` (New/Spanning/Unfolding/BesselLevelStructure.lean).
 
-*Proof.* Write $\gamma = u\eta$ with $u \in \mathsf{U}$ rational and $\eta \in H$ the image of a rational $\eta_0 \in U(X_0)(E)$ ([Lemma](/decl/New.exists_besselU_mul_toBesselH/)). Then
+*Proof.* Write $\gamma = u\eta$ with $u \in \mathsf{U}$ rational and $\eta \in H$ the image of a rational $\eta_0 \in U(X_0)(E)$ (`New.exists_besselU_mul_toBesselH`, which refines [Lemma](/decl/New.exists_eq_toBesselH/)). Then
 
 $$\gamma_{c,d} = u_{c,c} \cdot h_c^{-1}\eta h_d,$$
 

@@ -47,7 +47,7 @@ The inner product is linear in the second argument. So the entry $\langle e_x, P
 
 Lean: `New.Filling.hasAmplitudeBlocks_smul_of_inner_eq` (New/Spanning/Unfolding/Moments.lean).
 
-*Proof.* Put $a = \sqrt{(c\nu)^{-1}}$, a real number, and $\nu > 0$ ([Lemma](/decl/New.Filling.unipotentCovolume_pos/)). Then $\langle\rho(s)aPe_y, aPe_x\rangle = a^2c\,\mathcal{A}(x_1, s, y_1)_{x_2, y_2}$, since $\bar a = a$. And $a^2c = 1/\nu$. $\square$
+*Proof.* Put $a = \sqrt{(c\nu)^{-1}}$, a real number, and $\nu > 0$ (`New.Filling.unipotentCovolume_pos`). Then $\langle\rho(s)aPe_y, aPe_x\rangle = a^2c\,\mathcal{A}(x_1, s, y_1)_{x_2, y_2}$, since $\bar a = a$. And $a^2c = 1/\nu$. $\square$
 
 The lemma does not need admissibility. The scaled Poincaré map has amplitude blocks by this lemma ([Theorem](/decl/New.Data.hasAmplitudeBlocks_scaledPoincare/), stated in [the section on unfolding and bounds](/chapter/theorem-b-plan/#unfolding-and-bounds)).
 

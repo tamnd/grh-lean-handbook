@@ -43,7 +43,7 @@ The *part in $X_0$* of the frame of $\gamma$ (`framePartX₀ γ`) is the matrix 
 
 **Lemma.** Let the columns of $\eta$ be $\varrho$ rational vectors of $\Lambda \cap X_0$. Some move $u$ has $F(u\gamma) = F(\gamma) - M\eta\,\Xi_0(\gamma)$ for every $\gamma$.
 
-Lean: `New.Filling.exists_framePartX₀_mul_eq_sub_smul` (New/Spanning/RemainingTerms/FrameParts.lean).
+Lean: `New.Filling.framePartX₀`, `New.Filling.exists_framePartX₀_mul_eq_sub_smul` (New/Spanning/RemainingTerms/FrameParts.lean).
 
 *Proof.* Take the Eichler element of [reduced points](/chapter/frame-counts/#reduced-points) made from $\eta$, with skew part $0$. It fixes the standard frame, as $\eta$ is orthogonal to it. It moves the coordinates in $X_0$ of $\gamma f$ by $-M\eta$ times the coordinates along $e^*_a$, and these are the rows of $\Xi_0$ (`frameProducts_castSucc_apply`). $\square$
 

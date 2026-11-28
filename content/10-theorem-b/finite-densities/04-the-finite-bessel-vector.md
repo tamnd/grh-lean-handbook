@@ -71,7 +71,7 @@ Lean: `New.Floors.IntegralPlace.extendedBesselChar_besselU_mul`, `New.Floors.Int
 
 $$\mathrm{fl} = \prod_{l<\varrho}\mathrm{fl}_l(g), \qquad \varkappa(Z) = \int_{\mathsf{G}}\Bigl|\int_Z\chi_g(yxy^{-1})\,d\mathsf{M}(y)\Bigr|^2 d\mathsf{M}(x), \qquad \mathrm{mr}(Z) = \frac{\mathsf{M}(Z)\,\mathsf{M}(K(g))}{\mathrm{fl}^2}.$$
 
-Lean: `New.Floors.PlaceData.unipotentMass`, `New.Floors.PlaceData.massIntegral`, `New.Floors.PlaceData.IntermediateGroup.massRatio` (New/Spanning/Frames/BesselVector.lean).
+Lean: `New.Floors.PlaceData.IntermediateGroup`, `New.Floors.PlaceData.IntermediateGroup.Cosets`, `New.Floors.PlaceData.unipotentMass`, `New.Floors.PlaceData.massIntegral`, `New.Floors.PlaceData.IntermediateGroup.massRatio` (New/Spanning/Frames/BesselVector.lean).
 
 The number $\mathrm{fl}$ is positive and finite. The number $\varkappa(Z)$ is the mass integral: it is the quantity that the [main term](/chapter/main-term/) bounds from below. The mass integral is defined for any subgroup $Z$; the integrals are taken in $[0, \infty]$ and the inner Bochner integral is $0$ if it does not converge, but for an intermediate group $Z$ the integrand is bounded and $Z$ has finite mass, so no junk value occurs.
 

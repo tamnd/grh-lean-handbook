@@ -120,7 +120,7 @@ The bounds of the abstract chapter need ranks that are large compared with $n$, 
 2. $\psi(x + \bar x) = 1$ for all $x \in A$;
 3. some Haar measure on $\mathsf{G}$ is right invariant.
 
-Lean: `New.Floors.IntegralPlace.IsLargeLatticeData` (New/Spanning/Frames/StandardLevel.lean).
+Lean: `New.Floors.IntegralPlace.IsLargeLatticeData`, `New.Floors.IntegralPlace.IsLargeLatticeData.idealZeta_le_two` (New/Spanning/Frames/StandardLevel.lean).
 
 Here $\zeta_R(m) = \sum_I[R : I]^{-m}$ over the ideals of finite index (`New.idealZeta`). Field 1 gives $\zeta_R(m) \le 2$ (`New.Floors.IntegralPlace.IsLargeLatticeData.idealZeta_le_two`). It is a class in the source, so the instance is found automatically in the rest of the chapter.
 

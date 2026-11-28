@@ -81,7 +81,7 @@ Lean: `New.Filling.integral_besselKernel_eq_zero_of_not_charsAgree` (New/Spannin
 
 Lean: `New.Filling.amplitudeSum_eq_zero_of_not_charsAgree` (New/Spanning/Unfolding/Climbing.lean).
 
-*Proof.* Choose for each coset $x \in G(E)/\mathsf{U}_{c'}(M)$ a cutoff $\varphi_x$ for the stabilizer of $x$ in $\mathsf{U}_c(M)$, with $\sum_{u \in \operatorname{Stab}(x)}\varphi_x(uy) = 1$ ([Lemma](/decl/New.Filling.exists_cutoff_classUnipotent/)). Choose a representative $a(x)x$ of each orbit of $\mathsf{U}_c(M)$ on these cosets. Put
+*Proof.* Choose for each coset $x \in G(E)/\mathsf{U}_{c'}(M)$ a cutoff $\varphi_x$ for the stabilizer of $x$ in $\mathsf{U}_c(M)$, with $\sum_{u \in \operatorname{Stab}(x)}\varphi_x(uy) = 1$ (`New.Filling.exists_cutoff_classUnipotent`). Choose a representative $a(x)x$ of each orbit of $\mathsf{U}_c(M)$ on these cosets. Put
 
 $$\mathrm{wt}(\gamma, y) = \beta_{c'}(\gamma^{-1}y)\cdot\mathbf{1}[\gamma\,\mathsf{U}_{c'}(M) \text{ is a representative}]\cdot\varphi_\gamma(y).$$
 
@@ -89,7 +89,7 @@ Its orbit sum under $(u, u')$ is $1$. The sum over $u'$ of $\beta_{c'}(u'\gamma^
 
 ### Common vectors of two flags
 
-Let $P, P'$ be matrices over a field with columns $0, \ldots, n$. A pair $(\mu, \mu')$ *occurs at* $j$ if some vector lies in the spans of the columns of index at most $j$ of $P$ and of $P'$, with coefficients $\mu$ and $\mu'$ at $j$ ([Definition](/decl/New.PairOccursInColumnsAt/)). For coordinates $x, y$, an index $j$ is the *top index* if $x, y$ vanish above $j$ and $j$ is the least such index ([Definition](/decl/New.IsTopIndex/)).
+Let $P, P'$ be matrices over a field with columns $0, \ldots, n$. A pair $(\mu, \mu')$ *occurs at* $j$ if some vector lies in the spans of the columns of index at most $j$ of $P$ and of $P'$, with coefficients $\mu$ and $\mu'$ at $j$ (`New.PairOccursInColumnsAt`). For coordinates $x, y$, an index $j$ is the *top index* if $x, y$ vanish above $j$ and $j$ is the least such index (`New.IsTopIndex`).
 
 **Lemma (Top indices).** Every pair $x, y$ has a top index $j$. If $x \neq 0$, then $x_j \neq 0$ or $y_j \neq 0$.
 
@@ -123,7 +123,7 @@ Lean: `New.Filling.pairOccursAt_succ` (New/Spanning/Unfolding/Climbing.lean).
 
 *Proof.* Let $fx = \gamma fy$ with $x, y$ zero above $j$ and $x_j = \mu$, $y_j = \mu'$. By duality it suffices to show $\mu\,m(f_{j+1}) = \mu'\,m(\gamma f_{j+1})$ for each form $m$ that kills $f_b$ and $\gamma f_b$ for $b \leq j$. By the shift lemma, this says $m(fx^{\uparrow}) = m(\gamma fy^{\uparrow})$. Two elements of $E$ are equal if $\psi_f$ agrees on all their multiples by $t \in E$, since $\psi_f$ is nontrivial and $E$ is dense in the finite adeles. So fix $t \in E$.
 
-Let $v$ represent the form $m\gamma$ through the hermitian form, so that $\gamma v$ represents $m$. Put $r = M\delta_E(-t)$. The Eichler map along $r$ times the vector $fx$, with the form $m$, is an element $u \in \mathsf{U}$, and the sum of its entries at the simple roots is $r\,m(fx^{\uparrow})$ ([Lemma](/decl/New.exists_mem_besselU_eq_eichlerMap/), [the level structure](/chapter/anatomy-of-a-term/#the-level-structure-of-the-bessel-data)). In the same way the Eichler map along $r\,fy$ with the form $m\gamma$ is $w \in \mathsf{U}$, with sum $r\,m(\gamma fy^{\uparrow})$. Since $fx = \gamma fy$ and $\gamma$ is an isometry, $u\gamma = \gamma w$. As the characters agree, $\chi(u) = \chi(w)$. By the definition of $\chi$ through the self dual character and the factor $M^{-1}$, $\chi(u) = \psi_f(t\,m(fx^{\uparrow}))$ and $\chi(w) = \psi_f(t\,m(\gamma fy^{\uparrow}))$. $\square$
+Let $v$ represent the form $m\gamma$ through the hermitian form, so that $\gamma v$ represents $m$. Put $r = M\delta_E(-t)$. The Eichler map along $r$ times the vector $fx$, with the form $m$, is an element $u \in \mathsf{U}$, and the sum of its entries at the simple roots is $r\,m(fx^{\uparrow})$ (the lemma `New.exists_mem_besselU_eq_eichlerMap`, [the level structure](/chapter/anatomy-of-a-term/#the-level-structure-of-the-bessel-data)). In the same way the Eichler map along $r\,fy$ with the form $m\gamma$ is $w \in \mathsf{U}$, with sum $r\,m(\gamma fy^{\uparrow})$. Since $fx = \gamma fy$ and $\gamma$ is an isometry, $u\gamma = \gamma w$. As the characters agree, $\chi(u) = \chi(w)$. By the definition of $\chi$ through the self dual character and the factor $M^{-1}$, $\chi(u) = \psi_f(t\,m(fx^{\uparrow}))$ and $\chi(w) = \psi_f(t\,m(\gamma fy^{\uparrow}))$. $\square$
 
 **Corollary (The climb).** Let the characters of $\gamma$ agree, and let $(\mu, \mu')$ occur at $j$.
 
@@ -133,7 +133,7 @@ Let $v$ represent the form $m\gamma$ through the hermitian form, so that $\gamma
 
 Lean: `New.Filling.CharsAgree.pairOccursAt_mono`, `New.Filling.CharsAgree.mul_star_eq_of_pairOccursAt`, `New.Filling.CharsAgree.mul_star_eq_of_isTopIndex`, `New.Filling.CharsAgree.mul_star_ne_zero_of_isTopIndex`, `New.Filling.CharsAgree.exists_isTopIndex_apply_eq` (New/Spanning/Unfolding/Climbing.lean).
 
-*Proof.* Part 1 is the step lemma with the lemma on steps. For part 2 climb to the top. There $fx = \gamma fy$ with $x_\varrho = \mu$, $y_\varrho = \mu'$. The vector has norm $-N x_\varrho\bar x_\varrho$ in $f$ and $-N y_\varrho\bar y_\varrho$ in $\gamma f$, since $\gamma$ is an isometry ([Lemma](/decl/New.Filling.star_mul_last_eq_of_frameImage_eq/)). For part 3, $(x_j, y_j)$ occurs at $j$, so part 2 gives the equality. One of $x_j, y_j$ is nonzero by the lemma on top indices, so the common norm is nonzero. Then both are nonzero, and part 1 gives the vectors at $l$. $\square$
+*Proof.* Part 1 is the step lemma with the lemma on steps. For part 2 climb to the top. There $fx = \gamma fy$ with $x_\varrho = \mu$, $y_\varrho = \mu'$. The vector has norm $-N x_\varrho\bar x_\varrho$ in $f$ and $-N y_\varrho\bar y_\varrho$ in $\gamma f$, since $\gamma$ is an isometry (`New.Filling.star_mul_last_eq_of_frameImage_eq`). For part 3, $(x_j, y_j)$ occurs at $j$, so part 2 gives the equality. One of $x_j, y_j$ is nonzero by the lemma on top indices, so the common norm is nonzero. Then both are nonzero, and part 1 gives the vectors at $l$. $\square$
 
 ### The cell rank
 
@@ -159,7 +159,7 @@ Lean: `New.Filling.CharsAgree.exists_hasCellRank` (New/Spanning/Unfolding/Climbi
 
 ### The climb modulo a place above M
 
-A place above $M$ is a chosen place $w$ with a flag that says whether to conjugate. The element $s \in \bar G$ acts modulo this place by its component at $w$, or by the inverse adjoint of it. $s$ *meets* at the place if the span of $f$ and its image under $s$ share a nonzero vector there. The *meet norm* of $s$ is the product of the norms $p_i$ of the places where $s$ meets ([Definition](/decl/New.Filling.MeetsAt/), [Definition](/decl/New.Filling.meetNorm/)).
+A place above $M$ is a chosen place $w$ with a flag that says whether to conjugate. The element $s \in \bar G$ acts modulo this place by its component at $w$, or by the inverse adjoint of it. $s$ *meets* at the place if the span of $f$ and its image under $s$ share a nonzero vector there. The *meet norm* of $s$ is the product of the norms $p_i$ of the places where $s$ meets (`New.Filling.MeetsAt`, `New.Filling.meetNorm`).
 
 **Lemma (The meet norm).** $1 \leq \operatorname{meetNorm}(s)$. If $s$ meets at every place of a set $A$, then $\prod_{p \in A}N(p) \leq \operatorname{meetNorm}(s)$. The reduction of the Bessel group $\mathsf{H}$, the unitary group of $X_0$, fixes every nonzero vector of the span of $f$ modulo every place above $M$.
 

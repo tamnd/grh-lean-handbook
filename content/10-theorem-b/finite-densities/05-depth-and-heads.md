@@ -116,7 +116,7 @@ Lean: `New.Floors.IntegralPlace.IsLargeLatticeData.exists_unit_multiple_of_prod_
 
 $$\Bigl(\frac{2}{|\alpha|}\Bigr)^E \le \Bigl(\frac{2}{|g|}\Bigr)^K\sqrt{\mathrm{gi}(\beta)}^{\,K}\sqrt{\mathrm{gi}(\gamma)}^{\,K}.$$
 
-Lean: `New.Floors.IntegralPlace.IsLargeLatticeData.two_div_modulus_pow_le_mul_sqrt_genIndex_pow` (New/Spanning/Frames/FiniteDepth.lean).
+Lean: `New.Floors.IntegralPlace.IsLargeLatticeData.two_div_modulus_pow_le_mul_sqrt_genIndex_pow` (New/Spanning/Frames/FiniteDepth.lean), `New.Floors.IntegralPlace.inv_modulus_eq_sqrt_genIndex_sq` (New/Spanning/Frames/BesselVector.lean).
 
 *Proof.* Put $b = \sqrt{\mathrm{gi}(\beta)}$, $c = \sqrt{\mathrm{gi}(\gamma)}$, so $|\beta|^{-1} = b^2$ and $|\gamma|^{-1} = c^2$. Then $2/|\alpha| = (2/|g|)(bc)^4$, and $(2/|\alpha|)^E = (2/|g|)^E(bc)^{4E}$. Each base is at least $1$: $|g| \le 1$ because $g \in R$, and $b, c \ge 1$ because $\mathrm{gi} \ge 1$ on $R$. Since $E \le 4E \le K$, raise each exponent to $K$. $\square$
 
