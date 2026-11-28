@@ -41,7 +41,7 @@ Let $G_f$ be the finite adelic unitary group of rank $n$, as in [Automorphic for
 
 **Definition.** Let $\pi$ be a representation of $G_f$. Let $K_w$ be the subgroup of the standard maximal compact subgroup of $G_f$ of the elements with component $1$ away from $w$ and $\bar w$. A vector is spherical at $w$ if $K_w$ fixes it. The Hecke operator $T_{w,j}$ is the operator $T_j$ of section 4 for the representation $\pi$ composed with the embedding of $\mathrm{GL}_n(E_w)$.
 
-Lean: `New.maxCompactAt`, `New.sphericalAt`, `New.heckeSplit` (Lib/Weil/Unramified/SplitHecke.lean).
+Lean: `New.maxCompactAt`, `New.sphericalAt`, `New.heckeSplit`, `New.mem_sphericalAt_iff` (Lib/Weil/Unramified/SplitHecke.lean).
 
 A vector is spherical at $w$ if and only if it is fixed by $\mathrm{GL}_n(\mathcal{O}_w)$ through the embedding (Lean: `New.mem_sphericalAt_iff`). So all results of sections 2 to 6 apply to $\pi$ composed with the embedding.
 
@@ -93,7 +93,7 @@ Lean: `New.hasHeckePolynomial_of_heckeSplit`, `New.exists_heckeSplit_eq_smul` (L
 
 **Example (Fixed vectors).** Let $v$ be fixed by all of $G_f$. Then $v$ is spherical at each split $w$, and its Hecke polynomial is
 $$X \mapsto \prod_{l<n}(1 - q^l X).$$
-Lean: `New.SiegelWeil.qPochhammer`, `New.SiegelWeil.hasHeckePolynomial_qPochhammer` (Lib/Weil/Unramified/HeckeTransfer.lean).
+Lean: `New.SiegelWeil.qPochhammer`, `New.SiegelWeil.hasHeckePolynomial_qPochhammer`, `New.SiegelWeil.hasHeckePolynomial_of_apply_eq_smul_det` (Lib/Weil/Unramified/HeckeTransfer.lean).
 
 This agrees with section 4: the trivial representation of $\mathrm{GL}_n(E_w)$ has the roots $1, q, \ldots, q^{n-1}$. The proof in Lean is a direct count. The operator $H_w(X)$ is a sum over the subspaces $U$ of $k^n$, with the coefficient $(-X)^{\dim U}q^{\dim U(\dim U - 1)/2}$, and the $q$-binomial theorem evaluates the sum.
 
@@ -109,7 +109,7 @@ where $\upsilon$ is the splitting character of the Weil data (Lean: `New.AutChar
 $$H^T_w(X/\alpha)\, f = \prod_{l<k}(1 - q^l X)\cdot H^S_{\bar w}\bigl(q^k X/\beta\bigr)\, f$$
 for every $X \in \mathbb{C}$.
 
-Lean: `New.SiegelWeil.heckePolyOp_pairWeilTarget` (Lib/Weil/Unramified/HeckeTransfer.lean).
+Lean: `New.SiegelWeil.heckePolyOp_pairWeilTarget`, `New.AutChar.frobValue` (Lib/Weil/Unramified/HeckeTransfer.lean).
 
 The proof counts lattices. On the vacuum, the Hecke operators of $S$ and of $T$ become sums over the subspaces of the kernels of an integral matrix and of its transpose modulo $w$, and the $q$-binomial theorem relates the two sums. The source names the unramified theta correspondence as the known form of this result, with references to Howe (Corvallis 1979), Rallis (Amer. J. Math. 104, 1982) and Kudla (Invent. Math. 83, 1986).
 

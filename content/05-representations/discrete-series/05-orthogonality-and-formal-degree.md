@@ -76,7 +76,7 @@ Lean: `New.HCParam.IsKHighest` (Lib/DiscreteSeries/Rigidity/RepresentationsAndCa
 
 **Theorem.** If $l$ has gap $h$, then $c_\lambda$ is $K$-highest of weight $\Lambda$ in $M_\lambda$.
 
-Lean: `New.isKHighest_dsGenerator` (Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean).
+Lean: `New.isKHighest_dsGenerator`, `New.HCParam.DsModule` (Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean).
 
 *Proof.* On $G$, $c_\lambda(g) = c_{-\lambda}(g^{-1})$ by the two symmetries of Section 4. The function $F(y) = c_{-\lambda}(y^{-1})$ is holomorphic near $G$, and for block diagonal $x$ that is upper triangular in the order of decreasing $l$, $F(gx) = x_{11}^{\Lambda_1}\cdots x_{nn}^{\Lambda_n}F(g)$ (`New.dsCoeff_neg_mul_borel_inv`). Differentiate in $x$ at $x = 1$. $\square$
 
@@ -161,7 +161,7 @@ For a vector $\nu$ let $\chi_\nu(g) = \int_K m_\nu(y^{-1}gy)\,dy\,/\int_K|m_\nu|
 $$(-1)^{pq}\sum_{\sigma \in S_n}\int_G e_\lambda\big(g^{-1}\operatorname{diag}(x_{\sigma(1)}, \dots, x_{\sigma(n)})\,g\big)\,dg = \#\{\sigma : \varepsilon\circ\sigma = \varepsilon\}\cdot\overline{\chi^{U(n)}_{\lambda-\rho}(\operatorname{diag}x)},$$
 where $p$ and $q$ are the numbers of signs $+1$ and $-1$, and $\chi^{U(n)}_{\lambda-\rho}$ is $\chi$ for $l^c$.
 
-Lean: `New.Orbital.harish_chandra_degree_and_orbital` (Lib/DiscreteSeries/Character/FormalDegree.lean). Part 1 alone is `New.Orbital.formalDegree_eq_weylDimensionPoly`.
+Lean: `New.Orbital.harish_chandra_degree_and_orbital`, `New.HCParam.kTypeChar` (Lib/DiscreteSeries/Character/FormalDegree.lean, Lib/DiscreteSeries/Character/WeylCharacterFormula.lean). Part 1 alone is `New.Orbital.formalDegree_eq_weylDimensionPoly`.
 
 In Lean the sign is $(-1)$ to the number of pairs $(a, b)$ with $\varepsilon_a = 1$ and $\varepsilon_b = -1$ (`New.Orbital.oppositePairs`), which is $pq$. The number $\#\{\sigma : \varepsilon\circ\sigma = \varepsilon\} = p!\,q!$ is the order of the Weyl group of $K$. The integrals converge absolutely (`New.Orbital.integrable_dsCoeff_conj`).
 

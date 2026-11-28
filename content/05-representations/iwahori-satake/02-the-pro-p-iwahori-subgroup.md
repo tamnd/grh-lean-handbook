@@ -68,7 +68,7 @@ Let $\rho$ be a smooth representation of $\mathrm{GL}_N(F)$ and let $\bar m$ be 
 **Theorem (Product formula).** Let $t$ and $t'$ be dominant, and let $x$ be fixed by $I_1$. Then
 $$\bar m\bigl(\rho(t)\, \bar m(\rho(t') x)\bigr) = \bar m\bigl(\rho(tt') x\bigr).$$
 
-Lean: `New.compactMean_diagGL_compactMean_diagGL` (Lib/LocalGL/Iwahori/ParahoricStructure.lean).
+Lean: `New.compactMean_diagGL_compactMean_diagGL`, `New.exists_unipotent_conj_mem_proIwahori` (Lib/LocalGL/Iwahori/ParahoricStructure.lean).
 
 *Proof.* The left side is the mean over $k \in I_1$ of $\bar m(\rho(t)\rho(k)\rho(t')x)$. It is enough to show that every $k \in I_1$ is a product $k = u k'$ such that $t u t^{-1} \in I_1$ and $k'$ fixes $\rho(t')x$. Then
 $$\rho(t)\rho(k)\rho(t')x = \rho(t u t^{-1})\, \rho(tt')\, x,$$
@@ -105,7 +105,7 @@ Lean: `New.IsIwahoriEigen` (Lib/LocalGL/Iwahori/ParahoricStructure.lean).
 The characters of the chapter have a normalised form. Let $|\cdot|$ be the normalised absolute value, with $|\varpi| = q^{-1}$ (Lean: `New.normAbsChar`). For a family $\theta = (\theta_0, \ldots, \theta_{N-1})$ of characters of $F^\times$ put
 $$\xi_\theta(t) = \prod_{i=0}^{N-1} \theta_i(t_i)\, |t_i|^{N-1-i}.$$
 
-Lean: `New.torusChar` (Lib/LocalGL/Iwahori/ParahoricStructure.lean).
+Lean: `New.torusChar`, `New.normAbsChar` (Lib/LocalGL/Iwahori/ParahoricStructure.lean).
 
 The map $\theta \mapsto \xi_\theta$ is a bijection onto the characters of the torus. The factor $|t_i|^{N-1-i}$ is a shift by the half sum of positive roots, up to a central character: $\prod_i |t_i|^{N-1-i} = \delta(t)^{1/2} |\det t|^{(N-1)/2}$, where $\delta$ is the modulus of the upper triangular Borel subgroup. With this shift the Hecke polynomial has the roots $\theta_i(\varpi)$ with no further factor. The trivial representation, for example, has the exponent $l = \mathrm{id}$ with $\xi = 1$. Then $\theta_i = |\cdot|^{-(N-1-i)}$ and $\theta_i(\varpi) = q^{N-1-i}$. These are the roots $1, q, \ldots, q^{N-1}$ of section 1.
 
